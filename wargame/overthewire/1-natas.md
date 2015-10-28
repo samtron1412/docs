@@ -52,3 +52,21 @@ Password: `Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ`
 	URL:      http://natas4.natas.labs.overthewire.org
 
 ## Solution
+# Level 4 - Level 5
+	Username: natas5
+	URL:      http://natas5.natas.labs.overthewire.org
+
+## Solution
+`curl -v --cookie "loggedin=1" -u natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq http://natas5.natas.labs.overthewire.org/`
+
+## Result
+Password: `aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1`
+
+# Level 5 - Level 6
+	Username: natas6
+	URL:      http://natas6.natas.labs.overthewire.org
+
+## Solution
+
+## Result
+Password:
