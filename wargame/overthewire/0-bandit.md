@@ -136,7 +136,7 @@ The password for the next level is stored in the file **data.txt**, where all lo
 ## Result
 - Password: `5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`
 
-# Level 12 - Level 13 : Notice
+# Level 12 - Level 13
 The password for the next level is stored in the file **data.txt**, which is a *hexdump* of a file that has been **repeatedly compressed**. For this level it may be useful to create a directory under `/tmp` in which you can work using `mkdir`. For example: `mkdir /tmp/myname123`. Then copy the data file using cp, and rename it using `mv` (read the manpages!)
 
 ## Solution
