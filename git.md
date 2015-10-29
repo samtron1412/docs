@@ -1003,3 +1003,8 @@ http://stevelorek.com/how-to-shrink-a-git-repository.html
 ## SSL cert self signed
 config project do not verify cert: `git config http.sslVerify false`
 
+
+# [10 things I hate about Git](http://stevebennett.me/2012/02/24/10-things-i-hate-about-git/)
+- https://www.reddit.com/r/programming/comments/xpitj/10_things_i_hate_about_git/
+- https://news.ycombinator.com/item?id=4340047
+- http://think-like-a-git.net/
