@@ -63,3 +63,10 @@ Degree programs are awarded by colleges and universities. A degree program is of
 	+ A **master's degree** is what is called a post-graduate degree because you go on to get one only after you have graduated with your bachelor's.
 	+ A **Ph.D** is another example or a post-graduate degree, and is several more years of study and intensive research.
 
+# Thesis vs Dissertation
+The differences between a thesis and a dissertation it really depends upon the requirements set forth by each specific school or academic program. Most universities make their dissertation/thesis guidelines available online so it's best to view them ahead of time so you aware of what will be required of you.
+
+In USA
+1. A thesis is submitted **at the end of one's master's degree**, and a dissertation is submitted **at the end of a PhD**.
+2. For a thesis, you have **conduct original research**, while for a dissertation you have to **synthesize already existing literature**.
+3. Thesis analysis **is added to the already existing literature**, while dissertation is **an analysis of the existing literature**.
