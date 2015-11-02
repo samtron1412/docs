@@ -48,3 +48,18 @@ In Engineer view, we need experience and compare between products to choose righ
 Toyota is the most popular.
 
 Honda is the next.
+
+# Certification vs Diploma vs Degree
+## Certification
+Certification programs are specialized and industry specific. These programs don't offer a broad overview of a field or industry, and are often a good option for someone who already has a degree or work experience in the field.
+
+## Diploma
+Diploma programs are specialized but more in depth than certification programs. Diplomas are also what you receive upon graduating high school.
+
+## Degree
+Degree programs are awarded by colleges and universities. A degree program is often requires the student o take general education courses to support a more rounded education.
+	+ An **associate's degree** is two-year degree most commonly granted by a community college or technical school. They can also be granted by four-year colleges and universities.
+	+ A **bachelor's degree** is a four-year degree that is granted by a college or university.
+	+ A **master's degree** is what is called a post-graduate degree because you go on to get one only after you have graduated with your bachelor's.
+	+ A **Ph.D** is another example or a post-graduate degree, and is several more years of study and intensive research.
+
