@@ -399,7 +399,7 @@ Let’s look at it in detail:
 ### Commit too early forget to add some files
 `git commit --amend`
 
-This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.
+This command takes your staging area and uses it for the commit. If you've made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you'll change is your commit message.
 
 As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:
 
