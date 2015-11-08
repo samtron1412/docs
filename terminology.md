@@ -1,5 +1,11 @@
 [TOC]
 
+# Learn
+To gain knowledge or skill by studying, practicing, being taught, or experiencing something.
+
+# Study
+To read, memorize facts, attend school, etc., in order to learn about a subject.
+
 # General-purpose programming language
 In computer software a general-purpose programming language is a programming language designed to be used for writing software in a wide variety of application domains.
 
