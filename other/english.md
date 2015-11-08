@@ -10,6 +10,7 @@ The problem: learn English
 4. It's fun and exciting when you watch a movie, read a book and listen a song and understand what it says.
 
 ## What ?
+Learn English is a process learn how to use English in communication.
 
 ## How ?
 
