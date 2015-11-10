@@ -24,11 +24,7 @@ Using Tor protects you against a common form of **Internet surveillance** known 
 A very simple form of traffic analysis might involve sitting somewhere between sender and recipient on the network, looking at headers. But there are also more powerful kinds of traffic analysis. Some **attackers** spy on multiple parts of the Internet and use sophisticated statistical techniques to track the communications patterns of many different organizations and individuals. Encryption does not help against these attackers, since it only hides the content of Internet traffic, not the headers.
 
 ### The solution: a distributed, anonymous network
-<figure>
-  <figcaption style="text-align:center;">How Tor Work 1</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="tor_figures/htw1.png" alt="How Tor Work 1" title="How Tor Work 1">
-</figure>
+![]
 
 Tor helps to reduce the risks of both simple and sophisticated traffic analysis by distributing your transactions over several places on the Internet, so no single point can link you to your destination. Instead of taking a direct route from source to destination, data packets on the Tor network take **a random pathway through several relays** that cover your tracks so no observer at any single point can tell where the data came from or where it's going.
 
