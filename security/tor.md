@@ -1,22 +1,39 @@
 [TOC]
 
-# About
-## Tor Overview
-### Inception
-Tor was originally designed, implemented, and deployed as a third-generation [onion routing project of the U.S. Naval Research Laboratory](http://www.onion-router.net/). It was originally developed with the U.S. Navy in mind, for the primary purpose of protecting government communications. Today, it is used every day for a wide variety of purposes by **normal people, the military, journalists, law enforcement officers, activists, and many others**.
+# Overview
+- [Wikipedia](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
+- [About](https://www.torproject.org/about/overview.html.en)
 
-### Overview
+## Inception
 Tor is a network of *virtual tunnels* that allows people and groups to improve their privacy and security on the Internet. It also enables software developers to create new communication tools with built-in privacy features.
 
+## Users of Tor
+### Normal people
 **Individuals** use Tor to keep websites from tracking them and their family members, or to connect to news sites, instant messaging services, or the like when these are blocked by their local Internet providers. Individuals also use Tor for socially *sensitive communication*: chat rooms and web forums for rape and abuse survivors, or people with illnesses. [Tor's hidden services](https://www.torproject.org/docs/hidden-services.html.en) let users publish web sites and other services without needing to reveal the location of the site.
 
+### Journalists and their audience
 **Journalists** use Tor to communicate more safely with *whistleblowers* and *dissidents*. Non-governmental organizations (NGOs) use Tor to allow their workers to connect to their home website while they're in a foreign country, without notifying everybody nearby that they're working with that organization.
 
-**Groups** such as Indymedia recommend Tor for safeguarding their members' online privacy and security. **Activist** groups like the Electronic Frontier Foundation (EFF) recommend Tor as a mechanism for maintaining civil liberties online. **Corporations** use Tor as a safe way to conduct competitive analysis, and to protect sensitive procurement patterns from eavesdroppers.
+### Law enforcement officers
+**Law enforcement** uses Tor for visiting or surveilling web sites without leaving government IP addresses in their web logs, and for security during sting operations.
 
-**A branch of the U.S. Navy** uses Tor for open source intelligence gathering, and one of its teams used Tor while deployed in the Middle East recently. **Law enforcement** uses Tor for visiting or surveilling web sites without leaving government IP addresses in their web logs, and for security during sting operations.
+### Activist and Whistleblowers
+**Activist** groups like the Electronic Frontier Foundation (EFF) recommend Tor as a mechanism for maintaining civil liberties online.
 
-### Why we need Tor
+### High and low profile
+**Groups** such as Indymedia recommend Tor for safeguarding their members' online privacy and security.
+
+### Business executives
+**Corporations** use Tor as a safe way to conduct competitive analysis, and to protect sensitive procurement patterns from eavesdroppers.
+
+### Bloggers
+
+### Militaries
+**A branch of the U.S. Navy** uses Tor for open source intelligence gathering, and one of its teams used Tor while deployed in the Middle East recently.
+
+### IT professionals
+
+## Why we need Tor
 Using Tor protects you against a common form of **Internet surveillance** known as "**traffic analysis**." Traffic analysis can be used to infer who is talking to whom over a public network. Knowing the source and destination of your Internet traffic allows others to track your *behavior* and *interests*.
 
 **How does traffic analysis work?** Internet data packets have two parts: a *data payload* and a *header* used for routing. The data payload is whatever is being sent, whether that's an email message, a web page, or an audio file. Even if you encrypt the data payload of your communications, traffic analysis still reveals a great deal about what you're doing and, possibly, what you're saying. That's because it focuses on the header, which discloses source, destination, size, timing, and so on.
@@ -38,13 +55,13 @@ For efficiency, the Tor software *uses the same circuit for connections that hap
 
 ![How Tor Work 3](../graphic/tor/htw3.png)
 
-### Hidden services
+## Hidden services
 Tor also makes it possible for users to hide their locations while offering various kinds of services, such as **web publishing** or **an instant messaging server**. Using Tor "rendezvous points," other Tor users can connect to these hidden services, each without knowing the other's network identity. This hidden service functionality could allow Tor users to set up a website where people publish material without worrying about *censorship*. Nobody would be able to determine who was offering the site, and nobody who offered the site would know who was posting to it. Learn more about [configuring hidden services](https://www.torproject.org/docs/tor-hidden-service.html.en) and how the [hidden service protocol](https://www.torproject.org/docs/hidden-services.html.en) works.
 
-### Staying anonymous
+## Staying anonymous
 Tor can't solve all anonymity problems. It focuses only on protecting the transport of data. You need to use protocol-specific support software if you don't want the sites you visit to see your identifying information.
 
-### The future of Tor
+## The future of Tor
 Providing a usable anonymizing network on the Internet today is an ongoing challenge. Please consider [running a relay](https://www.torproject.org/docs/tor-doc-relay.html.en) or [volunteering](https://www.torproject.org/getinvolved/volunteer.html.en) as a [developer](https://www.torproject.org/docs/documentation.html.en#Developers).
 
 # [Documentation](https://www.torproject.org/docs/documentation.html.en)
@@ -69,14 +86,14 @@ The Tor Browser will warn you before automatically opening documents that are ha
 ### Use bridges and/or find company
 Tor tries to prevent attackers from learning what destination websites you connect to. However, by default, it does not prevent somebody watching your Internet traffic from learning that you're using Tor. If this matters to you, you can reduce this risk by configuring Tor to use a Tor bridge relay rather than connecting directly to the public Tor network. Ultimately the best protection is a social approach: the more Tor users there are near you and the more diverse their interests, the less dangerous it will be that you are one of them. Convince other people to use Tor, too!
 
-## Documentation Overview
+## Documentation overview
 
 ## [Installation](https://www.torproject.org/docs/tor-doc-windows.html.en)
 [Torify HOWTO](https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO)
 
 ## Manuals
 
-## Wiki
+## [Wiki](https://trac.torproject.org/projects/tor/wiki/)
 
 ## General FAQ
 
@@ -87,3 +104,4 @@ Tor tries to prevent attackers from learning what destination websites you conne
 ## Legal FAQ
 
 ## DMCA Response
+
