@@ -23,28 +23,20 @@ Using Tor protects you against a common form of **Internet surveillance** known 
 
 A very simple form of traffic analysis might involve sitting somewhere between sender and recipient on the network, looking at headers. But there are also more powerful kinds of traffic analysis. Some **attackers** spy on multiple parts of the Internet and use sophisticated statistical techniques to track the communications patterns of many different organizations and individuals. Encryption does not help against these attackers, since it only hides the content of Internet traffic, not the headers.
 
-### The solution: a distributed, anonymous network
-![]
+## The solution: a distributed, anonymous network
+![How Tor Work 1](../graphic/tor/htw1.png)
 
 Tor helps to reduce the risks of both simple and sophisticated traffic analysis by distributing your transactions over several places on the Internet, so no single point can link you to your destination. Instead of taking a direct route from source to destination, data packets on the Tor network take **a random pathway through several relays** that cover your tracks so no observer at any single point can tell where the data came from or where it's going.
 
 To create a private network pathway with Tor, the user's software or client incrementally builds **a circuit of encrypted connections through relays** on the network. The circuit is extended one hop at a time, and *each relay along the way knows only which relay gave it data and which relay it is giving data to*. No individual relay ever knows the complete path that a data packet has taken. *The client negotiates a separate set of encryption keys for each hop along the circuit* to ensure that each hop can't trace these connections as they pass through.
 
-<figure>
-  <figcaption style="text-align:center;">How Tor Work 2</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="tor_figures/htw2.png" alt="How Tor Work 2" title="How Tor Work 2">
-</figure>
+![How Tor Work 2](../graphic/tor/htw2.png)
 
 Tor only works for TCP streams and can be used by any application with SOCKS support.
 
 For efficiency, the Tor software *uses the same circuit for connections that happen within the same ten minutes* or so. Later requests are given a new circuit, to keep people from linking your earlier actions to the new ones.
 
-<figure>
-  <figcaption style="text-align:center;">How Tor Work 3</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="tor_figures/htw3.png" alt="How Tor Work 3" title="How Tor Work 3">
-</figure>
+![How Tor Work 3](../graphic/tor/htw3.png)
 
 ### Hidden services
 Tor also makes it possible for users to hide their locations while offering various kinds of services, such as **web publishing** or **an instant messaging server**. Using Tor "rendezvous points," other Tor users can connect to these hidden services, each without knowing the other's network identity. This hidden service functionality could allow Tor users to set up a website where people publish material without worrying about *censorship*. Nobody would be able to determine who was offering the site, and nobody who offered the site would know who was posting to it. Learn more about [configuring hidden services](https://www.torproject.org/docs/tor-hidden-service.html.en) and how the [hidden service protocol](https://www.torproject.org/docs/hidden-services.html.en) works.
