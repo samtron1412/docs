@@ -82,7 +82,7 @@ Enable service: `systemctl enable example.service`
 ### Style
 
 
-# Installation
+# [Installation](https://wiki.archlinux.org/index.php/Beginners%27_guide)
 ## Preparation
 A working Internet connection is required.
 
@@ -316,11 +316,11 @@ If adding UUID rather than partition number the syntax is **APPEND root=UUID=par
 	# reboot
 
 
-# Post-Installation
-## Back up system
-Back up your system before big upgrade. Use to recover your system when it had trouble.
+# [Post-Installation](https://wiki.archlinux.org/index.php/General_recommendations)
+## 1. System administration
+This section deals with administration task and system management.
 
-## User management
+### User management
 - Create two users: `glider` with password and `guest` with no password
 - List users logged on system: `$ who`
 - Add a new user: `$ useradd -m -g [initial_group] -G [additional_group] -s [login_shell] [username]`
@@ -332,26 +332,15 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - User database: `$ cat /etc/passwd`
 - Shadow file: `$ cat /etc/shadow`
 
-## Group management:
+### Group management:
 - List of groups and users belong group: `$ cat /etc/group`
 - Create a new group: `$ groupadd [group]`
 - Add users to a group: `$ gpasswd -a [user] [group]`
 - Remove users from a group: `$ gpasswd -d [user] [group]`
 - Del a existing group: `$ groupdel [group]`
 
-## Package management:
-How to know your architecture: open terminal and type these command
-- use command `# uname`
-- use command **getconf**: `# getconf LONG_BIT`
-
-+ find out with pkgfile: `$ pkgfile [filename]`
-+ find binary's name: `$ pacman -Qlq package_name | grep /usr/bin/`
-+ to see full list tools of pacman: `$ pacman -Ql pacman | grep bin`
-+ update all package: `$ pacman -Syu`
-
-Remember that pacman's output is logged in `/var/log/pacman.log`.
-
-## Service management:
+### Privilege escalation
+### Service management:
 	+ list all units of system: $ systemctl
 	+ list all failed units: $ systemctl --failed
 	Activate a unit immediately:
@@ -435,7 +424,25 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 	+ To start dwm with startx or the SLIM login manager, simply append the following to ~/.xinitrc:
 		exec dwm
 
-## Graphical User Interface
+### System maintenance
+
+## 2. Package management:
+How to know your architecture: open terminal and type these command
+- use command `# uname`
+- use command **getconf**: `# getconf LONG_BIT`
+
++ find out with pkgfile: `$ pkgfile [filename]`
++ find binary's name: `$ pacman -Qlq package_name | grep /usr/bin/`
++ to see full list tools of pacman: `$ pacman -Ql pacman | grep bin`
++ update all package: `$ pacman -Syu`
+
+Remember that pacman's output is logged in `/var/log/pacman.log`.
+
+## 3. Booting
+## 4. Back up system
+Back up your system before big upgrade. Use to recover your system when it had trouble.
+
+## 5. Graphical User Interface
 ### Window manager
 i3
 
@@ -464,11 +471,27 @@ Chrome
 Firefox
 Chromium
 
-## Appearance
+## 6. Power management
+
+## 7. Multimedia
+
+## 8. Networking
+
+## 9. Input devices
+
+## 10. Optimization
+
+## 11. System service
+
+## 12. Appearance
 ### Fonts
 - ttf-inconsolata
 - ttf-dejavu: DejavuSansMono
 - Source Code Pro
+
+## 13. Console improvements
+
+## [List applications](https://wiki.archlinux.org/index.php/List_of_applications)
 
 # Troubleshooting
 ## Restore bootloader after install Windows
