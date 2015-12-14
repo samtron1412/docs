@@ -70,3 +70,10 @@ In USA
 1. A thesis is submitted **at the end of one's master's degree**, and a dissertation is submitted **at the end of a PhD**.
 2. For a thesis, you have **conduct original research**, while for a dissertation you have to **synthesize already existing literature**.
 3. Thesis analysis **is added to the already existing literature**, while dissertation is **an analysis of the existing literature**.
+
+# Grill, Broil, Toast, Roast and Bake
+- **GRILL**: heat from below, usually fairly hot...it's generally food that's placed on the grill rack of an outdoor grill, or on one of the new "grill pans" on a stove top (however, an outdoor grill can also be made into more of an "oven" by closing its lid, or just putting the food over an area of the grill's rack that's not directly over coals or fire)
+- **BROIL**: The heat comes from the top to cook the food.
+- **TOAST**: Generally the heat is both top and bottom (or side to side in a toaster) and it is a dry cooking method with a food that has little moisture, bread for example
+- **ROAST**: Higher temperature with the intent to caramelize the outer portion of the food to bring out flavor. An example of this would be roasting a piece of meat, or vegetables. The pan is large enough to allow heat to reach most sides of the food that is being cooked.
+- **BAKE**: In the case of cakes or casseroles the food fills the pan so that you get even cooking but the food does not dry out. Also used as a general term for cooking almost anything in the oven.
