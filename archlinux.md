@@ -320,7 +320,25 @@ If adding UUID rather than partition number the syntax is **APPEND root=UUID=par
 ## 1. System administration
 This section deals with administration task and system management.
 
-### User management
+### Users and Groups management
+#### Why?
+Logging in as root for prolonged periods of time, possibly even exposing it via SSH on a server, is in secure.
+
+#### What?
+You should create and use unprivileged user account(s) for most tasks, only using the root account for system administration.
+
+Users and groups are a mechanism for **access control**.
+
+- **A User** is anyone who uses a computer. We are describing the names which represent those users. Each account has a name.
+- **Managing users** is done for the purpose of security by limiting access in certain specific ways.
+- **The superuser** (root) has complete access to the operating system and its configuration.
+- **Unprivileged users** can use the `su` and `sudo` programs for controlled privilege escalation.
+
+##### Permissions and ownership
+
+
+#### How?
+##### User management
 - Create two users: `glider` with password and `guest` with no password
 - List users logged on system: `$ who`
 - Add a new user: `$ useradd -m -g [initial_group] -G [additional_group] -s [login_shell] [username]`
@@ -332,7 +350,7 @@ This section deals with administration task and system management.
 - User database: `$ cat /etc/passwd`
 - Shadow file: `$ cat /etc/shadow`
 
-### Group management:
+##### Group management
 - List of groups and users belong group: `$ cat /etc/group`
 - Create a new group: `$ groupadd [group]`
 - Add users to a group: `$ gpasswd -a [user] [group]`
@@ -492,6 +510,12 @@ Chromium
 ## 13. Console improvements
 
 ## [List applications](https://wiki.archlinux.org/index.php/List_of_applications)
+
+# Advanced
+## Access control
+### ACL
+
+### LDAP
 
 # Troubleshooting
 ## Restore bootloader after install Windows
