@@ -457,8 +457,14 @@ How to know your architecture: open terminal and type these command
 Remember that pacman's output is logged in `/var/log/pacman.log`.
 
 ## 3. Booting
+
 ## 4. Back up system
 Back up your system before big upgrade. Use to recover your system when it had trouble.
+
+[Incremental back up](https://wiki.archlinux.org/index.php/backup_programs#Incremental_backups): your data, important data.
+
+[Non-incremental back up](https://wiki.archlinux.org/index.php/backup_programs#Non-incremental_backups)
+- [clonezilla](http://clonezilla.org/clonezilla-live-doc.php)
 
 ## 5. Graphical User Interface
 ### Window manager
