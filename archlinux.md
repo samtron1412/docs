@@ -537,3 +537,13 @@ Chromium
 
 ## Software packaging
 
+# Tips & Tricks
+## Print
+- CUPS
+
+How to print
+- Start cups service: `systemctl start org.cups.cupsd.service`
+- Printer management: `http://localhost:631`
+
+## Time
+- Time for Linux, servers: [comparison](http://chrony.tuxfamily.org/comparison.html)
