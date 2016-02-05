@@ -1,11 +1,5 @@
 [TOC]
 
-# Learn
-To gain knowledge or skill by studying, practicing, being taught, or experiencing something.
-
-# Study
-To read, memorize facts, attend school, etc., in order to learn about a subject.
-
 # General-purpose programming language
 In computer software a general-purpose programming language is a programming language designed to be used for writing software in a wide variety of application domains.
 
@@ -52,16 +46,6 @@ Is used when a thing adds steps to another first thing.
 
 # Include
 Is used to extract thing fragments that are **duplicated** in multiple thing.
-
-# Geek
-A person have enthusiasm about something or a person obsessed with a hobby or intellectual pursuit.
-
-technology, film, zombies, computer, cosplay, music,
-
-# Nerd
-a person is overly intellectual, obsessive, or lacking social skills
-
-bookworm, smart, math, physical, biology, library, glass, academic, book
 
 # Web Application
 Web applications differ from conventional websites in that web applications can create a dynamic response. many websites deliver only static pages. A web application can interact with databases and business logic engines to customize a response.
