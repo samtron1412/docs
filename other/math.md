@@ -4,7 +4,7 @@
 Mathematics is the study of topics such as quantity (numbers), structure, space, and change.
 
 # US math education
-## Precalculus
+## Precalculus and Calculus
 ### Topics
 - Sets
 - Real numbers
