@@ -1,4 +1,9 @@
-Notes for video: http://www.youtube.com/watch?v=qPg7m90WXMo
+[TOC]
+
+# Overview
+- Trash directory: `~/.local/share/vifm/Trash`
+
+# Notes for video: http://www.youtube.com/watch?v=qPg7m90WXMo
 
 
 1. basic hotkeys
@@ -86,7 +91,7 @@ nmap ; :
 " quicker quitting program; it will resume where you left off
 nmap q ZZ
 
-" set color theme	
+" set color theme
 " https://github.com/jubalh/vifm-colors
 colorscheme solarized-dark
 
