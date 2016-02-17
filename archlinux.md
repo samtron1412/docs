@@ -465,33 +465,13 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [clonezilla](http://clonezilla.org/clonezilla-live-doc.php)
 
 ## 5. Graphical User Interface
-### Window manager
-i3
+### Display drivers
 
-### File Manager
-[mc](https://github.com/MidnightCommander/mc)
-[vifm](https://github.com/vifm/vifm)
-[ranger](https://github.com/hut/ranger)
+### Display server
 
-### Terminal
-[Terminology](http://enlightenment.org/p.php?p=about/terminology)
-[black-screen](https://github.com/black-screen/black-screen)
-xterm
+### Window managers
 
-### Text editor
-vim
-
-### Image viewer
-feh
-fbv
-
-### Media player
-VLC
-
-### Web browser
-Chrome
-Firefox
-Chromium
+### Display manager
 
 ## 6. Power management
 
@@ -513,7 +493,138 @@ Chromium
 
 ## 13. Console improvements
 
-## [List applications](https://wiki.archlinux.org/index.php/List_of_applications)
+# [List applications](https://wiki.archlinux.org/index.php/List_of_applications)
+## 1. Internet
+### 1.1 Network managers
+
+### 1.2 Web browsers
+[Chromium](https://wiki.archlinux.org/index.php/Chromium)
+[Firefox](https://wiki.archlinux.org/index.php/Firefox)
+[w3m](https://en.wikipedia.org/wiki/W3m)
+
+### 1.3 File sharing
+
+### 1.4 Communication
+
+### 1.5 New, RSS and blogs
+
+### 1.6 Pastebin clients
+
+### 1.7 Bitcoin
+
+### 1.8 Surveying
+
+## 2. Multimedia
+### 2.1 Codecs
+
+### 2.2 Image
+#### 2.2.1 Image viewer
+[feh](https://wiki.archlinux.org/index.php/Feh)
+
+### 2.3 Audio
+#### 2.3.1 Audio players
+[mpd](https://wiki.archlinux.org/index.php/Music_Player_Daemon)
+[mopidy](https://github.com/mopidy/mopidy)
+[cmus](https://wiki.archlinux.org/index.php/Cmus)
+
+### 2.4 Mobile phone managers
+
+### 2.5 Video
+#### 2.5.1 Video players
+[mpv](https://wiki.archlinux.org/index.php/Mpv)
+[mplayer](https://wiki.archlinux.org/index.php/MPlayer)
+[VLC](https://en.wikipedia.org/wiki/VLC_media_player)
+
+### 2.6 Optical media burning
+
+### 2.7 Podcast
+
+### 2.8 Collection managers
+
+### 2.9 Lyrics fetchers
+
+## 3. Utilities
+### 3.1 Partitioning tools
+
+### 3.2 Mount tools
+
+### 3.3 Basic shell commands
+
+### 3.4 Integrated Development Environment
+
+### 3.5 Build automation
+
+### 3.6 Terminal emulators
+[urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+[terminator](https://wiki.archlinux.org/index.php/Terminator)
+[black-screen](https://github.com/black-screen/black-screen)
+
+### 3.7 Files
+#### 3.7.1 File Manager
+[vifm](https://github.com/vifm/vifm)
+[ranger](https://github.com/hut/ranger)
+
+### 3.8 Disk cleaning
+
+### 3.9 Disk usage display
+
+### 3.10 Clock synchronization
+
+### 3.11 System monitoring
+
+### 3.12 System information viewers
+
+### 3.13 Keyboard layout switchers
+
+### 3.14 Power management
+
+### 3.15 Clipboard managers
+
+### 3.16 Wallpaper setters
+
+### 3.17 Package management
+
+### 3.18 Input method editor
+
+### 3.19 Trash management
+
+### 3.20 File synchronization
+
+### 3.21 Finders
+
+## 4. Documents and texts
+### 4.7 Text editor
+[vim](https://wiki.archlinux.org/index.php/Vim)
+[neovim](https://wiki.archlinux.org/index.php/Neovim)
+[gvim](https://wiki.archlinux.org/index.php/GVi)
+[emacs](https://wiki.archlinux.org/index.php/Emacs)
+
+## 5. Security
+
+## 6. Science
+
+## 7. Work environment
+### 7.1 Bootsplash
+
+### 7.2 Command shells
+
+### 7.3 Terminal multiplexers
+
+### 7.4 Desktop environment
+
+### 7.5 Window managers
+[i3](https://wiki.archlinux.org/index.php/I3)
+[dwm](https://wiki.archlinux.org/index.php/Dwm)
+[awesome](https://wiki.archlinux.org/index.php/Awesome)
+[xmonad](https://wiki.archlinux.org/index.php/Xmonad)
+
+### 7.6 Window tilers
+
+### 7.7 Virtual desktop pagers
+
+### 7.8 Support applications
+
+### 7.9 Accessibility - Speech recognition
 
 # Advanced
 ## Access control
@@ -522,12 +633,11 @@ Chromium
 ### LDAP
 
 # Troubleshooting
-## Restore bootloader after install Windows
+## Merge two partitions
+
+## Reinstall bootloader after install Windows
 - Use live CD mount root partition under `/mnt` and run:
 	+ `syslinux-install_update -iamc /mnt`
--
-
-
 
 # Contribution
 ## ArchWiki
