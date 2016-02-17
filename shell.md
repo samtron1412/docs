@@ -31,9 +31,17 @@ We can use shell to **programming**.
 ## BSD
 
 # Terminology
-## Interactive vs non-Interactive
+## sh-like shell system - Interactive vs non-Interactive and Login vs non-Login
+> Why need more type of shell like this? Because some configurations only need load once, e.g. system configurations, some configuration need load every invoke a new shell, e.g. user configurations, and some shell is interactive with user, some only are used for scripting.
 
-## Login vs non-Login
+We can have 4 different types of shells:
+
+1. Interactive login shells,
+2. Non-interactive login shells,
+3. Interactive non-login shells,
+4. Non-interactive non-login shells
+
+
 
 # Shell configuration files
 `/etc/profile`: the system wide initialization file, executed for *login shells*
