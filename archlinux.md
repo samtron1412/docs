@@ -6,7 +6,7 @@ Arch Linux, a lightweight and flexible Linux distribution that tries to Keep It 
 Arch Linux is an independently developed, **i686/x86-64** general purpose GNU/Linux distribution versatile enough to suit any role. Development focuses on **simplicity**, **minimalism**, and **code elegance**. Arch is installed as a minimal base system, configured by the user upon which their own ideal environment is assembled by installing only **what is required or desired for their unique purposes**. GUI configuration utilities are not officially provided, and most system **configuration is performed from the shell by editing simple text files**.
 
 ## The Arch Way
-The acronym KISS for Keep It Simple, Stupid.
+The acronym KISS for **Keep It Simple, Stupid**.
 
 ### Simplicity
 Arch Linux defines simplicity as **without unnecessary additions, modifications, or complications**, and provides a **lightweight UNIX-like base structure** that allows an individual user to shape the system according to their own needs.
@@ -41,8 +41,6 @@ Arch Linux uses its own [Pacman](https://wiki.archlinux.org/index.php/Pacman) pa
 Currently we have [official packages](https://www.archlinux.org/packages/) optimized for the i686 and x86-64 architectures. We complement our official package sets with a [community-operated package repository](https://aur.archlinux.org/), which contains many thousands of user-maintained **PKGBUILD** scripts for compiling installable packages from source using the **makepkg** application. It is also possible for users to easily build and maintain their own custom repositories..
 
 Pacman is coded in C and designed from the ground up to be lightweight, simple and very fast. Arch also provides the [Arch Build System](https://wiki.archlinux.org/index.php/Arch_Build_System), a ports-like system to make it easy to build and install packages from source, which can also be synchronized with one command. You can even rebuild your entire system with one command.
-
-
 
 # Community
 - [wiki](https://wiki.archlinux.org/)
@@ -144,6 +142,7 @@ Partiton scheme:
 	- `/` : root directory 60-120 GB
 	- `/boot`: 200 - 300 MB
 	- `/home` : varies
+	- `swap`: virtual memory
 
 Use **lsblk** to list the hard disks
 
@@ -157,8 +156,8 @@ Use **lsblk** to list the hard disks
 
 ### Mount the partitions
 - Dislay current layout of disk: `# lsblk -f`
-- Mount `/root` to `/mnt`: `# mount /dev/sda1 /mnt`
-- Mount `/home`, `/var`, `/boot`:
+- Mount `/` to `/mnt`: `# mount /dev/sda1 /mnt`
+- Mount `/home`, `/boot`:
 		# mkdir /mnt/home
 		# mount /dev/sda2 /mnt/home
 
@@ -196,8 +195,6 @@ Sort mirrors list follow [status of mirrors](https://wiki.archlinux.org/index.ph
 ### Westminster, CA mirror
 http://mirrors.ocf.berkeley.edu/archlinux
 http://mirrors.kernel.org/archlinux
-
-
 
 ## Install the base system
 	# pacstrap -i /mnt base base-devel
@@ -241,7 +238,7 @@ Export substituting your chosen locale:
 	# vi /etc/vconsole.conf
 
 KEYMAP=us
-FONT=Lat2-Terminus16
+FONT=ter-116n
 
 ### time zone:
 	# ln -s /usr/share/zoneinfo/<Zone>/<SubZone> /etc/localtime
@@ -358,29 +355,30 @@ Users and groups are a mechanism for **access control**.
 - Del a existing group: `$ groupdel [group]`
 
 ### Privilege escalation
-### Service management:
-	+ list all units of system: $ systemctl
-	+ list all failed units: $ systemctl --failed
-	Activate a unit immediately:
-		# systemctl start unit
-	Deactivate a unit immediately:
-		# systemctl stop unit
-	Restart a unit:
-		# systemctl restart unit
-	Ask a unit to reload its configuration:
-		# systemctl reload unit
-	Show the status of a unit, including whether it is running or not:
-		$ systemctl status unit
-	Check whether a unit is already enabled or not:
-		$ systemctl is-enabled unit
-	Enable a unit to be started on bootup:
-		# systemctl enable unit
-	Disable a unit to not start during bootup:
-		# systemctl disable unit
-	Show the manual page associated with a unit (this has to be supported by the unit file):
-		$ systemctl help unit
-	Reload systemd, scanning for new or changed units:
-		# systemctl daemon-reload
+
+### Service management
++ list all units of system: $ systemctl
++ list all failed units: $ systemctl --failed
+Activate a unit immediately:
+	# systemctl start unit
+Deactivate a unit immediately:
+	# systemctl stop unit
+Restart a unit:
+	# systemctl restart unit
+Ask a unit to reload its configuration:
+	# systemctl reload unit
+Show the status of a unit, including whether it is running or not:
+	$ systemctl status unit
+Check whether a unit is already enabled or not:
+	$ systemctl is-enabled unit
+Enable a unit to be started on bootup:
+	# systemctl enable unit
+Disable a unit to not start during bootup:
+	# systemctl disable unit
+Show the manual page associated with a unit (this has to be supported by the unit file):
+	$ systemctl help unit
+Reload systemd, scanning for new or changed units:
+	# systemctl daemon-reload
 
 - Power management:
 	Shut down and reboot the system:
@@ -401,21 +399,21 @@ Users and groups are a mechanism for **access control**.
 		$ speaker-test -c 2
 
 - Fonts:
-	+ # pacman -S ttf-dejavu
+	+ `# pacman -S ttf-dejavu`
 
 - Display:
 	+ To install the base Xorg packages:
-		# pacman -S xorg-server xorg-server-utils xorg-xinit
+		`# pacman -S xorg-server xorg-server-utils xorg-xinit`
 	+ Install mesa for 3D support:
-		# pacman -S mesa
+		`# pacman -S mesa`
 	+ If you do not know which video chipset is available on your machine, run:
-		$ lspci | grep VGA
+		`$ lspci | grep VGA`
 	+ For a complete list of open-source video drivers, search the package database:
-		$ pacman -Ss xf86-video | less
+		`$ pacman -Ss xf86-video | less`
 	+ The vesa driver is a generic mode-setting driver that will work with almost every GPU, but will not provide any 2D or 3D acceleration. If a better driver cannot be found or fails to load, Xorg will fall back to vesa. To install it:
-		# pacman -S xf86-video-vesa
+		`# pacman -S xf86-video-vesa`
 	+ Laptop users (or users with a tactile screen) will need the xf86-input-synaptics package for the touchpad/touchscreen to work:
-		# pacman -S xf86-input-synaptics
+		`# pacman -S xf86-input-synaptics`
 	+ Test X (optional):
 		= Install the default environment:
 			# pacman -S xorg-twm xorg-xclock xterm
