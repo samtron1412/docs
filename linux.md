@@ -206,11 +206,10 @@ Striped mapping
 ### View current LVM information
 `pvdisplay`, `vgdisplay`, `lvdisplay`
 
-
-
-
-
 # Tips and Tricks
+## Optimize Linux
+- [cache problem](https://rudd-o.com/linux-and-free-software/tales-from-responsivenessland-why-linux-feels-slow-and-how-to-fix-that)
+
 ## Search terminal history commands
 `Ctrl+R` and type something you remember about command.
 
