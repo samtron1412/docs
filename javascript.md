@@ -178,5 +178,21 @@ $('#employeeTable').DataTable({
 Please visit here for full options: https://datatables.net/reference/option/
 
 # [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine)
-A JavaScript engine is a virtual machine which interprets and executes JavaScript. Although there are several uses for a JavaScript engine, it is most commonly used in web browsers
+A JavaScript engine is a virtual machine which interprets and executes JavaScript (it's JavaScript interpreter). Although there are several uses for a JavaScript engine, it is most commonly used in web browsers
 
+## Active projects
+- [Rhino](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)): managed by the Mozilla Foundation, open source, developed entirely in Java
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)): open source, developed by Google in Denmark, part of Google Chrome
+- [JavaScriptCore](): open source, marketed as Nitro and developed by Alpple for Safari
+- [Chakra](): for Microsoft Edge
+
+# Node.js
+Node.js is an **open source**, cross-platform runtime environment for developing server-side Web applications. The runtime environment interprets JavaScript using Google's **V8** JavaScript engine.
+
+Node.js has an **event-driven architecture** capable of **asynchronous I/O**. These design choices are meant to optimize **throughput** and **scalability** in Web applications with many input/output operations, as well as for real-time Web applications.
+
+## npm - node package manager
+npm is the default package manager for the JavaScript runtime environment Node.js.
+
+## Bower
+Bower is a package management system for **client-side programming** on the World Wide Web. It depend on Node.js and npm.
