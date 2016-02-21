@@ -646,6 +646,10 @@ Back up your system before big upgrade. Use to recover your system when it had t
 ## Software packaging
 
 # Tips & Tricks
+## Benchmarking
+- [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
+- [Data storage devices](https://wiki.archlinux.org/index.php/Benchmarking/Data_storage_devices)
+
 ## Print
 - CUPS
 
