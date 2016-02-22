@@ -55,3 +55,27 @@ finding tangent lines to curves
 
 # Integral calculus
 computing areas under curves
+
+# Cartesian coordinate
+A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates, which are the signed distances to the point from two fixed perpendicular directed lines, measured in the same unit of length.
+
+# Homogeneous coordinate
+Homogeneous coordinates are a system of coordinates used iin projective geometry, as Cartesian coordinates are used in Euclidean geometry.
+
+![homogeneous coordinate](../graphic/math/homogeneous-coordinate.svg)
+
+# Unit circle
+A unit circle is a circle with a radius of one. In trigonometry, the unit circle is the circle of radius one centered at the origin (0, 0) in the Cartesian coordinate system in the Euclidean plane.
+
+![Unit circle with all trigonometric function values](../graphic/math/unit-circle-all-trig-values.svg)
+
+![Unit circle with common angles](../graphic/math/unit-circle-common-angles.svg)
+
+# Hypotenuse
+In geometry, a hypotenuse is the longest side of a right-angled triangle, the side opposite of the right angle.
+
+# Trigonometric identities
+Trigonometric identities are equalities that involve trigonometric functions and are true for every single value of the occurring variables where both sides of the equality are defined.
+
+# Asymptote
+An asymptote of a curve is a line such that the distance between the curve and the line approaches zero as they tend to infinity.
