@@ -593,11 +593,52 @@ Back up your system before big upgrade. Use to recover your system when it had t
 ### 3.21 Finders
 
 ## 4. Documents and texts
-### 4.7 Text editor
-[vim](https://wiki.archlinux.org/index.php/Vim)
-[neovim](https://wiki.archlinux.org/index.php/Neovim)
-[gvim](https://wiki.archlinux.org/index.php/GVi)
-[emacs](https://wiki.archlinux.org/index.php/Emacs)
+### 4.1 Office suite
+[LibreOffice](https://www.libreoffice.org/)
+
+### 4.2 Documents markup languages
+- [Markdown](http://daringfireball.net/projects/markdown)
+- [asciidoc](http://asciidoc.org/): used by Arch for generating pacman's man pages
+- [Pandoc](http://johnmacfarlane.net/pandoc): converting one markup file into another
+- [txt2tags](https://en.wikipedia.org/wiki/Txt2tags)
+
+### 4.3 Scientific documents
+- [TeX, LaTeX and friends](https://wiki.archlinux.org/index.php/TeX_Live)
+- [TeXmaker](https://en.wikipedia.org/wiki/Texmaker)
+- [TeXstudio](https://en.wikipedia.org/wiki/TeXstudio)
+- [Vimtex](https://wiki.archlinux.org/index.php/Vim)
+- [LyX](https://en.wikipedia.org/wiki/LyX)
+- [TeXmacs](https://en.wikipedia.org/wiki/GNU_TeXmacs)
+- [Zotero](https://www.zotero.org/)
+
+### 4.4 Text editor
+- [e3](http://sites.google.com/site/e3editor/): written in assembly
+- [vi](https://wiki.archlinux.org/index.php/Vi)
+- [vim](https://wiki.archlinux.org/index.php/Vim)
+- [neovim](https://wiki.archlinux.org/index.php/Neovim)
+- [gvim](https://wiki.archlinux.org/index.php/GVi)
+- [emacs](https://wiki.archlinux.org/index.php/Emacs)
+- [emacs-nox](https://wiki.archlinux.org/index.php/Emacs)
+- [zile](https://en.wikipedia.org/wiki/Zile_(editor))
+
+### 4.5 Readers and Viewers
+#### E-book applications
+- [Calibre](https://en.wikipedia.org/wiki/Calibre_(software))
+- [FBreader](https://en.wikipedia.org/wiki/FBReader)
+
+#### PDF and DjVu
+- [zathura](https://en.wikipedia.org/wiki/Zathura_(document_viewer))
+- [evince](https://en.wikipedia.org/wiki/Evince)
+- [Foxit Reader](https://aur.archlinux.org/packages/foxitreader/)
+
+#### [Terminal pagers](https://en.wikipedia.org/wiki/Terminal_pager)
+- [more](https://en.wikipedia.org/wiki/More_(command))
+- [less](https://wiki.archlinux.org/index.php/Core_utilities#less)
+- [most](https://en.wikipedia.org/wiki/Most_(Unix))
+- [vimpager](https://www.archlinux.org/packages/?name=vimpager)
+
+#### CHM
+- [xchm](https://en.wikipedia.org/wiki/xCHM)
 
 ## 5. Security
 
