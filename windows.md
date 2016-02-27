@@ -16,6 +16,9 @@ The apps themselves choose whether to save to the Local, LocalLow, or Roaming fo
 
 
 # Tips and Tricks
+## Big AppData
+- Check Apple backup (iPhone, iPad, etc)
+
 ## Shortcut
 ### Move windows
 These are the killer shortcuts for manipulating the active window:
