@@ -86,3 +86,17 @@ f(x) = 6x + 7 if x = 0
 f(x) = 7x if x >0
 
 A function with definition as above is a piecewise function.
+
+# Arithmetic
+the branch of mathematics dealing with the properties and manipulation of numbers.
+
+# Number
+an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations and for showing order in a series or for identification.
+
+- Natural numbers: 1,2,3,4,5,6,...
+- Whole numbers = natural numbers + zero = 0,1,2,3,4,5,6,...
+- Integers: negative natural numbers + whole numbers = ...,-3,-2,-1,0,1,2,3,...
+- Rational numbers: ratio of integers
+- Irrational numbers: the ones can't be written as fractions
+- Real numbers: Irrational + Rational
+- Imaginary numbers (complex numbers)
