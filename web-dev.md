@@ -13,6 +13,10 @@
 
 
 # Tutorial
+## Font
+- [Google Fonts](https://www.google.com/fonts/): Open Sans
+- [Font Awesome](https://github.com/FortAwesome/Font-Awesome): useful icons
+
 ## [Favicon](https://en.wikipedia.org/wiki/Favicon)
 	<link rel="shortcut icon" href="http://example.com/myicon.ico" />
 	<link rel="icon" type="image/png" href="http://example.com/image.png" />
