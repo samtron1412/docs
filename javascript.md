@@ -191,15 +191,22 @@ Node.js is an **open source**, cross-platform runtime environment for developing
 
 Node.js has an **event-driven architecture** capable of **asynchronous I/O**. These design choices are meant to optimize **throughput** and **scalability** in Web applications with many input/output operations, as well as for real-time Web applications.
 
-## npm - node package manager
+## Tutorials
+### Build a simple web server
+- http://blog.modulus.io/build-your-first-http-server-in-nodejs
+
+## Packages
+### npm - node package manager
 npm is the default package manager for the JavaScript runtime environment Node.js.
 
 - Install a package globally: `# npm install -g package-name`
 
-## Bower
+### Bower
 Bower is a package management system for **client-side programming** on the World Wide Web. It depend on Node.js and npm.
 
-## http-server
+#### [API](http://bower.io/docs/api/)
+
+### http-server
 http-server is a simple command-line http server.
 
 - Install globally: `# npm install -g http-server`
