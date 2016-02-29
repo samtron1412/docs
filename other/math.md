@@ -1,7 +1,28 @@
 [TOC]
 
 # Overview
-Mathematics is the study of topics such as quantity (numbers), structure, space, and change.
+Mathematics is the language of universe and the natural basic science.
+
+## Definitions of Mathematics
+### Normal definitions
+- Mathematics is the study of topics such as quantity (numbers), structure, space, and change.
+
+### Greater abstraction - Philosophical definitions
+- Mathematics is the science that draws necessary conclusions.
+
+## [Mathematical Philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mathematics)
+
+## Notation, language, and rigor
+
+# Fields of Mathematics
+## Foundations and philosophy
+
+## Pure mathematics
+
+## Applied mathematics
+
+# Mathematical awards
+- Arguably the most prestigious award in mathematics is the Fields Medal, established in 1936 and awarded every four years (except around World War II) to as many as four individuals.
 
 # US math education
 ## Precalculus and Calculus
