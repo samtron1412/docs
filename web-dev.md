@@ -13,6 +13,10 @@
 
 
 # Tutorial
+## [Favicon](https://en.wikipedia.org/wiki/Favicon)
+	<link rel="shortcut icon" href="http://example.com/myicon.ico" />
+	<link rel="icon" type="image/png" href="http://example.com/image.png" />
+
 ## Setup mail server
 - [mail in the box](https://github.com/mail-in-a-box/mailinabox)
 - [set up windows mail server](http://inchoo.net/magento/installation-and-configuration-of-local-mail-server-for-windows-hmail-server/)
