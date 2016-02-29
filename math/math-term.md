@@ -79,3 +79,10 @@ Trigonometric identities are equalities that involve trigonometric functions and
 
 # Asymptote
 An asymptote of a curve is a line such that the distance between the curve and the line approaches zero as they tend to infinity.
+
+# Piecewise function
+f(x) = 5 if x < 0
+f(x) = 6x + 7 if x = 0
+f(x) = 7x if x >0
+
+A function with definition as above is a piecewise function.
