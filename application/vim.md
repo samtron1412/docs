@@ -1,14 +1,25 @@
 [TOC]
 
-# Overview
+# [Overview](https://en.wikipedia.org/wiki/Vim_(text_editor))
 ## History
 Initial release in November 1991.
 
 ## Help
 `:help` help facility built-in
-`vimtutor` : basic commands
+`vimtutor` : basic commands tutorials
 
 ## Features and improvements over vi
+### Customization
+Part of Vim's power is that it can be extensively customized.
+- Change basic interface
+- Define personalized key mappings
+- Abbreviations to automate sequences of keystrokes
+- Call internal or user defined functions
+
+Plugins available that will extend or add new functionality to Vim.
+- Vim's internal scripting language - vimscript (viml)
+- Lua, Perl, Python, Raccket, Ruby, and Tcl
+
 ### Search and replace
 - Change each "foo" to "bar" in the current line: `:s/foo/bar/g` and have confirm : `:s/foo/bar/gc`
 - Change each "foo" to "bar" in all the lines: `:%s/foo/bar/g` and have confirm: `:%s/foo/bar/gc`
@@ -17,6 +28,18 @@ Initial release in November 1991.
 ### Copy and paste
 - Config at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay with *pgvy*, *p* to paste and *gv* to re-select what was originally selected, *y* to copy it again.
 - Paste multiple copy: *<number>p* e.g: *30p* to paste 30 time of copy text.
+
+### Others
+- Completion
+- Comparison and merging of files - vimdiff
+- Extended regular expressions
+- Graphic user interface - gvim
+- Spell checking
+- Folding
+- Tabbed windows
+- Unicode and other multilanguage support
+- Syntax highlight
+- etc.
 
 ## [Documentation](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
 [summary](http://vimdoc.sourceforge.net/)
@@ -46,6 +69,11 @@ http://www.vim.org/docs.php
 `:set list`: to show linefeed
 
 # Tuning Vim
+## Vim script
+Vim script (viml) is the scripting language built into Vim. Based on the ex editor language of the original vi editor.
+
+Vim script files are stored in plain text format and the file name extension is .vim.
+
 ## Plug-in manager
 - [pathogen](http://www.vim.org/scripts/script.php?script_id=2332)
 - [Vundle](https://github.com/neovim/neovim)
@@ -87,3 +115,7 @@ set wrap
 ```
 
 # [NeoVim](https://github.com/neovim/neovim) - A new generation of Vim
+Neovim is a refactor of Vim, that strives to be a superset of Vim.
+- Neovim shares the same configuration syntax with Vim.
+- Neovim can execute plugins asynchronously.
+- Neovim's plugins can also be written in any language.
