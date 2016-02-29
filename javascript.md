@@ -194,5 +194,14 @@ Node.js has an **event-driven architecture** capable of **asynchronous I/O**. Th
 ## npm - node package manager
 npm is the default package manager for the JavaScript runtime environment Node.js.
 
+- Install a package globally: `# npm install -g package-name`
+
 ## Bower
 Bower is a package management system for **client-side programming** on the World Wide Web. It depend on Node.js and npm.
+
+## http-server
+http-server is a simple command-line http server.
+
+- Install globally: `# npm install -g http-server`
+
+Usage: `$ node /bin/http-server`
