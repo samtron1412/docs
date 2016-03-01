@@ -80,6 +80,21 @@ Trigonometric identities are equalities that involve trigonometric functions and
 # Asymptote
 An asymptote of a curve is a line such that the distance between the curve and the line approaches zero as they tend to infinity.
 
+# Function
+In mathematics, a function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output.
+
+## Domain
+set of inputs
+
+## Image (Range)
+set of outputs
+
+## Graph
+set of all input-output pairs
+
+## Zero (Root)
+is a x value such that: f(x) = 0
+
 # Piecewise function
 f(x) = 5 if x < 0
 f(x) = 6x + 7 if x = 0
@@ -100,3 +115,18 @@ an arithmetical value, expressed by a word, symbol, or figure, representing a pa
 - Irrational numbers: the ones can't be written as fractions
 - Real numbers: Irrational + Rational
 - Imaginary numbers (complex numbers)
+
+# Triangle inequality
+In mathematics, the triangle inequality states that for any triangle, the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side.
+
+In Euclidean geometry and some other geometries, the triangle inequality is a theorem about distances, and it is written using vectors and vector lengths (**norms**):
+
+||x+y|| <= ||x|| + ||y||
+
+Absolute value: |x+y| <= |x| + |y|
+
+# Interval
+- Closed: [a,b]
+- Open: (a,b)
+- Half-open: [a,b) or (a,b]
+
