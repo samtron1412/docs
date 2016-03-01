@@ -95,7 +95,7 @@ set of all input-output pairs
 ## Zero (Root)
 is a x value such that: f(x) = 0
 
-# Piecewise function
+## Piecewise function
 f(x) = 5 if x < 0
 f(x) = 6x + 7 if x = 0
 f(x) = 7x if x >0
