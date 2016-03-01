@@ -607,8 +607,6 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [TeXmaker](https://en.wikipedia.org/wiki/Texmaker)
 - [TeXstudio](https://en.wikipedia.org/wiki/TeXstudio)
 - [Vimtex](https://wiki.archlinux.org/index.php/Vim)
-- [LyX](https://en.wikipedia.org/wiki/LyX)
-- [TeXmacs](https://en.wikipedia.org/wiki/GNU_TeXmacs)
 - [Zotero](https://www.zotero.org/)
 
 ### 4.4 Text editor
