@@ -84,6 +84,7 @@ A HTTP library, written in Python, for human beings.
 ## Structure of a script
 
 ```python
+#!/usr/bin/python
 import sth
 
 def myfunction():
