@@ -130,3 +130,20 @@ Absolute value: |x+y| <= |x| + |y|
 - Open: (a,b)
 - Half-open: [a,b) or (a,b]
 
+
+# Difference quotient
+Difference quotient is slope of secant line.
+Formula: [f(x) - f(a)]/(x - a)
+
+# Derivative
+- Rates of change
+- Slope of tangent line = limit of slopes of secant line
+- Limit of a difference quotient.
+	+ f'(a) = limit when x -> a of [f(x) - f(a)]/(x - a)
+	+ f'(x) = limit when h -> 0 of [f(x+h) - f(x)]/h
+
+# Differentiation
+Process of computing derivative.
+
+# Tangent line
+Tangent line at P(a,f(a)) is the line through P with slope f'(a).
