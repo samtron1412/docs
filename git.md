@@ -208,12 +208,33 @@ Template
 
 `$ git help <command>`
 
-## Gitignore
-- Ignore all directory and it's files with name: `directory_name`
-- Ignore only directory at root level: `/directory_name`
+## Ignoring files
+- [Joe command line tool](https://karan.github.io/joe/)
+- [Creating ignore files online](https://www.gitignore.io/)
+- [.gitignore templates](https://github.com/github/gitignore)
 
-### Global gitignore
-```
+A gitignore file specifies untracked files that Git should ignore. The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use `git rm --cached <file>`.
+
+Each line in a gitignore file specifies a **pattern**. When deciding whether to ignore a path, Git checks gitignore patterns from multiple sources, with the following order of precedence, from highest to lowest (within one level of precedence, the last matching pattern decides the outcome):
+- Patterns read from the command line for those commands that support them.
+- Patterns read from a `.gitignore` file in the same directory as the path, or in any parent directory, with patterns in the higher level files (up to the top level of the work tree) being overridden by those in lower level files down to the directory containing the file. These patterns match relative to the location of the `.gitignore` file. A project normally includes such `.gitignore` files in its repository, containing patterns for files generated as part of the project build.
+- Patterns read from `$GIT_DIR/info/exclude`.
+- Patterns read from the file specified by the configuration variable `core.excludesFile`.
+
+### Repository level: .gitignore files
+Patterns which should be version-controlled and distributed to other repositories via clone (i.e., files that all developers will want to ignore). **Communal ignoring of repository**.
+
+### Repository level: $GIT_DIR/info/exclude file
+Patterns which are specific to a particular repository but which do not **need/want** to be shared with other related repositories (e.g., auxiliary files that live inside the repository but are specific to one user's workflow). **Personal ignoring of repository**.
+
+### User level: ~/.gitconfig - core.excludesFile = <path-to-the-ignore-file>
+**User ignoring**
+
+**core.excludesFile** default value is `$XDG_CONFIG_HOME/git/ignore`. If `$XDG_CONFIG_HOME` is either not set or empty, `$HOME/.config/git/ignore` is used instead.
+
+You can create a new file and add to `~/.gitconfig` if you like: `core.excludesFile = <path-to-the-ignore-file>`
+
+```ignore
 #compiled source #
 ###################
 *.com
@@ -253,12 +274,9 @@ ehthumbs.db
 Thumbs.db
 ```
 
-[Joe command line tool]https://karan.github.io/joe/
-
-https://www.gitignore.io/
-
-https://github.com/github/gitignore
-
+### Pattern Format
+- Ignore all directory and it's files with name: `directory_name`
+- Ignore only directory at root level: `/directory_name`
 
 ## Basic
 cd to dir
@@ -837,6 +855,8 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 #### [Subgit](http://www.subgit.com/)
 
 # Git Internals
+
+# Reference
 
 # Tips and Tricks
 ## Show commit count
