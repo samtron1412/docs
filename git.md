@@ -30,9 +30,6 @@
 - Harder to learn, more concepts and more commands.
 - Longer and Unpredictable revision numbers: SHA-1 string
 
-
-
-
 ## Resources
 - [Documentation](http://git-scm.com/doc)
 	+ [Reference Manual](http://git-scm.com/docs)
@@ -42,9 +39,8 @@
 - [Blog](http://git-scm.com/blog)
 - [Community](http://git-scm.com/community)
 
-
 # Installation
-[Windows - msysgit](http://git-scm.com/download/win)
+- [Download](https://git-scm.com/downloads)
 
 # Customizing Git
 ## Configuration
@@ -138,8 +134,6 @@ The best way to automatically configure your repository's line endings is to fir
 
 		$ git commit -m "Normalize all the line endings"
 
-
-
 ### Git Aliases
 	$ git config --global alias.co checkout
 	$ git config --global alias.br branch
@@ -206,18 +200,9 @@ Template
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 ```
 
-
-
-
-
-
-
 ## Git Attributes
 
-
 ## Git Hooks
-
-
 
 # [Git tutorial](https://www.atlassian.com/git/tutorial)
 
@@ -851,11 +836,7 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 #### [Subgit](http://www.subgit.com/)
 
-
-
-
 # Git Internals
-
 
 # Tips and Tricks
 ## Show commit count
@@ -885,7 +866,7 @@ and if you want to track the changes again use this command:
 list all file is assume unchanged:
 
 	git ls-files -v | grep '^[[:lower:]]'
-	git ls-files -v|grep '^h'
+	git ls-files -v | grep '^h'
 	git ls-files -v | grep ^[a-z]
 	git ls-files -v | grep -e "^[a-z]"
 
@@ -1002,7 +983,6 @@ http://stevelorek.com/how-to-shrink-a-git-repository.html
 # Troubleshoot
 ## SSL cert self signed
 config project do not verify cert: `git config http.sslVerify false`
-
 
 # [10 things I hate about Git](http://stevebennett.me/2012/02/24/10-things-i-hate-about-git/)
 - https://www.reddit.com/r/programming/comments/xpitj/10_things_i_hate_about_git/
