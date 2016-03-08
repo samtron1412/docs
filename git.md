@@ -874,7 +874,7 @@ http://stackoverflow.com/questions/4024095/git-push-a-commit-in-two-branches
 http://www.anexusit.com/blog/git-how-take-single-commit-one-branch-and-apply-it-another
 
 
-## Keep file in a Git repo, but don't track changes
+## Keeping tracked files in a Git repository, but don't track changes
 First change the file you do not want to be tracked and use the following command:
 
 	git update-index --assume-unchanged FILE_NAME
