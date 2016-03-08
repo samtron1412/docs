@@ -27,7 +27,7 @@
 - [Quora](https://www.quora.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
-# Deploying
+# Deployment
 - [Continuous Integration, Continuous Deployment and Continuous Delivery](http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
 
 ## Continuous Integration
