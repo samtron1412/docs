@@ -533,6 +533,7 @@ Back up your system before big upgrade. Use to recover your system when it had t
 #### 2.5.1 Video players
 [mpv](https://wiki.archlinux.org/index.php/Mpv)
 [mplayer](https://wiki.archlinux.org/index.php/MPlayer)
+[smplayer](https://en.wikipedia.org/wiki/SMPlayer)
 [VLC](https://en.wikipedia.org/wiki/VLC_media_player)
 
 ### 2.6 Optical media burning
