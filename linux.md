@@ -207,6 +207,29 @@ Striped mapping
 `pvdisplay`, `vgdisplay`, `lvdisplay`
 
 # Tips and Tricks
+## User's bin
+User's `bin` directory is a way to customize how the binary will run. Creating `~/bin` directory and create `shell script files` same name with the binary, set executable attribute for these files, change `$PATH=~/bin:$PATH`.
+
+```chromium
+#!/bin/sh -e
+# Avoid flash storing cookies and crap.
+# (Unfortunatly, some may depend on it, so I can't just link to /dev/null.
+# Clear on boot.)
+rm -rf ~/.macromedia
+
+# Enable privoxy.
+#http_proxy=http://localhost:8118
+#https_proxy=$http_proxy
+#export http_proxy
+#export https_proxy
+
+# While I like C collating at the shell, in some programs I prefer US collating
+# for bookmarks..
+LC_COLLATE=en_US.UTF-8
+PATH=/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin
+exec chromium --proxy-auto-detect  --disable-remote-fonts "$@"
+```
+
 ## Optimize Linux
 - [cache problem](https://rudd-o.com/linux-and-free-software/tales-from-responsivenessland-why-linux-feels-slow-and-how-to-fix-that)
 
