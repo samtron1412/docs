@@ -2,29 +2,30 @@
 
 # Overview
 
+# UNIX and UNIX-like
+- [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/index.html)
 
+## Linux
 
-# Type
-## Mobile
-### Open source
-- Ubuntu Touch
-- Firefox OS
-- 
+## BSD
+### OpenBSD
 
-## PC
-### UNIX
-#### Server
-##### Commercial
-- RHEL (Red Hat Enterprise Linux)
-- Oracle Linux
-- SLES (SUSE Linux Enterprise Server)
+### FreeBSD
 
-##### Free
-- [Debian]()
-	+ [Download](http://cdimage.debian.org/debian-cd/)
-	+ [Installation](http://www.brianlinkletter.com/installing-debian-linux-in-a-virtualbox-virtual-machine/)
-		* http://www.swiftsoftwaregroup.com/debian-wheezy-guest-windows-8-1-host-using-virtualbox/
-- CentOS
-- OpenSUSE
-- Ubuntu Server
-- 
+### NetBSD
+
+## System V
+
+## [Alternative OS](http://www.techradar.com/us/news/software/operating-systems/10-best-alternative-operating-systems-934484)
+### Plan 9 from Bell Labs
+- [hacker news discuss](https://news.ycombinator.com/item?id=447435)
+- [slide](http://www.slideshare.net/jserv/plan-9-not-only-a-better-unix)
+- [Wikipedia](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs)
+
+### KolibriOS
+
+### ReactOS
+
+# Microsoft Windows
+
+# Mac OS X
