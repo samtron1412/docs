@@ -11,3 +11,13 @@ A convention arose of using dotfile in the user's home directory to store per-us
 - Distributed backups: exploring new things without fear + restoring when disaster happen.
 - History: improving yourself, debug
 - Sharing: learn from each other + making life more meaningful
+
+# How can we manage the dotfiles?
+- Most likely, as a developer, you will keep using and improving your dotfiles for your entire career. Your dotfiles will most likely be the *longest project you ever work on*. For this reason, it is worthwhile to organize your dotfiles project in a disciplined manner for **maintainability** and **extensibility**.
+
+## Organizational Approaches
+- Having your entire home directory under VCS (and ignore/exclude files which you don't want to commit)
+- Keeping your configuaration files in a seperate directory and symlink them into place. This approache is vastly superior for sevveral reasons:
+	+ There is no possibility of accidentally deleting your files. With your entire home directory under VCS, running something like a `git clean` could wipe out everything in your home directory that is not tracked by your VCS.
+	+ It is possible to track configuration files that belong somewhere other than `$HOME`.
+	+ Installing dotfiles on new machines is easier. All that is required is cloning your dotfiles followed by linking files. Keepping the entire home directory under VCS complicates installation.
