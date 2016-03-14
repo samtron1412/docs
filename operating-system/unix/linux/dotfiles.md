@@ -21,3 +21,11 @@ A convention arose of using dotfile in the user's home directory to store per-us
 	+ There is no possibility of accidentally deleting your files. With your entire home directory under VCS, running something like a `git clean` could wipe out everything in your home directory that is not tracked by your VCS.
 	+ It is possible to track configuration files that belong somewhere other than `$HOME`.
 	+ Installing dotfiles on new machines is easier. All that is required is cloning your dotfiles followed by linking files. Keepping the entire home directory under VCS complicates installation.
+
+## Process
+1. Create a new folder to store your dotfiles (e.g. `~/dotfiles`).
+2. Copy everything to it. You should copy to another places to back it up.
+3. Create symlinks to new place files replaced for dotfiles in `$HOME`.
+4. Put `~/dotfiles` to VCS.
+5. Write install/bootstrap file to install dotfiles on new systems.
+
