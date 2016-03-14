@@ -63,3 +63,9 @@ When managing dotfiles on multiple machines, the majority of your configuration 
 		source $LOCALFILE
 	endif
 
+## Miscellaneous Tips
+### Path to dotfiles directory
+Having a persistent path to your dotfiles repository. This can be done by always keeping your dotfiles in a specific directory such as `~/.dotfiles`. You can create a symbolic link from `~/.dotfiles` to your dotfiles as a part of your installation process.
+
+### Tracking Custom Scripts
+Creating a `bin/` directory in dotfiles directory for your shell scripts, link `~/bin` with that directory in installation process, and then add the following to your shell rc file `export PATH=~/bin:${PATH}`
