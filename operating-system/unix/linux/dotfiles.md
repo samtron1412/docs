@@ -29,3 +29,37 @@ A convention arose of using dotfile in the user's home directory to store per-us
 4. Put `~/dotfiles` to VCS.
 5. Write install/bootstrap file to install dotfiles on new systems.
 
+## Installation
+
+## Dependencies and Plugins
+- Using `git submodules`
+
+## Local Customization
+When managing dotfiles on multiple machines, the majority of your configuration will be the same between machines, and there will be some minor differences between installations.
+
+### Approaches
+- Using branches in your main dotfiles repository.
+- Having a main do[tfiles repository and a separate repository for local customizations that override defaults (e.g. [dotfiles-local](https://github.com/anishathalye/dotfiles-local) repository).
+	+ This has the additional advantage that your main dotfiles can be open sourced, and your local customizations can be kept private.
+	+ It's cleanest way.
+	+ This secondary repository should have branches for all your different machines (or groups of machines). You should have an install script for this repository as well.
+
+### Applying local customizations
+**Shell**: you can add the following to the end of your *shell rc* file to enable overriding
+
+	if [ -f ~/.zshrc-local ]; then
+		source ~/.zshrc-local
+	fi
+
+**Git**: you can add the following to the end of your `.gitconfig` file to enable overriding
+
+	[include]
+		path = ~/.gitconfigl-local
+
+**Vim**: you can add following to the end of your `.vimrc` file to enable overriding
+
+	let $LOCALFILE=expand("~/.vimrc-local")
+	if filereadable($LOCALFILE)
+		source $LOCALFILE
+	endif
+
