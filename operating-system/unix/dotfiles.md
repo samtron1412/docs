@@ -34,6 +34,20 @@ A convention arose of using dotfile in the user's home directory to store per-us
 ## Dependencies and Plugins
 - Using `git submodules`
 
+Adding new submodule to your repository:
+
+	git submodule add <git-repo-link> [<path>]
+	git submodule add https://github.com/robbyrussell/oh-my-zsh ~/.dotfiles/.oh-my-zsh
+	git submodule add https://github.com/robbyrussell/oh-my-zsh
+
+Initializing all your submodules and checking out the specified versions:
+
+	git submodule update --init --recursive
+
+Upgrading submodules from the upstream changes:
+
+	git submodule update --init --remote
+
 ## Local Customization
 When managing dotfiles on multiple machines, the majority of your configuration will be the same between machines, and there will be some minor differences between installations.
 
