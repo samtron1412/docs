@@ -3,6 +3,8 @@
 # Overview
 In computing, a shell is **a user interface** for access to an operating system's services. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation.
 
+The shell runs inside a terminal, virtual terminal or terminal emulator.
+
 We can use shell to **programming**.
 
 ![Design Shell](shell/Linux_kernel_and_gaming_input-output_latency.svg "Design shell")
