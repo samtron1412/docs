@@ -556,7 +556,7 @@ Back up your system before big upgrade. Use to recover your system when it had t
 ### 3.5 Build automation
 
 ### 3.6 Terminal emulators
-[urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+[rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
 [terminator](https://wiki.archlinux.org/index.php/Terminator)
 [black-screen](https://github.com/black-screen/black-screen)
 
