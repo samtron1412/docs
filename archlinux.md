@@ -544,6 +544,14 @@ Back up your system before big upgrade. Use to recover your system when it had t
 
 ### 2.9 Lyrics fetchers
 
+### 2.10 YouTube utilities
+- [youtube-dl](https://www.archlinux.org/packages/community/any/youtube-dl/)
+- [you-get](https://www.archlinux.org/packages/community/any/you-get/)
+- [clipgrab](https://www.archlinux.org/packages/community/x86_64/clipgrab/): a video downloader and converter
+- [youtube-viewer](https://www.archlinux.org/packages/community/any/youtube-viewer/): a command line utility for viewing YouTube
+- [mps-youtube](https://www.archlinux.org/packages/community/any/mps-youtube/): terminal base YouTube jukebox
+- [gtk-youtube-viewer(AUR)](https://aur.archlinux.org/packages/gtk-youtube-viewer)
+
 ## 3. Utilities
 ### 3.1 Partitioning tools
 
