@@ -7,6 +7,10 @@
 - [Row hammer effect paper](https://users.ece.cmu.edu/~yoonguk/papers/kim-isca14.pdf)
 - [Row hammer exploit - Google Project Zero](http://googleprojectzero.blogspot.ca/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)
 - [Row hammer code test](https://github.com/google/rowhammer-test)
+- [Row hammer JavaScript](http://arxiv.org/pdf/1507.06955v2.pdf)
+  + [Source code](https://github.com/IAIK/rowhammerjs)
+  + [Presentation](https://www.youtube.com/watch?v=LT54Jq_0kJk)
+- [Row hammer on DDR4](http://www.thirdio.com/rowhammer.pdf)
 
 # Process Virtual Memory (VM)
 Each process in a multi-tasking OS runs in its own *memory sandbox*. This sandbox is the virtual address space, which in 32-bit mode is always a 4GB block of memory addresses. These virtual addresses are mapped to physical memory by *page tables*, which are maintained by the operating system kernel and consulted by the processor (CPU with MMU - memory management unit).
