@@ -859,6 +859,11 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Reference
 
 # Tips and Tricks
+## Remove sensitive data - Removing files from a repository's history
+- [GitHub help](https://help.github.com/articles/removing-files-from-a-repository-s-history/)
+- [Remove sensitive data](https://help.github.com/articles/remove-sensitive-data/)
+- [BFG-repo-cleaner](https://github.com/rtyley/bfg-repo-cleaner)
+
 ## Show commit count
 `git rev-list HEAD --count`
 
