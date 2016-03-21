@@ -50,7 +50,7 @@ We can have 4 different types of shells:
 `~/.bash_profile`: the personal initialization file, executed for *login shells*. Run **bashrc** before run something else.
 `~/.bashrc`: the individual *per-interactive-shell* start up file
 
-# Basic
+# Basic shell script
 - The shell script need locate in the directories listed in the PATH variables if you want run the script by name.
 - If the script do not have execute permission we need user command like this to run script: `$ bash <path to script>`
 	+ After set execute permission for the script: `# chmod +x <path to script>`
@@ -71,3 +71,6 @@ printf '%s\n' "Hello, World!"
 ```
 
 - In shell script we should use `hash(#)` to comment, we should add a character after the hash to indicate the type of comment. E.g `#:` is comment of the shell script file, `#::` is comment of the function, `#:::` is comment for variables or code blocks.
+
+# Tips and Tricks
+## [Shell templates](https://github.com/RenatGilmanov/shell-script-template)
