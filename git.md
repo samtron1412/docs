@@ -743,6 +743,8 @@ The rest of this section describes how pull requests can be leveraged against di
 # GitHub
 ## [Emoticon on GitHub commit messages](https://scotch.io/bar-talk/emoji-icons-in-github-commit-messages)
 
+## [Github command line](https://github.com/defunkt/github-gem)
+
 
 # Git Tools
 ## Credential Storage
