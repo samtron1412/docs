@@ -80,3 +80,6 @@ B) Full stack developers have a grasp of what is going on in the field when the 
 Change link from `http://something.com/...` to `//something.com/...` it will automatically use right protocol to load resources.
 
 ## [Run PHP Applications under CGI with Apache on CentOS 6](https://www.linode.com/docs/websites/apache/run-php-applications-under-cgi-with-apache-on-centos-6)
+
+# Tips & Tricks
+## [Source code comment styling tips](http://www.hongkiat.com/blog/source-code-comment-styling-tips/)
