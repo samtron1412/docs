@@ -1,7 +1,7 @@
 [TOC]
 
 # Overview
-
+- [Thoughts on programming](https://github.com/Dobiasd/articles)
 
 # Principles of Good Programming
 
