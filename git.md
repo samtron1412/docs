@@ -31,6 +31,7 @@
 - Longer and Unpredictable revision numbers: SHA-1 string
 
 ## Resources
+- [Git magic](http://www-cs-students.stanford.edu/~blynn//gitmagic/)
 - [Documentation](http://git-scm.com/doc)
 	+ [Reference Manual](http://git-scm.com/docs)
 	+ [Cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
