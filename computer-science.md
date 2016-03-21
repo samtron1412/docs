@@ -80,3 +80,6 @@ Computer Science is the **scientific** and **practical** approach to **computati
 ### Databases and Information Retrieval
 
 ### Software engineering
+
+# Learning Curve
+- [Open Source Society University](https://github.com/open-source-society/computer-science)
