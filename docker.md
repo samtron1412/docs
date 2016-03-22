@@ -60,6 +60,8 @@ You can think of **containers as a process in a box**. The box contains everythi
 
 
 # Basic
+- [Docker cheatsheet and best practices](http://zeroturnaround.com/rebellabs/docker-commands-and-best-practices-cheat-sheet/)
+
 `# docker`: show help for docker commands
 
 `# docker version`: show version of docker client and server
