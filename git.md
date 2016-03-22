@@ -860,6 +860,9 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Reference
 
 # Tips and Tricks
+## List all commits for a specific file
+`git log --follow <filename>`
+
 ## Remove sensitive data - Removing files from a repository's history
 - [GitHub help](https://help.github.com/articles/removing-files-from-a-repository-s-history/)
 - [Remove sensitive data](https://help.github.com/articles/remove-sensitive-data/)
