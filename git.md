@@ -850,8 +850,6 @@ The `clean-git` script included in `svn-migration-scrits.jar` turns the SVN bran
 ###### svn: E200009: "Could not list all targets because some targets don't exist"
 https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches-are-not-created-in-git
 
-
-
 #### [Svn2Git](https://techbase.kde.org/Projects/MoveToGit/UsingSvn2Git)
 
 
