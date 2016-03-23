@@ -604,6 +604,9 @@ Back up your system before big upgrade. Use to recover your system when it had t
 
 ### 3.21 Finders
 
+### 3.22 Other
+- [lostfiles](https://github.com/graysky2/lostfiles)
+
 ## 4. Documents and texts
 ### 4.1 Office suite
 [LibreOffice](https://www.libreoffice.org/)
