@@ -32,11 +32,11 @@ By using containers, resources can be isolated, services restricted, and process
 ## How is this different from Virtual Machines?
 >Virtual Machines Architecture
 
-![Virtual Machines Architecture](docker/virtual_machine_arch.png)
+![Virtual Machines Architecture](../graphic/docker/virtual_machine_arch.png)
 
 >Docker Engine
 
-![Docker Engine](docker/docker_engine.png)
+![Docker Engine](../graphic/docker/docker_engine.png)
 
 ## Operating-system-level virtualization
 Operating-system-level virtualization is a server virtualization method where the kernel of an operating system allows for multiple isolated user space instances, instead of just one. Such instances (often called containers, virtualization engines, virtual private servers, or jails) may look and feel like a real server from the point of view of its owners and users.
@@ -61,6 +61,8 @@ You can think of **containers as a process in a box**. The box contains everythi
 
 # Basic
 - [Docker cheatsheet and best practices](http://zeroturnaround.com/rebellabs/docker-commands-and-best-practices-cheat-sheet/)
+
+![Docker cheat sheet](../graphic/docker/docker-cheat-sheet-rebellabs.png)
 
 `# docker`: show help for docker commands
 
