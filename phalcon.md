@@ -38,6 +38,8 @@ A wrapper for `$_GET, $_POST, ... of PHP`. Filter value for security._
 
 
 # Tutorial
+- [Phalcon Tutorials](https://github.com/phalcon/tutorial)
+
 ## Configure httpd.conf and .htaccess
 **httpd.conf**
 
@@ -263,3 +265,6 @@ Use [log4php](https://logging.apache.org/log4php/)
 
 ### ../public/index.php not found
 May be your `.htaccess` or `httpd.conf` is wrong. Popular is you use `Alias` to redirect project but you forget add alias to `RewriteRule ^(.*)$ /<alias>/index.php?_url=/$1 [QSA,L]` at `.htaccess` file.
+
+# Tools
+## [Phalcon Developer Tool](https://github.com/phalcon/phalcon-devtools)
