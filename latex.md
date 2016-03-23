@@ -246,3 +246,6 @@ Use package manager to install packages, change repositories to have best speed.
 
 ## Bibliography
 Use biber package
+
+# Tips and Tricks
+## [Latex templates](https://github.com/bamos/latex-templates)
