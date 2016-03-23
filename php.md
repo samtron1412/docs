@@ -297,6 +297,8 @@ It is an interface to communicate between PHP and web server.
 
 
 # Tips and Tricks
+## [Best practices, coding standards](https://github.com/codeguy/php-the-right-way)
+
 ## [Disable xdebug](https://web.archive.org/web/20150208161308/http://frankmayer.me/blog/12-xdebug-disabling-vs-not-loading-it-at-all)
 Comment this line in php.ini file:
 
