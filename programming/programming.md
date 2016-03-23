@@ -3,6 +3,7 @@
 # Overview
 - [Thoughts on programming](https://github.com/Dobiasd/articles)
 - [Devdocs.io](https://github.com/Thibaut/devdocs)
+- [Graph of reddit's words](https://github.com/Dobiasd/programming-language-subreddits-and-their-choice-of-words)
 
 # Principles of Good Programming
 
