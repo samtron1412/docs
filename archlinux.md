@@ -606,6 +606,7 @@ Back up your system before big upgrade. Use to recover your system when it had t
 
 ### 3.22 Other
 - [lostfiles](https://github.com/graysky2/lostfiles)
+- [pkgtools](https://github.com/Daenyth/pkgtools)
 
 ## 4. Documents and texts
 ### 4.1 Office suite
