@@ -30,13 +30,13 @@ Docker accesses the Linux kernel's virtualization features either directly throu
 By using containers, resources can be isolated, services restricted, and processes provisioned to have an almost completely private view of the operating system with their own process ID space, file system structure, and network interfaces. Multiple containers share the same kernel, but each container can be constrained to only use a defined amount of resources such as CPU, memory and I/O.
 
 ## How is this different from Virtual Machines?
->Virtual Machines Architecture
+### Virtual Machines Architecture
 
-![Virtual Machines Architecture](../graphic/docker/virtual_machine_arch.png)
+![Virtual Machines Architecture](../graphic/docker/virtual-machine-arch.png)
 
->Docker Engine
+### Docker Engine
 
-![Docker Engine](../graphic/docker/docker_engine.png)
+![Docker Engine](../graphic/docker/docker-engine.png)
 
 ## Operating-system-level virtualization
 Operating-system-level virtualization is a server virtualization method where the kernel of an operating system allows for multiple isolated user space instances, instead of just one. Such instances (often called containers, virtualization engines, virtual private servers, or jails) may look and feel like a real server from the point of view of its owners and users.
