@@ -206,6 +206,9 @@ Striped mapping
 ### View current LVM information
 `pvdisplay`, `vgdisplay`, `lvdisplay`
 
+# [Loop device](https://en.wikipedia.org/wiki/Loop_device)
+- [Ubuntu question](http://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it)
+
 # Tips and Tricks
 ## User's bin
 User's `bin` directory is a way to customize how the binary will run. Creating `~/bin` directory and create `shell script files` same name with the binary, set executable attribute for these files, change `$PATH=~/bin:$PATH`.
