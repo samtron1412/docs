@@ -559,6 +559,9 @@ Back up your system before big upgrade. Use to recover your system when it had t
 ### 3.1 Partitioning tools
 
 ### 3.2 Mount tools
+- [udisks2](https://wiki.archlinux.org/index.php/Udisks)
+- [udiskie](https://github.com/coldfix/udiskie)
+- [udevil](https://www.archlinux.org/packages/?name=udevil)
 
 ### 3.3 Basic shell commands
 
