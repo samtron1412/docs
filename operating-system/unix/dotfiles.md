@@ -102,6 +102,8 @@ Upgrading submodules from the upstream changes:
 	git submodule update --init --remote
 
 ## Local Customization
+- [dotsync](https://github.com/dotphiles/dotsync)
+
 When managing dotfiles on multiple machines, the majority of your configuration will be the same between machines, and there will be some minor differences between installations.
 
 ### Approaches
