@@ -853,6 +853,15 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Reference
 
 # Tips and Tricks
+## Managing multiple repositories
+- https://github.com/fabioz/mu-repo
+- https://github.com/earwig/git-repo-updater
+- https://github.com/prydonius/karn
+- https://github.com/badele/gitcheck
+- https://github.com/esrlabs/git-repo
+- https://github.com/mixu/gr
+- https://github.com/joeyh/myrepos
+
 ## List all commits for a specific file
 `git log --follow <filename>`
 
