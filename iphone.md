@@ -2,9 +2,11 @@
 
 # Overview
 
-
-
 # Hardware
+## [Charger](https://discussions.apple.com/thread/2580579?start=30)
+- iPhone: 5V * 1A = 5W
+- iPad: 5V * 2.1A = 10W or 5V * 2.4A = 12W
+
 ## Sensors
 ### Proximity Sensor
 This sensor can determine how close the iPhone is to your face. This sensor is what helps the iPhone turn off its screen automatically whenever you hold the phone up to your ear. This is necessary to prevent accidental button clicks by the side of your head when talking.
@@ -101,4 +103,4 @@ Windows Vista or Windows 7:
 
 Replace USERNAME with your personal account name.
 
-### 
+###
