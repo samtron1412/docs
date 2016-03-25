@@ -8,9 +8,9 @@ The notion that filenames preceded by a `.` should be hidden in Unix was probabl
 A convention arose of using dotfile in the user's home directory to store per-user configuration or informational text. Dotfiles are used to customize your system with purpose is improving your productivity.
 
 # Why use dotfiles with VCS (version control system)?
-- Distributed backups: exploring new things without fear + restoring when disaster happen.
-- History: improving yourself, debug
-- Sharing: learn from each other + making life more meaningful
+- **Distributed backups**: exploring new things without fear + restoring when disaster happen.
+- **History**: improving yourself, debug
+- **Sharing**: learn from each other + making life more meaningful
 
 # How can we manage the dotfiles?
 - Most likely, as a developer, you will keep using and improving your dotfiles for your entire career. Your dotfiles will most likely be the *longest project you ever work on*. For this reason, it is worthwhile to organize your dotfiles project in a disciplined manner for **maintainability** and **extensibility**.
