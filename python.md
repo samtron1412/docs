@@ -59,6 +59,9 @@ duck
 
 
 # Packages
+## [Console User interface library](https://github.com/urwid/urwid)
+- [alot - Mail User Agent](https://github.com/pazz/alot)
+
 ## Django
 ## [SQLAlchemy](http://www.sqlalchemy.org/)
 SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
