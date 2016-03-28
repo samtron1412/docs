@@ -14,3 +14,11 @@ It was written by Marc Lehmann, who forked it from rxvt in November 2003.
 - Perl extensions
 - Support for Xft fonts
 - It has a daemon mode that reduces memory usage and loading time when using multiple terminals.
+
+# Configuration
+rxvt-unicode is controlled by **command-line arguments** or **Xresources**. Command-line arguments override, and take precedence over resource setting.
+
+- `urxvt -help`: list options
+- `urxvt --help`: list long-options
+
+
