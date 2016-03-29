@@ -11,6 +11,6 @@ If you are always compiling the same programs over and over again — such as tr
 
 # [Performance](https://ccache.samba.org/performance.html)
 
-# Using
+# [Using](https://ccache.samba.org/manual.html)
 
 # Misc
