@@ -14,3 +14,6 @@ If you are always compiling the same programs over and over again — such as tr
 # [Using](https://ccache.samba.org/manual.html)
 
 # Misc
+## Command Line Interface
+- `ccache -s`: show a statistic summary
+- `ccache -C`: clear the cache completely
