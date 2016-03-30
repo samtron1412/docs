@@ -90,3 +90,8 @@ You can think of **containers as a process in a box**. The box contains everythi
 # Tutorial
 ## [Docker LAMP](https://www.linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/)
 - [Another LAMP](https://github.com/tutumcloud/lamp)
+
+## [Docker training](http://www.meetup.com/peoplespace/events/229722697/)
+- [Slide](http://cdn.michelleliu.io/training/dockerintro.pdf)
+- [Exercise](https://github.com/anonmily/docker-up-and-running)
+- [Blog](http://michelleliu.io/devops/a-crash-course-in-docker)
