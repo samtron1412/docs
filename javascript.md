@@ -2,8 +2,6 @@
 
 # Overview
 
-
-
 # Code pattern
 ## Prototype
 Use to code plugin javascript
@@ -212,3 +210,7 @@ http-server is a simple command-line http server.
 - Install globally: `# npm install -g http-server`
 
 Usage: `$ node /bin/http-server`
+
+# [TypeScript vs JavaScript](http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript/35048303#35048303)
+
+# [List of languages that compile to JavaScript](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS)
