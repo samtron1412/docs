@@ -86,3 +86,5 @@ Disabled `6to4` and `isatap` adapter: (these adapter use for transfer packets IP
 	i. Restart the computer once again and see if it works
 
 3. Reinstall driver: Install the network drivers from the manufacturer website.
+
+# [Windows Subsytem for Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
