@@ -95,3 +95,5 @@ You can think of **containers as a process in a box**. The box contains everythi
 - [Slide](http://cdn.michelleliu.io/training/dockerintro.pdf)
 - [Exercise](https://github.com/anonmily/docker-up-and-running)
 - [Blog](http://michelleliu.io/devops/a-crash-course-in-docker)
+
+## [Docker birthday 3](https://github.com/docker/docker-birthday-3)
