@@ -21,6 +21,10 @@ rxvt-unicode is controlled by **command-line arguments** or **Xresources**. Comm
 - `urxvt -help`: list options
 - `urxvt --help`: list long-options
 
+# Color
+
+# Font
+
 # Perl extensions
 - [Source code](https://github.com/exg/rxvt-unicode/tree/master/src/perl)
 - [URxvt Perl Extensions](http://jbl.web.cern.ch/jbl/doc/urxvt/)
@@ -47,3 +51,5 @@ Matching links can be colored with a chosen foreground or background color, for 
 Matcher select mode, use up and down arrow key to select URLs.
 
 	URxvt.keysym.C-u: perl:matcher:select
+
+## [Changing font size on the fly](https://github.com/majutsushi/urxvt-font-size)
