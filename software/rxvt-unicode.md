@@ -21,4 +21,29 @@ rxvt-unicode is controlled by **command-line arguments** or **Xresources**. Comm
 - `urxvt -help`: list options
 - `urxvt --help`: list long-options
 
+# Perl extensions
+- [Source code](https://github.com/exg/rxvt-unicode/tree/master/src/perl)
+- [URxvt Perl Extensions](http://jbl.web.cern.ch/jbl/doc/urxvt/)
 
+## Common
+- default
+
+## Clickable URLs
+You can make URLs in the terminal clickable using the **matcher** extension. For example, to open links in the chromium browser with the left mouse button, add the following to `.Xresources`:
+
+	URxvt*perl-ext-common: default,matcher
+	URxvt*url-launcher: /usr/bin/chromium
+	URxvt*matcher.button: 1
+
+Since rxvt-unicode 9.14, it's also possible to use matcher to open and list recent (currently limited to 10) URLs via keyboard:
+
+	URxvt.keysym.C-Delete: perl:matcher:last
+	URxvt.keysym.M-Delete: perl:matcher:list
+
+Matching links can be colored with a chosen foreground or background color, for example blue:
+
+	URxvt.matcher.rend.0: Uline Bold fg5
+
+Matcher select mode, use up and down arrow key to select URLs.
+
+	URxvt.keysym.C-u: perl:matcher:select
