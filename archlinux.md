@@ -717,3 +717,5 @@ How to print
 
 ## Time
 - Time for Linux, servers: [comparison](http://chrony.tuxfamily.org/comparison.html)
+
+## [Default applications](https://wiki.archlinux.org/index.php/Default_applications)
