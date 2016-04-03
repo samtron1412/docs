@@ -22,6 +22,26 @@ rxvt-unicode is controlled by **command-line arguments** or **Xresources**. Comm
 - `urxvt --help`: list long-options
 
 # Color
+```
+URxvt*background: black
+URxvt*foreground: white
+URxvt*color0: black
+URxvt*color1: red3
+URxvt*color2: green3
+URxvt*color3: yellow3
+URxvt*color4: blue2
+URxvt*color5: magenta3
+URxvt*color6: cyan3
+URxvt*color7: gray90
+URxvt*colorBD: grey50
+URxvt*colorIT: red
+URxvt*colorUL: green
+URxvt*underlineColor: yellow
+URxvt*highlightColor: blue
+URxvt*highlightTextColor: magenta
+URxvt*cursorColor: cyan
+URxvt*cursorColor2: white
+```
 
 # Font
 
