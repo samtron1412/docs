@@ -183,3 +183,9 @@ You may choose a particular font size with the `\fontsize{<size>}{<line space>}`
 
 ## Using arbitrary system fonts
 Use in `XeTeX` and `LuaTeX` with package `fontspec`
+
+# Software
+## [Pango](http://www.pango.org/)
+
+## [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/)
+- [Arch Linux - fontconfig](https://wiki.archlinux.org/index.php/Font_configuration)
