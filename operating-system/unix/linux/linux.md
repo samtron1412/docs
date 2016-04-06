@@ -7,6 +7,9 @@
 # Overview
 Linux is a **Unix-like** and mostly **POSIX-compliant** computer operating system (OS) assembled under the model of **free and open-source** software development and distribution. Linux kernel is licensed under GPL version 2.
 
+- [Linux Standard Base](http://www.linuxfoundation.org/collaborate/workgroups/lsb/group)
+  + [Wikipedia](https://en.wikipedia.org/wiki/Linux_Standard_Base)
+
 ## Filesystem Hierarchy Standard
 ![Linux Directory Structure](linux/Linux-Directory-Structure.jpeg)
 
