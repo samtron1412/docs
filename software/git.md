@@ -857,6 +857,12 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Reference
 
 # Tips and Tricks
+## Change timestamp of commit
+- [Working with dates on Git](https://alexpeattie.com/blog/working-with-dates-in-git)
+- [Stackoverflow](http://stackoverflow.com/questions/11856983/why-git-authordate-is-different-from-commitdate)
+
+`GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 -0700" git commit --amend`
+
 ## Managing multiple repositories
 - https://github.com/fabioz/mu-repo
 - https://github.com/earwig/git-repo-updater
