@@ -422,7 +422,11 @@ As an example, if you commit and then realize you forgot to stage the changes in
 
 `git push origin +ba8342^:feature/emp_detail`
 
-where `x^` as the parent of x and `+` as a forced non-fast-forward push.
+where `x^` as the parent of `x` and `+` as a forced non-fast-forward push.
+
+**Another way**: Rewrite history at local and force push to replace a new commit
+1. Rewrite history: for example `git reset --hard HEAD~1` : undo the last commit
+2. Force push: `git push -f <remote> <branch>`
 
 ### Temporarily switch to a different commit
 
