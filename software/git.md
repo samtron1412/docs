@@ -858,10 +858,16 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 # Tips and Tricks
 ## Change timestamp of commit
-- [Working with dates on Git](https://alexpeattie.com/blog/working-with-dates-in-git)
-- [Stackoverflow](http://stackoverflow.com/questions/11856983/why-git-authordate-is-different-from-commitdate)
+You may be wondering what the difference is between `author` and `committer`. The author is the person **who originally wrote the work**, whereas the committer is the person **who last applied the work**. So, if you send in a patch to a project and one of the core members applies the patch, both of you get credit – you as the author, and the core member as the committer.
 
-`GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 -0700" git commit --amend`
+The `author date` notes when this commit was **originally made** (i.e. when you finished the **git commit**). According to the docs of git commit, the author date could be overridden using the `--date` switch.
+
+The `commit date` gets changed every time the commit is **being modified**, for example when **rebasing** the branch where the commit is in on another branch.
+
+Same could happen if you make your commit and send your patch to another one in order to apply the patch in another repo: the author date will be the date of your git commit, the commit date will be set to that date when the patch is applied in the other repo.
+
+`$ git commit --date="Wed Feb 16 14:00 2037 +0100"`: this only change Author Date
+`$ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 -0700" git commit --amend`: this will change committer Date
 
 ## Managing multiple repositories
 - https://github.com/fabioz/mu-repo
