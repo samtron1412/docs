@@ -85,7 +85,7 @@ A convention arose of using dotfile in the user's home directory to store per-us
 	# vim +BundleInstall +qall
 
 ## Dependencies and Plugins
-- Using `git submodules`
+- Using `git submodule`
 
 Adding new submodule to your repository:
 
