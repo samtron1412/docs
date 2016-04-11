@@ -34,3 +34,5 @@ The best strategy for learning crypto design and theory is to get a Ph.D at a Un
 
 ### Acquiring the basics
 
+# Tools
+- [Basic cipher website tools](http://rumkin.com/tools/cipher/)
