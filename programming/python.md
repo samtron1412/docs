@@ -24,11 +24,12 @@ duck
 	+ Windows: `python -m pip install -U pip`
 - Show list packages: `pip list`
 - Show list packages use for requirementstxt to install in other system: `pip freeze`
+- Show outdated packages: `pip list --outdated`
 - Searching for packages: `pip search "query"`
 - Install new package: `pip install <package name>`
 - Uninstall package: `pip uninstall <package naem>`
 - Update package: `pip install <package name> -U` or `pip install <package name> --upgrade`
-- Update all packages: `pip install --upgrade`
+- Update all packages: `pip install --outdated | awk '{print $1}' | xargs -n1 sudo pip install -U`
 
 ## Configuration
 
