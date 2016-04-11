@@ -36,7 +36,6 @@ duck
 
 
 ## Version Manager
-- [virtualenv](https://pypi.python.org/pypi/virtualenv)
 - [pyenv](https://github.com/yyuu/pyenv)
 - [pythonz](https://github.com/saghul/pythonz)
 
@@ -59,6 +58,8 @@ duck
 
 
 # Packages
+## [virtualenv](https://pypi.python.org/pypi/virtualenv)
+
 ## [Console User interface library](https://github.com/urwid/urwid)
 - [alot - Mail User Agent](https://github.com/pazz/alot)
 
