@@ -57,6 +57,10 @@ duck
 
 
 # Packages
+## [cryptography](https://github.com/pyca/cryptography)
+
+## [pycrypto](https://github.com/dlitz/pycrypto)
+
 ## [virtualenv](https://pypi.python.org/pypi/virtualenv)
 
 ## [Console User interface library](https://github.com/urwid/urwid)
