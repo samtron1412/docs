@@ -7,3 +7,7 @@
 - [PCRE - Wikipedia](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions)
 
 In theoretical computer science and formal language theory, a regular expression (sometimes called a rational expression) is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations.
+
+# Tools
+- [regex101](https://regex101.com/)
+- [regexr](http://regexr.com/)
