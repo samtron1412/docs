@@ -11,9 +11,7 @@ first release: 1991
 ## Typing
 duck
 
-# Install
-## Package Manager
-### pip
+# Package Manager - pip
 - Install pip
 	+ Use package manager of Linux distribution
 		* Arch Linux
@@ -32,19 +30,19 @@ duck
 - Update package: `pip install <package name> -U` or `pip install <package name> --upgrade`
 - Update all packages: `pip install --upgrade`
 
-#### Configuration
+## Configuration
 
 
-## Version Manager
+# Version Manager
 - [pyenv](https://github.com/yyuu/pyenv)
 - [pythonz](https://github.com/saghul/pythonz)
 
 **Windows**
 - Can use trick, copy file .exe and change name
 
-### pyenv
-#### Installation
-##### [pyenv-installer](https://github.com/yyuu/pyenv-installer)
+## pyenv
+### Installation
+#### [pyenv-installer](https://github.com/yyuu/pyenv-installer)
 
 `curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`
 
@@ -52,9 +50,9 @@ duck
 
 **Uninstall**: pyenv is installed within `$PYENV_ROOT` (default: `~/.pyenv`). To uninstall, just remove it: `rm -fr ~/.pyenv`
 
-##### [Manually install - Basic GitHub Checkout](https://github.com/yyuu/pyenv#basic-github-checkout)
+#### [Manually install - Basic GitHub Checkout](https://github.com/yyuu/pyenv#basic-github-checkout)
 
-#### User guide
+### User guide
 
 
 # Packages
