@@ -23,10 +23,10 @@ This file should contain commands to set the global command search path and othe
 Similar to /etc/zsh/zshenv but for per-user configuration. Generally used for setting some useful environment variables.
 
 `/etc/zsh/zprofile`
-This is a global configuration file, it'll be sourced at login. Usually used for executing some general commands at login. Please note that on Arch Linux, by default it contains one line which source the /etc/profile, see #Global configuration files for details.
+This is a global configuration file, it'll be sourced at login. Usually used for executing some general commands at login. Please note that on Arch Linux, by default it contains one line which source the `/etc/profile`.
 
 `/etc/profile`
-This file should be sourced by all Bourne-compatible shells upon login: it sets up an environment upon login and application-specific (/etc/profile.d/*.sh) settings. Note that on Arch Linux, Zsh will also source this by default.
+This file should be sourced by all Bourne-compatible shells upon login: it sets up an environment upon login and application-specific (`/etc/profile.d/*.sh`) settings. Note that on Arch Linux, Zsh will also source this by default.
 
 `~/.zprofile`
 This file is generally used for automatic execution of user's scripts at login.
