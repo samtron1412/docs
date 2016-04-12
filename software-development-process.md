@@ -41,3 +41,6 @@
 
 ## Continuous Delivery
 ![Continuous Delivery Story Line](../graphic/software/continuous-delivery-storyline.png)
+
+# Tools
+- [Open Source Scrum project management](https://github.com/taigaio)
