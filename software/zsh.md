@@ -54,3 +54,14 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 - `/etc/profile` is not a part of the regular list of startup files run for Zsh, but is sourced from `/etc/zsh/zprofile` in the zsh package. Users should take note that `/etc/profile` sets the **$PATH** variable which will overwrite any **$PATH** variable set in `~/.zshenv`. To prevent this, please set the **$PATH** variable in `~/.zprofile`
 
 >**Warning**: It is not recommended to replace the default one line in `/etc/zsh/zprofile` with something other, it'll break the integrality of other packages which provide some scripts in `/etc/profile.d`
+
+# Configure ZSH
+## Configure environment variables
+- `$PATH`
+- `$EDITOR`
+- `$GIT_EDITOR`
+- `$SAVEHIST`
+- `$LSCOLORS`
+- `$LS_COLORS`
+- `$GPG_TTY`
+- `$GPG_AGENT_INFO`
