@@ -59,8 +59,6 @@ List files order by size
 # netstat
 `netstat -tunap | grep :80` : find what process use 80 port. (-t: tcp, -u: udp, -n: numeric ip instead hostname, -a: all, -p: program/process id)
 
-# grep - search for a pattern in a file or files
-
 # date - display the current date and time
 # passwd - Change your login password
 # du - display the space size used for a directory
@@ -73,10 +71,6 @@ List files order by size
 # w - See who else is logged in
     - tty – native terminal of host
     - pty/pts – remote terminal, ie# Ssh, xterm…
-
-# grep
-Recursively grep through directory for string in file: `grep -r -i "phrase" directory/`
-
 
 # [sed](http://www.thegeekstuff.com/2009/11/unix-sed-tutorial-append-insert-replace-and-count-file-lines/)
 **sed** is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline). While in some ways similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is consequently more efficient. But it is sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
@@ -108,57 +102,6 @@ Tìm các file được chmod theo thông số nào đó
 
 Tìm các file được cho phép đọc bởi tất cả mọi người nhưng không cho phép thực thi
 `find # –perm –444 ! –perm /111`
-
-# unordered
-1.  clear: làm sạch cửa sổ dòng lệnh
-2.  ls tenthumuc:      Liệt kê nội dung bên trong một thư mục
-3.  cat tentaptin:      Hiển thị nội dung của một tập tin lên cửa sổ dòng lệnh
-4.  rm tentaptin:      Xóa một tập tin
-5.  cp taptinnguon taptindich: Sao chép một tập tin
-6.  passwd: Đổi mật khẩu
-7.  motd:      Thông điệp của ngày
-8.  finger tentruycap:      Chương trình tìm kiếm thông tin người dùng
-9.  startx: Khởi động X Window System server
-10. less tentaptin hoặcr more tentaptin: Hiển thị nội dung một tập tin trong cửa sổ dòng lệnh một trang mỗi lần
-11. info:      Hiển thị thông tin và tài liệu trên shell, các tiện ích và chương trình.
-12. lpr tentaptin:      Gửi tập tin tới máy tin
-13. grep chuoi tentaptin: tìm kiếm chuỗi trong tập tin
-14. head tentaptin:      Hiển thị 10 dòng đầu tiên của tập tin
-15. tail tentaptin:      Hiển thị 10 dòng cuối cùng của tập tin
-16. mv tentaptincu      tentaptinmoi: Di chuyển hoặc đổi tên tập tin
-17. file tentaptin:      Hiển thị thông tin về nội dung của tập tin
-19. date:      Hiển thị ngày và giờ hiện tại
-20. cal:      Hiển thị lịch
-21. gzip tentaptin:      Nén một tập tin
-22. gunzip tentaptin:      Giải nén một tập tin
-23. which lenh:      Hiển thị đường dẫn tới lệnh
-24. whereis lenh:      Hiển thị đường tới nơi chứa lệnh
-25. who: Hiển thị các người dùng đã đang nhập
-26. finger tentruycap@maychu:      Thu thập thông tin chi tiết về người dùng hiện đang dùng hệ thống
-27. w: Hiễn thị người dùng đã đăng nhập với các tiến trình sử dụng
-28. mesg y/n: Đặt tùy chọn để các người dùng khác viết thông điệp cho bạn
-29. write nguoidung:      Gửi tin nhắn cho người dùng khác
-30. talk nguoidung:      Cho phép 2 người chat với nhau
-31. chmod quyen      tentaptin: Thay đổi quyền truy cập tập tin
-32. mkdir tenthumuc:      Tạo một thư mục
-33. rmdir tenthumuc:      Xóa một thư mục rỗng
-34. ln existingfile      new-link: Tạo một đường dẫn tới một tập tin (liên kết cứng)
-35. df: Hiển thị tất cả các mount của hệ thống
-36. top:      Hiển thị danh sách các tiến trình đang chạy
-37. tty:      Hiển thị tên của cửa sổ dòng lệnh mà trên đó lệnh được dùng
-38. kill PID hoặc số %job: Ngừng một tiến trình bằng số PID (Process      Identification Number) hoặc số công việc
-39. jobs:      Hiển thị một danh sách các công việc hiện tại
-40. netstat:      Hiển thị các kết nối mạng
-41. traceroute maychu:      In gói định tuyến tới máy chủ
-42. nslookup:      Truy vấn máy chủ tên miền
-43. hostname:      Hiển thị tên định danh của hệ thống
-44. rlogin maychu:      Tiện ích để kết nối với một hệ thống ở xa
-45. telnet maychu:      Tiện ích để kết nối tới một hệ thống ở xa (tương tự như rlogin nhưng tương tác tốt hơn)
-46. rcp taptin      maytuxa: Được dùng để sao chép từ một máy tính ở xa
-47. ftp: Tiện ích để truyền tập tin giữa các hệ thống trên một mạng
-48. rsh lenh:      Tiện ích để chạy một lệnh trên một hệ thống ở xa mà không cần đăng nhập
-49. ping maychu:      Tiện ích để kiểm tra kết nối tới một hệ thống ở xa
-50. lcd duongdanthumuc:      Thay đổi thư mục máy cục bộ khi đã đăng nhập ở trên máy ở xa
 
 # [useradd](http://www.tecmint.com/add-users-in-linux/)
 ## synopsis
