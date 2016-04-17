@@ -51,8 +51,9 @@ http://www.vim.org/docs.php
 
 
 # Getting started
-
-
+## Undo - Redo in normal mode
+`u`: undo
+`Ctrl + r`: redo
 
 # Editing Effectively
 
