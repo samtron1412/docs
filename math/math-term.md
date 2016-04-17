@@ -147,3 +147,5 @@ Process of computing derivative.
 
 # Tangent line
 Tangent line at P(a,f(a)) is the line through P with slope f'(a).
+
+# [Fresnel integral](http://mathworld.wolfram.com/FresnelIntegrals.html)
