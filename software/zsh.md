@@ -65,3 +65,15 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 - `$LS_COLORS`
 - `$GPG_TTY`
 - `$GPG_AGENT_INFO`
+
+# Plugins manager
+## [oh-my-zsh](http://ohmyz.sh/)
+
+## [prezto](https://github.com/sorin-ionescu/prezto)
+
+## [antigen](https://github.com/zsh-users/antigen)
+
+## [zgen](https://github.com/tarjoilija/zgen)
+
+# Uninstallation
+
