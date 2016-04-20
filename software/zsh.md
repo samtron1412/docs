@@ -69,6 +69,25 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 
 # Plugins manager
 ## [oh-my-zsh](http://ohmyz.sh/)
+### plugins
+#### git
+
+#### z
+
+#### vi-mode
+
+#### history-substring-search
+
+#### sudo
+
+#### sublime
+
+#### tmux
+
+#### tmuxinator
+
+### prompt
+#### robbyrussell
 
 ## [prezto](https://github.com/sorin-ionescu/prezto)
 
