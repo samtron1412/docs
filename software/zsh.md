@@ -69,6 +69,10 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 
 # Plugins manager
 ## [oh-my-zsh](http://ohmyz.sh/)
+`lib`: contain many useful library for zsh. Read code to understand the details.
+- Add environment variables
+- Completion, git branches, correction, etc.
+
 ### plugins
 #### git
 
