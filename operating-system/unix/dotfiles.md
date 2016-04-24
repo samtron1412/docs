@@ -138,3 +138,8 @@ Having a persistent path to your dotfiles repository. This can be done by always
 
 ### Tracking Custom Scripts
 Creating a `bin/` directory in dotfiles directory for your shell scripts, link `~/bin` with that directory in installation process, and then add the following to your shell rc file `export PATH=~/bin:${PATH}`
+
+# References
+- [bamos/dotfiles](https://github.com/bamos/dotfiles)
+- [Managing your dotfiles](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
+- [Getting started with dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.mjk3qslh7)
