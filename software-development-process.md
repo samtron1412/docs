@@ -44,3 +44,4 @@
 
 # Tools
 - [Open Source Scrum project management](https://github.com/taigaio)
+- [Example of company guide](https://github.com/thoughtbot/guides)
