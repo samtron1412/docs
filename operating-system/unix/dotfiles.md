@@ -143,3 +143,5 @@ Creating a `bin/` directory in dotfiles directory for your shell scripts, link `
 - [bamos/dotfiles](https://github.com/bamos/dotfiles)
 - [Managing your dotfiles](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
 - [Getting started with dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.mjk3qslh7)
+- [dotfiles.github.io](https://dotfiles.github.io/)
+- [awesome-dotfiles-resources](https://github.com/webpro/awesome-dotfiles)
