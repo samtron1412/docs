@@ -30,7 +30,7 @@
 # Deployment
 - [Continuous Integration, Continuous Deployment and Continuous Delivery](http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
 
-## Continuous Integration
+## [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html)
 ### Hosted Services
 - [Circle CI](https://circleci.com/)
 - [Travis CI](https://travis-ci.org/)
@@ -40,6 +40,8 @@
 - [Codeship](https://codeship.com/)
 
 ## Continuous Delivery
+http://continuousdelivery.com/
+
 ![Continuous Delivery Story Line](../graphic/software/continuous-delivery-storyline.png)
 
 # Tools
