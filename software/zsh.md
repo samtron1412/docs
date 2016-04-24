@@ -73,31 +73,29 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 - Add environment variables
 - Completion, git branches, correction, etc.
 
-### plugins
-#### git
-
-#### z
-
-#### vi-mode
-
-#### history-substring-search
-
-#### sudo
-
-#### sublime
-
-#### tmux
-
-#### tmuxinator
-
-### prompt
-#### robbyrussell
-
-## [prezto](https://github.com/sorin-ionescu/prezto)
-
 ## [antigen](https://github.com/zsh-users/antigen)
 
 ## [zgen](https://github.com/tarjoilija/zgen)
+
+# plugins
+## git
+
+## [z](https://github.com/rupa/z)
+
+## vi-mode
+
+## history-substring-search
+
+## sudo
+
+## sublime
+
+## tmux
+
+## tmuxinator
+
+## prompt
+### robbyrussell
 
 # Uninstallation
 
