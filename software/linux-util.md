@@ -23,3 +23,5 @@ These are the core utilities which are expected to exist on every operating syst
 
 # psmisc
 - [Homepage](http://psmisc.sourceforge.net/index.html)
+
+# [autojump](https://github.com/wting/autojump)
