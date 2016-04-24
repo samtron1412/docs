@@ -41,14 +41,15 @@ Plugins available that will extend or add new functionality to Vim.
 - Syntax highlight
 - etc.
 
-## [Documentation](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
-[summary](http://vimdoc.sourceforge.net/)
+## Resources
+- [Documentation](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
+- [summary](http://vimdoc.sourceforge.net/)
 http://vim.wikia.com/wiki/Vim_Tips_Wiki
 http://vim.wikia.com/wiki/Vim_documentation
 http://vim.wikia.com/wiki/Vim_scripts
 http://www.vim.org/docs.php
-[Books](http://iccf-holland.org/click5.html)
-
+- [Books](http://iccf-holland.org/click5.html)
+- [Thoughtbot Tutorials](https://upcase.com/vim)
 
 # Getting started
 ## Undo - Redo in normal mode
