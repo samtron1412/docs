@@ -77,3 +77,31 @@ The customization of zathura is be managed via a configuration file called zathu
 	'X     Goto quickmark saved at letter or number X
 
 	q      Quit
+
+# Commands
+	bmark  Save a bookmark
+
+	bdelete
+	      Delete a bookmark
+
+	blist  List bookmarks
+
+	close  Close document
+
+	exec   Execute an external command
+
+	info   Show document information
+
+	help   Show help page
+
+	open, o
+	      Open a document
+
+	offset Set page offset
+
+	print  Print document
+
+	write, write!
+	      Save document (and force overwriting)
+
+	export Export attachments
