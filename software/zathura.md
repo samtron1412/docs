@@ -78,6 +78,20 @@ The customization of zathura is be managed via a configuration file called zathu
 
 	q      Quit
 
+## Index mode
+	k, j   Move to upper or lower entry
+
+	l      Expand entry
+
+	L      Expand all entries
+
+	h      Collapse entry
+
+	H      Collapse all entries
+
+	space, Return
+	      Select and open entry
+
 # Commands
 	bmark  Save a bookmark
 
