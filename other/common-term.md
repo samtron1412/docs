@@ -18,3 +18,6 @@ technology, film, zombies, computer, cosplay, music,
 a person is overly intellectual, obsessive, or lacking social skills
 
 bookworm, smart, math, physical, biology, library, glass, academic, book
+
+# Data
+Data is raw, unorganized facts, details that need to be processed. Data can be something simple and seemingly random and useless until it is organized.
