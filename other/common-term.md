@@ -21,3 +21,7 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
 
 # Data
 Data is raw, unorganized facts, details that need to be processed. Data can be something simple and seemingly random and useless until it is organized.
+
+# Information
+When data is processed, organized, structured or presented in a given context so as to make it useful, it is called information.
+
