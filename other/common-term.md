@@ -30,3 +30,6 @@ Knowledge is a combination of information, experience and insight. Knowledge is 
 
 # Passion
 Passion is an intense desire or enthusiasm for something. Pleasure in an experience something. Passion is self-satisfactory.
+
+# Ambition
+Ambition is a strong desire to do or to achieve something, typically requiring determination and hard work. Course of action to achieve desired results/satisfaction. Ambition describes a determination, a commitment – almost a disciplinary course of action.
