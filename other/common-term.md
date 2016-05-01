@@ -28,3 +28,5 @@ When data is processed, organized, structured or presented in a given context so
 # Knowledge
 Knowledge is a combination of information, experience and insight. Knowledge is also used to mean the confident understanding of a subject, potentially with the ability to use it for a specific purpose.
 
+# Passion
+Passion is an intense desire or enthusiasm for something. Pleasure in an experience something. Passion is self-satisfactory.
