@@ -186,11 +186,11 @@ Use **lsblk** to list the hard disks
 ### Select the fastest mirror
 Back up mirror: `# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup`
 
-Edit `mirrorlist.backup` and uncomment mirrors for testing: `# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup`
+Generate mirrors list follow [status of mirrors](https://www.archlinux.org/mirrorlist/). Save it to `/etc/pacman.d/mirrorlist.new`
 
-Run this command `# rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist`
+Edit `mirrorlist.new` and uncomment mirrors for testing: `# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.new`
 
-Sort mirrors list follow [status of mirrors](https://wiki.archlinux.org/index.php/Mirrors#Mirror_status)
+Run this command `# rankmirrors -n 6 /etc/pacman.d/mirrorlist.new > /etc/pacman.d/mirrorlist`
 
 ### Westminster, CA mirror
 http://mirrors.ocf.berkeley.edu/archlinux
