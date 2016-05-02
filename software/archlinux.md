@@ -186,7 +186,7 @@ Use **lsblk** to list the hard disks
 ### Select the fastest mirror
 Back up mirror: `# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup`
 
-Generate mirrors list follow [status of mirrors](https://www.archlinux.org/mirrorlist/). Save it to `/etc/pacman.d/mirrorlist.new`
+Generate mirrors list follow [status of mirrors](https://www.archlinux.org/mirrorlist/). Save it to `/etc/pacman.d/mirrorlist.new`. Check [online mirrors status](https://www.archlinux.org/mirrors/status/).
 
 Edit `mirrorlist.new` and uncomment mirrors for testing: `# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.new`
 
