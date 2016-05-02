@@ -866,8 +866,9 @@ The `commit date` gets changed every time the commit is **being modified**, for 
 
 Same could happen if you make your commit and send your patch to another one in order to apply the patch in another repo: the author date will be the date of your git commit, the commit date will be set to that date when the patch is applied in the other repo.
 
-`$ git commit --date="Wed Feb 16 14:00 2037 +0100"`: this only change Author Date
-`$ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 -0700" git commit --amend`: this will change committer Date
+`$ git commit --date="Wed Feb 16 14:00 2016 -0700"`: this only change Author Date
+`$ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2016 -0700" git commit --amend`: this will change committer Date
+`$ GIT_COMMITTER_DATE="Sun May 1 14:00 2016 -0700" git commit --date="Sun May 1 14:00 2016 -0700"`: change both date
 
 ## Managing multiple repositories
 - https://github.com/fabioz/mu-repo
