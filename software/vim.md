@@ -58,7 +58,7 @@ http://www.vim.org/docs.php
 
 # Editing Effectively
 
-
+# [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
 
 # Tips and Tricks
