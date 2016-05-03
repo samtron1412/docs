@@ -10,6 +10,7 @@ The customization of zathura is be managed via a configuration file called zathu
 	$XDG_CONFIG_HOME/zathura/zathurarc (default: ~/.config/zathura/zathurarc)
 
 # Keybindings
+## Normal mode
 	J, K   Go to the next or previous page
 
 	h, k, j, l
