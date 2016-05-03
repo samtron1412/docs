@@ -1,5 +1,14 @@
 [TOC]
 
+# shutdown
+stop services, kill apps, unmount
+
+# halt
+shutdown + halt (stop all CPU, power-on states)
+
+# poweroff
+shutdown + power off
+
 # General-purpose programming language
 In computer software a general-purpose programming language is a programming language designed to be used for writing software in a wide variety of application domains.
 
