@@ -77,5 +77,4 @@ Matcher select mode, use up and down arrow key to select URLs.
 # Troubleshooting
 ## Remote hosts (ssh)
 If you are logging into a remote host, you may encounter problems when running text-mode programs under rxvt-unicode.
-- Add this line to `.Xresources`: `URxvt*termName: xterm` to use the different terminal name. This is the easiest way to fix this problem.
 - This can be fixed by installing `rxvt-unicode-terminfo` on the remote host or by copying `/usr/share/terminfo/r/rxvt-unicode` from your local machine to your host at `~/.terminfo/r/rxvt-unicode`; same for **rxvt-unicode-256color**.
