@@ -77,3 +77,14 @@ In USA
 - **TOAST**: Generally the heat is both top and bottom (or side to side in a toaster) and it is a dry cooking method with a food that has little moisture, bread for example
 - **ROAST**: Higher temperature with the intent to caramelize the outer portion of the food to bring out flavor. An example of this would be roasting a piece of meat, or vegetables. The pan is large enough to allow heat to reach most sides of the food that is being cooked.
 - **BAKE**: In the case of cakes or casseroles the food fills the pan so that you get even cooking but the food does not dry out. Also used as a general term for cooking almost anything in the oven.
+
+# PGP - OpenPGP - GnuPG vs SSH - OpenSSH
+- **OpenPGP** is a standard for data encryption and decryption.
+- **PGP(Pretty Good Privacy)** is a data encryption and decryption computer program that provides cryptographic privacy and authentication for data communication. PGP follows the OpenPGP standard.
+- **GnuPG(GNU Privacy Guard)** is a free software replacement for Symantec's PGP cryptographic software suite. GnuPG implements OpenPGP standard.
+- **SSH** is a network protocol for secure data communication and remote command execution
+- **OpenSSH** is a suite of security-related network-level utilities based on the SSH protocol.
+
+## Comparing GPG keys and SSH keys
+- Client SSH keys are used to authenticate who you are to a server. (The SSH server also has its own pair of keys it uses to authenticate who it is to the clients.)
+- GPG keys are used to authenticate a message with a digital signature, or to act as a key for decrypting messages to you.
