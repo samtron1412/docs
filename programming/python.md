@@ -53,7 +53,11 @@ duck
 
 **Update**: `pyenv update`
 
-**Uninstall**: pyenv is installed within `$PYENV_ROOT` (default: `~/.pyenv`). To uninstall, just remove it: `rm -fr ~/.pyenv`
+**Uninstall**: pyenv is installed within `$PYENV_ROOT` (default: `~/.pyenv`). To uninstall, just remove it: `rm -fr ~/.pyenv` and remove these three lines from `.bashrc` or from `your shell rc file`:
+
+	export PATH="/root/.pyenv/bin:$PATH"
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
 
 #### [Manually install - Basic GitHub Checkout](https://github.com/yyuu/pyenv#basic-github-checkout)
 
