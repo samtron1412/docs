@@ -11,7 +11,7 @@ first release: 1991
 ## Typing
 duck
 
-# Package Manager - pip
+# Package Manager - [pip](https://pypi.python.org/pypi/pip)
 - Install pip
 	+ Use package manager of Linux distribution
 		* Arch Linux
@@ -19,6 +19,10 @@ duck
 			- python2: `sudo pacman -S python2-pip`
 	+ Use [get-pip.py](https://bootstrap.pypa.io/get-pip.py) script
 		* `python get-pip.py`
+- Use pip with multiple python versions: `pip<version> <command> ...`
+	+ `pip install <sth>`
+	+ `pip2 install <sth>`
+	+ `pip2.5 install <sth>`
 - Upgrade pip
 	+ Linux: `pip install -U pip`
 	+ Windows: `python -m pip install -U pip`
