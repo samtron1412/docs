@@ -775,12 +775,11 @@ You can write your own credential helper.
 
 
 ### [Open source GitHub-like interface](https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Web_Interfaces)
-- http://getgitorious.com/
-- https://about.gitlab.com/
-- https://takezoe.github.io/gitbucket/
+- [GitLab](https://about.gitlab.com/)
+- [GitBucket](https://github.com/gitbucket/gitbucket)
 	+ http://www.slideshare.net/takezoe/scala-matsuri-gitbucket
-- cgit - http://git.zx2c4.com/cgit/ (use for Linux kernel)
-- gitlist - https://github.com/klaussilveira/gitlist
+- [cgit](http://git.zx2c4.com/cgit/) (use for Linux kernel)
+- [gitlist](https://github.com/klaussilveira/gitlist)
 
 
 # Git and Other Systems
