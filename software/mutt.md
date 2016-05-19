@@ -11,6 +11,27 @@ Text-base Mail Client. Mutt focuses primarily on being a **Mail User Agent (MUA)
 
 # Configuring
 ## Native IMAP
+```
+# Gmail requires full email address (this is not a standard)
+set imap_user=samtron1412@gmail.com
+
+# If unset, the password will be prompted for
+set imap_pass=$my_pw_personal
+
+# set folder=imap[s]://imap.server.domain[:port]/[folder/]
+set folder = imaps://samtron1412@imap.gmail.com:993/
+
+# The spoolfile is the folder where your (unfiltered) e-mail arrives.
+set spoolfile = +INBOX
+
+# check for all subscribed IMAP folders
+# set imap_check_subscribed
+
+# Any imap folders that should be checked regularly for new mail should be listed here:
+# mailboxes =INBOX =family
+# mailboxes imaps://imap.gmail.com/INBOX imaps://imap.gmail.com/family
+# the 'y' key which will allow you to change to any of the folders listed under mailboxes.
+```
 
 ## Maildir
 
