@@ -33,8 +33,6 @@ set spoolfile = +INBOX
 # the 'y' key which will allow you to change to any of the folders listed under mailboxes.
 ```
 
-## Maildir
-
 ## SMTP
 
 ## Multiple accounts
