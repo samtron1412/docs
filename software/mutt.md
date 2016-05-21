@@ -34,6 +34,32 @@ set spoolfile = +INBOX
 ```
 
 ## SMTP
+Whether you use POP or IMAP to receive mail you will probably still send mail using SMTP.
+
+### Folder: the one where all your sent e-mails will be saved
+- `set record = +Sent`
+- Gmail saves automatically sent e-mail to `+[Gmail]/Sent`, so we do not want duplicates. `unset reccord`
+
+### Native SMTP support
+
+```
+set my_pass='mysecretpass'
+set my_user=myname
+
+set realname = 'Your Real Name'
+set from = your-email-address
+set use_from = yes
+
+set smtp_url=smtps://$my_user:$my_pass@smtp.domain.tld
+set ssl_force_tls = yes
+
+set ssl_starttls = yes
+```
+
+You may need to tweak the security parameters. If you get an error like `SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol`, then your server probably uses the SMTP instead of SMTPS.
+`set smtp_url=smtp://$imap_user:$imap_pass@smtp.domain.tld`
+
+`man 5 muttrc` for more information.
 
 ## Multiple accounts
 
