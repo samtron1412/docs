@@ -132,6 +132,32 @@ With the above shortcuts you will find that changing folders (with `c`) is not c
 	macro index 'c' '<change-folder>?<change-dir><home>^K=<enter>'
 
 ## Password management
+Create a pair of public/private keys: `gpg --gen-key`
+
+Create a file in a secure environment since it will contain your passwords for a couple of seconds: `~/.my-pwds`
+
+	set my_pw_personal = "first password"
+	set my_pw_work = "second password"
+
+>**Note:** Remember that user defined variables must start with `my_`.
+
+Now encrypt the file: `gpg -e -r 'your name' ~/.my-pwds`
+
+>**Note:** 'your-name' must match the one you provided at the `gpg --gen-key` step. Now you can wipe your file containing your passwords in clear: `shred -xu ~/.my-pwds`
+
+Back to your account dedicated files, e.g. `.mutt/muttrc`:
+
+	set imap_pass=$my_pw_personal
+	# Every time the password is needed, use $my_pw_personal variable.
+
+And in your `.muttrc`, before you source any account dedicated file: `source "gpg2 -dq $HOME/.my-pwds.gpg |"`
+
+>**Note:** At the end of the line above, there is no space between the pipe and the double quote.
+
+- The `-q` parameter makes gpg2 quiet which prevents gpg2 output messing with Mutt interface.
+- The pipe `|` at the end of a string is the Mutt syntax to tell that you want the result of what is preceding.
+
+When Mutt starts, it will first source the result of the password decryption, that's why it will prompt for a passphrase. Then all passwords will be stored in memory in specific variables for the time Mutt runs. Then, when a folder-hook is called, it sets the `imap_pass` variable to the variable holding the appropriate password. When switching accounts, the `imap_pass` variable will be set to another variable holding another password, etc.
 
 # Advanced features
 ## Key bindings
