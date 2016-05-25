@@ -159,6 +159,12 @@ And in your `.muttrc`, before you source any account dedicated file: `source "gp
 
 When Mutt starts, it will first source the result of the password decryption, that's why it will prompt for a passphrase. Then all passwords will be stored in memory in specific variables for the time Mutt runs. Then, when a folder-hook is called, it sets the `imap_pass` variable to the variable holding the appropriate password. When switching accounts, the `imap_pass` variable will be set to another variable holding another password, etc.
 
+## Security concern
+If `enter-command` is available from the UI, it is possible to see the password unencrypted, which may be undesired if anybody else than you has access to your session while Mutt is running. You may want to disable it for this reason. As a consequence, every command that the user intends to use must be bound to a key in advance, otherwise it will never be accessible.
+
+	.muttrc
+	bind generic,alias,attach,browser,editor,index,compose,pgp,pager,postpone ':' noop
+
 # Advanced features
 ## Key bindings
 
