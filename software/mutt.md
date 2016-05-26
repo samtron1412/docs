@@ -140,6 +140,14 @@ Mutt maintains several distinct history lists:
 
 Mutt automatically filters out consecutively repeated items from the history. It also mimics the behavior of some shells by ignoring items starting with a space.
 
+## Reading Mail
+
+## Sending Mail
+
+## Forwarding and Bouncing Mail
+
+## Postponing Mail
+
 # Configuration
 `~/.mutt/muttrc`
 
