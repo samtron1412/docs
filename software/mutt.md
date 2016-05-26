@@ -53,6 +53,10 @@ The information you see in the index is a list of emails:
 ### The `pager`
 If you are in the `index` and you want to view the contents of an email, hit the `enter` key, this will take you from the `index` to the `pager`. Mutt's built-in `pager` is just a scrolling text viewer like the unix programs `more` and `less`, use the `backspace` and `enter` keys to scroll up and down the email. Quit the `pager` and return to the `index` by pressing the `q` key.
 
+On the top of the pager you have an overview over the most important email headers: the sender, the recipients, the subject, etc. How much information you actually see depends on your configuration.
+
+Below the headers, you see the email body which usually contains the message. If the email contains any attachments, you will see more information about them below the email body, or, it the attachments are text files, you can view them directly in the pager.
+
 ### The `attachment` viewer
 E-mail has a structure that can include attached parts such as files as well as plain text messages. From the `index`, press the `v` key to view the `attach` menu where you can see the `mime-structure` of the email displayed as a threaded list.
 
@@ -69,7 +73,9 @@ In the `index` or `pager` views, hit the `r` key to reply to a message or the `m
 ### The `compose` menu
 After the editor, mutt drops you into the `compose` menu, here you can fine-tune your message headers, change the encoding, add file attachments or simply hit the `y` key to say yes and send your email on its way.
 
-# Configuring
+# Getting Started
+
+# Configuration
 `~/.mutt/muttrc`
 
 ## Native IMAP
@@ -279,3 +285,13 @@ If `enter-command` is available from the UI, it is possible to see the password 
 ## Conversation grouping
 
 ## IMAP message cache
+
+# Mutt's MIME support
+
+# Optional Features
+
+# Security Considerations
+
+# Performance Tuning
+
+# [Reference](http://www.mutt.org/doc/manual/#reference)
