@@ -9,7 +9,38 @@ Text-base Mail Client. Mutt focuses primarily on being a **Mail User Agent (MUA)
 - [Manual](http://www.mutt.org/doc/manual/)
 - `man mutt` and `man muttrc`
 
+## GUI
+You can always type `?` in any menu to display the current bindings.
+
+Invoke Mutt simply by typing `mutt` at the command line.
+
+### The `index` viewer
+When you launch mutt, the first thing you see is a screen with a list of email messages. This initial screen is called the `index`.
+
+These messages are in a default mail folder, often called the `mailspool` that you can think of as you `inbox`. Use the `k` and `j` keys to move the highlighted cursor up and down the list of messages.
+
+### The `pager`
+If you are in the `index` and you want to view the contents of an email, hit the `enter` key, this will take you from the `index` to the `pager`. Mutt's built-in `pager` is just a scrolling text viewer like the unix programs `more` and `less`, use the `backspace` and `enter` keys to scroll up and down the email. Quit the `pager` and return to the `index` by pressing the `q` key.
+
+### The `attachment` viewer
+E-mail has a structure that can include attached parts such as files as well as plain text messages. From the `index`, press the `v` key to view the `attach` menu where you can see the `mime-structure` of the email displayed as a threaded list.
+
+If there is more than one part to a message, you can use the `k` and `j` keys to move up and down the list and the `enter` key to view any item. If the attachment can be viewed by mutt's internal `pager` as plain text then it will. If not, mutt will try and launch a suitable external viewer, and wait for it to finish.
+
+Quit the `attachment` viewer by pressing the `q` key.
+
+### The file `browser`
+To change from your mailspool to a different mailfolder, press the `c` key. You can now either type in the location of the folder you want to open, or press the `?` key to open the file `browser`. Use the `k` and `j` keys to select the folder you want to switch-to and open it by hitting the `enter`.
+
+### The `editor`
+In the `index` or `pager` views, hit the `r` key to reply to a message or the `m` key to create a new one. Mutt will prompt for the `To:` address and the `Subject:` line, then launch your favorite text editor (defined by your $EDITOR environmental variable). Type away, when you save and exit, you are done.
+
+### The `compose` menu
+After the editor, mutt drops you into the `compose` menu, here you can fine-tune your message headers, change the encoding, add file attachments or simply hit the `y` key to say yes and send your email on its way.
+
 # Configuring
+`~/.mutt/muttrc`
+
 ## Native IMAP
 ```
 # Gmail requires full email address (this is not a standard)
