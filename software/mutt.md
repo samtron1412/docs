@@ -9,10 +9,32 @@ Text-base Mail Client. Mutt focuses primarily on being a **Mail User Agent (MUA)
 - [Manual](http://www.mutt.org/doc/manual/)
 - `man mutt` and `man muttrc`
 
-## GUI
+
+## Core concepts
+Mutt is configured through variables which are written to configuration files (`~/.mutt/muttrc`).
+
+`functions` which can be executed manually (using the command lines) or in macros.
+
+`macros` allow the user to bind a sequence of commands to a single key or a short key sequence instead of repeating a sequence of actions over and over.
+
+`tagged` messages: a set of messages, to help selecting messages, Mutt provides a rich set of message patterns (such as recipients, sender, body contents, date sent/received, etc.) which can be combined into complex expressions using the boolean `and` and `or` operations as well as negating. These patterns can also be used to search for messages or to limit the index to show only matching messages.
+
+`hook` allows the user to execute arbitrary configuration commands and functions in certain situations such as entering a folder, starting a new message or replying to and existing one. These hooks can be used to highly customize Mutt's behavior including managing multiple identities, customizing the display for a folder or even implementing auto-archiving based on a per-folder basis and much more.
+
+`command line options`
+
+## User interface
 You can always type `?` in any menu to display the current bindings.
 
 Invoke Mutt simply by typing `mutt` at the command line.
+
+A line-based menu is the so-called `index` menu (listing all messages of the currently opened folder) or the `alias` menu (allowing you to select recipients from a list). Examples for page-based menus are the `pager` (showing one message at a time) or the `help` menu listing all available key bindings.
+
+The **user interface** consists of:
+- **a context sensitive help line** at the top
+- the **menu's contents**
+- **a context sensitive status line**
+- the **command line**. The command line is used to display informational and error messages as well as for prompts and for entering interactive commands.
 
 ### The `index` viewer
 When you launch mutt, the first thing you see is a screen with a list of email messages. This initial screen is called the `index`.
