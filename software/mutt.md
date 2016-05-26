@@ -97,6 +97,36 @@ After the editor, mutt drops you into the `compose` menu, here you can fine-tune
 | <Home>                 | <top>           | move to the top           |
 | <End>                  | <bottom>        | move to the bottom        |
 
+## Editing Input fields
+### Introduction line editor
+Mutt has a built-in line editor for inputting text, e.g. email addresses or filenames. The keys used to manipulate text input are very similar to those of Emacs.
+
+**Most common line editor keys**
+
+| Key            | Function           | Description                          |
+| ^A or <Home>   | <bol>              | move to the start of the line        |
+| ^B or <Left>   | <backward-char>    | move back one char                   |
+| Esc B          | <backward-word>    | move back one word                   |
+| ^D or <Delete> | <delete-char>      | delete the char under the cursor     |
+| ^E or <End>    | <eol>              | move to the end of the line          |
+| ^F or <Right>  | <forward-char>     | move forward one char                |
+| Esc F          | <forward-word>     | move forward one word                |
+| <Tab>          | <complete>         | complete filename or alias           |
+| ^T             | <complete-query>   | complete address with query          |
+| ^K             | <kill-eol>         | delete to the end of the line        |
+| Esc d          | <kill-eow>         | delete to the end of the line        |
+| ^W             | <kill-word>        | delete to the end of the word        |
+| ^U             | <kill-line>        | delete entire line                   |
+| ^V             | <quote-char>       | quote the next typed key             |
+| <Up>           | <history-up>       | recall previous string from history  |
+| <Down>         | <history-down>     | recall next string from history      |
+| <Backspace>    | <backspace>        | kill the char in front of the cursor |
+| Esc u          | <upcase-word>      | convert word to upper case           |
+| Esc l          | <downcase-word>    | convert word to lower case           |
+| Esc c          | <captitalize-word> | capitalize the word                  |
+| ^G             | n/a                | abort                                |
+| <Return>       | n/a                | finish editing                       |
+
 
 # Configuration
 `~/.mutt/muttrc`
