@@ -127,6 +127,18 @@ Mutt has a built-in line editor for inputting text, e.g. email addresses or file
 | ^G             | n/a                | abort                                |
 | <Return>       | n/a                | finish editing                       |
 
+### History
+Mutt maintains a history for the built-in editor. The number of items is controlled by the `$history` variable and can be made persistent using and external file specified using `$history_file`.
+
+Mutt maintains several distinct history lists:
+- .muttrc commands
+- addresses and aliases
+- shell commands
+- filenames
+- patterns
+- everything else
+
+Mutt automatically filters out consecutively repeated items from the history. It also mimics the behavior of some shells by ignoring items starting with a space.
 
 # Configuration
 `~/.mutt/muttrc`
