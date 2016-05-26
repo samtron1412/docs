@@ -41,6 +41,15 @@ When you launch mutt, the first thing you see is a screen with a list of email m
 
 These messages are in a default mail folder, often called the `mailspool` that you can think of as you `inbox`. Use the `k` and `j` keys to move the highlighted cursor up and down the list of messages.
 
+The information you see in the index is a list of emails:
+- each with its number on the left
+- its flags (new email, important email, email that has been forwarded or replied to, tagged email, ...)
+- the date when email was sent
+- its sender
+- the email size
+- the subject
+- Additionally, the index also shows thread hierarchies. This is especially useful for personal email between a group of people or when you've subscribed to mailing lists.
+
 ### The `pager`
 If you are in the `index` and you want to view the contents of an email, hit the `enter` key, this will take you from the `index` to the `pager`. Mutt's built-in `pager` is just a scrolling text viewer like the unix programs `more` and `less`, use the `backspace` and `enter` keys to scroll up and down the email. Quit the `pager` and return to the `index` by pressing the `q` key.
 
