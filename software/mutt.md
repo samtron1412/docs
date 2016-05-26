@@ -74,6 +74,29 @@ In the `index` or `pager` views, hit the `r` key to reply to a message or the `m
 After the editor, mutt drops you into the `compose` menu, here you can fine-tune your message headers, change the encoding, add file attachments or simply hit the `y` key to say yes and send your email on its way.
 
 # Getting Started
+## Moving around in menus
+**Most common navigation keys in entry-based menus (line-based)**
+
+| Key           | Function         | Description                                |
+| j or <Down>   | <next-entry>     | move to the next entry                     |
+| k or <Up>     | <previous-entry> | move to the previous entry                 |
+| z or <PageDn> | <page-down>      | go to the next page                        |
+| Z or <PageUp> | <page-up>        | go to the previous page                    |
+| = or <Home>   | <first-entry>    | jump to the first entry                    |
+| * or <End>    | <last-entry>     | jump to the last entry                     |
+| q             | <quit>           | exit the current menu                      |
+| ?             | <help>           | list all key bindings for the current menu |
+
+**Most common navigation keys in page-based menus**
+
+| Key                    | Function        | Description               |
+| J or <Return>          | <next-line>     | scroll down one line      |
+| <Backspace>            | <previous-line> | scroll up one line        |
+| <Space> or <PageDn> | <next-page>     | move to the next page     |
+| - or <PageUp>          | <previous-page> | move to the previous page |
+| <Home>                 | <top>           | move to the top           |
+| <End>                  | <bottom>        | move to the bottom        |
+
 
 # Configuration
 `~/.mutt/muttrc`
