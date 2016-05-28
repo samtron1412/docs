@@ -500,9 +500,9 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd): Native **systemd** daemon that manages network configurations. It includes support for basic network configurations through **udev**.
 
 ### 1.2 Web browsers
-[Chromium](https://wiki.archlinux.org/index.php/Chromium)
-[Firefox](https://wiki.archlinux.org/index.php/Firefox)
-[w3m](https://en.wikipedia.org/wiki/W3m)
+- [Chromium](https://wiki.archlinux.org/index.php/Chromium)
+- [Firefox](https://wiki.archlinux.org/index.php/Firefox)
+- [w3m](https://en.wikipedia.org/wiki/W3m)
 
 ### 1.3 File sharing
 
