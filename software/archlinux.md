@@ -547,11 +547,7 @@ Back up your system before big upgrade. Use to recover your system when it had t
 #### Facebook Messenger
 - [messengerfordesktop](https://github.com/Aluxian/Facebook-Messenger-Desktop)
 
-### 1.6 Pastebin clients
-
-### 1.7 Bitcoin
-
-### 1.8 Surveying
+### 1.6 Bitcoin
 
 ## 2. Multimedia
 ### 2.1 Codecs
