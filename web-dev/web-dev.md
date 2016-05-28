@@ -85,5 +85,10 @@ Change link from `http://something.com/...` to `//something.com/...` it will aut
 - [StaticGen](https://www.staticgen.com/)
 - [Rise of Static Site Generator](https://justinmayer.com/talks/static-site-generators/#/)
 
+# Standards
+## [Any browser](http://www.anybrowser.org/campaign/)
+
+## [W3C validator](https://validator.w3.org/)
+
 # Tips & Tricks
 ## [Source code comment styling tips](http://www.hongkiat.com/blog/source-code-comment-styling-tips/)
