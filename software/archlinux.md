@@ -496,6 +496,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 # [List applications](https://wiki.archlinux.org/index.php/List_of_applications)
 ## 1. Internet
 ### 1.1 Network managers
+- [netctl](https://wiki.archlinux.org/index.php/Netctl): Simple and robust tool to manage network connections via profiles. Intended to use with **systemd**. [Source](https://projects.archlinux.org/netctl.git/)
+- [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd): Native **systemd** daemon that manages network configurations. It includes support for basic network configurations through **udev**.
 
 ### 1.2 Web browsers
 [Chromium](https://wiki.archlinux.org/index.php/Chromium)
