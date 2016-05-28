@@ -505,6 +505,15 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [w3m](https://en.wikipedia.org/wiki/W3m)
 
 ### 1.3 File sharing
+- [uget](http://ugetdm.com/): GTK+ download manager
+
+#### BitTorrent
+- [aria2](https://wiki.archlinux.org/index.php/Aria2): Lightweight download utility that supports simultaneous adaptive downloading via HTTP(S), FTP, BitTorrent protocols and Metalink. [Homepage](https://aria2.github.io/).
+- [deluge](https://wiki.archlinux.org/index.php/Deluge): User-friendly BitTorrent client written in PyGTK that can run as a daemon. [Homepage](http://deluge-torrent.org/)
+
+#### FTP
+- [filezilla](https://en.wikipedia.org/wiki/FileZilla): Fast and reliable FTP, FTPS and SFTP client. [Homepage](http://filezilla-project.org/)
+- [proFTPd](https://wiki.archlinux.org/index.php/Proftpd): A secure and configurable FTP server. [Homepage](http://www.proftpd.org/)
 
 ### 1.4 Communication
 
