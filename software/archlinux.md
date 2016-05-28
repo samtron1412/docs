@@ -524,7 +524,18 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [irssi](https://wiki.archlinux.org/index.php/Irssi): Highly-configurable ncurses-based IRC client. [Homepage](http://irssi.org/)
 - [hexchat](http://hexchat.github.io/): Fork of Xchat for Linux and Windows.
 
-### 1.5 New, RSS and blogs
+### 1.5 News, RSS and blogs
+- [newsbeuter](http://newsbeuter.org/): Ncurses RSS aggregator with layout and keybinding similar to the Mutt email client.
+- [gpodder](http://gpodder.org/): a podcast client and feed aggregator (GTK+ and CLI).
+- [greg](https://github.com/manolomartinez/greg): A command-line podcast aggregator.
+
+#### Usenet
+- [slrn](https://en.wikipedia.org/wiki/slrn): An open source text-based news client. [Homepage](http://www.slrn.org/)
+- [pan](https://en.wikipedia.org/wiki/Pan_(newsreader)): A GTK2 Usenet newsreader that's good at both text and binaries. [Homepage](http://pan.rebelbase.com/)
+- [tin](https://en.wikipedia.org/wiki/Tin_(newsreader)): A cross-platform threaded NNTP and spool based Usenet newsreader. [Homepage](http://tin.org/)
+- [nzbget](https://wiki.archlinux.org/index.php/NZBGet): CLI utility to grab Usenet binary file using .nzb files. [Homepage](http://nzbget.sourceforge.net/)
+- [sabnzbd](sabnzbd.org)
+- [lottanzb](http://www.lottanzb.org/)
 
 ### 1.6 Pastebin clients
 
