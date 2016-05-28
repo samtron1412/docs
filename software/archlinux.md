@@ -537,6 +537,16 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [sabnzbd](sabnzbd.org)
 - [lottanzb](http://www.lottanzb.org/)
 
+#### Blog
+- `web-dev.md/Static-Site-Generator`
+
+#### Twitter
+- [corebird](http://corebird.baedert.org/): Native GTK+ Twitter client for the Linux desktop.
+- [pumpa](https://pumpa.branchable.com/): [pump.io](http://pump.io) client written in C++ and Qt.
+
+#### Facebook Messenger
+- [messengerfordesktop](https://github.com/Aluxian/Facebook-Messenger-Desktop)
+
 ### 1.6 Pastebin clients
 
 ### 1.7 Bitcoin
