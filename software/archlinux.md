@@ -516,6 +516,13 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [proFTPd](https://wiki.archlinux.org/index.php/Proftpd): A secure and configurable FTP server. [Homepage](http://www.proftpd.org/)
 
 ### 1.4 Communication
+#### Email clients
+- [mutt](https://wiki.archlinux.org/index.php/Mutt): Small but very powerful text-based mail client. [Homepage](http://www.mutt.org/)
+- [neomutt](https://github.com/neomutt/neomutt): Bringing together all the Mutt code
+
+#### IRC clients
+- [irssi](https://wiki.archlinux.org/index.php/Irssi): Highly-configurable ncurses-based IRC client. [Homepage](http://irssi.org/)
+- [hexchat](http://hexchat.github.io/): Fork of Xchat for Linux and Windows.
 
 ### 1.5 New, RSS and blogs
 
