@@ -17,37 +17,37 @@ The Z shell (zsh) is a **Unix shell**. Zsh can be thought of as an extended Bour
 # Configuration files
 When starting Zsh, it'll source the following files in this order by default:
 
-`/etc/zsh/zshenv`
+`/etc/zsh/zshenv`: **NO**
 This file should contain commands to set the global command search path and other system-wide environment variables; it should not contain commands that produce output or assume the shell is attached to a tty.
 
-`~/.zshenv`
+`~/.zshenv`: **NO**
 Similar to /etc/zsh/zshenv but for per-user configuration. Generally used for setting some useful environment variables.
 
-`/etc/zsh/zprofile`
+`/etc/zsh/zprofile`: **USE BUT NO MODIFY**
 This is a global configuration file, it'll be sourced at login. Usually used for executing some general commands at login. Please note that on Arch Linux, by default it contains one line which source the `/etc/profile`.
 
-`/etc/profile`
+`/etc/profile`: **USE BUT NO MODIFY**
 This file should be sourced by all Bourne-compatible shells upon login: it sets up an environment upon login and application-specific (`/etc/profile.d/*.sh`) settings. Note that on Arch Linux, Zsh will also source this by default.
 
-`~/.zprofile`
+`~/.zprofile`: **YES - SET $PATH**
 This file is generally used for automatic execution of user's scripts at login.
 
-`/etc/zsh/zshrc`
+`/etc/zsh/zshrc`: **NO**
 Global configuration file, will be sourced when starting as a interactive shell.
 
-`~/.zshrc`
+`~/.zshrc`: **YES - MAIN CONFIGURATION**
 Main user configuration file, will be sourced when starting as a interactive shell.
 
-`/etc/zsh/zlogin`
+`/etc/zsh/zlogin`: **NO**
 A global configuration file, will be sourced at the ending of initial progress when starting as a login shell.
 
-`~/.zlogin`
+`~/.zlogin`: **NO**
 Same as /etc/zsh/zlogin but for per-user configuration.
 
-`/etc/zsh/zlogout`
+`/etc/zsh/zlogout`: **NO**
 A global configuration file, will be sourced when a login shell exits.
 
-`~/.zlogout`
+`~/.zlogout`: **NO**
 Same as /etc/zsh/zlogout but for per-user configuration.
 
 >**Note**:
