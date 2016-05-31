@@ -29,7 +29,7 @@ This is a global configuration file, it'll be sourced at login. Usually used for
 `/etc/profile`: **USE BUT NO MODIFY**
 This file should be sourced by all Bourne-compatible shells upon login: it sets up an environment upon login and application-specific (`/etc/profile.d/*.sh`) settings. Note that on Arch Linux, Zsh will also source this by default.
 
-`~/.zprofile`: **YES - SET $PATH**
+`~/.zprofile`: **NO**
 This file is generally used for automatic execution of user's scripts at login.
 
 `/etc/zsh/zshrc`: **NO**
