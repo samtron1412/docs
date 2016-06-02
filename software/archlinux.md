@@ -588,7 +588,6 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [clipgrab](https://www.archlinux.org/packages/community/x86_64/clipgrab/): a video downloader and converter
 - [youtube-viewer](https://www.archlinux.org/packages/community/any/youtube-viewer/): a command line utility for viewing YouTube
 - [mps-youtube](https://www.archlinux.org/packages/community/any/mps-youtube/): terminal base YouTube jukebox
-- [gtk-youtube-viewer(AUR)](https://aur.archlinux.org/packages/gtk-youtube-viewer)
 
 ## 3. Utilities
 ### 3.1 Partitioning tools
