@@ -49,6 +49,19 @@ Help file: opening vifm and typing `:h`
 	cW   - change only name of file (without extension)
 	A    - change only extension
 
+# Customization
+- [vifmrc template](https://github.com/vifm/vifm/blob/master/data/vifmrc)
+
+## Color schemes
+
+## Key mapping
+
+## Opening filetypes in vifm
+
+## User commands
+
+## Marks
+
 ## Custom config (~/.vifm/vifmrc)
 	" show all bookmarks
 	nmap bm :marks <cr>
