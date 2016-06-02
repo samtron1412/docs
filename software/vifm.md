@@ -47,7 +47,7 @@
 
 ## Custom config (~/.vifm/vifmrc)
 	" show all bookmarks
-	nmap bb :marks <cr>
+	nmap bm :marks <cr>
 
 	" bookmarks
 	mark h ~
