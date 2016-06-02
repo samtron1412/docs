@@ -1,6 +1,10 @@
 [TOC]
 
 # Overview
+Vifm is an ncurses based file manager with vi like keybindings/modes/options/commands/configuration.
+
+Help file: opening vifm and typing `:h`
+
 - Trash directory: `~/.local/share/vifm/Trash`
 
 # User Guide
