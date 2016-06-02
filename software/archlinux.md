@@ -554,10 +554,16 @@ Back up your system before big upgrade. Use to recover your system when it had t
 
 ### 2.2 Image
 #### 2.2.1 Image viewer
+##### Graphical
 - [sxiv](https://wiki.archlinux.org/index.php/Sxiv)
 - [viewnior](https://www.archlinux.org/packages/?name=viewnior): use to view ico files
 - [eog](https://www.archlinux.org/packages/?name=eog)
 - [feh](https://wiki.archlinux.org/index.php/Feh)
+
+##### Console
+- [fbida](https://www.kraxel.org/blog/linux/fbida/)
+- [fim](http://www.nongnu.org/fbi-improved/)
+- [jfbview](http://seasonofcode.com/pages/jfbview.html)
 
 ### 2.3 Audio
 #### 2.3.1 Audio players
