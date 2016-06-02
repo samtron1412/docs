@@ -91,5 +91,5 @@
 
 # Tips and Tricks
 ## start at different locations
-vifm .                       - start on current folder
-vifm ~/Download ~/Templates  - start on specific folder
+	vifm .                       - start on current folder
+	vifm ~/Download ~/Templates  - start on specific folder
