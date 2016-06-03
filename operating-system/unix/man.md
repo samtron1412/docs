@@ -68,4 +68,33 @@ The following conventions apply to the SYNOPSIS section and can be used as a gui
 | [expression] ... | entire `expression` within [] is repeatable |
 
 # Options
+## Main modes of operation
+`-f`, `--whatis`: Equivalent to `whatis`. Display a short description from the manual page, if available.
+- `man -f <command-name>`
 
+`-k`, `--apropos`: Equivalent to `apropos`. Search the short manual page descriptions for keywords and display any matches
+- `man -k <keyword>`
+
+`-K`, `--global-apropos`: Search for text in all manual pages. This is a brute-force search, and is likely to take some time; Search terms may be simple strings, or regular expressions if the `--regex` option is used.
+
+`-w`, `--where`, `--path`, `--location`: Print the location(s) of the source nroff files that would be formatted.
+
+## Finding manual pages
+`-M <path>`, `--manpath=<path>`: Specify an alternate manpath to use.
+
+`-I`, `--match-case`: Search for manual pages case-sensitively.
+
+`--regex`: Show all pages with any part of either their names or their descriptions matching each page argument as a regular expression.
+
+`-a`, `--all`: Force `man` to display all the manual pages with names that match the search criteria.
+
+`--no-subpages`: By default, `man` will try to interpret pairs of manual page names given on the command line as equivalent to a single manual page name containing a hyphen or an underscore. This supports the common pattern of programs that implement a number of subcommands, allowing them to provide namual pages for each that can be accessed using similar syntax as would be used to invoke the subcommands themselves.
+- `$ man -aw git diff`
+- `$ man -aw --no-subpages git diff`
+
+## Controlling formatted output
+`-P <pager>`, `--pager=<pager>`: specify which output pager to use.
+
+`-t`, `--troff`: Use `groff -mandoc` to format the manual page to stdout.
+
+`-H[browser]`, `--html[=browser]`: Cause `groff` to produce HTML output, and will display that output in a web browser.
