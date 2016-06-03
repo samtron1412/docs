@@ -689,8 +689,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [Foxit Reader](https://aur.archlinux.org/packages/foxitreader/)
 
 #### [Terminal pagers](https://en.wikipedia.org/wiki/Terminal_pager)
-- [more](https://en.wikipedia.org/wiki/More_(command))
 - [less](https://wiki.archlinux.org/index.php/Core_utilities#less)
+- [more](https://en.wikipedia.org/wiki/More_(command))
 - [most](https://en.wikipedia.org/wiki/Most_(Unix))
 - [vimpager](https://www.archlinux.org/packages/?name=vimpager)
 
