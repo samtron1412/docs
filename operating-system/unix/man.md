@@ -17,6 +17,7 @@ By default, `man` uses a terminal pager program such as `more` or `less` to disp
 The manual is generally split into eight numbered sections, organized as follows (on Research UNIX, BSD, OS X, and Linux):
 
 | Section | Description                                                                     |
+| -       | -                                                                               |
 | 1       | Executable programs or shell commands                                           |
 | 2       | System calls (functions provided by the kernel)                                 |
 | 3       | Library calls (functions within program libraries)                              |
@@ -29,6 +30,7 @@ The manual is generally split into eight numbered sections, organized as follows
 On some systems some of the following sections are available:
 
 | Section | Description            |
+| -       | -                      |
 | 0       | C library header files |
 | 9       | Kernel routines        |
 | n       | Tcl/Tk keywords        |
@@ -37,5 +39,17 @@ On some systems some of the following sections are available:
 Suffix
 
 | Subsection | Description                   |
+| -          | -                             |
 | p          | POSIX specifications          |
 | x          | X Window System documentation |
+
+# Layout
+All man pages follow a common layout that is optimized for presentation on a simple ASCII text display, possibly without any form of highlighting or font control. Sections present may include: NAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE, ERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS, and SEE ALSO.
+
+| Convention  | Description                                                                                                                                                                                                              |
+| NAME        | The name of the command or function, followed by a one-line description of what it does                                                                                                                                  |
+| SYNOPSIS    | In the case of a command, a formal description of how to run it and what command line options it takes. For program functions, a list of the parameters the function takes and which header file contains its definition |
+| DESCRIPTION | A textual description of the functioning of the command or function                                                                                                                                                      |
+| EXAMPLES    | Some examples of common usage                                                                                                                                                                                            |
+| SEE ALSO    | A list of related commands or functions                                                                                                                                                                                  |
+
