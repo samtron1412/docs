@@ -53,3 +53,15 @@ All man pages follow a common layout that is optimized for presentation on a sim
 | EXAMPLES    | Some examples of common usage                                                                                                                                                                                            |
 | SEE ALSO    | A list of related commands or functions                                                                                                                                                                                  |
 
+## SYNOPSIS
+The following conventions apply to the SYNOPSIS section and can be used as a guide in other sections
+
+| Convention                             | Description                                 |
+| -                                      | -                                           |
+| bold text                              | type exactly as shown                       |
+| italic text/underlined or colored text | replace with appropriate argument           |
+| [-abc]                                 | any or all arguments within [] are optional |
+| `-a|b` | options delimited by `|` cannot be used together |
+| `argument` ... | `argument` is repeatable |
+| [expression] ... | entire `expression` within [] is repeatable |
+
