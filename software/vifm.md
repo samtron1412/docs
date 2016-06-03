@@ -110,3 +110,16 @@ Help file: opening vifm and typing `:h`
 ## start at different locations
 	vifm .                       - start on current folder
 	vifm ~/Download ~/Templates  - start on specific folder
+
+## Open current directory in other pane
+`:sync [relative path]`: change the other pane to the current pane directory or to some path relative to the current directory. Using macros is allowed.
+
+`sync!`: Change the other pane to the current pane directory and synchronize cursor position.
+
+`sync! [location|cursorpos|localopts|filters|all]...`: change enumerated properties of the other pane to match corresponding properties of the current pane. Arguments have the following meanings:
+- location - current directory of the pane;
+- cursorpos - cursor position (doesn't make sense without "location");
+- localopts - all local options;
+- filters - all filters;
+- all - all of the above.
+
