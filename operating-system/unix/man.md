@@ -12,3 +12,30 @@ By default, `man` uses a terminal pager program such as `more` or `less` to disp
 - The modern descendants of 4.4BSD replaced the old `-man` macros with the newer `-mdoc`.
 - The default format of the man pages is **troff**, with either the **macro package** man (appearance oriented) or **mdoc** (semantic oriented). This makes it possible to typeset a man page into PostScript, PDF, and various other formats for viewing and printing.
 - In 2010, OpenBSD deprecated troff for formatting manpages in favor of mandoc, a specialized compiler/formatter for manpages with native support for output in PostScript, HTML, XHTML, and the terminal.
+
+# Manual sections
+The manual is generally split into eight numbered sections, organized as follows (on Research UNIX, BSD, OS X, and Linux):
+
+| Section | Description                                                                     |
+| 1       | Executable programs or shell commands                                           |
+| 2       | System calls (functions provided by the kernel)                                 |
+| 3       | Library calls (functions within program libraries)                              |
+| 4       | Special files ( usually found in `/dev`)                                        |
+| 5       | File formats and conventions e.g. `/etc/passwd`                                 |
+| 6       | Games                                                                           |
+| 7       | Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7) |
+| 8       | System administration commands (usually only for root)                          |
+
+On some systems some of the following sections are available:
+
+| Section | Description            |
+| 0       | C library header files |
+| 9       | Kernel routines        |
+| n       | Tcl/Tk keywords        |
+| x       | The X Window System    |
+
+Suffix
+
+| Subsection | Description                   |
+| p          | POSIX specifications          |
+| x          | X Window System documentation |
