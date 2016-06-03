@@ -5,6 +5,8 @@ man page (short for manual page) is a form of software documentation usually fou
 
 By default, `man` uses a terminal pager program such as `more` or `less` to display its content.
 
+The manual pager utilities packaged as `man-db` make extensive use of `index` database caches. These caches contain information such as where each manual page can be found on the filesystem and what its `whatis` (short one line description of the man page) contains, and allow `man` to run faster than if it had to search the filesystem each time to find the appropriate manual page.
+
 ## History
 - In the first two years of the history of UNIX, no documentation existed.
 - The UNIX Programmer's Manual was first published on November 3, 1971.
@@ -64,4 +66,6 @@ The following conventions apply to the SYNOPSIS section and can be used as a gui
 | `-a|b` | options delimited by `|` cannot be used together |
 | `argument` ... | `argument` is repeatable |
 | [expression] ... | entire `expression` within [] is repeatable |
+
+# Options
 
