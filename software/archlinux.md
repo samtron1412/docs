@@ -550,6 +550,13 @@ Back up your system before big upgrade. Use to recover your system when it had t
 #### Facebook Messenger
 - [messengerfordesktop](https://github.com/Aluxian/Facebook-Messenger-Desktop)
 
+#### Hacker News
+- Access [an unofficial alternative hacker news interface](http://hckrnews.com/) by w3m/lynx.
+- [haxor-news](https://github.com/donnemartin/haxor-news)
+- [pyhn](https://github.com/socketubs/pyhn)
+- [hn-cli](https://github.com/rafaelrinaldi/hn-cli)
+- [vim-hackernews](https://github.com/ryanss/vim-hackernews)
+
 ### 1.6 Bitcoin
 
 ## 2. Multimedia
