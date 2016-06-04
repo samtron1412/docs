@@ -532,7 +532,11 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [gpodder](http://gpodder.org/): a podcast client and feed aggregator (GTK+ and CLI).
 - [greg](https://github.com/manolomartinez/greg): A command-line podcast aggregator.
 
-
+#### Reddit
+- [rtv](https://github.com/michael-lazar/rtv): Browse Reddit from your terminal.
+- [cortex](https://github.com/GGLucas/cortex): An ncurses Reddit browser and monitor.
+- [cReddit](https://github.com/Cotix/cReddit): CLI Reddit client written in C.
+- [alienfeed](https://github.com/jawerty/AlienFeed): Reddit CLI.
 
 #### Twitter
 - [corebird](http://corebird.baedert.org/): Native GTK+ Twitter client for the Linux desktop.
