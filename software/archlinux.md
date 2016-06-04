@@ -532,6 +532,19 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [gpodder](http://gpodder.org/): a podcast client and feed aggregator (GTK+ and CLI).
 - [greg](https://github.com/manolomartinez/greg): A command-line podcast aggregator.
 
+
+
+#### Twitter
+- [corebird](http://corebird.baedert.org/): Native GTK+ Twitter client for the Linux desktop.
+- [pumpa](https://pumpa.branchable.com/): [pump.io](http://pump.io) client written in C++ and Qt.
+
+#### Hacker News
+- Access hacker news or [an unofficial alternative hacker news interface](http://hckrnews.com/) by w3m/lynx.
+- [haxor-news](https://github.com/donnemartin/haxor-news)
+- [pyhn](https://github.com/socketubs/pyhn)
+- [hn-cli](https://github.com/rafaelrinaldi/hn-cli)
+- [vim-hackernews](https://github.com/ryanss/vim-hackernews)
+
 #### Usenet
 - [slrn](https://en.wikipedia.org/wiki/slrn): An open source text-based news client. [Homepage](http://www.slrn.org/)
 - [pan](https://en.wikipedia.org/wiki/Pan_(newsreader)): A GTK2 Usenet newsreader that's good at both text and binaries. [Homepage](http://pan.rebelbase.com/)
@@ -543,19 +556,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 #### Blog
 - `web-dev.md/Static-Site-Generator`
 
-#### Twitter
-- [corebird](http://corebird.baedert.org/): Native GTK+ Twitter client for the Linux desktop.
-- [pumpa](https://pumpa.branchable.com/): [pump.io](http://pump.io) client written in C++ and Qt.
-
 #### Facebook Messenger
 - [messengerfordesktop](https://github.com/Aluxian/Facebook-Messenger-Desktop)
-
-#### Hacker News
-- Access hacker news or [an unofficial alternative hacker news interface](http://hckrnews.com/) by w3m/lynx.
-- [haxor-news](https://github.com/donnemartin/haxor-news)
-- [pyhn](https://github.com/socketubs/pyhn)
-- [hn-cli](https://github.com/rafaelrinaldi/hn-cli)
-- [vim-hackernews](https://github.com/ryanss/vim-hackernews)
 
 ### 1.6 Bitcoin
 
