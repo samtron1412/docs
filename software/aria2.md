@@ -25,6 +25,10 @@ This behavior can be modified with the `--conf-path` switch.
 
 `daemon=true`: Run as daemon
 
+`--max-overall-download-limit=100|1K|1M`: Set max overall download speed in bytes/sec.
+
+`--max-download-limit=100|1K|1M`: Set max download speed per each download in bytes/sec.
+
 ## Running options
 `--checksum=sha-1=0192ba11326fe2298c8cb4de616f4d4140213838`
 
