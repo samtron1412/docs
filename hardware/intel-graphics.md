@@ -12,3 +12,17 @@ To enable OpenGL support, also install `mesa-libgl`. If you need 32-bit support,
 
 For `Vulkan` support, install `vulkan-intel` for Ivy-Bridge or newer GPUs.
 
+# Configuration
+There is no need for any configuration to run `Xorg`. However, to take advantage of some driver options, you will need to create a Xorg configuration file similar to the one below: `/etc/X11/xorg.conf.d/20-intel.conf`
+
+```
+Section "Device"
+	Identifier "Intel Graphics"
+	Driver     "intel"
+	Option "Accelmethod" "sna"
+	Option "TearFree" "true"
+EndSection
+```
+
+Additional options are added by the user on new line below `Driver`.
+
