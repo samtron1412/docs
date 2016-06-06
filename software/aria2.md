@@ -29,3 +29,6 @@ This behavior can be modified with the `--conf-path` switch.
 `--checksum=sha-1=0192ba11326fe2298c8cb4de616f4d4140213838`
 
 `--dry-run=true`: aria2 just checks whether the remote file is available and doesn't download data.
+
+`--out=<file-name>`: The file name of the downloaded file. When the `--force-sequential` option is used, this option is ignored.
+
