@@ -206,3 +206,4 @@ Remove a variable environment: `unset PATH`
 # chattr - change file attributes on a Linux file system
 
 # [ln](http://www.computerhope.com/unix/uln.htm)
+- `ln` cannot create hard links between partitions because the implement inode number of the file system. [source](http://www.cyberciti.biz/tips/why-isnt-it-possible-to-create-hard-links-across-file-system-boundaries.html)
