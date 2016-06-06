@@ -42,3 +42,7 @@ This behavior can be modified with the `--conf-path` switch.
 `--show-files=true`: Print file listing of `.torrent`, `.meta4` and `.metalink` file and exit.
 
 `--select-file=1,3,4,6-9`: Set file to download by specifying its index.
+
+`--max-overall-upload-limit=100|1K|1M`
+
+`--max-upload-limit=100|1K|1M`
