@@ -34,3 +34,7 @@ This behavior can be modified with the `--conf-path` switch.
 
 `--download-result=default|full|hide`: change the way showing download results
 
+### BitTorrent/Metalink options
+`--show-files=true`: Print file listing of `.torrent`, `.meta4` and `.metalink` file and exit.
+
+`--select-file=1,3,4,6-9`: Set file to download by specifying its index.
