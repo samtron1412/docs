@@ -32,3 +32,5 @@ This behavior can be modified with the `--conf-path` switch.
 
 `--out=<file-name>`: The file name of the downloaded file. When the `--force-sequential` option is used, this option is ignored.
 
+`--download-result=default|full|hide`: change the way showing download results
+
