@@ -11,6 +11,8 @@
 - [systemd use guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units#editing-unit-files)
 
 # Troubleshooting
+## [Debugging](https://freedesktop.org/wiki/Software/systemd/Debugging/)
+
 ## [/var stay busy at shutdown due to journald](https://github.com/systemd/systemd/issues/867)
 - Fix by change `Storage=volatile` in `/etc/systemd/journald.conf`: journald will save log to `/run/log/journal` instead `/var/log/journal`
 
