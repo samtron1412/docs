@@ -88,3 +88,7 @@ In USA
 ## Comparing GPG keys and SSH keys
 - Client SSH keys are used to authenticate who you are to a server. (The SSH server also has its own pair of keys it uses to authenticate who it is to the clients.)
 - GPG keys are used to authenticate a message with a digital signature, or to act as a key for decrypting messages to you.
+
+# syslog-ng, rsyslog, journald
+- https://bazsi.blogs.balabit.com/2011/12/syslog-ng-and-the-journal/
+- http://blog.gerhards.net/2013/05/rsyslog-vs-systemd-journal.html
