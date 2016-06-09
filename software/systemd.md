@@ -1,6 +1,7 @@
 [TOC]
 
 # Overview
+## What?
 `systemd` is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system.
 
 - provides aggressive parallelization capabilities
@@ -17,12 +18,25 @@ Other parts:
 - utilities to control basic system configuration like the hostname, date, locale, maintain a list of logged-in users and running containers and virtual machines, system accounts, runtime directories and settings
 - daemons to manage simple network configuration, network time synchronization, log forwarding, and name resolution.
 
+## Why?
+
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Systemd)
 - [Archlinux Wiki](https://wiki.archlinux.org/index.php/Systemd)
 - [Systemd for upstart user](https://wiki.ubuntu.com/SystemdForUpstartUsers)
 - [systemd use guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units#editing-unit-files)
+
+# Design
+## Unit files
+
+## Core components and libraries
+
+## Ancillary components
+
+# Graphical frontends
+
+# Forks and alternative implementations
 
 # Troubleshooting
 ## [Debugging](https://freedesktop.org/wiki/Software/systemd/Debugging/)
