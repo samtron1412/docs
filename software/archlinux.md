@@ -581,6 +581,9 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [fim](http://www.nongnu.org/fbi-improved/)
 - [jfbview](http://seasonofcode.com/pages/jfbview.html)
 
+#### 2.2.2 Screen capture (screenshot)
+- [maim](https://github.com/naelstrof/maim)
+
 ### 2.3 Audio
 #### 2.3.1 Audio players
 [mpd](https://wiki.archlinux.org/index.php/Music_Player_Daemon)
