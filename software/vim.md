@@ -62,6 +62,8 @@ http://www.vim.org/docs.php
 
 
 # Tips and Tricks
+## [Moving lines up and down](http://vim.wikia.com/wiki/Moving_lines_up_or_down)
+
 ## [Work with multiple files](http://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-files-in-vim)
 
 ## Show hidden characters like carriage return and linefeed
