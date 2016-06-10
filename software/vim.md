@@ -62,6 +62,8 @@ http://www.vim.org/docs.php
 
 
 # Tips and Tricks
+## [Fix meta key in terminal](http://stackoverflow.com/questions/6778961/alt-key-shortcuts-not-working-on-gnome-terminal-with-vim)
+
 ## [Moving lines up and down](http://vim.wikia.com/wiki/Moving_lines_up_or_down)
 
 ## [Work with multiple files](http://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-files-in-vim)
