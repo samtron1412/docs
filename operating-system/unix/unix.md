@@ -8,6 +8,8 @@ Written in **C** and assembly language. Historically **closed source**. Developm
 # History
 ![history](../graphic/unix/Unix-history-simple.svg)
 
+# [UNIX philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+
 # Components
 ## Kernel
 source code in /usr/sys, composed of several sub-components:
