@@ -18,10 +18,17 @@
 - utilities to control basic system configuration like the hostname, date, locale, maintain a list of logged-in users and running containers and virtual machines, system accounts, runtime directories and settings
 - daemons to manage simple network configuration, network time synchronization, log forwarding, and name resolution.
 
+**License**: GNU Lesser General Public License (>=2.1)
+
+**Spelling**: `systemd` - `System Five Hundred`
+
+[Source](https://github.com/systemd/systemd)
+
 ## Why?
 
 
 ## Resources
+- [Homepage](https://freedesktop.org/wiki/Software/systemd/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Systemd)
 - [Archlinux Wiki](https://wiki.archlinux.org/index.php/Systemd)
 - [Systemd for upstart user](https://wiki.ubuntu.com/SystemdForUpstartUsers)
