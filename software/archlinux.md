@@ -139,10 +139,10 @@ Different between primary and logical partition is only some operating system ca
 
 ### Create new partition table
 Partiton scheme:
-	- `/` : root directory 60-120 GB
+	- `/` : root directory, capacity = 1/3 of total capacity, e.g. total capacity is 300 GB -> root is 100 GB
 	- `/boot`: 200 - 300 MB
-	- `/home` : varies
-	- `swap`: virtual memory
+	- `/home` : home directory, capacity = 2/3 of total capacity
+	- `swap`: virtual memory, capacity = 3/2 of RAM memory
 
 Use **lsblk** to list the hard disks
 
