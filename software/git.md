@@ -160,45 +160,45 @@ Template
 
 ```bash
 [alias]
-    # one-line log
-    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	# one-line log
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 
-    a = add
-    ap = add -p
-    c = commit --verbose
-    ca = commit -a --verbose
-    cm = commit -m
-    cam = commit -a -m
-    m = commit --amend --verbose
+	a = add
+	ap = add -p
+	c = commit --verbose
+	ca = commit -a --verbose
+	cm = commit -m
+	cam = commit -a -m
+	m = commit --amend --verbose
 
-    d = diff
-    ds = diff --stat
-    dc = diff --cached
+	d = diff
+	ds = diff --stat
+	dc = diff --cached
 
-    s = status -s
-    co = checkout
-    cob = checkout -b
-    # list branches sorted by last modified
-    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	s = status -s
+	co = checkout
+	cob = checkout -b
+	# list branches sorted by last modified
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
 
-    # list aliases
-    la = "!git config -l | grep alias | cut -c 7-"
+	# list aliases
+	la = "!git config -l | grep alias | cut -c 7-"
 ```
 
 ```bash
 [alias]
-    co = checkout
-    ec = config --global -e
-    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
-    cob = checkout -b
-    cm = !git add -A && git commit -m
-    save = !git add -A && git commit -m 'SAVEPOINT'
-    wip = !git add -u && git commit -m "WIP"
-    undo = reset HEAD~1 --mixed
-    amend = commit -a --amend
-    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+	co = checkout
+	ec = config --global -e
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	cob = checkout -b
+	cm = !git add -A && git commit -m
+	save = !git add -A && git commit -m 'SAVEPOINT'
+	wip = !git add -u && git commit -m "WIP"
+	undo = reset HEAD~1 --mixed
+	amend = commit -a --amend
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 ```
 
 ## Git Attributes
@@ -545,21 +545,21 @@ lack of authentication, only use to clone repository because fastest network tra
 				SSH_ENV=$HOME/.ssh/environment
 				# start the ssh-agent
 				function start_agent {
-				    echo "Initializing new SSH agent..."
-				    # spawn ssh-agent
-				    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-				    echo succeeded
-				    chmod 600 "${SSH_ENV}"
-				    . "${SSH_ENV}" > /dev/null
-				    /usr/bin/ssh-add
+					echo "Initializing new SSH agent..."
+					# spawn ssh-agent
+					/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+					echo succeeded
+					chmod 600 "${SSH_ENV}"
+					. "${SSH_ENV}" > /dev/null
+					/usr/bin/ssh-add
 				}
 				if [ -f "${SSH_ENV}" ]; then
-				     . "${SSH_ENV}" > /dev/null
-				     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-				        start_agent;
-				    }
+					 . "${SSH_ENV}" > /dev/null
+					 ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+						start_agent;
+					}
 				else
-				    start_agent;
+					start_agent;
 				fi
 
 	- Step 4: Install public key to your remote
@@ -856,6 +856,18 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Reference
 
 # Tips and Tricks
+## Splitting a subfolder out into a new repository
+- [filter-branch manual](https://git-scm.com/docs/git-filter-branch)
+- [GitHub tutorial](https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/)
+- [Moving files from one Git repository to another](http://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/)
+
+	git clone <repo>
+	cd <repo>
+	git remote rm origin
+	git filter-branch --subdirectory-filter <folder> -- --all
+	git remote add origin <url>
+	git push origin master
+
 ## Change timestamp of commit
 You may be wondering what the difference is between `author` and `committer`. The author is the person **who originally wrote the work**, whereas the committer is the person **who last applied the work**. So, if you send in a patch to a project and one of the core members applies the patch, both of you get credit – you as the author, and the core member as the committer.
 
@@ -933,7 +945,7 @@ list all file is assume unchanged:
 ## [Rename multiple files](http://stackoverflow.com/questions/9984722/git-rename-many-files-and-folders)
 This should do the trick:
 
-    for file in $(git ls-files | grep %filenamematch% | sed -e 's/\(%filenamematch%[^/]*\).*/\1/' | uniq); git mv $file $(echo $file | sed -e 's/%filenamematch%/%replacement%/')
+	for file in $(git ls-files | grep %filenamematch% | sed -e 's/\(%filenamematch%[^/]*\).*/\1/' | uniq); git mv $file $(echo $file | sed -e 's/%filenamematch%/%replacement%/')
 
 To follow what this is doing, you'll need to understand piping with "|" and command substitution with "$(...)". These powerful shell constructs allow us to combine several commands to get the result we need. See [Pipelines](http://www.gnu.org/software/bash/manual/html_node/Pipelines.html) and [Command Substitution](http://wiki.bash-hackers.org/syntax/expansion/cmdsubst).
 
