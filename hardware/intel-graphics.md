@@ -26,3 +26,6 @@ EndSection
 
 Additional options are added by the user on new line below `Driver`.
 
+# Troubleshooting
+## Chromium/Firefox problems
+Set the AccelMethod to "uxa": `Option "AccelMethod" "uxa"`
