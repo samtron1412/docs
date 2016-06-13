@@ -504,8 +504,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [Firefox](https://wiki.archlinux.org/index.php/Firefox)
 - [w3m](https://en.wikipedia.org/wiki/W3m)
 - [lynx](https://en.wikipedia.org/wiki/Lynx_(web_browser))
-- [links](https://en.wikipedia.org/wiki/Links_(web_browser))
 - [elinks](https://en.wikipedia.org/wiki/ELinks)
+- [links](https://en.wikipedia.org/wiki/Links_(web_browser))
 
 ### 1.3 File sharing
 - [uget](http://ugetdm.com/): GTK+ download manager
