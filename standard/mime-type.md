@@ -41,3 +41,17 @@ When viewing a file, these two work together as follows: `mime.types` associates
 
 In UNIX-like systems, the mime.types file is usually located at `/etc/mime.types` and/or `~/.mime.types` and the format is simply that each line is a space-delimited list of a MIME type, followed by zero or more extensions.
 - `text/html htm html`
+
+# Default applications
+Setting default applications per file type involves detection of the file type as the first step.
+
+Since the application launcher cannot fully understand all file types, the detection is based on reading only a small part of the file.
+
+There are two common ways to determine the file type:
+- Using the file name extension, for example `.html` or `.jpeg`
+- Using the so-called "magic bytes" at the start of the file.
+
+The first method is very simple and fast, but inaccurate if the file is not named "correctly". The second is more accurate, but slower.
+
+Since files are not required to have an extension and multiple file name extensions can be used for the same file type, MIME types are commonly used instead to uniquely represent the type of a file.
+
