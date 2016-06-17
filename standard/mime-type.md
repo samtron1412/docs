@@ -31,3 +31,13 @@ The mailcap format is defined by [RFC1524](https://tools.ietf.org/html/rfc1524) 
 
 Lines can be comments starting with the `#`character, or a mime-type followed by how to handle that mime type. The first part is called the content-type, and the second part is called the view-command.
 - `video/mpeg; xmpeg %s`: says if a file encoded in mime has type video/mpeg, run the xmpeg program with the file name as a parameter.
+
+# mime.types
+An associated file is the `mime.types` file, which associates filename extensions with a MIME type.
+
+If the MIME type is properly set, this is unnecessary, but MIME types may be incorrectly set, or set to a generic type such as `application/octet-stream`, and `mime.types` allows one to fall back on the extension in these cases.
+
+When viewing a file, these two work together as follows: `mime.types` associates an extension with a MIME type, while `mailcap` associates a MIME type with a program.
+
+In UNIX-like systems, the mime.types file is usually located at `/etc/mime.types` and/or `~/.mime.types` and the format is simply that each line is a space-delimited list of a MIME type, followed by zero or more extensions.
+- `text/html htm html`
