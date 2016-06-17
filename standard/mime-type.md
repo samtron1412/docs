@@ -24,3 +24,10 @@ Media type consists of top-level type name and sub-type name, which is further s
 
 Top-level type names: `application`, `audio`, `example`, `image`, `message`, `model`, `multipart`, `text`, `video`.
 
+# Mailcap
+Mailcap (derived from the phrase `mail capability`) is a type of meta file used to configure how MIME-aware applications such as mail clients and web browsers render files of different MIME-types.
+
+The mailcap format is defined by [RFC1524](https://tools.ietf.org/html/rfc1524) but is not defined as an Internet standard.
+
+Lines can be comments starting with the `#`character, or a mime-type followed by how to handle that mime type. The first part is called the content-type, and the second part is called the view-command.
+- `video/mpeg; xmpeg %s`: says if a file encoded in mime has type video/mpeg, run the xmpeg program with the file name as a parameter.
