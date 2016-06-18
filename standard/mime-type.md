@@ -55,3 +55,9 @@ The first method is very simple and fast, but inaccurate if the file is not name
 
 Since files are not required to have an extension and multiple file name extensions can be used for the same file type, MIME types are commonly used instead to uniquely represent the type of a file.
 
+## Archlinux
+In Arch, tools from the [shared-mime-info](https://www.archlinux.org/packages/?name=shared-mime-info) package are used to maintain the MIME type database, which is used by other packages to register new MIME types.
+
+Each package can also use the [Desktop entries](https://wiki.archlinux.org/index.php/Desktop_entries) to provide information about the MIME types that can be handled by the packaged software.
+
+There is frequently more than one application able to handle data of a certain MIME type, so users and even some packages assemble lists of default applications for each MIME type.
