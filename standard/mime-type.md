@@ -22,7 +22,7 @@ Media type consists of top-level type name and sub-type name, which is further s
 - `<top-level type name>/<sub-type name><[; parameters]>`
 - `<top-level type name>/<[tree.]> <sub-type name> <[+suffix]><[; parameters]>`
 
-Top-level type names: `application`, `audio`, `example`, `image`, `message`, `model`, `multipart`, `text`, `video`.
+Top-level type names: `application`, `audio`, `example`, `image`, `message`, `model`, `multipart`, `text`, `video`, `chemical`.
 
 # Mailcap
 Mailcap (derived from the phrase `mail capability`) is a type of meta file used to configure how MIME-aware applications such as mail clients and web browsers render files of different MIME-types.
