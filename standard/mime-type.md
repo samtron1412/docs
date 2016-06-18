@@ -24,6 +24,24 @@ Media type consists of top-level type name and sub-type name, which is further s
 
 Top-level type names: `application`, `audio`, `example`, `image`, `message`, `model`, `multipart`, `text`, `video`, `chemical`.
 
+| Top-level type   | Description                                                | Sub-type                                                                                                                                    |
+| -                | -                                                          | -                                                                                                                                           |
+| application      | Files with binary content: documents, archives,...         | epub+zip, ereader, excel, gbr, gzip                                                                                                         |
+| audio            | audio files                                                | flac, m4a, midi                                                                                                                             |
+| chemical         | Chemical information, molecular and other chemical data    | x-cif, x-cml, x-daylight-smiles, x-gamess-input, x-gaussian-checkpoint                                                                      |
+| image            | Image files                                                | bmp, crw, g3fax, gif, jpeg, jpg                                                                                                             |
+| inode            | Can be opened by a file manager                            | blockdevice, chardevice, directory, fifo, mount-point, socket, symlink                                                                      |
+| message          | Message protocols                                          | delivery-status, disposition-notification, external-body, news, partial, frc822, x-gnu-rmail                                                |
+| misc             | Streaming meta data                                        | ultravox                                                                                                                                    |
+| text             | Text documents                                             | html, javascript, mathml, mml, plain                                                                                                        |
+| video            | Video  files                                               | flv, mp2t, mp4                                                                                                                              |
+| x-content        | Content on disks such as audio, video, image or blank disk | audio-cdda, audio-player, blank-bd, blank-cd, blank-dvd, blank-hddvd, image-picturecd, video-dvd, video-svcd                                |
+| x-scheme-handler | Internet protocol                                          | ftp, geo, ghelp, help, http, https, icy, icyx, info, irc, magnet, mailto, man, mms, mmsh, net, pnm, rtmp, rtp, rtsp, skype, uvox, vnc, xmpp |
+| x-epoc           | SISX package                                               | x-sisx-app                                                                                                                                  |
+| multipart        | Multi-part mime messages                                   | alternative, appledouble, digest, encrypted, mixed, related, report, signed, x-mixed-replace                                                |
+| model            | such as 3D model                                           | x-kpovmodeler, vrml, x-modelica                                                                                                             |
+
+
 # Mailcap
 Mailcap (derived from the phrase `mail capability`) is a type of meta file used to configure how MIME-aware applications such as mail clients and web browsers render files of different MIME-types.
 
