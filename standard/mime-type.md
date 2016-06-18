@@ -3,6 +3,8 @@
 # Overview
 - [Wikipedia](https://en.wikipedia.org/wiki/Media_type)
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Default_applications)
+- [Association between MIME types and applications](https://specifications.freedesktop.org/mime-apps-spec/mime-apps-spec-1.0.html)
+- [Shared MIME-info Database](https://specifications.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-0.11.html#idm139839923550176)
 
 A media type (also MIME type and content type) is a two-part identifier for file formats and format contents transmitted on the Internet.
 
