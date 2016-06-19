@@ -18,3 +18,11 @@ ABS is made up of a directory tree (the ABS tree) residing under `/var/abs`.
 - These ABS (or subdirectories) do not contain the software package nor the source but rather a `PKGBUILD` file (and sometimes other files).
 	+ A `PKGBUILD` is a **simple Bash build script** - a text file containing the *compilation* and *packaging* instructions as well as the URL of the appropriate **source** tarball to be downloaded.
 	+ By issuing inside the ABS `makepkg` command, the software is first compiled and then packaged within the build directory. Now you may use `pacman` to install, upgrade, and remove you new package.
+
+
+# Tips and Tricks
+## Download sources
+- Copy the package, whose source you want to have, from the local ABS tree (e.g. `/var/abs/core/findutils`) to another directory, e.g. `~/tmp/findutils`
+- If you only want to get the sources and don't want to build the package then run: `makepkg -od`
+- Build the package and handle all the package's dependencies automatically: `makepkg -s`
+- Build your local sources (have your modifications): `makepkg -e`
