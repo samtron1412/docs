@@ -19,6 +19,19 @@ ABS is made up of a directory tree (the ABS tree) residing under `/var/abs`.
 	+ A `PKGBUILD` is a **simple Bash build script** - a text file containing the *compilation* and *packaging* instructions as well as the URL of the appropriate **source** tarball to be downloaded.
 	+ By issuing inside the ABS `makepkg` command, the software is first compiled and then packaged within the build directory. Now you may use `pacman` to install, upgrade, and remove you new package.
 
+## ABS overview
+- **ABS tree**: The ABS directory structure containing files needed to build all official packages (but not the packages themselves nor the source files of the software).
+	+ It is available in [svn](https://www.archlinux.org/svn/) and [git](https://projects.archlinux.org/svntogit/packages.git/) repositories and the `abs` script downloads them using rsync into `/var/abs/` on your machine.
+	+ On the local system, the tree contains subdirectories for each repository specified in `/etc/abs.conf`.
+	+ ABS tree sync once a day so it may lag behind what is already available in the repositories.
+- **PKGBUILD**: A Bash script that contains the URL of the source code along with the compilation and packaging instructions.
+- **makepkg**: shell command tool which reads the PKGBUILDs, automatically downloads and compiles the sources and creates a `.pkg.tar*` according to the `PKGEXT` array in `makepkg.conf`.
+	+ You may also use makepkg to make your own custom packages from the AUR or third-party sources. See [Creating packages](https://wiki.archlinux.org/index.php/Creating_packages)
+- **pacman**: a shell command tool, to install and remove the built packages and for fetching dependencies.
+- **AUR**: The Arch User Repository is separate from ABS but AUR PKGBUILDs are built using makepkg to compile and package up software.
+	+ The AUR exists as a website interface.
+- **Warning**: Official PKGBUILDs assume that packages are [built in a clean chroot](https://wiki.archlinux.org/index.php/DeveloperWiki:Building_in_a_Clean_Chroot).
+	+ Building software on a *dirty* build system may fail or cause unexpected behaviors at runtime, because if the build system detects dependencies dynamically, the result depends on what packages are available on the build system.
 
 # Tips and Tricks
 ## Download sources
