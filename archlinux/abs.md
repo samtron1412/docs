@@ -76,3 +76,13 @@ Building packages using abs consists of these steps:
 - If you only want to get the sources and don't want to build the package then run: `makepkg -od`
 - Build the package and handle all the package's dependencies automatically: `makepkg -s`
 - Build your local sources (have your modifications): `makepkg -e`
+
+## Preserve modified packages
+Insert a group array into the PKGBUILD, and add the package to a group called `modified`.
+
+	PKGBUILD
+	groups=('modified')
+
+Add this group to the section `IgnoreGroup` in `/etc/pacman.conf`.
+
+If new versions are available in the official repositories during a system update, pacman prints a note that it is skipping this update because it is in the IgnoreGroup section. **At this point the modified package should be rebuilt from ABS to avoid partial upgrades.**
