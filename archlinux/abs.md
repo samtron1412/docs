@@ -42,6 +42,15 @@ ABS is made up of a directory tree (the ABS tree) residing under `/var/abs`.
 - Get kernel modules working with your custom kernel
 - Easily compile and install a newer, older, beta, or development version of an Arch package by editing the version number in the PKGBUILD.
 
+# How to use ABS
+Building packages using abs consists of these steps:
+1. Install the `abs` package with `pacman`
+2. Run `abs` as root to create the ABS tree by synchronizing it with the Arch Linux server.
+3. Copy the build files (usually residing under `/var/abs/<repo>/<pkgname>`) to a build directory.
+4. Navigate to that directory, edit the PKGBUILD (if desired/necessary) and do `makepkg`.
+5. According to instructions in the PKGBUILD, `makepkg` will download the appropriate source, unpack it, patch (if desired), compile according to `CFLAGS` specified in `makepkg.conf`, and finally compress the built files into a package with the extension `.pkg.tar.gz` or `.pkg.tar.xz`.
+6. Installing is as easy as doing `pacman -U <.pkg.tar.xz file>`. Package removal is also handled by `pacman`.
+
 # Tips and Tricks
 ## Download sources
 - Copy the package, whose source you want to have, from the local ABS tree (e.g. `/var/abs/core/findutils`) to another directory, e.g. `~/tmp/findutils`
