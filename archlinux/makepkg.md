@@ -9,4 +9,11 @@ The requirements for using the script are:
 
 makepkg is provided by the `pacman` package.
 
+# Configuration
+See `man makepkg.conf` for details.
+
+The system configuration: `/etc/makepkg.conf`
+
+User-specific changes: `$XDG_CONFIG_HOME/pacman/makepkg.conf` or `~/.makepkg.conf`
+
 
