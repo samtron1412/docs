@@ -37,7 +37,7 @@ ABS is made up of a directory tree (the ABS tree) residing under `/var/abs`.
 - Compile or recompile a package, for any reason
 - Make and install new packages from source of software for which no packages are yet available
 - Customize existing packages to fit your needs (enabling or disabling options, patching)
-- Rebuild your entire system using your compiler flags (e.g. with [pacbuilder](https://wiki.archlinux.org/index.php/Pacbuilder))
+- Compiling by using your compiler flags.
 - Cleanly build and install your own custom kernel
 - Get kernel modules working with your custom kernel
 - Easily compile and install a newer, older, beta, or development version of an Arch package by editing the version number in the PKGBUILD.
