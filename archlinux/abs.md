@@ -51,6 +51,25 @@ Building packages using abs consists of these steps:
 5. According to instructions in the PKGBUILD, `makepkg` will download the appropriate source, unpack it, patch (if desired), compile according to `CFLAGS` specified in `makepkg.conf`, and finally compress the built files into a package with the extension `.pkg.tar.gz` or `.pkg.tar.xz`.
 6. Installing is as easy as doing `pacman -U <.pkg.tar.xz file>`. Package removal is also handled by `pacman`.
 
+## Details
+1. `$ sudo pacman -S abs`
+2. Modify `/etc/abs.conf` to include your desired repositories. Remove the `!` in front of the appropriate repositories.
+	- `REPOS=(core extra community !testing)`
+	- Download ABS tree: `$ sudo abs`
+	- Individual ABS package files: `$ sudo abs <repository>/<package>`
+	- `~/.makepkg.conf` set `PACKAGER="myname <myemail@myserver.com>"`. It allows a "flag" to quickly identify which packages have been built and/or installed by you, not the official maintainer.
+		+ Showing all packages:  `$ expac "%n %p" | grep "myname" | column -t`
+		+ Showing only packages contained in repos: `$ . /etc/makepkg.conf; grep -xvFf <(pacman -Qqm) <(expac "%n\t%p" | grep "$PACKAGER$" | cut -f1)`
+3. Create a build directory: `$ mkdir -p ~/abs`. Copy the ABS from the tree to the build directory.
+4. Build package: `$ makepkg -s`
+5. **fakeroot**
+	- Essentially, the same steps are being executed in the traditional method (`.configure, make, make install` steps).
+	- But the software is installed into a `fake root` environment.
+	- A fake root is simply a subdirectory within the build directory that functions and behaves as the system's root directory. `makepkg` creates a fake root directory, and installs the compiled binaries and associated files into it, with root as owner.
+	- The fake root, or subdirectory tree containing the compiled software, is then compressed into and archive `.pkg.tar.xz`.
+	- When invoked, pacman then extracts the package (installs it) into the system's real root directory `/`.
+
+
 # Tips and Tricks
 ## Download sources
 - Copy the package, whose source you want to have, from the local ABS tree (e.g. `/var/abs/core/findutils`) to another directory, e.g. `~/tmp/findutils`
