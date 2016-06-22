@@ -33,6 +33,15 @@ ABS is made up of a directory tree (the ABS tree) residing under `/var/abs`.
 - **Warning**: Official PKGBUILDs assume that packages are [built in a clean chroot](https://wiki.archlinux.org/index.php/DeveloperWiki:Building_in_a_Clean_Chroot).
 	+ Building software on a *dirty* build system may fail or cause unexpected behaviors at runtime, because if the build system detects dependencies dynamically, the result depends on what packages are available on the build system.
 
+## Why would I want to use ABS?
+- Compile or recompile a package, for any reason
+- Make and install new packages from source of software for which no packages are yet available
+- Customize existing packages to fit your needs (enabling or disabling options, patching)
+- Rebuild your entire system using your compiler flags (e.g. with [pacbuilder](https://wiki.archlinux.org/index.php/Pacbuilder))
+- Cleanly build and install your own custom kernel
+- Get kernel modules working with your custom kernel
+- Easily compile and install a newer, older, beta, or development version of an Arch package by editing the version number in the PKGBUILD.
+
 # Tips and Tricks
 ## Download sources
 - Copy the package, whose source you want to have, from the local ABS tree (e.g. `/var/abs/core/findutils`) to another directory, e.g. `~/tmp/findutils`
