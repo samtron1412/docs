@@ -23,3 +23,8 @@ Each package is tagged with metadata identifying among others also the **package
 
 To automatically produce signed packages, also set the `GPGKEY` variable in `makepkg.conf`.
 
+## Package output
+- `BUILDDIR=/tmp/makepkg`: build directory
+- `PKGDEST=~/pkg`: resulting packages
+- `SRCDEST=~/src`: downloaded sources
+- `SRCPKGDEST=~/srcpkg`: resulting source packages (built with `makepkg -S`)
