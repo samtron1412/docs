@@ -16,4 +16,10 @@ The system configuration: `/etc/makepkg.conf`
 
 User-specific changes: `$XDG_CONFIG_HOME/pacman/makepkg.conf` or `~/.makepkg.conf`
 
+## Packager information
+Each package is tagged with metadata identifying among others also the **packager**. Set `PACKAGER` variable in `makepkg.conf`
+
+	PACKAGER="John Doe <john@doe.com"
+
+To automatically produce signed packages, also set the `GPGKEY` variable in `makepkg.conf`.
 
