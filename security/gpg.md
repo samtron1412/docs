@@ -5,6 +5,7 @@
 - [Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
 
 # Basic Usage
+- To generate a key: `$ gpg --full-gen-key`
 - View all keys: `$ gpg --list-keys`
 - View the key id
 	+ Short form: `$ gpg --keyid-format short --list-keys`
