@@ -40,3 +40,18 @@ If a needed public key is missing, or if you want to add public keys by other de
 - temporarily disable makepkg's signature checking, by calling `makepkg` with the `--skippgpcheck` option.
 
 The signature checking implemented in makepkg does not use pacman's keyring, instead relying on the user's keyring.[1](http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/)
+
+# Usage
+- Install the `base` and `base-devel` groups.
+- Running makepkg itself as root is disallowed. [2](https://projects.archlinux.org/pacman.git/tree/NEWS)
+- Besides how a `PKGBUILD` may contain arbitrary commands, building as root is generally considered unsafe. [3](https://bbs.archlinux.org/viewtopic.php?id=67561)
+
+Build a package:
+- Create a `PKGBUILD`, or build script
+- Change to the directory and issue commands
+	+ Automatically install needed dependencies: `$ makepkg -s`
+	+ Adding the `-r`/`--rmdeps` flags causes makepkg to remove the make dependencies later, which are no longer needed. Or use pacman trick removing unused packages (orphans) once in a while instead.
+	+ To install a package use `-i`/`--install` (same as `pacman -U pkgname-pkgver.pkg.tar.xz`): `$ makepkg -i`
+	+ To clean up leftover files and folders, such as files extracted to the `$srcdir`, add the flag `-c`/`--clean`. This useful for multiple builds of the same package or updating the package version, while using the same build folder. It prevents obsolete and remnant files from carrying over to the new builds: `$ makepkg -c`
+
+
