@@ -11,6 +11,7 @@
 	+ Short form: `$ gpg --keyid-format short --list-keys`
 	+ Long form: `$ gpg --keyid-format long --list-keys`
 - Verify a signature: `$ gpg --verify doc.sig`
+- Manually import a public key: `$ gpg --import public.key`
 
 ## Using a keyserver
 You can register your key with a public PGP key server, so that others can retrieve your key without having to contact you directly.
