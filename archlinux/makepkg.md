@@ -86,3 +86,6 @@ Using ccache
 ## Generate new checksums
 `$ updpkgsums`
 
+## Create uncompressed packages
+Set `PKGEXT='.pkg.tar'` in `/etc/makepkg.conf`
+
