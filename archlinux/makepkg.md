@@ -92,3 +92,4 @@ Set `PKGEXT='.pkg.tar'` in `/etc/makepkg.conf`
 ## Utilizing multiple cores on compression
 `xz` supports symmetric multiprocessing via the `--threads` flag to speed up compression. `COMPRESSXZ=(xz -c -z - --threads=0)`
 
+# Troubleshooting
