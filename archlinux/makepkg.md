@@ -63,3 +63,12 @@ Build a package:
 	+ `CXXFLAGS="${CFLAGS}"`
 	+ To see what flags this enables on your machine: `$ gcc -march=native -v -Q --help=target`
 
+## MAKEFLAGS
+The `MAKEFLAGS` option can be used to specify additional options for make.
+
+Users with multi-core/multi-processor systems can specify the number of jobs to run simultaneously. `MAKEFLAGS="-j$(nproc)"`
+
+Some `PKGBUILDs` specifically override this with `-j1`, because of race conditions in certain versions or simply because it is not supported in the first place.
+
+Packages that fail to build because of this should be reported on the bug tracker (or in the case of AUR packages, to the package maintainer)
+
