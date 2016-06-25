@@ -83,3 +83,6 @@ Any package compiled in tmpfs will not persist across reboot. Consider setting t
 ### ccache
 Using ccache
 
+## Generate new checksums
+`$ updpkgsums`
+
