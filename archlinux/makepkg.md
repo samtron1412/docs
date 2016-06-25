@@ -72,3 +72,14 @@ Some `PKGBUILDs` specifically override this with `-j1`, because of race conditio
 
 Packages that fail to build because of this should be reported on the bug tracker (or in the case of AUR packages, to the package maintainer)
 
+## Improving compile times
+### tmpfs
+As compiling requires many I/O operations and handling of small files, moving the working directory to a tmpfs may bring improvements in build times. `BUILDDIR=/tmp/makepkg`
+
+>Avoid compiling larger packages in tmpfs to prevent running out of memory.
+
+Any package compiled in tmpfs will not persist across reboot. Consider setting the PKGDEST option appropriately to move the built package automatically to another (persistent) directory.
+
+### ccache
+Using ccache
+
