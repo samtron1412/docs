@@ -54,4 +54,12 @@ Build a package:
 	+ To install a package use `-i`/`--install` (same as `pacman -U pkgname-pkgver.pkg.tar.xz`): `$ makepkg -i`
 	+ To clean up leftover files and folders, such as files extracted to the `$srcdir`, add the flag `-c`/`--clean`. This useful for multiple builds of the same package or updating the package version, while using the same build folder. It prevents obsolete and remnant files from carrying over to the new builds: `$ makepkg -c`
 
+# Tips and tricks
+## Creating optimized packages
+- Using automatically detect and enable safe architecture-specific optimizations (as of version 4.3.0 of GCC)
+	+ Fist remove any `-march` and `-mtune` flags
+	+ Add `-march=native`
+	+ `CFLAGS="-march=native -O2 -pipe -fstack-protector-strong"`
+	+ `CXXFLAGS="${CFLAGS}"`
+	+ To see what flags this enables on your machine: `$ gcc -march=native -v -Q --help=target`
 
