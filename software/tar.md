@@ -6,3 +6,19 @@
 The command line utility was first introduced in the seventh edition of UNIX (V7) in January 1979.
 
 The file structure to store this information was later standardized in POSIX.
+
+# File format
+
+# Limitations
+
+# Suffix for compressed files
+
+| Long      | Short |
+| -         | -     |
+| .tar.bz2  | .tbz2 |
+| .tar.gz   | .tgz  |
+| .tar.lz   |       |
+| .tar.lzma | .tlz  |
+| .tar.xz   | .txz  |
+| .tar.Z    | .tZ   |
+
