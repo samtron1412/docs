@@ -207,3 +207,18 @@ Remove a variable environment: `unset PATH`
 
 # [ln](http://www.computerhope.com/unix/uln.htm)
 - `ln` cannot create hard links between partitions because the implement inode number of the file system. [source](http://www.cyberciti.biz/tips/why-isnt-it-possible-to-create-hard-links-across-file-system-boundaries.html)
+
+# tar - "Tape ARchiver" an archiving utility
+- Create tar.gz files: `$ tar pczf myarchive.tar.gz /path/to/directory`
+	+ `p`: this option stand for "preserver", it instructs tar to store details on file owner and file permissions in the archive.
+	+ `c`: Stands for create.
+	+ `z`: Enable gzip compression
+	+ `f`: The file option tells tar to create an archive file. Tar will send the output to stdout if this option is omitted.
+	+ `# tar pczf /root/etc.tar.gz /etc`
+	+ `$ tar pczf /backup/myuser.tar.gz /home/myuser`
+- Extract tar.gz files: `tar xzf myarchive.tar.gz`
+	+ `x` stand for extract, it is mandatory when a tar file shall be extracted.
+- List the contents of tar.gz files: `tar ztvf myarchive.tar.gz`
+- Create tbz2 files: `tar pjcf myarchive.tbz2`
+- Extract tbz2 files: `tar jxf myarchive.tbz2`
+- List the contents of tbz2: `tar jtvf myarchive.tbz2`
