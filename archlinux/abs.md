@@ -70,6 +70,24 @@ Building packages using abs consists of these steps:
 	- When invoked, pacman then extracts the package (installs it) into the system's real root directory `/`.
 
 
+# Patching in ABS
+## Creating patches
+If you need to edit source code, make files, configuration files, etc, you will need to be able to create a patch.
+
+>If you need only to change one or two lines in a file (e.g. a Makefile), you may be better off investigating the properties of `sed` instead.
+
+Creating a patch for a package involves creating two copies of the package, editing the new copy, and creating a unified diff between the two files. When creating an Arch Linux package, this can be done as follows:
+1. Add the download source of the file to the source array of the `PKGBUILD` you are creating. If you are altering an existing PKGBUILD, this step is taken care of.
+2. Create a dummy (empty, or containing a single `echo` command) `build()` function. If you are altering an existing `PKGBUILD`, you should comment out most of the lines of the build function, as you are going to be running `makepkg` several times, and you will not want to spend a lot of time waiting for a broken package to build.
+3. Run `makepkg -o`: this will download the source files you need to edit into the `src` directory.
+4. Change to the `src` directory. In standard cases, there will be a directory containing a bunch of files that were unzipped or untarred from a downloaded archive there. You should make two copies of these directories. One is a pristine copy that makepkg will not be allowed to manipulate, and one will be the new copy that you will create a patch from. You can name the two copies `pkg.pristine` and `pkg.new` or something similar.
+5. Change into the `pkg.new` directory. Edit whichever files need to be edited. The changes needed depend on what the patch has to do; it might correct a Makefile paths, it may have to correct source errors, and so on. You can also edit files in subfolders of the `pkg.new` directory. Do not issue any commands that will inadvertently create a bunch of files in the `pkg.new` directory; i.e. do not try to compile the program to make sure your changes work. The problem is that all the new files will show up in the patch, and you do not want that. Instead, apply the patch to another copy of the directory (not the pristine directory), either manually with the `patch` command, or in the `PKGBUILD` and test the changes from there.
+6. Change back to the `src` directory.
+7. Run `diff -aur pkg.pristine pkg.new`. This will output all the changes you made in unified diff format. You can scan these to make sure the patch is good.
+8. Run `diff -aur pkg.pristine pkg.new > pkg.patch` to capture all the changes in a file named `pkg.patch`. This is the file that will be used by patch. You may now apply the changes to a copy of the original directory and make sure they are working properly. you should also check to ensure that the patch does not contain any extraneous details. For example, you do not want the patch to convert all tabs in the files you edited to spaces because your text editor did that behind your back. You can edit the patch either using a text editor, or to be safer, edit the original files and create the patch afresh.
+
+
+
 # Tips and Tricks
 ## Download sources
 - Copy the package, whose source you want to have, from the local ABS tree (e.g. `/var/abs/core/findutils`) to another directory, e.g. `~/tmp/findutils`
@@ -86,3 +104,4 @@ Insert a group array into the PKGBUILD, and add the package to a group called `m
 Add this group to the section `IgnoreGroup` in `/etc/pacman.conf`.
 
 If new versions are available in the official repositories during a system update, pacman prints a note that it is skipping this update because it is in the IgnoreGroup section. **At this point the modified package should be rebuilt from ABS to avoid partial upgrades.**
+
