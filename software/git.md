@@ -341,6 +341,8 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 
 
 ## Branch
+- [Git Branching](https://git-scm.herokuapp.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
 `git branch -a` : list all branch
 
 `git branch -r` : list all remote branch
@@ -850,7 +852,6 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 #### [Subgit](http://www.subgit.com/)
 
 # Git Internals
-## [Git Branching](https://git-scm.herokuapp.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 
 # Reference
