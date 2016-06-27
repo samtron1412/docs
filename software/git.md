@@ -819,7 +819,7 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 # Git Internals
 
 
-# Reference
+# Cheatsheet
 
 
 # Tips and Tricks
