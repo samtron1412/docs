@@ -92,3 +92,12 @@ In USA
 # syslog-ng, rsyslog, journald
 - https://bazsi.blogs.balabit.com/2011/12/syslog-ng-and-the-journal/
 - http://blog.gerhards.net/2013/05/rsyslog-vs-systemd-journal.html
+
+# Git Merge vs Rebase
+In general the way to get the best of both worlds is to rebase local changes you’ve made but haven’t shared yet before you push them in order to clean up your story, but never rebase anything you’ve pushed somewhere.
+
+## Merge
+create new commit and merge two ancestor commits. hold all history of commit
+
+## Rebase
+replay all commit of one branch to another branch and clean history of commit. clean history commit. should use locally, not rebase anything you pushed somewhere.
