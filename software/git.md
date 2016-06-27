@@ -43,6 +43,7 @@
 - https://www.reddit.com/r/programming/comments/xpitj/10_things_i_hate_about_git/
 - https://news.ycombinator.com/item?id=4340047
 - http://think-like-a-git.net/
+- [My Git Workflow](http://blog.osteele.com/posts/2008/05/my-git-workflow/)
 
 # Installation
 - [Download](https://git-scm.com/downloads)
