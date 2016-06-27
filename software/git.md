@@ -39,6 +39,10 @@
 	+ [External links](http://git-scm.com/documentation/external-links)
 - [Blog](http://git-scm.com/blog)
 - [Community](http://git-scm.com/community)
+- [10 things I hate about Git](http://stevebennett.me/2012/02/24/10-things-i-hate-about-git/)
+- https://www.reddit.com/r/programming/comments/xpitj/10_things_i_hate_about_git/
+- https://news.ycombinator.com/item?id=4340047
+- http://think-like-a-git.net/
 
 # Installation
 - [Download](https://git-scm.com/downloads)
@@ -816,10 +820,6 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 
 # Reference
-- [10 things I hate about Git](http://stevebennett.me/2012/02/24/10-things-i-hate-about-git/)
-- https://www.reddit.com/r/programming/comments/xpitj/10_things_i_hate_about_git/
-- https://news.ycombinator.com/item?id=4340047
-- http://think-like-a-git.net/
 
 
 # Tips and Tricks
