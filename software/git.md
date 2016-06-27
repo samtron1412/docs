@@ -331,7 +331,7 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 `git tag -d <tagname>`
 
 
-## Branch
+## Branching
 - [Git Branching](https://git-scm.herokuapp.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 `git branch -a` : list all branch
