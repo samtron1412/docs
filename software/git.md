@@ -280,27 +280,17 @@ Thumbs.db
 - Ignore only directory at root level: `/directory_name`
 
 ## Basic
-cd to dir
+	cd to dir
+	git init
+	git status
+	git add <file name|*.*>
+	git commit -m "message"
+	git log
+	git remote add origin https://..
+	`git push -u origin master` : -u to remember parameter -> second time only need git push
+	`git pull origin master` : update change on master branch
 
-git init
-
-git status
-
-git add <file name|*.*>
-
-git commit -m "message"
-
-git log
-
-git remote add origin https://..
-
-`git push -u origin master` : -u to remember parameter -> second time only need git push
-
-`git pull origin master` : update change on master branch
-
-git diff HEAD
-
-`git rm <files>` : remove all files
+`git rm <files>` : remove files
 
 switch to master branch and git merge <branch_name> to merge master with <branch_name>
 
