@@ -348,28 +348,6 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 
 **git checkout -b <branch_name>** : create new branch and checkout to it
 
-## Often use
-`git add -A` : add all changes from tracked and untracked files
-
-`git commit -am "abc"` : commit all changed from files tracked (not commit file new created)
-
-`git push origin :[name of your branch]` : delete a branch on github remote
-
-`git reset --hard HEAD` : revert to previous commit, ignoring any changes, where HEAD is last commit in your current branch
-
-`git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short` : show history
-
-Let’s look at it in detail:
-
-+ `--pretty="..."` defines the output format.
-+ `%h` is the abbreviated hash of the commit
-+ `%d` commit decorations (e.g. branch heads or tags)
-+ `%ad` is the commit date
-+ `%s` is the comment
-+ `%an` is the name of the author
-+ `--graph` tells git to display the commit tree in the form of an ASCII graph layout
-+ `--date=short` keeps the date format short and nice
-
 ## Undoing things
 `git reset`: will rewrite your history
 
