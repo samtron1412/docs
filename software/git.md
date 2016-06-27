@@ -448,16 +448,6 @@ On the other hand, if you've published the work, you probably don't want to rese
 **git checkout -b <branch_name>** : create new branch and checkout to it
 
 
-## Merge vs Rebase
-In general the way to get the best of both worlds is to rebase local changes you’ve made but haven’t shared yet before you push them in order to clean up your story, but never rebase anything you’ve pushed somewhere.
-
-### Merge
-create new commit and merge two ancestor commits. hold all history of commit
-
-### Rebase
-replay all commit of one branch to another branch and clean history of commit. clean history commit. should use locally, not rebase anything you pushed somewhere.
-
-
 ## Git on the Server
 ### The Protocols
 #### Local protocol
