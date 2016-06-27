@@ -548,7 +548,7 @@ Exact same as Subversion. Appropriate with few developers.
 - Before publish changes, developers must update central commits and rebase their changes on top of them. `git pull --rebase origin master`. If have conflict, developers must solve it to continue.
 - To publish changes to the official project, developers 	`push` their local master branch to the central repository. `git push origin master`
 
-![Centralized workflow](git/centralized.png "Centralized workflow")
+![Centralized workflow](../graphic/git/centralized.png "Centralized workflow")
 
 ## Integration-Manager Workflow
 
@@ -559,7 +559,7 @@ Exact same as Subversion. Appropriate with few developers.
 5. The maintainer adds the contributor's repo as a remote and meres locallly.
 6. The maintainer pushes merged changes to the main repository.
 
-![Integration-manager workflow](git/integration-manager.png "Integration-manager workflow")
+![Integration-manager workflow](../graphic/git/integration-manager.png "Integration-manager workflow")
 
 This is very common workflow with hub-based tools like GitHub or GitLab.
 
@@ -571,7 +571,7 @@ It's generally used by huge projects with hundreds of collaborators; one famous 
 3. The dictator merges the lieutemants' `master` branches into the dictator's `master` branch.
 4. The dictator pushes their `master` to the references repository so the other developers can rebase on it.
 
-![Benevolent dictator workflow](git/benevolent-dictator.png "Benevolent dictator workflow")
+![Benevolent dictator workflow](../graphic/git/benevolent-dictator.png "Benevolent dictator workflow")
 
 
 ## Feature branch Workflow
@@ -586,21 +586,21 @@ Appropriate with more developers. Each branch correspond with each features besi
 ## Gitflow Workflow
 A strict branching model designed around the project release. More complicated than the Feature Branch Workflow, this provides a robust framework for managing larger projects.
 
-![Gitflow](git/git-model@2x.png)
+![Gitflow](../graphic/git/git-model@2x.png)
 
 - This work flow assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases.
 - **Main branches**, Uses two branches to record the history of the project. The `master` branch stores the official release history, and the `develop` branch serves as an integration branch for features. It's also convenient to tag all commits in the `master` branch with a version number.
-![History project](git/02.svg)
+![History project](../graphic/git/02.svg)
 - **Feature Branches**, new feature will have its own branch. But, instead of branching off of `master`, feature branches use `develop` as their parent branch. When feature is complete, it gets merged back into `develop` branch. Features should never interact directly with `master`. Delete feature branches after merged to `develop` branch.
-![Feature branches](git/03.svg)
+![Feature branches](../graphic/git/03.svg)
 - **Release branches**, once `develop` has acquired enough features for a release ( or a predetermined release date is approaching), you fork a release branch off of `develop`. Creating this branch starts the next release cycle, no new features can be added after this point - only **bug fixes**, **documentation**, and other **release-oriented tasks** should go in this branch. Once it's ready to ship, the release gets merged into `master` and tagged with a version number. In addition, it should be merged back into `develop`, which may have progressed since the release was initiated.
 	+ This term makes it possible for one team to polish the current release while another team continues working on features for the next release.
 	+ naming: `release-*` or `release/*`
 	+ Tagged a version number after merged back into `master` and `develop` branch: `git push --tags`
 	+ Delete release branch after release.
-![Release branch](git/04.svg)
+![Release branch](../graphic/git/04.svg)
 - **Maintenance branches** (hotfix branches), used to quickly patch production releases. This is the only branch that should fork directly off of `master`. As soon as the fix is completer, it should be merged into both `master` and `develop` (or the current release branch), and `master` should be tagged with an updated version number. Naming: `issue-#001`
-![Hotfix branch](git/05.svg)
+![Hotfix branch](../graphic/git/05.svg)
 
 ## Forking Workflow
 Every developer have a server-side repository. Each contributor has two Git repositories: a private local one and a public server-side one.
@@ -670,10 +670,10 @@ The rest of this section describes how pull requests can be leveraged against di
 
 
 ### Private small team
-![Small Team Workflow Simple](git/small-team-flow.png "Small Team Workflow Simple")
+![Small Team Workflow Simple](../graphic/git/small-team-flow.png "Small Team Workflow Simple")
 
 ### Private managed team
-![Small Team Workflow Complex](git/managed-team-flow.png "Small Team Workflow Complex")
+![Small Team Workflow Complex](../graphic/git/managed-team-flow.png "Small Team Workflow Complex")
 
 ## Maintaining a Project
 - Accepting and applying patches generated via `format-patch` and e-mailed to you
