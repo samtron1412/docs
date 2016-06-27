@@ -1,13 +1,6 @@
 [TOC]
 
 # [Overview](https://www.atlassian.com/git/)
-
-- [Git vs SVN](https://git.wiki.kernel.org/index.php/GitSvnComparsion)
-- [stackoverflow](https://stackoverflow.com/questions/871/why-is-git-better-than-subversion)
-- [Google talk: Linus Torvalds on git](https://www.youtube.com/watch?v=4XpnKHJAok8)
-- [Google talk: Randal Schwartz - Git](https://www.youtube.com/watch?v=8dhZ9BXQgc4)
-- [Introduction git with scott chacon](https://www.youtube.com/watch?v=ZDR433b0HJY)
-
 ## Goals of Git
 - Speed
 - Simple design
@@ -31,6 +24,11 @@
 - Longer and Unpredictable revision numbers: SHA-1 string
 
 ## Resources
+- [Git vs SVN](https://git.wiki.kernel.org/index.php/GitSvnComparsion)
+- [stackoverflow](https://stackoverflow.com/questions/871/why-is-git-better-than-subversion)
+- [Google talk: Linus Torvalds on git](https://www.youtube.com/watch?v=4XpnKHJAok8)
+- [Google talk: Randal Schwartz - Git](https://www.youtube.com/watch?v=8dhZ9BXQgc4)
+- [Introduction git with scott chacon](https://www.youtube.com/watch?v=ZDR433b0HJY)
 - [Git magic](http://www-cs-students.stanford.edu/~blynn//gitmagic/)
 - [Documentation](http://git-scm.com/doc)
 	+ [Reference Manual](http://git-scm.com/docs)
