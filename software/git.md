@@ -281,6 +281,7 @@ Thumbs.db
 - Ignore only directory at root level: `/directory_name`
 
 ## Basics
+### Common process
 	cd to dir
 	git init
 	git status
