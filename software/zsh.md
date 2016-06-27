@@ -56,7 +56,7 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 
 >**Warning**: It is not recommended to replace the default one line in `/etc/zsh/zprofile` with something other, it'll break the integrality of other packages which provide some scripts in `/etc/profile.d`
 
-# Configure ZSH
+# Configuring ZSH
 ## Configure environment variables
 - `$PATH`
 - `$EDITOR`
@@ -77,7 +77,7 @@ Same as /etc/zsh/zlogout but for per-user configuration.
 
 ## [zgen](https://github.com/tarjoilija/zgen)
 
-# plugins
+# Plugins
 ## git
 
 ## [z](https://github.com/rupa/z)
