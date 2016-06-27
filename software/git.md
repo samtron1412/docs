@@ -205,7 +205,8 @@ Template
 
 ## Git Hooks
 
-# [Git tutorials](https://www.atlassian.com/git/tutorial)
+# Git Book
+- [Git tutorials](https://www.atlassian.com/git/tutorial)
 
 `$ git help <command>`
 
@@ -279,7 +280,7 @@ Thumbs.db
 - Ignore all directory and it's files with name: `directory_name`
 - Ignore only directory at root level: `/directory_name`
 
-## Basic
+## Basics
 	cd to dir
 	git init
 	git status
@@ -296,19 +297,19 @@ switch to master branch and git merge <branch_name> to merge master with <branch
 
 `git push origin --delete <branch_name>` or `git push origin :<branch_name>` : delete remote branch.
 
-## Tagging
+### Tagging
 - [Tag mean](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)
 
 Tags in git are lightweight references that point to an SHA hash of a commit. Unlike branches, they are not mutable and once created should not be deleted. Tags may be lightweight (in which case they refer to the commit directly) or annotated (in which case they point to a tag object which points to the commit). Tags used to denote versioned releases typically use annotated tags, and for many open source projects, the tags will also be signed.
 
-### Listing your tags
+#### Listing your tags
 `git tag`: list all tags
 `git show <tag>`: show information of tag
 
 Search for tags with a particular pattern.
 `git tag -l 'v.1.8.*'`
 
-### Creating tags
+#### Creating tags
 Git uses two main types of tags: **lightweight** and **annotated**.
 
 - A lightweight tag is very much like a branch that doesn't change - it's just a pointer to a specific commit.
@@ -319,14 +320,14 @@ Git uses two main types of tags: **lightweight** and **annotated**.
 
 Tag a commit in history: `git tag -a v1.2 9fceb01`
 
-### Sharing tags
+#### Sharing tags
 `git push origin [tagname]`
 `git push origin --tags`
 
-### Checking out tags
+#### Checking out tags
 `git checkout -b version2 v2.0.0`
 
-### Delete tags
+#### Delete tags
 `git tag -d <tagname>`
 
 
