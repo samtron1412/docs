@@ -332,6 +332,7 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 
 
 ### Undoing things
+#### Common undoing
 `git reset`: will rewrite your history
 
 `git revert` : add new commits record revert process, do not change your history
