@@ -1,6 +1,8 @@
 [TOC]
 
 # [Overview](https://www.atlassian.com/git/)
+![Git Data Stores](../graphic/git/git-transport.png)
+
 ## Goals of Git
 - Speed
 - Simple design
