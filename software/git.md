@@ -331,24 +331,7 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 `git tag -d <tagname>`
 
 
-## Branching
-- [Git Branching](https://git-scm.herokuapp.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-
-`git branch -a` : list all branch
-
-`git branch -r` : list all remote branch
-
-`git branch -d <branch_name>` : delete a branch after merge
-
-`git branch -D <branch_name>` : force delete a branch not yet merge
-
-`git branch <branch_name>` : create new branch
-
-`git checkout <branch_name>` : switch to another branch
-
-**git checkout -b <branch_name>** : create new branch and checkout to it
-
-## Undoing things
+### Undoing things
 `git reset`: will rewrite your history
 
 `git revert` : add new commits record revert process, do not change your history
@@ -359,19 +342,19 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 
 `git reset --soft <commit>` : will move your HEAD pointer, keep your change and index
 
-### Reverting working copy to most recent commit
+#### Reverting working copy to most recent commit
 `git reset --hard HEAD`
 
-### Undo add all file
+#### Undo add all file
 `git reset`
 
-### Undo a commit and redo
+#### Undo a commit and redo
 	git commit ...
 	git reset --soft HEAD^
 	edit sth
 	git commit -ac ORIG_HEAD
 
-### Commit too early forget to add some files
+#### Commit too early forget to add some files
 `git commit --amend`
 
 This command takes your staging area and uses it for the commit. If you've made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you'll change is your commit message.
@@ -382,13 +365,13 @@ As an example, if you commit and then realize you forgot to stage the changes in
 	$ git add forgotten_file
 	$ git commit --amend
 
-### Unstaging a staged file - undo add a file
+#### Unstaging a staged file - undo add a file
 `git reset -- <file name>` : unstaged file (opposite with git add)
 
-### Unmodifying a modified file
+#### Unmodifying a modified file
 `git checkout -- <file name>`
 
-### Unpushing a pushed commit
+#### Unpushing a pushed commit
 `git push <remote> +<sha1>^:<branch name>`
 
 `git push origin +ba8342^:feature/emp_detail`
@@ -399,7 +382,7 @@ where `x^` as the parent of `x` and `+` as a forced non-fast-forward push.
 1. Rewrite history: for example `git reset --hard HEAD~1` : undo the last commit
 2. Force push: `git push -f <remote> <branch>`
 
-### Temporarily switch to a different commit
+#### Temporarily switch to a different commit
 
 If you want to temporarily go back to it, fool around, then come back to where you are, all you have to do is check out the desired commit:
 
@@ -410,7 +393,7 @@ Or if you want to make commits while you're there, go ahead and make a new branc
 
 	git checkout -b old-state 0d1d7fc32
 
-### Hard delete unpublished commits
+#### Hard delete unpublished commits
 If, on the other hand, you want to really get rid of everything you've done since then, there are two possibilities. One, if you haven't published any of these commits, simply reset:
 
 	# This will destroy any local modifications.
@@ -425,7 +408,7 @@ If, on the other hand, you want to really get rid of everything you've done sinc
 	# You could get merge conflicts, if you've modified things which were
 	# changed since the commit you reset to.
 
-### Undo published commits with new commits
+#### Undo published commits with new commits
 On the other hand, if you've published the work, you probably don't want to reset the branch, since that's effectively rewriting history. In that case, you could indeed revert the commits. With Git, revert has a very specific meaning: create a commit with the reverse patch to cancel it out. This way you don't rewrite any history.
 
 	# This will create three separate revert commits:
@@ -444,6 +427,23 @@ On the other hand, if you've published the work, you probably don't want to rese
 
 	# Then commit. Be sure and write a good message describing what you just did
 	git commit
+
+## Branching
+- [Git Branching](https://git-scm.herokuapp.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+`git branch -a` : list all branch
+
+`git branch -r` : list all remote branch
+
+`git branch -d <branch_name>` : delete a branch after merge
+
+`git branch -D <branch_name>` : force delete a branch not yet merge
+
+`git branch <branch_name>` : create new branch
+
+`git checkout <branch_name>` : switch to another branch
+
+**git checkout -b <branch_name>** : create new branch and checkout to it
 
 
 ## Merge vs Rebase
