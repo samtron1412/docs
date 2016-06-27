@@ -86,7 +86,9 @@ Creating a patch for a package involves creating two copies of the package, edit
 7. Run `diff -aur pkg.pristine pkg.new`. This will output all the changes you made in unified diff format. You can scan these to make sure the patch is good.
 8. Run `diff -aur pkg.pristine pkg.new > pkg.patch` to capture all the changes in a file named `pkg.patch`. This is the file that will be used by patch. You may now apply the changes to a copy of the original directory and make sure they are working properly. you should also check to ensure that the patch does not contain any extraneous details. For example, you do not want the patch to convert all tabs in the files you edited to spaces because your text editor did that behind your back. You can edit the patch either using a text editor, or to be safer, edit the original files and create the patch afresh.
 
-
+### Creating patch with git
+- Using `git diff`
+- Using `git format-patch`
 
 # Tips and Tricks
 ## Download sources
