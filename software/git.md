@@ -832,6 +832,12 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - `git diff HEAD`: Show the differences between your working directory and the most recent commit.
 - `git difftool`: See a visual representation of the differences by using tools such as `vimdiff`.
 
+### Comparing with arbitrary commits
+- `git diff HEAD^ HEAD`: Compare the version before the last commit and the last commit (Show the last commit changes).
+- `git diff HEAD^^ HEAD`: Show the last two commits changes.
+- `git diff HEAD~3 HEAD`: Show the last three commits changes.
+- `git diff HEAD -- test.md`: Show the differences between your working directory and the most recent commit, but limit the comparison to the file `test.md`.
+
 
 
 # Tips and Tricks
