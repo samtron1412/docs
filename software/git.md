@@ -825,6 +825,13 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 
 # Cheatsheet
+## git-diff - show changes between commits, commit and working tree, etc.
+### Check your working tree
+- `git diff`: Show differences between your working directory and the index.
+- `git diff --cached`: Show differences between the index and the most recent commit.
+- `git diff HEAD`: Show the differences between your working directory and the most recent commit.
+- `git difftool`: See a visual representation of the differences by using tools such as `vimdiff`.
+
 
 
 # Tips and Tricks
