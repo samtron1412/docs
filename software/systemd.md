@@ -33,6 +33,8 @@
 - [Archlinux Wiki](https://wiki.archlinux.org/index.php/Systemd)
 - [Systemd for upstart user](https://wiki.ubuntu.com/SystemdForUpstartUsers)
 - [systemd use guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units#editing-unit-files)
+- [Linux Torvalds and others on Linux's systemd](http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/)
+- [The Biggest Myths](http://0pointer.de/blog/projects/the-biggest-myths.html)
 
 # Design
 ## Unit files
