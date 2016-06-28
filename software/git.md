@@ -842,6 +842,11 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - `git diff branch1 master` or `git diff branch1..master`: Show differences between two branches.
 - `git diff branch1...master`: Show changes that occurred on the master branch since when the branch1 branch was started off it.
 
+### Limiting the diff output
+- `git diff --diff-filter=MRC`: Show only modification, rename, and copy, but not addition or deletion. Possible status letters: `man git-diff` and search for **status letters**.
+
+### Misc
+- `git diff -R`: Show diff output in reverse
 
 
 # Tips and Tricks
