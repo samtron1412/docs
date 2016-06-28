@@ -838,6 +838,10 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - `git diff HEAD~3 HEAD`: Show the last three commits changes.
 - `git diff HEAD -- test.md`: Show the differences between your working directory and the most recent commit, but limit the comparison to the file `test.md`.
 
+### Comparing branches
+- `git diff branch1 master` or `git diff branch1..master`: Show differences between two branches.
+- `git diff branch1...master`: Show changes that occurred on the master branch since when the branch1 branch was started off it.
+
 
 
 # Tips and Tricks
