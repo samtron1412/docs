@@ -848,6 +848,11 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 ### Misc
 - `git diff -R`: Show diff output in reverse
 
+## git-apply - Apply a patch to files and/or to the index
+
+## git-format-patch - Prepare patches for e-mail submission
+
+## git-am - Apply the series of patches from a mailbox
 
 # Tips and Tricks
 ## Splitting a subfolder out into a new repository
