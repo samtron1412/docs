@@ -105,3 +105,7 @@ replay all commit of one branch to another branch and clean history of commit. c
 # git-am, git-apply, git-diff, git-format-patch
 - When patches are in `git-diff` format then should use `git-apply` to apply patches. You can modify after apply these patches and commit them like a new commit.
 - When patches are in `git-format-diff` format then should use `git-am` to apply patches, it will create commits in repository.
+
+# Perforce (central version control system), git, mercurial
+- Perforce use for very large projects (>6GB)
+- Git, Mercurial use for smaller projects.
