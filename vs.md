@@ -101,3 +101,7 @@ create new commit and merge two ancestor commits. hold all history of commit
 
 ## Rebase
 replay all commit of one branch to another branch and clean history of commit. clean history commit. should use locally, not rebase anything you pushed somewhere.
+
+# git-am, git-apply, git-diff, git-format-patch
+- When patches are in `git-diff` format then should use `git-apply` to apply patches. You can modify after apply these patches and commit them like a new commit.
+- When patches are in `git-format-diff` format then should use `git-am` to apply patches, it will create commits in repository.
