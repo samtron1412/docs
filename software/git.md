@@ -854,6 +854,15 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 ## git-am - Apply the series of patches from a mailbox
 
+## git-archive - Create an archive of files from a named tree
+Creating an archive of the specified format containing the tree structure for the named tree, and writes it out to the standard output.
+- `git archive --format=tar --prefix=junk/ HEAD | (cd /var/tmp/ && tar xf -)`: Creating a tar archive that contains the contents of the latest commit on the current branch, and extract it in the `/var/tmp/junk` directory.
+- `git archive --format=tar --prefix=git-1.4.0/ v1.4.0 | gzip >git-1.4.0.tar.gz`: Creating a compressed tarball for v1.4.0 release.
+- `git archive --format=tar.gz --prefix=git-1.4.0/ v1.4.0 >git-1.4.0.tar.gz`: Creating a compressed tar.gz for v1.4.0 release.
+- `git archive --prefix=git-1.4.0/ -o git-1.4.0.tar.gz v1.4.0`: Same as above, but the format is inferred from the output file.
+- `git archive --format=tar.gz --prefix=git-docs/ v1.4.0:Documentation/ > git-1.4.0-docs.tar.gz`: Put everything in the current head's Documentation/ directory into git-1.4.0-docs.tar.gz, with the prefix `git-docs/`.
+- `git archive -o latest.tar.gz HEAD`: Creating a tarball that contains the contents of the latest commit on the current branch.
+
 # Tips and Tricks
 ## Splitting a subfolder out into a new repository
 - [filter-branch manual](https://git-scm.com/docs/git-filter-branch)
