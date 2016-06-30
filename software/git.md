@@ -858,6 +858,10 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - `git apply xdg-utils-v1.1.1.patch`: Apply the patch
 
 ## git-format-patch - Prepare patches for e-mail submission
+- Preparing each commit with its patch in one file per commit, formatted to resemble UNIX mailbox format.
+- The output of this command is convenient for e-mail submission or for use with `git am`.
+- `git format-patch -3`: Extract three topmost commits from the current branch and format them as e-mailable patches.
+- `git format-patch -3 --stdout > new.patch`: Only create one patch from 3 commits.
 
 ## git-am - Apply the series of patches from a mailbox
 
