@@ -685,6 +685,9 @@ The rest of this section describes how pull requests can be leveraged against di
 - Accepting and applying patches generated via `format-patch` and e-mailed to you
 - Integrating changes in remote branches for repositories you've added as remotes to your project.
 
+Patch Workflow
+![Patch Workflow](../graphic/git/patch-workflow.png)
+
 ### Working in Topic Branches
 
 
