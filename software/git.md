@@ -864,6 +864,12 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - `git format-patch -3 --stdout > new.patch`: Only create one patch from 3 commits.
 
 ## git-am - Apply the series of patches from a mailbox
+- Splits mail messages in a mailbox into commit log message, authorship information and patches, and applies them to the current branch.
+- `git am < new.patch`: Apply a patch to the current branch.
+- `git am --abort`: Restore the original branch and abort the patching operation.
+- `git am <Maildir>`: Apply all patches in the Maildir.
+- `git am *.patch`: Apply all patch.
+
 
 ## git-archive - Create an archive of files from a named tree
 Creating an archive of the specified format containing the tree structure for the named tree, and writes it out to the standard output.
