@@ -543,7 +543,9 @@ lack of authentication, only use to clone repository because fastest network tra
 ### [Third party hosting](https://git.wiki.kernel.org/index.php/GitHosting)
 
 
-# [Git workflows](https://www.atlassian.com/git/workflows)
+# Workflows, Contributing and Maintaining a Project
+- [Git workflows](https://www.atlassian.com/git/workflows)
+
 ## Centralized Workflow
 Exact same as Subversion. Appropriate with few developers.
 
