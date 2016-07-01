@@ -867,6 +867,7 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 - The output of this command is convenient for e-mail submission or for use with `git am`.
 - `git format-patch -3`: Extract three topmost commits from the current branch and format them as e-mailable patches.
 - `git format-patch -3 --stdout > new.patch`: Only create one patch from 3 commits.
+- `git format-patch -s -1`: Extract the latest commit from the current branch and add line **Signed-off-by: John Doe <john@doe.com>** to the end of the commit log message.
 
 ## git-am - Apply the series of patches from a mailbox
 - Splits mail messages in a mailbox into commit log message, authorship information and patches, and applies them to the current branch.
