@@ -6,6 +6,13 @@
 - [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/index.html)
 
 ## Linux
+### Arch
+
+### Fedora
+
+### NixOS
+
+### Debian
 
 ## BSD
 ### FreeBSD
