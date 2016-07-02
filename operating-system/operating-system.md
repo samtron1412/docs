@@ -8,9 +8,9 @@
 ## Linux
 
 ## BSD
-### OpenBSD
-
 ### FreeBSD
+
+### OpenBSD
 
 ### NetBSD
 
