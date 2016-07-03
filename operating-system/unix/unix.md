@@ -57,8 +57,6 @@ ELF is a common standard file format for executables, object code, shared librar
 ### Applications
 
 
-## [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-The FHS defines the **directory structure** and **directory contents** in Unix and Unix-like operating systems, maintained by the Linux Foundation.
 
 
 # Distro
