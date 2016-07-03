@@ -47,8 +47,6 @@ A `free license` is a license agreement which contains conditions permitted to t
 - *Freedom 3*: The freedom to improve the program, and release your improvements (and modified versions in general) to the public, so that the whole community benefits.
 
 ### Classification
-#### By freedom
-
 - Agreement, which is related to the [public domain](#public-domain)
     + [Creative Commons' CC0](http://en.wikipedia.org/wiki/CC0)
 - [Permissive licenses](http://en.wikipedia.org/wiki/Permissive_license)
