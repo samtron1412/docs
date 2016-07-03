@@ -10,11 +10,8 @@ Linux is a **Unix-like** and mostly **POSIX-compliant** computer operating syste
 - [Linux Standard Base](http://www.linuxfoundation.org/collaborate/workgroups/lsb/group)
   + [Wikipedia](https://en.wikipedia.org/wiki/Linux_Standard_Base)
 
-## Filesystem Hierarchy Standard
-![Linux Directory Structure](linux/Linux-Directory-Structure.jpeg)
-
-19 directories
-
+## [Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/fhs.shtml)
+The FHS defines the **directory structure** and **directory contents** in Unix and Unix-like operating systems, maintained by the Linux Foundation.
 - `/bin` : All the executable binary programs (file) required during booting, repairing, files required to run into single-user-mode, and other important, basic commands viz., cat, du, df, tar, rpm, wc, history, etc.
 - `/boot` : Holds important files during boot-up process, including Linux Kernel.
 - `/dev` : Contains device files for all the hardware devices on the machine e.g., cdrom, cpu, etc
