@@ -62,29 +62,17 @@ A `free license` is a license agreement which contains conditions permitted to t
     + [GFDL](http://en.wikipedia.org/wiki/GFDL)
 
 License Diagram
-<figure>
-  <figcaption style="text-align:center;">License diagram</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="license/License_network_by_bokanko.jpg" alt="License diagram" title="License diagram">
-</figure>
+![License Diagram](../graphic/license/license-network-by-bokanko.jpg)
 
 ### Creative Commons licenses
 `Creative Commons licenses` are explicitly identified as *public licenses*. Any person can apply a Creative Commons license to their work, and any person can take advantage of the license to use the licensed work according to the terms and conditions of the relevant license.
 
 #### Type of licenses
 Baseline right
-<figure>
-  <figcaption style="text-align:center;">Baseline right</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="license/baseline_right.png" alt="baseline_right" title="baseline_right">
-</figure>
+![Baseline right](../graphic/license/baseline-right.png)
 
 Regular licenses
-<figure>
-  <figcaption style="text-align:center;">Regular licenses</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="license/regular_license.png" alt="regular_license" title="regular_license">
-</figure>
+![Regular licenses](../graphic/license/regular-license.png)
 
 #### Public domain
 `CC0` - “No Rights Reserved”
@@ -95,11 +83,7 @@ Regular licenses
 
 ## Software license
 Software categories
-<figure>
-  <figcaption style="text-align:center;">Software Categories</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="license/Software_Categories.png" alt="Software_Categories" title="Software_Categories">
-</figure>
+![Software Categories](../graphic/license/software-categories.png)
 
 ### [GNU General Public License](https://gnu.org/licenses/gpl.html)
 
