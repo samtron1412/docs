@@ -36,6 +36,8 @@ The verb `license` means to give permission. The noun `license` refers to that p
 
 A license may be granted by a party `licensor` to another party `licensee` as an agreement between those parties. Typically included in a *end-user license agreement* (EULA).
 
+[Comparing the open sources licenses](http://choosealicense.com/appendix/)
+
 ## Public copyright license/Free license
 A `public license` or `public copyright license` is a license by which a licensor can grant additional copyright permissions to licensees and in which either the licensees or both the licensees and licensors are *unlimited*.
 
