@@ -139,10 +139,12 @@ Different between primary and logical partition is only some operating system ca
 
 ### Create new partition table
 Partiton scheme:
-	- `/` : root directory, capacity = 1/4 of total capacity, e.g. total capacity is 280 GB -> root is 70 GB
-	- `/boot`: 200 - 300 MB
-	- `/home` : home directory, capacity = 3/4 of total capacity
-	- `swap`: virtual memory, capacity = 3/2 of RAM memory
+	- `/` : root directory, must be mounted first, directories essential like `/etc` or `/usr` must be on the same partition as `/` or mounted in early userspace by the `initramfs`, capacity 30 GB.
+	- `/boot`: contains the kernel, ramdisk images and bootloader configuration file and boot loader stages, 200 - 300 MB
+	- `/home` : contains user-specific configuration files, caches, application data and media files, capacity = 3/4 of total capacity
+	- `swap`: virtual memory, capacity = 3/2 of RAM memory (using hibernate)
+	- `/var`: stores variable data such as spool directories and files, administrative and logging data, pacman's cache, the ABS tree, etc. 30 GB
+	- `/tmp`: This is already a separate partition by default, by being mounted as `tmpfs` by systemd.
 
 Use **lsblk** to list the hard disks
 
