@@ -886,6 +886,29 @@ Creating an archive of the specified format containing the tree structure for th
 - `git archive --format=tar.gz --prefix=git-docs/ v1.4.0:Documentation/ > git-1.4.0-docs.tar.gz`: Put everything in the current head's Documentation/ directory into git-1.4.0-docs.tar.gz, with the prefix `git-docs/`.
 - `git archive -o latest.tar.gz HEAD`: Creating a tarball that contains the contents of the latest commit on the current branch.
 
+## git-send-email - Send a collection of patches as emails
+Takes the patches given on the command line and emails them out. Patches can be specified as files, directories (which will send all files in the directory), or directly as a revision list.
+
+`~/.gitconfig`
+```
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = yourname@gmail.com
+	smtpServerPort = 587
+	suppresscc = self
+	confirm = always
+```
+
+If you have multifactor authentication setup on your Gmail account, you will need to generate an app-specific password for use with git-send-email. Visit [here](https://security.google.com/settings/security/apppasswords) to setup an app-specific password.
+
+- `git send-email -1`: Sending the last commit in the current branch.
+- `git send-email -1 <commit reference>`: Sending some other commit.
+- `git send-email -10 --cover-letter --annotate`: Sending the last 10 commits in the current branch.
+	+ `--cover-letter` creates an extra mail that will be sent before the actual patch mails. You can add some introduction to the patch set in the cover letter. It's fine to only have the shortlog that is included in the cover letter by default, and only set the `Subject` header to something sensible.
+	+ `--annotate` causes an editor to be started for each of the mails, allowing you to edit the mails. The option is always necessary, so that you can edit the cover letter's `Subject` header.
+- `git send-email --to <email-address> outgoing/*`: Send all patches in outgoing directory.
+
 # Tips and Tricks
 ## Splitting a subfolder out into a new repository
 - [filter-branch manual](https://git-scm.com/docs/git-filter-branch)
