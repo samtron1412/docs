@@ -110,3 +110,9 @@ mimetype2=foo3.desktop
 [Removed Associations]
 mimetype1=foo4.desktop
 ```
+
+### Shared MIME-info database
+
+#### Example: .xml and related .desktop configuration
+
+## Utilities to manage MIME types
