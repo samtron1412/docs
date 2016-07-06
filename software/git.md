@@ -727,6 +727,11 @@ Credential helpers:
 - `store`: saves the credentials to a **plain-text** file on disk, and they never expire. Passwords are stored in cleartext in a plain file. (Supper dangerous method, no security)
 - `osxkeychain`: Mac OS
 - `wincred`: work on Windows. Use it for Windows system.
+- `git-credential-gnome-keyring`: need to compile it
+	+ `$ cd /usr/share/git/credential/gnome-keyring`
+	+ `# make`
+	+ `$ git config --global credential.helper /usr/lib/git-core/git-credential-gnome-keyring`
+- `git-credential-netrc`
 
 ### Under the Hood
 
