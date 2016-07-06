@@ -81,3 +81,32 @@ In Arch, tools from the [shared-mime-info](https://www.archlinux.org/packages/?n
 Each package can also use the [Desktop entries](https://wiki.archlinux.org/index.php/Desktop_entries) to provide information about the MIME types that can be handled by the packaged software.
 
 There is frequently more than one application able to handle data of a certain MIME type, so users and even some packages assemble lists of default applications for each MIME type.
+
+## Set default applications
+In order to set a default application, you need to:
+- decide which of the default `mimeapps.list` files is applicable for your case
+- change the configuration of the `mimeapps.list` file accordingly
+
+### Default mimeapps.list files
+There are different locations for `mimeapps.list`
+- per-user: `$HOME/.config/mimeapps.list`
+- system-wide: `/etc/xdg/mimeapps.list`
+- deprecated location: `$HOME/.local/share/applications/mimeapps.list`
+
+### Configuration of the mimeapps.list file
+The file contains:
+- `[Default Applications]`: indicates the preferred application for a given mimetype.
+- `[Added Associations]`: optional, defines additional associations of applications with mimetypes, as if the .desktop file was listing this mimetype in the first place.
+- `[Removed Associations]`: optional, removes associations of applications with mimetypes, as if the .desktop file was NOT listing this mimetype in the first place.
+
+```
+[Default Applications]
+mimetype1=default1.desktop;default2.desktop
+
+[Added Associations]
+mimetype1=foo1.desktop;foo2.desktop
+mimetype2=foo3.desktop
+
+[Removed Associations]
+mimetype1=foo4.desktop
+```
