@@ -721,11 +721,11 @@ Patch Workflow
 # Git Tools
 ## Credential Storage
 Credential helpers:
-- `cache`: store credential in memory and delete after xxx second.
+- `cache`: store credential in memory and delete after xxx second. (Inconvenient when using with 2FA)
 	+ `$ git config --global credential.helper cache`
 	+ Default is 900s, we can add time: `git config --global credential.helper "cache --timeout 36000"`
-- `store`: saves the credentials to a plain-text file on disk, and they never expire. Passwords are stored in cleartext in a plain file.
-- `osxkeychain`
+- `store`: saves the credentials to a **plain-text** file on disk, and they never expire. Passwords are stored in cleartext in a plain file. (Supper dangerous method, no security)
+- `osxkeychain`: Mac OS
 - `wincred`: work on Windows. Use it for Windows system.
 
 ### Under the Hood
