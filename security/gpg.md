@@ -12,6 +12,8 @@
 	+ Long form: `$ gpg --keyid-format long --list-keys`
 - Verify a signature: `$ gpg --verify doc.sig`
 - Manually import a public key: `$ gpg --import public.key`
+- Edit a key: `$ gpg --edit-key your@email.com/your-key-id`
+	+ `gpg> adduid`: add new user id for this key
 
 ## Using a keyserver
 You can register your key with a public PGP key server, so that others can retrieve your key without having to contact you directly.
