@@ -367,4 +367,5 @@ If `enter-command` is available from the UI, it is possible to see the password 
 
 # Performance Tuning
 
-# [Reference](http://www.mutt.org/doc/manual/#reference)
+# References
+- [Manual References](http://www.mutt.org/doc/manual/#reference)
