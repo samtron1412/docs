@@ -17,6 +17,10 @@ By default, GnuPG uses the CAST5 symmetrical algorithm. GnuPG does not use paten
 	+ **Classic** (1.4): older standalone version, most suitable for older or embedded platforms. Initially released on December 16, 2004.
 	+ Stable and Modern cannot be installed at the same time. However, it is possible to install classic along with any modern or stable version.
 
+## Limitations
+- GnuPG 1.x is not written as an API that may be incorporated into other software. To overcome this, GPGME (GnuPG Make Easy) was created as an API wrapper around GnuPG that parses the output of GnuPG and provides a stable and maintainable API between the components.
+- Since GnuPG 2.0, many of GnuPG's functions are available directly as C APIs in libgcrypt.
+
 # libgcrypt
 Libgcrypt is a cryptographic library (written in C) developed as a separated module of GnuPG. It can also be used independently of GnuPG, but depends on its error-reporting library.
 
