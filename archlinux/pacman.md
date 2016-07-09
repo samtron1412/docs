@@ -14,6 +14,7 @@
 - To query the local package database with the `-Q` flag: `$ pacman -Q --help`
 - To query the sync databases with the `-S` flag: `$ pacman -S --help`
 - To search for packages: `$ pacman -Ss string1 string2 ....`
+- To limit the search results: `$ pacman -Ss '^string$'`
 - To search for already installed packages: `$ pacman -Qs string1 string2 ...`
 - To display extensive information: `$ pacman -Si pkg_name`
 - For locally: `$ pacman -Qi pkg_name`
