@@ -26,3 +26,9 @@ Default keyserver set in `dirmngr.conf`
 + Search keys: `$ gpg --search-keys <key-id>`
 + Import a key from a key server: `$ gpg --recv-keys <key-id>`
 + Automatically fetch keys from key servers: adding `keyserver-options auto-key-retrieve` to `gpg.conf`
+
+# Best practices
+- In general, one key per identity. If you want to manage multiple IDs which shall not be connected directly: a personal one, one at you employer, one for stuff which may not contain your real information.
+- One key can include
+	+ Several UIDs (for separating mail addresses, names, etc): use `--edit-key` and `adduid`
+	+ Several subkeys (for diffrent devices): `--edit-key` and `addkey`
