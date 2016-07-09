@@ -1,6 +1,11 @@
 [TOC]
 
 # Overview
+GNU Privacy Guard (GnuPG or GPG) is a free software replacement for Symantec's PGP cryptographic software suite. GnuPG is compliant with RFC 4880.
+
+The GnuPG 1.x series uses an integrated cryptographic library, while the GnuPG 2.x series replaces this with libgcrypt.
+
+By default, GnuPG uses the CAST5 symmetrical algorithm. GnuPG does not use patented or otherwise restricted software or algorithms. Instead, GnuPG uses a variety of other, non-patented algorithms.
 
 # Basic Usage
 - To generate a key: `$ gpg --full-gen-key`
@@ -34,3 +39,4 @@ Default keyserver set in `dirmngr.conf`
 # References
 - [Homepage](https://www.gnupg.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
+- [libgcrypt - Wikipedia]()
