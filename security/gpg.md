@@ -1,8 +1,6 @@
 [TOC]
 
 # Overview
-- [Homepage](https://www.gnupg.org/)
-- [Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
 
 # Basic Usage
 - To generate a key: `$ gpg --full-gen-key`
@@ -32,3 +30,7 @@ Default keyserver set in `dirmngr.conf`
 - One key can include
 	+ Several UIDs (for separating mail addresses, names, etc): use `--edit-key` and `adduid`
 	+ Several subkeys (for diffrent devices): `--edit-key` and `addkey`
+
+# References
+- [Homepage](https://www.gnupg.org/)
+- [Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
