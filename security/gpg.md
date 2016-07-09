@@ -7,6 +7,16 @@ The GnuPG 1.x series uses an integrated cryptographic library, while the GnuPG 2
 
 By default, GnuPG uses the CAST5 symmetrical algorithm. GnuPG does not use patented or otherwise restricted software or algorithms. Instead, GnuPG uses a variety of other, non-patented algorithms.
 
+## History
+- GnuPG was initially developed by Werner Koch.
+- Version 1.0.0, which was the first production version, was released on September 7, 1999, almost two years after the first GnuPG release (version 0.0.0).
+- The German Federal Ministry of Economics and Technology funded the documentation and the port to Microsoft Windows in 2000.
+- As of November 2014, there are three actively maintained branches of GnuPG:
+	+ **Stable** (2.0): stable version for general use, initially released on November 13, 2006.
+	+ **Modern** (2.1): containing the latest development with numerous new features such as elliptic curve cryptography; It was initially released on November 6, 2014.
+	+ **Classic** (1.4): older standalone version, most suitable for older or embedded platforms. Initially released on December 16, 2004.
+	+ Stable and Modern cannot be installed at the same time. However, it is possible to install classic along with any modern or stable version.
+
 # libgcrypt
 Libgcrypt is a cryptographic library (written in C) developed as a separated module of GnuPG. It can also be used independently of GnuPG, but depends on its error-reporting library.
 
