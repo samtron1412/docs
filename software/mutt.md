@@ -374,5 +374,10 @@ If `enter-command` is available from the UI, it is possible to see the password 
 	+ `~d >1y`: deleting messages older than 1 year
 	+ Referencing the patterns to know more.
 
+## Limiting messages
+- `l`: return a prompt `Limit to messages matching:`
+- `~f sender`: show messages from sender
+	+ `~d <30d`: show messages less than 30 days
+
 # References
 - [Manual References](http://www.mutt.org/doc/manual/#reference)
