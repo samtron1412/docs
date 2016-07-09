@@ -7,6 +7,9 @@ The GnuPG 1.x series uses an integrated cryptographic library, while the GnuPG 2
 
 By default, GnuPG uses the CAST5 symmetrical algorithm. GnuPG does not use patented or otherwise restricted software or algorithms. Instead, GnuPG uses a variety of other, non-patented algorithms.
 
+# libgcrypt
+Libgcrypt is a cryptographic library (written in C) developed as a separated module of GnuPG. It can also be used independently of GnuPG, but depends on its error-reporting library.
+
 # Basic Usage
 - To generate a key: `$ gpg --full-gen-key`
 - View all keys: `$ gpg --list-keys`
