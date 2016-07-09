@@ -367,5 +367,12 @@ If `enter-command` is available from the UI, it is possible to see the password 
 
 # Performance Tuning
 
+# Tips and Tricks
+## Deleting messages with patterns
+- `Shift-D`: return a prompt `Delete messages matching:`
+- `~d >30d`: deleting messages older than 30 days
+	+ `~d >1y`: deleting messages older than 1 year
+	+ Referencing the patterns to know more.
+
 # References
 - [Manual References](http://www.mutt.org/doc/manual/#reference)
