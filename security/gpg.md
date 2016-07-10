@@ -53,6 +53,10 @@ Default keyserver set in `dirmngr.conf`
 	+ Several UIDs (for separating mail addresses, names, etc): use `--edit-key` and `adduid`
 	+ Several subkeys (for diffrent devices): `--edit-key` and `addkey`
 
+# Vulnerabilities
+- [taviso - false positive](https://lists.gnupg.org/pipermail/gnupg-announce/2006q1/000211.html)
+- [taviso - injection of unsigned data](https://lists.gnupg.org/pipermail/gnupg-announce/2006q1/000218.html)
+
 # References
 - [Homepage](https://www.gnupg.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
