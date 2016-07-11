@@ -7,6 +7,16 @@
 - `man cmus`
 - `man cmus-remote`: controlling playback through an external application or key-binding.
 
+# Views
+There are 7 views in cmus. Press keys 1-7 to change active view.
+- **Library view (1)**: Display all tracks. Tracks are sorted artist/album tree. Artist sorting is done alphabetically. Albums are sorted by year.
+- **Sorted library view (2)**: Displays same content as view 1, but as a simple list which is automatically sorted by user criteria.
+- **Playlist view (3)**: Displays editable playlist with optional sorting.
+- **Play Queue view (4)**: displays queue of tracks which are played next. These tracks are played before anything else.
+- **Browser (5)**: Directory browser. In this view, music can be added to either the library, playlist or queue from the filesystem.
+- **Filter view (6)**: Lists user defined filters.
+- **Settings view (7)**: Lists keybinding, unbound commands and options. Remove bindings with `d` or `del`, change bindings and variables with `enter` and toggle variables with `space`.
+
 # Tutorials
 ## Adding music
 - Press `5` to switch to the file-browser view.
