@@ -27,6 +27,16 @@
 		* `[R]epeat`: If this is on (and continue is on), when cmus reaches the end of the group of tracks you're playing (selected with the `m` key) it will start again from the beginning. Press `r` to toggle this setting.
 		* `[S]huffle`: When this is on, cmus will choose a random order to play all the tracks once. Press `s` to toggle this option.
 
+## The Queue
+- You're listening to a song, and you want to select which song will play next, without interrupting the currently playing song.
+	+ Go to the song you want to hear next (in any of the views)
+	+ Press `e`
+- The queue is not affected by the "shuffle" option.
+- Press `4` to view/edit the queue.
+	+ Change the order of the tracks with the `p` and `P` keys.
+	+ Remove a track `shift-d`.
+- When cmus is ready to play another track (it's reached the end of a track and the "continue" setting is on) it will remove the top entry from the queue and start playing it.
+
 ## The playlist
 - The playlist works like another library (like view `2`) except that you manually set the order of the tracks (like the queue).
 - Add some tracks:
