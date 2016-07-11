@@ -27,6 +27,14 @@
 		* `[R]epeat`: If this is on (and continue is on), when cmus reaches the end of the group of tracks you're playing (selected with the `m` key) it will start again from the beginning. Press `r` to toggle this setting.
 		* `[S]huffle`: When this is on, cmus will choose a random order to play all the tracks once. Press `s` to toggle this option.
 
+## The playlist
+- The playlist works like another library (like view `2`) except that you manually set the order of the tracks (like the queue).
+- Add some tracks:
+	+ Press `2` to go to the library view
+	+ Press `y` to add a track to the playlist.
+- Edit playlist: using `p, P, D` to move and delete tracks.
+- To put cmus into "play from the playlist" mode, press Enter on one of the tracks in the playlist. To switch modes without interrupting the currently-playing song, press `shift-m`.
+
 # References
 - [Homepage](https://cmus.github.io)
 - [Wiki](https://github.com/cmus/cmus/wiki)
