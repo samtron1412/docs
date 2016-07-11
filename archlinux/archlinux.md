@@ -592,6 +592,11 @@ Back up your system before big upgrade. Use to recover your system when it had t
 [mopidy](https://github.com/mopidy/mopidy)
 [cmus](https://wiki.archlinux.org/index.php/Cmus)
 
+#### 2.3.2 Audio tag editors
+- [easytag](https://en.wikipedia.org/wiki/EasyTag)
+- [puddletag](https://en.wikipedia.org/wiki/Puddletag)
+- id3v2, id3
+
 ### 2.4 Mobile phone managers
 
 ### 2.5 Video
