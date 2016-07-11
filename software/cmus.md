@@ -61,10 +61,15 @@ There are 7 views in cmus. Press keys 1-7 to change active view.
 - Edit playlist: using `p, P, D` to move and delete tracks.
 - To put cmus into "play from the playlist" mode, press Enter on one of the tracks in the playlist. To switch modes without interrupting the currently-playing song, press `shift-m`.
 
+
+## Filter
+
 # Configuration
 ## Files
 
 ## Environment
+
+## Key binding
 
 # References
 - [Homepage](https://cmus.github.io)
