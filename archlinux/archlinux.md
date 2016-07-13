@@ -591,6 +591,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 [mpd](https://wiki.archlinux.org/index.php/Music_Player_Daemon)
 [mopidy](https://github.com/mopidy/mopidy)
 [cmus](https://wiki.archlinux.org/index.php/Cmus)
+[moc](https://wiki.archlinux.org/index.php/Moc)
+[pianobar](https://wiki.archlinux.org/index.php/Pianobar)
 
 #### 2.3.2 Audio tag editors
 - [easytag](https://en.wikipedia.org/wiki/EasyTag)
