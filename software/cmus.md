@@ -71,6 +71,25 @@ There are 7 views in cmus. Press keys 1-7 to change active view.
 
 ## Key binding
 
+# Tips and Tricks
+## Shell scripts
+The shell scripts to be executed via `:shell` command. Usually they use `cmus-remote` to get information from cmus and execute commands/modify variables.
+
+**cmus-edit-tags**
+
+```shell
+#!/bin/sh
+file=$(/usr/bin/cmus-remote -C 'echo {}')
+
+if [ -f "$file" ]
+then /usr/bin/puddletag "$file"
+else /usr/bin/cmus-remote -C "echo Oops, couldn't file selected tracks"
+fi
+```
+
+Execute the script by: `:shell cmus-edit-tags` or binding a key: `bind -f common 0 shell ~/bin/cmus-edit-tags`
+
+
 # References
 - [Homepage](https://cmus.github.io)
 - [Wiki](https://github.com/cmus/cmus/wiki)
