@@ -71,3 +71,7 @@ One way to separate concerns in a software application is to use a Model-View-Co
 - To find other people who share similar interests.
 - To scrobble a song means that when you listen to it, the name of the song is sent to a Web site (e.g. Last.fm, Libre.fm) and added to your music profile.
 - Last.fm or Libre.fm like a social music network, once you start scrobbling yourself, you can see what artists you really listen to the most, view your listening habits on your profile page, and allow others to see your tastes in music. These companies use this data to organize and recommend music to people, to create personalized radio stations, and to see what other users listened to the most.
+
+# CUE sheet
+- A cue sheet, or cue file, is a metadata file which describes how the tracks of a CD are laid out.
+- Cue sheets are stored as plain text files and commonly have a `.cue` filename extension.
