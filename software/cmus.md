@@ -63,6 +63,8 @@ There are 7 views in cmus. Press keys 1-7 to change active view.
 
 
 ## Filter
+Filters are used mostly for filtering contents of library views (1 and 2). Filters do not change the actual library content, i.e. `:save` command will still save all tracks to playlist file whether they are visible or not.
+
 
 # Configuration
 ## Files
