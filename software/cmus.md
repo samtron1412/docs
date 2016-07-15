@@ -91,6 +91,10 @@ Long expressions are list of built-in filters or user defined filters separated 
 - `tag` (true if track has tags). `~T`
 - `stream` (true if track is a stream). `~s`
 
+### Defining filters
+- `:fset ogg=filename="*.ogg"`
+- Using user defined filter `ogg`: `:fset 90s-ogg-mp3=date>=1990&date<2000&(ogg|filename="*.mp3")`
+
 # Configuration
 ## Files
 
