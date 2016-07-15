@@ -95,6 +95,11 @@ Long expressions are list of built-in filters or user defined filters separated 
 - `:fset ogg=filename="*.ogg"`
 - Using user defined filter `ogg`: `:fset 90s-ogg-mp3=date>=1990&date<2000&(ogg|filename="*.mp3")`
 
+### Activating filters
+- `:factivate ogg`
+- `:factivate !ogg`
+- Or select the filters by pressing `space` in view 6 and then activate by pressing `enter`.
+
 # Configuration
 ## Files
 
