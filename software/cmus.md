@@ -75,6 +75,22 @@ Simple expressions are only available using live-filter. For other filter comman
 
 Long expressions are list of built-in filters or user defined filters separated with `&` or `|`. Parenthesis can be used group subexpressions and `!` negates result of the expression following it. Same is true for short expressions, but they can only be made of built-in filters.
 
+### Strings
+- long: filename, artist, albumartist, album, title, genre, comment, codec, codec_profile, media.
+	+ Comparators: `=` and `!=`
+- short: ~f, ~a, ~A, ~l, ~t, ~g, ~c
+
+### Integers
+- long: discnumber, tracknumber, date(year), originaldate (year), duration (seconds), bitrate
+	+ Comparators: `<`, `<=`, `=`, `>=`, `>`, `!=`
+- short: ~D, ~n, ~y, ~d
+	+ Comparators: `<`, `>`
+	+ Ranges: `a-b` (a<=x<=b), `-b` (<=b), `a-`(>=a)
+
+### Booleans
+- `tag` (true if track has tags). `~T`
+- `stream` (true if track is a stream). `~s`
+
 # Configuration
 ## Files
 
