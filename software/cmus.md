@@ -65,6 +65,15 @@ There are 7 views in cmus. Press keys 1-7 to change active view.
 ## Filter
 Filters are used mostly for filtering contents of library views (1 and 2). Filters do not change the actual library content, i.e. `:save` command will still save all tracks to playlist file whether they are visible or not.
 
+### Types
+There are three types of filter expressions, each offering more expressiveness:
+- simple: `beatles`
+- short: `~a beatles (!~y1960-1965 | ~d>600)`
+- long: `artist="*beatles*"&album="R*"`
+
+Simple expressions are only available using live-filter. For other filter commands the type is auto-detected, so both short and long expressions can be used.
+
+Long expressions are list of built-in filters or user defined filters separated with `&` or `|`. Parenthesis can be used group subexpressions and `!` negates result of the expression following it. Same is true for short expressions, but they can only be made of built-in filters.
 
 # Configuration
 ## Files
