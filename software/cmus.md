@@ -118,6 +118,10 @@ cmus reads its configuration from 3 different places
 Color Scheme: `colorschem zenburn`
 
 ## Key binding
+- `bind [-f] <context> <key> <command>`
+	+ `-f`: overwrite existing binding
+	+ `<context>`: common, library (1-2), playlist(3), queue(4), browser(5), filters(6).
+	+ Using `tab` to expand contexts, keys and commands.
 
 # Tips and Tricks
 ## Shell scripts
