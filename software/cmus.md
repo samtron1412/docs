@@ -100,6 +100,10 @@ Long expressions are list of built-in filters or user defined filters separated 
 - `:factivate !ogg`
 - Or select the filters by pressing `space` in view 6 and then activate by pressing `enter`.
 
+### Throw-away filters
+- `:filter date>=1980&genre="*rock*"`: unactivates all filters in the filters view and apply this one.
+- `:live-filter`: apply in addition to all currently activated filters.
+
 # Configuration
 ## Files
 
