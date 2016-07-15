@@ -104,6 +104,10 @@ Long expressions are list of built-in filters or user defined filters separated 
 - `:filter date>=1980&genre="*rock*"`: unactivates all filters in the filters view and apply this one.
 - `:live-filter`: apply in addition to all currently activated filters.
 
+### Selecting tracks matching a filter
+- `:mark duration<120`
+- `:mark play_count>=1`
+
 # Configuration
 ## Files
 
