@@ -32,7 +32,7 @@ There are 7 views in cmus. Press keys 1-7 to change active view.
 ## Playing music
 - `c`: pause/unpause
 - `right/left arrow`: seek by 10 seconds
-- `</>`: seek by one minute
+- `,/.`: seek by one minute
 - Options to control what plays next when the track ends. The state of these settings are shown in the bottom right corner.
 	+ The first shows what collection of tracks we are playing. Press `m` to cycle through the different options
 		* `all from library`
