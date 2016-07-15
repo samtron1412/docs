@@ -117,8 +117,6 @@ cmus reads its configuration from 3 different places
 
 Color Scheme: `colorschem zenburn`
 
-## Environment
-
 ## Key binding
 
 # Tips and Tricks
