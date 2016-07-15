@@ -110,6 +110,12 @@ Long expressions are list of built-in filters or user defined filters separated 
 
 # Configuration
 ## Files
+cmus reads its configuration from 3 different places
+- `$XDG_CONFIG_HOME/cmus/autosave`: this is the first file cmus loads. cmus saves its state on exit to this file so you shouldn't edit it.
+- `/usr/share/cmus/rc`: If the autosave file didn't exist, this file is read instead.
+- `$XDG_CONFIG_HOME/cmus/rc`: Static config file. This file is read immediately after the autosave file, and is never modified by cmus. You can override auto-saved setting in this file.
+
+Color Scheme: `colorschem zenburn`
 
 ## Environment
 
