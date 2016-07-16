@@ -109,3 +109,8 @@ replay all commit of one branch to another branch and clean history of commit. c
 # Perforce (central version control system), git, mercurial
 - Perforce use for very large projects (>6GB)
 - Git, Mercurial use for smaller projects.
+
+# Virtual Private Network (VPN) vs Tor
+- [security.stackexchange][1]
+
+[1]: https://security.stackexchange.com/questions/72679/differences-between-using-tor-browser-and-vpn
