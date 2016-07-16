@@ -112,5 +112,7 @@ replay all commit of one branch to another branch and clean history of commit. c
 
 # Virtual Private Network (VPN) vs Tor
 - [security.stackexchange][1]
+- [Using VPN and Tor together][2]
 
-[1]: https://security.stackexchange.com/questions/72679/differences-between-using-tor-browser-and-vpn
+[1]: https://security.stackexchange.com/questions/72679/differences-between-using-tor-browser-and-vpn "Tor and VPN"
+[2]: https://www.bestvpn.com/blog/42672/using-vpn-and-tor-together/ "Using VPN and Tor together"
