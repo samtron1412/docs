@@ -17,6 +17,8 @@ PGP encryption uses a serial combination of **hashing**, **data compression**, *
 
 The first version of this system was generally known as a **web of trust** to contrast with the **X.509 system**. Current versions of PGP encryption include both options through an automated key management server.
 
+## Compatibility
+Newer PGP systems that support newer features and algorithms are able to create encrypted messages that older PGP systems cannot decrypt, even with a valid private key. Therefore, it is essential that partners in PGP communication understand the PGP system of each other.
 
 # References
 - [Homepage][1]
