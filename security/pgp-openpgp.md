@@ -20,6 +20,12 @@ The first version of this system was generally known as a **web of trust** to co
 ## Compatibility
 Newer PGP systems that support newer features and algorithms are able to create encrypted messages that older PGP systems cannot decrypt, even with a valid private key. Therefore, it is essential that partners in PGP communication understand the PGP system of each other.
 
+## Confidentiality
+PGP can be used to send messages confidentially.
+- The message is encrypted using a symmetric encryption algorithm, which requires a symmetric key.
+	+ Each symmetric key is used only once and is also called a session key.
+- The session key is encrypted by the receiver's public key. Only the private key belonging to the receiver can decrypt the session key.
+
 # References
 - [Homepage][1]
 - [Wikipedia][2]
