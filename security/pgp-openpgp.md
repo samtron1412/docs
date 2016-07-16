@@ -26,6 +26,12 @@ PGP can be used to send messages confidentially.
 	+ Each symmetric key is used only once and is also called a session key.
 - The session key is encrypted by the receiver's public key. Only the private key belonging to the receiver can decrypt the session key.
 
+## Digital signatures
+PGP supports message authentication and integrity checking.
+- **Integrity checking** is used to detect whether a message has been altered since it was completed.
+- **Message authentication** is used to determine whether it was actually sent by the person or entity claimed to be the sender.
+	+ PGP computes a hash (a message digest) from the plaintext and then creates the digital signature from that hash using the sender's private key.
+
 # References
 - [Homepage][1]
 - [Wikipedia][2]
