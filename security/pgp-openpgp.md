@@ -12,6 +12,12 @@ PGP is often used for signing, encrypting, and decrypting texts, e-mails, files,
 	+ In 2012, encryption based on elliptic curve cryptography (ECDSA, ECDH) was extended by [RFC 6637][4]
 	+ Support of EdDSA will be added by [draft-koch-eddsa-for-openpgp-00][1] proposed in 2014
 
+# Design
+PGP encryption uses a serial combination of **hashing**, **data compression**, **symmetric-key cryptography**, and finally **public-key cryptography**; each step uses one of several supported algorithms.
+
+The first version of this system was generally known as a **web of trust** to contrast with the **X.509 system**. Current versions of PGP encryption include both options through an automated key management server.
+
+
 # References
 - [Homepage][1]
 - [Wikipedia][2]
