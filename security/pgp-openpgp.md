@@ -32,6 +32,22 @@ PGP supports message authentication and integrity checking.
 - **Message authentication** is used to determine whether it was actually sent by the person or entity claimed to be the sender.
 	+ PGP computes a hash (a message digest) from the plaintext and then creates the digital signature from that hash using the sender's private key.
 
+## Web of trust
+### Introduction
+Both when **encrypting messages** and when **verifying signatures**, it is critical that the public key used to send messages to someone or some entity actually does **belong** to the intended recipient.
+
+Simple downloading a public key from somewhere is not an overwhelming assurance of that association; deliberate (or accidental) impersonation is possible.
+
+From its first version, PGP has always included provision for distributing user's public keys in an **identity certificate**, which is also constructed cryptographically so that any tempering (or accidental garble) is readily detectable.
+
+However, merely making a certificate which is impossible to modify without being detected is insufficient; this can prevent corruption only after the certificate has been created, not before. Users must also ensure by some means that the public key in a certificate actually does belong to the person or entity claiming it.
+
+After that version, PGP has included an **internal certificate vetting scheme** to assist with this, a trust model which has been called a web of trust.
+- A given public key (information binding a user name to a key) may be digitally signed by a third party user to attest to the association between someone (actually a user name) and the key.
+- There are several levels of confidence which can be included in such signatures.
+- The web of trust protocol was first described by Zimmermann in 1992, in the manual for PGP version 2.0.
+- Its **decentralized trust model** is an alternative to the **centralized trust model** of a public key infrastructure (PKI), which relies exclusively on a *certificate authority*.
+
 # References
 - [Homepage][1]
 - [Wikipedia][2]
