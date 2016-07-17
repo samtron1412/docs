@@ -48,15 +48,28 @@ After that version, PGP has included an **internal certificate vetting scheme** 
 - The web of trust protocol was first described by Zimmermann in 1992, in the manual for PGP version 2.0.
 - Its **decentralized trust model** is an alternative to the **centralized trust model** of a public key infrastructure (PKI), which relies exclusively on a *certificate authority*.
 
+### Operation of a web of trust
+All OpenPGP-compliant implementations include a certificate vetting scheme; its operation has been termed a web of trust.
+
+OpenPGP identity certificates (which include public key(s) and owner information) can be digitally signed by other users. This is commonly done at [key signing parties][6].
+
+A vote counting scheme which can be used to determine which identity certificates will trust while using PGP.
+- Three partially trusted endorsers have vouched for a certificate
+- Or one fully trusted endorser has done so.
+
+The scheme is flexible, unlike most public key infrastructure designs, and leaves trust decision(s) in the hands of individual users. It is not perfect and requires both caution and intelligent supervision by users.
+
 # References
 - [Homepage][1]
 - [Wikipedia][2]
 - [RFC4880 - OpenPGP][3]
 - [RFC6637 - ECDSA/ECDH][4]
 - [EdDSA Draft][5]
+- [Key signing parties][6]
 
 [1]: http://www.openpgp.org/ "OpenPGP Homepage"
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy "Wikipedia Pretty Good Privacy"
 [3]: https://tools.ietf.org/html/rfc4880 "RFC 4880"
 [4]: https://tools.ietf.org/html/rfc6637 "RFC 6637"
 [5]: https://tools.ietf.org/html/draft-koch-eddsa-for-openpgp-00 "EdDSA Draft"
+[6]: https://en.wikipedia.org/wiki/Key_signing_party "Key signing parties"
