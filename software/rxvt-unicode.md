@@ -75,6 +75,7 @@ Matcher select mode, use up and down arrow key to select URLs.
 ## [Changing font size on the fly](https://github.com/majutsushi/urxvt-font-size)
 
 # Troubleshooting
-## Remote hosts (ssh)
-If you are logging into a remote host, you may encounter problems when running text-mode programs under rxvt-unicode.
-- This can be fixed by installing `rxvt-unicode-terminfo` on the remote host or by copying `/usr/share/terminfo/r/rxvt-unicode` from your local machine to your host at `~/.terminfo/r/rxvt-unicode`; same for **rxvt-unicode-256color**.
+## Remote hosts (ssh/chroot/systemd-nspawn)
+If you are logging into a remote host (using SSH or chroot/systemd-nspawn), you may encounter problems when running text-mode programs under `rxvt-unicode-256color` or `rxvt-unicode`.
+- This can be fixed by installing `rxvt-unicode-terminfo` on the remote host.
+- Or by copying `/usr/share/terminfo/r/rxvt-unicode-256color` or `/usr/share/terminfo/r/rxvt-unicode` from your local machine to your host at `~/.terminfo/r`.
