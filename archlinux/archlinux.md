@@ -91,7 +91,7 @@ Run on any [i686](http://en.wikipedia.org/wiki/P6_(microarchitecture)) compatibl
 The latest release of the installation media can be obtained from the [Download](https://archlinux.org/download/) page. Burn the ISO image on a CD/DVD/USB.
 
 ## Boot the installation medium
-You are now presented with a shell prompt, automatically logged in as root. Your shell is [Zsh](https://wiki.archlinux.org/index.php/Zsh). [Dual boot Windows and Archlinux](https://wiki.archlinux.org/index.php/Windows_and_Arch_Dual_Boot).
+You are now presented with a shell prompt, automatically logged in as root. Your shell is [Zsh](https://wiki.archlinux.org/index.php/Zsh). [Dual boot Windows and Arch Linux](https://wiki.archlinux.org/index.php/Windows_and_Arch_Dual_Boot).
 
 ## Change the language
 - Load keyboard: **loadkeys us** (default is us, so didn't change)
