@@ -31,8 +31,8 @@
 
 ### KolibriOS
 
-### ReactOS
 
 # Microsoft Windows
+## ReactOS
 
 # Mac OS X
