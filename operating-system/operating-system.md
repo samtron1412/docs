@@ -32,7 +32,7 @@
 ### KolibriOS
 
 
-# Microsoft Windows
+# Windows
 ## ReactOS
 
 # Mac OS X
