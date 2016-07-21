@@ -21,6 +21,11 @@
 
 ### NetBSD
 
+## Solaris
+### SmartOS
+
+### Oracle Solaris
+
 ## System V
 
 ## [Alternative OS](http://www.techradar.com/us/news/software/operating-systems/10-best-alternative-operating-systems-934484)
