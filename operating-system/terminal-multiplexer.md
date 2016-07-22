@@ -8,6 +8,14 @@ A terminal multiplexer can be thought of as a text version of window managers, o
 
 It is a wrapper that allows multiple text programs to run at the same time, and provides features that allow the user to use the programs within a single interface productivity.
 
+## Persistence
+
+## Multiple windows
+
+## Session Sharing
+- Allow multiple computers to connect to the same session at once.
+- Enabling collaboration between multiple users.
+- The same computer can also be used to make multiple simultaneous connections, providing alternative functionality to screen-splitting, particularly for computers with multiple monitors.
 
 # Implementations
 - [GNU Screen](https://en.wikipedia.org/wiki/GNU_Screen)
