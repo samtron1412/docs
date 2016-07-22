@@ -1,7 +1,7 @@
 [TOC]
 
 ### [Terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer)
-A terminal multiplexer is a software application that can be used to multiplex several virtual consoles, allowing a user to access multiple separate terminal sessions inside a single terminal window or remote terminal session. It is useful for dealing with multiple programs from a command line interface, and for separating programs from the Unix shell that started the program.
+A terminal multiplexer is a software application that can be used to multiplex several virtual consoles, allowing a user to access multiple separate login sessions inside a single terminal window or detach and reattach session from a terminal. It is useful for dealing with multiple programs from a command line interface, and for separating programs from the session of the Unix shell that started the program. Particularly so a remote process continues running even when the user is disconnected.
 
 >Running process after terminate ssh session
 
@@ -62,11 +62,11 @@ In tmux, hit the prefix `ctrl+b` and then:
     ,  name window
     &  kill window
 
-## <a name="PanesSplits"></a>Panes (splits) 
+## <a name="PanesSplits"></a>Panes (splits)
 
     %  vertical split
     "  horizontal split
-    
+
     o  swap panes
     q  show pane numbers
     x  kill pane
@@ -78,7 +78,7 @@ In tmux, hit the prefix `ctrl+b` and then:
     <prefix> } (Move the current pane right)
     <prefix> z toggle pane zoom
 
-## <a name="syncPanes"></a>Sync Panes 
+## <a name="syncPanes"></a>Sync Panes
 
 You can do this by switching to the appropriate window, typing your Tmux prefix (commonly Ctrl-B or Ctrl-A) and then a colon to bring up a Tmux command line, and typing:
 
@@ -103,8 +103,8 @@ You can also resize panes if you don’t like the layout defaults. I personally 
     PREFIX : resize-pane -R 20 (Resizes the current pane right by 20 cells)
     PREFIX : resize-pane -t 2 20 (Resizes the pane with the id of 2 down by 20 cells)
     PREFIX : resize-pane -t -L 20 (Resizes the pane with the id of 2 left by 20 cells)
-    
-    
+
+
 ## Copy mode:
 
 Pressing PREFIX [ places us in Copy mode. We can then use our movement keys to move our cursor around the screen. By default, the arrow keys work. we set our configuration file to use Vim keys for moving between windows and resizing panes so we wouldn’t have to take our hands off the home row. tmux has a vi mode for working with the buffer as well. To enable it, add this line to .tmux.conf:
