@@ -1,6 +1,6 @@
 [TOC]
 
-### [Terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer)
+# Overview
 A terminal multiplexer is a software application that can be used to multiplex several virtual consoles, allowing a user to access multiple separate login sessions inside a single terminal window or detach and reattach session from a terminal. It is useful for dealing with multiple programs from a command line interface, and for separating programs from the session of the Unix shell that started the program. Particularly so a remote process continues running even when the user is disconnected.
 
 # tmux shortcuts & cheatsheet
@@ -169,3 +169,8 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
     unbind Up bind Up new-window -d -n tmp \; swap-pane -s tmp.1 \; select-window -t tmp
     unbind Down
     bind Down last-window \; swap-pane -s tmp.1 \; kill-window -t tmp
+
+# References
+1. [Terminal Multiplexer - Wikipedia][1]
+
+[1]: https://en.wikipedia.org/wiki/Terminal_multiplexer "Terminal Multiplexer - Wikipedia"
