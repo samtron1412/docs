@@ -3,15 +3,6 @@
 ### [Terminal multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer)
 A terminal multiplexer is a software application that can be used to multiplex several virtual consoles, allowing a user to access multiple separate login sessions inside a single terminal window or detach and reattach session from a terminal. It is useful for dealing with multiple programs from a command line interface, and for separating programs from the session of the Unix shell that started the program. Particularly so a remote process continues running even when the user is disconnected.
 
->Running process after terminate ssh session
-
-1. Use `&` after command run process background. Example: `rails s &`
-2. Running `rails s` after terminate ssh connection by [screen](https://www.gnu.org/software/screen/) package.
-`screen` will create new shell to run `rails s`, detach with `Ctrl + A + D` and go back to screen with `screen -r`. [Wikipedia](https://en.wikipedia.org/wiki/GNU_Screen)
-
-3. Use [tmux](http://tmux.sourceforge.net/) same `screen`. [Wikipedia](https://en.wikipedia.org/wiki/Tmux)
-
-
 # tmux shortcuts & cheatsheet
 
 start new:
