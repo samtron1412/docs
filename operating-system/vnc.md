@@ -5,6 +5,13 @@ Virtual network Computing (VNC) is a graphical desktop sharing system that uses 
 
 VNC is platform-independent.
 
+# Operation
+
+# Security
+Since VNC was originally developed for use within a LAN, there are security issues when used over the Internet. Solutions
+- VPN/SSH tunnel
+- Wrap all VNC traffic with TLS
+
 # References
 1. [Virtual Network Computing - Wikipedia][1]
 2. [Remote Frame Buffer protocol - Wikipedia][2]
