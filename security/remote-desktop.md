@@ -11,8 +11,21 @@ Remote desktop software captures the mouse and keyboard inputs from the local co
 - SPICE (Simple Protocol for Independent Computing Environments) - remote-display system built for virtual environments.
 - Remote Desktop Protocol (RDP) - a Windows-specific protocol.
 
+# Software
+- [Remmina][2]
+- [SSH with X forwarding][3]
+- [FreeRDP][4]
+- [Vino - server only][5]
+- [Vinagre - old][6]
+- [Chrome Remote Desktop][7]
 
 # References
 1. [Remote desktop software - Wikipedia][1]
 
 [1]: https://en.wikipedia.org/wiki/Remote_desktop_software "Remote desktop software"
+[2]: https://en.wikipedia.org/wiki/Remmina "Remmina - Wikipedia"
+[3]: https://en.wikipedia.org/wiki/Secure_Shell "SSH - Wikipedia"
+[4]: https://github.com/FreeRDP/FreeRDP "FreeRDP - GitHub"
+[5]: https://wiki.gnome.org/Projects/Vino "Vino - GNOME"
+[6]: https://wiki.gnome.org/Apps/Vinagre "Vnagre - GNOME Extra"
+[7]: https://en.wikipedia.org/wiki/Chrome_Remote_Desktop "Chrome Remote Desktop - Wikipedia"
