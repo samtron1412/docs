@@ -19,6 +19,9 @@ Remote desktop software captures the mouse and keyboard inputs from the local co
 - [Vinagre - old][6]
 - [Chrome Remote Desktop][7]
 
+# Security
+- Confidentiality: if software don't have built-in encryption, we need a VPN/SSH tunnel, or wrap the connection in SSL/TLS.
+
 # References
 1. [Remote desktop software - Wikipedia][1]
 
