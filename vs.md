@@ -126,5 +126,6 @@ replay all commit of one branch to another branch and clean history of commit. c
 
 # GNU Screen, tmux, byobu
 - [Byobu vs. GNU Screen vs. tmux - usefulness and transferability of skills][1]
+	+ byobu is a configuration platform build on top of GNU Screen and tmux. So GNU Screen and tmux are backend of byobu.
 
 [1]: http://superuser.com/questions/423310/byobu-vs-gnu-screen-vs-tmux-usefulness-and-transferability-of-skills "Byobu vs. GNU Screen vs. tmux -- usefulness and tranferability of skills"
