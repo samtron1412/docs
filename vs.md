@@ -116,3 +116,10 @@ replay all commit of one branch to another branch and clean history of commit. c
 
 [1]: https://security.stackexchange.com/questions/72679/differences-between-using-tor-browser-and-vpn "Tor and VPN"
 [2]: https://www.bestvpn.com/blog/42672/using-vpn-and-tor-together/ "Using VPN and Tor together"
+
+# RDP vs RFB (VNC)
+- [What's the difference between RDP vs RFB(VNC)][1]
+	+ RFB: sending the actual images across the network.
+	+ RDP: sending the information how to draw the images. So RDP a lot faster than RFB in most cases.
+
+[1]: http://superuser.com/questions/32495/whats-the-difference-between-rdp-vs-vnc "What's the difference between RDP vs RFB(VNC)"
