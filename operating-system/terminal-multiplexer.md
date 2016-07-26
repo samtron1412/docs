@@ -9,6 +9,8 @@ A terminal multiplexer can be thought of as a text version of window managers, o
 It is a wrapper that allows multiple text programs to run at the same time, and provides features that allow the user to use the programs within a single interface productivity.
 
 ## Persistence
+- A terminal multiplexer allows the user to start applications from one computer, and then reconnect from a different computer and continue using the same application without having to restart it. This makes accessing the same session between different locations like work and home simple.
+- The multiplexer starts a session and this session can detach (for example if the network connection is dropped). Since the session does not end, the processes are not sent a "hangup" signal ([SIGHUP][2]) and are not terminated.
 
 ## Multiple windows
 
@@ -26,3 +28,4 @@ It is a wrapper that allows multiple text programs to run at the same time, and 
 1. [Terminal Multiplexer - Wikipedia][1]
 
 [1]: https://en.wikipedia.org/wiki/Terminal_multiplexer "Terminal Multiplexer - Wikipedia"
+[2]: https://en.wikipedia.org/wiki/SIGHUP "SIGHUP - Wikipedia"
