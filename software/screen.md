@@ -2,6 +2,10 @@
 
 # Overview
 GNU Screen is a terminal multiplexer. Released under the terms of version 3 or later of the GNU General Public License.
+## History
+- Screen was originally designed by Oliver Laumann and Carsten Bormann and published in 1987.
+- Around 1990, Laumann handed over maintenance of the code to Jürgen Weigert and Michael Schroeder.
+- By 2014, Amadeusz Sławiński became maintainer.
 
 # Features
 - Such as a terminal multiplexer, GNU Screen has following features: persistence, multiple windows, and session sharing.
