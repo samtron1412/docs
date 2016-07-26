@@ -13,6 +13,9 @@ It is a wrapper that allows multiple text programs to run at the same time, and 
 - The multiplexer starts a session and this session can detach (for example if the network connection is dropped). Since the session does not end, the processes are not sent a "hangup" signal ([SIGHUP][2]) and are not terminated.
 
 ## Multiple windows
+- Multiple terminal sessions can be created, each of which usually runs a single application.
+- The windows are numbered, each window has its own scroll-back buffer.
+- Windows can be split-screened.
 
 ## Session Sharing
 - Allow multiple computers to connect to the same session at once.
