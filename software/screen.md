@@ -13,5 +13,7 @@ GNU Screen is a terminal multiplexer. Released under the terms of version 3 or l
 
 # References
 1. [GNU Screen - Wikipedia][1]
+2. [GNU Screen source code - Git][2]
 
 [1]: https://en.wikipedia.org/wiki/GNU_Screen "GNU Screen - Wikipedia"
+[2]: http://git.savannah.gnu.org/cgit/screen.git/ "GNU Screen source code - Git"
