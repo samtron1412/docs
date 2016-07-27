@@ -29,6 +29,7 @@ GNU Screen is a terminal multiplexer. Released under the terms of version 3 or l
 # Tips and Tricks
 ## Pull a process into screen
 - [reptyr][3]
+- Get the PID of the process. Type this command inside a screen window: `$ reptyr <pid>`
 
 # References
 1. [GNU Screen - Wikipedia][1]
