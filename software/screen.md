@@ -26,9 +26,15 @@ GNU Screen is a terminal multiplexer. Released under the terms of version 3 or l
 	+ GNU Screen can split its display.
 - GNU Screen is often used when a network connection to the terminal is unreliable, as a dropped network connection typically terminates all programs the user was running (child processes of the login session), due to the session ending and sending a "hangup" signal (SIGHUP) to all the child processes. Running the applications under GNU Screen means that the session does not terminate - only the now-defunct terminal gets detaches - so applications don't even know the terminal has detached, and allows the user to reattach the session later and continue working from where they left off.
 
+# Tips and Tricks
+## Pull a process into screen
+- [reptyr][3]
+
 # References
 1. [GNU Screen - Wikipedia][1]
 2. [GNU Screen source code - Git][2]
+3. [reptyr][3]
 
 [1]: https://en.wikipedia.org/wiki/GNU_Screen "GNU Screen - Wikipedia"
 [2]: http://git.savannah.gnu.org/cgit/screen.git/ "GNU Screen source code - Git"
+[3]: https://github.com/nelhage/reptyr "reptyr"
