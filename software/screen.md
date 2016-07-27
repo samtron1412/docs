@@ -7,6 +7,14 @@ GNU Screen is a terminal multiplexer. Released under the terms of version 3 or l
 - Around 1990, Laumann handed over maintenance of the code to Jürgen Weigert and Michael Schroeder.
 - By 2014, Amadeusz Sławiński became maintainer.
 
+# Terminology
+- session: A single collection of windows - all running under a master screen process. The session can be given a name (e.g. myshells). Screen sessions each have their own clipboard, so copy and paste using the session's clipboard works exclusively between windows within that session.
+- window: by default, windows are created with a shell running in them. Each window has a number unique within that session. It also has a name, which does not have to be unique.
+- region: A portion of the display where a screen window is visible. The display can be split into multiple regions, so you can see multiple windows at once.
+- display: This refers to where the screen session is attached; if being specific, it refers to the terminal or pseudo-terminal used by the attaching process.
+- display terminal: The terminal to which screen is attached. Often an xterm or console window, but could be any terminal either physical or software. It is possible to have multiple displays terminals viewing the same screen session at the same time.
+- virtual terminal: The terminal that screen windows provide to the programs running within them.
+
 # Features
 - Such as a terminal multiplexer, GNU Screen has following features: persistence, multiple windows, and session sharing.
 	+ GNU Screen can multiplex a terminal. Within a single session, you can have multiple windows, each one behaving like a separate terminal. You can open email client in one window and text editor in another and be able to flip between them.
