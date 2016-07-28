@@ -39,6 +39,26 @@ Commands are entered pressing the **escape key** `ctrl+a` and then the key bindi
 - Print a list of `pid.tty.host` string identifying your screen sessions: `$ screen -list`
 - Attach to a named screen session: `$ screen -x session_name` or `$ screen -r session_name`
 
+## Autostart processes running inside screen with systemd
+This service autostarts screen for the specified user (e.g. `systemctl enable screen@florian`). Running this as a system unit is important, because `systemd --user` instance is not guaranteed to be running and will be killed when the last session for given user is closed.
+
+For example: `/etc/systemd/system/screen@.service`
+
+```shell
+[Unit]
+Description=screen
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/usr/bin/screen -DmS autoscreen
+ExecStop=/usr/bin/screen -S autoscreen -X quit
+
+[Install]
+WantedBy=multi-user.target
+```
+
 # Tips and Tricks
 ## Pull a process into screen
 - [reptyr][3]
