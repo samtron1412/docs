@@ -26,6 +26,19 @@ GNU Screen is a terminal multiplexer. Released under the terms of version 3 or l
 	+ GNU Screen can split its display.
 - GNU Screen is often used when a network connection to the terminal is unreliable, as a dropped network connection typically terminates all programs the user was running (child processes of the login session), due to the session ending and sending a "hangup" signal (SIGHUP) to all the child processes. Running the applications under GNU Screen means that the session does not terminate - only the now-defunct terminal gets detaches - so applications don't even know the terminal has detached, and allows the user to reattach the session later and continue working from where they left off.
 
+# Usage
+Commands are entered pressing the **escape key** `ctrl+a` and then the key binding.
+
+## Command Prompt Commands
+- `ctrl+a :quit`: closes all windows and sessions
+- `ctrl+a :source ~/.screenrc`: reloads screenrc configuration file
+
+## Named sessions
+- Create a new named session: `$ screen -S session_name`
+- Rename an existing session: `ctrl+a :sessionname session_name`
+- Print a list of `pid.tty.host` string identifying your screen sessions: `$ screen -list`
+- Attach to a named screen session: `$ screen -x session_name` or `$ screen -r session_name`
+
 # Tips and Tricks
 ## Pull a process into screen
 - [reptyr][3]
