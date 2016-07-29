@@ -77,6 +77,11 @@ WantedBy=multi-user.target
 ```
 
 # Tips and Tricks
+## Nested Screen Sessions
+It is possible to get stuck in a nested screen session. A common scenario: you start an ssh session from within a screen session. Within the ssh session, you start screen. By default, the outer screen session that was launched first responds to `ctrl+a` commands. To send a command to the inner screen session, use `ctrl+a a`, followed by your command.
+- `ctrl+a a d`: detaches the inner screen session.
+- `ctrl+a a K`: kills the inner screen session.
+
 ## Pull a process into screen
 - [reptyr][3]
 - Get the PID of the process. Type this command inside a screen window: `$ reptyr <pid>`
