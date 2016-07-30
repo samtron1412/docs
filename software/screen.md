@@ -86,6 +86,13 @@ By default, screen uses an 8-color terminal emulator.
 term rxvt-unicode-256color
 ```
 
+## Informative statusbar
+```
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kW} %= %H | %n | %f%t%?(%u)%? | %m-%d | %c %='
+```
+
 ## Nested Screen Sessions
 It is possible to get stuck in a nested screen session. A common scenario: you start an ssh session from within a screen session. Within the ssh session, you start screen. By default, the outer screen session that was launched first responds to `ctrl+a` commands. To send a command to the inner screen session, use `ctrl+a a`, followed by your command.
 - `ctrl+a a d`: detaches the inner screen session.
