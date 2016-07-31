@@ -33,16 +33,24 @@ Commands are entered pressing the **escape key** `ctrl+a` and then the key bindi
 - `ctrl+a ?`: Displays commands and its defaults
 - `ctrl+a :`: Enter to the command prompt of screen
 - `ctrl+a "`: Window list
+
+### Getting out
 - `ctrl+a d` Detach from the current screen session, and leave it running. Use `screen -r` to resume
-- `ctrl+a X` Close the current region
-- `ctrl+a Q` Close all regions but the current one
+
+### Window management
 - `ctrl+a 0`: Opens windows 0
 - `ctrl+a A`: Rename the current window
 - `ctrl+a a`: Sends `ctrl+a` to the current window
 - `ctrl+a c` Create a new window (with shell)
+
+### Split screen
 - `ctrl+a S` Split current region into two regions
 - `ctrl+a tab` Switch the input focus to the next region
 - `ctrl+a ctrl+a` Toggle between current and previous region
+- `ctrl+a X` Close the current region
+- `ctrl+a Q` Close all regions but the current one
+
+### Misc
 - `ctrl+a Esc` Enter Copy Mode (use enter to select a range of text)
 - `ctrl+a ]` Paste text
 
