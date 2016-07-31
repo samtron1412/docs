@@ -53,8 +53,10 @@ Commands are entered pressing the **escape key** `ctrl+a` and then the key bindi
 ## Named sessions
 - Create a new named session: `$ screen -S session_name`
 - Rename an existing session: `ctrl+a :sessionname session_name`
-- Print a list of `pid.tty.host` string identifying your screen sessions: `$ screen -list`
+- Print a list of `pid.tty.host` string identifying your screen sessions: `$ screen -list` or `$ screen -ls`
 - Attach to a named screen session: `$ screen -x session_name` or `$ screen -r session_name`
+	+ The ultimate attach: `$ screen -dRR` (Attaches to a screen session. If the session is attached elsewhere, detaches that other display. If no session exists, creates one. If multiple sessions exist, uses the first one.)
+- Detach a running session: `$ screen -d <name>`
 
 ## Autostart processes running inside screen with systemd
 This service autostarts screen for the specified user (e.g. `systemctl enable screen@florian`). Running this as a system unit is important, because `systemd --user` instance is not guaranteed to be running and will be killed when the last session for given user is closed.
