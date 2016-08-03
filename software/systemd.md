@@ -22,19 +22,8 @@
 
 **Spelling**: `systemd` - `System Five Hundred`
 
-[Source](https://github.com/systemd/systemd)
-
 ## Why?
 
-
-## Resources
-- [Homepage](https://freedesktop.org/wiki/Software/systemd/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Systemd)
-- [Archlinux Wiki](https://wiki.archlinux.org/index.php/Systemd)
-- [Systemd for upstart user](https://wiki.ubuntu.com/SystemdForUpstartUsers)
-- [systemd use guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units#editing-unit-files)
-- [Linux Torvalds and others on Linux's systemd](http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/)
-- [The Biggest Myths](http://0pointer.de/blog/projects/the-biggest-myths.html)
 
 # Design
 ## Unit files
@@ -57,3 +46,21 @@ Install `systemd-sysvcompat`
 ## [/var stay busy at shutdown due to journald](https://github.com/systemd/systemd/issues/867)
 - Fix by change `Storage=volatile` in `/etc/systemd/journald.conf`: journald will save log to `/run/log/journal` instead `/var/log/journal`
 
+# References
+1. [Source Code][1]
+2. [Homepage][2]
+3. [Wikipedia][3]
+4. [Archlinux Wiki][4]
+5. [Systemd for upstart user][5]
+6. [systemd use guide][6]
+7. [Linux Torvalds and others on Linux's systemd][7]
+8. [The Biggest Myths][8]
+
+[1]: https://github.com/systemd/systemd "Source Code"
+[2]: https://freedesktop.org/wiki/Software/systemd/ "Homepage"
+[3]: https://en.wikipedia.org/wiki/Systemd "Systemd - Wikipedia"
+[4]: https://wiki.archlinux.org/index.php/Systemd "Systemd - Arch Wiki"
+[5]: https://wiki.ubuntu.com/SystemdForUpstartUsers "Systemd for upstart users"
+[6]: https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units "Systemd tutorials"
+[7]: http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/ "Linus Torvalds and others on Linux's systemd"
+[8]: http://0pointer.de/blog/projects/the-biggest-myths.html "Systemd the biggest myths"
