@@ -37,13 +37,13 @@
 # Forks and alternative implementations
 
 # Tips and Tricks
-## [Allow user to shutdown](https://wiki.archlinux.org/index.php/Allow_users_to_shutdown)
+## [Allow user to shutdown][9]
 Install `systemd-sysvcompat`
 
 # Troubleshooting
-## [Debugging](https://freedesktop.org/wiki/Software/systemd/Debugging/)
+## [Debugging][10]
 
-## [/var stay busy at shutdown due to journald](https://github.com/systemd/systemd/issues/867)
+## [/var stay busy at shutdown due to journald][11]
 - Fix by change `Storage=volatile` in `/etc/systemd/journald.conf`: journald will save log to `/run/log/journal` instead `/var/log/journal`
 
 # References
@@ -55,6 +55,9 @@ Install `systemd-sysvcompat`
 6. [systemd use guide][6]
 7. [Linux Torvalds and others on Linux's systemd][7]
 8. [The Biggest Myths][8]
+9. [Allow users to shutdown][9]
+10. [systemd debugging][10]
+11. [/var stay busy at shutdown due to journald][11]
 
 [1]: https://github.com/systemd/systemd "Source Code"
 [2]: https://freedesktop.org/wiki/Software/systemd/ "Homepage"
@@ -64,3 +67,6 @@ Install `systemd-sysvcompat`
 [6]: https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units "Systemd tutorials"
 [7]: http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/ "Linus Torvalds and others on Linux's systemd"
 [8]: http://0pointer.de/blog/projects/the-biggest-myths.html "Systemd the biggest myths"
+[9]: https://wiki.archlinux.org/index.php/Allow_users_to_shutdown "Allow users to shutdown"
+[10]: https://freedesktop.org/wiki/Software/systemd/Debugging/ "Systemd debugging"
+[11]: https://github.com/systemd/systemd/issues/867 "/var stay busy at shutdown due to journald"
