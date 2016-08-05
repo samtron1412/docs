@@ -1,8 +1,10 @@
 [TOC]
 
 # Overview
+## What?
 A virtual private network also known as a VPN is a private network that extends across a public network or internet. It enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
 
+## Why?
 VPNs can provide functionality, security and/or network management benefits to the user.
 - Some VPNs allow employees to securely access a corporate intranet while located outside the office.
 - Some can securely connect geographically separated offices of an organization, creating one cohesive network.
