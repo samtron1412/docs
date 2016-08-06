@@ -10,6 +10,9 @@ VPNs can provide functionality, security and/or network management benefits to t
 - Some can securely connect geographically separated offices of an organization, creating one cohesive network.
 - Individual Internet users can use some VPNs to secure their wireless transactions, to circumvent geo-restrictions and censorship, and/or to connect to proxy servers for the purpose of protecting personal identity and location.
 
+# VPN prehistory
+The first incentive to VPN creation was a desire of different companies and corporations to remove a set of impediments of their successful business development.
+
 # References
 1. [Virtual Private Network - Wikipedia][1]
 
