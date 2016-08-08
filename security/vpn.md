@@ -25,7 +25,9 @@ The VPN security model provides:
 
 Secure VPN protocols include the following:
 - **Internet Protocol Security (IPsec)** as initially developed by the Internet Engineering Task Force (IETF) for IPv6, which was required in all standards-compliant implementations of IPv6 before [RFC 6434][2] made it only a recommendation.
-- **Transport Layer Security (SSL/TLS)** can tunnel an entire network's traffic or secure an individual connection.
+- **Secure Sockets Layer/Transport Layer Security (SSL/TLS)** can tunnel an entire network's traffic or secure an individual connection.
+- **Point-to-Point Tunnelling Protocol (PPTP)**
+- **Layer 2 Tunneling Protocol over IPsec (L2TP/IPsec)**
 - Secure Shell (SSH) VPN - OpenSSH offers VPN tunnelling to secure remote connections to a network or to inter-network links.
 - **Datagram Transport Layer Security (DTLS)** - used in Cisco AnyConnect VPN and in OpenConnect VPN to solve the issues SSL/TLS has with tunnelling over UDP.
 - **Microsoft Point-to-Point Encryption (MPPE)** works with the Point-to-Point Tunnelling Protocol and in several compatible implementation on other platforms.
