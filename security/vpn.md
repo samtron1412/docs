@@ -34,6 +34,9 @@ Secure VPN protocols include the following:
 - **Microsoft Secure Socket Tunnelling Protocol (SSTP)** tunnels Point-to-Point Protocol (PPP) or Layer 2 Tunnelling Protocol traffic through an SSL 3.0 channel.
 - Multi Path Virtual Private Network (MPVPN)
 
+## Authentication
+Tunnel endpoints must be authenticated before secure VPN tunnels can be established.
+
 # References
 1. [Virtual Private Network - Wikipedia][1]
 2. [RFC 6434][2]
