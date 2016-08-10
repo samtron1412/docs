@@ -37,9 +37,20 @@ Secure VPN protocols include the following:
 ## Authentication
 Tunnel endpoints must be authenticated before secure VPN tunnels can be established.
 
+
+
+# VPN on routers
+## [DD-WRT][3]
+
+## [OpenWRT][4]
+
 # References
 1. [Virtual Private Network - Wikipedia][1]
 2. [RFC 6434][2]
+3. [DD-WRT][3]
+4. [OpenWRT][4]
 
 [1]: https://en.wikipedia.org/wiki/Virtual_private_network "Virtual Private Network - Wikipedia"
 [2]: https://tools.ietf.org/html/rfc6434 "RFC 6434"
+[3]: https://en.wikipedia.org/wiki/DD-WRT "DD-WRT"
+[4]: https://en.wikipedia.org/wiki/DD-WRT "OpenWRT"
