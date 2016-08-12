@@ -12,6 +12,17 @@ OpenVPN is an open-source software application that implements virtual private n
 
 `openvpn /etc/openvpn/client.conf`
 
+# Architecture
+## Encryption
+
+## Authentication
+
+## Networking
+
+## Security
+
+## Extensibility
+
 # References
 1. [OpenVPN - Wikipedia][1]
 2. [OpenVPN - Arch Wiki][2]
