@@ -14,6 +14,9 @@ OpenVPN is an open-source software application that implements virtual private n
 
 # Architecture
 ## Encryption
+- OpenVPN uses the OpenSSL library to provide encryption of both the data and control channels.
+- It can also use the HMAC packet authentication feature to add an additional layer of security to the connection.
+- It can also use hardware acceleration to get better encryption performance.
 
 ## Authentication
 
