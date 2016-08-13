@@ -19,6 +19,9 @@ OpenVPN is an open-source software application that implements virtual private n
 - It can also use hardware acceleration to get better encryption performance.
 
 ## Authentication
+- Pre-shared keys
+- Certificate-based
+- Username/password-based: depends on third-party modules
 
 ## Networking
 
