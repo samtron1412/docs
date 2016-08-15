@@ -38,6 +38,13 @@ OpenVPN is an open-source software application that implements virtual private n
 - [TCP meltdown problem][3]
 
 ## Security
+- It uses OpenSSL library.
+- It runs in userspace, instead of requiring IP stack (therefore kernel) operation.
+- It has the ability to drop root privileges
+- Using [mlockall][4] to prevent swapping sensitive data to disk.
+- Entering a chroot jail after initialization and apply a SELinux context after initialization.
+- It runs a custom security protocol based on SSL and TLS rather than support IKE, IPsec, L2TP or PPTP.
+- It offers support of smart cards via PKCS#11 based cryptographic tokens.
 
 ## Extensibility
 
@@ -45,7 +52,9 @@ OpenVPN is an open-source software application that implements virtual private n
 1. [OpenVPN - Wikipedia][1]
 2. [OpenVPN - Arch Wiki][2]
 3. [TCP meltdown problem][3]
+4. [mlockall][4]
 
 [1]: https://en.wikipedia.org/wiki/OpenVPN "OpenVPN - Wikipedia"
 [2]: https://wiki.archlinux.org/index.php/OpenVPN "OpenVPN - Arch Wiki"
 [3]: http://sites.inka.de/bigred/devel/tcp-tcp.html "TCP meltdown problem"
+[4]: http://www.opengroup.org/onlinepubs/009695399/functions/mlockall.html "mlockall"
