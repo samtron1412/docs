@@ -47,14 +47,22 @@ OpenVPN is an open-source software application that implements virtual private n
 - It offers support of smart cards via PKCS#11 based cryptographic tokens.
 
 ## Extensibility
+- OpenVPN can be extended with third-party plugins or scripts which can be called at defined entry points.
+- The purpose of this is often to extend OpenVPN with more advanced logging, enhanced authentication with username and passwords, dynamic firewall updates, [RADIUS][5] integration and so on.
+- The plugins are dynamically loadable modules, usually written in C, while the scripts interface can execute any scripts or binaries available to OpenVPN.
+- [Extensions][6]
 
 # References
 1. [OpenVPN - Wikipedia][1]
 2. [OpenVPN - Arch Wiki][2]
 3. [TCP meltdown problem][3]
 4. [mlockall][4]
+5. [Remote Authentication Dial-In User Service (RADIUS)][5]
+6. [Related Projects][6]
 
 [1]: https://en.wikipedia.org/wiki/OpenVPN "OpenVPN - Wikipedia"
 [2]: https://wiki.archlinux.org/index.php/OpenVPN "OpenVPN - Arch Wiki"
 [3]: http://sites.inka.de/bigred/devel/tcp-tcp.html "TCP meltdown problem"
 [4]: http://www.opengroup.org/onlinepubs/009695399/functions/mlockall.html "mlockall"
+[5]: https://en.wikipedia.org/wiki/RADIUS "Remote Authentication Dial-In User Service (RADIUS)"
+[6]: https://community.openvpn.net/openvpn/wiki/RelatedProjects "Ralated Projects"
