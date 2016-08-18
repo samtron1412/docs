@@ -8,6 +8,12 @@
 # Name
 - "Newsbeuter" is a pun on the German word "Wildbeuter", which means "hunter-gatherer".
 
+# Usage
+- With version <= 2.9, creating `newsbeuter` in `$XDG_CONFIG_HOME` and `$XDG_DATA_HOME` for XDG users.
+- Add feed URL in `$XDG_CONFIG_HOME/newsbeuter/urls`
+- Configuration in `$XDG_CONFIG_HOME/newsbeuter/config`
+- Run: `$ newsbeuter`
+
 # References
 1. [Arch Wiki - Newsbeuter][1]
 2. [Homepage][2]
