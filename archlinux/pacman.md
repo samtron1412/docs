@@ -42,6 +42,13 @@ Only do this when certain that previous package versions are not required, for e
 - Remove all orphan packages: `# pacman -Rns $(pacman -Qtdq)`
 - Remove everything but base group: `# pacman -R $(comm -23 <(pacman -Qq|sort) <((for i in $(pacman -Qqg base); do pactree -ul $i; done)|sort -u|cut -d ' ' -f 1))`
 
+# Configuration
+## Hooks
+- pacman can run pre- and post-transaction hooks from the `/usr/share/libalpm/hooks/` directory;
+- More directories can be specified with the `HookDir` option in `pacman.conf`, which defaults to `/etc/pacman.d/hooks`.
+- Hook file names must be suffixed with `.hook`
+- More information: `man alpm-hooks`
+
 # Tips and Tricks
 ## Easy backup and restore
 `pacman -Qqm` lists foreign packages name; which, for must users, means AUR
