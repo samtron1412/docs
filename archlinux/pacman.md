@@ -51,3 +51,10 @@ that said,
 and
   `cat pacman.lst | xargs pacman -S --needed --noconfirm`
 are the best backup/restore lines i've seen (don't remember where i got them tho).
+
+# Troubleshooting
+
+# References
+1. [Arch Wiki - pacman][1]
+
+[1]: https://wiki.archlinux.org/index.php/Pacman "Arch Wiki - pacman"
