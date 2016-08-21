@@ -42,7 +42,8 @@ Only do this when certain that previous package versions are not required, for e
 - Remove all orphan packages: `# pacman -Rns $(pacman -Qtdq)`
 - Remove everything but base group: `# pacman -R $(comm -23 <(pacman -Qq|sort) <((for i in $(pacman -Qqg base); do pactree -ul $i; done)|sort -u|cut -d ' ' -f 1))`
 
-# Easy backup and restore
+# Tips and Tricks
+## Easy backup and restore
 `pacman -Qqm` lists foreign packages name; which, for must users, means AUR
 `pacman -Qqe` lists packages name that were explicitely installed.
 that said,
