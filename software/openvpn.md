@@ -52,6 +52,12 @@ OpenVPN is an open-source software application that implements virtual private n
 - The plugins are dynamically loadable modules, usually written in C, while the scripts interface can execute any scripts or binaries available to OpenVPN.
 - [Extensions][6]
 
+# IPSec or PPTP or OpenVPN
+- There are three major families of VPN implementations in wide usage today: SSL, IPSec, and PPTP. OpenVPN is an SSL VPN and as such is not compatible with IPSec, L2TP, or PPTP.
+- The IPSec protocol is designed to be implemented as a modification to the IP stack in kernel space, and therefore each operating system requires its own independent implementation of IPSec.
+- The OpenVPN's user-space implementation allows portability across operating systems and processor architectures, firewall and NAT-friendly operation, dynamic address support, and multiple protocol support including protocol bridging.
+- The PPTP protocol has some [security vulnerabilities][8].
+
 # References
 1. [OpenVPN - Wikipedia][1]
 2. [OpenVPN - Arch Wiki][2]
@@ -60,6 +66,7 @@ OpenVPN is an open-source software application that implements virtual private n
 5. [Remote Authentication Dial-In User Service (RADIUS)][5]
 6. [Related Projects][6]
 7. [Source code][7]
+8. [PPTP's security vulnerabilities][8]
 
 [1]: https://en.wikipedia.org/wiki/OpenVPN "OpenVPN - Wikipedia"
 [2]: https://wiki.archlinux.org/index.php/OpenVPN "OpenVPN - Arch Wiki"
@@ -68,3 +75,4 @@ OpenVPN is an open-source software application that implements virtual private n
 [5]: https://en.wikipedia.org/wiki/RADIUS "Remote Authentication Dial-In User Service (RADIUS)"
 [6]: https://community.openvpn.net/openvpn/wiki/RelatedProjects "Ralated Projects"
 [7]: https://github.com/OpenVPN/openvpn "OpenVPN source code"
+[8]: http://www.schneier.com/pptp.html "PPTP's security vulnerabilities"
