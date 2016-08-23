@@ -59,13 +59,20 @@ A vote counting scheme which can be used to determine which identity certificate
 
 The scheme is flexible, unlike most public key infrastructure designs, and leaves trust decision(s) in the hands of individual users. It is not perfect and requires both caution and intelligent supervision by users.
 
+### Web of trust problems
+- Users, whether individuals or organizations, who lose track of a private key can no longer decrypt messages sent to them produced using the matching public key found in an OpenPGP certificate.
+-
+
+# [OpenPGP card][7]
+
 # References
-- [Homepage][1]
-- [Wikipedia][2]
-- [RFC4880 - OpenPGP][3]
-- [RFC6637 - ECDSA/ECDH][4]
-- [EdDSA Draft][5]
-- [Key signing parties][6]
+1. [Homepage][1]
+2. [Wikipedia][2]
+3. [RFC4880 - OpenPGP][3]
+4. [RFC6637 - ECDSA/ECDH][4]
+5. [EdDSA Draft][5]
+6. [Key signing parties][6]
+7. [OpenPGP card][7]
 
 [1]: http://www.openpgp.org/ "OpenPGP Homepage"
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy "Wikipedia Pretty Good Privacy"
@@ -73,3 +80,4 @@ The scheme is flexible, unlike most public key infrastructure designs, and leave
 [4]: https://tools.ietf.org/html/rfc6637 "RFC 6637"
 [5]: https://tools.ietf.org/html/draft-koch-eddsa-for-openpgp-00 "EdDSA Draft"
 [6]: https://en.wikipedia.org/wiki/Key_signing_party "Key signing parties"
+[7]: https://en.wikipedia.org/wiki/OpenPGP_card "OpenPGP card"
