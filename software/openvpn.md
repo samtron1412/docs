@@ -15,6 +15,21 @@ With OpenVPN, we can:
 - Tunneling networks over NAT.
 - Create secure ethernet bridges using virtual tap devices.
 
+## Why OpenVPN?
+- OpenVPN is easy to use.
+- OpenVPN is built for portability.
+- OpenVPN is fast.
+- OpenVPN has been rigorously designed and tested to operate robustly on unreliable networks.
+	+ A major design goal of OpenVPN is that it should be as responsive, in terms of both normal operations and error recovery, as the underlying IP layer that it is tunneling over.
+	+ That means that if the IP layer goes down for 5 minutes, when it comes back up, tunnel traffic will immediately resume even if the outage interfered with a dynamic key exchange which was scheduled during that time.
+- OpenVPN has been built with a strongly modular design.
+	+ All of the crypto is handled by the OpenSSL library, and all of the IP tunneling functionality is provided through the TUN/TAP virtual network driver.
+	+ The benefits of this modularity can be seen, for example, in the way that OpenVPN can be dynamically linked with a new version of the OpenSSL library and immediately have access to any new functionality provided in the new release. For example, when OpenVPN is built with the latest version of OpenSSL (0.9.7), it automatically has access to new ciphers such as AES-256 (Advanced Encryption Standard with 256 bit key) and the encryption engine capability of OpenSSL that allows utilization of special-purpose hardware accelerators to optimize encryption, decryption, and authentication performance.
+- While OpenVPN provides many options for controlling the security parameters of the VPN tunnel, it also provides options for protecting the security of the server itself, such as:
+	+ `--chroot` for restricting the part of the file system the OpenVPN daemon has access to.
+	+ `--user and --group` for downgrading daemon privileges after initialization.
+	+ `--mlock` to ensure that key material and tunnel data is never paged to disk where it might later be recovered.
+
 # Start manually
 `openvpn <path/to/config/file>`
 
