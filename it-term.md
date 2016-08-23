@@ -1,5 +1,10 @@
 [TOC]
 
+# RTFM
+- Read The Fucking Manual
+- Read The Fine Manual
+- Read The Friendly Manual
+
 # shutdown
 stop services, kill apps, unmount
 
