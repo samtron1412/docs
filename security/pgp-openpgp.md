@@ -65,6 +65,7 @@ The scheme is flexible, unlike most public key infrastructure designs, and leave
 
 # [OpenPGP card][7]
 - Remembering to look at references section of the Wikipedia page.
+- [Yubico explains secure hardware][8]
 
 # References
 1. [Homepage][1]
@@ -74,6 +75,7 @@ The scheme is flexible, unlike most public key infrastructure designs, and leave
 5. [EdDSA Draft][5]
 6. [Key signing parties][6]
 7. [OpenPGP card][7]
+8. [Yubico explains secure hardware][8]
 
 [1]: http://www.openpgp.org/ "OpenPGP Homepage"
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy "Wikipedia Pretty Good Privacy"
@@ -82,3 +84,4 @@ The scheme is flexible, unlike most public key infrastructure designs, and leave
 [5]: https://tools.ietf.org/html/draft-koch-eddsa-for-openpgp-00 "EdDSA Draft"
 [6]: https://en.wikipedia.org/wiki/Key_signing_party "Key signing parties"
 [7]: https://en.wikipedia.org/wiki/OpenPGP_card "OpenPGP card"
+[8]: https://www.yubico.com/2016/05/secure-hardware-vs-open-source/ "Yubico explains secure hardware"
