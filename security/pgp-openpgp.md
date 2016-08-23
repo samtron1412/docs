@@ -64,6 +64,7 @@ The scheme is flexible, unlike most public key infrastructure designs, and leave
 -
 
 # [OpenPGP card][7]
+- Remembering to look at references section of the Wikipedia page.
 
 # References
 1. [Homepage][1]
