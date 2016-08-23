@@ -67,6 +67,8 @@ OpenVPN is an open-source software application that implements virtual private n
 6. [Related Projects][6]
 7. [Source code][7]
 8. [PPTP's security vulnerabilities][8]
+9. [Understanding the User-Space VPN: History, Conceptual Foundations, and Practical Usage][9]
+10. [OpenVPN and the SSL VPN Revolution][10]
 
 [1]: https://en.wikipedia.org/wiki/OpenVPN "OpenVPN - Wikipedia"
 [2]: https://wiki.archlinux.org/index.php/OpenVPN "OpenVPN - Arch Wiki"
@@ -76,3 +78,5 @@ OpenVPN is an open-source software application that implements virtual private n
 [6]: https://community.openvpn.net/openvpn/wiki/RelatedProjects "Ralated Projects"
 [7]: https://github.com/OpenVPN/openvpn "OpenVPN source code"
 [8]: http://www.schneier.com/pptp.html "PPTP's security vulnerabilities"
+[9]: https://openvpn.net/papers/BLUG-talk/ "Understanding the User-Space VPN: History, Conceptual Foundations, and Practical Usage"
+[10]: https://www.sans.org/reading-room/whitepapers/vpns/openvpn-ssl-vpn-revolution-1459 "OpenVPN and the SSL VPN Revolution"
