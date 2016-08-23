@@ -3,6 +3,17 @@
 # Overview
 OpenVPN is an open-source software application that implements virtual private network (VPN) techniques for creating secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities. It uses a custom security protocol that utilizes SSL/TLS for key exchange. It is capable of traversing network address translators (NATs) and firewalls. It was written by **James Yonan** and is published under the GNU General Public License (GPL).
 
+## What is OpenVPN?
+With OpenVPN, we can:
+- Tunnel any IP subnetwork or virtual ethernet adapter over a single UDP or TCP port.
+- Using all of the encryption, authentication, and certification features of the OpenSSL library to protect the private network's traffic as it transits the Internet.
+- Choosing between static-key based conventional encryption or certificate-based public key encryption.
+- Using static, pre-shared keys or TLS-based dynamic key exchange.
+- Using real-time adaptive link compression and traffic-shaping to manage link bandwidth utilization.
+- Tunneling networks whose public endpoints are dynamic such as DHCP or dial-in clients.
+- Tunneling networks through connection-oriented stateful firewalls without having to use explicit firewall rules.
+- Tunneling networks over NAT.
+- Create secure ethernet bridges using virtual tap devices.
 
 # Start manually
 `openvpn <path/to/config/file>`
