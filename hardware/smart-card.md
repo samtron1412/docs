@@ -4,5 +4,7 @@
 
 # References
 1. [Wikipedia - Smart card][1]
+2. [Smartcard Focus][2]
 
 [1]: https://en.wikipedia.org/wiki/Smart_card "Wikipedia - Smart Card"
+[2]: http://www.smartcardfocus.com/ "Smartcard Focus"
