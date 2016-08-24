@@ -7,5 +7,7 @@ Common Criteria provides assurance that the process of specification, implementa
 
 # References
 1. [Wikipedia - Common Criteria][1]
+2. [Common Criteria publications][2]
 
 [1]: https://en.wikipedia.org/wiki/Common_Criteria "Wikipedia - Common Criteria"
+[2]: http://www.commoncriteriaportal.org/cc/ "Common Criteria publications"
