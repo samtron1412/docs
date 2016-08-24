@@ -14,6 +14,11 @@
 	+ A third party coordinator such as CERT Coordination Center may assign CVE numbers for products not covered by other CNAs.
 - CVE numbers may not appear in the MITRE or NVD CVE databases for some time due to issues that are embargoed (the CVE number has been assigned but the issues has not been made public), or in cases where the entry is not researched and written up by MITRE due to resource issues.
 
+# CVE data fields
+- **Description**: This is a standardized text description of the issue(s). One common entry is: `** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.` This means that the entry number has been reserved by MITRE for an issue or a CNA has reserved the number.
+- **References**: This is a list of URLs and other information (such as vendor advisory numbers) for this issue.
+- **Date Entry Created**: This is the date the entry was created. It's not the date when this issue was discovered.
+
 # Famous CVEs
 1. [heartbleed][2]
 2. [shellshock][3]
