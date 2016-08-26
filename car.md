@@ -93,3 +93,10 @@ How to jump start a car:
 ## How to clean car battery corrosion
 1. Remove and clean + terminal with paper and baking soda if needed. Spray protect chemical and hook it up.
 2. Similarly with - terminal
+
+# [Connected car][1]
+
+# References
+1. [Wikipedia - Connected car][1]
+
+[1]: https://en.wikipedia.org/wiki/Connected_car "Wikipedia - Connected car"
