@@ -7,6 +7,7 @@ Initial release in November 1991.
 ## Help
 `:help` help facility built-in
 `vimtutor` : basic commands tutorials
+`:h key-notation`: these names for keys are used in the documentation.
 
 ## Features and improvements over vi
 ### Customization
