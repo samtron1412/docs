@@ -57,9 +57,8 @@ http://www.vim.org/docs.php
 `u`: undo
 `Ctrl + r`: redo
 
-# Editing Effectively
-
-
+# The VIM way
+Vim is optimized for repetition. Its efficiency stems from the way it tracks our most recent actions.We can always replay the last change with a single keystroke. We need to learn to craft our actions so that they perform a useful  unit of work when replayed. Mastering this concept is the key to becoming effective with Vim.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
