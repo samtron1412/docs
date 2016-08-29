@@ -59,10 +59,11 @@ http://www.vim.org/docs.php
 
 # Editing Effectively
 
-# [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
 
 # Tips and Tricks
+## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
+
 ## [Fix meta key in terminal](http://stackoverflow.com/questions/6778961/alt-key-shortcuts-not-working-on-gnome-terminal-with-vim)
 
 ## [Moving lines up and down](http://vim.wikia.com/wiki/Moving_lines_up_or_down)
@@ -131,3 +132,8 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 - Neovim shares the same configuration syntax with Vim.
 - Neovim can execute plugins asynchronously.
 - Neovim's plugins can also be written in any language.
+
+# Troubleshooting
+
+
+# References
