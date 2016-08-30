@@ -7,8 +7,6 @@
 - Giving practical defense guidance that attendees and manufacturers can implement.
 
 # Content
-- derbycon 6.0
-- @scriptingxss: Twitter
 - connected cars landscape
 - fog network
 - pcb/bsp
