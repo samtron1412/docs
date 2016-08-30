@@ -4,6 +4,7 @@
 - The Common Vulnerabilities and Exposures (CVE) system provides a reference-method for publicly known information security vulnerabilities and exposures.
 - The **National Cybersecurity FFRDC**, operated by the **MITRE Corporation**, maintains the system, with funding from the **National Cyber Security Division** of the **United States Department of Homeland Security**.
 - CVE IDs are listed on MITRE's system as well as in the US **National Vulnerability Database**.
+- Requesting a CVE ID: using the [CVE Request Form][4]
 
 # CVE identifiers
 - MITRE Corporation's documentation defines CVE Identifiers as unique, common identifiers for publicly known information-security vulnerabilities in publicly released software packages.
@@ -27,7 +28,9 @@
 1. [Wikipedia - Common Vulnerabilities and Exposures][1]
 2. [Wikipedia - Heartbleed][2]
 3. [Wikipedia - Shellshock][3]
+4. [CVE Request Form][4]
 
 [1]: https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures "Wikipedia - Common Vulnerabilities and Exposures"
 [2]: https://en.wikipedia.org/wiki/Heartbleed "Wikipedia - Heartbleed"
 [3]: https://en.wikipedia.org/wiki/Shellshock_(software_bug) "Wikipedia - Shellshock"
+[4]: https://cveform.mitre.org/ "CVE Request Form"
