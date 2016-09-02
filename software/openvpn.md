@@ -30,6 +30,10 @@ With OpenVPN, we can:
 	+ `--user and --group` for downgrading daemon privileges after initialization.
 	+ `--mlock` to ensure that key material and tunnel data is never paged to disk where it might later be recovered.
 
+## Community
+- [Source code][7]
+-
+
 # Start manually
 `openvpn <path/to/config/file>`
 
