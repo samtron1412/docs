@@ -5,6 +5,7 @@
 
 # User guide
 - To install packages: `# pacman -S pkg_name1 pkg_name2 ...`
+- Install a 'local' package that is not from a remote repository (e.g the package is from the AUR): `# pacman -U /path/to/package/package_name-version.pkg.tar.xz`; `# pacman -U http://www.example.com/repo/example.pkg.tar.xz`
 - To remove a package and leaving all of its dependencies: `# pacman -R pkg_name`
 - To remove a package and its dependencies: `# pacman -Rs pkg_name`
 - To remove a package, its dependencies and all the packages that depend on the target package: `# pacman -Rsc pkg_name`
@@ -30,7 +31,6 @@ Only do this when certain that previous package versions are not required, for e
 
 - To remove all cached versions of uninstalled packages and keep 3 versions of each packages: `# paccache -ruk3`
 - Download a package without installing it: `# pacman -Sw pkg_name`
-- Install a 'local' package that is not from a remote repository (e.g the package is from the AUR): `# pacman -U /path/to/package/package_name-version.pkg.tar.xz`; `# pacman -U http://www.example.com/repo/example.pkg.tar.xz`
 - List installed packages follow time install (use expac): `expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -20`
 - List all explicitly installed packages: `$ pacman -Qe`
 - List all foreign packages (manually downloaded and installed): `$ pacman -Qm`
