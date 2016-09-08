@@ -36,6 +36,9 @@ If you have more than one monitor:
 ## Turn off Hibernate
 Run cmd at administrator and type command: `powercfg.exe /hibernate off`
 
+## Delete the "nul" files
+Open command prompt with administration permission and use this command: `Del \\?\C:\My\Path\NUL`
+
 # Windows Keys
 ## Windows 10
 ### Pro
