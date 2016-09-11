@@ -59,6 +59,20 @@ The dot command lets us repeat the last change.
 - From the moment we enter Insert mode until we return to Normal mode, Vim records every keystroke. After making a change such as this, the dot command will replay all keystrokes. For examples: `A;something<Esc>`: this is the last change.
 - The dot command is a micro macro
 
+## Don't Repeat Yourself
+- Two for the Price of One: many of Vim's single-key commands can be seen as a condensed version of two or more other commands.
+| Compound Command | Equivalent in Longhand |
+| -                | -                      |
+| C                | c$                     |
+| s                | cl                     |
+| S                | ^C                     |
+| I                | ^i                     |
+| A                | $a                     |
+| o                | A<CR>                  |
+| O                | ko                     |
+- These all compound command switch form Normal to Insert mode. It helps the dot command.
+- Keystrokes pattern: one keystroke to move, another to execute. For example: `j.`.
+
 ## Undo - Redo in normal mode
 `u`: undo
 `Ctrl + r`: redo
