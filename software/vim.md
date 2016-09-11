@@ -56,7 +56,7 @@ http://www.vim.org/docs.php
 ## The Dot command
 The dot command lets us repeat the last change.
 - The last change could be one of many things. A change could act at the level of individual characters, entire lines, or even the whole file.
-- From the moment we enter Insert mode until we return to Normal mode, Vim records every keystroke. After making a change such as this, the dot command will replay all keystrokes.
+- From the moment we enter Insert mode until we return to Normal mode, Vim records every keystroke. After making a change such as this, the dot command will replay all keystrokes. For examples: `A;something<Esc>`: this is the last change.
 - The dot command is a micro macro
 
 ## Undo - Redo in normal mode
