@@ -4,6 +4,12 @@
 List of words.
 
 # Words
+## competent - adjective - /ˈkɒm pɪ tənt/
+- having enough skill or knowledge to do something to a satisfactory standard.
+	+ I don't feel competent to give an opinion at the moment.
+- satisfactory but not especially good
+	+ The workmen did a competent job.
+
 ## absolutism - noun
 - a political theory holding that all power should be vested in one ruler or other authority.
 - a form of government in which all power is vested in a single ruler or other authority.
