@@ -53,6 +53,13 @@ http://www.vim.org/docs.php
 - [Thoughtbot Tutorials](https://upcase.com/vim)
 
 # Getting started
+## Undo - Redo in normal mode
+`u`: undo
+`Ctrl + r`: redo
+
+# The VIM way
+Vim is optimized for repetition. Its efficiency stems from the way it tracks our most recent actions.We can always replay the last change with a single keystroke. We need to learn to craft our actions so that they perform a useful  unit of work when replayed. Mastering this concept is the key to becoming effective with Vim.
+
 ## The Dot command
 The dot command lets us repeat the last change.
 - The last change could be one of many things. A change could act at the level of individual characters, entire lines, or even the whole file.
@@ -72,13 +79,6 @@ The dot command lets us repeat the last change.
 | O                | ko                     |
 - These all compound command switch form Normal to Insert mode. It helps the dot command.
 - Keystrokes pattern: one keystroke to move, another to execute. For example: `j.`.
-
-## Undo - Redo in normal mode
-`u`: undo
-`Ctrl + r`: redo
-
-# The VIM way
-Vim is optimized for repetition. Its efficiency stems from the way it tracks our most recent actions.We can always replay the last change with a single keystroke. We need to learn to craft our actions so that they perform a useful  unit of work when replayed. Mastering this concept is the key to becoming effective with Vim.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
