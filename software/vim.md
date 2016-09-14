@@ -80,6 +80,16 @@ The dot command lets us repeat the last change.
 - These all compound command switch form Normal to Insert mode. It helps the dot command.
 - Keystrokes pattern: one keystroke to move, another to execute. For example: `j.`.
 
+## Take one step back, then three forward
+- Make the motion repeatable:
+	+ `f{char}`: look ahead for the next occurrence of the specified character and then move the cursor directly to it if a match is found.
+	+ `;`: repeat the last search that the `f` command performed.
+- Make the change repeatable:
+	+ `s`: deletes the character under the cursor and then enters Insert mode.
+- All together: `;.`
+	+ `;`: takes us to our next target.
+	+ `.`: repeats the last change.
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
