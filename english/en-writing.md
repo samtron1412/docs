@@ -3,6 +3,45 @@
 # Overview
 How to write and the right way to write.
 
+# Fundamentals of Effective Writings
+## An Introduction to Writing
+Writing consists basically of making a point and then providing evidence to support or develop that point.
++ What is your point?
++ What is your support for that point?
+
+Four basic principles:
+1. **Unity**: start with a clearly stated point.
+2. **Support**: provide logical, detailed support for your point.
+3. **Coherence**: organize and connect your supporting material.
+4. **Sentence Skills**: revise and edit so that your sentences are effective and error-free.
+
+Benefits of Paragraph Writing
+- Mastering the structure of paragraphs will make me a better writer.
+- Writing paragraphs strengthens my skills as a reader and listener. I'll become more aware of the ideas of other writers and speakers and the evidence they provide - or fail to provide - to support those ideas.
+- Paragraph writing will make me a stronger thinker. Traditional paragraph writing will train my mind to think clearly.
+
+When I write for others, it is crucial to know both my purpose for writing and the audience who will be reading my work.
+- Purpose
+	+ To **inform**: to give information about a subject. Authors writing to inform want to provide facts that will explain or teach something to readers. For example, an informative paragraph about sandwiches might begin, "Eating food between two slices of bread - a sandwich - is a practice that has its origins in eighteenth-century England."
+	+ To **persuade**: to convince the reader to agree with the author's point of view on a subject. Authors writing to persuade may give facts, but their main goal is to argue or prove a point to readers. A persuasive paragraph about sandwiches might begin, "There are good reasons why every sandwich should be made with whole grain bread."
+	+ To **entertain**: to amuse and delight; to appeal to the reader's senses and imagination. Authors write to entertain in various ways, through fiction and nonfiction. An entertaining paragraph about sandwiches might begin, "What I wanted was a midnight snack, but what I got was better - the biggest, most magical sandwich in the entire world."
+- Audience
+	+ How much does the audience already know about the subject?
+		* If I assume that my readers know very little, I might bore them with too much basic information. But, if I assume that they know more than they do, you might confuse them by using unfamiliar technical terminology or neglecting to provide enough informative detail.
+	+ Why might the reader need or want to read this material?
+	+ Is my purpose simply to inform the audience? Or is it to convince readers of something as well?
+	+ What type of language should be used? relaxed, friendly, and informal or more formal.
+
+Writing as a skill, competent writing comes only from plain hard work - determination and sweat.
+
+Writing as a process of discovery
+- As you write, you may suddenly switch direction or double back.
+- Writers frequently do not know their exact destination as they begin to write.
+
+Keeping a daily or almost daily Journal
+- Writing a journal will help me develop the habit of thinking on paper and will show me how ideas can be discovered in the process of writing
+- A journal can make writing a familiar part of my life and can serve as a continuing source of ideas for papers.
+
 # Write an email - email etiquette
 ## Format
 - Greeting
