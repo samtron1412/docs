@@ -4,6 +4,9 @@
 List of phrases.
 
 # Phrases
+## nuts-and-bolts
+the essential or basic aspects
+
 ## you're really suck in making tea
 
 ## a grain of sand
