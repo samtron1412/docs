@@ -90,6 +90,17 @@ The dot command lets us repeat the last change.
 	+ `;`: takes us to our next target.
 	+ `.`: repeats the last change.
 
+## Act, Repeat, Reverse
+| Intent                           | Act                   | Repeat | Reverse |
+| -                                | -                     | -      | -       |
+| Make a change                    | {edit}                | `.`    | `u`     |
+| Scan line for next character     | `f{char}`/`t{char}`   | `;`    | `,`     |
+| Scan line for previous character | `F{char}`/`T{char}`   | `;`    | `,`     |
+| Scan document for next match     | /pattern`<CR>`        | `n`    | `N`     |
+| Scan document for previous match | ?pattern`<CR>`        | `n`    | `N`     |
+| Perform substitution             | :s/target/replacement | `&`    | `u`     |
+| Execute a sequence of changes    | `qx{change}q`         | `@x`   | `u`     |
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
