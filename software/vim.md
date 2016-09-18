@@ -101,6 +101,14 @@ The dot command lets us repeat the last change.
 | Perform substitution             | :s/target/replacement | `&`    | `u`     |
 | Execute a sequence of changes    | `qx{change}q`         | `@x`   | `u`     |
 
+## Find and Replace by Hand
+- Search without typing: `*` - this executes a search for the word under the cursor at that moment. Go to the next occurrence just by hitting the `n` key.
+- Make the change repeatable:
+	+ `cw`: deletes to the end of the word and then drops into Insert mode.
+- All together: `n.` - `n` go to the next occurrence of the word, `.` repeat the last change.
+
+
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
