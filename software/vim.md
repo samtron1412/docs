@@ -107,6 +107,9 @@ The dot command lets us repeat the last change.
 	+ `cw`: deletes to the end of the word and then drops into Insert mode.
 - All together: `n.` - `n` go to the next occurrence of the word, `.` repeat the last change.
 
+## Meet the Dot formula
+One keystroke to move, one keystroke to execute.
+
 
 
 # Tips and Tricks
