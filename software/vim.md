@@ -110,7 +110,9 @@ The dot command lets us repeat the last change.
 ## Meet the Dot formula
 One keystroke to move, one keystroke to execute.
 
-
+# Modes
+## Normal Mode
+Normal mode is Vim's natural resting state.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
