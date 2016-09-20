@@ -114,6 +114,12 @@ One keystroke to move, one keystroke to execute.
 ## Normal Mode
 Normal mode is Vim's natural resting state.
 
+### Chunk your undos
+In Vim, we can control the granularity of the undo command. From the moment we enter Insert mode until we return to normal mode, everything we type (or delete) counts as a single change. So we can make the undo command operate on words, sentences, or paragraphs just by moderating our use of the `<Esc>` key.
+- Use `<Esc>o` to open a new line instead of `<CR>`, that extra granularity from the undo command.
+- Leave Insert mode each complete thought (or sentence).
+
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
