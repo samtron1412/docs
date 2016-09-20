@@ -60,6 +60,7 @@ You write on your topic for ten minutes.
 - You just write without stopping. If you get stuck for words, you write "I am looking for something to say" or repeat words until you think of something.
 
 #### Questioning
+You generate ideas and details by asking as many questions as you can think of about your subject. Such question include Why? When? Where? Who? How? In what ways?
 
 #### Clustering
 
