@@ -84,6 +84,25 @@ SS3.
 - New details and ideas may pop into you mind, just add the new information.
 
 ### Revising
+Rewrite your paragraph, building upon what has already been done, in order to make it stronger.
+- First: set your first draft aside for a while. You can then come back to it with a fresher, more objective point of view.
+- Second: work with printed, double-spaced text.
+- Third: read your draft aloud
+- Four: write additional thoughts and changes above the lines or in the margins of your paragraph.
+
+#### Revising Content
+1. Is my paragraph **unified**?
+2. Is my paragraph **supported**?
+3. Is my paragraph **organized**?
+	- Do I use transitions and other connecting words?
+
+#### Revising Sentences
+1. Do I use **parallelism** to balance my words and ideas?
+2. Do I have a **consistent point of view**?
+3. Do I use **specific** words?
+4. Do I use **active** verbs?
+5. Do I use words effectively by **avoiding slang, cliches, pretentious language**, and **wordiness**?
+6. Do I **vary my sentences** in length and structure?
 
 ### Editing
 
