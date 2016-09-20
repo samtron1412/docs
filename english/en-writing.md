@@ -108,9 +108,9 @@ Rewrite your paragraph, building upon what has already been done, in order to ma
 Checking a paragraph for mistakes in grammar, punctuation, usage, and spelling.
 
 ### Using Peer Review
-
-### Doing a Personal Review
-
+- Read partner's paragraph aloud.
+- Check or circle the trouble spots.
+- Make a scratch outline.
 
 # Write an email - email etiquette
 ## Format
