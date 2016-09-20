@@ -79,6 +79,9 @@ SS3.
 	CM3.
 
 ### Writing a First Draft
+- Follow you scratch outline.
+- Do not worry yet about grammar, punctuation, or spelling.
+- New details and ideas may pop into you mind, just add the new information.
 
 ### Revising
 
