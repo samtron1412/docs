@@ -42,6 +42,32 @@ Keeping a daily or almost daily Journal
 - Writing a journal will help me develop the habit of thinking on paper and will show me how ideas can be discovered in the process of writing
 - A journal can make writing a familiar part of my life and can serve as a continuing source of ideas for papers.
 
+## The four bases and the Writing Process
+1. Discovering a point - often through prewriting.
+2. Developing solid support for the point - often through more prewriting.
+3. organizing the supporting material and writing it out in a first draft.
+4. Revising and then editing carefully to ensure an effective, error-free paper.
+
+1. If you make one point and stick to that point, your writing will have unity.
+2. If you back up the point with specific evidence, your writing will have support.
+3. If you organize and connect the specific evidence, your writing will have coherence.
+4. If you write clear, error-free sentences, your writing will demonstrate effective sentence skills.
+
+### Prewriting
+
+### Scratch Outline
+
+### Writing a First Draft
+
+### Revising
+
+### Editing
+
+### Using Peer Review
+
+### Doing a Personal Review
+
+
 # Write an email - email etiquette
 ## Format
 - Greeting
