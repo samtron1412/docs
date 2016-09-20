@@ -123,6 +123,12 @@ In Vim, we can control the granularity of the undo command. From the moment we e
 - `daw`: delete a word, using the `aw` text object instead of a motion.
 - Making effective use of the dot command often requires some forethought. If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command. Recognizing those opportunities takes practice.
 
+### Use Counts to do simple arithmetic
+- `{number}<C-a>`: add number to the current number.
+- `{number}<C-x>`: subtract number from the current number.
+- `set nrformats=`: treat all numerals as decimal.
+- `set nfformats=hex/bin/octal`: treat all numerals as hexadecimal/binary/octal (default=octal).
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
