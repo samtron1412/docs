@@ -63,6 +63,7 @@ You write on your topic for ten minutes.
 You generate ideas and details by asking as many questions as you can think of about your subject. Such question include Why? When? Where? Who? How? In what ways?
 
 #### Clustering
+Clustering, also known as diagramming or mapping. Using lines, boxes, arrows, and circles to show relationships among the ideas and details.
 
 ### Scratch Outline
 
