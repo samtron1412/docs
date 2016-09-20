@@ -105,6 +105,7 @@ Rewrite your paragraph, building upon what has already been done, in order to ma
 6. Do I **vary my sentences** in length and structure?
 
 ### Editing
+Checking a paragraph for mistakes in grammar, punctuation, usage, and spelling.
 
 ### Using Peer Review
 
