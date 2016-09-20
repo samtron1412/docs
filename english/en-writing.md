@@ -54,6 +54,14 @@ Keeping a daily or almost daily Journal
 4. If you write clear, error-free sentences, your writing will demonstrate effective sentence skills.
 
 ### Prewriting
+#### Freewriting
+You write on your topic for ten minutes.
+- Do not worry about spelling or punctuating correctly, about erasing mistakes, about organizing material, or about finding exact words.
+- You just write without stopping. If you get stuck for words, you write "I am looking for something to say" or repeat words until you think of something.
+
+#### Questioning
+
+#### Clustering
 
 ### Scratch Outline
 
