@@ -66,6 +66,17 @@ You generate ideas and details by asking as many questions as you can think of a
 Clustering, also known as diagramming or mapping. Using lines, boxes, arrows, and circles to show relationships among the ideas and details.
 
 ### Scratch Outline
+Point(Topic Sentence): ...
+Supports(Statement Sentences):
+Statement Sentence 1.
+	Concrete Detail 1.
+	Commentary 1. (your intellectual comments)
+SS2.
+	CD2.
+	CM2.
+SS3.
+	CD3.
+	CM3.
 
 ### Writing a First Draft
 
