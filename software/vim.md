@@ -129,6 +129,11 @@ In Vim, we can control the granularity of the undo command. From the moment we e
 - `set nrformats=`: treat all numerals as decimal.
 - `set nfformats=hex/bin/octal`: treat all numerals as hexadecimal/binary/octal (default=octal).
 
+### Don't count if you can repeat
+- `d2w`, `2dw`, `dw.`
+- I would rather hit the dot command six times than spend the same time looking ahead in order to reduce the number of keys.
+- `c3w`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
