@@ -119,6 +119,9 @@ In Vim, we can control the granularity of the undo command. From the moment we e
 - Use `<Esc>o` to open a new line instead of `<CR>`, that extra granularity from the undo command.
 - Leave Insert mode each complete thought (or sentence).
 
+### Compose Repeatable Change
+- `daw`: delete a word, using the `aw` text object instead of a motion.
+- Making effective use of the dot command often requires some forethought. If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command. Recognizing those opportunities takes practice.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
