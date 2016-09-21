@@ -134,6 +134,28 @@ In Vim, we can control the granularity of the undo command. From the moment we e
 - I would rather hit the dot command six times than spend the same time looking ahead in order to reduce the number of keys.
 - `c3w`
 
+### Combine and Conquer
+#### Operator + Motion = Action
+- The `d{motion}` command can operate on a single character `dl`, a complete word `daw`, or an entire paragraph `dap`. The same goes for `c{motion}`, `y{motion}`.
+
+The most common operators:
+| Operator | Effect                                            |
+| -        | -                                                 |
+| `c`      | Change                                            |
+| `d`      | Delete                                            |
+| `y`      | Yank into register                                |
+| `g~`     | Swap case                                         |
+| `gu`     | make lowercase                                    |
+| `gU`     | Make uppercase                                    |
+| `>`      | Shift right                                       |
+| `<`      | Shift left                                        |
+| `=`      | Autoindent                                        |
+| `!`      | Filter {motion} lines through an external program |
+
+- When an operator command is invoked in duplicate, it acts upon the current line. The `gU` command is a special case. We can make it act upon the current line by running either `gUgU` or `gUU`.
+
+
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
