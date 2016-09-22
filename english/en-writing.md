@@ -112,6 +112,11 @@ Checking a paragraph for mistakes in grammar, punctuation, usage, and spelling.
 - Check or circle the trouble spots.
 - Make a scratch outline.
 
+## Point and Supporting the point
+### Begin with a point
+
+### Support the point with specific evidence
+
 ## Writing in the Digital Age
 - Each file contain all stages of the writing process:
 	+ Prewriting: dim the screen of the monitor so that you can't see what you're typing. You won't have to worry about grammar or spelling or typing errors; instead, you can concentrate on getting down as many ideas and details possible about your subject.
