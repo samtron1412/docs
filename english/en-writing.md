@@ -127,6 +127,8 @@ Checking a paragraph for mistakes in grammar, punctuation, usage, and spelling.
 
 Turn off any notification and turn on the full screen mode when writing.
 
+The Library of Congress, in Washington, D.C., has copies of all books published in the United States. You can visit at [www.loc.gov][1]
+
 # Write an email - email etiquette
 ## Format
 - Greeting
@@ -241,3 +243,6 @@ You can add sometimes to any of the four lists above, but not to any of the four
 	I am not [always / usually / often / frequently / regularly / generally] eager to answer questions about adverbs.
 
 You can place sometimes at the beginning of any of the eight examples above.
+
+# References
+[1]: http://www.loc.gov "The Library of Congress"
