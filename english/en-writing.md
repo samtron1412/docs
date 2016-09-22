@@ -129,6 +129,20 @@ Turn off any notification and turn on the full screen mode when writing.
 
 The Library of Congress, in Washington, D.C., has copies of all books published in the United States. You can visit at [www.loc.gov][1]
 
+### Evaluating Internet Sources
+- Author
+	+ What credentials does the author have?
+	+ What academic degrees does he or she hold?
+	+ Does the author work for a college, university, well-respected think tank, or research group?
+	+ Has he or she published other material on the topic?
+- Internal evidence
+	+ Does the author seem to proceed objectively - presenting all sides of the issue fairly before stating his or her own views?
+	+ Does the **sponsor** of the Web site seem to be an objective source?
+	+ Does the author provide adequate support for his or her views?
+	+ Was the article first published in a print version?
+- Date
+	+ Is the information up to date?
+
 # Write an email - email etiquette
 ## Format
 - Greeting
