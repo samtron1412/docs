@@ -160,6 +160,11 @@ The most common operators:
 - The commentary command is triggered by `\\{motion}`, which toggles commenting for the specified lines. It's an operator command, so we can combine it with all of the usual motions. `\\ap` will toggle commenting for the current paragraph. `\\G` comments from the current line to the end of the file. `\\\` comments the current line.
 - How to create your own custom operators: `:h :map-operator`.
 
+##### Custom Motions Work with existing operators
+- Kana Natsuno's `textobj-entire` plugin: it adds two new text objects to Vim: `ie` and `ae`, which act upon the entire file.
+- If we wanted to autoindent the entire file using the `=` command, we could run `gg=G` (that is, `gg` to jump to the top of the file and then `=G` to autoindent everything from the cursor position to the end of the file) or `=ae`.
+- How to create custom motions: `:h omap-info`
+
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
