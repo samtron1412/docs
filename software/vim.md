@@ -154,6 +154,11 @@ The most common operators:
 
 - When an operator command is invoked in duplicate, it acts upon the current line. The `gU` command is a special case. We can make it act upon the current line by running either `gUgU` or `gUU`.
 
+#### Extending Vim's Combinatorial Powers
+##### Custom Operators Work with Existing Motions
+- Tim Pope's `commentary.vim` plugin: this adds a command for commenting and uncommenting lines of code in all languages supported by Vim.
+- The commentary command is triggered by `\\{motion}`, which toggles commenting for the specified lines. It's an operator command, so we can combine it with all of the usual motions. `\\ap` will toggle commenting for the current paragraph. `\\G` comments from the current line to the end of the file. `\\\` comments the current line.
+- How to create your own custom operators: `:h :map-operator`.
 
 
 # Tips and Tricks
