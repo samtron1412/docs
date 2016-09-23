@@ -165,6 +165,12 @@ The most common operators:
 - If we wanted to autoindent the entire file using the `=` command, we could run `gg=G` (that is, `gg` to jump to the top of the file and then `=G` to autoindent everything from the cursor position to the end of the file) or `=ae`.
 - How to create custom motions: `:h omap-info`
 
+#### Operator-Pending Mode
+- When we run the command `dw`, the operator-pending mode lasts during the brief interval between pressing `d` and `w` keys.
+- If we think of Vim as a finite-state machine, then Operator-Pending mode is a state that accepts only motion commands. It is activated when we invoke an operator command, and then nothing happens until we provide a motion, which completes the operation. While Operator-Pending mode is active, we can return to normal mode in the usual manner by pressing escape, which aborts the operation.
+- Only the operator commands initiate Operator-Pending mode.
+- The Operator-Pending mode allows us to create custom operators and motions, which in turn allows us to expand Vim's vocabulary.
+
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
