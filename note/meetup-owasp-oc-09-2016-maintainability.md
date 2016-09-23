@@ -22,17 +22,21 @@ Low priorities
 
 Too many way to do thing -> no documentation. We have many know how to do it in company -> no need documentation.
 
-Use different kind of pressure to make the leader make change. For example, make sure HR leader understood thr problem.
+Use different kind of pressure to make the leader make change. For example, make sure HR leader understood the problem.
 
 Domain controller ?
 Infrastructure management- AWS CloudFormation
 HashiCorp Packer
 
 
-Secrets managemen: HashiCorp Vault
+Secrets management: HashiCorp Vault
 
-Complicance checking:
+Compliance checking:
 - AWS Config
 - Jenkins + AWS Lambda
 
 infrastructure as code
+
+signal - osquiry
+
+
