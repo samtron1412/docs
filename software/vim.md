@@ -171,6 +171,13 @@ The most common operators:
 - Only the operator commands initiate Operator-Pending mode.
 - The Operator-Pending mode allows us to create custom operators and motions, which in turn allows us to expand Vim's vocabulary.
 
+## Insert Mode
+### Make Corrections Instantly from Insert Mode
+| Keystrokes | Effect                                |
+| -          | -                                     |
+| `<C-h>`    | Delete back one character (backspace) |
+| `<C-w>`    | Delete back one word                  |
+| `<C-u>`    | Delete back to start of line.         |
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
