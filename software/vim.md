@@ -179,6 +179,16 @@ The most common operators:
 | `<C-w>`    | Delete back one word                  |
 | `<C-u>`    | Delete back to start of line.         |
 
+### Get back to normal mode
+| Keystrokes | Effect                       |
+| -          | -                            |
+| `<Esc>`    | Switch to Normal mode        |
+| `<C-[>`    | Switch to Normal mode        |
+| `<C-o>`    | Switch to Insert Normal mode |
+
+- Insert Normal mode: we can fire off a single command, after which we'll be returned to Insert mode immediately.
+	+ `<C-o>zz`: the `zz` command redraws the screen with the current line in the middle of the window.
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
