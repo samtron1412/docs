@@ -4,6 +4,15 @@
 List of phrases.
 
 # Phrases
+## thank you, thanks, I appreciate your help, I really appreciate it
+- Thanks!
+- Thanks for your efforts.
+- Thanks for your help.
+- Thanks for your time.
+- Thanks for your assistance.
+- I really appreciate it.
+- Thank you very much
+
 ## nuts-and-bolts
 the essential or basic aspects
 
