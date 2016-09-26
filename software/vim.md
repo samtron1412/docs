@@ -187,7 +187,10 @@ The most common operators:
 | `<C-o>`    | Switch to Insert Normal mode |
 
 - Insert Normal mode: we can fire off a single command, after which we'll be returned to Insert mode immediately.
-	+ `<C-o>zz`: the `zz` command redraws the screen with the current line in the middle of the window.
+	+ `<C-o>zz`: the `zz` command redraws the screen with the current line in the middle of the window
+
+### Paste in Insert mode
+- `<C-r>{register}`: using when paste a small text less than one line. If you want to paste a register containing multiple lines of text, you should switch to Normal mode and use one of the put commands.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
