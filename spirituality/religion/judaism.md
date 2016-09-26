@@ -8,3 +8,4 @@ Judaism encompasses the religion, philosophy, culture and way of life of the Jew
 # Jewish intelligence
 - [Famous Jews](http://www.scientificpsychic.com/search/famous-jews.html)
 - [Jewish intelligence](https://en.wikipedia.org/wiki/Ashkenazi_Jewish_intelligence)
+- Orthodox Jewish family: an unbending nature, a stridency, a focus on money, a deep distrust of all outsiders, hard work, no nonsense, quest for excellence, distrust of authority figures, and a deep belief in God and education.
