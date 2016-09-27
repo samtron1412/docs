@@ -191,6 +191,8 @@ The most common operators:
 
 ### Paste in Insert mode
 - `<C-r>{register}`: using when paste a small text less than one line. If you want to paste a register containing multiple lines of text, you should switch to Normal mode and use one of the put commands.
+- Remap Caps Lock key to Escape or Ctrl key.
+
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
