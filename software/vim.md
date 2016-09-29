@@ -198,6 +198,18 @@ The most common operators:
 - The expression register is different. It can evaluate a piece of Vim script code and return the result. Here, we can use it like a calculator. Passing it a simple arithmetic expression, such as `1+1`, gives a result of 2. We can use the return value from the expression register just as though it were a piece of text saved in a plain old register.
 - The expression register is addressed by the `=` symbol. From Insert mode we can access it by typing `<C-r>=`. This opens a prompt at the bottom of the screen where we can type the expression that we want to evaluate. When done, we hit `<CR>`, and Vim inserts the result at our current position in the document.
 
+### Insert Unusual Characters by Character Code
+| Keystrokes            | Effect                                                   |
+| -                     | -                                                        |
+| `<C-v>{123}`          | Insert character by decimal code                         |
+| `<C-v>u{1234}`        | Insert character by hexadecimal code                     |
+| `<C-v>{nondigi}`      | Insert nondigit literally                                |
+| `<C-k>{char1}{char2}` | Insert character represented by `{char1}{char2}` digraph |
+
+- Digraph: pairs of characters that are easy to remember.
+	+ `:h digraphs-default`
+	+ `:h digraph-table`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
