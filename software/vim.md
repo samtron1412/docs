@@ -216,6 +216,10 @@ The most common operators:
 - Normal mode -> Virtual Replace mode: `gR` - overwrite characters of screen real estate -> produce fewer surprises, working fine with tab -> recommendation choice.
 - Single-shot: Normal mode -> Replace/Virtual Replace mode -> overwrite a single character -> Normal mode: `r{char}` and `gr{char}`
 
+## Visual Mode
+- Visual mode allows us to define a selection of text and then operate upon it.
+- Vim has three variants of Visual mode involving working with characters, lines, or rectangular blocks of text.
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
