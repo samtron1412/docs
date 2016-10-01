@@ -13,9 +13,11 @@
 - [Best Open Source Games][2]
 - [Slant - Best Open Source Games][3]
 - [openage - Open Source Age of Empire II][4]
+- [GitHub - Game Engines][5]
 
 # References
 [1]: https://www.twitchinstalls.com/ "Twitch installs Arch Linux"
 [2]: http://worldofgnome.org/best-open-source-games/ "Best Open Source Games"
 [3]: https://www.slant.co/topics/1933/~open-source-games "Slant - Best Open Source Games"
 [4]: https://github.com/SFTtech/openage "openage"
+[5]: https://github.com/showcases/game-engines "GitHub - Game Engines"
