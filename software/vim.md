@@ -220,6 +220,14 @@ The most common operators:
 - Visual mode allows us to define a selection of text and then operate upon it.
 - Vim has three variants of Visual mode involving working with characters, lines, or rectangular blocks of text.
 
+### Grok Visual Mode
+- Many of the commands that you are familiar with from Normal mode work just the same in Visual mode.
+	+ We can still use `h`, `j`, `k`, `l` as cursor keys.
+	+ We can use `f{char}` to jump to a character on the current line and then repeat or reverse the jump with the `;` and `,`.
+	+ Search command `/` and `n`/`N` to jump to pattern matches.
+- Select mode: resembles the selection mode  in Microsoft Windows. Printable characters cause the selection to be deleted. Vim enters Insert mode, and the typed character is inserted. Not really useful.
+- Visual mode -> Select mode: `<C-g>`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
