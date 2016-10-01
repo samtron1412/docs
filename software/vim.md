@@ -210,6 +210,12 @@ The most common operators:
 	+ `:h digraphs-default`
 	+ `:h digraph-table`
 
+### Overwrite existing text with replace mode
+- Replace mode is identical to Insert mode, except that it overwrites existing text in the document.
+- Normal mode -> Replace mode: `R` - dealing with the actual characters be saved in a file -> some problems with tab.
+- Normal mode -> Virtual Replace mode: `gR` - overwrite characters of screen real estate -> produce fewer surprises, working fine with tab -> recommendation choice.
+- Single-shot: Normal mode -> Replace/Virtual Replace mode -> overwrite a single character -> Normal mode: `r{char}` and `gr{char}`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
