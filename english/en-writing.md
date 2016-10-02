@@ -143,6 +143,16 @@ The Library of Congress, in Washington, D.C., has copies of all books published 
 - Date
 	+ Is the information up to date?
 
+# Grammars
+## Comparative/Superlative
+- [Comparative/Superlative][2]
+
+## Indefinite pronoun
+- [Wikipedia - Indefinite Pronoun][3]
+
+## Infinitives as Subjects
+- [Infinitives as Subjects][4]
+
 # Write an email - email etiquette
 ## Format
 - Greeting
@@ -260,3 +270,6 @@ You can place sometimes at the beginning of any of the eight examples above.
 
 # References
 [1]: http://www.loc.gov "The Library of Congress"
+[2]: http://esl.fis.edu/grammar/rules/comp.htm "Comparative/Superlative"
+[3]: https://en.wikipedia.org/wiki/Indefinite_pronoun "Wikipedia - Indefinite Pronoun"
+[4]: http://www.grammar-quizzes.com/infinitive1.html "Infinitives as Subjects"
