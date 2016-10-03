@@ -228,6 +228,27 @@ The most common operators:
 - Select mode: resembles the selection mode  in Microsoft Windows. Printable characters cause the selection to be deleted. Vim enters Insert mode, and the typed character is inserted. Not really useful.
 - Visual mode -> Select mode: `<C-g>`
 
+### Define a Visual Selection
+#### Enabling Visual Modes
+| Command | Effect                             |
+| -       | -                                  |
+| `v`     | Enable character-wise Visual mode  |
+| `V`     | Enable line-wise Visual mode       |
+| `<C-v>` | Enable block-wise Visual mode      |
+| `gv`    | Reselect the last visual selection |
+
+#### Switching Between Visual Modes
+| Command               | Effect                               |
+| -                     | -                                    |
+| `<Esc>` or `<C-[>`    | Switch to Normal mode                |
+| `v` or `V` or `<C-v>` | Switch to Normal mode                |
+| `v`                   | Switch to character-wise Visual mode |
+| `V`                   | Switch to line-wise Visual mode      |
+| `<C-v>`               | Switch to block-wise Visual mode     |
+| `o`                   | Go to other end of highlighted text  |
+
+
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
