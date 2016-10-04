@@ -257,7 +257,17 @@ The most common operators:
 # Files
 ## Manage Multiple Files
 ### Track Open Files with the Buffer List
+- We can load multiple files during an editing session. Vim lets us manage them using the buffer list.
+- Workflow: disk -> read -> buffer - we make changes -> write, update, saveas -> disk.
 
+#### Meet the Buffer List
+- `:ls`: gives us a listing of all the buffers that have been loaded into memory.
+- `:bnext` or `:bprev`: switch to the next or previous buffer in the list.
+- `:bfirst` or `:blast`: jump to the start or end of the list.
+- `%` symbol indicates the current file, `#` symbol represents the alternative file.
+- `<C-^>`: toggle between the current and alternate files.
+- `:bdelete N1 N2 N3`: delete buffer N1, N2, N3.
+- `:N,M bdelete`: delete buffer from N to M.
 
 ## Open Files and Save Them to Disk
 
