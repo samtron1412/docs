@@ -254,6 +254,14 @@ The most common operators:
 ### Edit Tabular Data with Visual-Block mode
 - Practicing: `<C-v>`, `x`, `.`, `gv`, `r`, `yy`, `p`.
 
+# Files
+## Manage Multiple Files
+### Track Open Files with the Buffer List
+
+
+## Open Files and Save Them to Disk
+
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
