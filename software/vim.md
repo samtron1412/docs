@@ -247,7 +247,9 @@ The most common operators:
 | `<C-v>`               | Switch to block-wise Visual mode     |
 | `o`                   | Go to other end of highlighted text  |
 
-
+### Repeat Line-Wise Visual Commands
+- The dot command repeats the change on the same range of text. It is useful to a line-wise selection.
+- We should prefer operator commands (e.g. `<gU>{motion}`) over their Visual mode equivalents when working through a repetitive set of changes. Sometimes we need to modify a range of text whose structure is difficult to trace. In these case, Visual mode is the right tool.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
