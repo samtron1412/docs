@@ -308,6 +308,54 @@ The most common operators:
 | `:qa[all]!` | Close all windows, discarding changes without warning (not recommend)  |
 | `:wa[all]`  | Write all modified buffers to disk                                     |
 
+### Divide your workspace into split windows
+- Vim allows us to view multiple buffers side by side by dividing our workspace into split windows.
+- In Vim's terminology, a `window` is a viewport onto a buffer.
+	+ We can open multiple windows, each containing the same buffer, or we can load different buffers into each window.
+
+#### Creating Split Windows
+- When Vim starts up, it contains a single window.
+
+| Command          | Effect                                                                              |
+| -                | -                                                                                   |
+| `<C-w>s`         | Split the current window horizontally, reusing the current buffer in the new window |
+| `<C-w>v`         | Split the current window vertically, reusing the current buffer in the new window   |
+| :sp[lit] {file}  | Split the current window horizontally, loading {file} into the new window           |
+| :vsp[lit] {file} | Split the current window vertically, loading {file} into the new window             |
+
+#### Changing the focus between windows
+`:h window-move-cursor`
+
+| Command  | Effect                        |
+| -        | -                             |
+| `<C-w>w` | Cycle between open windows    |
+| `<C-w>h` | Focus the window to the left  |
+| `<C-w>j` | Focus the window below        |
+| `<C-w>k` | Focus the window above        |
+| `<C-w>l` | Focus the window to the right |
+
+`<C-w><C-w>` = `<C-w>w`, so on.
+
+#### Closing windows
+| Ex command | Normal Command | Effect                                          |
+| -          | -              | -                                               |
+| :cl[ose]   | `<C-w>c`       | Close the active window                         |
+| :on[ly]    | `<C-w>o`       | Keep only the active window, closing all others |
+
+#### Resizing and Rearranging Windows
+`:h window-resize`
+
+| Keystrokes  | Buffer Contents                          |
+| -           | -                                        |
+| `<C-w>=`    | Equalize width and height of all windows |
+| `<C-w>_`    | Maximize height of the active window     |
+| `[N]<C-w>_` | Set active window height to [N] rows     |
+
+- `<C-w>|`: Maximize width of the active window
+- `[N]<C-w>|`: Set active window width to [N] columns
+
+`:h window-moving`
+
 ## Open Files and Save Them to Disk
 
 
