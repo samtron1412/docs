@@ -269,6 +269,31 @@ The most common operators:
 - `:bdelete N1 N2 N3`: delete buffer N1, N2, N3.
 - `:N,M bdelete`: delete buffer from N to M.
 
+### Group Buffers into a Collection with the Argument List
+- The argument list is easily managed and can be useful for grouping together a collection of files for easy navigation.
+- We can run an Ex command on each item in the argument list using the `:argdo` command.
+- The argument list represents the list of files that was passed as an argument when we ran the `vim` command.
+	+ The `[]` characters indicate which of the files in the argument list is active.
+	+ The argument list was a feature of `vi`, whereas the buffer list is an enhancement introduced by Vim.
+	+ We can change the contents of the argument list at any time.
+
+#### Populate the Argument List:
+- `:args`: print the contents of the argument list.
+- `:args {arglist}`: set the contents of the argument list.
+	+ The `{arglist}` can include filenames, wildcards, or even the output from a shell command.
+	+ Filenames: `:args index.html app.js`
+	+ Glob (using wildcards): `:args *.*`, `:args **/*.js`, `:args **/*.*`.
+		* `*` symbol will match zero or more characters, but only in the scope of the specified directory.
+		* `**` symbol also matches zero or more characters, but it can recurse downward into directories below the specified directory.
+		* `?` matches one character
+		* `[abc]` match `a`, `b` or `c`.
+	+ Output of shell command (backtick expansion): **:args `cat .chapters`**
+
+#### Use the Argument List
+- It is the ideal place to group our buffers into a collection.
+- With the `:args {arglist}` command, we can clear the argument list and then repopulate it from scratch with a single command.
+- We can use `:argdo` to execute the same command on each buffer in the set.
+
 ## Open Files and Save Them to Disk
 
 
