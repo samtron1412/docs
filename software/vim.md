@@ -297,6 +297,17 @@ The most common operators:
 - With the `:args {arglist}` command, we can clear the argument list and then repopulate it from scratch with a single command.
 - We can use `:argdo` to execute the same command on each buffer in the set.
 
+### Manage Hidden Files
+- `set hidden`: we can switch between buffer without error messages.
+	+ Accept the `:argdo` or `bufdo` to execute
+
+| Command     | Effect                                                                 |
+| -           | -                                                                      |
+| `:w[rite]`  | Write the contents of the buffer to disk                               |
+| `:e[dit]!`  | Read the file from disk back into the buffer (that is, revert changes) |
+| `:qa[all]!` | Close all windows, discarding changes without warning (not recommend)  |
+| `:wa[all]`  | Write all modified buffers to disk                                     |
+
 ## Open Files and Save Them to Disk
 
 
