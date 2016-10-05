@@ -262,9 +262,12 @@ The most common operators:
 
 #### Meet the Buffer List
 - `:ls`: gives us a listing of all the buffers that have been loaded into memory.
+	+ `%` symbol indicates the current file
+	+ `#` symbol represents the alternative file.
+	+ `a` character indicates the active file.
+	+ `h` character indicates the hidden file.
 - `:bnext` or `:bprev`: switch to the next or previous buffer in the list.
 - `:bfirst` or `:blast`: jump to the start or end of the list.
-- `%` symbol indicates the current file, `#` symbol represents the alternative file.
 - `<C-^>`: toggle between the current and alternate files.
 - `:bdelete N1 N2 N3`: delete buffer N1, N2, N3.
 - `:N,M bdelete`: delete buffer from N to M.
