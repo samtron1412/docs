@@ -373,6 +373,18 @@ The most common operators:
 | `tabc[lose]`            | Close the current tab page and all of its windows |
 | `tabo[nly]`             | Keep the active tab page, closing all others      |
 
+#### Switching between tabs
+| Ex Command       | Normal Command | Effect                          |
+| -                | -              | -                               |
+| `:tabn[ext] {N}` | `{N}gt`        | Switch to tab page number {N}   |
+| `:tabn[ext]`     | `gt`           | Switch to the next tab page     |
+| `:tabp[revious]` | `gT`           | Switch to the previous tab page |
+
+#### Rearranging Tabs
+- `:tabmove [N]`
+	+ [N] = 0: move to the beginning
+	+ omit [N]: move to the end
+
 
 ## Open Files and Save Them to Disk
 
