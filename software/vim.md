@@ -360,6 +360,10 @@ The most common operators:
 - When we open a file using the `:edit` command, Vim doesn't automatically create a new tab. Instead, it creates a new buffer and loads it into the current window. Vim keeps track of the set of files that are open using the buffer list.
 - We can use tab pages to organize split windows into a collection of workspaces. A tab page is a container that can hold a collection of windows.
 
+#### How to use tabs
+- Vim's tab pages can be used to partition work into different workspaces. They have more in common with the virtual desktops in Linux than they do with the tabbed interface of most other text editors.
+- The `:lcd{path}` command lets us set the working directory locally for the current window. If we create a new tab page and then use the `:lcd` command to switch to another directory, we can then comfortably scope each tab page to a different project.
+- Note that `:lcd` applies locally to the current window, not to the current tab page. If we have a tab page containing two or more split windows, we could set the local working directory for all of them by running `:windo lcd {path}`.
 
 ## Open Files and Save Them to Disk
 
