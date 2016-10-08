@@ -356,6 +356,11 @@ The most common operators:
 
 `:h window-moving`
 
+### Organize your window layouts with tab pages
+- When we open a file using the `:edit` command, Vim doesn't automatically create a new tab. Instead, it creates a new buffer and loads it into the current window. Vim keeps track of the set of files that are open using the buffer list.
+- We can use tab pages to organize split windows into a collection of workspaces. A tab page is a container that can hold a collection of windows.
+
+
 ## Open Files and Save Them to Disk
 
 
