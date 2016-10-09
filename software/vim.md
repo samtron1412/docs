@@ -385,9 +385,28 @@ The most common operators:
 	+ [N] = 0: move to the beginning
 	+ omit [N]: move to the end
 
-
 ## Open Files and Save Them to Disk
+### Open a file by its filepath using ":edit"
+#### Open a File relative to the current working directory
+- When Vim is launched, it adopts the same working directory that was active in the shell.
+	+ `:pwd`: print working directory
+	+ `:edit {file}`: command can accept a filepath relative to the working directory. `:edit lib/framework.js`
 
+#### Open a File Relative to the Active File Directory
+- `:edit %:h<Tab>`: expand to the full path of the current file's directory
+- Mapping:
+
+```
+" Easy Expansion of the Active File Directory
+let mapleader=','
+" cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+```
+- Now we can use `%%` to expand the current file's directory in any ex command such as `:write`, `:saveas`, `:read`.
 
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
