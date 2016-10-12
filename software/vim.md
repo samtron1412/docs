@@ -1,6 +1,8 @@
 [TOC]
 
 # [Overview](https://en.wikipedia.org/wiki/Vim_(text_editor))
+Vim (a contraction of Vi IMproved) is a clone of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga.
+
 ## History
 Initial release in November 1991.
 
