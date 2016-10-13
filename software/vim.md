@@ -410,6 +410,20 @@ map <leader>et :tabe %%
 ```
 - Now we can use `%%` to expand the current file's directory in any ex command such as `:write`, `:saveas`, `:read`.
 
+### Open a file by Its Filename Using `:find`
+- The `:find` command allows us to open a file by its name without having to provide a fully qualified path. To exploit this feature, we first have to configure the `path` setting.
+
+#### Configure the `path`
+- The `path` option allows us to specify a set of directories inside of which Vim will search when the `:find` command is invoked.
+	+ show current path: `:set path?`
+	+ `:set path+=app/**`
+	+ see `:h path` and `:h file-searching`
+
+#### Use `:find` to looke up Files by name
+- Now that we've configured our `path`, we can open files in the directories we specified by providing just their name.
+- `:find {some_chars}<Tab>`: tab-completion shows up.
+- Config `wildmod` and `wildmenu` to change the tab-completion behavior. `:h wildmode`, `:h wildmenu`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
