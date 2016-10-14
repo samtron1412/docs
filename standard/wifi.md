@@ -21,3 +21,4 @@ Have a flaw brute-force attack to reverse PIN.
 
 # References
 [1]: https://en.wikipedia.org/wiki/Wi-Fi "Wikipedia - Wi-Fi"
+[2]: http://www.aboutcher.co.uk/2012/07/linux-wifi-deauthenticated-reason-codes/ "Linux Wi-Fi Deauthenticated Reason Codes"
