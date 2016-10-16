@@ -424,6 +424,35 @@ map <leader>et :tabe %%
 - `:find {some_chars}<Tab>`: tab-completion shows up.
 - Config `wildmod` and `wildmenu` to change the tab-completion behavior. `:h wildmode`, `:h wildmenu`
 
+### Explore the File System with netrw
+- The netrw plugin, included in the Vim distribution, allows us to explore the file system.
+- The netrw plugin comes as standard with the Vim distribution, so we don't have to install anyting, but we do need to make sure that Vim is configured to load plugins.
+
+```
+set nocompatible
+filetype plugin on
+```
+
+#### Meet netrw - Vim's Native File Explorer
+- Open the File Explorer
+
+| Ex Command  | Shorthand | Effect                                                    |
+| -           | -         | -                                                         |
+| `:edit .`   | `:e.`     | Open file explorer for current working directory          |
+| `:Explore`  | `:E`      | Open file explorer for the directory of the active buffer |
+| `:Sexplore` | `:Se`     | Open the file explorer in a horizontal split window       |
+| `:Vexplore` | `:Ve`     | Open the file explorer in a vertical split window         |
+
+- Working with split windows: `<C-^>` switch back and forth between the buffer and the file explorer.
+
+#### Doing more with netrw
+- Create new files: `:h netrw-%`
+- Create new directories: `:h netrw-d`
+- Rename existing ones: `:h netrw-rename`
+- Delete files: `:h netrw-del`
+- Watch [episode 15 of Vimcasts][1]
+- Read and write files across a network: `:h netrw-ref`
+
 # Tips and Tricks
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
@@ -500,3 +529,4 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 
 
 # References
+[1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
