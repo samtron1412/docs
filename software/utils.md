@@ -1,7 +1,7 @@
 [TOC]
 
 # Overview
-All utilities of Linux/GNU OS.
+All utilities of UNIX-like OS.
 
 # util-linux
 util-linux is a standard package of the Linux operating system.
@@ -9,7 +9,10 @@ util-linux is a standard package of the Linux operating system.
 - [Wikipedia](https://en.wikipedia.org/wiki/Util-linux)
 - [Arch packages](https://www.archlinux.org/packages/core/x86_64/util-linux/)
 
-# coreutils
+# GNU binutils
+- [Homepage][1]
+
+# GNU coreutils
 The GNU Core Utilities are the basic file, shell and text manipulation utilities of the GNU operating system.
 These are the core utilities which are expected to exist on every operating system.
 
@@ -25,3 +28,6 @@ These are the core utilities which are expected to exist on every operating syst
 - [Homepage](http://psmisc.sourceforge.net/index.html)
 
 # [autojump](https://github.com/wting/autojump)
+
+# References
+[1]: https://www.gnu.org/software/binutils/ "GNU binutils"
