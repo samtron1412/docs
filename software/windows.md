@@ -94,3 +94,6 @@ Disabled `6to4` and `isatap` adapter: (these adapter use for transfer packets IP
 A team of sharp developers at Microsoft has been hard at work adapting some Microsoft research technology to basically perform real time translation of **Linux syscalls** into **Windows OS syscalls**. Linux geeks can think of it sort of the inverse of "**WINE**" -- Ubuntu binaries running natively in Windows. Microsoft calls it a "Windows Subsystem for Linux
 
 - [Linux test](https://github.com/linux-test-project/ltp)
+
+# References
+[1]: https://msdn.microsoft.com/commandline/wsl/about "Bash on Ubuntu on Windows"
