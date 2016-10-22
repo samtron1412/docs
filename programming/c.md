@@ -11,6 +11,40 @@ A C program basically consistes of the folowing parts:
 - Statements and Expressions
 - Comments
 
+# Basic syntax
+## Tokens
+Tokens: keywords, identifiers, constants, string literals, symbols
+
+## Semicolons
+In a C program, the semicolon is a statement terminator.
+
+## Comments
+- `//`: starting inline comments
+- `/* */`: block comments
+
+## Identifiers
+- A C Identifiers is a name used to identify a variable, function, or any other user-defined item.
+- An identifier starts with a letter or an underscore followed by zero or more letters, underscores, and digits.
+- C does not allow punctuation character such as `@, $, %` within identifiers.
+- C is a case-sensitive programming language. Thus, `Manpower` and `manpower` are two different identifiers in C.
+
+## Keywords
+List of the reserved words in C. These words cannot be used as constants or variables or any other identifier names.
+
+| auto     | else   | long     | switch   |
+| break    | enum   | register | typedef  |
+| case     | extern | return   | union    |
+| char     | float  | short    | unsigned |
+| const    | for    | signed   | void     |
+| continue | goto   | sizeof   | volatile |
+| default  | if     | static   | while    |
+| do       | int    | struct   | _Packed  |
+| double   |        |          |          |
+
+## Whitespace in C
+- A line containing only whitespace, possibly with a comment, is known as a blank line, and a C compiler totally ignores it.
+- Whitespace is the term used in C to describe blanks, tabs, newline characters and comments.
+
 # Function
 [ref](http://users.aber.ac.uk/auj/voidmain.cgi)
 
