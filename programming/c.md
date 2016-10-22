@@ -3,6 +3,14 @@
 # Overview
 - [Intro to c for the high-level programmer](https://github.com/charles-l/intro_to_c_slideshow)
 
+# Basic structure
+A C program basically consistes of the folowing parts:
+- Preprocessor commands: for example, `#include <stdio.h>`
+- Functions: `printf(...)`
+- Variables
+- Statements and Expressions
+- Comments
+
 # Function
 [ref](http://users.aber.ac.uk/auj/voidmain.cgi)
 
