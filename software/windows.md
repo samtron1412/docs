@@ -52,7 +52,7 @@ VW6N7-Q9Q88-73MKM-GM9PR-F6YMY
 ## Office 2013 Plus (Office 15)
 YC7DK-G2NP3-2QQC3-J6H88-GVGXT
 
-# Troubleshoot
+# Troubleshooting
 ## Block port
 Run `Windows + R`: type `resmon.exe` => resources monitor windows.
 
