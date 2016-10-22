@@ -29,5 +29,8 @@ These are the core utilities which are expected to exist on every operating syst
 
 # [autojump](https://github.com/wting/autojump)
 
+# [xdg-utils][2]
+
 # References
 [1]: https://www.gnu.org/software/binutils/ "GNU binutils"
+[2]: https://www.freedesktop.org/wiki/Software/xdg-utils/ "xdg-utils"
