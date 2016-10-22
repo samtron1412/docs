@@ -10,9 +10,19 @@
 	+ wpa_supplicant obtain authentication from a WPA authenticator. It must be configured to do that.
 	+ Once the authentication is successful, obtaining an IP by setting it manually with the `iproute2` suite or using some networking program, like `systemd-network` or `dhcpcd`, to configure an interface to obtain an IP address automatically via DHCP.
 
-# Saving passphrase as a hash (encrypted passphrase)
-- Using wpa_passphrase
+# Connecting with wpa_cli
+
+# Connecting with wpa_passphrase
+
+# Configuration
+
+# Connection
+
+# Tips and Tricks
+## Saving passphrase as a hash (encrypted passphrase) - WPA2-Enterprise - EAP (PEAP) - MSCHAPv2
 - Using md4 haskh
+
+# Troubleshooting
 
 # References
 [1]: https://wiki.archlinux.org/index.php/WPA_supplicant "Arch Wiki - WPA supplicant"
