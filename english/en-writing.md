@@ -171,10 +171,8 @@ The Library of Congress, in Washington, D.C., has copies of all books published 
 - `Best`: easy to use
 - `Best regards`: This phrase is professional, but with some warmth. It's common for business emails that are less formal, such as between co-workers who work together somewhat frequently. This can be shortened further to `Regards` when emailing someone familiar.
 - `Sincerely`: This is a universal closing sentiment and appropriate in most situations, little bit old-fashion.
-- `Thanks`: more familiar
-- `Thanks so much`
-- `Many thanks`
-- `Thank you`: more formal
+- `Thanks`, `Thanks so much`, `Many thanks`: more familiar
+- `Thank you`, `Thank you so much`: more formal
 - `Respectfully`: This is a formal sendoff that's appropriate when emailing the CEO, Chairman of the Board, or a high-level company executive.
 - `Fondly`: This is definitely a social closing, not a professional one, a level of familiarity.
 - `Warm regards`: This is a more formal version of `fondly`, but it's still best suited for social emails.
