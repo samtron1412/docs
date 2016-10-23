@@ -6,7 +6,7 @@ Vim (a contraction of Vi IMproved) is a clone of Bill Joy's vi text editor progr
 ## History
 Initial release in November 1991.
 
-## Help
+## [Help][2]
 `:help` help facility built-in
 `vimtutor` : basic commands tutorials
 `:h key-notation`: these names for keys are used in the documentation.
@@ -530,3 +530,4 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 
 # References
 [1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
+[2]: http://vim.wikia.com/wiki/Learn_to_use_help "Learn how to use help"
