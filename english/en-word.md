@@ -4,6 +4,21 @@
 List of words.
 
 # Words
+## photo vs image/picture
+### Definition of Photo and Image/Picture
+- Image is usually a representation of a person or an object. This can
+come in different forms such as painting, photograph, sculpture, etc.
+- Photo is an image taken from a camera. Photo is the short form for the
+word photograph.
+
+### Figurative meaning
+- Apart from the main meaning, image is also used in a figurative sense
+to imply someone's character as is shown by his behavior.
+- Photo does not carry such a figurative meaning.
+
+### Connection between Photo and Image/Picture
+- A photo is always an image, but an image is not always a photo.
+
 ## competent - adjective - /ˈkɒm pɪ tənt/
 - having enough skill or knowledge to do something to a satisfactory standard.
 	+ I don't feel competent to give an opinion at the moment.
