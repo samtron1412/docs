@@ -4,6 +4,45 @@
 List of words.
 
 # Words
+## drawing vs painting
+### Definitions of Drawing and Painting
+- Drawing: Drawing refers to producing a picture by making lines on
+paper.
+- Painting: Painting refers to applying a liquid to a surface with a
+brush.
+
+### Characteristics of Drawing and Painting
+#### Nature
+- Drawing: Drawing is characterized by lines and shades.
+- Painting: Painting is characterized by colors and designs.
+
+#### Types
+- Drawing: Drawing is of different types such as line drawing, shade
+drawing and object drawing.
+- Painting: Painting is of different types such as painting on canvas,
+oil painting on canvas, watercolor painting, acrylic painting, etc.
+
+#### Use of turpentine oil
+- Drawing: Drawing needs no turpentine oil.
+- Painting: You make use of turpentine oil in the case of painting.
+
+#### Usage of a palette
+- Drawing: You need not use a palette while drawing an object or a human
+figure.
+- Painting: You need to have a palette while painting on canvas using
+oil colors.
+
+#### Use of equipment:
+- Drawing: We can use crayons, pencils and charcoal for drawing.
+- Painting: Oil colors, acrylic and types of pigments are used in the
+art of painting.
+
+#### Alteration
+- Drawing: Pencil drawings can be rubbed and redone quite easily because
+graphite can be easily erased.
+- Painting: Oil painting and acrylic cannot be very easily erased or
+altered.
+
 ## photo vs image/picture
 ### Definition of Photo and Image/Picture
 - Image is usually a representation of a person or an object. This can
