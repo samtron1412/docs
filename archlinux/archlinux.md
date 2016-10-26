@@ -526,6 +526,8 @@ Back up your system before big upgrade. Use to recover your system when it had t
 - [neomutt](https://github.com/neomutt/neomutt): Bringing together all the Mutt code
 
 #### IRC clients
+- [weechat](https://en.wikipedia.org/wiki/WeeChat): Modular, lightweight
+ncurces-based IRC client.
 - [irssi](https://wiki.archlinux.org/index.php/Irssi): Highly-configurable ncurses-based IRC client. [Homepage](http://irssi.org/)
 - [hexchat](http://hexchat.github.io/): Fork of Xchat for Linux and Windows.
 
