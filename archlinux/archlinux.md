@@ -715,6 +715,8 @@ ncurces-based IRC client.
 
 #### PDF and DjVu
 - [zathura](https://en.wikipedia.org/wiki/Zathura_(document_viewer))
+- [apvlv](http://naihe2010.github.com/apvlv/): Lightweight PDF, DjVu,
+UMD, TXT viewer with Vim keybindings
 - [evince](https://en.wikipedia.org/wiki/Evince)
 - [Foxit Reader](https://aur.archlinux.org/packages/foxitreader/)
 
