@@ -743,10 +743,11 @@ UMD, TXT viewer with Vim keybindings
 ### 7.4 Desktop environment
 
 ### 7.5 Window managers
-[i3](https://wiki.archlinux.org/index.php/I3)
-[dwm](https://wiki.archlinux.org/index.php/Dwm)
-[awesome](https://wiki.archlinux.org/index.php/Awesome)
-[xmonad](https://wiki.archlinux.org/index.php/Xmonad)
+- [tinywm](http://incise.org/tinywm.html)
+- [i3](https://wiki.archlinux.org/index.php/I3)
+- [dwm](https://wiki.archlinux.org/index.php/Dwm)
+- [awesome](https://wiki.archlinux.org/index.php/Awesome)
+- [xmonad](https://wiki.archlinux.org/index.php/Xmonad)
 
 ### 7.6 Window tilers
 
