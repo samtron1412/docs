@@ -10,3 +10,32 @@
     memory of a computer after power-on, especially the operating system
     kernel which will then take care of loading other software as
     needed.
+
+## Software development
+- A tiny assembler program was hand-coded for a new computer which
+converted a few instructions into binary or decimal code (A1).
+- This simple assembler program was then rewritten in its just-defined
+assembly language but with extensions that would enable the use of some
+additional mnemonics for more complex operation codes. The enhanced
+assembler's source program was then assembled by its predecessor's
+executable (A1) into binary or decimal code to give A2.
+
+```
+Human ------> First assembler ------> Second assembler ------> Repeated cycles ------> Final assembler
+        ^         (A1)          ^           (A2)         ^            (An)       ^         (A*)
+        |                       |                        |                       |
+   Hand-coded               Assemble                 Assemble                 Assemble
+```
+
+### Compilers
+- **A**: existed programming language
+    + **C_A**: compiler of A
+- **B**: new programming language
+    + **C_B**: compiler of B
+
+```
+C_B code in A -----> temporary binary -----> final binary
+                ^        C_B            ^        C_B
+                |                       |
+        compile by C_A        compile by temporary C_B
+```
