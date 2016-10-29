@@ -49,3 +49,10 @@ bootstrap the system.
     + The ROM allows computers to be shipped with a start up program
     that could not be erased, and it uses to bootstrap the system.
 
+# Booting
+- Booting is a chain of events that starts with execution of
+hardware-based procedures and may then hand-off to firmware and software
+which is loaded into main memory.
+    + Hard: after electrical power to the CPU is switched off to on.
+    + Soft: power-on self-tests (POST) can be avoided.
+
