@@ -39,3 +39,13 @@ C_B code in A -----> temporary binary -----> final binary
                 |                       |
         compile by C_A        compile by temporary C_B
 ```
+
+## History
+- The ENIAC (1940s): doesn't need a boot process.
+- The IBM 701 (1952-1956): punched card with initial program was used to
+bootstrap the system.
+- DEC PDP-8 (1965): using an array of switches.
+- Integrated circuit Read-Only Memory (ROM) era (1975): Apple 1 (1976)
+    + The ROM allows computers to be shipped with a start up program
+    that could not be erased, and it uses to bootstrap the system.
+
