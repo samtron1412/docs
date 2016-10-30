@@ -6,6 +6,10 @@
 
 # Sublime 3 Packages
 
+## Git
+- [SublimeGit](https://github.com/SublimeGit/SublimeGit)
+- [GitSavvy](https://github.com/divmain/GitSavvy)
+
 ## Packages for JavaScript programming
 1. [Babel](https://packagecontrol.io/packages/Babel)
 2. [JsHint](https://packagecontrol.io/packages/JSHint)
