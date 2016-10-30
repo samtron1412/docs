@@ -5,25 +5,6 @@
 - [TutsPlus](https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2)
 
 # Sublime 3 Packages
-1. Alignment
-10. SFTP
-13. Sass
-14. SublimeLinter
-16. Better CoffeeScript
-20. AutoFileName
-21. Pretty JSON
-23. FileDiffs
-24. Terminal
-25. NodeJS
-26. LaTexTools
-27. Color highlighter
-28. SideBarGit
-32. Gist (manage snippets)
-33. SublimeERB
-34. Alternative autocompletion
-35. Cheat sheets
-36. ERB Snippets
-37. JavaScript Snippets
 
 ## Packages for JavaScript programming
 1. [Babel](https://packagecontrol.io/packages/Babel)
