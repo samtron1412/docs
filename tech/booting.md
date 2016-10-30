@@ -79,3 +79,13 @@ state.
     + Execute POSTs (power-on self-tests)
     + Initialize peripheral devices
     + Load second stage bootloader
+
+#### POSTs
+- A power-on self-test is a process that is performed by firmware or
+software routines immediately after an electronic device is powered on.
+- The results of the POST may be displayed on a panel that is part of
+the device, output to an external device, or stored for future retrieval
+by a diagnostic tool.
+- Since a POST might detect that the system's usual human-readable
+display is non-functional an indicator lamp or a speaker may be provided
+to show error codes as a sequence of flashes or beeps.
