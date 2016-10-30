@@ -56,3 +56,16 @@ which is loaded into main memory.
     + Hard: after electrical power to the CPU is switched off to on.
     + Soft: power-on self-tests (POST) can be avoided.
 
+## Booting sequences
+
+### The summary table
+
+```
+| Power-on | Firmware (First stage bootloader) | Second stage bootloader        | Kernel           | initramfs                     | init                                 | getty                      | Display Manager | login                 | shell         | startx/xinit | Window Manager      | Apps     |
+| -        | -                                 | -                              | -                | -                             | -                                    | -                          | -               | -                     | -             | -            | -                   | -        |
+|          | (BIOS, UEFI, coreboot, libreboot) | (Syslinux, GRUB, bootx, ntldr) |                  |                               | systemd                              |                            | GNOME, KDE      |                       | zsh, bash     |              | i3, awesome, xmonad | chromium |
+|          | POST process                      | kernel with parameters         | unpack initramfs | udev, lvm, encrypt            | call getty for each virtual terminal | ask username, password     | replace login   | create user's session | zshrc, bashrc | xinitrc      |                     |          |
+|          | initializing peripheral devices   | load initramfs                 | `/init`          | mount real root               |                                      | call login/display manager |                 |                       |               |              |                     |          |
+|          | load second stage bootloader      |                                | (kernel space)   | `/sbin/init` replaces `/init` |                                      |                            |                 |                       |               |              |                     |          |
+|          |                                   |                                |                  | (early userspace)             |                                      |                            |                 |                       |               |              |                     |          |
+```
