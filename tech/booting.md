@@ -55,6 +55,9 @@ hardware-based procedures and may then hand-off to firmware and software
 which is loaded into main memory.
     + Hard: after electrical power to the CPU is switched off to on.
     + Soft: power-on self-tests (POST) can be avoided.
+- All computing systems are state machines, and a reboot may be the only
+method to return to a designed zero-state from an unintended, locked
+state.
 
 ## Booting sequences
 
