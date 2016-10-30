@@ -72,3 +72,10 @@ state.
 |          | load second stage bootloader      |                                | (kernel space)   | `/sbin/init` replaces `/init` |                                      |                            |                 |                       |               |              |                     |          |
 |          |                                   |                                |                  | (early userspace)             |                                      |                            |                 |                       |               |              |                     |          |
 ```
+
+### Firmware - First stage bootloader
+- Software: BIOS, UEFI, coreboot, libreboot
+- Functions:
+    + Execute POSTs (power-on self-tests)
+    + Initialize peripheral devices
+    + Load second stage bootloader
