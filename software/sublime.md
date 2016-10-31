@@ -172,6 +172,14 @@ Happy coding!
 
 # User guide
 ## General
+### Goto Anything
+Use Goto Anything to quickly navigate between files, even in the
+largest projects. `Ctrl+P` shows Goto Anything, and typing then
+filters on file and directory names.
+- Type part of a file name to open it.
+- Type `@` to jump to symbols, `#` to search within the file, and `:` to
+go to a line number.
+
 - Duplicate line: `Ctrl + Shift + D`
 - Quicker reference assert: `Ctrl + Shift + P` and type `Copy` to copy path, file name, etc.
 - Insert one line after: `Ctrl + Enter` -> very userful when want to new line
@@ -192,9 +200,6 @@ Happy coding!
 - Use Multiple Selections to rename variables quickly. Here `Ctrl+D` is used to select the next occurrence of the current word.
 - Make batch edits with Multiple Selections. Here `Ctrl+Shift+L` is used to split a selection into lines, and each line is then edited simultaneously.
 - The Command Palette gives fast access to functionality. Here `Ctrl+Shift+P` is used to show the Command Palette, "sspy" (short for Set Syntax: Python) is used set the syntax of the current file to Python.
-- Use Goto Anything to quickly navigate between files, even in the largest projects. `Ctrl+P` shows Goto Anything, and typing then filters on file and directory names.
-	+ Type part of a file name to open it.
-	+ Type `@` to jump to symbols, `#` to search within the file, and `:` to go to a line number.
 - `Ctrl + Alt + j`: go to matching tag of emmet
 
 ## Search and Replace
