@@ -15,26 +15,10 @@ programming interface.
 
 ## vi/vim Emulation
 
-# Build system
+# Build systems
 `Tools -> Build System -> New build system`
 
 - Create new build system of you to build. Example, PHP, coffee script.
-
-# Sublime 3 Packages
-## Git
-- [SublimeGit](https://github.com/SublimeGit/SublimeGit)
-- [GitSavvy](https://github.com/divmain/GitSavvy)
-
-## Packages for JavaScript programming
-1. [Babel](https://packagecontrol.io/packages/Babel)
-2. [JsHint](https://packagecontrol.io/packages/JSHint)
-3. [JsFormat](https://packagecontrol.io/packages/JsFormat)
-4. [DocBlockr](https://packagecontrol.io/packages/DocBlockr)
-5. [AngularJS](https://packagecontrol.io/packages/AngularJS)
-6. [TypeScript](https://packagecontrol.io/packages/TypeScript)
-7. [HandleBar](https://packagecontrol.io/packages/Handlebars)
-8. [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
-9. [jQuery](https://packagecontrol.io/packages/jQuery)
 
 # Macro
 Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard shortcut. Follow these steps:
@@ -328,6 +312,22 @@ To provide the info necessary to help solve the issue, please generate a debug l
 
 ### Code
 
+
+# Sublime 3 Packages
+## Git
+- [SublimeGit](https://github.com/SublimeGit/SublimeGit)
+- [GitSavvy](https://github.com/divmain/GitSavvy)
+
+## Packages for JavaScript programming
+1. [Babel](https://packagecontrol.io/packages/Babel)
+2. [JsHint](https://packagecontrol.io/packages/JSHint)
+3. [JsFormat](https://packagecontrol.io/packages/JsFormat)
+4. [DocBlockr](https://packagecontrol.io/packages/DocBlockr)
+5. [AngularJS](https://packagecontrol.io/packages/AngularJS)
+6. [TypeScript](https://packagecontrol.io/packages/TypeScript)
+7. [HandleBar](https://packagecontrol.io/packages/Handlebars)
+8. [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
+9. [jQuery](https://packagecontrol.io/packages/jQuery)
 
 # References
 [1]: http://www.sublimetext.com/ "Homepage"
