@@ -21,9 +21,6 @@
 8. [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
 9. [jQuery](https://packagecontrol.io/packages/jQuery)
 
-# Hiding folders or files in project, Workspace, Project
-`Project -> Save project as...` after that edit path, `folder_exclude_patterns`, `file_exclude_patterns`...
-
 # Macro
 Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard shortcut. Follow these steps:
 
@@ -205,6 +202,11 @@ Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `
 
 ### Adjust headline level Added by David Smith.
 `Super+Shift+,` for decreasing and `Super+Shift+.` for increasing headline levels.
+
+# Tips and Tricks
+# Hiding folders or files in project, Workspace, Project
+`Project -> Save project as...` after that edit path,
+`folder_exclude_patterns`, `file_exclude_patterns`...
 
 # Package Control
 ## End Users
