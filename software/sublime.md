@@ -80,25 +80,9 @@ simultaneously.
         * `Ctrl+Shift+l` to split the selection into lines
         * Type `i` to go to Insert mode
 
-- Duplicate line: `Ctrl + Shift + D`
-- Quicker reference assert: `Ctrl + Shift + P` and type `Copy` to copy path, file name, etc.
-- Insert one line after: `Ctrl + Enter` -> very userful when want to new line
-- Insert one line before: `Ctrl + Enter`
-- Delete/Cut line: `Ctrl + X`
-- To Uppercase: `Ctrl + KU`
-- To Lowercase: `Ctrl + KL`
-- Find: `Ctrl + F`
-- Replace: `Ctrl + H`
-- Indentation text: `Ctrl + [` or `Ctrl + ]` - very useful in markdown
-- Comment: `Ctrl + /` and you want uncomment use undo
-- Spell check: `F6`
-- New file: `Ctrl + N`
-- Open file: `Ctrl + O`
-- Undo: `Ctrl + Z`
-- Redo: `Ctrl + Y`
-- Column select: `Shift + Right mouse`
-- The Command Palette gives fast access to functionality. Here `Ctrl+Shift+P` is used to show the Command Palette, "sspy" (short for Set Syntax: Python) is used set the syntax of the current file to Python.
-- `Ctrl + Alt + j`: go to matching tag of emmet
+### Windows Key-map
+
+### Linux Key-map
 
 ## Search and Replace
 ### Single file
