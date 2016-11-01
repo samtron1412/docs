@@ -21,18 +21,6 @@
 8. [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
 9. [jQuery](https://packagecontrol.io/packages/jQuery)
 
-# Snippets
-`Tools -> New Snippet...`
-
-- Create new snippet for your definition.
-- Improve your code speed.
-- Add snippet manual or through package control.
-
-# Build system
-`Tools -> Build System -> New build system`
-
-- Create new build system of you to build. Example, PHP, coffee script.
-
 # Hiding folders or files in project, Workspace, Project
 `Project -> Save project as...` after that edit path, `folder_exclude_patterns`, `file_exclude_patterns`...
 
@@ -58,6 +46,18 @@ Happy coding!
 # Plugin
 
 # User guide
+## Snippets
+`Tools -> New Snippet...`
+
+- Create new snippet for your definition.
+- Improve your code speed.
+- Add snippet manual or through package control.
+
+## Build system
+`Tools -> Build System -> New build system`
+
+- Create new build system of you to build. Example, PHP, coffee script.
+
 ## General
 ### Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
