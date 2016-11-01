@@ -174,7 +174,7 @@ Happy coding!
 ## General
 ### Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
-largest projects. `Ctrl+P` shows Goto Anything, and typing then
+largest projects. `Ctrl+p` shows Goto Anything, and typing then
 filters on file and directory names.
 
 - Type part of a file name to open it.
