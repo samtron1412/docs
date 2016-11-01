@@ -4,6 +4,10 @@
 - [Docs unofficial](http://docs.sublimetext.info/en/latest/intro.html)
 - [TutsPlus](https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2)
 
+# Overview
+Sublime Text is a proprietary text editor with a Python application
+programming interface.
+
 # Sublime 3 Packages
 
 ## Git
