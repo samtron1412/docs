@@ -329,6 +329,9 @@ To provide the info necessary to help solve the issue, please generate a debug l
 `Project -> Save project as...` after that edit path,
 `folder_exclude_patterns`, `file_exclude_patterns`...
 
+# Troubleshooting
+
+
 # References
 [1]: http://www.sublimetext.com/ "Homepage"
 [2]: http://www.sublimetext.com/docs/3/ "Docs official"
