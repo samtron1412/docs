@@ -51,8 +51,6 @@ Best solution for this is recording a macro on Sublime Text and then assigning i
 9. Now, every time you hit `Command+;`, it will magically place the semicolon at the end of current line and move the cursor to the next line.
 Happy coding!
 
-# Plugin
-
 # User guide
 ## Snippets
 `Tools -> New Snippet...`
