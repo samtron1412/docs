@@ -1,9 +1,5 @@
 [TOC]
 
-- [Docs official](http://www.sublimetext.com/docs/3/)
-- [Docs unofficial](http://docs.sublimetext.info/en/latest/intro.html)
-- [TutsPlus](https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2)
-
 # Overview
 Sublime Text is a proprietary text editor with a Python application
 programming interface.
@@ -322,4 +318,11 @@ To provide the info necessary to help solve the issue, please generate a debug l
 ### Events
 
 ### Code
+
+
+# References
+[1]: http://www.sublimetext.com/ "Homepage"
+[2]: http://www.sublimetext.com/docs/3/ "Docs official"
+[3]: http://docs.sublimetext.info/en/latest/intro.html "Docs unofficial"
+[4]: https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2 "TutsPlus videos"
 
