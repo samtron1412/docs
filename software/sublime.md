@@ -15,8 +15,12 @@ programming interface.
 
 ## vi/vim Emulation
 
-# Sublime 3 Packages
+# Build system
+`Tools -> Build System -> New build system`
 
+- Create new build system of you to build. Example, PHP, coffee script.
+
+# Sublime 3 Packages
 ## Git
 - [SublimeGit](https://github.com/SublimeGit/SublimeGit)
 - [GitSavvy](https://github.com/divmain/GitSavvy)
@@ -59,10 +63,6 @@ Happy coding!
 - Improve your code speed.
 - Add snippet manual or through package control.
 
-## Build system
-`Tools -> Build System -> New build system`
-
-- Create new build system of you to build. Example, PHP, coffee script.
 
 ## General
 ### Goto Anything
@@ -197,7 +197,7 @@ Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `
 `Super+Shift+,` for decreasing and `Super+Shift+.` for increasing headline levels.
 
 # Tips and Tricks
-# Hiding folders or files in project, Workspace, Project
+## Hiding folders or files in project, Workspace, Project
 `Project -> Save project as...` after that edit path,
 `folder_exclude_patterns`, `file_exclude_patterns`...
 
