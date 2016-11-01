@@ -176,9 +176,25 @@ Happy coding!
 Use Goto Anything to quickly navigate between files, even in the
 largest projects. `Ctrl+P` shows Goto Anything, and typing then
 filters on file and directory names.
+
 - Type part of a file name to open it.
 - Type `@` to jump to symbols, `#` to search within the file, and `:` to
 go to a line number.
+
+### Multiple selections
+- Use Multiple Selections to rename variables quickly. Here `Ctrl+d` is
+used to select the next occurrence of the current word.
+- Make batch edits with Multiple Selections. Here `Ctrl+Shift+l` is used
+to split a selection into lines, and each line is then edited
+simultaneously.
+- Using with Vintageous:
+    + From Insert mode:
+        * Select by using the way of Sublime Text
+        * `Ctrl+Shift+l` and keep editing
+    + From Visual mode:
+        * Type `gh` to go to Select mode of Vintageous
+        * `Ctrl+Shift+l` to split the selection into lines
+        * Type `i` to go to Insert mode
 
 - Duplicate line: `Ctrl + Shift + D`
 - Quicker reference assert: `Ctrl + Shift + P` and type `Copy` to copy path, file name, etc.
