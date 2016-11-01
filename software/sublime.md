@@ -213,8 +213,6 @@ simultaneously.
 - Undo: `Ctrl + Z`
 - Redo: `Ctrl + Y`
 - Column select: `Shift + Right mouse`
-- Use Multiple Selections to rename variables quickly. Here `Ctrl+D` is used to select the next occurrence of the current word.
-- Make batch edits with Multiple Selections. Here `Ctrl+Shift+L` is used to split a selection into lines, and each line is then edited simultaneously.
 - The Command Palette gives fast access to functionality. Here `Ctrl+Shift+P` is used to show the Command Palette, "sspy" (short for Set Syntax: Python) is used set the syntax of the current file to Python.
 - `Ctrl + Alt + j`: go to matching tag of emmet
 
