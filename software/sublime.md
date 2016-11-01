@@ -4,6 +4,17 @@
 Sublime Text is a proprietary text editor with a Python application
 programming interface.
 
+# Basic Concepts
+## Glossary
+
+## The Data Directory
+
+## The Packages Directory
+
+## Sublime Text is Programmable
+
+## vi/vim Emulation
+
 # Sublime 3 Packages
 
 ## Git
