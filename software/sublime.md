@@ -15,12 +15,45 @@ programming interface.
 
 ## vi/vim Emulation
 
+# Editing
+### Multiple selections
+- Use Multiple Selections to rename variables quickly. Here `Ctrl+d` is
+used to select the next occurrence of the current word.
+- Make batch edits with Multiple Selections. Here `Ctrl+Shift+l` is used
+to split a selection into lines, and each line is then edited
+simultaneously.
+- Using with Vintageous:
+    + From Insert mode:
+        * Select by using the way of Sublime Text
+        * `Ctrl+Shift+l` and keep editing
+    + From Visual mode:
+        * Type `gh` to go to Select mode of Vintageous
+        * `Ctrl+Shift+l` to split the selection into lines
+        * Type `i` to go to Insert mode
+
+# Search and Replace
+
+# File Navigation and File Management
+## Goto Anything
+Use Goto Anything to quickly navigate between files, even in the
+largest projects. `Ctrl+p` shows Goto Anything, and typing then
+filters on file and directory names.
+
+- Type part of a file name to open it.
+- Type `@` to jump to symbols, `#` to search within the file, and `:` to
+go to a line number.
+
+
 # Build systems
 `Tools -> Build System -> New build system`
 
 - Create new build system of you to build. Example, PHP, coffee script.
 
-# Macro
+
+# Customization
+
+# Extensibility and Automation
+## Macro
 Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard shortcut. Follow these steps:
 
 1. Create a line such as `alert('hello')` and leave the cursor right after letter `o`.
@@ -39,7 +72,6 @@ Best solution for this is recording a macro on Sublime Text and then assigning i
 9. Now, every time you hit `Command+;`, it will magically place the semicolon at the end of current line and move the cursor to the next line.
 Happy coding!
 
-# User guide
 ## Snippets
 `Tools -> New Snippet...`
 
@@ -47,138 +79,9 @@ Happy coding!
 - Improve your code speed.
 - Add snippet manual or through package control.
 
+# Command Line
 
-## General
-### Goto Anything
-Use Goto Anything to quickly navigate between files, even in the
-largest projects. `Ctrl+p` shows Goto Anything, and typing then
-filters on file and directory names.
-
-- Type part of a file name to open it.
-- Type `@` to jump to symbols, `#` to search within the file, and `:` to
-go to a line number.
-
-### Multiple selections
-- Use Multiple Selections to rename variables quickly. Here `Ctrl+d` is
-used to select the next occurrence of the current word.
-- Make batch edits with Multiple Selections. Here `Ctrl+Shift+l` is used
-to split a selection into lines, and each line is then edited
-simultaneously.
-- Using with Vintageous:
-    + From Insert mode:
-        * Select by using the way of Sublime Text
-        * `Ctrl+Shift+l` and keep editing
-    + From Visual mode:
-        * Type `gh` to go to Select mode of Vintageous
-        * `Ctrl+Shift+l` to split the selection into lines
-        * Type `i` to go to Insert mode
-
-### Windows Key-map
-
-### Linux Key-map
-
-## Search and Replace
-### Single file
-- Search single file: `Ctrl + F`
-    + Toggle RegEx: `Alt + R`
-    + Toggle Case sensitivity: `Alt + C`
-    + Toggle Exact match: `Alt + W`
-    + Find next: `Enter`
-    + Find Previous: `Shift + Enter`
-    + Find All: `Alt + Enter`
-- Incremental search: `Ctrl + I`
-    + Find and select first result
-- Replace: `Ctrl + H`
-    + Replce next: `Ctrl + Shift + H`
-    + Replace all: `Ctrl + Alt + Enter`
-- Other way to search file:
-    + Go to anything and type `#` to search, or use `@` to search layout of file
-
-### Multiple files
-- Search multiple files: `Ctrl + Shift + F`
-    + Key binding same the single file
-- Search scope: `Where` field
-- Navigatinf result:
-    + Next match: `F4`
-    + Previous match: `Shift + F4`
-
-## Vintage mode
-- Exit Insert mode: `ESC/j j`
-- Visual mode:
-    + visual normal mode `command mode -> v`
-    + visual line mode `command mode -> V`
-
-### Inserting text
-
-- `i`   Insert before cursor
-- `I`   Insert before line
-- `a`   Append after cursor
-- `A`   Append after line
-- `o`   Open a new line after current line
-- `O`   Open a new line before current line
-- `r`   Replace one character
-- `R`   Replace many characters
-
-### Motion
-
-- `h`   Move left
-- `j`   Move down
-- `k`   Move up
-- `l`   Move right
-- `w`   Move to next word
-- `W`   Move to next blank delimited word
-- `b`   Move to the beginning of the word
-- `B`   Move to the beginning of blank delimted word
-- `e`   Move to the end of the word
-- `E`   Move to the end of Blank delimited word
-- `{`   Move a paragraph back
-- `}`   Move a paragraph forward
-- `0`   Move to the begining of the line
-- `$`   Move to the end of the line
-- `gg/1G`   Move to the first line of the file
-- `G`   Move to the last line of the file
-- `nG`  Move to nth line of the file
-- `H`   Move to top of screen
-- `M`   Move to middle of screen
-- `L`   Move to botton of screen
-- `%`   Move to associated ( ), { }, [ ]
-
-### Deleting text
-
-Almost all deletion commands are performed by typing d followed by a motion. For example, dw deletes a word. A few other deletes are:
-
-- `x`   Delete character to the right of cursor
-- `X`   Delete character to the left of cursor
-- `D`   Delete to the end of the line
-- `dd`  Delete current line
-
-### Yanking text
-
-Like deletion, almost all yank commands are performed by typing y followed by a motion. For example, y$ yanks to the end of the line. Two other yank commands are:
-
-- `yy`  Yank the current line
-
-### Putting text
-
-- `p`   Put after the position or after the line
-- `P`   Put before the position or before the line
-
-### Changing text
-
-The change command is a deletion command that leaves the editor in insert mode. It is performed by typing c followed by a motion. For example **cw** changes a word. A few other change commands are:
-
-- `C`   Change from the cursor to the end of the line
-- `cc`  Change the whole line
-
-### Others
-
-## SmartMarkdown
-### Move between headlines.
-Use `Ctrl+c Ctrl+n` to move to the next headline (any level); `Ctrl+c Ctrl+p` to the previous one, for Mac. (`Ctrl+; Ctrl+n` and `Ctrl+; Ctrl+p` for Windows and Linux)
-Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `Ctrl+c Ctrl+b` to the previous one, for Mac. (`Ctrl+; Ctrlf` and `Ctrl+; Ctrl+b` for Windows and Linux)
-
-### Adjust headline level Added by David Smith.
-`Super+Shift+,` for decreasing and `Super+Shift+.` for increasing headline levels.
+# Advanced Users
 
 # Package Control
 ## End Users
@@ -309,6 +212,84 @@ To provide the info necessary to help solve the issue, please generate a debug l
 
 
 # Sublime 3 Packages
+## SmartMarkdown
+### Move between headlines.
+Use `Ctrl+c Ctrl+n` to move to the next headline (any level); `Ctrl+c Ctrl+p` to the previous one, for Mac. (`Ctrl+; Ctrl+n` and `Ctrl+; Ctrl+p` for Windows and Linux)
+Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `Ctrl+c Ctrl+b` to the previous one, for Mac. (`Ctrl+; Ctrlf` and `Ctrl+; Ctrl+b` for Windows and Linux)
+
+### Adjust headline level Added by David Smith.
+`Super+Shift+,` for decreasing and `Super+Shift+.` for increasing headline levels.
+
+## Vintageous
+- Exit Insert mode: `ESC/j j`
+- Visual mode:
+    + visual normal mode `command mode -> v`
+    + visual line mode `command mode -> V`
+
+### Inserting text
+
+- `i`   Insert before cursor
+- `I`   Insert before line
+- `a`   Append after cursor
+- `A`   Append after line
+- `o`   Open a new line after current line
+- `O`   Open a new line before current line
+- `r`   Replace one character
+- `R`   Replace many characters
+
+### Motion
+
+- `h`   Move left
+- `j`   Move down
+- `k`   Move up
+- `l`   Move right
+- `w`   Move to next word
+- `W`   Move to next blank delimited word
+- `b`   Move to the beginning of the word
+- `B`   Move to the beginning of blank delimted word
+- `e`   Move to the end of the word
+- `E`   Move to the end of Blank delimited word
+- `{`   Move a paragraph back
+- `}`   Move a paragraph forward
+- `0`   Move to the begining of the line
+- `$`   Move to the end of the line
+- `gg/1G`   Move to the first line of the file
+- `G`   Move to the last line of the file
+- `nG`  Move to nth line of the file
+- `H`   Move to top of screen
+- `M`   Move to middle of screen
+- `L`   Move to botton of screen
+- `%`   Move to associated ( ), { }, [ ]
+
+### Deleting text
+
+Almost all deletion commands are performed by typing d followed by a motion. For example, dw deletes a word. A few other deletes are:
+
+- `x`   Delete character to the right of cursor
+- `X`   Delete character to the left of cursor
+- `D`   Delete to the end of the line
+- `dd`  Delete current line
+
+### Yanking text
+
+Like deletion, almost all yank commands are performed by typing y followed by a motion. For example, y$ yanks to the end of the line. Two other yank commands are:
+
+- `yy`  Yank the current line
+
+### Putting text
+
+- `p`   Put after the position or after the line
+- `P`   Put before the position or before the line
+
+### Changing text
+
+The change command is a deletion command that leaves the editor in insert mode. It is performed by typing c followed by a motion. For example **cw** changes a word. A few other change commands are:
+
+- `C`   Change from the cursor to the end of the line
+- `cc`  Change the whole line
+
+### Others
+
 ## Git
 - [SublimeGit](https://github.com/SublimeGit/SublimeGit)
 - [GitSavvy](https://github.com/divmain/GitSavvy)
