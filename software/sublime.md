@@ -39,8 +39,16 @@ macros, etc.
 `Packages/User`.
 
 ## Sublime Text is Programmable
-
-## vi/vim Emulation
+- Sublime Text enables users with programming skills to add their own
+features to the editor.
+- Sublime Text exposes its internals via an Application Programming
+Interface (API) that programmers can interact with using the Python
+programming language.
+- An embedded Python interpreter is included in the editor. The embedded
+interpreter is useful to inspect the editor's setting and to quickly
+test API calls while developing plugins.
+- Sublime Text and plugins output information to a console. To open the
+console, press **Ctrl+`**.
 
 # Editing
 ### Multiple selections
@@ -341,8 +349,8 @@ The change command is a deletion command that leaves the editor in insert mode. 
 
 
 # References
+
 [1]: http://www.sublimetext.com/ "Homepage"
 [2]: http://www.sublimetext.com/docs/3/ "Docs official"
 [3]: http://docs.sublimetext.info/en/latest/intro.html "Docs unofficial"
 [4]: https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2 "TutsPlus videos"
-
