@@ -30,6 +30,14 @@ here.
 - You can access the packages directory by means of an API cal
 `sublime.packages_path()`.
 
+## The User package
+- `Packages/User` is a catch-all directory for custom plugins, snippets,
+macros, etc.
+- Consider it your personal area in the packages folder.
+- It will contain most of your personal application or plugin settings.
+- Updates to Sublime Text will never overwrite the contents of
+`Packages/User`.
+
 ## Sublime Text is Programmable
 
 ## vi/vim Emulation
