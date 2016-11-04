@@ -52,11 +52,19 @@ console, press **Ctrl+`**.
 
 # Editing
 ### Multiple selections
-- Use Multiple Selections to rename variables quickly. Here `Ctrl+d` is
-used to select the next occurrence of the current word.
-- Make batch edits with Multiple Selections. Here `Ctrl+Shift+l` is used
-to split a selection into lines, and each line is then edited
-simultaneously.
+- Use Multiple Selections to rename variables quickly.
+    + Here `Ctrl+d` is used to select the next occurrence of the current
+    word.
+    + If you want to skip the current instance, press `Ctrl+k, Ctrl+d`.
+    + If you go too far, press `Ctrl+u` to deselect the current
+    instance.
+- Make batch edits with Multiple Selections.
+    + `Ctrl+l` expands the selections to the end of the line.
+    + Here `Ctrl+Shift+l` is used to split a selection into lines, and
+    each line is then edited simultaneously.
+    + You can copu multiple selected lines to a separate buffer, edit
+    them there, select the content again as multiple lines and then
+    paste them back in the first buffer.
 - Using with Vintageous:
     + From Insert mode:
         * Select by using the way of Sublime Text
