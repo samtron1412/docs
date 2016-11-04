@@ -51,7 +51,7 @@ test API calls while developing plugins.
 console, press **Ctrl+`**.
 
 # Editing
-### Multiple selections
+## Multiple selections
 - Use Multiple Selections to rename variables quickly.
     + Here `Ctrl+d` is used to select the next occurrence of the current
     word.
@@ -73,6 +73,12 @@ console, press **Ctrl+`**.
         * Type `gh` to go to Select mode of Vintageous
         * `Ctrl+Shift+l` to split the selection into lines
         * Type `i` to go to Insert mode
+
+## Column Selection
+- You can select a rectangular area of a file.
+
+| Linux   | `Alt+Shift+k` and `Alt+Shift+j` (k: up, j: down) |
+| Windows | `Ctrl+Alt+Up` and `Ctrl+Alt+Down`                |
 
 # Search and Replace
 
