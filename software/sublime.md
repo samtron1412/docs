@@ -17,6 +17,11 @@ programming interface.
 | file type | In the context of Sublime Text, file type refers to the type of file as determined by the applicable `.tmLanguage` syntax definition. However, this is an ambiguous term, and in some instances it could also be used with the broader meaning it has in technical texts.                                                                              |
 
 ## The Data Directory
+| Platform | Location                                       |
+| -        | -                                              |
+| Linux    | `~/.config/sublime-text-3`                     |
+| Windows  | `%APPDATA%\Sublime Text 3`                     |
+| OS X     | `~/Library/Application Support/Sublime Text 3` |
 
 ## The Packages Directory
 
