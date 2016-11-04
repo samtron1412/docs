@@ -24,6 +24,11 @@ programming interface.
 | OS X     | `~/Library/Application Support/Sublime Text 3` |
 
 ## The Packages Directory
+- This is a key directory located under the data directory. All
+resources for supported programming and markup languages are located
+here.
+- You can access the packages directory by means of an API cal
+`sublime.packages_path()`.
 
 ## Sublime Text is Programmable
 
