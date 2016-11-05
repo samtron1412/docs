@@ -144,6 +144,22 @@ library documentation for format strings][boost-format-strings-doc]
 `Ctrl+p` -> type something to specify the file -> `#` -> type something
 to search in the file.
 
+### Search-related key bindings
+
+These key bindings work when the search panel is hidden.
+
+| Action                                       | Shortcut |
+| -                                            | -        |
+| Search forward using most recent pattern     | f3       |
+| Search backward using most recent pattern   | Shift+f3 |
+| Select all matches using most recent pattern | Alt+f3   |
+
+These key bindings effect `f3` and `shift+f3` key bindings.
+
+| Search using current selection  | Ctrl+e       |
+| Replace using current selection | Ctrl+Shift+e |
+
+
 # File Navigation and File Management
 ## Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
