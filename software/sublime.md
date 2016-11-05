@@ -98,6 +98,14 @@ All available options can be found under Selection menu.
 
 # Search and Replace
 
+- Sublime Text uses the Perl Compatible Regular Expressions (PCRE)
+engine from the Boost library to power regular expressions in search
+panels. [Boost library documentation for regular expressions]
+[boost-regex-doc]
+- In search and replace box also supports special symbols called
+`format strings` that look similar to regular expressions. [Boost
+library documentation for format strings][boost-format-strings-doc]
+
 # File Navigation and File Management
 ## Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
@@ -384,3 +392,5 @@ The change command is a deletion command that leaves the editor in insert mode. 
 [2]: http://www.sublimetext.com/docs/3/ "Docs official"
 [3]: http://docs.sublimetext.info/en/latest/intro.html "Docs unofficial"
 [4]: https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2 "TutsPlus videos"
+[boost-regex-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html "Boost library documentation for regular expression"
+[boost-format-strings-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html "Boost library documentation for format strings"
