@@ -159,6 +159,10 @@ These key bindings effect `f3` and `shift+f3` key bindings.
 | Search using current selection  | Ctrl+e       |
 | Replace using current selection | Ctrl+Shift+e |
 
+### Multiline search
+
+You can type in multiline search patterns into search panels. To enter
+newline character, press `Ctrl+Enter`
 
 # File Navigation and File Management
 ## Goto Anything
