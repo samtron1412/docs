@@ -6,7 +6,6 @@ programming interface.
 
 # Basic Concepts
 ## Glossary
-| Term      | Description                                                                                                                                                                                                                                                                                                                                            |
 | -         | -                                                                                                                                                                                                                                                                                                                                                      |
 | buffer    | Data of a loaded file and additional metadata, associated with one or more views. The distinction between buffer and view is technical. Most of the time, both terms can be used interchangeably.                                                                                                                                                      |
 | view      | Graphical display of a buffer. Multiple views can show the same buffer                                                                                                                                                                                                                                                                                 |
@@ -75,10 +74,24 @@ console, press **Ctrl+`**.
         * Type `i` to go to Insert mode
 
 ## Column Selection
+
 - You can select a rectangular area of a file.
 
 | Linux   | `Alt+Shift+k` and `Alt+Shift+j` (k: up, j: down) |
 | Windows | `Ctrl+Alt+Up` and `Ctrl+Alt+Down`                |
+
+## Other Ways of Selecting Text
+
+All available options can be found under Selection menu.
+
+- Select subwords : `Alt+Shift+<arrow>`
+- Expand selecton to brackets: `Ctrl+Shift+m`
+- Expand selection to indentation: `Ctrl+Shift+j`
+- Expand selection to scope: `Ctrl+Shift+Space`
+
+## Transposing things
+- Put the cursor between two letters and use `Ctrl+t` to transpose them.
+- Select two areas (words, lines, phrases, etc.) and use `Ctrl+t`
 
 # Search and Replace
 
