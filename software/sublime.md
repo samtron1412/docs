@@ -50,6 +50,9 @@ test API calls while developing plugins.
 console, press **Ctrl+`**.
 
 # Editing
+The `Edit, Selection, Find and Goto` menus are good places to look for
+handy editing tools.
+
 ## Multiple selections
 - Use Multiple Selections to rename variables quickly.
     + Here `Ctrl+d` is used to select the next occurrence of the current
