@@ -131,6 +131,14 @@ library documentation for format strings][boost-format-strings-doc]
 | Find previous                 | Shift+Enter (it only has effect when the search panel is opened)                                                   |
 | Find all                      | Alt+Enter                                                                                                          |
 
+### Replacing text
+
+| Action             | Shortcut       |
+| -                  | -              |
+| Open replace panel | Ctrl+h         |
+| Replace next       | Ctrl+Shift+h   |
+| Replace all        | Ctrl+Alt+Enter |
+
 
 # File Navigation and File Management
 ## Goto Anything
