@@ -106,6 +106,19 @@ panels. [Boost library documentation for regular expressions]
 `format strings` that look similar to regular expressions. [Boost
 library documentation for format strings][boost-format-strings-doc]
 
+## Single File
+### General search
+
+| Action                     | Shortcut    |
+| -                          | -           |
+| Open search panel          | Ctrl+f      |
+| Toggle regular expressions | Alt+r       |
+| Toggle case sensitivity    | Alt+c       |
+| Toggle exact match         | Alt+w       |
+| Find next                  | Enter       |
+| Find previous              | Shift+Enter |
+| Find all                   | Alt+Enter   |
+
 # File Navigation and File Management
 ## Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
