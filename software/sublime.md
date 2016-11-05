@@ -119,6 +119,19 @@ library documentation for format strings][boost-format-strings-doc]
 | Find previous              | Shift+Enter |
 | Find all                   | Alt+Enter   |
 
+### Incremental Search
+
+| Action                        | Shortcut                                                                                                           |
+| -                             | -                                                                                                                  |
+| Open incremental search panel | Ctrl+i                                                                                                             |
+| Toggle regular expressions    | Alt+r                                                                                                              |
+| Toggle case sensitivity       | Alt+c                                                                                                              |
+| Toggle exact match            | Alt+w                                                                                                              |
+| Find next                     | Enter (select the next match in the file and dismiss the search panel, so you cannot use `Shift+Enter` after this) |
+| Find previous                 | Shift+Enter (it only has effect when the search panel is opened)                                                   |
+| Find all                      | Alt+Enter                                                                                                          |
+
+
 # File Navigation and File Management
 ## Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
