@@ -139,6 +139,10 @@ library documentation for format strings][boost-format-strings-doc]
 | Replace next       | Ctrl+Shift+h   |
 | Replace all        | Ctrl+Alt+Enter |
 
+### Goto Anything search
+
+`Ctrl+p` -> type something to specify the file -> `#` -> type something
+to search in the file.
 
 # File Navigation and File Management
 ## Goto Anything
