@@ -387,10 +387,10 @@ projects.
 - Using [Origami][origami-pkg] package to work with panes.
 
 # Build systems
-`Tools -> Build System -> New build system`
 
-- Create new build system of you to build. Example, PHP, coffee script.
-
+Build systems let you run your files through external programs like
+make, tidy, interpreters, etc without leaving Sublime Text, and see the
+output they generate.
 
 # Customization
 
