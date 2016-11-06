@@ -206,13 +206,20 @@ Navigating Results
 # File Navigation and File Management
 ## Goto Anything
 Use Goto Anything to quickly navigate between files, even in the
-largest projects. `Ctrl+p` shows Goto Anything, and typing then
-filters on file and directory names.
+largest projects.
 
-- Type part of a file name to open it.
-- Type `@` to jump to symbols, `#` to search within the file, and `:` to
-go to a line number.
+| Open Goto Anything                            | Ctrl+p      |
+| Pin current item and close Goto Anything      | Enter       |
+| Pin current item (do not close Goto Anything) | Right arrow |
+| Close Goto Anything                           | Esc         |
 
+- As you type into Goto Anything's input area, names of files in the
+current project will be searched, and a preview of the best match will
+be shown.
+- This preview is `transient`; that is, it won't become the actual
+active view until you perform some operation on it.
+- You will find transient views in other situations, for example, after
+clicking on a file in the sidebar.
 
 # Build systems
 `Tools -> Build System -> New build system`
