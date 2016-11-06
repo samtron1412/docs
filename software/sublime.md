@@ -204,7 +204,9 @@ Navigating Results
 | Open previous match | Shift+f4 |
 
 # File Navigation and File Management
+
 ## Goto Anything
+
 Use Goto Anything to quickly navigate between files, even in the
 largest projects.
 
@@ -220,6 +222,29 @@ be shown.
 active view until you perform some operation on it.
 - You will find transient views in other situations, for example, after
 clicking on a file in the sidebar.
+
+### Operators
+
+Goto Anything has several operators. All of them can be used on their
+own or after the search term. If you use it by their own, it will apply
+on the current view. If you use it after the search term, it will apply
+on the active item in the transient.
+
+- `@symbol`: searches the active file for the symbol named `symbol`.
+    + Symbols usually include class and function names.
+    + Symbol searches will only yield results if the active file type
+    has symbols defined for it.
+    + Symbol are defined in `.tmLanguage` files.
+    + For more information about symbols, see [Symbols](#symbols)
+- `#term`: performs a fuzzy search of the `term` search term and
+highlights all matches.
+- `:line_number`: goes to the specified `line_number`, or to the end of
+the file if `line_number` is larger than the file's line count.
+
+| Symbols | Key binding          |
+| @       | Ctrl+r               |
+| #       | Ctrl+, (not default) |
+| :       | Ctrl+g               |
 
 # Build systems
 `Tools -> Build System -> New build system`
@@ -259,6 +284,8 @@ Happy coding!
 # Command Line
 
 # Advanced Users
+
+## Symbols
 
 # Package Control
 ## End Users
