@@ -129,3 +129,12 @@ replay all commit of one branch to another branch and clean history of commit. c
 	+ byobu is a configuration platform build on top of GNU Screen and tmux. So GNU Screen and tmux are backend of byobu.
 
 [1]: http://superuser.com/questions/423310/byobu-vs-gnu-screen-vs-tmux-usefulness-and-transferability-of-skills "Byobu vs. GNU Screen vs. tmux -- usefulness and tranferability of skills"
+
+# directory vs folder
+
+- `folder`: is referring to a container of files, folders. It is a
+logical term. Using it to refer a place to store things. For example,
+Packages folder.
+- `directory`: refers to the way a structured list of document files and
+folders is stored on the computer. Using it when you see an absolute
+path. For example, `/usr/bin/` directory.
