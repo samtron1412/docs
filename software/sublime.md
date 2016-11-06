@@ -109,7 +109,7 @@ library documentation for format strings][boost-format-strings-doc]
 ## Single File
 ### General search
 
-| Action                     | Shortcut    |
+| Action                     | Key binding |
 | -                          | -           |
 | Open search panel          | Ctrl+f      |
 | Toggle regular expressions | Alt+r       |
@@ -121,7 +121,7 @@ library documentation for format strings][boost-format-strings-doc]
 
 ### Incremental Search
 
-| Action                        | Shortcut                                                                                                           |
+| Action                        | Key binding                                                                                                        |
 | -                             | -                                                                                                                  |
 | Open incremental search panel | Ctrl+i                                                                                                             |
 | Toggle regular expressions    | Alt+r                                                                                                              |
@@ -133,7 +133,7 @@ library documentation for format strings][boost-format-strings-doc]
 
 ### Replacing text
 
-| Action             | Shortcut       |
+| Action             | Key binding    |
 | -                  | -              |
 | Open replace panel | Ctrl+h         |
 | Replace next       | Ctrl+Shift+h   |
@@ -148,14 +148,16 @@ to search in the file.
 
 These key bindings work when the search panel is hidden.
 
-| Action                                       | Shortcut |
-| -                                            | -        |
-| Search forward using most recent pattern     | f3       |
-| Search backward using most recent pattern   | Shift+f3 |
-| Select all matches using most recent pattern | Alt+f3   |
+| Action                                       | Key binding |
+| -                                            | -           |
+| Search forward using most recent pattern     | f3          |
+| Search backward using most recent pattern    | Shift+f3    |
+| Select all matches using most recent pattern | Alt+f3      |
 
 These key bindings effect `f3` and `shift+f3` key bindings.
 
+| Action                          | Key binding  |
+| -                               | -            |
 | Search using current selection  | Ctrl+e       |
 | Replace using current selection | Ctrl+Shift+e |
 
@@ -198,10 +200,11 @@ filters in any order.
 
 Navigating Results
 
-| Next match          | f3       |
-| Previous match      | Shift+f3 |
-| Open next match     | f4       |
-| Open previous match | Shift+f4 |
+| Action              | Key binding |
+| Next match          | f3          |
+| Previous match      | Shift+f3    |
+| Open next match     | f4          |
+| Open previous match | Shift+f4    |
 
 # File Navigation and File Management
 
@@ -256,7 +259,7 @@ the file if `line_number` is larger than the file's line count.
 
 # Extensibility and Automation
 ## Macro
-Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard shortcut. Follow these steps:
+Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard key binding. Follow these steps:
 
 1. Create a line such as `alert('hello')` and leave the cursor right after letter `o`.
 2. Then go to Tools > Record a Macro to start recording.
@@ -265,7 +268,7 @@ Best solution for this is recording a macro on Sublime Text and then assigning i
 5. Stop recording the macro by going to Tools > Stop Recording Macro
 6. You can now test your macro by Tools > Playback Macro (optional)
 7. Save your macro by going to Tools > Save Macro (ex: EndOfLine.sublime-macro)
-8. Create a shortcut by adding this between the square brackets in your in your Preferences > Key Bindings - User file:
+8. Create a key binding by adding this between the square brackets in your in your Preferences > Key Bindings - User file:
 
         {
         "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/EndOfLine.sublime-macro"}
