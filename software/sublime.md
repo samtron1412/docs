@@ -1,11 +1,14 @@
 [TOC]
 
 # Overview
+
 Sublime Text is a proprietary text editor with a Python application
 programming interface.
 
 # Basic Concepts
 ## Glossary
+
+| Terms     | Description                                                                                                                                                                                                                                                                                                                                            |
 | -         | -                                                                                                                                                                                                                                                                                                                                                      |
 | buffer    | Data of a loaded file and additional metadata, associated with one or more views. The distinction between buffer and view is technical. Most of the time, both terms can be used interchangeably.                                                                                                                                                      |
 | view      | Graphical display of a buffer. Multiple views can show the same buffer                                                                                                                                                                                                                                                                                 |
@@ -80,6 +83,8 @@ handy editing tools.
 
 - You can select a rectangular area of a file.
 
+| OS      | Key binding                                      |
+| -       | -                                                |
 | Linux   | `Alt+Shift+k` and `Alt+Shift+j` (k: up, j: down) |
 | Windows | `Ctrl+Alt+Up` and `Ctrl+Alt+Down`                |
 
@@ -201,6 +206,7 @@ filters in any order.
 Navigating Results
 
 | Action              | Key binding |
+| -                   | -           |
 | Next match          | f3          |
 | Previous match      | Shift+f3    |
 | Open next match     | f4          |
@@ -213,6 +219,8 @@ Navigating Results
 Use Goto Anything to quickly navigate between files, even in the
 largest projects.
 
+| Action                                        | Key binding |
+| -                                             | -           |
 | Open Goto Anything                            | Ctrl+p      |
 | Pin current item and close Goto Anything      | Enter       |
 | Pin current item (do not close Goto Anything) | Right arrow |
