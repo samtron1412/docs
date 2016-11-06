@@ -369,6 +369,18 @@ Anything and Find in Files.
 - `folder_exclude_patterns/file_exclude_patterns`: these files will not
 show up in the side bar.
 
+### Workspaces
+
+- Workspaces can be seen as different views into the same project. For
+example, you may want to have only a few selected files open while
+working on some feature. Or perhaps you use a different pane layout when
+you're writing tests, etc. Workspaces help in these situations.
+- Workspaces behave very much like projects.
+- To create a new workspace: `Project -> New Workspace for Project`.
+- To save the active workspace: `Project -> Save Workplace As...`.
+- To switch between workspaces: `Ctrl+Alt+p`, exactly as you do with
+projects.
+
 # Build systems
 `Tools -> Build System -> New build system`
 
