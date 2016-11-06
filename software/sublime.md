@@ -257,6 +257,24 @@ the file if `line_number` is larger than the file's line count.
 | #       | Ctrl+, (not default) |
 | :       | Ctrl+g               |
 
+## Sidebar
+
+- The sidebar provides an overview of the active project.
+- Files and folders in the sidebar will be available in Goto Anything
+and project-wide actions like project-wide searches.
+
+| Action                         | Key binding    |
+| -                              | -              |
+| Toggle side bar                | Ctrl+k, Ctrl+b |
+| Give the focus to the side bar | Ctrl+0 (zero)  |
+| Return the focus to the view   | Esc            |
+| Navigate side bar              | Arrow keys     |
+
+Files opened from the sidebar create semi-transient views. Unlike
+transient views, semi-transient views show up as a new tab. When a new
+semi-transient view is opened, any other pre-existing semi-transient
+view in the same pane gets automatically closed.
+
 # Build systems
 `Tools -> Build System -> New build system`
 
