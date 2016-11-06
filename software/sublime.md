@@ -275,6 +275,26 @@ transient views, semi-transient views show up as a new tab. When a new
 semi-transient view is opened, any other pre-existing semi-transient
 view in the same pane gets automatically closed.
 
+## Projects
+
+- Project group sets of files and folders to keep your work organized.
+- There is always an active project. If you haven't created one, an
+implicit one is created by Sublime Text.
+- Projects in Sublime Text are made up of two files: the sublime-project
+file, `.sublime-project`, which contains the project definition, and the
+sublime-workspace file, `.sublime-workspace`, which contains user
+specific data, such as the open files and the modifications to each.
+- As a general rule, the sublime-project file would be checked into
+version control, while the sublime-workspace file would not, but always
+be mindful of what you store in them.
+- Projects can define settings applicable to that project only.
+- You can open a project from the command line by passing the
+`.sublime-project` file as an argument to the `subl` command line.
+- You can add and remove folders to/from a project using the **Project**
+menu or the sidebar's context menu.
+- To save a project, go to **Project** -> **Save Project As...**
+- You can switch projects by `Ctrl+Alt+p`
+
 # Build systems
 `Tools -> Build System -> New build system`
 
