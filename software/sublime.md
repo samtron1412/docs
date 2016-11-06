@@ -161,8 +161,47 @@ These key bindings effect `f3` and `shift+f3` key bindings.
 
 ### Multiline search
 
-You can type in multiline search patterns into search panels. To enter
+You can type in multiline searjch patterns into search panels. To enter
 newline character, press `Ctrl+Enter`
+
+## Multiple Files
+
+The search panel for searching multiple files is known as **Find in
+Files**
+
+### Searching
+
+| Action                     | Key bindings |
+| -                          | -            |
+| Open Find in Files         | Ctrl+Shift+f |
+| Toggle regular expressions | Alt+r        |
+| Toggle case sensitivity    | Alt+c        |
+| Toggle exact matches       | Alt+w        |
+| Searching                  | Enter        |
+
+### Search Filters
+
+The **Where** field in Find in Files limits the search scope.
+
+- Adding individual directories: `/home/abc/docs/`
+- Adding/excluding files based on wildcards: `*.md` or `-*.md`
+- Adding symbolic locations: `<open folders>`, `<open files>`,
+`<current file>`.
+
+It is also possible to combine filters using commas. You can combine
+filters in any order.
+
+### Results
+
+- Show in separate view (Use Buffer)
+- Show context
+
+Navigating Results
+
+| Next match          | f3       |
+| Previous match      | Shift+f3 |
+| Open next match     | f4       |
+| Open previous match | Shift+f4 |
 
 # File Navigation and File Management
 ## Goto Anything
