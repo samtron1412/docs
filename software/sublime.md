@@ -295,6 +295,80 @@ menu or the sidebar's context menu.
 - To save a project, go to **Project** -> **Save Project As...**
 - You can switch projects by `Ctrl+Alt+p`
 
+### The `.sublime-project` Format
+
+Project metadata in `.sublime-project` files is split across three top
+sections:
+
+- `folders`: for the included folders
+- `settings`: for project-specific settings
+- `build_systems`: for project-specific build systems
+
+```
+{
+    "folders":
+    [
+        {
+            "path": "src",
+            "folder_exclude_patterns": ["backup"]
+        },
+        {
+            "path": "docs",
+            "name": "Documentation",
+            "file_exclude_patterns": ["*.css"]
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 8
+    },
+    "build_systems":
+    [
+        {
+            "name": "List",
+            "cmd": ["ls"]
+        }
+    ]
+}
+```
+
+#### Folder options
+
+| Option                  | Description                                                                                    |
+| -                       | -                                                                                              |
+| path                    | Required. The path may be relative to the project directory,                                   |
+| name                    | Optional. If present, it will appear in the side bar                                           |
+| folder_exclude_patterns | Optional. List of wildcards. folders matching the wildcards will be excluded from the project. |
+| folder_include_patterns | Optional. List of wildcards. Folders matching the wildcards will be included in the project.   |
+| file_exclude_patterns   | Optional. List of wildcards. Files matching the wildcards will be excluded from the project.   |
+| file_include_patterns   | Optional. List of wildcards. File matching the wildcards will be included in the project.      |
+
+#### Settings
+
+- Project-specific settings override use settings, but not
+syntax-specific settings.
+    + Customization: [settings](#settings_1)
+    + Reference: [settings](#settings_2)
+
+#### Build Systems
+
+Build systems included in a `.sublime-project` file will show up in the
+`Tools -> Build Systems` menu. [Build Systems](#build-systems_1)
+
+### Other settings related to the sidebar and projects
+
+- `binary_file_patterns`: A list of wildcards. Files matching these
+wildcards will show up in the side bar, but will be excluded from Goto
+Anything and Find in Files.
+    + These files are not indexed
+    + Accept folder paths: `"binary_file_patterns": ["node_modules/"]`
+- `index_exclude_patterns`
+    + These files are not indexed
+    + Does not accept folder paths, only file paths:
+    `"index_exclude_patterns": ["*.log"]`
+- `folder_exclude_patterns/file_exclude_patterns`: these files will not
+show up in the side bar.
+
 # Build systems
 `Tools -> Build System -> New build system`
 
@@ -302,6 +376,9 @@ menu or the sidebar's context menu.
 
 
 # Customization
+
+## Settings
+
 
 # Extensibility and Automation
 ## Macro
@@ -333,6 +410,8 @@ Happy coding!
 # Command Line
 
 # Advanced Users
+
+## Settings
 
 ## Symbols
 
