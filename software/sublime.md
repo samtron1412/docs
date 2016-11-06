@@ -381,6 +381,11 @@ you're writing tests, etc. Workspaces help in these situations.
 - To switch between workspaces: `Ctrl+Alt+p`, exactly as you do with
 projects.
 
+### Panes
+
+- Panes are groups of views.
+- Using [Origami][origami-pkg] package to work with panes.
+
 # Build systems
 `Tools -> Build System -> New build system`
 
@@ -665,3 +670,4 @@ The change command is a deletion command that leaves the editor in insert mode. 
 [4]: https://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2 "TutsPlus videos"
 [boost-regex-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html "Boost library documentation for regular expression"
 [boost-format-strings-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html "Boost library documentation for format strings"
+[origami-pkg]: https://github.com/SublimeText/Origami "Sublime Text Origami"
