@@ -476,6 +476,16 @@ understand.
     + Only valid inside a variant.
     + Identifies a build system task.
 
+### Target command arguments
+
+- `target` setting will overrides the default `exec` command with any
+other command of your choice, a build system may contain any number of
+custom arguments that the new `target` command accepts.
+- Examples:
+    + [MarkdownBuildCommand][markdown-build-command]: `target:
+    "markdown_build"`
+    + [Golang sublime-build][golang-sublime-build]
+
 # Customization
 
 ## Settings
@@ -755,3 +765,5 @@ The change command is a deletion command that leaves the editor in insert mode. 
 [boost-regex-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html "Boost library documentation for regular expression"
 [boost-format-strings-doc]: http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html "Boost library documentation for format strings"
 [origami-pkg]: https://github.com/SublimeText/Origami "Sublime Text Origami"
+[markdown-build-command]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.py#L1259 "Implementation of markdown_build target"
+[golang-sublime-build]: https://github.com/golang/sublime-build "Golang Sublime Build system"
