@@ -501,6 +501,26 @@ custom arguments that the new `target` command accepts.
 }
 ```
 
+### Variants
+
+```
+{
+    "selector": "source.python",
+    "cmd": ["python2", "-u", "$file"],
+
+    "variants": [
+        { "name": "List Python Files",
+          "cmd": ["ls -l *.py"],
+          "shell": true
+        },
+
+        { "name": "Word Count (current file)",
+          "cmd": ["wc", "$file"]
+        },
+    ]
+}
+```
+
 # Customization
 
 ## Settings
