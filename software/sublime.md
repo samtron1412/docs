@@ -486,6 +486,21 @@ custom arguments that the new `target` command accepts.
     "markdown_build"`
     + [Golang sublime-build][golang-sublime-build]
 
+### Platform-specific options
+
+```
+{
+    "cmd": ["ant"],
+    "file_regex": "^ *\\[javac\\] (.+):([0-9]+):() (.*)$",
+    "working_dir": "${project_path:${folder}}",
+    "selector": "source.java",
+
+    "windows": {
+        "cmd": ["ant.bat"]
+    }
+}
+```
+
 # Customization
 
 ## Settings
