@@ -392,6 +392,51 @@ Build systems let you run your files through external programs like
 make, tidy, interpreters, etc without leaving Sublime Text, and see the
 output they generate.
 
+## Basics
+
+### Parts of a Build System
+
+- Simple build systems only require a `.sublime-build` file.
+- Advanced build systems consist of up to three parts:
+    + a `.sublime-build` file (configuration data in JSON format)
+    + optionally, a custom Sublime Text command (Python code) driving
+    the build process
+    + optionally, an external executable file (script or binary file)
+
+### File format of `.sublime-build` files
+
+| Format   | JSON (with comments)            |
+| -        | -                               |
+| Location | Any under the `Packages` folder |
+
+Each `.sublime-build` file is normally associated with a specific scope
+corresponding to a file type (for example, `source.python`)
+
+```
+{
+    "cmd": ["python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+```
+
+### Flow of a build system
+
+1. Run the build task (e.g. `Ctrl+b`)
+2. A Sublime Text command receives the configuration data specified in
+the `.sublime-build` file.
+3. This command then builds the files. Often, it calls an external
+program. By default, the command used in build systems is `exec`, but it
+can be overriden.
+
+### Overriding the default command for build systems
+
+- The `exec` command implemented by `Packages/Default/exec.py`. This
+command simply forwards configuration data to an external program and
+runs it asynchronously.
+- Using the `target` option in a `.build-system` file, it's possible to
+override the `exec` command.
+
 # Customization
 
 ## Settings
