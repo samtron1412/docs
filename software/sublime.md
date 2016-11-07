@@ -437,6 +437,45 @@ runs it asynchronously.
 - Using the `target` option in a `.build-system` file, it's possible to
 override the `exec` command.
 
+## Configuration
+
+You can implement your own build system mechanism in two main ways:
+
+1. As a custom `target` command (still using the default build system
+framework)
+2. As an entirely new plugin (skipping the build system framework)
+
+### **Meta Options** in Build systems
+
+This is a list of standard meta options that all build systems
+understand.
+
+- `target` (optional)
+    + a `WindowCommand`. Defaults to `exec`
+    (`Packages/Default/exec.py`). This command receives all the target
+    command arguments specified in the `.sublime-build` file (as
+    `**kwargs`)
+    + Used to override the default build system command. Note that if
+    you choose to override the default command for build systems, you
+    can add any number of extra options to the `.sublime-build` file.
+- `selector` (optional)
+    + Used when `Tools -> Build System -> Automatic` is set to `true`.
+    Sublime Text uses this scope selector to find the appropriate build
+    system for the active view.
+- `windows`, `osx` and `linux` (optional)
+    + Used to selectively apply options by OS. OS-specific values
+    override defaults. Each of the listed items accepts a dictionary of
+    options.
+- `variants` (optional)
+    + A list of dictionaries of options. Variant names will appear in
+    the Command Palette for easy access if the build system's selector
+    matches for the active view.
+    + Using variants, it's possible to specify multiple build system
+    tasks in the same `.sublime-build` file.
+- `name` (optional)
+    + Only valid inside a variant.
+    + Identifies a build system task.
+
 # Customization
 
 ## Settings
