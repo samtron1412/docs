@@ -4,6 +4,16 @@
 List of words.
 
 # Words
+## override vs overwrite
+
+- `Override`: to use your power or authority to change or cancel someone
+else's action or decision.
+- `Overwrite`: specifically refers to something being written over
+something previously written.
+
+In other words, **actions** and **decisions** are overriden.
+**Information** is overwritten.
+
 ## drawing vs painting
 ### Definitions of Drawing and Painting
 - Drawing: Drawing refers to producing a picture by making lines on
