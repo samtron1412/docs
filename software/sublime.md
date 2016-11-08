@@ -6,6 +6,7 @@ Sublime Text is a proprietary text editor with a Python application
 programming interface.
 
 # Basic Concepts
+
 ## Glossary
 
 | Terms     | Description                                                                                                                                                                                                                                                                                                                                            |
@@ -19,6 +20,7 @@ programming interface.
 | file type | In the context of Sublime Text, file type refers to the type of file as determined by the applicable `.tmLanguage` syntax definition. However, this is an ambiguous term, and in some instances it could also be used with the broader meaning it has in technical texts.                                                                              |
 
 ## The Data Directory
+
 | Platform | Location                                       |
 | -        | -                                              |
 | Linux    | `~/.config/sublime-text-3`                     |
@@ -26,6 +28,7 @@ programming interface.
 | OS X     | `~/Library/Application Support/Sublime Text 3` |
 
 ## The Packages Directory
+
 - This is a key directory located under the data directory. All
 resources for supported programming and markup languages are located
 here.
@@ -33,6 +36,7 @@ here.
 `sublime.packages_path()`.
 
 ## The User package
+
 - `Packages/User` is a catch-all directory for custom plugins, snippets,
 macros, etc.
 - Consider it your personal area in the packages folder.
@@ -41,6 +45,7 @@ macros, etc.
 `Packages/User`.
 
 ## Sublime Text is Programmable
+
 - Sublime Text enables users with programming skills to add their own
 features to the editor.
 - Sublime Text exposes its internals via an Application Programming
@@ -53,10 +58,12 @@ test API calls while developing plugins.
 console, press **Ctrl+`**.
 
 # Editing
+
 The `Edit, Selection, Find and Goto` menus are good places to look for
 handy editing tools.
 
 ## Multiple selections
+
 - Use Multiple Selections to rename variables quickly.
     + Here `Ctrl+d` is used to select the next occurrence of the current
     word.
@@ -98,6 +105,7 @@ All available options can be found under Selection menu.
 - Expand selection to scope: `Ctrl+Shift+Space`
 
 ## Transposing things
+
 - Put the cursor between two letters and use `Ctrl+t` to transpose them.
 - Select two areas (words, lines, phrases, etc.) and use `Ctrl+t`
 
@@ -112,6 +120,7 @@ panels. [Boost library documentation for regular expressions]
 library documentation for format strings][boost-format-strings-doc]
 
 ## Single File
+
 ### General search
 
 | Action                     | Key binding |
@@ -521,32 +530,45 @@ custom arguments that the new `target` command accepts.
 }
 ```
 
+### Capturing Build System Results
+
+
+
+
 # Customization
 
 ## Settings
 
 
 # Extensibility and Automation
-## Macro
-Best solution for this is recording a macro on Sublime Text and then assigning it to a keyboard key binding. Follow these steps:
 
-1. Create a line such as `alert('hello')` and leave the cursor right after letter `o`.
+## Macro
+
+Best solution for this is recording a macro on Sublime Text and then
+assigning it to a keyboard key binding. Follow these steps:
+
+1. Create a line such as `alert('hello')` and leave the cursor right
+   after letter `o`.
 2. Then go to Tools > Record a Macro to start recording.
 3. Press `alt+left` to go to the end of line.
 4. Press `;` and hit Enter
 5. Stop recording the macro by going to Tools > Stop Recording Macro
 6. You can now test your macro by Tools > Playback Macro (optional)
-7. Save your macro by going to Tools > Save Macro (ex: EndOfLine.sublime-macro)
-8. Create a key binding by adding this between the square brackets in your in your Preferences > Key Bindings - User file:
+7. Save your macro by going to Tools > Save Macro (ex: EndOfLine
+   .sublime-macro)
+8. Create a key binding by adding this between the square brackets in
+   your in your Preferences > Key Bindings - User file:
 
         {
         "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/EndOfLine.sublime-macro"}
         }
 
-9. Now, every time you hit `Command+;`, it will magically place the semicolon at the end of current line and move the cursor to the next line.
-Happy coding!
+9. Now, every time you hit `Command+;`, it will magically place the
+   semicolon at the end of current line and move the cursor to the next
+   line. Happy coding!
 
 ## Snippets
+
 `Tools -> New Snippet...`
 
 - Create new snippet for your definition.
@@ -562,61 +584,122 @@ Happy coding!
 ## Symbols
 
 # Package Control
+
 ## End Users
+
 ### Usage
+
 - Install Package
     + show a list of all available packages at default channel.
 - Add Repository
-    + add a repository that is not included in the default channel. This allows users to install and automatically update packages from GitHub and BitBucket.
-    + To add a package hosted on GitHub, enter the URL in the form `https://github.com/username/repo`. Don’t include .git at the end! BitBucket repositories should use the format `https://bitbucket.org/username/repository`.
+    + add a repository that is not included in the default channel. This
+      allows users to install and automatically update packages from
+      GitHub and BitBucket.
+    + To add a package hosted on GitHub, enter the URL in the form
+      `https://github.com/username/repo`. Don’t include .git at the end!
+      BitBucket repositories should use the format
+      `https://bitbucket.org/username/repository`.
 - Remove Package
-    + This command will remove the package folder, and the package name from the `installed_packages` list in `Packages/User/Package Control.sublime-settings`.
-    + The `installed_packages` list allow Package Control to automatically install packages for you if you copy your `Package/User/` folder to other machine.
+    + This command will remove the package folder, and the package name
+      from the `installed_packages` list in `Packages/User/Package
+      Control.sublime-settings`.
+    + The `installed_packages` list allow Package Control to
+      automatically install packages for you if you copy your
+      `Package/User/` folder to other machine.
 - Add channel
 - Create Package File
     + For package developers.
-    + Takes a package folder and generates a `.sublime-package` file that can be uploaded onto the web and referenced in the `packages.json` file for a repository.
+    + Takes a package folder and generates a `.sublime-package` file
+      that can be uploaded onto the web and referenced in the
+      `packages.json` file for a repository.
 - Create Binary Package File
     + For package developers.
-    + Creates a `.sublime-package` file that does not include the source `.py` files, but instead the `.pyc` bytecode files. This is useful to distribute commercial packages. Be sure to check the resulting `.sublime-package` file to ensure that at least one `.py` file is included so that Sublime Text will load the package.
+    + Creates a `.sublime-package` file that does not include the source
+      `.py` files, but instead the `.pyc` bytecode files. This is useful
+      to distribute commercial packages. Be sure to check the resulting
+      `.sublime-package` file to ensure that at least one `.py` file is
+      included so that Sublime Text will load the package.
 - Disable Package
 - Discover Package
     + Opens up a web browser to browse
 - Enable Package
     + Re-enables a package that has been disabled.
 - Upgrade/Overwrite All Packages
-    + This will upgrade ALL Packages, including ones that were not installed via Package Control.
-    + If you are developing a custom copy of a package, you may not want to use this command.
+    + This will upgrade ALL Packages, including ones that were not
+      installed via Package Control.
+    + If you are developing a custom copy of a package, you may not want
+      to use this command.
 - Upgrade Package
 
 ### Settings
-The default settings can be viewed by accessing the `Preferences > Package Settings > Package Control > Settings – Default` menu. To ensure settings are not lost when the package is upgraded, make sure all edits are saved to `Settings – User`.
+
+The default settings can be viewed by accessing the `Preferences >
+Package Settings > Package Control > Settings – Default` menu. To ensure
+settings are not lost when the package is upgraded, make sure all edits
+are saved to `Settings – User`.
 
 [References](https://packagecontrol.io/docs/settings)
 
 ### Customizing Packages
+
 #### Packed vs Unpacked
-Sublime Text 3 by default, packages will be installed by placing a .sublime-package file in the `Install Packages/` folder. Then users may override individual files in the package by creating a folder `Packages/{Package Name}/` and placing edited files in there.
+
+Sublime Text 3 by default, packages will be installed by placing a
+.sublime-package file in the `Install Packages/` folder. Then users may
+override individual files in the package by creating a folder
+`Packages/{Package Name}/` and placing edited files in there.
 
 #### Editing Unpacked Files
-Editing an unpacked package's files is not a good idea unless you've cloned the package via `Git/Hg`. This is because, by default, Package Control will automatically upgrade packages to the newest version. This will cause any edits to files to be **overwritten**. If you experience this, you may wish to check out the **Backups** section to learn how to recover your customized version of a file.
+
+Editing an unpacked package's files is not a good idea unless you've
+cloned the package via `Git/Hg`. This is because, by default, Package
+Control will automatically upgrade packages to the newest version. This
+will cause any edits to files to be **overwritten**. If you experience
+this, you may wish to check out the **Backups** section to learn how to
+recover your customized version of a file.
 
 - User Package
-    + The `Packages/User/` folder is the User package. It is unique in that it is loaded **last** by Sublime Text.
-    + This allows users to place changes to `.sublime-settings` and `.sublime-keymap` files in this folder.
-    + Sublime Text loads these files by name. Thus if a package has a file named `Package Control.sublime-settings` in the package, a file with the same name in the User package will override any of the settings in the original file. The same is true for key bindings.
+    + The `Packages/User/` folder is the User package. It is unique in
+      that it is loaded **last** by Sublime Text.
+    + This allows users to place changes to `.sublime-settings` and
+      `.sublime-keymap` files in this folder.
+    + Sublime Text loads these files by name. Thus if a package has a
+      file named `Package Control.sublime-settings` in the package, a
+      file with the same name in the User package will override any of
+      the settings in the original file. The same is true for key
+      bindings.
 - Overrides
-    + If a package for Sublime Text 3 is installed as a **packed package**, it should be possible to directly override **individual non-python files**. To do this, create a `Packages/{Package Name}/` folder and save customized versions of the files with **the same name they are in the .sublime-package file**.
+    + If a package for Sublime Text 3 is installed as a **packed
+      package**, it should be possible to directly override **individual
+      non-python files**. To do this, create a `Packages/{Package
+      Name}/` folder and save customized versions of the files with
+      **the same name they are in the .sublime-package file**.
 - Git/Hg clone
-    + For complete customization of a package, it will likely be necessary to using a version control program, such as Git or Hg to clone a copy of the original package repository into the `Packages/` folder.
-    + The best way to make customizations would be to **fork the original repository and clone your fork of it**. If you think your customizations could be useful to others, consider sending a pull request to have your changes merged into the original version.
-    + If you've cloned it from your own fork of the repository, no settings need to be changed. If you clone it from the original repository, you will likely want to set the `ignore_vcs_packages` setting.
+    + For complete customization of a package, it will likely be
+      necessary to using a version control program, such as Git or Hg to
+      clone a copy of the original package repository into the
+      `Packages/` folder.
+    + The best way to make customizations would be to **fork the
+      original repository and clone your fork of it**. If you think your
+      customizations could be useful to others, consider sending a pull
+      request to have your changes merged into the original version.
+    + If you've cloned it from your own fork of the repository, no
+      settings need to be changed. If you clone it from the original
+      repository, you will likely want to set the `ignore_vcs_packages`
+      setting.
 - Backups
-    + If you do ever find yourself in a situation where your edits to a package were overwritten by Package Control, you can find a backup copy in the `Backup/` folder. This folder can be located by selecting the `Preferences > Browse Packages…` menu and then browsing up a folder. Backups are stored in timestamped folders.
-
+    + If you do ever find yourself in a situation where your edits to a
+      package were overwritten by Package Control, you can find a backup
+      copy in the `Backup/` folder. This folder can be located by
+      selecting the `Preferences > Browse Packages…` menu and then
+      browsing up a folder. Backups are stored in timestamped folders.
 
 ### Syncing
-You should use Git or Dropbox like service to syncing `Packages/User/` folder. When you go to new machine let override this `User` folder and start Sublime with Package Control will reinstall all package for you and all configuration of Sublime also applied.
+
+You should use Git or Dropbox like service to syncing `Packages/User/`
+folder. When you go to new machine let override this `User` folder and
+start Sublime with Package Control will reinstall all package for you
+and all configuration of Sublime also applied.
 
 When use Git you should ignore some things:
 - Package Control.last-run
@@ -628,12 +711,17 @@ When use Git you should ignore some things:
 - etc. change frequently
 
 #### Windows
-- Make soft link to `User` directory: `cmd /c mklink /D User $env:userprofile\path\to\User`
+
+- Make soft link to `User` directory: `cmd /c mklink /D User
+  $env:userprofile\path\to\User`
 
 ### Troubleshooting
+
 #### Purging and Reinstalling
+
 1. Select the `Preferences > Settings – User` menu entry
-2. Remove `"Package Control"` from the `"ignored_packages"` setting, if present
+2. Remove `"Package Control"` from the `"ignored_packages"` setting, if
+   present
 3. Select the `Preferences > Browse Packages…` menu entry
 4. Delete the folder named `Package Control`
 5. Browse up a folder and then into `Installed Packages`
@@ -641,7 +729,10 @@ When use Git you should ignore some things:
 7. Reinstall Package Control using the [installation instructions](https://packagecontrol.io/installation)
 
 #### Enabling Debug Log
-The debug log contains extensive information about what Package Control is doing behind the scenes, and can help to diagnose why it isn't working properly.
+
+The debug log contains extensive information about what Package Control
+is doing behind the scenes, and can help to diagnose why it isn't
+working properly.
 
 1. Click the `Preferences` menu
 2. Select `Package Settings`
@@ -650,19 +741,32 @@ The debug log contains extensive information about what Package Control is doing
 5. Add the setting `"debug": true`
 6. Save the settings file
 
-Now when performing actions with Package Control, debug information will be printed to the Sublime Text console. The console can be opened by pressing **ctrl+`** or using the View > Show Console menu entry.
+Now when performing actions with Package Control, debug information will
+be printed to the Sublime Text console. The console can be opened by
+pressing **ctrl+`** or using the View > Show Console menu entry.
 
 ### Issues
-Are you having trouble using Package Control? Before opening an issue, please take the time to perform the following few steps. Properly following directions will improve the likelyhood of your issue be quickly resolved.
 
-1. Check to make sure you are using the latest version of Package Control: run the Package Control: List Packages command from the command palette
-2. Look at the Sublime Text Console **ctrl+`** to see if any python errors are listed
-3. Review the list of open GitHub issues to see if the problem you are experiencing has been reported
-4. Please do not comment on a Closed issue, but feel free to reference it from a new one
+Are you having trouble using Package Control? Before opening an issue,
+please take the time to perform the following few steps. Properly
+following directions will improve the likelyhood of your issue be
+quickly resolved.
 
-To provide the info necessary to help solve the issue, please generate a debug log. To do this:
+1. Check to make sure you are using the latest version of Package
+   Control: run the Package Control: List Packages command from the
+   command palette
+2. Look at the Sublime Text Console **ctrl+`** to see if any python
+   errors are listed
+3. Review the list of open GitHub issues to see if the problem you are
+   experiencing has been reported
+4. Please do not comment on a Closed issue, but feel free to reference
+   it from a new one
 
-1. Open `Preferences > Package Settings > Package Control > Settings - User`
+To provide the info necessary to help solve the issue, please generate a
+debug log. To do this:
+
+1. Open `Preferences > Package Settings > Package Control > Settings -
+   User`
 2. Add "debug": true to enable the debug log
 3. Restart Sublime Text
 4. Perform the command or operation you are having trouble with
@@ -672,6 +776,7 @@ To provide the info necessary to help solve the issue, please generate a debug l
 [Open issues on GitHub](https://github.com/wbond/package_control/issues?state=open)
 
 ## [Package Developers](https://packagecontrol.io/docs#Package_Developers)
+
 ### Submitting a Package
 
 ### Messaging
@@ -690,15 +795,25 @@ To provide the info necessary to help solve the issue, please generate a debug l
 
 
 # Sublime 3 Packages
+
 ## SmartMarkdown
+
 ### Move between headlines.
-Use `Ctrl+c Ctrl+n` to move to the next headline (any level); `Ctrl+c Ctrl+p` to the previous one, for Mac. (`Ctrl+; Ctrl+n` and `Ctrl+; Ctrl+p` for Windows and Linux)
-Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `Ctrl+c Ctrl+b` to the previous one, for Mac. (`Ctrl+; Ctrlf` and `Ctrl+; Ctrl+b` for Windows and Linux)
+
+- Use `Ctrl+c Ctrl+n` to move to the next headline (any level); `Ctrl+c
+  Ctrl+p` to the previous one, for Mac. (`Ctrl+; Ctrl+n` and `Ctrl+;
+  Ctrl+p` for Windows and Linux)
+- Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher
+  level); `Ctrl+c Ctrl+b` to the previous one, for Mac. (`Ctrl+; Ctrlf`
+  and `Ctrl+; Ctrl+b` for Windows and Linux)
 
 ### Adjust headline level Added by David Smith.
-`Super+Shift+,` for decreasing and `Super+Shift+.` for increasing headline levels.
+
+`Super+Shift+,` for decreasing and `Super+Shift+.` for increasing
+headline levels.
 
 ## Vintageous
+
 - Exit Insert mode: `ESC/j j`
 - Visual mode:
     + visual normal mode `command mode -> v`
@@ -741,7 +856,8 @@ Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level); `
 
 ### Deleting text
 
-Almost all deletion commands are performed by typing d followed by a motion. For example, dw deletes a word. A few other deletes are:
+Almost all deletion commands are performed by typing d followed by a
+motion. For example, dw deletes a word. A few other deletes are:
 
 - `x`   Delete character to the right of cursor
 - `X`   Delete character to the left of cursor
@@ -750,7 +866,9 @@ Almost all deletion commands are performed by typing d followed by a motion. For
 
 ### Yanking text
 
-Like deletion, almost all yank commands are performed by typing y followed by a motion. For example, y$ yanks to the end of the line. Two other yank commands are:
+Like deletion, almost all yank commands are performed by typing y
+followed by a motion. For example, y$ yanks to the end of the line. Two
+other yank commands are:
 
 - `yy`  Yank the current line
 
@@ -761,7 +879,9 @@ Like deletion, almost all yank commands are performed by typing y followed by a 
 
 ### Changing text
 
-The change command is a deletion command that leaves the editor in insert mode. It is performed by typing c followed by a motion. For example **cw** changes a word. A few other change commands are:
+The change command is a deletion command that leaves the editor in
+insert mode. It is performed by typing c followed by a motion. For
+example **cw** changes a word. A few other change commands are:
 
 - `C`   Change from the cursor to the end of the line
 - `cc`  Change the whole line
@@ -769,10 +889,12 @@ The change command is a deletion command that leaves the editor in insert mode. 
 ### Others
 
 ## Git
+
 - [SublimeGit](https://github.com/SublimeGit/SublimeGit)
 - [GitSavvy](https://github.com/divmain/GitSavvy)
 
 ## Packages for JavaScript programming
+
 1. [Babel](https://packagecontrol.io/packages/Babel)
 2. [JsHint](https://packagecontrol.io/packages/JSHint)
 3. [JsFormat](https://packagecontrol.io/packages/JsFormat)
@@ -784,7 +906,9 @@ The change command is a deletion command that leaves the editor in insert mode. 
 9. [jQuery](https://packagecontrol.io/packages/jQuery)
 
 # Tips and Tricks
+
 ## Hiding folders or files in project, Workspace, Project
+
 `Project -> Save project as...` after that edit path,
 `folder_exclude_patterns`, `file_exclude_patterns`...
 
