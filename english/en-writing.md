@@ -8,6 +8,8 @@ How to write and the right way to write.
 
 ## An Introduction to Writing
 
+### What?
+
 Writing consists basically of making a point and then providing evidence
 to support or develop that point.
 + What is your point?
@@ -20,6 +22,8 @@ Four basic principles:
 4. **Sentence Skills**: revise and edit so that your sentences are
    effective and error-free.
 
+### Why?
+
 Benefits of Paragraph Writing
 - Mastering the structure of paragraphs will make me a better writer.
 - Writing paragraphs strengthens my skills as a reader and listener.
@@ -31,7 +35,7 @@ Benefits of Paragraph Writing
 
 When I write for others, it is crucial to know both my purpose for
 writing and the audience who will be reading my work.
-- Purpose
+- Purpose (Why?)
     + To **inform**: to give information about a subject. Authors
       writing to inform want to provide facts that will explain or teach
       something to readers. For example, an informative paragraph about
@@ -50,18 +54,21 @@ writing and the audience who will be reading my work.
       about sandwiches might begin, "What I wanted was a midnight snack,
       but what I got was better - the biggest, most magical sandwich in
       the entire world."
-- Audience
+- Audience (Who?)
+    + Why might the reader need or want to read this material?
     + How much does the audience already know about the subject?
+    (required knowledge)
         * If I assume that my readers know very little, I might bore
           them with too much basic information. But, if I assume that
           they know more than they do, you might confuse them by using
           unfamiliar technical terminology or neglecting to provide
           enough informative detail.
-    + Why might the reader need or want to read this material?
     + Is my purpose simply to inform the audience? Or is it to convince
       readers of something as well?
     + What type of language should be used? relaxed, friendly, and
       informal or more formal.
+
+### How?
 
 Writing as a skill, competent writing comes only from plain hard work -
 determination and sweat.
@@ -77,15 +84,9 @@ Keeping a daily or almost daily Journal
 - A journal can make writing a familiar part of my life and can serve as
   a continuing source of ideas for papers.
 
-## The four bases and the Writing Process
+## The four bases and the Writing Process (How?)
 
-1. Discovering a point - often through prewriting.
-2. Developing solid support for the point - often through more
-   prewriting.
-3. organizing the supporting material and writing it out in a first
-   draft.
-4. Revising and then editing carefully to ensure an effective, error-
-   free paper.
+### Goals
 
 1. If you make one point and stick to that point, your writing will have
    unity.
@@ -95,6 +96,17 @@ Keeping a daily or almost daily Journal
    have coherence.
 4. If you write clear, error-free sentences, your writing will
    demonstrate effective sentence skills.
+
+### Process
+
+1. Discovering a point - often through prewriting.
+2. Developing solid support for the point - often through more
+   prewriting.
+3. organizing the supporting material and writing it out in a first
+   draft.
+4. Revising and then editing carefully to ensure an effective, error-
+   free paper.
+
 
 ### Prewriting
 
