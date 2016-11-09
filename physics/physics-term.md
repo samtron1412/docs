@@ -23,3 +23,11 @@ Instantaneous velocity is velocity of an object at a particular time. To estimat
 
 # Acceleration
 Acceleration is a vector quantity that is defined as the rate at which an object changes its velocity. An object is accelerating if it is changing its velocity.
+
+# Momentum
+
+- Linear momentum (động lượng)
+- Impulse (xung lượng)
+- Angular momentum (mô men động lượng)
+- Rotational inertia (mô men quán tính)
+- Torque (mô men lực)
