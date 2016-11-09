@@ -532,8 +532,25 @@ custom arguments that the new `target` command accepts.
 
 ### Capturing Build System Results
 
+When build systems output text to a results view, it's possible to
+capture results data in order to enable result navigation.
 
+- `result_file_regex`: A Perl-style regular expression to capture up to
+four fields of error information from a results view.
+    + namely; **filename**, **line number**, **columns number** and
+      **error message**.
+    + Use groups in the pattern to capture this information.
+    + The **filename** filed and the **line number** field are required.
+-`result_line_regex`: If `result_file_regex` doesn't match but
+`result_line_regex` exists and does match on the current line, walk
+backwards through the buffer until a line matching `result_file_regex`
+is found, and use the two matches to determine the file and line to go
+to.
+- `result_base_dir`: Used to find files where results occur.
 
+When result data is captured, you can navigate to results in your
+project's files with `f4` and `shift+f4`. If available, the captured
+error message will be displayed in the status bar.
 
 # Customization
 
