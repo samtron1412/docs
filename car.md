@@ -1,9 +1,7 @@
 [TOC]
 
 # Overview
-- V engine
-- Super car
-- Bugatti Veyron Super Sport, Hennessey Venom GT: [fastest car](http://www.digitaltrends.com/cars/fastest-cars-in-the-world-photo-gallery/)
+
 
 # Body and main parts
 ## Doors
@@ -100,3 +98,4 @@ How to jump start a car:
 1. [Wikipedia - Connected car][1]
 
 [1]: https://en.wikipedia.org/wiki/Connected_car "Wikipedia - Connected car"
+[2]: https://en.wikipedia.org/wiki/Car "Wikipedia - Car"
