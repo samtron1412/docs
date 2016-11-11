@@ -99,3 +99,6 @@ How to jump start a car:
 
 [1]: https://en.wikipedia.org/wiki/Connected_car "Wikipedia - Connected car"
 [2]: https://en.wikipedia.org/wiki/Car "Wikipedia - Car"
+[3]: https://en.wikipedia.org/wiki/Vehicle_frame "Wikipedia - Vehicle frame"
+[4]: https://en.wikipedia.org/wiki/Karl_Benz "Wikipedia - Karl Benz (modern car inventor)"
+[5]: https://www.obd-codes.com "OBD codes"
