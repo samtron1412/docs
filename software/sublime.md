@@ -559,6 +559,25 @@ When result data is captured, you can navigate to results in your
 project's files with `f4` and `shift+f4`. If available, the captured
 error message will be displayed in the status bar.
 
+### Build System Variables
+
+Build system expand the following variables in `.sublime-build` files
+(apply only to `cmd`, `shell_cmd`, and `working_dir`):
+
+| `$file_path`         | The directory of the current file, e.g., C:\Files              |
+| -                    | -                                                              |
+| `$file`              | The full path to the current file, e.g., C:\Files\Chapter1.txt |
+| `$file_name`         | The name portion of the current file, e.g., Chapter1.txt       |
+| `$file_extension`    | e.g., txt                                                      |
+| `$file_base_name`    | Name of file category, e.g., Document                          |
+| `$folder`            | The path to the first folder opened in the current project     |
+| `$project`           | The full path to the current project file.                     |
+| `$project_path`      | The directory of the current project file                      |
+| `$project_name`      |                                                                |
+| `$project_extension` |                                                                |
+| `$project_base_name` |                                                                |
+| `$packages`          | The full path to the Packages folder.                          |
+
 # Customization
 
 ## Settings
