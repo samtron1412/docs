@@ -950,3 +950,4 @@ example **cw** changes a word. A few other change commands are:
 [origami-pkg]: https://github.com/SublimeText/Origami "Sublime Text Origami"
 [markdown-build-command]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.py#L1259 "Implementation of markdown_build target"
 [golang-sublime-build]: https://github.com/golang/sublime-build "Golang Sublime Build system"
+[sublime-packages-source]: https://github.com/sublimehq/Packages "Sublime Text Packages Source Code"
