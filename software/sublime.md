@@ -588,6 +588,13 @@ there is one, otherwise return `Default`.
 - `${file/\.php/\.txt/}`: return full path of the current file and
 replacing .php with .txt
 
+### Running build systems
+
+| `Ctrl+b`       | Run build task            |
+| -              | -                         |
+| `Ctrl+Shift+b` | Show select build systems |
+| `f7`           | Cancel running build task |
+
 # Customization
 
 ## Settings
