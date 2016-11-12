@@ -535,6 +535,9 @@ custom arguments that the new `target` command accepts.
 When build systems output text to a results view, it's possible to
 capture results data in order to enable result navigation.
 
+Set the following view settings in a result view if you want to enable
+results navigation:
+
 - `result_file_regex`: A Perl-style regular expression to capture up to
 four fields of error information from a results view.
     + namely; **filename**, **line number**, **columns number** and
@@ -547,6 +550,10 @@ backwards through the buffer until a line matching `result_file_regex`
 is found, and use the two matches to determine the file and line to go
 to.
 - `result_base_dir`: Used to find files where results occur.
+
+In `exec` command the value of `file_regex`, `line_regex`, `working_dir`
+will set for `result_file_regex`, `result_line_regex`, and
+`result_base_dir`.
 
 When result data is captured, you can navigate to results in your
 project's files with `f4` and `shift+f4`. If available, the captured
