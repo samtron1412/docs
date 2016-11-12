@@ -578,6 +578,16 @@ Build system expand the following variables in `.sublime-build` files
 | `$project_base_name` |                                                                |
 | `$packages`          | The full path to the Packages folder.                          |
 
+### Placeholders for variables
+
+Features in [Snippets](#snippets) section can be used with build system
+variables. For example:
+
+- `${project_name:Default`: return the name of the current project if
+there is one, otherwise return `Default`.
+- `${file/\.php/\.txt/}`: return full path of the current file and
+replacing .php with .txt
+
 # Customization
 
 ## Settings
