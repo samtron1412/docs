@@ -2,7 +2,7 @@
 
 # Overview
 
-How to write and the right way to write.
+How to write and the right way to communicate by writing.
 
 # Fundamentals of Effective Writings
 
