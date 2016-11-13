@@ -1,6 +1,9 @@
 [TOC]
 
 # Overview
+Slang consists of a lexicon of non-standard words and phrases in a given
+language. It is used by people who belong to a particular group, such as
+young people or criminals.
 
 # NSFW
 Not safe/suitable for work (NSFW) is Internet slang or shorthand.
