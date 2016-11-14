@@ -62,6 +62,10 @@ writing and the audience who will be reading my work.
         * Create a story that conveys an important theme about
           environmental conservation.
 - Audience (Who?)
+    + Is the audience an individual or a group? Is the group specific or
+      general?
+    + What are the demographic features (age, gender, socioeconomic
+      status, religion, politics, education, etc.) of the audience?
     + Why might the reader need or want to read this material?
     + How much does the audience already know about the subject?
     (required knowledge)
