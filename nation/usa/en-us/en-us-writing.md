@@ -95,6 +95,21 @@ Keeping a daily or almost daily Journal
 - A journal can make writing a familiar part of my life and can serve as
   a continuing source of ideas for papers.
 
+Metadata in the beginning of the article:
+
+```
+/**
+ * Metadata
+ * --
+ * Language: en-us
+ * Characters: 13000
+ * Time: 5 minutes
+ * Purpose: to inform
+ * Audience: UNIX users
+ * Knowing: readers should know the basic Linux's architecture
+ */
+```
+
 ## The four bases and the Writing Process (How?)
 
 ### Goals
