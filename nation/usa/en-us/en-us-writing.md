@@ -42,14 +42,17 @@ writing and the audience who will be reading my work.
       sandwiches might begin, "Eating food between two slices of bread -
       a sandwich - is a practice that has its origins in eighteenth-
       century England."
+        * To describe
+            - Describe the physical appearance and body language of a
+              trial witness
+        * To explain (process)
+            - Explain how to change the ink in a printer.
     + To **persuade**: to convince the reader to agree with the author's
       point of view on a subject. Authors writing to persuade may give
       facts, but their main goal is to argue or prove a point to
       readers. A persuasive paragraph about sandwiches might begin,
       "There are good reasons why every sandwich should be made with
       whole grain bread."
-        * To describe
-        * To explain (process)
     + To **entertain**: to amuse and delight; to appeal to the reader's
       senses and imagination. Authors write to entertain in various
       ways, through fiction and nonfiction. An entertaining paragraph
