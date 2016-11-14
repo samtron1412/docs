@@ -4,6 +4,10 @@
 
 How to speak and the right way to communicate by speaking.
 
+# Pronunciation of "s"
+
+![Pronunciation of s](../../../graphic/eng/pronunciation-final-s-english.gif)
+
 # Thank you
 
 There are many reasons to say "thank you." You could be thanking someone
