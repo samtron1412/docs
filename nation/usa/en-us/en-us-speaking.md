@@ -4,6 +4,12 @@
 
 How to speak and the right way to communicate by speaking.
 
+# Pronunciation of "ed"
+
+[How to pronounce -ed][pronunciation-ed]
+
+![Pronunciation of ed](../../../graphic/eng/pronunciation-of-ed.jpg)
+
 # Pronunciation of "s"
 
 ![Pronunciation of s](../../../graphic/eng/pronunciation-final-s-english.gif)
@@ -47,3 +53,4 @@ showing you with the gift.
 [1]: http://english.stackexchange.com/questions/146671/when-should-no-problem-replace-youre-welcome-as-a-response-to-thank-you "No problem vs You're welcome"
 [2]: http://english.stackexchange.com/questions/2516/how-do-native-english-speakers-respond-to-thank-you "How to respond to thank you"
 [3]: http://www.myenglishteacher.eu/blog/how-to-say-thank-you-26-thank-you-sayings/ "Thank you in many situations"
+[pronunciation-ed]: https://www.englishclub.com/pronunciation/-ed.htm "How to pronounce -ed"
