@@ -3,6 +3,19 @@
 # Overview
 English grammar.
 
+# Comparative/Superlative
+
+- [Comparative/Superlative][comparative-superlative]
+
+# Indefinite pronoun
+
+- [Wikipedia - Indefinite Pronoun][indefinite-pronoun]
+- [Indefinite Pronoun][indefinite-pronoun-1]
+
+# Infinitives as Subjects
+
+- [Infinitives as Subjects][infinitive-as-subject]
+
 # Adjectives
 - We use adjectives to describe nouns.
 - Most adjectives can be used in front of a noun:
@@ -50,6 +63,11 @@ the ice age = the time when much of the Earth was covered in ice.
 A tiring fifty kilometre journey
 
 # References
+
 1. [English Grammar - British Council][1]
 
 [1]: https://learnenglish.britishcouncil.org/en/english-grammar "English Grammar - British Council"
+[comparative-superlative]: http://esl.fis.edu/grammar/rules/comp.htm "Comparative/Superlative"
+[indefinite-pronoun]: https://en.wikipedia.org/wiki/Indefinite_pronoun "Wikipedia - Indefinite Pronoun"
+[infinitive-as-subject]: http://www.grammar-quizzes.com/infinitive1.html "Infinitives as Subjects"
+[indefinite-pronoun-1]: http://www.k12reader.com/term/indefinite-pronouns/ "Indefinite Pronoun"
