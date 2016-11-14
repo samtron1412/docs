@@ -234,21 +234,6 @@ published in the United States. You can visit at [www.loc.gov][1]
 - Date
     + Is the information up to date?
 
-# Grammars
-
-## Comparative/Superlative
-
-- [Comparative/Superlative][2]
-
-## Indefinite pronoun
-
-- [Wikipedia - Indefinite Pronoun][3]
-- [Indefinite Pronoun][5]
-
-## Infinitives as Subjects
-
-- [Infinitives as Subjects][4]
-
 # Write an email - email etiquette
 
 ## Format
@@ -450,7 +435,3 @@ above.
 # References
 
 [1]: http://www.loc.gov "The Library of Congress"
-[2]: http://esl.fis.edu/grammar/rules/comp.htm "Comparative/Superlative"
-[3]: https://en.wikipedia.org/wiki/Indefinite_pronoun "Wikipedia - Indefinite Pronoun"
-[4]: http://www.grammar-quizzes.com/infinitive1.html "Infinitives as Subjects"
-[5]: http://www.k12reader.com/term/indefinite-pronouns/ "Indefinite Pronoun"
