@@ -59,6 +59,8 @@ writing and the audience who will be reading my work.
       about sandwiches might begin, "What I wanted was a midnight snack,
       but what I got was better - the biggest, most magical sandwich in
       the entire world."
+        * Create a story that conveys an important theme about
+          environmental conservation.
 - Audience (Who?)
     + Why might the reader need or want to read this material?
     + How much does the audience already know about the subject?
