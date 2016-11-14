@@ -48,6 +48,8 @@ writing and the audience who will be reading my work.
       readers. A persuasive paragraph about sandwiches might begin,
       "There are good reasons why every sandwich should be made with
       whole grain bread."
+        * To describe
+        * To explain (process)
     + To **entertain**: to amuse and delight; to appeal to the reader's
       senses and imagination. Authors write to entertain in various
       ways, through fiction and nonfiction. An entertaining paragraph
