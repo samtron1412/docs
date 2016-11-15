@@ -262,6 +262,20 @@ published in the United States. You can visit at [www.loc.gov][1]
 - Date
     + Is the information up to date?
 
+# Essay development
+
+## How to write the introduction
+
+## How to write the conclusion
+
+# Sentence skills
+
+## Grammar
+
+## Mechanics
+
+## Punctuation
+
 # Write an email - email etiquette
 
 ## Format
