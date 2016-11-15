@@ -95,6 +95,8 @@ Keeping a daily or almost daily Journal
 - A journal can make writing a familiar part of my life and can serve as
   a continuing source of ideas for papers.
 
+## The four bases and the Writing Process (How?)
+
 Metadata in the beginning of the article:
 
 ```
@@ -111,9 +113,6 @@ Metadata in the beginning of the article:
 ```
 
 [How to write an Essay][how-to-write-an-essay]
-- (Fill the how in this place)
-
-## The four bases and the Writing Process (How?)
 
 ### Goals
 
