@@ -144,6 +144,32 @@ the ice age = the time when much of the Earth was covered in ice.
 > The old newspaper seller
 A tiring fifty kilometre journey
 
+## Adjectives: -ed and -ing
+
+A lot of adjectives are made from verbs by adding -ing or -ed:
+
+### -ing adjectives
+
+The commonest -ing adjectives are: amusing, shocking, surprising,
+frightening, interesting, disappointing, exciting tiring, worrying,
+boring, terrifying, annoying.
+
+> If you call something *interesting* you mean it *interests* you.
+> If you call something *frightening* you mean it *frightens* you.
+
+    I read a very **interesting** article in the newspaper today.
+    That Dracula film was absolutely **terrifying**.
+
+### -ed adjectives
+
+The commonest -ed adjectives are: annoyed, bored, frightened, worried,
+tired, closed, excited, delighted, disappointed.
+
+> If something *annoys* you, you can say you feel *annoyed*.
+> If something *interests* you, you can say you are *interested*.
+
+    The children had nothing to do. They were **bored**.
+
 # References
 
 1. [English Grammar - British Council][1]
