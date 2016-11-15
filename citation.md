@@ -18,3 +18,4 @@
 [zotero]: https://en.wikipedia.org/wiki/Zotero "Wikipedia - Zotero"
 [docear]: https://en.wikipedia.org/wiki/Docear "Wikipedia - Docear"
 [bibsonomy]: https://en.wikipedia.org/wiki/BibSonomy "Wikipedia - BibSonomy"
+[how-to-cite-sources]: https://www.wikihow.com/Cite-Sources "How to cite sources"
