@@ -184,6 +184,48 @@ tired, closed, excited, delighted, disappointed.
 
 ## Determiners
 
+Determiners are words or phrases that precede a noun or noun phrase and
+serve to express its reference in the context.
+
+- Definite determiners: which imply that the referent of the resulting
+noun phrase is defined specifically:
+    + The definite article **the**.
+    + The demonstratives **this** and **that**, with respective plural
+      forms **these** and **those**.
+    + Possessives:
+        * my, your, his, her, its, our, their, whose
+        * own or very own
+        * apostrophe
+    + Interrogatives **which**, **what** (these can be followed by
+      **-ever** for emphasis)
+- Indefinite determiners:
+    + The indefinite article **a** or **an**
+    + **some**
+    + **any**
+- Quantifiers: which quantify a noun
+    + **much/many**, **little/few**
+    + comparative forms: **more**, **most**
+    + superlative forms: **less/fewer**, **least/fewest**
+    + **a lot of**, **lots of**, **plenty of**, **a great deal of**,
+      **tons of**, etc.
+    + **a few/a little**, **several**, **a couple of**, **a bit of**,
+      **a number of**, etc.
+    + **zero**, **one**, **two**, etc.
+    + **a parif of**, **five liters of**, etc.
+    + **half**, **half of**, **double**, **twice**, **three times**,
+      **twice as much**, etc.
+    + **all**, **both**, **enough**, **sufficient**, **no**.
+- **each**, **every**
+- Personal determiners:
+    + **we**, **you**
+    + As all we teachers know...
+    + You guys ...
+    + Not: `all we, teachers, ...`
+
+## Articles
+
+
+
 ## Interjections
 
 # Infinitives as Subjects
