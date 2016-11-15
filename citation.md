@@ -4,6 +4,17 @@
 
 
 # Citation software
-## [Zotero](https://www.zotero.org)
 
-## [Docear](http://www.docear.org/)
+## [Zotero][zotero]
+
+## [Docear][docear]
+
+## [Bibsonomy][bibsonomy]
+
+
+# References
+
+[citation]: https://en.wikipedia.org/wiki/Citation "Wikipedia - Citation"
+[zotero]: https://en.wikipedia.org/wiki/Zotero "Wikipedia - Zotero"
+[docear]: https://en.wikipedia.org/wiki/Docear "Wikipedia - Docear"
+[bibsonomy]: https://en.wikipedia.org/wiki/BibSonomy "Wikipedia - BibSonomy"
