@@ -110,6 +110,9 @@ Metadata in the beginning of the article:
  */
 ```
 
+[How to write an Essay][how-to-write-an-essay]
+- (Fill the how in this place)
+
 ## The four bases and the Writing Process (How?)
 
 ### Goals
@@ -390,3 +393,4 @@ above.
 # References
 
 [1]: http://www.loc.gov "The Library of Congress"
+[how-to-write-an-essay]: http://www.wikihow.com/Write-an-Essay "How to write an essay"
