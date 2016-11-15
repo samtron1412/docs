@@ -276,6 +276,10 @@ published in the United States. You can visit at [www.loc.gov][1]
 
 ## Punctuation
 
+## Word use
+
+# [Plagiarism][plagiarism]
+
 # Write an email - email etiquette
 
 ## Format
@@ -407,3 +411,4 @@ above.
 
 [1]: http://www.loc.gov "The Library of Congress"
 [how-to-write-an-essay]: http://www.wikihow.com/Write-an-Essay "How to write an essay"
+[plagiarism]: https://en.wikipedia.org/wiki/Plagiarism "Wikipedia - Plagiarism"
