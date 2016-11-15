@@ -268,6 +268,45 @@ published in the United States. You can visit at [www.loc.gov][1]
 
 ## How to write the conclusion
 
+[Strategies for Writing a Conclusion][strategies-for-writing-a-conclusion]
+
+A writer needs to keep in mind that the conclusion is often what a
+reader remembers best. Your conclusion should be the best part of your
+paper.
+
+### A conclusion should
+
+- stress the important of the thesis statement,
+- give the essay a sense of completeness, and
+- leave a final impression on the reader.
+
+### The way to get the ideas
+
+- Answer the question "So What?"
+    + Show your readers why this paper was important. Show them that
+      your paper was meaningful and useful.
+- Synthesize, don't summarize
+    + Don't simply repeat things that were in your paper. They have read
+    it. Show them how the points you made and the support and examples
+    you used were not random, but fit together.
+- Redirect your readers
+    + Give your reader something to think about, perhaps a way to use
+    your paper in the "real" world. Think globally.
+- Create a new meaning
+    + You don't have to give new information to create a new meaning. By
+    demonstrating how your ideas work together, you can create a new
+    picture.
+
+### Strategies
+
+#### Echoing the introduction
+
+#### Challenging the reader
+
+#### Looking to the future
+
+#### Posing questions
+
 # Sentence skills
 
 ## Grammar
@@ -412,3 +451,4 @@ above.
 [1]: http://www.loc.gov "The Library of Congress"
 [how-to-write-an-essay]: http://www.wikihow.com/Write-an-Essay "How to write an essay"
 [plagiarism]: https://en.wikipedia.org/wiki/Plagiarism "Wikipedia - Plagiarism"
+[strategies-for-writing-a-conclusion]: http://leo.stcloudstate.edu/acadwrite/conclude.html "Strategies for Writing a Conclusion"
