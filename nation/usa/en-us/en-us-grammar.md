@@ -224,6 +224,27 @@ noun phrase is defined specifically:
 
 ## Articles
 
+### Introduction
+
+In most cases a noun or noun phrase must be completed with a determiner
+to clarify what the referent of the noun phrase is. There are also cases
+where no determiner is required.
+
+In most cases, the article is the first word of its noun phrase,
+preceding all other adjectives and modifiers.
+
+There are a few exceptions:
+
+- Certain determiners, such as **all, both, half, double**, precede the
+definite article when used in combination (all the team, both the
+girls, half the time, double the amount).
+- The determiner **such** and exclamation **what** precede the
+indefinite article (such an idiot, what a day!)
+- Adjectives qualified by **too, so, as** and **how** generally precede
+the indefinite article: too great a loss, so hard a problem, as
+delicious an apple as I have ever tasted, I know how pretty a girl she
+is.
+- quite a long letter.
 
 
 ## Interjections
