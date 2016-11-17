@@ -11,3 +11,12 @@
 `sqlite> .tables`: show table list
 
 `sqlite>`
+
+# Management Tools
+
+## [Sqlitebrowser][sqlitebrowser]
+
+# References
+
+[sqlitebrowser]: http://sqlitebrowser.org/ "Sqlitebrowser"
+
