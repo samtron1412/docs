@@ -21,6 +21,16 @@ This is a paragraph with a footnote (builtin parser only). [^note-id]
 Insert `[ TOC ]` without spaces to generate a table of contents (builtin
 parsers only).
 
+### using raw html
+
+- `<del>Deleted text</del>`: <del>Deleted text</del>
+- `<mark>Marked text</mark>`: <mark>Marked text</mark>
+- `<small>Small text</small>`: Normal text <small>Small text</small>
+- `<ins>Inserted/Underlined text</ins>`: <ins>Inserted/Underlined
+text</ins>
+- `<sub>Subscript text</sub>`: Normal text <sub>Subscript text</sub>
+- `<sup>Superscript text</sup>`: Normal text <sup>Superscript text</sup>
+
 ## Indentation
 > Here is some indented text
 >> even more indented
