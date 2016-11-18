@@ -252,6 +252,74 @@ delicious an apple as I have ever tasted, I know how pretty a girl she
 is.
 - quite a long letter.
 
+### Rules
+
+- **countable noun**: a noun that can have a number in front of it: 1
+teacher, 3 books, 76 trombones, 1 000 000 people.
+    + **singular**
+        * first mention AND the noun is not obvious, not unique, not
+        specific: `a/an`
+        > I need a pencil
+        > Do you have a dog?
+        > I hope you have a good vacation
+        > She has an orange for breakfast every day.
+        * the noun has already been mentioned OR the noun is obvious or
+        unique or specific: `the`
+        > The cat has gone. (You had already mentioned earlier that you
+        saw a cat in the tree.)
+        > I went to the dentist yesterday. (It is obvious to the
+        listener which dentist you mean.)
+        > Please switch off the light. (There is only one light in the
+        room)
+        > Where's the pencil I gave you yesterday (You are referring to
+        a specific pencil.)
+    + **plural**
+        * first mention AND the noun is general, not a specific, example
+        of thing: `no article`
+        > Butterflies are beautiful insects. (You are talking about
+        butterflies in general; about all or any example of them.)
+        > Some people don't want children. (Maybe they don't like
+        children in general.)
+        > Trucks are not allowed on German highways on Sundays. (This
+        rule applies to all trucks, in other words to trucks in
+        general.)
+        > Most people in the western world lives in towns or cities.
+        (The statement refers to towns and cities in general.)
+        * the noun has already been mentioned OR the noun is a specific
+        example of that thing: `the`
+        > I saw flowers on the road while walking the dog this morning.
+        The flowers were gone when I went back in the afternoon. (Use
+        the for the second mention of flowers.)
+        > My cat tried to catch the butterflies in our garden. (You are
+        talking about specific butterflies - those in your garden.)
+        > The children got wet when it started to rain. (The specific
+        children who were playing outside got wet.)
+        > The police stopped the trucks that were driving too fast.
+        (Only the specific trucks that drove too fast were stopped.)
+        > Please put the books on the table. (The specific books you
+        are carrying.)
+- **uncountable noun**: a noun that cannot have a number put in front of
+it: <del>1 water, 2 lucks, 10 airs, 21 oils, 39 informations</del>.
+    + first mention AND the noun is general, not a specific, example of
+    thing: `no article`
+    > Do you drink wine? (This is the first mention; and you are
+    talking about wine in general.)
+    > Money is not the only thing in life. (Money in general; the
+    general fact of having money.)
+    > Everything living thing needs water. (Water in general.)
+    > We looked out of the window and all we could see was snow. (The
+    white stuff in general.)
+    + the noun has already been mentioned OR the noun is a specific
+    example of that thing: `the`
+    > The wine I drank last night made me sleepy. (The specific example
+    of wine.)
+    > Can you return the money you borrowed last week? (The specific
+    money that was borrowed.)
+    > Don't drink the water in that bottle. (a specific example of
+    water.)
+    The snow that fell yesterday was no good for making snowballs. (The
+    specific snow that fell yesterday.)
+
 
 ## Interjections
 
