@@ -15,3 +15,4 @@ Unix-like systems.
 [awiki-wine]: https://wiki.archlinux.org/index.php/Wine "Arch Wiki - Wine"
 [wiki-wine]: https://en.wikipedia.org/wiki/Wine_(software) "Wikipedia - Wine"
 [homepage]: https://wiki.winehq.org "Homepage"
+[winetricks]: https://wiki.winehq.org/Winetricks "Winetricks"
