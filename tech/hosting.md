@@ -35,6 +35,11 @@
 The server is shared. Sharing CPU, RAM, storage, bus interface,
 bandwidth, etc.
 
+# Your own servers
+
+Buy your own servers and pay for dedicated Internet feeds with fixed IP
+addresses.
+
 # References
 
 [1]: https://en.wikipedia.org/wiki/Internet_hosting_service "Wikipedia - Internet hosting service"
