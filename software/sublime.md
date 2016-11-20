@@ -653,6 +653,25 @@ change the `target` command, these options can no longer be relied on.
 
 ## Settings
 
+- Sublime Text stores configuration data in `.sublime-settings` files.
+- Always place your personal settings files under `Packages/User` to
+guarantee they will overriden any other conflicting settings files.
+- To check the value of a setting for a particular file being edited,
+use `view.settings().get("setting_name")` from the console.
+- The file type of settings is `.sublime-settings`
+
+### The settings hierarchy
+
+- `Packages/Default/Preferences.sublime-settings`
+- `Packages/AnyOtherPackage/Preferences.sublime-settings`
+- `Packages/User/Preferences.sublime-settings`
+- Settings from the current project
+- `Packages/Python/Python.sublime-settings`
+- `Packages/User/Python.sublime-settings`
+- Session data for the current file
+    + Sublime Text maintains session data - settings for the particular
+    set of files being currently edited.
+- Auto-adjusted settings
 
 # Extensibility and Automation
 
