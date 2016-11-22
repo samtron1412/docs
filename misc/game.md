@@ -77,6 +77,47 @@
 - Presence and Immersion: the story, the game world, the main
   characters, the music, the special effects
 
+# Game Design
+
+- Game Design = Cool idea for characters and story + **game mechanics**
+- Game mechanics: the basic rules and interactions that make a game fun to play.
+- Think of game mechanics as a car engine and the graphics, characters, and storyline as the bodywork and finishing.
+
+## Interactive Challenges
+- Interactive: players have some control over the outcome of games, but film audiences do not.
+- Challenges: players must overcome to win the game.
+
+### Game genres
+- Strategy games
+- Adventure games
+- Role-playing games
+- Simulator games
+- Actions games
+
+## Challenges
+### Difficulty
+- Choosing the difficult level.
+
+### Goals
+- Make goals clear to players.
+- Make the game easy at first, but harder and harder.
+- Show players' progress.
+
+### Rewards
+- Give players specific rewards and randomly rewards.
+
+### Subgoals
+- Short term goals.
+
+## Interactivity
+### Choices and control
+
+### Control Overload
+
+### Unfair Punishment
+
+### Audio Feedback
+
 # How to get a job in game industry
 
 - Close community, so only through close network
