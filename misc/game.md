@@ -27,6 +27,56 @@
 + Racing games
 + Simulators
 
+# Checklist for a good game
+
+- Reaching goals
+    + Goals should not be too easy to achieve. There must be a
+      challenge.And when the game progresses the goals should become
+      harder to reach and the player has to become better at the game to
+      achieve them. This learning curve is very important.
+    + In the case of failure, the player always has the feeling he made
+      a mistake that he could have avoided. It should not be the game's
+      fault that the player lost, but his own.
+- Balance
+    + Balance between players
+    + Balance between the player and the game play
+        * The game play is there to help the player, not to fight the
+          player.
+        * The player should spend his time and energy on the important
+          aspects, and the game program should do the rest.
+    + Balance between game features
+        * Every feature should has its own pros and cons
+        * Don't forget that a player must learn to play the game. Make
+          sure that there are still new features appearing far into the
+          game.
+- Rewards
+    + You need to reward a player when he achieves a goal.
+    + It would be better to gradually increase the maximal player health
+      and the damage opponents do, such that the increase in health is
+      not significant anymore. The player still gets his reward but it
+      has less influence on the game play. Don't take the reward away
+      from players.
+    + You also need to decide whether rewards are predictable or more
+      random.
+    + Make sure the player notices the rewards he gets and starts
+      understanding why he gets them. Using some sound effect or some
+      graphical effect.
+- Flow
+    + A game gives challenges to the player and the player develops
+      abilities to conquer these challenges. While the game progresses
+      the abilities of the player improve and, hence, the challenges
+      should become more difficult.
+    + It is good to let your game from time to time get to top hard and
+      then give some easier challenges again. This helps the player to
+      improve his abilities. So the difficulty should zigzag through the
+      flow.
+    + Monitor the players behavior (for example how much damage he
+      takes) and adapt the number or quality of the opponents to this.
+      Make sure that the player always progresses but let the reward
+      depend on his qualities.
+- Presence and Immersion: the story, the game world, the main
+  characters, the music, the special effects
+
 # How to get a job in game industry
 
 - Close community, so only through close network
