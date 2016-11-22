@@ -673,6 +673,20 @@ use `view.settings().get("setting_name")` from the console.
     set of files being currently edited.
 - Auto-adjusted settings
 
+## Indentation
+
+| Setting                      | Description                                                                                                                       |
+| -                            | -                                                                                                                                 |
+| `tab_size`                   | Integer. The number of spaces a tab is considered equal to                                                                        |
+| `translate_tabs_to_spaces`   | Boolean, if true, spaces will be inserted up to the next tab stop when tab is pressed, rather than inserting a tab character      |
+| `detect_indentation`         | Boolean, if true (the default), `tab_size` and `translate_tabs_to_spaces` will be calculated automatically when loading a file    |
+| `use_tab_stops`              | Boolean, if `translate_tabs_to_spaces` is true, `use_tab_stops` will make tab and backspace insert/delete up to the next tab stop |
+| `auto_indent`                | Boolean, enabled by default. Enables auto indent                                                                                  |
+| `smart_indent`               | Boolean, enabled by default. Makes auto indent a little smarter, e.g., by indenting the next line after an if statement in C      |
+| `trim_automatic_white_space` | Boolean, enabled by default. Trims white space added by `auto_indent` when moving the caret off the line                          |
+| `indent_to_bracket`          | Boolean, disabled by default. Adds whitespace up to the first open bracket when indenting.                                        |
+
+
 # Extensibility and Automation
 
 ## Macro
