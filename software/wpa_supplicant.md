@@ -30,11 +30,18 @@
     + interactively configure wpa_supplicant at runtime
 - wpa_supplicant must be given the rights to update the configuration.
   Creating a minimal configuration file:
+    + `update_config=1`: allows wpa_supplicant to overwrite
+      configuration file whenever configuration is changed.
+    + `ctrl_interface=/var/run/wpa_supplicant`: is a UNIX domain socket.
+      wpa_supplicant will listen requests from external programs
+      (CLI/GUI) through this socket.
+    + `ctrl_interface_group=wheel`: allows only members of the wheel
+      group to use the socket.
 
 ```
 /etc/wpa_supplicant/example.conf
 
-ctrl_interface=/run/wpa_supplicant
+ctrl_interface=/var/run/wpa_supplicant
 ctrl_interface_group=wheel
 update_config=1
 ```
