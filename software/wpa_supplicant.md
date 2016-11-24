@@ -79,8 +79,11 @@ update_config=1
         <2>CTRL-EVENT-CONNECTED - Connection to 00:00:00:00:00:00 completed (reauth) [id=0 id_str=]
         ```
 
+        * If the passphrase is a plain text then use: `set_network 0
+        psk "plain_text"` (with double quotes)
         * Get the hash of passphrase through `wpa_passphrase ssid
-        passphrase`
+        passphrase` and use: **set_network 0 psk hash** (no double
+        quotes)
     + Finally save this network in the configuration file: `save_config`
 
 # Connecting with wpa_passphrase
