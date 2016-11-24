@@ -84,6 +84,10 @@ update_config=1
         * Get the hash of passphrase through `wpa_passphrase ssid
         passphrase` and use: **set_network 0 psk hash** (no double
         quotes)
+        * If the SSID does not have password authentication, you must
+        explicitly configure the network as keyless by replacing the
+        command `set_network 0 psk "passphrase"` with `set_network 0
+        key_mgmt NONE`.
     + Finally save this network in the configuration file: `save_config`
 
 # Connecting with wpa_passphrase
