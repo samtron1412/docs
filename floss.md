@@ -54,3 +54,54 @@ TODO is an open group of companies who want to collaborate on practices, tools, 
 ## [Template for code of conduct](http://todogroup.org/opencodeofconduct/)
 
 
+
+
+# Development
+
+## Tips and Tricks
+
+### Helping new contributors to your open source project
+
+#### 1. Adding a license to a repository
+
+`LICENSE.md`
+
+#### 2. Establishing proper contributing guidelines
+
+- A well-written `CONTRIBUTING.md` can describe the workflow your
+project's maintainers expected contributors to follow.
+    + Steps for creating good issues or pull requests.
+    + Links to external documentation, mailing list, or a code of
+    conduct.
+    +
+- Try to link to an appropriate tutorials for each of processes in case
+the contributor isn't yet familiar with them.
+- Good examples of contributing guidelines:
+    + [Atom editor][atom]
+    + [react][react]
+    +
+
+#### 3. Adding a clear Code of Conduct
+
+#### 4. Documenting your project's design, architecture and directory structure
+
+#### 5. Creating templates for pull requests and issues
+
+#### 6. Labeling beginner issues
+
+Try using more specific labels, such as **good first bug**, **low
+hanging fruit**, **easy**, etc. to communicate that an issue is easy
+enough for an initial contribution.
+
+
+#### 7. Creating a FAQ on README.md
+
+#### 8. Recognizing all contributors
+
+[All contributors tool][all-contributor]
+
+# References
+
+[all-contributor]: https://github.com/kentcdodds/all-contributors "Recognize all contributors repository"
+[atom]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md "Atom editor guidelines"
+[react]: https://facebook.github.io/react/contributing/how-to-contribute.html "React"
