@@ -85,8 +85,29 @@ Erwin Schrodinger and Paul Dirac.
     + From this early work, and work in related fields, the Standard
       Model of particle physics [^standard-model] was derived.
     + Physics beyond the Standard Model [^beyond-sm].
-    + Areas of mathematics in general are important to this field,
+    + Areas of mathematics are important to this field,
     such as the study of probabilities.
+
+# Philosophy
+
+- Physics stems from **ancient Greek philosophy**.
+    + Thales' first attempt to characterize matter
+    + Democritus' deduction that matter ought to reduce to an invariant
+      state
+    + The Ptolemaic astronomy of a crystalline firmament
+    + Aristotle's book Physics (an early book on physics, which
+      attempted to analyze and define motion from a philosophical point
+      of view)
+    + Physics was known as natural philosophy until the late 18th
+      century.
+- By the 19th century, physics was realized as a discipline distinct
+  from philosophy and the other sciences.
+    + Physics relies on **philosophy of science** and its **scientific**
+      **method** to advance our knowledge of the physical world.
+- Study of the philosophical issues surrounding physics involves issues:
+    + the nature of space and time, **determinism**
+    + metaphysical outlooks such as **empiricism**, **naturalism** and
+      **realism**
 
 # References
 
