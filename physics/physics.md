@@ -17,8 +17,83 @@ programs in their own right.
 - Physics also makes significant contributions through advances in new
 technologies that arise from theoretical breakthroughs.
 
+# History
+
+## Ancient astronomy [^history-astronomy]
+
+Astronomy is the oldest of the natural sciences. The earliest
+civilizations dating back to beyond 3000 BCE.
+
+## Natural Philosophy [^natural-philosophy]
+
+- Natural philosophy has its origins in Greece during the Archaic
+  period, 650 BCE - 480 BCE, when pre-Socratic philosophers like Thales
+  rejected non-naturalistic explanations for natural phenomena and
+  proclaimed that every event had a natural cause.
+- They proposed ideas verified by reason and observation, and many of
+  their hypotheses proved successful in experiment; for example, atomism
+  was found to  be correct approximately 2000 years after it was first
+  proposed by Leucippus and his pupil Democritus.
+
+## Physics in the medieval Islamic world
+
+- Developing early forms of the scientific method.
+- The most notable work was **The Book of Optics**, written by Ibn
+Al-Haitham:
+    + The first studies the phenomenon of the pinhole camera.
+
+## Classical physics
+
+- Physics became a separate science when early modern Europeans used
+experimental and quantitative methods to discover what are now
+considered to be the laws of physics.
+- Major developments:
+    + The replacement of the geocentric model of the solar system with
+      the heliocentric Copernican model.
+    + The laws governing the motion of planetary bodies determined by
+      Johannes Kepler between 1609 and 1619.
+    + Pioneering work on telescopes and observational astronomy by
+      Galileo Galilei in the 16th and 17th centuries.
+    + Isaac Newton's discovery and unification of the laws of motion and
+      universal gravitation. Newton also developed calculus.
+    + The discovery of new laws in thermodynamics, chemistry, and
+      electromagnetics resulted from greater research efforts during the
+      industrial revolution as energy needs increased.
+
+## Modern physics
+
+- Modern physics began in the early 20th century with the work of Max
+Planck in quantum theory and Albert Einstein's theory of relativity.
+Both of these theories came about due to inaccuracies in classical
+mechanics in certain situations.
+    + Classical mechanics predicted a varying speed of light, which
+      could not be resolved with the constant speed predicted by
+      Maxwell's equations of electromagnetism; this discrepancy was
+      corrected by Einstein's theory of special relativity, which
+      replaced classical mechanics for fast-moving objects and allowed
+      for a constant speed of light.
+    + Black body radiation provided another problem for classical
+      physics, which was corrected when Planck proposed that the
+      excitation of material oscillators is possible only in discrete
+      steps proportional to their frequency; this, along with the
+      **photoelectric effect** and a complete theory predicting discrete
+      **energy levels** of **electron orbitals**, led to the theory of
+      quantum mechanics taking over from classical physics at very small
+      scales.
+- Quantum mechanics would come to be pioneered by Werner Heisenberg,
+Erwin Schrodinger and Paul Dirac.
+    + From this early work, and work in related fields, the Standard
+      Model of particle physics [^standard-model] was derived.
+    + Physics beyond the Standard Model [^beyond-sm].
+    + Areas of mathematics in general are important to this field,
+    such as the study of probabilities.
+
 # References
 
 [wiki-portal-physics]: https://en.wikipedia.org/wiki/Portal:Physics "Wikipedia - Portal: Physics"
 [wiki-topic-physics]: https://en.wikipedia.org/wiki/Portal:Physics/Navigation "Wikipedia - Physics Topics"
 [wiki-physics]: https://en.wikipedia.org/wiki/Physics "Wikipedia - Physics"
+[^history-astronomy]: https://en.wikipedia.org/wiki/History_of_astronomy "Wikipedia - History of Astronomy"
+[^natural-philosophy]: https://en.wikipedia.org/wiki/Natural_philosophy "Wikipedia - Natural Philosophy"
+[^standard-model]: https://en.wikipedia.org/wiki/Standard_Model "Wikipedia - Standard Model"
+[^beyond-sm]: https://en.wikipedia.org/wiki/Physics_beyond_the_Standard_Model "Wikipedia - Physics beyond the Standard Model"
