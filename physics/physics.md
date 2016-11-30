@@ -121,6 +121,24 @@ Erwin Schrodinger and Paul Dirac.
 | Unification                               |                     | Standard Model, Grand Unified Theory, String theory, Theory of Everything |
 | Cosmos                                    | Astrophysics        | Cosmology, Multiverse                                                     |
 
+# Research
+
+## Scientific method
+
+## Theory and experiment
+
+## Scope and aims
+
+## Research fields
+
+### Particle physics
+
+### Atomic, molecular, and optical physics
+
+### Condensed matter physics
+
+### Astrophysics
+
 # References
 
 [wiki-portal-physics]: https://en.wikipedia.org/wiki/Portal:Physics "Wikipedia - Portal: Physics"
