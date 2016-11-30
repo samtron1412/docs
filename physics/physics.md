@@ -88,7 +88,7 @@ Erwin Schrodinger and Paul Dirac.
     + Areas of mathematics are important to this field,
     such as the study of probabilities.
 
-# Philosophy
+# Philosophy [^philosophy-physics]
 
 - Physics stems from **ancient Greek philosophy**.
     + Thales' first attempt to characterize matter
@@ -109,6 +109,18 @@ Erwin Schrodinger and Paul Dirac.
     + metaphysical outlooks such as **empiricism**, **naturalism** and
       **realism**
 
+# Core theories
+
+| Fundamental Concepts                      | Classical Physics   | Modern Physics                                                            |
+| -                                         | -                   | -                                                                         |
+| Sound                                     | Acoustics           |                                                                           |
+| Motion, Space, Time, Mass, Matter, Energy | Classical Mechanics | Special Relativity, General Relativity, Quantum Mechanics                 |
+| Light                                     | Optics              | Particle Physics                                                          |
+| Information                               | Thermodynamics      |                                                                           |
+|                                           | Electromagnetism    |                                                                           |
+| Unification                               |                     | Standard Model, Grand Unified Theory, String theory, Theory of Everything |
+| Cosmos                                    | Astrophysics        | Cosmology, Multiverse                                                     |
+
 # References
 
 [wiki-portal-physics]: https://en.wikipedia.org/wiki/Portal:Physics "Wikipedia - Portal: Physics"
@@ -118,3 +130,4 @@ Erwin Schrodinger and Paul Dirac.
 [^natural-philosophy]: https://en.wikipedia.org/wiki/Natural_philosophy "Wikipedia - Natural Philosophy"
 [^standard-model]: https://en.wikipedia.org/wiki/Standard_Model "Wikipedia - Standard Model"
 [^beyond-sm]: https://en.wikipedia.org/wiki/Physics_beyond_the_Standard_Model "Wikipedia - Physics beyond the Standard Model"
+[^philosophy-physics]: https://en.wikipedia.org/wiki/Philosophy_of_physics "Wikipedia - Philosophy of Physics"
