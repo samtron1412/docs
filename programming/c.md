@@ -13,6 +13,17 @@ A C program basically consistes of the folowing parts:
 - Statements and Expressions
 - Comments
 
+```c
+#include <stdio.h>
+
+int main() {
+  /* my first program in C */
+  printf("Hello, World! \n");
+
+  return 0;
+}
+```
+
 # Basic syntax
 
 ## Tokens
