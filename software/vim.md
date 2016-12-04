@@ -193,7 +193,8 @@ The most common operators:
 
 ### Paste in Insert mode
 - `<C-r>{register}`: using when paste a small text less than one line. If you want to paste a register containing multiple lines of text, you should switch to Normal mode and use one of the put commands.
-- Remap Caps Lock key to Escape or Ctrl key.
+- Remap Caps Lock key to Escape or Ctrl key
+	+ Put this line in .xinitrc file: `setxkbmap -option caps:escape`
 
 ### Do Back-of-the-Envelope Calculations in Place
 - Most of Vim's registers contain text either as a string of characters or as entire lines of text. The delete and yank commands allow us to set the contents of a register, while the put command allows us to get the contents of a register by inserting it into the document.
