@@ -20,15 +20,15 @@ With OpenVPN, we can:
 - OpenVPN is built for portability.
 - OpenVPN is fast.
 - OpenVPN has been rigorously designed and tested to operate robustly on unreliable networks.
-	+ A major design goal of OpenVPN is that it should be as responsive, in terms of both normal operations and error recovery, as the underlying IP layer that it is tunneling over.
-	+ That means that if the IP layer goes down for 5 minutes, when it comes back up, tunnel traffic will immediately resume even if the outage interfered with a dynamic key exchange which was scheduled during that time.
+    + A major design goal of OpenVPN is that it should be as responsive, in terms of both normal operations and error recovery, as the underlying IP layer that it is tunneling over.
+    + That means that if the IP layer goes down for 5 minutes, when it comes back up, tunnel traffic will immediately resume even if the outage interfered with a dynamic key exchange which was scheduled during that time.
 - OpenVPN has been built with a strongly modular design.
-	+ All of the crypto is handled by the OpenSSL library, and all of the IP tunneling functionality is provided through the TUN/TAP virtual network driver.
-	+ The benefits of this modularity can be seen, for example, in the way that OpenVPN can be dynamically linked with a new version of the OpenSSL library and immediately have access to any new functionality provided in the new release. For example, when OpenVPN is built with the latest version of OpenSSL (0.9.7), it automatically has access to new ciphers such as AES-256 (Advanced Encryption Standard with 256 bit key) and the encryption engine capability of OpenSSL that allows utilization of special-purpose hardware accelerators to optimize encryption, decryption, and authentication performance.
+    + All of the crypto is handled by the OpenSSL library, and all of the IP tunneling functionality is provided through the TUN/TAP virtual network driver.
+    + The benefits of this modularity can be seen, for example, in the way that OpenVPN can be dynamically linked with a new version of the OpenSSL library and immediately have access to any new functionality provided in the new release. For example, when OpenVPN is built with the latest version of OpenSSL (0.9.7), it automatically has access to new ciphers such as AES-256 (Advanced Encryption Standard with 256 bit key) and the encryption engine capability of OpenSSL that allows utilization of special-purpose hardware accelerators to optimize encryption, decryption, and authentication performance.
 - While OpenVPN provides many options for controlling the security parameters of the VPN tunnel, it also provides options for protecting the security of the server itself, such as:
-	+ `--chroot` for restricting the part of the file system the OpenVPN daemon has access to.
-	+ `--user and --group` for downgrading daemon privileges after initialization.
-	+ `--mlock` to ensure that key material and tunnel data is never paged to disk where it might later be recovered.
+    + `--chroot` for restricting the part of the file system the OpenVPN daemon has access to.
+    + `--user and --group` for downgrading daemon privileges after initialization.
+    + `--mlock` to ensure that key material and tunnel data is never paged to disk where it might later be recovered.
 
 ## Community
 - [Source code][7]
@@ -55,11 +55,11 @@ With OpenVPN, we can:
 - From 2.3.x version, OpenVPN fully supports IPv6 as protocol of the virtual network inside a tunnel and the OpenVPN applications can also establish connections via IPv6.
 - It has the ability to work through most proxy servers (including HTTP) and Network address translation (NAT) and firewalls.
 - The server configuration has the ability to push certain network configuration options to the clients.
-	+ IP addresses
-	+ routing commands
-	+ a few connection options
+    + IP addresses
+    + routing commands
+    + a few connection options
 - OpenVPN offers two types of interfaces for networking via the Universal TUN/TAP driver.
-	+ It can create either a layer-3 based IP tunnel (TUN), or a layer-2 based Ethernet TAP that can carry any type of Ethernet traffic.
+    + It can create either a layer-3 based IP tunnel (TUN), or a layer-2 based Ethernet TAP that can carry any type of Ethernet traffic.
 - Optionally use the LZO compression library to compress the data stream.
 - Port 1194 is the official IANA assigned port number for OpenVPN.
 - [TCP meltdown problem][3]
@@ -84,6 +84,32 @@ With OpenVPN, we can:
 - The IPSec protocol is designed to be implemented as a modification to the IP stack in kernel space, and therefore each operating system requires its own independent implementation of IPSec.
 - The OpenVPN's user-space implementation allows portability across operating systems and processor architectures, firewall and NAT-friendly operation, dynamic address support, and multiple protocol support including protocol bridging.
 - The PPTP protocol has some [security vulnerabilities][8].
+
+# Troubleshooting
+
+## Client daemon does not restarting after suspend
+
+- Create file: `/usr/lib/systemd/system-sleep/vpn.sh` and make it
+  executable
+
+```bash
+#!/bin/sh
+if [ "$1" == "pre" ]
+then
+  killall openvpn
+fi
+```
+
+- Create another systemd configuration file:
+    + `/etc/systemd/system/openvpn-client@.service.d/restart.conf`
+
+```
+[Service]
+Restart=always
+RestartSec=0
+```
+
+- Reload systemd configuration with: `systemctl daemon-reload`
 
 # References
 1. [OpenVPN - Wikipedia][1]
