@@ -104,3 +104,11 @@ nuclear powerplants or aircraft cockpits.
 - [GeekHack](https://geekhack.org/index.php?board=161.0)
 - [eBay](https://www.ebay.com)
 - [Amazon](https://www.amazon.com)
+
+# References
+
+[keyboard]: https://en.wikipedia.org/wiki/Computer_keyboard "Wikipedia - Computer Keyboard"
+[compose-key]: https://en.wikipedia.org/wiki/Compose_key "Wikipedia - Compose key"
+[mouse-key]: https://en.wikipedia.org/wiki/Mouse_keys "Wikipedia - Mouse key"
+[shortcuts]: https://wiki.archlinux.org/index.php/Keyboard_shortcuts "Arch Wiki - Keyboard shortcuts"
+[extra-keys]: https://wiki.archlinux.org/index.php/Extra_keyboard_keys "Arch Wiki - Extra keys"
