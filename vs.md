@@ -15,9 +15,9 @@ In Engineer view, we need experience and compare between products to choose righ
 
 ### Connection Handling Architecture
 - **Apache** provides a variety of multi-processing modules (Apache calls these MPMs) that dictate how client requests are handled.
-	+ **mpm_prefork** : process
-	+ **mpm_worker** : threaded
-	+ **mpm_event** : event handle like Nginx, stable with Apache 2.4
+    + **mpm_prefork** : process
+    + **mpm_worker** : threaded
+    + **mpm_event** : event handle like Nginx, stable with Apache 2.4
 - **Nginx** was designed from the ground up to use an *asynchronous*, *non-blocking*, *event-driven* connection handling algorithm.
 
 ### Static vs Dynamic content
@@ -58,10 +58,10 @@ Diploma programs are specialized but more in depth than certification programs. 
 
 ## Degree
 Degree programs are awarded by colleges and universities. A degree program is often requires the student o take general education courses to support a more rounded education.
-	+ An **associate's degree** is two-year degree most commonly granted by a community college or technical school. They can also be granted by four-year colleges and universities.
-	+ A **bachelor's degree** is a four-year degree that is granted by a college or university.
-	+ A **master's degree** is what is called a post-graduate degree because you go on to get one only after you have graduated with your bachelor's.
-	+ A **Ph.D** is another example or a post-graduate degree, and is several more years of study and intensive research.
+    + An **associate's degree** is two-year degree most commonly granted by a community college or technical school. They can also be granted by four-year colleges and universities.
+    + A **bachelor's degree** is a four-year degree that is granted by a college or university.
+    + A **master's degree** is what is called a post-graduate degree because you go on to get one only after you have graduated with your bachelor's.
+    + A **Ph.D** is another example or a post-graduate degree, and is several more years of study and intensive research.
 
 # Thesis vs Dissertation
 The differences between a thesis and a dissertation it really depends upon the requirements set forth by each specific school or academic program. Most universities make their dissertation/thesis guidelines available online so it's best to view them ahead of time so you aware of what will be required of you.
@@ -119,14 +119,14 @@ replay all commit of one branch to another branch and clean history of commit. c
 
 # RDP vs RFB (VNC)
 - [What's the difference between RDP vs RFB(VNC)][1]
-	+ RFB: sending the actual images across the network.
-	+ RDP: sending the information how to draw the images. So RDP a lot faster than RFB in most cases.
+    + RFB: sending the actual images across the network.
+    + RDP: sending the information how to draw the images. So RDP a lot faster than RFB in most cases.
 
 [1]: http://superuser.com/questions/32495/whats-the-difference-between-rdp-vs-vnc "What's the difference between RDP vs RFB(VNC)"
 
 # GNU Screen, tmux, byobu
 - [Byobu vs. GNU Screen vs. tmux - usefulness and transferability of skills][1]
-	+ byobu is a configuration platform build on top of GNU Screen and tmux. So GNU Screen and tmux are backend of byobu.
+    + byobu is a configuration platform build on top of GNU Screen and tmux. So GNU Screen and tmux are backend of byobu.
 
 [1]: http://superuser.com/questions/423310/byobu-vs-gnu-screen-vs-tmux-usefulness-and-transferability-of-skills "Byobu vs. GNU Screen vs. tmux -- usefulness and tranferability of skills"
 
@@ -138,3 +138,4 @@ Packages folder.
 - `directory`: refers to the way a structured list of document files and
 folders is stored on the computer. Using it when you see an absolute
 path. For example, `/usr/bin/` directory.
+
