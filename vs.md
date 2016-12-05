@@ -139,3 +139,13 @@ Packages folder.
 folders is stored on the computer. Using it when you see an absolute
 path. For example, `/usr/bin/` directory.
 
+# simulator/simulation/simulate vs emulator/emulation/emulate
+
+- Emulation is the process of mimicking the outwardly observable
+behavior to match an existing target.
+    + The internal state of the emulation mechanism does not have to
+    accurately reflect the internal state of the target which is
+    emulating.
+    + An emulation can replace the original for `real` use.
+- Simulation involves modeling the underlying state of the target.
+    + A simulator is a model for analysis.
