@@ -72,6 +72,21 @@ or variables or any other identifier names.
 - Whitespace is the term used in C to describe blanks, tabs, newline
   characters and comments.
 
+# Data types
+
+Data types in C refer to an extensive system used for declaring
+variables or functions of different types. The type of a variable
+determines how much space it occupies in storage and how the bit pattern
+stored is interpreted.
+
+| Types            | Description                                                                                                                                        |
+| -                | -                                                                                                                                                  |
+| Basic Types      | They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types                                          |
+| Enumerated types | They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program. |
+| The type void    | The type specifier void indicates that no value is available                                                                                       |
+| Derived types    | They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.                                      |
+
+
 # Function
 
 [ref](http://users.aber.ac.uk/auj/voidmain.cgi)
