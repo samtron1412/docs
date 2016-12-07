@@ -154,6 +154,16 @@ http://grammarist.com/spelling/lots-of-vs-a-lot-of/
 | Most people watch movies                     | Almost everyone watches movies                                                                                |
 | Most teachers want their students to do well | Almost all teachers want their students to do well; Almost every teacher wants his or her students to do well |
 
+# anyone vs any one, indefinite pronoun vs adjective phrase
+
+| indefinite pronoun                           | adjective phrase                   |
+| anyone, anybody, anything                    | any one, any body, any thing       |
+| someone, somebody, something                 | some one, somebody, some thing     |
+| everyone, everybody, everything              | every one, every body, every thing |
+| one, no one, nobody, nothing                 |                                    |
+| each, either, neither                        |                                    |
+| Any one of us could win on the first ballot, | but anyone who loses must go home  |
+
 # criterion, criteria
 a basis for comparison; a reference point against which other things can be evaluated
 
