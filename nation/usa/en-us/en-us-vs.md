@@ -146,6 +146,14 @@ http://grammarist.com/spelling/lots-of-vs-a-lot-of/
 | A few students stayed for a review session. (some)                                                                                                                         | A few of the students who have low grades stayed for a review.                                                                                       |
 | Few students had to stay for a review session. (not many)                                                                                                                  | Few of the students who have low grades stayed for a review.                                                                                         |
 
+# most vs almost
+
+| Most                                         | Almost                                                                                                        |
+| -                                            | -                                                                                                             |
+| (adj)                                        | (adv)                                                                                                         |
+| Most people watch movies                     | Almost everyone watches movies                                                                                |
+| Most teachers want their students to do well | Almost all teachers want their students to do well; Almost every teacher wants his or her students to do well |
+
 # criterion, criteria
 a basis for comparison; a reference point against which other things can be evaluated
 
