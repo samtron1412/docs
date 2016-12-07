@@ -4,6 +4,8 @@
 
 Common problems in English.
 
+##
+
 ## override vs overwrite
 
 - `Override`: to use your power or authority to change or cancel someone
@@ -134,14 +136,15 @@ http://www.ecenglish.com/learnenglish/lessons/a-lot-lots-a-lot
 http://grammarist.com/spelling/lots-of-vs-a-lot-of/
 
 # most vs most of
-| Most                                                                                                                                                               | Most of                                                                                                                                      |
-| -                                                                                                                                                                  | -                                                                                                                                            |
+
+| Most                                                                                                                                                                       | Most of                                                                                                                                              |
+| -                                                                                                                                                                          | -                                                                                                                                                    |
 | Use **most** to refer to a quantity of **an unspecific group**.  We use most when we are speaking in general and do not have a specific group of people or things in mind. | Use **most of the X** to refer to a quantity of **a specific group**. Note the expression includes a phrase defining the number to a specific group. |
-| Most students ask questions.                                                                                                                                       | Most of the students in my English class ask questions.                                                                                      |
-| All students want  A's.                                                                                                                                            | All of the students in my class want  A's.                                                                                                   |
-| Many students want  less homework.                                                                                                                                 | Many of the students in my school want less homework.                                                                                        |
-| A few students stayed for a review session. (some)                                                                                                                 | A few of the students who have low grades stayed for a review.                                                                               |
-| Few students had to stay for a review session. (not many)                                                                                                          | Few of the students who have low grades stayed for a review.                                                                                 |
+| Most students ask questions.                                                                                                                                               | Most of the students in my English class ask questions.                                                                                              |
+| All students want A's.                                                                                                                                                     | All of the students in my class want  A's.                                                                                                           |
+| Many students want less homework.                                                                                                                                          | Many of the students in my school want less homework.                                                                                                |
+| A few students stayed for a review session. (some)                                                                                                                         | A few of the students who have low grades stayed for a review.                                                                                       |
+| Few students had to stay for a review session. (not many)                                                                                                                  | Few of the students who have low grades stayed for a review.                                                                                         |
 
 # criterion, criteria
 a basis for comparison; a reference point against which other things can be evaluated
