@@ -127,13 +127,14 @@
   informal club, contribute to open source project
 - Love game -> do what you love
 
-# Games
+# Computer Games
 
 - [Twitch installs Arch Linux][1]
 - [Best Open Source Games][2]
 - [Slant - Best Open Source Games][3]
 - [openage - Open Source Age of Empire II][4]
 - [GitHub - Game Engines][5]
+- [List of open source computer games][open-games]
 
 # References
 
@@ -142,3 +143,7 @@
 [3]: https://www.slant.co/topics/1933/~open-source-games "Slant - Best Open Source Games"
 [4]: https://github.com/SFTtech/openage "openage"
 [5]: https://github.com/showcases/game-engines "GitHub - Game Engines"
+[open-games]: https://en.wikipedia.org/wiki/List_of_open-source_video_games "Wikipedia - List of open source computer games"
+[game]: https://en.wikipedia.org/wiki/Game "Wikipedia - Game"
+[computer-game-genres]: https://en.wikipedia.org/wiki/Video_game_genre "Wikipedia - Computer game genres"
+[list-computer-game-genres]: https://en.wikipedia.org/wiki/List_of_video_game_genres "Wikipedia - List of computer game genres"
