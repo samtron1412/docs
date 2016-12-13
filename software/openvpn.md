@@ -161,6 +161,43 @@ With OpenVPN, we can:
 
 # Troubleshooting
 
+## OpenVPN and wpa_supplicant
+
+Using wpa_cli action scripts to control OpenVPN services when the
+connection is connected or disconnected.
+
+- Creating a systemd service: `/etc/systemd/system/wpa_cli.service`
+
+```
+[Unit]
+Description=wpa_cli action service
+After=wpa_supplicant@%i.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/wpa_cli -B -a /path/to/the/action/script
+
+[Install]
+WantedBy=multi-user.target
+```
+
+- Creating a action scripts: `/path/to/the/action/script`
+
+```bash
+#!/bin/bash
+
+case "$2" in
+    CONNECTED)
+        systemctl start openvpn-client@la3.service;
+        ;;
+    DISCONNECTED)
+        systemctl stop openvpn-client@la3.service;
+        ;;
+esac
+```
+
+- Enabling and starting the `wpa_cli.service`
+
 ## Client daemon does not restarting after suspend
 
 - Create file: `/usr/lib/systemd/system-sleep/vpn.sh` and make it
