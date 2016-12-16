@@ -1,3 +1,5 @@
+[TOC]
+
 # 1. Testing terminology
 
 ## 1.1. Unit tests and unit testing
@@ -71,3 +73,9 @@ If you start developing tests for an existing code base without any tests, it is
 # 4. Best Practices
 ## 4.1 Unit Tests
 - [Writing Great Unit Tests: Best and Worst Practices](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/)
+
+# References
+
+[software-testing]: https://en.wikipedia.org/wiki/Software_testing "Wikipedia - Software Testing"
+[unit-testing-junit]: http://www.vogella.com/tutorials/JUnit/article.html "Unit Testing with JUnit - Tutorial"
+[fuzz-testing]: https://en.wikipedia.org/wiki/Fuzz_testing "Wikipedia - Fuzz Testing"
