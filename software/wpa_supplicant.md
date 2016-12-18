@@ -96,6 +96,31 @@ update_config=1
 
 # Connection
 
+# wpa_cli action script
+
+wpa_cli can run in daemon mode and execute a specified script based on
+events from wpa_supplicant. Two events are supported: `CONNECTED` and
+`DISCONNECTED`. Some environment variables are available to the script,
+see wpa_cli manpage for details.
+
+Script example:
+
+```
+#!/bin/bash
+
+case "$2" in
+    CONNECTED)
+        notify-send "WPA supplicant: connection established";
+        ;;
+    DISCONNECTED)
+        notify-send "WPA supplicant: connection lost";
+        ;;
+esac
+```
+
+Remember to make the script executable, then use the -a flag to pass the
+script path to wpa_cli: `$ wpa_cli -a /path/to/script`
+
 # Tips and Tricks
 
 ## Saving passphrase as a hash (encrypted passphrase) - WPA2-Enterprise - EAP (PEAP) - MSCHAPv2
