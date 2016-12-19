@@ -164,22 +164,8 @@ With OpenVPN, we can:
 ## OpenVPN and wpa_supplicant
 
 Using wpa_cli action scripts to control OpenVPN services when the
-connection is connected or disconnected.
-
-- Creating a systemd service: `/etc/systemd/system/wpa_cli.service`
-
-```
-[Unit]
-Description=wpa_cli action service
-After=wpa_supplicant@%i.service
-
-[Service]
-Type=forking
-ExecStart=/usr/bin/wpa_cli -B -a /path/to/the/action/script
-
-[Install]
-WantedBy=multi-user.target
-```
+connection is connected or disconnected. See `wpa_supplicant.md` for
+more details.
 
 - Creating a action scripts: `/path/to/the/action/script`
 
