@@ -121,6 +121,26 @@ esac
 Remember to make the script executable, then use the -a flag to pass the
 script path to wpa_cli: `$ wpa_cli -a /path/to/script`
 
+Creating a systemd service to auto start wpa_cli at boot:
+`/etc/systemd/system/wpa_cli.service`
+
+```
+[Unit]
+Description=wpa_cli action service
+Wants=systemd-networkd.service network-online.target
+After=systemd-networkd.service network-online.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/wpa_cli -a /home/glider/bin/wpa_action
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
 # Tips and Tricks
 
 ## Saving passphrase as a hash (encrypted passphrase) - WPA2-Enterprise - EAP (PEAP) - MSCHAPv2
