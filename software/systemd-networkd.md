@@ -157,11 +157,6 @@ example, name the file `10-ethusb0.link` and not `ethusb0.link`.
 
 # Configuration files
 
-Configuration files are located in `/usr/lib/systemd/network`, the
-volatile runtime network directory `/run/systemd/network` and the local
-administration network directory `/etc/systemd/network`. Files in
-`/etc/systemd/network` have the highest priority.
-
 There are three types of configuration files. They all use a format
 similar to systemd unit files.
 - `.network` files. They will apply a network configuration for a
@@ -171,24 +166,68 @@ matching environment.
 - `.link` files. When a network device appears, udev will look for the
 first matching .link file.
 
-They all follow the same rules:
-- If all conditions in the `[Match]` section are matched, the profile
-will be activated.
-- An empty `[Match]` section means the profile will apply in any case
-(can be compared to the `*` joker)
+Configuration files are located in `/usr/lib/systemd/network`, the
+volatile runtime network directory `/run/systemd/network` and the local
+administration network directory `/etc/systemd/network`.
 - All configuration files are collectively sorted and processed in
-lexical order, regardless of the directory in which they live.
-- Files with identical name replace each other.
+  lexical order, regardless of the directory in which they live.
+- However, files with identical name replace each other. Files in /etc
+  have the highest priority, files in /run take precedence over files
+  with the same name in /usr/lib. This can be used to override a system-
+  supplied configuration file withh a local file if needed. As a special
+  case, an empty file (file size 0) or symlink with the same name
+  pointing to `/dev/null` disables the configuration file entirely (it
+  is "masked").
+- If all conditions in the `[Match]` section are matched, the profile
+  will be activated.
+- An empty `[Match]` section means the profile will apply in any case
+  (can be compared to the `*` joker)
+- Along with the main configuration file, a **drop-in** directory (e.g.
+  `/etc/systemd/network/foo.network.d/`) may exist. All files with the
+  suffix **.conf** from this directory will be parsed after the file
+  itself is parsed. This is useful to alter or add configuration
+  settings, without having to modify the main configuration file. Each
+  drop-in file must have appropriate section headers.
 
 ## Tips
 - To override a system-supplied file in `/usr/lib/systemd/network` in a
-permanent manner (i.e. even after upgrade), place a file with same name
-in `/etc/systemd/network` and symlink it to `/dev/null`.
+  permanent manner (i.e. even after upgrade), place a file with same
+  name in `/etc/systemd/network` and symlink it to `/dev/null`.
 - The `*` joker can be used in `VALUE` (e.g. `en*` match any Ethernet
-device).
+  device).
 - Following this [arch-general thread][thread], the best practice is to
-setup specific container network settings **inside the container** with
-**networkd** configuration files.
+  setup specific container network settings **inside the container**
+  with **networkd** configuration files.
+
+## network files
+
+These files are aimed at setting network configuration variables,
+especially for servers and containers. `.network` files have the
+following sections: `[Match]`, `[Link]`, `[Network]`, `[Address]`, `
+[Route]` and `[DHCP]`. Below are commonly configured keys for each
+section. See `systemd.network(5)` man page for more information and
+examples.
+
+### [Match]
+
+- `Name=` the device name
+- `Host=` the machine hostname
+- `Virtualization=` check whether the system is executed in a
+virtualized environment or not. A `Virtualization=no` key will only
+apply on your host machine, while `Virtualization=yes` apply to any
+container or VM.
+
+### [Link]
+
+- `MACAddress=` useful for [MAC address spoofing][spoofing]
+- `MTUBytes=` setting a larger MTU value ([jumbo frames][jumbo]) can
+significantly speed up your network transfers
+
+### [Network]
+
+- `DHCP=` enables the DHCP client
+- `DNS=` DNS server address
+-
 
 # Usage with containers
 
@@ -199,3 +238,5 @@ setup specific container network settings **inside the container** with
 [awiki-systemd-networkd]: https://wiki.archlinux.org/index.php/Systemd-networkd "Arch Wiki: systemd-networkd"
 [man-page]: https://www.freedesktop.org/software/systemd/man/systemd-networkd.service.html "Systemd-networkd man page"
 [thread]: https://lists.archlinux.org/pipermail/arch-general/2014-March/035381.html "[arch-general] tap device"
+[spoofing]: https://wiki.archlinux.org/index.php/MAC_address_spoofing "Arch Wiki - MAC address spoofing"
+[jumbo]: https://wiki.archlinux.org/index.php/Jumbo_frames "Arch Wiki - Jumbo Frame"
