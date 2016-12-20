@@ -13,6 +13,18 @@ machines.
 
 # Basic usage
 
+## Required services and setup
+
+To use systemd-networkd, start the following two services and enable
+them to run on system boot:
+- `systemd-networkd.service`
+- `systemd-resolved.service`: this service is required only if you are
+specifying DNS entries in `.network` files or if you want to obtain DNS
+addresses from networkd's DHCP client.
+    + For compatibility with resolv.conf, delete or rename the existing
+    file and create the following symbolic link:
+    + `# ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf`
+
 # Configuration files
 
 # Usage with containers
