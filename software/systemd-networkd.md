@@ -157,6 +157,39 @@ example, name the file `10-ethusb0.link` and not `ethusb0.link`.
 
 # Configuration files
 
+Configuration files are located in `/usr/lib/systemd/network`, the
+volatile runtime network directory `/run/systemd/network` and the local
+administration network directory `/etc/systemd/network`. Files in
+`/etc/systemd/network` have the highest priority.
+
+There are three types of configuration files. They all use a format
+similar to systemd unit files.
+- `.network` files. They will apply a network configuration for a
+matching device.
+- `.netdev` files. They will create a virtual network device for a
+matching environment.
+- `.link` files. When a network device appears, udev will look for the
+first matching .link file.
+
+They all follow the same rules:
+- If all conditions in the `[Match]` section are matched, the profile
+will be activated.
+- An empty `[Match]` section means the profile will apply in any case
+(can be compared to the `*` joker)
+- All configuration files are collectively sorted and processed in
+lexical order, regardless of the directory in which they live.
+- Files with identical name replace each other.
+
+## Tips
+- To override a system-supplied file in `/usr/lib/systemd/network` in a
+permanent manner (i.e. even after upgrade), place a file with same name
+in `/etc/systemd/network` and symlink it to `/dev/null`.
+- The `*` joker can be used in `VALUE` (e.g. `en*` match any Ethernet
+device).
+- Following this [arch-general thread][thread], the best practice is to
+setup specific container network settings **inside the container** with
+**networkd** configuration files.
+
 # Usage with containers
 
 # Management and desktop integration
@@ -165,3 +198,4 @@ example, name the file `10-ethusb0.link` and not `ethusb0.link`.
 
 [awiki-systemd-networkd]: https://wiki.archlinux.org/index.php/Systemd-networkd "Arch Wiki: systemd-networkd"
 [man-page]: https://www.freedesktop.org/software/systemd/man/systemd-networkd.service.html "Systemd-networkd man page"
+[thread]: https://lists.archlinux.org/pipermail/arch-general/2014-March/035381.html "[arch-general] tap device"
