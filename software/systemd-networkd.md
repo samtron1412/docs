@@ -25,6 +25,136 @@ addresses from networkd's DHCP client.
     file and create the following symbolic link:
     + `# ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf`
 
+## Configuration examples
+
+- All configurations in this section are stored as `foo.network` in
+`/etc/systemd/network`. For a full listing of options and processing
+order, see [Configuration files](#configuration-files) and
+`systemd-network(5)`.
+- Systemd/udev automatically assigns predictable, stable network
+interface
+names for all local Ethernet, WLAN, WWAN interfaces. Use `networkctl
+list` to list the devices on the system.
+- After making changes to a configuration file, restart
+`systemd-networkd.service`.
+
+### Wired adapter using DHCP
+
+`/etc/systemd/network/wired.network`
+
+```
+[Match]
+Name=enp1s0
+
+[Network]
+DHCP=ipv4
+```
+
+### Wired adapter using a static IP
+
+`/etc/systemd/network/wired.network`
+
+```
+[Match]
+Name=enp1s0
+
+[Network]
+Address=10.1.10.9/24
+Gateway=10.1.10.1
+```
+
+- You may specify multiple IP addresses.
+- Add an IPv6 address with another Address= line.
+- See the `systemd.network(5)` man page for more network options such as
+specifying DNS servers and a broadcast address.
+
+### Wireless adapter
+
+- In order to connect to a wireless network with systemd-networkd, a
+wireless adapter configured with another service such as wpa_supplicant
+is required.
+- In this example, the corresponding systemd service file that needs to
+be enabled is `wpa_supplicant@wlp2s0.service`. This service will run
+wpa_supplicant with the configuration file
+`/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf`. If this file does not
+exist, the service will not start.
+
+`/etc/systemd/network/wireless.network`
+
+```
+[Match]
+Name=wlp2s0
+
+[Network]
+DHCP=ipv4
+```
+
+If the wireless adapter has a static IP address, the configuration is
+the same as in a wired adapter.
+
+### Wired and wireless adapters on the same machine
+
+- The setup will enable a DHCP for both a wired and wireless connection
+making use of the metric directive to allow the kernel to decide
+on-the-fly which one to use. This way, no connection downtime is
+observed when the wired connection is unplugged.
+- The kernel's route metric (same as configured with ip) decides which
+route to use for outgoing packets, in cases when several match. This
+will be the case when both wireless and wired devices on the system have
+active connections. To break the tie, the kernel uses the metric. If one
+of the connections is terminated, the other automatically wins without
+there being a gap with nothing configured.
+
+`/etc/systemd/network/wired.network`
+
+```
+[Match]
+Name=enp1s0
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+RouteMetric=10
+```
+
+`/etc/systemd/network/wireless.network`
+
+```
+[Match]
+Name=wlp2s0
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+RouteMetric=20
+```
+
+### Renaming an interface
+
+- Instead of editing udev rules, a .link file can be used to rename an
+interface.
+- A useful exapmle is to set a predictable interface name for a
+USB-to-Ethernet adapter based on its MAC address, as those adapters are
+usually given different names depending on which USB port they are
+plugged into.
+
+`/etc/systemd/network/10-ethusb0.link`
+
+```
+[Match]
+MACAddress=12:34:56:78:90:ab
+
+[Link]
+Description=USB to Ethernet Adapter
+Name=ethusb0
+```
+
+Any user-supplied .link must have a lexically earlier file name than the
+default config `99-default.link` in order to be considered at all. For
+example, name the file `10-ethusb0.link` and not `ethusb0.link`.
+
 # Configuration files
 
 # Usage with containers
