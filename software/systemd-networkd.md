@@ -210,6 +210,9 @@ examples.
 
 ### [Match]
 
+A network file is said to match a device if each of the entries in the
+"[Match]" section matches, or if the section is empty.
+
 - `Name=` the device name
 - `Host=` the machine hostname
 - `Virtualization=` check whether the system is executed in a
@@ -225,9 +228,35 @@ significantly speed up your network transfers
 
 ### [Network]
 
-- `DHCP=` enables the DHCP client
+- `DHCP=` enables the DHCP client. Accepts "yes", "no", "ipv4" and
+"ipv"6
 - `DNS=` DNS server address
--
+- `Bridge=` the bridge name
+- `IPForward=` enables IP packet forwarding
+- `Domains=` a list of domains to be resolved on this link
+
+### [Address]
+
+Specify several "[Address]" sections to configure several addresses.
+
+`Address=` this option is **mandatory** unless DHCP is used
+
+### [Route]
+
+Specify several "[Route]" sections to configure several routes
+
+`Gateway=` this option is mandatory unless DHCP is used
+
+> **Tip**: you can put the `Address=` and `Gateway=` keys in the `
+[Network]` section as a short-hand if `[Address]` section contains only
+an Address key and `[Gateway]` contains only a Gateway key.
+
+### [DHCP]
+
+The "[DHCP]" section configures the DHCPv4 and DHCPv6 client, if it is
+enabled with the `DHCP=` setting.
+
+- `UseDomain=true`
 
 # Usage with containers
 
