@@ -258,6 +258,49 @@ enabled with the `DHCP=` setting.
 
 - `UseDomain=true`
 
+## netdev files
+
+These files will create virtual network devices. See `systemd.netdev(5)`
+for more information and examples.
+
+### Kinds of virtual network devices
+
+| Kind      | Description                                                                                                                              |
+| -         | -                                                                                                                                        |
+| bond      | A bond device is an aggregation of all its slave devices. See [Linux Ethernet Bonding Driver HOWTO][bonding] for details.                |
+| bridge    | A bridge device is a software switch, and each of its slave devices and the bridge itself are ports of the switch.                       |
+| dummy     | A dummy device drops all packets sent to it.                                                                                             |
+| gre       | A level 3 GRE tunnel over IPv4. See RFC 2784 for details.                                                                                |
+| gretap    | A level 2 GRE tunnel over IPv4.                                                                                                          |
+| ip6gre    | A level 3 GRE tunnel over IPv6.                                                                                                          |
+| ip6tnl    | An IPv4 or IPv6 tunnel over IPv6.                                                                                                        |
+| ip6gretap | A level 2 GRE tunnel over IPv6.                                                                                                          |
+| ipip      | An IPv4 over IPv4 tunnel.                                                                                                                |
+| ipvlan    | An ipvlan device is a stacked device which receives packets from its underlying device based on IP address filtering.                    |
+| macvlan   | A macvlan device is a stacked device which receives packets from its underlying device based on MAC address filtering.                   |
+| sit       | An IPv6 over IPv4 tunnel.                                                                                                                |
+| tap       | A persistent level 2 tunnel between a network device and a device node.                                                                  |
+| tun       | A persistent level 3 tunnel between a network device and a device node.                                                                  |
+| veth      | An Ethernet tunnel between a pair of network devices.                                                                                    |
+| vlan      | A VLAN is a stacked device which receives packets from its underlying device based on VLAN tagging. See [IEEE 802.1Q][vlan] for details. |
+| vti       | An IPv4 over IPSec tunnel.                                                                                                               |
+| vti6      | An IPv6 over IPsec tunnel.                                                                                                               |
+| vxlan     | A virtual extensible LAN, for connecting Cloud computing deployments.                                                                    |
+| vcan      | The virtual CAN driver. Similar to the network loopback devices, vcan offers a virtual local CAN interfaces.                             |
+
+### [Match]
+
+- `Host=`
+- `Virtualization=`
+- `KernelCommandLine=`
+- `Architecture=`
+
+### [Netdev]
+
+- `Name=`: the interface name. This option is compulsory (mandatory)
+- `Kind=`: the netdev kind (e.g. bond, bridge, vlan, etc.). This option
+is mandatory.
+
 # Usage with containers
 
 # Management and desktop integration
@@ -269,3 +312,5 @@ enabled with the `DHCP=` setting.
 [thread]: https://lists.archlinux.org/pipermail/arch-general/2014-March/035381.html "[arch-general] tap device"
 [spoofing]: https://wiki.archlinux.org/index.php/MAC_address_spoofing "Arch Wiki - MAC address spoofing"
 [jumbo]: https://wiki.archlinux.org/index.php/Jumbo_frames "Arch Wiki - Jumbo Frame"
+[bonding]: https://www.kernel.org/doc/Documentation/networking/bonding.txt "Linux Ethernet Bonding driver HOWTO"
+[vlan]: http://www.ieee802.org/1/pages/802.1Q.html "Virtual LANs"
