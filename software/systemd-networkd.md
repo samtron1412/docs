@@ -301,6 +301,24 @@ for more information and examples.
 - `Kind=`: the netdev kind (e.g. bond, bridge, vlan, etc.). This option
 is mandatory.
 
+## link files
+
+These files are an alternative to custom udev rules and will be applied
+by udev as the device appears. See `systemd.link(5)` for more
+information and examples.
+
+### [Match]
+
+- `MACAddress=`
+- `Host=`
+- `Virtualization=`
+- `Type=`
+
+### [Link]
+
+- `MACAddressPolicy=` persistent or random addresses
+- `MACAddress=` a specific address
+
 # Usage with containers
 
 # Management and desktop integration
