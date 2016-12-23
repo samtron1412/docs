@@ -1,8 +1,12 @@
 [TOC]
 
 # Overview
+
 ## What?
-`systemd` is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system.
+
+`systemd` is a suite of basic building blocks for a Linux system. It
+provides a system and service manager that runs as PID 1 and starts the
+rest of the system.
 
 - provides aggressive parallelization capabilities
 - uses socket and D-Bus activation for starting service
@@ -10,13 +14,19 @@
 - keeps track of processes using Linux control groups
 - supports snapshotting and restoring of the system state
 - maintains mount and automount points
-- implements an elaborate transactional dependency-based service control logic.
-- supports SysV and LSB init scripts and works as a replacement for sysvinit.
+- implements an elaborate transactional dependency-based service control
+  logic.
+- supports SysV and LSB init scripts and works as a replacement for
+  sysvinit.
 
 **Other parts:**
 - a logging daemon
-- utilities to control basic system configuration like the hostname, date, locale, maintain a list of logged-in users and running containers and virtual machines, system accounts, runtime directories and settings
-- daemons to manage simple network configuration, network time synchronization, log forwarding, and name resolution.
+- utilities to control basic system configuration like the hostname,
+  date, locale, maintain a list of logged-in users and running
+  containers and virtual machines, system accounts, runtime directories
+  and settings
+- daemons to manage simple network configuration, network time
+  synchronization, log forwarding, and name resolution.
 
 **License**: GNU Lesser General Public License (>=2.1)
 
@@ -26,6 +36,7 @@
 
 
 # Design
+
 ## Unit files
 
 ## Core components and libraries
@@ -37,16 +48,23 @@
 # Forks and alternative implementations
 
 # Tips and Tricks
+
 ## [Allow user to shutdown][9]
+
 Install `systemd-sysvcompat`
 
 # Troubleshooting
+
 ## [Debugging][10]
 
 ## [/var stay busy at shutdown due to journald][11]
-- Fix by change `Storage=volatile` in `/etc/systemd/journald.conf`: journald will save log to `/run/log/journal` instead `/var/log/journal`
+
+- Fix by change `Storage=volatile` in `/etc/systemd/journald.conf`:
+  journald will save log to `/run/log/journal` instead
+  `/var/log/journal`
 
 # References
+
 1. [Source Code][1]
 2. [Homepage][2]
 3. [Wikipedia][3]
