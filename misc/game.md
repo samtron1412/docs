@@ -8,25 +8,6 @@
     + through the control of game objects and resources
     + in pursuit of a goal
 
-## Game Genres
-
-+ Arcade games: where reaction speed is the most important aspect of the
-  game.
-+ Puzzle games: where clever thinking is the most important aspect.
-  chess games, etc.
-+ Role playing games (RPG): where you steer a character through a
-  dangerous world. Diablo, etc.
-+ Strategy games: either real-time (RTS) or turn-based. Age of Empires,
-  etc.
-+ Management games: in which you must build up an empire. SimCity, etc.
-+ Adventure games: where the story line is rather crucial.
-+ First-person shooters. Doom, Quake, etc.
-+ Third-person shooters: where the player directly controls a game
-  character through a hostile world. Tomb Raider, etc.
-+ Sport games
-+ Racing games
-+ Simulators
-
 # Checklist for a good game
 
 - Reaching goals
@@ -86,6 +67,25 @@
 ## Interactive Challenges
 - Interactive: players have some control over the outcome of games, but film audiences do not.
 - Challenges: players must overcome to win the game.
+
+### Game Genres
+
++ Arcade games: where reaction speed is the most important aspect of the
+  game.
++ Puzzle games: where clever thinking is the most important aspect.
+  chess games, etc.
++ Role playing games (RPG): where you steer a character through a
+  dangerous world. Diablo, etc.
++ Strategy games: either real-time (RTS) or turn-based. Age of Empires,
+  etc.
++ Management games: in which you must build up an empire. SimCity, etc.
++ Adventure games: where the story line is rather crucial.
++ First-person shooters. Doom, Quake, etc.
++ Third-person shooters: where the player directly controls a game
+  character through a hostile world. Tomb Raider, etc.
++ Sport games
++ Racing games
++ Simulators
 
 ## Challenges
 ### Difficulty
