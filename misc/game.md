@@ -111,6 +111,53 @@
 
 ### Audio Feedback
 
+# Game Engines
+
+A game engine is a software framework designed for the creation and
+development of video games. Developers use them to create games for
+consoles, mobile devices and personal computers.
+
+The core functionality typically provided by a game engine includes:
+- a rendering engine (renderer) for 2D or 3D graphics,
+- a physics engine or collision detection (and collision response),
+- audio engine,
+- scripting,
+- animation,
+- artificial intelligence,
+- networking,
+- streaming,
+- memory management,
+- threading,
+- localization support,
+- scene graph,
+- and may include video support for cinematics.
+
+- [GitHub - Game Engines][5]
+
+## Components
+
+### Main game program
+
+The actual game logic has to be implemented by some algorithms. It is
+distinct from any rendering, sound or input work.
+
+### Rendering engine
+
+It is built upon one or multiple rendering application programming
+interfaces (APIs), such as Direct3D or OpenGL which provide a software
+abstraction of the graphics processing unit (GPU).
+
+### Audio engine
+
+It can calculate things on the CPU, or on a dedicated ASIC. Abstraction
+APIs, such as OpenAL, SDL audio, XAudio 2, Web Audio, etc. are
+available.
+
+### Physics engine
+
+The physics engine is responsible for emulating the laws of physics
+realistically within the application.
+
 # How to get a job in game industry
 
 - Close community, so only through close network
@@ -120,13 +167,12 @@
   informal club, contribute to open source project
 - Love game -> do what you love
 
-# Computer Games
+# List of open source computer games
 
 - [Twitch installs Arch Linux][1]
 - [Best Open Source Games][2]
 - [Slant - Best Open Source Games][3]
 - [openage - Open Source Age of Empire II][4]
-- [GitHub - Game Engines][5]
 - [List of open source computer games][open-games]
 
 # References
@@ -140,3 +186,4 @@
 [game]: https://en.wikipedia.org/wiki/Game "Wikipedia - Game"
 [computer-game-genres]: https://en.wikipedia.org/wiki/Video_game_genre "Wikipedia - Computer game genres"
 [list-computer-game-genres]: https://en.wikipedia.org/wiki/List_of_video_game_genres "Wikipedia - List of computer game genres"
+[game-engine]: https://en.wikipedia.org/wiki/Game_engine "Wikipedia - Game engine"
