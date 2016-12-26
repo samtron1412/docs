@@ -5,7 +5,7 @@
 - What is a computer Game?
     + A software program
     + in which one or more players make decisions
-    + though the control of game objects and resources
+    + through the control of game objects and resources
     + in pursuit of a goal
 
 ## Game Genres
@@ -86,13 +86,6 @@
 ## Interactive Challenges
 - Interactive: players have some control over the outcome of games, but film audiences do not.
 - Challenges: players must overcome to win the game.
-
-### Game genres
-- Strategy games
-- Adventure games
-- Role-playing games
-- Simulator games
-- Actions games
 
 ## Challenges
 ### Difficulty
