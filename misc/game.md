@@ -2,13 +2,22 @@
 
 # Overview
 
+
+# Computer Game
+
 - What is a computer Game?
     + A software program
     + in which one or more players make decisions
     + through the control of game objects and resources
     + in pursuit of a goal
 
-# Checklist for a good game
+## Game Design
+
+- Game Design = Cool idea for characters and story + **game mechanics**
+- Game mechanics: the basic rules and interactions that make a game fun to play.
+- Think of game mechanics as a car engine and the graphics, characters, and storyline as the bodywork and finishing.
+
+### Checklist for a good computer game
 
 - Reaching goals
     + Goals should not be too easy to achieve. There must be a
@@ -58,17 +67,11 @@
 - Presence and Immersion: the story, the game world, the main
   characters, the music, the special effects
 
-# Game Design
-
-- Game Design = Cool idea for characters and story + **game mechanics**
-- Game mechanics: the basic rules and interactions that make a game fun to play.
-- Think of game mechanics as a car engine and the graphics, characters, and storyline as the bodywork and finishing.
-
-## Interactive Challenges
+### Interactive Challenges
 - Interactive: players have some control over the outcome of games, but film audiences do not.
 - Challenges: players must overcome to win the game.
 
-### Game Genres
+#### Game Genres
 
 + Arcade games: where reaction speed is the most important aspect of the
   game.
@@ -87,31 +90,31 @@
 + Racing games
 + Simulators
 
-## Challenges
-### Difficulty
+### Challenges
+#### Difficulty
 - Choosing the difficult level.
 
-### Goals
+#### Goals
 - Make goals clear to players.
 - Make the game easy at first, but harder and harder.
 - Show players' progress.
 
-### Rewards
+#### Rewards
 - Give players specific rewards and randomly rewards.
 
-### Subgoals
+#### Subgoals
 - Short term goals.
 
-## Interactivity
-### Choices and control
+### Interactivity
+#### Choices and control
 
-### Control Overload
+#### Control Overload
 
-### Unfair Punishment
+#### Unfair Punishment
 
-### Audio Feedback
+#### Audio Feedback
 
-# Game Engines
+## Game Engines
 
 A game engine is a software framework designed for the creation and
 development of video games. Developers use them to create games for
@@ -134,31 +137,31 @@ The core functionality typically provided by a game engine includes:
 
 - [GitHub - Game Engines][5]
 
-## Components
+### Components
 
-### Main game program
+#### Main game program
 
 The actual game logic has to be implemented by some algorithms. It is
 distinct from any rendering, sound or input work.
 
-### Rendering engine
+#### Rendering engine
 
 It is built upon one or multiple rendering application programming
 interfaces (APIs), such as Direct3D or OpenGL which provide a software
 abstraction of the graphics processing unit (GPU).
 
-### Audio engine
+#### Audio engine
 
 It can calculate things on the CPU, or on a dedicated ASIC. Abstraction
 APIs, such as OpenAL, SDL audio, XAudio 2, Web Audio, etc. are
 available.
 
-### Physics engine
+#### Physics engine
 
 The physics engine is responsible for emulating the laws of physics
 realistically within the application.
 
-# How to get a job in game industry
+## How to get a job in game industry
 
 - Close community, so only through close network
 - Multiple language -> ability to learn new things
@@ -167,7 +170,7 @@ realistically within the application.
   informal club, contribute to open source project
 - Love game -> do what you love
 
-# List of open source computer games
+## List of open source computer games
 
 - [Twitch installs Arch Linux][1]
 - [Best Open Source Games][2]
