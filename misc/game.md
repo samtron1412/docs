@@ -2,6 +2,63 @@
 
 # Overview
 
+## Definitions
+
+### Chris Crawford
+
+1. Creative expression is art if made for its own beauty, and
+   entertainment if made for money.
+2. A piece of entertainment is a plaything if it is interactive. Movies
+   and books are cited as examples of non-interactive entertainment.
+3. If no goals are associated with a plaything, it is a toy. (Crawford
+   notes that by his definition, (a) a toy can become a game element if
+   the player makes up rules, and (b) The Sims and SimCity are toys, not
+   games.) If it has goals, a plaything is a challenge.
+4. If a challenge has no "active agent against whom you compete," it is
+   a puzzle; if there is one, it is a conflict. (Crawford admits that
+   this is a subjective test. Video games with noticeably algorithmic
+   artificial intelligence can be played as puzzles; these include the
+   patterns used to evade ghosts in Pac-Man.)
+5. Finally, if the player can only outperform the opponent, but not
+   attack them to interfere with their performance, the conflict is a
+   competition. (Competitions include racing and figure skating.)
+   However, if attacks are allowed, then the conflict qualifies as a
+   game.
+
+## Tools
+
+Games are often classified by the components required to play them
+(e.g., miniatures, a ball, cards, a board and pieces, tokens, or a
+computer).
+
+## Rules
+
+## Skill, strategy, and chance
+
+- Games of skill
+  + physical skills: wrestling, tug of war, hopscotch, target shooting,
+  etc.
+  + mental skills: chess, checkers, etc.
+- Games of strategy: chess, checkers, go, tic-tac-toe, monopoly, etc.
+- Games of chance: blackjack, monopoly, rock-paper-scissors, etc.
+
+## Types
+
+### Sports
+
+### Lawn games
+
+### Tabletop games
+
+- Dexterity an coordination games: jacks, paper football, Jenga
+- Board games
+- Card games
+- Dice games
+- Domino and tile games
+- Pencil and paper games
+- Guessing games
+
+### Computer games
 
 # Computer Game
 
