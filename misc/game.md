@@ -124,6 +124,50 @@
 
 #### Audio Feedback
 
+### Levels and Features
+
+#### Selecting Features
+
+Before you begin thinking of feature ideas, give some serious thought to
+the kind of progression you want to see running through your game. Is it
+about developing the equipment and abilities of a single character or
+building up a specialist team? Will levels force the player to apply
+their skills in different kinds of environments, or just pit them
+against increasingly challenging obstacles? Once you have made some of
+these kinds of decisions, then you are ready to sit down with some
+friends and start brainstorming ideas.
+
+- New features for the player(s) to use:
+  + Abilities (e.g., attack moves, swimming, flying)
+  + Equipment (e.g., weapons, armor, vehicles)
+  + Character (e.g., engineer, wizard, medic)
+  + Buildings (e.g., garage, barracks, armory)
+- New level features for the player(s) to overcome:
+  + Opponents (e.g., with new abilities, buildings, or equipment)
+  + Obstacles (e.g., traps, puzzles, terrain)
+  + Environment (e.g., battlefields, racing tracks, climate)
+
+#### Designing Levels
+
+"The Game Maker's Apprentice" is a reference to the game player, which
+makes the Game Maker the crazy professor! Being a good game designer has
+a lot in common with being a good teacher - and just realizing this can
+improve your approach to game design.
+
+Inexperienced designers often see players as their opponents, and try to
+trick or outwit them by creating impossible challenges. A successful
+game designer needs to treat players like their apprentices, balancing
+the game's theatrical threat of failure with a true desire to train the
+player to master the game.
+
+- Learning Curves:
+  + Stage One: big risk of frustration. Designers should use a training
+  mode to guide players during this period.
+  + Stage Two: (fun) make it last as long as possible.
+  + Stage Three: (boring) switch to different difficulty levels
+- Difficulty Curves: introducing new features to maintain the stage two
+of learning curves.
+
 ## Game Engines
 
 A game engine is a software framework designed for the creation and
