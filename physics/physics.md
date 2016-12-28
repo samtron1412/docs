@@ -125,6 +125,18 @@ Erwin Schrodinger and Paul Dirac.
 
 ## Scientific method
 
+Physicists use the scientific method to test the validity of a physical
+theory. By using a methodical approach to compare the implications of a
+theory with the conclusions drawn from its related experiments and
+observations, physicists are better able to test the validity of a
+theory in a logical, unbiased, and repeatable way. To that end,
+experiments are performed and observations are made in order to
+determine the validity or invalidity of the theory.
+
+A scientific law is a **concise verbal** or **mathematical statement**
+of a relation which expresses a fundamental principle of some theory,
+such as Newton's law of universal gravitation.
+
 ## Theory and experiment
 
 ## Scope and aims
