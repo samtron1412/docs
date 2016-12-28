@@ -168,6 +168,16 @@ areas which are not well-explored by theorists.
 
 ## Scope and aims
 
+Physics covers a wide range of phenomena, from elementary particles
+(such as quarks, neutrinos, and electrons) to the largest superclusters
+of galaxies. Included in these phenomena are the most basic objects
+composing all other things.
+
+Physics aims to describe the various phenomena that occur in nature in
+terms of simpler phenomena. thus, physics aims to both connect the
+things observable to humans to root causes, and then connect these
+causes together.
+
 ## Research fields
 
 ### Particle physics
