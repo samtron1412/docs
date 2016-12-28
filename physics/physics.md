@@ -139,6 +139,33 @@ such as Newton's law of universal gravitation.
 
 ## Theory and experiment
 
+Theorists seek to develop mathematical models that both agree with
+existing experiments and successfully predict future experimental
+results, while experimentalists devise and perform experiments to test
+theoretical predictions and explore new phenomena. Although theory and
+experiment are developed separately, they are strongly dependent upon
+each other.
+
+Progress in physics frequently comes about when experimentalists make a
+discovery that existing theories cannot explain, or when new theories
+generate experimentally testable predictions, which inspire new
+experiments.
+
+Theoretical physics has historically taken inspiration from philosophy.
+Beyond the known universe, the field of theoretical physics also deals
+with hypothetical issues, such as parallel universes, a multiverse, and
+higher dimensions. Theorists invoke these ideas in hopes of solving
+particular problems with existing theories. They explore the
+consequences of these ideas and work toward making testable predictions.
+
+Experimental physics expands, and is expanded by, engineering and
+technology. Experimental physicists involved in basic research design
+and perform experiments with equipment such as particle accelerators and
+lasers, whereas those involved in applied research often work in
+industry developing technologies such as magnetic resonance imaging
+(MRI) and transistors. Feynman has noted that experimentalists may seek
+areas which are not well-explored by theorists.
+
 ## Scope and aims
 
 ## Research fields
