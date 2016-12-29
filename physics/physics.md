@@ -189,6 +189,32 @@ causes together.
 
 ### Particle physics
 
+Particle physics is the study of the elementary constituents of matter
+and energy and the interaction between them. In addition, particle
+physicists design and develop the high energy accelerators, detectors,
+and computer programs necessary for this research. Th field is also
+called "high-energy physics" because many elementary particles do not
+occur naturally but are created only during high-energy collisions of
+other particles.
+
+Currently, the interactions of elementary particles and fields are
+described by the Standard Model. The model accounts for the 12 known
+particles of matter (quarks and leptons) that interact via the strong,
+weak, and electromagnetic fundamental forces. Dynamics are described in
+terms of matter particles exchanging gauge bosons (gluons, W and Z
+bosons, and photons, respectively). The Standard Model also predicts a
+particle known as the Higgs boson. In July 2012 CERN, the European
+laboratory for particle physics, announced the detection of a particle
+consistent with the Higgs boson, an integral part of a Higgs mechanism.
+
+Nuclear physics is the field of physics that studies the constituents
+and interactions of atomic nuclei. The most commonly known applications
+of nuclear physics are nuclear power generation and nuclear weapons
+technology, but the research has provided application in many fields,
+including those in nuclear medicine and magnetic resonance imaging, ion
+implantation in materials engineering, and radiocarbon dating in geology
+and archaeology.
+
 ### Atomic, molecular, and optical physics
 
 ### Condensed matter physics
