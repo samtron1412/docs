@@ -217,6 +217,29 @@ and archaeology.
 
 ### Atomic, molecular, and optical physics
 
+Atomic, molecular, and optical physics (AMO) is the study of
+matter-matter and light-matter interactions on the scale of single atoms
+and molecules. The three areas are grouped together because of their
+interrelationships, the similarity of methods used, and the commonality
+of their relevant energy scales. All three areas include both classical,
+semi-classical and quantum treatments; they can treat their subject from
+a microscopic view (in contrast to a macroscopic view).
+
+Atomic physics studies the electron shells of atoms. Current research
+focuses on activities in quantum control, cooling and trapping of atoms
+and ions, Low-temperature collision dynamics and the effects of electron
+correlation on structure and dynamics. Atomic physics is influenced by
+the nucleus (see, e.g., hyperfine splitting), but intra-nuclear
+phenomena such as **fission and fusion** are considered part of high-energy
+physics.
+
+Molecular physics focuses on multi-atomic structures and their internal
+and external interactions with matter and light. Optical physics is
+distinct from optics in that it tends to focus not on the control of
+classical light fields by macroscopic objects but on the fundamental
+properties of optical fields and their interactions with matter in the
+microscopic realm.
+
 ### Condensed matter physics
 
 ### Astrophysics
