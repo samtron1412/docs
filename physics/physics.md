@@ -242,6 +242,30 @@ microscopic realm.
 
 ### Condensed matter physics
 
+Condensed matter physics is the field of physics that deals with the
+macroscopic physics properties of matter. In particular, it is concerned
+with the "condensed" phases that appear whenever the number of particles
+in a system is extremely large and the interactions between them are
+strong.
+
+The most familiar examples of condensed phases are solids and liquids,
+which arise from the bonding by way of the electromagnetic force between
+atoms. More exotic condensed phases include the superfluid and the
+Bose-Einstein condensate found in certain atomic systems at very low
+temperature, the superconducting phase exhibited by conduction electrons
+in certain materials, and the ferromagnetic and antiferromagnetic phases
+of spins on atomic lattices.
+
+Condensed matter physics is the largest field of contemporary physics.
+Historically, condensed matter physics grew out of solid-state physics,
+which is now considered one of its main subfields. The term condensed
+matter physics was apparently coined by Philip Anderson when he renamed
+his research group - previously solid-state theory - in 1967. In 1978,
+the Division of Solid State Physics of the American Physical Society was
+renamed as the Division of Condensed Matter Physics. Condensed matter
+physics has a large overlap with chemistry, material science,
+nanotechnology and engineering.
+
 ### Astrophysics
 
 # References
