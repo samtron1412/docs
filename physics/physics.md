@@ -268,6 +268,52 @@ nanotechnology and engineering.
 
 ### Astrophysics
 
+Astrophysics and astronomy are the application of the theories and
+methods of physics to the study of stellar structure, stellar evolution,
+the origin of the Solar System, and related problems of cosmology.
+Because astrophysics is a broad subject, astrophysicists typically apply
+many disciplines of physics, including mechanics, electromagnetism,
+statistical mechanics, thermodynamics, quantum mechanics, relativity,
+nuclear and particle physics, and atomic and molecular physics.
+
+The discovery by Karl Jansky in 1931 that radio signals were emitted by
+celestial bodies initiated the science of radio astronomy. Most
+recently, the frontiers of astronomy have been expanded by space
+exploration. Perturbations and interference from the earth's atmosphere
+make space-based observations necessary of infrared, ultraviolet,
+gamma-ray, and X-ray astronomy.
+
+Physical cosmology is the study of the formation and evolution of the
+universe on its largest scales. Albert Einstein's theory of relativity
+plays a central role in all modern cosmological theories. In the early
+20th century, Hubble's discovery that the universe is expanding, as
+shown by the Hubble diagram, prompted rival explanation known as the
+steady state universe and the Big Bang.
+
+The Big Bang was confirmed by the success of Big Bang nucleosynthesis
+and the discovery of the cosmic microwave background in 1964. The Big
+Bang model rests on two theoretical pillars: Albert Einstein's general
+relativity and the cosmological principle. Cosmologists have recently
+established the Lambda-CDM model of the evolution of the universe, which
+includes cosmic inflation, dark energy, and dark matter.
+
+Numerous possibilities and discoveries are anticipated to emerge from
+new data from the Fermi Gamma-ray Space Telescope over the upcoming
+decade and vastly revise or clarify existing models of the universe. In
+particular, the potential for a tremendous discovery surrounding dark
+matter is possible over the next several years. Fermi will search for
+evidence that dark matter is composed of weakly interacting massive
+particles, complementing similar experiments with the Large Hadron
+Collider and other underground detectors.
+
+IBEX is already yielding new astrophysical discoveries: "No one knows
+what is creating the ENA (energetic neutral atoms) ribbon" along the
+termination shock of the solar wind, "but everyone agrees that it means
+the textbook picture of the heliosphere - in which the Solar System's
+enveloping pocket filled with the solar wind's charged particles is
+plowing through the onrushing 'galactic wind' of the interstellar medium
+in the shape of a comet - is wrong."
+
 # References
 
 [wiki-portal-physics]: https://en.wikipedia.org/wiki/Portal:Physics "Wikipedia - Portal: Physics"
