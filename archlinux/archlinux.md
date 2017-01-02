@@ -651,10 +651,12 @@ ncurces-based IRC client.
 
 ### 3.8 Disk cleaning
 
+- [bleachbit](http://www.bleachbit.org/)
+
 ### 3.9 Disk usage display
 
-- [ncdu][http://dev.yorhel.nl/ncdu]
-- [baobab][https://wiki.gnome.org/Apps/Baobab]
+- [ncdu](http://dev.yorhel.nl/ncdu)
+- [baobab](https://wiki.gnome.org/Apps/Baobab)
 
 ### 3.10 Clock synchronization
 
