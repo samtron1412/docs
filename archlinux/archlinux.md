@@ -653,6 +653,9 @@ ncurces-based IRC client.
 
 ### 3.9 Disk usage display
 
+- [ncdu][http://dev.yorhel.nl/ncdu]
+- [baobab][https://wiki.gnome.org/Apps/Baobab]
+
 ### 3.10 Clock synchronization
 
 ### 3.11 System monitoring
