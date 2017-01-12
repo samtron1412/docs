@@ -14,3 +14,7 @@
 
 [1]: https://en.wikipedia.org/wiki/Confucianism "Confucianism"
 [2]: https://en.wikipedia.org/wiki/Legalism_(Chinese_philosophy) "Wikipedia - Legalism"
+[list-religion-beliefs]: http://www.humanreligions.info/religions.html
+[wiki-pantheism]: https://en.wikipedia.org/wiki/Pantheism
+[stanford-pantheism]: https://plato.stanford.edu/entries/pantheism/
+[einstein-god-religion-theology]: http://www.spaceandmotion.com/albert-einstein-god-religion-theology.htm
