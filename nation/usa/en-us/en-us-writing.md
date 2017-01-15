@@ -311,6 +311,66 @@ paper.
 
 ## Grammar
 
+### Run-ons
+
+A run-on occurs when two sentences are run together with no adequate
+sign given to mark the break between them.
+
+#### What are Run-ons?
+
+- Fused sentences: without punctuation
+    + My grades are very good this semester my social life rates only a
+      C.
+- Comma splices: a comma is used to connect, or "splice" together, the
+two complete thoughts.
+    + My grades are very good this semester, my social life rates only a
+      C.
+
+#### Correcting Run-ons
+
+1. Use a period and a capital letter to break the two complete thoughts
+into separate sentences.
+    - My grades are very good this semester. My social life rates only a
+      C.
+2. Use a comma plus a joining word (a coordinating conjunction -
+FANBOYS) to connect the two complete thoughts.
+    - My grades are very good this semester, but my social life rates
+       only a C.
+3. Use a semicolon (colon, dash) to connect the two complete thoughts.
+    - My grades are very good this semester; my social life rates only
+       a C.
+4. Use subordination.
+    - Although my grades are very good this semester, my social life
+       rates only a C.
+5. Use a semicolon (colon, dash) and a transitional word or phrase
+   (however, in fact).
+    - Officials at many elementary schools are trying to reduce
+      childhood obesity on their campuses; however, research suggests
+      that few of their strategies will work.
+
+#### A good sentence without run-on
+
+Knowing that millions of people around the world would be watching in
+person and on television and expecting great things from him - at least
+one more gold medal for America, if not another world record - during
+this, his fourth and surely his last appearance in the World Olympics,
+and realizing that his legs could no longer carry him down the runway
+with the same blazing speed and confidence in making a huge, eye-popping
+leap that they were capable of a few years ago when he set world records
+in the 100-meter dash and in the 400-meter relay and won a silver medal
+in the long jump, the renowned sprinter and track-and field personality
+Carl Lewis, who had known pressure from fans and media before but never,
+even as a professional runner, this king of pressure, made only a few
+appearances in races during the few months before the summer Olympics in
+Atlanta, Georgia, partly because he was afraid of raising expectations
+even higher and he did not want to be distracted by interviews and
+adoring fans who would follow him into stores and restaurants demanding
+autographs and photo-opportunities, but mostly because he wanted to
+conserve his energies and concentrate, like a martial arts expert, on
+the job at hand: winning his favorite competition, the long ump, and
+bringing home another Gold Medal for the United States, the most fitting
+conclusion to his brilliant career in track and field.
+
 ## Mechanics
 
 ## Punctuation
