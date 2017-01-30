@@ -586,7 +586,9 @@ ncurces-based IRC client.
 - [jfbview](http://seasonofcode.com/pages/jfbview.html)
 
 #### 2.2.2 Screen capture (screenshot)
+- import command of imagemagick package
 - [maim](https://github.com/naelstrof/maim)
+- [screenfetch](https://github.com/KittyKatt/screenFetch)
 
 ### 2.3 Audio
 #### 2.3.1 Audio players
