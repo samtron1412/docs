@@ -281,6 +281,16 @@ Connect automatically to known networks
 ### set passwd
 	# passwd
 
+### Initramfs
+
+Creating a new initramfs is usually not required, because mkinitcpio was
+run on installation of the linux package with **pacstrap**.
+
+For special configurations, modify the mkinitcpio.conf(5) file and
+recreate the initramfs image:
+
+    # mkinitcpio -p linux
+
 ### Install and configure a boot loader
 #### Syslinux
 Install the **syslinux** package and then use the **syslinux-install_update** script to automatically install the bootloader (**-i**), mark the partition active by setting the boot flag (**-a**), and install the MBR boot code (**-m**):
