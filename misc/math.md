@@ -149,6 +149,18 @@ numbers
 
 # Vectors
 
+In general, to write a vector as a **linear combination** of two other
+vectors, we have to solve a system of two linear equations in two
+unknowns variables. On the other hand, vectors give us a way to
+visualizing the system of equations geometrically. This relation between
+vectors and systems of linear equations extends to any number of
+variables and is the starting point for the important subject of
+**linear algebra**.
+
+Vectors v and w are equivalent if they have the same magnitude and
+direction. Two vectors are equivalent if and only if they have the same
+components.
+
 # Linear Algebra
 
 https://en.wikipedia.org/wiki/Linear_algebra
