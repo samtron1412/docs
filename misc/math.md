@@ -146,3 +146,13 @@ numbers
 ### Problems
 
 #### [Show tan(x) = x has infinitely many solutions](https://web.archive.org/web/20150906001438/http://mathforum.org/library/drmath/view/54165.html)
+
+# Vectors
+
+# Linear Algebra
+
+https://en.wikipedia.org/wiki/Linear_algebra
+
+# Discrete Mathematics
+
+https://en.wikipedia.org/wiki/Discrete_mathematics
