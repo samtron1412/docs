@@ -4,6 +4,142 @@
 
 This file use to document all things relate with [US][wiki-us].
 
+# History
+
+## Pre-Columbian until 1876
+
+### "Turtle Island:" Pre-Columbian America and Native Americans
+
+#### Turtle Island Creation Story
+
+- [another version][turtle-island-2]
+
+#### Peopling of North America
+
+- Land bridge between Siberia and Alaska
+- Oceanic crossings in makeshift boats
+- Original habitation
+
+#### Native American Society
+
+##### Diverse and distinct language groups
+
+- They were assembled in village centers or kin and clan based
+  communities.
+- Not all Native Americans were grouped into tribes
+- The main Native American language groups were Algonquian and
+  Iroquoian, but there were hundreds and thousands of Native American
+  languages.
+- The Native Americans never considered themselves to be one, unified
+  people. They were Native American peoples (plural) not people
+  (singular).
+- The Europeans played one tribe against the other and then picked them
+  off.
+
+##### Pre-literate societies
+
+- The evidence of pre-Columbian Indian life is wholly based on
+  archeology (study artifacts) because Native Americans did not live in
+  literate (reading and writing) societies. They lived i pre-literate
+  societies, sowe do not have written documents for pre-Columbian Native
+  American societies and very few written documents for the post-
+  Columbian societies.
+    + It tells us what Native American wore, ate, and how they lived and
+      worshiped, but we do not get people's direct thoughts, which comes
+      only from written documents.
+
+##### Gender roles
++ Indian gender roles were largely egalitarian, namely, women and men
+  were valued equally in society despite performing different roles.
++ Women were the producers and distributors of food. They grew the
+  "three sisters:" maize (corn), beans, and squash, so they provided the
+  majority of the food and were immensely important to the survival of
+  the village.
++ Women would also cure animal hides, weave baskets, make pottery, and
+  build living structures.
++ Europeans saw Indian women as over-worked dredges (machine) and they
+  misunderstood their cultural importance.
++ Men were responsible for clearing the land, hunting/fishing, and
+  trading. They made weapons and they fought in the wars.
++ Europeans saw Indian men as lazy because they hunted all day (hunting
+  was a leisurely activity in Europe) and did not farm (which was
+  women's work in Indian culture, but men's work in European culture).
++ Indian women could easily divorce their husbands if the latter
+  displeased them, which was a freedom European women lacked.
++ Indian women could also be sachems (chiefs) in some tribes and they
+  could compel the men to start or end warfare by withholding food. Some
+  Native Americans, such as the Iroquois, were matriarchal (descent/rule
+  comes down through the mother's line), where European families were
+  strictly patriarchal (rule by men). These gender differences between
+  Europeans and Indians were commonly used as a justification by
+  Europeans to conquer the land and to civilize and/or kill the Indians.
+
+#### Politics and government
+
++ Leadership was not inherited but rather conferred to the most able and
+  wise person.
++ Sachems could NOT be arbitrary, cruel leaders because their rule was
+  consensual.
++ If a sachem hoarded wealth or tried to rule against his people's
+  wishes, he would be demoted and another sachem would be chosen.
++ This confused the Europeans because they are used to their own
+  absolute monarchs who inherited the crown.
++ The Europeans quickly learn that they cannot use a sachem as a puppet
+  ruler, who could force his people to bend to the Europeans' will.
+
+##### Economy
+
+- The economy rested on trade, barter, and reciprocity, so wealth and
+  power was gained by giving away material goods; so the more wealth you
+  give away, the more power you have as a chief or sachem.
+- The Europeans were impressed by the simple lifestyles and generous
+  nature of the Indians; some Europeans argued that the Indians had
+  mastered pure Christian traits which the European Christians struggled
+  to practice themselves.
+- Indians did not have silverware, carriages, fine silks, large opulent
+  (luxurious) cities, etc. and the Europeans used this as a
+  justification of conquest.
+
+##### The Indian's Worldview and religion
+
+- Native Americans believed that they lived among or with Nature and not
+  above it, as Europeans believed. Europeans believed they had a
+  Biblical mandate to conquer and subdue the earth. The Indians believed
+  they were part of the natural world and that they had working
+  relationship with Nature, a notion which shaped their politics,
+  religion, economics and family structure.
+- Native Americans believed that all of the world and its objects were
+  occupied by sundry spirits. This is what they call Manitou. Indians
+  had a special relationship with Nature and animals; because of their
+  belief in Manitou (spiritual power)
+- They believed that everything had to be in balance and never wasted or
+  abused or they would be punished via disease, starvation, and/or
+  warfare.
+- They had learned that if they over harvested animals and/or plants in
+  one are, then there would be an unbalance in Nature and the village
+  would starve as a result. So, Indians did NOT love Nature so much as
+  they feared it.
+- This is why they moved their villages according to the seasons, so
+  they did not over deplete the resource in one area.
+- Native Americans also would connect with the divine by dancing,
+  smoking tobacco, drinking alcohol, and fasting.
+- Europeans labeled as demonic and hateful to God. The nature of Indian
+  religion, thus, was also another handy excuse for Europeans to conquer
+  the Indians.
+
+##### Cultural Practices
+
+- Large Native American civilizations were mostly in Mexico and South
+  America (Olmec, Maya, Aztec), but they were also in North America. For
+  example, Chaco Canyon, New Mexico.
+- The role of the Native Americans in the Europeans colonization of the
+Americas in critical. The Europeans depended on the Indians for the
+survival of their colonies. They made powerful political alliances with
+Indian villages and formed trading relationships which lasted for
+centuries.
+- The American character was formed out of the mixture between European,
+African, and Indian cultures.
+
 # VISA
 
 ## Interview's Documents
@@ -105,7 +241,7 @@ Các giấy tờ sau được yêu cầu trong buổi phỏng vấn:
   giáo… để chứng minh mối quan hệ với người bảo lãnh.
 16. **Kết quả khám sức khỏe**
 
-# Study
+# Education
 
 - [US university ranking](http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities)
 - [Good reasons for going to grad school](http://www.idealist.org/info/GradEducation/GoodReasons)
@@ -603,3 +739,5 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 # References
 
 [wiki-us]: https://en.wikipedia.org/wiki/United_States
+[turtle-island-2]: http://www.native-art-in-canada.com/turtleisland.html
+
