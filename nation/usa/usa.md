@@ -140,6 +140,88 @@ centuries.
 - The American character was formed out of the mixture between European,
 African, and Indian cultures.
 
+### "The Invasion of America:" European Exploration, Discovery, and Conquest of North America
+
+#### America: Virgin or Widow?
+
+- Europeans did not conquer "virgin soil" but rather conquered and
+  dispossessed the land's Indian inhabitants.
+- The prevalent myth that we still hear today came from the Europeans
+  conquerors, namely, that INdians were savages in a wild wilderness,
+  and they lacked the necessary civilization to cultivate the wilds and
+  carve civilization out of them. Because the Indians stubbornly refused
+  civilization and they refused God, their dispossession of the land and
+  the destruction of their lives were inevitable.
+
+#### Who were the Conquerors?
+
+- Europe was emerging from centuries of being colonized and enduring
+  continual conflict and conquest during this period.
+- Western Europe still had a feudalistic economy - power is based on the
+  control of land and strong political alliances. Peasants work the land
+  of local powerful lords.
+    + Society? Lots of peasants and few elites. There is very little
+      social mobility, rather one's social station is
+      contingent(dependent) on one's birth rank.
+- Gender?
+    + Men are the head of the household (little comonwealth; the
+      king rules the kingdom as the husband rules the household) and
+      women are submissive and inferior. Patriarchal society.
+    + Women usually cared for the children, worked with textiles, and
+      performed domestic chores, where men farmed and tended livestock.
+    + The gender roles become more stringent the more elite one is.
+- Religion and politics overlap in Europe
+    + non-Christians are considered to be infidels, who Christians
+      sought to Christianize.
+    + Medieval theologians argued that conquest was not legitimate
+      unless it was a just war. This created problems for making war
+      against distant enemies, but fortunately, any war fought under the
+      jurisdiction of the Holy Church was deemed(considered) just.
+    + Christianity became a pretext for feudal conquest; religious
+      superiority would be replaced by racial superiority out of this
+      feudal society.
+    + Christians vs. heathens would become whites vs. the colored.
+- Western Europe possessed large domesticated(tame) draft animals, steel
+  and gunpowder, daunting(powerful) weapons such as canons, armor,
+  ships, water wheels, and grist mills, so they had more of a material
+  culture than the Americas and Africa and therefore had an advantage.
+- What were they looking for? They were looking for gold (fill the
+  nation's coffers(ngan kho quoc gia)) and the fabled Nortwest Passage
+  to the Pacific Ocean, so they could control both oceans.
+
+#### Christopher Columbus (1451)
+
+- Christopher Columbus was from Genoa, Italy.
+    + His father was from the low-middle class and worked as a merchant
+    who did all of his business with Africa.
+    + Columbus was not a legend in his own time and he never sat for a
+    portrait.
+    + He needed sponsorship to sail west, but Portugal and England
+      turned him down because the voyage was expensive and sailing west
+      seemed foolhardy(reckless).
+    + In 1492, Ferdinand and Isabella united their Spanish kingdoms
+      through their marriages and expelled the Muslims from Spain. Flush
+      with victory, they sponsored Columbus.
+- Columbus ventured across the ocean not because he wanted to prove that
+  the Earth war round (most Europeans already had known the Earth was
+  round for centuries), but because he wanted to circumvent(avoid) the
+  Middle Eastern Muslim merchants and reach the gold and spices of the
+  Indies (Asia).
+- China glowed in European minds as a place of many treasures from their
+  understanding of Marco Polo's sojourn(stay) in China.
+- The Muslim merchants served as middle men for trade between China and
+  Europe, so Columbus decided that he could sail across the Atlantic
+  eliminate the Muslim middle men, and trade directly with the Indies.
+- In 1492, Columbus landed in the Bahamas and made the first European
+  colony in Hispaniola (Haiti).
+    + He made a total of four voyages and was the first governor.
+    + He was eventually fired and sent back to Europe.
+    + He never set foot on the North American mainland and he never
+      really accepted that he was not in the Indies.
+    + Columbus would bring three worlds together thus: the Americans,
+      Africa, and Europe. This would prove to be one of the most pivotal
+      moments in history.
+
 # VISA
 
 ## Interview's Documents
