@@ -222,6 +222,102 @@ African, and Indian cultures.
       Africa, and Europe. This would prove to be one of the most pivotal
       moments in history.
 
+### "The Columbian Exchange:" The Biological and Cultural Consequences of Columbus's Discovery for Europe, Africa, and the Americas
+
+#### African Society
+
+- Like the Native Americans, Africans possessed diverse cultures and
+  language groups
+    + There were Berbers along the Mediterranean (Northern Africa), who
+      were Muslims. Muslims dominated on the East Coast of Africa as
+      well.
+    + There were Bantu speaking peoples in the South East of Africa.
+    + Upper Guinea or West Africa was Muslim, where Africans practiced
+      their traditional religions in Lower Guinea.
+- Like Europe, Africa was an agricultural society. Most of Africa's
+  power and trade was centered on the Muslim East Coast.
+- Unlike Europe, African communities were based on clan or kinship,
+  where European communities were based on work and trade.
+- Like Europe, Africa was a feudalistic society with powerful monarchs.
+- Africa had been trading with Europe for a millennia, so it was not
+  isolated like the Americas had been.
+- Religion: Africans were mostly polytheistic (belief in many gods) and
+  steeped in nature. They also practiced ancestor worship.
+- Gender/family: African  families were larger - extended families -
+  than the nuclear families in Europe. Gender roles were more
+  egalitarian as men's and women's roles had equal value.
+
+#### The Atlantic
+
+- The Atlantic became well traveled after Columbus's rediscovery of the
+  New World after the Vikings.
+- The Europeans expanded world trade, which leads to the beginnings of
+  capitalism and the accumulated(built up) wealth strengthens the
+  European states and leads to the rise of cities such as London.
+- The accumulation of wealth also led to the expansion of social classes
+  in Europe and enriched European intellectual life (woke up the
+  universities)
+
+#### The Columbian Exchange
+
+- The exchange of peoples, diseases, wares, flora, fauna permanently
+  altered the New World.
+- Three worlds collide in this global exchange: Africa, Western Europe,
+  and the Americans.
+- Disease brought by Africans and Europeans had a long-term affect on
+  Native Americans' politics, society, religion, and family structure.
+- Native Americans subsisted(survived) on mainly the "three sisters:"
+  beans, squash, and maize (corn)
+- Potatoes, corn, tomatoes, pumpkins, spices came from the Americans and
+  are sent to Africa and Western Europe, which creates a population
+  explosion in the Old World.
+- The Old World sends horses, pigs, sheep, chickens, dogs, goats,
+  cattle, cats, and wheat to America.
+    + Horses once roamed America in the Pre-Columbian period, but they
+      died out along with camels; European re-introduced them back into
+      the Americas and Indians readily adopted them in the Plains.
+    + The horse allowed Indians to defend themselves from Europeans and
+      enemy tribes, attain more food, move camps further and more
+      effectively, encouraged more bloody warfare between the tribes,
+      and aided Indians in raiding European herds.
+- The Indians hated pigs because the Europeans allowed them to roam the
+  continent and they rooted up Indian gardens.
+- The European also accidentally bring weeds, rats, and grasses to the
+  New World.
+- The dandelion was called the "European footprint" by Indians -
+  wherever a European set his foot, these weeds would spring up.
+- Where Europeans go, rats will follow. Rats quickly honeycombed the
+  islands with their burrows(passages in the ground) and spread disease.
+- Sugar and slaves come into the Americas from Africa.
+- The Americas sent cassava, chili peppers, pumpkins, peanuts, squash,
+  corn, and sweet potatoes to Africa.
+- Population doubles in the Old World due to the higher yield of America
+  foodstuffs. This population explosion in Africa will fuel the slave
+  trade. The population explosion in Europe will fuel the Industrial
+  revolution.
+
+#### Its like we were born to die...
+
+- The Old World also introduces new diseases such as yellow fever, small
+  pox, measles, influenza, bubonic plague, typhus, and malaria to
+  America.
+- Most of the epidemics occurred in the first 100 years of contact and
+  decimated the tribe's populations from Canada to the Caribbean.
+- The mass die off of Native Americans also facilitated European
+  colonization.
+- They lost faith in their shamans who could not save them from the
+  diseases, so they were more likely to convert to Christianity when
+  they saw that the Christian Europeans were not falling ill.
+- Smallpox was the most virulent disease among the Indians: it enters
+  the respiratory(relating to breathing) system and is highly contagious
+  (passing by touching).
+- Africa sends slaves to re-people the Americas and grow sugarcane and
+  tobacco. Slaves usually came from the West-African coast. Merchants
+  from Europe went to the African West Coast and traded European wares
+  for slaves. The Europeans then took the slaves to the Americas (mostly
+  the Caribbean) and dropped off the slaves and picked up sugar, which
+  they then brought back to Europe: this is called the Triangle Trade.
+
 # VISA
 
 ## Interview's Documents
