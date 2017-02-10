@@ -347,4 +347,16 @@ African, and Indian cultures.
 | Plymouth                  | Colony established by Pilgrims in Massachusetts.                                                                                                                                                        |
 | Protestant Reformation    | Split of reformers from Roman Catholic church; triggered by Martin Luther.                                                                                                                              |
 | Roger Williams            | A minister who advocated complete separation of church and state and religious toleration.                                                                                                              |
+| autocratic                | Absolute or dictatorial rule                                                                                                                                                                            |
+| Bacon's Rebellion         | Uprising that resulted from many conflicts, among them mounting land shortage and settlers' desires for Indian lands.                                                                                   |
+| Beaver Wars               | Series of conflicts between the Hurons (and other Indians) and Iroquois in a quest for pelts                                                                                                            |
+| King Philip's War         | Major war between Indians and New England settlers.                                                                                                                                                     |
+| middle passage            | The brutal and often fatal journey of slaves from Africa to America.                                                                                                                                    |
+| Popé                      | Leader of the Pueblo Revolt against Spanish in 1680.                                                                                                                                                    |
+| Pueblo Revolt of 1680     | The most successful Indian uprising in American history. Pueblo Indians rebelled against Spanish authority and drove the Spanish from their New Mexico settlements.                                     |
+| Quakers                   | Members of a religious sect that embraced egalitarianism and rejected traditional religious hierarchies. They believed that the Holy Spirit or the ?inner light? could inspire every soul.              |
+| Tuscarora War             | War in the Carolinas from 1711 through 1713 that pitted Tuscarora Indians against colonists and their Indian allies.                                                                                    |
+| William Penn              | The proprietor of the last unallocated tract of American territory at the king's disposal, which would become Pennsylvania.                                                                             |
+| ?city upon a hill?        | John Winthrop's vision of the Puritan settlement in New England as a model for the world.                                                                                                               |
+
 
