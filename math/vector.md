@@ -185,6 +185,51 @@ The parameter t takes on values \\(-\infty < t < \infty\\)
 
 # Dot Product and the Angle Between Two Vectors
 
+## Definition
+
+The dot product \\(\mathbf{v} \cdot \mathbf{w}\\) of two vectors
+\\(\mathbf{v} = \langle v_1, v_2, v_3 \rangle, \mathbf{w} = \langle w_1,
+w_2, w_3 \rangle\\) is the scalar defined by
+\\[\mathbf{v \cdot w} = v_1w_1 + v_2w_2 + v_3w_3\\]
+
+## Properties
+
+i) \\(\mathbf{0 \cdot v = v \cdot 0 = 0}\\)
+ii) Commutativity: \\(\mathbf{v \cdot w = w \cdot v}\\)
+iii) Pulling out scalars: \\(\mathbf{(\lambda v)\cdot w = v\cdot
+(\lambda w) = \lambda(v\cdot w)}\\)
+iv) Distributive Law: \\(\mathbf{u\cdot(v+w) = u\cdot v+u\cdot w}\\)
+v) Relation with length: \\(\mathbf{v\cdot v = \lVert v \rVert^2}\\)
+
+## The Angle Between Two Vectors
+
+- The angle between two vectors is chosen to satisfy
+  \\(0\leq\theta\leq\pi\\).
+- Let \\(\theta\\) be the angle between two nonzero vectors **v** and
+**w**. Then
+\\[\mathbf{v\cdot w = \lVert v \rVert\lVert w \rVert\cos\theta} \ or \
+\mathbf{\cos\theta = \frac{v\cdot w}{\lVert v \rVert\lVert w \rVert}}\\]
+- \\(\mathbf{v\perp w}\\) if and only if \\(\mathbf{v\cdot w = 0}\\)
+- The angle \\(\theta\\) between **v** and **u** is obtuse if
+  \\(\mathbf{v\cdot u}<0\\)
+
+## Projection
+
+Assume \\(\mathbf{v\neq0}\\). The **projection** of **u** along **v** is
+the vector
+\\[\mathbf{u_{\parallel v} = \left(\frac{u\cdot v}{v\cdot v}\right)v
+= \left(\frac{u\cdot v}{\lVert v \rVert}\right)e_v}\\]
+This is sometimes denoted \\(proj_{\mathbf{v}}\mathbf{u}\\).
+
+The scalar \\(\mathbf{\frac{u\cdot v}{\lVert v \rVert}}\\) is called the
+**component** or the **scalar component** of **u** along **v** and is
+sometimes denoted \\(compj_{\mathbf{v}}\mathbf{u}\\).
+
+## Decomposition
+
+\\[\mathbf{u_{\perp v} = u - u_{\parallel v}}\\]
+\\[\mathbf{u = u_{\parallel v} + u_{\perp v}}\\]
+
 # The Cross Product
 
 # Planes in 3-Space
