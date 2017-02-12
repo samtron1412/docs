@@ -674,6 +674,11 @@ ncurces-based IRC client.
 
 ### 3.11 System monitoring
 
+- [progress](https://github.com/Xfennec/progress): Shows running
+coreutils basic commands and displays stats
+- [netdata](https://github.com/firehol/netdata/wiki): A web-based
+real-time performance monitor.
+
 ### 3.12 System information viewers
 
 ### 3.13 Keyboard layout switchers
