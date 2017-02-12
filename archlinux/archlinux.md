@@ -751,6 +751,10 @@ UMD, TXT viewer with Vim keybindings
 #### CHM
 - [xchm](https://en.wikipedia.org/wiki/xCHM)
 
+### 4.6 Desktop Publishing
+
+- [scribus](https://en.wikipedia.org/wiki/Scribus)
+
 ## 5. Security
 
 ## 6. Science
