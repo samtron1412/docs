@@ -182,3 +182,14 @@ where \\(\mathbf{r}_0 = \vec{OP_0}\\)
 **Parametric equations**
 \\[x=x_0+at, y=y_0+bt, z=z_0+ct\\]
 The parameter t takes on values \\(-\infty < t < \infty\\)
+
+# Dot Product and the Angle Between Two Vectors
+
+# The Cross Product
+
+# Planes in 3-Space
+
+# A Survey of Quadric Surfaces
+
+# Cylindrical and Spherical Coordinates
+
