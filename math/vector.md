@@ -3,18 +3,18 @@
 # Overview
 
 - Vectors play a role in nearly all areas of mathematics and its
-applications.
+  applications.
 - In physical settings, they are used to represent quantities that have
-both magnitude and direction, such as velocity and force.
-    + Newtonian mechanics, quantum physics, and special and general
-    relativity all depend fundamentally on vectors.
+  both magnitude and direction, such as velocity and force.
+    + Newtonian mechanics, quantum physics, and special and general re-
+      lativity all depend fundamentally on vectors.
     + We could not understand electricity and magnetism without vectors,
-    which are used in constructing the theoretical framework.
+      which are used in constructing the theoretical framework.
 - Vectors also play a critical role in computer graphics, describing how
-light should be depicted, and providing a means to change the viewpoint
-of the screen appropriately.
+  light should be depicted, and providing a means to change the
+  viewpoint of the screen appropriately.
 - Fields such as economics and statistics use vectors to encapsulate
-information in a manner that provides for efficient manipulation.
+  information in a manner that provides for efficient manipulation.
 
 # Vectors in the plane
 
@@ -231,6 +231,83 @@ sometimes denoted \\(compj_{\mathbf{v}}\mathbf{u}\\).
 \\[\mathbf{u = u_{\parallel v} + u_{\perp v}}\\]
 
 # The Cross Product
+
+The cross product (vector product) is used in physics and engineering to
+describe quantities involving rotation, such as torque and angular mo-
+mentum. In electromagnetic theory, magnetic forces are described using
+cross products.
+
+Unlike the dot product \\(\mathbf{v\cdot w}\\) (which is a scalar), the
+cross product \\(\mathbf{v\times w}\\) is again a vector. It is defined
+using **determinants**
+\\[
+\begin{vmatrix}
+a&b\\\\
+c&d\\\\
+\end{vmatrix}
+= ad - bc
+\\]
+
+## Determinant
+
+The determinant of a \\(3\times 3\\) matrix is defined by the formula
+\\[
+\begin{vmatrix}a_1&b_1&c_1\\\\a_2&b_2&c_2\\\\a_3&b_3&c_3\end{vmatrix}
+= a_1\begin{vmatrix}b_2&c_2\\\\b_3&c_3\end{vmatrix} -
+b_1\begin{vmatrix}a_2&c_2\\\\a_3&c_3\end{vmatrix} +
+c_1\begin{vmatrix}a_2&b_2\\\\a_3&b_3\end{vmatrix}
+\\]
+This formula expresses the \\(3\times 3\\) determinant in terms of \\
+(2\times 2\\) determinants called **minors**. The minors are obtained by
+crossing out the first row and one of the three columns of the
+\\(3\times 3\\) matrix.
+
+## Definition
+
+The cross product of vectors \\(\mathbf{v}=\langle v_1, v_2, v_3
+\rangle\\) and \\(\mathbf{w}=\langle w_1, w_2, w_3 \rangle\\) is the
+vector
+\\[\mathbf{v\times w} = \begin{vmatrix}
+\mathbf{i}&\mathbf{j}&\mathbf{w}\\\\
+v_1&v_2&v_3\\\\
+w_1&w_2&w_3\end{vmatrix} =
+\begin{vmatrix}v_2&v_3\\\\w_2&w_3\end{vmatrix}\mathbf{i} -
+\begin{vmatrix}v_1&v_3\\\\w_1&w_3\end{vmatrix}\mathbf{j} +
+\begin{vmatrix}v_1&v_2\\\\w_1&w_2\end{vmatrix}\mathbf{k}
+\\]
+
+Using right-hand rule to determine the direction of the new vector.
+
+## Theorem 1
+
+i) \\(v\times w\\) is orthogonal to **v** and **w**
+ii) \\(v\times w\\) has length \\(\lVert v \rVert\lVert w
+\rVert\sin\theta\\) (\\(\theta\\) is the angle between **v** and **w**,
+\\(0\leq\theta\leq\pi\\)).
+iii) \\(\mathbf{\\{v,w,v\times w\\}}\\) forms a right-handed system.
+
+## Properties
+
+i) Anticommutative: \\(\mathbf{w\times v = -v\times w}\\)
+ii) \\(\mathbf{v\times v=0}\\)
+iii) \\(\mathbf{v\times w=0}\\) if and only if \\(\mathbf{w=\lambda
+v}\\) for some scalar \\(\lambda\\) or **v = 0**.
+iv) \\(\mathbf{(\lambda v)\times w=v\times(\lambda w)=\lambda(v\times
+w)}\\)
+v) \\(\mathbf{(u+v)\times w=u\times w+v\times w}\\)
+
+## Cross Product, Area, and Volume
+
+If \\(\mathcal{P}\\) is the parallelogram spanned by **v** and **w**,
+and \\(\mathcal{T}\\) is the triangle spanned by **v** and **w**, then
+\\[Area(\mathcal{P})=\mathbf{\lVert v\times w\rVert}\\]
+\\[Area(\mathcal{T})=\mathbf{\frac{\lVert v\times w\rVert}{2}}\\]
+
+Volume via Cross Products and Determinants: Let **u,v,w** be nonzero
+vectors in \\(\mathbf{R}^3\\). Then the parallelepiped **P** spanned by
+**uv,v,w** has volume
+\\[V=\left|\mathbf{u\cdot(v\times w)}\right|=\left|det\begin
+{pmatrix}\mathbf{u}\\\\\mathbf{v}\\\\\mathbf{w}\end{pmatrix}\right|\\]
 
 # Planes in 3-Space
 
