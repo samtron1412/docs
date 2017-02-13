@@ -311,6 +311,25 @@ vectors in \\(\mathbf{R}^3\\). Then the parallelepiped **P** spanned by
 
 # Planes in 3-Space
 
+## Equation of a Plane
+
+Plane through \\(P_0 = (x_0, y_0, z_0)\\) with normal vector \\(\mathbf
+{n}=\langle a, b, c \rangle\\):
+**Vector form:** \\(\mathbf{n}\cdot\langle x, y, z \rangle = d\\)
+
+**Scalar forms:** \\(a(x-x_0)+b(y-y_0)+c(z-z_0)=0\\)
+\\[ax+by+cz=d\\]
+where \\(d=ax_0+by_0+cz_0\\)
+
+A family of parallel planes is obtained by choosing a normal vector \\
+(\mathbf{n}=\langle a, b, c \rangle\\) and varying the constant *d* in
+the equation: \\(ax+by+cz=d\\). The unique plane in this family through
+the origin has equation \\(ax+by+cz=0\\).
+
+Points that lie on a same line are called **collinear**. If we given
+three points P, Q, and R that are not collinear, then there is just one
+plane passing through P, Q, and R.
+
 # A Survey of Quadric Surfaces
 
 # Cylindrical and Spherical Coordinates
