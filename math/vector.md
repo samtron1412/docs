@@ -332,5 +332,61 @@ plane passing through P, Q, and R.
 
 # A Survey of Quadric Surfaces
 
+Quadric surfaces are the surfaces analogs of conic sections. A conic
+section is a curve in \\(\mathbf{R}^2\\) defined by a quadratic equation
+in two variables. A quadric surface is defined by a quadratic equation
+in **three** variables.
+\\[Ax^2+By^2+Cz^2+Dxy+Eyz+Fyz+ax+by+cz+d=0\\]
+
+When the coordinate axes are chosen to coincide with the axes of the
+quadric, the equation of the quadric has a simple form. The quadric is
+said to be in **standard position**
+    - The coefficients D, E, F are all zero and the linear part
+      \\(ax+by+cz+d\\) also reduces to just the constant term d.
+
+## Ellipsoid
+
+The surface analogs of ellipses are the egg-shaped **ellipsoids**.
+\\[\left(\frac{x}{a}\right)^2+\left(\frac{y}{b}\right)^2+\left(\frac{z}
+{c}\right)^2=1\\]
+
+For a = b = c, this equation is equivalent to \\(x^2+y^2+z^2=a^2\\) and
+the ellipsoid is a sphere of radius a.
+
+Surfaces are often represented graphically by a mesh of curves called
+**traces**, obtained by intersecting the surface with planes parallel to
+one of the coordinate planes, yielding certain cross sections of the
+surface. Algebraically, this corresponds to **freezing** one of the
+three variables (holding it constant)
+
+## Hyperboloid
+
+The analogs of the hyperbolas are the **hyperboloid**, which come in two
+types, depending on whether the surface has one or two components. We
+refer to these types as hyperboloids of one or two sheets.
+\\[One\ Sheet: \left(\frac{x}{a}\right)^2+\left(\frac{y}
+{b}\right)^2=\left(\frac{z}{c}\right)^2+1\\]
+\\[Two\ Sheets: \left(\frac{x}{a}\right)^2+\left(\frac{y}
+{b}\right)^2=\left(\frac{z}{c}\right)^2-1\\]
+
+Notices that a hyperboloid of two sheets does not contain any points
+whose z-coordinate satisfies **-c < z < c** because the right-hand side
+\\(\left(\frac{z}{c}\right)^2-1\\) is then negative, but the left-hand
+side of the equation is greater than or equal to zero.
+
+**Elliptic cone**
+\\[\left(\frac{x}{a}\right)^2+\left(\frac{y}{b}\right)^2=\left(\frac{z}{
+c}\right)^2\\]
+
+An elliptic cone may be thought of as a limiting case of a hyperboloid
+of one sheet in which we "pinch the waist" down to a point.
+
+## Paraboloid
+
+There are two types of paraboloid: elliptic and hyperbolic
+\\[Elliptic: z=\left(\frac{x}{a}\right)^2+\left(\frac{y}{b}\right)^2\\]
+\\[Hyperbolic: z=\left(\frac{x}{a}\right)^2-\left(\frac{y}
+{b}\right)^2\\]
+
 # Cylindrical and Spherical Coordinates
 
