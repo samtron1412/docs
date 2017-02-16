@@ -317,6 +317,59 @@ African, and Indian cultures.
   they then brought back to Europe: this is called the Triangle Trade.
 
 
+## "To Subdue the Earth:" European Colonization in North America
+
+### Legitimating Colonization
+
+- How do the Europeans legitimated their colonization of the Americas.
+    + In Western Europe, Christianity endorsed a policy of domination,
+      where the mission of man, according to Biblical mandate, was "to
+      subdue the earth" and civilize it by cultivating it (Genesis
+      1:28).
+    + Europeans did not believe in living in balance with Nature, but
+      rather they believed that Nature was to be dominated due to their
+      Christian beliefs: "have dominion over the fish of the sea, and
+      over the fowl of the air, and over every living thing that moveth
+      upon the earth."
+    + However, the motive for European  colonization was mostly, if not
+      wholly, economic rather than religious in nature, as Europeans
+      lusted after natural resources and precious metals.
+- The French, the Dutch, and the English quickly involved themselves in
+  the fur trade, which necessitated alliances with certain Indian tribes
+  such as the Huron and the Iroquois.
+    + The Indians wanted iron implements (tools), weapons, alcohol, and
+      cloth/fabric in exchange for furs.
+- Both Europeans and Native Americans would change culturally from their
+  mutual contact; both sides were also mutual dependent on the other and
+  realized that they could not dominate the other at least in the
+  beginning.
+- The Europeans used the excuse of converting the Indians to
+Christianity to legitimate their colonization of the Americas.
+    + The Jesuits (French priests who the Indians called "Black Robes")
+      were successful with his goal of conversion because they used
+      syncretism, namely, they adapted or blended Christianity to Indian
+      spiritual beliefs.
+    + They did not insist that the Indians change their traditional ways
+      of life and they learned Indian languages and lived among their
+      potential converts.
+    + Indians were also receptive to believing in multiple religions
+      unlike Christians because they were polytheistic (belief in many
+      gods), so it was easy for Indians to adapt Christianity and add
+      one more god to the pantheon of many divinities.
+
+### Diversity of Colonial Enterprises
+
+
+
+## "Many Thousands Gone:" Indentured Servitude and the Emergence of Racial Slavery in Colonial English America
+
+## "Baubles of Britain:" Mercantilism and the Consumer Revolution in the Colonies
+
+## "Tyranny of All Kinds is to be Abhorred:" The English Constitution, the Structure of Colonial Government, and Whig Politico Ideologies of Freedom
+
+## "They have Betrayed the Liberties of the People:" the March Toward Revolution
+
+
 # Glossary
 
 | Term                      | Definition                                                                                                                                                                                              |
