@@ -482,7 +482,156 @@ century and expanded rapidly.
     + Britain controlled the prices of commodities and limited the
     colonial economy.
 
-## "Tyranny of All Kinds is to be Abhorred:" The English Constitution, the Structure of Colonial Government, and Whig Politico Ideologies of Freedom
+## "Tyranny of All Kinds is to be Abhorred(hated):" The English Constitution, the Structure of Colonial Government, and Whig Politico Ideologies of Freedom
+
+Whig politico: a member of a British political party of the 18th and
+early 19th centuries which wanted to limit royal power, adn later became
+the Liberal Party.
+
+### England as the Political Precedent
+
+- The Magna Carta or the "Great Charter" was written in 1215 and
+affirmed the rule of law.
+    + King John was forced by leading barons to sign the Magna Carta
+    which maintained that the kind could not tax without the consent of
+    those being taxed; the king had to work in accord with Parliament
+    (the talking place) and recognize its right to exist; the king
+    cannot confiscate property without the consent of Parliament; and a
+    free person cannot be imprisoned without the judgment of his peers
+    (trial by jury).
+    + Basically, the Magna Carta asserted that not even monarchs were
+    above the law, but were bound to uphold and obey them.
+    + This made England a Constitutional Monarchy instead of an Absolute
+    Monarchy.
+- James I, Charles I, Charles II, and James II (1603-1688) were English
+monarchs (The Stuarts: Scottish Royal Family) in the 17th century who
+believed they were God's representative on earth and thus had a "divine
+right" to rule.
+    + Charles I ignored Parliament for eleven years and tried to rule
+    without it despite the mandates of the Magna Carta.
+    + As a result, England's first Civil War begins in 1642.
+    + Oliver Cromwell (a Parliamentarian leader and Puritan) captures
+    Charles I, has him tried for treason(disloyalty), and beheaded
+    (executed) in 1649.
+    + James II also tried to rule without Parliament and converted to
+    Catholicism, which provoked the Anglican English ruling class to
+    overthrow him in a bloodless coup called the Glorious Revolution in
+    1688.
+- James II's daughter and her husband William of Orange, who was a
+  Protestant, take the throne and approve the English Bill of Rights in
+  1689.
+    + Affirmed the principle of parliamentary supremacy: free elections,
+    no taxation without representation, no standing armies in peacetime,
+    the right to bear arms, property rights, and trial by jury.
+
+### John Locke's Philosophy
+
+- The English philosopher John Locke, who wrote *Two Treaties of Civil
+Government* (1691), was also influential in forming colonial political
+beliefs.
+    + John Locke believed that the government was an agreement between
+      the ruler and those being ruled.
+    + People consent(agree) to be governed and they are allowed to take
+      power back if the ruler is abusing it.
+    + So power is derived(obtained) from people's consent and not by
+      divine right.
+    + The role of government is to protect its denizens'(resident)
+      natural rights of life, liberty, and property and if they fail to
+      do so, the people have the right to overthrow.
+- Thomas Jefferson was a fan of Locke and inscribed(imprinted) Lockean
+principles in his Declaration of Independence.
+
+### Structure of Colonial Government
+
+- Virginia and the New England colonies were set up by joint-stock
+companies.
+    + The companies usually picked a governor, who the king approved.
+    + The companies also allowed the colonists to elect their colonial
+    legislature, so the colonists got used to governing themselves.
+    + The legislatures gained autonomy(independence) and they did not
+    always follow the edicts(orders) of the Crown. This was England's
+    first mistake in allowing the American colonists to get so used to
+    their local autonomy.
+    + The first colonial elected assembly is the House of Burgesses,
+    which was formed in 1619 in the Virginia colony. Requirements of
+    voting: being 16 years or older and ownership of property.
+- Structure of the English Government:
+    + The Monarch (Executive)
+    + The House of Lords
+    + The House of Commons (Legislative)
+    + Counties and Boroughs (Local Government)
+- Structure of Colonial Government
+    + The Governor (Executive)
+    + The Council
+    + The Assembly (Legislative)
+    + Towns and Counties (Local Government)
+
+### Realities of Colonial Government
+
+- Royal colonies were governed under the king by a colonial governor
+  appointed by the king and a self-governing colonial assembly that is
+  elected by the colonists.
+    + There were clear divisions or authority between the governor, who
+    owes his allegiance(loyalty) to the crown, and the colonial
+    legislature, which is expanding its authority in order to make it
+    own decisions for local or colonial needs and issues.
+    + The local assemblies were seen as protecting colonists' liberties
+    and they had some clout(power) over royal appointees such as the
+    governor and his council by controlling the latter's salary.
+    + The English king never really had direct authority over the
+    colonists unlike the Spanish government, which never allowed its
+    colonies to have local legislatures.
+- By the mid 17th century, the colonies were mostly stable due to their
+adoption of a stable crop and type of labor force. England also becomes
+a dominant force among the empirical(observational) powers.
+    + The English government was more informal at first in governing the
+    colonies, but as the colonies expanded and their economic value
+    increased, the English colonies came into increasing contact with
+    other European colonies, which forced the English government to
+    become more complex.
+
+### A Growing American Identity
+
+- The colonists affirmed their identity as Englishmen through the
+English language and through their emulation(imitation) of English
+clothing and carriages.
+    + Yet, the colonists were still developing their own distinct
+    identity as Americans.
+    + By the end of the 17th century, the colonists were mostly born in
+    America, so England and the king were far away and abstract.
+    + England fails to recognize that the colonies are developing a
+    mature sense of their own identity and their own political
+    institutions.
+    + The colonists were used to having their own newspapers and
+    legislative assemblies.
+    + When the colonists start demanding the same rights afforded to all
+    Englishmen and representation in Parliament and England denies their
+    prerogative(right) due to the former's colonial status, the
+    colonists can take no more and resolve(decide) to separate.
+- The Crown had turned to the colonies to defray(pay) expenses for a
+series of wars: King William's War, Queen Anne's War, King George's War,
+and the French and Indian War.The last two wars involved the conflict
+between the French and the English over the Ohio Valley, which was
+critical to the control of the Mississippi River.
+
+### Whig-Politico Ideology
+
+- Whig ideology:
+    + there was pervasive(common) corruption in government.
+    + The colonists also subscribed to Enlightenment theories of natural
+    rights, rational thinking, and contractual government and they
+    reviled(criticized) arbitrary government.
+    + Arguments of a monarch's divine right to rule no longer swayed the
+    colonists.
+    + The colonists also endorsed Puritan ideals of America's optimistic
+    future and its role as a paragon of freedom.
+    + The colonists subscribed to the power of the English Common Law
+    and the Whig oppositional theory, where they learn resistance,
+    rebellion, and reform models.
+- A powerful government and a standing army are exceedingly dangerous to
+the liberties of the people.
+- The people must be every vigilant(watchful) against absolute power and
+corruption in their government and protect their liberties.
 
 ## "They have Betrayed the Liberties of the People:" the March Toward Revolution
 
