@@ -365,6 +365,123 @@ Christianity to legitimate their colonization of the Americas.
 
 ## "Baubles of Britain:" Mercantilism and the Consumer Revolution in the Colonies
 
+### Britain's Economic Empire
+
+- If one understands the economic and political aspects of the American
+  Colonies, then explaining why the American Revolution took place and
+  why the American colonists felt compelled to separate from Great
+  Britain will be easy.
+- Let us examine how England unwittingly(unknowingly) set an economic
+  precedent in the American Colonies - a precedent which the American
+  colonists became comfortable with and would wish to protect even if it
+  meant rebellion and eventual separation.
+- All of the English colonies differed in their religion; in what
+  commodities they exported; in their labor systems; in their
+  metropolitan status (the availability of a harbor dictated city
+  structure); in their types of immigrants; in their gender ratios; and
+  in their cultural developments. They connected to the Atlantic Basin's
+  trade system via their connection with Great Britain.
+- There was no real capitalism yet. The prevalent(common) economic
+  system in the 18th century was mercantilism (an early form of
+  capitalism), which entailed(required) the accumulation(build-up) of
+  wealth or gold in order to strengthen the Nation-State.
+    + Shipping the natural resources back to the mother country to be
+    manufactured and then sold elsewhere for money.
+    + The mother country must export finished goods and import raw
+    materials.
+    + Countries that exported more finished goods were wealthy and
+    financially independent; those countries that imported more finished
+    goods than they exported were finally dependent and usually in debt.
+
+### British Economic Regions in America
+
+Similar regions which exported similar commodities:
+1. The New England region (Massachusetts, Rhode Island, New Hampshire,
+Connecticut): corn, lumber, fishing, livestock, and whaling.
+2. The Middle Colonies region (New York, New Jersey, Pennsylvania, and
+Delaware): wheat (the bread basket of the colonies)
+3. The Chesapeake region (Virginia and Maryland): vast plantations with
+a direct reliance on slavery. Tobacco and wheat.
+4. The Lower South region (North and South Carolina and Georgia): rice,
+tobacco, and indigo.
+
+### Gaining Economic Control
+
+- To maximize its profits, England enacted (legislated) navigation acts
+to systematize trade with the American colonies and keep the colonists
+from trading with other countries, as smuggling(stealing) negated the
+main goal of mercantilism.
+- In 1651, England enacted(pass) the fist Navigation Acts.
+    + only English ships can ferry goods
+    + specified commodities such as tobacco can only be sold to England
+    and no where else
+    + all goods sold in the colonies must go through English ports and
+    duties must be paid on them
+    + certain commodities such as finished woolen goods cannot be
+    exported from the colonies.
+- The American colonists still find ways around the strictures of the
+Navigation Acts and smuggling runs rampant.
+- For the most part, England is lax(careless) about smuggling and the
+colonists become accustomed to this latitude(freedom) or indulgence
+(privilege).
+
+### Other Economic Acts
+
+- In 1699, Parliament(Legislature) enacted the Woolens Act, which
+mandated(commanded) that no finished woolen items were to be exported
+from North America and that the colonists had to provide only natural
+materials.
+- In 1733, Parliament enacted the Molasses(syrup) Act, which maintained
+that any molasses that was imported from Cuba or any other sugar
+producing isle in the Caribbean into the colonies had a tax on it unless
+it was imported from Jamaica, which was a British-owned colony.
+- In 1750, Parliament enacted the Iron Act, which dictated that no
+finished iron items were to be exported from North America.
+
+### Effects of Mercantilism
+
+- The accumulation of wealth allowed the nation-states to build massive
+standing armies.
+- People were thinking of themselves as a people of a nation rather than
+identifying themselves under one powerful lord or ruler.
+- Merchants gained a lot of wealth and power under mercantilism.
+- There is no free trade because the government is intimately(closely)
+involved in regulating commerce.
+- The majority of labor is not waged labor but rather bonded labor.
+- In capitalism, the workers are also consumers, but this is not the
+case under mercantilism. Mercantilism is about suppressing the workers
+and forcing them to do the job required of them.
+- The most profitable commodities in the colonies: gold, silver, sugar,
+tobacco, rice, indigo, timber, fur, coffee, tar/pitch, etc.
+    + Property-owning Americans' lifestyles improved, for their growing
+    wealth allowed them to buy amenities(luxuries) such as furniture and
+    silverware.
+    + The colonists' diets also improved, so they became healthier and
+    lived longer.
+    + Society became more diverse and stratified; there was a growing
+    gap between the rich and poor.
+    + The elite sought to educate their children in Europe and to
+    cultivate refined manners.
+    + The population in the English colonies expanded rapidly during the
+    18th century (the population doubled every 25 years) due to natural
+    increase, voluntary migration, and involuntary migration (slaves
+    and convicts).
+- The Middle Colonies (Pennsylvania, New York, New Jersey, and Delaware)
+especially experienced economic growth during the end of the 18th
+century and expanded rapidly.
+    + this represents what would become pluralistic America.
+    + Germans, Scots, the Irish, and the Scotch-Irish, lured by the
+    promise of cheap land and religious toleration, are the first to
+    join the Englishmen in the diverse Middle Colonies.
+
+### The Good and the Bad
+
+- Positive things about being part of the British Empire economically:
+    + Notable economic growth from 1607-1776
+- Negative aspects:
+    + Britain controlled the prices of commodities and limited the
+    colonial economy.
+
 ## "Tyranny of All Kinds is to be Abhorred:" The English Constitution, the Structure of Colonial Government, and Whig Politico Ideologies of Freedom
 
 ## "They have Betrayed the Liberties of the People:" the March Toward Revolution
