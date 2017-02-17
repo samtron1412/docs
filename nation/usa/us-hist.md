@@ -635,6 +635,128 @@ corruption in their government and protect their liberties.
 
 ## "They have Betrayed the Liberties of the People:" the March Toward Revolution
 
+### Question of Deference(Obedience)
+
+- After we have discussed the social, economic, and political aspects of
+the American Colonies, we are now ready to examine the march of events
+culminating(reach a climax) in the American Revolution.
+    + Great Awakening, a religious movement in the 18th century, was a
+    precursor to the Revolution because it contained the seeds of
+    rebellion against elitism and authority.
+- We must still ask what point did the American colonists decide that
+they no longer wanted to be subjects of Great Britain and that they
+wished to only show deference (submission) to the individuals who they
+elected (a republic) rather than someone who they were forced to defer
+to like the king (a monarchy)?
+- The king was more of an abstract figurehead.
+- When the Crown struck the wrong nerves and clamped down on the liberal
+freedoms enjoyed in the colonies, the result would be a turn to
+republicanism in America.
+
+### Terminology of the Revolution
+
+- What is a revolution? One definition is a violent overthrow of one
+  government in favor of another.
+- What is a republic? A republic is a form of government where
+politicians are elected to govern for the people and people are expected
+to sacrifice their own interests for the common good.
+- What is liberalism? Liberalism is the notion that a person is free to
+pursue his or her own needs, such as to make money.
+- What is a democracy? A democracy is a form of government where you
+have rule by the people.
+- Modern America combines or reconciles(adjusts) the ideologies of
+Machiavelli and Locke: rule by power and self interest, but also rule
+for the public good.
+    + There is a conflict between the freedom of the individual inherent
+    to liberalism and self-sacrifice for the good of all inherent in
+    republicanism.
+
+### Grievances (Injustice) Leading to Revolution
+
+- The events lead to the American Revolution: chronologically from 1700
+to 1750.
+    + At the same time that the colonial legislatures were gaining more
+    independence from the Crown and more authority from the local
+    governor, Parliament was becoming more powerful after the Glorious
+    Revolution (1688).
+    + The king's authority, however, was diminishing as Parliament
+    became more powerful.
+    + The colonists accustomed to a great deal of economic autonomy.
+    + Politically, the colonists were not represented in Parliament;
+    they could only send colonial agents to plead colonial needs and
+    issues before Parliament, which could either act on the colonials'
+    request or simply ignore them.
+- What then was the first main grievance?
+    + The French and Indian War (1754-1763) altered relationships
+    between the mother country and her colonies. This war can also be
+    considered as the first world war because it was fought in both
+    hemispheres by multiple players: it was fought at sea and on
+    battlegrounds in North America, the Caribbean, Europe, Asia, Africa,
+    and India.
+    + How then did it start? The French attempted to assert their
+    dominion over the highly desired Ohio Valley by building multiple
+    forts, which effectively blocked the British colonists' movement
+    west and locked in the British Empire in North America to the east.
+    A young Virginian lieutenant colonel was sent by the Virginian
+    governor to scout what the French were up to in the Ohio Valley in
+    1754. This lieutenant colonel happened upon a camp of Frenchmen and
+    failed to stop his Indian allies from killing and scalping the whole
+    group, including a French emissary. The lieutenant colonel, who
+    could not speak French, then unwittingly signed a document admitting
+    to murdering the French emissary and subsequently started the war
+    between England and her political allies vs. France and her
+    political allies. This young lieutenant colonel is better known as
+    **George Washington**.
+    + The British fought poorly in the war initially because the French
+    and their Indian allies resorted to guerilla warfare.
+    + The British effectively won the war when General Wolf captured the
+    city of Quebec, which was the capital of New France.
+    + In the Treaty of Paris (1763), the French forfeited(surrendered)
+    all their land in North America to the British-aside from Louisiana,
+    which went to Spain.
+    + To save themselves from the expense of putting down another Indian
+    rebellion, the British resolved to enact the Proclamation of 1763,
+    which relegated(transferred) colonial land speculators and colonial
+    settlers to the east of the Appalachians.
+    + This appeased (satisfied) the Indians but enraged (upset) the
+    colonial land speculators.
+    + One cannot be free and independent if he does not have land in
+    America and is saddled with debt.
+- Another grievance which came out of the French and Indian War is that
+the British left the standing army, which had been sent to America to
+fight the French, detained in the colonies.
+    + This frightened and angered the colonists who were well-versed in
+    Real Whig ideology and saw standing armies as the tools of tyranny.
+- The last grievance came out of the French and Indian War was that the
+expense of the war had drained the British government's coffers. Thus,
+the British Parliament resolved that since it had sent British soldiers
+to protect the colonists from the French and Indian threat, the
+colonists should pay their fair share of defraying or paying back the
+costs via taxes.
+
+### A Question of Identity
+
+- At first the colonists did not revile (criticize) the king, but rather
+they denigrated (criticize unfairly) his ministers Grenville and Bute,
+who were passing edicts(order) against the colonies such as the stamp
+act. The colonists believed that the king was being manipulated by
+corrupt ministers.
+    + The colonists also saw this influence over the king by venal
+      (corrupt) ministers as a corruption of the English Constitution
+      because the executive (monarch) and the legislative (Parliament)
+      were supposed to be separate branches.
+- The colonists had been ignoring the Navigation Acts and smuggling
+goods to and from other countries, which undercut the whole goal of
+mercantilism.
+    + Revenue from the colonies was supposed to go through the mother
+    country, so it could fill up its coffers and the mother country
+    could grow richer than the neighboring countries.
+- More regulation and control from England, the colonists started to
+define their identity as separate from Englishmen.
+    + Both England and the American colonists wanted to expand across
+    the continent and reach the Pacific, so they could control land and
+    lucrative (fruitful) trade with Asia. The question was: who will
+    control the desired West? The American colonists? Or the British?
 
 # Glossary
 
