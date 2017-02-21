@@ -357,6 +357,19 @@ much like a social security number.
 
 # Government
 
+## Government Publishing Office
+
+- [Core documents of democracy](https://www.gpo.gov/libraries/core_docs.htm)
+- [U.S. Government Information](https://www.govinfo.gov/)
+
+
+## Federal Depository Library Program
+
+- https://en.wikipedia.org/wiki/Federal_Depository_Library_Program
+- https://www.gpo.gov/libraries/public/
+- [Find local FDLP](http://catalog.gpo.gov/fdlpdir/public.jsp)
+- [Homepage](https://www.fdlp.gov/)
+
 # Politics
 
 [Politics of the United States](https://en.wikipedia.org/wiki/Politics_of_the_United_States)
