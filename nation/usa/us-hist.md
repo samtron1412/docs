@@ -758,6 +758,136 @@ define their identity as separate from Englishmen.
     lucrative (fruitful) trade with Asia. The question was: who will
     control the desired West? The American colonists? Or the British?
 
+## "It is Their Right, it is Their Duty, to Throw off such Government:" Imperial Reform and Colonial Resistance
+
+### The First Imposition (restraint)
+
+- England imposed (dictate) direct taxation on the colonists, who will
+see this imposition as threatening, unconstitutional, and worthy of
+separation.
+- The Sugar Act and Currency Acts (1764) were the first duties imposed
+on the colonies.
+    + The Sugar Act regulate trade.
+    + The Currency Act prohibited the printing of paper money in the
+    colonies.
+
+### That Heinous (horrifying) Tax
+
+- The Stamp Act (1765) was one of the most reviled (criticized) taxes
+the British imposed on the colonies, as it was the first attempt to tax
+the colonies directly.
+    + It levied a "sales tax" on legal documents such as wills, deeds,
+    gambling cards, and newspapers.
+    + The colonists congregated (came together) in the Stamp Act
+      Congress in October 1765 and wrote an edict (public order) against
+      the Stamp Act.
+        * In this edict to Parliament, the colonists affirm their
+          loyalty as subjects of the English Crown, but they also remind
+          Parliament that it is unconstitutional to tax a people who are
+          not represented in Parliament.
+        * They also assert to Parliament that only their local
+          assemblies can domestically tax the colonists because they had
+          elected the representatives and, therefore, had a say in their
+          own taxation.
+        * Lastly, they argued that whatever commodities are sent to
+          Britain are gifts - not an obligation (debt, responsibility).
+          This is an immensely important statement because it shows that
+          the colonists are effectively denying their colonial
+          obligations and, therefore, are negating the purpose of
+          colonies under mercantilism. It also shows that the colonists
+          are forming their own distinct identity and they are stepping
+          away from colonialism and toward nationhood.
+- The Stamp Act Congress calls on the colonists to boycott (refrain
+from using, avoid, refuse) British imports, which eventually forces a
+repeal of the Stamp Act in Parliament in 1766.
+
+### Rebellious Children
+
+- The colonists disagreed with the English government's analogy of the
+colonists as rebellious children. The colonists did not feel obligated
+(constrained) to Britain because they and their ancestors had fled
+(past tense of flee) from poverty and intolerance; they had braved the
+wilderness of the New World; and they had civilized and cultivated the
+land, built homes, amassed (gathered) their own wealth, and fought in
+the colonial wars.
+- Both the British and the colonists have legitimate points in the
+disagreements leading up to the American Revolution.
+    + The British are simply asking the colonists to pay their fair
+    share of taxes in the British Empire and they expect the colonists
+    to uphold their obligations as colonies in the system of
+    mercantilism.
+    + The colonists, however, do not like that the British have changed
+    the procedure from an indirect influence to a direct authority. It's
+    not that the colonists mind being taxed by England, as they have
+    been paying externally taxes to England for over a century. What
+    they do mind, however, is being taxed internally by Parliament,
+    where they have no representation. If Parliament wants to tax the
+    colonies internally or domestically, then they have to let the
+    colonists send representatives to Parliament. Because Parliament
+    refuses to permit the colonists to have their own representatives in
+    Parliament, then the only people who can constitutionally tax the
+    colonies internally are the colonial representatives in the local
+    assemblies. The colonists only wish to be recognized as Englishmen
+    with equal rights under the English Constitution.
+
+### The Rule of the Mob (large group of people)
+
+- Mobs flare (erupt, spread) up in Boston, Massachusetts due to the
+Stamp Act and the mobs destroy the homes of elite colonists enforcing
+the Stamp Act such as Andrew Oliver and Governor Thomas Hutchinson.
+- Massachusetts was the most rebellious colony despite its Puritan
+history, and it had the most social strife (conflict) because it had
+more poor people than any other colony.
+- We can see that there are social revolutions within the political
+revolution.
+- The Revolution does not simply involve the British vs. the Americans,
+but rather Americans vs. Americans as well.
+
+### Lessons Learned
+
+- Once the Stamp Act was repealed due to colonial opposition, the
+colonists learned that they could protest future impositions and be
+successful.
+- Parliament was asserting its full authority over the colonies and
+affirming that it would take any measures necessary to subdue (keep
+under control) the rebellious colonists by. (the Declaratory Act)
+
+### Questions of Authority
+
+- The American Revolution is a period of shifting loyalties and
+authority: who will have authority? The colonial legislatures or the
+British Parliament? The colonial elite or the common people? Regional
+differences are highlighted in the colonies as well.
+- The Stamp Act is significant:
+    + It set up the colonies for additional resistance
+    + It helped in the formation of a distinct American identity;
+    +  It created shifting identities of social order;
+    + It prepared the colonists for a growing cohesion between the
+    thirteen colonies.
+
+### Another Affront (abuse)
+
+- Parliament enacted the Townshend Duties in 1767, which imposes tariffs
+  (tax or fee) on British imports such as glass, paint leads, paper, and
+  tea.
+- The Townshend Duties angered the colonists because the revenue raised
+  from the duties would be used to defray or pay royal appointees'
+  salaries in the colonies, which circumvented the colonial assemblies'
+  ability to withhold salaries in order to force concessions
+  (compromise).
+- This sparked a non-importation movement across the colonies.
+- It shows us that the thirteen colonies are working together as a unit.
+- Britain responded to the non-importation movement by repealing the
+Townhend Duties in 1770 except for the duty on tea, which would cause
+additional problems.
+
+
+## "These are the Times that Try Men's Souls:" War and the Secession(separation) from the British Empire
+
+
+## "I Bled in Battle, That You Might be Independent:" Did the Revolution Revolutionize the Lives of Women, Indians, and Black Slaves
+
+
 # Glossary
 
 | Term                      | Definition                                                                                                                                                                                              |
