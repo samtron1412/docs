@@ -1332,6 +1332,214 @@ of freedom and equality.
 
 ## "I Bled in Battle, That You Might be Independent:" Did the Revolution Revolutionize the Lives of Women, Indians, and Black Slaves
 
+### Multifaceted (having many different parts) Revolution
+
+- Many different peoples fighting for different reasons and on different
+sides.
+    + There were Indian nations, such as the Iroquois Confederacy, which
+    broke up their unions in order to fight on either the
+    American/Patriot side or the British side.
+    + There were loyalist and patriot women who braved the warfare and
+    took over the business of the home while their husbands were
+    fighting in the war.
+    + There were also African American slaves who fought on both sides
+    during the Revolution in hopes of winning their eventually freedom.
+- Did the American founders provide for an induction of Native Americans
+and African Americans in the new American Republic or American society?
+Or, were the American founders racist? In other words was the Revolution
+an exclusion or an inclusion of African Americans and Native Americans?
+    + The founders' documents were visionary for their time.
+    + It is unprofessional to judge a given era's standards and beliefs
+    against the values of one's own era.
+    + Professional historians must always strive to be objective, and
+    they must always contextualize their subjects and judge them against
+    their own era's values - not those of the current time.
+
+### The Native Americans' Role
+
+- What was the fate of the Native Americans after the Revolution?
+    + The Native Americans were more likely to join with the Britain
+    because of old political ties, trade connections, and the
+    Proclamation of 1763 rather than join with the American colonists,
+    who interminably encroached upon the Indians' land.
+    + However, some Indians did take the side of the American Patriots.
+    + The Iroquois Confederacy, which had persisted for hundreds of
+    years and grown immensely powerful, split when Joseph Brant, and
+    Mohawk Indian, decided to side with the British.
+    + Most Indian tribes, however, attempted to stay neutral, as their
+    communities were torn asunder due to conflicts over wartime policy.
+
+### The USA's Indian Policy
+
+- After the American Revolution had been won by the Patriots, the
+Americans, who were intent on building their Republic, often would send
+federal agents to the Indian tribes ini order to trick them into
+incurring debt and swindle them out of their lands.
+    + The American Republic was intended to be an Anglo American
+    project, thus, that necessitated the movement west.
+    + The Indians were perceived to be an obstacle to this movement and
+    their lands were coveted.
+    + Hence, the Indians were seen as a hindrance to the Republic and
+    they were never perceived to be part of it.
+    + The evidence that the founders never considered the Indians to be
+    part of the Republic may be seen in the federal government's
+    treaties with Indian nations: one only makes treaties with foreign
+    nations - not with citizens of the same country.
+    + Most Americans failed to recognize that the Indians had
+    sophisticated governments of their own. But, not all of the founders
+    saw the Indians as savages; some of them saw the Indians as quite
+    sophisticated and complex. Yet, even these more open minded
+    Americans still saw the Indians' culture as inferior and less
+    evolved than their own.
+
+### The American Plan for Indian Removal
+
+- Thomas Jefferson subscribed to Jacques Rousseau's notion of Indians as
+the "Noble Savage." Earlier on in Jefferson's career, he favored
+assimilation (đồng hóa, absorption, the process of becoming similar to
+others' culture) of Indians in American society, so long as the Indians
+adopted civilization as modeled in the yeoman farmer.
+    + The Indians would have to stop living communally and adopt the
+    practice of private property - in other words, they would have to
+    stop being Indian.
+    + The Indians who refused to become civilized in Jefferson's view
+    were barbarians (savage person) to be exterminated (killed).
+    + Jefferson eventually came to see the Indians as obstacles to be
+    pushed out of the way or extirpated once the United States obtained
+    the Louisiana Purchase in 1803.
+- By 1830, the Indians would be pushed beyond the Mississippi River to
+make way for the American Republic.
+- Even the Cherokee, who were farmers and salve owners; lived in towns
+complete with schools and churches; and had their own alphabet, there
+fore, meeting Jefferson's standards of civilization, were still stripped
+of their land under Andrew Jackson's directive and moved West in the
+early 19th century.
+- The Constitution set Indians as separate nations, which is still how
+  we view Indian nations today. The Revolution, thus, did not bode (to
+  be a sign of something on the future) well for Native Americans.
+
+### Black Slaves' Role
+
+- What about the role of African American slaves in the American
+Revolution?
+- Slaves in New England and somewhat in the middle colonies usually
+joined the side of the patriots (about 5,000), but most slaves in the
+Chesapeake and in the Deep South joined the British, who proffered a
+greater chance of freedom.
+- In 1775, Virginian Royal Governor Lord Dunmore offered freedom to all
+slaves and indentured servants who joined the British side. Nearly 9,000
+slaves ran away from their colonial master and joined the British side
+during the Revolution.
+
+### Black Slaves' Place in the Republic
+
+- What did the founders think about slavery? Did they see equality for
+black Americans in the future? Were they that visionary?
+- Most the founders mostly saw slavery as an economic necessity -
+especially in the South where their market depended on it.
+- Most of the founders like Thomas Jefferson could not imagine a world
+without slaves and believed that if slavery ended, African Americans
+would have to be completely separated from the white population.
+- When Jefferson wrote in the Declaration that all men are created
+equal, he meant that all men are born equal, but there are still
+political, social, and economic inequalities which prevail.
+- Thus, one cannot view the Revolution as a wholly utopian experiment
+even though rhetoric intones it.
+- The founders never wished to make everyone free and equal because
+this would occasion social anarchy in their opinion.
+- There was a diverse group of founders who opposed slavery and a group
+who supported slavery.
+- Whether the founders wished to end slavery or not, the slaves
+appropriated the rhetoric of the Revolution and the Declaration in order
+to avail their own needs. The founders never anticipated that the lower
+classes and minorities would use their own rhetoric against the upper
+white class in order to attain their own rights and liberties.
+
+### Status of African Americans
+
+- What was the status of African Americans?
+- There were slaves, who were the property of their masters.
+- There were some free blacks in America as well, who had been freed or
+had been born free and owned themselves.
+- There were Africans, who had recently been imported into the United
+States.
+- There were native born African Americans, who had created their own
+cultural identity which mixed African and Anglo American culture.
+- Even though there was a diversity of African cultures from different
+parts of Africa, the fat remains that slavery and the forced inferiority
+that came with it created a sense of solidarity among African Americans
+of different cultures and statuses.
+
+### The First Emancipation
+
+- After the American Revolution, numerous slave owners took the
+Revolution's rhetoric to heart and freed their slaves, so the number of
+free blacks rose in America: up to 60,000 in 1790.
+- Most Northern states gradually abolished slavery and upper Southern
+states made emancipation easier.
+- Some planters had switched to cultivating grain during the Revolution,
+so they no loner were in need of many slaves.
+- Most free blacks lived in the North, where they had more job
+opportunities.
+- Free blacks in the South created their own institutions such as
+churches and schools. They also formed their own communities and
+attempted to piece their families back together.
+- Blacks especially used the rhetoric of liberty and equality in the
+Revolution to petition for their freedom and the abolition of slavery.
+They held slavery up as a blot on America's claims of freedom for all
+men.
+
+### The USA's Plan for Black Slaves
+
+- However, even if blacks were freed, discrimination and racism still
+prevailed against them in Southern and Northern society.
+- They were not given the vote and they could not testify in court.
+- They were relegated to menial jobs. Racism became more concretely
+defined in the 18th century as predicated or based on skin color.
+- Hence, revolutionary promises of equality and freedom applied
+to whites, but not to reds, browns, and blacks.
+- With the resulting solidarity among whites, the division between the
+free vs. the unfree became a division between whites vs. colored.
+
+### Women's Role
+
+- How about women's role in the American Revolution?
+- Women took an active part in the non-importation movements and they
+usually ran the farm or household while their male relatives were
+fighting in the war.
+- Women also served as camp followers in the continental army, namely,
+they were cooks, nurses, and launderers.
+- A small number of women risked their lives and covertly fought in the
+battles of the Revolution as soldiers.
+
+### Republican Mothers
+
+- After the Revolution, American stressed that all men be educated so
+they could be able citizens in the Republic. Women, therefore, had to
+receive a better education so they could instill virtuous republican
+behavior in the republic's future citizens.
+- Women became Republican Mothers and received a better education, but
+they were never sent to college and they were not permitted to vote.
+- Judith Sargent Murray argued that women had equal intellectual
+capabilities as men, but the inadequate schooling they received made
+them seem to be less intelligent.
+
+### The USA's Plan for Women in the Republic
+
+- Abigail Adams used the rhetoric of the Revolution in order to argue
+for the reform of coverture laws, namely, laws where a woman's legal
+identity and property was subsumed under her husband.
+- She also reminded men, such as her own husband John Adams, to remember
+that women expected their roles to be different after the Revolution.
+However, women did not receive the vote and, thus, were still not
+considered to be citizens in the Republic.
+- They may received a better education, but they were still covered by
+their husbands and were still in the same dependent category as were
+children, servants, and slaves.
+- They were expected to be good mothers and obedient wives. They were
+also expected to be virtuous in the sense that they sacrifice their own
+interests for the common good, but men were still allowed to pursue
+self-interest in the economy and polity.
 
 # Glossary
 
