@@ -884,6 +884,451 @@ additional problems.
 
 ## "These are the Times that Try Men's Souls:" War and the Secession(separation) from the British Empire
 
+### The Heart of the Revolution
+
+- In 1768, British troops were stationed in Boston in order to quell
+  (suppress) the unremitting (continual) resistance and revolts
+  (rebellions) in the fractious city.
+    + British knew that Boston was the heart of colonial resistance and
+    the wellspring, or origin, of the American Revolution.
+    + The Sons of Liberty, a colonial-wide resistance association, was
+      behind the protests in Boston, and Samuel Adams, the infamous
+      rablle-rouser (who excites others to violence) and cousin of John
+      Adams, was one of the association's leaders.
+    + Aside from the resistance against British taxation, there was
+    already a lot of tension in Boston due to economic stress and
+    privation (poverty); in fact, Boston hosted more poor individuals
+    than any other colonial city.
+    + British aggravated (complicated) the situation in Boston when they
+    quartered (board) their troops amid the populace and when the
+    soldiers to compete with the colonists for job. The British soldiers
+    also made lewd (naughty) advances on colonial women, leaving parents
+    to fear for their daughters' safety and virtue.
+    + This resulted in squabbles (argument) and fisticuffs (hit) between
+    the colonists and the soldiers in the streets, leading to the Boston
+    Massacre in 1770.
+- Boston Massacre in 1770:
+    + On March 5th, a young British sentry (guard) was guarding the
+    Custom House throughout the night. Some colonial boys began to taunt
+    and harass the sentry, attracting a large mob of irate (angry)
+    colonists.
+    + Captain Thomas Preston marched eight soldiers to the Custom House
+    in order to aid the sentry. By the time they reached him, the
+    colonial mob had grown very aggressive and began to throw hard
+    packed snowballs with bricks and stones imbedded in them and other
+    objects at the British soldiers. The colonists also taunted the
+    soldiers, "Fire! Fire! Why don't you fire?! Shoot me if you dare!"
+    + Meanwhile, Captain Preston situated himself in front of his men
+    and ordered his men to hold their fire. Yet, one soldier was struck
+    in the head by a club (stick), lost his footing, and discharged his
+    musket. All British soldiers undergo extensive training and if a
+    shot rings out, they are trained to fire their weapons.
+    + Captain Preston ordered his men to cease firing, using his sword
+    to knock their muskets up and out of range of the colonists.
+    However, numerous colonists were injured and five Americans died of
+    wounds sustained in the shooting.
+    + These luckless five were instantly lauded as martyrs (sacrificing
+      person) of the American resistance against British tyranny. The
+      Patriot version of what happened differed greatly. Patriot and
+      silversmith Paul Revere created an engraving (carving of letters
+      or design into something) of the Boston Massacre as a propaganda
+      tool to incite anger against the British.
+    + In the engraving, Revere pictures the Americans not as a mob, but
+    rather as a defenseless and non-violent gathering of citizens.
+    Instead of standing in front of his men in order to halt the
+    onslaught, CAptain Preston is depicted as standing in back of his
+    men, ordering them to fire on the hapless Americans.
+    + Even though Captain Preston and his men were defended by future
+    patriot John Adams and acquitted (discharge), the Boston Massacre
+    and Revere's engraving succeeded in horrifying the other American
+    colonies and galvanizing (inspiring) them to further resist the
+    British threat.
+
+### Boston Harbor, A Teapot Tonight
+
+- Parliament revoked the Townshend Duties due to colonial protests, but
+it did not eliminate the tax on tea.  This effectively made tea cheaper
+to buy of the colonists, so why were American Patriots angry about the
+Tea Act?
+    + One reason is because the Americans still resisted internal
+    taxation of any form on principle.
+    + Another reason is because the East India Company's monopoly
+    undercut colonial smuggling and frustrated the business of notorious
+    smugglers such as John Hancock.
+- When three ships entered Boston harbor with the intent of dropping off
+  East India Company tea, American Patriots refused to permit the ships
+  to unload their cargo and Royal Governor Thomas Hutchinson refused to
+  permit the ships to leave the harbor until they dropped off their
+  cargo. Stuck between the two contending forces, the ships were left
+  stationary in the harbor, unable to drop off their cargo and unable to
+  leave.
+    + The Patriots pleaded with Hutchinson to relent, but he stubbornly
+    refused to bend to the rebels.
+- On December 16th, American Patriots met at the Green Dragon Tavern,
+where they listened to Samuel Adams speak, "I can think of nothing
+further to be done as we have done all we could for the salvation
+(saving) of our country." From the back of the group, there was a cry,
+"Boston Harbor, a Tea Pot tonight!"
+    + Colonials disguised as Mohawk INdians quietly slipped out of the
+    tavern (pub, bar), boarded the ships, hatched the tea chests open,
+    and dumped their contents into the harbor.
+    + They were very careful to destroy no more British property except
+    for the tea, and they silently melted away into the night.
+    + England was outraged by this blatant (intentional) act of
+    intransigence (stubbornness).
+- In 1774, Parliament punished the Bostonians by enacting the Coercive
+  (forced) Acts (the colonists called them the Intolerable Acts), which
+  closed Boston Harbor and dissolved (discontinue) its colonial assembly
+  and its town meetings.
+
+### More Grievances (injustice)
+
+- In 1774, Parliament passed the Quebec Act, which also angered the
+American colonists because it annexed (joined) the Ohio VAlley region
+(which the colonists hoped to move into after fighting for it in the
+French and Indian War) to the province of Quebec and, thereby (by that),
+cut off western settlement for Anglo-Americans.
+    + This gave Indians protection from the encroachment (invasion) of
+      land hungry colonists and alleviated (relieved) costly frontier
+      squabbles (disagreement, argument) between settlers and Indians,
+      but the colonists saw it as an appeasement (satisfaction) of the
+      Indians.
+    + The Quebec Act also mandated that Quebec would not have an elected
+    assembly consisting of local colonists, but rather would receive an
+    appointed council by the Crown, which really persuaded the colonists
+    that the British had designs on eliminating their own local
+    assemblies in the 13 Colonies and stripping them of their rights
+    under the British Constitution. Hence, the British conspiracy
+    becomes a reality for the American colonists.
+
+### Question of Independence
+
+- The American colonists still considered themselves to be Britons at
+  this point and still appealed (attracted) to their rights under the
+  British Constitution.
+    + Most colonists wished to resolve the conflict with Britain and
+    return to the limited authority over the colonies that they had
+    enjoyed pre-1760s. No one was calling for independence just yet.
+- However, some were starting to recognize that there was a cultural and
+social difference between them and the British, namely, they started to
+see themselves as uniquely American in identity and character.
+- The American identity was congealing (thickening) due to hundreds of
+years of interaction between different cultures: European, African, and
+Native American.
+- Not all of the American colonists were Patriots and favored
+independence from the British during the American Revolution: 2/5 of the
+population were Patriots and supported independence; 1/5 were Loyalists
+and supported reconciliation (compromise) with Britain; and 2/5 were
+Neutrals who cared little who was governing them so long as they were
+left largely alone.
+
+### March Toward War
+
+- The American colonists began to prepare themselves for the possibility
+of war.
+    + They started to stockpile (build up) weapons and gunpowder in
+    order to defend themselves from British hostilities.
+    + In the fall of 1774, British General Thomas Gage learned from his
+    spies that the Americans were hiding weapons in the countryside. He
+    believed that if the resistance in Boston could be strangled
+    (killed), then the colonial revolts (rebellions) in the other
+    American colonies would cease all together.
+    + In the "Powder Alarm," Gage sent out his soldiers to seize (take
+      by force) the hidden gunpowder and weapons, which incited the New
+      England troops to march on Boston. Although these troops were
+      disbanded, General Gage was shocked because he had underestimated
+      the speed and organization of the American military.
+    + The colonists also learned form the "Powder Alarm" that they would
+      have to set up a better spy network and disperse (scatter) their
+      stockpiles of weapons and gunpowder, so they could not all be
+      seized at once.
+- At the same time, in late September 1774, the First Continental
+Congress, which was made up of representatives of each American colony
+met in order to discuss the impending (forthcoming, approaching) war.
+    + They decided to organize the colonial military and they formulated
+    the Committee of Safety.
+    + They also approved the non-importation and non-exportation
+    movements against England.
+    + The Americans, felt prepared should war break out and were ready
+    to defend themselves.
+
+### The Shot Heard Round the World
+
+- All that was needed now was a spark to start a war.
+- In April 1775, General Thomas Gage sent British troops to march on
+Concord, Massachusetts in order to seize the ammunition hidden there. He
+also ordered the troops to apprehend (arrest) the political traitors
+Samuel Adams and John Hancock.
+- The New Englanders, however, were warned by William Dawes, Samuel
+Prescott, and Paul Revere of the approaching British soldiers.
+- Captain John Parker, a veteran of the French and Indian War, and his
+minutemen met the British troops on the Lexington Green. The British
+commander Major Pitcairn rode up to the Americans on the Green,
+shouting, "Disperse ye rebels! Lay down your arms!" Captain Parker
+ordered his men to slowly disperse from the Green. But, suddenly, a shot
+rang out on one of the sides and everyone froze before the British
+opened up with a volley (gunfire) at the Lexington colonists. This
+single shot heralded (brought messages) the start of the American
+Revolution.
+- Leaving four Americans dead and numerous wounded on the Green, the
+British troops resumed their march to Concord, where they seized the
+left over ammunition which the Americans did not have the time to carry
+away and they burned the town.
+- They also skirmished (fought) with the Patriots on the Old NOrth
+Bridge, where the first British blood of the war was spilled.
+- When the British finished their work and marched back to Boston,
+30,000 New Englanders came swarming from all over the country to chase
+and snipe (taunt, criticize) at the British troops on their long
+agonizing slog back to Boston. Hundreds of British soldiers were killed
+as New Englanders fired at them from behind trees and boulders. Once the
+British caught sight of Boston, they broke rank and ran in disorder into
+the safety of the city. While the British hunkered down in the city, the
+New Englanders prowled on the outskirts of the city, daring the British
+to stick their noses out. These angry colonists would keep the British
+detained in the city until their commander came North to organize them
+into a continental army. Their commander was also a veteran of the
+French and Indian War and a notable gentleman, also known as George
+Washington of virginia.
+- There were three British commanders in chief in America for the first
+part of the war: Clinton, Howe, and Burgoyne. The continental army only
+had one commander in chief in the form of George Washington.
+    + Washington was not a brilliant tactical commander; nor, was he a
+    skilled strategic commander. In fact, Washington lost more battles
+    than he won in the American Revolution.
+    + What made Washington a military genius was that he was a
+    remarkable quartermaster with highly developed logistical
+    (resourceful effectively) skills. He cared deeply about the welfare
+    of his men and he was well aware of the odds against his army.
+    + Washington was notable because he knew how to work with what he
+      had and he was exceedingly resourceful. Washington was adept at
+      playing cat and mouse. Well acquainted with Indian guerrilla
+      (bushfighter) tactics, Washington employed the same game of
+      harassment and retreat against the British, who became weary of
+      chasing him and his army across the country. In the end, the
+      contest would become too expensive and the British would be forced
+      to throw in the towel.
+
+### A Ragtag (no ordered) Army
+
+- The first continental army raised by the Continental Congress was
+basically a New England army because it was composed of the New
+Englanders stalking (ambush) outside the outskirts of Boston.
+    + They had a lot of experience because they had been meeting since
+    1685.
+    + Most militiamen were young men, who armed and equipped themselves.
+    + They were usually farmers and craftsmen.
+    + Militias (citizen soldiers) were organized in communal units,
+      where they elected their leaders and near egalitarianism
+      (equality) prevailed.
+    + The militia would train four times out of the year even during
+    peacetime.
+    + The minutemen were a reserve force, which had to be able to report
+    to service in a matter of minutes.
+- So, we can see that the colonists already had a trained militant
+  (combative) force in place to fight the British.
+
+### So Now This Is War
+
+- On June 17, 1775, the Second Continental Congress created the
+Continental Army and enlisted General Washington as the commander in
+chief.
+    + John Adams suggested George Washington as commander because the
+      Revolution had primarily been a New England development so far, so
+      the fact that Washington was a Southerner united the Northern and
+      the Southern colonies in the fight against Britain.
+    + Washington set up his army in New England.
+- In July 1775, the Congress tried one last time to reconcile with
+  England by sending an Olive Branch Petition, but King George scorned
+  (look down on) it and declared the colonies to be in rebellion,
+  effectively declaring war on the colonies in the same year.
+    + England sent a large force of soldiers and sailors to quash
+      (defeat) the rebellion right away. The King also sent 20,000
+      mercenaries (person who fights, kills for money) or Hessians
+      (German auxiliaries contracted for military service) to America in
+      order to suppress the rebellion.
+    + This is the point when the colonists effectively gave up trying to
+    reconcile with England and assumed the mantle of war against the
+    mother country.
+
+### Headlong into War
+
+- The British sent General William Howe to head the British troops on an
+attack against the Americans in Charlestown, MA, just outside of Boston.
+    + They clashed in the Battle of Bunker (actually Breed's) Hill, with
+    Captain William Prescott leading the American troops.
+    + The British won the battle but lost devastating numbers of men.
+    + The battle, however, boosted American morale because the
+    unseasoned American troops were able to hold their own against the
+    highly trained British troops.
+- The Americans then surrounded the British army in Boston at Dorchester
+Heights with cannons and mortars, which they had taken from Fort
+Ticonderoga.
+    + Former bookstore owner Henry Knox had joined the Patriots. He used
+    oxen to pull the cannon from the fort to the outskirts of Boston.
+    + During the night, the American soldiers worked quickly and
+    quietly, packing the wheels of the cannons with straw as not to
+    alert the sleeping British.
+    + The next morning when the yawning British soldiers wandered
+    outside, they were surprised to find that the wily Americans had
+    surrounded Boston with bristling cannons.
+    + The British then decided to evacuate Boston posthaste (quickly).
+- In January, 1776, Britishh immigrant and printer Thomas Paine
+published his pamphlet "Common Sense," which pleaded with American
+colonists to fight for independence against a tyrannical king.
+    + Paine argued that a political system was more efficient when
+    politicians were elected by the nation's citizens.
+    + Paine urged the Americans to declare independence, so the men
+    already fighting for their country would have a cause to fight for.
+    + He laughed at the idea that a pip-squeak island dared to control
+    and subdue a vast continent.
+    + He argued that the British extorted American wealth and suppressed
+    the industry and growth of the American colonies.
+    + He pleaded with the Americans to let the dying relationship
+    between the colonies and the mother country go and embrace
+    independent entity.
+    + He also suggested that the Americans form a republic as a perfect
+    form of government to preserve freedom.
+    + He strongly promoted democracy, which Americans would slowly adopt
+    after the Revolution.
+
+### The Declaration of Independence
+
+- Paine's influential pamphlet motivated many Americans to write their
+representatives in Congress and push them to vote for independence.
+- On July 2, 1776, the Continental Congress voted for Independence and
+on July 4th Congress accepted the Declaration of Independence.
+    + In the Declaration, the colonists rationalized their reparation
+    from England with a legal list of their grievances.
+    + Once the Americans declared themselves independent, they could
+    claim sovereignty (authority to rule) as independent states and thus
+    legitimately declare war, make foreign alliances, and trade with
+    other countries.
+    + Jefferson also argued the Americans' natural rights in the
+    Declaration, which were Lockean liberal notions.
+    + There is a paradox about the government's intent in this new
+    political system: does it protect individual rights? Or, does it
+    safeguard the public good? One must remember that the American
+    founders feared social upheaval (great change), which they believed
+    was occasioned by social equality. Democracy still represented
+    anarchy (lawlessness, absence of government) to the founding
+    fathers.
+
+### Objectives
+
+- The British objective in the American Revolution war to win battles
+and quash the rebellion. They do not try to win back the loyalty of the
+colonists, which is a big reason why they lose the war.
+    + They seized major cities and ports, hoping to crush American
+    morale and force them to sue for peace.
+    + But, this failed to debilitate the American colonies because mot
+    of the populace resided in the countryside and the loss of key
+    cities such as New York and Philadelphia did not cripple the
+    American cause.
+    + When the British attempted to seize the capital of the newly born
+    U.S.A. (Philadelphia), the Congress simply fled to Western
+    Pennsylvania to run the government there.
+- The American objective in the Revolution was not to win battles
+necessarily, but to keep the army and the cause alive for the duration
+of the war.
+    + In European military engagements, it was common for a general to
+    surrender if he lost a battle. But, Washington refused to surrender
+    when the Americans lost battles. Instead, he would retreat and force
+    the British to exhaust their men, supplies, and patience chasing
+    after the American troops.
+    + In the American Revolution, the British won most of the battles
+    hands down. But, this war was not about military might. It was
+    endurance and fortitude which won the war, and Washington deftly
+    maintained the guerilla/Indian warfare against the British until the
+    British Empire grew weary of the contest and gave Americans their
+    desired independence. Washington did not beat the British, he
+    outlasted (endure beyond another) them.
+
+### Battles
+
+- In 1776, Washington's continental army managed to drive the British
+troops out of Boston. The British moved their troops to New York City
+under the command of General William Howe.
+    + Washington was outmaneuvered in the Battle of New York and was
+    forced to retreat.
+    + American morale at this time was very low because of the failure
+    in this battle and thousands of American soldiers were taken
+    prisoner and housed in fetid prison ships outside of Manhattan,
+    where they died in droves.
+    + Washington rallied morale when he successfully crossed the
+    Delaware River in Dec of 1776 and surprised the Hessian forces in
+    Trenton, NJ.
+    + With the surrender of the Hessian general, Americans proved one
+    more that they could hold their own in battle and take numerous men
+    prison.
+- In 1777, there was another great victory for the Americans. British
+General Burgoyne "Gentleman Johnnie" was ordered to march his troops
+down from the North (Montreal) and meet with GEneral Howe in New York
+City, who was marching up from the South in order to cut New England
+off.
+    + The problem is that Howe does not march as ordered.
+    + The Americans also frustrated Burgoyne's attempts by sniping at
+    his forces as they marched through the wilderness and by cutting
+    down tress in their path in order to slow their progress.
+    + Meanwhile, Howe decided to take Philadelphia, where the
+    Continental Congress was located. Washington attempted to defend
+    Philadelphia, but was defeated in the Battle of Brandywine (Sept
+    1777) and retreated to Valley Forge, PA for the winter.
+    + Here, the Americans troops would be professionally trained by the
+    Prussian Baron von Steuben, who taught them how to drill and wield
+    weapons with deadly effect.
+    + The Americans would later used this training to successfully
+    defeat a major British army in Yorktown, VA and effectively win the
+    war.
+    + The Battle of Saratoga (Oct 1777) would be a significant
+    development for the Americans: Burgoyne met the American forces
+    under Horatio Gates and was decisively defeated. This is a major
+    turning point in the war because King Louis XVI and France were
+    persuaded to join the American cause in 1778.
+    + The French wanted revenge against Britain for their losses in the
+    French and Indian war and aiding the American colonist against their
+    mother country gave the French the perfect opportunity.
+    + France provided the Americans with supplies, munitions, soldieres,
+    and a naval force. Without the French, it would have been immensely
+    difficult for the Americans to win the war.
+- In 1780/1781, General Henry Clinton was the commander in chief of the
+British forces and he ordered Lord Cornwallis to conquer the southern
+colonies, which were supposedly more loyal to the Crown.
+    + Washington sent American General Greene down South to challenge
+    Cornwallis.
+    + Greene forced Cornwallis to chase him and the American army all
+    over the Carolinas, which diminished Cornwallis's supplies.
+    + Hence, Cornwallis retreated to Yorktown, VA in order to rest his
+    men and wait for reinforcements by sea.
+    + A British fleet came to relieve Cornwallis, but the French naval
+    admiral Francois De Grasse cut the fleet off by blockading the
+    Chesapeake by sea.
+    + Then, Washington and French General Rochambeau marched south and
+    cornered Cornwallis by land.
+    + On Oct 19, 1781, Cornwallis surrendered to the French and American
+    forces.
+    + When the British troops marched out of the fort in order to lay
+    down their weapons, they played a song called the "World Turned
+    Upside Down." The reason was that a rag tag colonial force could
+    effectively defeat the strongest military power in the world. The
+    American played "Yankee Doodle," which was actually a song written
+    by the British making fun of the colonists, calling them ignorant
+    country bumpkins, who wished they could be sophisticated Britons.
+    The Americans played this song for the obvious reason that they
+    wanted to rub it in the faces of the British troops; namely, these
+    country bumpkins just soundly defeated you!
+
+### Peace
+
+- In 1783, the Treaty of Paris ended the American Revolution with
+American delegates (Benjamin Franklin, John Adams, and John Jay)
+presiding.
+- The United States was awarded all the land up to the Mississippi.
+- Britain, however, retained Canada.
+- Florida went back to Spain.
+- The Americans had prevailed in their trials for political
+independence, but they faced a new challenge: the setting up of a
+government which would hold the states together and uphold the promises
+of freedom and equality.
 
 ## "I Bled in Battle, That You Might be Independent:" Did the Revolution Revolutionize the Lives of Women, Indians, and Black Slaves
 
