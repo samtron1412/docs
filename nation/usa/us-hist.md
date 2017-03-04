@@ -1541,6 +1541,549 @@ also expected to be virtuous in the sense that they sacrifice their own
 interests for the common good, but men were still allowed to pursue
 self-interest in the economy and polity.
 
+## "In Order to Form a More Perfect Union:" The Constitutional Convention of 1787 and the Battle over Ratification (enactment, approval) of the Constitution
+
+### The Articles of Confederation (Union)
+
+- After prevailing (current) in the eight-year War for Independence, the
+Americans had achieved their political sovereignty; but, now they were
+faced with the daunting task of setting up an entirely new government
+based on the ideologies of the American Revolution.
+- In the past, all historic republics (a government where the people
+elect their leaders to rule for them) had decayed and collapsed into
+absolutist (single leader, tyrant) governments. Greece and Rome stood as
+a notorious example.
+- The Americans, who were well versed (experienced) in the Classics,
+were cognizant (aware) of the danger a republican government faced.
+- The challenge confronting the American Founders was how do they set up
+this government in order to sustain their republic?
+    + Which was limited enough to permit its citizens to enjoy the
+    individual liberties of freedom and equality, but which was also
+    strong and centralized enough to provide the nation with order and
+    security.
+- The Americans had set up a provisional (temporary) government during
+the American Revolution. The Articles of Confederation, which Congress
+instituted in November of 1777, had only set up a loose confederacy of
+states.
+    + This government under the Articles had been maintained from 1777
+      to 1787.
+    + Under the Articles, the voters chose the state government and the
+      state government chose the national government.
+    + It consisted of a one house government, namely, it was a
+      unicameral (having a single legislative chamber) government.
+    + There was allowed only one vote per state and 3-7 delegates
+      (representative) per state.
+    + There was no president or Supreme Court, so this government only
+      had one branch.
+    + This government had very limited powers over the states because
+      the Americans founders feared monarchy and the centralization of
+      government, so a government that was too strong was a threat.
+    + However, the government under the Articles really needed to tax
+      the states in order to accrue (increase by addition or growth)
+      badly needed revenue because the country was in terrible debt
+      after the war, but Congress did not have the power to levy taxes
+      on the states and it could not regulate trade.
+    + The only powers the government had were to declare war, to draw
+    boundaries, to engage in foreign diplomacy (the management of
+    relationships between countries), and to make treaties with Indian
+    nations.
+    + This government proved to be too inept (inefficient) and feeble
+    (weak) to lead the nation after the war.
+
+### A State of Depression
+
+- What did the American economy look like after the war?
+    + The United States economy was in crippling debt and its market was
+      inundated (overwhelm) or flooded with English goods.
+    + The government under the Articles of Confederation had overprinted
+      paper money, so currency was suffering from depreciation
+      (devaluation).
+    + The Continental dollar had been reduced to being worthless before
+      the end of the war hence the saying, "Not worth a continental."
+    + To add insult to injury, other countries refused to trade with the
+      United States because of her low credit.
+- Immediately after the war, all of the states were preoccupied with
+  drafting their own state constitutions.
+- Individuals in the respective states were also scrambling to salvage
+  (rescue) their own financial affairs, so the states were turning more
+  inward.
+- Each state was concerned solely with protecting itself economically,
+  namely, local markets for local businesses took precedence.
+- In this state of affairs, the Congress under the Articles was largely
+  an ignored entity.
+
+### The Call for a Stronger Government
+
+- In response to this deplorable (unfortunate) condition, some
+  individuals, such as Alexander Hamilton, sought to reform this inert
+  (lifeless) national government in favor of a strong, centralized
+  government.
+    + Hamilton was also determined to make the United States an affluent
+      (wealthy) or rich industrial/manufacturing nation, so it could
+      compete with the European nations economically.
+    + George Washington also wanted a stronger government, so he sent a
+      circular (a letter or notice) around the states highlighting the
+      problems of the current feeble government.
+- Shay's Rebellion (1786) proved to be the catalyst (a condition, event,
+  or person that is the cause of an important change) for the
+  Constitutional Convention as well.
+    + Daniel Shays had fought in the Revolution and had returned to his
+    farm in Massachusetts, where farmers were being heavily taxed in
+    order to pay off the state debts and were being arrested if they
+    could not pay. These farmers responded to this undesirable tax as
+    they had in the Revolution: they attacked the armory in Springfield
+    and tried to take down the Massachusetts government because they
+    believed that it had failed them.
+    + Shay's rebellion frightened the American founders because they
+    knew that without a strong central government, the social anarchy
+    which was exhibited in Shay's Rebellion would grip the young United
+    States.
+
+### The Constitutional Convention
+
+- Provoked by Shay's Rebellion to take the condition of the current
+government seriously, the delegates who met at the Constitutional
+Convention in Philadelphia during 1787 were instructed to reform the
+Articles of Confederation.
+- The Continental Congress decided to jettison the Articles and create
+an entirely new government. Fifty-five delegates showed up in
+Philadelphia and stayed 17 weeks in order to hammer out the government
+and to write the Constitution.
+- The delegates were mostly over the age of 30 and constituted the
+educated elite.
+- Who was conspicuously (apparently) absent from the Convention?: Thomas
+  Jefferson (ambassador in France), John Adams (ambassador in London),
+  Samuel Adams (Not chosen due to his radicalism), and Patrick Henry
+  (who refused to attend; he reportedly commented that he "smelled a
+  rat").
+- Who was conspicuously present at the Convention?: Alexander Hamilton,
+George Mason, James Madison, Benjamin Franklin, and George Washington.
+- James Madison is considered to be the "Father of the Constitution"
+because he directed much of the course taken in constructing the
+government. He studied all forms of government extensively (widely) and
+he took copious (abundant) notes during the Convention.
+- The Convention was a closed meeting and the delegates took a vote of
+secrecy. Fortunately, we know a lot about the proceeding in the
+Convention due to Madison's journals.
+
+### Issues to Deliberate (discuss)
+
+- The main issues of the Convention were the centralization of authority
+and the economic future of the United States.
+- Two groups would evolve out of the Convention:
+    + The Federalists were the nationalists, who subsumed state identity
+      in favor of uniformity and centralized federal control;
+    + The Anti-federalists, who were concerned that too much authority
+      in the hands of a centralized government and the elite would
+      result in the loss of individual's rights. The Anti-federalists
+      also worried that a large government would not be able to
+      acknowledge the respective interests of the states and the people.
+
+### Proposed Plans
+
+- There were also several plans proposed revolving around the issue of
+representation between the large states and the small states.
+- The First Plan:
+    + The Virginia Plan involved a bicameral government (two houses);
+    + Separating powers of governance (executive, judiciary, and
+    legislative) called checks and balances.
+    + The division of powers between the nation and the states called
+    federalism; and mandated that all the state representatives allowed
+    in Congress would be proportionate to the respective state's
+    population.
+- The Second Plan:
+    + The New Jersey Plan included a bicameral government and mandated
+    that each state would receive two state representatives for the
+    house and two representatives for the senate no matter the
+    respective state's population.
+- The resulting deadlock necessitated compromises.
+
+### Compromises
+
+- The Constitution was founded on three compromises.
+- The First Compromise:
+    + The Great Compromise held that the senate gets two representatives
+      from each state no matter the state's population.
+    + The House's representatives would be proportional to the
+      respective state's population.
+    + This alleviated (relieved) the issue of representation between the
+      large and small states.
+- The Second Compromise:
+    + The Three-fifths Compromise held that 3/5ths of the slave
+      population in each state would be counted towards the state's
+      representation in the House
+    + In some Southern states, the black population outnumbered the
+      white population, which posed a problem for the Southern states
+      should only the white population be counted toward Southern
+      representation in Congress.
+    + So, the 3/5ths Compromise allowed Southerners to include the black
+      population, so they could have more representatives in Congress.
+- The Third Compromise:
+    + The South wanted to be able to freely export their commodities,
+    but the North also wanted Navigation Acts.
+    + The compromise between the two regions held that the South must
+    accept the Navigation Acts, but the North had to accept the slave
+    trade until its final end in 1808.
+
+### The New Stronger Government
+
+- Article 1, Section 8 of the U.S. Constitution gives Congress the power
+it had lacked under the Articles; namely, Congress now had the power to
+tax the states and regulate trade.
+    + It also conferred (granted) with the power to create a national
+      currency.
+- Within the Judiciary Branch, the Supreme Court was set up as the
+highest court in the U.S. Article II of the Constitution established the
+Executive Branch, or the presidency.
+    + Under the Constitution, the president was chosen by state
+    governments.
+    + The first president under the Constitution was George Washington,
+    who was unanimously elected.
+- A bicameral Congress (2 houses) was set up based on direct and
+indirect methods of election:
+    + The House of Representative was directed by the people.
+    + The Senate indirectly by the state governments.
+- There is, thus, a balance between the elite and the common people in
+the U.S. government.
+
+### Ratification of the Constitution
+
+- After the founders had argued out the structure of the new government
+and composed the Constitution, they still had to persuade the States to
+ratify the Constitution and make it the law of the land.
+- The Federalists, such as Alexander Hamilton and James Madison, argued
+for the immediate ratification of the Constitution by the States in
+order to protect the Nation.
+    + They argued that the Constitution's checks and balances and the
+    separation of powers between the States and the Nation (Federalism)
+    effectively eliminated corruption and tyranny in the government.
+- The Anti-federalists, however, were not convinced. The Anti-
+  federalists, such as Patrick Henry and George Mason, feared that a
+  strong national government would not protect the liberties of the
+  people and only the States could safeguard the people's rights.
+    + The Anti-federalists did not want to ratify the Constitution until
+    a Bill of Rights, which protected individual's rights, was added to
+    the Constitution lest the government lose it allegiance to the
+    people.
+    + The Bill of Rights was added to the Constitution in 1791 and is
+    considered to be the most important part of the U.S. Constitution.
+
+### The Majority vs. the Minority
+
+- The Anti-federalists also demanded that the Constitution be ever open
+to amendment in order to protect against governmental corruption.
+    + They feared that a vast nation could not have a functioning
+    virtuous republic.
+- But, James Madison argued that despite previous beliefs, small
+republics in history had failed because they were too small, factional,
+and homogeneous. The United States' republic, however, would be diverse
+and expansive. Divisive factions could never get a strong handhold in
+this republic because the United States boasted a diversity of competing
+interests, so no one power could dominate.
+- Madison's argument was very astute (very sharp and well thought) and
+ahead of its time.
+
+### The American Republic
+
+- Nine states were needed in order to ratify the Constitution.
+    + Alexander Hamilton, James Madison, and John Jay wrote the
+    *Federalist Papers* in order to explain the principle of checks and
+    balances in the new federal government and, thereby, convince the
+    States to ratify the Constitution
+- Unfortunately, the Constitution excluded the voice or vote of the poor
+and minorities such as women, blacks, and Indians.
+    + The United States was never intended to be set up as a mass
+    democracy.
+    + The American Founders intended to set up an elite government, but
+    the government would become more democratic with the inclusion of
+    western states and its values would transition.
+    + Also, minorities and the poor would appropriate the rhetoric of
+    the Revolution in order to argue for their own rights and make the
+    government more democratic, which the American Founders never
+    anticipated (expected).
+    + This is the genius of the U.S. Constitution: it is explicit enough
+    to afford security and order to the National government, but it is
+    also flexible and open to growth and a shift in values between
+    generations. Because of this, the U.S. Constitution is the oldest
+    Constitution still effectively functioning in the world.
+
+## "The Baneful (harmful) Effects of the Spirit of Party:" Alexander Hamilton vs. Thomas Jefferson in the Formation of American Political Parties and the Political Course of the Nation
+
+### Politics in the Early Republic
+
+- The American founders had achieved their goal of structuring a stable,
+  centralized American republic, but the next two decades of political
+  strife (struggle) (both domestically and internationally) would sorely
+  test this young republic's endurance.
+- The American founders were initially opposed to the notion of
+political parties because they considered them to be divisive factions.
+    + The founders distrusted political parties because political
+    parties only served their own particular interests instead of
+    catering to the common good of the republic.
+    + Political parties, thus, were dangerous to republics and a sign
+    that government was becoming corrupt.
+    + In the ideal republic, a good political leader was not the head of
+    a party or faction, but was rather a disinterested leader beholden
+    only to public service and the welfare of the common good. He would
+    never try to promote himself in a campaign, but rather if he was a
+    true republican, he would stay out of campaigning and selflessly
+    answer his country's call if he was needed to serve.
+    + George Washington especially exemplified (to be a typical
+    example) this prevalent belief when he resignedly accepted his post
+    as the first president of the United States of America.
+
+### The Federalists: the Nationalists
+
+- But, politics rapidly changed during the Early Republic and political
+parties quickly took their place in the form of the Federalist and the
+Democratic-Republican parties.
+- The Federalists under party leader Alexander Hamilton, as we have
+seen, did not want the states to have too much power, but rather they
+stressed that the centralized, federal government must be predominate.
+- Because the U.S.A. was suffering from a lot of debt after the American
+Revolution, Hamilton proposed three reports in order to solve the
+U.S.A.'s financial and economic problems:
+    1) Public Credit (combine all thirteen state debts into one big
+    debt)
+    2) National Banking Structure
+    3) Domestic Manufacturing
+- Hamilton was a pragmatist (approach to problems based on practical
+solutions), a unionist, and an abolitionist (who support an end to
+slavery).
+
+### Federalist Policies
+
+1. USA priority according to the Federalists: a strong, central
+government is essential and disunion is to be resisted at all costs
+2. Federalist belief in political participation: limited electoral based
+on propertied, elite class - a type of oligarchy
+3. Federalist Constitutional interpretations: a loose interpretation of
+the Constitution's limits also known as the "elastic clause"
+4. Federalist vision of America's future: develop an industrial
+manufacturing base in order to release the U.S.A. from economic
+dependence on Britain's protective tariff policy.
+
+### The Democrat-Republicans: States' Rights
+
+- The Democratic-Republicans under party leader Thomas Jefferson sought
+to preserve the rights of the individual States and believed that the
+States should reserve their powers away from the federal government.
+- They believed that the States were the best protectors of the people's
+liberties and a safeguard from the rise of a corrupt centralized
+government.
+- Jefferson believed that the federal and state governments should have
+no role in enforcing religious beliefs.
+- He also believed that a clear separation of church and state was
+necessary because if they were joined, the two institutions could more
+easily coerce individuals to take a certain political or religious
+stance.
+- Jefferson was not an atheist, but rather, he was a deist and a
+rationalist. Unlike Hamilton, Jefferson was also an idealist and a
+populist.
+
+### Democratic-Republican Policies
+
+1. USA priority according to the Democratic-Republicans: they advocated
+States' rights and resisted both political and economic monopolies
+2. Democratic-Republican belief in political participation: voting
+rights should be expanded to the common man, so they are populists
+3. Democratic-Republican Constitutional interpretations: they endorsed a
+strict 10th Amendment, which mandates that the powers not delegated to
+the federal government under the Constitution are reserved to the States
+and the people; also, the Constitution should only be strictly
+interpreted with no poetic license
+4. Democratic-Republican vision of America's future: they were primarily
+agrarian (supportive of an agricultural country) and they were
+Anti-British Industrial Revolution, as they had an aesthetic objection
+to manufacturing. They were typically supportive of slave labor and
+actually believed that waged labor subverts (destroys) liberty.
+
+### Political Factions
+
+- Both sides continually accused the other of going against the ideals
+of the American Revolution and of trying to compromise or destroy the
+American republic.
+    + The Democratic-Republicans accused the Federalists of being too
+    aristocratic and even of plotting to institute a monarchy on the
+    example of England.
+    + The Federalists accused the Democratic-Republicans of trying to
+    undermine (weaken) the Constitution and even labeled them as
+    dangerous rabble (mob).
+- In 1789, the onset of the French Revolution divided the political
+  parties even more and fostered quite a bit of contempt (disrespect) in
+  the domestic political scene.
+    + The Democratic-Republicans favored the French Revolutionaries and
+    argued that the U.S.A. should support the French Revolution under
+    the terms of alliance with France made in 1778. They saw the French
+    Revolution as a sign that the American experiment of liberty had
+    inspired the people of Europe to revolt and topple their autocratic
+    monarchies and to institute governments which safeguarded their
+    citizens' natural rights.
+    + The Federalists, however, argued that the French REvolution was a
+      perversion of republicanism and the bloody anarchy of the enraged
+      rabble. They also contended that the U.S.A. had made its alliance
+      terms under the French monarchy; so, since the French had
+      guillotined (executed) their king in 1793, the obligation of the
+      U.S.A. to France was no longer binding.
+- Where the Democratic-Republicans were pro-French, the Federalists were
+more pro-British because the USA's economy was still dependent on
+England's manufactured goods.
+
+### American Neutrality
+
+- Despite the Federalists' and Democratic-Republicans' Anglo and French
+leanings, the U.S.A. under President George Washington took a newtral
+stance during the French REvolution because the U.S.A. would not gain
+anything if France won and she would lose everything if France lost.
+    + Washington was aware that the U.S.A. was a young country and
+      desperately needed to stay out of European conflicts and
+      entanglements if she was to strengthen herself as a nation and
+      force Europe to see her as a sovereign political entity.
+    + In other words, America was just a baby as nations go and
+      Washington stressed that if America became involved in England and
+      France's intermittent wars, she would be strangled in the cradle
+      politically. It was best to keep to her own and stay neutral; this
+      is the policy that America would follow until she entered WWI.
+- Jay's Treaty (1795) also engendered (caused) quite a bit of heat in
+  the American political scene: John Jay was a Federalist, who was sent
+  by Washington to London in order to negotiate a treaty with England
+  that the U.S.A. would remain neutral in the war between England and
+  France. Hence, American merchant ships were not to be seized at sea.
+    + Democratic-Republicans hit the roof when they got wind of Jay's
+    Treaty because they saw it as a sign of Federalist duplicity with
+    the former British enemies against the French.
+    + The French responded to Jay's treaty by attacking American ships
+    carrying British goods at sea. This initiated the Quasi-War between
+    France and the U.S.A. (1796-1800): American sailors were being taken
+    prisoner by French ships. President John Adams responded by creating
+    an American navy, which sailed into the West Indies and captured
+    French sailors in order to trade for American prisoners. The
+    American navy secured American shores by 1799.
+- Peace with France was negotiated in 1800 under Emperor Napoleon
+Bonaparte.
+    + Napoleon had overthrown the revolutionary authorities in France
+    and the Directory was currently running as the new French
+    government.
+    + Napoleon agreed that the USA should remain neutral, which freed
+    the U.S.A. from its obligations to France under the 1778 alliance
+    treaty and finally allowed the U.S.A. to develop independently
+    without any European entanglements.
+- Now that America was free of European military pressures, she directed
+  her attention to the beckoning land of milk and honey, the American
+  West.
+
+### The Louisiana Purchase
+
+- In 1801, Napoleon pushed the Spanish to give their Louisiana territory
+in North America to France.
+- Thomas Jefferson became president in 1801 and was very wary of the
+presence of French rule under Napoleon to the west of the American
+nation.
+    + He sent a delegate to Napoleon in order to negotiate that the
+    Americans may have access to the mouth of the Mississippi River for
+    commercial purposes and even to purchase the city of New Orleans if
+    possible.
+    + Napoleon surprised the Americans by deciding to sell all of the
+    Louisiana territory to the USA. Napoleon made this unilateral
+    decision because he needed money to fight in the war against
+    England. He also sold the land to the USA because a successful slave
+    rebellion in Haiti led by Touissant L'ouuerture (becomes an African
+    state) convinced Napoleon that it was not worth keeping the land.
+    + The USA under Jefferson happily buys all of the Louisiana
+    territory, which averages 827,000 miles for the price of fifteen
+    million. So in 1803, the Louisiana Purchase doubled the territory of
+    the American nation, which makes it a very important purchase in
+    American history.
+- This is very Hamiltonian move that Jefferson took (Jefferson as
+  president didn't really have the authority as president to make the
+  purchase unless one interprets the Constitution loosely) and it won
+  instant popularity for his administration.
+- Jefferson, the enthusiastic man of the enlightenment, wasted no time
+  in sending Meriwether Lewis and William Clark on a scientific
+  exploration (1804-1806) of the newly obtained land with the goal of
+  reaching the Pacific Ocean and exploring the landscape and its
+  inhabitants.
+
+### The War of 1812
+
+- In the War of 1812 (1812-1814), the U.S. Congress declared war on
+Great Britain. Why?
+    + Congress claimed that it was due to the British showed blatant
+    disrespect of the US as a sovereign nation.
+    + But, the USA also declared war on England because she had designs
+    on British Canada, which she desired to make part of the American
+    nation due to Canada's immense wealth of natural resources.
+    + Lastly, Americans living on the Western frontier accused the
+    Britain, who still had not evacuated western forts, of enticing
+    Indians to attacks American settlements.
+
+### War of 1812 Continued
+
+- In 1813, the Americans attacked Canada and sacked York (today's
+Toronto) the capital of British Canada.
+- In 1814, Napoleon's massive army was weakened by its failure to take
+  Moscow, Russia. The French army was summarily defeated by Great
+  Britain and Napoleon was taken prisoner. Britain now could focus its
+  attention on sending forces to the USA in order to avenge the American
+  sacking of York.
+    + British soldiers invaded the poorly defended American capital,
+    Washington D.C., and burned the American congressional building and
+    the presidential mansion to the ground.
+    + The Americans were caught completely unprepared and were forced to
+    evacuate their own capital, which showed the USA's military
+    vulnerability.
+    + In the resolution of this war, no side gained land or lost land in
+    the Treaty of Ghent (Dec 24). However, news of the treaty took two
+    weeks to reach the USA and British forces attacked New Orleans
+    because they did not know the war was over. The Battle of New
+    Orleans was a resounding victory for the USA under General Andrew
+    Jackson, who became a major war hero and later, a US president.
+
+### Peace and Domestic Growth
+
+- In 1815, the British defeated Napoleon at Waterloo and there would be
+peace in Europe for 99 years, which was great news for the USA because
+the Americans could now focus on making sure that their nation could
+grow domestically as a strong, independent country.
+- In the Adams-Onis Treaty (1819), the US acquired Florida from Spain.
+Spain was dealing with multiple revolutions in Latin America and it
+could no longer hold on to Florida. So, Spain sold Florida to the USA so
+long as the USA promised to never try to take California and Texas from
+Spain.
+- In the Monroe Doctrine (1823), the USA informed Europe that the
+Western HEmisphere was now in the in the province or jurisdiction of the
+US and mandated that Europe must stay out of the US affairs.
+    + This is very important because the USA asserted itself as a
+    sovereign nation and affirmed that there would be no more
+    colonization by European powers in the Western Hemisphere.
+    + The USA, thus, reserved North America for herself. This also
+    effectively closes off foreign policy in the USA for some time.
+
+### Significance of These Events
+
+- What is the historical significance of the Louisiana Purchase and the
+War of 1812?
+- First of all, the Federalist Party loses its influence on the national
+scene.
+    + It becomes unpopular because a Federalist faction threatened to
+      separate New England from the American Union in opposition to the
+      war against England.
+    + Most Americans also felt that the Federalists were out of touch
+    with the trust invested in the American people and the direction of
+    the nation toward a more expansive democracy.
+    + After the War of 1812, the Federalist Party ceased to have
+    political influence and dissolved as a party.
+- Second, domestic industry and manufacturing was accelerated during the
+War of 1812, for New England and the Middle States were forced to lean
+on domestic industry due to the British navy blockade, which cut off
+foreign commercial imports to America.
+- Third, the USA affirmed its sovereignty as an independent republic to
+all of Europe and grew rapidly as a strong, industrious nation.
+- Lastly (fourth), the INdians who were allied with the British during
+the War of 1812 lost their land, which opened up the land for
+Anglo-American westward expansion and the pivotal movement of slavery
+west.
+
 # Glossary
 
 | Term                      | Definition                                                                                                                                                                                              |
