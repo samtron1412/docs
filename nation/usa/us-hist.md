@@ -2084,6 +2084,269 @@ the War of 1812 lost their land, which opened up the land for
 Anglo-American westward expansion and the pivotal movement of slavery
 west.
 
+## "The Market Revolution:" Industrialization, Urbanization, and the American Character in the Antebellum Period
+
+### American Democracy
+
+- The British had blockaded the American East Coast during the War of
+1812 in order to obstruct any commercial goods from going in or out of
+the U.S. with the intent of economically strangling the U.S. into
+conceding (admitting) the war.
+    + The northern states made their own goods for domestic use.
+    + One of the effects of the British blockade was that it encouraged
+    the rise of domestic manufacturing and industry in the American
+    Northern states.
+    + The British unintentionally helped to jump start
+    industrialization, urbanization, and commercialization in the North,
+    which would quickly culminate the "Market Revolution."
+    + This revolution of sorts would distinguish the American North from
+    the American South in terms of its structural makeup and its
+    defining culture; so we can see that the two regions are already
+    growing steadily apart, which will eventually lead us down into the
+    Civil War.
+- This is also the period when the U.S. became gradually more
+democratic. With that being said, what then are all the components of a
+democracy:
+    + (1) Government is based on the rule of the people and by the
+    people;
+    + (2) debate is the ideal instead of war;
+    + (3) majority rule;
+    + (4) an openness to dissent or a tolerance of difference;
+    + (5) the right to choose or depose political leaders
+    (republicanism);
+    + (6) a free market or open economic competition (capitalism);
+    + (7) individual's civil rights are protected;
+    + (8) and the notion of equal rights and equal opportunity is
+    emphasized.
+- This new American Democracy will be solely tested during the
+Antebellum Period and especially during the Civil War Period with the
+secession (separation) of the Southern States.
+
+### The Market Revolution
+
+- The Market Revolution completely revolutionized the way Americans
+lived their everyday lives.
+- Due to the Market Revolution, the Northern people would no longer
+primarily produce food or goods for self-sufficiency, but rather, they
+would produce a surplus (extra) for the market, so they could make more
+money, so they could in turn buy more goods.
+- They sold their surplus crops to merchants, so they could buy luxuries
+and goods they otherwise would have had to make.
+- Within the Market Revolution, there was a transportation revolution
+and a communication revolution.
+
+### The Transportation Revolution
+
+- The transportation revolution started in the early nineteenth-century.
+    + In 1807, Robert Fulton invented the steam boat and the Mississippi
+    River became the major artery for commercial and travel purposes in
+    the U.S. Scores (numbers) of Americans would quickly move up and
+    down the Mississippi River due to the effectiveness of the steam
+    boat; travel down the river went from months before the invention of
+    the invention of the steam boat to a matter of days.
+    + A National Road from Maryland to Illinois was also built in 1808.
+    These roads helped to connect distant locals into a united nation.
+    + From 1800 to 1825, workers diligently worked on the Erie Canal
+    (324 miles long), which connected Albany, New York to Buffalo, New
+    York, thereby (by that) creating a link from Chicago to the East and
+    jumpstarting the tourist industry. Goods from the East that would
+    take months to reach westerners before the canal was built now took
+    a few weeks. The canal also connected the West to the East, thereby
+    creating a more unified national identity. It also employed
+    thousands of workers.
+    + In 1830, the Railroads had already 31,000 miles of track laid down
+    mostly in New England and the Northwest, thereby facilitating travel
+    and uniting the different regions of the country. Most of the track
+    would be laid in the North, which would greatly benefit this region
+    during the Civil War against the American South.
+
+### The Communication Revolution
+
+- The communication revolution started with Samuel Morse's invention of
+the electrical telegraph in 1844. By 1848, telegraph lines connected New
+York City to Charleston, South Carolina.
+- Food diets also become more varied during this period.
+- Mobility of people increased, which made the economy improve and
+social standing rise.
+- There was also more cultural interaction due to the dynamic
+international market.
+- Information exchange was also on the rise.
+- Capital investments increased due to the rise in transportation. More
+jobs were needed during the market revolution, so the country opened up
+to an influx of German and Irish immigrants in order to satisfy the
+labor demand.
+- A concrete national identity began to form now that America was a more
+unified country due to its transportation and communication revolutions.
+- More states were being formed and introduced to the nation due to the
+movement west of footloose settlers, and with each addition of western
+territory, the young country became more and more democratic.
+
+### Industrialization
+
+- Industrialization also notably comes into its own during this period.
+- Before the industrial revolution, apprenticeship was the means of
+learning a trade. One would leave home and live with his master, who
+would teach him a skill such as shoemaking or printing.
+- Home manufacture was also more prevalent, where textiles (cloth or
+clothing) were made at home by women and sent to merchants who sold
+them on the market.
+- Most people worked at home before the Market Revolution. This would
+all change during the industrial revolution when "manufactories,"
+which was later shortened to just "factories," brought all workers and
+their labor under one roof.
+- In 1789, England had already industrialized and jealously protected
+its secrets, but an Englishman named Samuel Slater surreptitiously
+(sneakily) memorized the blueprints of an industrial factory in England
+and brought them to America, where be build Slater's Mill. This was the
+first American factory.
+- The first factories in America consisted of textile (cloth) factories.
+Southern cotton was sent to Northern textile factories, where it was
+manufactured into cloth.
+- Hence, we can see that the North did have an implicit hand in Southern
+slavery and many northern businessmen saw no reason to end the
+institution in the South.
+- Lowell Mill, Massachusetts became the site of the first industrial
+labor strike in 1834 to 1836 because the female textile workers argued
+that they were being worked like slaves - they worked an astonishing
+fourteen hours a day!
+- Before the industrial revolution, people worked according to daily
+cycles of sunlight and in accordance with the seasons. There were
+periods of extensive work during the year, such as during harvest, but
+there were also periods of rest and relaxation, such as during the
+winter. However, with the coming of the industrial revolution, the
+"tyranny of the clock" began to run people's lives and change the manner
+in which they worked. Schedules become paramount (superior) and people
+were forced to abide by them lest (for fear that) they lose their job.
+Work days were now long and year round.
+- With the move of labor into factories, people lost a defining sense
+of personal independence and a sense of mastery and pride in their work.
+Long hours, low wages, and dangerous conditions plagued these factory
+workers.
+- The railroads also reflected this change of time in that they start to
+run on strict schedules and time zones come into their own.
+
+### Commercialization
+
+- Before the Market Revolution, the barter system prevailed, which is
+where goods are exchanged for goods. Formal specie (gold or silver
+coins) or cash was not necessarily needed as tender in a purchase.
+However, during the Market Revolution, the cash system, which is where
+money is exchanged for goods, took root and became the dominant system.
+- People learned that they must work for cash, so they can purchase new
+goods at the market in order to make their lives more comfortable.
+Hence, there was a mass production of goods and specialization of
+agriculture to serve the market in the North.
+
+### Urbanization
+
+- Urbanization also comes into its own during the Market Revolution
+because people were flocking to American cities, where there was a high
+demand for cheap labor.
+- In 1820, 7% of Americans lived in cities. In 1860, 20% of Americans
+lived in cities.
+- Those flocking to the cities were either rural migrants or
+foreign immigrants. In 1820, 1.6% of city residents were immigrants. In
+1860, 11.2% of residents were immigrants (mostly Irish and German).
+- Immigrants faced difficult and dangerous working conditions in the
+factories and blatant racism in the cities.
+- Cities pose a conflicting symbolism in American history: on one hand,
+they represent the success of civilization and the spread of culture;
+but on the other hand, they represent corruption, filth, vice, sin,
+crime, and disease.
+- In the cities of the Early Republic, there was no garbage disposal and
+the sanitation of the water supply was very poor, which led to outbreaks
+of water borne disease such as yellow fever and cholera.
+
+### The American Character
+
+- The American character was explicated fully by Alexis Tocqueville in
+his book Democracy in America. By 1850, foreign observers, such as
+Tocqueville, could note a distinct and definable American character that
+differed from European culture.
+- As you know, the American identity had been congealing (thickening)
+since the 17th century due to the interaction of European, African, and
+Native American culture. THe glimmerings of a separate American identity
+became evident in the Revolutionary period, but it was not until the
+19th century that it finally blossomed into a distinct character with
+distinguishing traits that Americans did (and somewhat still do!)
+exhibit.
+
+### American Characteristics
+
+- The newly developed American characters:
+    + (1) Materialism: Americans  continually and without fear of risk
+    chased wealth in order to elevate their social status. Americans
+    equated success and wealth with virtue and correlated poverty with
+    immorality. They invariably sought to buy more and more goods from
+    the market in order to improve and ease their domestic lives.
+    + (2) Anti-intellectualism: in the democratic climate, Americans
+    came to champion the street smart, quick-witted business common man
+    and were now opposed to the elite, erudite (well-educated) scholar.
+    + (3) Optimism: Americans were predominately future orientated and
+    notably innovative in their society. In the Revolutionary period,
+    individuals noted the rise and fall of empires, but in the
+    Antebellum period, Americans saw history and time as progressive and
+    linear. Most Americans looked at the future with high hopes and
+    believed that their children would live better lives than their own.
+    The movement of settlers west also represents this opportunity and
+    hopeful optimism.
+    + (4) Individualism: industrialization and the rise of factories
+    occasioned aloofness (detachment) between people with less
+    interaction in the community and more stress on the nuclear family.
+    In this new industrial society, self-reliance and autonomy
+    (independence) was celebrated and dependence scorned.
+    + (5) Restlessness (constant motion): Americans were very footloose
+    (free) during this period. The population doubled from 10 million
+    in 1820 to 23 million in 1850, and 90% of the population moved
+    within ten years. As noted before, land and movement equaled
+    freedom in America, so Americans were distinct from Europeans in
+    terms of their wanderlust (travel). Nine new states were added to
+    Union as Americans expanded west and formed western territories.
+    In America, all was hurried energy and frantic enterprise.
+    + (6) Equality: there was a paradox between the talk of equality and
+    the competition for wealth in America, which is itself creates
+    inequality. There are equaity in the right to vote, as universal
+    male suffrage had been implemented in the 1790s, but only white male
+    adults could vote. By 1840, 90% of white men could vote regardless
+    of their social status. American society was still unequal if one
+    considers the condition of women, African Americans, and Native
+    Americans, but there was a rough equality between white men in
+    American society, which did not exit in class obsessed Europe.
+    + (7) Social customs: tobacco chewing, smoking, and drinking were
+    open to all classes in America. There were fewer class
+    accommodations on railroads and steamboats, which scandalized class
+    conscious Europeans - gender and racial segregation was more
+    prevalent than social segregation in American transportation.
+    Americans wore more universal clothing (no social prohibition on
+    clothing) and shook hands with strangers.
+
+### "Rags to Riches" - Poor to becoming rich
+
+- All of this scandalized (offend) European visitors, but America still
+had a growing disparity between the rich and poor.
+- The "rags to riches"  narrative was largely not historically accurate,
+as only 2% of the wealthiest citizens were born poor. But, Americans
+still had faith in the notion of equal opportunity and the ideal that
+one can improve their social standing.
+
+### Distinctive Regions
+
+- The North and South shared the same political ideology and history,
+language, religion, and optimism in the American future.
+    + The South, however, was more rural and focused on agriculture; was
+      not biracial; and a lower populations; and was less developed in
+      factories, transportation, schools, and churches.
+    + The North was more urbanized, had a higher population, had more
+    diversity of races due to immigration, and was highly developed in
+    industry, transportation, and social institutions.
+- The biggest difference between the two regions, however, was that the
+North was a society with slaves but dependent on free waged labor, and
+the South was a slave society, namely, it was wholly dependent on slave
+labor.
+- This growing regional divide between the South and the North would
+catapult the nation into war and sorely test the young nation's
+commitment to democracy.
+
 # Glossary
 
 | Term                      | Definition                                                                                                                                                                                              |
