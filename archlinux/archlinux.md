@@ -721,14 +721,12 @@ real-time performance monitor.
 - [Zotero](https://www.zotero.org/)
 
 ### 4.4 Text editor
-- [e3](http://sites.google.com/site/e3editor/): written in assembly
+
 - [vi](https://wiki.archlinux.org/index.php/Vi)
 - [vim](https://wiki.archlinux.org/index.php/Vim)
 - [neovim](https://wiki.archlinux.org/index.php/Neovim)
 - [gvim](https://wiki.archlinux.org/index.php/GVi)
 - [emacs](https://wiki.archlinux.org/index.php/Emacs)
-- [emacs-nox](https://wiki.archlinux.org/index.php/Emacs)
-- [zile](https://en.wikipedia.org/wiki/Zile_(editor))
 
 ### 4.5 Readers and Viewers
 #### E-book applications
