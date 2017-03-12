@@ -2347,6 +2347,151 @@ labor.
 catapult the nation into war and sorely test the young nation's
 commitment to democracy.
 
+
+## "When You See Me Laughin', I'm Laughin' Just to Keep From Crying:" The Lives of Slaves in Antebellum Slavery
+
+### The American Paradox
+
+- Now that we have looked at the dynamic society of the American North,
+we are going to turn to the society of the somnambulant (walking
+while sleep) American South.
+    + Where the North was rapidly changing toward a market society
+      dependent on free waged labor, the South persisted as a
+      traditional and conservative slave society.
+    + As the two regions' respective economies diverged, their
+      differences in political beliefs came into stark view and became
+      increasingly explosive.
+    + Because Northerners began to laud free labor as the chosen
+      economic course of the American Nation, the Southerners found
+      themselves having to defend their "peculiar institution" and
+      having to desperately cling to what was traditional and familiar i
+      a world of change.
+- One of the biggest American historical ironies was that white men's
+freedom and equality was underpinned (supported) by slavery and racism.
+    + White men, whether they were rich or poor, were united on the
+      basis of their whiteness, which conferred them with certain
+      privileges in society above that of black Americans, who were
+      stigmatized as the inferior race.
+    + Hence, the poorest white man was still superior to the richest
+      black man. As we learned before, race trumped class in American
+      society, so it was the enslavement of the black race, which
+      enabled white men to relax about their class differences and see
+      one another as roughly equal.
+    + It is this privilege of whiteness, which historians call
+      "herrenvolk democracy" (a political system where citizen rights
+      are only granted to the dominant group in a society), which
+      persuaded poor white Southerners who could not afford slaves to
+      fight for the side of the Confederacy.
+    + It is not that they supported slavery as much as they fought to
+    preserve their racial privileges.
+- Mulattos (who has black-white parent) created problems for this racial
+  hierarchy, where whites were superior to blacks, because they were a
+  combination of black and white and thereby muddled racial
+  classifications. Which category should they go in: white or black?
+  Because they straddled the racial line, both whites and blacks also
+  viewed mulattos with mistrust.
+- By 1860, there were 250,000 free blacks in the United States. they had
+become free by either being born free, by running away from slavery, by
+being children of black fathers and white mothers (slave status follows
+the status of the mother), or if they had been freed by their master.
+
+### Antebellum Slavery
+
+- IN 1793, Eli Whitney invented the cotton gin (colorless, strong
+alcoholic drink) which created a cotton boom in the American South, so
+slavery and cotton plantations expand into the west. By the 1830s,
+slavery had moved all the way to Texas.
+- By 1860, there were 4 million slaves in the United States with most
+clustered in the "Black Belt" region, which stretched from Georgia to
+Louisiana.
+- Slaves endured extreme and sometimes fatal physical and sexual abuse.
+Slaves' children and spouses were sold as property, so families were
+often broken due to slavery.
+
+### Slave Resistance
+
+- Slaves had several means of resisting slavery:
+    + Refusing to work
+    + Feigning illness
+    + Breaking tools and equipment
+    + Singing spirituals (songs with hidden meanings)
+    + Running away permanently or "lying out" (leaving the plantation
+    for a transient time)
+    + Revolting
+- MOst slave escapees were young males, who fled alone, where women
+usually fled in groups and were less likely to run away due to the
+encumbrance of children.
+- Revolts were the largest and most serious types of resistance, which
+absolutely terrified slave owners.
+- The most notable example of a mass slave revolt was Nat Tuner's revolt
+in Virginia in 1831, where 55 whites were killed.
+- Southerners lived in perpetual (constant) fear of revolt from their
+slaves. Every slave owner slept with his doors barred and pistols under
+his pillow. Southerners were extremely brutal to their slaves because it
+was a reaction of this gnawing (continuously painful) fear. Slave owners
+were well aware that slaves were tempted to seek vengeance (revenge)
+against their masters for their enslavement and their ill treatment.
+- The more afraid slave owners became, the more they restricted and
+cruelly treated their slaves. The more they beat their slaves, the more
+they were afraid of slave retribution (punishment). It was an ugly,
+cruel cycle.
+
+### Reactions of Slavery from the North
+
+- In the North, slavery had been accepted as a labor system since the
+18th century.
+- Black Americans faced voting restrictions, legal restrictions (they
+could not sit on juries or give testimony), and de facto segregation in
+the North.
+- Black Americans also faced economic discrimination as they were given
+the unskilled jobs, were denied union membership, and were often as
+strikebreakers in the North.
+
+### Missouri Compromise
+
+### Addressing Slavery
+
+### Plans for Ending Slavery
+
+### Abolitionism
+
+### The Radical Abolitionists
+
+### Black Abolitionists
+
+### "Holding the Wolf by the Ears:" The Defensive South
+
+
+## "The Age of Jackson:" Jacksonian Democracy, Politics, and Social Reform
+
+### Andrew Jackson
+
+### The 1824 Election and the "Corrupt Bargain"
+
+### Democratic Reform in the Election System
+
+### The People's President
+
+### Jackson vs. the Cherokee
+
+### Jackson and the Nullification Crisis
+
+### Jackson vs. the National Bank
+
+### The Second Great Awakening
+
+### Women as Pious Reformers
+
+### Realities of Reform
+
+### Phases of Reform
+
+### Types of Reform
+
+### The Cult of Domesticity and True Womanhood
+
+### Women's Rights Movement
+
 # Glossary
 
 | Term                      | Definition                                                                                                                                                                                              |
