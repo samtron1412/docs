@@ -685,6 +685,9 @@ real-time performance monitor.
 
 ### 3.14 Power management
 
+- powertop: management tool
+- tlp: configuration tool
+
 ### 3.15 Clipboard managers
 
 ### 3.16 Wallpaper setters
