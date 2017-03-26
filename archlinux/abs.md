@@ -107,3 +107,10 @@ Add this group to the section `IgnoreGroup` in `/etc/pacman.conf`.
 
 If new versions are available in the official repositories during a system update, pacman prints a note that it is skipping this update because it is in the IgnoreGroup section. **At this point the modified package should be rebuilt from ABS to avoid partial upgrades.**
 
+
+# Alternative for ABS
+
+## ASP (Arch Build Source Management Tool)
+
+- [GitHub](https://github.com/falconindy/asp)
+- `man asp`
