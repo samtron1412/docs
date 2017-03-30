@@ -390,3 +390,6 @@ There are two types of paraboloid: elliptic and hyperbolic
 
 # Cylindrical and Spherical Coordinates
 
+Two generalizations of polar coordinates to \\(\mathbf{R}^3\\):
+cylindrical and spherical coordinates.
+
