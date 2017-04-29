@@ -2,22 +2,28 @@
 
 # Overview
 
-Mathematics is the language of universe and the natural basic science.
+Mathematics (from Greek, "knowledge, study, learning") is the language
+of universe and the natural basic science.
 
-## Definitions of Mathematics
+# History
 
-### Normal definitions
+
+
+# Definitions of Mathematics
+
+## Normal definitions
 
 - Mathematics is the study of topics such as quantity (numbers),
   structure, space, and change.
 
-### Greater abstraction - Philosophical definitions
+## Greater abstraction - Philosophical definitions
 
 - Mathematics is the science that draws necessary conclusions.
 
-## [Mathematical Philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mathematics)
+# Inspiration and aesthetics
 
-## Notation, language, and rigor
+
+# Notation, language, and rigor
 
 # Fields of Mathematics
 
@@ -104,37 +110,6 @@ numbers
   Medal, established in 1936 and awarded every four years (except around
   World War II) to as many as four individuals.
 
-# Limits
+# [Mathematical Philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mathematics)
 
-## Intermediate Value Theorem (IVT)
-
-- f(x) is continuous on a closed interval [a, b]
-- f(a) # f(b)
-- then for every value f(a) < M < f(b), there exists at least one value
-  a < c < b such that f(c) = M
-
-### Problems
-
-#### [Show tan(x) = x has infinitely many solutions](https://web.archive.org/web/20150906001438/http://mathforum.org/library/drmath/view/54165.html)
-
-# Vectors
-
-In general, to write a vector as a **linear combination** of two other
-vectors, we have to solve a system of two linear equations in two
-unknowns variables. On the other hand, vectors give us a way to
-visualizing the system of equations geometrically. This relation between
-vectors and systems of linear equations extends to any number of
-variables and is the starting point for the important subject of
-**linear algebra**.
-
-Vectors v and w are equivalent if they have the same magnitude and
-direction. Two vectors are equivalent if and only if they have the same
-components.
-
-# Linear Algebra
-
-https://en.wikipedia.org/wiki/Linear_algebra
-
-# Discrete Mathematics
-
-https://en.wikipedia.org/wiki/Discrete_mathematics
+# References
