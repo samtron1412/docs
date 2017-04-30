@@ -157,3 +157,10 @@ https://en.wikipedia.org/wiki/Discriminant
 # Determinant
 
 https://en.wikipedia.org/wiki/Determinant
+
+# References
+
+[infinitesimal]: https://en.wikipedia.org/wiki/Infinitesimal
+[tensor]: https://en.wikipedia.org/wiki/Tensor
+[manifold]: https://en.wikipedia.org/wiki/Manifold
+[quaternion]: https://en.wikipedia.org/wiki/Quaternion
