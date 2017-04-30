@@ -117,3 +117,17 @@ numbers
 # [Mathematical Philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mathematics)
 
 # References
+
+[wiki-mathematics]: https://en.wikipedia.org/wiki/Mathematics
+[mathworld]: http://mathworld.wolfram.com/
+[wiki-philosophy]: https://en.wikipedia.org/wiki/Philosophy_of_mathematics
+[wiki-millennium]: https://en.wikipedia.org/wiki/Millennium_Prize_Problems
+[wiki-areas]: https://en.wikipedia.org/wiki/Areas_of_mathematics
+[wiki-foundations]: https://en.wikipedia.org/wiki/Foundations_of_mathematics
+[foundations]: http://mathworld.wolfram.com/topics/FoundationsofMathematics.html
+[multivar]: http://mathinsight.org/thread/multivar
+[khan-multivar]: https://www.khanacademy.org/math/multivariable-calculus
+[how-to]: http://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx
+[common-errors]: http://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx
+[wiki-calculus]: https://en.wikipedia.org/wiki/Calculus
+
