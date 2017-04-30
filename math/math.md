@@ -27,7 +27,11 @@ of universe and the natural basic science.
 
 # Fields of Mathematics
 
-## Foundations and philosophy
+- Mathematics can be subdivided into the study of quantity, structure,
+space, and change (i.e. arithmetic, algebra, geometry, and analysis).
+- In addition to these main concerns, there are also subdivisions.
+
+## Foundations
 
 ### Mathematical logic
 
