@@ -31,6 +31,10 @@ How to be come who we really are?
     + mass democracy threatens to unleash torrents of undigested envy.
     + atheism leaves humans without guidance or morality
 
+# Apollonianism and Dionysianism
+
+
+
 
 # References
 
