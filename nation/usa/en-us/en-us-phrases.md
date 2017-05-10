@@ -4,6 +4,11 @@
 List of phrases.
 
 # Phrases
+## as well as
+
+http://www.dailywritingtips.com/as-well-as-does-not-mean-and/
+
+
 ## thank you, thanks, I appreciate your help, I really appreciate it
 - Thanks!
 - Thanks for your efforts.
