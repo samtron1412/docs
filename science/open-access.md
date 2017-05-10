@@ -8,3 +8,5 @@
 	+ [sci-hub.cc](http://sci-hub.cc/)
 	+ [Tor](http://scihub22266oqcxt.onion/)
 - [arxiv.org](http://arxiv.org/)
+- [plos](https://www.plos.org)
+- [doaj](https://doaj.org)
