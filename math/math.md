@@ -85,12 +85,13 @@ numbers
 
 ### Change
 
++ [Analysis vs. Calculus](https://math.stackexchange.com/questions/32433/are-calculus-and-real-analysis-the-same-thing)
+
+- Analysis
+    + Differential equations
 - Calculus
-- Vector calculus
-- Differential equations
 - Dynamical systems
 - Chaos theory
-- Complex analysis
 
 ## Applied mathematics
 
