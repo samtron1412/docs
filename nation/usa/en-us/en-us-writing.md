@@ -266,6 +266,14 @@ published in the United States. You can visit at [www.loc.gov][1]
 
 ## How to write the introduction
 
+### Thesis Statement
+
+- https://www.kibin.com/essay-writing-blog/thesis-statement-examples/
+
+- Topic: debatable
+- Position (Stance): agree/disagree
+- Reason/Evidence (3 points)
+
 ## How to write the conclusion
 
 [Strategies for Writing a Conclusion][strategies-for-writing-a-conclusion]
