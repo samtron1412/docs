@@ -5,8 +5,9 @@
 - Why do I need to learn? The end goal of learning.
 - How to learn? Learning how to learn.
 
-# Specialization vs Analogical Reasoning
-- Elon Musk, Bill Gates, Mark Zuckerberg are using both methods to have a better learning process.
+# Specialization vs Generalization
+- Elon Musk, Bill Gates, Mark Zuckerberg are using both methods to have
+  a better learning process.
 - [Analogy and Analogical Reasoning][2]
 
 # References
