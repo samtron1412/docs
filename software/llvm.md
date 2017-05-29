@@ -20,7 +20,8 @@ Urbaba-Champaign, under the direction of Vikram Adve and Chris Lattner.
   emitting an optimized IR.
 - This new optimized IR can then be converted and linked into machine-
   dependent assembly language code for a target platform.
-- Clang/GCC front end -> IR -> LLVM -> optimized IR -> ...
+- C code -> Clang/GCC's C frontend -> IR -> LLVM's IR -> optimized IR ->
+LLVM's machine code (backend) -> machine code
 
 # Components
 
