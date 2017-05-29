@@ -3,6 +3,12 @@
 # Overview
 
 
+# Software
+
+- [GNU Go][gnugo]
+- [cgoban3][cgoban3]
+- [qgo][qgo]
+- [gopanda][gopanda]
 
 # References
 
@@ -16,4 +22,6 @@
 [reddit]: https://www.reddit.com/r/baduk/
 [alphago]: https://deepmind.com/research/alphago/
 [gnugo]: https://www.gnu.org/software/gnugo/gnugo.html
-[leela]: https://www.sjeng.org/leela.html
+[qgo]: https://github.com/pzorin/qgo
+[cgoban3]: http://gokgs.com/
+[gopanda]: http://pandanet-igs.com/communities/gopanda2
