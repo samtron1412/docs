@@ -69,6 +69,19 @@ governed by a set of rules that its evolution should follow:
 
 ## Standardization
 
+The C++ standard consists of two parts:
+- The core language
+- The standard library:
+    + vectors, lists, maps, sets, queues, stacks, arrays, tuples, i/o
+    facilities (iostream, for reading from and writing to the console
+    and files), smart pointers for automatic memory management, regular
+    expression support, multi-threading library, atomics support
+    (allowing a vaiable to be read or written to by at most one thread
+    at a time without any external synchronization), time utilities
+    (measurement, getting current time), exceptions, a random number
+    generator, and a modified version of the C standard library.
+    + Standard Template Library (STL)
+
 | Year | C++ Standard          | Informal name                                                     |
 | -    | -                     | -                                                                 |
 | 1998 | ISO/IEC 14882:1998    | C++98                                                             |
@@ -147,28 +160,8 @@ known as **the zero-overhead principle**.
 
 ### Language, Libraries, and Systems
 
-## Advice
+# Standard library
 
-
-
-# Learning C++
-## The early years
-
-## The 1998 Standard
-
-## The 2011 Standard
-
-## What is C++ Used for?
-
-## Programming in C++
-
-## Suggestions for C++ Programmers
-
-## Suggestions for C Programmers
-
-## Suggestions for Java Programmers
-
-## Standard library
 
 
 
