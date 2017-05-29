@@ -15,3 +15,5 @@
 [sgf]: http://www.red-bean.com/sgf/
 [reddit]: https://www.reddit.com/r/baduk/
 [alphago]: https://deepmind.com/research/alphago/
+[gnugo]: https://www.gnu.org/software/gnugo/gnugo.html
+[leela]: https://www.sjeng.org/leela.html
