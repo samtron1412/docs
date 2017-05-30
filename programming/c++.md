@@ -160,6 +160,18 @@ known as **the zero-overhead principle**.
 
 ### Language, Libraries, and Systems
 
+# Compilers
+
+- GCC
+- Clang
+
+# IDE
+
+- Editors: vim, neovim, sublime text, emacs
+- Eclipse
+- Codeblock
+- Codelite
+
 # Standard library
 
 
