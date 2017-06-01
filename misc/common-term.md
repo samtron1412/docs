@@ -48,6 +48,16 @@ commitment – almost a disciplinary course of action.
 An activity that you do for pleasure when you are not working. Fun
 things.
 
+# Science
+
+Science is a systematic enterprise that builds and organizes knowledge
+in the form of testable explanations and predictions about the universe.
+- The natural science, which study the material universes.
+- The social sciences, which study people and societies.
+- The formal sciences, which study logic and mathematics.
+- The applied sciences, disciplines which use science, like engineering
+and medicine.
+
 # Geek
 
 A person have enthusiasm about something or a person obsessed with a
