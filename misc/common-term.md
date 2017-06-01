@@ -43,6 +43,11 @@ requiring determination and hard work. Course of action to achieve
 desired results/satisfaction. Ambition describes a determination, a
 commitment – almost a disciplinary course of action.
 
+# Hobby
+
+An activity that you do for pleasure when you are not working. Fun
+things.
+
 # Geek
 
 A person have enthusiasm about something or a person obsessed with a
