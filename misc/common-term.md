@@ -15,7 +15,7 @@ organized.
 When data is processed, organized, structured or presented in a given
 context so as to make it useful, it is called information.
 
-# Knowledge
+# Knowledge - Understanding
 
 Knowledge is a combination of information, experience and insight.
 Knowledge is also used to mean the confident understanding of a subject,
