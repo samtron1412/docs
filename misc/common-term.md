@@ -52,6 +52,10 @@ things.
 
 Science is a systematic enterprise that builds and organizes knowledge
 in the form of testable explanations and predictions about the universe.
+- Theoretical
+- Data -> Information -> Knowledge
+
+## Category
 - The natural science, which study the material universes.
 - The social sciences, which study people and societies.
 - The formal sciences, which study logic and mathematics.
