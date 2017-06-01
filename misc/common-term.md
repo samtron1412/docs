@@ -78,6 +78,12 @@ and organizations.
 - Practical
 - Knowledge -> Benefits in reality
 
+# Engineer
+
+Engineers are people who design, construct, and maintain structures,
+materials and systems while considering the limitations imposed by
+practicality, regulation, safety, and cost.
+
 # Geek
 
 A person have enthusiasm about something or a person obsessed with a
