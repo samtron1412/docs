@@ -69,6 +69,15 @@ knowledge that describes and predicts the natural world. In a more
 restricted sense, a scientist may refer to an individual who uses the
 scientific method.
 
+# Engineering
+
+Engineering is the application of all kinds of knowledge to invent,
+innovate, design, build, maintain, research, and improve structures,
+machines, tools, systems, components, materials, processes, solutions,
+and organizations.
+- Practical
+- Knowledge -> Benefits in reality
+
 # Geek
 
 A person have enthusiasm about something or a person obsessed with a
