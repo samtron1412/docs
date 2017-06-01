@@ -58,6 +58,13 @@ in the form of testable explanations and predictions about the universe.
 - The applied sciences, disciplines which use science, like engineering
 and medicine.
 
+# Scientist
+
+A scientist is a person engaging in a systematic activity to acquire
+knowledge that describes and predicts the natural world. In a more
+restricted sense, a scientist may refer to an individual who uses the
+scientific method.
+
 # Geek
 
 A person have enthusiasm about something or a person obsessed with a
