@@ -137,6 +137,11 @@ Information technology is the application of computers to store, study,
 retrieve, transmit, and manipulate data, or information, often in the
 context of a business or other enterprise.
 
+# Computer
+
+A computer is a device that can be instructed to carry out an arbitrary
+set of arithmetic or logical operations automatically.
+
 # Computer science
 
 - Computer science is the study of the theory, experimentation, and
