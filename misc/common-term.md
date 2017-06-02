@@ -133,6 +133,8 @@ improving, or understanding information systems.
 
 # Information technology
 
-
+Information technology is the application of computers to store, study,
+retrieve, transmit, and manipulate data, or information, often in the
+context of a business or other enterprise.
 
 
