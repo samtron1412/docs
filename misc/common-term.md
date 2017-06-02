@@ -156,4 +156,7 @@ Computer engineering is a discipline that integrates several fields of
 electrical engineering and computer science required to develop computer
 hardware and software.
 
+# Software engineering
 
+Software engineering is the application of engineering to the
+development of software in a systematic method.
