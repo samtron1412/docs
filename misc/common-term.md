@@ -96,17 +96,6 @@ a person is overly intellectual, obsessive, or lacking social skills
 
 bookworm, smart, math, physical, biology, library, glass, academic, book
 
-# Information science
-
-Information science is an interdisciplinary field primarily concerned
-with the analysis, collection, classification, manipulation, storage,
-retrieval, movement, dissemination, and protection of information.
-
-Practitioners study application and usage of knowledge in organizations
-along with the interaction between people, organizations and any
-existing information systems with the aim of creating, replacing,
-improving, or understanding information systems.
-
 # Fail-safe & Fail-secure
 
 - A fail-safe is a device or practice, that in the event of a specific
@@ -130,3 +119,20 @@ improving, or understanding information systems.
     + The condition: "Is the prisoner guilty?" is true (yes, the
       prisoner is guilty). But the test (a court of law) failed to
       realize this, and wrongly decided the prisoner was not guilty.
+
+# Information science
+
+Information science is an interdisciplinary field primarily concerned
+with the analysis, collection, classification, manipulation, storage,
+retrieval, movement, dissemination, and protection of information.
+
+Practitioners study application and usage of knowledge in organizations
+along with the interaction between people, organizations and any
+existing information systems with the aim of creating, replacing,
+improving, or understanding information systems.
+
+# Information technology
+
+
+
+
