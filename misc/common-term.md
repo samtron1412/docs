@@ -150,4 +150,10 @@ context of a business or other enterprise.
   underlie the acquisition, representation, processing, storage,
   communication of, and access to information.
 
+# Computer engineering
+
+Computer engineering is a discipline that integrates several fields of
+electrical engineering and computer science required to develop computer
+hardware and software.
+
 
