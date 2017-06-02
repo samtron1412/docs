@@ -155,6 +155,7 @@ context of a business or other enterprise.
 Computer engineering is a discipline that integrates several fields of
 electrical engineering and computer science required to develop computer
 hardware and software.
+- A little focus on hardware
 
 # Software engineering
 
