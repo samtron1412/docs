@@ -137,4 +137,17 @@ Information technology is the application of computers to store, study,
 retrieve, transmit, and manipulate data, or information, often in the
 context of a business or other enterprise.
 
+# Computer science
+
+- Computer science is the study of the theory, experimentation, and
+  engineering that form the basis for the design and use of computers.
+- Computer science is the study of automating algorithmic processes
+  that scale.
+- It is the scientific and practical approach to computation and its
+  applications.
+- It is the systematic study of the feasibility, structure, expression,
+  and mechanization of the methodical procedures (or algorithms) that
+  underlie the acquisition, representation, processing, storage,
+  communication of, and access to information.
+
 
