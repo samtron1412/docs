@@ -2,18 +2,22 @@
 
 # Overview
 
+Intellectual property refers to creations of the intellect for which a
+monopoly is assigned to designated owners by law.
+
+
+# Intellectual property rights
+
 `Intellectual property (IP) rights` are the legally recognized
-*exclusive rights* to creations of the mind. Under intellectual property
-law, owners are granted certain exclusive rights to a variety of
-*intangible assets*, such as `musical, literary, and artistic works;
-discoveries and inventions; and words, phrases, symbols, and designs`.
-Common types of intellectual property rights include `copyright,
-trademarks, patents, industrial design rights, trade dress,` and in some
-jurisdictions `trade secrets`.
+*exclusive rights* to creations of the intellectual property. Under
+intellectual property law, owners are granted certain exclusive rights
+to a variety of *intangible assets*, such as `musical, literary, and
+artistic works; discoveries and inventions; and words, phrases, symbols,
+and designs`. Common types of intellectual property rights include
+`copyright, trademarks, patents, industrial design rights, trade dress,`
+and in some jurisdictions `trade secrets`.
 
-## Types
-
-### Patents
+## Patents
 
 A patent grants an *inventor* the right to exclude others from making,
 using, selling, offering to sell, and importing an invention for a
@@ -25,13 +29,13 @@ If not authorization, you cannot follow process is patented. With
 copyright, you can follow process but not modify or something else if
 not have right license.
 
-### Trademark
+## Trademark
 
 A trademark is a recognizable sign, design or expression which
 distinguishes products or services of a particular trader from the
 similar products or services of other traders.
 
-### Copyright
+## Copyright
 
 A copyright gives the creator of an original work *exclusive rights* to
 it, usually for a limited time. Copyright may apply to a wide range of
@@ -42,7 +46,7 @@ which they are expressed.
 ### Copyleft
 
 
-## Public Domain
+### Public Domain
 
 Works in the public domain are those whose intellectual property rights
 have expired, have been forfeited, or are inapplicable. `"many things

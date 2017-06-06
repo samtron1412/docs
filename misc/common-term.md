@@ -1,16 +1,93 @@
 [TOC]
 
 # Overview
+
 Common terminology
 
+# Data
+
+Data is raw, unorganized facts, details that need to be processed. Data
+can be something simple and seemingly random and useless until it is
+organized.
+
+# Information
+
+When data is processed, organized, structured or presented in a given
+context so as to make it useful, it is called information.
+
+# Knowledge - Understanding
+
+Knowledge is a combination of information, experience and insight.
+Knowledge is also used to mean the confident understanding of a subject,
+potentially with the ability to use it for a specific purpose.
+
 # Learn
-To gain knowledge or skill by studying, practicing, being taught, or experiencing something.
+
+To gain knowledge or skill by studying, practicing, being taught, or
+experiencing something.
 
 # Study
-To read, memorize facts, attend school, etc., in order to learn about a subject.
+
+To read, memorize facts, attend school, etc., in order to learn about a
+subject.
+
+# Passion
+
+Passion is an intense desire or enthusiasm for something. Pleasure in an
+experience something. Passion is self-satisfactory.
+
+# Ambition
+
+Ambition is a strong desire to do or to achieve something, typically
+requiring determination and hard work. Course of action to achieve
+desired results/satisfaction. Ambition describes a determination, a
+commitment – almost a disciplinary course of action.
+
+# Hobby
+
+An activity that you do for pleasure when you are not working. Fun
+things.
+
+# Science
+
+Science is a systematic enterprise that builds and organizes knowledge
+in the form of testable explanations and predictions about the universe.
+- Theoretical
+- Data -> Information -> Knowledge
+
+## Category
+- The natural science, which study the material universes.
+- The social sciences, which study people and societies.
+- The formal sciences, which study logic and mathematics.
+- The applied sciences, disciplines which use science, like engineering
+and medicine.
+
+# Scientist
+
+A scientist is a person engaging in a systematic activity to acquire
+knowledge that describes and predicts the natural world. In a more
+restricted sense, a scientist may refer to an individual who uses the
+scientific method.
+
+# Engineering
+
+Engineering is the application of all kinds of knowledge to invent,
+innovate, design, build, maintain, research, and improve structures,
+machines, tools, systems, components, materials, processes, solutions,
+and organizations.
+- Practical
+- Knowledge -> Benefits in reality
+
+# Engineer
+
+Engineers are people who design, construct, and maintain structures,
+materials and systems while considering the limitations imposed by
+practicality, regulation, safety, and cost.
 
 # Geek
-A person have enthusiasm about something or a person obsessed with a hobby or intellectual pursuit.
+
+A person have enthusiasm about something or a person obsessed with a
+hobby or intellectual pursuit.
 
 technology, film, zombies, computer, cosplay, music,
 
@@ -19,28 +96,73 @@ a person is overly intellectual, obsessive, or lacking social skills
 
 bookworm, smart, math, physical, biology, library, glass, academic, book
 
-# Data
-Data is raw, unorganized facts, details that need to be processed. Data can be something simple and seemingly random and useless until it is organized.
-
-# Information
-When data is processed, organized, structured or presented in a given context so as to make it useful, it is called information.
-
-# Knowledge
-Knowledge is a combination of information, experience and insight. Knowledge is also used to mean the confident understanding of a subject, potentially with the ability to use it for a specific purpose.
-
-# Passion
-Passion is an intense desire or enthusiasm for something. Pleasure in an experience something. Passion is self-satisfactory.
-
-# Ambition
-Ambition is a strong desire to do or to achieve something, typically requiring determination and hard work. Course of action to achieve desired results/satisfaction. Ambition describes a determination, a commitment – almost a disciplinary course of action.
-
 # Fail-safe & Fail-secure
-- A fail-safe is a device or practice, that in the event of a specific type of failure, responds in a way that will cause no harm, or at least minimizes harm to other devices or to personnel.
-- **Fail-safe** means that a device will not endanger lives or property when it fails. **Fail-secure** means that access or data will not fall into the wrong hands in a failure.
+
+- A fail-safe is a device or practice, that in the event of a specific
+  type of failure, responds in a way that will cause no harm, or at
+  least minimizes harm to other devices or to personnel.
+- **Fail-safe** means that a device will not endanger lives or property
+  when it fails. **Fail-secure** means that access or data will not fall
+  into the wrong hands in a failure.
 - [Examples - Wikipedia](https://en.wikipedia.org/wiki/Fail-safe)
 
 # False positive & False negative
-- A false positive error commonly called a false alarm, is a result that indicates a given condition has been fulfilled, when it actually has not been fulfilled.
-	+ The condition: "Is the prisoner guilty?" is false (no, the prisoner is innocent). But the test (a court of law) failed to realize this, and wrongly decide the prisoner was guilty.
-- A false negative error is where a test result indicates that a condition failed, while it actually was successful.
-	+ The condition: "Is the prisoner guilty?" is true (yes, the prisoner is guilty). But the test (a court of law) failed to realize this, and wrongly decided the prisoner was not guilty.
+
+- A false positive error commonly called a false alarm, is a result that
+  indicates a given condition has been fulfilled, when it actually has
+  not been fulfilled.
+    + The condition: "Is the prisoner guilty?" is false (no, the
+      prisoner is innocent). But the test (a court of law) failed to
+      realize this, and wrongly decide the prisoner was guilty.
+- A false negative error is where a test result indicates that a
+  condition failed, while it actually was successful.
+    + The condition: "Is the prisoner guilty?" is true (yes, the
+      prisoner is guilty). But the test (a court of law) failed to
+      realize this, and wrongly decided the prisoner was not guilty.
+
+# Information science
+
+Information science is an interdisciplinary field primarily concerned
+with the analysis, collection, classification, manipulation, storage,
+retrieval, movement, dissemination, and protection of information.
+
+Practitioners study application and usage of knowledge in organizations
+along with the interaction between people, organizations and any
+existing information systems with the aim of creating, replacing,
+improving, or understanding information systems.
+
+# Information technology
+
+Information technology is the application of computers to store, study,
+retrieve, transmit, and manipulate data, or information, often in the
+context of a business or other enterprise.
+
+# Computer
+
+A computer is a device that can be instructed to carry out an arbitrary
+set of arithmetic or logical operations automatically.
+
+# Computer science
+
+- Computer science is the study of the theory, experimentation, and
+  engineering that form the basis for the design and use of computers.
+- Computer science is the study of automating algorithmic processes
+  that scale.
+- It is the scientific and practical approach to computation and its
+  applications.
+- It is the systematic study of the feasibility, structure, expression,
+  and mechanization of the methodical procedures (or algorithms) that
+  underlie the acquisition, representation, processing, storage,
+  communication of, and access to information.
+
+# Computer engineering
+
+Computer engineering is a discipline that integrates several fields of
+electrical engineering and computer science required to develop computer
+hardware and software.
+- A little focus on hardware
+
+# Software engineering
+
+Software engineering is the application of engineering to the
+development of software in a systematic method.
