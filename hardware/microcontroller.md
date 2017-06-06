@@ -11,3 +11,4 @@
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Microcontroller
+[common]: https://en.wikipedia.org/wiki/List_of_common_microcontrollers
