@@ -162,13 +162,22 @@ electrical engineering and computer science required to develop computer
 hardware and software.
 - A little focus on hardware
 
-# Software engineering
+# Computer Software engineering
 
 Software engineering is the application of engineering to the
 development of software in a systematic method.
+- Computer software engineers develop, design, and test software.
+- They construct, and maintain computer programs, as well as set up
+  networks.
 
-# Software
+# Computer Software
 
 Computer software, or simply software, is a part of a computer system
 that consists of data and/or computer instructions, in contract to the
 physical hardware from which the system is built.
+
+# Computer hardware engineering
+
+- Most computer hardware engineers research, develop, design, and test
+  various computer equipment.
+- This can range from circuit boards and microprocessors to routers.
