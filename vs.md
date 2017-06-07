@@ -244,3 +244,14 @@ behavior to match an existing target.
     + An emulation can replace the original for `real` use.
 - Simulation involves modeling the underlying state of the target.
     + A simulator is a model for analysis.
+
+# Microcontroller vs. Microprocessor
+
+| Attributes        | Microcontroller                                                                                  | Microprocessor                                                  |
+| -                 | -                                                                                                | -                                                               |
+| Application       | Specific and are designed to perform certain limited tasks                                       | Generic and are capable of executing big and complicated tasks. |
+| One  Solution     | Have inbuilt processor, memory, and I/O ports like a small stand-alone computer on a single chip | Generally don't have inbuilt memory and I/O ports               |
+| Performance       | Limited                                                                                          | Very high                                                       |
+| Speed             | Generally from 8 MHz - 200 MHz                                                                   | Generally above 1 GHz                                           |
+| Power consumption | Are designed to consume less power                                                               | Consume relative more power                                     |
+| Cost              | Affordable and cheap                                                                             | Very expensive and requires other peripherals                   |
