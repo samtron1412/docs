@@ -181,3 +181,11 @@ physical hardware from which the system is built.
 - Most computer hardware engineers research, develop, design, and test
   various computer equipment.
 - This can range from circuit boards and microprocessors to routers.
+
+# Computer Hardware
+
+Computer hardware is the collection of physical components that
+constitute a computer system.
+- Computer hardware is the physical parts or components of a computer,
+such as monitor, keyboard, computer data storage, graphic card, sound
+card, motherboard, etc.
