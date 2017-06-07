@@ -166,3 +166,9 @@ hardware and software.
 
 Software engineering is the application of engineering to the
 development of software in a systematic method.
+
+# Software
+
+Computer software, or simply software, is a part of a computer system
+that consists of data and/or computer instructions, in contract to the
+physical hardware from which the system is built.
