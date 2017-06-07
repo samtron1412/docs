@@ -189,3 +189,14 @@ constitute a computer system.
 - Computer hardware is the physical parts or components of a computer,
 such as monitor, keyboard, computer data storage, graphic card, sound
 card, motherboard, etc.
+
+# Processor
+
+In computing, a processor or processing unit is an electronic circuit
+which performs operations on some external data source, usually memory
+or some other data stream.
+- The term is frequently used to refer to the central processing unit
+  (CPU) in a system, but typical computer systems or a system on chip
+  (SoC - microcontroller) combine many specialized processors.
+- Examples: CPU - Central processing unit, GPU - Graphics processing
+  unit, Sound chip, PPU - Physics processing unit, etc.
