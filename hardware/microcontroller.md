@@ -15,3 +15,4 @@
 [atmel-avr]: https://en.wikipedia.org/wiki/Atmel_AVR
 [wiki-6502]: https://en.wikipedia.org/wiki/MOS_Technology_6502
 [6502]: http://visual6502.org/
+[how-to]: http://www.instructables.com/id/How-to-choose-a-MicroController/
