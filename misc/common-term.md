@@ -190,17 +190,6 @@ constitute a computer system.
 such as monitor, keyboard, computer data storage, graphic card, sound
 card, motherboard, etc.
 
-# Microcontroller - System on Chip (SoC)
-
-- A microcontroller (or MCU for microcontroller unit) is a small
-  computer on a single integrated circuit built for the purpose of
-  dealing with specific tasks, such as displaying information in a
-  microwave LED or receiving information from a television's remote
-  control.
-- In modern terminology, it is a system on chip or SoC.
-- A microcontroller contains one or more CPUs along with memory and
-  programmable input/output peripherals.
-
 # Processor
 
 In computing, a processor or processing unit is an electronic circuit
@@ -226,3 +215,14 @@ by the instructions.
   called "cores."
 - An IC that contains one or more CPUs, memory, and peripheral
   interfaces are called microcontroller or systems on a chip (SoC)
+
+# Microcontroller - System on Chip (SoC)
+
+- A microcontroller (or MCU for microcontroller unit) is a small
+  computer on a single integrated circuit built for the purpose of
+  dealing with specific tasks, such as displaying information in a
+  microwave LED or receiving information from a television's remote
+  control.
+- In modern terminology, it is a system on chip or SoC.
+- A microcontroller contains one or more CPUs along with memory and
+  programmable input/output peripherals.
