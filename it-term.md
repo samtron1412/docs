@@ -152,3 +152,110 @@ Model-View-Controller (MVC) architecture.
   tracks of a CD are laid out.
 - Cue sheets are stored as plain text files and commonly have a `.cue`
   filename extension.
+
+# Information science
+
+Information science is an interdisciplinary field primarily concerned
+with the analysis, collection, classification, manipulation, storage,
+retrieval, movement, dissemination, and protection of information.
+
+Practitioners study application and usage of knowledge in organizations
+along with the interaction between people, organizations and any
+existing information systems with the aim of creating, replacing,
+improving, or understanding information systems.
+
+# Information technology
+
+Information technology is the application of computers to store, study,
+retrieve, transmit, and manipulate data, or information, often in the
+context of a business or other enterprise.
+
+# Computer
+
+A computer is a device that can be instructed to carry out an arbitrary
+set of arithmetic or logical operations automatically.
+
+# Computer science
+
+- Computer science is the study of the theory, experimentation, and
+  engineering that form the basis for the design and use of computers.
+- Computer science is the study of automating algorithmic processes
+  that scale.
+- It is the scientific and practical approach to computation and its
+  applications.
+- It is the systematic study of the feasibility, structure, expression,
+  and mechanization of the methodical procedures (or algorithms) that
+  underlie the acquisition, representation, processing, storage,
+  communication of, and access to information.
+
+# Computer engineering
+
+Computer engineering is a discipline that integrates several fields of
+electrical engineering and computer science required to develop computer
+hardware and software.
+- A little focus on hardware
+
+# Computer Software engineering
+
+Software engineering is the application of engineering to the
+development of software in a systematic method.
+- Computer software engineers develop, design, and test software.
+- They construct, and maintain computer programs, as well as set up
+  networks.
+
+# Computer Software
+
+Computer software, or simply software, is a part of a computer system
+that consists of data and/or computer instructions, in contract to the
+physical hardware from which the system is built.
+
+# Computer hardware engineering
+
+- Most computer hardware engineers research, develop, design, and test
+  various computer equipment.
+- This can range from circuit boards and microprocessors to routers.
+
+# Computer Hardware
+
+Computer hardware is the collection of physical components that
+constitute a computer system.
+- Computer hardware is the physical parts or components of a computer,
+such as monitor, keyboard, computer data storage, graphic card, sound
+card, motherboard, etc.
+
+# Processor
+
+In computing, a processor or processing unit is an electronic circuit
+which performs operations on some external data source, usually memory
+or some other data stream.
+- The term is frequently used to refer to the central processing unit
+  (CPU) in a system, but typical computer systems or a system on chip
+  (SoC - microcontroller) combine many specialized processors.
+- Examples: CPU - Central processing unit, GPU - Graphics processing
+  unit, Sound chip, PPU - Physics processing unit, etc.
+
+# Central Processing Unit (CPU)
+
+A central processing unit (CPU) is the electronic circuit that carries
+out the instructions of a computer program by performing the basic
+arithmetic, logical, control and input/output (I/O) operations specified
+by the instructions.
+- Control unit (CU)
+- Processing unit: ALU and registers
+- Most modern CPUs are microprocessors, meaning they are contained on a
+  single integrated circuit (IC) chip.
+- A multi-core processor is a single chip containing two or more CPUs
+  called "cores."
+- An IC that contains one or more CPUs, memory, and peripheral
+  interfaces are called microcontroller or systems on a chip (SoC)
+
+# Microcontroller - System on Chip (SoC)
+
+- A microcontroller (or MCU for microcontroller unit) is a small
+  computer on a single integrated circuit built for the purpose of
+  dealing with specific tasks, such as displaying information in a
+  microwave LED or receiving information from a television's remote
+  control.
+- In modern terminology, it is a system on chip or SoC.
+- A microcontroller contains one or more CPUs along with memory and
+  programmable input/output peripherals.
