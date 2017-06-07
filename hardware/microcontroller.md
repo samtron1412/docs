@@ -13,3 +13,5 @@
 [wiki]: https://en.wikipedia.org/wiki/Microcontroller
 [common]: https://en.wikipedia.org/wiki/List_of_common_microcontrollers
 [atmel-avr]: https://en.wikipedia.org/wiki/Atmel_AVR
+[wiki-6502]: https://en.wikipedia.org/wiki/MOS_Technology_6502
+[6502]: http://visual6502.org/
