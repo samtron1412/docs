@@ -74,6 +74,21 @@ glass.
 - Silicon, germanium, and compounds of gallium are the most widely used
   in electronic devices.
 
+## Superconductivity
+
+Superconductivity is a phenomenon of exactly zero electrical resistance
+and expulsion of magnetic flux field occurring in certain materials,
+called superconductors, when cooled below a characteristic critical
+temperature.
+- Like ferromagnetism and atomic spectral lines, superconductivity is a
+  quantum mechanical phenomenon.
+- It is characterized by the Meissner effect, the complete ejection of
+  magnetic field lines from the interior of the superconductor as it
+  transitions into the superconducting state.
+- The occurrence of the Meissner effect indicates that superconductivity
+  cannot be understood as the idealization of perfect conductivity in
+  classical physics.
+
 ## Insulator
 
 An electrical insulator is a material whose internal electric charges do
