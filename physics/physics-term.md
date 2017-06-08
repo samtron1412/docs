@@ -65,7 +65,20 @@ directions.
   electrons, positively charged holes, and positive or negative ions in
   some cases.
 
-## Semiconductor
+### Perfect conductor
+
+A perfect conductor is an idealized material exhibiting infinite
+electrical conductivity or equivalently zero resistivity.
+- While perfect electrical conductors do not exist in nature, the
+  concept is a useful model when electrical resistance is negligible
+  compare to other effects.
+- One example is ideal magnetohydrodynamics, the study of perfectly
+  conductive fluids.
+- another example is electrical circuit diagrams, which carry the
+  implicit assumption that the wires connecting the components have no
+  resistance.
+
+### Semiconductor
 
 A semiconductor material has an electrical conductivity value falling
 between that of a conductor, such as copper, and an insulator, such as
@@ -74,7 +87,7 @@ glass.
 - Silicon, germanium, and compounds of gallium are the most widely used
   in electronic devices.
 
-## Superconductivity
+### Superconductivity
 
 Superconductivity is a phenomenon of exactly zero electrical resistance
 and expulsion of magnetic flux field occurring in certain materials,
@@ -88,6 +101,7 @@ temperature.
 - The occurrence of the Meissner effect indicates that superconductivity
   cannot be understood as the idealization of perfect conductivity in
   classical physics.
+
 
 ## Insulator
 
