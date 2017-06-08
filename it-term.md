@@ -1,6 +1,6 @@
 [TOC]
 
-# Information science
+# Information Science
 
 Information science is an interdisciplinary field primarily concerned
 with the analysis, collection, classification, manipulation, storage,
@@ -11,7 +11,7 @@ along with the interaction between people, organizations and any
 existing information systems with the aim of creating, replacing,
 improving, or understanding information systems.
 
-# Information technology
+# Information Technology
 
 Information technology is the application of computers to store, study,
 retrieve, transmit, and manipulate data, or information, often in the
@@ -22,7 +22,7 @@ context of a business or other enterprise.
 A computer is a device that can be instructed to carry out an arbitrary
 set of arithmetic or logical operations automatically.
 
-# Computer science
+# Computer Science
 
 - Computer science is the study of the theory, experimentation, and
   engineering that form the basis for the design and use of computers.
@@ -35,14 +35,14 @@ set of arithmetic or logical operations automatically.
   underlie the acquisition, representation, processing, storage,
   communication of, and access to information.
 
-# Computer engineering
+# Computer Engineering
 
 Computer engineering is a discipline that integrates several fields of
 electrical engineering and computer science required to develop computer
 hardware and software.
 - A little focus on hardware
 
-# Computer Software engineering
+# Computer Software Engineering
 
 Software engineering is the application of engineering to the
 development of software in a systematic method.
@@ -56,7 +56,7 @@ Computer software, or simply software, is a part of a computer system
 that consists of data and/or computer instructions, in contract to the
 physical hardware from which the system is built.
 
-# Computer hardware engineering
+# Computer Hardware Engineering
 
 - Most computer hardware engineers research, develop, design, and test
   various computer equipment.
@@ -113,30 +113,30 @@ by the instructions.
 - Read The Fine Manual
 - Read The Friendly Manual
 
-# shutdown
+# Shutdown
 
 stop services, kill apps, unmount
 
-# halt
+# Halt
 
 shutdown + halt (stop all CPU, power-on states)
 
-# poweroff
+# Poweroff
 
 shutdown + power off
 
-# General-purpose programming language
+# General-purpose Programming Language
 
 In computer software a general-purpose programming language is a
 programming language designed to be used for writing software in a wide
 variety of application domains.
 
-# Domain-specific language
+# Domain-specific Language
 
 A domain-specific programming language is one designed to be used within
 a specific application domain.
 
-# Page description language
+# Page Description Language
 
 A page description language (PDL) is a language that describes the
 appearance of a printed page in a higher level than an actual output
@@ -144,13 +144,13 @@ bitmap. An overlapping term is printer control language, which includes
 Hewlett-Packard's PCL. PostScript is one of the most noted page
 description languages. PDF, SVG...
 
-# Markup language
+# Markup Language
 
 A (document) markup language is a modern system for annotating a
 document in a way that is syntactically distinguishable from the text.
 HTML, XML, TeX, ...
 
-# Toy language
+# Toy Language
 
 A toy language is a term for a computer programming language that is not
 considered to fulfill the *robustness* or *completeness* requirement of
@@ -165,7 +165,7 @@ programming language designed to test the boundaries of computer
 programming language design, as a proof of concept, as software art, or
 as a joke.
 
-# Dynamic programming language
+# Dynamic Programming Language
 
 `Dynamic programming language` is a term used in computer science to
 describe a class of *high-level programming languages* which, at
@@ -201,27 +201,6 @@ standby system.
 Failback is a process of restoring the application in a state of
 failover back to its original state (before failure).
 
-# Service Layer
-
-A Service provides a away of a client to interact with some
-functionality in the application. Some business meaning. For example,
-`buyTicket`, `sellTicket` and so on. Has some context within the
-application
-
-# Helper class
-
-More generic and don't care what app they are helping like an utility to
-all application can use it. For example, convert date ...
-
-# Extend
-
-Is used when a thing adds steps to another first thing.
-
-# Include
-
-Is used to extract thing fragments that are **duplicated** in multiple
-thing.
-
 # Web Application
 
 Web applications differ from conventional websites in that web
@@ -253,9 +232,3 @@ Model-View-Controller (MVC) architecture.
   organize and recommend music to people, to create personalized radio
   stations, and to see what other users listened to the most.
 
-# CUE sheet
-
-- A cue sheet, or cue file, is a metadata file which describes how the
-  tracks of a CD are laid out.
-- Cue sheets are stored as plain text files and commonly have a `.cue`
-  filename extension.
