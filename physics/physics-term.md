@@ -65,6 +65,15 @@ directions.
   electrons, positively charged holes, and positive or negative ions in
   some cases.
 
+## Semiconductor
+
+A semiconductor material has an electrical conductivity value falling
+between that of a conductor, such as copper, and an insulator, such as
+glass.
+- Their resistance decreases as their temperature increases.
+- Silicon, germanium, and compounds of gallium are the most widely used
+  in electronic devices.
+
 ## Insulator
 
 An electrical insulator is a material whose internal electric charges do
