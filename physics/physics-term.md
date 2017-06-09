@@ -121,6 +121,17 @@ glass.
 - Silicon, germanium, and compounds of gallium are the most widely used
   in electronic devices.
 
+#### p-n junction
+
+A p-n junction is a boundary or interface between two types of
+semiconductor material, p-type and n-type, inside a single crystal of
+semiconductor.
+- The "p" (positive) side contains an excess of holes, while the "n"
+  (negative) side contains an excess of electrons.
+- p-n junctions are elementary "building blocks" of most semiconductor
+  electronic devices such as diodes, transistors, solar cells, LEDs, and
+  integrated circuits
+
 ### Superconductivity
 
 Superconductivity is a phenomenon of exactly zero electrical resistance
