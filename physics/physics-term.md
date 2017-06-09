@@ -159,6 +159,22 @@ An electrode is an electrical conductor used to make contact with a
 nonmetallic part of a circuit (e.g. a semiconductor, an electrolyte, a
 vacuum or air).
 
+### Cathode
+
+A cathode is the electrode from which a conventional current leaves a
+polarized electrical device.
+- A conventional current describes the direction in which positive
+  electronic charges move.
+- Electrons have a negative charge, so the movement of electron is
+  opposite to the conventional current flow.
+
+### Anode
+
+An anode is an electrode through which conventional current flows into a
+polarized electrical device.
+- The direction of conventional electric current is opposite to the
+  direction of electron flow.
+
 ## Insulator
 
 An electrical insulator is a material whose internal electric charges do
