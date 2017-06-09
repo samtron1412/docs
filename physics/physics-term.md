@@ -55,6 +55,11 @@ changing its velocity.
 
 # Electromagnetism
 
+## Electron
+
+The electron is a subatomic particle with a negative elementary electric
+charge.
+
 ## Conductor
 
 In physics and electrical engineering, a conductor is an object or type
