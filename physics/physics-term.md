@@ -113,3 +113,12 @@ temperature.
 An electrical insulator is a material whose internal electric charges do
 not flow freely; very little electric current will flow through it under
 the influence of an electric field.
+
+## Dielectric
+
+A dielectric (or dielectric material) is an electrical insulator that
+can be polarized by an applied electric field.
+- When a dielectric is placed in an electric field, electric charges do
+  not flow through the material as they do in a electrical conductor,
+  but only slightly shift from their average equilibrium positions
+  causing dielectric polarization.
