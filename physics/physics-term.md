@@ -122,6 +122,11 @@ temperature.
   cannot be understood as the idealization of perfect conductivity in
   classical physics.
 
+#### Meissner effect
+
+The Meissner effect is the expulsion of a magnetic field from a
+superconductor during its transition to the superconducting state.
+
 
 ## Insulator
 
