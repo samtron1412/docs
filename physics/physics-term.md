@@ -202,3 +202,19 @@ resistance in the other.
 - Semiconductor diodes were the first semiconductor electronic devices.
 - A vacuum tube diode has two electrodes, a plate (anode) and a heated
   cathode.
+
+## Triode
+
+A triode is an electronic amplifying vacuum tube (or valve in British
+English) consisting of three electrodes inside an evacuated glass
+envelope: a heated filament or cathode, a grid, and a plate (anode).
+- A triode added a grid electrode to the thermionic diode.
+- The triode was the first practical electronic amplifier.
+- Its invention founded the electronics age, making possible amplified
+  radio technology and long-distance telephony.
+- Triodes were widely used in consumer electronics devices such as
+  radios and televisions until the 1970s, when transistors replaced
+  them.
+- Today, their main remaining use is in high-power radio frequency
+  amplifiers in radio transmitters and industrial radio frequency
+  heating devices.
