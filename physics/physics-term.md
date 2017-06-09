@@ -60,6 +60,13 @@ changing its velocity.
 The electron is a subatomic particle with a negative elementary electric
 charge.
 
+## Electron Hole
+
+In physics, chemistry, and electronic engineering, an electron hole
+(often simply called a hole) is the lack of an electron at a position
+where one could exist in an atom or atomic lattice.
+- This is an abstract concept: the vacancy of an electron at a position.
+
 ## Conductor
 
 In physics and electrical engineering, a conductor is an object or type
