@@ -142,6 +142,12 @@ The Meissner effect is the expulsion of a magnetic field from a
 superconductor during its transition to the superconducting state.
 
 
+## Electrode
+
+An electrode is an electrical conductor used to make contact with a
+nonmetallic part of a circuit (e.g. a semiconductor, an electrolyte, a
+vacuum or air).
+
 ## Insulator
 
 An electrical insulator is a material whose internal electric charges do
