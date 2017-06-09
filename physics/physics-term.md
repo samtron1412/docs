@@ -75,6 +75,20 @@ a net positive or negative electrical charge.
 - An atom, or molecule, with a net positive charge is a cation /ˈkætaɪən/.
 - An atom, or molecule, with a net negative charge is an anion /ˈænaɪən/.
 
+## Electrolyte
+
+An electrolyte is a substance that produces an electrically conducting
+solution when dissolved in a polar solvent, such as water.
+- The dissolved electrolyte separates into cations and anions, which
+  disperse uniformly through the solvent.
+- Electrically, such a solution is neutral. If an electric potential is
+  applied to such a solution, the cations of the solution are drawn to
+  the electrode that has an abundance of electrons, while the anions are
+  drawn to the electrode that has a deficit of electrons.
+- The movement of cations and anions in opposite directions within the
+  solution amounts to a current.
+- This includes most soluble salts, acids, and bases.
+
 ## Conductor
 
 In physics and electrical engineering, a conductor is an object or type
