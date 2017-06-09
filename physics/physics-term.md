@@ -162,3 +162,16 @@ can be polarized by an applied electric field.
   not flow through the material as they do in a electrical conductor,
   but only slightly shift from their average equilibrium positions
   causing dielectric polarization.
+
+## Diode
+
+A diode is a two-terminal electronic component that conducts primarily
+in one direction (asymmetric conductance); it has low (ideally zero)
+resistance to the current in one direction, and high (ideally infinite)
+resistance in the other.
+- A semiconductor diode, the most common type today, is a crystalline
+  piece of semiconductor material with a p-n junction connected to two
+  electrical terminals.
+- Semiconductor diodes were the first semiconductor electronic devices.
+- A vacuum tube diode has two electrodes, a plate (anode) and a heated
+  cathode.
