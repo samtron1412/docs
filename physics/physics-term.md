@@ -67,6 +67,14 @@ In physics, chemistry, and electronic engineering, an electron hole
 where one could exist in an atom or atomic lattice.
 - This is an abstract concept: the vacancy of an electron at a position.
 
+## Ion
+
+An ion is an atom, or a molecule, in which the total number of electrons
+is not equal to the total number of protons, giving the atom or molecule
+a net positive or negative electrical charge.
+- An atom, or molecule, with a net positive charge is a cation /ˈkætaɪən/.
+- An atom, or molecule, with a net negative charge is an anion /ˈænaɪən/.
+
 ## Conductor
 
 In physics and electrical engineering, a conductor is an object or type
