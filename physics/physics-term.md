@@ -181,7 +181,7 @@ An electrical insulator is a material whose internal electric charges do
 not flow freely; very little electric current will flow through it under
 the influence of an electric field.
 
-## Dielectric
+### Dielectric
 
 A dielectric (or dielectric material) is an electrical insulator that
 can be polarized by an applied electric field.
@@ -189,6 +189,14 @@ can be polarized by an applied electric field.
   not flow through the material as they do in a electrical conductor,
   but only slightly shift from their average equilibrium positions
   causing dielectric polarization.
+
+## Fuse
+
+In electronics and electrical engineering, a fuse is an electrical
+safety device that operates to provide over-current protection of an
+electrical circuit including the source of power and the load.
+- Its essential component is a metal wire or strip that melts when too
+  much current flows through it, so interrupting the current.
 
 ## Switch
 
