@@ -191,6 +191,20 @@ and "false", usually denoted "1" and "0" respectively.
   Mathematical Analysis of Logic* (1987), and set forth more fully in
   his *An Investigation of the Laws of Thought* (1854).
 
+## Bit
+
+The bit used to denote either
+1. the basic and physical unit of information in computing and digital
+   communications or
+2. a binary digit.
+
+- A binary digit can have only one or two values, and may therefore be
+  physically implemented with a two-state device. These values are most
+  commonly represented as either a 0 or 1.
+- The two values of a binary digit can also be interpreted as logical
+  values (true/false, yes/no), algebraic signs (+/-), activation states
+  (on/off), or any other two-valued attribute.
+
 ## RTFM
 
 - Read The Fucking Manual
