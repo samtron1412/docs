@@ -190,6 +190,29 @@ can be polarized by an applied electric field.
   but only slightly shift from their average equilibrium positions
   causing dielectric polarization.
 
+## Switch
+
+In electrical engineering, a switch is an electrical component that can
+"make" or "break" an electrical circuit, interrupting the current or
+diverting it from one conductor to another.
+- The mechanism of a switch removes or restores the conducting path in a
+  circuit when it is operated.
+- It may be operated manually, for example, a light switch or a keyboard
+  button, may be operated by a moving object such as a door, pressure,
+  temperature, flow, or electrics such as relays.
+
+## Relay
+
+A relay is an electrically operated switch. Many relays use an
+electromagnet to mechanically operate a switch, but other operating
+principles are also used, such as solid-state relays.
+- Relays are used where it is necessary to control a circuit by a
+  separate low-power signal, or where several circuits must be
+  controlled by one signal.
+- The first relays were used in long distance telegraph circuits as
+  amplifiers: they repeated the signal coming in from one circuit and
+  re-transmitted it on another circuit.
+
 ## Diode
 
 A diode is a two-terminal electronic component that conducts primarily
@@ -238,26 +261,3 @@ electronic signals and electrical power.
 - The transistor is the fundamental building block of modern electronic
   devices, and is ubiquitous in modern electronic systems.
 
-
-## Switch
-
-In electrical engineering, a switch is an electrical component that can
-"make" or "break" an electrical circuit, interrupting the current or
-diverting it from one conductor to another.
-- The mechanism of a switch removes or restores the conducting path in a
-  circuit when it is operated.
-- It may be operated manually, for example, a light switch or a keyboard
-  button, may be operated by a moving object such as a door, pressure,
-  temperature, flow, or electrics such as relays.
-
-## Relay
-
-A relay is an electrically operated switch. Many relays use an
-electromagnet to mechanically operate a switch, but other operating
-principles are also used, such as solid-state relays.
-- Relays are used where it is necessary to control a circuit by a
-  separate low-power signal, or where several circuits must be
-  controlled by one signal.
-- The first relays were used in long distance telegraph circuits as
-  amplifiers: they repeated the signal coming in from one circuit and
-  re-transmitted it on another circuit.
