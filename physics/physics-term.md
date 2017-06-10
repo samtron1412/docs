@@ -237,3 +237,15 @@ electronic signals and electrical power.
   found embedded in integrated circuits.
 - The transistor is the fundamental building block of modern electronic
   devices, and is ubiquitous in modern electronic systems.
+
+## Relay
+
+A relay is an electrically operated switch. Many relays use an
+electromagnet to mechanically operate a switch, but other operating
+principles are also used, such as solid-state relays.
+- Relays are used where it is necessary to control a circuit by a
+  separate low-power signal, or where several circuits must be
+  controlled by one signal.
+- The first relays were used in long distance telegraph circuits as
+  amplifiers: they repeated the signal coming in from one circuit and
+  re-transmitted it on another circuit.
