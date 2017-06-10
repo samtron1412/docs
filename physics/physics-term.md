@@ -250,6 +250,16 @@ envelope: a heated filament or cathode, a grid, and a plate (anode).
   amplifiers in radio transmitters and industrial radio frequency
   heating devices.
 
+## Vacuum tube
+
+In electronics, a vacuum tube, an electron tube, or just a tube, or
+valve, is a device that controls electric current between electrodes in
+an evacuated container.
+- Vacuum tubes mostly rely on thermionic emission of electrons from a
+  hot filament or a cathode heated by the filament.
+- However, a phototube achieves electron emission through the
+  photoelectric effect.
+
 ## Transistor
 
 A transistor is a semiconductor device used to amplify or switch
