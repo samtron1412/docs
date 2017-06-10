@@ -154,6 +154,28 @@ Computer software, or simply software, is a part of a computer system
 that consists of data and/or computer instructions, in contract to the
 physical hardware from which the system is built.
 
+## Binary number
+
+In mathematics and digital electronics, a binary number is a number
+expressed in the binary numeral system or base-2 numeral system which
+represents numeric values using two different symbols: typically 0 and
+1.
+- Because of its straightforward implementation in digital electronic
+  circuitry using logic gates, the binary system is used internally by
+  almost all modern computers and computer-based devices.
+- Each digit is referred to as a bit.
+- The modern binary number system was devised by Gottfried Leibniz in
+  1679.
+- Systems related to binary numbers have appeared earlier in multiple
+  cultures including ancient Egypt, China, and India. Leibniz was
+  specifically inspired by the Chinese I Ching.
+- In 1854, British mathematician George Boole published a landmark paper
+  detailing an algebraic system of logic that would become known as
+  Boolean algebra.
+- In 1937, Claude Shannon produced his master's thesis at MIT that
+  implemented Boolean algebra and binary arithmetic using electronic
+  relays and switches for the first time in history.
+
 ## RTFM
 
 - Read The Fucking Manual
