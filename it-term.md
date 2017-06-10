@@ -61,6 +61,13 @@ constitute a computer system.
 such as monitor, keyboard, computer data storage, graphic card, sound
 card, motherboard, etc.
 
+## Mechanical Computer
+
+A mechanical computer is built from mechanical components such as levers
+and gears, rather than electronic components.
+- The most common examples are adding machines and mechanical counters,
+  which use the turning of gears to increment output displays.
+
 ## Integrated Circuit
 
 An integrated circuit or monolithic integrated circuit (also referred to
