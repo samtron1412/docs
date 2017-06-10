@@ -78,6 +78,28 @@ small flat piece of semiconductor material, normally silicon.
 - The main disadvantage of ICs is the high cost to design them and
   fabricate the required photomasks.
 
+## Logic gate
+
+In electronics, a logic gate is an idealized or physical device
+implementing a Boolean function; that is, it performs a logical
+operation on one or more binary inputs and produces a single binary
+output.
+- Logic gates are primarily implemented using diodes or transistors
+  acting as electronic switches, but can also be constructed using
+  vacuum tubes, electromagnetic relays, fluidic logic, pneumatic logic,
+  optics, molecules, or even mechanical elements.
+- Logic gates allow the construction of a physical model of all of
+  Boolean logic, and all of the algorithms and mathematics that can be
+  described with Boolean logic.
+- In modern practice, most gates are made from field-effect transistors
+  (FETs), particularly MOSFETs (metal-oxide-semiconductor field-effect
+  transistors).
+- Compound logic gates AND-OR-Invert (AOI) and OR-AND-Invert (OAI) are
+  often employed in circuit design because their construction using
+  MOSFETs is simpler and more efficient than the sum of the individual
+  gates.
+- In reversible logic (reversible computing), Toffoli gates are used.
+
 ## Processor
 
 In computing, a processor or processing unit is an electronic circuit
