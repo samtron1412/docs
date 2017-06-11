@@ -17,6 +17,10 @@ An instruction set architecture (ISA) is the interface between the computer's so
 2. [Quora - Alternatives for the Von Neumann architecture][2]
 3. [Wikipedia - Von Neumann architecture][3]
 
+[wiki]: https://en.wikipedia.org/wiki/Computer_architecture
+[wikibook]: https://en.wikibooks.org/wiki/Microprocessor_Design/Computer_Architecture
+[stack]: https://electronics.stackexchange.com/questions/4185/what-are-different-types-of-computer-architectures
+[harvard]: https://en.wikipedia.org/wiki/Harvard_architecture#Modern_uses_of_the_Harvard_architecture
 [1]: http://stackoverflow.com/questions/1806490/what-are-some-examples-of-non-von-neumann-architectures "StackOverflow - Alternatives for the Von Neumann architecture"
 [2]: https://www.quora.com/Are-there-alternatives-to-the-Von-Neumann-architecture "Quora - Alternatives for the Von Neumann architecture"
 [3]: https://en.wikipedia.org/wiki/Von_Neumann_architecture "Wikipedia - Von Neumann architecture"
