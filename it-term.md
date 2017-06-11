@@ -330,3 +330,22 @@ as the computational problems that can be solved using them.
   mathematics (a subject study in both mathematics and computer science)
 - The word automata (the plural of automaton) comes from the Greek word,
   which means "self-acting."
+
+### Abstract Machine
+
+An abstract machine, also called an abstract computer, is a theoretical
+model of a computer hardware or software system used in automata theory.
+
+### Turing Machine
+
+A Turing machine is an abstract machine that manipulates symbols on a
+strip of tape according to a table of rules; to be more exact, it is a
+mathematical model of computation that defines such a device.
+- Giving any computer algorithm, a Turing machine can be constructed
+  that is capable of simulating that algorithm's logic.
+
+### Pushdown Automaton
+
+### Finite-state Machine
+
+### Combinational Logic
