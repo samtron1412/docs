@@ -319,3 +319,14 @@ failover back to its original state (before failure).
   organize and recommend music to people, to create personalized radio
   stations, and to see what other users listened to the most.
 
+
+# Computer Science
+
+## Automata Theory
+
+Automata theory is the study of abstract machines and automata, as well
+as the computational problems that can be solved using them.
+- It is a theory in theoretical computer science and discrete
+  mathematics (a subject study in both mathematics and computer science)
+- The word automata (the plural of automaton) comes from the Greek word,
+  which means "self-acting."
