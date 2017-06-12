@@ -10,3 +10,7 @@ The scientific study of the human mind and its functions, especially those affec
 # [Hindsight bias](https://en.wikipedia.org/wiki/Hindsight_bias)
 
 # [Johari Windows](https://en.wikipedia.org/wiki/Johari_window)
+
+# References
+
+[flow-state]: https://en.wikipedia.org/wiki/Flow_(psychology)
