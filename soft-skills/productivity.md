@@ -19,3 +19,13 @@ Writing down your thoughts with structure:
 - **Problems** (Van de): specify all your problem, which you stuck with it. Use bullet at begin of line.
 - **Solutions** (Giai phap): thinking and find solution for each problem, hardest part.
 - **TODO** list: specify all things your must do right now and sort follow priority.
+
+# References
+
+[store-personal-records]: https://www.google.com/#q=how%20to%20store%20all%20the%20personal%20records%20efficient
+[efficient-people-do]: https://www.inc.com/kevin-daum/8-things-really-efficient-people-do.html "8 things really efficient people do"
+[keeping-your-files]: http://www.hongkiat.com/blog/5-effective-ways-to-keep-your-files-under-control/ "5 effective ways to keep your files under control"
+[financial-file-digitally]: http://www.bankrate.com/finance/personal-finance/storing-financial-files-digitally-1.aspx
+[personel-files]: http://www.hrdirect.com/hr-101/clear-the-clutter-with-organized-efficient-recordkeeping
+[financial-records]: http://www.dummies.com/personal-finance/personal-finance-taxes/how-to-organize-your-financial-records/
+[piles-of-papers]: http://lifehacker.com/5843845/how-do-i-organize-my-piles-of-paper-into-something-manageable
