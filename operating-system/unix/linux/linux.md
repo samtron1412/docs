@@ -88,13 +88,17 @@ Linux is a complex system which requires a more complex and efficient way to sta
 
 
 ## Resources
+
 - [The Linux Documentation Project](http://tldp.org/)
   + [Works](http://tldp.org/docs.html)
   + [HOWTOs](http://tldp.org/HOWTO/HOWTO-INDEX/index.html)
   + [Guides](http://tldp.org/guides.html)
   + [Man pages](http://tldp.org/manpages/man.html)
 
+### Books
 
+- The Linux Programming Interface - Michael Kerrisk
+- How Linux Works - Brian Ward
 
 # Design
 ![layer](linux/layer.png)
