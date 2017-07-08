@@ -100,6 +100,12 @@ Linux is a complex system which requires a more complex and efficient way to sta
 - The Linux Programming Interface - Michael Kerrisk
 - How Linux Works - Brian Ward
 
+### People
+
+- Linus Torvalds
+- Andrew Morton
+- Greg Kroah Hartman
+
 # Design
 ![layer](linux/layer.png)
 
@@ -485,3 +491,5 @@ cat /dev/zero > /dev/mem
 
 ## Audio muted
 `alsamixer` and unmute
+
+# References
