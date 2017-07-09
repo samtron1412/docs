@@ -97,7 +97,7 @@ Linux is a complex system which requires a more complex and efficient way to sta
 
 ### Books
 
-- The Linux Programming Interface - Michael Kerrisk
+- [The Linux Programming Interface][tlpi] - Michael Kerrisk
 - How Linux Works - Brian Ward
 
 ### People
@@ -493,3 +493,5 @@ cat /dev/zero > /dev/mem
 `alsamixer` and unmute
 
 # References
+
+[tlpi]: http://man7.org/tlpi/ "The Linux Programming Interface"
