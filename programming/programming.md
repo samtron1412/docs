@@ -107,6 +107,32 @@
 - Fourth, fixing.
 - Fifth, testing.
 
+# Programming Paradigm
+
+- Programming paradigms are a way to classify programming languages
+  based on their features.
+- Languages can be classified into multiple paradigms.
+- Some paradigms are concerned mainly with implications for the
+  execution model of the language, such as allowing side effects, or
+  whether the sequence of operations is defined by the execution model.
+- Other paradigms are concerned mainly with the way that code is
+  organized, such as grouping a code into units along with the state
+  that is modified by the code.
+- Yet others are concerned mainly with the style of syntax and grammar.
+
+## Common Programming Paradigms
+
+- Imperative: which allows side effects
+- Functional: which disallows side effects
+- Declarative: which does not state the order in which operations
+  execute
+- Object-oriented: which groups code together with the state the code
+  modifies
+- Procedural: which group code into functions
+- Logic: which has a particular style of execution model coupled to a
+  particular style of syntax and grammar
+- Symbolic: which has a particular style of syntax and grammar.
+
 # Principles of Good Programming
 
 The principles of good programming are closely related to principles of
