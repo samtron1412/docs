@@ -7,6 +7,28 @@
 - Programming involves activities such as analysis and developing
   algorithms
 
+## History
+
+- The first computer program is generally dated to 1843, when
+  mathematician Ada Lovelace published an algorithm to calculate a
+  sequence of Bernoulli numbers, intended to be carried out by Charles
+  Babbage's Analytical Engine.
+- In the 1880s Herman Hollerith invented the concept of storing data in
+  machine-readable form.
+- In 1949, with the concept of the stored-program computers introduced,
+  both programs and data were stored and manipulated in the same way in
+  the computer memory: Von Newmann and Harvard architecture.
+- Machine code was the language of early programs, written in the
+  instruction set of the particular machine, often in binary notation.
+- Assembly languages were soon developed that let the programmer specify
+  instruction in a text format, with abbreviations for each operation
+  code and meaningful names of specifying addresses.
+    + However, because an assembly language is little more than a
+      different notation for a machine language, any two machines with
+      different instruction sets also have different assembly languages.
+- High-level languages allow the programmer to write programs in terms
+  that are more abstract, and less bound to the underlying hardware.
+
 # Principles of Good Programming
 
 The principles of good programming are closely related to principles of
