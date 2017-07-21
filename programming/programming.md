@@ -2,6 +2,10 @@
 
 # Overview
 
+- Computer programming is a process that leads from an original
+  formulation of a computing problem to executable computer programs.
+- Programming involves activities such as analysis and developing
+  algorithms
 
 # Principles of Good Programming
 
