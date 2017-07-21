@@ -175,6 +175,8 @@ Codeforeces - Codeforces (http://codeforces.com/)
 
 # References
 
+[wiki]: https://en.wikipedia.org/wiki/Computer_programming
+[programming-language-wiki]: https://en.wikipedia.org/wiki/Programming_language
 [Thoughts on programming]: https://github.com/Dobiasd/articles
 [Devdocs.io]: https://github.com/Thibaut/devdocs
 [Graph of reddit's words]: https://github.com/Dobiasd/programming-language-subreddits-and-their-choice-of-words
