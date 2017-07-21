@@ -29,6 +29,84 @@
 - High-level languages allow the programmer to write programs in terms
   that are more abstract, and less bound to the underlying hardware.
 
+# Aspects of Computer Programming
+
+## Quality Requirements
+
+### Reliability
+
+- How often the results of a program are correct.
+- This depends on:
+    + Conceptual correctness of algorithms, and
+    + Minimization of programming mistakes
+        * mistakes in resource management (e.g., buffer overflows and
+          race conditions) and
+        * logic errors (e.g., division by zero or off-by-one errors)
+
+### Robustness
+
+- How well a program anticipates problems due to errors (not bugs).
+- This includes:
+    + incorrect, inappropriate or corrupt data
+    + unavailability of needed resources such as memory, operating
+      system services and network connections
+    + user error
+    + unexpected power outages.
+
+### Usability
+
+- The ergonomics of a program: the ease with which a person can use the
+  program for its intended purpose or in some cases even unanticipated
+  purposes.
+- This involves:
+    + textual, graphical and sometimes hardware elements that improve
+      the clarity, intuitiveness, cohesiveness and completeness of a
+      program's user interface.
+
+### Portability
+
+- The range of computer hardware and operating system platform on which
+  the source code of a program can be compiled/interpreted and run.
+
+### Maintainability
+
+- The ease with which a program can be modified by its present or future
+  developers in order to make improvements or customizations, fix bugs
+  and security holes, or adapt it to new environments.
+- Readability of source code
+    + Following a consistent programming style.
+    + Comments
+    + Naming conventions
+
+### Efficiency/performance
+
+- Measure of system resources a program consumes (processor time, memory
+  space, slow devices such as disk, network bandwidth and to some extent
+  even user interaction)
+- The less, the better.
+- This also includes careful management of resources, for example
+  cleaning up temporary files and eliminating memory leaks.
+- Algorithmic complexity: Big O notation
+
+## Methodologies
+
+- Software development processes
+    + Agile software development
+- Use Case analysis
+- Object-Oriented Analysis and Design (OOAD) and Model-Driven
+  Architecture (MAD): Unified Modeling Language (UML) is a notation used
+  for both the OOAD and MDA.
+- Database design: Entity-Relationship Modeling (ER Modeling)
+
+## Debugging
+
+- First, attempting to reproduce the problem.
+- Second, simplifying the input of the program may need to make it
+  easier to debug.
+- Third, using debuggers.
+- Fourth, fixing.
+- Fifth, testing.
+
 # Principles of Good Programming
 
 The principles of good programming are closely related to principles of
