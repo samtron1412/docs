@@ -133,6 +133,285 @@
   particular style of syntax and grammar
 - Symbolic: which has a particular style of syntax and grammar.
 
+# Programming Languages
+
+- A programming language is a formal language that specifies a set of
+  instructions that can be used to produce various kinds of output.
+- Different programming languages support different styles of
+  programming (programming paradigms).
+- The choice of language used is subject to many considerations:
+    + commercial or free (license)
+    + suitability to task
+    + availability of third-party packages
+    + programmers
+    + compilers
+    + efficiency
+
+## Basic instructions
+
+- Input: gather data from the input devices.
+- Output: send data to the output devices.
+- Arithmetic: perform basic arithmetical operations.
+- Conditional Execution: check for certain conditions and execute the
+  appropriate sequence of statements.
+- Repetition: perform some action repeatedly.
+
+## History
+
+- First-generation programming languages (1GL)
+    + Machine language: binary forms
+    + Punched cards, magnetic tapes
+- 1940s: Second generation (2GL)
+    + Assembly languages
+- 1950s: Third generation (3GL)
+    + 1954: FORTRAN (John Backus)
+    + 1959: COBOL (business use)
+- 1960s - 1970s: Refinement
+    + APL (1964)
+        * Introduced array programming
+        * Influenced functional programming
+    + ALGOL (1958): refined structured procedural programming
+    + Lisp (1958): the first dynamically typed functional programming
+      language.
+    + Simula (1965): the first language designed to support OOP.
+    + Smalltalk(1972): the first purely OOP language.
+    + C (1973): a system programming language
+    + Prolog (1972): the first logic programming language
+    + ML (1973) built a polymorphic type system on top of Lisp,
+      pioneering statically typed functional programming language.
+- 1980s: Consolidation and Growth
+    + C++ (1980)
+    + MATLAB (1984)
+    + Objective-C (1986)
+    + Perl (1987)
+- 1990s: The Internet age
+    + Rapid Application Development (RAD) language emerged, which
+      usually came with an IDE, garbage collector. All were OOP
+      languages.
+    + Scripting languages
+    + Haskell (1990)
+    + Python (1991)
+    + Visual Basic (1991)
+    + Ruby (1993)
+    + Lua (1993)
+    + R (1993)
+- Current trends
+    + Increasing support for functional programming
+    + Construct to support concurrent and distributed programming
+    + Mechanism for adding security and reliability verification to the
+      language: extended static checking, dependent typing, information
+      flow control, static thread safety.
+    + Alternative mechanisms for composability a modularity: mixins,
+      traits, delegates, aspects.
+    + Metaprogramming, reflection or access to the abstract syntax tree
+    + Early research into quantum computing programming languages.
+    + ActionScript (2000)
+    + C# (2001)
+    + Apache Groovy (2003)
+    + Scala (2003)
+    + F# (2005)
+    + Windows PowerShell (2006)
+    + Clojure (2007)
+    + Go (2009)
+    + Rust (2010)
+    + Dart (2011)
+    + Kotlin (2011)
+    + TypeScript (2012)
+    + Swift (2014)
+
+## Elements
+
+### Syntax
+
+- The syntax of a computer language is the set of rules that defines the
+  combinations of symbols that are considered to be a correctly
+  structured document or fragment in that language.
+
+#### Levels of syntax
+
+- Computer language syntax is generally distinguished into three levels:
+    + Words - the lexical level, determining how characters form tokens;
+    + Phrases - the grammar level, determining how tokens form phrases;
+    + Context - determining what objects or variables names refer to, if
+      types are valid, etc.
+- Distinguishing in this way yields modularity, allowing each level to
+  be described and processed separately, and often independently.
+    + First, a lexer turns the linear sequence of characters into a
+      linear sequence of tokens; this is known as *lexical analysis* or
+      *lexing*.
+    + Second, the parser turns the linear sequence of tokens into a
+      hierarchical syntax tree; this is known as *parsing*.
+        * The first phase is the parse tree or *concrete syntax tree*
+          which is determined by the grammar, but is generally far too
+          detailed for practical use.
+        * The second phase is the abstract tree (AST), which simplifies
+          the concrete syntax tree into a usable form.
+    + Finally, the contextual analysis resolves names and checks types.
+    + Many languages an earlier step depends on a later step.
+    + The AST and contextual analysis steps can be considered a form of
+      semantic analysis, as they are adding meaning and interpretation
+      to the syntax, or alternatively as informal, manual
+      implementations of syntactical rules that would be difficult or
+      awkward to describe or implement formally.
+- The levels generally correspond to levels in the [Chomsky
+  hierarchy][chomsky].
+    + Words are in a regular language, specified in the lexical grammar,
+      which is a Type-3 grammar, generally given as regular expressions.
+    + Phrases are in a context-free language (CFL), generally a
+      deterministic context-free language (DCFL), specified in a phrase
+      structure grammar, which is a Type-2 grammar, generally given as
+      production rules in Backus-Naur form (BNF).
+
+### Semantics
+
+- The term *semantics* refers to the meaning of languages, as opposed to
+  their form (syntax).
+
+### Type System
+
+- A type system defines how a programming language classifies values and
+  expressions into types, how it can manipulate those types and how they
+  interact.
+- The goal of a type system is to verify and enforce a certain level of
+  correctness in programs written in that language by detecting certain
+  incorrect operations.
+
+#### Typed versus untyped language
+
+- In the point of view of type theory, a language is typed if the
+  specification of every operation defines types of data to which the
+  operation is applicable, with the implication that it is not
+  applicable to other types.
+    + In practice, while few languages are considered typed, most modern
+      languages offer a degree of typing.
+    + The invalid operation may be detected when the program is compiled
+      (static type checking) and will be rejected by the compiler with a
+      compilation error message, or
+    + It may be detected when the program is run (dynamic type
+      checking), resulting in a run-time exception.
+- A special case of typed languages are the single-type languages.
+    + These are often scripting or markup languages, such as REXX or
+      SGML.
+    + They have only one data type - most commonly character strings
+      which are used for both symbolic and numeric data.
+- In contrast, an untyped language, such as most assembly languages,
+  allows any operation to be performed on any data, which are generally
+  considered to be sequences of bits of various lengths.
+    + High-level languages which are untyped include BCPL, Tcl, etc.
+
+#### Static versus dynamic typing
+
+- Statically typed languages can be either manifestly typed or type-
+  inferred.
+    + Manifestly typed: the programmer must explicitly write types at
+      certain textual positions (for example, at variable declarations).
+        * C++, C#, Java
+    + Type-inferred: the compiler infers the types of expressions and
+      declarations based on context.
+        * Haskell, ML
+- Dynamic typing determines the type-safety of operations at run time;
+  types are associated with run-time values rather than textual
+  expressions.
+    + It does not require the programmer to write explicit type
+      annotations on expressions.
+    + It permits a single variable to refer to values of different types
+      at different points in the program execution.
+    + Lisp, Smalltalk, Perl, Python, JavaScript, Ruby
+
+#### Weak and strong typing
+
+- Weak typing allows a value of one type to be treated as another, for
+  example treating a string as a number.
+- Strong typing prevents the above. An attempt to perform an operation
+  on the wrong type of value raises an error. Strongly typed languages
+  are often termed type-safe or safe.
+
+### Standard Library And Run-Time System
+
+- Most programming languages have an associated core library (sometimes
+  known as the "standard library", especially if it is included as part
+  of the published language standard), which is conventionally made
+  available by all implementations of the language.
+    + Core libraries typically include definitions for commonly used
+      algorithms, data structures, and mechanisms for input and output.
+
+## Design and Implementation
+
+- Programming languages share properties with natural languages related
+  to their purpose as vehicles for communication, having a syntactic
+  form separate from its semantics, and showing language families of
+  related languages branching one from another.
+- But as artificial constructs, they also differ in fundamental ways
+  from languages that have evolved through usage.
+    + A significant difference is that a programming language can be
+      fully described and studied in its entirety, since it has a
+      precise and finite definition. By contrast, natural languages have
+      changing meanings given by their users in different communities.
+    + Natural languages lack the precise and complete semantic
+      definition that a programming language has.
+- The need for diverse programming languages arises from the diversity
+  of contexts in which languages are used:
+    + Programs range from tiny scripts written by individual hobbyists
+      to huge systems written by hundreds of programmers.
+    + Programmers range in expertise from novices, who need simplicity
+      above all else, to experts who may be comfortable with
+      considerable complexity.
+    + Programs must balance speed, size, and simplicity on systems
+      ranging from microcontrollers to supercomputers.
+    + Programs may be written once and not change for generations, or
+      they may undergo continual modification.
+    + Programmers may simply differ in their tastes: they may be
+      accustomed to discussing problems and expressing them in a
+      particular language.
+- One common trend in the development of programming languages has been
+  to add more ability to solve problems using a higher level of
+  abstraction.
+    + The earliest programming languages were tied very closely to the
+      underlying hardware of the computer.
+    + As new programming languages have developed, features have been
+      added that let programmers express ideas that are more remote from
+      simple translation into underlying hardware instructions.
+    + Because programmers are less tied to the complexity of the
+      computer, their programs can do more computing with less effort
+      from the programmer. This lets them write more functionality per
+      time unit.
+
+### Specification
+
+- The specification of a programming language is an document that the
+  language users and the implementers can use to agree upon whether a
+  piece of source code is valid program in that language, and if so what
+  its behavior shall be.
+- A programming language specification can take several forms, including
+  the following:
+    + An explicit definition of the syntax, static semantics, and
+    execution semantics of the language.
+        * While syntax is commonly specified using a formal grammar,
+          semantic definitions may be written in natural language (C
+          language), or a formal semantics (ML, Scheme).
+    + A description of the behavior of a translator for the language
+      (e.g., the C++ and Fortran specifications). The syntax and
+      semantics of the language have to be inferred from this
+      description, which may be written in natural or a formal language.
+    + A reference or model implementation, sometimes written in the
+      language being specified (Prolog or ANSI REXX). The syntax and
+      semantics of the language are explicit in the behavior of the
+      reference implementation.
+
+### Implementation
+
+- An implementation of a programming language provides a way to write
+  programs in that language and execute them on one or more
+  configurations of hardware and software.
+- There are two approaches to programming language implementation:
+  *compilation* and *interpretation*.
+    + One technique for improving the performance of interpreted program
+      is just-in-time compilation.
+            * Here the virtual machine, just before execution,
+              translates the blocks of bytecode which are going to be
+              used to machine code, for direct execution on the
+              hardware.
+
 # Principles of Good Programming
 
 The principles of good programming are closely related to principles of
@@ -307,6 +586,8 @@ Codeforeces - Codeforces (http://codeforces.com/)
 
 [wiki]: https://en.wikipedia.org/wiki/Computer_programming
 [programming-language-wiki]: https://en.wikipedia.org/wiki/Programming_language
+[syntax]: https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+[chomsky]: https://en.wikipedia.org/wiki/Chomsky_hierarchy
 [Thoughts on programming]: https://github.com/Dobiasd/articles
 [Devdocs.io]: https://github.com/Thibaut/devdocs
 [Graph of reddit's words]: https://github.com/Dobiasd/programming-language-subreddits-and-their-choice-of-words
