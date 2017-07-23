@@ -117,6 +117,15 @@ numbers
 
 # [Mathematical Philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mathematics)
 
+# Mathematical Model
+
+- A mathematical model is a description of a system using mathematical
+  concepts and language.
+    + Mathematical models are used in the natural sciences such as
+      physics, biology, chemistry, etc. and engineering disciplines such
+      as computer science, as well as in the social sciences such as
+      economics, psychology, sociology, political science.
+
 # References
 
 [wiki-mathematics]: https://en.wikipedia.org/wiki/Mathematics
