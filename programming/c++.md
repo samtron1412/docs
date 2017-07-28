@@ -179,6 +179,30 @@ known as **the zero-overhead principle**.
 
 
 
+# Important Concepts
+
+## Smart Pointers
+
+- [StackOverflow][so-smart-pointer]
+- [StackOverflow][so-raw-smart-ptr]
+- [Smart Pointer][smart-ptr]
+
+## References vs. Pointers
+
+- [StackOverflow][stack-ref-ptr]
+- [cplusplus][c++-distinguish]
+
+## Copy Constructors
+
+## Operator Overloading
+
+## Resource acquisition is initialization (RAII)
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/C%2B%2B
+[stack-ref-ptr]: https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
+[c++-distinguish]: http://www.cplusplus.com/articles/ENywvCM9/
+[so-smart-pointer]: https://stackoverflow.com/questions/8706192/which-kind-of-pointer-do-i-use-when
+[so-raw-smart-ptr]: https://stackoverflow.com/questions/6675651/when-should-i-use-raw-pointers-over-smart-pointers
+[smart-ptr]: http://ootips.org/yonat/4dev/smart-pointers.html
