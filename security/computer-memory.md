@@ -314,3 +314,9 @@ The memory layout of a typical C's process is as below
   <hr style="width:70%;margin-left:auto;margin-right:auto;" />
   <img src="Figures/memory_layouts_linux.png" alt="Memory layout" title="Memory layout">
 </figure>
+
+# References
+
+[wiki]: https://en.wikipedia.org/wiki/Computer_memory
+[wiki-virtual-mem]: https://en.wikipedia.org/wiki/Virtual_memory
+[stack-heap]: https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
