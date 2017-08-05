@@ -29,6 +29,44 @@
 - High-level languages allow the programmer to write programs in terms
   that are more abstract, and less bound to the underlying hardware.
 
+## Resources
+
+### List of programming sites
+
+https://www.reddit.com/r/cscareerquestions/comments/2luczb/are_coding_competition_sites_like_codechef/
+
+In no particular order:
+Topcoder - Programming Contests, Software Development, and Employment Services at TopCoder (http://topcoder.com/tc)
+Codeforeces - Codeforces (http://codeforces.com/)
+1. Codechef - Programming Competition,Programming Contest,Online Computer Programming (http://codechef.com/)
+2. SPOJ - Sphere Online Judge (SPOJ) (http://spoj.pl/)
+3. UVa - UVa Online Judge - Home (http://uva.onlinejudge.org/)
+4. ProjectEuler - Project Euler (http://projecteuler.net/)
+5. Programming Challenges -  Programming Challenges (http://programmingchallenges.com/)
+6. ahmed-aly -  Virtual Online Contests (http://ahmed-aly.com/)
+7. TJU -  TJU ACM-ICPC Online Judge (http://acm.tju.edu.cn/toj/)
+8. PJU - UNION PANAMERICANA DE JUDO (http://pju.org/)
+9. USACO -  USACO Training Program Gateway (http://ace.delos.com/usacogate)
+10. TIMUS - Timus Online Judge (http://acm.timus.ru/)
+11. AIZU - Programming Challenge (http://judge.u-aizu.ac.jp/onlinejudge/)
+12. URI - URI Online Judge - Login (http://www.urionlinejudge.com.br/)
+13. ZOJ - ZOJ :: Home (http://acm.zju.edu.cn/)
+14. NTHU - NTHU Online Judge (http://acm.twbbs.org/)
+15. Leetcode - LeetCode (http://leetcode.com/)
+16. AI Challenge - Home | AI Challenge (http://aichallenge.org/)
+17. Saratov - Saratov State University :: Online Contester (http://acm.sgu.ru/)
+18. Google code jam - Google Code Jam (http://code.google.com/codejam)
+19. InterviewStreet - Programming Contests - Codesprints - Interviewstreet (http://interviewstreet.com/)
+20. Kaggle - making data science a sport (http://kaggle.com/)
+21. Herbert - Welcome to Herbert Online Judge (http://herbert.tealang.info/)
+22. CoderCharts - CoderCharts - Social Meets Programming (http://codercharts.com)
+23. PKU - Welcome To PKU JudgeOnline (http://poj.org/)
+24. CodingBat - CodingBat (http://codingbat.com/)
+25. Programr - Programr | Learn.Code.Share (http://www.programr.com/)
+26. HackerRank - Artificial Intelligence Challenges :: AI Programming Problems and Competitions :: HackerRank (https://www.hackerrank.com/)
+27. Al Zimmermann - Al Zimmermann's Programming Contests (http://www.azspcs.net/)
+28. Light OJ- Page on lightoj.com (http://www.lightoj.com/index.php)
+
 # Aspects of Computer Programming
 
 ## Quality Requirements
@@ -415,6 +453,16 @@ Debugging:
               used to machine code, for direct execution on the
               hardware.
 
+## Mastering a programming language
+
+- Use language as much as you can. Make many things from this language.
+  Make it fun.
+- Read the docs about language: best practice, API, frameworks, design
+  pattern, books
+- Read other people's code and improve this.
+- Support your code - every bug becomes a tour of your worst decisions.
+- Learn a very different paradigm
+
 # Principles of Good Programming
 
 The principles of good programming are closely related to principles of
@@ -531,59 +579,6 @@ principles like minimizing coupling are related directly to the
 requirement of making code easier to change. Whether or not you are an
 extreme programming practitioner, this approach to writing code just
 makes sense. http://www.amazon.com/gp/product/0321278658
-
-
-# Reflection
-
-Is the ability of a computer program to **examine**(type introspection)
-and **modify** the structure and behavior(specifically the values, meta-
-data, properties and functions) of the program at runtime.
-
-# Master a language
-
-- Use language as much as you can. Make many things from this language.
-  Make it fun.
-- Read the docs about language: best practice, API, frameworks, design
-  pattern, books
-- Read other people's code and improve this.
-- Support your code - every bug becomes a tour of your worst decisions.
-- Learn a very different paradigm
-
-# List of programming sites
-
-https://www.reddit.com/r/cscareerquestions/comments/2luczb/are_coding_competition_sites_like_codechef/
-
-In no particular order:
-Topcoder - Programming Contests, Software Development, and Employment Services at TopCoder (http://topcoder.com/tc)
-Codeforeces - Codeforces (http://codeforces.com/)
-1. Codechef - Programming Competition,Programming Contest,Online Computer Programming (http://codechef.com/)
-2. SPOJ - Sphere Online Judge (SPOJ) (http://spoj.pl/)
-3. UVa - UVa Online Judge - Home (http://uva.onlinejudge.org/)
-4. ProjectEuler - Project Euler (http://projecteuler.net/)
-5. Programming Challenges -  Programming Challenges (http://programmingchallenges.com/)
-6. ahmed-aly -  Virtual Online Contests (http://ahmed-aly.com/)
-7. TJU -  TJU ACM-ICPC Online Judge (http://acm.tju.edu.cn/toj/)
-8. PJU - UNION PANAMERICANA DE JUDO (http://pju.org/)
-9. USACO -  USACO Training Program Gateway (http://ace.delos.com/usacogate)
-10. TIMUS - Timus Online Judge (http://acm.timus.ru/)
-11. AIZU - Programming Challenge (http://judge.u-aizu.ac.jp/onlinejudge/)
-12. URI - URI Online Judge - Login (http://www.urionlinejudge.com.br/)
-13. ZOJ - ZOJ :: Home (http://acm.zju.edu.cn/)
-14. NTHU - NTHU Online Judge (http://acm.twbbs.org/)
-15. Leetcode - LeetCode (http://leetcode.com/)
-16. AI Challenge - Home | AI Challenge (http://aichallenge.org/)
-17. Saratov - Saratov State University :: Online Contester (http://acm.sgu.ru/)
-18. Google code jam - Google Code Jam (http://code.google.com/codejam)
-19. InterviewStreet - Programming Contests - Codesprints - Interviewstreet (http://interviewstreet.com/)
-20. Kaggle - making data science a sport (http://kaggle.com/)
-21. Herbert - Welcome to Herbert Online Judge (http://herbert.tealang.info/)
-22. CoderCharts - CoderCharts - Social Meets Programming (http://codercharts.com)
-23. PKU - Welcome To PKU JudgeOnline (http://poj.org/)
-24. CodingBat - CodingBat (http://codingbat.com/)
-25. Programr - Programr | Learn.Code.Share (http://www.programr.com/)
-26. HackerRank - Artificial Intelligence Challenges :: AI Programming Problems and Competitions :: HackerRank (https://www.hackerrank.com/)
-27. Al Zimmermann - Al Zimmermann's Programming Contests (http://www.azspcs.net/)
-28. Light OJ- Page on lightoj.com (http://www.lightoj.com/index.php)
 
 # Program life-cycle phase
 
