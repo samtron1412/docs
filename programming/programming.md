@@ -98,8 +98,11 @@
   for both the OOAD and MDA.
 - Database design: Entity-Relationship Modeling (ER Modeling)
 
-## Debugging
+## Testing - Debugging
 
+Testing and create a bug report
+
+Debugging:
 - First, attempting to reproduce the problem.
 - Second, simplifying the input of the program may need to make it
   easier to debug.
