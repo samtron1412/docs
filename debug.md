@@ -24,7 +24,28 @@ computers.
 
 # Tools
 
+Generally, high-level programming languages, such as Java make debugging
+easier, because they have features such as exception handling that make
+real sources of erratic behavior easier to spot.
+- In programming languages such as C or assembly, bugs may cause silent
+  problems such as memory corruption, and it is often difficult to see
+  where the initial problem happened.
+- In those cases, memory debugger tools may be needed.
+
+Static code analysis tools
+- These tools look for a very specific set of known problems, some
+  common and some rare, within the source code.
+- All such issues detected by these tools would rarely be picked up by a
+  compiler or interpreter, thus they are not syntax checkers, but more
+  semantic checkers.
+
 ## Debugger
+
+Debuggers are software tools which enable the programmer to monitor the
+execution of a program, stop it, restart it, set breakpoints, and change
+values in memory.
+- The term "debugger" can also refer to the person who is doing the
+  debugging.
 
 
 # Debugging Process
