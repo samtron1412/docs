@@ -11,7 +11,16 @@ prevent correct operation of computer software or a system.
 
 ## History
 
-## Scope
+The terms "bug" and "debugging" are popularly attributed to Admiral
+Grace Hopper in the 1940s. While she was working on a Mark II computer
+at Harvard University, her associated discovered a moth stuck in a relay
+and thereby impeding operation, whereupon she remarked that they were
+"debugging" the system.
+
+However, the term "bug" in the meaning of technical error dates back at
+least to 1878 and Thomas Edison. Similarly, the term "debugging" seems
+to have been used as a term in aeronautics before entering the world of
+computers.
 
 # Tools
 
