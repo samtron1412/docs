@@ -630,6 +630,40 @@ Run time is the execution phase, when the central processing unit
 executes the program's machine code instructions.
 - Programs may run indefinitely until a normal termination or a crash.
 
+# General concepts
+
+## Runtime system
+
+## Runtime library
+
+## Executable
+
+## Compiler
+
+## Interpreter
+
+## Virtual machine
+
+## Intermediate representation (IR)
+
+## Source code
+
+## Object code
+
+## Bytecode
+
+## Machine code
+
+
+# Tools
+
+- [Email][email]
+- [git][git]
+- [cgit][cgit]
+- [patchwork][patchwork]: Patchwork is a web-based patch tracking system
+  designed to facilitate the contribution and management of
+  contributions to an open-source project.
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Computer_programming
@@ -641,4 +675,8 @@ executes the program's machine code instructions.
 [Graph of reddit's words]: https://github.com/Dobiasd/programming-language-subreddits-and-their-choice-of-words
 [software]: https://en.wikipedia.org/wiki/Software
 [phases]: https://en.wikipedia.org/wiki/Program_lifecycle_phase
+[patchwork]: http://jk.ozlabs.org/projects/patchwork/
+[email]: https://en.wikipedia.org/wiki/Email
+[git]: https://git-scm.com/
+[cgit]: https://git.zx2c4.com/cgit/about/
 
