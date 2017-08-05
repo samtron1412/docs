@@ -634,11 +634,35 @@ executes the program's machine code instructions.
 
 ## Runtime system
 
+### Notable runtimes
+
+#### Android Runtime (ART)
+
+#### Common Language Runtime (CLR)
+
+#### Java Virtual Machine (JVM)
+
+#### Node.js
+
+#### crt0
+
+#### Zend Engine
+
 ## Runtime library
 
 ## Executable
 
 ## Compiler
+
+### Compilation strategies
+
+#### Just-in-time (JIT)
+
+#### Ahead-of-time (AOT)
+
+#### Transcompilation
+
+#### Recompilation
 
 ## Interpreter
 
