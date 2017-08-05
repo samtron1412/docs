@@ -9,7 +9,18 @@ prevent correct operation of computer software or a system.
   monitoring at the application or system level, memory dumps, and
   profiling.
 
-# Bug report
+## History
+
+## Scope
+
+# Tools
+
+## Debugger
+
+
+# Debugging Process
+
+## Bug report
 
 >A good bug report is one that describes the problem well enough that
 >someone familiar with the project can understand and act on that bug
@@ -85,8 +96,8 @@ project which exhibits the problem. This helps to ensure that the
 problem is not related to something in your project, and also makes it
 much easier for your API vendor to investigate.
 
-# Debugger
+# Techniques
 
-
+# Anti-debugging
 
 # References
