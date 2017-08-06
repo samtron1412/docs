@@ -732,6 +732,10 @@ assigning it to a keyboard key binding. Follow these steps:
 
 # Package Control
 
+The Sublime Text package manager that makes it exceedingly simple to
+find, install and keep packages up-to-date.
+
+
 ## End Users
 
 ### Usage
@@ -945,15 +949,49 @@ debug log. To do this:
 
 ## Sublime Text
 
-### Package Control
-
 ### PackageDev
 
+Tools to ease the creation of snippets, syntax definitions, completions
+files, build systems and other Sublime Text extension files.
+
+The general workflow looks like this:
+- run `new_*` command (new_raw_snippet, new_completions,
+  new_yaml_syntax_def ...)
+- edit file (with specific snippets, completions, highlighting, build
+  systems ...)
+- save file
+
 ### PackageResourceViewer
+
+Sublime Text plugin to view package resources.
+
+#### Commands
+
+- `PackageResourceViewer: Open Resource`
+    + Command to open the resource
+    + If saved, the correct directory structure will be created in the
+      `Packages` directory.
+    + This command will only be displayed if the `single_command`
+      setting is true.
 
 ## Markdown
 
 ### SmartMarkdown
+
+A plugin for facilitating editing markdown. Features are borrowed from
+Org mode of Emacs.
+
+#### Smart Headline folding/unfolding
+
+Fold/unfold headlines by pressing TAB on it.
+- Headlines' formats: # Section, ## Subsection, ### Subsubsection, ...
+- Global headline folding/unfolding: Shift + TAB
+
+#### Smart Order / Unordered list
+
+When editing lists, you can just press ENTER and this plugin will
+automatically continue the list.
+- Once the content of the list becomes empty, it will stop.
 
 #### Move between headlines.
 
@@ -968,6 +1006,21 @@ debug log. To do this:
 
 `Super+Shift+,` for decreasing and `Super+Shift+.` for increasing
 headline levels.
+
+#### Smart table
+
+Only the [Grid table format of Pandoc][pandoc-table].
+- Use monospaced fonts
+- The behavior is like the table in Org-mode.
+    + Use `|` (vertical line) to separate the column (e.g. | header1 |
+      header2 |), and use the TAB to reformat the table at point.
+    + Add `+-` and then press TAB for adding separator between rows.
+    + Add `+=` and then press TAB for adding separator between header
+      and the table body.
+- Use TAB to move forward a cell in table, Shift + TAB to move backward.
+
+#### Basic Pandoc integration with Pandoc
+
 
 ### Markdown Extended
 
@@ -1211,3 +1264,4 @@ Shift_JIS, etc.
 [markdown-build-command]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.py#L1259 "Implementation of markdown_build target"
 [golang-sublime-build]: https://github.com/golang/sublime-build "Golang Sublime Build system"
 [sublime-packages-source]: https://github.com/sublimehq/Packages "Sublime Text Packages Source Code"
+[pandoc-table]: http://pandoc.org/MANUAL.html#tables
