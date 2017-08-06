@@ -975,7 +975,9 @@ Markdown preview and build plugin
 Better syntax understanding
     + Support editing easier
 
-## Vintageous
+## Vim
+
+### Vintageous
 
 - Exit Insert mode: `ESC/j j`
 - Visual mode:
