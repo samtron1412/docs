@@ -72,14 +72,18 @@ governed by a set of rules that its evolution should follow:
 The C++ standard consists of two parts:
 - The core language
 - The standard library:
-    + vectors, lists, maps, sets, queues, stacks, arrays, tuples, i/o
-    facilities (iostream, for reading from and writing to the console
-    and files), smart pointers for automatic memory management, regular
-    expression support, multi-threading library, atomics support
-    (allowing a vaiable to be read or written to by at most one thread
-    at a time without any external synchronization), time utilities
-    (measurement, getting current time), exceptions, a random number
-    generator, and a modified version of the C standard library.
+    + vectors, lists, maps, sets, queues, stacks, arrays, tuples
+    + i/o facilities (iostream, for reading from and writing to the
+      console and files)
+    + smart pointers for automatic memory management
+    + regular expression support
+    + multi-threading library
+    + atomics support (allowing a vaiable to be read or written to by at
+      most one thread at a time without any external synchronization)
+    + time utilities (measurement, getting current time)
+    + exceptions
+    + a random number generator
+    + and a modified version of the C standard library.
     + Standard Template Library (STL)
 
 | Year | C++ Standard          | Informal name                                                     |
