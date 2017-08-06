@@ -943,6 +943,14 @@ debug log. To do this:
 
 # Sublime 3 Packages
 
+## Sublime Text
+
+### Package Control
+
+### PackageDev
+
+### PackageResourceViewer
+
 ## Markdown
 
 ### SmartMarkdown
@@ -1066,9 +1074,54 @@ Git integration
 See git diff in the gutter
 - [GitGutter](https://github.com/jisaacks/GitGutter)
 
+### Origami
+
 ### ActualVim (non-install)
 
-## Packages for JavaScript programming
+## General Plugins
+
+### AdvancedNewFile
+
+### All Autocomplete
+
+### AutoWrap
+
+### Wrap Plus
+
+### BoGo
+
+### BracketHighlighter
+
+### FindKeyConflicts
+
+### FuzzyFilePath
+
+### Pandoc
+
+### PlainTasks
+
+### Search in Project
+
+### Sublime Bookmarks
+
+### TrailingSpaces
+
+## General Programming
+
+### DocBlockr
+
+Simplifies writing DocBlock comments in JavaScript, PHP, CoffeeScript,
+ActionScript, C & C++
+
+### HexViewer
+
+### SublimeCodeIntel
+
+### SublimeLinter
+
+### SublimeREPL
+
+## HTML and CSS, SQL, JavaScript
 
 1. [Babel](https://packagecontrol.io/packages/Babel)
 2. [JsHint](https://packagecontrol.io/packages/JSHint)
@@ -1079,6 +1132,62 @@ See git diff in the gutter
 7. [HandleBar](https://packagecontrol.io/packages/Handlebars)
 8. [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
 9. [jQuery](https://packagecontrol.io/packages/jQuery)
+
+### ColorHighlighter (non-install)
+
+### Emmet
+
+### HTML-CSS-JS Prettify
+
+### ColorHighlighter
+
+Underlays selected hexadecimal colorcodes with their real color. Plugin
+adds color picker to easily modify colors.
+- Right click on color and choose "Choose color" to open color picker.
+
+### ConvertToUTF8
+
+Editing and saving files encoded in GBK, BIG5, EUC-JP, EUC-KR,
+Shift_JIS, etc.
+
+### ImprovedSQL
+
+### IndentXML
+
+### JavaScript Snippets
+
+### jQuery
+
+### jQuery Snippets pack
+
+### JSHint
+
+### SqlBeautifier
+
+## C & C++
+
+### SublimeGDB
+
+### SublimeLinter-cppcheck
+
+### SublimeLinter-cpplint
+
+## Color Schemes
+
+### Monokai Extended
+
+### Dayle Rees Color Schemes
+
+### Tomorrow Color Schemes
+
+## Themes
+
+### Theme - Soda
+
+
+## Misc
+
+### Puppet
 
 # Tips and Tricks
 
