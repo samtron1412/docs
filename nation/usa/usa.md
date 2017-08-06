@@ -171,6 +171,58 @@ Các giấy tờ sau được yêu cầu trong buổi phỏng vấn:
 - 5 rides pass
 
 
+# Post Office and Shipping
+
+- United States Postal Service (USPS)
+    + Low cost
+    + Packages that do not need timely delivery.
+- Fedex
+    + Medium size packages
+    + Timely delivery
+- United Parcel Service (UPS)
+    + Larger packages
+    + Fast delivery
+- DHL Express
+    + International delivery
+
+## USPS
+
+### Domestic Mail Services
+
+The price from low to high:
+- Media Mail: Estimated 2-8 days
+- USPS Retail Ground: Estimated 2-8 days
+- First-Class Mail: Estimated 1-3 days
+- Priority Mail: 1-3 days
+- Priority Mail Express: 1-2 days or overnight
+
+### International Mail Services
+
+The price from low to high:
+- First-Class Mail International: most affordable option for postcards,
+  envelopes, and flats.
+    + Send anything up to 4 lbs (cannot exceed $400 value)
+    + From $1.15 for a postcard
+    + Buy global stamps to send postcards and envelopes
+- Airmail M-Bags
+    + Send large amounts of printed internationally
+    + From $46.20
+- First-Class Package International Service
+    + Send small packages
+    + Up to 4 lbs (cannot exceed $400 in value)
+    + From $9.50
+- Priority Mail International: 6-10 days
+    + Flat Rate
+    + From $23.95
+- Priority Mail Express International: 3-5 days
+    + Some countries have a money-back guarantee
+    + Flat Rate international shipping prices
+    + From $40.95
+- Global Express Guaranteed: 1-3 days
+    + Fastest international shipping services
+    + Provided by FedEx Express
+    + From $62
+
 # Benefits
 
 ## [Health Insurance](http://www.coveredca.com/)
