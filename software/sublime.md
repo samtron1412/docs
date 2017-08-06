@@ -1038,7 +1038,7 @@ example **cw** changes a word. A few other change commands are:
 ## Git
 
 - [SublimeGit](https://github.com/SublimeGit/SublimeGit)
-- [GitSavvy](https://github.com/divmain/GitSavvy)
+- [GitGutter](https://github.com/jisaacks/GitGutter)
 
 ## Packages for JavaScript programming
 
