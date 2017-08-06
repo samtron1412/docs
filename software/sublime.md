@@ -943,21 +943,37 @@ debug log. To do this:
 
 # Sublime 3 Packages
 
-## SmartMarkdown
+## Markdown
 
-### Move between headlines.
+### SmartMarkdown
 
-- Use `Ctrl+c Ctrl+n` to move to the next headline (any level); `Ctrl+c
-  Ctrl+p` to the previous one, for Mac. (`Ctrl+; Ctrl+n` and `Ctrl+;
-  Ctrl+p` for Windows and Linux)
+#### Move between headlines.
+
+- Use `Ctrl+c Ctrl+n` to move to the next headline (any level);
+    + `Ctrl+c Ctrl+p` to the previous one, for Mac.
+    + (`Ctrl+; Ctrl+n` and `Ctrl+; Ctrl+p` for Windows and Linux)
 - Use `Ctrl+c Ctrl+f` to move to the next headline (same level or higher
-  level); `Ctrl+c Ctrl+b` to the previous one, for Mac. (`Ctrl+; Ctrlf`
-  and `Ctrl+; Ctrl+b` for Windows and Linux)
+  level); `Ctrl+c Ctrl+b` to the previous one, for Mac.
+    + (`Ctrl+; Ctrl+f` and `Ctrl+; Ctrl+b` for Windows and Linux)
 
-### Adjust headline level Added by David Smith.
+#### Adjust headline level
 
 `Super+Shift+,` for decreasing and `Super+Shift+.` for increasing
 headline levels.
+
+### Markdown Extended
+
+Markdown syntax highlighter with support for GFM fenced code blocks,
+with language-specific syntax highlighting.
+
+### Markdown Preview
+
+Markdown preview and build plugin
+
+### MarkdownEditing
+
+Better syntax understanding
+    + Support editing easier
 
 ## Vintageous
 
