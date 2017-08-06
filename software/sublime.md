@@ -1055,8 +1055,18 @@ example **cw** changes a word. A few other change commands are:
 
 ## Git
 
+### SublimeGit
+
+Git integration
 - [SublimeGit](https://github.com/SublimeGit/SublimeGit)
+- [Documentation](https://sublimegit.readthedocs.io/en/latest/)
+
+### GitGutter
+
+See git diff in the gutter
 - [GitGutter](https://github.com/jisaacks/GitGutter)
+
+### ActualVim (non-install)
 
 ## Packages for JavaScript programming
 
