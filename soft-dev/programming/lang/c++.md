@@ -202,6 +202,15 @@ known as **the zero-overhead principle**.
 
 ## Resource acquisition is initialization (RAII)
 
+# Best practices
+
+## Choosing file extensions for C++ source files
+
+- C++ headers only: `.hpp`
+- C++ source code only: `.cpp`
+- C/C++ compatible or pure C headers: `.h`
+- C/C++ compatible or pure C source code: `.c`
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/C%2B%2B
