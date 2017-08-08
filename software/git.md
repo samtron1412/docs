@@ -949,8 +949,21 @@ Same could happen if you make your commit and send your patch to another one in 
 - https://github.com/mixu/gr
 - https://github.com/joeyh/myrepos
 
-## List all commits for a specific file
-`git log --follow <filename>`
+## Commit history of a specific file
+
+All the history of the file after renamed:
+    + `git log <filename>`
+
+All the history of the file including the history before renamed:
+    + `git log --follow <filename>`
+
+All the history and the patches (diffs)
+    + `git log --follow -p <filename>`
+    + `git log -p <filename>`
+
+Using GUI:
+    + `gitk <filename>`
+    + `gitk --follow <filename>`
 
 ## Remove sensitive data - Removing files from a repository's history
 - [GitHub help](https://help.github.com/articles/removing-files-from-a-repository-s-history/)
