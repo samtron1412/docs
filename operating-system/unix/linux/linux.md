@@ -1,9 +1,5 @@
 [TOC]
 
-
-`tty` stands for *teletype* - is a terminal used a line printer for ouput and a keyboard for input.
-`pdy` stands for *pseudo-terminal* - it's is a software implementation that appears to the attached program like a terminal, but instead of communicating directly with a "real" terminal, it transfers the input and output to another program. For example, when you ssh into a machine and run `ls`, the `ls` command is sending its output to a pseudo-terminal, the other side of which is attached to the SSH daemon.
-
 # Overview
 Linux is a **Unix-like** and mostly **POSIX-compliant** computer operating system (OS) assembled under the model of **free and open-source** software development and distribution. Linux kernel is licensed under GPL version 2.
 
@@ -497,6 +493,19 @@ cat /dev/zero > /dev/mem
 
 ## Audio muted
 `alsamixer` and unmute
+
+# Glossary
+
+`tty` stands for *teletype* - is a terminal used a line printer for
+ouput and a keyboard for input.
+
+`pdy` stands for *pseudo-terminal* - it's is a software implementation
+that appears to the attached program like a terminal, but instead of
+communicating directly with a "real" terminal, it transfers the input
+and output to another program. For example, when you ssh into a machine
+and run `ls`, the `ls` command is sending its output to a pseudo-
+terminal, the other side of which is attached to the SSH daemon.
+
 
 # References
 
