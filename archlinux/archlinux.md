@@ -1042,6 +1042,10 @@ it had trouble.
 
 ## Software packaging
 
+See more:
+- arch-creating-pkg.md
+- aur.md
+
 # Tips & Tricks
 
 ## Benchmarking
