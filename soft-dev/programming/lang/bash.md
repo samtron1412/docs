@@ -4,8 +4,8 @@
 
 ## Resources
 
-- [Bash Guide for Beginners](http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
-- [Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/index.html)
+- [Bash Guide for Beginners][beginner]
+- [Advanced Bash-Scripting Guide][advanced]
 
 # Parameter
 
@@ -135,3 +135,5 @@ options** as well. These are words preceded by a double hyphen.
 
 # References
 
+[beginner]: http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+[advanced]: http://tldp.org/LDP/abs/html/index.html
