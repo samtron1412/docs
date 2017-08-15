@@ -220,6 +220,12 @@ Striped mapping
 - [Ubuntu question](http://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it)
 
 # Tips and Tricks
+## Wrap text at a certain column size - Text formatter
+
+Commands in coreutils:
+- fold
+- fmt
+
 ## User's bin
 User's `bin` directory is a way to customize how the binary will run. Creating `~/bin` directory and create `shell script files` same name with the binary, set executable attribute for these files, change `$PATH=~/bin:$PATH`.
 
