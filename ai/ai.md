@@ -2,6 +2,13 @@
 
 # Overview
 
+# Deep Learning
+
+## Resources
+
+### Online Courses
+
+- [Practical and Top-Down Approach][dl-course]
 
 # References
 
@@ -10,3 +17,4 @@
 [deepmind]: https://deepmind.com/
 [machine-learning]: https://en.wikipedia.org/wiki/Machine_learning
 [deep-learning]: https://en.wikipedia.org/wiki/Deep_learning
+[dl-course]: http://course.fast.ai/index.html
