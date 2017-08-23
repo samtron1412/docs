@@ -294,6 +294,46 @@ As stated above, if you have an emergency and you cannot find a doctor right awa
 
 If you need a prescription filled, you can contact your local pharmacy to see if it accepts Medi-Cal. Learn more at frequently asked questions about Medi-Cal pharmacy benefits.
 
+## Social Security Number (SSN)
+
+A SSN is a nine-digit identifying number is in the format XXX-XX-XXXX.
+- Any individual who is a U.S. citizen, a permanent resident, or a
+  temporary alien resident who is authorized to work in the United
+  States, must have a SSN.
+- According to the Code of Federal Regulations (CFR), every individual
+  who is employed and receives wages must have a SSN.
+- Every employer who sets up payroll and pays an individual wages must
+  obtain the employee's SSN and report the employee's wages using that
+  number.
+- Parents must also obtain a SSN for any child that the parent(s) claim
+  on an income tax return.
+- SSNs are issued by the Social Security Administration (SSA), and
+  anyone who is eligible to have a SSN may apply for one by completing
+  Form SS-5.
+- Any taxpayer with a SSN must use the SSN as an identifying number on
+  his tax returns.
+
+## Employer Identification Number (EIN)
+
+Every business that pays employees or is required to file any business
+tax returns is required to obtain an EIN.
+- An EIN is also nine digits, but it is formatted as XX-XXXXXXX.
+- EINs can be obtained form the Internal Revenue Service by following
+  the instructions in IRS Publication 1635, Understanding Your EIN.
+
+## Individual Taxpayer Identification Number (ITIN)
+
+An ITIN is a tax processing number that is issued by the IRS for
+individual who are not eligible for an SSN from the SSA, such as a
+foreign national or nonresident alien, but are required to file certain
+federal tax or information returns.
+- Like an SSN, an ITIN number is nine-digits in the format XXX-XX-XXX.
+  But the first digit will always be a 9, and the second section of the
+  number will be in the range of 70-88 (e.g., 9xx-88-xxxx).
+- To obtain an ITIN an alien with foreign status should complete Form
+  W-7, Application for IRS Individual Taxpayer Identification Number.
+- By law, an alien individual cannot have both an ITIN and a SSN.
+
 # Citizen
 
 Citizenship is the common thread that connects all Americans. We are a
