@@ -140,4 +140,5 @@ numbers
 [how-to]: http://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx
 [common-errors]: http://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx
 [wiki-calculus]: https://en.wikipedia.org/wiki/Calculus
-
+[loop]: https://math.stackexchange.com/questions/1334678/does-mathematics-become-circular-at-the-bottom-what-is-at-the-bottom-of-mathema
+[set-set]: https://math.stackexchange.com/questions/121128/when-does-the-set-enter-set-theory
