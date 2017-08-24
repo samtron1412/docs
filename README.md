@@ -176,6 +176,14 @@ standards-setting bodies for the Internet.
 
 All documents about the computer security.
 
+##### ctf
+
+All documents about Capture The Flags (CTF) game.
+
+##### wargame
+
+All documents about computer wargame.
+
 #### soft-dev - software development
 
 All documents about the software development.
