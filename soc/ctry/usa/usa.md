@@ -713,4 +713,5 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 
 [wiki-us]: https://en.wikipedia.org/wiki/United_States
 [turtle-island-2]: http://www.native-art-in-canada.com/turtleisland.html
-
+[long-term-care]: https://www.mybenefitscalwin.org/web/consortium/help?p_auth=GKP2szJv&p_p_id=help_WAR_calwinportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_help_WAR_calwinportlet_bucket=&_help_WAR_calwinportlet_searchCriteria=long+term+care&_help_WAR_calwinportlet_tabSelected=Using+This+Website&_help_WAR_calwinportlet_categoryName=Long+Term+Care+or+Home+and+Community+Based+Services+%28HCBS%29%20Waiver+Services&_help_WAR_calwinportlet_parentCategory=How+to+Use+This+Website&_help_WAR_calwinportlet_contenttitle=180-15-LTC-HCBS&_help_WAR_calwinportlet_temporaryParentCategory=How+to+apply+for+benefits&_help_WAR_calwinportlet_countyName=consortium&_help_WAR_calwinportlet_javax.portlet.action=searchContent
+[child-programs]: https://www.mybenefitscalwin.org/web/consortium/help?p_p_id=help_WAR_calwinportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_help_WAR_calwinportlet_javax.portlet.action=getCategoryContent&categoryName=Learn+about+additional+programs&parentCategory=Additional+Assistance+-+Websites&tabSelected=Program+Descriptions
