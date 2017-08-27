@@ -149,6 +149,17 @@ List of useful computer software.
 - [fim](http://www.nongnu.org/fbi-improved/)
 - [jfbview](http://seasonofcode.com/pages/jfbview.html)
 
+### Image manipulation
+
+#### Raster editors
+
+- pinta: alternative for Paint.NET
+- GIMP: alternative for Adobe Photoshop
+
+#### Vector graphics - illustration
+
+- Inkscape: alternative for Illustrator, CorelDraw
+
 ### Screen capture (screenshot)
 
 - import command of imagemagick package
