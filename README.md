@@ -105,6 +105,18 @@ All documents about education.
 
 All documents about book.
 
+#### doc
+
+All documents about documentaries.
+
+#### lang
+
+All documents about languages.
+
+#### write
+
+All documents about writing.
+
 ### law
 
 ### poli - politics
