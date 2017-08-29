@@ -308,6 +308,17 @@ How to type fast:
 
 ## System information viewers
 
+- screenfetch
+    + Show system information alongside the Arch Linux logo
+- lshw
+    + A small tool to provide detailed information on the hardware
+      configuration of the machine with CLI and GTK interfaces.
+- dmidecode (verbose and detail information)
+    + It reports information about your system's hardware as described
+      in your system BIOS according to the SMBIOS/DMI standard.
+- hwinfo (probe hardware)
+    + powerful hardware detection tool come from openSUSE
+
 ## Power management
 
 - powertop: management tool
