@@ -5,6 +5,23 @@
 Mathematics (from Greek, "knowledge, study, learning") is the language
 of universe and the natural basic science.
 
+## Resources
+
+### Books
+
+- https://math.stackexchange.com/questions/69060/what-is-a-good-book-for-learning-math-from-the-ground-up
+- https://www.goodreads.com/list/show/8231.Best_Books_About_Mathematics
+- https://www.reddit.com/r/math/comments/2p2ggd/i_want_to_own_the_best_textbooks_for_all_of_math/
+- https://math.stackexchange.com/questions/741132/good-book-for-mathematical-modeling
+- https://www.math.ualberta.ca/mss/misc/A%20Mathematician's%20Apology.pdf
+
+### Sites
+
+- https://jeremykun.com/
+- https://j2kun.svbtle.com/
+- https://medium.com/@jeremyjkun
+- mathinsight.org
+
 # History
 
 ## Etymology
