@@ -6,6 +6,7 @@
 # Tutorial
 
 ## Plugins
+
 - StartExplorer
 - Eclipse Color theme
 - Moonrise theme
@@ -13,28 +14,42 @@
 - Vrapper
 - Eclipse Quicksearch
 
-## Eclipse Keyboard Shortcuts
-
+## Keyboard Shortcuts
 
 1) **Ctrl + Shift + T** for finding class even from jar
 
-This keyboard shortcut in Eclipse is my most used and favorite shortcut. While working with high speed trading system which has complex code I often need to find classes with just blink of eye and this eclipse keyboard shortcut is just made for that. No matter whether you have class in your application or inside any JAR, this shortcut will find it.
+This keyboard shortcut in Eclipse is my most used and favorite shortcut.
+While working with high speed trading system which has complex code I
+often need to find classes with just blink of eye and this eclipse
+keyboard shortcut is just made for that. No matter whether you have
+class in your application or inside any JAR, this shortcut will find it.
 
-2) **Ctrl + Shift + R** for finding any resource (file) including config xml files
+2) **Ctrl + Shift + R** for finding any resource (file) including config
+   xml files
 
-This is similar to above Eclipse shortcut with only difference that it can find out not only Java files but any files including xml, configs and many others, but this eclipse shortcut only finds files from your workspace and doesn’t dig at jar level.
+This is similar to above Eclipse shortcut with only difference that it
+can find out not only Java files but any files including xml, configs
+and many others, but this eclipse shortcut only finds files from your
+workspace and doesn’t dig at jar level.
 
 3) **Ctrl + 1** for quick fix
 
-This is another beautiful Eclipse shortcut which can fix up any error for you in Eclipse. Whether it’s missing declaration, missing semi colon or any import related error this eclipse shortcut will help you to quickly short that out.
+This is another beautiful Eclipse shortcut which can fix up any error
+for you in Eclipse. Whether it’s missing declaration, missing semi colon
+or any import related error this eclipse shortcut will help you to
+quickly short that out.
 
 4) **Ctrl + Shift + o** for organize imports
 
-Another Eclipse keyboard shortcut for fixing missing imports. Particularly helpful if you copy some code from other file and what to import all dependencies.
+Another Eclipse keyboard shortcut for fixing missing imports.
+Particularly helpful if you copy some code from other file and what to
+import all dependencies.
 
 ### Eclipse Shortcut for Quick Navigation
 
-In this section we will see some eclipse keyboard shortcut which helps to quickly navigate within file and between file while reading and writing code in Eclipse.
+In this section we will see some eclipse keyboard shortcut which helps
+to quickly navigate within file and between file while reading and
+writing code in Eclipse.
 
 7) **Ctrl + o** for quick outline going quickly to method
 9) **Alt + right** and **Alt + left** for going back and forth while editing.
@@ -73,8 +88,8 @@ These are different Eclipse keyboard shortcuts which doesn’t fit on any catego
 28) CTRL+SHIFT+P to find closing brace. Place the cursor at opening brace and use this.
 29) Alt+Shift+X, Q to run Ant build file using keyboard shortcuts in Eclipse.
 30) Ctrl + Shift +F for Autoformating.
+31) Maximize active view or editor: `Ctrl + M`
 
-Please post if you guys have some more useful Eclipse keyboard shortcuts as comments, I will include them in this list. These Eclipse shortcuts will mostly work almost all Eclipse versions e.g. 3.5, 3.6 Helios, Eclipse Ganymede and Indigo. Let me know if you face any issue while using these Eclipse shortcuts in any particular version of Eclipse IDE.
+# References
 
-
-Read more: http://javarevisited.blogspot.com/2010/10/eclipse-tutorial-most-useful-eclipse.html#ixzz3El9zbjJu
+[source]: http://javarevisited.blogspot.com/2010/10/eclipse-tutorial-most-useful-eclipse.html#ixzz3El9zbjJu
