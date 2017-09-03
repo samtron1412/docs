@@ -746,3 +746,88 @@ CECS 174 – Introduction to Programming and Problem Solving
 ## [Requirements for a BS degree](http://catalogue.uci.edu/informationforadmittedstudents/requirementsforabachelorsdegree/)
 
 ## [Requirements for Computer Science BS degree](http://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/#Req for BS Computer Science)
+
+# Dual Degree, Double Major, and Minor
+
+## Double Major
+
+A double major consists of two majors going towards the same degree. The
+most common types of degrees are the Bachelor of Arts (B.A.) and
+Bachelor of Science (B.S.), as well as the Bachelor of Fine Arts
+(B.F.A.) and Bachelor of Education (B.Ed). Because both majors are in
+the same degree program, students have no additional general education
+or language requirements. If the majors are from related fields of
+study, there may also be overlap in courses, meaning less overall
+classes a student must take.
+
+### The Pros
+
+Pursuing another major allows for an in-depth understanding of two
+different subjects. Some jobs may even require applicants to have
+received a degree in a certain field, so double majoring increases your
+job eligibility. Some schools also offer scholarships for students who
+are double majoring. Ultimately, double majoring allows you to be an
+expert in two different fields.
+
+### The Cons
+
+Adding on an extra major can be a big commitment, as it means many more
+classes you will have to take. If you are going to pursue a additional
+major, it’s important to that you are sure of your interest and
+commitment to the subject. Often times, many people will pursue another
+major and then lose interest and end up only minoring in it.
+
+## Dual Degree
+
+A dual degree consists of two majors that are different degree types or
+are from different schools within a university. For example, pursuing a
+B.S. in Business and a B.A. in French would be considered a dual degree
+program while pursuing a B.A. in French and a B.A. in Biology would be
+considered a double major. Because students are pursuing majors from
+different schools or different degree programs, the degree requirements
+may be different. For example, a student pursuing a major in the
+business school may not have a language requirement though a student
+whose major is in the college of arts and sciences may have to take
+three semesters of a language. Different schools within a university may
+also have different overall unit requirements, potentially requiring
+students to take more or less elective units than another school.
+
+#### The Pros
+
+You get to graduate with two different degrees for the price of one. You
+also get many of the same benefits as double majoring, including more
+job flexibility, expertise in another field, etc. Having two degrees may
+also look good on a resume.
+
+### The Cons
+
+Chances are, there may not be much overlap in your required classes.
+Thus, it may take an extra semester or two to finish However, some
+universities do offer specially designed dual degree programs that are
+customized to ensure that students will be able to graduate in four
+years.
+
+## Minor
+
+A minor is usually half the size of a major. There are three main types
+of minors. The first is the classic scaled down major. For example, a
+minor in international relations (IR) would contain the introductory
+course that all IR majors take, as well as several of the upper level IR
+courses. The second type is a more specific minor of which there is no
+major equivalent. This minor is essentially a concentration or
+specialization in another field. For example, a student could minor in
+entrepreneurship, a subset of the business major that many schools
+offer. Lastly, there are interdisciplinary minors, which contain classes
+from various majors and schools across the university.
+
+### Pros
+
+Minors are half the size of a major, so they take less long to complete
+and give you more room for other electives. They’re a great opportunity
+to explore something more in-depth and explore your interests further.
+
+### Cons
+
+In the long run, an employer probably won’t care if you minored in
+Spanish or Sociology. Ultimately, minors are more about pursuing your
+own interests than padding your resume.
