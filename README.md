@@ -208,6 +208,26 @@ All documents about the software development.
 
 All documents about the software programming.
 
+###### algo
+
+All documents about algorithms.
+
+###### data
+
+All documents about data, datatype, and database.
+
+###### frame
+
+All documents about different frameworks.
+
+###### lang
+
+All documents about programming languages.
+
+###### para
+
+All documents about programming paradigms.
+
 ##### test - software testing
 
 All documents about the software testing.
