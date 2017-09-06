@@ -204,6 +204,14 @@ known as **the zero-overhead principle**.
 
 # Best practices
 
+## Include guard vs #pragma once vs modules
+
+- https://en.wikipedia.org/wiki/Pragma_once
+- https://en.wikipedia.org/wiki/Include_guard
+- https://stackoverflow.com/questions/1143936/pragma-once-vs-include-guards
+- https://www.reddit.com/r/cpp/comments/4cjjwe/come_on_guys_put_pragma_once_in_the_standard/
+- https://kennykerr.ca/2015/12/03/getting-started-with-modules-in-c/
+
 ## Choosing file extensions for C++ source files
 
 - C++ headers only: `.hpp`
