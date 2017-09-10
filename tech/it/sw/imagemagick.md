@@ -12,6 +12,15 @@ display of bitmap images.
 Convert between image formats as well as resize an image, blur, crop,
 despeckle, dither, draw on, flip, join, re-sample, and much more.
 
+### Convert pdf to images
+
+| Command                                                                | Description                                                         |
+| -                                                                      | -                                                                   |
+| `convert input.pdf output.pdf`                                         | pdf to images                                                       |
+| `convert input.pdf[1] output.pdf`                                      | a particular page to an image                                       |
+| `convert -verbose -density 300 input.pdf -quality 100 output.jpg`      | a better quality for text using -density 300                        |
+| `convert -verbose -density 300 input.pdf -quality 100 output-%02d.jpg` | formatting the output filename with two digits (e.g. output-01.jpg) |
+
 ## identify
 
 Describes the format and characteristics of one or more image files.
