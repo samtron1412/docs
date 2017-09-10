@@ -153,6 +153,8 @@ List of useful computer software.
 
 #### Raster editors
 
+- imagemagick
+- graphicsmagick
 - pinta: alternative for Paint.NET
 - GIMP: alternative for Adobe Photoshop
 
