@@ -21,6 +21,11 @@ despeckle, dither, draw on, flip, join, re-sample, and much more.
 | `convert -verbose -density 300 input.pdf -quality 100 output.jpg`      | a better quality for text using -density 300                        |
 | `convert -verbose -density 300 input.pdf -quality 100 output-%02d.jpg` | formatting the output filename with two digits (e.g. output-01.jpg) |
 
+### Convert images to pdf
+
+| Command                    | Description                     |
+| `convert *.jpg output.pdf` | multiple images to one pdf file |
+
 ## identify
 
 Describes the format and characteristics of one or more image files.
