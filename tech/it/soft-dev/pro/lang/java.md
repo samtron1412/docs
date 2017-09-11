@@ -307,6 +307,50 @@ no longer in use.
 
 # Syntax
 
+## Access Modifiers
+
+| Modifiers | Description                                                                                                                                              |
+| -         | -                                                                                                                                                        |
+| public    | Accessible from any other class                                                                                                                          |
+| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
+| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
+| private   | Accessible only within the declared class itself                                                                                                         |
+
+## static
+
+When you declare a variable or a method as static, it belongs to the
+class, rather than to a specific instance.
+- This means that only one instance of a static member exists, even if
+  you create multiple objects of the class, or if you don't create any.
+  It will be shared by all objects.
+- It's a common practice to use upper case when naming a static
+  variable, although not mandatory.
+
+## final
+
+Use the final keyword to mark a variable constant, so that it can be
+assigned only once.
+- Methods and classes can also be marked final.
+    + So the methods can't be overridden.
+    + And the classes can't be made subclasses.
+
+## Packages
+
+Packages are used to avoid name conflicts and to control access to
+classes.
+- A package can be defined as a group made up of similar types of
+  classes, along with sub-packages.
+- The following code will appear at the top of the classes:
+    + `package <pkg_name>;`
+- Import the classes
+    + `import pkg.Vehicle;`
+    + `import pkg.*`
+- Two major results occur when a class is placed in a package.
+    + First, the name of the package becomes a part of the name of the
+      class.
+    + Second, the name of the package must match the directory structure
+      where the corresponding class file resides.
+
 ## Object Oriented Programming (OOP)
 
 ## Default parameter values
