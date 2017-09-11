@@ -1,39 +1,50 @@
 [TOC]
 
-# Introduction
+# Overview
 
-Java is a computer programming language that is **concurrent**, **class-
-based**, **object-oriented**, and specifically designed to have *as few
-implementation dependencies as possible*. It is intended to let
-application developers "**write once, run anywhere**" (WORA), meaning
-that code that runs on one platform does not need to be recompiled to
-run on another. Java applications are typically compiled to
-[bytecode](http://en.wikipedia.org/wiki/Java_bytecode) (class file) that
-can run on any [Java virtual
-machine](http://en.wikipedia.org/wiki/Java_virtual_machine) (JVM)
-regardless of computer architecture.
-
-Released in 1995, implement by C and C++. The original and *reference
-implementation* Java **compilers**, **virtual machines**, and **class
-libraries** were developed by Sun. As of May 2007, in compliance with
-the specifications of the [Java Community Process](https://www.jcp.org),
-Sun relicensed most of its Java technologies under the [GNU General
-Public
-License](http://en.wikipedia.org/wiki/GNU_General_Public_License).
+Java is a general-purpose computer programming language that is
+**concurrent**, **class- based**, **object-oriented**, and specifically
+designed to have *as few implementation dependencies as possible*.
+- It is intended to let application developers "**write once, run
+  anywhere**" (WORA), meaning that code that runs on one platform does
+  not need to be recompiled to run on another.
+- Java applications are typically compiled to bytecode (class file) that
+  can run on any Java Virtual Machine (JVM) regardless of computer
+  architecture.
 
 ## History
 
-Java named from [Java coffee](http://en.wikipedia.org/wiki/Java_coffee).
+James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java
+language project in June 1991.
+- Java was originally designed for interactive television, but it was
+  too advanced for the digital cable television industry at the time.
+- The language was initially called Oak after an oak tree that stood
+  outside Gosling's office.
+- Later the project went by the name Green and was finally renamed Java,
+  from Java coffee.
+- Gosling designed Java with a C/C++ style syntax that system and
+  application programmers would find familiar
 
-**Java 2** (released initially as J2SE 1.2 in December *1998 – 1999*),
-new versions had multiple configurations built for different types of
-platforms. For example, *J2EE* targeted enterprise applications and the
-greatly stripped-down version *J2ME* for mobile applications (Mobile
-Java). *J2SE* designated the Standard Edition. In *2006*, for marketing
-purposes, Sun renamed new J2 versions as *Java EE, Java ME, and Java
-SE*, respectively.
+Released in 1995, implement by C and C++. The original and reference
+implementation Java **compilers**, **virtual machines**, and class
+libraries were developed by Sun.
+- Major web browsers soon incorporated the ability to run Java applets
+  within web pages, and Java quickly became popular.
+- Java 2 had multiple configurations built for different types of
+  platforms
+    + J2EE included technologies and APIs for enterprise applications
+      typically run in server environments.
+    + J2ME featured APIs optimized for mobile applications.
+    + J2SE is the desktop version.
+    + In 2006, J2 versions renamed as Java EE, Java ME, and Java SE.
+- As of May 2007, in compliance with the specifications of the [Java
+  Community Process](https://www.jcp.org), Sun relicensed most of its
+  Java technologies under the GNU General Public License.
+- On April 2, 2010, James Gosling resigned from Oracle.
+- In January 2016, Oracle announced that Java runtime environments based
+  on JDK 9 will discontinue the browser plugin.
 
-[Java Version History](http://en.wikipedia.org/wiki/Java_version_history):
+### Versions
 
 - JDK 1.0 (January 21, 1996)
 - JDK 1.1 (February 19, 1997)
@@ -67,37 +78,6 @@ education to our discussions and projects.
 
 The JCP is the mechanism for developing standard technical
 specifications for Java technology.
-
-
-# Installation
-
-## From repository
-
-Use packages manager to install packages.
-
-
-## From Oracle bin file
-
-- Download bin file from [this](http://ftp.cc.uoc.gr/Java/Linux-x86_64/)
-- chmod +x <file>
-- Run file
-
-```bash
-update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.6.0_45/bin/java" 1
-update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.6.0_45/bin/javac" 1
-update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.6.0_45/bin/javaws" 1
-```
-
-1. Open the profile file with your favorite editor. I used nano
-`sudo nano /etc/profile`
-2. In the /usr/profile file, type the following lines.
-`JAVA_HOME=/usr/java/jdk1.5.0_22; export JAVA_HOME;PATH=$JAVA_HOME/bin:$PATH; export PATH` **note**: JAVA_HOME location might be different for you.
-3. Update the environment variables by typing
-`source /etc/profile`
-
-
-## From OpenJDK
-
 
 
 # Practices
@@ -659,3 +639,5 @@ into valid Java code, as opposed to reconstructing the original code.”
 3. Use compare tool to compare content of two source code folder is generated by step 2. (e.g: Beyond Compare tool)
 
 # References
+
+[wiki]: https://en.wikipedia.org/wiki/Java_(programming_language)
