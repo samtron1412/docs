@@ -347,6 +347,17 @@ How to type fast:
 - NoMachine
 
 
+## PDF Utilities
+
+| Program               | Description                                     |
+| -                     | -                                               |
+| convert (ImageMagick) | Converting images to pdf(s) or pdf(s) to images |
+| gs (ghostscript)      | Multiple functions                              |
+| pdfunite (poppler)    | Merging pdfs                                    |
+| pdfjam (texlive-core) | Merging pdfs                                    |
+| pdfimages (poppler)   | Extracting images in pdfs                       |
+| pdftk                 | Multiple functions                              |
+
 ## Other
 
 - [lostfiles](https://github.com/graysky2/lostfiles)
