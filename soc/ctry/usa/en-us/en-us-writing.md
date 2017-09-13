@@ -609,6 +609,49 @@ Please contact me if there are any problems.
 Let me know if you need anything else
 Drop me a line if I can do anything else for you.
 
+## Samples
+
+### Letter of Recommendation
+
+```text
+Dear Professor Kirby,
+
+I want to thank you in advance for your time and assistance to write me
+a letter of recommendation.
+
+The scholarship which I am applying is the undergraduate transfer
+scholarship of Jack Kent Cooke Foundation, and the scholarship will due
+on October 24, 2017. In the application process, they will send an email
+with a recommendation form to your email, and you can write the letter
+of recommendation on that form.
+
+The website of the scholarship program is:
+http://www.jkcf.org/scholarship-programs/undergraduate-transfer/
+
+Some selection criteria for the scholarship are:
+- Achievement and academic ability
+- Financial need
+- Persistence
+- Services to other
+- Leadership
+
+I hope maybe you can include my academic ability, financial need, and
+other aspects corresponding to the selection criteria in your
+recommendation because those are qualities the selection committee wants
+to see. In this email, I attached a document file which contains all my
+background information that relates to those criteria. Please let me
+know if you need any further information.
+
+I also want to extend an additional thank you for the time I spent under
+your instruction. I really enjoyed your course, and I cannot express how
+much I have taken away from Calculus 1. It helped me developed my
+interest in Mathematics. Thank you very much!
+
+Sincerely,
+
+Son Tran
+```
+
 # Tips and Tricks
 
 ## Personality vocabulary
