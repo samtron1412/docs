@@ -190,10 +190,26 @@ List of useful computer software.
 
 ### Video players
 
-[mpv](https://wiki.archlinux.org/index.php/Mpv)
-[mplayer](https://wiki.archlinux.org/index.php/MPlayer)
-[smplayer](https://en.wikipedia.org/wiki/SMPlayer)
-[VLC](https://en.wikipedia.org/wiki/VLC_media_player)
+- [mpv](https://wiki.archlinux.org/index.php/Mpv)
+- [mplayer](https://wiki.archlinux.org/index.php/MPlayer)
+- [smplayer](https://en.wikipedia.org/wiki/SMPlayer)
+- [VLC](https://en.wikipedia.org/wiki/VLC_media_player)
+
+### Subtitles
+
+- aegisub: subtitle editor
+
+### Video editors
+
+- avidemux: free video editor designed for simple cutting, filtering and
+  encoding tasks.
+- handbrake: simple yet powerful video transcoder ideal for batch
+  mkv/x264 ripping.
+
+### Screencast
+
+- obs: Free and open source software for video recording and live
+  streaming
 
 ## Optical media burning
 
