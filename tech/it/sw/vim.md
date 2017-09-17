@@ -530,5 +530,7 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 
 
 # References
+
 [1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
 [2]: http://vim.wikia.com/wiki/Learn_to_use_help "Learn how to use help"
+[plugins]: https://vimawesome.com/
