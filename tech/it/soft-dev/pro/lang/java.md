@@ -307,15 +307,6 @@ no longer in use.
 
 # Syntax
 
-## Access Modifiers
-
-| Modifiers | Description                                                                                                                                              |
-| -         | -                                                                                                                                                        |
-| public    | Accessible from any other class                                                                                                                          |
-| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
-| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
-| private   | Accessible only within the declared class itself                                                                                                         |
-
 ## static
 
 When you declare a variable or a method as static, it belongs to the
@@ -352,6 +343,27 @@ classes.
       where the corresponding class file resides.
 
 ## Object Oriented Programming (OOP)
+
+### Access Modifiers - Encapsulation
+
+| Modifiers | Description                                                                                                                                              |
+| -         | -                                                                                                                                                        |
+| public    | Accessible from any other class                                                                                                                          |
+| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
+| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
+| private   | Accessible only within the declared class itself                                                                                                         |
+
+### Inheritance
+
+Use the `extends` keyword.
+
+```java
+class Dog extends Animal {
+    // some code
+}
+```
+
+Here, Dog is the subclass, and animal is the superclass.
 
 ## Default parameter values
 
