@@ -765,6 +765,13 @@ such as [Apache Tomcat](http://tomcat.apache.org/) or
 
 ![Life of a JSP file](http://upload.wikimedia.org/wikipedia/commons/0/03/JSPLife.svg "Life of a JSP file")
 
+## Java API
+
+The Java API is a collection of classes and interfaces that have been
+written for you to use.
+- Once you locate the package you want to use, you need to import it
+into your code.
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
