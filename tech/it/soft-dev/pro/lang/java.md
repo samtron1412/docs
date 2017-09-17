@@ -365,6 +365,54 @@ class Dog extends Animal {
 
 Here, Dog is the subclass, and animal is the superclass.
 
+You can access the superclass from the subclass using the `super`
+keyword. For example, `super.var` accesses the var member of the
+superclass.
+
+### Polymorphism
+
+One method with multiple implementations.
+
+Here is an example in Java: Dog and Cat are classes that inherit from
+the Animal class. Each class has its own implementation of the makeSound
+() method.
+
+```java
+class Animal {
+    public void makeSound() {
+        System.out.println("Grr...");
+    }
+}
+
+class Cat extends Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+class Dog extends Animal {
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+```
+
+As all Cat and Dog objects are Animal objects, we can do the following
+in main:
+
+```java
+public static void main(String[] args) {
+    Animal a = new Dog();
+    Animal b = new Cat();
+    a.makeSound();  //Outputs "Woof"
+    b.makeSound();  //Outputs "Meow"
+}
+```
+
+This demonstrate that you can use the Animal variable  without actually
+knowing that it contains an object of the subclass. This is very useful
+when you have multiple subclasses of the superclass.
+
 ## Default parameter values
 
 There are several ways to simulate default parameters in Java:
