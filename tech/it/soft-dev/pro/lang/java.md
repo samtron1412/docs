@@ -543,6 +543,11 @@ interfaces!
 >When you implement an interface, you need to override all of its
 methods.
 
+### Nesting classes - Inner classes
+
+Java supports nesting classes; a class can be a member of another class.
+- Inner classes can be private.
+
 ## Default parameter values
 
 There are several ways to simulate default parameters in Java:
@@ -698,12 +703,6 @@ find such signature too verbose.
 Please note that you can combine any of these approaches to achieve a
 desirable result.
 
-
-# Special classes
-
-## [Abstract class](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
-
-# Class libraries
 
 # Basic knowledge
 
