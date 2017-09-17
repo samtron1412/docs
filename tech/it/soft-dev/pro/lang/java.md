@@ -369,6 +369,37 @@ You can access the superclass from the subclass using the `super`
 keyword. For example, `super.var` accesses the var member of the
 superclass.
 
+#### Anonymous classes
+
+Anonymous classes are a way to extend the existing classes on the fly.
+- The modification is applicable only to the current object, and not the
+  class itself. So if we create another object of that class, the object
+  will use the method is defined in the class.
+
+For example, consider having a class Machine:
+
+```java
+class Machine() {
+    public void start() {
+        System.out.println("Starting...");
+    }
+}
+
+public static void main(String[] args) {
+    Machine m = new Machine() {
+        @Override public void start() {
+            System.out.println("Wooooo");
+        }
+    };
+
+    m.start();
+}
+```
+
+The `@Override` annotation is used to make your code easier to
+understand, because it makes it more obvious when methods are
+overridden.
+
 ### Polymorphism
 
 One method with multiple implementations.
