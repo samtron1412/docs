@@ -413,6 +413,105 @@ This demonstrate that you can use the Animal variable  without actually
 knowing that it contains an object of the subclass. This is very useful
 when you have multiple subclasses of the superclass.
 
+#### Method overriding
+
+A subclass can define a behavior that's specific to the subclass type,
+meaning that a subclass can implement a parent class method based on its
+requirements. This feature is known as method overriding.
+
+Rules for Method Overriding:
+- Should have the same return type and arguments
+- The access level cannot be more restrictive than the overriden
+  method's access level.
+    + Example: if the superclass method is declared public, the
+      overriding mthod in the subclass can be neither private nor
+      protected.
+- A method declared final or static cannot be overridden
+- If a method cannot be inherited, it cannot be overridden
+- Constructors cannot be overridden
+
+#### Method overloading
+
+When methods have the same name, but different parameters, it is known
+as method overloading.
+
+### Abstraction
+
+In Java, abstraction is achieved using abstract classes and interfaces.
+
+#### Abstract classes
+
+An abstract class is defined using the `abstract` keyword.
+- If a class is declared abstract it cannot be instantiated (you cannot
+  create objects of that type).
+- To use a abstract class, you have to inherit it from another class.
+- Any class that contains an abstract method should be defined as
+  abstract.
+    + An abstract method is a method that is declared without an
+      implementation (without braces, and followed by a semicolon):
+      `abstract void walk();`
+
+```java
+abstract class Animal {
+    int legs = 0;
+    abstract void makeSound();
+}
+
+class Cat extends Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+```
+
+Different animals make different sounds, that's why we define an
+abstract class Animal, and leave the implementation of how they make
+sounds to the subclasses.
+- This is used when there is no meaningful for the method in the
+  superclass.
+
+#### Interfaces
+
+An interface is a completely abstract class that contains only abstract
+methods.
+
+Specifications for interfaces:
+- Defined using the `interface` keyword.
+- May contain only `static` final variables.
+- Cannot contain a constructor because interfaces cannot be instantiated
+- Interfaces can extend other interfaces
+- A class can implement any number of interfaces
+
+```java
+interface Animal {
+    public void eat();
+    public void makeSound();
+}
+
+class Cat implements Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+
+    public void eat() {
+        System.out.println("omnomnom");
+    }
+}
+```
+
+Properties of interfaces
+- An interface is implicitly abstract. You do not need to use the
+  abstract keyword while declaring an interface.
+- Each method in an interface is also implicitly abstract, so the
+  abstract keyword is not needed.
+- Methods in an interface are implicitly public.
+
+>A class can inherit from just one superclass, but can implement multiple
+interfaces!
+
+>When you implement an interface, you need to override all of its
+methods.
+
 ## Default parameter values
 
 There are several ways to simulate default parameters in Java:
