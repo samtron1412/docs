@@ -1180,6 +1180,46 @@ SQL Mapping Framework for Java
 
 # Tutorial
 
+## Working with Files
+
+The `java.io` package includes a File class that allows you to work with
+files.
+
+```java
+import java.io.File;
+
+public class MyClass {
+    public static void main(String[] args) {
+        File x = new File("/tmp/test.txt");
+        if (x.exists()) {
+            System.out.println(x.getName() + "exists!");
+        } else {
+            System.out.println("The file does not exist");
+        }
+    }
+}
+```
+
+### Reading a File
+
+```java
+import java.util.Scanner;
+
+try {
+    File x = new File("/tmp/test.txt");
+    Scanner sc = new Scanner(x);
+    while(sc.hasNext()) {
+        System.out.println(sc.next());
+    }
+    sc.close();
+} catch (FileNotFoundException e){
+    e.printStackTrace();
+}
+```
+
+The file's contents are output word by word because the next() method
+returns each word separately.
+
 ## Reflection
 
 - [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
