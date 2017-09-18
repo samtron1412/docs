@@ -909,6 +909,58 @@ written for you to use.
 - Once you locate the package you want to use, you need to import it
 into your code.
 
+## Data Structures
+
+### ArrayList
+
+ArrayList are created with an initial size, but when this size is
+exceeded, the collection is automatically enlarged.
+- When objects are removed, the ArrayList may shrink in size. Note that
+  the ArrayList class is in the java.util package, so it's necessary to
+  import it before using it.
+
+```java
+import java.util.ArrayList;
+
+ArrayList colors = new ArrayList();
+// You can optionally specify a capacity and type of objects
+ArrayList<String> colors = new ArrayList<String>(10);
+```
+
+>ArrayLists store objects. Thus, the type specified must be a class
+type. You cannot pass, for example, `int` as the objects' type. Instead,
+use the special class types that correspond to the desired value type,
+such as `Integer` for int, `Double` for double, and so on.
+
+```java
+import java.util.ArrayList;
+
+public class MyClass {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<String>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Orange");
+        colors.Remove("Green");
+
+        System.out.println(colors);
+    }
+}
+// Output: [Red, Blue, Orange]
+```
+
+Useful methods:
+
+| Name           | Description                                               |
+| -              | -                                                         |
+| add(obj)       | Add a new object to the ArrayList                         |
+| remove(obj)    | Remove an object from the ArrayList                       |
+| contains()     | Returns true if the list contains the specified element   |
+| get(int index) | Returns the element at the specified position in the list |
+| size()         | Returns the number of elements in the list                |
+| clear()        | Removes all the elements from the list                    |
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
