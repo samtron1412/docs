@@ -1043,6 +1043,26 @@ elements as they are added. To order the elements, use a LinkedHashSet,
 which maintains a linked list of the set's elements in the order in
 which they were inserted.
 
+### Collection class
+
+```java
+import java.util.Collections;
+
+public class MyClass {
+    public static void main(String[] args) {
+        ArrayList<Integer> nums = new ArrayList<Integer>();
+        nums.add(3);
+        nums.add(36);
+        nums.add(73);
+
+        Collections.sort(nums);
+        System.out.println(nums);
+    }
+}
+```
+
+- sort, max, min, reverse, shuffle
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
