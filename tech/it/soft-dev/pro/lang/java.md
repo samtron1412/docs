@@ -961,6 +961,31 @@ Useful methods:
 | size()         | Returns the number of elements in the list                |
 | clear()        | Removes all the elements from the list                    |
 
+### LinkedList
+
+```java
+import java.util.LinkedList;
+
+public class MyClass {
+    public static void main(String[] args) {
+        LinkedList<String> c = new LinkedList<String>();
+        c.add("Red");
+        c.add("Blue");
+        c.add("Green");
+        c.add("Orange");
+        c.remove("Green");
+
+        System.out.println(c);
+    }
+}
+//Outputs: [Red, Blue, Orange]
+```
+
+Summary:
+- Use an ArrayList when you need rapid access to your data.
+- Use a LinkedList when you need to make a large number of inserts
+  and/or deletes.
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
