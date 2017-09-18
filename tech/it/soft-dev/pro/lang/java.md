@@ -1063,6 +1063,33 @@ public class MyClass {
 
 - sort, max, min, reverse, shuffle
 
+### Iterators
+
+An Iterator is an object that enables to cycle through a collection,
+obtain or remove elements.
+
+```java
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class MyClass {
+    public static void main(String[] args) {
+        LinkedList<String> animals = new LinkedList<String>();
+        animals.add("fox");
+        animals.add("cat");
+        animals.add("dog");
+        animals.add("rabbit");
+
+        Iterator<String> it = animals.iterator();
+        while (it.hasNext()) {
+            String value = it.next();
+            System.out.println(value);
+        }
+    }
+}
+//Outputs: fox
+```
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
