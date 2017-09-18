@@ -1017,6 +1017,32 @@ that already exists overwrites the old element.
 - It you try to get a value that is not present in you map, it returns
   the value of null.
 
+### Sets
+
+A Set is a collection that cannot contain duplicate elements. It models
+the mathematical set abstraction.
+- One of the implementations of the Set is the HashSet class.
+
+```java
+import java.util.HashSet;
+
+public class MyClass {
+    public static void main(String[] args) {
+        HashSet<String> set = new HashSet<String>();
+        set.add("A");
+        set.add("B");
+        set.add("C");
+        System.out.println(set);
+    }
+}
+//Outputs: [A, B, C]
+```
+
+The HashSet class does not automatically retain the order of the
+elements as they are added. To order the elements, use a LinkedHashSet,
+which maintains a linked list of the set's elements in the order in
+which they were inserted.
+
 ## Build Java project
 
 The "Build" is a process that covers all the steps required to create a
