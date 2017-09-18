@@ -748,6 +748,61 @@ Please note that you can combine any of these approaches to achieve a
 desirable result.
 
 
+## Exception Handling
+
+A `try` and `catch` block is placed around the code that might generate
+an exception.
+
+```java
+try {
+    //some code
+} catch (Exception e) {
+    //some code to handle errors
+}
+```
+
+`Exception` type is used to catch all possible exceptions.
+
+### `throw` keyword
+
+The `throw` keyword allows you to manually generate exceptions from your
+methods.
+
+```java
+int div(int a, int b) throws ArithmeticException {
+    if (b == 0) {
+        throw new ArithmeticException("Division by Zero");
+    } else {
+        return a/b;
+    }
+}
+```
+
+The `throws` statement in the method definition defines the type of
+Exception(s) the method can throw.
+- Next, the `throw` keyword throws the corresponding exception, along
+  with a custom message.
+- Multiple exceptions can be defined in the throws statement using a
+  comma-separated list.
+
+A single try block can contain multiple catch blocks that handle
+different exceptions separately.
+- All catch blocks should be ordered from most specific to most general.
+- You can use the `Exception` type to handle all other exceptions as the
+  last catch.
+
+```java
+try {
+    //some code
+} catch (ExceptionType1 e1) {
+    //Catch block
+} catch (ExceptionType2 e2) {
+    //Catch block
+} catch (ExceptionType3 e3) {
+    //Catch block
+}
+```
+
 # Basic knowledge
 
 ## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
