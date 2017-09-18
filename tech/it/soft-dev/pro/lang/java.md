@@ -803,6 +803,17 @@ try {
 }
 ```
 
+### Types of Exceptions
+
+There are two exception types, checked and unchecked (also called
+runtime).
+- The main difference is that checked exceptions are checked when
+  compiled, while unchecked exceptions are checked at runtime.
+- Thread.sleep() throws an InterruptedException. this is an example
+  checked exception. Your code will not compile until you've handled the
+  exception.
+- Unchecked exceptions: dividing by 0.
+
 ## Threads
 
 Java is a multi-threaded programming language.
