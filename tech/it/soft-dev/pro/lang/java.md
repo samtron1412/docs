@@ -1220,6 +1220,28 @@ try {
 The file's contents are output word by word because the next() method
 returns each word separately.
 
+### Creating & Writing Files
+
+```java
+import java.util.Formatter;
+
+public class MyClass {
+    public static void main(String[] args) {
+        try {
+            Formatter f = new Formatter("/tmp/test.txt");
+            f.format("%s %s %s", "1", "John", "Smith \r\n");
+            f.format("%s %s %s", "2", "Amy", "Brown");
+            f.close();
+        } catch (Exception e) {
+            System.out.println("Error");
+        }
+    }
+}
+```
+
+This creates an empty  file at the specified path. If the file already
+exists, this will overwrite it.
+
 ## Reflection
 
 - [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
