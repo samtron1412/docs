@@ -406,6 +406,8 @@ conclusion to his brilliant career in track and field.
   or `Ms.`, using `Dr.` for a medical doctor or professor for the first
   time. If you don't have a specific name for the recipient, a simple
   `Hello` is perfectly sufficient.
+- If you do not know the recipient's gender, you should use
+    + `Dear FirstName LastName`
 
 ### Closing
 
