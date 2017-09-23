@@ -139,6 +139,24 @@ if for all epsilon > 0, there exist delta > 0 such that
 
 > Intuitively, when x approaches c then f(x) approaches L.
 
+# Linear Algebra
+
+Linear algebra is the branch of mathematics concerning vector spaces and
+linear mappings between such spaces.
+
+# Linear Map
+
+A linear map (also called a linear mapping, linear transformation, or
+linear function) is a mapping V->W between two modules (including vector
+spaces) that preserves the operations of addition and scalar
+multiplication.
+
+# Map
+
+Mapping, or map, referes to either a function, often with some sort of
+special structure, or a morphism in category theory, which generalizes
+the idea of a function.
+
 # Number
 
 an arithmetical value, expressed by a word, symbol, or figure,
