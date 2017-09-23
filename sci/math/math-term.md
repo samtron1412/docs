@@ -34,6 +34,7 @@ The term secant line refers to a line through two points on a curve.
 study of shape
 
 # Algebra
+
 study of operations and their application to solving equations
 
 # Calculus
@@ -103,10 +104,16 @@ f(x) = 7x if x >0
 A function with definition as above is a piecewise function.
 
 # Arithmetic
-the branch of mathematics dealing with the properties and manipulation of numbers.
+
+Arithmetic is a branch of mathematics dealing with the properties and
+manipulation of numbers.
+- Arithmetic is an elementary part of number theory.
 
 # Number
-an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations and for showing order in a series or for identification.
+
+an arithmetical value, expressed by a word, symbol, or figure,
+representing a particular quantity and used in counting and making
+calculations and for showing order in a series or for identification.
 
 - Natural numbers: 1,2,3,4,5,6,...
 - Whole numbers = natural numbers + zero = 0,1,2,3,4,5,6,...
@@ -164,3 +171,4 @@ https://en.wikipedia.org/wiki/Determinant
 [tensor]: https://en.wikipedia.org/wiki/Tensor
 [manifold]: https://en.wikipedia.org/wiki/Manifold
 [quaternion]: https://en.wikipedia.org/wiki/Quaternion
+[algebra]: https://en.wikipedia.org/wiki/Algebra
