@@ -90,6 +90,77 @@ These are different Eclipse keyboard shortcuts which doesn’t fit on any catego
 30) Ctrl + Shift +F for Autoformating.
 31) Maximize active view or editor: `Ctrl + M`
 
+# Jar
+
+## Export runnable jars with resources such as images
+
+### The resouces in src
+
+#### File structure
+
+repo
+- src
+    + pkg1
+        * Main.java
+        * Something.java
+    + pkg2
+        * Hey.java
+    + resources
+        * icon.png
+
+#### Code
+
+```java
+URL url = Main.class.getResource("/resources/icon.png");
+```
+
+#### Export to a runnable jar file
+
+### The resources in root project folder
+
+#### File structure
+
+repo
+- src
+    + pkg1
+        * Main.java
+- resources
+    + icon.png
+
+#### Code
+
+```java
+URL url = Main.class.getResource("/icon.png");
+```
+
+#### Export to a runnable jar file
+
+## Different options of runnable jar library handling
+
+1. **Extract required libraries into JAR** - Extracts the actual .class
+   files from the libraries your app uses and puts those .class files
+   inside the runnable JAR. So, the runnable JAR will not only contain
+   the .class files of your application, but also the .class files of
+   all the libraries your application uses.
+2. **Package required libraries into JAR** - Puts the actual JAR files
+   of the libraries into your runnable JAR. Normally, a JAR file within
+   a JAR file cannot be loaded by the JVM. But Eclipse adds special
+   classes to the runnable JAR to make this possible.
+3. **Copy required libraries into sub folder next to JAR** - Keeps the
+   library JARs completely separate from the runnable JAR, so the
+   runnable JAR will only contain the .class files of your application.
+
+Option #2 is convenient because it packages everything neatly into a
+single JAR, and keeps the library JARs separated from your application's
+.class files.
+
+However, a downside to packaging everything inside of a single JAR
+(options #1 and #2) is that, if you update your application, then the
+user will have to download more data to update the application. If the
+JARs are kept separate, then the user would only have to download the
+JAR that contains your application code, instead of a single, massive
+JAR that contains your application code and all the library code.
+
 # References
 
 [source]: http://javarevisited.blogspot.com/2010/10/eclipse-tutorial-most-useful-eclipse.html#ixzz3El9zbjJu
