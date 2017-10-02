@@ -16,6 +16,12 @@
 
 ## Keyboard Shortcuts
 
+### Eclipse Shortcut for Quick Navigation
+
+In this section we will see some eclipse keyboard shortcut which helps
+to quickly navigate within file and between file while reading and
+writing code in Eclipse.
+
 1) **Ctrl + Shift + T** for finding class even from jar
 
 This keyboard shortcut in Eclipse is my most used and favorite shortcut.
@@ -32,6 +38,18 @@ can find out not only Java files but any files including xml, configs
 and many others, but this eclipse shortcut only finds files from your
 workspace and doesn’t dig at jar level.
 
+7) **Ctrl + o** for quick outline going quickly to method
+9) **Alt + right** and **Alt + left** for going back and forth while editing.
+12) **Alt + Shift + W** for show in package explorer
+13) **Ctrl + Shift + Up and down** for navigating from member to member (variables and methods)
+15) **Ctrl + k** and **Ctrl + Shift +K** for find next/previous
+24) Go to a type declaration: **F3**, This Eclipse shortcut is very useful to see function definition very quickly.
+- **CTRL + SHIFT + >** : GO TO MATCHING TAG
+
+### Eclipse Shortcut for Editing Code
+
+These Eclipse shortcuts are very helpful for editing code in Eclipse.
+
 3) **Ctrl + 1** for quick fix
 
 This is another beautiful Eclipse shortcut which can fix up any error
@@ -45,23 +63,6 @@ Another Eclipse keyboard shortcut for fixing missing imports.
 Particularly helpful if you copy some code from other file and what to
 import all dependencies.
 
-### Eclipse Shortcut for Quick Navigation
-
-In this section we will see some eclipse keyboard shortcut which helps
-to quickly navigate within file and between file while reading and
-writing code in Eclipse.
-
-7) **Ctrl + o** for quick outline going quickly to method
-9) **Alt + right** and **Alt + left** for going back and forth while editing.
-12) **Alt + Shift + W** for show in package explorer
-13) **Ctrl + Shift + Up and down** for navigating from member to member (variables and methods)
-15) **Ctrl + k** and **Ctrl + Shift +K** for find next/previous
-24) Go to a type declaration: **F3**, This Eclipse shortcut is very useful to see function definition very quickly.
-- **CTRL + SHIFT + >** : GO TO MATCHING TAG
-
-### Eclipse Shortcut for Editing Code
-
-These Eclipse shortcuts are very helpful for editing code in Eclipse.
 5) **Ctrl + /** for commenting, un commenting lines and blocks
 6) **Ctrl + Shift + /** for commenting, un commenting lines with block comment
 8) Selecting class and pressing **F4** to see its Type hierarchy
@@ -72,7 +73,6 @@ These Eclipse shortcuts are very helpful for editing code in Eclipse.
 17) **Ctrl + F** for find, find/replace
 18) **Ctrl + D** to delete a line
 19) **Ctrl + Q** for going to last edited place
-
 
 ### Miscellaneous Eclipse Shortcuts
 
