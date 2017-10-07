@@ -433,7 +433,7 @@ Make sure your signature line lists the basics: your full name, title,
 company name, and contact information, including phone numbers and
 email.
 
-## Write an email to a professor
+## Write an email to a professor for a recommendation
 
 [How](http://www.wikihow.com/Email-a-Professor)
 
@@ -468,6 +468,111 @@ Sincerely,
 
 XX XXX
 ```
+
+## Email reminder for a recommendation
+
+```text
+Dear Dr. So-and-So:
+
+Thanks very much for agreeing to write me a letter of recommendation. I
+appreciate the assistance. I was just wondering if you've had the time
+to take care of that yet? Thanks again, and thanks for keeping me
+informed. I look forward to hearing back from you.
+
+Yours,
+andeles
+```
+---
+```text
+Dear professor,
+
+Thanks again for agreeing to do a reference for me. At this point, the
+school has let me know that it is the only outstanding item for my
+application to be completed. The admissions committee has indicated that
+they will need it by [insert date] for my application to receive full
+consideration.
+
+If there is anything else that you need from me (writing samples, grades
+in other courses, etc.), please let me know.
+
+I appreciate all your help and support! It's been a great encouragement
+to me.
+
+Sincerely,
+
+SpacemanStix
+```
+---
+```text
+Dear Professor <Professor's name>,
+
+The deadline for submitting letter of recommendation for <name of
+graduate program/ fellowship> is quickly approaching. I would like to
+inquire if there is still any document I can supply to make your writing
+easier.
+
+I understand that this is a very hectic time in the school year and thus
+can't thank you enough for your time and support.
+
+Respectfully yours,
+
+```
+---
+```text
+Dear Professor ?;
+
+Thank you again for accepting my invitation to write a recommendation
+letter (LOR) to the University of ???? and the Department of ???.   The
+deadline for final submission of the LORs is fast approaching and I am
+writing you to follow up our initial conversation about recommending me
+as a future faculty and researcher in the field of ????.
+
+Could I send you additional material to help you turn the LORs around?
+
+Thanks.
+
+Richard
+```
+---
+```text
+Dr. XXXXXX,
+
+I hope your summer is off to a good start. This is just a brief reminder
+that the Pre-medical Committee office asks that letters of
+recommendation for medical school applicants be submitted as close to
+June 1 as possible. The application verification process began today and
+AMCAS will begin sending information to individual schools within a
+couple of weeks. It is best if all of my letters are included in this
+initial submission, as that will minimize delays in the review process.
+
+If you need another copy of my personal statement or other pertinent
+documents I would be happy to send them to you.
+
+Once again, thank you so much for your help and support. It truly means
+a great deal to me. Please let me know if there is anything I can do for
+you.
+
+Morzh
+```
+
+
+
+## Thank you email for a recommendation
+
+```text
+
+Dear Dr. Stein,
+
+Thank you for taking the time to write a recommendation for my
+scholarship application. I appreciate your support throughout this
+process. I will keep you updated about my progress in applying to this
+scholarship. Thanks again for your assistance. It is much appreciated.
+
+Sincerely,
+
+Son
+```
+
 
 ## Write math in email
 
