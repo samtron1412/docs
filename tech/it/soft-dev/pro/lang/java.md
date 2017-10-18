@@ -1267,6 +1267,22 @@ Benefits of encapsulation:
   components.
 - encapsulation also helps with diagnosing errors.
 
+## Public Interface
+
+What methods should you provide?
+- What information should you give the programmers who use this class?
+
+Mutators: modify the values and don't return a value.
+- Accessors: return a value
+
+```java
+public double getBalance()
+{
+    // TODO: fill in implementation
+    return 0;
+}
+```
+
 # Tips & Tricks
 
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
