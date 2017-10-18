@@ -1250,6 +1250,23 @@ exists, this will overwrite it.
 
 - [List of debug tools](http://blog.takipi.com/java-debugger-the-definitive-list-of-tools/)
 
+# Object-Oriented Programming
+
+## Instance Variables and Encapsulation
+
+An instance is an object of the class.
+- Each object of a class has its own set of instance variables.
+
+A black box is any device whose inner workings are hidden.
+- Its interface with the outside world is well-defined.
+- The process of hiding implementation details while publishing an
+  interface is called encapsulation.
+
+Benefits of encapsulation:
+- Simplify the process of making complicated things from other simple
+  components.
+- encapsulation also helps with diagnosing errors.
+
 # Tips & Tricks
 
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
