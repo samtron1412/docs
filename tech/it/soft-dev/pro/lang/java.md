@@ -1386,6 +1386,54 @@ parameter variables.
 When you implement a method, ask yourself whether it is an accessor or
 mutator method.
 
+## The `this` reference
+
+When you call a method, you pass two kinds of inputs to the method:
+- The object on which you invoke the method
+- The method arguments
+
+When you implement the method, you provide a parameter variable for each
+argument. But you don't need to provide a parameter variable for the
+object on which the method is being invoked.
+- That object is called the **implicit parameter**.
+- All other parameter variables are called **explicit parameters**.
+
+The `this` reference denotes the implicit parameter.
+- The `this` reference can also be used to distinguish between instance
+  variables and local or parameter variables.
+
+A method call without an implicit parameter is applied to the same
+object.
+
+```java
+public class BankAccount
+{
+    ...
+    public void monthlyFee()
+    {
+        withdraw(10);
+        // this.withdraw(10);
+    }
+}
+```
+
+### Calling one constructor from another
+
+```java
+public class BankAccount
+{
+    public BankAccount(double initialBalance)
+    {
+        balance = initialBalance;
+    }
+
+    public BankAccount()
+    {
+        this(0);
+    }
+}
+```
+
 # Tips & Tricks
 
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
