@@ -1336,6 +1336,24 @@ public double getBalance()
 }
 ```
 
+## Class Implementation
+
+### Instance Variables
+
+### Constructor
+
+A constructor has a simple job: to initialize the instance variables of
+an object.
+
+>When you implement constructors, be sure that each constructor
+initializes all instance variables, and that you make use of all
+parameter variables.
+
+### Methods
+
+When you implement a method, ask yourself whether it is an accessor or
+mutator method.
+
 # Tips & Tricks
 
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
