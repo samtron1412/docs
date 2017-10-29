@@ -135,6 +135,18 @@ method, every parameter, and every return value should have a comment.
 That way, when you update your programs, you can see right away which
 documentation needs to be updated.
 
+## Unit Testing
+
+A unit test verifies that a class works correctly in isolation, outside
+a complete program.
+
+A tester class is a class with a main method that contains statements to
+run methods of another class.
+- Construct one or more objects of the class that is being tested.
+- Invoke one or more methods.
+- Print out one or more results.
+- Print the expected results.
+
 ## [Platform](http://docs.oracle.com/javase/8/docs/index.html)
 
 One characteristic of Java is **portability**, which means that computer
