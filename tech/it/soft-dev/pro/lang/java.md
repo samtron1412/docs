@@ -1174,6 +1174,26 @@ the best practice is to fully automate all the steps with tools like
 **Maven** or Ant and to run the build continuously which is known as
 **Continuous Integration**).
 
+## Variables
+
+### Local variables
+
+A local variables is a variable that is declared in the body of a
+method.
+- Parameter variables are similar to local variables, but they are
+  declared in method headers.
+- Local and parameter variables belong to methods. When a method runs,
+  its local and parameter variables come to life. When the method exits,
+  they are removed immediately.
+- In contrast, instance variables belong to objects, not methods. When
+  an object is constructed, its instance variables are created. The
+  instance variables stay alive until no method uses the object any
+  longer. (The Java virtual machine contains an garbage collector that
+  periodically reclaims objects when  they are no longer used.)
+- You must initialize all local variables
+- Instance variables are initialized with a default value before a
+  constructor is invoked.
+
 # Development Tools
 
 ## IDE
