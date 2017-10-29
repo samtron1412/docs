@@ -697,7 +697,7 @@ See more:
 This method can be using to remap any key automatically when the
 keyboard is plugged in.
 
-- Create a udev rule: `/etc/udev/rules.d/00-usb-keyboards.rules`
+- Create a udev rule: `/etc/udev/rules.d/99-usb-keyboards.rules`
 
 ```bash
 ACTION=="add", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="2013", RUN+="/home/glider/bin/kbd_udev", OWNER="glider"
