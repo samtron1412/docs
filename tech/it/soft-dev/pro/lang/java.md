@@ -82,6 +82,59 @@ specifications for Java technology.
 
 # Practices
 
+## Documentation
+
+Using javadoc utility:
+- It starts with a `/**`
+- Then you describe the method's purpose.
+- Then, for each argument, you supply a line that starts with `@param`,
+  followed by the name of the variable that holds the argument. Supply a
+  short explanation for each argument after the variable name.
+- Supply a line that starts with `@return`, describing the return value.
+
+The `javadoc` utility copies the first sentence to each comment to a
+summary table. Therefore, it is best to write that first sentence with
+some care.
+- It should start with an uppercase and end with a period.
+- It does not have to be a grammatically complete sentence, but it
+  should be meaningful when it is pulled out of the comment and
+  displayed in a summary.
+
+```java
+/**
+ * Withdraws money from the bank account.
+ * @param amount the amount to withdraw
+ */
+public void withdraw(double amount)
+{
+    // TODO
+}
+
+/**
+ * Gets the current balance of the bank account.
+ * @return the current balance
+ */
+public double getBalance()
+{
+    // TODO
+}
+```
+
+>According to the standard Java documentation style, every class, every
+method, every parameter, and every return value should have a comment.
+
+### javadoc utility
+
+- Document one file: `javadoc MyClass.java`
+- Document multiple files: `javadoc *.java`
+- `javadoc` automatically provides hyperlinks to other classes and
+  methods.
+- You can run `javadoc` before implementing any methods.
+
+>`javadoc` allows you to put the documentation together with your code.
+That way, when you update your programs, you can see right away which
+documentation needs to be updated.
+
 ## [Platform](http://docs.oracle.com/javase/8/docs/index.html)
 
 One characteristic of Java is **portability**, which means that computer
