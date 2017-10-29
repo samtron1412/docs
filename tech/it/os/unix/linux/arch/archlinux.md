@@ -692,6 +692,48 @@ See more:
 
 # Tips & Tricks
 
+## Remap Caps Lock key to Escape key
+
+This method can be using to remap any key automatically when the
+keyboard is plugged in.
+
+- Create a udev rule: `/etc/udev/rules.d/00-usb-keyboards.rules`
+
+```bash
+ACTION=="add", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="2013", RUN+="/home/glider/bin/kbd_udev", OWNER="glider"
+```
+
+- Install `at` package and start and enable `atd` service:
+
+```bash
+pacman -S at
+systemctl start atd
+systemctl enable atd
+```
+
+- Create two files: `/home/glider/bin/kbd` and
+  `/home/glider/bin/kbd_udev` with permissions `755`
+
+- `/home/glider/bin/kbd_udev` script:
+
+```bash
+#!/bin/bash
+echo /home/glider/bin/kbd | at now
+```
+
+- `/home/glider/bin/kbd` script:
+
+```bash
+#!/bin/bash
+sleep 0.1
+DISPLAY=":0"
+HOME=/home/glider/
+XAUTHORITY=$HOME/.Xauthority
+export DISPLAY XAUTHORITY HOME
+
+setxkbmap -option caps:escape
+```
+
 ## Benchmarking
 
 - [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
