@@ -1031,7 +1031,8 @@ System.out.print("Enter price: ");
 double price = in.nextDouble();
 
 System.out.print("Enter your name: ");
-String name = in.next();
+String name = in.next(); // Get a word without spaces
+String name = in.nextLine(); // Get the whole line with spaces
 ```
 
 ### Formatted Output
@@ -1051,6 +1052,20 @@ System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
 | "%7.2f"        | ___1.22        | Spaces are added so that the field width is 7                                         |
 | "%s"           | Hello          | Use s with a string                                                                   |
 | "%d %.2f"      | 24 1.22        | You can format multiple values at once                                                |
+
+### Using Dialog Boxes
+
+```java
+// This method returns a String object
+String input = JOptionPane.showInputDialog("Enter price:");
+
+// Use the Integer.parseInt and Double.parseDouble to convert the string
+// to a number
+double price = Double.parseDouble(input);
+
+// Display output in a dialog box
+JOptionPane.showMessageDialog(null, "Price: " + price);
+```
 
 ## Working with Files
 
