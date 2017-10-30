@@ -370,7 +370,7 @@ no longer in use.
   Protocol Technology (Java RMI-IIOP Technology) enable database access
   and manipulation of remote objects.
 
-# Syntax
+# Syntax and Rules
 
 ## static
 
@@ -1431,6 +1431,71 @@ class Animal {
 The automatically generated hashCode() method is used to determine where
 to store the object internally.
 - Whenever you implement equals, you MUST also implement hashCode.
+
+# Data Structures
+
+## Primitive types
+
+In Java, every value is either a reference to an object, or it belongs
+to one of the eight primitive types.
+
+### Number types
+
+| Type    | Description                                                                | Size    | Example      |
+| -       | -                                                                          | -       | -            |
+| int     | The integer type, range Integer.MIN_VALUE to Integer.MAX_VALUE             | 4 bytes | 1, 2, 3      |
+| byte    | The type describing a single byte, range -128 ... 127                      | 1 byte  |              |
+| short   | The short integer type, range -32,768 ... 32,767                           | 2 bytes |              |
+| long    | The long integer type                                                      | 8 bytes |              |
+| double  | The double-precision floating-point type                                   | 8 bytes | 0.1          |
+| float   | The single-precision floating-point type                                   | 4 bytes | 1E6, 2.96E-2 |
+| char    | The character type, representing code units in the Unicode encoding scheme | 2 bytes |              |
+| boolean | THe type with the two truth values false and true                          | 1 bit   |              |
+
+When a value such as 6 or 0.335 occurs in a Java program, it is called a
+**number literal**.
+
+A numeric computation overflows if the result falls outside the range
+for the number type.
+- Using `BigInteger` type to prevent overflow errors.
+
+**Rounding errors** occur when an exact representation of a floating-
+point number is not possible.
+- Using `BigDecimal` type to prevent rounding errors.
+
+Constants:
+- In a method: `final double NICKEL_VALUE = 0.05;`
+- In a class: `public static final double LITERS_PER_GALLON = 3.785;`
+
+Big Numbers:
+
+```java
+BigInteger n = new BigInteger("1000000");
+BigInteger r = n.multiply(n);
+System.out.println(r);
+
+BigDecimal d = new BigDecimal("4.35");
+BigDecimal e = new BigDecimal("100");
+BigDecimal f = d.multiply(e);
+System.out.println(f);
+```
+
+Any number that is not completely self-explanatory should be declared as
+a named constant. Or write comments to explain its functions and why you
+choose them.
+
+Mathematical methods
+
+| Method            | Returns                      | Method            | Returns                      |
+| -                 | -                            | -                 | -                            |
+| Math.sqrt(x)      | Square root of x             | Math .abs(x)      | Absolute value               |
+| Math.pow(x, y)    | x to the y                   | Math.max(x, y)    | The larger                   |
+| Math.sin(x)       | Sine of x (radian)           | Math.min(x, y)    | The smaller                  |
+| Math.cos(x)       | Cosine                       | Math.exp(x)       | e to the x                   |
+| Math.tan(x)       | Tangent                      | Math.log(x)       | Natural log                  |
+| Math.round(x)     | Closest integer              | Math.log10(x)     | Decimal log                  |
+| Math.ceil(x)      | Smallest integer >= x        | Math.floor(x)     | Largest integer <= x         |
+| Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
 
 # Tips & Tricks
 
