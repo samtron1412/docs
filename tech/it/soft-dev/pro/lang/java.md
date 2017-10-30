@@ -407,256 +407,6 @@ classes.
     + Second, the name of the package must match the directory structure
       where the corresponding class file resides.
 
-## Object Oriented Programming (OOP)
-
-### Access Modifiers - Encapsulation
-
-| Modifiers | Description                                                                                                                                              |
-| -         | -                                                                                                                                                        |
-| public    | Accessible from any other class                                                                                                                          |
-| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
-| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
-| private   | Accessible only within the declared class itself                                                                                                         |
-
-### Inheritance
-
-Use the `extends` keyword.
-
-```java
-class Dog extends Animal {
-    // some code
-}
-```
-
-Here, Dog is the subclass, and animal is the superclass.
-
-You can access the superclass from the subclass using the `super`
-keyword. For example, `super.var` accesses the var member of the
-superclass.
-
-#### Anonymous classes
-
-Anonymous classes are a way to extend the existing classes on the fly.
-- The modification is applicable only to the current object, and not the
-  class itself. So if we create another object of that class, the object
-  will use the method is defined in the class.
-
-For example, consider having a class Machine:
-
-```java
-class Machine() {
-    public void start() {
-        System.out.println("Starting...");
-    }
-}
-
-public static void main(String[] args) {
-    Machine m = new Machine() {
-        @Override public void start() {
-            System.out.println("Wooooo");
-        }
-    };
-
-    m.start();
-}
-```
-
-The `@Override` annotation is used to make your code easier to
-understand, because it makes it more obvious when methods are
-overridden.
-
-### Polymorphism
-
-One method with multiple implementations.
-
-Here is an example in Java: Dog and Cat are classes that inherit from
-the Animal class. Each class has its own implementation of the makeSound
-() method.
-
-```java
-class Animal {
-    public void makeSound() {
-        System.out.println("Grr...");
-    }
-}
-
-class Cat extends Animal {
-    public void makeSound() {
-        System.out.println("Meow");
-    }
-}
-
-class Dog extends Animal {
-    public void makeSound() {
-        System.out.println("Woof");
-    }
-}
-```
-
-As all Cat and Dog objects are Animal objects, we can do the following
-in main:
-
-```java
-public static void main(String[] args) {
-    Animal a = new Dog();
-    Animal b = new Cat();
-    a.makeSound();  //Outputs "Woof"
-    b.makeSound();  //Outputs "Meow"
-}
-```
-
-This demonstrate that you can use the Animal variable  without actually
-knowing that it contains an object of the subclass. This is very useful
-when you have multiple subclasses of the superclass.
-
-#### Method overriding
-
-A subclass can define a behavior that's specific to the subclass type,
-meaning that a subclass can implement a parent class method based on its
-requirements. This feature is known as method overriding.
-
-Rules for Method Overriding:
-- Should have the same return type and arguments
-- The access level cannot be more restrictive than the overriden
-  method's access level.
-    + Example: if the superclass method is declared public, the
-      overriding mthod in the subclass can be neither private nor
-      protected.
-- A method declared final or static cannot be overridden
-- If a method cannot be inherited, it cannot be overridden
-- Constructors cannot be overridden
-
-#### Method overloading
-
-When methods have the same name, but different parameters, it is known
-as method overloading.
-
-### Abstraction
-
-In Java, abstraction is achieved using abstract classes and interfaces.
-
-#### Abstract classes
-
-An abstract class is defined using the `abstract` keyword.
-- If a class is declared abstract it cannot be instantiated (you cannot
-  create objects of that type).
-- To use a abstract class, you have to inherit it from another class.
-- Any class that contains an abstract method should be defined as
-  abstract.
-    + An abstract method is a method that is declared without an
-      implementation (without braces, and followed by a semicolon):
-      `abstract void walk();`
-
-```java
-abstract class Animal {
-    int legs = 0;
-    abstract void makeSound();
-}
-
-class Cat extends Animal {
-    public void makeSound() {
-        System.out.println("Meow");
-    }
-}
-```
-
-Different animals make different sounds, that's why we define an
-abstract class Animal, and leave the implementation of how they make
-sounds to the subclasses.
-- This is used when there is no meaningful for the method in the
-  superclass.
-
-#### Interfaces
-
-An interface is a completely abstract class that contains only abstract
-methods.
-
-Specifications for interfaces:
-- Defined using the `interface` keyword.
-- May contain only `static` final variables.
-- Cannot contain a constructor because interfaces cannot be instantiated
-- Interfaces can extend other interfaces
-- A class can implement any number of interfaces
-
-```java
-interface Animal {
-    public void eat();
-    public void makeSound();
-}
-
-class Cat implements Animal {
-    public void makeSound() {
-        System.out.println("Meow");
-    }
-
-    public void eat() {
-        System.out.println("omnomnom");
-    }
-}
-```
-
-Properties of interfaces
-- An interface is implicitly abstract. You do not need to use the
-  abstract keyword while declaring an interface.
-- Each method in an interface is also implicitly abstract, so the
-  abstract keyword is not needed.
-- Methods in an interface are implicitly public.
-
->A class can inherit from just one superclass, but can implement multiple
-interfaces!
-
->When you implement an interface, you need to override all of its
-methods.
-
-### Nesting classes - Inner classes
-
-Java supports nesting classes; a class can be a member of another class.
-- Inner classes can be private.
-
-### The equals() method
-
-Each object has a predefined `equals()` method that is used for
-semantic equality testing.
-- But, to make it work for our classes, we need to override it and check
-  the conditions we need.
-- It can be auto-generated by the IDE.
-
-```java
-class Animal {
-  String name;
-  Animal(String n) {
-    name = n;
-  }
-  @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = 1;
-    result = prime * result + ((name == null) ? 0 : name.hashCode());
-    return result;
-  }
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    Animal other = (Animal) obj;
-    if (name == null) {
-      if (other.name != null)
-        return false;
-    } else if (!name.equals(other.name))
-      return false;
-    return true;
-  }
-}
-```
-
-The automatically generated hashCode() method is used to determine where
-to store the object internally.
-- Whenever you implement equals, you MUST also implement hashCode.
-
 ## Default parameter values
 
 There are several ways to simulate default parameters in Java:
@@ -950,7 +700,7 @@ complex than extending from the Thread class. However, implementing the
 Runnable interface is the preferred way to start a Thread because it
 enables you to extend from another class, as well.
 
-# Basic knowledge
+# Technologies
 
 ## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
 
@@ -1417,7 +1167,7 @@ public class BankAccount
 }
 ```
 
-### Calling one constructor from another
+## Calling one constructor from another
 
 ```java
 public class BankAccount
@@ -1433,6 +1183,254 @@ public class BankAccount
     }
 }
 ```
+
+## Access Modifiers - Encapsulation
+
+| Modifiers | Description                                                                                                                                              |
+| -         | -                                                                                                                                                        |
+| public    | Accessible from any other class                                                                                                                          |
+| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
+| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
+| private   | Accessible only within the declared class itself                                                                                                         |
+
+## Inheritance
+
+Use the `extends` keyword.
+
+```java
+class Dog extends Animal {
+    // some code
+}
+```
+
+Here, Dog is the subclass, and animal is the superclass.
+
+You can access the superclass from the subclass using the `super`
+keyword. For example, `super.var` accesses the var member of the
+superclass.
+
+#### Anonymous classes
+
+Anonymous classes are a way to extend the existing classes on the fly.
+- The modification is applicable only to the current object, and not the
+  class itself. So if we create another object of that class, the object
+  will use the method is defined in the class.
+
+For example, consider having a class Machine:
+
+```java
+class Machine() {
+    public void start() {
+        System.out.println("Starting...");
+    }
+}
+
+public static void main(String[] args) {
+    Machine m = new Machine() {
+        @Override public void start() {
+            System.out.println("Wooooo");
+        }
+    };
+
+    m.start();
+}
+```
+
+The `@Override` annotation is used to make your code easier to
+understand, because it makes it more obvious when methods are
+overridden.
+
+## Polymorphism
+
+One method with multiple implementations.
+
+Here is an example in Java: Dog and Cat are classes that inherit from
+the Animal class. Each class has its own implementation of the makeSound
+() method.
+
+```java
+class Animal {
+    public void makeSound() {
+        System.out.println("Grr...");
+    }
+}
+
+class Cat extends Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+class Dog extends Animal {
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+```
+
+As all Cat and Dog objects are Animal objects, we can do the following
+in main:
+
+```java
+public static void main(String[] args) {
+    Animal a = new Dog();
+    Animal b = new Cat();
+    a.makeSound();  //Outputs "Woof"
+    b.makeSound();  //Outputs "Meow"
+}
+```
+
+This demonstrate that you can use the Animal variable  without actually
+knowing that it contains an object of the subclass. This is very useful
+when you have multiple subclasses of the superclass.
+
+#### Method overriding
+
+A subclass can define a behavior that's specific to the subclass type,
+meaning that a subclass can implement a parent class method based on its
+requirements. This feature is known as method overriding.
+
+Rules for Method Overriding:
+- Should have the same return type and arguments
+- The access level cannot be more restrictive than the overriden
+  method's access level.
+    + Example: if the superclass method is declared public, the
+      overriding mthod in the subclass can be neither private nor
+      protected.
+- A method declared final or static cannot be overridden
+- If a method cannot be inherited, it cannot be overridden
+- Constructors cannot be overridden
+
+#### Method overloading
+
+When methods have the same name, but different parameters, it is known
+as method overloading.
+
+## Abstraction
+
+In Java, abstraction is achieved using abstract classes and interfaces.
+
+#### Abstract classes
+
+An abstract class is defined using the `abstract` keyword.
+- If a class is declared abstract it cannot be instantiated (you cannot
+  create objects of that type).
+- To use a abstract class, you have to inherit it from another class.
+- Any class that contains an abstract method should be defined as
+  abstract.
+    + An abstract method is a method that is declared without an
+      implementation (without braces, and followed by a semicolon):
+      `abstract void walk();`
+
+```java
+abstract class Animal {
+    int legs = 0;
+    abstract void makeSound();
+}
+
+class Cat extends Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+```
+
+Different animals make different sounds, that's why we define an
+abstract class Animal, and leave the implementation of how they make
+sounds to the subclasses.
+- This is used when there is no meaningful for the method in the
+  superclass.
+
+#### Interfaces
+
+An interface is a completely abstract class that contains only abstract
+methods.
+
+Specifications for interfaces:
+- Defined using the `interface` keyword.
+- May contain only `static` final variables.
+- Cannot contain a constructor because interfaces cannot be instantiated
+- Interfaces can extend other interfaces
+- A class can implement any number of interfaces
+
+```java
+interface Animal {
+    public void eat();
+    public void makeSound();
+}
+
+class Cat implements Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+
+    public void eat() {
+        System.out.println("omnomnom");
+    }
+}
+```
+
+Properties of interfaces
+- An interface is implicitly abstract. You do not need to use the
+  abstract keyword while declaring an interface.
+- Each method in an interface is also implicitly abstract, so the
+  abstract keyword is not needed.
+- Methods in an interface are implicitly public.
+
+>A class can inherit from just one superclass, but can implement multiple
+interfaces!
+
+>When you implement an interface, you need to override all of its
+methods.
+
+## Nesting classes - Inner classes
+
+Java supports nesting classes; a class can be a member of another class.
+- Inner classes can be private.
+
+## The equals() method
+
+Each object has a predefined `equals()` method that is used for
+semantic equality testing.
+- But, to make it work for our classes, we need to override it and check
+  the conditions we need.
+- It can be auto-generated by the IDE.
+
+```java
+class Animal {
+  String name;
+  Animal(String n) {
+    name = n;
+  }
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + ((name == null) ? 0 : name.hashCode());
+    return result;
+  }
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    Animal other = (Animal) obj;
+    if (name == null) {
+      if (other.name != null)
+        return false;
+    } else if (!name.equals(other.name))
+      return false;
+    return true;
+  }
+}
+```
+
+The automatically generated hashCode() method is used to determine where
+to store the object internally.
+- Whenever you implement equals, you MUST also implement hashCode.
 
 # Tips & Tricks
 
