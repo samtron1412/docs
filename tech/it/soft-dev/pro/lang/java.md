@@ -1534,6 +1534,32 @@ Mathematical methods
 | Math.ceil(x)      | Smallest integer >= x        | Math.floor(x)     | Largest integer <= x         |
 | Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
 
+## String
+
+### String operations
+
+| Statement                                                | Result               | Comment                                                                                                                                |
+| -                                                        | -                    | -                                                                                                                                      |
+| String str = "Ja"; str = str + "va";                     | str is set to "Java" | When applied to strings, + denotes concatenation                                                                                       |
+| String greeting = "H & S"; int n = greeting.length();    | n is set to 5        | Each space counts as one character                                                                                                     |
+| str.charAt(1)                                            |                      |                                                                                                                                        |
+| String str = "Sally"; String str2 = str.substring(1, 4); | str2 is set to "all" | Extracts the substring starting at position 1 and ending before position 4 (starting with first good data and end with first bad data) |
+
+### Reading Exception Reports
+
+1. The name of the exception, such as `StringIndexOutOfBoundsException`
+2. The line number of the code that contained the statement that caused
+   the exception, such as `Homework1.java:16`
+
+The name of the exception is always in the first line of the report, and
+it ends with `Exception`
+- The first line of the stack trace is the method that actually
+  generated the exception.
+- THe last line of the stack trace is a line in `main`
+- Often, the exception was thrown by a method that is in the standard
+  library. Look for the first line in **your code** that appears in the
+  exception report.
+
 # Tips & Tricks
 
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
