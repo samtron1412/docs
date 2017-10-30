@@ -1015,6 +1015,43 @@ SQL Mapping Framework for Java
 
 # Tutorial
 
+## Input and Output
+
+### Input
+
+```java
+import java.util.Scanner;
+...
+Scanner in = newScanner(System.in);
+...
+System.out.print("Please enter the number of bottles: ");
+int bottles = in.nextInt();
+
+System.out.print("Enter price: ");
+double price = in.nextDouble();
+
+System.out.print("Enter your name: ");
+String name = in.next();
+```
+
+### Formatted Output
+
+```java
+System.out.printf("%10.2f", price);
+System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
+```
+
+| Format String  | Sample Output  | Comments                                                                              |
+| -              | -              | -                                                                                     |
+| "%d"           | 24             | Use d with an integer                                                                 |
+| "%5d"          | ___24          | Spaces are added so that the field width is 5                                         |
+| "Quantity:%5d" | Quantity:   24 | Characters inside a format string but outside a format specifier appear in the output |
+| "%f"           | 1.21997        | Use f with a floating-point number                                                    |
+| "%.2f"         | 1.22           | Prints two digits after the decimal point                                             |
+| "%7.2f"        | ___1.22        | Spaces are added so that the field width is 7                                         |
+| "%s"           | Hello          | Use s with a string                                                                   |
+| "%d %.2f"      | 24 1.22        | You can format multiple values at once                                                |
+
 ## Working with Files
 
 The `java.io` package includes a File class that allows you to work with
