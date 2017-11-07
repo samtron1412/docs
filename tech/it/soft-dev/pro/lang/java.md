@@ -1577,6 +1577,28 @@ it ends with `Exception`
 
 # Tips & Tricks
 
+## Comparing Floating-Point Numbers, Strings, Objects
+
+```java
+final double EPSILON = 1E-14;
+if (Math.abs(x-y) <= EPSILON)
+{
+    // x is approximately equal to y
+}
+```
+
+```java
+if (strin1.equals(string2))
+{
+    // ...
+}
+```
+
+`string1.compareTo(string2)`: comparing strings using lexicographic
+order.
+
+`==`: compare the references refer to the objects
+
 ## [Send mail](https://cloud.google.com/appengine/docs/java/mail/usingjavamail)
 
 ## Convert int to String
