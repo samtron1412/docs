@@ -1577,6 +1577,20 @@ it ends with `Exception`
 
 # Tips & Tricks
 
+## Input Validation
+
+```java
+if  (in.hasNextInt())
+{
+    int floor = in.nextInt();
+    // Process the input value
+}
+else
+{
+    System.out.println("Error: Not an integer.")
+}
+```
+
 ## Logging
 
 Instead of using `System.out.println` to print out trace messages, use
