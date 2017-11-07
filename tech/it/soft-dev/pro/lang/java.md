@@ -1577,6 +1577,20 @@ it ends with `Exception`
 
 # Tips & Tricks
 
+## Logging
+
+Instead of using `System.out.println` to print out trace messages, use
+the global logger object.
+
+```java
+Logger.getGlobal().info("status is SINGLE");
+```
+
+By default, the message is printed. But if you call `Logger.getGlobal
+().setLevel(Level.OFF);` at the beginning of the main method of your
+program, all log message printing is suppressed. Set the level to
+Level.INFO to turn logging of info messages on again.
+
 ## Comparing Floating-Point Numbers, Strings, Objects
 
 ```java
