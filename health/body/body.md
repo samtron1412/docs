@@ -168,6 +168,31 @@ Tổng hợp thắc mắc và giải đáp
 
 # Syndromes and Diseases
 
+## Disability
+
+Disabilities include, but are not limited to:
+Blindness
+Deafness
+Cancer
+Diabetes
+Epilepsy
+Autism
+Cerebral Palsy
+HIV/AIDS
+Schizophrenia
+Muscular dystrophy
+Bipolar Disorder
+Major depression
+Multiple sclerosis (MS)
+Missing limbs or
+partially missing limbs
+Post-traumatic stress disorder (PTSD)
+Obsessive compulsive disorder
+Impairments requiring the use of a
+wheelchair
+Intellectual disability (previously called
+mental retardation)
+
 ## Mucus
 
 - home remedy
