@@ -133,6 +133,14 @@ project which exhibits the problem. This helps to ensure that the
 problem is not related to something in your project, and also makes it
 much easier for your API vendor to investigate.
 
+## Reproduce the error
+
+## Divide and Conquer
+
+Make sure you understand each bug before you fix it.
+- If the bug just reappears in other places, you must rethink the
+  program design and reorganize it.
+
 # Techniques
 
 # Anti-debugging
