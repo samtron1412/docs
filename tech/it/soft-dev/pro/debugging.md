@@ -130,6 +130,48 @@ much easier for your API vendor to investigate.
 
 # Anti-debugging
 
+# Common bugs
+
+## Off-by-one error
+
+An off-by-one error is a logic error involving the discrete equivalent
+of a boundary condition.
++ It often occurs in an iterative loop when it iterates one time too
+  many or too few.
++ This problem could arise when a programmer makes mistakes such as
+  using "is less than or equal to" where " is less than" should have
+  been used in a comparison, or fails to take into account that a
+  sequence starts at zero rather than one.
+
+### C standard library `strncat`
+
+The `strncat` function will write a terminating null character one bute
+beyond the maximum length specified. The following code contains such a
+bug:
+
+```c
+void foo (char* s)
+{
+    char buf[15];
+    memset(buf, 0, sizeof(buf));
+    strncat(buf, s, sizeof(buf)); // Final parameter should be: sizeof
+    // (buf) - 1.
+}
+```
+
+Off-by-one errors are common in using the C library because it is not
+consistent with respect to whether one needs to subtract 1
+byte-functions. When `fgets()` and `strncpy` will never write past the
+length given them, `strncat` will write past the length given them.
+- On some systems (little endian architectures in particular) this can
+  result in the overwriting of the least significant byte of the frame
+  pointer. This can cause an exploitable condition where an attacker can
+  hijack the local variables for the calling routine.
+- One approach that often helps avoid such problems is to use variants
+  of these functions that calculate how much to write based on the total
+  length of the buffer, rather than the maximum number of characters to
+  write. Such functions include `strlcat` adn `strlcpy`
+
 # References
 
 1. [How to fix bugs, step by step][1]
