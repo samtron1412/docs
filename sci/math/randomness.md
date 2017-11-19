@@ -17,7 +17,7 @@ Randomness is the lack of pattern or predictability in events.
 
 # Monte Carlo Method
 
-Monte Carlo methods are a broad class of coputational algorithms that
+Monte Carlo methods are a broad class of computational algorithms that
 rely on repeated random sampling to obtain numerical results.
 - The essential idea is using randomness to solve problems that might be
   deterministic in principle.
