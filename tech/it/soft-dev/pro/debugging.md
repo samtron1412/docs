@@ -172,6 +172,13 @@ length given them, `strncat` will write past the length given them.
   length of the buffer, rather than the maximum number of characters to
   write. Such functions include `strlcat` adn `strlcpy`
 
+## Infinite loops
+
+The reason for infinite loops is that the condition of the loop will
+never failed.
+- It can happen because the programmer forgets to update the variable
+  that controls the loop.
+
 # References
 
 1. [How to fix bugs, step by step][1]
