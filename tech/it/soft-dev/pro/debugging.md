@@ -24,6 +24,8 @@ computers.
 
 # Tools
 
+## Introduction
+
 Generally, high-level programming languages, such as Java make debugging
 easier, because they have features such as exception handling that make
 real sources of erratic behavior easier to spot.
@@ -46,6 +48,11 @@ execution of a program, stop it, restart it, set breakpoints, and change
 values in memory.
 - The term "debugger" can also refer to the person who is doing the
   debugging.
+
+Three basic concepts/commands of a debugger:
+- Breakpoints
+- Single Stepping
+- Inspecting Variables
 
 
 # Debugging Process
