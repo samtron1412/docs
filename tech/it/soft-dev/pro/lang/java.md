@@ -1577,6 +1577,14 @@ it ends with `Exception`
 
 # Tips & Tricks
 
+## Redirection of Input and Output
+
+The command line interface of the operating system provides a way to
+link a file to the input of a program, as if all the characters in the
+file had actually been typed by a user.
+- `java SentinelDemo < numbers.txt`
+- Redirect output: `java SentinelDemo < numbers.txt > output.txt`
+
 ## Input Validation
 
 ```java
