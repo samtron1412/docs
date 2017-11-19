@@ -15,6 +15,33 @@ Randomness is the lack of pattern or predictability in events.
       outcome, rather than haphazardness (randomness), and applies to
       concepts of chance, probability, and information entropy.
 
+# Monte Carlo Method
+
+Monte Carlo methods are a broad class of coputational algorithms that
+rely on repeated random sampling to obtain numerical results.
+- The essential idea is using randomness to solve problems that might be
+  deterministic in principle.
+- It is often used in physical and mathematical problems and are most
+  useful when it is difficult or impossible to use other approaches.
+- Monte Carlo methods are mainly used in three distinct problem classes:
+  optimization, numerical integration, and generating draws from a
+  probability distribution.
+
+In physics-related problems, Monte Carlo methods are useful for
+simulating systems with many coupled degrees of freedom, such as fluids,
+disordered materials, strongly coupled solids, and cellular structures
+
+In principle, Monte Carlo methods can be used to solve any problem
+having a probability interpretation.
+- By the law of large numbers, integrals described by the expected value
+  of some random variable can be approximated by taking the empirical
+  mean of independent samples of the variable.
+- When the probability distribution of the variable is parametrized,
+  mathematicians often use a Markov chain Monte Carlo sampler. The
+  central idea is to design a judicious Markov chain model with a
+  prescribed stationary probability distribution.
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Randomness
+[monte-carlo]: https://en.wikipedia.org/wiki/Monte_Carlo_method
