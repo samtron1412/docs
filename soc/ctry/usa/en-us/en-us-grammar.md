@@ -327,6 +327,32 @@ it: <del>1 water, 2 lucks, 10 airs, 21 oils, 39 informations</del>.
 
 - [Infinitives as Subjects][infinitive-as-subject]
 
+# Conditionals (if)
+
+## Zeroth conditional
+
+General truths and general habits
+- If + present simple, present simple
+- If you add two and two, you get four.
+
+## First conditional
+
+Possible or likely things in the future
+- If + present simple, will + infinitive
+- If it rains later, we'll stay at home.
+
+## Second conditional
+
+Impossible things in the present / unlikely things in the future
+- If + past simple, would + infinitive
+- If I won the lottery, I would sail round the world.
+
+## Third conditional
+
+Things that didn't happen in the past and their imaginary results
+- If + past perfect, would + have + past participle
+- If I had studied harder, I would have passed the exam.
+
 # References
 
 1. [English Grammar - British Council][1]
