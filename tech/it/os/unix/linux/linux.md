@@ -581,6 +581,17 @@ and run `ls`, the `ls` command is sending its output to a pseudo-
 terminal, the other side of which is attached to the SSH daemon.
 
 
+# Teaching
+
+## Learning online services
+
+- http://www.webminal.org/
+- https://www.tutorialspoint.com/unix_terminal_online.php
+- http://www.masswerk.at/jsuix/
+- https://bellard.org/jslinux/
+
+
+
 # References
 
 [tlpi]: http://man7.org/tlpi/ "The Linux Programming Interface"
