@@ -1605,6 +1605,19 @@ fred.addScores(10, 7);
 fred.addScores(1, 7, 2, 9);
 ```
 
+# Loop
+
+- while, do while, for
+
+```java
+// This for each loop cannot modify the array
+// Use this for each loop to traverse the data
+for (double element : values)
+{
+    sum = sum + element;
+}
+```
+
 # Tips & Tricks
 
 ## Redirection of Input and Output
