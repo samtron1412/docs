@@ -505,8 +505,10 @@ How to type fast:
 
 ## Integrated Development Environment (IDE)
 
-- Eclipse
--
+- Eclipse: Java
+- Codeblocks: C++/C
+- intellij-idea-community-version: Java, Kotlin
+- liteide: Go
 
 
 # Security Tools
