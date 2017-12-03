@@ -692,7 +692,7 @@ See more:
 
 # Tips & Tricks
 
-## Remap Caps Lock key to Escape key
+## Remap Caps Lock key to Escape key + Automatically detect a plugging keyboard
 
 This method can be using to remap any key automatically when the
 keyboard is plugged in.
