@@ -1590,6 +1590,15 @@ for (int i = 0; i < 10; i++)
 }
 ```
 
+```java
+import java.util.Arrays
+
+string str = Arrays.toString(values);
+double[] prices = Arrays.copyOf(values, values.length);
+Arrays.sort(values);
+Arrays.sort(values, 0, currentSize);
+```
+
 ### Methods with a variable number of arguments
 
 ```java
@@ -1603,6 +1612,41 @@ public void addScores(int... values)
 
 fred.addScores(10, 7);
 fred.addScores(1, 7, 2, 9);
+```
+
+### Two-Dimensional Arrays with variable row lengths
+
+```java
+int[][] a = new int[3][];
+for (int i = 0; i < a.lenght; i++)
+{
+    a[i] = new int[i+1];
+}
+```
+
+### Array List
+
+- Array lists can grow and shrink as needed.
+- The ArrayList class supplies methods for common tasks, such as
+  inserting and removing elements.
+
+```java
+import java.util.ArrayList
+
+ArrayList<String> friends = new ArrayList<String>();
+friends.add("Cindy");
+String name = friends.get(i);
+friends.set(i, "Harry");
+
+// yields two references to the same array list
+ArrayList<String> friends = names;
+
+// copy array lists
+ArrayList<String> newNames = new ArrayList<String>(names);
+
+// Wrappers and auto-boxing
+ArrayList<double>   // WRONG
+ArrayList<Double> values = new ArrayList<Double>();
 ```
 
 # Loop
