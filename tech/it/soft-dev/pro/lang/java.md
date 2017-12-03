@@ -1575,6 +1575,36 @@ it ends with `Exception`
   library. Look for the first line in **your code** that appears in the
   exception report.
 
+## Array
+
+```java
+// Have to "new" an array when we initialize it
+double[] values = new double[10];
+
+// An array of objects
+BankAccount[] accounts = new BankAccount[10];
+// We have to initialize the array manually
+for (int i = 0; i < 10; i++)
+{
+    accounts[i] = new BankAccount();
+}
+```
+
+### Methods with a variable number of arguments
+
+```java
+public void addScores(int... values)
+{
+    for (int i = 0; i < values.length; i++) // values is an int[]
+    {
+        totalScore = totalScore + values[i];
+    }
+}
+
+fred.addScores(10, 7);
+fred.addScores(1, 7, 2, 9);
+```
+
 # Tips & Tricks
 
 ## Redirection of Input and Output
