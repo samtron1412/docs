@@ -212,6 +212,10 @@ mental retardation)
 
 ## Autism
 
+## Hypotonia
+
+- https://en.wikipedia.org/wiki/Hypotonia
+
 # References
 
 1. [Healthy Eating Plate and Healthy Eating Pyramid][1]
