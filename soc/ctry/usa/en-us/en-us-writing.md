@@ -471,6 +471,44 @@ Sincerely,
 XX XXX
 ```
 
+```text
+Dear Professor Kirby,
+
+I want to thank you for agreeing to write me a letter of recommendation.
+
+The scholarship which I am applying is the undergraduate transfer
+scholarship of Jack Kent Cooke Foundation, and the scholarship will due
+on October 24, 2017. In the application process, they will send an email
+with a recommendation form to your email, and you can write the letter
+of recommendation on that form.
+
+The website of the scholarship program is:
+http://www.jkcf.org/scholarship-programs/undergraduate-transfer/
+
+Some selection criteria for the scholarship are:
+- Achievement and academic ability
+- Financial need
+- Persistence
+- Services to other
+- Leadership
+
+I hope maybe you can include my academic ability, financial need, and
+other aspects corresponding to the selection criteria in your
+recommendation because those are qualities the selection committee wants
+to see. In this email, I attached a document file which contains all my
+background information that relates to those criteria. Please let me
+know if you need any further information.
+
+I also want to extend an additional thank you for the time I spent under
+your instruction. I really enjoyed your course, and I cannot express how
+much I have taken away from Calculus 1. It helped me developed my
+interest in Mathematics. Thank you very much!
+
+Sincerely,
+
+Son Tran
+```
+
 ## Email reminder for a recommendation
 
 ```text
@@ -561,6 +599,8 @@ Morzh
 
 ## Thank you email for a recommendation
 
+### College/Scholarship/
+
 ```text
 
 Dear Dr. Stein,
@@ -571,10 +611,258 @@ process. I will keep you updated about my progress in applying to this
 scholarship. Thanks again for your assistance. It is much appreciated.
 
 Sincerely,
-
 Son
 ```
 
+```text
+Dear [Recipients Name],
+
+I would like to thank you for the glowing letter of recommendation you
+wrote for my college application. You are and will always be an
+inspiration to me and I appreciate you for supporting me in my academic
+endeavors.
+
+I am confident that your endorsement in the recommendation letter will
+greatly increase my chances of admission at the university. Thank you
+for your support and I will do my best to make you proud.
+
+Sincerely
+[Your Name]
+```
+
+```text
+Dear [Recipient’s name],
+
+I am not sure whether you are aware, but I have been admitted to [name
+of college]. I cannot thank you enough for the contribution you made by
+writing a glowing recommendation latter.
+
+I know it takes a lot of time, energy and effort of you to write a good
+recommendation letter, and I appreciate your support throughout the
+process. I will make sure to keep you updated on my progress. Thank you.
+
+Sincerely
+[Your Name]
+```
+
+```
+Dear Professor Jones,
+
+Thank you so much for taking the time from your busy schedule to write a
+letter of recommendation for my graduate school application. I know that
+it will be helpful in my endeavor to become a student at Harvard.
+
+I can honestly say that you are one of the best teachers I have had in
+16 years of schooling. I remember your lecture on the apparent motion of
+satellites over the surface of the Earth. In one instant, I suddenly
+understood what was bothering me for years -- Why do satellites and
+spacecraft follow those crazy wavy patterns over the equator? Your
+insight and your careful, thoughtful explanation made a complex subject
+easy to understand. I looked forward to attending your class each week.
+
+Once again, thank you for your time. I wish you the very best in the
+coming year.
+
+Sincerely,
+
+Son Tran, Class of 2016, 2017
+Physics 185, 280, 285, Math 285
+```
+
+### Job
+
+```
+Dear  [Recipient’s Name],
+
+I wish to express my gratitude for speaking with [People in Charge of
+Interview] at the [Company's Name] about my qualifications to work with
+their software development team.
+
+They have an innovative and dynamic team that I will learn a lot from. I
+will also contribute what I have learnt under your tutelage. I will keep
+you updated about my progress in the company.
+
+I appreciate you taking your time to give me a reference.
+
+Sincerely
+[Your Name]
+```
+
+```text
+Dear [Recipient’s Name],
+
+As you may be aware, I have been applying for various employment
+opportunities over the past few months. I just received a very
+attractive offer to fill a vacant position at a innovative and exciting
+company. While my resume, experience and performance at the interview
+contributed a great deal to grasping this opportunity, I feel that your
+recommendation played a central role in the company’s decision to offer
+me the job.
+
+I wish to express my gratitude for your consideration and time in
+supporting my endeavors. Your encouragement and expectation mean a lot
+to me. Thanks for all you have done for me.
+
+Sincerely
+[Your Name]
+```
+
+```
+Thank you for taking the time to write me a letter of recommendation. I
+could not have asked for nicer comments. Your letter paved the way for
+numerous interviews and a job offer from Doe Corporation, where I wanted
+most to work. The time you took to write that letter will have a
+significant impact on my life for years to come. I hope I can
+reciprocate the favor.
+```
+
+```
+As you know, I've been in the process of applying for various employment
+opportunities over the past weeks. Recently, I received a very desirable
+offer to fill a position at an energetic and exciting company. Although
+both a resume exhibiting experiences and credentials suited to the job
+and a successful interview certainly contributed to my success, I feel
+that your willingness to speak as a professional reference on my behalf
+played a central role in the company's decision to offer me the
+position.
+
+I am writing to express my gratitude for your time and consideration in
+support of my endeavors. Your perspective and encouragement mean a great
+deal to me. Thank you for all that you've done.
+```
+
+```
+Thank you for your kindness in agreeing to write a letter of
+recommendation to accompany my application to medical school. I have
+wanted to study medicine since my biology class in the eighth grade, and
+have selected extracurricular activities that would be consistent with
+that goal. My university grades are good, and I have been a volunteer at
+the local hospital for the past year. I will soon have a preliminary
+interview with a selections committee, but before that interview I need
+to secure letters of recommendation.
+
+The admissions committee informs successful candidates approximately
+four months after the submission deadline. I will inform you of the
+results as soon as I receive them.
+
+I know it takes a lot of time to write a letter of recommendation, and I
+deeply appreciate your kindness. I will do my best to deserve your
+confidence. Thank you very much.
+```
+
+```
+I can't thank you enough for telling Jane Doe about my chef service. The
+Doe's have signed up for the full service and they know several more
+people who might be interested. Thank you for taking the time to tell
+your friends. I'll do my best to deserve your confidence.
+```
+
+```
+Please accept my sincere thanks for your letter of reference for my
+service as a housekeeper. Although I was very sorry to leave your
+employ, thanks to your letter I have obtained an excellent position with
+the Doe family here in Springfield. I will miss your family very much,
+especially during the summer. I hope you will enjoy your new home in
+Georgia, and wish you much happiness in the years to come.
+```
+
+```
+I want to express my deepest gratitude to you for the recommendation you
+made on my behalf. You went the extra mile to assist me, and I have
+gained a significant benefit because of you. I know that your
+recommendation played a significant role in helping me obtain the
+opportunity I was seeking.
+
+Without your recommendation, I do not feel that my application would
+have made the same impact. You are a pillar in the community and highly
+respected by everyone.
+
+Thank you once again for your powerful, well-thought-out recommendation.
+It means a lot that you would take time out of your busy schedule to
+help me succeed. If I can be of any service to you in the future, please
+don't hesitate to contact me.
+```
+
+### Internship
+
+```text
+Dear [Recipient’s Name],
+
+I would like to express my gratitude for your reference for the
+internship position at [organization’s name]. I appreciate the
+confidence you have shown in me and your willingness to contact
+management in my behalf. This internship will broaden my experience and
+skills, and I’m deeply thankful for coming through for me.
+
+I’m looking forward to a great learning experience throughout the
+internship. I will keep you posted on my progress.
+
+Thank you very much.
+
+Regards
+[Your Name]
+```
+
+```
+Dear [Recipient’s Name],
+
+Thank you for agreeing to write a letter of recommendation to accompany
+my application for the [job] at [company]. I have always wanted to
+pursue a career in [desired career] ever since I was a child and I am
+happy to inform you that I have been offered the job.
+
+I strongly believe that your recommendation contributed a great deal
+towards this result and I am forever grateful for the time and effort
+you put in to write the recommendation.
+
+Thank you very much.
+
+Regards
+[Your Name]
+```
+
+## Thank you letters
+
+```
+MM/DD/YY
+
+[Name]
+[Address]
+[City, State, Zip Code]
+
+Dear [Name],
+
+I want to thank you for taking the time out of your (undoubtedly) busy
+schedule to write a letter of recommendation for me. The letter seems to
+have been very well received as I have already been offered positions at
+several companies that were very high on my wish list.
+
+You've been so kind to me. I know it is your job to teach and guide our
+young minds, but I've yet to encounter a professor who works as hard to
+make a positive impact on the lives of his students. You give the
+profession a good name, and I consider myself very lucky to have been a
+part of your class room.
+
+I plan to have all the interviews before making the final decision on
+where I decide to work. Luckily, you've already given me so much good
+advice, I know that Iâ€™ll make the right choice.
+
+It has been an unparalleled pleasure and honor having you as my teacher
+and mentor. I treasure all the knowledge and wisdom you have shared with
+me and I truly appreciate the time, effort and sincerity you have
+devoted in writing a letter on my behalf.
+
+I will keep you posted about my progress, and where I eventually decide
+to work. In the mean time, please let me know if there is anything I can
+do to help you out with your courses. I'll still be in the Boston area
+for at least the rest of the fall, and I'd love to help you out in some
+way if possible.
+
+Thanks again professor,
+
+Sincerely,
+[Your Name]
+```
 
 ## Write math in email
 
@@ -610,49 +898,6 @@ Should you need any further information, please do not hesitate to contact me.
 Please contact me if there are any problems.
 Let me know if you need anything else
 Drop me a line if I can do anything else for you.
-
-## Samples
-
-### Letter of Recommendation
-
-```text
-Dear Professor Kirby,
-
-I want to thank you in advance for your time and assistance to write me
-a letter of recommendation.
-
-The scholarship which I am applying is the undergraduate transfer
-scholarship of Jack Kent Cooke Foundation, and the scholarship will due
-on October 24, 2017. In the application process, they will send an email
-with a recommendation form to your email, and you can write the letter
-of recommendation on that form.
-
-The website of the scholarship program is:
-http://www.jkcf.org/scholarship-programs/undergraduate-transfer/
-
-Some selection criteria for the scholarship are:
-- Achievement and academic ability
-- Financial need
-- Persistence
-- Services to other
-- Leadership
-
-I hope maybe you can include my academic ability, financial need, and
-other aspects corresponding to the selection criteria in your
-recommendation because those are qualities the selection committee wants
-to see. In this email, I attached a document file which contains all my
-background information that relates to those criteria. Please let me
-know if you need any further information.
-
-I also want to extend an additional thank you for the time I spent under
-your instruction. I really enjoyed your course, and I cannot express how
-much I have taken away from Calculus 1. It helped me developed my
-interest in Mathematics. Thank you very much!
-
-Sincerely,
-
-Son Tran
-```
 
 # Tips and Tricks
 
