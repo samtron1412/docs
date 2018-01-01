@@ -29,4 +29,11 @@ The STARTTLS command for **IMAP** and **POP3** is defined in [RFC 2595](https://
 
 - https://www.godaddy.com/ssl/ssl-open-source.aspx
 
+# Using SSL/TLS for servers
+
+## Web servers
+
+- https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04
+
 # References
