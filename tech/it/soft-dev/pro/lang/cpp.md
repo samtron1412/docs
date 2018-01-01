@@ -204,6 +204,28 @@ known as **the zero-overhead principle**.
 
 # Best practices
 
+## Code structure
+
+```cpp
+#include <...>
+...
+//using namespace std;
+
+//global constants
+
+typdef int arrayType[] [NUM_COLS];
+
+//structures or classes
+
+//function prototypes
+
+//main constants
+//main variables
+//main input
+//main processing
+//main output
+```
+
 ## Include guard vs #pragma once vs modules
 
 - https://en.wikipedia.org/wiki/Pragma_once
