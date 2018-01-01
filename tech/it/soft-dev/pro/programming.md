@@ -688,6 +688,12 @@ executes the program's machine code instructions.
   designed to facilitate the contribution and management of
   contributions to an open-source project.
 
+# Programming Challenges
+
+- Gaussian/Gauss-Jordan Elimination
+- Finding the inverse of a matrix
+- Finding the determinant of a matrix
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Computer_programming
