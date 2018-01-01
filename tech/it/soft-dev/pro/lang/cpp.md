@@ -178,9 +178,19 @@ known as **the zero-overhead principle**.
 
 # Standard library
 
-
-
-
+| header     | description                                              |
+| -          | -                                                        |
+| iostream   | working with I/O stream                                  |
+| iomanip    | I/O manipulators                                         |
+| cmath      | mathematical library                                     |
+| string     | string class, working with string                        |
+| cstdlib    | using random generators                                  |
+| ctime      | using time functions                                     |
+| cctype     | functions determine the type contained in character data |
+| fstream    | file input/output                                        |
+| memory     | using smart pointers                                     |
+| algorithm  |                                                          |
+| functional | functional classes                                       |
 
 
 # Important Concepts
