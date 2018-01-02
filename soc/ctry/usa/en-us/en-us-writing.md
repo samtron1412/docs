@@ -899,6 +899,159 @@ Please contact me if there are any problems.
 Let me know if you need anything else
 Drop me a line if I can do anything else for you.
 
+
+# Write a personal statement
+
+## Scholarship
+
+> Think of the personal statement as an "intellectual autobiography."
+The statement should convey to your readers a clear, thoughtful picture
+or impression of you as a person who has distinct interests,
+motivations, accomplishments, aims and ideas.
+
+### Do
+
+- Be absolutely honest: do not try to lie or make up things
+- Be yourself to be unique: write from your heart and emotions
+- Make it interesting, concrete, and specific
+    + Using detail and specific examples to prove your points
+    + Using specific names, references and illustrations
+    + Find the "story" in your history: your life has been a journey,
+      with planned and unexpected turns, with successful and frustrated
+      goals, with hard-earned and accidental insights, with hoped-for
+      but as-yet-unrealized achievements. Tell the story that makes
+      sense of your life as it has been, is, and could be.
+    + Be realistic but bold: understand your strength, weaknesses, and
+      passion. Write to engage your reader, write in a way that invites
+      him or her to want to meet and get to know you.
+- Read the questions or requirements carefully to define a central idea,
+  impression or theme you hope to convey. Common questions are:
+    + Why did you choose to attend college?
+    + What are skills you have gained and things you have learned about
+      yourself through your academic and life experiences?
+    + What are your future educational or career plans?
+    + What do you hope to learn and experience in the future?
+
+### Don't
+
+- Write to impress. Use your personal statement to talk to your readers
+  about the things that motivate, inspire and shape you. Help them to
+  understand what your specific accomplishments have meant to you, or
+  how they have shaped you. Help them to understand why  you care about
+  the things you care about.
+- Write in cliches. Ask yourself if each sentence in your draft reflects
+  some thought, fact, reflection or experience of your own. Avoid
+  sentences that could have been written by absolutely anyone. Avoid
+  stock phrases or expressions.
+- Re-write your resume
+- Be too general or abstract
+
+### Steps
+
+#### 1. Develop a rough draft to use as an outline
+
+Create an outline of achievements and experiences that you will include
+in your essay. Consider a way to logically group some ideas together
+into one section/category. Some topics:
+- Scholarships and awards and leadership roles
+- School and community involvement with an emphasis on active
+  contributions to any club, association, or civic organization
+- Skills and special knowledge, special projects, research in your area
+  of study (including teaching and tutoring)
+- Life and educational experiences that have motivated you or have
+  demonstrated your ability to overcome obstacles and challenges
+  successfully in order to continue your education.
+- Academic and career goals
+- Address your personal financial circumstances, including any unusual
+  or extenuating circumstances, and why you are a worthy candidate for
+  scholarship consideration.
+
+#### 2. Start with a strong thesis or umbrella statement outlining your goals, and indicating the main categories you will be discussing in your essay
+
+Example: My academic achievements, my work experience, and my community
+service have all helped me to work toward my goals.
+
+Be sure that each of your paragraphs begin with a clear topic sentence
+which indicates which topics your are focusing on in that paragraph.
+
+- Example: My volunteer experiences helped me choose the right career
+  plan for me.
+- Example: I have developed strong leadership skills, and have learned
+  to interact with a wide variety of people while working several
+  different jobs.
+- Example: Although I have faced many obstacles in my life, I am fully
+  motivated to reach my career goal of being a psychologist.
+
+#### 3. You must stress how your experience helped you to develop the kinds of skills and qualities that selection committees are looking for in a good candidate.
+
+These include the following qualities:
+- Scholarship, knowledge of chosen field, carefulness of work
+- Motivation, enthusiasm, seriousness of purpose
+- Creativity, originality, ingenuity in problem-solving
+- Ability to plan and carry out research, organization
+- Ability to express thought in speech and writing
+- Maturity, emotional stability, ability to withstand stress and face
+  challenges
+- Self-reliance, initiative, independence, adaptability
+- Responsibility, ability to make sound judgments
+- Effectiveness with people, tact, ability to work with others,
+  communicate effectively
+- Community service, volunteerism
+
+#### 4. Stress a constant theme: that many of your past experiences have helped to prepare you to be a good candidate for the scholarship
+
+#### 5. Choice of words is important
+
+Use words like "good candidate," "well-prepared," "good leaderships
+skills" and other terms that remain modest while demonstrating your
+abilities.
+
+Avoid exaggerated terms like "fantastic background,"  "my eternal
+passion for learning," "my exceptiona skills," "my outstanding
+leadership ability." Instead, let the evidence speak for itself.
+
+#### 6. Have someone else read over your essay to make sure that you have not made any exaggerated claims
+
+### Samples
+
+```
+My life has been a struggle at times, but my hard work, determination,
+and enthusiasm for my education and my community has brought to UM Flint
+where I can pursue my dreams.
+
+My academic plans are to major in pre-med and minor in chemistry. After
+graduating, I plan to obtain a nursing license. During my career as a
+nurse, I will attend medical school at the University of Michigan,
+studying forensic pathology. After medical school, I will do two years
+of residency to gain experience to complete my studies and training for
+my chosen field, a forensic nurse.
+
+I’m a hardworking-dedicated student, who focuses on my studies, yet I
+have always enjoyed being involved in extracurricular activities. While
+in high school, I was captain of the varsity volleyball team for two
+years. I was also elected president of my class. I attended the Genesee
+Area Skill Center where I studied forensic science and was a member of
+the Technical Honor Society and HOSA (Health Occupation Student
+Association). I am currently involved in a scholarship program called
+CEO (Committed to Excellence and Opportunity) here at UM Flint. Next
+year, I plan to get more involved in college activities. I am interested
+in joining the student government club and a sorority. I am also active
+in my community. I volunteer at numerous places like the Humane Society
+and the North End Soup Kitchen.
+
+I am the oldest of four children being raised by a single parent. My
+mother, Charlene Jackson, is a hardworking woman who struggles to keep
+food on the table; I work two jobs to help support my family, but we
+barely scrape by. Sometimes even getting transportation to school is a
+struggle for me. Because my mom is endeavoring through these hard times,
+I try my best to keep my grades up, knowing that I have opportunities
+that my mother never had.
+```
+
+## Undergraduate levels
+
+## Graduate levels
+
 # Tips and Tricks
 
 ## Personality vocabulary
