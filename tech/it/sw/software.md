@@ -22,6 +22,11 @@ List of useful computer software.
 - [lynx](https://en.wikipedia.org/wiki/Lynx_(web_browser))
 - [elinks](https://en.wikipedia.org/wiki/ELinks)
 - [links](https://en.wikipedia.org/wiki/Links_(web_browser))
+- [qutebrowser](https://github.com/qutebrowser/qutebrowser): vim-like
+  browser
+- [surf](https://surf.suckless.org/): one single C source file
+- [surfer](https://github.com/nihilowy/surfer): simple browser for
+  learning
 
 ## File sharing
 
