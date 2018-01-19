@@ -226,8 +226,8 @@ List of useful computer software.
 
 ## YouTube utilities
 
-- [youtube-dl](https://www.archlinux.org/packages/community/any/youtube-dl/)
 - [you-get](https://www.archlinux.org/packages/community/any/you-get/)
+- [youtube-dl](https://www.archlinux.org/packages/community/any/youtube-dl/)
 - [clipgrab](https://www.archlinux.org/packages/community/x86_64/clipgrab/): a video downloader and converter
 - [youtube-viewer](https://www.archlinux.org/packages/community/any/youtube-viewer/): a command line utility for viewing YouTube
 - [mps-youtube](https://www.archlinux.org/packages/community/any/mps-youtube/): terminal base YouTube jukebox
