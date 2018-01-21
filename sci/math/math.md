@@ -22,6 +22,11 @@ of universe and the natural basic science.
 - https://medium.com/@jeremyjkun
 - mathinsight.org
 
+### Online cources
+
+- [Math As A Second Language][mathasasecondlanguage]
+- [Classic Arithmetic][classicarithmetic]
+
 # History
 
 ## Etymology
@@ -159,3 +164,5 @@ numbers
 [wiki-calculus]: https://en.wikipedia.org/wiki/Calculus
 [loop]: https://math.stackexchange.com/questions/1334678/does-mathematics-become-circular-at-the-bottom-what-is-at-the-bottom-of-mathema
 [set-set]: https://math.stackexchange.com/questions/121128/when-does-the-set-enter-set-theory
+[mathasasecondlanguage]: https://www.youtube.com/watch?v=QFFReY6lS68&list=PLufObkSlzUUU4oKivkiwchXBRfAzQXpcu&index=1
+[classicarithmetic]: https://www.youtube.com/playlist?list=PL5Y01D9mNkO8PcdgTyLJYcVJo9O906tIy
