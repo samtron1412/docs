@@ -107,3 +107,4 @@ are the best backup/restore lines i've seen (don't remember where i got them tho
 1. [Arch Wiki - pacman][1]
 
 [1]: https://wiki.archlinux.org/index.php/Pacman "Arch Wiki - pacman"
+[tips]: https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks
