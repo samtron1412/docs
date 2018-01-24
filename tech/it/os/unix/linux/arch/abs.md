@@ -114,3 +114,7 @@ If new versions are available in the official repositories during a system updat
 
 - [GitHub](https://github.com/falconindy/asp)
 - `man asp`
+
+# References
+
+[awiki]: https://wiki.archlinux.org/index.php/Arch_Build_System
