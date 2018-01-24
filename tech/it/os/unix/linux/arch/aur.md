@@ -33,3 +33,9 @@
 # References
 
 [awiki]: https://wiki.archlinux.org/index.php/Arch_User_Repository
+[create]: https://wiki.archlinux.org/index.php/Creating_packages
+[pkg-standards]: https://wiki.archlinux.org/index.php/Arch_packaging_standards
+[namcap]: https://wiki.archlinux.org/index.php/Namcap
+[pkgbuild]: https://wiki.archlinux.org/index.php/PKGBUILD
+[srcinfo]: https://wiki.archlinux.org/index.php/.SRCINFO
+[trusted-user]: https://wiki.archlinux.org/index.php/AUR_Trusted_User_Guidelines
