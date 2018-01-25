@@ -38,6 +38,7 @@
 - [Circle CI](https://circleci.com/)
 - [Travis CI](https://travis-ci.org/)
 - [Wercker](http://wercker.com/): using it because unlimited private repositories.
+- [Jenkins](https://jenkins.io/)
 
 ### Continuous Deployment
 
