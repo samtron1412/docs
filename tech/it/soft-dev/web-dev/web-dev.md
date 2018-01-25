@@ -92,3 +92,9 @@ Change link from `http://something.com/...` to `//something.com/...` it will aut
 
 # Tips & Tricks
 ## [Source code comment styling tips](http://www.hongkiat.com/blog/source-code-comment-styling-tips/)
+
+# References
+
+[name]: https://www.name.com/
+[google]: https://domains.google.com
+[namecheap]: https://www.namecheap.com/
