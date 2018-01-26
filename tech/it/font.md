@@ -268,3 +268,19 @@ Use in `XeTeX` and `LuaTeX` with package `fontspec`
 ## [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/)
 
 - [Arch Linux - fontconfig](https://wiki.archlinux.org/index.php/Font_configuration)
+
+# Fonts
+
+## Popular fonts
+
+| Sans Serif (paper) | Serif (screen) |
+| -                  | -              |
+| Times New Roman    | Arial          |
+| Georgia            | Helvetica      |
+| Bookman Old Style  | Tahoma         |
+|                    | Ubuntu         |
+|                    | Robotto        |
+|                    | Open Sans      |
+
+# References
+
