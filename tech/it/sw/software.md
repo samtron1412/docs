@@ -402,9 +402,10 @@ How to type fast:
 ## Scientific documents
 
 - [TeX, LaTeX and friends](https://wiki.archlinux.org/index.php/TeX_Live)
-- [TeXmaker](https://en.wikipedia.org/wiki/Texmaker)
 - [TeXstudio](https://en.wikipedia.org/wiki/TeXstudio)
-- [Vimtex](https://wiki.archlinux.org/index.php/Vim)
+- [TeXmaker](https://en.wikipedia.org/wiki/Texmaker)
+- [vim-latexsuite](https://wiki.archlinux.org/index.php/Vim)
+- sublime with latextool or latexing plugin
 - [Zotero](https://www.zotero.org/)
 
 ## Text editor
