@@ -672,7 +672,29 @@ control.
 
 ## FAFSA Applying for Aid
 
+### Preparation
+
 - Need [tax transcript](https://www.irs.gov/Individuals/Get-Transcript)
+
+### Terminology
+
+- Free Application for Federal Student Aid (FAFSA)
+- Financial Aid Office (FAO)
+- Student Aid Report (SAR)
+- Expected Family Contribution (EFC)
+- Data Release Number (DRN): a four-digit reference number that appears
+  on page one. If you want to send your FAFSA/SAR results to schools
+  that you did not indicate on your FAFSA filing, then you will need
+  this number for reference when contacting the school so they can
+  receive your information.
+
+
+### Pay Attention
+
+- Asterisk (*) will be verified
+- "C Code" or "C flag": the information for the student entered on the
+  FAFSA is a mismatch with the Social Security Administration (SSA)
+  database.
 
 ## How to replay your Loans
 
