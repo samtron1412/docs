@@ -23,8 +23,22 @@ despeckle, dither, draw on, flip, join, re-sample, and much more.
 
 ### Convert images to pdf
 
+https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf
+
 | Command                    | Description                     |
 | `convert *.jpg output.pdf` | multiple images to one pdf file |
+
+```bash
+# Convert images to pdf with same size
+# If the output images wrong direction, erase rotate 90
+convert -rotate 90 a.png b.png -compress jpeg -resize 1240x1753 \
+    -extent 1240x1753 -gravity center \
+    -units PixelsPerInch -density 150x150 multipage.pdf
+
+convert -compress jpeg -units PixelsPerInch -density 150x150 -rotate 90 tax-return-2016.JPG tax.pdf
+
+https://unix.stackexchange.com/questions/20026/convert-images-to-pdf-how-to-make-pdf-pages-same-size
+```
 
 ## identify
 
