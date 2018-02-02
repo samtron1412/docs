@@ -328,6 +328,8 @@ How to type fast:
   coreutils basic commands and displays stats
 - [netdata](https://github.com/firehol/netdata/wiki): A web-based real-
   time performance monitor.
+- bootchart
+- systemd-analyze
 
 ## System information viewers
 
