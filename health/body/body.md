@@ -216,6 +216,18 @@ mental retardation)
 
 - https://en.wikipedia.org/wiki/Hypotonia
 
+## Schizophrenia
+
+https://en.wikipedia.org/wiki/Schizophrenia
+
+## Alzheimer's disease
+
+https://en.wikipedia.org/wiki/Alzheimer%27s_disease
+
+## Parkinson's disease
+
+https://en.wikipedia.org/wiki/Parkinson%27s_disease
+
 # References
 
 1. [Healthy Eating Plate and Healthy Eating Pyramid][1]
