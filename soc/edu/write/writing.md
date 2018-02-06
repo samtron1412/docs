@@ -984,66 +984,6 @@ that my mother never had.
 
 ## Graduate levels
 
-# Tips and Tricks
-
-## Personality vocabulary
-
-| Word/Phrase            | Meaning                                                                                                  |
-| -                      | -                                                                                                        |
-| to bend over backwards | to try very hard to help someone                                                                         |
-| broad-minded           | prepared to accept other views or behaviors                                                              |
-| easy-going             | relaxed and not easily worried about anything                                                            |
-| fun-loving             | to enjoy having fun                                                                                      |
-| good company           | enjoyable to socialize with                                                                              |
-| good sense of humor    | the ability to understand what is funny                                                                  |
-| introvert              | someone who is shy                                                                                       |
-| to lose one's temper   | to suddenly become angry                                                                                 |
-| to put others first    | to think of others before yourself                                                                       |
-| self-assured           | confident                                                                                                |
-| self-confident         | believes in one's own ability or knowledge                                                               |
-| thick-skinned          | not easily affected by criticism                                                                         |
-| two-faced              | not honest or sincere. Will say one thing to someone to their face and another when they are not present |
-
-
-## Position of `sometimes`
-
-IMHO, meaning of your sentence depends on where you put the word
-"sometimes". Wherever you put it, it'll emphasise the words following
-it. I would interpret it as follows:
-
-- **SOMETIMES it's good to go to the church** or **It's SOMETIMES good
-  to go to the church** [implies a continuation like "...rather than
-  stay in bed until noon"; here "SOMETIMES" relates to "good to go"].
-  (`This is more common`)
-
-- "It's good to go SOMETIMES to the church" ["...and sometimes to the
-  mosque", here "SOMETIMES" refers to "the church"].
-
-- "It's good to go to the church SOMETIMES" ["... but not too often",
-  "SOMETIMES" acts on its own]
-
-**Some examples**
-
-```
-I [always / usually / often / frequently / regularly / generally] like to answer questions about adverbs.
-I have [always / usually / often / frequently / regularly / generally] liked to answer questions about adverbs.
-I can [always / usually / often / frequently / regularly / generally] answer questions about adverbs.
-I am [always / usually / often / frequently / regularly / generally] eager to answer questions about adverbs.
-```
-
-You can add sometimes to any of the four lists above, but not to any of
-the four below.
-
-```
-I do not [always / usually / often / frequently / regularly / generally] answer questions about adverbs.
-I have not [always / usually / often / frequently / regularly / generally] answered questions about adverbs.
-I can't [always / usually / often / frequently / regularly / generally] answer questions about adverbs.
-I am not [always / usually / often / frequently / regularly / generally] eager to answer questions about adverbs.
-```
-
-You can place sometimes at the beginning of any of the eight examples
-above.
-
 # References
 
 [1]: http://www.loc.gov "The Library of Congress"
