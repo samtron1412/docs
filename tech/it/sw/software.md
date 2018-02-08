@@ -215,6 +215,7 @@ List of useful computer software.
 
 - obs: Free and open source software for video recording and live
   streaming
+- asciinema: record your terminal in text base form
 
 ## Optical media burning
 
