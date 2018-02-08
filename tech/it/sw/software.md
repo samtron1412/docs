@@ -255,6 +255,7 @@ List of useful computer software.
 ### Disk cleaning
 
 - [bleachbit](http://www.bleachbit.org/)
+- rmlint
 
 ### Disk usage display
 
