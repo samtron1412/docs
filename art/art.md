@@ -4,8 +4,8 @@
 
 ## What?
 
-To be human, we have a bility to create. The urge to make and enjoy what
-we call art.
+To be human, we have an ability to create. The urge to make and enjoy
+what we call art.
 - Not "understood", let's "feel" or "experience"
 
 Art: gesture, dance, draw, speak, sing, write, build
@@ -28,7 +28,7 @@ with skill, through the use of a medium.
 
 - One of my different ways to calm myself and to release stress
     + Maybe it doesn't need too much energy to feel art
-    + My body realease chemical to comfort my mind
+    + My body releases chemicals to calm my mind
 - Helping me aware of my existing in present
     + from the common to the forbidden, the mundane to the sacred, the
       repugnant to the sublime.
