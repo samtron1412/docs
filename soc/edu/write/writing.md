@@ -832,7 +832,7 @@ Let me know if you need anything else
 Drop me a line if I can do anything else for you.
 
 
-# Write a personal statement
+# Personal Statement
 
 ## Scholarship
 
@@ -983,6 +983,28 @@ that my mother never had.
 ## Undergraduate levels
 
 ## Graduate levels
+
+# Statement of Purpose
+
+| Statement of Purpose                                                                                      | Personal Statement                                                                                                                                                                                    |
+| -                                                                                                         | -                                                                                                                                                                                                     |
+| It has a sharper focus. It should show that you have a strong sense of purpose in applying to the program | It gives you more freedom than a statement of purpose (both skills and character)                                                                                                                     |
+| Why do you want to pursue the program? What are your relevant qualifications/experiences/current work?    | What drives your? What makes you stand out from others? Extenuating circumstances, personal challenges (e.g. financial hardship, disabilities) overcome, or just a discussion of what makes them tick |
+
+You may want to write about experiences directly related to the graduate
+program and go into detail about why you are choosing a specific
+program.
+- Other factors like location of the school or internship opportunities
+- Information about particular classes, GPA, academic and professional
+  achievements
+- Professors whose work you admire or whose work aligns with your own
+  research goals
+- Your short and long term goals
+- Avoid writing about anything not directly related to the program.
+    + For example, if you are applying to a program i Materials Science,
+      don't start the essay with an anecdote about running a marathon or
+      spend a paragraph writing about your experience volunteering at a
+      homeless shelter.
 
 # References
 
