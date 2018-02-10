@@ -189,6 +189,10 @@ List of useful computer software.
 - [puddletag](https://en.wikipedia.org/wiki/Puddletag)
 - id3v2, id3
 
+### Sound editor
+
+- audacity
+
 ## Mobile phone managers
 
 ## Video
