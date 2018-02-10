@@ -56,3 +56,8 @@ Five traits that seem to define creativity
    competencies seem unrelated.
 5. Experimenting: exploring new possibilities by trying them out,
    building models, and taking them apart for further improvement.
+
+Questions
+- What do you see?
+- What do you think?
+- How do you feel?
