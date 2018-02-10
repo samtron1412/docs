@@ -61,3 +61,20 @@ Questions
 - What do you see?
 - What do you think?
 - How do you feel?
+
+# Famous works of art
+
+## Painting in Chauvet Cave
+
+France. These images are the oldest paintings (30,000 BCE)
+
+## Stonehenge
+
+2,000 - 1,500 BCE, Salisbury Plain, England
+
+
+
+# References
+
+[text-book]: Preble's Artforms, Eleventh Edition
+
