@@ -4,6 +4,11 @@
 
 ## What?
 
+To me, art is
+- a product of my skills and imagination (thinking abilities)
+- it makes me feel excited, passionate, and rewarded
+- it connects me with my "ideal" world
+
 To be human, we have an ability to create. The urge to make and enjoy
 what we call art.
 - Not "understood", let's "feel" or "experience"
