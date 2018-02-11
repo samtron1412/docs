@@ -83,6 +83,30 @@ France. These images are the oldest paintings (30,000 BCE)
 
 Barcelona, Spain
 
+# Museums
+
+## Louvre - Paris
+
+## Smithsonian Institution, Washington, D.C.
+
+## The Acropolis Museum, Athens, Greece
+
+## State Hermitage, St. Petersburg, Russia
+
+## The British Museum, London, England
+
+## The Prado, Madrid, Spain
+
+## The Metropolitan Museum of Art, New York City, New York
+
+## The Vatican Museums, Vatican City, Italy
+
+## Tokyo National Museum
+
+## Egyptian Museum
+
+## Rijksmuseum, Amsterdam, the Netherlands
+
 # References
 
 [text-book]: Preble's Artforms, Eleventh Edition
