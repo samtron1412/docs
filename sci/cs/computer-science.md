@@ -126,6 +126,15 @@
 
 - [Open Source Society University](https://github.com/open-source-society/computer-science)
 
+# Computer Science schools
+
+In no particular order
+- University of California, Berkeley
+- Stanford
+- Massachusetts Institute of Technology
+- Carnegie Mellon
+- California Institute of Technology
+
 # References
 
 [halting-problem]: https://en.wikipedia.org/wiki/Halting_problem "Wikipedia - Halting problem"
