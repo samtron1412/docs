@@ -121,10 +121,6 @@ All documents about writing.
 
 ### poli - politics
 
-### skill - soft skills
-
-All documents about soft-skills such as public speaking, productivity,
-etc.
 
 ## spi - spirituality
 
