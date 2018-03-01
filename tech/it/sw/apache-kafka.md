@@ -245,6 +245,8 @@ stored in Kafka.
 
 ## Concepts
 
+### Common
+
 - Windowing, stateless processing, stateful processing
 - A stream is an unbounded sequence of structured data
   (events/facts/messages/discrete entries). A long-running never-ending
@@ -256,7 +258,7 @@ stored in Kafka.
       the user profile.
 - stream <=> table: duality
 
-#### Stream Proccessing Topology
+### Stream Proccessing Topology
 
 - A stream processing application
     + using the Kafka Streams library
@@ -278,10 +280,90 @@ stored in Kafka.
             - sink processor(s): no down-stream processors
                 + send records from its up-stream processors to a
                   specified Kafka topic
+- Kafka Streams offers two ways to define the stream processing topology
+    + 2 APIs
+    + Streams DSL
+        * A high-level API that provides the most common data
+          transformation operatiions: `map`, `filter`, `join`, and
+          `aggregations`
+    + Processor API
+        * A low-level API that lets you add and connect processors as
+          well as interact directly with state stores
+        * more flexible, more manual work
+- At runtime, the logical topology is instantiated and replicated inside
+  the application for parallel processing.
 
-## Architecture
+### Time
 
-Something
+Common notions of time in streams:
+
+- Event time: the point in time when an event or data record occurred
+- Processing time: the point in time when the event or data record
+  happens to be processed by the stream processing application
+    + later than the original event time
+- Ingestion time: the point in time when an event or data record is
+  stored in a topic partition by a Kafka broker
+
+The choice between event-time and ingestion-time is actually done
+through the configuration of Kafka
+
+- From Kafka 0.10.x onwards, timestamps are automatically embedded into
+  Kafka messages
+- The Kafka configuration setting can be specified on the broker level
+  or per topic.
+
+Kafka Streams assigns a timestamp to every data record via the
+`TimesampExtractor` interface.
+
+- These per-record timestamps describe the progress of a stream with
+  regards to time and are leveraged by time-dependent operations such as
+  window operations
+- As a result, this time will only advance when a new record arrives at
+  the processor.
+- We call this data-driven time the stream time of the application to
+  differentiate with the wall-clock time when this application is
+  actually executing
+
+### States
+
+States allow join input streams, group and aggregate data records.
+
+- Kafka Streams provides *state stores* which can be used by stream
+  processing applications to store and query data.
+- implementing stateful operations
+- Every task in Kafka Streams embeds one or more state stores that can
+  be accessed via APIs to store and query data required for processing.
+- These state stores can either be
+    + a persistent key-value store
+    + an in-memory hashmap
+    + other convenient data structure
+- Kafka Streams offers fault-tolerance and automatic recovery for local
+  state stores
+
+Kafka Streams allows direct read-only queries of the state stores by
+methods, threads, processes or applications external to the stream
+processing application that created the state stores.
+
+- A feature called *Interactive Queries*
+
+### Processing Guarantees
+
+Prior to 0.11.0.0, Kafka only provides *at-least-once* delivery
+guarantees
+
+- end-to-end exactly-once semantics: does my stream processing system
+  guarantee that each record is processed once and only once, even if
+  some failures are encountered in the middle of processing?
+- Since the 0.11.0.0 release, Kafka has added support to allow its
+  producers to send messages to different topic partitions in a
+  transactional and idempotent manner
+    + hence, Kafka Streams has added the end-to-end exactly-once
+      semantics
+    + Kafka Streams guarantees that for any record read from the source
+      Kafka topics, its processing results will be reflected exactly
+      once in the outputKafka topic as well as in the state stores fro
+      stateful operations
+
 
 ## Developer Guide
 
