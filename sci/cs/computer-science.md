@@ -135,6 +135,19 @@ In no particular order
 - Carnegie Mellon
 - California Institute of Technology
 
+# Computer Science Communities
+
+- [Association for Computing Machinery][acm]
+- [IEEE Computer Society][ieeecs]
+- [Institute of Electrical and Electronics Engineeers][ieee]
+- [Association for the Advancement of Artificial Intelligence][aaai]
+- [Apache Software Foundation][apache]
+
 # References
 
 [halting-problem]: https://en.wikipedia.org/wiki/Halting_problem "Wikipedia - Halting problem"
+[acm]: https://en.wikipedia.org/wiki/Association_for_Computing_Machinery
+[ieeecs]: https://en.wikipedia.org/wiki/IEEE_Computer_Society
+[ieee]: https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers
+[aaai]: https://en.wikipedia.org/wiki/Association_for_the_Advancement_of_Artificial_Intelligence
+[apache]: https://en.wikipedia.org/wiki/Apache_Software_Foundation
