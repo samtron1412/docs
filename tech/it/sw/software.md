@@ -166,6 +166,8 @@ List of useful computer software.
 #### Vector graphics - illustration
 
 - Inkscape: alternative for Illustrator, CorelDraw
+- yed: diagrams
+- dia: diagrams
 
 ### Screen capture (screenshot)
 
