@@ -7,6 +7,10 @@ A database is **a collection of related data**. By data, we mean known facts tha
 - A database represents some aspect of the real world, sometimes called the mini world or the **universe of discourse** (UoD). Changes to the mini world are reflected in the database.
 - A database is a **logically coherent collection** of data with some **inherent meaning**. A **random assortment of data** cannot correctly be referred to as a database.
 - A database is designed, built, and populated with data for a specific purpose. It has an intended group of users and some preconceived applications in which these users are interested.
+- Common implementation:
+    + database: collection of tables
+    + table: collection of records
+    + record: collection of fields
 
 A **database management system** (**DBMS**) is a collection of programs that enables users to create and maintain a database. The DBMS is a *general-purpose software system* that facilitates the processes of `defining`, `constructing`, `manipulating`, and `sharing` database among various users and applications.
 - **Defining** a database involves specifying the *data types*, *structures*, and *constraints* of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called **meta-data**.
