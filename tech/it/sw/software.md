@@ -526,5 +526,11 @@ How to type fast:
 - intellij-idea-community-version: Java, Kotlin
 - liteide: Go
 
+## Issue tracking systems
+
+- Redmine
+- Flyspray
+- Bugzilla
+- JIRA
 
 # Security Tools
