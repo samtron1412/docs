@@ -331,8 +331,6 @@ States allow join input streams, group and aggregate data records.
 - Kafka Streams provides *state stores* which can be used by stream
   processing applications to store and query data.
 - implementing stateful operations
-- Every task in Kafka Streams embeds one or more state stores that can
-  be accessed via APIs to store and query data required for processing.
 - These state stores can either be
     + a persistent key-value store
     + an in-memory hashmap
@@ -364,6 +362,100 @@ guarantees
       once in the outputKafka topic as well as in the state stores fro
       stateful operations
 
+## Architecture
+
+### Stream Partitions and Tasks
+
+Kafka Streams uses the concepts of *partitions* and *tasks* as logical
+units of its parallelism model based on Kafka *topic partitions*
+
+- each *stream partition* is a totally ordered sequence of data records
+  and maps to a Kafka topic partition
+- a *data record* in the stream maps to a Kafka *message* from that
+  topic
+- the *keys* of data records determine the partitioning of data in both
+  Kafka and Kafka Streams, i.e. how data is routed to specific
+  partitions within topics
+
+An application's processor topology is scaled by breaking it into
+multiple tasks
+- Each *task* is a part of the processor topology
+- Kafka Streams creates a fixed number of tasks based on the input
+  stream partitions for the application
+    + each task assigned a list of partitions from the input streams
+      (Kafka topics)
+    + The assignment of partitions to tasks never changes so that each
+      task is a fixed unit of parallelism of the application
+- Tasks can instantiate their own processor topology based on the
+  assigned partitions
+    + They also maintain a buffer for each of its assigned partitions
+      and process messages one-at-a-time from these record buffers.
+    + As a result stream tasks can be processed independently and in
+      parallel without manual intervention
+- Multiple instances of the application are executed either on the same
+  machine, or spread across multiple machines and tasks can be
+  distributed automatically by the Kafka Streams library to those
+  running application instances.
+    + The assignment of partitions to tasks never changes; if an
+      application instance fails, all its assigned tasks will be
+      automatically restarted on other instances and continue to consume
+      from the same stream partitions.
+
+### Threading Model
+
+Kafka Streams allows the user to configure the number of threads that
+the library can use to parallelize processing within an application
+instance.
+
+- Each thread can execute one or more tasks with their processor
+  topologies independently
+- There is no shared state among the threads, so no interthread
+  coordination is necessary
+- The assignment of Kafka topic partitions among the various stream
+  threads is transparently handled by Kafka Streams leveraging Kafka's
+  coordination functionality
+
+### Local State Stores
+
+The Kafka Streams DSL APIs automatically creates and manages such state
+stores when you are calling stateful operators such as `join()` or
+`aggregate()`, or when you are windowing a stream
+
+- Every task in Kafka Streams embeds one or more state stores that can
+  be accessed via APIs to store and query data required for processing.
+
+### Fault Tolerance
+
+Tasks in Kafka Streams leverage the fault-tolerance capability offered
+by the Kafka consumer client to handle failures.
+
+- If a task runs on a machine that fails, Kafka Streams automatically
+  restarts the task in one of the remaining running instances of the
+  application
+- For each state store, it maintains a replicated changelog Kafka topic
+  in which it tracks any state updates.
+    + These changelog topics are partitioned as well so that each local
+      state store instance, and hence the task accessing the store, has
+      its own dedicated changelog topic partition.
+    + Log compaction is enabled on the changelog topics so that old data
+      can be purged safely to prevent the topics from growing
+      indefinitely.
+    + If tasks run on a machine that fails and are restarted on another
+      machine, Kafka Streams guarantees to restore their associated
+      state stores to the content before the failure by replaying the
+      corresponding changelog topics prior to resuming the processing on
+      the newly started tasks.
+- The cost of task (re)initialization typically depends primarily on the
+  time for restoring the state by replaying the state stores' associated
+  changelog topics.
+    + To minimize this restoration time, users can configure their
+      applications to have *standby replicas* of local states (i.e.
+      fully replicated copies of the state).
+    + When a task migration happens, Kafka Streams then attempts to
+      assign a task to an application instance where such a standby
+      replica already exists in order to minimize the task
+      (re)initialization cost.
+    + `num.standby.replicas`
 
 ## Developer Guide
 
