@@ -613,3 +613,14 @@ execution configuration values as defined in `StreamConfig`.
 - `StreamsConfig.APPLICATION_ID_CONFIG`: a unique identifier of the
   Streams application to distinguish itself with other applications
   talking to the same Kafka cluster
+
+# Command Line Tools
+
+## Delete a topic
+
+Set `delete.topic.enable=true` in `server.properties`
+
+then you can run this command:
+
+`bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test`
+
