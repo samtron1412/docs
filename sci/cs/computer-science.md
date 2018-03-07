@@ -143,6 +143,22 @@ In no particular order
 - [Association for the Advancement of Artificial Intelligence][aaai]
 - [Apache Software Foundation][apache]
 
+# Conferences
+
+## List of conferences
+
+- [Guide2Research][g2r]
+- [Wikipedia - List of CS conf][wiki-conf]
+- [CS conf][csconf]
+- [CS conference search][confsearch]
+- [Awesome conferences][awesome]
+- [dblp][dblp]
+
+## Next conferences
+
+- [Open source convention](https://conferences.oreilly.com/oscon/oscon-or)
+
+
 # References
 
 [halting-problem]: https://en.wikipedia.org/wiki/Halting_problem "Wikipedia - Halting problem"
@@ -151,3 +167,9 @@ In no particular order
 [ieee]: https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers
 [aaai]: https://en.wikipedia.org/wiki/Association_for_the_Advancement_of_Artificial_Intelligence
 [apache]: https://en.wikipedia.org/wiki/Apache_Software_Foundation
+[awesome]: https://github.com/watson/conferences
+[dblp]: http://dblp.uni-trier.de/
+[confsearch]: http://confsearch.org/confsearch/faces/index.jsp
+[g2r]: http://www.guide2research.com
+[csconf]: https://csconf.net/
+[wiki-conf]: https://en.wikipedia.org/wiki/List_of_computer_science_conferences
