@@ -1662,6 +1662,22 @@ for (double element : values)
 }
 ```
 
+# Java 8
+
+## Lambda Expressions
+
+- Syntax
+    + `parameter -> expression body`
+    + *optional type declaration*: no need to declare the type of a
+      parameter. The compiler can inference the same from the value of
+      the parameter
+    + *optional parenthesis around parameter*: for multiple parameters,
+      parentheses are required
+    + *optional curly braces*: no need to use curly braces in expression
+      body if the body contains a single statement
+    + *optional return keyword*: the compiler automatically returns the
+      value if the body has a single expression to return the value
+
 # Tips & Tricks
 
 ## Redirection of Input and Output
