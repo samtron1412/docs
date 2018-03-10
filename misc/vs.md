@@ -255,3 +255,16 @@ behavior to match an existing target.
 | Speed             | Generally from 8 MHz - 200 MHz                                                                   | Generally above 1 GHz                                           |
 | Power consumption | Are designed to consume less power                                                               | Consume relative more power                                     |
 | Cost              | Affordable and cheap                                                                             | Very expensive and requires other peripherals                   |
+
+# feeling vs emotion vs mood vs temperament vs personality trait
+
+- feeling: conscious subjective experience of emotion
+- emotion: conscious experience characterized by intense mental activity
+  and a certain degree of pleasure or displeasure
+- mood: an emotional state; in contrast to emotions, feelings, it is
+  less specific, less intense and less likely to be provoked or
+  instantiated by a particular stimulus or event
+- temperament: refers to those aspects of an individual's personality,
+  such that are often regarded as biological based (innate) rather than
+  learned
+- personality trait: habitual patterns of behavior, thought, and emotion
