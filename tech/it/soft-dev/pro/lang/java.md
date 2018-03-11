@@ -1484,6 +1484,15 @@ The automatically generated hashCode() method is used to determine where
 to store the object internally.
 - Whenever you implement equals, you MUST also implement hashCode.
 
+## Plain Old Java Object (POJO)
+
+POJO refers to a Java object (instance of definition) that isn't bogged
+down by framework extensions.
+
+- Simplify code
+- To better testing, flexibility, and ability to make new decisions in
+  the future
+
 # Data Structures
 
 ## Primitive types
