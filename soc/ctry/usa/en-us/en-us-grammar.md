@@ -79,6 +79,9 @@ A lot of adjectives are made from verbs by adding -ing or -ed:
 
 #### -ing adjectives
 
+Adjectives that end "-ing" describe the thing that causes the emotion -
+a boring lesson makes you feel bored.
+
 The commonest -ing adjectives are: amusing, shocking, surprising,
 frightening, interesting, disappointing, exciting tiring, worrying,
 boring, terrifying, annoying.
@@ -90,6 +93,9 @@ boring, terrifying, annoying.
     That Dracula film was absolutely **terrifying**.
 
 #### -ed adjectives
+
+Adjectives that end "-ed" describe emotions - they tell us how people
+feel about something
 
 The commonest -ed adjectives are: annoyed, bored, frightened, worried,
 tired, closed, excited, delighted, disappointed.
