@@ -754,6 +754,337 @@ complex than extending from the Thread class. However, implementing the
 Runnable interface is the preferred way to start a Thread because it
 enables you to extend from another class, as well.
 
+## Annotations
+
+### Introduction
+
+Annotations are a form of metadata and provide information for the
+compiler. Annotations have no direct effect on the operation of the code
+they annotate.
+
+Annotations have a number of uses:
+
+- Information for the compiler: it can be used by the compiler to detect
+  errors or suppress warnings
+- Compile-time and deployment-time processing: software tools can
+  process annotation information to generate code, XML files, and so
+  forth.
+- Runtime processing: some annotations are available to be examined at
+  runtime
+
+### Annotation Basics
+
+- Format: `@Annotation`
+- Can include *elements*: `@Author(name = "Ben", date = "3/2/2002")`
+- Annotations can be applied to declarations
+    + classes
+    + fields
+    + methods
+    + other program elements
+- Replacing comments (easy to maintain comments)
+
+### Declaring an Annotation Type
+
+Suppose that a software group traditionally starts the body of every
+class with comments providing important information:
+
+```java
+public class Generation3List extends Generation2List {
+
+   // Author: John Doe
+   // Date: 3/17/2002
+   // Current revision: 6
+   // Last modified: 4/12/2004
+   // By: Jane Doe
+   // Reviewers: Alice, Bill, Cindy
+
+   // class code goes here
+
+}
+```
+
+To add this same metadata with an annotation, you must first define the
+*annotation type*.
+
+```java
+@interface ClassPreamble {
+   String author();
+   String date();
+   int currentRevision() default 1;
+   String lastModified() default "N/A";
+   String lastModifiedBy() default "N/A";
+   // Note use of array
+   String[] reviewers();
+}
+```
+
+After the annotation type is defined, you can use annotations of that
+type, with the values filled in, like this:
+
+```java
+@ClassPreamble (
+   author = "John Doe",
+   date = "3/17/2002",
+   currentRevision = 6,
+   lastModified = "4/12/2004",
+   lastModifiedBy = "Jane Doe",
+   // Note array notation
+   reviewers = {"Alice", "Bob", "Cindy"}
+)
+public class Generation3List extends Generation2List {
+
+// class code goes here
+
+}
+```
+
+To make the information in `@ClassPreamble` appear in javadoc-generated
+documentation, you must annotate the `@ClassPreamble` definition with
+the `@Documented` annotation:
+
+```java
+// import this to use @Documented
+import java.lang.annotation.*;
+
+@Documented
+@interface ClassPreamble {
+
+   // Annotation element definitions
+
+}
+```
+
+### Predefined Annotation Types
+
+Java SE API
+
+#### Annotation Types Used by the Java Compiler
+
+`java.lang`: `@Deprecated, @Override, @SuppressWarnings`
+
+- `@Deprecated`: it marks the element is deprecated and should no longer
+  be used.
+    + The compiler generates a warning whenever a program uses a method,
+      class, or field with the `@Deprecated` annotation.
+    + The deprecated elements should also be documented using the
+      Javadoc `@deprecated` tag
+
+```java
+   // Javadoc comment follows
+    /**
+     * @deprecated
+     * explanation of why it was deprecated
+     */
+    @Deprecated
+    static void deprecatedMethod() { }
+}
+```
+
+- `@Override`: it informs the compiler that the element is meant to
+  override an element declared in a superclass.
+- `@SuppressWarnings`: it tells the compiler to suppress specific
+  warnings that it would otherwise generate.
+    + two categories: `deprecation` and `unchecked`
+    + `unchecked` can occur when interfacing with legacy code written
+      before the advent of generics
+    + multiple categories: `@SuppressWarnings({"unchecked", "deprecation"})`
+
+```java
+   // use a deprecated method and tell
+   // compiler not to generate a warning
+   @SuppressWarnings("deprecation")
+    void useDeprecatedMethod() {
+        // deprecation warning
+        // - suppressed
+        objectOne.deprecatedMethod();
+    }
+```
+
+#### Annotations That Apply to Other Annotations
+
+`meta-annotations` defined in `java.lang.annotation`
+
+- `@Retention`: it specifies how the marked annotation is stored
+    + `RetentionPolicy.SOURCE` - is retained only in the source level
+      and is ignored by the compiler
+    + `RetentionPolicy.CLASS` - is retained by the compiler at compile
+      time, but is ignored by the JVM
+    + `RetentionPolicy.RUNTIME` - is retained by the JVM so it can be
+      used by the runtime environment
+- `@Documented`: it indicates that whenever the specified annotation is
+  used those elements should be documented using the Javadoc tool
+- `@Target`: it restricts what kind of Java elements the annotation can
+  be applied to.
+    + `ElementType.ANNOTATION_TYPES` can be applied to an annotation
+      type
+    + `ElementType.CONSTRUCTOR`
+    + `ElementType.FIELD`
+    + `ElementType.LOCAL_VARIABLE`
+    + `ElementType.METHOD`
+    + `ElementType.PACKAGE`
+    + `ElementType.PARAMETER`
+    + `ElementType.TYPE`
+- `@Inherited`: it indicates that the annotation type can be inherited
+  from the super class.
+    + When the user queries the annotation type and the class has no
+      annotation for this type, the class' superclass is queried for the
+      annotation type.
+    + applies only to class declarations
+- `@Repeatable` it is introduced in Java SE 8, indicates that the marked
+  annotation can be applied more than once to the same declaration or
+  type use
+
+### Type Annotations and Pluggable Type Systems
+
+Before the Java SE 8 release, annotations could only be applied to
+declarations. As of the Java SE 8 release, annotations can also be
+applied to any `type use`.
+
+- This means that annotations can be used anywhere you use a type
+- class instance creation expressions (new)
+- casts
+- `implements` clauses
+- `throws` clauses
+- ensuring stronger type checking
+
+The Java SE 8 does not provide a type checking framework, but it allows
+you to write (or download) a type checking framework that is implemented
+as one or more pluggable modules that are used in conjunction with the
+Java compiler.
+
+For example, you want to ensure that a particular variable in your
+program is never assigned to null; you want to avoid triggering a
+`NullPointerException`. You can write a custom plug-in to check for
+this. You would then modify your code to annotate that particular
+variable, indicating that it is never assigned to null. The variable
+declaration might look like this:
+
+```java
+@NonNull String str;
+```
+
+When you compile the code, including the NonNull module at the command
+line, the compiler prints a warning if it detects a potential problem,
+allowing you to modify the code to avoid the error. After you correct
+the code to remove all warnings, this particular error will not occur
+when the program runs.
+
+You can use multiple type-checking modules where each module checks for
+a different kind of error. In this way, you can build on top of the Java
+type system, adding specific checks when and where you want them.
+
+With the judicious use of type annotations and the presence of pluggable
+type checkers, you can write code that is stronger and less prone to
+error.
+
+In many cases, you do not have to write your own type checking modules.
+There are third parties who have done the work for you. For example, you
+might want to take advantage of the Checker Framework created by the
+University of Washington. This framework includes a NonNull module, as
+well as a regular expression module, and a mutex lock module.
+
+### Repeating Annotations
+
+#### Creating and Using Annotation Type
+
+For example, you are writing code to use a timer service that enables
+you to run a method at a given time or on a certain schedule, similar to
+the UNIX `cron` service. Now you want to set a timer to run a method,
+`doPeriodicCleanup`, on the last day of the month and on every Friday at
+11:00 p.m. To set the timer to run, create an `@Schedule` annotation and
+apply it twice to the `doPeriodicCleanup` method. The first use
+specifies the last day of the month and the second specifies Friday at
+11p.m., as shown in the following code example:
+
+```java
+@Schedule(dayOfMonth="last")
+@Schedule(dayOfWeek="Fri", hour="23")
+public void doPeriodicCleanup() { ... }
+```
+
+The previous example applies an annotation to a method. You can repeat
+an annotation anywhere that you would use a standard annotation. For
+example, you have a class for handling unauthorized access exceptions.
+You annotate the class with one @Alert annotation for managers and
+another for admins:
+
+```java
+@Alert(role="Manager")
+@Alert(role="Administrator")
+public class UnauthorizedAccessException extends SecurityException { ... }
+```
+
+For compatibility reasons, repeating annotations are stored in a
+container annotation that is automatically generated by the Java
+compiler. In order for the compiler to do this, two declarations are
+required in your code.
+
+**Step 1: Declare a Repeatable Annotation Type**
+
+The annotation type must be marked with the `@Repeatable` meta-
+annotation. The following example defines a custom `@Schedule`
+repeatable annotation type:
+
+```java
+import java.lang.annotation.Repeatable;
+
+@Repeatable(Schedules.class)
+public @interface Schedule {
+  String dayOfMonth() default "first";
+  String dayOfWeek() default "Mon";
+  int hour() default 12;
+}
+```
+
+The value of the `@Repeatable` meta-annotation, in parentheses, is the
+type of the container annotation that the Java compiler generates to
+store repeating annotations. In this example, the containing annotation
+type is Schedules, so repeating `@Schedule` annotations is stored in an
+`@Schedules` annotation.
+
+Applying the same annotation to a declaration without first declaring it
+to be repeatable results in a compile-time error.
+
+**Step 2: Declare the Containing Annotation Type**
+
+The containing annotation type must have a value element with an array
+type. The component type of the array type must be the repeatable
+annotation type. The declaration for the Schedules containing annotation
+type is the following:
+
+```java
+public @interface Schedules {
+    Schedule[] value();
+}
+```
+
+### Retrieving Annotations
+
+There are several methods available in the Reflection API that can be
+used to retrieve annotations. The behavior of the methods that return a
+single annotation, such as `AnnotatedElement.getAnnotation(Class<T>)`,
+are unchanged in that they only return a single annotation if one
+annotation of the requested type is present. If more than one annotation
+of the requested type is present, you can obtain them by first getting
+their container annotation. In this way, legacy code continues to work.
+Other methods were introduced in Java SE 8 that scan through the
+container annotation to return multiple annotations at once, such as
+`AnnotatedElement.getAnnotationsByType(Class<T>)`. See the
+`AnnotatedElement` class specification for information on all of the
+available methods.
+
+### Design Considerations
+
+When designing an annotation type, you must consider the *cardinality*
+of annotations of that type. It is now possible to use an annotation
+zero times, once, or, if the annotation's type is marked as
+`@Repeatable`, more than once. It is also possible to restrict where an
+annotation type can be used by using the `@Target` meta-annotation. For
+example, you can create a repeatable annotation type that can only be
+used on methods and fields. It is important to design your annotation
+type carefully to ensure that the programmer using the annotation finds
+it to be as flexible and powerful as possible.
+
 # Data Structures
 
 ## Primitive types
