@@ -2,6 +2,8 @@
 
 # Overview
 
+## Introduction
+
 Java is a general-purpose computer programming language that is
 **concurrent**, **class- based**, **object-oriented**, and specifically
 designed to have *as few implementation dependencies as possible*.
@@ -80,74 +82,19 @@ The JCP is the mechanism for developing standard technical
 specifications for Java technology.
 
 
-# Practices
+## Resources
 
-## Documentation
+### Books
 
-Using javadoc utility:
-- It starts with a `/**`
-- Then you describe the method's purpose.
-- Then, for each argument, you supply a line that starts with `@param`,
-  followed by the name of the variable that holds the argument. Supply a
-  short explanation for each argument after the variable name.
-- Supply a line that starts with `@return`, describing the return value.
+Something
 
-The `javadoc` utility copies the first sentence to each comment to a
-summary table. Therefore, it is best to write that first sentence with
-some care.
-- It should start with an uppercase and end with a period.
-- It does not have to be a grammatically complete sentence, but it
-  should be meaningful when it is pulled out of the comment and
-  displayed in a summary.
+# The Java Technology
 
-```java
-/**
- * Withdraws money from the bank account.
- * @param amount the amount to withdraw
- */
-public void withdraw(double amount)
-{
-    // TODO
-}
-
-/**
- * Gets the current balance of the bank account.
- * @return the current balance
- */
-public double getBalance()
-{
-    // TODO
-}
-```
-
->According to the standard Java documentation style, every class, every
-method, every parameter, and every return value should have a comment.
-
-### javadoc utility
-
-- Document one file: `javadoc MyClass.java`
-- Document multiple files: `javadoc *.java`
-- `javadoc` automatically provides hyperlinks to other classes and
-  methods.
-- You can run `javadoc` before implementing any methods.
-
->`javadoc` allows you to put the documentation together with your code.
-That way, when you update your programs, you can see right away which
-documentation needs to be updated.
-
-## Unit Testing
-
-A unit test verifies that a class works correctly in isolation, outside
-a complete program.
-
-A tester class is a class with a main method that contains statements to
-run methods of another class.
-- Construct one or more objects of the class that is being tested.
-- Invoke one or more methods.
-- Print out one or more results.
-- Print the expected results.
+Java code ==compiler==> Java bytecode ==JVM==> machine code
 
 ## [Platform](http://docs.oracle.com/javase/8/docs/index.html)
+
+### Introduction
 
 One characteristic of Java is **portability**, which means that computer
 programs written in the Java language must run similarly on any hardware
@@ -370,7 +317,114 @@ no longer in use.
   Protocol Technology (Java RMI-IIOP Technology) enable database access
   and manipulation of remote objects.
 
-# Syntax and Rules
+# Practices
+
+## Documentation
+
+Using javadoc utility:
+- It starts with a `/**`
+- Then you describe the method's purpose.
+- Then, for each argument, you supply a line that starts with `@param`,
+  followed by the name of the variable that holds the argument. Supply a
+  short explanation for each argument after the variable name.
+- Supply a line that starts with `@return`, describing the return value.
+
+The `javadoc` utility copies the first sentence to each comment to a
+summary table. Therefore, it is best to write that first sentence with
+some care.
+- It should start with an uppercase and end with a period.
+- It does not have to be a grammatically complete sentence, but it
+  should be meaningful when it is pulled out of the comment and
+  displayed in a summary.
+
+```java
+/**
+ * Withdraws money from the bank account.
+ * @param amount the amount to withdraw
+ */
+public void withdraw(double amount)
+{
+    // TODO
+}
+
+/**
+ * Gets the current balance of the bank account.
+ * @return the current balance
+ */
+public double getBalance()
+{
+    // TODO
+}
+```
+
+>According to the standard Java documentation style, every class, every
+method, every parameter, and every return value should have a comment.
+
+### javadoc utility
+
+- Document one file: `javadoc MyClass.java`
+- Document multiple files: `javadoc *.java`
+- `javadoc` automatically provides hyperlinks to other classes and
+  methods.
+- You can run `javadoc` before implementing any methods.
+
+>`javadoc` allows you to put the documentation together with your code.
+That way, when you update your programs, you can see right away which
+documentation needs to be updated.
+
+## Unit Testing
+
+A unit test verifies that a class works correctly in isolation, outside
+a complete program.
+
+A tester class is a class with a main method that contains statements to
+run methods of another class.
+- Construct one or more objects of the class that is being tested.
+- Invoke one or more methods.
+- Print out one or more results.
+- Print the expected results.
+
+# Language Basics and Packages
+
+## Loop
+
+- while, do while, for
+
+```java
+// This for each loop cannot modify the array
+// Use this for each loop to traverse the data
+for (double element : values)
+{
+    sum = sum + element;
+}
+```
+
+## Java API
+
+The Java API is a collection of classes and interfaces that have been
+written for you to use.
+- Once you locate the package you want to use, you need to import it
+into your code.
+
+## Variables
+
+### Local variables
+
+A local variables is a variable that is declared in the body of a
+method.
+- Parameter variables are similar to local variables, but they are
+  declared in method headers.
+- Local and parameter variables belong to methods. When a method runs,
+  its local and parameter variables come to life. When the method exits,
+  they are removed immediately.
+- In contrast, instance variables belong to objects, not methods. When
+  an object is constructed, its instance variables are created. The
+  instance variables stay alive until no method uses the object any
+  longer. (The Java virtual machine contains an garbage collector that
+  periodically reclaims objects when  they are no longer used.)
+- You must initialize all local variables
+- Instance variables are initialized with a default value before a
+  constructor is invoked.
 
 ## static
 
@@ -700,33 +754,173 @@ complex than extending from the Thread class. However, implementing the
 Runnable interface is the preferred way to start a Thread because it
 enables you to extend from another class, as well.
 
-# Technologies
+# Data Structures
 
-## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
+## Primitive types
 
-Java programming language program running on server, receive requests
-and can respond them.
+In Java, every value is either a reference to an object, or it belongs
+to one of the eight primitive types.
 
-## [JSP](https://en.wikipedia.org/wiki/JavaServer_Pages)
+### Number types
 
-Create dynamically generated web pages based on HTML, XML.
+| Type    | Description                                                                | Size    | Example      |
+| -       | -                                                                          | -       | -            |
+| int     | The integer type, range Integer.MIN_VALUE to Integer.MAX_VALUE             | 4 bytes | 1, 2, 3      |
+| byte    | The type describing a single byte, range -128 ... 127                      | 1 byte  |              |
+| short   | The short integer type, range -32,768 ... 32,767                           | 2 bytes |              |
+| long    | The long integer type                                                      | 8 bytes |              |
+| double  | The double-precision floating-point type                                   | 8 bytes | 0.1          |
+| float   | The single-precision floating-point type                                   | 4 bytes | 1E6, 2.96E-2 |
+| char    | The character type, representing code units in the Unicode encoding scheme | 2 bytes |              |
+| boolean | THe type with the two truth values false and true                          | 1 bit   |              |
 
-To deploy and run JSP, a compatible web server with a servlet container,
-such as [Apache Tomcat](http://tomcat.apache.org/) or
-[Jetty](http://www.eclipse.org/jetty/).
+When a value such as 6 or 0.335 occurs in a Java program, it is called a
+**number literal**.
 
-![Life of a JSP file](http://upload.wikimedia.org/wikipedia/commons/0/03/JSPLife.svg "Life of a JSP file")
+A numeric computation overflows if the result falls outside the range
+for the number type.
+- Using `BigInteger` type to prevent overflow errors.
 
-## Java API
+**Rounding errors** occur when an exact representation of a floating-
+point number is not possible.
+- Using `BigDecimal` type to prevent rounding errors.
 
-The Java API is a collection of classes and interfaces that have been
-written for you to use.
-- Once you locate the package you want to use, you need to import it
-into your code.
+Constants:
+- In a method: `final double NICKEL_VALUE = 0.05;`
+- In a class: `public static final double LITERS_PER_GALLON = 3.785;`
 
-## Data Structures
+Big Numbers:
 
-### ArrayList
+```java
+BigInteger n = new BigInteger("1000000");
+BigInteger r = n.multiply(n);
+System.out.println(r);
+
+BigDecimal d = new BigDecimal("4.35");
+BigDecimal e = new BigDecimal("100");
+BigDecimal f = d.multiply(e);
+System.out.println(f);
+```
+
+Any number that is not completely self-explanatory should be declared as
+a named constant. Or write comments to explain its functions and why you
+choose them.
+
+Mathematical methods
+
+| Method            | Returns                      | Method            | Returns                      |
+| -                 | -                            | -                 | -                            |
+| Math.sqrt(x)      | Square root of x             | Math .abs(x)      | Absolute value               |
+| Math.pow(x, y)    | x to the y                   | Math.max(x, y)    | The larger                   |
+| Math.sin(x)       | Sine of x (radian)           | Math.min(x, y)    | The smaller                  |
+| Math.cos(x)       | Cosine                       | Math.exp(x)       | e to the x                   |
+| Math.tan(x)       | Tangent                      | Math.log(x)       | Natural log                  |
+| Math.round(x)     | Closest integer              | Math.log10(x)     | Decimal log                  |
+| Math.ceil(x)      | Smallest integer >= x        | Math.floor(x)     | Largest integer <= x         |
+| Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
+
+## String
+
+### String operations
+
+| Statement                                                | Result               | Comment                                                                                                                                |
+| -                                                        | -                    | -                                                                                                                                      |
+| String str = "Ja"; str = str + "va";                     | str is set to "Java" | When applied to strings, + denotes concatenation                                                                                       |
+| String greeting = "H & S"; int n = greeting.length();    | n is set to 5        | Each space counts as one character                                                                                                     |
+| str.charAt(1)                                            |                      |                                                                                                                                        |
+| String str = "Sally"; String str2 = str.substring(1, 4); | str2 is set to "all" | Extracts the substring starting at position 1 and ending before position 4 (starting with first good data and end with first bad data) |
+
+### Reading Exception Reports
+
+1. The name of the exception, such as `StringIndexOutOfBoundsException`
+2. The line number of the code that contained the statement that caused
+   the exception, such as `Homework1.java:16`
+
+The name of the exception is always in the first line of the report, and
+it ends with `Exception`
+- The first line of the stack trace is the method that actually
+  generated the exception.
+- THe last line of the stack trace is a line in `main`
+- Often, the exception was thrown by a method that is in the standard
+  library. Look for the first line in **your code** that appears in the
+  exception report.
+
+## Array
+
+```java
+// Have to "new" an array when we initialize it
+double[] values = new double[10];
+
+// An array of objects
+BankAccount[] accounts = new BankAccount[10];
+// We have to initialize the array manually
+for (int i = 0; i < 10; i++)
+{
+    accounts[i] = new BankAccount();
+}
+```
+
+```java
+import java.util.Arrays
+
+string str = Arrays.toString(values);
+double[] prices = Arrays.copyOf(values, values.length);
+Arrays.sort(values);
+Arrays.sort(values, 0, currentSize);
+```
+
+### Methods with a variable number of arguments
+
+```java
+public void addScores(int... values)
+{
+    for (int i = 0; i < values.length; i++) // values is an int[]
+    {
+        totalScore = totalScore + values[i];
+    }
+}
+
+fred.addScores(10, 7);
+fred.addScores(1, 7, 2, 9);
+```
+
+### Two-Dimensional Arrays with variable row lengths
+
+```java
+int[][] a = new int[3][];
+for (int i = 0; i < a.lenght; i++)
+{
+    a[i] = new int[i+1];
+}
+```
+
+### Array List
+
+- Array lists can grow and shrink as needed.
+- The ArrayList class supplies methods for common tasks, such as
+  inserting and removing elements.
+
+```java
+import java.util.ArrayList
+
+ArrayList<String> friends = new ArrayList<String>();
+friends.add("Cindy");
+String name = friends.get(i);
+friends.set(i, "Harry");
+
+// yields two references to the same array list
+ArrayList<String> friends = names;
+
+// copy array lists
+ArrayList<String> newNames = new ArrayList<String>(names);
+
+// Wrappers and auto-boxing
+ArrayList<double>   // WRONG
+ArrayList<Double> values = new ArrayList<Double>();
+```
+
+
+## ArrayList
 
 ArrayList are created with an initial size, but when this size is
 exceeded, the collection is automatically enlarged.
@@ -776,7 +970,7 @@ Useful methods:
 | size()         | Returns the number of elements in the list                |
 | clear()        | Removes all the elements from the list                    |
 
-### LinkedList
+## LinkedList
 
 ```java
 import java.util.LinkedList;
@@ -801,7 +995,7 @@ Summary:
 - Use a LinkedList when you need to make a large number of inserts
   and/or deletes.
 
-### HashMap
+## HashMap
 
 Arrays and Lists store elements as ordered collections, with each
 elements given an integer index.
@@ -832,7 +1026,7 @@ that already exists overwrites the old element.
 - It you try to get a value that is not present in you map, it returns
   the value of null.
 
-### Sets
+## Sets
 
 A Set is a collection that cannot contain duplicate elements. It models
 the mathematical set abstraction.
@@ -858,7 +1052,7 @@ elements as they are added. To order the elements, use a LinkedHashSet,
 which maintains a linked list of the set's elements in the order in
 which they were inserted.
 
-### Collection class
+## Collection class
 
 ```java
 import java.util.Collections;
@@ -878,7 +1072,7 @@ public class MyClass {
 
 - sort, max, min, reverse, shuffle
 
-### Iterators
+## Iterators
 
 An Iterator is an object that enables to cycle through a collection,
 obtain or remove elements.
@@ -904,238 +1098,6 @@ public class MyClass {
 }
 //Outputs: fox
 ```
-
-## Build Java project
-
-The "Build" is a process that covers all the steps required to create a
-"deliverable" of your software. In the Java world, this typically
-includes:
-
-1. Generating sources (sometimes).
-2. Compiling sources.
-3. Compiling test sources.
-4. Executing tests (unit tests, integration tests, etc).
-5. Packaging (into jar, war, ejb-jar, ear).
-6. Running health checks (static analyzers like Checkstyle, Findbugs, PMD, test coverage, etc).
-7. Generating reports.
-
-So as you can see, compiling is only a (small) part of the build (and
-the best practice is to fully automate all the steps with tools like
-**Maven** or Ant and to run the build continuously which is known as
-**Continuous Integration**).
-
-## Variables
-
-### Local variables
-
-A local variables is a variable that is declared in the body of a
-method.
-- Parameter variables are similar to local variables, but they are
-  declared in method headers.
-- Local and parameter variables belong to methods. When a method runs,
-  its local and parameter variables come to life. When the method exits,
-  they are removed immediately.
-- In contrast, instance variables belong to objects, not methods. When
-  an object is constructed, its instance variables are created. The
-  instance variables stay alive until no method uses the object any
-  longer. (The Java virtual machine contains an garbage collector that
-  periodically reclaims objects when  they are no longer used.)
-- You must initialize all local variables
-- Instance variables are initialized with a default value before a
-  constructor is invoked.
-
-# Development Tools
-
-## IDE
-
-- [Eclipse](https://www.eclipse.org/)
-- [Netbean](https://netbeans.org/)
-
-## Frameworks
-
-### [Playframework](https://www.playframework.com/)
-
-Make your changes and simply hit refresh!
-
-Inspired by Rails. A drawback is that it is not idiomatic when using
-Java, since it was written in Scala and that is its native language. It
-is not compatible with
-[Servlets](https://en.wikipedia.org/wiki/Java_servlet) Framework, so it
-can't be used with **Tomcat** or for "enterprise" deployments where an
-**application server** is needed.
-
-### [Dropwizard](http://www.dropwizard.io/)
-
-Developing ops-friendly, high-performance, RESTful web services.
-
-> Looks good for a pure REST API backend solution.
-
-### [Spark](http://sparkjava.com/)
-
-A tiny Sinatra inspired framework for creating web applications in Java
-8 with minimal effort.
-
-### Spring
-
-MVC is popular and is compatible with the **Servlets Framework**.
-[JHipster](https://jhipster.github.io/) combines it with **AngularJS**
-and its command line stack of Bower etc. Or it can be used with the
-traditional [JSP](https://en.wikipedia.org/wiki/JavaServer_Pages) (which
-is becoming less popular and doesn't work well with emedded web
-servers), or with Springs's new recommendation
-[Thymeleaf](http://www.thymeleaf.org/).
-
-### Struts
-
-
-### MyBatis
-
-SQL Mapping Framework for Java
-
-### Hibernate
-
-
-
-## Testing
-
-- Unit test: JUnit, TestNG
-- Simulation user's interaction: Selenium
-- Code coverage: Cobertura (calculates the percentage of code accessed
-  by tests. It can be used to identify which parts of your Java program
-  are lacking test coverage.)
-- Continuous integration: Jenkins, Hudson
-
-## Build Tools
-
-### Ant
-
-### Maven
-
-### Gradle
-
-# Tutorial
-
-## Input and Output
-
-### Input
-
-```java
-import java.util.Scanner;
-...
-Scanner in = newScanner(System.in);
-...
-System.out.print("Please enter the number of bottles: ");
-int bottles = in.nextInt();
-
-System.out.print("Enter price: ");
-double price = in.nextDouble();
-
-System.out.print("Enter your name: ");
-String name = in.next(); // Get a word without spaces
-String name = in.nextLine(); // Get the whole line with spaces
-```
-
-### Formatted Output
-
-```java
-System.out.printf("%10.2f", price);
-System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
-```
-
-| Format String  | Sample Output  | Comments                                                                              |
-| -              | -              | -                                                                                     |
-| "%d"           | 24             | Use d with an integer                                                                 |
-| "%5d"          | ___24          | Spaces are added so that the field width is 5                                         |
-| "Quantity:%5d" | Quantity:   24 | Characters inside a format string but outside a format specifier appear in the output |
-| "%f"           | 1.21997        | Use f with a floating-point number                                                    |
-| "%.2f"         | 1.22           | Prints two digits after the decimal point                                             |
-| "%7.2f"        | ___1.22        | Spaces are added so that the field width is 7                                         |
-| "%s"           | Hello          | Use s with a string                                                                   |
-| "%d %.2f"      | 24 1.22        | You can format multiple values at once                                                |
-
-### Using Dialog Boxes
-
-```java
-// This method returns a String object
-String input = JOptionPane.showInputDialog("Enter price:");
-
-// Use the Integer.parseInt and Double.parseDouble to convert the string
-// to a number
-double price = Double.parseDouble(input);
-
-// Display output in a dialog box
-JOptionPane.showMessageDialog(null, "Price: " + price);
-```
-
-## Working with Files
-
-The `java.io` package includes a File class that allows you to work with
-files.
-
-```java
-import java.io.File;
-
-public class MyClass {
-    public static void main(String[] args) {
-        File x = new File("/tmp/test.txt");
-        if (x.exists()) {
-            System.out.println(x.getName() + "exists!");
-        } else {
-            System.out.println("The file does not exist");
-        }
-    }
-}
-```
-
-### Reading a File
-
-```java
-import java.util.Scanner;
-
-try {
-    File x = new File("/tmp/test.txt");
-    Scanner sc = new Scanner(x);
-    while(sc.hasNext()) {
-        System.out.println(sc.next());
-    }
-    sc.close();
-} catch (FileNotFoundException e){
-    e.printStackTrace();
-}
-```
-
-The file's contents are output word by word because the next() method
-returns each word separately.
-
-### Creating & Writing Files
-
-```java
-import java.util.Formatter;
-
-public class MyClass {
-    public static void main(String[] args) {
-        try {
-            Formatter f = new Formatter("/tmp/test.txt");
-            f.format("%s %s %s", "1", "John", "Smith \r\n");
-            f.format("%s %s %s", "2", "Amy", "Brown");
-            f.close();
-        } catch (Exception e) {
-            System.out.println("Error");
-        }
-    }
-}
-```
-
-This creates an empty  file at the specified path. If the file already
-exists, this will overwrite it.
-
-## Reflection
-
-- [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
-
-## Debug
-
-- [List of debug tools](http://blog.takipi.com/java-debugger-the-definitive-list-of-tools/)
 
 # Object-Oriented Programming
 
@@ -1493,183 +1455,234 @@ down by framework extensions.
 - To better testing, flexibility, and ability to make new decisions in
   the future
 
-# Data Structures
+# Technologies
 
-## Primitive types
+## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
 
-In Java, every value is either a reference to an object, or it belongs
-to one of the eight primitive types.
+Java programming language program running on server, receive requests
+and can respond them.
 
-### Number types
+## [JSP](https://en.wikipedia.org/wiki/JavaServer_Pages)
 
-| Type    | Description                                                                | Size    | Example      |
-| -       | -                                                                          | -       | -            |
-| int     | The integer type, range Integer.MIN_VALUE to Integer.MAX_VALUE             | 4 bytes | 1, 2, 3      |
-| byte    | The type describing a single byte, range -128 ... 127                      | 1 byte  |              |
-| short   | The short integer type, range -32,768 ... 32,767                           | 2 bytes |              |
-| long    | The long integer type                                                      | 8 bytes |              |
-| double  | The double-precision floating-point type                                   | 8 bytes | 0.1          |
-| float   | The single-precision floating-point type                                   | 4 bytes | 1E6, 2.96E-2 |
-| char    | The character type, representing code units in the Unicode encoding scheme | 2 bytes |              |
-| boolean | THe type with the two truth values false and true                          | 1 bit   |              |
+Create dynamically generated web pages based on HTML, XML.
 
-When a value such as 6 or 0.335 occurs in a Java program, it is called a
-**number literal**.
+To deploy and run JSP, a compatible web server with a servlet container,
+such as [Apache Tomcat](http://tomcat.apache.org/) or
+[Jetty](http://www.eclipse.org/jetty/).
 
-A numeric computation overflows if the result falls outside the range
-for the number type.
-- Using `BigInteger` type to prevent overflow errors.
+![Life of a JSP file](http://upload.wikimedia.org/wikipedia/commons/0/03/JSPLife.svg "Life of a JSP file")
 
-**Rounding errors** occur when an exact representation of a floating-
-point number is not possible.
-- Using `BigDecimal` type to prevent rounding errors.
+## Build Java project
 
-Constants:
-- In a method: `final double NICKEL_VALUE = 0.05;`
-- In a class: `public static final double LITERS_PER_GALLON = 3.785;`
+The "Build" is a process that covers all the steps required to create a
+"deliverable" of your software. In the Java world, this typically
+includes:
 
-Big Numbers:
+1. Generating sources (sometimes).
+2. Compiling sources.
+3. Compiling test sources.
+4. Executing tests (unit tests, integration tests, etc).
+5. Packaging (into jar, war, ejb-jar, ear).
+6. Running health checks (static analyzers like Checkstyle, Findbugs, PMD, test coverage, etc).
+7. Generating reports.
+
+So as you can see, compiling is only a (small) part of the build (and
+the best practice is to fully automate all the steps with tools like
+**Maven** or Ant and to run the build continuously which is known as
+**Continuous Integration**).
+
+# Development Tools
+
+## IDE
+
+- [Eclipse](https://www.eclipse.org/)
+- [Netbean](https://netbeans.org/)
+
+## Frameworks
+
+### [Playframework](https://www.playframework.com/)
+
+Make your changes and simply hit refresh!
+
+Inspired by Rails. A drawback is that it is not idiomatic when using
+Java, since it was written in Scala and that is its native language. It
+is not compatible with
+[Servlets](https://en.wikipedia.org/wiki/Java_servlet) Framework, so it
+can't be used with **Tomcat** or for "enterprise" deployments where an
+**application server** is needed.
+
+### [Dropwizard](http://www.dropwizard.io/)
+
+Developing ops-friendly, high-performance, RESTful web services.
+
+> Looks good for a pure REST API backend solution.
+
+### [Spark](http://sparkjava.com/)
+
+A tiny Sinatra inspired framework for creating web applications in Java
+8 with minimal effort.
+
+### Spring
+
+MVC is popular and is compatible with the **Servlets Framework**.
+[JHipster](https://jhipster.github.io/) combines it with **AngularJS**
+and its command line stack of Bower etc. Or it can be used with the
+traditional [JSP](https://en.wikipedia.org/wiki/JavaServer_Pages) (which
+is becoming less popular and doesn't work well with emedded web
+servers), or with Springs's new recommendation
+[Thymeleaf](http://www.thymeleaf.org/).
+
+### Struts
+
+
+### MyBatis
+
+SQL Mapping Framework for Java
+
+### Hibernate
+
+
+
+## Testing
+
+- Unit test: JUnit, TestNG
+- Simulation user's interaction: Selenium
+- Code coverage: Cobertura (calculates the percentage of code accessed
+  by tests. It can be used to identify which parts of your Java program
+  are lacking test coverage.)
+- Continuous integration: Jenkins, Hudson
+
+## Build Tools
+
+### Ant
+
+### Maven
+
+### Gradle
+
+# Tutorial
+
+## Input and Output
+
+### Input
 
 ```java
-BigInteger n = new BigInteger("1000000");
-BigInteger r = n.multiply(n);
-System.out.println(r);
+import java.util.Scanner;
+...
+Scanner in = newScanner(System.in);
+...
+System.out.print("Please enter the number of bottles: ");
+int bottles = in.nextInt();
 
-BigDecimal d = new BigDecimal("4.35");
-BigDecimal e = new BigDecimal("100");
-BigDecimal f = d.multiply(e);
-System.out.println(f);
+System.out.print("Enter price: ");
+double price = in.nextDouble();
+
+System.out.print("Enter your name: ");
+String name = in.next(); // Get a word without spaces
+String name = in.nextLine(); // Get the whole line with spaces
 ```
 
-Any number that is not completely self-explanatory should be declared as
-a named constant. Or write comments to explain its functions and why you
-choose them.
-
-Mathematical methods
-
-| Method            | Returns                      | Method            | Returns                      |
-| -                 | -                            | -                 | -                            |
-| Math.sqrt(x)      | Square root of x             | Math .abs(x)      | Absolute value               |
-| Math.pow(x, y)    | x to the y                   | Math.max(x, y)    | The larger                   |
-| Math.sin(x)       | Sine of x (radian)           | Math.min(x, y)    | The smaller                  |
-| Math.cos(x)       | Cosine                       | Math.exp(x)       | e to the x                   |
-| Math.tan(x)       | Tangent                      | Math.log(x)       | Natural log                  |
-| Math.round(x)     | Closest integer              | Math.log10(x)     | Decimal log                  |
-| Math.ceil(x)      | Smallest integer >= x        | Math.floor(x)     | Largest integer <= x         |
-| Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
-
-## String
-
-### String operations
-
-| Statement                                                | Result               | Comment                                                                                                                                |
-| -                                                        | -                    | -                                                                                                                                      |
-| String str = "Ja"; str = str + "va";                     | str is set to "Java" | When applied to strings, + denotes concatenation                                                                                       |
-| String greeting = "H & S"; int n = greeting.length();    | n is set to 5        | Each space counts as one character                                                                                                     |
-| str.charAt(1)                                            |                      |                                                                                                                                        |
-| String str = "Sally"; String str2 = str.substring(1, 4); | str2 is set to "all" | Extracts the substring starting at position 1 and ending before position 4 (starting with first good data and end with first bad data) |
-
-### Reading Exception Reports
-
-1. The name of the exception, such as `StringIndexOutOfBoundsException`
-2. The line number of the code that contained the statement that caused
-   the exception, such as `Homework1.java:16`
-
-The name of the exception is always in the first line of the report, and
-it ends with `Exception`
-- The first line of the stack trace is the method that actually
-  generated the exception.
-- THe last line of the stack trace is a line in `main`
-- Often, the exception was thrown by a method that is in the standard
-  library. Look for the first line in **your code** that appears in the
-  exception report.
-
-## Array
+### Formatted Output
 
 ```java
-// Have to "new" an array when we initialize it
-double[] values = new double[10];
-
-// An array of objects
-BankAccount[] accounts = new BankAccount[10];
-// We have to initialize the array manually
-for (int i = 0; i < 10; i++)
-{
-    accounts[i] = new BankAccount();
-}
+System.out.printf("%10.2f", price);
+System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
 ```
 
-```java
-import java.util.Arrays
+| Format String  | Sample Output  | Comments                                                                              |
+| -              | -              | -                                                                                     |
+| "%d"           | 24             | Use d with an integer                                                                 |
+| "%5d"          | ___24          | Spaces are added so that the field width is 5                                         |
+| "Quantity:%5d" | Quantity:   24 | Characters inside a format string but outside a format specifier appear in the output |
+| "%f"           | 1.21997        | Use f with a floating-point number                                                    |
+| "%.2f"         | 1.22           | Prints two digits after the decimal point                                             |
+| "%7.2f"        | ___1.22        | Spaces are added so that the field width is 7                                         |
+| "%s"           | Hello          | Use s with a string                                                                   |
+| "%d %.2f"      | 24 1.22        | You can format multiple values at once                                                |
 
-string str = Arrays.toString(values);
-double[] prices = Arrays.copyOf(values, values.length);
-Arrays.sort(values);
-Arrays.sort(values, 0, currentSize);
+### Using Dialog Boxes
+
+```java
+// This method returns a String object
+String input = JOptionPane.showInputDialog("Enter price:");
+
+// Use the Integer.parseInt and Double.parseDouble to convert the string
+// to a number
+double price = Double.parseDouble(input);
+
+// Display output in a dialog box
+JOptionPane.showMessageDialog(null, "Price: " + price);
 ```
 
-### Methods with a variable number of arguments
+## Working with Files
+
+The `java.io` package includes a File class that allows you to work with
+files.
 
 ```java
-public void addScores(int... values)
-{
-    for (int i = 0; i < values.length; i++) // values is an int[]
-    {
-        totalScore = totalScore + values[i];
+import java.io.File;
+
+public class MyClass {
+    public static void main(String[] args) {
+        File x = new File("/tmp/test.txt");
+        if (x.exists()) {
+            System.out.println(x.getName() + "exists!");
+        } else {
+            System.out.println("The file does not exist");
+        }
     }
 }
-
-fred.addScores(10, 7);
-fred.addScores(1, 7, 2, 9);
 ```
 
-### Two-Dimensional Arrays with variable row lengths
+### Reading a File
 
 ```java
-int[][] a = new int[3][];
-for (int i = 0; i < a.lenght; i++)
-{
-    a[i] = new int[i+1];
+import java.util.Scanner;
+
+try {
+    File x = new File("/tmp/test.txt");
+    Scanner sc = new Scanner(x);
+    while(sc.hasNext()) {
+        System.out.println(sc.next());
+    }
+    sc.close();
+} catch (FileNotFoundException e){
+    e.printStackTrace();
 }
 ```
 
-### Array List
+The file's contents are output word by word because the next() method
+returns each word separately.
 
-- Array lists can grow and shrink as needed.
-- The ArrayList class supplies methods for common tasks, such as
-  inserting and removing elements.
-
-```java
-import java.util.ArrayList
-
-ArrayList<String> friends = new ArrayList<String>();
-friends.add("Cindy");
-String name = friends.get(i);
-friends.set(i, "Harry");
-
-// yields two references to the same array list
-ArrayList<String> friends = names;
-
-// copy array lists
-ArrayList<String> newNames = new ArrayList<String>(names);
-
-// Wrappers and auto-boxing
-ArrayList<double>   // WRONG
-ArrayList<Double> values = new ArrayList<Double>();
-```
-
-# Loop
-
-- while, do while, for
+### Creating & Writing Files
 
 ```java
-// This for each loop cannot modify the array
-// Use this for each loop to traverse the data
-for (double element : values)
-{
-    sum = sum + element;
+import java.util.Formatter;
+
+public class MyClass {
+    public static void main(String[] args) {
+        try {
+            Formatter f = new Formatter("/tmp/test.txt");
+            f.format("%s %s %s", "1", "John", "Smith \r\n");
+            f.format("%s %s %s", "2", "Amy", "Brown");
+            f.close();
+        } catch (Exception e) {
+            System.out.println("Error");
+        }
+    }
 }
 ```
+
+This creates an empty  file at the specified path. If the file already
+exists, this will overwrite it.
+
+## Reflection
+
+- [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
+
+## Debug
+
+- [List of debug tools](http://blog.takipi.com/java-debugger-the-definitive-list-of-tools/)
 
 # Java 8
 
