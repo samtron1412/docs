@@ -459,7 +459,105 @@ by the Kafka consumer client to handle failures.
 
 ## Developer Guide
 
-Something
+### Writing a Streams Application
+
+#### Libraries and Maven Artifacts
+
+```xml
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-streams</artifactId>
+    <version>1.0.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
+#### Using Kafka Streams Within Application Code
+
+- First, creating an instance of `KafkaStreams`
+    + `KafkaStreams streams = new KafkaStreams(topology, cofigurations)`
+
+```java
+import org.apache.kafka.streams.KafkaStreams;
+import org.apache.kafka.streams.StreamsConfig;
+import org.apache.kafka.streams.kstream.StreamsBuilder;
+import org.apache.kafka.streams.processor.Topology;
+
+// Use the builders to define the actual processing topology, e.g. to specify
+// from which input topics to read, which stream operations (filter, map, etc.)
+// should be called, and so on.  We will cover this in detail in the subsequent
+// sections of this Developer Guide.
+
+StreamsBuilder builder = ...;  // when using the DSL
+Topology topology = builder.build();
+//
+// OR
+//
+Topology topology = ...; // when using the Processor API
+
+// Use the configuration to tell your application where the Kafka cluster is,
+// which Serializers/Deserializers to use by default, to specify security settings,
+// and so on.
+StreamsConfig config = ...;
+
+KafkaStreams streams = new KafkaStreams(topology, config);
+```
+
+- Start the Kafka Streams thread
+    + `KafkaStreams#start()`
+
+```java
+// Start the Kafka Streams threads
+streams.start();
+```
+
+- Catch any unexpected exceptions
+
+```java
+// Java 8+, using lambda expressions
+streams.setUncaughtExceptionHandler((Thread thread, Throwable throwable) -> {
+  // here you should examine the throwable/exception and perform an appropriate action!
+});
+
+
+// Java 7
+streams.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+  public void uncaughtException(Thread thread, Throwable throwable) {
+    // here you should examine the throwable/exception and perform an appropriate action!
+  }
+});
+```
+
+- Stop the application instance
+
+```java
+// Stop the Kafka Streams threads
+streams.close();
+```
+
+- To allow you application to gracefully shutdown in response to
+  SIGTERM, add a shutdown hook and call `KafkaStreams#close()`
+
+```java
+// Add shutdown hook to stop the Kafka Streams threads.
+// You can optionally provide a timeout to `close`.
+Runtime.getRuntime().addShutdownHook(new Thread(streams::close));
+
+// Java 7
+// Add shutdown hook to stop the Kafka Streams threads.
+// You can optionally provide a timeout to `close`.
+Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+  @Override
+  public void run() {
+      streams.close();
+  }
+}));
+```
+
 
 ## Introduction
 
