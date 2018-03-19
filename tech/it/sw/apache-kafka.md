@@ -558,6 +558,48 @@ Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 }));
 ```
 
+### Configuring a Streams Application
+
+#### Steps
+
+1. Create a `java.util.Properties` instance
+2. Set the parameters
+3. Construct a `StreamsConfig` instance from the `Properties` instance.
+   Or you could use `Properties` instance directly
+
+```java
+import java.util.Properties;
+import org.apache.kafka.streams.StreamsConfig;
+
+Properties settings = new Properties();
+// Set a few key parameters
+settings.put(StreamsConfig.APPLICATION_ID_CONFIG, "my-first-streams-application");
+settings.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka-broker1:9092");
+// Any further settings
+settings.put(... , ...);
+
+// Create an instance of StreamsConfig from the Properties instance
+StreamsConfig config = new StreamsConfig(settings);
+```
+
+#### Parameters
+
+- Required
+    + application.id
+    + bootstrap.servers
+- Optional parameters
+    + default.deserialization.exception.handler
+    + default.production.exception.handler
+    + default.key.serde
+    + default.value.serde
+    + num.standby.replicas
+    + num.stream.threads
+    + partition.grouper
+    + replication.factor
+    + state.dir
+    + timestamp.extractor
+    + ...
+
 
 ## Introduction
 
