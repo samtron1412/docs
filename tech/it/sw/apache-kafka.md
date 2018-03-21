@@ -600,6 +600,235 @@ StreamsConfig config = new StreamsConfig(settings);
     + timestamp.extractor
     + ...
 
+### Streams Domain Specific Language (DSL)
+
+The Kafka Streams DSL is built on top of the Streams Processor API.
+
+#### Overview
+
+- DSL supports
+    + Built-in abstractions for streams and tables: `KStream`, `KTable`,
+      and `GlobalKTable`
+    + Declarative, functional programming style with stateless
+      transformations (e.g. `map` and `filter`) as well as stateful
+      transformations such as aggregations (e.g. `count` and `reduce`),
+      joins (e.g. `leftJoin`), and windowing (e.g. session windows)
+- Define *processor topologies*
+    + Specify one or more input streams that are read from Kafka topics
+    + Compose transformation
+    + Write the resulting output streams back to Kafka topics, or expose
+      the processing results of to other applications through
+      interactive queries (e.g., via a REST API)
+
+#### Creating Sources Streams from Kafka
+
+##### Input Topics (can be multiple topics) -> KStream
+
+- Input topics (record stream) -> KStream (partitioned record stream)
+
+    import org.apache.kafka.common.serialization.Serdes;
+    import org.apache.kafka.streams.StreamsBuilder;
+    import org.apache.kafka.streams.kstream.KStream;
+
+    StreamsBuilder builder = new StreamsBuilder();
+
+    KStream<String, Long> wordCounts = builder.stream(
+        "word-counts-input-topic", /* input topic */
+        Consumed.with(
+          Serdes.String(), /* key serde */
+          Serdes.Long()   /* value serde */
+        );
+
+- If you do not specify Serdes explicitly, the default Serdes from the
+  configuration are used.
+    + You `must specify Serdes explicitly` if the key or value types of
+      the records in the Kafka input topics do not match the configured
+      default Serdes.
+
+##### Input topic (one topic only) -> KTable
+
+- Reads the specified Kafka input topic into a KTable.
+    + the topic is interpreted as a changelog stream, where records with
+      the same key are interpreted as UPSERT aka INSERT/UPDATE (when we
+      record value is not `null`) or as DELETE (when the value is
+      `null`) for that key.
+    + You must provide a name for the table (more precisely, for the
+      internal *state store* that backs the table)
+        * this is required for supporting *interactive queries*
+        * when a name is not provided the table will not queryable and
+          an internal name will be provided for the state store.
+    + Same rules for Serdes as KStream
+
+##### Input topic -> GlobalKTable
+
+```java
+import org.apache.kafka.common.serialization.Serdes;
+import org.apache.kafka.streams.StreamsBuilder;
+import org.apache.kafka.streams.kstream.GlobalKTable;
+
+StreamsBuilder builder = new StreamsBuilder();
+
+GlobalKTable<String, Long> wordCounts = builder.globalTable(
+    "word-counts-input-topic",
+    Materialized.<String, Long, KeyValueStore<Bytes, byte[]>>as(
+      "word-counts-global-store" /* table/store name */)
+      .withKeySerde(Serdes.String()) /* key serde */
+      .withValueSerde(Serdes.Long()) /* value serde */
+    );
+```
+
+#### Transform a Stream
+
+##### Stateless transformations
+
+###### Branch: KStream -> KStream[]
+
+- Predicates are evaluated in order
+    + a record is placed to one and only one output stream on the first
+      match
+    + if the nth predicate valuates to true, the record is placed to nth
+      stream.
+    + If no predicate matches, the record is dropped
+
+```java
+KStream<String, Long> stream = ...;
+KStream<String, Long>[] branches = stream.branch(
+    (key, value) -> key.startsWith("A"), /* first predicate  */
+    (key, value) -> key.startsWith("B"), /* second predicate */
+    (key, value) -> true                 /* third predicate  */
+  );
+
+// KStream branches[0] contains all records whose keys start with "A"
+// KStream branches[1] contains all records whose keys start with "B"
+// KStream branches[2] contains all other records
+
+// Java 7 example: cf. `filter` for how to create `Predicate` instances
+```
+
+###### Filter: KStream -> KStream, KTable -> KTable
+
+Evaluates a boolean function for each element and retains those for
+which the function returns true
+
+```java
+KStream<String, Long> stream = ...;
+
+// A filter that selects (keeps) only positive numbers
+// Java 8+ example, using lambda expressions
+KStream<String, Long> onlyPositives = stream.filter((key, value) -> value > 0);
+
+// Java 7 example
+KStream<String, Long> onlyPositives = stream.filter(
+    new Predicate<String, Long>() {
+      @Override
+      public boolean test(String key, Long value) {
+        return value > 0;
+      }
+    });
+```
+
+###### Inverse Filter
+
+Evaluates a boolean function for each element and drops those for which
+the function returns true.
+
+```java
+KStream<String, Long> stream = ...;
+
+// An inverse filter that discards any negative numbers or zero
+// Java 8+ example, using lambda expressions
+KStream<String, Long> onlyPositives = stream.filterNot((key, value) -> value <= 0);
+
+// Java 7 example
+KStream<String, Long> onlyPositives = stream.filterNot(
+    new Predicate<String, Long>() {
+      @Override
+      public boolean test(String key, Long value) {
+        return value <= 0;
+      }
+    });
+```
+
+###### FlatMap: KStream -> KStream
+
+- Takes one record and produces zero, one, or more records.
+    + You can modify the record keys and values, including their types
+    + This will mark the stream for data re-partitioning: applying a
+      grouping or a join after `flatMap` will result in re-partitioning
+      of the records. If possible use `flatMapVlues` instead, which will
+      not cause data re-partitioning
+
+```java
+KStream<Long, String> stream = ...;
+KStream<String, Integer> transformed = stream.flatMap(
+     // Here, we generate two output records for each input record.
+     // We also change the key and value types.
+     // Example: (345L, "Hello") -> ("HELLO", 1000), ("hello", 9000)
+    (key, value) -> {
+      List<KeyValue<String, Integer>> result = new LinkedList<>();
+      result.add(KeyValue.pair(value.toUpperCase(), 1000));
+      result.add(KeyValue.pair(value.toLowerCase(), 9000));
+      return result;
+    }
+  );
+
+// Java 7 example: cf. `map` for how to create `KeyValueMapper` instances
+```
+
+###### FlatMapValues: KStream -> KStream
+
+```java
+// Split a sentence into words.
+KStream<byte[], String> sentences = ...;
+KStream<byte[], String> words = sentences.flatMapValues(value -> Arrays.asList(value.split("\\s+")));
+
+// Java 7 example: cf. `mapValues` for how to create `ValueMapper` instances
+```
+
+###### Foreach: KStream -> void, KTable -> void
+
+- Terminal operation: performs a stateless action on each record
+    + Use it to cause side effects based on the input data and then stop
+      further processing of the input data
+    + Note on processing guarantees: any side effects of an action are
+      not trackable by Kafka, which means they will not benefit from
+      Kafka's processing guarantees
+
+```java
+KStream<String, Long> stream = ...;
+
+// Print the contents of the KStream to the local console.
+// Java 8+ example, using lambda expressions
+stream.foreach((key, value) -> System.out.println(key + " => " + value));
+
+// Java 7 example
+stream.foreach(
+    new ForeachAction<String, Long>() {
+      @Override
+      public void apply(String key, Long value) {
+        System.out.println(key + " => " + value);
+      }
+    });
+```
+
+###### GroupByKey: KStream -> KGroupedStream
+
+- Groups the records by the existing key
+    + Grouping is a prerequisite for aggregating a stream or a table and
+      ensures that data is properly partitioned ("keyed") for subsequent
+      operations.
+
+##### Stateful transformations
+
+Something
+
+##### Applying processors and transformers (Processor API integration)
+
+Something
+
+#### Writing Streams back to Kafka
+
+Something
 
 ## Introduction
 
