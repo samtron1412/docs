@@ -817,6 +817,192 @@ stream.foreach(
     + Grouping is a prerequisite for aggregating a stream or a table and
       ensures that data is properly partitioned ("keyed") for subsequent
       operations.
+    + Preferable to `groupBy` because it re-partitions data only if the
+      stream was already marked for re-partitioning
+    + However, `GroupByKey` does not allow you to modify the key or key
+      type like `groupBy` does.
+
+```java
+KStream<byte[], String> stream = ...;
+
+// Group by the existing key, using the application's configured
+// default serdes for keys and values.
+KGroupedStream<byte[], String> groupedStream = stream.groupByKey();
+
+// When the key and/or value types do not match the configured
+// default serdes, we must explicitly specify serdes.
+KGroupedStream<byte[], String> groupedStream = stream.groupByKey(
+    Serialized.with(
+      Serdes.ByteArray(), /* key */
+      Serdes.String())     /* value */
+  );
+```
+
+###### GroupBy: KStream -> KGroupedStream, KTable -> KGroupedTable
+
+Groups the records by a new key, which may be of a different key type.
+
+- When grouping a table, you may also specify a new value and value type
+- `groupBy` is a shorthand of `selectKey(...).groupByKey()`
+
+```java
+KStream<byte[], String> stream = ...;
+KTable<byte[], String> table = ...;
+
+// Java 8+ examples, using lambda expressions
+
+// Group the stream by a new key and key type
+KGroupedStream<String, String> groupedStream = stream.groupBy(
+    (key, value) -> value,
+    Serialized.with(
+      Serdes.String(), /* key (note: type was modified) */
+      Serdes.String())  /* value */
+  );
+
+// Group the table by a new key and key type, and also modify the value and value type.
+KGroupedTable<String, Integer> groupedTable = table.groupBy(
+    (key, value) -> KeyValue.pair(value, value.length()),
+    Serialized.with(
+      Serdes.String(), /* key (note: type was modified) */
+      Serdes.Integer()) /* value (note: type was modified) */
+  );
+
+
+// Java 7 examples
+
+// Group the stream by a new key and key type
+KGroupedStream<String, String> groupedStream = stream.groupBy(
+    new KeyValueMapper<byte[], String, String>>() {
+      @Override
+      public String apply(byte[] key, String value) {
+        return value;
+      }
+    },
+    Serialized.with(
+      Serdes.String(), /* key (note: type was modified) */
+      Serdes.String())  /* value */
+  );
+
+// Group the table by a new key and key type, and also modify the value and value type.
+KGroupedTable<String, Integer> groupedTable = table.groupBy(
+    new KeyValueMapper<byte[], String, KeyValue<String, Integer>>() {
+      @Override
+      public KeyValue<String, Integer> apply(byte[] key, String value) {
+        return KeyValue.pair(value, value.length());
+      }
+    },
+    Serialized.with(
+      Serdes.String(), /* key (note: type was modified) */
+      Serdes.Integer()) /* value (note: type was modified) */
+  );
+```
+
+###### Map: KStream -> KStream
+
+Takes one record and produces one record. You can modify the record key
+and value, including their types.
+
+- Applying a grouping or a join after `map` will result in re-
+  partitioning of the records. If possible use `mapValues` instead.
+
+```java
+KStream<byte[], String> stream = ...;
+
+// Java 8+ example, using lambda expressions
+// Note how we change the key and the key type (similar to `selectKey`)
+// as well as the value and the value type.
+KStream<String, Integer> transformed = stream.map(
+    (key, value) -> KeyValue.pair(value.toLowerCase(), value.length()));
+
+// Java 7 example
+KStream<String, Integer> transformed = stream.map(
+    new KeyValueMapper<byte[], String, KeyValue<String, Integer>>() {
+      @Override
+      public KeyValue<String, Integer> apply(byte[] key, String value) {
+        return new KeyValue<>(value.toLowerCase(), value.length());
+      }
+    });
+```
+
+###### MapValues: KStream -> KStream, KTable -> KTable
+
+```java
+KStream<byte[], String> stream = ...;
+
+// Java 8+ example, using lambda expressions
+KStream<byte[], String> uppercased = stream.mapValues(value -> value.toUpperCase());
+
+// Java 7 example
+KStream<byte[], String> uppercased = stream.mapValues(
+    new ValueMapper<String>() {
+      @Override
+      public String apply(String s) {
+        return s.toUpperCase();
+      }
+    });
+```
+
+###### Peek: KStream -> KStream
+
+Performs a stateless action on each record, and returns an unchanged
+stream.
+
+- `peek` is helpful for use cases such as logging or tracking metrics or
+  for debugging and troubleshooting.
+
+```java
+KStream<byte[], String> stream = ...;
+
+// Java 8+ example, using lambda expressions
+KStream<byte[], String> unmodifiedStream = stream.peek(
+    (key, value) -> System.out.println("key=" + key + ", value=" + value));
+
+// Java 7 example
+KStream<byte[], String> unmodifiedStream = stream.peek(
+    new ForeachAction<byte[], String>() {
+      @Override
+      public void apply(byte[] key, String value) {
+        System.out.println("key=" + key + ", value=" + value);
+      }
+    });
+```
+
+###### selectKey: KStream -> KStream
+
+Assigns a new key - possibly of a new key type - to each record.
+
+- Calling `selectKey(mapper)` is the same as calling: `map((key, value) -> mapper(key, value), value)`
+- Applying a grouping or a join after `selectKey` will result in re-
+  partitioning of the records.
+
+```java
+KStream<byte[], String> stream = ...;
+
+// Derive a new record key from the record's value.  Note how the key type changes, too.
+// Java 8+ example, using lambda expressions
+KStream<String, String> rekeyed = stream.selectKey((key, value) -> value.split(" ")[0])
+
+// Java 7 example
+KStream<String, String> rekeyed = stream.selectKey(
+    new KeyValueMapper<byte[], String, String>() {
+      @Override
+      public String apply(byte[] key, String value) {
+        return value.split(" ")[0];
+      }
+    });
+```
+
+###### Table to Stream: KTable -> KStream
+
+Get the changelog stream of this table
+
+```java
+KTable<byte[], String> table = ...;
+
+// Also, a variant of `toStream` exists that allows you
+// to select a new key for the resulting stream.
+KStream<byte[], String> stream = table.toStream();
+```
 
 ##### Stateful transformations
 
