@@ -108,3 +108,7 @@ source code or content from such works in order to create new ones.
 >to legally distribute a combination of the two because these specific
 >license requirements cannot be simultaneously fulfilled. Thus, these
 >two packages would be license-incompatible.
+
+# References
+
+[ncurses]: https://invisible-island.net/ncurses/ncurses-license.html
