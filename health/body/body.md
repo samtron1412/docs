@@ -168,6 +168,20 @@ Tổng hợp thắc mắc và giải đáp
 
 # Syndromes and Diseases
 
+## Common diseases
+
+- Sore throat
+- Stuffy nose
+- Bronchitis
+- Allergies
+- Poison ivy
+- Pink eye
+- Pediatric care
+- Urinary tract infection
+- Respiratory infection
+- Sinus problems
+- Cold and flu symptoms
+
 ## Disability
 
 Disabilities include, but are not limited to:
