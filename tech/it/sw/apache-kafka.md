@@ -1006,7 +1006,137 @@ KStream<byte[], String> stream = table.toStream();
 
 ##### Stateful transformations
 
-Something
+###### Overview
+
+Stateful transformations depend on state for processing inputs and
+producing outputs and require a state store associated with the stream
+processor.
+
+- In aggregating operations, a windowing state store is used to collect
+  the latest aggregation results per window.
+- In join operations, a windowing state store is used to collect all the
+  records received so far within the defined window boundary.
+- Available stateful transformations
+    + aggregating
+    + joining
+    + windowing (as part of aggregations and joins)
+    + applying custom processors and transformers for Processor API
+      integration
+
+![stateful transformation](https://docs.confluent.io/current/_images/streams-stateful_operations.png)
+
+###### Aggregating
+
+After records are grouped by key via `groupByKey` or `groupBy`, and thus
+represented as either a `KGroupedStream` or a `KGroupedTable`, they can
+be aggregated via an operation such as `reduce`.
+
+- Aggregations are key-based operations, which means that they always
+  operate over records (notably record values) of the same key.
+- You can perform aggregations on windowed or non-windowed data
+
+> To support fault tolerance and avoid undesirable behavior, the
+initializer and aggregator must be stateless. The aggregation results
+should be passed in the return value of the initializer and aggregator.
+Do not use class member variables because that data can potentially get
+lost in case of failure.
+
+---
+
+**Aggregate: KGroupedStream -> KTable, KGroupedTable -> KTable**
+
+- *Rolling aggregation*. Aggregates the values of (non-windowed) records
+  by the grouped key. Aggregating is a generalization of `reduce` and
+  allows, for example, the aggregate value to have a different type than
+  the input values.
+- When aggregating a grouped stream, you must provide
+    + an initializer (e.g., `aggValue = 0`)
+    + an "adder" aggregator (e.g., `aggValue + curValue`)
+- when aggregating a grouped table, you must provide
+    + a "subtractor" aggregator (`aggValue - oldValue`)
+
+```
+KGroupedStream<byte[], String> groupedStream = ...;
+KGroupedTable<byte[], String> groupedTable = ...;
+
+// Java 8+ examples, using lambda expressions
+
+// Aggregating a KGroupedStream (note how the value type changes from String to Long)
+KTable<byte[], Long> aggregatedStream = groupedStream.aggregate(
+    () -> 0L, /* initializer */
+    (aggKey, newValue, aggValue) -> aggValue + newValue.length(), /* adder */
+    Materialized.as("aggregated-stream-store") /* state store name */
+        .withValueSerde(Serdes.Long()); /* serde for aggregate value */
+
+// Aggregating a KGroupedTable (note how the value type changes from String to Long)
+KTable<byte[], Long> aggregatedTable = groupedTable.aggregate(
+    () -> 0L, /* initializer */
+    (aggKey, newValue, aggValue) -> aggValue + newValue.length(), /* adder */
+    (aggKey, oldValue, aggValue) -> aggValue - oldValue.length(), /* subtractor */
+    Materialized.as("aggregated-table-store") /* state store name */
+    .withValueSerde(Serdes.Long()) /* serde for aggregate value */
+
+
+// Java 7 examples
+
+// Aggregating a KGroupedStream (note how the value type changes from String to Long)
+KTable<byte[], Long> aggregatedStream = groupedStream.aggregate(
+    new Initializer<Long>() { /* initializer */
+      @Override
+      public Long apply() {
+        return 0L;
+      }
+    },
+    new Aggregator<byte[], String, Long>() { /* adder */
+      @Override
+      public Long apply(byte[] aggKey, String newValue, Long aggValue) {
+        return aggValue + newValue.length();
+      }
+    },
+    Materialized.as("aggregated-stream-store")
+        .withValueSerde(Serdes.Long());
+
+// Aggregating a KGroupedTable (note how the value type changes from String to Long)
+KTable<byte[], Long> aggregatedTable = groupedTable.aggregate(
+    new Initializer<Long>() { /* initializer */
+      @Override
+      public Long apply() {
+        return 0L;
+      }
+    },
+    new Aggregator<byte[], String, Long>() { /* adder */
+      @Override
+      public Long apply(byte[] aggKey, String newValue, Long aggValue) {
+        return aggValue + newValue.length();
+      }
+    },
+    new Aggregator<byte[], String, Long>() { /* subtractor */
+      @Override
+      public Long apply(byte[] aggKey, String oldValue, Long aggValue) {
+        return aggValue - oldValue.length();
+      }
+    },
+    Materialized.as("aggregated-stream-store")
+        .withValueSerde(Serdes.Long());
+```
+
+- Detail behavior of `KGroupedStream`
+    + Input records with `null` keys are ignored
+    + When a record key is received for the first time, the initalizer
+      is called (and called before the adder)
+    + Whenever a record with a non-`null` value is received, the adder
+      is called.
+- Detail behavior of `KGroupedTable`
+    + Input records with `null` keys are ignored
+    + When a record key is received for the first time, the initializer
+      is called (before the adder and subtractor)
+    + When the first non-`null` value is received for a key (e.g.,
+      INSERT), then only the adder is called.
+    + When subsequent non-`null` values are received for a key (e.g.,
+      UPDATE), then (1) the subtractor is called with the old value as
+      stored in the table and (2) the adder is called with the new value
+      of the input record that was just received. The order of execution
+      for the subtractor and adder is not defined.
 
 ##### Applying processors and transformers (Processor API integration)
 
