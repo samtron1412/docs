@@ -362,6 +362,22 @@ guarantees
       once in the outputKafka topic as well as in the state stores fro
       stateful operations
 
+### Windowing
+
+Windowing controls how to *group records that have the same key* for
+stateful operations such as aggregations or joins into so-called
+*windows*.
+
+- *Windows* are tracked per record key
+- You can specify a *retention period* for the window
+    + it controls how long Kafka Streams will wait for *out-of-order* or
+      *late-arriving* data records for a given window.
+    + in the case of processing time, the semantics are "when the record
+      is being processed", which means that the notion of late records
+      is not applicable as, by definition, no record can be late.
+    + Hence, late-arriving records can only be considered as such for
+      event-time or ingestion-time semantics.
+
 ## Architecture
 
 ### Stream Partitions and Tasks
