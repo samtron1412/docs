@@ -1325,3 +1325,11 @@ then you can run this command:
 
 `bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test`
 
+
+# Problems
+
+- https://aseigneurin.github.io/2017/08/04/why-kafka-streams-didnt-work-for-us-part-1.html
+- https://dzone.com/articles/problems-with-kafka-streams-the-trilogy
+
+# References
+
