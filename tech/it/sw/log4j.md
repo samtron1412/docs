@@ -75,3 +75,8 @@ properties in key-value pairs. By default, the LogManager looks for a
 file named log4j.properties in the CLASSPATH.
 
 
+
+# References
+
+[home]: https://logging.apache.org/log4j/2.x/
+[log4j]: https://en.wikipedia.org/wiki/Log4j
