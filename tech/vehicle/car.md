@@ -133,6 +133,29 @@ For example, the 2007 Chevrolet Silverado 1500 LT Crew Cab is available
 in a number of different wheelbase configurations: 119", 133", 143.5",
 and 157.5".
 
+# Learn more
+
+- Transmission and Power Steering
+    + Automatic Transmission Fluid (ATF)
+    + Power Steering Fluid (PSF)
+    + https://www.cars.com/articles/2013/07/do-you-really-need-to-change-the-transmission-fluid/
+    + https://www.quora.com/Is-transmission-fluid-the-same-as-power-steering-fluid
+- Motor/Engine Oil
+    + http://www.dummies.com/home-garden/car-repair/how-to-choose-the-right-motor-oil/
+    + https://auto.howstuffworks.com/5-engine-oil-myths.htm
+    + https://auto.howstuffworks.com/engine.htm
+    + https://auto.howstuffworks.com/synthetic-motor-oil.htm
+    + https://auto.howstuffworks.com/how-to-choose-the-right-oil-for-your-car-or-truck.htm
+- Windshield
+    + Wiper blades
+    + Wiper hands
+- Filters
+    + Oil filter
+    + Air filter
+    + Fuel filter
+- Fluid
+    + Washer fluid
+
 # Body and main parts
 ## Doors
 
