@@ -135,6 +135,16 @@ and 157.5".
 
 # Learn more
 
+- Learning about car
+    + https://auto.howstuffworks.com/car-parts-roundup.htm
+    + https://www.howacarworks.com/
+    + Manual
+- Fixing car
+    + Jack
+    + Jack stand
+    + Funnel
+    + Oil pans
+    + Vehicle ramp (instead of jack stand)
 - Transmission and Power Steering
     + Automatic Transmission Fluid (ATF)
     + Power Steering Fluid (PSF)
