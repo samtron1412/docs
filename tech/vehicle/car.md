@@ -208,6 +208,30 @@ and 157.5".
 ## Transmission system
 
 # Miscellaneous auto parts
+
+## Wheels and Tyres
+
+`P185/65R14 85S`
+
+- The first letter: the intended use of the tire
+    + P: passenger vehicle
+    + LT: light truck
+    + C: commercial vehicle
+- The first number: The width of the tire in milimeter
+- The second number: the tire's sidewall height (from the edge of the
+  rim to the tire's tread) is 65% of the width
+- The second letter: how the tire was constructed
+    + R: radial - 99% of all tires sold today
+    + B: bias belt
+    + D: diagonal
+- The third number: the tire size was designed to fit rims or wheels
+  that are 14 inches in diameter
+    + 14
+- The fourth number: the load index, its capable of carrying a load
+    + 85: 1133 lb (515 kg)
+- The fourth letter: the maximum speed that can be sustained
+    + S: <= 111mph for 10 mins
+
 ## Air conditioning system (A/C)
 ### Freon
 Freon is a trade name for a class of chemicals (known as Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning systems.
@@ -219,9 +243,13 @@ Commercially available Freons include:
 - **R410A** - Is and alternate/replacement for R22 due to R22's world wide phaseout since it is shown to deplete the Ozone Layer
 
 # Cars, Maker - Model -Year - Liter
-## Toyota - Corolla - 2001 - 1.8
+
+## Toyota - Corolla LE - 2001 - 1.8
+
 - [Freon fluid - R134a - 24 oz (ounces)](http://www.techchoiceparts.com/refrigerant-and-oil-capacities/toyota)
 - [Engine oil - PAG46 - 7 oz](http://www.techchoiceparts.com/refrigerant-and-oil-capacities/toyota)
+- Wiper blades: 20" x 18"
+- Tires: P185/65R14 85S
 
 # Tips and Tricks
 ## How to recharge freon for A/C system
