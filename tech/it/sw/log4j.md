@@ -80,3 +80,4 @@ file named log4j.properties in the CLASSPATH.
 
 [home]: https://logging.apache.org/log4j/2.x/
 [log4j]: https://en.wikipedia.org/wiki/Log4j
+[configuration]: https://logging.apache.org/log4j/2.x/manual/configuration.html
