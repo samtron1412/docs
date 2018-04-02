@@ -127,6 +127,21 @@ seminal 1936 paper, *On Computable Numbers*.
 
 - Portable computers grew in popularity in the 2000s.
 
+# Lenovo Thinkpad X220 - 2011
+
+- Storage
+    + Primary: 2.5" SATA III -> a SATA III SSD
+    + Secondary: mSATA SSD
+- RAM
+    + supported
+        * max 8 GB - DDR3 - 1333 MHz
+    + unsupported
+        * max 16 GB - DDR3 - 1600/1866 MHz
+        * need bios update or custom bios
+        * careful with bios update, need research
+- CPU
+    + i7 gen 2
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Computer
