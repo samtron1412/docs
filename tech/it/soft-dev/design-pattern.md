@@ -1,5 +1,11 @@
 [TOC]
 
 # Overview
-- [Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
-- [First five principles for OOP and design](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
+
+
+# References
+
+[book]: https://en.wikipedia.org/wiki/Design_Patterns
+[wiki]: https://en.wikipedia.org/wiki/Software_design_pattern
+[five-principles]: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
+[facade-pattern]: https://en.wikipedia.org/wiki/Facade_pattern
