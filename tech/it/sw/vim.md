@@ -41,6 +41,10 @@ Plugins available that will extend or add new functionality to Vim.
 
 ### Copy and paste
 
+- Copy to clipboard
+    + Using registers
+        * X11's primary register: `"*y`, `"*p`
+        * X11's clipboard register: `"+y`, `"+p`
 - Config at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay with
   *pgvy*, *p* to paste and *gv* to re-select what was originally
   selected, *y* to copy it again.
