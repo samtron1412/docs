@@ -319,6 +319,16 @@ no longer in use.
 
 # Practices
 
+## Naming Conventions
+
+- File name = Class name
+- `List`, `Truck`: interface for the "conceptual" object, a contract on
+  what the public methods and properties have to support, a Type
+- `ArrayList`, `LinkedList`, `DumpTruck`, `TransferTruck`: concrete
+  implementation of interface
+- `AbstractList`, `AbstractTruck`: abstract "partial" implementation to
+  assist custom implementations
+
 ## Documentation
 
 Using javadoc utility:
