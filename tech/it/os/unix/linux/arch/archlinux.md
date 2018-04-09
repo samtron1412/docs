@@ -692,6 +692,17 @@ See more:
 
 # Tips & Tricks
 
+## Resize the LVM logical volumes with LUKS (dm-crypt)
+
+1. Boot to a live system using usb
+2. Open the disk: `cryptsetup open /dev/sda2 encrypted-lvm`
+3. Shrinking a logical volume and resize the file system at the same
+   time: `lvresize -L -45GB -r /dev/vol-group1/logical-vol2`
+4. Expanding a logical volume and resize the file system at the same
+   time: `lvresize -l +100%FREE -r /dev/vol-group1/logical-vol2`
+5. Diactivate the logical volumes: `vgchange -an`
+6. Close the encrypted disk: `cryptsetup close encrypted-lvm`
+
 ## Remap Caps Lock key to Escape key + Automatically detect a plugging keyboard
 
 This method can be using to remap any key automatically when the
