@@ -74,7 +74,10 @@ The log4j.properties file is a log4j configuration file which keeps
 properties in key-value pairs. By default, the LogManager looks for a
 file named log4j.properties in the CLASSPATH.
 
+You can specify a different location for the properties file using a JVM
+option:
 
+`-Dlog4j.configurationFile=file:///Users/sont/repo/postage-stamp-kstream/src/test/resources/log4j2-test.xml`
 
 # References
 
