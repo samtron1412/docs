@@ -319,15 +319,143 @@ no longer in use.
 
 # Practices
 
-## Naming Conventions
+## Java Coding Style Guidelines
 
+### Naming Conventions
+
+#### Package Names
+
+- All packages should be in the form: `com.domain.department.project`
+- All is lowercase
+- In one level, if it is multiple words, these words should run together
+  with no separating space or other character (-, _).
+    + GOOD: `com.nasa.jpl.userinterface` or `com.nasa.jpl.ui`
+    + BAD: `com.nasa.jpl.user_interface`
+
+#### Class and Interface Names
+
+- Class names are always nouns, not verbs.
+    + Avoid making a noun out of a verb, e.g. Divider
+    + If you are having difficulty naming a class then perhaps it is a
+      bad class.
+- Interface names should always be an adjective (wherever possible)
+  describing the enforced behaviors of the class (noun).
+    + Preferably, said adjective should end in "able"
+    + Clonable, Versionable, Taggable, etc.
+- Class and interface names begin with an uppercase letter and camel
+  case form, and should not be pluralized unless it is a collection
+  class.
+    + GOOD: `class FoodItem`, `interface Digestable`
+    + BAD: `class fooditem`, `class Crackers`, `interface Eat`
+- Naming collection classes (in the generic sense of collection)
+    + If you are a collection type as part of the class name (List, Map,
+      etc.) it is not necessary to use the plural form in the class
+      name.
+    + If you are not using the collection type in the name it is
+      necessary to pluralize the name.
+    + If you are extending one of the Java collection class (Map,
+      HashMap, List, ArrayList, Collection, etc.) it is good practice to
+      use the name of the collection type in the class name.
+    + GOOD: `class FoodItems extends Object`
+    + GOOD: `class FoodItemList extends ArrayList`
+    + GOOD: `class FoodItemMap extends HashMap`
+    + BAD: `class FoodItem extends ArrayList`
+    + BAD: `class FoodItemsList extends ArrayList`
+- Class names should be descriptive in nature without implying
+  implementation.
+    + GOOD: `AbstractManagedPanel`, `LayeredPanel`
+    + BAD: `LayeredPanel`
+- Other than prefixes, no abbreviations should be used unless it is a
+  well known abbreviation.
 - File name = Class name
 - `List`, `Truck`: interface for the "conceptual" object, a contract on
   what the public methods and properties have to support, a Type
-- `ArrayList`, `LinkedList`, `DumpTruck`, `TransferTruck`: concrete
-  implementation of interface
 - `AbstractList`, `AbstractTruck`: abstract "partial" implementation to
   assist custom implementations
+- `ArrayList`, `LinkedList`, `DumpTruck`, `TransferTruck`: concrete
+  implementation of interface
+
+#### Method Names
+
+- Method names are typically verbs. However they can also be nouns, for
+  example, accessor methods.
+- Names should reflect exactly what the method does (no more or no less)
+    + A method should only have a single-purpose. If your method
+      contains too much functionality, then you should break it into
+      more than one method.
+    + Strive for names that promote self documenting code.
+        * The method name should read well in the code
+        * Picture how the method will appear in your code
+- Method names begin with a lowercase letter and in camel case form
+    + Don't use underscores to separate words
+- Method names should be defined so as to describe the function of the
+  method without implying implementation.
+    + GOOD: `addItem()`, `getItem()`
+    + BAD: `addItemToVector()`, `getHashItem()`
+
+#### Attribute and Local Variable Names
+
+- Do not use abbreviations, use full names
+    + Variable names begin with a lowercase letter
+    + Clarity of variable names can be increased by providing some
+      indication of the type of class they might become.
+        * `Item menuItem`, `JPanel managerJPanel`
+    + Attributes that are not collections should not be pluralized.
+    + Collection classes, such as vectors and hashes should always be
+      pluralized.
+        * `Vector menuItems`, `Vector menuItemsVector`
+- Name variables with the most abstract class that they can hold
+    + If `startButton` could be any control object, then it should be
+      named a `startControl`
+- If the variable represents an anonymous object but is restricted by an
+  interface, then including the interface name in the variable can
+  increase clarity. (i.e. `clonableInventoryItem`)
+- Declare each variable separately on a single line. Do not comma
+  separate variables of the same type.
+- CONSTANT VALUES should have uppercase letters for each word and each
+  word should be separated by an underscore.
+    + `public final static int MAX_AGE = 100`
+
+#### Returning Arrays and Lists
+
+- Any method that will returns an list of homogeneous or heterogeneous
+  items should return a Collection (of other collection class) object -
+  never an array.
+    + For example, a method that return a list of keys represented as
+      strings.
+    + GOOD: `List getKeys()`
+    + BAD: `String[] getKeys()`
+- Also, any method that returns a Collection should always return a
+  valid Collection - never null. However, the returned Collection can be
+  empty
+
+```java
+// GOOD
+public ArrayList getKeys() {
+   if (0 == this.numValidKeys) {
+      return new ArrayList();
+   }
+   return myKeyList;
+}
+
+
+// BAD
+public ArrayList getKeys() {
+   if (0 == this.numValidKeys) {
+      return null;
+   }
+   return myKeyList;
+}
+```
+
+#### Don't "HIDE" Names
+
+- Name hiding refers to the practice of naming a local variable,
+  argument, or filed the same (or similar) as that of another of greater
+  scope.
+    + For example, if you have a class attribute called `firstName` do
+      not create a local variable called `firstName` or anything close
+      to it, such as `firstNames` or `fName`
 
 ## Documentation
 
