@@ -457,6 +457,50 @@ public ArrayList getKeys() {
       not create a local variable called `firstName` or anything close
       to it, such as `firstNames` or `fName`
 
+### Usage Conventions
+
+#### Class Attributes
+
+Something
+
+#### Modifier Usage
+
+Something
+
+#### Class and Package Imports
+
+Something
+
+#### Methods
+
+Something
+
+#### Keep It Simple
+
+Somethings
+
+#### Place Constants on Left Side of Expressions
+
+Something
+
+#### Optimization vs Abstraction
+
+Something
+
+### javadoc
+
+#### Overall Guidelines
+
+Something
+
+#### Method Documentation
+
+Something
+
+#### Use the @deprecated Tag
+
+Something
+
 ## Documentation
 
 Using javadoc utility:
