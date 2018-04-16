@@ -194,6 +194,10 @@ never failed.
 - It can happen because the programmer forgets to update the variable
   that controls the loop.
 
+# Memory dump
+
+- https://blogs.msdn.microsoft.com/tess/2008/05/21/debugdiag-1-1-or-windbg-which-one-should-i-use-and-how-do-i-gather-memory-dumps/
+
 # References
 
 1. [How to fix bugs, step by step][1]
