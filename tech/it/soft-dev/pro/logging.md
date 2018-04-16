@@ -32,6 +32,7 @@
 
 ## Verbose mode for the limitation to the production environment
 
+- https://stackoverflow.com/questions/153524/code-to-logging-ratio#153547
 - Selling code to bank, hospital, and others.
 
 DEBUG Level
