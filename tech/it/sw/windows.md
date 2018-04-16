@@ -16,6 +16,14 @@ The apps themselves choose whether to save to the Local, LocalLow, or Roaming fo
 
 
 # Tips and Tricks
+## Encryption
+
+- Using built-in Bitlocker application
+- Error: "The system cannot find the file specified"
+    + The old recovery file of Bitlocker is corrupted.
+    + Rename the file at: `C:\Windows\System32\Recovery\ReAgent.xml` to
+      `ReAgent_old.xml`
+
 ## Big AppData
 - Check Apple backup (iPhone, iPad, etc)
 
