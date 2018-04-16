@@ -129,18 +129,38 @@ seminal 1936 paper, *On Computable Numbers*.
 
 # Lenovo Thinkpad X220 - 2011
 
+## Resources
+
+- https://www.thinkwiki.org/wiki/Category:X220
+- https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X220
+- http://x220.mcdonnelltech.com/dual-boot-one-drive/
+- http://x220.mcdonnelltech.com/
+
+## Hardware
+
 - Storage
     + Primary: 2.5" SATA III -> a SATA III SSD
-    + Secondary: mSATA SSD
+        * 500 GB SSD Samsung 850 Evo
+    + Secondary: mSATA SSD (Optional)
 - RAM
     + supported
         * max 8 GB - DDR3 - 1333 MHz
     + unsupported
         * max 16 GB - DDR3 - 1600/1866 MHz
-        * need bios update or custom bios
-        * careful with bios update, need research
+        * need firmware update or custom firmware
+        * careful with firmware update, need research
+        * *CHOSE*: 16 GB DDR3 1333 MHz
 - CPU
-    + i7 gen 2
+    + i7 2620M - 2.7 GHz - 2 cores - 4 logical processors
+- Espress USB 3.0
+
+## Firmware
+
+- Something
+
+# Lenovo Thinkpad X1 Carbon
+
+- https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon
 
 # References
 
