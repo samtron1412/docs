@@ -461,45 +461,106 @@ public ArrayList getKeys() {
 
 #### Class Attributes
 
-Something
+Class attributes should always be accessed through accessors and
+mutators (getters and setters)
 
 #### Modifier Usage
 
-Something
+- Always use "public", "private", and "protected" keywords
+- Class Attributes should be private. Access through public or protected
+  getters and setters
+- Methods in the public interface of a class should be public
+- Other methods should be declared as protected
 
 #### Class and Package Imports
 
-Something
+- To make for more readable code, types used in code should be imported
+  rather than fully qualifying the class name.
+- Import only those classes necessary, not using `*`
 
 #### Methods
 
-Something
+- Methods in well-designed object-oriented code are short.
+    + Strive to keep methods less than 10 lines.
+    + Reconsider methods that are over a page in length, breaking them
+      into several methods representing smaller blocks of functionality.
+- This promote code reuse and allows for more combinations of methods.
+- If the number of methods grows to be difficult to understand, then
+  look at decomposing the class into more than one class.
+- A good rule of thumb is that a method should be no more than screen in
+  length.
+- Follow the 30-second rule. Another programmer should be able to look
+  at your method and fully understand what it does, why it does it, and
+  how it does it in less than 30-seconds.
 
 #### Keep It Simple
 
-Somethings
+- Avoid nesting blocks of statements more than 2 or 3 levels deep
+- Avoid nesting method calls too deeply
+- Avoid using compound predicates:
+    + `if (x>0 && x<100 && y>0 && y<100 || z==1000)`
 
 #### Place Constants on Left Side of Expressions
 
-Something
+- Avoid compiling the wrong code since assigning to constant is compiled
+  error => easy to detect the error
 
 #### Optimization vs Abstraction
 
-Something
+- Code in two pass mode
+- First, implement with good object-oriented abstractions and well
+  thought out design
+- Second, when integrating your class into application, measure
+  performance and seek out the bottlenecks. Then optimize the
+  bottlenecks
 
 ### javadoc
 
 #### Overall Guidelines
 
-Something
+- Document *What* code does as well as *why* it was developed.
+    + For example, you can look at a piece of code, or class and figure
+      out what it does internally. However, it may not clear what
+      requirements, or other systems this class supports or, why the
+      code is trapping for and throwing certain exceptions.
+- Document difficult or complex functionality
+- Document dependencies, if methods call other methods internally it is
+  important to note that in the method description
+- Document members of the Domain Object Model (real-world object) that
+  your class is based on, or inspired by
+- Methods that implement an interface should not provide javadoc
+  comments, since the javadoc comments are included in the interface and
+  will be referenced when javadoc executes.
+
+#### Standard .java file header
+
+Every .java source file should include the standard header template and
+detail out the items as appropriate
 
 #### Method Documentation
 
-Something
+Each method should include `@exception`, `@param`, `@return`,
+`@deprecated` where appropriate
 
-#### Use the @deprecated Tag
+```java
+/**
+* Method to check if proscribed operation is allowed for this object.
+* This method is needed to provided some level of security on operations.
+*
+* @param action must be an operation that has registered itself with the object
+* @return boolean true if the operation is allowed, false otherwise.
+* @exception UnknownOperation exception is thrown when an operation that has not
+* registered with the object is passed as a parameter.
+* @deprecated No longer used, SecurityAccessor class in com.iwombat.security replaces functionality
+* @see com.iwombat.security
+*/
+public boolean operationIsAllowed(Operation action)
+throws UnknownOperation
+{
 
-Something
+}
+```
+
 
 ## Documentation
 
