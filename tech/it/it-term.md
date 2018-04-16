@@ -151,6 +151,19 @@ In computer engineering, computer architecture is a set of rules and
 methods that describe the functionality, organization, and
 implementation of computer systems.
 
+
+## Multiplexer
+
+- In electronics, a multiplexer (or mux) is a device that selects on of
+  several analog or digital input signals and forwards the selected
+  input into a single line.
+    + An electronic multiplexer makes it possible for several signals to
+      share one device or resource instead of having one device per
+      input signal.
+- Conversely, a demultiplexer (demux) is a device taking a single input
+  and selecting one of many data-output-lines, which is connected to the
+  single input.
+
 # Software
 
 ## Computer Software Engineering
