@@ -18,6 +18,7 @@ The apps themselves choose whether to save to the Local, LocalLow, or Roaming fo
 # Tips and Tricks
 ## Encryption
 
+- https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions
 - Using built-in Bitlocker application
 - Error: "The system cannot find the file specified"
     + The old recovery file of Bitlocker is corrupted.
