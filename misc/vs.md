@@ -5,6 +5,20 @@
 An engineer has to experience and compare things in order to choose
 a right solution in specific conditions.
 
+# GPT vs MBR
+
+- https://www.techlila.com/mbr-vs-gpt/
+- https://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/
+- https://en.wikipedia.org/wiki/GUID_Partition_Table
+
+# BIOS vs UEFI
+
+- https://superuser.com/questions/496026/what-is-the-difference-in-boot-with-bios-and-boot-with-uefi#501867
+
+# AHCI mode vs IDE mode vs RAID mode
+
+- https://answers.microsoft.com/en-us/windows/forum/windows_8-hardware/what-does-ahci-mode-ide-mode-raid-mode-sata-mean/d622d5cd-41c4-4b84-90ef-cea69aa47089
+
 # Web development
 
 ## [Active Record vs Data Mapper](http://culttt.com/2014/06/18/whats-difference-active-record-data-mapper/)
