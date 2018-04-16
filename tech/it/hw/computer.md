@@ -135,6 +135,27 @@ seminal 1936 paper, *On Computable Numbers*.
 - https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X220
 - http://x220.mcdonnelltech.com/dual-boot-one-drive/
 - http://x220.mcdonnelltech.com/
+- https://wiki.archlinux.org/index.php/Clover
+- https://wiki.archlinux.org/index.php/Systemd-boot
+    + https://wiki.archlinux.org/index.php/Systemd-boot#EFI_Shells_or_other_EFI_apps
+- http://www.rodsbooks.com/efi-bootloaders/
+- https://bbs.archlinux.org/viewtopic.php?id=210875
+- https://aur.archlinux.org/packages/memtest86-efi/
+
+### Update BIOS
+
+- https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x220/downloads/ds018807
+- https://xo.tc/updating-uefi-bios-on-lenovo-thinkpad-x220.html
+- https://www.youtube.com/watch?v=jsCfFOywZs0&t=0s&index=7&list=WL
+
+### Dual/Triple Booting
+
+- https://www.howtogeek.com/214571/how-to-dual-boot-linux-on-your-pc/
+- https://askubuntu.com/questions/66070/how-to-set-windows-bootloader-as-default-bootloader
+- https://wiki.archlinux.org/index.php/Dual_boot_with_Windows/SafeBoot
+- https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+- https://wiki.archlinux.org/index.php/Dual_boot_with_Windows
+
 
 ## Hardware
 
