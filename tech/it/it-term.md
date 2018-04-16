@@ -326,6 +326,42 @@ failover back to its original state (before failure).
   stations, and to see what other users listened to the most.
 
 
+## Race condition
+
+- https://en.wikipedia.org/wiki/Race_condition
+
+A race condition is the behavior of an electronics, software, or other
+system where the output is dependent on the sequence or timing of other
+uncontrollable events.
+
+It becomes a bug (produces wrong results) when events do not happen in
+the order the programmer intended.
+
+=> Fixing by mutual exclusion (locking), synchronization, etc.
+
+## Deadlock
+
+- https://en.wikipedia.org/wiki/Deadlock
+
+A deadlock is a state in which each member of a group is waiting for
+some other member to take action, such as sending a message or more
+commonly releasing a lock.
+
+In an operating system, a deadlock occurs when a process or thread
+enters a waiting state because a requested system resource is held by
+another waiting process, which in turn is waiting for another resource
+held by another waiting process. If a process is unable to change its
+state indefinitely because the resources requested by it are being used
+by another waiting process, then the system is said to be in a deadlock
+
+## Resource Starvation
+
+- https://en.wikipedia.org/wiki/Starvation_(computer_science)
+
+In computer science, starvation is a problem encountered in concurrent
+computing where a process **is perpetually denied** necessary resources
+to process its work (lack of needed resources).
+
 # Computer Science
 
 ## Automata Theory
