@@ -465,6 +465,15 @@ Debugging:
 
 # Principles of Good Programming
 
+## Code tells you HOW, comments tell you WHY
+
+- https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
+- literature programming
+- programmers first, compiler second
+- Code tells you HOW, comments tell you WHY
+
+## Others
+
 The principles of good programming are closely related to principles of
 good design and engineering. The following programming principles have
 helped me over the years become a better programmer, and I believe can
