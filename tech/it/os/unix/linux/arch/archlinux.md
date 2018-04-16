@@ -138,6 +138,15 @@ Enable service: `systemctl enable example.service`
 ### Style
 
 
+# Pre-Installation
+
+## Encryption
+
+### Resources
+
+- http://tech.memoryimprintstudio.com/dual-boot-installation-of-arch-linux-with-preinstalled-windows-10-with-encryption/
+- https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+
 # [Installation][installation]
 
 ## Preparation
