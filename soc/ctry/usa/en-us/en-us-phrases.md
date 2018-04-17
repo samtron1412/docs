@@ -4,6 +4,13 @@
 List of phrases.
 
 # Phrases
+## sorry to rain on someone's parade
+
+- sorry to rain on someone's parade
+    + to do something that spoils someone's plan
+- sorry for raining on your parade
+    + sorry for ruining your plan
+
 ## as well as
 
 http://www.dailywritingtips.com/as-well-as-does-not-mean-and/
