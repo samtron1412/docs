@@ -375,6 +375,27 @@ In computer science, starvation is a problem encountered in concurrent
 computing where a process **is perpetually denied** necessary resources
 to process its work (lack of needed resources).
 
+## Software regression
+
+- A software regression is a software bug that makes a feature stop
+  functioning as intended after a certain event.
+- A software performance regression is a situation where the software
+  still functions correctly, but performs slowly or uses more memory
+  than before.
+
+### Testing
+
+- Regression testing
+
+### Types
+
+- Local: a change introduces a new bug in the changed module or
+  component.
+- Remote: a change in one part of the software breaks functionality in
+  another module or component.
+- Unmasked: a change unmasks (exposes) an already existing bug that had
+  no effect before the change.
+
 # Computer Science
 
 ## Automata Theory
