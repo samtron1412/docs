@@ -96,6 +96,20 @@ a right solution in specific conditions.
 - Why doesn't Windows 95 format floppy disks smoothly?
     + https://blogs.msdn.microsoft.com/oldnewthing/20090102-00/?p=19623/
 
+# Isometric drawing vs linear perspective drawing
+
+The quick way to visualize this is to compare isometric and perspective
+drawings of a cube. In the isometric drawing, all the edges of the cube
+would be parallel in sets of four. In the perspective drawing, the edges
+would taper towards one or more vanishing points.
+
+The isometric drawing, being easier to construct, perserving all scales
+and dimensions, is the preferred method for mechanical drawings, and are
+practical for use in the shop. The perspective drawing, which are
+trickier to draw properly, and does not preserve scales and dimensions,
+is the preferred method for architectural drawings, because they
+illustrate what the eye actually sees.
+
 # GPT vs MBR
 
 - https://www.techlila.com/mbr-vs-gpt/
