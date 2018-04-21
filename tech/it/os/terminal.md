@@ -28,6 +28,10 @@ keyboard and display.
 A **terminal emulator** is a program that emulates a terminal within
 some other display architecture.
 
+- Terminal emulators show a GUI Window that contains a terminal.
+- Most of them emulate Xterm, which in turn emulates VT102, which
+  emulates typewriter.
+
 # References
 
 - [Terminal how to](http://www.tldp.org/HOWTO/Text-Terminal-HOWTO.html)
