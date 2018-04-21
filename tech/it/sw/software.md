@@ -251,11 +251,40 @@ List of useful computer software.
 
 ## Terminal emulators
 
-[rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
-[terminator](https://wiki.archlinux.org/index.php/Terminator)
-[black-screen](https://github.com/black-screen/black-screen)
+### Common
+
+- [rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+
+### Windows
+
+- [black-screen](https://github.com/black-screen/black-screen)
 - babun (Windows)
 - ConEmu (Windows)
+
+### VTE-based
+
+- VTE (Virtual Terminal Emulator) is a widget developed during early
+  GNOME days for use in the GNOME terminal.
+- [terminator](https://wiki.archlinux.org/index.php/Terminator)
+- gnome-terminal
+- guake
+- lxterminal
+- mate-terminal
+
+### KMS-based
+
+- The kernel mode setting
+- They could be invoked without X
+- kmscon
+
+### framebuffer-based
+
+- In GNU/Linux world, the framebuffer could be referred to a virtual
+  device in the Linux kernel (fbdev) or the virtual framebuffer system
+  for X (xvfb).
+- This section mainly lists the terminal emulators that based on the in-
+  kernel virtual device, i.e. fbdev
+- yaft
 
 ## Disks
 
