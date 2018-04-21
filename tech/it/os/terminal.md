@@ -1,16 +1,34 @@
 [TOC]
 
 # Overview
-A computer terminal is an electronic or electromechanical hardware device that is used for **entering data into, and displaying data from,** a computer or a computing system.
 
-The system console, computer console, or simply console is the text entry and display device for **system administration messages**. The system console is a computer terminal.
+A computer terminal is an electronic or electromechanical hardware
+device that is used for **entering data into, and displaying data
+from,** a computer or a computing system.
 
-So a computer terminal is bigger set than system console, a computer terminal can be a system console or not. Computer terminal more functions than system console.
+The system console, computer console, or simply console is the text
+entry and display device for **system administration messages**. The
+system console is a computer terminal.
 
-A **virtual console** (VC) – also known as a **virtual terminal** (VT) - consoles that are logically separate, but which access the same physical keyboard and display.
-- Linux kernel supports virtual consoles and the Linux console (and Linux virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software. This is in contrast to a **terminal emulator**, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
+So a computer terminal is bigger set than system console, a computer
+terminal can be a system console or not. Computer terminal more
+functions than system console.
 
-A **terminal emulator** is a program that emulates a terminal within some other display architecture.
+A **virtual console** (VC) – also known as a **virtual terminal** (VT) -
+consoles that are logically separate, but which access the same physical
+keyboard and display.
+
+- Linux kernel supports virtual consoles and the Linux console (and
+  Linux virtual consoles) are implemented by the VT subsystem of the
+  Linux kernel, and do not rely on any user space software. This is in
+  contrast to a **terminal emulator**, which is a user space process
+  that emulates a terminal, and is typically used in a graphical display
+  environment.
+
+A **terminal emulator** is a program that emulates a terminal within
+some other display architecture.
+
+# References
 
 - [Terminal how to](http://www.tldp.org/HOWTO/Text-Terminal-HOWTO.html)
 - [System console](https://en.wikipedia.org/wiki/System_console)
