@@ -426,6 +426,7 @@ How to type fast:
 - [gvim](https://wiki.archlinux.org/index.php/GVi)
 - [emacs](https://wiki.archlinux.org/index.php/Emacs)
 - sublime-text
+- visual-studio-code
 - atom
 
 ## Readers and Viewers
@@ -472,13 +473,35 @@ How to type fast:
 
 ## Desktop environment
 
+- https://wiki.archlinux.org/index.php/Desktop_environment
+- cinnamon
+- enlightenment
+- gnome
+- lxde
+
 ## Window managers
 
+### Stacking
+
+- enlightenment
+- openbox
 - [tinywm](http://incise.org/tinywm.html)
+
+### Tiling or Dynamic
+
 - [i3](https://wiki.archlinux.org/index.php/I3)
 - [dwm](https://wiki.archlinux.org/index.php/Dwm)
 - [awesome](https://wiki.archlinux.org/index.php/Awesome)
 - [xmonad](https://wiki.archlinux.org/index.php/Xmonad)
+
+## Taskbars
+
+- tint2
+
+## Application luanchers
+
+- dmenu
+- rofi
 
 ## Window tilers
 
