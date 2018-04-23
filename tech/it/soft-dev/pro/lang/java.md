@@ -2395,3 +2395,4 @@ into valid Java code, as opposed to reconstructing the original code.”
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Java_(programming_language)
+[java-guidelines-iwombat]: http://iwombat.com/standards/JavaStyleGuide.html
