@@ -1,9 +1,21 @@
 [TOC]
 
 # Overview
+
 List of phrases.
 
 # Phrases
+
+## We lead, we discover, we pioneer, and we inspire
+
+## ad astra
+
+Ad astra is a Latin phrase meaning "to the stars".
+
+- Motto
+    + "non lucror, exposita scientia, ad astra" => "not for money, for
+      discovering knowledge, approach the stars"
+
 ## sorry to rain on someone's parade
 
 - sorry to rain on someone's parade
