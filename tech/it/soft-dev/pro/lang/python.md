@@ -212,6 +212,7 @@ else:
 ## Get the class name as a string of an instance
 
 - `instance.__class__.__name__`
+- `self.__class__.__name__`: current class name
 
 ## Check for NaN (not a number)
 
