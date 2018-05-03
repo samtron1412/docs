@@ -2,7 +2,16 @@
 
 # Overview
 
+# User Guide
+
+## Build
+
+`mvn clean package`
+
 # Tips and Tricks
+
+## Add version tag for plugins
+
 
 ## Specify the source version of Java
 
@@ -24,3 +33,8 @@ maven-compiler-plugin to your build plugins, to tell it to use 1.8
     </plugins>
 </build>
 ```
+
+# References
+
+[home]: https://maven.apache.org/
+[tutorial]: https://www.tutorialspoint.com/maven/index.htm
