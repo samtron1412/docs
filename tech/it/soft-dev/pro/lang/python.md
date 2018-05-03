@@ -206,6 +206,10 @@ else:
 
 # Tips and Tricks
 
+## Get the class name as a string of an instance
+
+- `instance.__class__.__name__`
+
 ## Check for NaN (not a number)
 
 - IEEE 754 standards
@@ -250,5 +254,6 @@ print sys.version_info
 
 # References
 
+[doc]:https://docs.python.org/3.6/
 [threading]: https://docs.python.org/2/library/threading.html
 [tut-threading]: https://www.tutorialspoint.com/python/python_multithreading.htm
