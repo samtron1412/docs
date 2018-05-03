@@ -44,6 +44,8 @@ duck
 
 # Version Manager
 
+## Introduction
+
 - [pyenv](https://github.com/yyuu/pyenv)
 - [pythonz](https://github.com/saghul/pythonz)
 
@@ -150,6 +152,12 @@ else:
 - [codecs](https://docs.python.org/2/library/codecs.html) module
 
 # Tips and Tricks
+
+## Check for NaN (not a number)
+
+- IEEE 754 standards
+- Using `math.isnan(x)`: new in version >= 2.6
+- version < 2.6: using `numpy.isnan()`
 
 ## File extensions
 
