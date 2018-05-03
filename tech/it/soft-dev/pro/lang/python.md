@@ -151,6 +151,12 @@ else:
 - [Unicode reading and writing to files in python](http://stackoverflow.com/questions/491921/unicode-utf8-reading-and-writing-to-files-in-python?answertab=votes#tab-top) see the answer most votes below accepted answer (not see accepted answer)
 - [codecs](https://docs.python.org/2/library/codecs.html) module
 
+# Glossary
+
+- `inf`: is infinity - a value that is greater than any other value.
+  `-inf` is therefore smaller than any other value.
+- `nan`: stands for Not A Number
+
 # Tips and Tricks
 
 ## Check for NaN (not a number)
