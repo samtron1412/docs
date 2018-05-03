@@ -1,17 +1,21 @@
 [TOC]
 
 # Overview
+
 - **General-purpose, high level programming language**
 - **Multi-paradigm:** object-oriented, imperative, functional, procedural, reflective
 - **Typing:** duck, dunamic, strong
 
 ## History
+
 first release: 1991
 
 ## Typing
+
 duck
 
 # Package Manager - [pip](https://pypi.python.org/pypi/pip)
+
 - Install pip
 	+ Use package manager of Linux distribution
 		* Arch Linux
@@ -39,6 +43,7 @@ duck
 
 
 # Version Manager
+
 - [pyenv](https://github.com/yyuu/pyenv)
 - [pythonz](https://github.com/saghul/pythonz)
 
@@ -46,7 +51,9 @@ duck
 - Can use trick, copy file .exe and change name
 
 ## pyenv
+
 ### Installation
+
 #### [pyenv-installer](https://github.com/yyuu/pyenv-installer)
 
 `curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`
@@ -65,6 +72,7 @@ duck
 
 
 # Packages
+
 ## [cryptography](https://github.com/pyca/cryptography)
 
 ## [pycrypto](https://github.com/dlitz/pycrypto)
@@ -72,16 +80,22 @@ duck
 ## [virtualenv](https://pypi.python.org/pypi/virtualenv)
 
 ## [Console User interface library](https://github.com/urwid/urwid)
+
 - [alot - Mail User Agent](https://github.com/pazz/alot)
 
 ## Django
+
 ## [SQLAlchemy](http://www.sqlalchemy.org/)
-SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that
+gives application developers the full power and flexibility of SQL.
 
 [SourCode](https://bitbucket.org/zzzeek/sqlalchemy)
 
 ## [peewee](http://peewee.readthedocs.org/en/latest/index.html)
-Peewee is a simple and small ORM. It has few (but expressive) concepts, making it easy to learn and intuitive to use.
+
+Peewee is a simple and small ORM. It has few (but expressive) concepts,
+making it easy to learn and intuitive to use.
 - A small, expressive ORM
 - Written in python with support for versions 2.6+ and 3.2+.
 - built-in support for sqlite, mysql and postgresql
@@ -90,12 +104,14 @@ Peewee is a simple and small ORM. It has few (but expressive) concepts, making i
 [SourCode](https://github.com/coleifer/peewee)
 
 ## requests
+
 A HTTP library, written in Python, for human beings.
 
 ## [csv file](http://softwarerecs.stackexchange.com/questions/7463/fastest-python-library-to-read-a-csv-file)
 
 
 # Tutorial
+
 ## Structure of a script
 
 ```python
@@ -120,18 +136,50 @@ else:
 
 
 ## I/O
+
 - [Redirect stdout to file](http://stackoverflow.com/questions/4675728/redirect-stdout-to-a-file-in-python)
 
 ## [Work with MySQL](http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python)
+
 - [Python MySQL Database Access](http://www.tutorialspoint.com/python/python_database_access.htm)
 - [MySQL Unicode and Encoding](http://stackoverflow.com/questions/8365660/python-mysql-unicode-and-encoding)
 
 ## Work with Encoding
+
 - [Unicode reading and writing to files in python](http://stackoverflow.com/questions/491921/unicode-utf8-reading-and-writing-to-files-in-python?answertab=votes#tab-top) see the answer most votes below accepted answer (not see accepted answer)
 - [codecs](https://docs.python.org/2/library/codecs.html) module
 
 # Tips and Tricks
+
+## File extensions
+
+- .py - Regular scripts
+- .py3 - (rarely used) Python3 script. Python3 scripts usually end with
+  ".py" not ".py3", but I have seen that a few times
+- .pyc - compiled script (Bytecode)
+- .pyo - optimized pyc file (As of Python3.5, Python will only use pyc
+  rather than pyo and pyc)
+- .pyw - Python script for Windows. It is executed with pythonw.exe
+- .pyx - Cython src to be converted to C/C++
+- .pyd - Python script made as a Windows DLL
+- .pxd - Cython script which is equivalent to a C/C++ header
+- .pxi - MyPy stub
+- .pyi - Stub file (PEP 484)
+- .pyz - Python script archive (PEP 441); this is a script containing
+  compressed Python scripts (ZIP) in binary form after the standard
+  Python script header
+- .pywz - Python script archive for MS-Windows (PEP 441); this is a
+  script containing compressed Python scripts (ZIP) in binary form after
+  the standard Python script header
+- .py[cod] - wildcard notation in ".gitignore" that means the file may
+  be ".pyc", ".pyo", or ".pyd".
+
+A larger list of additional Python file-extensions (mostly rare and
+unofficial) can be found at http://dcjtech.info/topic/python-file-
+extensions/
+
 ## Check python version by python code
+
 ```python
 import sys
 
