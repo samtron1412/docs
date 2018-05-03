@@ -114,6 +114,11 @@ A HTTP library, written in Python, for human beings.
 
 # Tutorial
 
+## Threading
+
+- https://docs.python.org/2/library/threading.html
+- https://www.tutorialspoint.com/python/python_multithreading.htm
+
 ## Python's slicing
 
    +---+---+---+---+---+---+
@@ -242,3 +247,8 @@ import sys
 print sys.version_info
 ```
 
+
+# References
+
+[threading]: https://docs.python.org/2/library/threading.html
+[tut-threading]: https://www.tutorialspoint.com/python/python_multithreading.htm
