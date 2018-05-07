@@ -681,6 +681,15 @@ it had trouble.
 
 # Troubleshooting
 
+## "Failed to commit transaction (conflicting files)" error
+
+- A safe way is to first check if another package owns the file
+    + pacman -Qo /path/to/file
+- If the file is owned by another package, file a bug report.
+- If the file is not owned by another package, rename the file which
+  'exists in filesystem' and re-issue the update command. If all goes
+  well, the file may then be removed.
+
 ## Merge two partitions
 
 ## Reinstall bootloader after install Windows
