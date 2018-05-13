@@ -314,6 +314,10 @@ enveloping pocket filled with the solar wind's charged particles is
 plowing through the onrushing 'galactic wind' of the interstellar medium
 in the shape of a comet - is wrong."
 
+# Courses
+
+- http://theoreticalminimum.com/courses
+
 # References
 
 [wiki-portal-physics]: https://en.wikipedia.org/wiki/Portal:Physics "Wikipedia - Portal: Physics"
