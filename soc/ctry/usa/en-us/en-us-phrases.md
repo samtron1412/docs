@@ -6,6 +6,11 @@ List of phrases.
 
 # Phrases
 
+## what does it look like?
+
+- how does it look? (asking for opinion for sth)
+- what does it look like? (asking for description of sth)
+
 ## We lead, we discover, we pioneer, and we inspire
 
 ## ad astra
