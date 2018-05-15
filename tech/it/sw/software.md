@@ -490,6 +490,15 @@ How to type fast:
 
 # Security
 
+## Password managers
+
+- lastpass-cli
+- pass: (zx2c4)
+- gopass: new fork of pass written in go
+    + https://news.ycombinator.com/item?id=13551692
+    + https://www.justwatch.com/blog/post/announcing-gopass/
+- seahorse: manage gnome-keyring
+
 # Science
 
 # Work environment
