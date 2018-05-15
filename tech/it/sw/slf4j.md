@@ -2,6 +2,12 @@
 
 # Overview
 
+# Tips and Tricks
+
+## Logging an exception
+
+- https://www.slf4j.org/faq.html#exception_message
+- https://www.slf4j.org/faq.html#paramException
 
 # References
 
