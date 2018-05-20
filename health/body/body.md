@@ -326,6 +326,8 @@ treatment that can help prevent or reduce the severity of allergic
 reactions and change the course of allergic disease by modifying the
 body’s immune response to allergens.
 
+- https://en.wikipedia.org/wiki/Allergen_immunotherapy
+
 ### How Can I Prevent Allergic Rhinitis?
 
 The first and best option is to avoid contact with allergens. Other
