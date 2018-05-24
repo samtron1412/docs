@@ -8,3 +8,11 @@ In computer science, inter-process communication or interprocess communication (
 # Approaches
 
 # Implementations
+
+# Methods
+
+## Named pipe
+
+# References
+
+[named-pipe]: https://en.wikipedia.org/wiki/Named_pipe

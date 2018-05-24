@@ -5,6 +5,125 @@
 An engineer has to experience and compare things in order to choose
 a right solution in specific conditions.
 
+# Thread vs Process
+
+## Introduction
+
+- The process model is based on two independent concepts:
+    + **resource grouping** (processes)
+    + **execution** (threads)
+
+## Process
+
+- Each process provides the resources needed to execute program
+    + It is a way to group related resources together
+- A process has
+    + A virtual address space stores text and data
+    + signals and signal handlers
+    + A security context
+    + A unique process identifier
+    + environment variables
+    + A priority class
+    + minimum and maximum working set sizes
+    + Open files
+    + Child processes
+    + At least one **thread of execution**
+    + etc.
+
+## Thread
+
+- A thread is an entity within a process that can be scheduled for
+  execution
+    + thread of execution
+- All threads of a process share its virtual address space and system
+  resources. In addition,
+    + a program counter (pc) that keeps track of which instruction to
+      execute next
+    + each thread maintains exception handlers
+    + a scheduling priority
+    + thread local storage
+    + a unique thread identifier
+    + a set of structures the system will use to save the thread context
+      until it is scheduled. The thread context includes
+        * the thread's set of machine registers
+        * the kernel stack
+        * a thread environment block
+        * a user stack in the address space of the thread's process
+    + threads can also have their own security context, which can be
+      used for impersonating clients
+- Software threads
+    + User-space threads
+        * switching is fast
+        * can't block I/O
+    + Kernel threads
+        * a little slower
+        * can block I/O
+    + A combination of the two
+
+## Benefits of separated concepts
+
+- Programming abstraction
+    + Dividing up work and assigning each division to a unit of
+      execution (a thread) is a natural approach to many problems
+    + Programming patterns: reactor, thread-per-connection, and thread
+      pool
+    + Alan Cox: "threads are for people who can't program state
+      machines"
+- Parallelism
+    + In machine with multiple processors, threads provide an efficient
+      way to achieve true parallelism.
+    + Each thread receives its own virtualized processor and is an
+      independently-schedulable entity, multiple threads may run on
+      multiple processors at the same time, improving a system's
+      throughput.
+    + To the extent that threads are used to achieve parallelism, that
+      is, there are no more threads than processors => The Alan Cox's
+      quote does not apply.
+- Blocking I/O
+    + Without threads, blocking I/O halts the whole process => this can
+      be detrimental (damaging) to both throughput and latency.
+    + In a multithreaded process, individual threads may block, waiting
+      on I/O, while other threads make forward progress.
+    + *Asynchronous and non-blocking I/O* are alternative solutions to
+      threads for this issue.
+- Memory savings
+    + Threads provide an efficient way to share memory yet utilize
+      multiple units of execution => in this manner they are an
+      alternative to multiple processes.
+
+## Funny stuff
+
+- Why doesn't Windows 95 format floppy disks smoothly?
+    + https://blogs.msdn.microsoft.com/oldnewthing/20090102-00/?p=19623/
+
+# Isometric drawing vs linear perspective drawing
+
+The quick way to visualize this is to compare isometric and perspective
+drawings of a cube. In the isometric drawing, all the edges of the cube
+would be parallel in sets of four. In the perspective drawing, the edges
+would taper towards one or more vanishing points.
+
+The isometric drawing, being easier to construct, perserving all scales
+and dimensions, is the preferred method for mechanical drawings, and are
+practical for use in the shop. The perspective drawing, which are
+trickier to draw properly, and does not preserve scales and dimensions,
+is the preferred method for architectural drawings, because they
+illustrate what the eye actually sees.
+
+# GPT vs MBR
+
+- https://www.techlila.com/mbr-vs-gpt/
+- https://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/
+- https://en.wikipedia.org/wiki/GUID_Partition_Table
+
+# BIOS vs UEFI
+
+- https://superuser.com/questions/496026/what-is-the-difference-in-boot-with-bios-and-boot-with-uefi#501867
+
+# AHCI mode vs IDE mode vs RAID mode
+
+- https://answers.microsoft.com/en-us/windows/forum/windows_8-hardware/what-does-ahci-mode-ide-mode-raid-mode-sata-mean/d622d5cd-41c4-4b84-90ef-cea69aa47089
+
 # Web development
 
 ## [Active Record vs Data Mapper](http://culttt.com/2014/06/18/whats-difference-active-record-data-mapper/)

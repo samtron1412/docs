@@ -127,6 +127,62 @@ seminal 1936 paper, *On Computable Numbers*.
 
 - Portable computers grew in popularity in the 2000s.
 
+# Lenovo Thinkpad X220 - 2011
+
+## Resources
+
+- https://www.thinkwiki.org/wiki/Category:X220
+- https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X220
+- http://x220.mcdonnelltech.com/dual-boot-one-drive/
+- http://x220.mcdonnelltech.com/
+- https://wiki.archlinux.org/index.php/Clover
+- https://wiki.archlinux.org/index.php/Systemd-boot
+    + https://wiki.archlinux.org/index.php/Systemd-boot#EFI_Shells_or_other_EFI_apps
+- http://www.rodsbooks.com/efi-bootloaders/
+- https://bbs.archlinux.org/viewtopic.php?id=210875
+- https://aur.archlinux.org/packages/memtest86-efi/
+
+### Update BIOS
+
+- https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x220/downloads/ds018807
+- https://xo.tc/updating-uefi-bios-on-lenovo-thinkpad-x220.html
+- https://www.youtube.com/watch?v=jsCfFOywZs0&t=0s&index=7&list=WL
+
+### Dual/Triple Booting
+
+- https://www.howtogeek.com/214571/how-to-dual-boot-linux-on-your-pc/
+- https://askubuntu.com/questions/66070/how-to-set-windows-bootloader-as-default-bootloader
+- https://wiki.archlinux.org/index.php/Dual_boot_with_Windows/SafeBoot
+- https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+- https://wiki.archlinux.org/index.php/Dual_boot_with_Windows
+
+
+## Hardware
+
+- Storage
+    + Primary: 2.5" SATA III -> a SATA III SSD
+        * 500 GB SSD Samsung 850 Evo
+    + Secondary: mSATA SSD (Optional)
+- RAM
+    + supported
+        * max 8 GB - DDR3 - 1333 MHz
+    + unsupported
+        * max 16 GB - DDR3 - 1600/1866 MHz
+        * need firmware update or custom firmware
+        * careful with firmware update, need research
+        * *CHOSE*: 16 GB DDR3 1333 MHz
+- CPU
+    + i7 2620M - 2.7 GHz - 2 cores - 4 logical processors
+- Espress USB 3.0
+
+## Firmware
+
+- Something
+
+# Lenovo Thinkpad X1 Carbon
+
+- https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Computer

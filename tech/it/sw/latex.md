@@ -164,4 +164,8 @@ Use biber package
 ## [Latex templates](https://github.com/bamos/latex-templates)
 
 
+# Alternatives
+
+- https://tex.stackexchange.com/questions/120271/alternatives-to-latex
+
 # References

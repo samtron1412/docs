@@ -319,6 +319,249 @@ no longer in use.
 
 # Practices
 
+## Java Coding Style Guidelines
+
+### Naming Conventions
+
+#### Package Names
+
+- All packages should be in the form: `com.domain.department.project`
+- All is lowercase
+- In one level, if it is multiple words, these words should run together
+  with no separating space or other character (-, _).
+    + GOOD: `com.nasa.jpl.userinterface` or `com.nasa.jpl.ui`
+    + BAD: `com.nasa.jpl.user_interface`
+
+#### Class and Interface Names
+
+- Class names are always nouns, not verbs.
+    + Avoid making a noun out of a verb, e.g. Divider
+    + If you are having difficulty naming a class then perhaps it is a
+      bad class.
+- Interface names should always be an adjective (wherever possible)
+  describing the enforced behaviors of the class (noun).
+    + Preferably, said adjective should end in "able"
+    + Clonable, Versionable, Taggable, etc.
+- Class and interface names begin with an uppercase letter and camel
+  case form, and should not be pluralized unless it is a collection
+  class.
+    + GOOD: `class FoodItem`, `interface Digestable`
+    + BAD: `class fooditem`, `class Crackers`, `interface Eat`
+- Naming collection classes (in the generic sense of collection)
+    + If you are a collection type as part of the class name (List, Map,
+      etc.) it is not necessary to use the plural form in the class
+      name.
+    + If you are not using the collection type in the name it is
+      necessary to pluralize the name.
+    + If you are extending one of the Java collection class (Map,
+      HashMap, List, ArrayList, Collection, etc.) it is good practice to
+      use the name of the collection type in the class name.
+    + GOOD: `class FoodItems extends Object`
+    + GOOD: `class FoodItemList extends ArrayList`
+    + GOOD: `class FoodItemMap extends HashMap`
+    + BAD: `class FoodItem extends ArrayList`
+    + BAD: `class FoodItemsList extends ArrayList`
+- Class names should be descriptive in nature without implying
+  implementation.
+    + GOOD: `AbstractManagedPanel`, `LayeredPanel`
+    + BAD: `LayeredPanel`
+- Other than prefixes, no abbreviations should be used unless it is a
+  well known abbreviation.
+- File name = Class name
+- `List`, `Truck`: interface for the "conceptual" object, a contract on
+  what the public methods and properties have to support, a Type
+- `AbstractList`, `AbstractTruck`: abstract "partial" implementation to
+  assist custom implementations
+- `ArrayList`, `LinkedList`, `DumpTruck`, `TransferTruck`: concrete
+  implementation of interface
+
+#### Method Names
+
+- Method names are typically verbs. However they can also be nouns, for
+  example, accessor methods.
+- Names should reflect exactly what the method does (no more or no less)
+    + A method should only have a single-purpose. If your method
+      contains too much functionality, then you should break it into
+      more than one method.
+    + Strive for names that promote self documenting code.
+        * The method name should read well in the code
+        * Picture how the method will appear in your code
+- Method names begin with a lowercase letter and in camel case form
+    + Don't use underscores to separate words
+- Method names should be defined so as to describe the function of the
+  method without implying implementation.
+    + GOOD: `addItem()`, `getItem()`
+    + BAD: `addItemToVector()`, `getHashItem()`
+
+#### Attribute and Local Variable Names
+
+- Do not use abbreviations, use full names
+    + Variable names begin with a lowercase letter
+    + Clarity of variable names can be increased by providing some
+      indication of the type of class they might become.
+        * `Item menuItem`, `JPanel managerJPanel`
+    + Attributes that are not collections should not be pluralized.
+    + Collection classes, such as vectors and hashes should always be
+      pluralized.
+        * `Vector menuItems`, `Vector menuItemsVector`
+- Name variables with the most abstract class that they can hold
+    + If `startButton` could be any control object, then it should be
+      named a `startControl`
+- If the variable represents an anonymous object but is restricted by an
+  interface, then including the interface name in the variable can
+  increase clarity. (i.e. `clonableInventoryItem`)
+- Declare each variable separately on a single line. Do not comma
+  separate variables of the same type.
+- CONSTANT VALUES should have uppercase letters for each word and each
+  word should be separated by an underscore.
+    + `public final static int MAX_AGE = 100`
+
+#### Returning Arrays and Lists
+
+- Any method that will returns an list of homogeneous or heterogeneous
+  items should return a Collection (of other collection class) object -
+  never an array.
+    + For example, a method that return a list of keys represented as
+      strings.
+    + GOOD: `List getKeys()`
+    + BAD: `String[] getKeys()`
+- Also, any method that returns a Collection should always return a
+  valid Collection - never null. However, the returned Collection can be
+  empty
+
+```java
+// GOOD
+public ArrayList getKeys() {
+   if (0 == this.numValidKeys) {
+      return new ArrayList();
+   }
+   return myKeyList;
+}
+
+
+// BAD
+public ArrayList getKeys() {
+   if (0 == this.numValidKeys) {
+      return null;
+   }
+   return myKeyList;
+}
+```
+
+#### Don't "HIDE" Names
+
+- Name hiding refers to the practice of naming a local variable,
+  argument, or filed the same (or similar) as that of another of greater
+  scope.
+    + For example, if you have a class attribute called `firstName` do
+      not create a local variable called `firstName` or anything close
+      to it, such as `firstNames` or `fName`
+
+### Usage Conventions
+
+#### Class Attributes
+
+Class attributes should always be accessed through accessors and
+mutators (getters and setters)
+
+#### Modifier Usage
+
+- Always use "public", "private", and "protected" keywords
+- Class Attributes should be private. Access through public or protected
+  getters and setters
+- Methods in the public interface of a class should be public
+- Other methods should be declared as protected
+
+#### Class and Package Imports
+
+- To make for more readable code, types used in code should be imported
+  rather than fully qualifying the class name.
+- Import only those classes necessary, not using `*`
+
+#### Methods
+
+- Methods in well-designed object-oriented code are short.
+    + Strive to keep methods less than 10 lines.
+    + Reconsider methods that are over a page in length, breaking them
+      into several methods representing smaller blocks of functionality.
+- This promote code reuse and allows for more combinations of methods.
+- If the number of methods grows to be difficult to understand, then
+  look at decomposing the class into more than one class.
+- A good rule of thumb is that a method should be no more than screen in
+  length.
+- Follow the 30-second rule. Another programmer should be able to look
+  at your method and fully understand what it does, why it does it, and
+  how it does it in less than 30-seconds.
+
+#### Keep It Simple
+
+- Avoid nesting blocks of statements more than 2 or 3 levels deep
+- Avoid nesting method calls too deeply
+- Avoid using compound predicates:
+    + `if (x>0 && x<100 && y>0 && y<100 || z==1000)`
+
+#### Place Constants on Left Side of Expressions
+
+- Avoid compiling the wrong code since assigning to constant is compiled
+  error => easy to detect the error
+
+#### Optimization vs Abstraction
+
+- Code in two pass mode
+- First, implement with good object-oriented abstractions and well
+  thought out design
+- Second, when integrating your class into application, measure
+  performance and seek out the bottlenecks. Then optimize the
+  bottlenecks
+
+### javadoc
+
+#### Overall Guidelines
+
+- Document *What* code does as well as *why* it was developed.
+    + For example, you can look at a piece of code, or class and figure
+      out what it does internally. However, it may not clear what
+      requirements, or other systems this class supports or, why the
+      code is trapping for and throwing certain exceptions.
+- Document difficult or complex functionality
+- Document dependencies, if methods call other methods internally it is
+  important to note that in the method description
+- Document members of the Domain Object Model (real-world object) that
+  your class is based on, or inspired by
+- Methods that implement an interface should not provide javadoc
+  comments, since the javadoc comments are included in the interface and
+  will be referenced when javadoc executes.
+
+#### Standard .java file header
+
+Every .java source file should include the standard header template and
+detail out the items as appropriate
+
+#### Method Documentation
+
+Each method should include `@exception`, `@param`, `@return`,
+`@deprecated` where appropriate
+
+```java
+/**
+* Method to check if proscribed operation is allowed for this object.
+* This method is needed to provided some level of security on operations.
+*
+* @param action must be an operation that has registered itself with the object
+* @return boolean true if the operation is allowed, false otherwise.
+* @exception UnknownOperation exception is thrown when an operation that has not
+* registered with the object is passed as a parameter.
+* @deprecated No longer used, SecurityAccessor class in com.iwombat.security replaces functionality
+* @see com.iwombat.security
+*/
+public boolean operationIsAllowed(Operation action)
+throws UnknownOperation
+{
+
+}
+```
+
+
 ## Documentation
 
 Using javadoc utility:
@@ -2152,3 +2395,4 @@ into valid Java code, as opposed to reconstructing the original code.”
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Java_(programming_language)
+[java-guidelines-iwombat]: http://iwombat.com/standards/JavaStyleGuide.html

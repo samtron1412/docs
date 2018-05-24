@@ -1,9 +1,33 @@
 [TOC]
 
 # Overview
+
 List of phrases.
 
 # Phrases
+
+## what does it look like?
+
+- how does it look? (asking for opinion for sth)
+- what does it look like? (asking for description of sth)
+
+## We lead, we discover, we pioneer, and we inspire
+
+## ad astra
+
+Ad astra is a Latin phrase meaning "to the stars".
+
+- Motto
+    + "non lucror, exposita scientia, ad astra" => "not for money, for
+      discovering knowledge, approach the stars"
+
+## sorry to rain on someone's parade
+
+- sorry to rain on someone's parade
+    + to do something that spoils someone's plan
+- sorry for raining on your parade
+    + sorry for ruining your plan
+
 ## as well as
 
 http://www.dailywritingtips.com/as-well-as-does-not-mean-and/

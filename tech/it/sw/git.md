@@ -1011,11 +1011,13 @@ You can write your own credential helper.
 
 ### [Open source GitHub-like interface](https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Web_Interfaces)
 
+- [gogs](https://github.com/gogits/gogs)
 - [GitLab](https://about.gitlab.com/)
 - [GitBucket](https://github.com/gitbucket/gitbucket)
     + http://www.slideshare.net/takezoe/scala-matsuri-gitbucket
 - [cgit](http://git.zx2c4.com/cgit/) (use for Linux kernel)
 - [gitlist](https://github.com/klaussilveira/gitlist)
+- [gitolite](https://github.com/sitaramc/gitolite)
 
 
 # Git and Other Systems

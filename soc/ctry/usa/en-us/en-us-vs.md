@@ -4,6 +4,16 @@
 
 Common problems in English.
 
+# fact vs truth
+
+- http://www.differencebetween.net/miscellaneous/difference-between-fact-and-truth/
+- https://philosophy.stackexchange.com/questions/8053/what-is-the-difference-between-fact-and-truth
+- https://www.quora.com/What-is-the-difference-between-truth-and-fact-1
+
+# both...and, neither...nor, either...or
+
+- https://www.thoughtco.com/both-and-neither-nor-either-or-1210736
+
 # override vs overwrite
 
 - `Override`: to use your power or authority to change or cancel someone

@@ -76,6 +76,11 @@ conclusion to his brilliant career in track and field.
 
 # Tips and Tricks
 
+## Capitalization in titles
+
+- http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html
+- https://capitalizemytitle.com/#
+
 ## Personality vocabulary
 
 | Word/Phrase            | Meaning                                                                                                  |

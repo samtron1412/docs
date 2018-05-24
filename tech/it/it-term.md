@@ -151,6 +151,19 @@ In computer engineering, computer architecture is a set of rules and
 methods that describe the functionality, organization, and
 implementation of computer systems.
 
+
+## Multiplexer
+
+- In electronics, a multiplexer (or mux) is a device that selects on of
+  several analog or digital input signals and forwards the selected
+  input into a single line.
+    + An electronic multiplexer makes it possible for several signals to
+      share one device or resource instead of having one device per
+      input signal.
+- Conversely, a demultiplexer (demux) is a device taking a single input
+  and selecting one of many data-output-lines, which is connected to the
+  single input.
+
 # Software
 
 ## Computer Software Engineering
@@ -325,6 +338,63 @@ failover back to its original state (before failure).
   organize and recommend music to people, to create personalized radio
   stations, and to see what other users listened to the most.
 
+
+## Race condition
+
+- https://en.wikipedia.org/wiki/Race_condition
+
+A race condition is the behavior of an electronics, software, or other
+system where the output is dependent on the sequence or timing of other
+uncontrollable events.
+
+It becomes a bug (produces wrong results) when events do not happen in
+the order the programmer intended.
+
+=> Fixing by mutual exclusion (locking), synchronization, etc.
+
+## Deadlock
+
+- https://en.wikipedia.org/wiki/Deadlock
+
+A deadlock is a state in which each member of a group is waiting for
+some other member to take action, such as sending a message or more
+commonly releasing a lock.
+
+In an operating system, a deadlock occurs when a process or thread
+enters a waiting state because a requested system resource is held by
+another waiting process, which in turn is waiting for another resource
+held by another waiting process. If a process is unable to change its
+state indefinitely because the resources requested by it are being used
+by another waiting process, then the system is said to be in a deadlock
+
+## Resource Starvation
+
+- https://en.wikipedia.org/wiki/Starvation_(computer_science)
+
+In computer science, starvation is a problem encountered in concurrent
+computing where a process **is perpetually denied** necessary resources
+to process its work (lack of needed resources).
+
+## Software regression
+
+- A software regression is a software bug that makes a feature stop
+  functioning as intended after a certain event.
+- A software performance regression is a situation where the software
+  still functions correctly, but performs slowly or uses more memory
+  than before.
+
+### Testing
+
+- Regression testing
+
+### Types
+
+- Local: a change introduces a new bug in the changed module or
+  component.
+- Remote: a change in one part of the software breaks functionality in
+  another module or component.
+- Unmasked: a change unmasks (exposes) an already existing bug that had
+  no effect before the change.
 
 # Computer Science
 

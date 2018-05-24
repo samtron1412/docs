@@ -1317,6 +1317,45 @@ execution configuration values as defined in `StreamConfig`.
 
 # Command Line Tools
 
+## Start Zookeeper
+
+`> bin/zookeeper-server-start.sh config/zookeeper.properties`
+
+## Start Kafka Server
+
+`> bin/kafka-server-start.sh config/server.properties`
+
+## Create a new topic
+
+```bash
+> bin/kafka-topics.sh --create \
+    --zookeeper localhost:2181 \
+    --replication-factor 1 \
+    --partitions 1 \
+    --topic streams-plaintext-input
+```
+
+## List created topics
+
+`> bin/kafka-topics.sh --zookeeper localhost:2181 --describe`
+
+## Start a console producer
+
+`> bin/kafka-console-producer.sh --broker-list localhost:9092 --topic streams-plaintext-input`
+
+## Start a console consumer
+
+```bash
+> bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
+    --topic streams-wordcount-output \
+    --from-beginning \
+    --formatter kafka.tools.DefaultMessageFormatter \
+    --property print.key=true \
+    --property print.value=true \
+    --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
+    --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+```
+
 ## Delete a topic
 
 Set `delete.topic.enable=true` in `server.properties`

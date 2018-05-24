@@ -107,6 +107,16 @@ Barcelona, Spain
 
 ## Rijksmuseum, Amsterdam, the Netherlands
 
+# Artists
+
+## James Turrell
+
+- http://jamesturrell.com/
+
+## Charles Simonds
+
+- http://www.charles-simonds.com/contact.html
+
 # References
 
 [text-book]: Preble's Artforms, Eleventh Edition

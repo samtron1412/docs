@@ -251,11 +251,40 @@ List of useful computer software.
 
 ## Terminal emulators
 
-[rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
-[terminator](https://wiki.archlinux.org/index.php/Terminator)
-[black-screen](https://github.com/black-screen/black-screen)
+### Common
+
+- [rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+
+### Windows
+
+- [black-screen](https://github.com/black-screen/black-screen)
 - babun (Windows)
 - ConEmu (Windows)
+
+### VTE-based
+
+- VTE (Virtual Terminal Emulator) is a widget developed during early
+  GNOME days for use in the GNOME terminal.
+- [terminator](https://wiki.archlinux.org/index.php/Terminator)
+- gnome-terminal
+- guake
+- lxterminal
+- mate-terminal
+
+### KMS-based
+
+- The kernel mode setting
+- They could be invoked without X
+- kmscon
+
+### framebuffer-based
+
+- In GNU/Linux world, the framebuffer could be referred to a virtual
+  device in the Linux kernel (fbdev) or the virtual framebuffer system
+  for X (xvfb).
+- This section mainly lists the terminal emulators that based on the in-
+  kernel virtual device, i.e. fbdev
+- yaft
 
 ## Disks
 
@@ -426,6 +455,7 @@ How to type fast:
 - [gvim](https://wiki.archlinux.org/index.php/GVi)
 - [emacs](https://wiki.archlinux.org/index.php/Emacs)
 - sublime-text
+- visual-studio-code
 - atom
 
 ## Readers and Viewers
@@ -460,6 +490,15 @@ How to type fast:
 
 # Security
 
+## Password managers
+
+- lastpass-cli
+- pass: (zx2c4)
+- gopass: new fork of pass written in go
+    + https://news.ycombinator.com/item?id=13551692
+    + https://www.justwatch.com/blog/post/announcing-gopass/
+- seahorse: manage gnome-keyring
+
 # Science
 
 # Work environment
@@ -472,13 +511,35 @@ How to type fast:
 
 ## Desktop environment
 
+- https://wiki.archlinux.org/index.php/Desktop_environment
+- cinnamon
+- enlightenment
+- gnome
+- lxde
+
 ## Window managers
 
+### Stacking
+
+- enlightenment
+- openbox
 - [tinywm](http://incise.org/tinywm.html)
+
+### Tiling or Dynamic
+
 - [i3](https://wiki.archlinux.org/index.php/I3)
 - [dwm](https://wiki.archlinux.org/index.php/Dwm)
 - [awesome](https://wiki.archlinux.org/index.php/Awesome)
 - [xmonad](https://wiki.archlinux.org/index.php/Xmonad)
+
+## Taskbars
+
+- tint2
+
+## Application luanchers
+
+- dmenu
+- rofi
 
 ## Window tilers
 

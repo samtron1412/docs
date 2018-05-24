@@ -19,3 +19,14 @@
 - https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
 - https://www.digitalocean.com/community/tutorials/how-to-run-your-own-mail-server-with-mail-in-a-box-on-ubuntu-14-04
 
+
+# GNU Privacy Guard (GnuPG) - OpenPGP standard
+
+## Signatures
+
+```
+--
+I use the GNU Privacy Guard (GnuPG) in combination with Enigmail.
+You can send me encrypted mail if you want some privacy.
+My key is available at <http://digitalbrains.com/2012/openpgp-key-peter>
+```

@@ -27,6 +27,16 @@ of universe and the natural basic science.
 - [Math As A Second Language][mathasasecondlanguage]
 - [Classic Arithmetic][classicarithmetic]
 
+### Software
+
+- Sage: http://www.sagemath.org/
+- Maxima: http://maxima.sourceforge.net/
+- GNU Octave: https://www.gnu.org/software/octave/
+- https://mathematica.stackexchange.com/questions/28162/alternatives-to-mathematica
+- https://github.com/corywalker/expreduce
+- https://alternativeto.net/software/mathematica/?license=free
+- https://en.wikipedia.org/wiki/List_of_computer_algebra_systems
+
 # History
 
 ## Etymology

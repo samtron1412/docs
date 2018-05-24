@@ -207,7 +207,9 @@ wheelchair
 Intellectual disability (previously called
 mental retardation)
 
-## Mucus
+## Rhinitis - nasal allergies
+
+### Glossary
 
 - home remedy
 - nasal congestion
@@ -215,8 +217,136 @@ mental retardation)
 - saline
 - syringe
 - pickle
-# Tips and tricks
-[Teen tips for health](../graphic/health/10-tips-teen-health.pdf)
+
+### What Is Rhinitis?
+
+- https://en.wikipedia.org/wiki/Rhinitis
+
+The word rhinitis means “inflammation of the nose.” The nose produces
+fluid called mucus. This fluid is normally thin and clear. It helps to
+keep dust, debris and allergens out of the lungs. Mucus traps particles
+like dust and pollen, as well as bacteria and viruses.
+
+Mucus usually drains down the back of your throat. You’re not aware of
+this most of the time because it is a small amount and is thin. When the
+nose becomes irritated, it may produce more mucus, which becomes thick
+and pale yellow. The mucus may begin to flow from the front of the nose
+as well as the back. Substances in the mucus may irritate the back of
+the throat and cause coughing. Postnasal drip occurs when more mucus
+drains down the back of the throat.
+
+### What Causes Rhinitis?
+
+Irritants or allergens (substances that provoke an allergic response)
+may cause rhinitis. The cells of your body react to these irritants or
+allergens by releasing histamine and other chemicals. Rhinitis is often
+a temporary condition. It clears up on its own after a few days for many
+people. In others, especially those with allergies, rhinitis can be a
+chronic problem. Chronic means it is almost always present or recurs
+often. Rhinitis can last for weeks to months with allergen exposure.
+
+### What Are the Types of Rhinitis?
+
+There are several types of rhinitis:
+
+- Allergic rhinitis is caused by allergies to substances called
+allergens.
+- Seasonal allergic rhinitis is sometimes called “hay fever.” But,
+  people with seasonal allergic rhinitis do not have to have a fever and
+  do not have to be exposed to hay to develop this condition. It is an
+  allergic reaction to pollen from trees, grasses and weeds. This type
+  of rhinitis occurs mainly in the spring and fall, when pollen from
+  trees, grasses and weeds are in the air.
+- Perennial allergic rhinitis is caused by allergens that are present
+  all year long. The primary causes of this type of rhinitis are
+  allergies to dust mites, mold, animal dander and cockroach debris.
+- Non-allergic rhinitis is not caused by allergens. Smoke, chemicals or
+  other irritating environmental conditions may provoke non-allergic
+  rhinitis. Hormonal changes, physical defects of the nose (like a
+  deviated septum) and the overuse of nose sprays may also cause it.
+  Sometimes medications cause it. Often, the cause of this type of
+  rhinitis is not well understood. But it is common in patients with
+  non-allergic asthma. The symptoms are similar to allergy symptoms.
+- Infectious rhinitis is possibly the most common type of rhinitis. It
+  is also known as the common cold or upper respiratory infection (URI).
+  Colds occur when a cold virus settles into the mucous membranes of the
+  nose and sinus cavities and causes an infection. What Are the Symptoms
+  of Rhinitis?
+
+### Rhinitis symptoms include:
+
+- Itching in the nose and eyes
+- Sneezing
+- Stuffy nose (congestion)
+- Runny nose
+- Mucus (phlegm) in the throat (postnasal drip)
+
+### Is It Allergies or a Cold?
+
+Sometimes it can be hard to tell the difference between allergies and
+the common cold. There are more than a hundred strains of cold viruses.
+Each tends to become widespread at certain times of the year, which is
+why you may mistake a cold for a seasonal allergy. Allergies occur at
+the same time every year and last as long as the allergen is in the air
+(usually 2-3 weeks per allergen). Allergies cause itching of the nose
+and eyes along with other nasal symptoms. Colds last about one week and
+have less itching of the nose and eyes.
+
+### What Are the Treatments for Allergic Rhinitis?
+
+The first and best option is to avoid contact with substances that
+trigger your nasal allergies (allergens). When prevention is not enough,
+consider using over-the-counter or prescription medicines:
+
+- Antihistamines are taken by mouth or as a nasal spray. They can
+  relieve sneezing and itching in the nose and eyes. They also reduce a
+  runny nose and, to a lesser extent, nasal stuffiness.
+- Decongestants are taken by mouth or as a nasal spray or drops. They
+  help shrink the lining of the nasal passages which relieves nasal
+  stuffiness. These nose drops and sprays should be taken short-term.
+- Nasal corticosteroids are used in nasal spray form. They reduce
+  inflammation in the nose and block allergic reactions. They are the
+  most effective medicine type for allergic rhinitis because they can
+  reduce all symptoms, including nasal congestion. Nasal corticosteroids
+  have few side effects.
+- Leukotriene receptor antagonists block the action of important
+  chemical messengers other than histamine that are involved in allergic
+  reactions.
+- Cromolyn sodium is a nasal spray that blocks the release of chemicals
+  that cause allergy symptoms, including histamine and leukotrienes.
+  This medicine has few side effects, but you must take it four times a
+  day.
+- Nasal allergy symptoms may disappear completely when the allergen is
+  removed or after the allergy is treated. Talk to your pharmacist and
+  health care provider about what is best for you.
+
+Many people with allergies do not get complete relief from medications.
+They may be candidates for immunotherapy. Immunotherapy is a long-term
+treatment that can help prevent or reduce the severity of allergic
+reactions and change the course of allergic disease by modifying the
+body’s immune response to allergens.
+
+- https://en.wikipedia.org/wiki/Allergen_immunotherapy
+
+### How Can I Prevent Allergic Rhinitis?
+
+The first and best option is to avoid contact with allergens. Other
+prevention tips are:
+
+- Don’t touch or rub your nose.
+- Wash your hands often with soap and water.
+- Use a vacuum with a HEPA filter to reduce allergen exposure while
+  vacuuming.
+- Wash your bed linens and pillowcases in hot water and detergent to
+  reduce allergens.
+- Use dust-mite proof covers for pillows, comforters, duvets, mattresses
+  and box springs.
+- Keep pets out of the bedroom to reduce pet dander allergen in your
+  bedding.
+- Wear sunglasses and a wide-brimmed hat to reduce pollen getting into
+  your eyes.
+- Keep windows closed during high pollen and mold seasons. Use the air
+  conditioner in your car and home (HEPA filter).
 
 ## ADHD
 
@@ -323,3 +453,4 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 [1]: https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/ "Healthy Eating Plate and Healthy Eating Pyramid"
 [2]: https://en.wikipedia.org/wiki/Red_meat "Wikipedia - Red meat"
 [3]: http://www.webmd.com/fitness-exercise/guide/good-protein-sources "Good protein sources"
+[Teen tips for health](../graphic/health/10-tips-teen-health.pdf)

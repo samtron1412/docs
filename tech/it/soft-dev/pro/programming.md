@@ -465,6 +465,15 @@ Debugging:
 
 # Principles of Good Programming
 
+## Code tells you HOW, comments tell you WHY
+
+- https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
+- literature programming
+- programmers first, compiler second
+- Code tells you HOW, comments tell you WHY
+
+## Others
+
 The principles of good programming are closely related to principles of
 good design and engineering. The following programming principles have
 helped me over the years become a better programmer, and I believe can
@@ -679,6 +688,72 @@ executes the program's machine code instructions.
 ## Machine code
 
 
+## Thread safety (threadsafe)
+
+### Introduction
+
+- Thread safety is a computer programming concept applicable to multi-
+  threaded code.
+    + Thread-safe code only manipulates shared data structures in a
+      manner that ensures that all threads behave properly and fulfill
+      their design specifications without unintended interaction.
+    + Synchronization
+
+### Levels of thread safety
+
+- Software libraries can provide certain thread-safety guarantees
+- Thread safe
+    + implementation is guaranteed to be free of race conditions when
+      accessed by multiple threads simultaneously.
+- Conditionally safe
+    + different threads can access different objects simultaneously, and
+      access to shared data is protected from race conditions.
+- Not thread safe
+    + code should not be accessed simultaneously by different threads
+- Thread safety guarantees usually also include design steps to prevent
+  or limit the risk of different forms of deadlocks, as well as
+  optimizations to maximize concurrent performance.
+    + However, deadlock-free guarantees cannot always be given, since
+      deadlocks can be caused by callbacks and violation of
+      architectural layering independent to the library itself.
+
+### Implementation Approaches
+
+- Avoiding shared state
+    + Re-entrancy
+        * Writing code in such a way that it can be partially executed
+          by a thread, reexecuted by the same thread or simultaneously
+          executed by another thread and still correctly complete the
+          original execution.
+        * This requires the saving of state information in variables
+          local to each execution, usually on a stack, instead of in
+          static or global variables or other non-local state.
+        * All non-local state must be accessed through atomic operations
+          and the data-structures must also be reentrant.
+    + Thread-local storage
+        * Variables are localized so that each thread has its own
+          private copy
+    + Immutable objects
+        * The state of an object cannot be changed after construction
+- Synchronization-related
+    + Mutual exclusion
+        * Access to shared data is serialized using mechanisms that
+          ensure only one thread reads or writes to the shared data at
+          the time.
+        * Improper usage can lead to side-effects like deadlocks,
+          livelocks, and resource starvation.
+    + Atomic operations
+        * Shared data are accessed by using atomic operations which
+          cannot be interrupted by other threads.
+- Concurrent design
+    + involves structuring the shared state in a manner that allows
+      multiple threads to simultaneously modify the state without
+      interfering with each other.
+
+### Resources
+
+- https://blogs.msdn.microsoft.com/ericlippert/2009/10/19/what-is-this-thing-you-call-thread-safe/
+
 # Tools
 
 - [Email][email]
@@ -709,4 +784,4 @@ executes the program's machine code instructions.
 [email]: https://en.wikipedia.org/wiki/Email
 [git]: https://git-scm.com/
 [cgit]: https://git.zx2c4.com/cgit/about/
-
+[threadsafe]: https://en.wikipedia.org/wiki/Thread_safety

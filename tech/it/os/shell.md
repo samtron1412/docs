@@ -1,7 +1,11 @@
 [TOC]
 
 # Overview
-In computing, a shell is **a user interface** for access to an operating system's services. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation.
+
+In computing, a shell is **a user interface** for access to an operating
+system's services. In general, operating system shells use either a
+command-line interface (CLI) or graphical user interface (GUI),
+depending on a computer's role and particular operation.
 
 The shell runs inside a terminal, virtual terminal or terminal emulator.
 
@@ -11,8 +15,11 @@ We can use shell to **programming**.
 
 
 # Text shells (Command line interface - CLI)
+
 ## [List of CLI](https://en.wikipedia.org/wiki/List_of_command-line_interpreters)
+
 ### [Unix-like systems](https://en.wikipedia.org/wiki/Unix_shell)
+
 - [Bourne shell (sh)](https://en.wikipedia.org/wiki/Bourne_shell): first UNIX shell written by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson_(computer_programmer))
   + [Bourne-Again shell (bash)](https://en.wikipedia.org/wiki/Bash_(Unix_shell)): GNU project
   + [Z shell (zsh)](https://en.wikipedia.org/wiki/Z_shell): a relatively modern shell that is backward compatible with bash.
@@ -25,16 +32,23 @@ We can use shell to **programming**.
 
 
 # Graphical shells
+
 ## [Microsoft Windows](https://en.wikipedia.org/wiki/Windows_shell)
 
 ## Unix-like systems
+
 [Windowing system](https://en.wikipedia.org/wiki/Windowing_system)
 
 ## BSD
 
 # Terminology
+
 ## sh-like shell system - Interactive vs non-Interactive and Login vs non-Login
-> Why need more type of shell like this? Because some configurations only need load once, e.g. system configurations, some configuration need load every invoke a new shell, e.g. user configurations, and some shell is interactive with user, some only are used for scripting.
+
+> Why need more type of shell like this? Because some configurations
+> only need load once, e.g. system configurations, some configuration
+> need load every invoke a new shell, e.g. user configurations, and some
+> shell is interactive with user, some only are used for scripting.
 
 We can have 4 different types of shells:
 
@@ -46,16 +60,25 @@ We can have 4 different types of shells:
 
 
 # Shell configuration files
-`/etc/profile`: the system wide initialization file, executed for *login shells*
-`~/.bash_profile`: the personal initialization file, executed for *login shells*. Run **bashrc** before run something else.
-`~/.bashrc`: the individual *per-interactive-shell* start up file
+
+- `/etc/profile`: the system wide initialization file, executed for
+  *login shells*
+- `~/.bash_profile`: the personal initialization file, executed for
+  *login shells*. Run **bashrc** before run something else.
+- `~/.bashrc`: the individual *per-interactive-shell* start up file
 
 # Basic shell script
-- The shell script need locate in the directories listed in the PATH variables if you want run the script by name.
-- If the script do not have execute permission we need user command like this to run script: `$ bash <path to script>`
-	+ After set execute permission for the script: `# chmod +x <path to script>`
-	+ We can run script by name: `$ <script name>`
-- Should write the shell scripts by text editor such as: Sublime Text, vim, Emacs, etc. Because they don't store meta information out of text contents.
+
+- The shell script need locate in the directories listed in the PATH
+  variables if you want run the script by name.
+- If the script do not have execute permission we need user command like
+  this to run script: `$ bash <path to script>`
+    + After set execute permission for the script:
+        * `# chmod +x <path to script>`
+    + We can run script by name: `$ <script name>`
+- Should write the shell scripts by text editor such as: Sublime Text,
+  vim, Emacs, etc. Because they don't store meta information out of text
+  contents.
 - Basic template shell script:
 
 ```shell
@@ -70,7 +93,17 @@ We can have 4 different types of shells:
 printf '%s\n' "Hello, World!"
 ```
 
-- In shell script we should use `hash(#)` to comment, we should add a character after the hash to indicate the type of comment. E.g `#:` is comment of the shell script file, `#::` is comment of the function, `#:::` is comment for variables or code blocks.
+- In shell script we should use `hash(#)` to comment, we should add a
+  character after the hash to indicate the type of comment. E.g `#:` is
+  comment of the shell script file, `#::` is comment of the function,
+  `#:::` is comment for variables or code blocks.
 
 # Tips and Tricks
+
 ## [Shell templates](https://github.com/RenatGilmanov/shell-script-template)
+
+# References
+
+[wiki]: https://en.wikipedia.org/wiki/Shell_(computing)
+[awiki]: https://wiki.archlinux.org/index.php/Command-line_shell
+

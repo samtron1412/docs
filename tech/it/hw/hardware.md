@@ -40,6 +40,11 @@ Attaches to a router and allows wifi connections to the network.
 	- Quy hoạch sóng để tránh nhiễu ( 3 chanel không chồng lấn nhau là 1,6,11)
 
 
+# Trusted Platform Model
+
+- https://en.wikipedia.org/wiki/Trusted_Platform_Module
+-
+
 # References
 [1]: https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects "Wikipedia - List of open-source hardware projects"
 [2]: https://en.wikipedia.org/wiki/Open-source_hardware "Wikipedia - Open source hardware"

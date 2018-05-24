@@ -138,6 +138,15 @@ Enable service: `systemctl enable example.service`
 ### Style
 
 
+# Pre-Installation
+
+## Encryption
+
+### Resources
+
+- http://tech.memoryimprintstudio.com/dual-boot-installation-of-arch-linux-with-preinstalled-windows-10-with-encryption/
+- https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+
 # [Installation][installation]
 
 ## Preparation
@@ -672,6 +681,15 @@ it had trouble.
 
 # Troubleshooting
 
+## "Failed to commit transaction (conflicting files)" error
+
+- A safe way is to first check if another package owns the file
+    + pacman -Qo /path/to/file
+- If the file is owned by another package, file a bug report.
+- If the file is not owned by another package, rename the file which
+  'exists in filesystem' and re-issue the update command. If all goes
+  well, the file may then be removed.
+
 ## Merge two partitions
 
 ## Reinstall bootloader after install Windows
@@ -691,6 +709,17 @@ See more:
 - aur.md
 
 # Tips & Tricks
+
+## Resize the LVM logical volumes with LUKS (dm-crypt)
+
+1. Boot to a live system using usb
+2. Open the disk: `cryptsetup open /dev/sda2 encrypted-lvm`
+3. Shrinking a logical volume and resize the file system at the same
+   time: `lvresize -L -45GB -r /dev/vol-group1/logical-vol2`
+4. Expanding a logical volume and resize the file system at the same
+   time: `lvresize -l +100%FREE -r /dev/vol-group1/logical-vol2`
+5. Diactivate the logical volumes: `vgchange -an`
+6. Close the encrypted disk: `cryptsetup close encrypted-lvm`
 
 ## Remap Caps Lock key to Escape key + Automatically detect a plugging keyboard
 
