@@ -828,6 +828,51 @@ Sincerely,
 [Address]
 ```
 
+
+```scholarship
+[Date]
+
+[Mr./Mrs. First and Last Name of Donor or Name of Organization ]
+[Name of Scholarship]
+[Address]
+[City, State, Zip]
+
+Dear [Donor Name or Organization Name],
+
+First paragraph:   State the purpose of your letter.
+
+I am writing to thank you for your generous $500 [Name of scholarship]
+scholarship. I was very happy and appreciative to learn that I was
+selected as the recipient of your scholarship.
+
+Second paragraph:  Share a little about yourself and indicate why the
+scholarship is important.
+
+I am a Biology major with an emphasis in physiology and anatomy. I plan
+to pursue a career in pharmacy upon graduating from Fresno State. I am
+currently a junior carrying 17 units, and plan to graduate in the fall
+of 2007. After graduation, I will attend San Francisco Pharmacy School
+to earn my pharmaceutical degree. Thanks to you, I am one step closer to
+that goal.
+
+Third paragraph:  Close by thanking the person again and make a
+commitment to do well with the “donor’s investment.”
+
+By awarding me the [Name of scholarship], you have lightened my
+financial burden which allows me to focus more on the most important
+aspect of school, learning. Your generosity has inspired me to help
+others and give back to the community.  I hope one day I will be able to
+help students achieve their goals just as you have helped me.
+
+Sincerely,
+
+[Sign your name here]
+
+[Type your name]
+[Your address]
+[City, State, Zip]
+```
+
 ## Write math in email
 
 [TeX to Gmail](http://alexeev.org/gmailtex.html)
