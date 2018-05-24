@@ -796,6 +796,38 @@ Sincerely,
 [Your Name]
 ```
 
+```scholarship
+[Date]
+
+[Mr./Mrs. First and Last Name of Donor or Name of Organization ]
+[Name of Scholarship]
+[Address]
+[City, State, Zip]
+
+Dear the Donor of the [name] Scholarship,
+
+I am writing to thank you for your generous scholarship. I was very
+happy and appreciative to learn that I was selected as the recipient of
+your scholarship.
+
+I am a Computer Science major with an emphasis in Artificial
+Intelligence and Algorithms. I will transfer to UC Berkeley as a junior
+in Fall 2018 semester. After graduation, I plan to pursue a graduate
+degree. Thanks to you, I am one step closer to that goal.
+
+By awarding me the [name] Scholarship, you have lightened my financial
+burden which allows me to focus more on the most important aspect of
+school, learning. Your generosity has inspired me to help others and
+give back to the community.  I hope one day I will be able to help
+students achieve their goals just as you have helped me.
+
+Sincerely,
+
+[Sign your name here]
+
+[Address]
+```
+
 ## Write math in email
 
 [TeX to Gmail](http://alexeev.org/gmailtex.html)
