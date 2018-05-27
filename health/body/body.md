@@ -444,6 +444,14 @@ Examples: ethanol (alcoholic beverages), opioids, barbiturates, benzodiazepines.
 Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 
 
+# Women
+
+## Hygiene
+
+- https://en.wikipedia.org/wiki/Feminine_hygiene
+- https://en.wikipedia.org/wiki/Tampon
+- https://en.wikipedia.org/wiki/Sanitary_napkin
+
 # References
 
 1. [Healthy Eating Plate and Healthy Eating Pyramid][1]
