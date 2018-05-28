@@ -6,6 +6,10 @@
 - **Multi-paradigm:** object-oriented, imperative, functional, procedural, reflective
 - **Typing:** duck, dunamic, strong
 
+## Resources
+
+- https://developers.google.com/edu/python/
+
 ## History
 
 first release: 1991
