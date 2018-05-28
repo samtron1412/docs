@@ -1164,6 +1164,7 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
   applicable toe the current working tree and/or the index and detects
   errors.
 - `git apply xdg-utils-v1.1.1.patch`: Apply the patch
+- `git apply -R some.path`: revert the patch
 
 ## git-format-patch - Prepare patches for e-mail submission
 
