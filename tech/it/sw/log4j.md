@@ -67,6 +67,8 @@ configuration file or a configuration class.
 
 # Configuration
 
+## Introduction
+
 Configuring log4j involves assigning the Level, defining Appender, and
 specifying Layout objects in a configuration file.
 
@@ -78,6 +80,27 @@ You can specify a different location for the properties file using a JVM
 option:
 
 `-Dlog4j.configurationFile=file:///Users/sont/repo/postage-stamp-kstream/src/test/resources/log4j2-test.xml`
+
+## Dynamically change logging level
+
+The `Configurator.setAllLevels(String, Level)` method sets the level of
+the given named logger and all child loggers. Recall that in Log4j,
+loggers are hierachical. If you have the loggers com.foo.a, com.foo.b,
+and com.foo.c, and you call setAllLevels("com.foo", Level.DEBUG) then
+all the loggers I listed will be set to DEBUG as will "com.foo". A
+logger "com.bar" will remain as is.
+
+The method `Configurator.setLevel(Map<String, Level>)` will set each
+named logger to its Level from the map. No child loggers will be
+affected unlike setAllLevels(String, Level).
+
+The method `Configurator.setLevel(String, Level)` sets the named logger
+to the given level without affecting child loggers (unlike
+setAllLevels(String, Level)).
+
+Finally, `Configurator.setRootLevel(Level)` sets the level of the root
+logger to the given level without affecting child loggers. The root
+logger is the topmost logger with a name of "" (the empty string).
 
 # References
 
