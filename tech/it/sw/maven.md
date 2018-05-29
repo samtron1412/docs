@@ -8,6 +8,11 @@
 
 `mvn clean package`
 
+## plugins vs pluginManagement
+
+- https://stackoverflow.com/questions/10483180/maven-what-is-pluginmanagement
+- pluginManagement: will be inherited in child modules
+
 # Tips and Tricks
 
 ## Add version tag for plugins
