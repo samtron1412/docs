@@ -2,7 +2,19 @@
 
 # Overview
 
+## Resources
+
+### Books
+
+- https://leanpub.com/the-tao-of-tmux/read
+
+## Others
+
+- https://github.com/gpakosz/.tmux
+
 # Cheatsheet
+
+## Common
 
 start new:
 
@@ -41,7 +53,7 @@ In tmux, hit the prefix `ctrl+b` and then:
 ## Sessions
 
     :new<CR>  new session
-    s  list sessions
+    s  list sessions and switch between sessions
     $  name session
 
 ## Windows (tabs)
@@ -52,7 +64,7 @@ In tmux, hit the prefix `ctrl+b` and then:
     ,  name window
     &  kill window
 
-## <a name="PanesSplits"></a>Panes (splits)
+## Panes (splits)
 
     %  vertical split
     "  horizontal split
@@ -68,20 +80,28 @@ In tmux, hit the prefix `ctrl+b` and then:
     <prefix> } (Move the current pane right)
     <prefix> z toggle pane zoom
 
-## <a name="syncPanes"></a>Sync Panes
+## Sync Panes
 
-You can do this by switching to the appropriate window, typing your Tmux prefix (commonly Ctrl-B or Ctrl-A) and then a colon to bring up a Tmux command line, and typing:
+You can do this by switching to the appropriate window, typing your Tmux
+prefix (commonly Ctrl-B or Ctrl-A) and then a colon to bring up a Tmux
+command line, and typing:
 
 ```
 :setw synchronize-panes
 ```
 
-You can optionally add on or off to specify which state you want; otherwise the option is simply toggled. This option is specific to one window, so it won’t change the way your other sessions or windows operate. When you’re done, toggle it off again by repeating the command. [tip source](http://blog.sanctum.geek.nz/sync-tmux-panes/)
+You can optionally add on or off to specify which state you want;
+otherwise the option is simply toggled. This option is specific to one
+window, so it won’t change the way your other sessions or windows
+operate. When you’re done, toggle it off again by repeating the command.
+[tip source](http://blog.sanctum.geek.nz/sync-tmux-panes/)
 
 
 ## Resizing Panes
 
-You can also resize panes if you don’t like the layout defaults. I personally rarely need to do this, though it’s handy to know how. Here is the basic syntax to resize panes:
+You can also resize panes if you don’t like the layout defaults. I
+personally rarely need to do this, though it’s handy to know how. Here
+is the basic syntax to resize panes:
 
     PREFIX : resize-pane -D (Resizes the current pane down)
     PREFIX : resize-pane -U (Resizes the current pane upward)
@@ -97,15 +117,25 @@ You can also resize panes if you don’t like the layout defaults. I personally 
 
 ## Copy mode:
 
-Pressing PREFIX [ places us in Copy mode. We can then use our movement keys to move our cursor around the screen. By default, the arrow keys work. we set our configuration file to use Vim keys for moving between windows and resizing panes so we wouldn’t have to take our hands off the home row. tmux has a vi mode for working with the buffer as well. To enable it, add this line to .tmux.conf:
+Pressing PREFIX [ places us in Copy mode. We can then use our movement
+keys to move our cursor around the screen. By default, the arrow keys
+work. we set our configuration file to use Vim keys for moving between
+windows and resizing panes so we wouldn’t have to take our hands off the
+home row. tmux has a vi mode for working with the buffer as well. To
+enable it, add this line to .tmux.conf:
 
     setw -g mode-keys vi
 
-With this option set, we can use h, j, k, and l to move around our buffer.
+With this option set, we can use h, j, k, and l to move around our
+buffer.
 
-To get out of Copy mode, we just press the ENTER key. Moving around one character at a time isn’t very efficient. Since we enabled vi mode, we can also use some other visible shortcuts to move around the buffer.
+To get out of Copy mode, we just press the ENTER key. Moving around one
+character at a time isn’t very efficient. Since we enabled vi mode, we
+can also use some other visible shortcuts to move around the buffer.
 
-For example, we can use "w" to jump to the next word and "b" to jump back one word. And we can use "f", followed by any character, to jump to that character on the same line, and "F" to jump backwards on the line.
+For example, we can use "w" to jump to the next word and "b" to jump
+back one word. And we can use "f", followed by any character, to jump to
+that character on the same line, and "F" to jump backwards on the line.
 
        Function                vi             emacs
        Back to indentation     ^              M-m
@@ -168,3 +198,35 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
     unbind Up bind Up new-window -d -n tmp \; swap-pane -s tmp.1 \; select-window -t tmp
     unbind Down
     bind Down last-window \; swap-pane -s tmp.1 \; kill-window -t tmp
+
+# Use Cases
+
+## Split panes
+
+- Start a tmux session:
+    + tmux new-session -s <your_session_name>
+- To split vertically:
+    + `ctrl-b %`
+- To split horizontally:
+    + `ctrl-b "`
+- To navigate and select a pane:
+    + `ctrl-b <arrow keys>`
+- To toggle full-screen zoom in/out on the current pane:
+    + `ctrl-b z`
+- To close the current pane:
+    + ctrl-b x then confirm with y or n
+
+## Session management
+
+- Start with a named session:
+    - tmux new-session -s <your_session_name>
+    - `tmux new -s <name>`
+- Do your work in your tmux session
+- Detach from your session when you are done:
+    - tmux detach
+- [Optional] View available attachable sessions:
+    - tmux list-sessions or `tmux ls`
+- Reattach to your tmux session when you are ready to continue working:
+    - tmux attach -t <your_session_name>
+    - `tmux a -t <name>`
+    - `tmux a #`: last created session
