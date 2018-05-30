@@ -11,6 +11,7 @@
 ## Others
 
 - https://github.com/gpakosz/.tmux
+- Pair programming: https://github.com/zolrath/wemux/
 
 # Cheatsheet
 
