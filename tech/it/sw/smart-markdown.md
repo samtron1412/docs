@@ -22,4 +22,5 @@ The plugin is aimed at making editing Markdown in Sublime Text 2 easier and more
 - `Ctrl+c Ctrl+p` to the previous one
 - `Ctrl+c Ctrl+f` to move to the next headline (same level or higher level)
 - `Ctrl+c Ctrl+b` to the previous one
-
+- `Super+Shift+,`: decreasing headline levels
+- `Super+Shift+.`: increasing headline levels
