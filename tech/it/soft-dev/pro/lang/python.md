@@ -18,6 +18,26 @@ first release: 1991
 
 duck
 
+# Virtual Environment
+
+## Introduction
+
+- venv: official way for python >= 3.4
+- virtualenv: 3rd-party way for older version
+
+## Creation
+
+```
+python -m venv <DIR>
+virtualenv <DIR>
+```
+
+## Activation
+
+```
+$ source <DIR>/bin/activate
+```
+
 # Package Manager
 
 ## Introduction
