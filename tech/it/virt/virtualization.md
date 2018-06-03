@@ -11,6 +11,24 @@ Virtualization began in the 1960s, as a method of logically dividing the
 system resources provided by mainframe computers between different
 applications.
 
+# Classification
+
+## Hardware virtualization
+
+- Native: (kernel level) KVM, Xen
+- Independent: (Standalone software) QEMU, VirtualBox
+
+## OS-level virtualization
+
+- docker
+- lxc (cgroups, Linux namespaces)
+- rkt
+- systemd-nspawn
+
+# Related software
+
+- libvirt: virtualization management library
+
 # References
 
 1. [Virtualization Wikipedia][1]
