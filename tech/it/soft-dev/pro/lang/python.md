@@ -26,7 +26,10 @@ duck
 ## Introduction
 
 - venv: official way for python >= 3.4
+    + https://docs.python.org/3/library/venv.html
 - virtualenv: 3rd-party way for older version
+    + https://virtualenv.pypa.io/en/stable/
+- https://realpython.com/python-virtual-environments-a-primer/
 
 ## Creation
 
