@@ -44,6 +44,14 @@ virtualenv <DIR>
 $ source <DIR>/bin/activate
 ```
 
+## Usage
+
+- Once inside the virtual environment, modules can be installed with pip
+  and scripts can be run as normal.
+- To exit the virtual environment, run the function provided by
+  `bin/activate`
+    + `$ deactivate`
+
 # Package Manager
 
 ## Introduction
