@@ -2,13 +2,25 @@
 
 # Overview
 
+## Introduction
+
 - **General-purpose, high level programming language**
-- **Multi-paradigm:** object-oriented, imperative, functional, procedural, reflective
+- **Multi-paradigm:** object-oriented, imperative, functional,
+  procedural, reflective
 - **Typing:** duck, dunamic, strong
 
 ## Resources
 
-- https://developers.google.com/edu/python/
+- The Hitchhiker's Guide to Python:
+    + http://docs.python-guide.org/en/latest/
+- Python project workflows
+    + part 1: https://gabhijit.github.io/python-project-workflows-1.html
+    + part 2: https://gabhijit.github.io/python-project-workflows-2.html
+    + part 3: https://gabhijit.github.io/python-project-workflows-3.html
+- Open sourcing a python project the right way
+    + https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
+- Google Python course
+    + https://developers.google.com/edu/python/
 
 ## History
 
@@ -18,7 +30,45 @@ first release: 1991
 
 duck
 
-# Package Manager - [pip](https://pypi.python.org/pypi/pip)
+# Virtual Environment
+
+## Introduction
+
+- venv: official way for python >= 3.4
+    + https://docs.python.org/3/library/venv.html
+- virtualenv: 3rd-party way for older version
+    + https://virtualenv.pypa.io/en/stable/
+- https://realpython.com/python-virtual-environments-a-primer/
+
+## Creation
+
+```
+python -m venv <DIR>
+virtualenv <DIR>
+```
+
+## Activation
+
+```
+$ source <DIR>/bin/activate
+```
+
+## Usage
+
+- Once inside the virtual environment, modules can be installed with pip
+  and scripts can be run as normal.
+- To exit the virtual environment, run the function provided by
+  `bin/activate`
+    + `$ deactivate`
+
+# Package Manager
+
+## Introduction
+
+- pip
+- setuptools (easy_install)
+
+## DON'T USE PIP SYSTEM-WIDE, JUST USE IT FOR VIRTUALENV AND SIMILAR TOOLS - [pip](https://pypi.python.org/pypi/pip)
 
 - Install pip
 	+ Use package manager of Linux distribution
@@ -45,6 +95,10 @@ duck
 
 ## Configuration
 
+
+## Scientific Packages
+
+- https://packaging.python.org/guides/installing-scientific-packages/
 
 # Version Manager
 
@@ -78,6 +132,10 @@ duck
 
 
 # Packages
+
+## pylint
+
+- looking for bugs and poor quality code
 
 ## [cryptography](https://github.com/pyca/cryptography)
 
@@ -259,6 +317,12 @@ import sys
 print sys.version_info
 ```
 
+
+# IPython
+
+- An enhanced Python command line
+- Jupiter: notebook can be used for a web interface to IPython
+- bpython: a ncurses interface to the Python interpreter
 
 # References
 

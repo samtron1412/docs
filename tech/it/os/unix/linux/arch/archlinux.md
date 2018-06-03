@@ -710,6 +710,10 @@ See more:
 
 # Tips & Tricks
 
+## Quit using python pip
+
+- https://www.reddit.com/r/archlinux/comments/6vv5ty/guide_how_to_quit_using_pip_to_install_stuff/
+
 ## Resize the LVM logical volumes with LUKS (dm-crypt)
 
 1. Boot to a live system using usb
