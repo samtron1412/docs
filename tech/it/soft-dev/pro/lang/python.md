@@ -124,6 +124,10 @@ $ source <DIR>/bin/activate
 
 # Packages
 
+## pylint
+
+- looking for bugs and poor quality code
+
 ## [cryptography](https://github.com/pyca/cryptography)
 
 ## [pycrypto](https://github.com/dlitz/pycrypto)
