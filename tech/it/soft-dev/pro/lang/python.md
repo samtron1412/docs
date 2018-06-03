@@ -271,6 +271,56 @@ else:
 
 # Tips and Tricks
 
+## pipenv - work flow for a big project
+
+### Introduction
+
+- pipenv
+    + separate development environment and production environment
+    + combine virtualenv, pip, and Pipfile
+
+### Usage
+
+```
+$ cd my_project
+
+// create two new files, Pipfile and Pipfile.lock
+// create a new virtual environment for the project
+// pipenv install --two : use Python 2
+// pipenv install --three : use Python 3
+$ pipenv install
+
+// install a new package
+$ pipenv install beautifulsoup4
+
+// uninstall a package
+$ pipenv uninstall beautifulsoup4
+
+// freeze the list of dependencies
+$ pipenv lock
+
+// Add Pipfiles to VCS
+
+
+===
+// Separate development environment
+$ pipenv install --dev nose2
+
+// Install packages in development environment
+$ pipenv install --dev
+
+
+===
+// Running your code
+// Activate the virtual environment
+$ pipenv shell
+
+// python run : invoke shell commands in your virtual environment
+// without explicitly activating it first
+$ pipenv run which python
+$ pipenv run python my_project.py
+```
+
 ## Get the class name as a string of an instance
 
 - `instance.__class__.__name__`
