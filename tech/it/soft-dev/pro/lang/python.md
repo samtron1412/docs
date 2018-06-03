@@ -79,6 +79,10 @@ $ source <DIR>/bin/activate
 ## Configuration
 
 
+## Scientific Packages
+
+- https://packaging.python.org/guides/installing-scientific-packages/
+
 # Version Manager
 
 ## Introduction
