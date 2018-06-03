@@ -8,7 +8,10 @@
 
 ## Resources
 
-- https://developers.google.com/edu/python/
+- The Hitchhiker's Guide to Python:
+    + http://docs.python-guide.org/en/latest/
+- Google Python course
+    + https://developers.google.com/edu/python/
 
 ## History
 
