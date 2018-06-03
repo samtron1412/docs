@@ -16,3 +16,12 @@ applications.
 1. [Virtualization Wikipedia][1]
 
 [1]: https://en.wikipedia.org/wiki/Virtualization "Virtualization Wikipedia"
+[qemu-kvm]: https://stackoverflow.com/questions/10307323/whats-the-differences-between-xen-qemu-and-kvm
+[qemu-kvm-1]: https://serverfault.com/questions/208693/difference-between-kvm-and-qemu
+[docker-lxc-lxd]: https://unix.stackexchange.com/questions/254956/what-is-the-difference-between-docker-lxd-and-lxc
+[rkt-others]: https://coreos.com/rkt/docs/latest/rkt-vs-other-projects.html
+[systemd-nspawn]: https://www.youtube.com/watch?v=s7LlUs5D9p4
+[lxc-sec]: http://mattoncloud.org/2012/07/16/are-lxc-containers-enough/
+[docker-sec]: https://blog.docker.com/2013/08/containers-docker-how-secure-are-they/
+[systemd-vs-docker]: https://lwn.net/Articles/676831/
+[systemd-vs-docker-1]: https://www.reddit.com/r/linux/comments/48m78l/systemd_vs_docker/
