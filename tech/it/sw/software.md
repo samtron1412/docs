@@ -556,6 +556,12 @@ How to type fast:
 
 # Programming
 
+## Languages
+
+### Python
+
+- [virtualenvwrapper](https://wiki.archlinux.org/index.php/Python/Virtual_environment)
+
 ## Code Quality
 
 - sonarqube
