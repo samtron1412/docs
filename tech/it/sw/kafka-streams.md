@@ -924,6 +924,10 @@ Something
 
 Something
 
+## Memory management
+
+- https://docs.confluent.io/4.1.1/streams/developer-guide/memory-mgmt.html
+
 ## Tips and Tricks
 
 - Comparing of different datatypes for fast stream
