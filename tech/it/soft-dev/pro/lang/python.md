@@ -18,7 +18,7 @@ first release: 1991
 
 duck
 
-# Package Manager - [pip](https://pypi.python.org/pypi/pip)
+# DON'T USE PIP SYSTEM-WIDE, JUST USE IT FOR VIRTUALENV AND SIMILAR TOOLS - Package Manager - [pip](https://pypi.python.org/pypi/pip)
 
 - Install pip
 	+ Use package manager of Linux distribution
