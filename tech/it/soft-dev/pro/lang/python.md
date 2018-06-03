@@ -18,7 +18,14 @@ first release: 1991
 
 duck
 
-# DON'T USE PIP SYSTEM-WIDE, JUST USE IT FOR VIRTUALENV AND SIMILAR TOOLS - Package Manager - [pip](https://pypi.python.org/pypi/pip)
+# Package Manager
+
+## Introduction
+
+- pip
+- setuptools (easy_install)
+
+## DON'T USE PIP SYSTEM-WIDE, JUST USE IT FOR VIRTUALENV AND SIMILAR TOOLS - [pip](https://pypi.python.org/pypi/pip)
 
 - Install pip
 	+ Use package manager of Linux distribution
@@ -259,6 +266,12 @@ import sys
 print sys.version_info
 ```
 
+
+# IPython
+
+- An enhanced Python command line
+- Jupiter: notebook can be used for a web interface to IPython
+- bpython: a ncurses interface to the Python interpreter
 
 # References
 
