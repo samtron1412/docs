@@ -2,14 +2,23 @@
 
 # Overview
 
+## Introduction
+
 - **General-purpose, high level programming language**
-- **Multi-paradigm:** object-oriented, imperative, functional, procedural, reflective
+- **Multi-paradigm:** object-oriented, imperative, functional,
+  procedural, reflective
 - **Typing:** duck, dunamic, strong
 
 ## Resources
 
 - The Hitchhiker's Guide to Python:
     + http://docs.python-guide.org/en/latest/
+- Python project workflows
+    + part 1: https://gabhijit.github.io/python-project-workflows-1.html
+    + part 2: https://gabhijit.github.io/python-project-workflows-2.html
+    + part 3: https://gabhijit.github.io/python-project-workflows-3.html
+- Open sourcing a python project the right way
+    + https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
 - Google Python course
     + https://developers.google.com/edu/python/
 
