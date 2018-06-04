@@ -61,3 +61,4 @@ fundamental aspects.
 [why-avro-kafka]: https://www.confluent.io/blog/avro-kafka-data/
 [avro-hdinsight]: https://dennyglee.com/2013/03/12/using-avro-with-hdinsight-on-azure-at-343-industries/
 [intro-avro]: https://www.youtube.com/watch?v=WHncMILyVYs
+[intro-avro-kafka]: https://www.youtube.com/watch?v=SZX9DM_gyOE
