@@ -2260,6 +2260,36 @@ exists, this will overwrite it.
 
 # Java 8
 
+## `java.time`
+
+### LocalDateTime API
+
+- LocalDate/LocalTime
+- LocalDateTime
+
+### Zoned Date-Time API
+
+- ZonedDateTime
+
+### Chrono Units Enum
+
+- ChronoUnit
+    + WEEKS, MONTHS, YEARS, ...
+
+### Period and Duration
+
+- Period
+    + Date based amount of time
+- Duration
+    + Time based amount of time
+
+### Temporal Adjusters
+
+- Performs date mathematics
+    + get the "second Saturday of the month"
+    + get the next Tuesday
+
+
 ## Lambda Expressions
 
 - Syntax
@@ -2275,6 +2305,11 @@ exists, this will overwrite it.
       value if the body has a single expression to return the value
 
 # Tips & Tricks
+
+## Working with time, timezone
+
+- https://github.com/JodaOrg/joda-time
+- http://www.joda.org/joda-time/
 
 ## Redirection of Input and Output
 
