@@ -7,6 +7,8 @@ stored in Kafka.
 
 # Concepts
 
+- https://docs.confluent.io/4.1.1/streams/concepts.html
+
 ## Common
 
 - Windowing, stateless processing, stateful processing
@@ -141,6 +143,8 @@ stateful operations such as aggregations or joins into so-called
       event-time or ingestion-time semantics.
 
 # Architecture
+
+- https://docs.confluent.io/4.1.1/streams/architecture.html
 
 ## Stream Partitions and Tasks
 
@@ -933,7 +937,7 @@ Something
 - Comparing of different datatypes for fast stream
     + http://www.bigendiandata.com/2016-11-15-Data-Types-Compared/
 
-# Introduction
+# Tutorials
 
 ### Creating a Streams Application
 
