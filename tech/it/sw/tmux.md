@@ -231,3 +231,9 @@ that character on the same line, and "F" to jump backwards on the line.
     - tmux attach -t <your_session_name>
     - `tmux a -t <name>`
     - `tmux a #`: last created session
+
+# Tips and Tricks
+
+## Copy and Paste
+
+- https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
