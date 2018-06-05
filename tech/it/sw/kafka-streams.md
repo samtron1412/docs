@@ -1100,6 +1100,13 @@ execution configuration values as defined in `StreamConfig`.
   Streams application to distinguish itself with other applications
   talking to the same Kafka cluster
 
+# Serialization Frameworks
+
+- http://ganges.usc.edu/pgroupW/images/a/a9/Serializarion_Framework.pdf
+- Apache Thrift
+- Google Protobuf
+- Apache Avro
+
 # Problems
 
 - https://aseigneurin.github.io/2017/08/04/why-kafka-streams-didnt-work-for-us-part-1.html
