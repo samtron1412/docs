@@ -237,3 +237,9 @@ that character on the same line, and "F" to jump backwards on the line.
 ## Copy and Paste
 
 - https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
+
+## Configuration
+
+- https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
+- color
+    + https://superuser.com/questions/285381/how-does-the-tmux-color-palette-work
