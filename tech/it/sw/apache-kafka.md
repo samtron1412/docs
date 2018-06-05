@@ -290,3 +290,4 @@ then you can run this command:
 
 # References
 
+[udemy-courses]: https://www.udemy.com/courses/search/?q=kafka&src=ukw%EF%BB%BF
