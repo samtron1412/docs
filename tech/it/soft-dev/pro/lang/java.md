@@ -2262,6 +2262,10 @@ exists, this will overwrite it.
 
 ## `java.time`
 
+### ISO 8601
+
+- https://en.wikipedia.org/wiki/ISO_8601
+
 ### LocalDateTime API
 
 - LocalDate/LocalTime
