@@ -240,6 +240,10 @@ All documents about different software such as text editors.
 
 All documents about information and computer systems.
 
+#### theo - computer science theories
+
+All documents about computer science theories
+
 #### virt - virtualization
 
 ### vehicle
