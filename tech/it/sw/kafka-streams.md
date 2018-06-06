@@ -945,7 +945,11 @@ Something
 
 # Tutorials
 
-### Creating a Streams Application
+## CEP Streaming Example
+
+- https://github.com/fhussonnois/kafkastreams-cep
+
+## Creating a Streams Application
 
 1) Configure your Kafka Streams application with a *StreamConfig*
    instance
@@ -993,9 +997,9 @@ final KStream<String, PlayEvent> playEvents = builder.stream(Serdes.String(), pl
 
 4) KTable class
 
-### Transforming Data
+## Transforming Data
 
-#### Stateless Transformation Example
+### Stateless Transformation Example
 
 - Filters records based on some specified criteria
 - Repartitions based on the new key and value
@@ -1019,11 +1023,11 @@ final KStream<Long, Song> songPlays = playsBySongId.leftJoin(songTable, (playEve
 // fourth parameter: playEventSerde - serializer objects
 ```
 
-#### Stateful Processing
+### Stateful Processing
 
 ![Duality of KStream and KTable](../../graphic/career/jpl/duality-kstream-ktable.png)
 
-### Count (in API)
+#### Count (in API)
 
 Example below show a count method
 
@@ -1044,7 +1048,7 @@ final KGroupedTable<Long, Long> groupedBySongId =
 groupedBySongId.count("song-play-count");   // count results are backed by a state store called "song-play-count"
 ```
 
-### Reduce or Aggregate (custom)
+#### Reduce or Aggregate (custom)
 
 You can combine current record values with previous record values
 
@@ -1071,7 +1075,7 @@ final KTable<Song, Long> songPlayCounts =
     );
 ```
 
-### Windowing (things come out of aggregation)
+#### Windowing (things come out of aggregation)
 
 Grouping things by time, key
 
