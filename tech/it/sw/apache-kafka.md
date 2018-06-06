@@ -288,6 +288,12 @@ then you can run this command:
 `bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test`
 
 
+# Alternatives
+
+- RabbitMQ
+- Not a fan of Apache Kafka
+    + https://gist.github.com/markrendle/26e423b6597685757732
+
 # References
 
 [udemy-courses]: https://www.udemy.com/courses/search/?q=kafka&src=ukw%EF%BB%BF
