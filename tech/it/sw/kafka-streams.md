@@ -937,6 +937,12 @@ Something
 - Comparing of different datatypes for fast stream
     + http://www.bigendiandata.com/2016-11-15-Data-Types-Compared/
 
+### CastException
+
+- Check SerDes
+    + groupBy, groupByKey, to, through
+    + Materialized.with(<keySerdes>, <valueSerdes)
+
 # Tutorials
 
 ### Creating a Streams Application
