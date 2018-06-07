@@ -1104,3 +1104,7 @@ execution configuration values as defined in `StreamConfig`.
 
 - https://aseigneurin.github.io/2017/08/04/why-kafka-streams-didnt-work-for-us-part-1.html
 - https://dzone.com/articles/problems-with-kafka-streams-the-trilogy
+
+# References
+
+[streaming]: https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101
