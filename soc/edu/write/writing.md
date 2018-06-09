@@ -1083,6 +1083,20 @@ program.
       spend a paragraph writing about your experience volunteering at a
       homeless shelter.
 
+# Acknowledgement
+
+```
+My internship would not have been possible without the generous support
+of my mentor John Doe, and other members of CEP group. I am grateful
+to all of those I have had the pleasure to work with during this
+internship. Each of the members of the CEP team has provided me
+extensive personal and professional guidance and taught me a great deal
+about both technical skills and life in general. I would especially like
+to thank John Doe. As my mentor, he has taught me more than I could
+give him credit for here. He has shown me, by his example, what a hard
+working person should be.
+```
+
 # References
 
 [1]: http://www.loc.gov "The Library of Congress"
