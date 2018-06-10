@@ -158,6 +158,9 @@ In no particular order
 
 - [Open source convention](https://conferences.oreilly.com/oscon/oscon-or)
 
+## Computer Vision
+
+- [CVPR](https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition)
 
 # References
 
