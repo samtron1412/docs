@@ -767,6 +767,8 @@ export DISPLAY XAUTHORITY HOME
 setxkbmap -option caps:escape
 ```
 
+Unset setxkbmap: `$ setxkbmap -option`
+
 ## Benchmarking
 
 - [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
