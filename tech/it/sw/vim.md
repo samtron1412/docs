@@ -300,6 +300,7 @@ The most common operators:
   should switch to Normal mode and use one of the put commands.
 - Remap Caps Lock key to Escape or Ctrl key
 	+ Put this line in .xinitrc file: `setxkbmap -option caps:escape`
+    + Caps Lock as Ctrl: `setxkbmap -option ctrl:nocaps`
 
 ### Do Back-of-the-Envelope Calculations in Place
 
