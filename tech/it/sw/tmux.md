@@ -63,16 +63,16 @@ In tmux, hit the prefix `ctrl+b` and then:
     w  list windows
     f  find window
     ,  name window
-    &  kill window
+    &  kill window with confirmation
 
 ## Panes (splits)
 
     %  vertical split
     "  horizontal split
 
-    o  swap panes
+    o  cycle through panes
     q  show pane numbers
-    x  kill pane
+    x  kill pane with confirmation
     +  break pane into window (e.g. to select text by mouse to copy)
     -  restore pane from window
     ⍽  space - toggle between layouts
@@ -177,7 +177,7 @@ that character on the same line, and "F" to jump backwards on the line.
     ?  list shortcuts
     :  prompt
 
-## Configurations Options:
+## Configurations Options
 
     # Mouse support - set to on if you want to use the mouse
     * setw -g mode-mouse off
@@ -233,6 +233,14 @@ that character on the same line, and "F" to jump backwards on the line.
     - `tmux a #`: last created session
 
 # Tips and Tricks
+
+## List of colors
+
+```bash
+for i in {0..255}; do
+    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+done
+```
 
 ## Copy and Paste
 
