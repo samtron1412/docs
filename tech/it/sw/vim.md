@@ -673,6 +673,27 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Indentation
+
+```
+>>   Indent line by shiftwidth spaces
+<<   De-indent line by shiftwidth spaces
+5>>  Indent 5 lines
+5==  Re-indent 5 lines
+
+>%   Increase indent of a braced or bracketed block (place cursor on brace first)
+=%   Reindent a braced or bracketed block (cursor on brace)
+<%   Decrease indent of a braced or bracketed block (cursor on brace)
+]p   Paste text, aligning indentation with surroundings
+
+=i{  Re-indent the 'inner block', i.e. the contents of the block
+=a{  Re-indent 'a block', i.e. block and containing braces
+=2a{ Re-indent '2 blocks', i.e. this block and containing block
+
+>i{  Increase inner block indent
+<i{  Decrease inner block indent
+```
+
 ## [Accessing the system clipboard](http://vim.wikia.com/wiki/Accessing_the_system_clipboard)
 
 ## [Fix meta key in terminal](http://stackoverflow.com/questions/6778961/alt-key-shortcuts-not-working-on-gnome-terminal-with-vim)
