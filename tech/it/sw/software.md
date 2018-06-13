@@ -175,6 +175,15 @@ List of useful computer software.
 - [maim](https://github.com/naelstrof/maim)
 - [screenfetch](https://github.com/KittyKatt/screenFetch)
 
+### Optimize and Compress Images
+
+- mogrify (ImageMagick)
+    + `mogrify -quality 80 <file.jpg>`
+- jpegoptim
+    + `jpegoptim <file> --dest=/new/place`
+    + `jpegoptim --size=200k <file> --dest=/new/place`
+- optipng
+
 ## Audio
 
 ### Audio players
