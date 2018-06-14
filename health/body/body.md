@@ -102,6 +102,7 @@ Tổng hợp thắc mắc và giải đáp
 
 # Food
 
+- [bean vs meat][bean-vs-meat]
 - [Healthy Eating Plate and Healthy Eating Pyramid][1]
 - [Wikipedia - Red meat][2]
 - [Good protein sources][3]
@@ -462,3 +463,4 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 [2]: https://en.wikipedia.org/wiki/Red_meat "Wikipedia - Red meat"
 [3]: http://www.webmd.com/fitness-exercise/guide/good-protein-sources "Good protein sources"
 [Teen tips for health](../graphic/health/10-tips-teen-health.pdf)
+[bean-vs-meat]: http://healthyhabitshub.com/are-beans-a-great-source-of-protein-beans-vs-meat/
