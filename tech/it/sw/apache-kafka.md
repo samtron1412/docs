@@ -291,9 +291,16 @@ then you can run this command:
 # Alternatives
 
 - RabbitMQ
+    + https://www.quora.com/What-are-the-differences-between-Apache-Kafka-and-RabbitMQ
+    + https://www.cloudkarafka.com/blog/2016-12-05-apachekafka-vs-rabbitmq.html
+    + https://dl.acm.org/citation.cfm?id=3093908
+    + https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka
+    + https://jack-vanlightly.com/blog/2017/12/4/rabbitmq-vs-kafka-part-1-messaging-topologies
 - Not a fan of Apache Kafka
     + https://gist.github.com/markrendle/26e423b6597685757732
 
 # References
 
 [udemy-courses]: https://www.udemy.com/courses/search/?q=kafka&src=ukw%EF%BB%BF
+[rec]: https://www.slideshare.net/tantrieuf31/introduction-to-recommendation-systems?from_m_app=ios
+[principles]: https://www.slideshare.net/GrokkingVN/grokking-techtalk-24-kafkas-principles-and-protocols?from_m_app=ios
