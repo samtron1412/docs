@@ -140,12 +140,277 @@ Enable service: `systemctl enable example.service`
 
 # Pre-Installation
 
-## Encryption
+## Securely wipe disk
+
+Something
+
+## Disk Encryption
 
 ### Resources
 
 - http://tech.memoryimprintstudio.com/dual-boot-installation-of-arch-linux-with-preinstalled-windows-10-with-encryption/
 - https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+
+### Introduction
+
+Cryptographically protecting a logical part of a storage disk (folder,
+partition, whole disk, ...)
+
+- Storage disks
+    + computer's hard drive(s)
+    + external devices
+        * USB, DVD
+    + virtual storage disks (as long as Arch Linux can address it as a
+      block device or filesystem)
+        * loop-back devices, cloud storage
+
+### Why use encryption?
+
+Disk encryption ensures that files are always stored on disk in an
+encrypted form. The files only become available to the operating system
+and applications in readable form while the system is running and
+unlocked by a trusted user. An unauthorized person looking at the disk
+contents directly, will only find garbled random-looking data instead of
+the actual files.
+
+You will still be vulnerable to:
+
+- Attackers who can break into your system (e.g. over the Internet)
+  while it is running and after you have already unlocked and mounted
+  the encrypted parts of the disk.
+- Attackers who are able to gain physical access to the computer while
+  it is running, or very shortly after it was running, if they have the
+  resources to perform a *cold boot attack*.
+- A government entity, which not only has the resources to easily pull
+  off the above attacks, but also may simply force you to give up your
+  keys/passphrases using various techniques of *coercion*.
+    + In most non-democratic countries around the world, as well as in
+      the USA and UK, it may be legal for law enforcement agencies to do
+      so if they have suspicions that you might be hiding something of
+      interest.
+
+Strong disk encryption setup:
+
+- Full system encryption with authenticity checking and no plaintext
+  boot partition
+- Hardware-based full disk encryption
+    + https://en.wikipedia.org/wiki/Hardware-based_full_disk_encryption
+- Trusted Computing
+    + https://en.wikipedia.org/wiki/Trusted_Computing
+
+### Data encryption vs system encryption
+
+Data encryption
+
+- Only the user's data (/home, or removable media)
+- Background processes that may cache/store information about user data
+  or parts of the data itself in non-encrypted areas
+    + swap partitions
+    + /tmp
+    + /var
+- vulnerable to offline system tampering attacks
+    + someone installing a hidden program that records the passphrase
+      you use to unlock the encrypted data, or waits for you to unlock
+      it and then secretly copies/sends some of the data to a location
+      where the attacker can retrieve it.
+
+System encryption
+
+- the encryption of the operating system and user data
+- an adjunct to the existing security mechanisms
+    + securing offline physical access
+    + network security
+    + user-based access control
+
+### Available methods
+
+All disk encryption methods operate in such a way that even though the
+disk actually holds encrypted data, the operating system and
+applications "see" it as the corresponding normal readable data as long
+as the cryptographic container (i.e. the logical part of the disk that
+holds the encrypted data) has been "unlocked" and *mounted*.
+
+For this to happen, some "*secret information*" (usually in the form of
+a keyfile and/or passphrase) needs to be supplied by the user, from
+which the *actual encryption key* can be derived (and stored in the
+kernel keyring for the duration of the session).
+
+Two types by their layer of operation:
+
+- Stacked filesystem encryption
+    + stacks on top of an existing filesystem
+        * all files written to an encryption-enabled folder to be
+          encrypted on-the-fly before the underlying filesystem writes
+          them to disk
+        * and decrypted whenever the filesystem reads them from disk
+    + *eCryptfs*, *EncFS*
+    + Cloud-storage optimized: *gocryptfs*, *cryptomator*, *cryfs*
+- Block device encryption
+    + operate below the filesystem layer and make sure that everything
+      written to a certain block device (i.e. a whole disk, or a
+      partition, or a file acting as a virtual loop-back device) is
+      encrypted.
+    + *loop-AES*
+        * a descendant of cryptoloop and is a secure and fast solution
+        * less user-friendly than other options as it requires non-
+          standard kernel support
+    + *dm-crypt*
+        * the standard device-mapper encryption functionality provided
+          by the Linux kernel.
+        * types of block-device encryption: LUKS (default), plain,
+          limited features for loopAES and Truecrypt devices.
+        * *LUKS*, used by default, is an additional convenience layer
+          which stores all of the needed setup information for dm-crypt
+          on the disk itself and abstracts partition and key management
+          in a n attempt to improve ease of use and cryptographic
+          security.
+        * *plain* dm-crypt mode, being the original kernel
+          functionality, does not employ the convenience layer. It is
+          more difficult to apply the same cryptographic strength with
+          it.When doing so, longer keys (passphrases or keyfiles) are
+          the result.
+    + *TrueCrypt*/*VeraCrypt*
+        * TrueCrypt was discontinued in May 2014
+        * VeraCrypt fork was audited in 2016
+
+### Preparation
+
+#### Choosing a setup
+
+- System encryption
+    + block device
+- Passphrase to unlock
+- Unlock during boot
+
+#### Choosing a strong passphrase
+
+#### Preparing the disk
+
+- Securely wiping it first
+    + overwriting the entire drive or partition with a stream of zero
+      bytes or random bytes
+    + zero bytes will be much faster
+    + high-quality random bytes can hide the usage patterns
+
+### How the encryption works?
+
+#### Basic principle
+
+```
+          ╔═══════╗
+ sector 1 ║"???.."║
+          ╠═══════╣         ╭┈┈┈┈┈╮
+ sector 2 ║"???.."║         ┊ key ┊
+          ╠═══════╣         ╰┈┈┬┈┈╯
+          :       :            │
+          ╠═══════╣            ▼             ┣┉┉┉┉┉┉┉┫
+ sector n ║"???.."║━━━━━━━(decryption)━━━━━━▶┋"abc.."┋ sector n
+          ╠═══════╣                          ┣┉┉┉┉┉┉┉┫
+          :       :
+          ╚═══════╝
+
+          encrypted                          unencrypted
+     blockdevice or                          data in RAM
+       file on disk
+```
+
+Whenever the encrypted block device or folder is to be mounted, its
+corresponding key (master key) must be supplied.
+
+Two techniques to increase the quality of keys:
+
+- Using cryptography to increase the entropic property of the master key
+  based on a separate human-friendly passphrase
+- Create a keyfile with high entropy and store it on a medium separate
+  from the data drive to be encrypted.
+
+#### Cryptographic metadata
+
+```
+╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮                         ╭┈┈┈┈┈┈┈┈┈┈┈╮
+┊ mount passphrase ┊━━━━━⎛key derivation⎞━━━▶┊ mount key ┊
+╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ ,───⎝   function   ⎠    ╰┈┈┈┈┈┬┈┈┈┈┈╯
+╭──────╮            ╱                              │
+│ salt │───────────´                               │
+╰──────╯                                           │
+╭─────────────────────╮                            ▼         ╭┈┈┈┈┈┈┈┈┈┈┈┈╮
+│ encrypted master key│━━━━━━━━━━━━━━━━━━━━━━(decryption)━━━▶┊ master key ┊
+╰─────────────────────╯                                      ╰┈┈┈┈┈┈┈┈┈┈┈┈╯
+```
+
+The key derivation function (e.g. PBKDF2 or scrypt) is deliberately slow
+=> no brute-force attacks
+
+- salt: randomly generated
+- encrypted master key can be stored on disk together with the encrypted
+  data => the confidentiality of the encrypted data depends completely
+  on the secret passphrase.
+- storing the encrypted master key in a keyfile instead of storing with
+  the encrypted data => two-factor authentication
+    + something only you know: passphrase
+    + something only you have: keyfile
+
+After we have the master key:
+
+```
+                          ╭┈┈┈┈┈┈┈┈┈┈┈┈╮
+                          ┊ master key ┊
+  file on disk:           ╰┈┈┈┈┈┬┈┈┈┈┈┈╯
+ ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐        │
+ ╎╭───────────────────╮╎        ▼          ╭┈┈┈┈┈┈┈┈┈┈╮
+ ╎│ encrypted file key│━━━━(decryption)━━━▶┊ file key ┊
+ ╎╰───────────────────╯╎                   ╰┈┈┈┈┬┈┈┈┈┈╯
+ ╎┌───────────────────┐╎                        ▼           ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┐
+ ╎│ encrypted file    │◀━━━━━━━━━━━━━━━━━(de/encryption)━━━▶┊ readable file ┊
+ ╎│ contents          │╎                                    ┊ contents      ┊
+ ╎└───────────────────┘╎                                    └┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┘
+ └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+```
+
+#### Ciphers and modes of operation
+
+Ciphers: the actual algorithm used for translating between pieces of
+unencrypted and encrypted data (plaintext and ciphertext)
+
+- AES
+- Blowfish
+- Twofish
+- Serpent
+
+Modes of operation: a set of rules for how to consecutively apply the
+cipher to the individual blocks
+
+- electronic codebook (ECB) mode: applying it to each block separately
+  without modification
+    + recognize patterns
+- cipher-block chaining (CBC) mode: each block of plaintext data is
+  combine in a mathematical way with the ciphertext of the previous
+  block, before encrypting it using the cipher.
+    + first block needs *initialization vector (IV)* => needs a way to
+      securely generate IV
+
+```
+                                  ╭──────────────╮
+                                  │initialization│
+                                  │vector        │
+                                  ╰────────┬─────╯
+          ╭  ╠══════════╣        ╭─key     │      ┣┉┉┉┉┉┉┉┉┉┉┫
+          │  ║          ║        ▼         ▼      ┋          ┋         . START
+          ┴  ║"????????"║◀━━━━(cipher)━━━━(+)━━━━━┋"Hello, W"┋ block  ╱╰────┐
+    sector n ║          ║                         ┋          ┋ 1      ╲╭────┘
+  of file or ║          ║──────────────────╮      ┋          ┋         '
+ blockdevice ╟──────────╢        ╭─key     │      ┠┈┈┈┈┈┈┈┈┈┈┨
+          ┬  ║          ║        ▼         ▼      ┋          ┋
+          │  ║"????????"║◀━━━━(cipher)━━━━(+)━━━━━┋"orld !!!"┋ block
+          │  ║          ║                         ┋          ┋ 2
+          │  ║          ║──────────────────╮      ┋          ┋
+          │  ╟──────────╢                  │      ┠┈┈┈┈┈┈┈┈┈┈┨
+          │  ║          ║                  ▼      ┋          ┋
+          :  :   ...    :        ...      ...     :   ...    : ...
+
+               ciphertext                         plaintext
+                  on disk                         in RAM
+```
 
 # [Installation][installation]
 
