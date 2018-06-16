@@ -283,6 +283,8 @@ Two types by their layer of operation:
 - Unlock during boot
 
 > dm-crypt with LVM on LUKS
+> - Taking care of swap encryption
+> - Don't need crypttab
 
 #### Choosing a strong passphrase
 
@@ -967,7 +969,7 @@ Something
 
 ## 10. Optimization
 
-Something
+- https://wiki.archlinux.org/index.php/Improving_performance
 
 ## 11. System service
 
