@@ -282,6 +282,8 @@ Two types by their layer of operation:
 - Passphrase to unlock
 - Unlock during boot
 
+> dm-crypt with LVM on LUKS
+
 #### Choosing a strong passphrase
 
 #### Preparing the disk
