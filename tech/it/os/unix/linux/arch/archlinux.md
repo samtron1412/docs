@@ -475,7 +475,7 @@ Install os-prober: `# pacman -S os-prober`
 
 This section deals with administration task and system management.
 
-### Users and Groups management
+### 1.1. Users and Groups management
 
 #### Why?
 
@@ -525,9 +525,9 @@ Users and groups are a mechanism for **access control**.
 - Remove users from a group: `$ gpasswd -d [user] [group]`
 - Del a existing group: `$ groupdel [group]`
 
-### Privilege escalation
+### 1.2. Privilege escalation
 
-### Service management
+### 1.3. Service management
 
 + list all units of system: $ systemctl
 + list all failed units: $ systemctl --failed
@@ -612,7 +612,7 @@ Reload systemd, scanning for new or changed units:
     + To start dwm with startx or the SLIM login manager, simply append the following to ~/.xinitrc:
         exec dwm
 
-### System maintenance
+### 1.4. System maintenance
 
 - https://wiki.archlinux.org/index.php/System_maintenance
 
@@ -660,6 +660,8 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 
 ## 3. Booting
 
+Something
+
 ## 4. Back up system
 
 Back up your system before big upgrade. Use to recover your system when
@@ -682,17 +684,31 @@ it had trouble.
 
 ## 6. Power management
 
+Something
+
 ## 7. Multimedia
+
+Something
 
 ## 8. Networking
 
+Something
+
 ## 9. Input devices
+
+Something
 
 ## 10. Optimization
 
+Something
+
 ## 11. System service
 
+Something
+
 ## 12. Appearance
+
+Something
 
 ### Fonts
 
@@ -701,6 +717,8 @@ it had trouble.
 - Source Code Pro
 
 ## 13. Console improvements
+
+Something
 
 # Advanced
 
@@ -740,6 +758,11 @@ See more:
 - aur.md
 
 # Tips & Tricks
+
+## Live CD/USB/DVD images
+
+- `archiso` package
+    + https://wiki.archlinux.org/index.php/Archiso
 
 ## Install the linux-lts package
 
