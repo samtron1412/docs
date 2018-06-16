@@ -614,6 +614,37 @@ Reload systemd, scanning for new or changed units:
 
 ### System maintenance
 
+- https://wiki.archlinux.org/index.php/System_maintenance
+
+#### Check for errors
+
+- Failed systemd services
+    + `$ systemctl --failed`
+    + https://wiki.archlinux.org/index.php/Systemd#Analyzing_the_system_state
+- Log files
+    + `# journalctl -p 3 -xb`
+    + https://wiki.archlinux.org/index.php/Systemd#Journal
+    + https://wiki.archlinux.org/index.php/Xorg#Troubleshooting
+
+#### Backup
+
+Backups may be automated with [systemd/Timers](https://wiki.archlinux.org/index.php/Systemd/Timers)
+
+- Configuration files
+- List of installed packages
+- Pacman database
+- LUKS headers
+- System and user data
+
+#### Upgrading the system
+
+
+#### Use the package manager to install software
+
+
+#### Clean the filesystem
+
+
 ## 2. Package management:
 
 How to know your architecture: open terminal and type these command
@@ -709,6 +740,11 @@ See more:
 - aur.md
 
 # Tips & Tricks
+
+## Install the linux-lts package
+
+- Update your bootloader's configuration file to use the LTS kernel and
+  ram disk: `vmlinuz-linux-lts` and `initramfs-linux-lts.img`
 
 ## Quit using python pip
 
