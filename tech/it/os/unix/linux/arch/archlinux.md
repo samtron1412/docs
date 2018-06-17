@@ -1095,7 +1095,8 @@ export DISPLAY XAUTHORITY HOME
 setxkbmap -option caps:escape
 ```
 
-Unset setxkbmap: `$ setxkbmap -option`
+- Unset setxkbmap: `$ setxkbmap -option`
+- Caps Lock as Ctrl key: `$ setxkbmap -option ctrl:nocaps`
 
 ## Benchmarking
 
