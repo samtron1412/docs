@@ -25,6 +25,18 @@ The apps themselves choose whether to save to the Local, LocalLow, or Roaming fo
     + The old recovery file of Bitlocker is corrupted.
     + Rename the file at: `C:\Windows\System32\Recovery\ReAgent.xml` to
       `ReAgent_old.xml`
+- Using BitLocker with PIN or password instead of Trusted Platform
+  Module (TPM)
+    + Modify Group Policy in registry
+    + Local Computer Policy > Computer Configuration > Administrative
+      Templates > Windows Components > BitLocker Drive Encryption >
+      Operating System Drives
+    + Double-click the “Require additional authentication at startup”
+      option in the right pane.
+    + Select “Enabled” at the top of the window, and ensure the “Allow
+      BitLocker without a compatible TPM (requires a password or a
+      startup key on a USB flash drive)” checkbox is enabled here.
+    + https://www.howtogeek.com/howto/6229/how-to-use-bitlocker-on-drives-without-tpm/
 
 ## Big AppData
 - Check Apple backup (iPhone, iPad, etc)
