@@ -1044,14 +1044,23 @@ See more:
 
 ## Resize the LVM logical volumes with LUKS (dm-crypt)
 
-1. Boot to a live system using usb
-2. Open the disk: `cryptsetup open /dev/sda2 encrypted-lvm`
-3. Shrinking a logical volume and resize the file system at the same
+- Boot to a live system using usb
+- Open the disk: `cryptsetup open /dev/sda2 encrypted-lvm`
+- Resize the partition if needed: partition tools, or moving to another
+  disk
+- Resize the physical volumes if needed before resize the logical
+  volumes
+    + Have to be on arch-chroot system (with mounted disk) or on the
+      running system to resize the physical volumes
+    + `pvresize /dev/mapper/lvmonluks`
+    + `pvresize <physical-volume-name>`
+    + https://wiki.archlinux.org/index.php/LVM#Physical_volumes
+- Shrinking a logical volume and resize the file system at the same
    time: `lvresize -L -45GB -r /dev/vol-group1/logical-vol2`
-4. Expanding a logical volume and resize the file system at the same
+- Expanding a logical volume and resize the file system at the same
    time: `lvresize -l +100%FREE -r /dev/vol-group1/logical-vol2`
-5. Diactivate the logical volumes: `vgchange -an`
-6. Close the encrypted disk: `cryptsetup close encrypted-lvm`
+- Diactivate the logical volumes: `vgchange -an`
+- Close the encrypted disk: `cryptsetup close encrypted-lvm`
 
 ## Remap Caps Lock key to Escape key + Automatically detect a plugging keyboard
 
