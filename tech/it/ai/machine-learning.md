@@ -52,5 +52,67 @@
 - Dimensionality reduction
     + simplifies inputs by mapping them into a lower-dimensional space
 
+# Approaches
+
+## Decision tree learning
+
+Something
+
+## Association rule learning
+
+Something
+
+## Artificial neural networks
+
+Something
+
+### Deep learning
+
+Something
+
+## Inductive logic programming
+
+Something
+
+## Support vector machines (SVMs)
+
+Something
+
+## Clustering
+
+Something
+
+## Bayesian networks
+
+Something
+
+## Reinforcement learning
+
+Something
+
+## Representation learning
+
+Something
+
+## Similarity and metric learning
+
+Something
+
+## Sparse dictionary learning
+
+Something
+
+## Genetic algorithms
+
+Something
+
+## Rule-based machine learning
+
+Something
+
+### Learning classifier systems
+
+Something
+
 # References
 
