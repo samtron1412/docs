@@ -29,5 +29,28 @@
     + can be a goal in itself (discovering hidden patterns in data)
     + means towards an end (feature learning)
 
+# Applications
+
+- Classification
+    + inputs are divided into two or more classes (multiclass
+      classification, and the learner must produce a model that assigns
+      unseen inputs to one or more (multi- label classification) of
+      these classes.
+    + typically in a supervised manner
+    + e.g. spam filtering
+- Regression
+    + produce a function that describes relationships between inputs and
+      outputs
+    + a supervised problem
+    + the outputs are continuous rather than discrete
+- Clustering
+    + a set of inputs is to be divided into groups
+    + unlike in classification, the groups are not known beforehand =>
+      unsupervised task
+- Density estimation
+    + finds the distribution of inputs in some space
+- Dimensionality reduction
+    + simplifies inputs by mapping them into a lower-dimensional space
+
 # References
 
