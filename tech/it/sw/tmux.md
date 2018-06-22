@@ -70,16 +70,38 @@ In tmux, hit the prefix `ctrl+b` and then:
     %  vertical split
     "  horizontal split
 
-    o  cycle through panes
-    q  show pane numbers
     x  kill pane with confirmation
     +  break pane into window (e.g. to select text by mouse to copy)
     -  restore pane from window
     ⍽  space - toggle between layouts
-    <prefix> q (Show pane numbers, when the numbers show up type the key to goto that pane)
-    <prefix> { (Move the current pane left)
-    <prefix> } (Move the current pane right)
     <prefix> z toggle pane zoom
+
+### Switching between panes
+
+```
+<prefix> o  cycle through panes
+<prefix> q (Show pane numbers, when the numbers show up type the key to goto that pane)
+<prefix> { (Move the current pane left)
+<prefix> } (Move the current pane right)
+<prefix> left       go to the next pane on the left
+<prefix> right      (or one of these other directions)
+<prefix> up
+<prefix> down
+<prefix> ;          go to the ‘last’ (previously used) pane
+```
+
+### Moving panes around
+
+```
+<prefix> {          move the current pane to the previous position
+<prefix> }          move the current pane to the next position
+<prefix> C-o        rotate window ‘up’ (i.e. move all panes)
+<prefix> M-o        rotate window ‘down’
+<prefix> !          move the current pane into a new separate
+               window (‘break pane’)
+<prefix> :move-pane -t :3.2
+               split window 3's pane 2 and move the current pane there
+```
 
 ## Sync Panes
 
