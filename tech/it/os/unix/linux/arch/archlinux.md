@@ -1028,6 +1028,11 @@ See more:
 
 # Tips & Tricks
 
+## Custom kernels
+
+- https://wiki.archlinux.org/index.php/Kernels
+- https://wiki.archlinux.org/index.php/Kernels/Arch_Build_System
+
 ## Live CD/USB/DVD images
 
 - `archiso` package
