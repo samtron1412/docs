@@ -499,6 +499,38 @@ How to type fast:
 
 # Security
 
+## Network security
+
+Something
+
+## Threat and vulnerability detection
+
+Something
+
+## File security
+
+Something
+
+## Anti malware
+
+Something
+
+## Backup programs
+
+Something
+
+## Screen lockers
+
+Something
+
+## Hash checkers
+
+Something
+
+## Encryption, signing, steganography
+
+Something
+
 ## Password managers
 
 - lastpass-cli
@@ -507,6 +539,10 @@ How to type fast:
     + https://news.ycombinator.com/item?id=13551692
     + https://www.justwatch.com/blog/post/announcing-gopass/
 - seahorse: manage gnome-keyring
+
+## Firewall management
+
+Something
 
 # Science
 
