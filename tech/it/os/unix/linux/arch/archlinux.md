@@ -961,6 +961,73 @@ Something
 
 ## 8. Networking
 
+- Network configuration:
+    + https://wiki.archlinux.org/index.php/Network_configuration
+
+### Check the connection
+
+To troubleshoot a network connection, go through the following
+conditions and ensure that you meet them:
+
+- Your network interface is listed and enabled.
+- You are connected to the network. The cable is plugged in or you are
+  connected to the wireless LAN.
+    + wireless: https://wiki.archlinux.org/index.php/Wireless_network_configuration
+- Your network interface has an IP address
+- Your routing table is correctly set up.
+- You can ping a local IP address (e.g. your default gateway).
+- You can ping a public IP address (e.g. 8.8.8.8), if you can't it may
+  be related to your default gateway or your internet service provider.
+- Check if you can resolve domain names (e.g. archlinux.org).
+    + `$ getent hosts <domain_name>`
+    + `$ getent hosts google.com`
+    + `$ getent ahostsv4 google.com`
+
+### Hostname
+
+#### Set hostname
+
+- Using `hostnamectl` to set hostname
+- `$ hostnamectl --transient --static set-hostname midgard`
+- `$ hostnamectl --pretty set-hostname "Son's Laptop"`
+
+#### Local hostname resolution
+
+- systemd handles this by Name Service Switch (NSS) automatically
+- Some programs still read `/etc/hosts` or `/etc/resolv.conf`
+- Edit `/etc/hosts`
+
+```
+127.0.0.1       localhost
+127.0.1.1       myhostname.localdomain  myhostname
+```
+
+### Local network hostname resolution
+
+To make your machine accessible in your LAN via its hostname:
+
+- edit the `/etc/hosts` file for every device in your LAN
+- set up a DNS server to resolve your hostname and make the LAN devices
+  use it
+- or the easy way: use a `zero-configuration networking` service
+    + https://en.wikipedia.org/wiki/Zero-configuration_networking
+    + *Samba*: provides hostname resolution via Microsoft's NetBIOS.
+    + *Avahi* provides hostname resolution via zeroconf (no Windows)
+
+### Firewalls
+
+Something
+
+### Clock synchronization
+
+Something
+
+### DNS security
+
+Something
+
+### Resource sharing
+
 Something
 
 ## 9. Input devices
