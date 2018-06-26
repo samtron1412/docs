@@ -447,6 +447,7 @@ export HADOOP_PREFIX
 
 # Hadoop MapReduce
 
+- Tutorial: https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 - Hadoop splits files into large blocks and distributes them across
   nodes in a cluster
 - It then transfers *packaged code (jar, etc.)* into nodes to process
