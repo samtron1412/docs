@@ -23,10 +23,16 @@ of environment variables.
   call do this automatically), but old executable can either change its
   own environment before "executing", or pass a custom `envp` to
   `execve`.
+    + Invoke a new shell without passing environment variables
+        * `$ env -i bash`
 
 # Use and display
 
+Something
+
 # Assignment
+
+Something
 
 # List of environment variables and locations
 
