@@ -292,6 +292,83 @@ export HADOOP_PREFIX
 ```
 
 
+### Slaves/Workers File
+
+- List all worker hostnames or IP addresses in your
+  etc/hadoop/(slaves/workers) file, one per line
+- Helper scripts will use the etc/hadoop/(slaves/workers) file to run
+  commands on many hosts at once.
+- It is not used for any of the Java-based Hadoop configuration.
+- In order to use this functionality, ssh trusts (via either
+  passphraseless ssh or some other means, such as Kerberos) must be
+  established for the accounts used to run Hadoop.
+
+### Configuring Memory Allocation
+
+- https://linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/
+
+## Operating the Hadoop Cluster
+
+- HDFS and YARN should run as separate users
+    + For example, hdfs and yarn users
+
+### Startup
+
+- Format a new distributed filesystem
+    + `bin/hdfs namenode -format <cluster_name>`
+- Start the HDFS NameNode:
+    + `sbin/hadoop-daemon.sh start namenode`
+- Start a HDFS DataNode:
+    + `sbin/hadoop-daemons.sh start datanode`
+- Start all the HDFS processes
+    + `sbin/start-dfs.sh`
+- Start the ResourceManager
+    + `sbin/yarn-daemon.sh start resourcemanager`
+- Start a standalone WebAppProxy server
+    + `sbin/yarn-daemon.sh start proxyserver`
+- Start a NodeManager
+    + `sbin/yarn-daemons.sh start nodemanager`
+- Start all the YARN processes
+    + `sbin/start-yarn.sh`
+- Start the MapReduce JobHistory Server
+    + `sbin/mr-jobhistory-daemon.sh start historyserver`
+
+### Submit MapReduce Jobs to HDFS/YARN
+
+- `bin/hadoop jar ~/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.1.jar wordcount "books/*" output`
+- `bin/yarn jar ~/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.1.jar wordcount "books/*" output`
+
+
+### Shutdown
+
+- stop the HDFS NameNode:
+    + `sbin/hadoop-daemon.sh stop namenode`
+- stop a HDFS DataNode:
+    + `sbin/hadoop-daemons.sh stop datanode`
+- stop all the HDFS processes
+    + `sbin/stop-dfs.sh`
+- stop the ResourceManager
+    + `sbin/yarn-daemon.sh stop resourcemanager`
+- stop a standalone WebAppProxy server
+    + `sbin/yarn-daemon.sh stop proxyserver`
+- stop a NodeManager
+    + `sbin/yarn-daemons.sh stop nodemanager`
+- stop all the YARN processes
+    + `sbin/stop-yarn.sh`
+- stop the MapReduce JobHistory Server
+    + `sbin/mr-jobhistory-daemon.sh stop historyserver`
+
+## Monitoring the HDFS cluster
+
+- `bin/hdfs dfsadmin -report`
+- http://node-master-IP:50070
+
+## Monitoring YARN
+
+- `bin/yarn node -list`
+- `bin/yarn application -list`
+- http://node-master-IP:8088
+
 ## Monitoring Health of NodeManagers
 
 - Administrators can configure the NodeManager to run an administrator
@@ -319,17 +396,6 @@ export HADOOP_PREFIX
 | yarn.nodemanager.health-checker.script.opts       | Node health script options          | Options for script to check for node's health status |
 | yarn.nodemanager.health-checker.interval-ms       | Node health script interval         | Time interval for running health script              |
 | yarn.nodemanager.health-checker.script.timeout-ms | Node health script timeout interval | Timeout for health script execution                  |
-
-## Workers File
-
-- List all worker hostnames or IP addresses in your
-  etc/hadoop/(slaves/workers) file, one per line
-- Helper scripts will use the etc/hadoop/(slaves/workers) file to run
-  commands on many hosts at once.
-- It is not used for any of the Java-based Hadoop configuration.
-- In order to use this functionality, ssh trusts (via either
-  passphraseless ssh or some other means, such as Kerberos) must be
-  established for the accounts used to run Hadoop.
 
 ## Hadoop Rack Awareness
 
@@ -378,51 +444,6 @@ export HADOOP_PREFIX
   for logging
 - Edit the etc/hadoop/log4j.properties file to customize the Hadoop
   daemons' logging configuration (log-formats and so on)
-
-## Operating the Hadoop Cluster
-
-- HDFS and YARN should run as separate users
-    + For example, hdfs and yarn users
-
-### Startup
-
-- Format a new distributed filesystem
-    + `bin/hdfs namenode -format <cluster_name>`
-- Start the HDFS NameNode:
-    + `sbin/hadoop-daemon.sh start namenode`
-- Start a HDFS DataNode:
-    + `sbin/hadoop-daemons.sh start datanode`
-- Start all the HDFS processes
-    + `sbin/start-dfs.sh`
-- Start the ResourceManager
-    + `sbin/yarn-daemon.sh start resourcemanager`
-- Start a standalone WebAppProxy server
-    + `sbin/yarn-daemon.sh start proxyserver`
-- Start a NodeManager
-    + `sbin/yarn-daemons.sh start nodemanager`
-- Start all the YARN processes
-    + `sbin/start-yarn.sh`
-- Start the MapReduce JobHistory Server
-    + `sbin/mr-jobhistory-daemon.sh start historyserver`
-
-### Shutdown
-
-- stop the HDFS NameNode:
-    + `sbin/hadoop-daemon.sh stop namenode`
-- stop a HDFS DataNode:
-    + `sbin/hadoop-daemons.sh stop datanode`
-- stop all the HDFS processes
-    + `sbin/stop-dfs.sh`
-- stop the ResourceManager
-    + `sbin/yarn-daemon.sh stop resourcemanager`
-- stop a standalone WebAppProxy server
-    + `sbin/yarn-daemon.sh stop proxyserver`
-- stop a NodeManager
-    + `sbin/yarn-daemons.sh stop nodemanager`
-- stop all the YARN processes
-    + `sbin/stop-yarn.sh`
-- stop the MapReduce JobHistory Server
-    + `sbin/mr-jobhistory-daemon.sh stop historyserver`
 
 # Hadoop MapReduce
 
