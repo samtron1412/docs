@@ -57,7 +57,11 @@ We can have 4 different types of shells:
 3. Interactive non-login shells,
 4. Non-interactive non-login shells
 
+- Interactive shells: users type commands and wait for results
+- Non-interactive shells: scripting
+- Login shells: invoke when users log in to a system
 
+> Users can change the type of shell
 
 # Shell configuration files
 
