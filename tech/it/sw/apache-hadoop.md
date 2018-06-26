@@ -471,6 +471,22 @@ export HADOOP_PREFIX
     + NodeManager daemon: manages execution of tasks on the node
 
 
+# Hadoop Versions
+
+- Hadoop 2
+    + introduce YARN: a resource management component
+    + YARN strives to allocate the resources to various applications
+      effectively
+- Hadoop 3
+    + Having multiple name nodes, which solves the single point of
+      failure problem
+    + there are containers working in principle of Docker, which reduce
+      time spent on application development
+    + decreases storage overhead with erasure coding
+    + permits usage of GPU hardware within the cluster, which is a very
+      substantial benefit to execute Deep Learning algorithms on a
+      Hadoop cluster
+
 # Troubleshooting
 
 ## Incompatible cluster IDs
