@@ -435,6 +435,14 @@ export HADOOP_PREFIX
 
 Something
 
+# Troubleshooting
+
+## Incompatible cluster IDs
+
+- copy the datanode clusterID
+- format the namenode with that ID
+    + `bin/hdfs namenode -format -clusterId CID-8bf63244-0510-4db6-a949-8f74b50f2be9`
+
 # References
 
 [wiki]: https://hadoop.apache.org/
