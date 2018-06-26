@@ -187,6 +187,7 @@ $ cat output/*
 - control the Hadoop scripts found in the bin/ directory
     + by setting site-specific values via the etc/hadoop/hadoop-env.sh
     + etc/hadoop/yarn-env.sh
+- List of all nodes: `etc/hadoop/(slaves/workers)`
 - To configure the Hadoop cluster you will need to configure
     + the environment in which the Hadoop daemons execute
     + as well as the configuration parameters for the Hadoop daemons
@@ -433,7 +434,20 @@ export HADOOP_PREFIX
 
 # Architecture
 
-Something
+## Introduction
+
+- A master node keeps knowledge about the distributed file system, and
+  schedules resources allocation. It hosts two daemons
+    + NameNode daemon: manages the distributed file system and knows
+      where stored data blocks inside the cluster are
+    + ResourceManager daemon: manages the YARN jobs and takes care of
+      scheduling and executing processes on worker nodes
+- Worker nodes: store the actual data and provide processing power to
+  run the jobs. They will host two daemons
+    + DataNode daemon: manages the actual data physically stored on the
+      node
+    + NodeManager daemon: manages execution of tasks on the node
+
 
 # Troubleshooting
 
