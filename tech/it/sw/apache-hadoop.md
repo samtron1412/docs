@@ -8,16 +8,16 @@
 - Four main modules:
     + Hadoop Common: the collection of utilities and libraries that
       support other Hadoop modules
-    + **Hadoop Distributed File System** (HDFS - storage part): a
+    + **Hadoop Distributed File System** (HDFS - data storage): a
       distributed file system that provides  high-throughput access to
       application data.
     + Hadoop YARN, short for Yet Another Resource Negotiator, is a
       framework for job scheduling and cluster resource management
-    + Hadoop **MapReduce** (processing part) is the original processing
+    + Hadoop **MapReduce** (processing API) is the original processing
       model for Hadoop clusters
         * many other processing models are available for the 2.x version
           of Hadoop
-- Related projects:
+- Related projects/libraries:
     + Ambari: a web-based tool for provisioning, managing, and
       monitoring Apache Hadoop clusters
     + Avro: a data serialization system
@@ -39,6 +39,106 @@
       and interactive use-cases.
     + ZooKeeper: a high-performance coordination service for distributed
       applications
+
+# Why?
+
+## Relational Databases Limits
+
+- Scalability
+- Speed: Data ingestion (real-time)
+- Queryability
+- Sophisticated processing
+
+## Database Choices
+
+- File systems
+    + HDFS (Hadoop Distributed File System)
+- Databases
+    + NoSQL (key/value, columnstore, etc.)
+
+## Hadoop and HBase
+
+- Hadoop uses an alternative file system (HDFS)
+- HBase is a NoSQL database (wide columnstore)
+    + a record consists of a key and one to n number of values
+    + different records are vary in width => NoSQL
+    + schema on read
+
+## CAP Theory (Consistency, Availability, Partitioning)
+
+- Consistency
+    + Transactions
+- Availability
+    + Up-time
+- Partitioning
+    + Scalability
+
+=> RDBMS only meet consistency and availability => Hadoop
+
+- Hadoop
+    + Scalability (Partitioning)
+        * Commodity hardware for data storage
+    + Flexibility (Availability)
+        * Commodity hardware for distributing data
+
+## Understanding Data
+
+- Data Types
+    + LOB (Line of Business)
+        * Usually transactional and NOT a good fit for Hadoop
+        * Critical data => NOT for Hadoop
+    +  Behavioral data
+        * Batch process not individual queries
+        * Data that doesn't need consistency
+- Data Landscape
+    + Hadoop: bid data
+        * RDBMS and NoSQL can work with Hadoop
+    + RDBMS: critical data, transactions, high consistency
+    + NoSQL
+
+# Hadoop Distributions
+
+## Introduction
+
+- Open source
+    + Apache Hadoop
+- Commercial: providing additional tooling and monitoring and management
+  along with other libraries
+    + Cloudera
+    + Hortonworks
+    + MapR
+- Cloud
+    + AWS (Amazon Web Services)
+    + Windows Azure HDInsight
+
+## Apache Hadoop versions
+
+- Apache Hadoop 2
+    + introduce YARN: a resource management component
+    + YARN strives to allocate the resources to various applications
+      effectively
+- Apache Hadoop 3
+    + Having multiple name nodes, which solves the single point of
+      failure problem
+    + there are containers working in principle of Docker, which reduce
+      time spent on application development
+    + decreases storage overhead with erasure coding
+    + permits usage of GPU hardware within the cluster, which is a very
+      substantial benefit to execute Deep Learning algorithms on a
+      Hadoop cluster
+
+# Use cases
+
+- Risk modeling
+    + insurance company or financial companies making decisions
+    + credit card activity
+- customer churn analysis: reduce customers leaving
+- recommendation engine
+- Ad targeting
+- Transactional analysis
+    + history of all transactions
+- Threat analysis
+- Search quality
 
 # Installation
 
@@ -446,7 +546,7 @@ export HADOOP_PREFIX
 - Edit the etc/hadoop/log4j.properties file to customize the Hadoop
   daemons' logging configuration (log-formats and so on)
 
-# Hadoop MapReduce
+# Apache Hadoop MapReduce
 
 - Tutorial: https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 - Hadoop splits files into large blocks and distributes them across
@@ -471,22 +571,6 @@ export HADOOP_PREFIX
       node
     + NodeManager daemon: manages execution of tasks on the node
 
-
-# Hadoop Versions
-
-- Hadoop 2
-    + introduce YARN: a resource management component
-    + YARN strives to allocate the resources to various applications
-      effectively
-- Hadoop 3
-    + Having multiple name nodes, which solves the single point of
-      failure problem
-    + there are containers working in principle of Docker, which reduce
-      time spent on application development
-    + decreases storage overhead with erasure coding
-    + permits usage of GPU hardware within the cluster, which is a very
-      substantial benefit to execute Deep Learning algorithms on a
-      Hadoop cluster
 
 # Troubleshooting
 
