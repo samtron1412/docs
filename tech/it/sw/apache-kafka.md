@@ -304,3 +304,5 @@ then you can run this command:
 [udemy-courses]: https://www.udemy.com/courses/search/?q=kafka&src=ukw%EF%BB%BF
 [rec]: https://www.slideshare.net/tantrieuf31/introduction-to-recommendation-systems?from_m_app=ios
 [principles]: https://www.slideshare.net/GrokkingVN/grokking-techtalk-24-kafkas-principles-and-protocols?from_m_app=ios
+[kafka-hadoop]: https://www.quora.com/What-is-the-main-difference-between-Kafka-and-Hadoop
+[streams-vs]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash

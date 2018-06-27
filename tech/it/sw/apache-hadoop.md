@@ -42,6 +42,8 @@
 
 # Why?
 
+- Bigger, faster, cheaper, better databases
+
 ## Relational Databases Limits
 
 - Scalability
@@ -151,6 +153,8 @@
 
 ## Libraries
 
+- Real-world data tasks encompass many more scenarios than MapReduce =>
+  libraries
 - Apache Mahout
     + library with common machine learning algorithms
     + data-mining algorithms
@@ -657,3 +661,5 @@ Job Tracker ---|-------------------|        |
 
 [wiki]: https://hadoop.apache.org/
 [source]: https://github.com/apache/hadoop
+[kafka-hadoop]: https://www.quora.com/What-is-the-main-difference-between-Kafka-and-Hadoop
+[schema-on-read]: https://www.marklogic.com/blog/schema-on-read-vs-schema-on-write/
