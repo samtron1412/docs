@@ -595,3 +595,6 @@ terminal, the other side of which is attached to the SSH daemon.
 # References
 
 [tlpi]: http://man7.org/tlpi/ "The Linux Programming Interface"
+[sus]: https://en.wikipedia.org/wiki/Single_UNIX_Specification
+[posix]: http://pubs.opengroup.org/onlinepubs/9699919799/
+[lsb]: https://en.wikipedia.org/wiki/Linux_Standard_Base
