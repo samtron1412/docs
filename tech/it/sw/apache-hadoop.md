@@ -571,6 +571,26 @@ export HADOOP_PREFIX
       node
     + NodeManager daemon: manages execution of tasks on the node
 
+```
+# HDFS: NameNode, DataNode
+# MapReduce: Job Tracker, Task Tracker, Tasks
+
+Client Job                              NameNode
+    |                                       |
+    V          |----------------------------|
+Job Tracker ---|-------------------|        |
+    |          |                   |        |
+    |          |                   |        |
+    V          V                   V        V
+|=======================|    |=======================|
+| Task Tracker --> Task |    | Task Tracker --> Task |
+|         |------> Task |    |         |------> Task |
+|         |------> Task |    |         |------> Task |
+|         |             |    |         |             |
+|         V             |    |         V             |
+|     DataNode          |    |     DataNode          |
+|=======================|    |=======================|
+```
 
 # Troubleshooting
 
