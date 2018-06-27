@@ -489,6 +489,15 @@ export HADOOP_PREFIX
 
 # Troubleshooting
 
+## Cannot connect to XXXX port
+
+- Check ports: `netstat -ntlp`
+    + -t: tcp
+    + -n: numeric instead of domain name
+    + -l: listening ports
+    + -p: PID or program name
+- If no open ports => check logs for error
+
 ## Incompatible cluster IDs
 
 - copy the datanode clusterID
