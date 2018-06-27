@@ -54,6 +54,7 @@
 
 - By default, Hadoop is configured to run in a non-distributed mode, as
   a single Java process
+    + regular file system
 - The following example copies the unpacked conf directory to use as
   input and then finds and displays every match of the given regular
   expression. Output is written to the given output directory
