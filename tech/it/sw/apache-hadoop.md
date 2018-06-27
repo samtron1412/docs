@@ -127,6 +127,50 @@
       substantial benefit to execute Deep Learning algorithms on a
       Hadoop cluster
 
+## Apache Hadoop Ecosystem
+
+```
+# Core libraries only
+# Sqoop: data exchange between RDBMS and Hadoop
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|                                  Ambari                                                   |
+|   Provisioning, Managing, and Maintaining Hadoop Clusters                                 |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|  Sqoop   |              |   Oozie  |   Pig     |  Mahout  |     R      |  Hive |   Hbase  |
+|  Data    | Zookeeper    | Workflow | Scripting | Machine  | Connectors | SQL   | Columnar |
+| Exchange | Coordination |          |           | Learning | Statistics | Query | Store    |
+++++++++++++              ++++++++++++++++++++++++++++++++++++++++++++++++++++++++          |
+| Flume    |              |                   YARN Map Reduce v2                 |          |
+| Log      |              |          Distributed Processing Framework            |          |
+| Collector|              +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|          |              |                    HDFS                                         |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+```
+
+## Libraries
+
+- Apache Mahout
+    + library with common machine learning algorithms
+    + data-mining algorithms
+        * Recommendation (e.g. Pandora: music playlist)
+        * Classification (spam)
+        * Clustering (Google News)
+    + data as vectors: matrix operations
+- RHadoop
+    + statistic library, machine learning
+- Apache Storm
+    + used for complex event-processing scenarios
+        * Internet of Things: sensor data => detecting anomaly
+    + streaming
+- Apache Spark
+    + in-memory distributed data analysis
+    + speeding up jobs
+        * batches
+        * machine learning
+        * interactive queries
+
 # Use cases
 
 - Risk modeling
