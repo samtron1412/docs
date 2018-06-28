@@ -2,6 +2,8 @@
 
 # Overview
 
+## Introduction
+
 - Open-source software for reliable, scalable, distributed computing.
 - A framework for running applications on large cluster built of
   commodity hardware.
@@ -39,6 +41,83 @@
       and interactive use-cases.
     + ZooKeeper: a high-performance coordination service for distributed
       applications
+
+## Hadoop Distributions
+
+### Introduction
+
+- Open source
+    + Apache Hadoop
+- Commercial: providing additional tooling and monitoring and management
+  along with other libraries
+    + Cloudera
+    + Hortonworks
+    + MapR
+- Cloud
+    + AWS (Amazon Web Services)
+    + Windows Azure HDInsight
+
+### Apache Hadoop versions
+
+- Apache Hadoop 2
+    + introduce YARN: a resource management component
+    + YARN strives to allocate the resources to various applications
+      effectively
+- Apache Hadoop 3
+    + Having multiple name nodes, which solves the single point of
+      failure problem
+    + there are containers working in principle of Docker, which reduce
+      time spent on application development
+    + decreases storage overhead with erasure coding
+    + permits usage of GPU hardware within the cluster, which is a very
+      substantial benefit to execute Deep Learning algorithms on a
+      Hadoop cluster
+
+### Apache Hadoop Ecosystem
+
+```
+# Core libraries only
+# Sqoop: data exchange between RDBMS and Hadoop
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|                                  Ambari                                                   |
+|   Provisioning, Managing, and Maintaining Hadoop Clusters                                 |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|  Sqoop   |              |   Oozie  |   Pig     |  Mahout  |     R      |  Hive |   Hbase  |
+|  Data    | Zookeeper    | Workflow | Scripting | Machine  | Connectors | SQL   | Columnar |
+| Exchange | Coordination |          |           | Learning | Statistics | Query | Store    |
+++++++++++++              ++++++++++++++++++++++++++++++++++++++++++++++++++++++++          |
+| Flume    |              |                   YARN Map Reduce v2                 |          |
+| Log      |              |          Distributed Processing Framework            |          |
+| Collector|              +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|          |              |                    HDFS                                         |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+```
+
+### Libraries
+
+- Real-world data tasks encompass many more scenarios than MapReduce =>
+  libraries
+- Apache Mahout
+    + library with common machine learning algorithms
+    + data-mining algorithms
+        * Recommendation (e.g. Pandora: music playlist)
+        * Classification (spam)
+        * Clustering (Google News)
+    + data as vectors: matrix operations
+- RHadoop
+    + statistic library, machine learning
+- Apache Storm
+    + used for complex event-processing scenarios
+        * Internet of Things: sensor data => detecting anomaly
+    + streaming
+- Apache Spark
+    + in-memory distributed data analysis
+    + speeding up jobs
+        * batches
+        * machine learning
+        * interactive queries
 
 # Why?
 
@@ -98,82 +177,61 @@
     + RDBMS: critical data, transactions, high consistency
     + NoSQL
 
-# Hadoop Distributions
+# Architecture
 
 ## Introduction
 
-- Open source
-    + Apache Hadoop
-- Commercial: providing additional tooling and monitoring and management
-  along with other libraries
-    + Cloudera
-    + Hortonworks
-    + MapR
-- Cloud
-    + AWS (Amazon Web Services)
-    + Windows Azure HDInsight
-
-## Apache Hadoop versions
-
-- Apache Hadoop 2
-    + introduce YARN: a resource management component
-    + YARN strives to allocate the resources to various applications
-      effectively
-- Apache Hadoop 3
-    + Having multiple name nodes, which solves the single point of
-      failure problem
-    + there are containers working in principle of Docker, which reduce
-      time spent on application development
-    + decreases storage overhead with erasure coding
-    + permits usage of GPU hardware within the cluster, which is a very
-      substantial benefit to execute Deep Learning algorithms on a
-      Hadoop cluster
-
-## Apache Hadoop Ecosystem
+- A master node keeps knowledge about the distributed file system, and
+  schedules resources allocation. It hosts two daemons
+    + NameNode daemon: manages the distributed file system and knows
+      where stored data blocks inside the cluster are
+    + ResourceManager daemon: manages the YARN jobs and takes care of
+      scheduling and executing processes on worker nodes
+- Worker nodes: store the actual data and provide processing power to
+  run the jobs. They will host two daemons
+    + DataNode daemon: manages the actual data physically stored on the
+      node
+    + NodeManager daemon: manages execution of tasks on the node
 
 ```
-# Core libraries only
-# Sqoop: data exchange between RDBMS and Hadoop
+# HDFS: NameNode, DataNode
+# MapReduce: Job Tracker, Task Tracker, Tasks
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|                                  Ambari                                                   |
-|   Provisioning, Managing, and Maintaining Hadoop Clusters                                 |
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|  Sqoop   |              |   Oozie  |   Pig     |  Mahout  |     R      |  Hive |   Hbase  |
-|  Data    | Zookeeper    | Workflow | Scripting | Machine  | Connectors | SQL   | Columnar |
-| Exchange | Coordination |          |           | Learning | Statistics | Query | Store    |
-++++++++++++              ++++++++++++++++++++++++++++++++++++++++++++++++++++++++          |
-| Flume    |              |                   YARN Map Reduce v2                 |          |
-| Log      |              |          Distributed Processing Framework            |          |
-| Collector|              +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|          |              |                    HDFS                                         |
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+Client Job                              NameNode
+    |                                       |
+    V          |----------------------------|
+Job Tracker ---|-------------------|        |
+    |          |                   |        |
+    |          |                   |        |
+    V          V                   V        V
+|=======================|    |=======================|
+| Task Tracker --> Task |    | Task Tracker --> Task |
+|         |------> Task |    |         |------> Task |
+|         |------> Task |    |         |------> Task |
+|         |             |    |         |             |
+|         V             |    |         V             |
+|     DataNode          |    |     DataNode          |
+|=======================|    |=======================|
 ```
 
-## Libraries
+## How Does Hadoop Work?
 
-- Real-world data tasks encompass many more scenarios than MapReduce =>
-  libraries
-- Apache Mahout
-    + library with common machine learning algorithms
-    + data-mining algorithms
-        * Recommendation (e.g. Pandora: music playlist)
-        * Classification (spam)
-        * Clustering (Google News)
-    + data as vectors: matrix operations
-- RHadoop
-    + statistic library, machine learning
-- Apache Storm
-    + used for complex event-processing scenarios
-        * Internet of Things: sensor data => detecting anomaly
-    + streaming
-- Apache Spark
-    + in-memory distributed data analysis
-    + speeding up jobs
-        * batches
-        * machine learning
-        * interactive queries
+- Stage 1: a user/application can submit a job to the Hadoop (a hadoop
+  job client) for required process by specifying the following items
+    + The location of the input and output files in the distributed file
+      system.
+    + The java classes in the form of jar file containing the
+      implementation of map and reduce functions.
+    + The job configuration by setting different parameters specific to
+      the job.
+- Stage 2: The Hadoop job client then submits the job (jar/executable
+  etc) and configuration to the JobTracker which then assumes the
+  responsibility of distributing the software/configuration to the
+  slaves, scheduling tasks and monitoring them, providing status and
+  diagnostic information to the job client.
+- Stage 3: The TaskTrackers on different nodes execute the task as per
+  MapReduce implementation and output of the reduce function is stored
+  into the output files on the file system.
 
 # Use cases
 
@@ -602,43 +660,6 @@ export HADOOP_PREFIX
 - It then transfers *packaged code (jar, etc.)* into nodes to process
   the data in parallel.
 - The Reduce phase
-
-# Architecture
-
-## Introduction
-
-- A master node keeps knowledge about the distributed file system, and
-  schedules resources allocation. It hosts two daemons
-    + NameNode daemon: manages the distributed file system and knows
-      where stored data blocks inside the cluster are
-    + ResourceManager daemon: manages the YARN jobs and takes care of
-      scheduling and executing processes on worker nodes
-- Worker nodes: store the actual data and provide processing power to
-  run the jobs. They will host two daemons
-    + DataNode daemon: manages the actual data physically stored on the
-      node
-    + NodeManager daemon: manages execution of tasks on the node
-
-```
-# HDFS: NameNode, DataNode
-# MapReduce: Job Tracker, Task Tracker, Tasks
-
-Client Job                              NameNode
-    |                                       |
-    V          |----------------------------|
-Job Tracker ---|-------------------|        |
-    |          |                   |        |
-    |          |                   |        |
-    V          V                   V        V
-|=======================|    |=======================|
-| Task Tracker --> Task |    | Task Tracker --> Task |
-|         |------> Task |    |         |------> Task |
-|         |------> Task |    |         |------> Task |
-|         |             |    |         |             |
-|         V             |    |         V             |
-|     DataNode          |    |     DataNode          |
-|=======================|    |=======================|
-```
 
 # Troubleshooting
 
