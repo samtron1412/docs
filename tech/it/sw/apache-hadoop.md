@@ -654,12 +654,81 @@ export HADOOP_PREFIX
 
 # Apache Hadoop MapReduce
 
-- Tutorial: https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
-- Hadoop splits files into large blocks and distributes them across
-  nodes in a cluster
-- It then transfers *packaged code (jar, etc.)* into nodes to process
-  the data in parallel.
-- The Reduce phase
+- MapReduce is a framework using which we can write applications
+- Two important tasks
+    + Map: takes a set of data and converts it into another set of data,
+      where individual elements are broken down into a tuples (key/value
+      pairs)
+    + Reduce: takes the output from a map as an input and combines those
+      data tuples into a smaller set of tuples.
+- MapReduce helps make scaling the application is merely a configuration
+  change
+- Tutorial
+    + https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+- Command References
+    + https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapredCommands.html
+
+```
+# Inputs and Outputs
+# key and value classes should be in serialized manner => implement the
+# Writable interface
+# the key classes have to implements the Writable-Comparable inteface to
+# facilitate sorting by the framework
+
+| @      | Input          | Output         |
+| -      | -              | -              |
+| Map    | <k1, v1>       | list(<k2, v2>) |
+| Reduce | <k2, list(v2)> | list(<k3, v3)  |
+```
+
+# Apache Hadoop HDFS
+
+## Introduction
+
+- distributed file system
+- highly fault-tolerant
+    + files are stored in redundant fashion
+- features
+    + Hadoop provides a command interface to interact with HDFS
+    + HDFS provides file permissions and authentication
+
+## HDFS Architecture
+
+- Namenode
+    + a commodity hardware that contains the GNU/Linux OS and the
+      namenode software
+    + manages the file system namespace
+    + regulates client's access to files
+    + executes file system operations such as renaming, closing, and
+      opening files and directories
+- Datanode
+    + a commodity hardware that contains the GNU/Linux OS and the
+      datanode software
+    + performs read-write operations on the file systems, as per client
+      request
+    + performs operations such as block creation, deletion, and
+      replication according to the instructions of the namenode
+
+## HDFS Operations
+
+- Starting HDFS
+    + `$ bin/hadoop namenode -format`
+    + `$ sbin/start-dfs.sh`
+- Listing files in HDFS
+    + `$ bin/hadoop fs -ls <args>`
+- Inserting data into HDFS
+    + `$ bin/hadoop fs -mkdir /user/<user-name>/input`
+    + `$ bin/hadoop fs -put /home/file.txt /user/<user-name>/input`
+- Retrieving data from HDFS
+    + `$ bin/hadoop fs -cat /user/<user-name>/output/outfile`
+    + `$ bin/hadoop fs -get /user/<user-name>/output/ /home/hadoop_tp/`
+- Shutting down the HDFS
+    + `$ sbin/stop-dfs.sh`
+
+## Command References
+
+- https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
+- https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html
 
 # Troubleshooting
 
@@ -684,3 +753,4 @@ export HADOOP_PREFIX
 [source]: https://github.com/apache/hadoop
 [kafka-hadoop]: https://www.quora.com/What-is-the-main-difference-between-Kafka-and-Hadoop
 [schema-on-read]: https://www.marklogic.com/blog/schema-on-read-vs-schema-on-write/
+[yarn-vs-mesos]: https://data-flair.training/blogs/comparison-between-apache-mesos-vs-hadoop-yarn/
