@@ -1139,6 +1139,12 @@ See more:
 This method can be using to remap any key automatically when the
 keyboard is plugged in.
 
+- Find attributes of a device
+    + `udevadm info -a -n <device-name>`
+        * `udevadm info -a -n /dev/usb/hiddev0`
+    + `udevadm info -a -p /sys/class/usbmisc/hiddev0`
+    + `lsusb`
+        * ID 04d9:0141 => idVendor = 04d9, idProduct = 0141
 - Create a udev rule: `/etc/udev/rules.d/99-usb-keyboards.rules`
 
 ```bash
@@ -1178,6 +1184,9 @@ setxkbmap -option caps:escape
 
 - Unset setxkbmap: `$ setxkbmap -option`
 - Caps Lock as Ctrl key: `$ setxkbmap -option ctrl:nocaps`
+- Testing rules
+    + `# udevadm test $(udevadm info -q path -n device_name) 2>&1`
+    + `# udevadm test /sys/class/backlight/acpi_video0/`
 
 ## Benchmarking
 
