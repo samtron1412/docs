@@ -730,6 +730,13 @@ export HADOOP_PREFIX
 - https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
 - https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html
 
+## Versus other distributed file system
+
+- vs. NFS
+    + https://stackoverflow.com/questions/25718339/difference-between-hdfs-and-nfs#25723082
+    + HDFS fault-tolerant, reading performance scales better
+- vs.
+
 # Troubleshooting
 
 ## Cannot connect to XXXX port
@@ -754,3 +761,4 @@ export HADOOP_PREFIX
 [kafka-hadoop]: https://www.quora.com/What-is-the-main-difference-between-Kafka-and-Hadoop
 [schema-on-read]: https://www.marklogic.com/blog/schema-on-read-vs-schema-on-write/
 [yarn-vs-mesos]: https://data-flair.training/blogs/comparison-between-apache-mesos-vs-hadoop-yarn/
+[hdfs-vs-nfs]: https://stackoverflow.com/questions/25718339/difference-between-hdfs-and-nfs#25723082
