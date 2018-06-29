@@ -262,21 +262,11 @@ Useful things about this architecture:
       better to open an RPC to the drier and have it submit operations
       from nearby than to run a drier far away from the worker nodes.
 
-## Submitting Applications
+## Cluster Manager Types
 
-Something
+### Standalone Mode
 
-## Monitoring
-
-Something
-
-## Job Scheduling
-
-Something
-
-## Standalone Mode
-
-### Introduction
+#### Introduction
 
 - A simple cluster manager included with Spark that makes it easy to set
   up a cluster.
@@ -284,11 +274,11 @@ Something
     + starting a master and workers manually
     + using launch scripts
 
-### Installing Spark Standalone to a cluster
+#### Installing Spark Standalone to a cluster
 
 - place a compiled version of Spark on  each node on the cluster
 
-### Starting a cluster manually
+#### Starting a cluster manually
 
 - master
     + `$ sbin/start-master.sh`
@@ -299,7 +289,7 @@ Something
 - workers
     + `$ sbin/start-slave.sh <master-spark-URL>`
 
-### Using launch scripts
+#### Using launch scripts
 
 - To launch a Spark standalone cluster with the launch scripts, you
   should create a file called `conf/slaves` in your Spark directory,
@@ -324,7 +314,7 @@ Something
   environment variables in `conf/spark-env.sh`
     + https://spark.apache.org/docs/latest/spark-standalone.html
 
-### Connecting an application to the cluster
+#### Connecting an application to the cluster
 
 - simply pass the `spark://IP:PORT` URL of the master as to the
   SparkContext constructor
@@ -333,7 +323,7 @@ Something
     + option `--total-executor-cores <numCores>` to control the number
       of cores that spark-shell uses on the cluster
 
-### Launching Spark applications
+#### Launching Spark applications
 
 - using spark-submit script
 - two deploy modes
@@ -359,6 +349,32 @@ Something
     + kill an application that is failing repeatedly
         * `bin/spark-class org.apache.spark.deploy.Client kill <master url> <driver ID>`
         * you can find the driver ID through the master web ui http://<master url>:8080
+
+
+
+### Apache Mesos
+
+- https://spark.apache.org/docs/latest/running-on-mesos.html
+
+### Hadoop YARN
+
+- https://spark.apache.org/docs/latest/running-on-yarn.html
+
+### Kubernetes
+
+- https://spark.apache.org/docs/latest/running-on-kubernetes.html
+
+## Submitting Applications
+
+- https://spark.apache.org/docs/latest/submitting-applications.html
+
+## Monitoring
+
+- https://spark.apache.org/docs/latest/monitoring.html
+
+## Job Scheduling
+
+- https://spark.apache.org/docs/latest/job-scheduling.html
 
 ## Glossary
 
