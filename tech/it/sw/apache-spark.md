@@ -42,6 +42,7 @@
     + add bin to PATH
 - Verifying the Spark installation
     + spark-shell
+    + web-ui: http://localhost:4040
 
 # Spark Components
 
@@ -124,15 +125,43 @@
 
 + Two types of operations
     * transformations
-        - to change the RDD in some way, such as filtering out some
-          data
-        - RDDs are immutable => the end of result of all
-          transformations result in the creation of a new RDD
-        - RDDs perform transformations lazily
     * actions
-        - use the data contained in the RDDs, and as such when an
-          action is called on an RDD, this is when the
-          transformations are performed.
+
+### Transformations
+
+- to change the RDD in some way, such as filtering out some data
+- RDDs are immutable => the end of result of all transformations result
+  in the creation of a new RDD
+- RDDs perform transformations lazily
+- transformations return pointer to new RDD and allows you to crate
+  dependencies between RDDs.
+    + each RDD in dependency chain (String of Dependency) has a function
+      for calculating its data and has a pointer (dependency) to its
+      parent RDD
+
+| S.No | Transformations and Meaning                                                                                                                                                        |
+| 1    | map(func): returns a new distributed dataset, formed by passing each element of the source through a function func                                                                 |
+| 2    | filter(func): returns a new dataset formed by selecting those elements of the source on which func returns true.                                                                   |
+| 3    | flatMap(func): similar to map, but each input item cna be mapped to 0 or more output items (so func should return a Seq rather than a single item)                                 |
+| 4    | mapPartitions(func): similar to map, but runs separately on each partition (block) of the RDD, so func ust be of type Iterator<T> => Iterator<U> when running on an RDD of type T. |
+| 5    | ...                                                                                                                                                                                |
+
+
+
+### Actions
+
+- use the data contained in the RDDs, and as such when an action is
+  called on an RDD, this is when the transformations are performed.
+
+| S.No | Action and Meaning                                                                                                                                                                                                           |
+| -    | -                                                                                                                                                                                                                            |
+| 1    | reduce(func): Aggreagate the elements of the datset using a function func (which takes two arguments and returns one). The function should be commutative and assoociative so that it can be computed correclty in parallel. |
+| 2    | collect(): returns all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data.                         |
+| 3    | count(): Returns the number of elements in the dataset.                                                                                                                                                                      |
+| 4    | first(): returns the first element of the dataset (similar to take(1))                                                                                                                                                       |
+| 5    | take(n): returns an arrya with the first n elements of the dataset                                                                                                                                                           |
+| 6    | takeSample(withReplacement, num, [seed]): returns an array with a random sample of num elements of the dataset, with or without replacement, optionally pre-specifying a random number generator seed.                       |
+| 7    | ...                                                                                                                                                                                                                          |
 
 
 # References
