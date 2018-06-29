@@ -164,6 +164,10 @@
 | 7    | ...                                                                                                                                                                                                                          |
 
 
+# Quick Start
+
+- https://spark.apache.org/docs/latest/quick-start.html
+
 # References
 
 [streaming]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash
