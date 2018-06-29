@@ -211,6 +211,61 @@ $ YOUR_SPARK_HOME/bin/spark-submit \
 Lines with a: 46, Lines with b: 23
 ```
 
+# Spark Shell
+
+- `bin/spark-shell --master "local[4]"`
+    + the `--master` option specifies the master URL for a distributed
+      cluster, or `local` to run locally with one thread, or `local[N]`
+      to run locally with N threads.
+
+# Launching on a Cluster
+
+## Overview
+
+### Components
+
+- Spark applications run as independent sets of processes on a cluster,
+  coordinated by the `SparkContext` object in your main program (called
+  the `driver program`)
+- The SparkContext can connect to several types of *cluster managers*
+  (either Spark's own standalone cluster manager, Mesos or YARN), which
+  allocate resources across applications
+- Once connected, Spark acquires `executors` on nodes in the cluster,
+  which are processes that run computations and store data for your
+  application.
+- Next, it sends your application code (defined by JAR or Python files
+  passed to SparkContext) to the executors.
+- Finally, SparkContet sends `tasks` to the executors to run.
+
+![Spark-architecture](https://spark.apache.org/docs/latest/img/cluster-overview.png)
+
+Useful things about this architecture:
+
+- Each application gets its own executor processes, which stay up for
+  the duration of the whole application and run tasks in multiple
+  threads.
+    + isolating applications form each other
+        * scheduling side (each driver schedules its own tasks)
+        * executor side (tasks from different applications run in
+          different JVMs)
+    + however, it means that data cannot be shared across different
+      Spark applications without writing it to an external storage
+      system.
+- Spark is agnostic to the underlying cluster manager.
+- the driver program must listen for and accept incoming connections
+  from its executors throughout its lifetime
+    + the driver program must be network addressable from the worker
+      nodes.
+- Because the driver schedules tasks on the cluster, it should be run
+  close to the worker nodes, preferably on the same local area network.
+    + If you'd like to send requests to the cluster remotely, it's
+      better to open an RPC to the drier and have it submit operations
+      from nearby than to run a drier far away from the worker nodes.
+
+## Standalone Deploy Mode
+
+Something
+
 # References
 
 [streaming]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash
