@@ -167,6 +167,49 @@
 # Quick Start
 
 - https://spark.apache.org/docs/latest/quick-start.html
+- spark-shell
+    + web-ui: http://localhost:4040
+    + interactive shell, scripting
+- self-contained applications (jar)
+    + sbt for Scala, Maven for Java
+- examples
+    + https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples
+
+```
+// build.sbt
+
+name := "Simple Project"
+
+version := "1.0"
+
+scalaVersion := "2.11.8"
+
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.3.1"
+```
+
+```
+# Your directory layout should look like this
+$ find .
+.
+./build.sbt
+./src
+./src/main
+./src/main/scala
+./src/main/scala/SimpleApp.scala
+
+# Package a jar containing your application
+$ sbt package
+...
+[info] Packaging {..}/{..}/target/scala-2.11/simple-project_2.11-1.0.jar
+
+# Use spark-submit to run your application
+$ YOUR_SPARK_HOME/bin/spark-submit \
+  --class "SimpleApp" \
+  --master local[4] \
+  target/scala-2.11/simple-project_2.11-1.0.jar
+...
+Lines with a: 46, Lines with b: 23
+```
 
 # References
 
