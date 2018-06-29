@@ -218,7 +218,7 @@ Lines with a: 46, Lines with b: 23
       cluster, or `local` to run locally with one thread, or `local[N]`
       to run locally with N threads.
 
-# Launching on a Cluster
+# Cluster Mode
 
 ## Overview
 
@@ -262,9 +262,118 @@ Useful things about this architecture:
       better to open an RPC to the drier and have it submit operations
       from nearby than to run a drier far away from the worker nodes.
 
-## Standalone Deploy Mode
+## Submitting Applications
 
 Something
+
+## Monitoring
+
+Something
+
+## Job Scheduling
+
+Something
+
+## Standalone Mode
+
+### Introduction
+
+- A simple cluster manager included with Spark that makes it easy to set
+  up a cluster.
+- Launching
+    + starting a master and workers manually
+    + using launch scripts
+
+### Installing Spark Standalone to a cluster
+
+- place a compiled version of Spark on  each node on the cluster
+
+### Starting a cluster manually
+
+- master
+    + `$ sbin/start-master.sh`
+    + once started, the master will print out a `spark://HOST:PORT` URL
+      for itself, which you can use to connect workers to it, or pass as
+      the "master" argument to SparkContect.
+    + master web-ui: http://localhost:8080
+- workers
+    + `$ sbin/start-slave.sh <master-spark-URL>`
+
+### Using launch scripts
+
+- To launch a Spark standalone cluster with the launch scripts, you
+  should create a file called `conf/slaves` in your Spark directory,
+  which must contain the hostnames of all the machines where you intend
+  to start Spark workers, one per line.
+    + if `conf/slaves` does not exist, the launch scripts defaults to a
+      single machine (localhost)
+    + the master machine accesses each of the worker machines via ssh
+- the following scripts must run on the master machine
+
+| script               | description                                                               |
+| -                    | -                                                                         |
+| sbin/start-master.sh | starts a master instance on the machine the script is executed on         |
+| sbin/start-slaves.sh | starts a slave instance on each machine specified in the conf/slaves file |
+| sibn/start-slave.sh  | starts a slave instance on the machine the script is executed on          |
+| sbin/start-all.sh    | starts both a master and a number of slaves as described above            |
+| sbin/stop-master.sh  | stops the master that was started via the sbin/start-master.sh            |
+| sbin/stop-slaves.sh  | stops the slaves that was specified in conf/slaves                        |
+| sbin/stop-all.sh     | stops both the master and slaves                                          |
+
+- You can optionally configure the cluster further by setting
+  environment variables in `conf/spark-env.sh`
+    + https://spark.apache.org/docs/latest/spark-standalone.html
+
+### Connecting an application to the cluster
+
+- simply pass the `spark://IP:PORT` URL of the master as to the
+  SparkContext constructor
+- to run an interactive Spark shell against the cluster
+    + `bin/spark-shell --master spark://IP:PORT`
+    + option `--total-executor-cores <numCores>` to control the number
+      of cores that spark-shell uses on the cluster
+
+### Launching Spark applications
+
+- using spark-submit script
+- two deploy modes
+    + `client` mode:
+        * the driver is launched in the same process as the client that
+          submits the application
+    + `cluster` mode
+        * the driver is launched from one of the Worker processes inside
+          the cluster, and the client process exits as soon as it
+          fulfills its responsibility of submitting the application
+          without waiting for the application to finish
+- if your application is launched through spark-submit, then the
+  application jar is automatically distributed to all worker nodes
+    + for any additional jars that your application depends on, you
+      should specify them through the --jars flag using comma as a
+      delimiter (e.g. --jars jar1,jar2)
+- Spark configuration
+    + https://spark.apache.org/docs/latest/configuration.html
+- standalone cluster mode supports restarting your application
+  automatically if it exited with non-zero exit code
+    + pass the flag `--supervise` to spark-submit when launching your
+      application
+    + kill an application that is failing repeatedly
+        * `bin/spark-class org.apache.spark.deploy.Client kill <master url> <driver ID>`
+        * you can find the driver ID through the master web ui http://<master url>:8080
+
+## Glossary
+
+| Term            | Meaning                                                                                                                                                                                           |
+| -               | -                                                                                                                                                                                                 |
+| Application     | User program built on Spark. Consist of a *driver program* and *executors* on the cluster                                                                                                         |
+| Application jar | A jar containing the user's Spark application.                                                                                                                                                    |
+| Driver program  | The process running the main() function of the application and creating the SparkContext                                                                                                          |
+| Cluster manager | An external service for acquiring resources on the cluster (e.g. standalone manager, Mesos, YARN)                                                                                                 |
+| Deploy mode     | distinguishes where the driver process runs, in "cluster" mode, the framework launches the drier inside of the cluster. In "client" mode the submitter launches the driver outside of the cluster |
+| Worker node     | any node that can run application code in the cluster                                                                                                                                             |
+| Executor        | A process launched for an application on a worker node, that run tasks and keeps data in memory or disk storage across them. Each application has its own executors                               |
+| Task            | a unit of work that will be sent to one executor                                                                                                                                                  |
+| Job             | A parallel computation consisting of multiple tasks that gets spawned in response to a Spark action (e.g. save, collect)                                                                          |
+| Stage           | Each job gets divided into smaller sets of tasks called stages that depend on each other (similar to the map and reduce stages in MapReduce)                                                      |
 
 # References
 
