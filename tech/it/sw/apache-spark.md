@@ -622,6 +622,7 @@ export HADOOP_CONF_DIR=XXX
 
 ## Loading configuration from a file
 
+- `conf/spark-defaults.conf`
 - configuration values explicitly set on a `SparkConf` take the highest
   precedence, then flags passed to `spark-submit`, then values in the
   default file
