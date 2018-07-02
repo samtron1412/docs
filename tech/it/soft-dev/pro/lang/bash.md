@@ -133,6 +133,24 @@ options** as well. These are words preceded by a double hyphen.
 - [Parameter substitution](http://www.tldp.org/LDP/abs/html/parameter-substitution.html)
 
 
+# Tips and Tricks
+
+## Search the command history
+
+- `Ctrl + R` -> start typing -> once the result appears keep hitting
+  `Ctrl + R` to see other matches
+    + `Enter` to run the command or arrow keys to move and edit the
+      command
+- Rebind the command `reverse-search-history`
+    + `bind '"\C-t": reverse-search-history'`
+- Alternative to `Ctrl + R`
+    + search history by typing `!<text>`: this will search the history
+      for the most recent command beginning with 'text'
+    + put `shopt -s histverify` in your .bashrc to prevent execution of
+      wrong command
+      => this will places the resulting line to the command prompt then
+      you can review or edit the command
+
 # References
 
 [beginner]: http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
