@@ -1115,3 +1115,4 @@ execution configuration values as defined in `StreamConfig`.
 # References
 
 [streaming]: https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101
+[flink-vs-streams]: https://www.confluent.io/blog/apache-flink-apache-kafka-streams-comparison-guideline-users/
