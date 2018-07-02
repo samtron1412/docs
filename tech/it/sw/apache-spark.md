@@ -403,6 +403,90 @@ Useful things about this architecture:
 
 - https://spark.apache.org/docs/latest/configuration.html
 
+## Spark Properties
+
+- priority order
+    + SparkConf take highest precedence
+    + flags passed to spark-submit or spark-shell
+    + options in the spark-defaults.conf file
+
+### Programmatically loading Spark properties
+
+- Spark properties control most application settings and are configured
+  separately for each application
+    + it can be set directly on a `SparkConf` passed to your
+      `SparkContext`
+
+```scala
+val conf = new SparkConf()
+             .setMaster("local[2]")
+             .setAppName("CountingSheep")
+val sc = new SparkContext(conf)
+```
+
+### Dynamically loading Spark properties
+
+```scala
+// empty conf
+val sc = new SparkContext(new SparkConf())
+```
+
+- Supply configuration values at runtime
+    + `bin/spark-submit` reads configuration options from
+      `conf/spark-default.conf`
+    + flags passed to `bin/spark-submit`
+
+```
+./bin/spark-submit --name "My app" --master local[4] --conf spark.eventLog.enabled=false
+  --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar
+```
+
+### Viewing Spark properties
+
+- http://<driver>:4040
+    + lists Spark properties in the "Environment" tab
+    + note that only values explicitly specified through
+      `spark-defaults.conf, SparkConf`, or the command line will appear
+    + For all other configuration properties, you can assume the default
+      value is used
+
+### Available Properties
+
+- https://spark.apache.org/docs/latest/configuration.html#available-properties
+
+#### Cluster Managers
+
+- https://spark.apache.org/docs/latest/configuration.html#cluster-managers
+
+## Environment Variables
+
+- `conf/spark-env.sh`
+- since `conf/spark-env.sh` is a shell script, some of these can be set
+  programmatically
+    + you might compute `SPARK_LOCAL_IP` by looking up the IP of a
+      specific network interface
+- Pay attention for YARN cluster mode
+    + https://spark.apache.org/docs/latest/running-on-yarn.html#spark-properties
+
+## Configuring Logging
+
+- `conf/log4j.properties`
+
+## Overriding configuration directory
+
+- `export SPARK_CONF_DIR=...`
+
+## Inheriting Hadoop Cluster Configuration
+
+- If you plan to read and write from HDFS using Spark, there are two
+  Hadoop configuration files that should be included on Spark's
+  classpath
+    + `hdfs-site.xml` which provides default behaviors for the HDFS
+      client
+    + `core-site.xml` which sets the default filesystem name
+- To make these files visible to Spark, set `HADOOP_CONF_DIR` in
+  `conf/spark-env.sh` to a location containing the configuration files
+
 # Submitting Applications
 
 - https://spark.apache.org/docs/latest/submitting-applications.html
