@@ -33,6 +33,10 @@
         * YARN
         * Mesos
 
+# Hardware Provisioning
+
+- https://spark.apache.org/docs/latest/hardware-provisioning.html
+
 # Installation
 
 - Download the Apache Spark
@@ -163,6 +167,22 @@
 | 6    | takeSample(withReplacement, num, [seed]): returns an array with a random sample of num elements of the dataset, with or without replacement, optionally pre-specifying a random number generator seed.                       |
 | 7    | ...                                                                                                                                                                                                                          |
 
+
+# Spark SQL, Datasets, and DataFrames
+
+- https://spark.apache.org/docs/latest/sql-programming-guide.html
+
+# Spark Streaming
+
+- https://spark.apache.org/docs/latest/streaming-programming-guide.html
+
+# MLlib
+
+- https://spark.apache.org/docs/latest/ml-guide.html
+
+# GraphX
+
+- https://spark.apache.org/docs/latest/graphx-programming-guide.html
 
 # Quick Start
 
@@ -364,12 +384,31 @@ Useful things about this architecture:
 
 - https://spark.apache.org/docs/latest/running-on-kubernetes.html
 
-## Submitting Applications
+## Glossary
+
+| Term            | Meaning                                                                                                                                                                                           |
+| -               | -                                                                                                                                                                                                 |
+| Application     | User program built on Spark. Consist of a *driver program* and *executors* on the cluster                                                                                                         |
+| Application jar | A jar containing the user's Spark application.                                                                                                                                                    |
+| Driver program  | The process running the main() function of the application and creating the SparkContext                                                                                                          |
+| Cluster manager | An external service for acquiring resources on the cluster (e.g. standalone manager, Mesos, YARN)                                                                                                 |
+| Deploy mode     | distinguishes where the driver process runs, in "cluster" mode, the framework launches the drier inside of the cluster. In "client" mode the submitter launches the driver outside of the cluster |
+| Worker node     | any node that can run application code in the cluster                                                                                                                                             |
+| Executor        | A process launched for an application on a worker node, that run tasks and keeps data in memory or disk storage across them. Each application has its own executors                               |
+| Task            | a unit of work that will be sent to one executor                                                                                                                                                  |
+| Job             | A parallel computation consisting of multiple tasks that gets spawned in response to a Spark action (e.g. save, collect)                                                                          |
+| Stage           | Each job gets divided into smaller sets of tasks called stages that depend on each other (similar to the map and reduce stages in MapReduce)                                                      |
+
+# Configuration
+
+- https://spark.apache.org/docs/latest/configuration.html
+
+# Submitting Applications
 
 - https://spark.apache.org/docs/latest/submitting-applications.html
 - `spark-submit` script in Spark's `bin` directory
 
-### Bundling your application's dependencies
+## Bundling your application's dependencies
 
 - if your code depends on other projects, you will need to package them
   alongside your application in order to distribute the code to a Spark
@@ -383,7 +422,7 @@ Useful things about this architecture:
 - For Python, you can use the `--py-files` argument of `spark-submit` to
   add `.py, .zip or .egg` files
 
-### Launching with spark-submit
+## Launching with spark-submit
 
 ```
 ./bin/spark-submit \
@@ -481,7 +520,7 @@ export HADOOP_CONF_DIR=XXX
   1000
 ```
 
-### Master URLs
+## Master URLs
 
 | Master URL                      | Meaning                                                                                                                                                                                                                                                                                                       |
 | -                               | -                                                                                                                                                                                                                                                                                                             |
@@ -497,7 +536,7 @@ export HADOOP_CONF_DIR=XXX
 | k8s://HOST:PORT                 | Connect to a Kubernetes cluster in cluster mode. Client mode is currently unsupported and will be supported in the future releases.                                                                                                                                                                           |
 
 
-### Loading configuration from a file
+## Loading configuration from a file
 
 - configuration values explicitly set on a `SparkConf` take the highest
   precedence, then flags passed to `spark-submit`, then values in the
@@ -505,28 +544,33 @@ export HADOOP_CONF_DIR=XXX
 - print debugging information to know where configuration options are
   coming from by running `spark-submit` with the `--verbose` option
 
-## Monitoring
+# Monitoring
 
 - https://spark.apache.org/docs/latest/monitoring.html
+-
 
-## Job Scheduling
+# Tuning Guide - Optimization
+
+- https://spark.apache.org/docs/latest/tuning.html
+
+
+# Job Scheduling
 
 - https://spark.apache.org/docs/latest/job-scheduling.html
 
-## Glossary
+# Security
 
-| Term            | Meaning                                                                                                                                                                                           |
-| -               | -                                                                                                                                                                                                 |
-| Application     | User program built on Spark. Consist of a *driver program* and *executors* on the cluster                                                                                                         |
-| Application jar | A jar containing the user's Spark application.                                                                                                                                                    |
-| Driver program  | The process running the main() function of the application and creating the SparkContext                                                                                                          |
-| Cluster manager | An external service for acquiring resources on the cluster (e.g. standalone manager, Mesos, YARN)                                                                                                 |
-| Deploy mode     | distinguishes where the driver process runs, in "cluster" mode, the framework launches the drier inside of the cluster. In "client" mode the submitter launches the driver outside of the cluster |
-| Worker node     | any node that can run application code in the cluster                                                                                                                                             |
-| Executor        | A process launched for an application on a worker node, that run tasks and keeps data in memory or disk storage across them. Each application has its own executors                               |
-| Task            | a unit of work that will be sent to one executor                                                                                                                                                  |
-| Job             | A parallel computation consisting of multiple tasks that gets spawned in response to a Spark action (e.g. save, collect)                                                                          |
-| Stage           | Each job gets divided into smaller sets of tasks called stages that depend on each other (similar to the map and reduce stages in MapReduce)                                                      |
+- https://spark.apache.org/docs/latest/security.html
+
+# Coding
+
+- API Docs
+    + https://spark.apache.org/docs/latest/api
+- AMP Camps
+    + http://ampcamp.berkeley.edu/
+- Code Examples
+    + http://spark.apache.org/examples.html
+    + https://github.com/apache/spark/tree/master/examples
 
 # References
 
