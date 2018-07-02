@@ -221,6 +221,12 @@ be brought to the foreground with the command fg n where n is the job
 
 # Tips and Tricks
 
+## Determine the current shell
+
+- https://stackoverflow.com/questions/3327013/how-to-determine-the-current-shell-im-working-on#3327022
+- `echo $SHELL`
+- `echo $0`
+
 ## Wrap text at a certain column size - Text formatter
 
 Commands in coreutils:
