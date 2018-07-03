@@ -37,6 +37,50 @@
 
 - https://spark.apache.org/docs/latest/hardware-provisioning.html
 
+## Storage Systems
+
+- run Spark on the same nodes as HDFS
+- set up a Spark standalone mode cluster on the same nodes, and
+  configure Spark and Hadoop's memory and CPU usage to avoid
+  interference
+    + Hadoop
+        * per-task memory: `mapred.child.java.opts`
+        * number of tasks: `mapreduce.tasktracker.map.tasks.maximum` and
+          `mapreduce.tasktracker.reduce.tasks.maximum`
+- for low-latency data stores like HBase, it may be preferable to run
+  computing jobs on different nodes than the storage system to avoid
+  interference
+
+## Local Disks
+
+- 4-8 disks per node
+- mount the disks with the noatime option
+    + http://www.centos.org/docs/5/html/Global_File_System/s2-manage-mountnoatime.html
+- configure `spark.local.dir` variable to be a comma-separated list of
+  the local disks
+
+## Memory
+
+- allocating at most 75% of the memory for Spark; leave the rest for the
+  operating system and buffer cache
+- how much memory you will need depend on your application
+- Java VM does not always behave well with more than 200 GB of RAM
+    + you can run multiple worker JVMs per node
+    + `SPARK_WORKER_INSTANCES` in `conf/spark-env.sh`
+    + `SPARK_WORKER_CORES` the number of cores per worker
+
+## Network
+
+- distributed reduce
+    + group-bys, reduce-bys, SQL joins
+- using a 10 Gigabit or higher network
+- web UI: how much data Spark shuffles across the network
+    + http://<driver-node>:4040
+
+## CPU Cores
+
+- 8-16 cores per machine
+
 # Installation
 
 - Download the Apache Spark
