@@ -1029,6 +1029,55 @@ val sc = new SparkContext(conf)
 
 - https://spark.apache.org/docs/latest/job-scheduling.html
 
+## Overview
+
+- The cluster managers that Spark runs on provide facilities for
+  scheduling across applications
+    + Each Spark application (instance of SparkContext) runs an
+      independent set of executor processes
+- Within each Spark application, multiple "jobs" (Spark actions) may be
+  running concurrently if they were submitted by different threads
+    + this is common if your application is serving requests over the
+      network
+    + Spark includes a fair scheduler to schedule resources within each
+      SparkContext
+
+## Scheduling Across Applications
+
+### Dynamic Resource Allocation
+
+#### Configuration and Setup
+
+Something
+
+#### Resource Allocation Policy
+
+##### Request Policy
+
+Something
+
+##### Remove Policy
+
+Something
+
+#### Graceful Decommission of Executors
+
+Something
+
+## Scheduling Within an Application
+
+### Fair Scheduler Pools
+
+Something
+
+### Default Behavior of Pools
+
+Something
+
+### Configuring Pool Properties
+
+Something
+
 # Security
 
 - https://spark.apache.org/docs/latest/security.html
