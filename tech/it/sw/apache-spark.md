@@ -632,7 +632,121 @@ export HADOOP_CONF_DIR=XXX
 # Monitoring
 
 - https://spark.apache.org/docs/latest/monitoring.html
--
+- There are several ways to monitor Spark applications
+    + web UIs
+    + REST API metrics
+    + external instrumentation
+
+## Web interfaces
+
+- every SparkContext launches a web UI, by default on port 4040
+    + a list of scheduler stages and tasks
+    + a summary of RDD sizes and memory usage
+    + environmental information
+    + information about the running executors
+- if multiple SparkContexts are running on the same host, they will bind
+  to successive ports beginning with 4040 (4041, 4042, etc.)
+- Viewing after the fact (history data): set `spark.eventLog.enabled` to
+  true before starting the application
+    + this configures Spark to log Spark events that encode the
+      information displayed in the UI to persisted storage
+
+### Viewing after the fact
+
+- if `spark.eventLog.enabled` is true
+- start the history server: `sbin/start-history-server.sh`
+    + this creates a web interface at `http://<server-url>:18080` by
+      default, listing incomplete and completed applications and
+      attempts
+- When using the file-system provider class `spark.history.provider` the
+  base logging directory must be supplied in the
+  `spark.history.fs.logDirectory`
+- `spark.eventLog.dir hdfs://namenode/path/to/log/dir`
+
+### Environment Variables
+
+- https://spark.apache.org/docs/latest/monitoring.html
+
+### Spark configuration options
+
+- https://spark.apache.org/docs/latest/monitoring.html
+- The time between incomplete application updates is defined by the
+  interval between checks for changed files
+    + `spark.history.fs.update.interval`
+- One way to signal the completion of a Spark job is to stop the Spark
+  Context explicitly `sc.stop()`
+
+## REST API
+
+- in addition to viewing the metrics in the UI, they are also available
+  as JSON
+    + developers can create new visualizations and monitoring tools for
+      Spark
+- JSON is available for both running applications, and in the history
+  server
+- the endpoints are mounted at `/api/v1`
+    + `http://<server-url>:18080/api/v1`
+    + `http://localhost:4040/api/v1`
+
+### Metrics
+
+- Spark has a configuratble metrics system based on the Dropwizard
+  Metrics Library
+- This allows users to report Spark metrics to a variety of sinks
+  including HTTP, JMX, and CVS files
+- The metric system is configured via a configuration file that Spark
+  expects to be present at `$SPARK_HOME/conf/metrics.properties`
+    + A custom file location can be specified via the
+      `spark.metrics.con` configuration property
+    + By default, the root namespace used for driver or executor metrics
+      is the value of `spark.app.id`
+    + However, often times, users want to be able to track the metrics
+      across apps for driver and executors, which is hard to do with
+      application ID (i.e. `spark.app.id`) since it changes with every
+      invocation of the app.
+        * For such cases, a custom namespace can be specified for
+          metrics reporting using `spark.metrics.namespace`
+          configuration property
+        * If users wanted to set the metrics namespace to the name of
+          the application, they can set the `spark.metrics.namespace`
+          property to a value like `${spark.app.name}`
+- Spark's metrics are decoupled into different instances corresponding
+  to Spark components.
+    + Within each instance, you can configure a set of sinks to which
+      metrics are reported.
+    + The following instances are currently supported:
+        * `master`: the Spark standalone master process
+        * `applications`: a component within the master which reports on
+          various applications
+        * `worker`: a Spark standalone worker process
+        * `executor`: a Spark executor
+        * `driver`: the Spark driver process (the process in which your
+          SparkContext is created)
+        * `shuffleService`: the Spark shuffle service
+    + Each instance can report to zero or more sinks. Sinks are
+      contained in the `org.apache.spark.metrics.sink` package
+        * `ConsoleSink`: logs metrics information to the console
+        * `CSVSink`: exports metrics data to CSV files at regular
+          intervals
+        * `JmxSink`: Registers metrics for viewing in a JMX console
+        * `MetricsServlet`: adds a servlet within the existing Spark UI
+          to serve metrics data as JSON data
+        * `GraphiteSink`: sends metrics to a Graphite node
+        * `Slf4jSink`: Sends metrics to slf4j as log entries
+        * `StatsdSink`: sends metrics to a StatsD node
+- The syntax of the metrics configuration file is defined in an example
+  configuration file, `conf/metrics.properties.template`
+
+## Advanced Instrumentation
+
+- cluster-wide monitoring tools, such as Ganglia, can provide insight
+  into overall cluster utilization and resource bottlenecks.
+- OS profiling tools such as dstat, iostat, and iotop can provide
+  fine-grained profilling on individual nodes
+- JVM utilities such as `jstack` for providing stack traces, `jmap` for
+  creating heap-dumps, `jstat` for reporting time-series statistics and
+  `jconsole` for visually exploring various JVM properties are useful
+  for those comfortable with JVM internals.
 
 # Tuning Guide - Optimization
 
