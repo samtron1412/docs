@@ -2,9 +2,14 @@
 
 # Overview
 
+## History
+
 - An open-source cluster-computing framework
     + it supports not only MapReduce but also SQL queries, streaming
       data, machine learning, and graph algorithms
+
+## Key Features
+
 - Apache Spark has as its architectural foundation the resilient
   distributed dataset (RDD), a read-only multiset of data items
   distributed over a cluster of machines, that is maintained in a
@@ -14,6 +19,9 @@
 - Spark and its RDDs were developed in 2012 in response to limitations
   in the MapReduce cluster computing paradigm, which forces a particular
   linear dataflow structure on distributed programs.
+
+## Cluster Managers and Distributed Storage Systems
+
 - Spark requires a cluster manager and a distributed storage system.
     + cluster management
         * standalone (native Spark cluster)
@@ -32,6 +40,18 @@
     + cluster management frameworks
         * YARN
         * Mesos
+
+## Use Cases
+
+- Streaming ETL
+    + Uber converts mobile events into structured data and responds to
+      aggregate event data more quickly
+- Data enrichment
+    + Pinterest converts user interaction around pins and increased
+      customer engagement via faster feedback
+- Trigger event detection
+    + Conviva manages video stream quality and prevents customer churn
+      by responding to issues more rapidly
 
 # Hardware Provisioning
 
