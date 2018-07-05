@@ -162,7 +162,7 @@
     + Flexibility (Availability)
         * Commodity hardware for distributing data
 
-## Understanding Data
+## Understanding (Big) Data
 
 - Data Types
     + LOB (Line of Business)
@@ -176,6 +176,16 @@
         * RDBMS and NoSQL can work with Hadoop
     + RDBMS: critical data, transactions, high consistency
     + NoSQL
+- Big Data and Challenges
+    + Volume:
+        * How big the data is
+        * The traditional database cannot handle efficiently
+    + Variety
+        * Data from different sources in various formats
+        * Unstructured data
+    + Velocity:
+        * Speed at which the data arrives
+        * Data is created fast
 
 # Architecture
 
