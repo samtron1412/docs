@@ -242,11 +242,53 @@
 
 # MLlib
 
+## Introduction
+
 - https://spark.apache.org/docs/latest/ml-guide.html
+- Preparing data
+    + verify and load table data
+    + prepare the data by aggregating, counting and grouping
+    + join data
+    + convert "null" values to "0"
+- Building the model
+    + create a vector with features
+    + split the dataset into training and testing sets
+    + create model
+    + using model by calling predict on it
+- Evaluate the model
+    + evaluate and update the model
+    + train and use the most optimal model
+
+## Python
+
+- VectorAssembler
+- populate the cache by an action (e.g. count())
+- Create a linear regression model
+    + `lrModel = LinearRegression().setLabelCol("count").setFeaturesCol("features").setElasticNetParam(0.5)`
+- Fitting
+    + `lrFitted = lrModel.fit(training)`
+- Prediction: add a new "prediction" column to the data
+    + `holdout = lrFitted.transform(test)`
+- RegressionMetrics model
+- pipeline models (many models in a pipeline)
+    + RandomForestRegressor
+        * hyperparameters
+        * ParamGridBuilder to search the "hyperparameter space"
+    + using `Pipeline` to feed the algorithm into a `CrossValidator` to
+      help prevent "overfitting"
+        * CrossValidator uses `RegressionEvaluator` to test the model
+          results against a metric (default is RMSE)
+
+## Advanced ML on Spark
+
+- Tensorflow: Google and community
+- MXNet: AWS and community
 
 # GraphX
 
 - https://spark.apache.org/docs/latest/graphx-programming-guide.html
+- Graph parallel
+    + Graph database
 
 # Quick Start
 
