@@ -1148,6 +1148,8 @@ Something
 
 # Coding
 
+## Resources
+
 - API Docs
     + https://spark.apache.org/docs/latest/api
 - AMP Camps
@@ -1155,6 +1157,14 @@ Something
 - Code Examples
     + http://spark.apache.org/examples.html
     + https://github.com/apache/spark/tree/master/examples
+
+## R accesses MLlib
+
+```r
+iris_data <- createDataFrame(iris)
+model <- glm(Sepal_Length ~ Sepal_Width + Species, data = iris_data, family = "gaussian")
+summary(model)
+```
 
 # References
 
