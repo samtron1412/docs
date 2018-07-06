@@ -6,6 +6,25 @@ List of phrases.
 
 # Phrases
 
+## I am/was wondering
+
+I would say "I was wondering whether you wrote..." or "I was wondering
+if you had written...", keeping the tense in line with the time when I
+was wondering. With "if/whether you have written", I would prefer
+present tense in the "wondering" clause: "I am wondering whether you
+have written the letter yet."
+
+On the other hand, I do not mean "I am/was wondering if/whether"
+requires tense matching. "I was wondering whether you write enough
+letters" and "I was wondering whether you have written enough letters"
+are good sentences.
+
+- I am wondering whether you are having a plan to expand your business
+  or open your first international branch anytime soon
+- I am wondering whether I would be able to sign up as an officer even
+  though when I was 18 I was discharged during basic training with a 2C
+  reentry code?
+
 ## what does it look like?
 
 - how does it look? (asking for opinion for sth)
