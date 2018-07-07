@@ -21,3 +21,6 @@
 # References
 
 [streaming-frameworks]: https://www.quora.com/What-are-the-differences-between-Apache-Spark-Storm-Heron-Samza-Flink-Beam-Apex
+[massive-scale-data-processing]: https://www.youtube.com/watch?v=9J_cWustI-A
+[streaming-101]: https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101
+[akidau-papers]: https://ai.google/research/people/TylerAkidau
