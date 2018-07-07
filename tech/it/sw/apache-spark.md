@@ -1222,3 +1222,4 @@ summary(model)
 
 [streaming]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash
 [sql]: https://www.dezyre.com/article/spark-sql-vs-apache-drill-war-of-the-sql-on-hadoop-tools/234
+[genomics]: https://aws.amazon.com/blogs/big-data/will-spark-power-the-data-behind-precision-medicine/
