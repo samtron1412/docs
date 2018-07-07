@@ -7,6 +7,15 @@
 - An open-source cluster-computing framework
     + it supports not only MapReduce but also SQL queries, streaming
       data, machine learning, and graph algorithms
+- 2003: Nutch project: open distributed platform
+- 2004: Google published a white page on MapReduce
+- 2006: Yahoo hires Nutch developers, and releases Hadoop
+- 2008: Facebook launched Hive
+    + MapReduce: Java-based, batch-oriented, and slow
+    + Hive: SQL abstraction on top of MapReduce
+- 2009: Spark was born at AMPLab at UC Berkeley
+    + 2010: open source Spark
+    + 2014: Spark becomes a top-level Apache project
 
 ## Key Features
 
