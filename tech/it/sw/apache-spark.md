@@ -239,6 +239,16 @@
 # Spark Streaming
 
 - https://spark.apache.org/docs/latest/streaming-programming-guide.html
+- Streaming processing (not an Streaming ingest service)
+    + Micro-batching
+- Streaming ingest services
+    + Apache Kafka
+    + Amazon Kinesis
+    + Google Cloud Pub/Sub
+    + Azure Service Bus
+- MLeap Spark
+    + train an ML pipeline with Spark then export it to Bundle.ML
+    + dynamically deploy the model into production (easier)
 
 # MLlib
 
