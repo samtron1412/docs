@@ -659,3 +659,33 @@ Something
 - JIRA
 
 # Security Tools
+
+# Tips and Tricks
+
+## Fun commands
+
+- aafire
+- espeak: text to speech
+
+## ASCII arts
+
+- ASCII text banners
+    + toilet (aur)
+    + figlet
+    + banner
+- images to ASCII
+    + jp2a
+- funny
+    + cowsay
+    + ponysay
+    + asciiquarium
+    + asciiportal (puzzle game)
+- diagram
+    + javE (aur)
+    + asciio (aur)
+    + vim-drawit (plugin)
+    + http://asciiflow.com/
+    + ditaa
+- print logo
+    + neofetch
+    + screenfetch
