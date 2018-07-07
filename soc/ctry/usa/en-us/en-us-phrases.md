@@ -6,6 +6,14 @@ List of phrases.
 
 # Phrases
 
+## Making you plural
+
+- Mixed-genders
+    + you all
+    + y'all
+- Males
+    + you guys
+
 ## I am/was wondering
 
 I would say "I was wondering whether you wrote..." or "I was wondering
