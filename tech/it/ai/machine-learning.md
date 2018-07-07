@@ -28,6 +28,8 @@
   leaving it on its own to find structure in its input.
     + can be a goal in itself (discovering hidden patterns in data)
     + means towards an end (feature learning)
+    + use cases
+        * recommendations
 
 # Applications
 
