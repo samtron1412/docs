@@ -52,7 +52,9 @@
 
 ## Use Cases
 
-- Streaming ETL
+- Streaming ETL: Data Integration
+    + Moving data from one location to another and standardizing it so
+      it's easy to use by analysts and data scientist
     + Uber converts mobile events into structured data and responds to
       aggregate event data more quickly
 - Data enrichment
