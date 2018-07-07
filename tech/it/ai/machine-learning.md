@@ -42,13 +42,15 @@
     + e.g. spam filtering
 - Regression
     + produce a function that describes relationships between inputs and
-      outputs
+      outputs (variable relationship)
+        * prediction and forecasting
     + a supervised problem
     + the outputs are continuous rather than discrete
 - Clustering
     + a set of inputs is to be divided into groups
     + unlike in classification, the groups are not known beforehand =>
       unsupervised task
+        * different groups of customers
 - Density estimation
     + finds the distribution of inputs in some space
 - Dimensionality reduction
