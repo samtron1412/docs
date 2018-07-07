@@ -132,24 +132,27 @@
 ```
 
 + Spark Core
-    * provides distributed task dispatching, scheduling, and basic
-      I/O functionalities, exposed through an API (Java, Python,
-      Scala, and R) centered on the RDD abstraction.
+    * provides distributed task distribution, scheduling, and basic I/O
+      functionalities, exposed through an API (Java, Python, Scala, and
+      R) centered on the RDD abstraction.
 + Spark SQL
     * a component on top of Spark Core that introduced a data
       abstraction called DataFrames, which provides support for
       structured and semi-structured data.
-    * Spark SQL provides a domain-specific language (DSL) to
-      manipulate DataFrames in Scala, Java, or Python.
-    * provides SQL language support, with command-line interfaces
-      and ODBC/JDBC server
+    * Spark SQL provides a domain-specific language (DSL) to manipulate
+      DataFrames in Scala, Java, or Python.
+    * provides SQL language support, with command-line interfaces and
+      ODBC/JDBC server
 + Spark Streaming
-    * Spark Streaming uses Spark Core's fast scheduling capability
-      to perform streaming analytics.
-    * It ingests data in mini-batches and performs RDD
-      transformations on those mini-batches of data.
-    * built-in to consume from Kafka, Flume, Twitter, ZeroMQ,
-      Kinesis, and TCP/IP sockets
+    * Spark Streaming uses Spark Core's fast scheduling capability to
+      perform streaming analytics.
+    * It ingests data in micro-batches and performs RDD transformations
+      on those micro-batches of data.
+    * built-in to consume from Kafka, Flume, Twitter, ZeroMQ, Kinesis,
+      and TCP/IP sockets
+    * Lambda architecture: both batch and stream-processing methods
+        - batch: comprehensive and accurate views
+        - real-time stream processing
 + MLlib
     * a distributed machine learning framework on top of Spark Core
     * common machine learning and statistical algorithms
@@ -157,18 +160,20 @@
           hypothesis testing, random data generation
         - classification and regression: support vector machines,
           logistic
-        - collaborative filtering techniques including alternating
-          least squares (ALS)
+        - collaborative filtering techniques including alternating least
+          squares (ALS)
         - cluster analysis methods including k-means, and latent
           Dirichlet allocation (LDA)
         - dimensionality reduction techniques such as singular value
-          decomposition (SVD), and principal component analysis
-          (PCA)
+          decomposition (SVD), and principal component analysis (PCA)
         - feature extraction and transformation functions
-        - optimization algorithms such as stochastic gradient
-          descent, limited-memory BFGS
+        - optimization algorithms such as stochastic gradient descent,
+          limited-memory BFGS
 + GraphX
     * distributed graph processing framework on top of Apache Spark
+    * in-memory version of Apache Giraph
+    * based on DataFrames -> it's not a true graph database
+      implementation
 
 # Resilient Distributed Dataset (RDD)
 
