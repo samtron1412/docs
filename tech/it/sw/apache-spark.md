@@ -271,19 +271,12 @@
 ## Introduction
 
 - https://spark.apache.org/docs/latest/ml-guide.html
-- Preparing data
-    + verify and load table data
-    + prepare the data by aggregating, counting and grouping
-    + join data
-    + convert "null" values to "0"
-- Building the model
-    + create a vector with features
-    + split the dataset into training and testing sets
-    + create model
-    + using model by calling predict on it
-- Evaluate the model
-    + evaluate and update the model
-    + train and use the most optimal model
+- Components
+    + Algorithms: classification, regression, clustering, topic
+      modeling, etc.
+    + Workflows: feature transformations, pipelines, evaluations, and
+      hyperparameter tuning
+    + Utilities: distributed math libraries and statistics functions
 
 ## Python
 
