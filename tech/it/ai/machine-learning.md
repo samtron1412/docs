@@ -133,6 +133,37 @@ Something
 * standardize categorical values
     - ISO standard, etc.
 
+### Two types of pre-processing
+
+#### Numeric data
+
++ normalize
+    * maps data values from their original range to the range of 0 to 1
++ standardize
+    * maps data values from their original range to -1 to 1
+    * mean value of 0
+    * normally distributed with standard deviation of 1
+    * this transforms the data into the bell curve shape formation
+    * used when attributes have different scales and ML algorithms
+      assume a normal distribution
++ Partitioning
+    * Map data values from continuous values to buckets, like histograms
+    * Deciles and percentiles are examples of buckets
+    * Useful when you want to work with groups of values instead of a
+      continuous range of values
+
+#### Text data
+
+- Tokeninzing
+    + map text from a single string to a set of tokens or words
+- Term Frequency Inverse Document Frequency - TF-IDF transformation
+    + map text from a single, typically long string, to a vector
+      indicating the frequency of each word in a text relative to a
+      group of texts
+    + widely used in text classification
+    + infrequently used words are more useful for distinguishing
+      categories of text
+
 ## Model Building
 
 ### Introduction
