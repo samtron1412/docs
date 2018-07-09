@@ -10,34 +10,6 @@
 - The term was coined in 1959 by Arthur Samuel
     + Evolved from the study of pattern recognition and computational
       learning theory in artificial intelligence
-- Machine Learning Process
-    + Preprocessing
-        * extract, transform, and load data to staging area
-        * review data for missing data and invalid values
-            - set to default values or ignore those records
-        * normalizing and scaling numeric data
-            - changing the range of values in a feature or attribute
-        * standardize categorical values
-            - ISO standard, etc.
-    + Model Building
-        * selecting algorithms
-        * apply machine learning algorithms to training data
-            - fitting a model to the data
-        * some algorithms require tuning hyperparameters
-            - how many levels to have in a decision tree
-            - need to experiment to find optimal hyperparameters
-            - when we set a parameter to the machine learning algorithm,
-              we call those parameters hyperparameters.
-            - when the machine learning algorithm learns the value of
-              the parameter from training data, then we call those
-              simply parameters
-    + Validation
-        * assess the quality of models built in step 2
-        * applying models to additional test sets
-        * measuring quality of models (metrics)
-            - accuracy
-            - precision (positive predictive value)
-            - and sensitivity (recall)
 
 # Tasks
 
@@ -145,6 +117,48 @@ Something
 ### Learning classifier systems
 
 Something
+
+
+# Machine Learning Process
+
+## Preprocessing
+
+### Introduction
+
+* extract, transform, and load data to staging area
+* review data for missing data and invalid values
+    - set to default values or ignore those records
+* normalizing and scaling numeric data
+    - changing the range of values in a feature or attribute
+* standardize categorical values
+    - ISO standard, etc.
+
+## Model Building
+
+### Introduction
+
+* selecting algorithms
+* apply machine learning algorithms to training data
+    - fitting a model to the data
+* some algorithms require tuning hyperparameters
+    - how many levels to have in a decision tree
+    - need to experiment to find optimal hyperparameters
+    - when we set a parameter to the machine learning algorithm,
+      we call those parameters hyperparameters.
+    - when the machine learning algorithm learns the value of
+      the parameter from training data, then we call those
+      simply parameters
+
+## Validation
+
+### Introduction
+
+* assess the quality of models built in step 2
+* applying models to additional test sets
+* measuring quality of models (metrics)
+    - accuracy
+    - precision (positive predictive value)
+    - and sensitivity (recall)
 
 # References
 
