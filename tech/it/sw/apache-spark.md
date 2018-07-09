@@ -490,6 +490,32 @@ rawFeatures=SparseVector(20, {1: 2.0, 5: 1.0, 6: 1.0, 8: 1.0, 12: 1.0,
         * CrossValidator uses `RegressionEvaluator` to test the model
           results against a metric (default is RMSE)
 
+## Clustering
+
+### K-means
+
+```bash
+>>> from pyspark.ml.linalg import Vectors
+>>> from pyspark.ml.feature import VectorAssembler
+>>> from pyspark.ml.clustering import KMeans
+>>> cluster_df =
+>>> spark.read.csv("/home/glider/doc/schools/lynda/Ex_Files_Spark_ML_AI/Exercise
+>>> Files/Ch03/03_02/clustering_dataset.csv",header=True,inferSchema=True)
+>>> vectorAssembler =
+>>> vectorAssembler =
+>>> VectorAssembler(inputCols=["col1","col2","col3"],outputCol="f
+eatures")
+>>> vcluster_df = vectorAssembler.transform(cluster_df)
+>>> kmeans = KMeans().setK(3)
+>>> kmeans = kmeans.setSeed(1)
+>>> kmodel = kmeans.fit(vcluster_df)
+>>> centers = kmodel.clusterCenters()
+```
+
+### Hierarchical clustering (Bisecting K-means)
+
+
+
 ## Advanced ML on Spark
 
 - Tensorflow: Google and community
