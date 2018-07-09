@@ -278,6 +278,198 @@
       hyperparameter tuning
     + Utilities: distributed math libraries and statistics functions
 
+## Two types of pre-processing
+
+### Numeric data
+
+#### Introduction
+
++ normalize
+    * maps data values from their original range to the range of 0 to 1
++ standardize
+    * maps data values from their original range to -1 to 1
+    * mean value of 0
+    * normally distributed with standard deviation of 1
+    * this transforms the data into the bell curve shape formation
+    * used when attributes have different scales and ML algorithms
+      assume a normal distribution. Some algorithms work better when we
+      have unit variance and zero mean across all of the features.
++ Partitioning (Bucketizing)
+    * Map data values from continuous values to buckets, like histograms
+    * Deciles and percentiles are examples of buckets
+    * Useful when you want to work with groups of values instead of a
+      continuous range of values
+
+#### Normalizing
+
+```bash
+>>> from pyspark.ml.feature import MinMaxScaler
+>>> from pyspark.ml.linalg import Vectors
+>>> features_df = spark.createDataFrame([
+... (1, Vectors.dense([10.0, 10000.0, 1.0]),),
+... (2, Vectors.dense([20.0, 30000.0, 2.0]),),
+... (3, Vectors.dense([30.0, 40000.0, 3.0]),)
+... ],["id","features"])
+>>> features_df.take(1)
+[Row(id=1, features=DenseVector([10.0, 10000.0, 1.0]))]
+>>> feature_scaler =
+>>> MinMaxScaler(inputCol="features",outputCol="sfeatures")
+>>> smodel = feature_scaler.fit(features_df)
+>>> sfeatures_df = smodel.transform(features_df)
+>>> sfeatures_df.take(1)
+[Row(id=1, features=DenseVector([10.0, 10000.0, 1.0]),
+sfeatures=DenseVector([0.0, 0.0, 0.0]))]
+>>> sfeatures_df.select("features","sfeatures").show()
++------------------+--------------------+
+|          features|           sfeatures|
++------------------+--------------------+
+|[10.0,10000.0,1.0]|       [0.0,0.0,0.0]|
+|[20.0,30000.0,2.0]|[0.5,0.6666666666...|
+|[30.0,40000.0,3.0]|       [1.0,1.0,1.0]|
++------------------+--------------------+
+```
+
+#### Standardizing
+
+```bash
+>>> from pyspark.ml.feature import StandardScaler
+>>> from pyspark.ml.linalg import Vectors
+>>> features_df = spark.createDataFrame([
+... (1, Vectors.dense([10.0, 10000.0, 1.0]),),
+... (2, Vectors.dense([20.0, 30000.0, 2.0]),),
+... (3, Vectors.dense([30.0, 40000.0, 3.0]),)
+... ],["id","features"])
+>>> features_df.take(1)
+[Row(id=1, features=DenseVector([10.0, 10000.0, 1.0]))]
+>>> feature_stand_scaler =
+>>> StandardScaler(inputCol="features",outputCol="sfeatures",withStd=True,
+>>> withMean=True)
+>>> stand_smodel = feature_stand_scaler.fit(features_df)
+>>> stand_sfeatures_df = stand_smodel.transform(features_df)
+>>> stand_sfeatures_df.take(1)
+[Row(id=1, features=DenseVector([10.0, 10000.0, 1.0]),
+sfeatures=DenseVector([-1.0, -1.0911, -1.0]))]
+>>> stand_sfeatures_df.show()
++---+------------------+--------------------+
+| id|          features|           sfeatures|
++---+------------------+--------------------+
+|  1|[10.0,10000.0,1.0]|[-1.0,-1.09108945...|
+|  2|[20.0,30000.0,2.0]|[0.0,0.2182178902...|
+|  3|[30.0,40000.0,3.0]|[1.0,0.8728715609...|
++---+------------------+--------------------+
+```
+
+#### Bucketizing
+
+```bash
+>>> from pyspark.ml.feature import Bucketizer
+>>> splits = [-float("inf"), -10.0, 0.0, 10.0, float("inf")]
+>>> b_data = [(-800.0,),(-10.5,),(-1.7,),(0.0,),(8.2,),(90.1,)]
+>>> b_df = spark.createDataFrame(b_data, ["features"])
+>>> b_df.show()
++--------+
+|features|
++--------+
+|  -800.0|
+|   -10.5|
+|    -1.7|
+|     0.0|
+|     8.2|
+|    90.1|
++--------+
+
+>>> bucketizer = Bucketizer(splits=splits, inputCol="features",
+>>> outputCol="bfeatures")
+>>> bucketed_df = bucketizer.transform(b_df)
+>>> bucketed_df.show()
++--------+---------+
+|features|bfeatures|
++--------+---------+
+|  -800.0|      0.0|
+|   -10.5|      0.0|
+|    -1.7|      1.0|
+|     0.0|      2.0|
+|     8.2|      2.0|
+|    90.1|      3.0|
++--------+---------+
+```
+
+### Text data
+
+#### Introduction
+
+- Tokenizing
+    + map text from a single string to a set of tokens or words
+- Term Frequency Inverse Document Frequency - TF-IDF transformation
+    + map text from a single, typically long string, to a vector
+      indicating the frequency of each word in a text relative to a
+      group of texts
+    + widely used in text classification
+    + infrequently used words are more useful for distinguishing
+      categories of text
+
+#### Tokenizing
+
+```bash
+>>> from pyspark.ml.feature import Tokenizer
+>>> sentences_df = spark.createDataFrame([
+... (1, "This is an introduction to Spark MLlib"),
+... (2, "MLlib includes libraries for classification and regression"),
+... (3, "It also contains supporting tools for pipelines")],
+... ["id","sentence"])
+>>> sentences_df.show()
++---+--------------------+
+| id|            sentence|
++---+--------------------+
+|  1|This is an introd...|
+|  2|MLlib includes li...|
+|  3|It also contains ...|
++---+--------------------+
+>>> sent_token = Tokenizer(inputCol="sentence", outputCol="words")
+>>> sent_tokenized_df = sent_token.transform(sentences_df)
+>>> sent_tokenized_df.show()
++---+--------------------+--------------------+
+| id|            sentence|               words|
++---+--------------------+--------------------+
+|  1|This is an introd...|[this, is, an, in...|
+|  2|MLlib includes li...|[mllib, includes,...|
+|  3|It also contains ...|[it, also, contai...|
++---+--------------------+--------------------+
+```
+
+#### TF-IDF (Text Frequency Inverse Document Frequency)
+
+- text => tokenize into words => count the number of times of a
+  particular word appears.
+
+```bash
+>>> from pyspark.ml.feature import HashingTF, IDF
+>>> sentences_df
+DataFrame[id: bigint, sentence: string]
+>>> sentences_df.take(1)
+[Row(id=1, sentence='This is an introduction to Spark MLlib')]
+>>> sent_tokenized_df.take(1)
+[Row(id=1, sentence='This is an introduction to Spark MLlib',
+words=['this', 'is', 'an', 'introduction', 'to', 'spark', 'mllib'])]
+>>> hashingTF =
+>>> HashingTF(inputCol="words",outputCol="rawFeatures",numFeatures=20)
+>>> sent_hfTF_df = hashingTF.transform(sent_tokenized_df)
+>>> sent_hfTF_df.take(1)
+[Row(id=1, sentence='This is an introduction to Spark MLlib',
+words=['this', 'is', 'an', 'introduction', 'to', 'spark', 'mllib'],
+rawFeatures=SparseVector(20, {1: 2.0, 5: 1.0, 6: 1.0, 8: 1.0, 12: 1.0,
+13: 1.0}))]
+>>> idf = IDF(inputCol="rawFeatures",outputCol="idf_features")
+>>> idfModel = idf.fit(sent_hfTF_df)
+>>> tfidf_df = idfModel.transform(sent_hfTF_df)
+>>> tfidf_df.take(1)
+[Row(id=1, sentence='This is an introduction to Spark MLlib',
+words=['this', 'is', 'an', 'introduction', 'to', 'spark', 'mllib'],
+rawFeatures=SparseVector(20, {1: 2.0, 5: 1.0, 6: 1.0, 8: 1.0, 12: 1.0,
+13: 1.0}), idf_features=SparseVector(20, {1: 0.5754, 5: 0.6931, 6:
+0.2877, 8: 0.2877, 12: 0.0, 13: 0.2877}))]
+```
+
 ## Python
 
 - VectorAssembler
