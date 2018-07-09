@@ -51,6 +51,7 @@
     + unlike in classification, the groups are not known beforehand =>
       unsupervised task
         * different groups of customers
+    + explores the datasets
 - Density estimation
     + finds the distribution of inputs in some space
 - Dimensionality reduction
@@ -84,7 +85,9 @@ Something
 
 ## Clustering
 
-Something
+- Algorithms
+    + K-means: small and mix-sized data sets
+    + Hierarchical clustering with Bisecting K-means: large data sets
 
 ## Bayesian networks
 
