@@ -1,0 +1,67 @@
+[TOC]
+
+# Overview
+
+# Using PowerPoint
+
+## Planning
+
+- List of sections: Abstract, Introduction, Background, Methods,
+  Results, Conclusion, Future Work, Acknowledgment, References
+- A sketch on paper of your poster
+- Whenever possible, represent materials graphically rather than
+  textually
+- For reader comfort, plan content in vertical columns rather than
+  horizontal rows
+- Consider your color choices carefully
+    + white background, black text, and other light colors for figures
+
+## Set the slide size
+
+- Please be aware that PowerPoint’s maximum size is 52”; therefore to
+  produce a PowerPoint poster with dimensions larger than 52”, both
+  dimensions are entered at half the desired size. For example, for a
+  44” x 66” poster, you would enter 22” in the box for height and 33” in
+  the box for width, and click OK. The poster’s size will be doubled
+  during the printing phase to bring it up to 44x66 inches as desired.
+
+## Insert texts
+
+Something
+
+- Title: 72-120 pt.
+- Subtitle: 48-80 pt.
+- Section headers: 36-72 pt.
+- Body text: 24-48 pt.
+
+## Prepare images
+
+Something
+
+## Insert images
+
+Something
+
+## Fine-tuning
+
+Something
+
+## Printing a small version
+
+To see how your poster looks on paper, you can actually scale it to fit
+on a standard 8.5x11 inch sheet of paper. I recommend that you do this,
+because ...
+
+- it's a good way to print and check your work, without wasting a huge
+  sheet of paper
+- if you can't read it on the 8.5x11 page, your font is too small
+- it makes a great handout.
+
+To scale to 8.5x11, go to File / Print ...
+
+PC: Make sure your regular printer is selected. At the bottom of the
+dialog box is a checkbox that says Scale to fit paper -- check it and
+go.
+
+# References
+
