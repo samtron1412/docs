@@ -48,11 +48,20 @@
 
 ## Prepare images
 
-Something
+- Resolution of images should be 125-225 dpi (which will be 250-450 dpi
+  when your poster is printed at 200%). File format should be TIFF, PDF
+  or JPG . For line art, text, illustrations or cartoons, 225 dpi is a
+  good resolution.
+- Do not use WordArt in your poster. It does not look as good when
+  printed large
 
 ## Insert images
 
-Something
+- Always Insert your images (pictures, illustrations) rather than using
+  Copy, Paste into PowerPoint
+- If you are inserting tables, graphs or illustrations from another
+  Microsoft Office application, use copy and then Paste Special into
+  your poster
 
 ## Fine-tuning
 
