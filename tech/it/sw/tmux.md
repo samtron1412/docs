@@ -13,6 +13,12 @@
 - https://github.com/gpakosz/.tmux
 - Pair programming: https://github.com/zolrath/wemux/
 
+# Configuration
+
+- A user-specific configuration file should be located at
+  `~/.tmux.conf`, while a global configuration file should be located at
+  `/etc/tmux.conf`.
+
 # Cheatsheet
 
 ## Common
