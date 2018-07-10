@@ -578,6 +578,123 @@ $ YOUR_SPARK_HOME/bin/spark-submit \
 Lines with a: 46, Lines with b: 23
 ```
 
+## Classification
+
+- Algorithms
+    + Naive Bayes
+    + Decision trees
+    + Multilayer perceptron (a type of neural network)
+
+### Naive Bayes
+
+#### Preprocessing the data
+
+- Read the data from files
+- Normalize, standardize, or pre-processing the data
+    + Change the columns' name
+    + Create vectors
+    + String => numerical values
+
+```bash
+>>> from pyspark.sql.functions import *
+>>> from pyspark.ml.feature import VectorAssembler
+>>> from pyspark.ml.feature import StringIndexer
+>>> iris_df = iris_df.select(col("_c0").alias("sepal_length"),
+... col("_c1").alias("sepal_width"),
+... col("_c2").alias("petal_length"),
+... col("_c3").alias("petal_width"),
+... col("_c4").alias("species"))
+>>> vectorAssembler =
+>>> VectorAssembler(inputCols=["sepal_length","sepal_width","petal_length","petal_width"],outputCol="feature")
+>>> viris_df = vectorAssembler.transform(iris_df)
+>>> indexer = StringIndexer(inputCol="species",outputCol="label")
+>>> iviris_df = indexer.fit(viris_df).transform(viris_df)
+>>> iviris_df.take(1)
+[Row(sepal_length=5.1, sepal_width=3.5, petal_length=1.4,
+petal_width=0.2, species='Iris-setosa', feature=DenseVector([5.1, 3.5,
+1.4, 0.2]), label=0.0)]
+```
+
+#### Classification
+
+- Split data into training data and testing data
+- Create a classifier
+- Create a model by fitting the classifier on training data
+- Run the model on the test data
+
+```bash
+>>> from pyspark.ml.classification import NaiveBayes
+>>> from pyspark.ml.evaluation import MulticlassClassificationEvaluator
+>>> splits = iviris_df.randomSplit([0.6,0.4],1)
+>>> train_df = splits[0]
+>>> test_df = splits[1]
+>>> nb = NaiveBayes(modelType="multinomial")
+>>> nbmodel = nb.fit(train_df)
+2018-07-09 17:08:02 WARN  BLAS:61 - Failed to load implementation from:
+com.github.fommil.netlib.NativeSystemBLAS
+2018-07-09 17:08:02 WARN  BLAS:61 - Failed to load implementation from:
+com.github.fommil.netlib.NativeRefBLAS
+>>> predictions_df = nbmodel.transform(test_df)
+>>> predictions_df.take(1)
+[Row(sepal_length=4.5, sepal_width=2.3, petal_length=1.3,
+petal_width=0.3, species='Iris-setosa', features=DenseVector([4.5, 2.3,
+1.3, 0.3]), label=0.0, rawPrediction=DenseVector([-10.3605, -11.0141,
+-11.7112]), probability=DenseVector([0.562, 0.2924, 0.1456]),
+prediction=0.0)]
+```
+
+#### Evaluation
+
+- Create an evaluator
+- Evaluate the prediction data sets
+
+```bash
+>>> evaluator =
+>>> MulticlassClassificationEvaluator(labelCol="label",predictionCol="prediction",metricName="accuracy")
+>>> nbaccuracy = evaluator.evaluate(predictions_df)
+>>> nbaccuracy
+0.5862068965517241
+```
+
+### Multilayer Perceptron
+
+- Neural network
+- The first layer has the same number of nodes as there are inputs
+    + Iris UCI data set has four measures => four nodes
+- The last element should have the same number of neurons as there are
+  types of outputs.
+    + Three types of Iris species => last row will be three
+- Layers in between help the multi-layer perceptron learn how to
+  classify correctly
+
+```bash
+>>> from pyspark.ml.classification import MultilayerPerceptronClassifier
+>>> layers = [4,5,5,3]
+>>> mlp = MultilayerPerceptronClassifier(layers=layers,seed=1)
+>>> mlp_model = mlp.fit(train_df)
+>>> mlp_predictions = mlp_model.transform(test_df)
+>>> mlp_evaluator =
+>>> MulticlassClassificationEvaluator(metricName="accuracy")
+>>> mlp_accuracy = mlp_evaluator.evaluate(mlp_predictions)
+>>> mlp_accuracy
+0.9482758620689655
+```
+
+### Decision Trees
+
+```bash
+>>> from pyspark.ml.classification import DecisionTreeClassifier
+>>> dt = DecisionTreeClassifier(labelCol="label",featuresCol="features")
+>>> dt_model = dt.fit(train_df)
+>>> dt_predictions = dt_model.transform(test_df)
+>>> dt_evaluator =
+>>> MulticlassClassificationEvaluator(metricName="accuracy")
+>>> dt_accuracy = dt_evaluator.evaluate(dt_predictions)
+>>> dt_accuracy
+0.9310344827586207
+```
+
+
 # Spark Shell
 
 - `bin/spark-shell --master "local[4]"`
