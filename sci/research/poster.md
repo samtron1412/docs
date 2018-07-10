@@ -25,11 +25,23 @@
   the box for width, and click OK. The poster’s size will be doubled
   during the printing phase to bring it up to 44x66 inches as desired.
 
+## Colors
+
+- White and lighter colors work better
+
 ## Insert texts
 
-Something
-
-- Title: 72-120 pt.
+- Times New Roman, or similar fonts
+- Avoid capital or underlined texts
+- If you need to cut and paste text, use `Paste Special` under the Edit
+  menu. If you just use paste, the text will not be editable.
+- Let text wrap in the text box. Do not use a hard return at the end of
+  each line of text, only at the end of a paragraph. Use only soft
+  returns (shift+ return) if you must manually put in a line break
+- Insert image place holder boxes, by drawing rectangles as placeholders
+  for your images after you have placed all the text and know how much
+  room you have for the images.
+- Title: 80-120 pt.
 - Subtitle: 48-80 pt.
 - Section headers: 36-72 pt.
 - Body text: 24-48 pt.
