@@ -695,6 +695,15 @@ prediction=0.0)]
 ```
 
 
+## Regression
+
+- Algorithms
+    + Linear Regression
+    + Decision tree regression
+    + Gradient-boosted tree regression
+        * Can require significantly more time to build the models
+
+
 # Spark Shell
 
 - `bin/spark-shell --master "local[4]"`
