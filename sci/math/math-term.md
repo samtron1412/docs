@@ -1,6 +1,7 @@
 [TOC]
 
 # Overview
+
 Mathematics terminology
 
 # Algebra
@@ -37,6 +38,13 @@ A Cartesian coordinate system is a coordinate system that specifies each
 point uniquely in a plane by a pair of numerical coordinates, which are
 the signed distances to the point from two fixed perpendicular directed
 lines, measured in the same unit of length.
+
+# Continuous Variable
+
+- A continuous variable is one which can take on infinitely many,
+  uncountable values.
+- For example, a variable over a non-empty range of the real numbers is
+  continuous.
 
 # Derivative
 
@@ -103,6 +111,15 @@ A function with definition as above is a piecewise function.
 # Geometry
 
 study of shape
+
+# Histogram
+
+- A histogram is an accurate representation of the distribution of
+  numerical data.
+- It is an estimate of the probability distribution of a continuous
+  variable
+- It differs from a bar graph, in the sense that a bar graph relates two
+  variables, but a histogram relates only one.
 
 # Homogeneous coordinate
 
@@ -200,6 +217,18 @@ numerical value) alone.
 # Secant lines
 
 The term secant line refers to a line through two points on a curve.
+
+# Probability Distribution
+
+- A probability distribution is a mathematical function that provides
+  the probabilities of occurrence of different possible outcomes in an
+  experiment.
+- In more technical terms, the probability distribution is a description
+  of a random phenomenon in terms of the probabilities of events.
+- For instance, if the random variable X is used to denote the outcome
+  of a coin toss (the experiment), then the probability distribution of
+  X would take the value 0.5 for X=heads, and 0.5 for X=tails (assuming
+  the coin is fair)
 
 # Tangent lines
 
