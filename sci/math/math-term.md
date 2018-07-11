@@ -168,6 +168,20 @@ linear function) is a mapping V->W between two modules (including vector
 spaces) that preserves the operations of addition and scalar
 multiplication.
 
+# Mahalanobis distance
+
+- The Mahalanobis distance is a measure of the distance between a point
+  P and a distribution D, introduced by P. C. Mahalanobis in 1936.
+- It is a multi-dimensional generalization of the idea of measuring how
+  many standard deviations away P is from the mean of D.
+- This distance is zero if P is at the mean of D, and grows as P moves
+  away from the mean along each principal component axis.
+    + If each of these axes is re-scaled to have unit variance, then the
+      Mahalanobis distance corresponds to standard Euclidean distance in
+      the transformed space.
+    + The Mahalanobis distance is thus unitless and scale-invariant, and
+      takes into account the correlations of the data set.
+
 # Map
 
 Mapping, or map, referes to either a function, often with some sort of
