@@ -41,7 +41,7 @@
 - Insert image place holder boxes, by drawing rectangles as placeholders
   for your images after you have placed all the text and know how much
   room you have for the images.
-- Title: 80-120 pt.
+- Title: 85-120 pt.
 - Subtitle: 48-80 pt.
 - Section headers: 36-72 pt.
 - Body text: 24-48 pt.
@@ -65,7 +65,8 @@
 
 ## Fine-tuning
 
-Something
+- Add borders
+- Add or change a fill
 
 ## Printing a small version
 

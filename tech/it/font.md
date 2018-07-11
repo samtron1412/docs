@@ -282,5 +282,15 @@ Use in `XeTeX` and `LuaTeX` with package `fontspec`
 |                    | Robotto        |
 |                    | Open Sans      |
 
+# Tips and Tricks
+
+## When to use Serif vs. Sans Serif Fonts?
+
+- Serif (Times New Roman)
+    + body text to pull the letters together => easier to read on paper
+    + pull the reader through the text
+- Sans Serif (Arial)
+    + good with big title, headings
+
 # References
 
