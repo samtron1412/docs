@@ -703,6 +703,93 @@ prediction=0.0)]
     + Gradient-boosted tree regression
         * Can require significantly more time to build the models
 
+### Linear Regression
+
+```bash
+>>> from pyspark.ml.regression import LinearRegression
+>>> pp_df =
+>>> spark.read.csv("/home/glider/doc/schools/lynda/CCPP/power_plant.csv",header=True,inferSchema=True)
+>>> pp_df
+DataFrame[AT: double, V: double, AP: double, RH: double, PE: double]
+>>> from pyspark.ml.feature import VectorAssembler
+>>> vectorAssember = VectorAssembler(inputCols=["AT","V","AP","RH"],
+>>> outputCol="features")
+>>> vpp_df = vectorAssember.transform(pp_df)
+>>> vpp_df.take(1)
+[Row(AT=14.96, V=41.76, AP=1024.07, RH=73.17, PE=463.26,
+features=DenseVector([14.96, 41.76, 1024.07, 73.17]))]
+>>> lr = LinearRegression(featuresCol="features",labelCol="PE")
+>>> lr_model = lr.fit(vpp_df)
+>>> lr_model.coefficients
+DenseVector([-1.9775, -0.2339, 0.0621, -0.1581])
+>>> lr_model.intercept
+454.6092744523414
+>>> lr_model.summary.rootMeanSquaredError
+4.557126016749488
+>>> lr_model.save("lr1.model")
+```
+
+### Decision Tree Regression
+
+```bash
+>>> from pyspark.ml.regression import DecisionTreeRegressor
+>>> from pyspark.ml.evaluation import RegressionEvaluator
+>>> pp_df.take(1)
+[Row(AT=14.96, V=41.76, AP=1024.07, RH=73.17, PE=463.26)]
+>>> vpp_df.take(1)
+[Row(AT=14.96, V=41.76, AP=1024.07, RH=73.17, PE=463.26,
+features=DenseVector([14.96, 41.76, 1024.07, 73.17]))]
+>>> splits = vpp_df.randomSplit([0.7,0.3])
+>>> train_df = splits[0]
+>>> test_df = splits[1]
+>>> train_df.count()
+6762
+>>> test_df.count()
+2806
+>>> vpp_df.count()
+9568
+>>> dt = DecisionTreeRegressor(featuresCol="features",labelCol="PE")
+>>> dt_model = dt.fit(train_df)
+>>> dt_predictions = dt_model.transform(test_df)
+>>> dt_evaluator =
+>>> RegressionEvaluator(labelCol="PE",predictionCol="prediction",metricName="rmse")
+>>> rmse = dt_evaluator.evaluate(dt_predictions)
+>>> rmse
+4.601462516892643
+```
+
+### Gradient-boosted tree regression
+
+```bash
+>>> from pyspark.ml.regression import GBTRegressor
+>>> gbt = GBTRegressor(featuresCol="features",labelCol="PE")
+>>> gbt_model = gbt.fit(train_df)
+>>> gbt_predictions = gbt_model.transform(test_df)
+>>> gbt_evaluator =
+>>> RegressionEvaluator(labelCol="PE",predictionCol="prediction",metricName="rmse")
+>>> gbt_evaluator.evaluate(gbt_predictions)
+4.194604291336699
+```
+
+## Tips
+
+- Pre-processing phase
+    + Load data into DataFrames
+    + Include headers, or column names, in text files
+    + Use inferSchema=True
+    + Use VectorAssembler to create feature vectors
+    + Use StringIndexer to map from string to numeric indexes
+- Building models
+    + Split data into training and test sets
+    + Fit models using training data
+    + Create predictions by applying a transform to the test data
+- Validating models
+    + Use MLlib evaluators
+        * MulticlassClassificationEvaluator
+        * RegressionEvaluator
+    + Experiment with multiple algorithms
+    + Vary hyperparameters
+
 
 # Spark Shell
 
