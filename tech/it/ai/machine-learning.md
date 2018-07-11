@@ -57,6 +57,79 @@
 - Dimensionality reduction
     + simplifies inputs by mapping them into a lower-dimensional space
 
+# Feature
+
+## Introduction
+
+- A feature is an individual measurable property or characteristic of a
+  phenomenon being observed.
+- Choosing informative, discriminating and independent features is a
+  crucial step for effective algorithms in pattern recognition,
+  classification and regression.
+- Features are usually numeric, but structural features such as strings,
+  and graphs are used in syntactic pattern recognition.
+- The concept of feature is related to that of independent variable used
+  in statistical techniques such as linear regression.
+
+## Examples
+
+- In character recognition, features may include histograms counting the
+  number of black pixels along horizontal and vertical directions,
+  number of internal holes, stroke detection and many others.
+- In speech recognition, features fro recognizing phonemes can include
+  noise ratios, length of sounds, relative power, filter matches and
+  many others.
+- In spam detection algorithms, features may include the presence or
+  absence of certain email hearders, the email structure, the language,
+  the frequency of specific terms, the grammatical correctness of the
+  text.
+- In computer vision, there are a large number of possible features,
+  such as edges and objects.
+
+## Classification
+
+- A set of numeric features can be conveniently described by a feature
+  vector.
+- Algorithms for classification from a feature vector include nearest
+  neighbor classification, neural networks, and statistical techniques
+  such as Bayesian approaches.
+
+## Feature vector
+
+- A feature vector is an n-dimensional vector of numerical features that
+  represent some object.
+- Many algorithms in machine learning require a numerical representation
+  of objects, since such representations facilitate processing and
+  statictical analysis.
+- When representing images, the feature values might correspond to the
+  pixels of an image, while when representing texts the features might
+  be the frequencies of occurrence of textual terms.
+- Feature vectors are often combined with weights using a dot product in
+  order toconstruct a linear predictor function that is used to
+  determine a score for making a prediction.
+- The vector space associated with these vectors is often called the
+  feature space.
+    + In order to reduce the dimensionality of the feature space, a
+      number of dimensionality reduction techniques can be employed.
+- Higher-level features are obtained from already available features and
+  added to the feature vector.
+    + For example, for the study of diseases the feature 'Age' is useful
+      and is defined as Age='Year of death' minus 'Year of birth'.
+    + This process is referred to as feature construction.
+
+## Selection and extraction
+
+- The initial set of raw features can be redundant and too large to be
+  managed.
+- Therefore, a preliminary step in many applications consist of
+  selecting a subset of features, or constructing a new and reduced set
+  of features to facilitate learning, adn to improve generalization and
+  interpretability.
+- Extracting or selecting features require automated techniques with the
+  intuition and knowledge of the domain expert.
+    + Automating this process is feature learning, where a machine not
+      only uses features for learning, but learn the features itself.
+
 # Approaches
 
 ## Decision tree learning
