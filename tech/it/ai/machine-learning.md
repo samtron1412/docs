@@ -80,7 +80,7 @@
   noise ratios, length of sounds, relative power, filter matches and
   many others.
 - In spam detection algorithms, features may include the presence or
-  absence of certain email hearders, the email structure, the language,
+  absence of certain email headers, the email structure, the language,
   the frequency of specific terms, the grammatical correctness of the
   text.
 - In computer vision, there are a large number of possible features,
@@ -100,17 +100,17 @@
   represent some object.
 - Many algorithms in machine learning require a numerical representation
   of objects, since such representations facilitate processing and
-  statictical analysis.
+  statistical analysis.
 - When representing images, the feature values might correspond to the
   pixels of an image, while when representing texts the features might
   be the frequencies of occurrence of textual terms.
 - Feature vectors are often combined with weights using a dot product in
-  order toconstruct a linear predictor function that is used to
+  order to construct a linear predictor function that is used to
   determine a score for making a prediction.
 - The vector space associated with these vectors is often called the
   feature space.
-    + In order to reduce the dimensionality of the feature space, a
-      number of dimensionality reduction techniques can be employed.
+    + In order to reduce the dimensions of the feature space, a number
+      of dimension reduction techniques can be employed.
 - Higher-level features are obtained from already available features and
   added to the feature vector.
     + For example, for the study of diseases the feature 'Age' is useful
@@ -123,7 +123,7 @@
   managed.
 - Therefore, a preliminary step in many applications consist of
   selecting a subset of features, or constructing a new and reduced set
-  of features to facilitate learning, adn to improve generalization and
+  of features to facilitate learning, and to improve generalization and
   interpretability.
 - Extracting or selecting features require automated techniques with the
   intuition and knowledge of the domain expert.
