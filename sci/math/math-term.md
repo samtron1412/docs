@@ -288,6 +288,24 @@ numerical value) alone.
 
 The term secant line refers to a line through two points on a curve.
 
+# Standard Deviation
+
+- In statistics, the standard deviation (SD, also represented by the
+  Greek letter sigma or the Latin letter s) is a measure that is used to
+  quantify the amount of variation or dispersion of a set of data
+  values.
+- A low standard deviation indicates that the data points tend to be
+  close to the mean (also called the expected value) of the set, while a
+  high standard deviation indicates that the data points are spread out
+  over a wider range of values.
+- The standard deviation of a data set is the square root of its
+  variance (sigma square).
+    + A useful property of the standard deviation is that, unlike the
+      variance, it is expressed in the same units as the data.
+- In addition to expressing the variability of a population, the
+  standard deviation is commonly used to measure confidence in
+  statistical conclusions.
+
 # Probability Density Function
 
 - The probability density function (PDF) is used to specify the
