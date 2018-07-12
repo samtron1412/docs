@@ -90,7 +90,42 @@ Something
 
 ## Linear classifiers
 
-Something
+- A large number of algorithms for classification can be phrased in
+  terms of a linear function that assigns a score to each possible
+  category k by combining the feature vector of an instance with a
+  vector of weights, using a dot product.
+    + The predicted category is the one with the highest score
+    + This type of score function is known as a linear predictor
+      function and has the following general form
+        * `score (Xi, k) = Bk . Xi`
+        * where Xi is the feature vector for instance i
+        * Bk is the vector of weights corresponding to category k
+        * and score(Xi, k) is the score associated with assigning
+          instance i to category k
+- Algorithms with this basic setup are known as linear classifiers
+    + What distinguishes them is the procedure for determining
+      (training) the optimal weights/coefficients and the way that the
+      score is interpreted.
+- Examples of such algorithms are:
+    + Logistic regression and Multinormial logistic regression
+    + Probit regression
+    + The perceptron algorithm
+    + Support vector machines
+    + Fisher's Linear discriminant analysis
+    + Naive Bayes classifier
+
+## Other algorithms
+
+- Least squares support vector machines
+- Quadratic classifiers
+- Kernel estimation
+    + k-nearest neighbor
+- Boosting (meta-algorithm)
+- Decision trees
+    + Random forests
+    + Decision stream
+- Neural networks
+- Learning vector quantization
 
 # Evaluation
 
