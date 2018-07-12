@@ -80,6 +80,10 @@ Something
       should be in the result set of a search or not => the
       classification property is "the relevance of the article, or the
       usefulness to the user"
+- Converting continuous values to binary
+    + continuous values, such as blood values => defining a cutoff value
+      => higher is positive and lower is negative
+    + it can cause a loss of information
 
 # Multiclass classification
 
