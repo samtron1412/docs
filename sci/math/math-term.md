@@ -279,6 +279,24 @@ numerical value) alone.
 
 The term secant line refers to a line through two points on a curve.
 
+# Probability Density Function
+
+- The probability density function (PDF) is used to specify the
+  probability of the random variable falling within a particular range
+  of values, as opposed to taking on any one value.
+- In probability theory, a probability density function (PDF), or
+  density of a continuous random variable, is a function, whose value at
+  any given sample (or point) in the sample space (the set of possible
+  values taken by the random variable) can be interpreted as providing a
+  `relative likelihood` that the value of the random variable would
+  equal that sample.
+- In other words, while the `absolute likelihood` for a continuous
+  random variable to take on any particular value is 0 (since there are
+  an infinite set of possible values to begin with), the value of the
+  PDF at two different samples can be used to infer, in any particular
+  draw of the random variable, how much more likely it is that the
+  random variable would equal one sample compared to the other sample.
+
 # Probability Distribution
 
 - A probability distribution is a mathematical function that provides
