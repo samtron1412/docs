@@ -309,6 +309,17 @@ The term secant line refers to a line through two points on a curve.
   X would take the value 0.5 for X=heads, and 0.5 for X=tails (assuming
   the coin is fair)
 
+# Probability Mass Function (PMF)
+
+- In probability and statistics, a probability mass function (PMF) is a
+  function that gives the probability that a discrete random variable is
+  exactly equal to some values.
+- The PDF is often the primary means of defining a discrete probability
+  distribution, and such functions exist for either scalar or
+  multivariate random variables whose domain is discrete.
+- The value of the random variable having the largest probability mass
+  is called the mode.
+
 # Tangent lines
 
 You can think of a tangent line as a line that skims a curve at a point.
