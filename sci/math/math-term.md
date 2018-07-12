@@ -224,6 +224,31 @@ calculations and for showing order in a series or for identification.
 - Real numbers: Irrational + Rational
 - Imaginary numbers (complex numbers)
 
+# Random variable
+
+- In probability and statistics, a random variable, random quantity,
+  aleatory variable, or stochastic variable is a variable whose possible
+  values are outcomes of a random phenomenon.
+- A random variable's possible values might represent the possible
+  outcomes of a yet-to-be-performed experiment, or the possible outcomes
+  of a past experiment whose already-existing value is uncertain (for
+  example, due to imprecise measurements or quantum uncertainty)
+- A random variable has a probability distribution, which specifies the
+  probability that its value falls in any given interval.
+- Random variables can be
+    + discrete, taking any of a specified finite or countable list of
+      values, endowed with a `probability mass function` characteristic
+      of the random variable's probability distribution
+    + continuous, taking any numerical value in an interval or
+      collection of intervals, via a `probability density function` that
+      is characteristic of the random variable's probability
+      distribution
+    + or a mixture of both types
+- The formal mathematical treatment of random variables is a topic in
+  probability theory.
+    + in that context, a random variable is understood as a function
+      defined on a sample space whose outputs are numerical values
+
 # Rate of change
 
 Rate of change play a role whenever we study the relationship between
