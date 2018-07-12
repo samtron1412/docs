@@ -47,6 +47,23 @@
 - Other models such as support vector machines are not, but methods
   exist to turn them into probabilistic classifiers.
 
+# Frequentist procedures
+
+Something
+
+# Bayesian procedures
+
+- Markov Chain Monte Carlo (MCMC)
+
+# Statistical procedures
+
+- Two procedures
+    + Partitioning data into statistically different samples
+    + Merging the samples which are similar according to the test
+      statistics.
+- The split/merge operations are repeated as long as data samples can be
+  split until the maximum purity of classes is obtained.
+
 # Binary classification
 
 - https://en.wikipedia.org/wiki/Binary_classification
