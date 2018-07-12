@@ -1069,6 +1069,8 @@ Something
 ## Black screen after waking up from suspend/hibernate
 
 - https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start
+- Debug
+    + https://01.org/blogs/rzhang/2015/best-practice-debug-linux-suspend/hibernate-issues
 
 ```
 // Add i915 module to the /etc/mkinitcpio.conf
