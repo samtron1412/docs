@@ -149,6 +149,21 @@ from chance is less then 5 percent.
   than 5 percent, they would say that the finding is statistically
   significant
 
+# Glossary
+
+## Contingency table
+
+- In statistics, a contingency table (also known as a cross tabulation
+  or crosstab) is a type of table in a matrix format that displays the
+  (multivariate) frequency distribution of the variables.
+
+## Frequency distribution
+
+- A frequency distribution is a tabular form of statistics. Each entry
+  in the table contains the frequency of count of the occurrences of
+  values within a particular group or interval, and in this way, the
+  table summarizes the distribution of values in the sample.
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Statistics
