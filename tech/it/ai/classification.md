@@ -294,7 +294,24 @@ Recall = TP / (TP + FN)
 
 # Application
 
-Something
+- Computer vision
+    + Medical imaging
+    + Optical character recognition
+    + Video tracking
+- Drug discovery and development
+    + Toxicogenomics
+    + Quantitative structure-activity relationship
+- Geostatistics
+- Speech recognition
+- Handwriting recognition
+- Biometric identification
+- Biological classification
+- Statistical natural language processing
+- Document classification
+- Internet search engines
+- Credit scoring
+- Pattern recognition
+- Micro-array classification
 
 # References
 
