@@ -46,6 +46,15 @@ lines, measured in the same unit of length.
 - For example, a variable over a non-empty range of the real numbers is
   continuous.
 
+# Cumulative Distribution Function
+
+- In probability and statistics, the cumulative distribution function
+  (CDF) of a real-valued random variable X, or just distribution
+  function of X, evaluated at x, is the probability that X will take a
+  value less than or equal to x.
+- In the case of a continuous distribution, it gives the area under the
+  probability density function from minus infinity to x.
+
 # Derivative
 
 - Rates of change
