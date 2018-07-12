@@ -91,6 +91,44 @@ Something
 - In machine learning, multiclass or multinomial classification is the
   problem of classifying instances into one of three or more classes.
 
+## General strategies
+
+### Transformation to binary
+
+#### One-vs.-rest
+
+Something
+
+#### One-vs.-one
+
+Something
+
+### Extension from binary
+
+#### Neural Networks
+
+Something
+
+#### k-nearest neighbors
+
+Something
+
+#### Naive Bayes
+
+Something
+
+#### Decision trees
+
+Something
+
+#### Support vector machines
+
+Something
+
+### Learning paradigms
+
+Something
+
 
 # Multi-label classification
 
