@@ -127,8 +127,19 @@ Something
 
 ### Learning paradigms
 
-Something
-
+- batch learning
+    + requires all the data samples to be available beforehand
+    + It trains the model using the entire training data and then
+      predicts the test sample using the found relationship
+- online learning
+    + incrementally builds their models in sequential iterations
+    + in iteration t, an online algorithm receives a sample, Xt and
+      predicts its label vector Yt using the current model; the
+      algorithm then receives Yt, the true label of Xt and updates its
+      model based on the sample-label pair: (Xt, Yt).
+- progressive learning technique (NEW)
+    + not only learning from new samples but also capable of learning
+      new classes of data and yet retain the knowledge learned thus far.
 
 # Multi-label classification
 
