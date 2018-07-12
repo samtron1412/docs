@@ -188,6 +188,28 @@ Mapping, or map, referes to either a function, often with some sort of
 special structure, or a morphism in category theory, which generalizes
 the idea of a function.
 
+# Normal Distribution
+
+- In probability theory, the normal (or Gaussian or Gauss or
+  Laplace-Gauss) distribution is a very common continuous probability
+  distribution.
+- Normal distribution is important in statistics and are often used in
+  the natural and social sciences to represent real-valued random
+  variables whose distributions are not known.
+- The normal distribution is useful because of the central limit
+  theorem.
+    + It states that averages of samples of observations of random
+      variables independently drawn from independent distributions
+      converge in distribution to the normal, that is, become normally
+      distributed when the number of observations is sufficiently large.
+- The probability density of the normal distribution is: ...
+    + muy is the mean or expectation of the distribution (also its
+      median and mode)
+    + sigma is the standard deviation
+    + sigma square is the variance
+- Standard normal distribution
+    + muy = 0 and sigma = 1
+
 # Number
 
 an arithmetical value, expressed by a word, symbol, or figure,
