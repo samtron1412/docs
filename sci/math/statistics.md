@@ -2,20 +2,20 @@
 
 # Overview
 
-Staticstics is a branch of mathematics dealing with the collection,
-analysis, interpretation, presentation, and organization of data.
+- Staticstics is a branch of mathematics dealing with the collection,
+  analysis, interpretation, presentation, and organization of data.
 - Researchers use statistics to analyze and understand the results of
   research studies.
-
-Two broad categories
-- Descriptive statistics: to describe data (to classify and summarize
-  information expressed in numerical form)
-- Inferential statistics: to make generalizations about a population by
-  studying results based on a sample drawn from the population
+- Two broad categories
+    + Descriptive statistics: to describe data (to classify and
+      summarize information expressed in numerical form)
+    + Inferential statistics: to make generalizations about a population
+      by studying results based on a sample drawn from the population
 
 # Applications of Statitics
 
 Three main puposes of statistics in scientific inquiry
+
 1. To describe
 2. To relate
 3. To compare
@@ -134,6 +134,7 @@ descriptive statistics alone.
 
 The first step in using inferential statistics is to state a *null
 hypothesis* for the study in question.
+
 - A null hypothesis is a prediction that a given finding has no value or
   significance.
 - There is no difference between the control groups and the experimental
@@ -143,6 +144,7 @@ hypothesis* for the study in question.
 
 The result is judged to be significant when its likelihood of arising
 from chance is less then 5 percent.
+
 - if the probability that an outcome would occur by chance alone is less
   than 5 percent, they would say that the finding is statistically
   significant
