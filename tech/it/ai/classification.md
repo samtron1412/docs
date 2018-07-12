@@ -88,7 +88,28 @@ Something
 # Multiclass classification
 
 - https://en.wikipedia.org/wiki/Multiclass_classification
+- In machine learning, multiclass or multinomial classification is the
+  problem of classifying instances into one of three or more classes.
 
+
+# Multi-label classification
+
+- Multi-class classification and the strongly related problem of
+  multi-output classification are variants of the classification problem
+  where multiple labels may be assigned to each instance.
+    + IT is a generalization of multiclass classification since it has
+      no constraint on how many of the classes the instance can be
+      assigned to.
+- Formally, multi-label classification is the problem of finding a model
+  that maps inputs X to binary vectors Y (assigning a value of 0 or 1
+  for each element (label) in Y)
+
+## Problem transformation methods
+
+- Independently training one binary classifier for each label
+    + this method of dividing the task into multiple binary tasks has
+      something in common with the one-vs.-all (OvA) method for
+      multiclass classification.
 
 # Algorithms
 
