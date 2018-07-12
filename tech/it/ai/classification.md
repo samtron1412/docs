@@ -86,5 +86,19 @@ Something
 - https://en.wikipedia.org/wiki/Multiclass_classification
 
 
+# Algorithms
+
+## Linear classifiers
+
+Something
+
+# Evaluation
+
+Something
+
+# Application
+
+Something
+
 # References
 
