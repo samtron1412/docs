@@ -1066,6 +1066,16 @@ Something
 
 # Troubleshooting
 
+## Black screen after waking up from suspend/hibernate
+
+- https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start
+
+```
+// Add i915 module to the /etc/mkinitcpio.conf
+
+MODULES="...i915..."
+```
+
 ## "Failed to commit transaction (conflicting files)" error
 
 - A safe way is to first check if another package owns the file
