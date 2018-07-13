@@ -97,7 +97,44 @@ Something
 
 #### One-vs.-rest
 
-Something
+- One-vs.-rest (or one-vs.-all, OvA or OvR) strategy involves training a
+  single classifier per class, with the samples of that class as
+  positive samples and all other samples as negatives.
+    + requires the base classifiers to produce a real-valued confidence
+      score for its decision, rather than just a class label
+- In pseudocode, the training algorithm for an OvA learner constructed
+  from a binary classification learner L is as follows:
+
+```
+Inputs:
+- L, a learner (training algorithm for binary classifiers)
+- samples X
+- lables y where yi in {1,...K} is the label for the sample Xi
+
+Output:
+- a list of classifier fk for k in {1,...,K}
+
+Procedure
+- For each k in {1,...,K}
+    + Construct a new label vector z where zi = 1 if yi = k and zi = 0
+      otherwise
+    + Apply L to X, z to obtain fk
+
+Making decisions means applying all classifiers to an unseen sample x
+and predicting the label k for which the corresponding classifier
+reports the highest confidence score
+
+vector y = argmax {fk(x)} , k in {1...K}
+```
+
+- Although this strategy is popular, it is a heuristic that suffers from
+  several problems.
+    + The scale of the confidence values may differ between the binary
+      classifiers
+    + Even if the class distribution is balanced in the training set,
+      the binary classification learners see unbalanced distributions
+      because typically the set of negatives they see is much larger
+      than the set of positives
 
 #### One-vs.-one
 
@@ -131,7 +168,7 @@ Something
     + requires all the data samples to be available beforehand
     + It trains the model using the entire training data and then
       predicts the test sample using the found relationship
-- online learning
+- online learning (similar streaming concept)
     + incrementally builds their models in sequential iterations
     + in iteration t, an online algorithm receives a sample, Xt and
       predicts its label vector Yt using the current model; the
