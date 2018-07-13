@@ -17,6 +17,11 @@ manipulating these symbols.
       abstractions, such as using letters to stand for numbers that are
       either unknown or allowed to take on many values.
 
+# Ambient space
+
+- An ambient space or ambient configuration space is the space
+  surrounding an object.
+
 # Arithmetic
 
 Arithmetic is a branch of mathematics dealing with the properties and
@@ -136,6 +141,11 @@ Homogeneous coordinates are a system of coordinates used iin projective
 geometry, as Cartesian coordinates are used in Euclidean geometry.
 
 ![homogeneous coordinate](../graphic/math/homogeneous-coordinate.svg)
+
+# Hyperplane
+
+- In geometry, a hyperplane is a subspace whose dimension is one less
+  than that of its ambient space.
 
 # Hypotenuse
 
