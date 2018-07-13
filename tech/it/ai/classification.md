@@ -138,7 +138,16 @@ vector y = argmax {fk(x)} , k in {1...K}
 
 #### One-vs.-one
 
-Something
+- OvO trains K(K-1)/2 binary classifiers for a K-way multiclass problem
+    + Each classifier receives the samples of a pair of classes from the
+      original training set, and must learn to distinguish these two
+      classes.
+    + At prediction time, a voting scheme is applied: all K(K-1)/2
+      classifiers are applied to an unseen sample and the class that got
+      the highest number of "+1" predictions gets predicted by the
+      combined classifier
+- Like OvA, OvO suffers from ambiguities in that some regions of its
+  input space may receive the same number of votes.
 
 ### Extension from binary
 
