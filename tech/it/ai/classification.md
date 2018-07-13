@@ -153,25 +153,67 @@ vector y = argmax {fk(x)} , k in {1...K}
 
 #### Neural Networks
 
-Something
+- Multilayer perceptrons provide a natural extension to the multi-class
+  problem.
+    + instead of just having one neuron in the output layer, with binary
+      output, one could have N binary neurons leading to multi-class
+      classification
+    + In practice, the last layer of a neural network is usually a
+      `softmax function` layer, which is the algebraic simplification of
+      N logistic classifiers, normalized per class by the sum of the N-1
+      other logistic classifiers.
+- Extreme learning machines (ELM) is a special case of single hidden
+  layer feed-forward neural networks (SLFNs) where in the input weights
+  and the hidden node biases can be chosen at random. Many variants and
+  developments are made to the ELM for multiclass classification.
 
 #### k-nearest neighbors
 
-Something
+- k-nearest neighbors (kNN) is considered among the oldest
+  non-parametric classification algorithms.
+    + To classify an unknown example, the distance from that example to
+      every other training example is measured.
+    + The k smallest distances are identified, and the most represented
+      class by these k nearest neighbors is considered the output class
+      label.
 
 #### Naive Bayes
 
-Something
+- Naive Bayes is a successful classifier based upon the principle of
+  maximum a posteriori (MAP)
+    + This approach is naturally extensible to the case of having more
+      than two classes, and was shown to perform well in spite of the
+      underlying simplifying assumption of conditional independence.
 
 #### Decision trees
 
-Something
+- The tree tries to infer a split of the training data based on the
+  values of the available features to produce a good generalization.
+    + The algorithm can naturally handle binary or multiclass
+      classification problems.
+    + The leaf nodes can refer to either of the K classes concerned.
 
 #### Support vector machines
 
-Something
+- Support vector machines (SVM) are based upon the idea of maximizing
+  the margin, i.e. maximizing the minimum distance from the separating
+  hyperplane to the nearest example.
+    + The basic SVM supports only binary classification, but extensions
+      have been proposed to handle the multiclass classification case as
+      well.
+    + In these extension, additional parameters and constraints are
+      added to the optimization problem to handle the separation of the
+      different classes.
 
-### Learning paradigms
+### Hierarchical classification
+
+- Hierarchical classification tackles the multi-class classification
+  problem by dividing the output space into a tree.
+    + Each parent node is divided into multiple child nodes and the
+      process is continued until each child node represents only one
+      class.
+
+## Learning paradigms
 
 - batch learning
     + requires all the data samples to be available beforehand
