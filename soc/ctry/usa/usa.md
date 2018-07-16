@@ -663,6 +663,89 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 
 - [24 Constitutional Question](http://www.thenewamerican.com/usnews/constitution/item/19137-24-constitutional-questions-every-american-should-be-able-to-answer)
 
+# Health Care
+
+## Types of health care providers
+
+### Primary Care Provider (PCP)
+
+- PCP is a person you may see first for checkups and health problems
+    + "generalist" = medical doctors (MDs) or doctors of osteopathic
+      medicine (DOs) who specialize in internal medicine, family
+      practice, or pediatrics
+        * osteopathy: a branch of medical practice that emphasizes the
+          treatment of medical disorders through the manipulation and
+          massage of the bones, joints, and muscles
+    + Obstetrician/Gynecologists (OB/GYN) are doctors who specialize in
+      obstetrics (san khoa) and gynecology (phu khoa), including women's
+      health care, wellness, and prenatal care.
+    + Nurse practitioners (NPs) are nurses with graduate training. They
+      can serve as a primary care provider in family medicine (FNP),
+      pediatrics (PNP), adult care (ANP), or geriatrics (GNP - lao khoa)
+    + A physician assistant (PA)
+
+### Nursing Care
+
+- Licensed practical nurses (LPNs) are state-licensed caregivers who have
+  been trained to care for the sick
+- Registered nurses (RNs) have graduated from a nursing program, have
+  passed a state board examination, and are licensed by the state.
+- Advanced practice nurses have education and experience beyond the
+  basic training and licensing required of all RNs
+    + Clinical nurse specialists (CNSs) have training in a field such as
+      cardiac, psychiatric, or community health
+    + Certified nurse midwives (CNMs) have training in women's health
+      care needs, including prenatal care, labor and delivery, and the
+      crea of a woman who has given birth.
+    + Certified registered nurse anesthetists (CRNAs) have training in
+      the field of anesthesia. Anesthesia is the process of putting a
+      person into a painless sleep, and keeping the person's body
+      working so surgeries or special tests can be done.
+
+### Drug Therapy
+
+Licensed pharmacists have graduate training from a college of pharmacy.
+
+Your pharmacist prepares and processes drug prescriptions that were written by your primary or specialty care provider. Pharmacists provide information to people about medicines. They also consult with health care providers about dosages, interactions, and side effects of medicines.
+
+Your pharmacist may also follow your progress to check that you are using your medicine safely and effectively.
+
+Pharmacists also can evaluate your health and prescribe medicines.
+
+### Specialty Care
+
+Your primary care provider may refer you to professionals in various specialties when necessary, such as:
+
+- Allergy and asthma
+- Anesthesiology -- general anesthesia or spinal block for surgeries and
+  some forms of pain control
+- Cardiology -- heart disorders
+- Dermatology -- skin disorders
+- Endocrinology -- hormonal and metabolic disorders, including diabetes
+- Gastroenterology -- digestive system disorders
+- General surgery -- common surgeries involving any part of the body
+- Hematology -- blood disorders
+- Immunology -- disorders of the immune system
+- Infectious disease -- infections affecting the tissues of any part of
+  the body
+- Nephrology -- kidney disorders
+- Neurology -- nervous system disorders
+- Obstetrics/gynecology -- pregnancy and women's reproductive disorders
+- Oncology -- cancer treatment
+- Ophthalmology -- eye disorders and surgery
+- Orthopedics -- bone and connective tissue disorders
+- Otorhinolaryngology -- ear, nose, and throat (ENT) disorders
+- Physical therapy and rehabilitative medicine -- for disorders such as
+  low back injury, spinal cord injuries, and stroke
+- Psychiatry -- emotional or mental disorders
+- Pulmonary (lung) -- respiratory tract disorders
+- Radiology -- x-rays and related procedures (such as ultrasound, CT,
+  and MRI)
+- Rheumatology -- pain and other symptoms related to joints and other
+  parts of the musculoskeletal system
+- Urology -- disorders of the male reproductive system and urinary tract
+  and the female urinary tract
+
 # Tips and Tricks
 
 ## Order coffee at Starbucks
