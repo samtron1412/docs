@@ -238,3 +238,7 @@ Something
 
 # References
 
+[kkt-conditions]: https://en.wikipedia.org/wiki/Karush%E2%80%93Kuhn%E2%80%93Tucker_conditions
+[convex-set]: https://en.wikipedia.org/wiki/Convex_set
+[vc-dimension]: https://en.wikipedia.org/wiki/VC_dimension
+[vc-theory]: https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_theory

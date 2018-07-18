@@ -167,3 +167,5 @@ from chance is less then 5 percent.
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Statistics
+[degree-of-freedom]: https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)
+[cross-validation]: https://en.wikipedia.org/wiki/Cross-validation_(statistics)

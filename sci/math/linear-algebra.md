@@ -34,3 +34,7 @@ https://www.math.ksu.edu/~gerald/leontief.pdf
 ## Online Courses
 
 - http://www-math.mit.edu/~gs/
+
+# References
+
+[outer-product]: https://en.wikipedia.org/wiki/Outer_product
