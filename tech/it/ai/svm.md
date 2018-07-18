@@ -28,6 +28,10 @@
       vectors, developed in the support vector machines algorithms, to
       categorize unlabelled data.
 
+# History
+
+Something
+
 # Motivation
 
 - Given data points each belong to one of two classes, and the goal is
@@ -73,6 +77,50 @@
       combinations with parameters ai of images of feature vectors xi
       that occur in the data base.
     + with this choice of a hyperplane are defined by the relation
+
+# Applications
+
+Something
+
+# Linear SVM
+
+## Hard-margin
+
+Something
+
+## Soft-margin
+
+Something
+
+# Non-linear classification
+
+Something
+
+# Computing the SVM classifier
+
+## Primal
+
+Something
+
+## Dual
+
+Something
+
+## Kernel trick
+
+Something
+
+## Sub-gradient descent
+
+Something
+
+## Coordinate descent
+
+Something
+
+# Empirical risk minimization
+
+Something
 
 # References
 
