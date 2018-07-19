@@ -2,7 +2,7 @@
 
 # Overview
 
-- Staticstics is a branch of mathematics dealing with the collection,
+- Statistics is a branch of mathematics dealing with the collection,
   analysis, interpretation, presentation, and organization of data.
 - Researchers use statistics to analyze and understand the results of
   research studies.
@@ -12,9 +12,9 @@
     + Inferential statistics: to make generalizations about a population
       by studying results based on a sample drawn from the population
 
-# Applications of Statitics
+# Applications of Statistics
 
-Three main puposes of statistics in scientific inquiry
+Three main purpose of statistics in scientific inquiry
 
 1. To describe
 2. To relate
