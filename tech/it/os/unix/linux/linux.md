@@ -221,6 +221,15 @@ be brought to the foreground with the command fg n where n is the job
 
 # Tips and Tricks
 
+## Mount remote file system over SSH
+
+- https://wiki.archlinux.org/index.php/SSHFS
+- Mounting
+    + `$ sshfs [user@]host:[dir] mountpoint [options]`
+    + `$ sshfs myuser@mycomputer:/remote/path /local/path -C -p 9876`
+- Unmounting
+    + `$ fusermount3 -u mountpoint`
+
 ## Determine the current shell
 
 - https://stackoverflow.com/questions/3327013/how-to-determine-the-current-shell-im-working-on#3327022
