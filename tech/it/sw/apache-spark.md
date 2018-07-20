@@ -1644,6 +1644,12 @@ Something
 
 # Coding
 
+## Setting up the development environment
+
+- https://medium.com/@mrpowers/creating-a-spark-project-with-sbt-intellij-sbt-spark-package-and-friends-cc9108751c28
+- https://stackoverflow.com/questions/37958158/build-sbt-how-to-add-spark-dependencies
+- http://www.itversity.com/2018/04/19/setup-development-environment-big-data-hadoop-and-spark/
+
 ## Resources
 
 - API Docs
