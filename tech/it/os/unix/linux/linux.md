@@ -221,6 +221,13 @@ be brought to the foreground with the command fg n where n is the job
 
 # Tips and Tricks
 
+## Showing first 10, 20 lines of a file
+
+- https://www.cyberciti.biz/faq/unix-linux-show-first-10-20-lines-of-file/
+- `head -20 bar.txt`
+- `sed -n 1,20p bar.txt`
+- `awk 'FNR <= 10' bar.txt`
+
 ## Mount remote file system over SSH
 
 - https://wiki.archlinux.org/index.php/SSHFS
