@@ -175,6 +175,10 @@ All documents about the Linux operating system.
 
 - arch - archlinux: All the documents about the Arch Linux distribution.
 
+#### qc - quantum computation
+
+All documents about quantum computation
+
 #### rev - revision control
 
 #### rfc - request for comment
