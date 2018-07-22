@@ -2,8 +2,6 @@
 
 # Overview
 
-# Breathe
-
 # Warming up
 
 # Stretching
@@ -17,6 +15,12 @@
 ## Types of Running
 
 ## Proper Running Form
+
+- Open Shoulder blades
+- Straight head
+- Hands 90 degrees, and near to your hip
+- Lands in the front of your feet (not on toes)
+- Breathe in by nose and out by mouth
 
 ## Gears
 
