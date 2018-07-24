@@ -134,6 +134,30 @@ git checkout tags/v2.3.1
 build/mvn -DskipTests -Pnetlib-lgpl clean package
 ```
 
+## Dependency netlib-java for optimizing numerical processing
+
+- Installing a Basic Linear Algebra Subprograms BLAS/LAPACK
+  implementation
+    + Generic pre-tuned builds
+        * `sudo apt install libatlas3-base libopenblas-base`
+    + Optimal performance for a specific machine => build from source
+        * https://github.com/xianyi/OpenBLAS/archive/master.zip
+        * http://sourceforge.net/projects/math-atlas/files/latest/download
+- Include the dependency in the project
+    + sbt: add to *build.sbt*
+        * `"com.github.fommil.netlib" % "all" % "1.1.2" pomOnly()`
+- Generate a fat JAR using sbt-assembly
+    + https://github.com/sbt/sbt-assembly
+    + install the plugin: *project/plugins.sbt*
+        * `addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.7")`
+    + run : `sbt assembly`
+- Add the extra class path option in *spark-default.conf*
+    + `spark.driver.extraClassPath /home/hduser/sontran/lib/multiclass-assembly-0.1.jar`
+    + if you want to add multiple jars then you have to chain the jars
+      with the chain operator `:`
+        * `spark.driver.extraClassPath /Users/myusername/spark-1.6.1-bin-hadoop2.4/lib/postgresql-9.4.1208.jre6.jar:/Users/myusername/spark-1.6.1-bin-hadoop2.4/lib/sqljdbc4.jar`
+- Start Spark and submit your application to run
+
 # Spark Components
 
 ```
@@ -1684,3 +1708,4 @@ summary(model)
 [streaming]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash
 [sql]: https://www.dezyre.com/article/spark-sql-vs-apache-drill-war-of-the-sql-on-hadoop-tools/234
 [genomics]: https://aws.amazon.com/blogs/big-data/will-spark-power-the-data-behind-precision-medicine/
+[blas]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
