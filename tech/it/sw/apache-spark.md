@@ -114,6 +114,8 @@
 
 # Installation
 
+## Downloading Pre-build version
+
 - Download the Apache Spark
 - Extracting the tar file
 - Moving Spark to your location
@@ -122,6 +124,15 @@
 - Verifying the Spark installation
     + spark-shell
     + web-ui: http://localhost:4040
+
+## Building Spark
+
+```bash
+git clone https://github.com/apache/spark.git
+cd /path/to/spark
+git checkout tags/v2.3.1
+build/mvn -DskipTests -Pnetlib-lgpl clean package
+```
 
 # Spark Components
 
