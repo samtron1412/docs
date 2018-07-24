@@ -136,6 +136,7 @@ build/mvn -DskipTests -Pnetlib-lgpl clean package
 
 ## Dependency netlib-java for optimizing numerical processing
 
+- https://kun-liu.com/blog/numerical%20computing/2017/12/21/use-native-blas-and-lapack-in-apache-spark.html
 - Installing a Basic Linear Algebra Subprograms BLAS/LAPACK
   implementation
     + Generic pre-tuned builds
