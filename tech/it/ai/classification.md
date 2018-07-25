@@ -449,6 +449,11 @@ Recall = TP / (TP + FN)
   curves and provide a principled mechanism to explore operating point
   tradeoffs.
 
+### F1 score
+
+- https://en.wikipedia.org/wiki/F1_score
+- F1 = 2 / [(1/recall) + (1/precision)] = 2 * (precision * recall) / (precision + recall)
+
 ## Uncertainty coefficient
 
 - In statistics, the uncertainty coefficient, also called proficiency,
