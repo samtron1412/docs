@@ -1704,6 +1704,13 @@ model <- glm(Sepal_Length ~ Sepal_Width + Species, data = iris_data, family = "g
 summary(model)
 ```
 
+# Resources
+
+## Books
+
+- Gitbook (free): Mastering Apache Spark
+    + https://legacy.gitbook.com/book/jaceklaskowski/mastering-apache-spark/details
+
 # References
 
 [streaming]: https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash
