@@ -25,4 +25,12 @@
 
 
 
+# Plugin
+
+## Manipulate and convert raw images
+
+- gimp-nufraw
+- Usage
+    + `nufraw <image>`
+
 # References
