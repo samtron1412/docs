@@ -39,7 +39,27 @@ VNC is platform-independent.
     + VPN/SSH tunnel
     + Wrap all VNC traffic with TLS
 
+# Tips and Tricks
+
+## Accessing vncserver via SSH tunnels
+
+- On the server
+    + vncserver must be run
+        * using -localhost switch to allow connections from localhost
+          only (only from users ssh'ed and authenticated on the box)
+    + `$ vncserver -geometry 1440x900 -alwaysshared -dpi 96 -localhost :1`
+- On the client
+    + the client must open a secure shell with the remote machine and
+      create a tunnel from the client port 5901 to the remote server
+      5901 port
+    + `$ ssh -v -i <private_key> user@host -L 5901:localhost:5901`
+    + to connect via this encrypted tunnel, point the vncviewer to the
+      forwarded client port on the localhost
+    + `$ vncviewer localhost:5901`
+
 # References
+
+[tigervnc]: https://wiki.archlinux.org/index.php/TigerVNC
 
 1. [Virtual Network Computing - Wikipedia][1]
 2. [Remote Frame Buffer protocol - Wikipedia][2]
