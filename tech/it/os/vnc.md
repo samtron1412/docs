@@ -60,6 +60,7 @@ VNC is platform-independent.
 # References
 
 [tigervnc]: https://wiki.archlinux.org/index.php/TigerVNC
+[x11vnc]: https://wiki.archlinux.org/index.php/X11vnc
 
 1. [Virtual Network Computing - Wikipedia][1]
 2. [Remote Frame Buffer protocol - Wikipedia][2]
