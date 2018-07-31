@@ -1346,6 +1346,8 @@ export HADOOP_CONF_DIR=XXX
 
 # Tuning Guide - Optimization
 
+## Introduction
+
 - https://spark.apache.org/docs/latest/tuning.html
 - Spark programs can be bottlenecked by any resource in the cluster:
   CPU, network bandwidth, or memory.
@@ -1355,6 +1357,11 @@ export HADOOP_CONF_DIR=XXX
 - Data serialization => crucial for good network performance and reduce
   memory use
 - Memory tuning
+
+## Resources
+
+- https://medium.com/teads-engineering/spark-performance-tuning-from-the-trenches-7cbde521cf60
+-
 
 ## Data Serialization
 
