@@ -161,6 +161,16 @@ Use biber package
 
 # Tips and Tricks
 
+## Create posters using LaTeX
+
+- https://tex.stackexchange.com/questions/341/how-to-create-posters-using-latex
+    + beamerposter
+    + fancytikzposter
+    + baposter
+- templates
+    + https://www.latextemplates.com/cat/conference-posters
+    + https://www.overleaf.com/gallery/tagged/poster
+
 ## [Latex templates](https://github.com/bamos/latex-templates)
 
 
