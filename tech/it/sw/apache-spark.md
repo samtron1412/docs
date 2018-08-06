@@ -288,6 +288,14 @@ build/mvn -DskipTests -Pnetlib-lgpl clean package
 
 - https://spark.apache.org/docs/latest/sql-programming-guide.html
 
+## RDD vs. DataFrame APIs
+
+- https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
+- https://why-not-learn-something.blogspot.com/2016/07/apache-spark-rdd-vs-dataframe-vs-dataset.html
+- https://community.hortonworks.com/articles/42027/rdd-vs-dataframe-vs-sparksql.html
+- https://stackoverflow.com/questions/37301226/difference-between-dataset-api-and-dataframe-api
+- https://stackoverflow.com/questions/31508083/difference-between-dataframe-in-spark-2-0-i-e-datasetrow-and-rdd-in-spark
+
 # Spark Streaming
 
 - https://spark.apache.org/docs/latest/streaming-programming-guide.html
