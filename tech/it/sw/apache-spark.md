@@ -641,7 +641,7 @@ Lines with a: 46, Lines with b: 23
 ... col("_c3").alias("petal_width"),
 ... col("_c4").alias("species"))
 >>> vectorAssembler =
->>> VectorAssembler(inputCols=["sepal_length","sepal_width","petal_length","petal_width"],outputCol="feature")
+>>> VectorAssembler(inputCols=["sepal_length","sepal_width","petal_length","petal_width"],outputCol="features")
 >>> viris_df = vectorAssembler.transform(iris_df)
 >>> indexer = StringIndexer(inputCol="species",outputCol="label")
 >>> iviris_df = indexer.fit(viris_df).transform(viris_df)
@@ -1346,6 +1346,8 @@ export HADOOP_CONF_DIR=XXX
 
 # Tuning Guide - Optimization
 
+## Introduction
+
 - https://spark.apache.org/docs/latest/tuning.html
 - Spark programs can be bottlenecked by any resource in the cluster:
   CPU, network bandwidth, or memory.
@@ -1355,6 +1357,11 @@ export HADOOP_CONF_DIR=XXX
 - Data serialization => crucial for good network performance and reduce
   memory use
 - Memory tuning
+
+## Resources
+
+- https://medium.com/teads-engineering/spark-performance-tuning-from-the-trenches-7cbde521cf60
+-
 
 ## Data Serialization
 

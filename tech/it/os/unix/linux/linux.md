@@ -221,6 +221,20 @@ be brought to the foreground with the command fg n where n is the job
 
 # Tips and Tricks
 
+## Increasing open file limits
+
+- Edit the file `/etc/security/limits.conf`
+    + `* - nofile <number_of_open_files>`
+    + `* - nofile 65536`
+    + This will affect the limit for all user accounts
+    + To restrict this change to just the set of user
+        * `<user-name> - nofile <#>`
+        + `hdfs - nofile 65536`
+- To apply the changes in `/etc/security/limits.conf` on Ubuntu or any
+  other Debian-based systems, add the following line to the
+  `/etc/pam.d/common-session`
+    + `session required pam_limits.so`
+
 ## Showing first 10, 20 lines of a file
 
 - https://www.cyberciti.biz/faq/unix-linux-show-first-10-20-lines-of-file/
