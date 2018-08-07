@@ -63,6 +63,7 @@ rest of the system.
 ## Run a script at start-up
 
 - https://unix.stackexchange.com/questions/47695/how-to-write-startup-script-for-systemd
+- https://askubuntu.com/questions/886620/how-can-i-execute-command-on-startup-rc-local-alternative-on-ubuntu-16-10
 
 ## Run a script before shutdown
 
