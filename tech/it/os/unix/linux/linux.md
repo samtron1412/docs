@@ -221,6 +221,15 @@ be brought to the foreground with the command fg n where n is the job
 
 # Tips and Tricks
 
+## Mouse movement wakes computer from suspend, how to disable this?
+
+- https://askubuntu.com/questions/252743/mouse-movement-wakes-computer-from-suspend-how-to-disable-this
+- Check which devices are currently enabled to resume from suspend:
+    + `$ cat /proc/acpi/wakeup`
+- Enable/disable a device by write its name to `/proc/acpi/wakeup`
+    + `$ echo EHC1 > /proc/acpi/wakeup`
+- Write a systemd service to do this at start-up
+
 ## Increasing open file limits
 
 - Edit the file `/etc/security/limits.conf`
