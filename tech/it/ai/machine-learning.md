@@ -209,6 +209,12 @@ Something
 * standardize categorical values
     - ISO standard, etc.
 
+
+### Feature scaling
+
+- https://en.wikipedia.org/wiki/Feature_scaling
+- Normalization, Standardization
+
 ## Model Building
 
 ### Introduction
@@ -235,6 +241,15 @@ Something
     - accuracy
     - precision (positive predictive value)
     - and sensitivity (recall)
+
+# Regularization
+
+## Introduction
+
+- https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Regularization is a process of introducing additional information in
+  order to solve an ill-posed problem or to prevent over-fitting.
+    + Add a brake to the fitting model
 
 # References
 
