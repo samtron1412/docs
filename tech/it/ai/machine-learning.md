@@ -268,6 +268,13 @@ Something
       error was obtained before that and return the approximation on the
       last step as the result of the computation.
 
+# Datasets
+
+## Classification
+
+- Two classes
+    + https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html
+
 # References
 
 [kkt-conditions]: https://en.wikipedia.org/wiki/Karush%E2%80%93Kuhn%E2%80%93Tucker_conditions
