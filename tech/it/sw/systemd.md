@@ -47,6 +47,17 @@ rest of the system.
 
 # Forks and alternative implementations
 
+# Users
+
+- https://wiki.archlinux.org/index.php/Systemd/User
+
+# Timers
+
+## Introduction
+
+- https://wiki.archlinux.org/index.php/Systemd/Timers
+- As a cron replacement
+
 # Tips and Tricks
 
 ## [Allow user to shutdown][9]
