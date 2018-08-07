@@ -60,6 +60,15 @@ rest of the system.
 
 # Tips and Tricks
 
+## Run a script at start-up
+
+- https://unix.stackexchange.com/questions/47695/how-to-write-startup-script-for-systemd
+
+## Run a script before shutdown
+
+- https://unix.stackexchange.com/questions/39226/how-to-run-a-script-with-systemd-right-before-shutdown
+- https://superuser.com/questions/1016827/how-do-i-run-a-script-before-everything-else-on-shutdown-with-systemd
+
 ## [Allow user to shutdown][9]
 
 Install `systemd-sysvcompat`
