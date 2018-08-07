@@ -2,6 +2,13 @@
 
 # Overview
 
+Something
+
+# Core
+
+- Future and promises
+    + https://docs.scala-lang.org/overviews/core/futures.html
+
 # Tips and Tricks
 
 ## Operators
