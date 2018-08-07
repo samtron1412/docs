@@ -251,6 +251,23 @@ Something
   order to solve an ill-posed problem or to prevent over-fitting.
     + Add a brake to the fitting model
 
+# Convergence tolerance
+
+- http://www.nbertagnolli.com/jekyll/update/2015/10/03/ConvTol.html
+- There are three different methods of declaring a convergence:
+    + *absolute tolerance*, relative tolerance and running for a
+      specified number of iterations. In the absolute tolerance mode
+      algorithm stops when an absolute difference in any of the
+      variables is lower than the threshold.
+    + *relative tolerance* In this method I compute the difference
+      between the new approximation and the old one for each of the
+      variables and divide it by the previous(old) value of the variable
+      (in case it is not equal to 0).
+    + *number of iterations* Here we let the algorithm run for the
+      specified number of steps no matter what absolute or relative
+      error was obtained before that and return the approximation on the
+      last step as the result of the computation.
+
 # References
 
 [kkt-conditions]: https://en.wikipedia.org/wiki/Karush%E2%80%93Kuhn%E2%80%93Tucker_conditions
