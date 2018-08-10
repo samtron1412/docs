@@ -485,7 +485,10 @@ How to type fast:
 ### E-book applications
 
 - [Calibre](https://en.wikipedia.org/wiki/Calibre_(software))
-- [FBreader](https://en.wikipedia.org/wiki/FBReader)
+- bookworm
+- atril
+- xreader
+- mupdf
 
 ### PDF and DjVu
 
