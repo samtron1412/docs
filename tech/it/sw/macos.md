@@ -4,6 +4,13 @@
 
 Mac OS
 
+# Tuning Mac
+
+- https://github.com/nikitavoloboev/my-mac-os
+- https://github.com/serhii-londar/open-source-mac-os-apps
+- https://github.com/iCHAIT/awesome-macOS
+- https://github.com/jaywcjlove/awesome-mac
+
 # Tips and Tricks
 
 ## Key repeat
