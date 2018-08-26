@@ -271,6 +271,12 @@ else:
 
 # Tips and Tricks
 
+## exit a Python script
+
+- https://stackoverflow.com/questions/19747371/python-exit-commands-why-so-many-and-when-should-each-be-used
+- sys.exit(): proper way (import sys)
+- raise SystemExit
+
 ## Multi-line string
 
 - Concatenation
