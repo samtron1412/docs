@@ -158,6 +158,10 @@ numbers
       as computer science, as well as in the social sciences such as
       economics, psychology, sociology, political science.
 
+# Unsolved problems
+
+- https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics
+
 # References
 
 [wiki-mathematics]: https://en.wikipedia.org/wiki/Mathematics
