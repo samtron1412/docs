@@ -271,6 +271,27 @@ else:
 
 # Tips and Tricks
 
+## Multi-line string
+
+- Concatenation
+- Multi-line string syntax
+- Tuple syntax
+
+```
+template = "This is the first line.\n" \
+           "This is the second line.\n" \
+           "This is the third line."
+
+template = """This is the first line.
+This is the second line.
+This is the third line."""
+
+template = ("This is the first line.\n"
+            "This is the second line.\n"
+            "This is the third line.")
+```
+
+
 ## pipenv - work flow for a big project
 
 ### Introduction
