@@ -35,3 +35,11 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 In either case you'll need to restart Sublime Text for the change to
 take place.
 ```
+
+## Create a Python development environment
+
+- https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos
+- https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+- install homebrew
+- install python through brew install python
+- install virtualenv through pip install virtualenv
