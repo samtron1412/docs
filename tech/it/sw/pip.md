@@ -6,6 +6,7 @@
 
 ## Restricting pip to work on virtualenv only in macOS
 
+- https://hackercodex.com/guide/python-development-environment-on-mac-osx/
 - Create `~/Library/Application\ Support/pip/pip.conf`
 
 ```
