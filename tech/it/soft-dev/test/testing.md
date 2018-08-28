@@ -79,3 +79,4 @@ If you start developing tests for an existing code base without any tests, it is
 [software-testing]: https://en.wikipedia.org/wiki/Software_testing "Wikipedia - Software Testing"
 [unit-testing-junit]: http://www.vogella.com/tutorials/JUnit/article.html "Unit Testing with JUnit - Tutorial"
 [fuzz-testing]: https://en.wikipedia.org/wiki/Fuzz_testing "Wikipedia - Fuzz Testing"
+[code-coverage]: https://en.wikipedia.org/wiki/Code_coverage
