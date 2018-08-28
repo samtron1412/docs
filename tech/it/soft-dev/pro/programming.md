@@ -768,6 +768,7 @@ executes the program's machine code instructions.
 - Gaussian/Gauss-Jordan Elimination
 - Finding the inverse of a matrix
 - Finding the determinant of a matrix
+- Quine: https://en.wikipedia.org/wiki/Quine_(computing)
 
 # References
 
