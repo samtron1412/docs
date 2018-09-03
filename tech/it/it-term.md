@@ -166,6 +166,12 @@ implementation of computer systems.
 
 # Software
 
+## Clobbering
+
+- To overwrite, usually unintentionally, often this happens
+  unintentionally, such as using the > redirection operator.
+- https://en.wikipedia.org/wiki/Clobbering
+
 ## Computer Software Engineering
 
 Software engineering is the application of engineering to the
