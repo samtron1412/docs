@@ -161,6 +161,30 @@ Use biber package
 
 # Tips and Tricks
 
+## Add text in math mode
+
+- \text{}
+- https://tex.stackexchange.com/questions/3415/what-is-the-correct-way-of-embedding-text-into-math-mode#3418
+
+## Align multiline equation with indent equal signs
+
+```
+\documentclass{article}
+
+\usepackage{amsmath}
+
+
+\begin{document}
+
+\begin{align*}
+\mathcal{L}^{-1}\left\{f(d)\right\} &= \mathcal{L}^{-1}\left\{f_1(\delta).f_2(\delta)\right\} \\
+                                    &= \exp(mt) \star \left\{\frac{l}{2\sqrt{\pi t^3}} \exp(-l^2/{4t})\right\} \\
+                                    &= F_1 * F_2
+\end{align*}
+
+\end{document}
+```
+
 ## Create posters using LaTeX
 
 - https://tex.stackexchange.com/questions/341/how-to-create-posters-using-latex
