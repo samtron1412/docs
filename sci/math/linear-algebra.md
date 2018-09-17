@@ -35,6 +35,13 @@ https://www.math.ksu.edu/~gerald/leontief.pdf
 
 - http://www-math.mit.edu/~gs/
 
+# Terminology
+
+- Nilpotent matrix: a square matrix N such that N to the k power = 0
+    + https://en.wikipedia.org/wiki/Nilpotent_matrix
+- Rotation matrix: performs a rotation in Euclidean space.
+    + https://en.wikipedia.org/wiki/Rotation_matrix
+
 # References
 
 [outer-product]: https://en.wikipedia.org/wiki/Outer_product
