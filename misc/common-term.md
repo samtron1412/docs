@@ -15,6 +15,11 @@ organized.
 When data is processed, organized, structured or presented in a given
 context so as to make it useful, it is called information.
 
+- energy: the capability to do work
+- information: the capability to distinguish possibilities
+    + info is represented by bit => 1 bit to distinguish two possibilities
+    + info is represented by qbit => 1 qbit can distinguish more than two possibilities
+
 # Knowledge - Understanding
 
 Knowledge is a combination of information, experience and insight.
