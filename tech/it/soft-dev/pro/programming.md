@@ -770,6 +770,10 @@ executes the program's machine code instructions.
 - Finding the determinant of a matrix
 - Quine: https://en.wikipedia.org/wiki/Quine_(computing)
 
+## Interview
+
+- naive solution, brute force solution, optimization, optimal, big o: complexity in time, complexity in memory
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Computer_programming
