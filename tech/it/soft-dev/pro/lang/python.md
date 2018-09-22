@@ -30,6 +30,13 @@ first release: 1991
 
 duck
 
+# Interpreter
+
+- Access the history commands
+    + `Ctrl+p` (previous), `Ctrl+n` (next)
+- Exit a session
+    + `Ctrl+d`
+
 # Virtual Environment
 
 ## Introduction
