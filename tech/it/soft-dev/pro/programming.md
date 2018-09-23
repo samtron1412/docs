@@ -769,6 +769,8 @@ executes the program's machine code instructions.
 - Finding the inverse of a matrix
 - Finding the determinant of a matrix
 - Quine: https://en.wikipedia.org/wiki/Quine_(computing)
+- Newton's method
+- The game of pig: dynamic programming, minimax, hill climbing
 
 ## Interview
 
