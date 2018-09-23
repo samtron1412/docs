@@ -771,6 +771,8 @@ executes the program's machine code instructions.
 - Quine: https://en.wikipedia.org/wiki/Quine_(computing)
 - Newton's method
 - The game of pig: dynamic programming, minimax, hill climbing
+- Implement count partitions without recursion
+- Church numerals
 
 ## Interview
 
