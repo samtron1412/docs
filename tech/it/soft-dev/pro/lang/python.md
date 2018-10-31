@@ -284,7 +284,7 @@ else:
 - sys.exit(): proper way (import sys)
 - raise SystemExit
 
-## Multi-line string
+## Multiline string
 
 - Concatenation
 - Multi-line string syntax
