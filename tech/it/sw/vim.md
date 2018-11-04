@@ -673,9 +673,16 @@ filetype plugin on
 
 # Tips and Tricks
 
-## Indentation
+## Reformatting and Indentation
 
+```reformatting
+V=  - select text, then reformat with =
+=   - will correct alignment of code
+==  - one line;
+gq  - reformat paragraph
 ```
+
+```indentation
 >>   Indent line by shiftwidth spaces
 <<   De-indent line by shiftwidth spaces
 5>>  Indent 5 lines
