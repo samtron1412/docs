@@ -61,6 +61,10 @@ Python
 - http://eigen.tuxfamily.org/index.php?title=Main_Page
 - https://github.com/stevenlovegrove/Pangolin
 
+# Data Science
+
+- https://www.kaggle.com/
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Artificial_intelligence
