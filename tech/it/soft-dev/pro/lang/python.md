@@ -62,11 +62,38 @@ $ source <DIR>/bin/activate
 
 ## Usage
 
+### Common
+
 - Once inside the virtual environment, modules can be installed with pip
   and scripts can be run as normal.
 - To exit the virtual environment, run the function provided by
   `bin/activate`
     + `$ deactivate`
+
+### Mac OS
+
+- Restricting Pip to virtual environments
+
+`vim ~/Library/Application\ Support/pip/pip.conf`
+
+```
+[install]
+require-virtualenv = true
+
+[uninstall]
+require-virtualenv = true
+```
+
+- Install or upgrade global packages:
+
+```~/.bashrc
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="0" pip3 "$@"
+}
+
+// alternative solution
+env PIP_REQUIRE_VIRTUALENV="0" pip3 install --upgrade foobar
+```
 
 # Package Manager
 
