@@ -28,6 +28,7 @@
 - HOW do we learn? Learning how to learn.
 
 # Specialization vs Generalization
+
 - Elon Musk, Bill Gates, Mark Zuckerberg are using both methods to have
   a better learning process.
 - [Analogy and Analogical Reasoning][2]
@@ -44,6 +45,14 @@ right way to learn is relative. Thus, everyone needs to find his or her
 own way of learning.
 
 -
+
+## Reasons of ignorance
+
++ Skewed info
+    - Personal bias
+    - Outdated facts
+    - News bias: sensational, exaggerated
++ Intuition: generalize and jump to conclusion very fast
 
 # References
 
