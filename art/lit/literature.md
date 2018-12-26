@@ -6,6 +6,16 @@
 
 Something
 
+# Chinese
+
+
+# World
+
+- Epic of Gilgamesh
+    + https://en.wikipedia.org/wiki/Epic_of_Gilgamesh
+    + An epic poem from ancient Mesopotamia that is often regarded as
+      the earliest surviving great work of literature
+
 # References
 
 [fairy-tale]: https://en.wikipedia.org/wiki/Fairy_tale
