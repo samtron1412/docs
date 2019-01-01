@@ -95,6 +95,15 @@ gpip(){
 env PIP_REQUIRE_VIRTUALENV="0" pip3 install --upgrade foobar
 ```
 
+## Sharing the virtual environment
+
+https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
+
+- Backing up : `pip freeze > requirements.txt`
+- Rebuild:
+    + Using the appropriate Python version: `virtualenv --python=/usr/bin/pythonX.Y /home/myusername/path/to/virtualenv`
+    + Reinstall packages: `pip install -r requirements.txt`
+
 # Package Manager
 
 ## Introduction
