@@ -13,6 +13,18 @@ Mac OS
 
 # Tips and Tricks
 
+## Replace the old hard disk with a new one
+
+- Boot to the Recovery Mode by Restart and holding down Command+R
+    + Start Disk Utility and delete any volumes on the new disk and
+      erase the disk, format the disk using appropriate file systems
+        * APFS: the newest file system
+        * HFS: the old file system since 1998
+    + When erase the disk using GUID partition scheme
+- Quit Disk Utility and Reinstall the macOS on the new hard disk
+    + During the installation, choose transferring data from the old
+      disk to the new disk
+
 ## Key repeat
 
 - Hold a key and it will repeat the key in Sublime Text in vim mode
