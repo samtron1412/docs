@@ -328,6 +328,7 @@ reactions and change the course of allergic disease by modifying the
 body’s immune response to allergens.
 
 - https://en.wikipedia.org/wiki/Allergen_immunotherapy
+- Banophen 25mg cap
 
 ### How Can I Prevent Allergic Rhinitis?
 
