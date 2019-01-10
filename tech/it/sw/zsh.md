@@ -121,6 +121,22 @@ details.
 
 # Uninstallation
 
+# Tips and Tricks
+
+## MacOS
+
+- Confirm version and location of zsh
+    + `zsh --version`
+    + `which zsh`: /usr/local/bin/zsh => brew; /usr/bin => native zsh
+- Confirm the current default shell for a user
+    + `dscl . -read /Users/$USER UserShell`
+    + `.` is short for localhost
+- Change shell
+    + `dscl . -create /Users/$USER /usr/local/bin/zsh`
+    + or you can use `chsh -s /usr/local/bin/zsh`
+    + or you can go in : Settings => Users & Groups => right click on
+      user name and choose Advanced Options...
+
 # References
 
 [zsh]: http://www.zsh.org/
