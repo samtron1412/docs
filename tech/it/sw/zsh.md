@@ -124,6 +124,17 @@ details.
   commands in the history
 - VERY USEFUL
 
+## jump
+
+- jumps around the file system by manually adding marks
+
+```
+# jump FOO: jump to a mark named FOO
+# mark FOO: create a mark named FOO
+# unmark FOO: delete a mark
+# marks: lists all marks
+```
+
 
 # Theme
 
