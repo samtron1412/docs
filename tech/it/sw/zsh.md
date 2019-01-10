@@ -101,23 +101,33 @@ details.
 
 ## git
 
+- add many aliases and functions
+
 ## [z](https://github.com/rupa/z)
+
+- Jump to places based on frequency
+- `z foo`
 
 ## vi-mode
 
+- vi-like functionality
+- manual:
+   + https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode
+   + `ctrl-p` or `k`: previous command
+   + `ctrl-n` or `j`: next command
+   + `/`: search backward
+   + `n`: repeat the last `/`
+
 ## history-substring-search
 
-## sudo
+- typing part of a command and using UP, DOWN or `k`, `j` to match
+  commands in the history
+- VERY USEFUL
 
-## sublime
 
-## tmux
+# Theme
 
-## tmuxinator
-
-## prompt
-
-### robbyrussell
+- robbyrussell
 
 # Uninstallation
 
