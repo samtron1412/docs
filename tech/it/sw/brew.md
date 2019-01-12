@@ -64,3 +64,7 @@
     + `mas outdated`
     + `mas upgrade` or `mas upgrade <app_id>`
     + `mas signin --dialog mas@example.com`: sign in
+    + `mas account`: account info
+    + `mas info <app_id>`
+    + `mas uninstall <app_id> [--dry-run]`
+    + `mas version`
