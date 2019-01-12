@@ -38,3 +38,29 @@
 - Remove a package with its dependencies:
     + `brew tap beeftornado/rmtree`
     + `brew rmtree <pkg>`
+- Bundle
+    + Install
+        * `brew bundle`: looking for `Brewfile` in the current directory
+          and install all the formulae in the file
+        * `brew bundle --file <path/to/a/different/Brewfile>`
+    + Dump
+        * `brew bundle dump`: create a `Brewfile` from all existing
+          Homebrew packages at the current directory
+        * `brew bundle dump --force`: overwrite an existing Brewfile
+        * `brew bundle dump [--force] --describe`: output a description
+          comment above each line
+    + Cleanup
+        * `brew bundle cleanup`: listing all packages that are not
+          listed in the Brewfile
+        * `brew bundle cleanup --force`: uninstall them
+    + Check: `brew bundle check [--verbose]`
+    + List
+        * `brew bundle list --all [--casks, --taps, --mas, --brews]`
+        * default `--brews`
+- mas: Mac App Store
+    + `mas list`
+    + `mas search Xcode [--price]`
+    + `mas install <app_id>`: application identifier
+    + `mas outdated`
+    + `mas upgrade` or `mas upgrade <app_id>`
+    + `mas signin --dialog mas@example.com`: sign in
