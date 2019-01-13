@@ -260,6 +260,11 @@ All documents about different vehicles and its technology.
 
 ### manga
 
+# Similar Repositories
+
+- https://github.com/nikitavoloboev/knowledge
+- https://github.com/RichardLitt/meta-knowledge
+
 # License
 
 [MIT](LICENSE)
