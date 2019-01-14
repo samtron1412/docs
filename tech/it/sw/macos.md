@@ -11,6 +11,50 @@ Mac OS
 - https://github.com/iCHAIT/awesome-macOS
 - https://github.com/jaywcjlove/awesome-mac
 
+# Application and Work flows
+
+## Productivity
+
+- Alfred/Quicksilver: launcher
+- Karabiner: keyboard remapping
+- Keyboard Maestro: automation tool
+    + [Hammerspoon](http://www.hammerspoon.org/)
+- emacs org-mode: todo list and task management
+- Google Calendar: notes (Google Keep), todo list (Google Tasks)
+- docs, pri-doc, etc.: project management, Trello alternative
+- lastpass
+- Dictionary (built-in)
+- [Focus](https://heyfocus.com/): block distracting websites
+- [Timing](https://timingapp.com/?): time tracker
+- PDF Expert + PDF Foxit reader
+- sVim (github): vim-like safari extension
+- hugo: the fastest way to build a static website
+- speedtest-cli
+- fkill: an alternative for kill, can search, interactive UI
+    + Install: `npm install --global fkill-cli`
+- yarn: nodejs package manager
+- nvm: node version manager
+
+## Command-line tools
+
+- fzf: command-line fuzzy finder
+- ripgrep: search text for patterns
+- fd: a simple alternative for find
+- exa: an alternative for ls
+- bat: an alternative for cat
+- m-cli: manage macOS administrative tasks
+- diskutil: built-in macOS command line (similar lsblk)
+- pbcopy, pbpaste: built-in macOS command line (copy and paste to
+  Clipboard)
+
+
+## Game
+
+- Battle for Wesnoth
+- Chess (built in)
+- OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
+- A Slower Speed of Light
+
 # Tips and Tricks
 
 ## Replace the old hard disk with a new one
