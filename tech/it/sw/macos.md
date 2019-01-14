@@ -34,6 +34,7 @@ Mac OS
     + Install: `npm install --global fkill-cli`
 - yarn: nodejs package manager
 - nvm: node version manager
+- jenv: java version manager
 
 ## Command-line tools
 
