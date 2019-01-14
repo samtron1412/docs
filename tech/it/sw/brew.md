@@ -68,3 +68,5 @@
     + `mas info <app_id>`
     + `mas uninstall <app_id> [--dry-run]`
     + `mas version`
+- Different versions of a package
+    + `brew tap caskroom/versions`
