@@ -155,9 +155,6 @@ Use to install offline, manual package at local.
 Use package manager to install packages, change repositories to have
 best speed.
 
-## Bibliography
-
-Use biber package
 
 # Tips and Tricks
 
