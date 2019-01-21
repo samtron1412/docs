@@ -740,8 +740,16 @@ extension is `.vim`.
 
 - http://alvinalexander.com/linux-unix/vimrc-vim-example-commands-configuration-file
 - [change color of vim](http://alvinalexander.com/linux/vi-vim-editor-color-scheme-colorscheme)
-`:colorscheme delek` or `:colo delek`
-`:syntax on`
+- [color names](https://codeyarns.com/2011/07/29/vim-chart-of-color-names/)
+- Change cursor line colors
+    + `highlight CursorLine ctermbg=DarkBlue`
+    + ctermfg, guifg, guibg
+- Colorscheme:
+    + `:colorscheme delek` or `:colo delek`
+    + monokai
+        * https://github.com/phanviet/vim-monokai-pro
+        * https://github.com/patstockwell/vim-monokai-tasty
+- `:syntax on`
 - Copy text and paste and recopy it to paste more time: `xnoremap p pgvy`
 - [.vimrc template](http://amix.dk/vim/vimrc.html)
 - [A good vimrc](http://dougblack.io/words/a-good-vimrc.html)
