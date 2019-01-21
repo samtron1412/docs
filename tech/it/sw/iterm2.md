@@ -19,3 +19,12 @@
     + Style: Full-Height Right of Screen
     + Screen: No preference
     + Space: Current Space
+
+## Cursor style
+
+- iterm2 > Preferences > Profiles > Colors
+    + Cursor guide: cursor line
+    + Smart box cursor color
+- iterm2 > Preferences > Profiles > Text
+    + Uncheck blinking cursor
+    + Shape: Vertical bar
