@@ -790,6 +790,9 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 
 # Troubleshooting
 
+## Error: * not found *
+
+- Check runtime path: `:set runtimepath?`
 
 # References
 
