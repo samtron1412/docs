@@ -676,6 +676,63 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Better colorscheme and looking for vim, iterm2, tmux
+
+- https://web.archive.org/web/20190121063455/https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be
+
+### configure terminfo
+
+- Create a file `xterm-256color-italic.terminfo`
+
+```
+xterm-256color-italic|xterm with 256 colors and italic,
+  sitm=\E[3m, ritm=\E[23m,
+  use=xterm-256color,
+```
+
+- Create a file `tmux-256color.terminfo`
+
+```
+tmux-256color|tmux with 256 colors,
+  ritm=\E[23m, rmso=\E[27m, sitm=\E[3m, smso=\E[7m, Ms@,
+  khome=\E[1~, kend=\E[4~,
+  use=xterm-256color, use=screen-256color,
+```
+
+- Install terminfos
+
+```
+$ tic -x xterm-256color-italic.terminfo
+$ tic -x tmux-256color.terminfo
+```
+
+### Configure iTerm2
+
+Go to Preferences > Profiles > Default.
+
+Make sure Text > Italic text allowed is checked.
+
+Set Terminal > Report Terminal Type to xterm-256color-italic.
+
+This essentially sets the value of the environment variable TERM, which
+you could also set in your ~/.bashrc etc, depending on how you want to
+store your settings.
+
+### Configure tmux
+
+Add this to your ~/.tmux.conf:
+
+```
+set -g default-terminal 'tmux-256color'
+set -as terminal-overrides ',xterm*:Tc:sitm=\E[3m'
+```
+
+This again sets TERM inside tmux. The second line is even more important
+though: Tc allows vim to enable true colours, and and sitm allows the
+same with italics.
+
+
+
 ## Config the Cursor
 
 - http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
