@@ -676,6 +676,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Config the Cursor
+
+- http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+- http://vim.wikia.com/wiki/Configuring_the_cursor
+
 ## Reformatting and Indentation
 
 ```reformatting
