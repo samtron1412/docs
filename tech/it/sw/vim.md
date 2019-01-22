@@ -78,7 +78,10 @@ http://www.vim.org/docs.php
 ### Books
 
 - [Books](http://iccf-holland.org/click5.html)
+- Practical Vim - 2nd edition
 - [Modern Vim](https://pragprog.com/book/modvim/modern-vim)
+- Learn Vimscript the Hard Way
+    + http://learnvimscriptthehardway.stevelosh.com/
 
 # Getting started
 
@@ -778,6 +781,16 @@ set wrap
 ```
 
 ## Plugins
+
+### Language pack
+
+- https://github.com/sheerun/vim-polyglot
+    + List of useful plugins
+
+### ultisnip
+
+- https://github.com/SirVer/ultisnips
+    + Snippets
 
 ### [Powerline](https://github.com/powerline/powerline)
 
