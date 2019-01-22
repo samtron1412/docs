@@ -782,6 +782,13 @@ set wrap
 
 ## Plugins
 
+### Colorscheme
+
+- https://github.com/morhetz/gruvbox
+    + Terminal specific: https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+    + iterm2, tmux
+    + https://web.archive.org/web/20190121063455/https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be
+
 ### Language pack
 
 - https://github.com/sheerun/vim-polyglot
