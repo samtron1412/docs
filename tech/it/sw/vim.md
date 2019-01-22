@@ -782,12 +782,15 @@ set wrap
 
 ## Plugins
 
+- https://vimawesome.com/
+
 ### Colorscheme
 
 - https://github.com/morhetz/gruvbox
     + Terminal specific: https://github.com/morhetz/gruvbox/wiki/Terminal-specific
     + iterm2, tmux
     + https://web.archive.org/web/20190121063455/https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be
+- http://vimcolors.com/
 
 ### Language pack
 
@@ -798,6 +801,58 @@ set wrap
 
 - https://github.com/SirVer/ultisnips
     + Snippets
+
+### Motion
+
+- https://github.com/easymotion/vim-easymotion
+- https://github.com/justinmk/vim-sneak
+- https://github.com/kshenoy/vim-signature
+
+### Fuzzy Finder
+
+- https://github.com/kien/ctrlp.vim
+- https://github.com/junegunn/fzf.vim
+
+### Status line
+
+- https://github.com/itchyny/lightline.vim
+- https://github.com/vim-airline/vim-airline
+
+### Version control system
+
+- https://vimawesome.com/plugin/fugitive-vim
+- https://github.com/airblade/vim-gitgutter
+- https://github.com/mhinz/vim-signify
+
+### Coding
+
+- https://github.com/vim-syntastic/syntastic
+- https://github.com/w0rp/ale
+- Class outline: https://vimawesome.com/plugin/tagbar
+- https://vimawesome.com/plugin/the-nerd-commenter
+- https://vimawesome.com/plugin/commentary-vim
+- https://vimawesome.com/plugin/youcompleteme
+
+### Start screen with most recent used
+
+- https://github.com/mhinz/vim-startify
+
+### NERDTree
+
+- https://github.com/scrooloose/nerdtree
+
+### Editing
+
+- https://github.com/tpope/vim-surround
+- https://github.com/terryma/vim-multiple-cursors
+- https://github.com/Yggdroot/indentLine
+- https://github.com/mattn/emmet-vim
+- https://vimawesome.com/plugin/tabular
+
+
+### Productivity
+
+- https://vimawesome.com/plugin/vim-orgmode
 
 ### [Powerline](https://github.com/powerline/powerline)
 
