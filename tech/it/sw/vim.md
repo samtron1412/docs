@@ -244,11 +244,11 @@ The most common operators:
 
 - Tim Pope's `commentary.vim` plugin: this adds a command for commenting
   and uncommenting lines of code in all languages supported by Vim.
-- The commentary command is triggered by `\\{motion}`, which toggles
+- The commentary command is triggered by `gc{motion}`, which toggles
   commenting for the specified lines. It's an operator command, so we
-  can combine it with all of the usual motions. `\\ap` will toggle
-  commenting for the current paragraph. `\\G` comments from the current
-  line to the end of the file. `\\\` comments the current line.
+  can combine it with all of the usual motions. `gcap` will toggle
+  commenting for the current paragraph. `gcG` comments from the current
+  line to the end of the file. `gcc` comments the current line.
 - How to create your own custom operators: `:h :map-operator`.
 
 ##### Custom Motions Work with existing operators
