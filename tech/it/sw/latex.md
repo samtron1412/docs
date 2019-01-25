@@ -123,7 +123,13 @@ ams­fonts.sty, with names of in­di­vid­ual sym­bols de­fined in
 amssymb.sty. The Euler fonts are sup­ported by sep­a­rate pack­ages;
 de­tails can be found in the doc­u­men­ta­tion.
 
+### cancel
 
+Place lines through maths formulae.
+
+A pack­age to draw di­ag­o­nal lines (“can­celling” a term) and ar­rows
+with lim­its (can­celling a term “to a value”) through parts of maths
+for­mu­lae.
 
 ### [urlbst](http://nxg.me.uk/dist/urlbst/)
 
