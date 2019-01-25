@@ -21,6 +21,31 @@ set of ini files for about 200 lan­guages.
 Many lan­guage styles work with pdfLATEX, as well as with XELATEX and
 LuaLATEX, out of the box. A few even work with plain for­mats.
 
+```
+\usepackage[english]{babel}
+```
+
+### csquotes
+
+Context sensitive quotation facilities.
+
+This pack­age pro­vides ad­vanced fa­cil­i­ties for in­line and dis­play
+quo­ta­tions. It is de­signed for a wide range of tasks rang­ing from
+the most sim­ple ap­pli­ca­tions to the more com­plex de­mands of
+for­mal quo­ta­tions. The fa­cil­i­ties in­clude com­mands,
+en­vi­ron­ments, and user-de­fin­able ‘smart quotes’ which
+dy­nam­i­cally ad­just to their con­text. Quo­ta­tion marks are switched
+au­to­mat­i­cally if quo­ta­tions are nested and they can be ad­justed
+to the cur­rent lan­guage if the ba­bel pack­age is avail­able. There
+are ad­di­tional fa­cil­i­ties de­signed to cope with the more spe­cific
+de­mands of aca­demic writ­ing, es­pe­cially in the hu­man­i­ties and
+the so­cial sci­ences. All quote styles as well as the op­tional ac­tive
+quotes are freely con­fig­urable.
+
+```
+\usepackage[autostyle, english = american]{csquotes}
+```
+
 ### [nag](http://www.ctan.org/pkg/nag)
 
 Warns when you accidentally use deprecated LaTeX constructs from
