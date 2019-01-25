@@ -64,6 +64,17 @@ hyphenation, and fewer overfull *hboxes*.
 
 Extensive support for hypertext in LATEX.
 
+The hy­per­ref pack­age is used to han­dle cross-ref­er­enc­ing
+com­mands in LATEX to pro­duce hy­per­text links in the doc­u­ment. The
+pack­age pro­vides back­ends for the \spe­cial set de­fined for HyperTEX
+DVI pro­ces­sors; for em­bed­ded pdf­mark com­mands for pro­cess­ing by
+Acro­bat Dis­tiller (dvips and Y&Y’s dvip­sone); for Y&Y’s dvi­windo;
+for PDF con­trol within pdfTEX and dvipdfm; for TEX4ht; and for VTEX’s
+pdf and HTML back­ends.
+
+The pack­age is dis­tributed with the back­ref and nameref pack­ages,
+which make use of the fa­cil­i­ties of hy­per­ref.
+
 ## [geometry](http://www.ctan.org/pkg/geometry)
 
 Flexible and complete interface to document dimensions.
