@@ -676,6 +676,19 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Jump Back To Previous or Last Cursor Position
+
+```
+
+[a] '. : Jump to last modification line.
+
+[b] `. : Jump to exact spot in last modification line
+
+[c] CTRL-O : Retrace your movements in file in backwards.
+
+[d] CTRL-I : Retrace your movements in file in forwards.
+```
+
 ## Better colorscheme and looking for vim, iterm2, tmux
 
 - https://web.archive.org/web/20190121063455/https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be
