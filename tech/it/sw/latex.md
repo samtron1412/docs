@@ -186,11 +186,23 @@ Typeset fiction, non-fiction and mathematical books
 A bundle of versatile classes and packages.
 
 
-## [TikZ](http://sourceforge.net/projects/pgf/)
+## [pgf-TikZ](http://sourceforge.net/projects/pgf/)
+
+Create PostScript and PDF graphics in TEX.
 
 TikZ and PGF are TeX packages for creating graphics programmatically.
 TikZ is build on top of PGF and allows you to create sophisticated
 graphics in a rather intuitive and easy manner.
+
+PGF is a macro pack­age for cre­at­ing graph­ics. It is plat­form- and
+for­mat-in­de­pen­dent and works to­gether with the most im­por­tant TEX
+back­end drivers, in­clud­ing pdfTEX and dvips. It comes with a
+user-friendly syn­tax layer called TikZ.
+
+Its us­age is sim­i­lar to pstricks and the stan­dard pic­ture
+en­vi­ron­ment. PGF works with plain (pdf-)TEX, (pdf-)LATEX, and
+ConTEXt. Un­like pstricks, it can pro­duce ei­ther PostScript or PDF
+out­put.
 
 ## graphicx
 
