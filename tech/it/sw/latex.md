@@ -4,6 +4,23 @@
 
 ## Packages should load in LaTeX
 
+### babel
+
+Multilingual support for Plain TeX or LaTeX.
+
+This pack­age man­ages cul­tur­ally-de­ter­mined ty­po­graph­i­cal (and
+other) rules for a wide range of lan­guages. A doc­u­ment may se­lect a
+sin­gle lan­guage to be sup­ported, or it may se­lect sev­eral, in which
+case the doc­u­ment may switch from one lan­guage to an­other in a
+va­ri­ety of ways.
+
+Ba­bel uses con­tributed con­fig­u­ra­tion files that pro­vide the
+de­tail of what has to be done for each lan­guage. In­cluded is also a
+set of ini files for about 200 lan­guages.
+
+Many lan­guage styles work with pdfLATEX, as well as with XELATEX and
+LuaLATEX, out of the box. A few even work with plain for­mats.
+
 ### [nag](http://www.ctan.org/pkg/nag)
 
 Warns when you accidentally use deprecated LaTeX constructs from
