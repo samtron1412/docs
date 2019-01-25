@@ -158,7 +158,20 @@ TikZ and PGF are TeX packages for creating graphics programmatically.
 TikZ is build on top of PGF and allows you to create sophisticated
 graphics in a rather intuitive and easy manner.
 
-### [graphicx]()
+### graphicx
+
+Enhanced support for graphics.
+
+The pack­age builds upon the graph­ics pack­age, pro­vid­ing a key-value
+in­ter­face for op­tional ar­gu­ments to the \in­clude­graph­ics
+com­mand. This in­ter­face pro­vides fa­cil­i­ties that go far be­yond
+what the graph­ics pack­age of­fers on its own.
+
+For ex­tended doc­u­men­ta­tion, see ep­s­la­tex.
+
+The pack­age is part of the la­tex-graph­ics bun­dle, which is one of
+the col­lec­tions in the LATEX ‘re­quired’ set of pack­ages.
+
 
 ### enumerate
 
