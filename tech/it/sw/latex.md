@@ -179,7 +179,12 @@ enumerated environment
 
 ### fancyhdr
 
-Create header
+Extensive control of page headers and footers in LATEX2ε.
+
+The pack­age pro­vides ex­ten­sive fa­cil­i­ties, both for
+con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
+(for ex­am­ple, at times when LATEX would au­to­mat­i­cally change the
+head­ing style in use).
 
 ### longtable
 
