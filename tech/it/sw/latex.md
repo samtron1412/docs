@@ -132,6 +132,31 @@ ams­fonts.sty, with names of in­di­vid­ual sym­bols de­fined in
 amssymb.sty. The Euler fonts are sup­ported by sep­a­rate pack­ages;
 de­tails can be found in the doc­u­men­ta­tion.
 
+## mathtools
+
+Mathematical tools to use with amsmath.
+
+It will load amsmath if it's not loaded.
+
+Math­tools pro­vides a se­ries of pack­ages de­signed to en­hance the
+ap­pear­ance of doc­u­ments con­tain­ing a lot of math­e­mat­ics. The
+main back­bone is ams­math, so those un­fa­mil­iar with this re­quired
+part of the LATEX sys­tem will prob­a­bly not find the pack­ages very
+use­ful.
+
+Math­tools pro­vides many use­ful tools for math­e­mat­i­cal
+type­set­ting. It is based on ams­math and fixes var­i­ous
+de­fi­cien­cies of ams­math and stan­dard LATEX. It pro­vides:
+
+Ex­ten­si­ble sym­bols, such as brack­ets, ar­rows, har­poons, etc.;
+Var­i­ous sym­bols such as \coloneqq (:=); Easy cre­ation of new tag
+forms; Show­ing equa­tion num­bers only for ref­er­enced equa­tions;
+Ex­ten­si­ble ar­rows, har­poons and hookar­rows; Starred ver­sions of
+the ams­math ma­trix en­vi­ron­ments for spec­i­fy­ing the col­umn
+align­ment; More build­ing blocks: mult­lined, cases-like
+en­vi­ron­ments, new gath­ered en­vi­ron­ments; Maths ver­sions of
+\make­box, \llap, \rlap etc.; Cramped math styles; and more...
+
 ## cancel
 
 Place lines through maths formulae.
