@@ -171,9 +171,17 @@ The pack­age is part of the la­tex-graph­ics bun­dle, which is one of
 the col­lec­tions in the LATEX ‘re­quired’ set of pack­ages.
 
 
-## enumerate
+## enumitem
 
-enumerated environment
+Control layout of itemize, enumerate, description.
+
+This pack­age pro­vides user con­trol over the lay­out of the three
+ba­sic list en­vi­ron­ments: enu­mer­ate, item­ize and de­scrip­tion. It
+su­per­sedes both enu­mer­ate and md­wlist (pro­vid­ing well-struc­tured
+re­place­ments for all their fun­tion­al­ity), and in ad­di­tion
+pro­vides func­tions to com­pute the lay­out of la­bels, and to ‘clone’
+the stan­dard en­vi­ron­ments, to cre­ate new en­vi­ron­ments with
+coun­ters of their own.
 
 ## fancyhdr
 
