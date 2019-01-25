@@ -1,10 +1,8 @@
 [TOC]
 
-# LaTeX
+# Packages
 
-## Packages should load in LaTeX
-
-### babel
+## babel
 
 Multilingual support for Plain TeX or LaTeX.
 
@@ -25,7 +23,7 @@ LuaLATEX, out of the box. A few even work with plain for­mats.
 \usepackage[english]{babel}
 ```
 
-### csquotes
+## csquotes
 
 Context sensitive quotation facilities.
 
@@ -46,14 +44,14 @@ quotes are freely con­fig­urable.
 \usepackage[autostyle, english = american]{csquotes}
 ```
 
-### [nag](http://www.ctan.org/pkg/nag)
+## [nag](http://www.ctan.org/pkg/nag)
 
 Warns when you accidentally use deprecated LaTeX constructs from
 **l2tabu**. Place below line before the `\documentclass`:
 
 `\RequirePackage[l2tabu, orthodox]{nag}`
 
-### [microtype](http://www.ctan.org/pkg/microtype)
+## [microtype](http://www.ctan.org/pkg/microtype)
 
 It plays with ever-so-slightly shrinking and stretching of the fonts and
 with the extent to which text protrudes into the margins in a way that
@@ -62,15 +60,15 @@ hyphenation, and fewer overfull *hboxes*.
 
 `\usepackage[stretch=10]{microtype}`
 
-### [hyperref](http://tug.org/applications/hyperref/)
+## [hyperref](http://tug.org/applications/hyperref/)
 
 Extensive support for hypertext in LATEX.
 
-### [geometry](http://www.ctan.org/pkg/geometry)
+## [geometry](http://www.ctan.org/pkg/geometry)
 
 Flexible and complete interface to document dimensions.
 
-### [amsmath](http://ctan.org/pkg/amsmath)
+## [amsmath](http://ctan.org/pkg/amsmath)
 
 AMS mathematical facilities for LATEX.
 
@@ -89,7 +87,7 @@ ex­am­ples are em­pheq, which pro­vides func­tions for dec­o­rat­ing and
 high­light­ing math­e­mat­ics, and nthe­o­rem, for spec­i­fy­ing
 the­o­rem (and sim­i­lar) def­i­ni­tions.
 
-### amsthm
+## amsthm
 
 Typesetting theorems (AMS style).
 
@@ -102,7 +100,7 @@ it can be used with other doc­u­ment classes.
 Am­sthm is part of the (re­quired) AMS-LATEX dis­tri­bu­tion, so should
 be present in any LATEX dis­tri­bu­tion.
 
-### amsfonts
+## amsfonts
 
 TEX fonts from the American Mathematical Society.
 
@@ -123,7 +121,7 @@ ams­fonts.sty, with names of in­di­vid­ual sym­bols de­fined in
 amssymb.sty. The Euler fonts are sup­ported by sep­a­rate pack­ages;
 de­tails can be found in the doc­u­men­ta­tion.
 
-### cancel
+## cancel
 
 Place lines through maths formulae.
 
@@ -131,34 +129,34 @@ A pack­age to draw di­ag­o­nal lines (“can­celling” a term) and ar­row
 with lim­its (can­celling a term “to a value”) through parts of maths
 for­mu­lae.
 
-### [urlbst](http://nxg.me.uk/dist/urlbst/)
+## [urlbst](http://nxg.me.uk/dist/urlbst/)
 
 Web support for BibTEX.
 
-### [booktabs](http://www.ctan.org/pkg/booktabs)
+## [booktabs](http://www.ctan.org/pkg/booktabs)
 
 Publication quality tables in LATEX.
 
-### [array](http://www.ctan.org/pkg/array)
+## [array](http://www.ctan.org/pkg/array)
 
 Extending the array and tabular environments.
 
-### [memoir](http://www.ctan.org/pkg/memoir)
+## [memoir](http://www.ctan.org/pkg/memoir)
 
 Typeset fiction, non-fiction and mathematical books
 
-### [koma-script](http://www.ctan.org/pkg/koma-script)
+## [koma-script](http://www.ctan.org/pkg/koma-script)
 
 A bundle of versatile classes and packages.
 
 
-### [TikZ](http://sourceforge.net/projects/pgf/)
+## [TikZ](http://sourceforge.net/projects/pgf/)
 
 TikZ and PGF are TeX packages for creating graphics programmatically.
 TikZ is build on top of PGF and allows you to create sophisticated
 graphics in a rather intuitive and easy manner.
 
-### graphicx
+## graphicx
 
 Enhanced support for graphics.
 
@@ -173,11 +171,11 @@ The pack­age is part of the la­tex-graph­ics bun­dle, which is one of
 the col­lec­tions in the LATEX ‘re­quired’ set of pack­ages.
 
 
-### enumerate
+## enumerate
 
 enumerated environment
 
-### fancyhdr
+## fancyhdr
 
 Extensive control of page headers and footers in LATEX2ε.
 
@@ -186,23 +184,23 @@ con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
 (for ex­am­ple, at times when LATEX would au­to­mat­i­cally change the
 head­ing style in use).
 
-### longtable
+## longtable
 
-### [listing](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/)
+## [listing](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/)
 
-### [verbatim]()
+## [verbatim]()
 
-## Bibliography
+# Bibliography
 
-### Back-end bibliography processor
+## Back-end bibliography processor
 
-#### [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
+### [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
 
 BibTeX is reference management software for formatting lists of
 references. BibTeX was created by Oren Patashnik and Leslie Lamport in
 1985. It is written in WEB/Pascal.
 
-##### Basic structure
+#### Basic structure
 
 Input:
 
@@ -214,9 +212,9 @@ BibTeX chooses from the `.bib` file(s) only those entries specified by the `.aux
 
 `aux + bib -> bbl + bib -> ref list`
 
-##### [Style examples](http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html)
+#### [Style examples](http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html)
 
-##### [bib file](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
+#### [bib file](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
 
 - Cross-referencing.
 - Using more than one bib file.
@@ -224,17 +222,19 @@ BibTeX chooses from the `.bib` file(s) only those entries specified by the `.aux
 	+ @COMMENT{...}
 
 
-#### [Biber](http://biblatex-biber.sourceforge.net/)
+### [Biber](http://biblatex-biber.sourceforge.net/)
 
 [manual](http://mirrors.ctan.org/biblio/biber/documentation/biber.pdf)
 
-### Packages
+## Packages
+
 - `\cite{cite_key}`
 - `\cite[p.~215]{citation01}`
 - `\cite{citation01,citation02,citation03}`
 - `\nocite{citation01}` : ref appear in bibliography but not where it is ref in the main text.
 
-#### [natbib](http://ctan.org/pkg/natbib)
+### [natbib](http://ctan.org/pkg/natbib)
+
 [ref sheet](http://merkel.zoneo.net/Latex/natbib.php)
 
 - `\usepackage[options]{natbib}`
@@ -250,7 +250,7 @@ BibTeX chooses from the `.bib` file(s) only those entries specified by the `.aux
 		  <img src="latexFigures/stylesnatbib.png" alt="Styles compatible with Natbib" title="Styles compatible with Natbib">
 		</figure>
 
-#### [biblatex](http://www.ctan.org/pkg/biblatex)
+### [biblatex](http://www.ctan.org/pkg/biblatex)
 
 
 # Tutorial
