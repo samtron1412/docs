@@ -70,7 +70,61 @@ Extensive support for hypertext in LATEX.
 
 Flexible and complete interface to document dimensions.
 
-### [AMS math packages](http://ctan.org/pkg/amsmath)
+### [amsmath](http://ctan.org/pkg/amsmath)
+
+AMS mathematical facilities for LATEX.
+
+The prin­ci­pal pack­age in the AMS-LATEX dis­tri­bu­tion. It adapts for
+use in LATEX most of the math­e­mat­i­cal fea­tures found in AMS-TEX; it
+is highly rec­om­mended as an ad­junct to se­ri­ous math­e­mat­i­cal
+type­set­ting in LATEX.
+
+When ams­math is loaded, AMS-LATEX pack­ages ams­bsy (for bold
+sym­bols), am­sopn (for op­er­a­tor names) and am­s­text (for text
+em­bed­ded in math­e­mat­ics) are also loaded.
+
+ams­math is part of the LATEX re­quired dis­tri­bu­tion; how­ever,
+sev­eral con­tributed pack­ages add still fur­ther to its ap­peal;
+ex­am­ples are em­pheq, which pro­vides func­tions for dec­o­rat­ing and
+high­light­ing math­e­mat­ics, and nthe­o­rem, for spec­i­fy­ing
+the­o­rem (and sim­i­lar) def­i­ni­tions.
+
+### amsthm
+
+Typesetting theorems (AMS style).
+
+The pack­age fa­cil­i­tates the kind of the­o­rem setup typ­i­cally
+needed in Amer­i­can Math­e­mat­i­cal So­ci­ety pub­li­ca­tions. The
+pack­age of­fers the the­o­rem setup of the AMS doc­u­ment classes
+(am­sart, ams­book, etc.) en­cap­su­lated in LATEX pack­age form so that
+it can be used with other doc­u­ment classes.
+
+Am­sthm is part of the (re­quired) AMS-LATEX dis­tri­bu­tion, so should
+be present in any LATEX dis­tri­bu­tion.
+
+### amsfonts
+
+TEX fonts from the American Mathematical Society.
+
+An ex­tended set of fonts for use in math­e­mat­ics, in­clud­ing: ex­tra
+math­e­mat­i­cal sym­bols; black­board bold let­ters (up­per­case only);
+frak­tur let­ters; sub­script sizes of bold math italic and bold Greek
+let­ters; sub­script sizes of large sym­bols such as sum and prod­uct;
+added sizes of the Com­puter Modern small caps font; cyril­lic fonts
+(from the Univer­sity of Wash­ing­ton); Euler math­e­mat­i­cal fonts.
+All fonts are pro­vided as Adobe Type 1 files, and all ex­cept the Euler
+fonts are pro­vided as METAFONT source.
+
+The dis­tri­bu­tion also in­cludes the canon­i­cal Type 1 ver­sions of
+the Com­puter Modern fam­ily of fonts.
+
+Ba­sic LATEX sup­port for the sym­bol fonts is pro­vided by
+ams­fonts.sty, with names of in­di­vid­ual sym­bols de­fined in
+amssymb.sty. The Euler fonts are sup­ported by sep­a­rate pack­ages;
+de­tails can be found in the doc­u­men­ta­tion.
+
+
+
 ### [urlbst](http://nxg.me.uk/dist/urlbst/)
 
 Web support for BibTEX.
