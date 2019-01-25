@@ -240,6 +240,16 @@ con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
 (for ex­am­ple, at times when LATEX would au­to­mat­i­cally change the
 head­ing style in use).
 
+## mdframed
+
+Framed environments that can split at page boundaries.
+
+The pack­age de­vel­ops the fa­cil­i­ties of framed in pro­vid­ing
+break­able framed and coloured boxes.
+
+The user may in­struct the pack­age to per­form its op­er­a­tions us­ing
+de­fault LATEX com­mands, PStricks or TikZ.
+
 ## longtable
 
 ## [listing](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/)
