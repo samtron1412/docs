@@ -8,6 +8,7 @@
 - Install: `brew install <pkg>`
 - Uninstall: `brew uninstall <pkg>`
 - Update: `brew update`
+- List outdated packages: `brew outdated`
 - Upgrade: `brew upgrade`
 - List all packages: `brew list`
 - Search a package: `brew search <text>`
