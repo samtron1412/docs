@@ -314,6 +314,62 @@ else:
 
 # Tips and Tricks
 
+## Broken references in Virtualenvs
+
+```
+dyld: Library not loaded: @executable_path/../.Python
+  Referenced from: /Users/[user]/.virtualenvs/modclass/bin/python
+  Reason: image not found
+Trace/BPT trap: 5
+```
+
+I found the solution to the problem
+[here](https://web.archive.org/web/20150206132233/https://wirtel.be/posts/en/2014/07/29/fix_virtualenv_python_brew/),
+so all credit goes to the author.
+
+The gist is that when you create a virtualenv, many symlinks are created
+to the Homebrew installed Python.
+
+Here is one example:
+
+    $ ls -la ~/.virtualenvs/my-virtual-env
+    ...
+    lrwxr-xr-x  1 ryan staff   78 Jun 25 13:21 .Python -> /usr/local/Cellar/python/2.7.7/Frameworks/Python.framework/Versions/2.7/Python
+    ...
+
+When you upgrade Python using Homebrew and then run ``brew cleanup``,
+the symlinks in the virtualenv point to paths that no longer exist
+(because Homebrew deleted them).
+
+The symlinks needs to point to the newly installed Python:
+
+    lrwxr-xr-x  1 ryan staff   78 Jun 25 13:21 .Python -> /usr/local/Cellar/python/2.7.8_1/Frameworks/Python.framework/Versions/2.7/Python
+
+The solution is to remove the symlinks in the virtualenv and then
+recreate them:
+
+    find ~/.virtualenvs/my-virtual-env/ -type l -delete
+    virtualenv ~/.virtualenvs/my-virtual-env
+
+It's probably best to check what links will be deleted first before
+deleting them:
+
+    find ~/.virtualenvs/my-virtual-env/ -type l
+
+In my opinion, it's even better to only delete broken symlinks. You can
+do this using GNU `find`:
+
+    gfind ~/.virtualenvs/my-virtual-env/ -type l -xtype l -delete
+
+You can install GNU `find` with Homebrew if you don't already have it:
+
+    brew install findutils
+
+Notice that by default, GNU programs installed with Homebrew tend to be
+prefixed with the letter `g`. This is to avoid shadowing the `find`
+binary that ships with OS X.
+
+
 ## exit a Python script
 
 - https://stackoverflow.com/questions/19747371/python-exit-commands-why-so-many-and-when-should-each-be-used
