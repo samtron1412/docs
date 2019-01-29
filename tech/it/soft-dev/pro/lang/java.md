@@ -518,6 +518,8 @@ mutators (getters and setters)
 
 #### Overall Guidelines
 
+- Using javadoc for anything that you want to comment, even it is
+  private or protected.
 - Document *What* code does as well as *why* it was developed.
     + For example, you can look at a piece of code, or class and figure
       out what it does internally. However, it may not clear what
