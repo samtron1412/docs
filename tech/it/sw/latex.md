@@ -775,6 +775,29 @@ sollicitudin.  Praesent imperdiet mi necante...
 \end{document}
 ```
 
+# Mac OS - MacTeX
+
+- http://www.tug.org/mactex/
+
+## Installing packages
+
+- For packages found on CTAN: use the TeX Live Utility found in your
+  /Applications/TeX folder. This application can keep all of your TeX
+  packages up to date.
+- Place the relevant files in `~/Library/texmf/tex/latex`. TeX will find
+  them.
+- Enter `tlmgr install *packagename*` in the terminal
+
+
+# Writing mathematical document with amsmath
+
+- Usage guide: http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf
+
+# Drawing electrical circuits
+
+- https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
+- https://www.latex-tutorial.com/tutorials/circuitikz/
+
 # Tips and Tricks
 
 ## Add text in math mode
