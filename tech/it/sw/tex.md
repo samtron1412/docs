@@ -211,6 +211,7 @@ the vast majority of packages in the TeX world; CTAN is generally the
 source used by the distributions.
 
 # Starting out with TeX, LaTeX and friends
+
 ## Get a TeX distribution (TeX implementation)
 
 | Distribution | Description              |
