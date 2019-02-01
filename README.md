@@ -154,6 +154,10 @@ All documents about artificial intelligence.
 
 #### data - big data
 
+#### file - file types
+
+Documents about different file types
+
 #### hw - computer hardware
 
 All documents about different hardware such as computer hardware.
