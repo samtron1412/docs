@@ -800,6 +800,14 @@ sollicitudin.  Praesent imperdiet mi necante...
 
 # Tips and Tricks
 
+## Block/Multiline comments
+
+- Using verbartim package
+    + `\userpackage{verbatim}`
+    + `\begin{comment`
+    + `<comment here>`
+    + `\end{comment}`
+
 ## Add text in math mode
 
 - \text{}
