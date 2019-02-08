@@ -676,6 +676,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Remove search highlights until the next search
+
+`:noh`
+
+
 ## Jump Back To Previous or Last Cursor Position
 
 ```
