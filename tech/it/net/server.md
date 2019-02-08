@@ -11,6 +11,10 @@ functionality for other programs or devices, called `clients`.
 
 - https://arstechnica.com/series/web-served/
 
+## Digital Ocean - Droplets
+
+
+
 # References
 
 [wiki-server]: https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia - Server (computing)"
