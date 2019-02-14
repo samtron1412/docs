@@ -75,6 +75,8 @@ Source files
 - `javadoc` automatically provides hyperlinks to other classes and
   methods.
 - You can run `javadoc` before implementing any methods.
+- Specify where to output and the source files using classpath
+    + `javadoc -protected -splitindex -use -author -version -classpath /path/to/your/libs/junit-4.12.jar -d /path/to/your/directory/javadoc *.java`
 
 >`javadoc` allows you to put the documentation together with your code.
 That way, when you update your programs, you can see right away which
