@@ -2213,6 +2213,21 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
+## Useful libraries
+
+- [Apache Commons][apache-common] project
+
+### Apache Commons Lang: org.apache.commons.lang3
+
+- https://commons.apache.org/proper/commons-lang/
+- Lang provides a host of helper utilities for the java.lang API,
+  notably String manipulation methods, basic numerical methods, object
+  reflection, concurrency, creation and serialization and System
+  properties. Additionally it contains basic enhancements to
+  java.util.Date and a series of utilities dedicated to help with
+  building methods, such as hashCode, toString and equals.
+
+
 ## Working with time, timezone
 
 - https://github.com/JodaOrg/joda-time
@@ -2241,6 +2256,8 @@ else
 ```
 
 ## Logging
+
+- Log4J2: the most popular logging framework for Java
 
 Instead of using `System.out.println` to print out trace messages, use
 the global logger object.
@@ -2338,3 +2355,5 @@ into valid Java code, as opposed to reconstructing the original code.”
 
 [wiki]: https://en.wikipedia.org/wiki/Java_(programming_language)
 [java-guidelines-iwombat]: http://iwombat.com/standards/JavaStyleGuide.html
+[apache-common]: https://commons.apache.org/
+[apache-log4j2]: https://logging.apache.org/log4j/2.x/
