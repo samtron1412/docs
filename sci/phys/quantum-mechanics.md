@@ -16,6 +16,12 @@
         * examples can see here: https://ai.googleblog.com/2018/07/announcing-cirq-open-source-framework.html
     + https://github.com/quantumlib/OpenFermion
 
+# Quantum algorithms
+
+## Shor's algorithm
+
+- https://en.wikipedia.org/wiki/Shor%27s_algorithm
+
 # Google
 
 - Commercialize Quantum Technologies in Five Years
