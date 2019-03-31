@@ -22,6 +22,10 @@ distribution, identification and taxonomy.
 - [National Library of Medicine][nlm]
 - [National Institutes of Health][nih]
 
+# Terminology
+
+- The Sagittal Plane: https://biologydictionary.net/sagittal-plane/
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Biology
