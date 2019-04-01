@@ -282,3 +282,4 @@ Something
 [vc-dimension]: https://en.wikipedia.org/wiki/VC_dimension
 [vc-theory]: https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_theory
 [control-theory]: https://www.reddit.com/r/MachineLearning/comments/at5iau/d_does_learning_control_theory_helps_to/
+[gradient-descent]: https://en.wikipedia.org/wiki/Gradient_descent
