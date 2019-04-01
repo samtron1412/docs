@@ -57,6 +57,14 @@ of universe and the natural basic science.
 
 # Notation, language, and rigor
 
+- Closed-form expression
+    + https://en.wikipedia.org/wiki/Closed-form_expression
+    + can be evaluated in a finite number of operations
+    + It may contain constants, variables, certain "well-known"
+      operations (e.g., + − × ÷), and functions (e.g., nth root,
+      exponent, logarithm, trigonometric functions, and inverse
+      hyperbolic functions), but usually no limit
+
 # Fields of Mathematics
 
 - Mathematics can be subdivided into the study of quantity, structure,
