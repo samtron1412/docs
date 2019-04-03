@@ -104,8 +104,8 @@ generalized eigenvalue problems.
 
 ## Axes
 
-- `0`: row axis (Ox)
-- `1`: columns axis (Oy)
+- `0`: Ox axis => # of columns, etc.
+- `1`: Oy axis => # of rows, etc.
 
 ## What is the preferred way to check for an empty (zero element) array?
 
