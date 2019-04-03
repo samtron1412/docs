@@ -104,8 +104,29 @@ generalized eigenvalue problems.
 
 ## Axes
 
-- `0`: Ox axis => # of columns, etc.
-- `1`: Oy axis => # of rows, etc.
+- `0`: rows axis => # of rows, etc.
+- `1`: columns axis => # of columns, etc.
+
+## Shape
+
+```python
+>>>a = np.array([[1, 2], [3, 4], [5, 6]])
+>>>a.shape
+(3, 2)
+>>>a.reshape(3, 2)
+```
+
+- numpy.reshape(a, newshape, order='C')
+    + Gives a new shape to an array without changing its data
+- numpy.size(a, axis=None)
+    + Default: return total elements
+    + axis = 0: # of rows
+    + axis = 1: # of columns
+
+## ndarray
+
+- https://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html
+
 
 ## What is the preferred way to check for an empty (zero element) array?
 
@@ -155,3 +176,11 @@ The prefered idiom for doing this is to use the function numpy.nonzero()
 a>3 returns a boolean array and since False is interpreted as 0 in
 Python and NumPy, np.nonzero(a > 3) yields the indices of a where the
 condition is true.
+
+# np.linalg
+
+something
+
+# scipy.linalg
+
+something
