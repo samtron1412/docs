@@ -1242,6 +1242,12 @@ setup an app-specific password.
 
 # Tips and Tricks
 
+## Remove a specific commit in git history
+
+```bash
+git rebase --onto "<commit-id>^" <commit-id> HEAD
+```
+
 ## Splitting a subfolder out into a new repository
 
 - [filter-branch manual](https://git-scm.com/docs/git-filter-branch)
