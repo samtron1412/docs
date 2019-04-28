@@ -28,6 +28,7 @@
 - Tap
     + List all installed taps: `brew tap`
     + Tap a package repository: `brew tap <user/repo>`
+    + Remove a tap: `brew untap <tapname:user/repo>`
 - Info
     + Summary info for packages/formulae: `brew info`
     + Summary info for taps: `brew tap-info`
