@@ -56,6 +56,12 @@ Mac OS
 - OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
 - A Slower Speed of Light
 
+# Java
+
+- https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions
+- brew install java: current java version
+- brew install java11
+
 # Tips and Tricks
 
 ## Replace the old hard disk with a new one
