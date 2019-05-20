@@ -544,6 +544,8 @@ Use **lsblk** to list the hard disks
 
 ### Wireless
 
+#### No network manager
+
 - Identify the name of your wireless interface: `# iw dev`
 - Connect to a network: `# wifi-menu <name of wireless interface>`
 - Without wifi-menu:
@@ -553,6 +555,20 @@ Use **lsblk** to list the hard disks
     + Scan available network: `# iw dev <interface> scan | grep SSID`
     + Connect to a network: `# wpa_supplicant -B -i <interface> -c <(wpa_passphrase "<ssid>" "<password>")`
     + Set IP: `# dhcpcd <interface>`
+
+#### Network manager
+
+##### systemd-networkd
+
+- A set up
+    + Using `systemd-networkd` as a network manager
+    + Using `systemd-resolved` for network name resolution
+    + Using `wpa_supplicant` to connect to a wireless network
+- Troubleshooting
+    + Set DNSSEC=no in /etc/systemd/resolved.conf since some modem do
+      not support this new standard.
+
+
 
 ## Select a mirror
 
