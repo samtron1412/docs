@@ -15,7 +15,9 @@
 
 ## History
 
-Something
+- Breakthroughs
+    + 1962: alpha-beta pruning
+    + Arthur Samuels checker playing program in 1957
 
 ## Basics
 
