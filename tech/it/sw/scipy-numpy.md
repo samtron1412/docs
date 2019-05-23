@@ -104,8 +104,8 @@ generalized eigenvalue problems.
 
 ## Axes
 
-- `0`: rows axis => # of rows, etc.
-- `1`: columns axis => # of columns, etc.
+- `0`: (y) rows axis => # of rows, etc.
+- `1`: (x) columns axis => # of columns, etc.
 
 ## Shape
 
@@ -176,6 +176,18 @@ The prefered idiom for doing this is to use the function numpy.nonzero()
 a>3 returns a boolean array and since False is interpreted as 0 in
 Python and NumPy, np.nonzero(a > 3) yields the indices of a where the
 condition is true.
+
+## Repeat elements of an array
+
+- numpy.repeat(a, repeats, axis=None)
+
+https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.repeat.html
+
+## Construct an array by repeating A the number of times given by reps
+
+- numpy.tile(A, reps)
+
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.tile.html
 
 # np.linalg
 
