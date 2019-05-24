@@ -9,6 +9,49 @@ Something
 - Future and promises
     + https://docs.scala-lang.org/overviews/core/futures.html
 
+# Basics
+
+## Variables
+
+- Define immutable value: `val name = "Son"`
+    + Evaluate the right side to a value
+    + Assign the value to the label
+- Define mutable value: `var name = "Son"`
+    + Evaluate the right side to a value
+    + Assign the value to the label
+- Assign a label to an immutable value whose evaluation is deferred for
+  a later time: `def im_value = <label of immutable/mutable value>`
+    + `def alias = name`
+    + Similar like pointer
+
+## Control flow
+
+- if (cond) {} else {}
+- while (cond) {}
+
+## Collections
+
+- The spirit of functional programming: immutable collections
+    + `scala.collection.immutable`
+    + import automatically
+- Mutable collection: `scala.collection.mutable`
+    + Need to explicitly import
+
+### List (immutable)
+
+- Create
+    + `val names = List("Son", "Ryan")`
+    + `val names = "Son" :: "Ryan" :: Nil`
+- Access
+    + names(0) => Son
+    + names.head => the first element
+    + names.tail => the rest of the list
+
+### Set (immutable)
+
+- Create
+    + `val uniqueNames = Set("Son", "Ryan")`
+
 # Tips and Tricks
 
 ## Operators
