@@ -36,6 +36,11 @@ duck
     + `Ctrl+p` (previous), `Ctrl+n` (next)
 - Exit a session
     + `Ctrl+d`
+- Doctest
+    + `python3 -m doctest <python_file>`
+    + doctests are surrounded by `"""`
+- Run the script and then open an interactive session
+    + `python3 -i <script_file>`
 
 # Virtual Environment
 
