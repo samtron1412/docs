@@ -167,7 +167,9 @@ known as **the zero-overhead principle**.
 # Compilers
 
 - GCC
+    + g++ -std=c++11 test.cpp -o test
 - Clang
+    + clang++ -std=c++11 test.cpp -o test
 
 # IDE
 
