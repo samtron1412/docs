@@ -1932,6 +1932,18 @@ down by framework extensions.
 - To better testing, flexibility, and ability to make new decisions in
   the future
 
+## Object class
+
+- String toString()
+- int hashCode()
+- boolean equals(Object o)
+- Class getClass()
+- void finalize()
+    + performs any actions that we want before Garbage Collector
+      disposes this object
+- Object clone()
+- wait(), notify(), notifyAll() => concurrency
+
 # Technologies
 
 ## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
