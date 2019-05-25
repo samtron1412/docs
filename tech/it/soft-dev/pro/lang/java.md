@@ -1397,6 +1397,13 @@ ArrayList<Double> values = new ArrayList<Double>();
 ```
 
 
+## Collection Framework
+
+- https://en.wikipedia.org/wiki/Java_collections_framework
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/doc-files/coll-overview.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/doc-files/coll-reference.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html
+
 ## ArrayList
 
 ArrayList are created with an initial size, but when this size is
