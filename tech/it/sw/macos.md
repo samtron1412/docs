@@ -64,6 +64,10 @@ Mac OS
 
 # Tips and Tricks
 
+## Reinstall Xcode developer tools
+
+`xcode-select --install`
+
 ## Replace the old hard disk with a new one
 
 - Boot to the Recovery Mode by Restart and holding down Command+R
