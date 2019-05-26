@@ -215,6 +215,26 @@ known as **the zero-overhead principle**.
 
 ## Resource acquisition is initialization (RAII)
 
+## Lambdas
+
+- Added in the C++11 standard
+- http://www.drdobbs.com/cpp/lambdas-in-c11/240168241
+
+```
+[ captures ] (parameters) -> returnTypesDeclaration { lambdaStatements; }
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+  {
+      auto lambda = []() { cout << "Code within a lambda expression" << endl; };
+      lambda();
+  }
+```
+
 # Best practices
 
 ## Code structure
