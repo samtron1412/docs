@@ -254,6 +254,16 @@ typdef int arrayType[] [NUM_COLS];
 - C/C++ compatible or pure C headers: `.h`
 - C/C++ compatible or pure C source code: `.c`
 
+## Working with references and for loop
+
+- https://stackoverflow.com/questions/15176104/c11-range-based-loop-get-item-by-value-or-reference-to-const
+- `auto x : collection`: working with copies
+- If copy is an expensive operation
+    + `auto &x : collection`: working with the original item and we can
+      modify it
+    + `auto const &x : collection`: working with the original item and
+      we don't want to modify it
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/C%2B%2B
