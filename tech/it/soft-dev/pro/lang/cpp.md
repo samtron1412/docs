@@ -237,6 +237,16 @@ int main()
 
 # Best practices
 
+## Document and Organize C++ source code
+
+- http://www.edparrish.net/common/cppdoc.html
+- Naming conventions
+- Comments
+- Curly braces
+- Whitespaces
+- No magic numbers
+- No global variables
+
 ## Code structure
 
 ```cpp
@@ -292,3 +302,4 @@ typdef int arrayType[] [NUM_COLS];
 [so-smart-pointer]: https://stackoverflow.com/questions/8706192/which-kind-of-pointer-do-i-use-when
 [so-raw-smart-ptr]: https://stackoverflow.com/questions/6675651/when-should-i-use-raw-pointers-over-smart-pointers
 [smart-ptr]: http://ootips.org/yonat/4dev/smart-pointers.html
+[document]: http://www.edparrish.net/common/cppdoc.html
