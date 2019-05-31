@@ -454,6 +454,21 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 - https://en.wikipedia.org/wiki/Tampon
 - https://en.wikipedia.org/wiki/Sanitary_napkin
 
+
+# Motion sickness
+
+- Don't eat too much or too little before the trip
+    + Eat easy foods
+    + Use ginger
+- Driver not a passenger
+- Believe that you will not get motion sickness this time.
+- Look at horizon, don't read
+- Distract by music, or eating easy snack
+    + dry biscuits
+- Medication
+    + Dramamine (Dimenhydrinate)
+    + Scopolamine (adhesive patch)
+
 # References
 
 1. [Healthy Eating Plate and Healthy Eating Pyramid][1]
