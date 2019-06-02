@@ -150,13 +150,11 @@ In no particular order
 - https://homes.cs.washington.edu/~mernst/advice/conferences-vs-journals.html
 - In EECS conferences are more prestigious than journals
 
-## List of conferences
+## List of conferences and journals
 
+- [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng)
 - [Guide2Research][g2r]
 - [Wikipedia - List of CS conf][wiki-conf]
-- [CS conf][csconf]
-- [CS conference search][confsearch]
-- [Awesome conferences][awesome]
 - [dblp][dblp]
 
 ## Next conferences
@@ -333,9 +331,6 @@ In no particular order
 [ieee]: https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers
 [aaai]: https://en.wikipedia.org/wiki/Association_for_the_Advancement_of_Artificial_Intelligence
 [apache]: https://en.wikipedia.org/wiki/Apache_Software_Foundation
-[awesome]: https://github.com/watson/conferences
 [dblp]: http://dblp.uni-trier.de/
-[confsearch]: http://confsearch.org/confsearch/faces/index.jsp
 [g2r]: http://www.guide2research.com
-[csconf]: https://csconf.net/
 [wiki-conf]: https://en.wikipedia.org/wiki/List_of_computer_science_conferences
