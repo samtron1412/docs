@@ -51,6 +51,15 @@
       constantly changing.
     + Learned knowledge is beneficial if the change is in a life time
       but it is not constantly changing.
+- Why do I need to learn Math and Science? I will never use it in my
+  life?
+    + You will not use exactly the same math techniques in your life,
+      but what you are doing when you learn math and science is you
+      develop neural pathways so that you can use it in a surprising
+      ways in your life.
+    + An analogy is that you go to the gym and lift the weight is to
+      develop your muscle so that you can use it to do other things not
+      lifting exactly the same weight in the real life.
 
 # How do we learn?
 
