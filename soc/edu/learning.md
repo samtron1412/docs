@@ -140,14 +140,21 @@
 
 ## Efficiently Learning
 
-- Homework
+### 1. Identifying, Defining, Describing
+
+- Pareto principle (80/20): 80% of the effects come from 20% of the
+  causes.
+    + Determine the most important 20% of the material to learn first
+- Chunking the material, create small goals and milestones to achieve
+- Focusing on one topic at a time, no multitasking
+- Create a schedule to study, not cramping, make it consistent
+
+### 2. Elaborating, Reinforcing
+
+- Homework (learning by doing)
     + Don't just do one, practice, reflect
     + Redo it until you can play it in your head as a song
     + Reflect: Master the concept the homework try to teach you
-- Tests
-    + Test yourself everything, and all the time
-    + Don't look at the solution and just try to recall everything
-    + Using flash cards
 - Recall
     + Don't just highlight and look at the text => you think that you
       get it. No, you don't!
@@ -155,6 +162,13 @@
 - Understanding alone is not enough to master the material
     + It needs to combine with Practice and Repetition in a variety of
       circumstances
+
+### 3. Evaluating, Reflecting, Debriefing
+
+- Tests
+    + Test yourself everything, and all the time
+    + Don't look at the solution and just try to recall everything
+    + Using flash cards
 - Explain things in a simple manner so that a 10 years old can
   understand it. (Feynman's technique)
     + On a piece of paper, write down the concept that you want to
