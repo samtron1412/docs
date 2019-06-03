@@ -101,11 +101,20 @@
 
 - Focused mode: attention
     + Using rules and knowledge to solve the problem
+    + Working memory: RAM (small storage) => distractions affect your
+      productivity
 - Diffuse mode: relaxing => gain new insights
     + Spending time to think in a relax way about the problem in a
       natural setting or a comfortable setting.
+    + Long-term memory: HDD (practice, mastery learning)
 - Going back and forth between two modes is very important.
     + Don't just stay in one mode
+- Chunking knowledge by mastering the concepts
+    + Each chunk is a compressed knowledge that is mastered by you.
+    + Build libraries of chunks, so creativity is sprung from the
+      connections between these chunks. (diffuse mode)
+    + Chunks in different fields may have similar shape => easier to
+      learn (transfer)
 
 ## Procrastination
 
