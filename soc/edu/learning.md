@@ -2,17 +2,21 @@
 
 # Overview
 
-- 1) Identifying the essence of things, Defining, Describing
+- 1) IDENTIFY important concepts, DEFINE the concepts by YOUR OWN
+  WORDS, DESCRIBE the concepts by YOUR OWN WORDS
     + keywords, concepts, definitions, equations, formulas, theories,
       theorems, etc.
     + WHATs
-- 2) Elaborating meaning, Reinforcement
-    + building a whole concept network based on the essence of things
+- 2) ELABORATE the meaning and REINFORCE it by practice (homework,
+  exercises, flash cards)
+    + building a whole concept network by connecting with other
+      materials
     + building more enduring memories; the more connections the more
       stronger memories
     + WHYs and HOWs
-- 3) Evaluating, Explaining, Creating
+- 3) EVALUATE, EXPLAIN, CREATE
     + HOWs
+    + Tests, exam, real problems
 
 ```ascii
 // (1), (2), (3) interact with each other and reinforce each other
