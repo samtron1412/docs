@@ -140,17 +140,41 @@
 
 ## Efficiently Learning
 
+### Overview
+
+- How long to go from knowing nothing to being really good at something?
+    + 20 hours of learning not including breaks and rests
+    + 4 hours / day for a week
+    + 1 hours / day for a month (Recommended)
+    + 30 minutes / day for two months (The best)
+
 ### 1. Identifying, Defining, Describing
 
+- Do you really want to learn this new thing?
+    + Thinking about pros and cons, emotions, feelings, motivations,
+      reasons
+    + If you decide to learn it, sign a contract of committing at least
+      20 hours to learn this before giving up.
 - Pareto principle (80/20): 80% of the effects come from 20% of the
   causes.
     + Determine the most important 20% of the material to learn first
+    + Defining and describing your level of performance that you want to
+      achieve, the level of mastery that you want to achieve.
 - Chunking the material, create small goals and milestones to achieve
 - Focusing on one topic at a time, no multitasking
 - Create a schedule to study, not cramping, make it consistent
+    + Finding 3-4 resources to learn each chunk of knowledge
+    + Don't use this step as a way to procrastinate
 
 ### 2. Elaborating, Reinforcing
 
+- Create a distraction-free environment for learning
+    + Turn off all electronic devices
+    + Turn off all notification
+    + Sit down at a learning space
+    + Make it easier to learn something
+        * Put the guitar next to you if you want to learn how to play it
+        * Put the book next to you
 - Homework (learning by doing)
     + Don't just do one, practice, reflect
     + Redo it until you can play it in your head as a song
