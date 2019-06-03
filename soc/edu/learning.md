@@ -104,6 +104,8 @@
 - Diffuse mode: relaxing => gain new insights
     + Spending time to think in a relax way about the problem in a
       natural setting or a comfortable setting.
+- Going back and forth between two modes is very important.
+    + Don't just stay in one mode
 
 ## Procrastination
 
@@ -115,6 +117,8 @@
     + Pomodoro technique
         * Work at the focus mode in 25 minutes: using timer, turn off
           anything, no notification
+        * Don't focus on the task, focus on the time
+        * Help you overcome the first painful experience
 
 ## Efficiently Learning
 
@@ -130,6 +134,17 @@
 - Understanding alone is not enough to master the material
     + It needs to combine with Practice and Repetition in a variety of
       circumstances
+
+## Sleeping
+
+- Short periods of learning + sleep in between
+- Napping at noon: 15 - 30 minutes
+- Get sleep at night: 7 - 8 hours
+
+## Working out - Exercise
+
+- Running, walking, swimming
+- Martial arts, sports
 
 # Collective intelligence - Teams
 
