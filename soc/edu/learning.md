@@ -156,7 +156,18 @@
     + It needs to combine with Practice and Repetition in a variety of
       circumstances
 - Explain things in a simple manner so that a 10 years old can
-  understand it.
+  understand it. (Feynman's technique)
+    + On a piece of paper, write down the concept that you want to
+      explain in a title.
+    + Trying to explain the concept using simple language
+        * a simple definition
+        * a few examples with diagrams, graphs
+        * working out all steps
+    + If you are struggle to explain it in a simple manner, go back to
+      the source material to review the concept, practice with problems
+      to master it.
+        * Try to derive the concept by yourself
+    + Simplify your language even further, as much as you can
 
 ## Sleeping
 
