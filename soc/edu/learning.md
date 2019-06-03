@@ -39,7 +39,11 @@
 
 # What is learning?
 
+- Something
+
 # Why do we need to learn?
+
+- Something
 
 # How do we learn?
 
@@ -57,6 +61,28 @@ own way of learning.
     - Outdated facts
     - News bias: sensational, exaggerated
 + Intuition: generalize and jump to conclusion very fast
+
+# Collective intelligence - Teams
+
+- Factors of a collective intelligence
+    + Individual quality
+        * Production technologies
+    + Connection quality
+        * Diversity (majority is female)
+        * Social intelligence
+        * Equality of contribution (not only one person that does
+          everything)
+        * Coordination technologies: enhance communication
+- Technologies
+    + Tool
+        * Humans remain in charge, use tool to assist in way they do
+        work (Skype, git, spreadsheets, word processors, etc.)
+    + Assistant
+        * Takes initiative, anticipates what humans might search for or
+        reminds them of things (Siri, Google Assistant, etc.)
+    + Manager
+        * System organizes work and directs or evaluates the work of
+        humans (FoldIt, Google Maps, Autonomous Driving)
 
 # References
 
