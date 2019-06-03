@@ -97,6 +97,25 @@
     - News bias: sensational, exaggerated
 + Intuition: generalize and jump to conclusion very fast
 
+## Two modes of learning
+
+- Focus mode: attention
+    + Using rules and knowledge to solve the problem
+- Diffuse mode: relaxing => gain new insights
+    + Spending time to think in a relax way about the problem in a
+      natural setting or a comfortable setting.
+
+## Procrastination
+
+- Physical pain caused by the things that you don't want to do.
+- Two approaches
+    + Keep working a way through it
+        * Just say: "I only do this in ten minutes!"
+        * After a few minutes the pain goes away.
+    + Pomodoro technique
+        * Work at the focus mode in 25 minutes: using timer, turn off
+          anything, no notification
+
 # Collective intelligence - Teams
 
 - Factors of a collective intelligence
