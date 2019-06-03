@@ -190,9 +190,10 @@
 ### 3. Evaluating, Reflecting, Debriefing
 
 - Tests
-    + Test yourself everything, and all the time
+    + Test yourself everything, and all the time by using flash cards
     + Don't look at the solution and just try to recall everything
     + Using flash cards
+    + Practice Exams
 - Explain things in a simple manner so that a 10 years old can
   understand it. (Feynman's technique)
     + On a piece of paper, write down the concept that you want to
@@ -217,6 +218,15 @@
 
 - Running, walking, swimming
 - Martial arts, sports
+
+## Tips and Tricks
+
+- Making connections
+    + Taking notes instead of typing
+    + Saying words out loud
+    + Your emotions
+    + Your memories
+    + Another subjects
 
 # Collective intelligence - Teams
 
