@@ -131,11 +131,14 @@
 
 ## Efficiently Learning
 
-- Exercises
-    + Homework: don't just do one, practice, reflect
+- Homework
+    + Don't just do one, practice, reflect
+    + Redo it until you can play it in your head as a song
+    + Reflect: Master the concept the homework try to teach you
 - Tests
-    + Test yourself everything
+    + Test yourself everything, and all the time
     + Don't look at the solution and just try to recall everything
+    + Using flash cards
 - Recall
     + Don't just highlight and look at the text => you think that you
       get it. No, you don't!
@@ -143,6 +146,8 @@
 - Understanding alone is not enough to master the material
     + It needs to combine with Practice and Repetition in a variety of
       circumstances
+- Explain things in a simple manner so that a 10 years old can
+  understand it.
 
 ## Sleeping
 
