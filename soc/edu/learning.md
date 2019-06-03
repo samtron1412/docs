@@ -99,9 +99,9 @@
 
 ## Two modes of learning
 
-- Focus mode: attention
+- Focused mode: attention
     + Using rules and knowledge to solve the problem
-- Diffuse mode: relaxing => gain new insights
+- Diffused mode: relaxing => gain new insights
     + Spending time to think in a relax way about the problem in a
       natural setting or a comfortable setting.
 
