@@ -55,11 +55,39 @@
 # How do we learn?
 
 - DISCLAIMER: This is my way of learning. It is effective for me based
-on my research and experience. However, everyone is different, so the
-right way to learn is relative. Thus, everyone needs to find his or her
-own way of learning.
+  on my research and experience. However, everyone is different, so the
+  right way to learn is relative. Thus, everyone needs to find his or
+  her own way of learning.
 
--
+## Factors affecting learning
+
+### External factors
+
+- Heredity: biological traits
+- Status: rich vs. poor => physically healthy or not, opportunities
+- Physical environment: learning space, classroom vs. open space
+    * Create a unique space for learning that you enjoy
+    * Only for learning not for anything else (DON'T watch movie there)
+
+### Internal factors
+
+- Goals: specific and clear
+    + Immediate goals: TODOs
+    + Distant goals: long term
+- Motivational behaviors:
+    + This behavior arouses and regulates the student's internal
+      energies.
+    + Spending time in a natural setting:
+        * Going for a walk in a park
+    + Watching a inspirational movie or documentary
+- Interest
+- Attention: a mode of the brain
+- Attitude: a way of thinking when you counter different situations
+- Aptitude (năng khiếu): natural abilities
+- Emotional conditions: emotions are physiological states of being.
+- Learning activities: practice
+- Testing: measure the mastery of knowledge, mastery learning approach
+- Guidance: tutoring one-on-one
 
 ## Reasons of ignorance
 
