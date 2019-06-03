@@ -101,7 +101,7 @@
 
 - Focused mode: attention
     + Using rules and knowledge to solve the problem
-- Diffused mode: relaxing => gain new insights
+- Diffuse mode: relaxing => gain new insights
     + Spending time to think in a relax way about the problem in a
       natural setting or a comfortable setting.
 
