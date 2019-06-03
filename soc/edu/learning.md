@@ -208,6 +208,13 @@
         * Try to derive the concept by yourself
     + Simplify your language even further, as much as you can
 
+## Getting help from others
+
+- What is it that I don't understand?
+    + Can I define and describe it?
+    + I understand this and that but not the next step.
+    + Pinpoint what you don't understand
+
 ## Sleeping
 
 - Short periods of learning + sleep in between
