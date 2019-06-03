@@ -116,6 +116,21 @@
         * Work at the focus mode in 25 minutes: using timer, turn off
           anything, no notification
 
+## Efficiently Learning
+
+- Exercises
+    + Homework: don't just do one, practice, reflect
+- Tests
+    + Test yourself everything
+    + Don't look at the solution and just try to recall everything
+- Recall
+    + Don't just highlight and look at the text => you think that you
+      get it. No, you don't!
+    + Look at the page, look away, and try to recall everything
+- Understanding alone is not enough to master the material
+    + It needs to combine with Practice and Repetition in a variety of
+      circumstances
+
 # Collective intelligence - Teams
 
 - Factors of a collective intelligence
