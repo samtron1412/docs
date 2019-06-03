@@ -228,12 +228,34 @@
 
 ## Tips and Tricks
 
-- Making connections
-    + Taking notes instead of typing
-    + Saying words out loud
-    + Your emotions
-    + Your memories
-    + Another subjects
+### More effective in lectures
+
+- If the speed of the professor is faster than what you want
+    + Preparing before the lecture
+        * Read the notes, textbooks
+    + Switching to webcast instead of live lectures
+    + Choose a good location to sit
+
+### Making connections
+
++ Taking notes instead of typing
++ Saying words out loud
++ Your emotions
++ Your memories
++ Another subjects
+
+### Learning new languages
+
+- Space repetition software (SRS)
+- Japanese
+    + WaniKani
+    + AnkiSRS.net
+- Method of Loci
+    + Associate words with different rooms of the house
+    + Visualization association
+- Rewarding systems
+    + Watching an episode
+    + Reading a chapter of Manga
 
 # Collective intelligence - Teams
 
