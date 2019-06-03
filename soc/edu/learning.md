@@ -39,11 +39,18 @@
 
 # What is learning?
 
-- Something
+- Learning is a process of gaining new knowledge or modifying existing
+  knowledge.
+- Humans start the process of learning before birth and continue until
+  death.
 
 # Why do we need to learn?
 
-- Something
+- Learned knowledge vs. innate knowledge
+    + Innate knowledge is beneficial when the environment is stable or
+      constantly changing.
+    + Learned knowledge is beneficial if the change is in a life time
+      but it is not constantly changing.
 
 # How do we learn?
 
