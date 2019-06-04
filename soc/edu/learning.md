@@ -295,6 +295,29 @@
 
 # Tips and Tricks
 
+## Tips for multiple choices
+
+- Don't go through question in a linear fashion. Take a few minutes to
+  go through and skim the test to get the general overview of the
+  questions.
+    + Answer any question that you can right away
+- Start with the hard question for few minutes
+    + Solve it if you can
+    + If not move on to the easier questions
+    + Why: hard questions = focused mode; easy questions = diffused mode
+      => the hard questions are working in the background
+- Read each question twice carefully
+    + It's tricky and sneaky
+- Recheck questions after finish each page of the test
+- Stuck with a hard question: envision the area where you learned that
+  knowledge
+- If you have to guess the answer
+    + True is more likely than False
+    + 3 options: A, B, C => just choose one, no bias
+    + 4 options: A, B, C, D => B
+    + 5 options: A, B, C, D, E => E
+    + All of the above/None of the above: if you can't narrow it down
+
 ## Flashcards
 
 - Making your own flashcards
