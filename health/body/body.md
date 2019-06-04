@@ -90,15 +90,6 @@ Tổng hợp thắc mắc và giải đáp
 - [dna land](https://dna.land/): learn more about your DNA and contribute to scientific research.
 - [snpedia](http://snpedia.com/index.php/SNPedia): SNPedia is a wiki investigating human genetics.
 
-# Tips for better sleep
-
-- Go to bed and get up at the same times each day.
-- Sleep in a dark, quiet room.
-- Avoid caffeine, alcohol and nicotine
-- Do something to help you relax before bedtime (no electric devices).
-- Don't exercise before bedtime.
-- Don't take a nap after 3PM.
-- Don't eat a large meal before you go to sleep.
 
 # Food
 
@@ -468,6 +459,26 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 - Medication
     + Dramamine (Dimenhydrinate)
     + Scopolamine (adhesive patch)
+
+# Tips and tricks
+
+## Tips for better sleep
+
+- Go to bed and get up at the same times each day.
+    + Especially, go to bed consistently
+    + Account for 7 hours 30 minutes of sleep each night
+        * Go to bed 10 PM, wake up at 5:30 AM
+        * Respect your sleep cycles => wake up before the alarm goes off
+        * Work out to know your wake up time, and set the alarm after
+          that as backup.
+    + Stop doing your major tasks 30 minutes before bed time
+        * Stop studying at 9:30 PM
+- Sleep in a dark, quiet room.
+- Avoid caffeine, alcohol and nicotine
+- Do something to help you relax before bedtime (no electric devices).
+- Don't exercise before bedtime.
+- Don't take a nap after 3PM.
+- Don't eat a large meal before you go to sleep.
 
 # References
 
