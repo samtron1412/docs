@@ -265,81 +265,6 @@
         * Confirms understanding by using correct language
         * Use words the learner knows
 
-## Tips and Tricks
-
-### Flashcards
-
-- Making your own flashcards
-- Add pictures and mix them with words
-    + Mnemonic devices: anything that helps you create a mental
-      association between two pieces of information
-        * ROYGBIV: order of colors in the visible light spectrum
-        * Associative imagery: weird crazy stories
-- One card, one question/one fact; don't cramp many facts in one card
-    + Illusion of competence: recognition vs. recall
-        * Recognition: I've exposed/seen this before
-        * Recall: Actively retrieving something out of memory without
-    + If you know only some of the facts in a multiple fact flashcard,
-      you are caught in the illusion of competence that you know all the
-      facts.
-- Break down complex concepts into multiple simple questions
-- Say the answers out loud
-    + A way of mentally committing to your answers before looking at the
-      solution.
-    + Avoid the illusion of competence
-- Study the card in both directions
-    + From the question to the answer, and vice versa
-    + From the symbol to the definition, and vice versa
-
-
-### More effective in lectures
-
-- If the speed of the professor is faster than what you want
-    + Preparing before the lecture
-        * Read the notes, textbooks
-    + Switching to webcast instead of live lectures
-    + Choose a good location to sit
-
-### Making connections
-
-+ Taking notes instead of typing
-    - Using MIND MAPPING again
-    - Practice how to do MIND MAPs
-+ Saying words out loud
-+ Your emotions
-+ Your memories
-+ Another subjects
-
-### Learning new languages
-
-- Space repetition software (SRS)
-- Japanese
-    + WaniKani
-    + AnkiSRS.net
-- Method of Loci
-    + Associate words with different rooms of the house
-    + Visualization association
-- Rewarding systems
-    + Watching an episode
-    + Reading a chapter of Manga
-
-### Others
-
-1. Halo effect - professors impression of you ( eye contact, note taking, sit in front)
-2. Plan like you’ve never planned before (calendars, syllabus, highlight)
-3. Know game plan - components of each class (grading scale) ask upper class men for advice
-4. Surround self with smart, accountable friends
-5. Make projects mean something ( invest time in)
-6. Send assignments early to professors ( they will tell you what you did wrong)
-7. Be meticulous (perfection)
-8. Be efficient (each class requires different strategic study plans)
-9. Know your limits (make plan according to your preference)
-10. Eliminate distractions and say no to Netflix
-11. Study to UNDERSTAND!!! (teach yourself)
-12. Change game plan to each class
-13. Prepare for crunch time (practice problems and exams) (ready to go) ( diy study guide)
-14. “Do more than what was asked” “be extra” take resources you have and utilize them
-
 # Collective intelligence - Teams
 
 - Factors of a collective intelligence
@@ -366,6 +291,82 @@
 
 - Students in senior year of high schools in Korea can spend 13 hours
   per day for studying, and they only sleep for about five hours.
+
+
+# Tips and Tricks
+
+## Flashcards
+
+- Making your own flashcards
+- Add pictures and mix them with words
+    + Mnemonic devices: anything that helps you create a mental
+      association between two pieces of information
+        * ROYGBIV: order of colors in the visible light spectrum
+        * Associative imagery: weird crazy stories
+- One card, one question/one fact; don't cramp many facts in one card
+    + Illusion of competence: recognition vs. recall
+        * Recognition: I've exposed/seen this before
+        * Recall: Actively retrieving something out of memory without
+    + If you know only some of the facts in a multiple fact flashcard,
+      you are caught in the illusion of competence that you know all the
+      facts.
+- Break down complex concepts into multiple simple questions
+- Say the answers out loud
+    + A way of mentally committing to your answers before looking at the
+      solution.
+    + Avoid the illusion of competence
+- Study the card in both directions
+    + From the question to the answer, and vice versa
+    + From the symbol to the definition, and vice versa
+
+
+## More effective in lectures
+
+- If the speed of the professor is faster than what you want
+    + Preparing before the lecture
+        * Read the notes, textbooks
+    + Switching to webcast instead of live lectures
+    + Choose a good location to sit
+
+## Making connections
+
++ Taking notes instead of typing
+    - Using MIND MAPPING again
+    - Practice how to do MIND MAPs
++ Saying words out loud
++ Your emotions
++ Your memories
++ Another subjects
+
+## Learning new languages
+
+- Space repetition software (SRS)
+- Japanese
+    + WaniKani
+    + AnkiSRS.net
+- Method of Loci
+    + Associate words with different rooms of the house
+    + Visualization association
+- Rewarding systems
+    + Watching an episode
+    + Reading a chapter of Manga
+
+## Others
+
+1. Halo effect - professors impression of you ( eye contact, note taking, sit in front)
+2. Plan like you’ve never planned before (calendars, syllabus, highlight)
+3. Know game plan - components of each class (grading scale) ask upper class men for advice
+4. Surround self with smart, accountable friends
+5. Make projects mean something ( invest time in)
+6. Send assignments early to professors ( they will tell you what you did wrong)
+7. Be meticulous (perfection)
+8. Be efficient (each class requires different strategic study plans)
+9. Know your limits (make plan according to your preference)
+10. Eliminate distractions and say no to Netflix
+11. Study to UNDERSTAND!!! (teach yourself)
+12. Change game plan to each class
+13. Prepare for crunch time (practice problems and exams) (ready to go) ( diy study guide)
+14. “Do more than what was asked” “be extra” take resources you have and utilize them
 
 # References
 
