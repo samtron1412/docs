@@ -226,6 +226,45 @@
 - Running, walking, swimming
 - Martial arts, sports
 
+## Learning a new language
+
+### Principles
+
+- Focus on language content that relevant to you.
+    + Daily life
+    + EECS
+- Using the new language that you learned to communicate from day 1.
+- Unconscious Comprehension: physiological training
+    + Hear the sound
+    + Practicing speaking
+- Pscho-physiological states matter
+    + Happy, relaxed, don't be stressed
+
+### Actions
+
+- Listen a lot
+    + rhythms, pattern
+- Getting the meaning even before the words
+    + body language
+- Start mixing
+    + it doesn't need to be perfect
+    + just combined all the words that you learned to convey the meaning
+- Basic phrases that you need at first
+    + What is this?
+    + How do you day?
+    + I don't understand ...
+- Pronouns, common verbs, adjectives
+- Glue words: and, but,
+- Get a language parent
+    + who interested in you, respected you
+    + who will communicate as equal
+    + create a safe environment for you to practice
+    + Language parent rules
+        * Works to understand what you are saying
+        * Does not correct mistakes
+        * Confirms understanding by using correct language
+        * Use words the learner knows
+
 ## Tips and Tricks
 
 ### More effective in lectures
