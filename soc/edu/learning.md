@@ -337,6 +337,11 @@
         * System organizes work and directs or evaluates the work of
         humans (FoldIt, Google Maps, Autonomous Driving)
 
+# Fun facts
+
+- Students in senior year of high schools in Korea can spend 13 hours
+  per day for studying, and they only sleep for about five hours.
+
 # References
 
 1. [GitHub - Awesome list][1]
