@@ -480,6 +480,18 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 - Don't take a nap after 3PM.
 - Don't eat a large meal before you go to sleep.
 
+## Tips for not feeling tired all the time
+
+- Get enough Vitamin D by exposing to the sunlight
+    + Or supplement if it is necessary
+    + 4000 UI per day
+- Exercise every day
+    + Don't need to be intense workout
+    + 20 minutes walk works
+- No caffeine
+    + It fool your brain that you are not tired
+- Drink enough water
+
 # References
 
 1. [Healthy Eating Plate and Healthy Eating Pyramid][1]
