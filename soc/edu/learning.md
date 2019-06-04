@@ -298,6 +298,23 @@
     + Watching an episode
     + Reading a chapter of Manga
 
+### Others
+
+1. Halo effect - professors impression of you ( eye contact, note taking, sit in front)
+2. Plan like you’ve never planned before (calendars, syllabus, highlight)
+3. Know game plan - components of each class (grading scale) ask upper class men for advice
+4. Surround self with smart, accountable friends
+5. Make projects mean something ( invest time in)
+6. Send assignments early to professors ( they will tell you what you did wrong)
+7. Be meticulous (perfection)
+8. Be efficient (each class requires different strategic study plans)
+9. Know your limits (make plan according to your preference)
+10. Eliminate distractions and say no to Netflix
+11. Study to UNDERSTAND!!! (teach yourself)
+12. Change game plan to each class
+13. Prepare for crunch time (practice problems and exams) (ready to go) ( diy study guide)
+14. “Do more than what was asked” “be extra” take resources you have and utilize them
+
 # Collective intelligence - Teams
 
 - Factors of a collective intelligence
