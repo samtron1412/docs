@@ -267,6 +267,31 @@
 
 ## Tips and Tricks
 
+### Flashcards
+
+- Making your own flashcards
+- Add pictures and mix them with words
+    + Mnemonic devices: anything that helps you create a mental
+      association between two pieces of information
+        * ROYGBIV: order of colors in the visible light spectrum
+        * Associative imagery: weird crazy stories
+- One card, one question/one fact; don't cramp many facts in one card
+    + Illusion of competence: recognition vs. recall
+        * Recognition: I've exposed/seen this before
+        * Recall: Actively retrieving something out of memory without
+    + If you know only some of the facts in a multiple fact flashcard,
+      you are caught in the illusion of competence that you know all the
+      facts.
+- Break down complex concepts into multiple simple questions
+- Say the answers out loud
+    + A way of mentally committing to your answers before looking at the
+      solution.
+    + Avoid the illusion of competence
+- Study the card in both directions
+    + From the question to the answer, and vice versa
+    + From the symbol to the definition, and vice versa
+
+
 ### More effective in lectures
 
 - If the speed of the professor is faster than what you want
