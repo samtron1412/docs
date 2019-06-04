@@ -278,6 +278,8 @@
 ### Making connections
 
 + Taking notes instead of typing
+    - Using MIND MAPPING again
+    - Practice how to do MIND MAPs
 + Saying words out loud
 + Your emotions
 + Your memories
