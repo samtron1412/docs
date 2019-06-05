@@ -320,7 +320,8 @@
 
 ## Flashcards
 
-- Making your own flashcards
+### Making your own flashcards
+
 - Add pictures and mix them with words
     + Mnemonic devices: anything that helps you create a mental
       association between two pieces of information
@@ -334,6 +335,9 @@
       you are caught in the illusion of competence that you know all the
       facts.
 - Break down complex concepts into multiple simple questions
+
+### Studying the cards
+
 - Say the answers out loud
     + A way of mentally committing to your answers before looking at the
       solution.
@@ -342,6 +346,18 @@
     + From the question to the answer, and vice versa
     + From the symbol to the definition, and vice versa
 
+### Spaced Repetition Technique
+
+- Divide the cards into categories
+    + Study every day
+    + Study every other day
+    + Once per week
+    + Once per two weeks
+    + Review before test
+- If you get the right answer of the card (both sides), the card
+  graduates to the next category.
+    + If you get it wrong, the card goes straight to the first category,
+      study every day.
 
 ## More effective in lectures
 
