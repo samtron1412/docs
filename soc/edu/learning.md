@@ -31,6 +31,15 @@
 - WHY do we need to learn? The end goal of learning.
 - HOW do we learn? Learning how to learn.
 
+
+# Reasons of ignorance
+
++ Skewed info
+    - Personal bias
+    - Outdated facts
+    - News bias: sensational, exaggerated
++ Intuition: generalize and jump to conclusion very fast
+
 # Specialization vs Generalization
 
 - Elon Musk, Bill Gates, Mark Zuckerberg are using both methods to have
@@ -98,13 +107,6 @@
 - Testing: measure the mastery of knowledge, mastery learning approach
 - Guidance: tutoring one-on-one
 
-## Reasons of ignorance
-
-+ Skewed info
-    - Personal bias
-    - Outdated facts
-    - News bias: sensational, exaggerated
-+ Intuition: generalize and jump to conclusion very fast
 
 ## Two modes of learning
 
@@ -138,7 +140,7 @@
         * Don't focus on the task, focus on the time
         * Help you overcome the first painful experience
 
-## Efficiently Learning
+## Efficient Learning
 
 ### Overview
 
@@ -147,6 +149,8 @@
     + 4 hours / day for a week
     + 1 hours / day for a month (Recommended)
     + 30 minutes / day for two months (The best)
+- Create a dedicated place for studying
+    + Libraries or some places that make studying easier
 
 ### 1. Identifying, Defining, Describing
 
@@ -175,6 +179,10 @@
     + Make it easier to learn something
         * Put the guitar next to you if you want to learn how to play it
         * Put the book next to you
+- Take good notes
+    + Go over the notes as soon as possible to solidify the knowledge of
+      that lecture
+    + Asking for help in office hours
 - Homework (learning by doing)
     + Don't just do one, practice, reflect
     + Redo it until you can play it in your head as a song
