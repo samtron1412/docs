@@ -129,7 +129,12 @@
 
 ## Procrastination
 
+### Over come procrastination
+
 - Physical pain caused by the things that you don't want to do.
+- Focus on process instead of product
+    + Process: I will work on this 20 minutes, 10 minutes
+    + Product: finish 10 questions, finish the essay
 - Two approaches
     + Keep working a way through it
         * Just say: "I only do this in ten minutes!"
@@ -139,6 +144,23 @@
           anything, no notification
         * Don't focus on the task, focus on the time
         * Help you overcome the first painful experience
+
+### Develop a new habit
+
+- The habit can be positive or negative, but they have similar process
+  of development
+- 1. The cue:
+    + Time
+    + Location
+    + How you feel
+    + Reactions to other people or something that just happened
+- 2. The routine:
+    + Create a favorable environment to do what you plan to do
+- 3. The reward:
+    + Setting a reward for the new habit
+    + But no reward if you fail your plan
+- 4. The belief/persistent
+    + You keep doing what you are doing
 
 ## Efficient Learning
 
