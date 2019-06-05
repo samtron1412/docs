@@ -295,6 +295,16 @@
 
 # Tips and Tricks
 
+## Getting Intense focus in a short session of studying
+
+- Choose only one task to complete
+- Don't distract yourself by eating, entertainment
+- Make sure the tools to work on the task are ready
+- Timers if you don't have any deadline
+- Work alone
+- Recovery: relaxing, not too much
+    + Eating and watching YouTube, reading Manga
+
 ## Tips for multiple choices
 
 - Don't go through question in a linear fashion. Take a few minutes to
