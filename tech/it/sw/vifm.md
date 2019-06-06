@@ -1,14 +1,18 @@
 [TOC]
 
 # Overview
-Vifm is an ncurses based file manager with vi like keybindings/modes/options/commands/configuration.
+
+Vifm is an ncurses based file manager with vi like
+keybindings/modes/options/commands/configuration.
 
 Help file: opening vifm and typing `:h`
 
 - Trash directory: `~/.local/share/vifm/Trash`
 
 # User Guide
+
 ## Basic hotkeys
+
 	za          - Toggle the showing and hiding of dot files.
 	t           - select or unselect (tag) the current file.
 	Esc         - clear all selected files
@@ -19,7 +23,9 @@ Help file: opening vifm and typing `:h`
 	ZZ          - quit program; same as :wq
 
 ## Other hotkeys
+
 ### Panes
+
 	Ctrl-W |  - maximize current view
 	Ctrl-W =  - make size of two views equal
 	Ctrl-W x  - exchange panes
@@ -28,6 +34,7 @@ Help file: opening vifm and typing `:h`
 	Ctrl-W o  - one full pane fullscreen ( same as :only or :o )
 
 ### Previewing
+
 	e          - view selected files
 	w          - preview files in the opposite pane
 	:view      - display views of highlighted items like text files
@@ -38,6 +45,7 @@ Help file: opening vifm and typing `:h`
 		poppler  - pdf previews
 
 ### Bookmarks
+
 	:marks               - list of bookmarks
 	:marks list <term>   - search bookmarks
 	dd                   - delete a boomark
@@ -45,11 +53,13 @@ Help file: opening vifm and typing `:h`
 	'[a-z][A-Z][0-9]     - moves to the file set for the mark
 
 ### Rename
+
 	cw   - rename a file or files.
 	cW   - change only name of file (without extension)
 	A    - change only extension
 
 # Customization
+
 - [vifmrc template](https://github.com/vifm/vifm/blob/master/data/vifmrc)
 
 ## Color schemes
@@ -63,6 +73,7 @@ Help file: opening vifm and typing `:h`
 ## Marks
 
 ## Custom config (~/.vifm/vifmrc)
+
 	" show all bookmarks
 	nmap bm :marks <cr>
 
@@ -107,16 +118,24 @@ Help file: opening vifm and typing `:h`
 	colorscheme solarized-dark
 
 # Tips and Tricks
+
 ## start at different locations
+
 	vifm .                       - start on current folder
 	vifm ~/Download ~/Templates  - start on specific folder
 
 ## Open current directory in other pane
-`:sync [relative path]`: change the other pane to the current pane directory or to some path relative to the current directory. Using macros is allowed.
 
-`sync!`: Change the other pane to the current pane directory and synchronize cursor position.
+`:sync [relative path]`: change the other pane to the current pane
+directory or to some path relative to the current directory. Using
+macros is allowed.
 
-`sync! [location|cursorpos|localopts|filters|all]...`: change enumerated properties of the other pane to match corresponding properties of the current pane. Arguments have the following meanings:
+`sync!`: Change the other pane to the current pane directory and
+synchronize cursor position.
+
+`sync! [location|cursorpos|localopts|filters|all]...`: change enumerated
+properties of the other pane to match corresponding properties of the
+current pane. Arguments have the following meanings:
 - location - current directory of the pane;
 - cursorpos - cursor position (doesn't make sense without "location");
 - localopts - all local options;
