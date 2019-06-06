@@ -149,6 +149,7 @@
 
 - The habit can be positive or negative, but they have similar process
   of development
+    + Watch for the procrastination cues to change your reactions
 - 1. The cue:
     + Time
     + Location
@@ -324,6 +325,17 @@
 
 
 # Tips and Tricks
+
+## How to plan and make to-do lists
+
+- Making daily to-do list every evening before going to bed
+    + Don't make it too many tasks: 4-6 tasks per day
+    + Estimate how may short session that each task needs: 2 * 25
+      minutes sessions
+- Use Pomodoro technique to focus on processes instead of products
+  (goals) when you choose to work on a task.
+- Work on the most important and the most disliked task first at the
+  beginning of the day.
 
 ## Getting Intense focus in a short session of studying
 
