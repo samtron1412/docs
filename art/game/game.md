@@ -289,6 +289,11 @@ realistically within the application.
 - [openage - Open Source Age of Empire II][4]
 - [List of open source computer games][open-games]
 
+## List of famous games
+
+- https://www.ign.com/lists/top-100-nes-games/100
+- https://www.ign.com/lists/top-100-snes-games/3
+
 # References
 
 [1]: https://www.twitchinstalls.com/ "Twitch installs Arch Linux"
