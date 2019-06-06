@@ -122,6 +122,9 @@
     + Don't just stay in one mode
 - Chunking knowledge by mastering the concepts
     + Each chunk is a compressed knowledge that is mastered by you.
+    + The best chunks are the ones that so well ingrained that you don't
+      even have to consciously think about connecting neural patterns
+      together.
     + Build libraries of chunks, so creativity is sprung from the
       connections between these chunks. (diffuse mode)
     + Chunks in different fields may have similar shape => easier to
