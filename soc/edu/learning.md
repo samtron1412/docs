@@ -329,6 +329,13 @@
 
 # Tips and Tricks
 
+## Interleaving
+
+- Building flexibility and creativity
+- Working with problems of different types, different types of
+  approaches, concepts, procedures.
+- Expertise in different fields
+
 ## How to plan and make to-do lists
 
 - Making daily to-do list every evening before going to bed
