@@ -586,7 +586,7 @@ The most common operators:
 
 ## Open Files and Save Them to Disk
 
-### Open a file by its filepath using ":edit"
+### Open a file by its filepath using `:edit`
 
 #### Open a File relative to the current working directory
 
@@ -935,13 +935,6 @@ set wrap
 - https://vimawesome.com/plugin/vim-orgmode
 
 ### [Powerline](https://github.com/powerline/powerline)
-
-# [NeoVim](https://github.com/neovim/neovim) - A new generation of Vim
-
-Neovim is a refactor of Vim, that strives to be a superset of Vim.
-- Neovim shares the same configuration syntax with Vim.
-- Neovim can execute plugins asynchronously.
-- Neovim's plugins can also be written in any language.
 
 # Troubleshooting
 
