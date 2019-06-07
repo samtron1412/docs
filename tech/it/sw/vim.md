@@ -294,7 +294,7 @@ The most common operators:
 | `<C-o>`    | Switch to Insert Normal mode |
 
 - Insert Normal mode: we can fire off a single command, after which we'll be returned to Insert mode immediately.
-	+ `<C-o>zz`: the `zz` command redraws the screen with the current line in the middle of the window
+    + `<C-o>zz`: the `zz` command redraws the screen with the current line in the middle of the window
 
 ### Paste in Insert mode
 
@@ -302,7 +302,7 @@ The most common operators:
   If you want to paste a register containing multiple lines of text, you
   should switch to Normal mode and use one of the put commands.
 - Remap Caps Lock key to Escape or Ctrl key
-	+ Put this line in .xinitrc file: `setxkbmap -option caps:escape`
+    + Put this line in .xinitrc file: `setxkbmap -option caps:escape`
     + Caps Lock as Ctrl: `setxkbmap -option ctrl:nocaps`
 
 ### Do Back-of-the-Envelope Calculations in Place
@@ -333,8 +333,8 @@ The most common operators:
 | `<C-k>{char1}{char2}` | Insert character represented by `{char1}{char2}` digraph |
 
 - Digraph: pairs of characters that are easy to remember.
-	+ `:h digraphs-default`
-	+ `:h digraph-table`
+    + `:h digraphs-default`
+    + `:h digraph-table`
 
 ### Overwrite existing text with replace mode
 
@@ -441,7 +441,7 @@ The most common operators:
       list is active.
     + The argument list was a feature of `vi`, whereas the buffer list
       is an enhancement introduced by Vim.
-	+ We can change the contents of the argument list at any time.
+    + We can change the contents of the argument list at any time.
 
 #### Populate the Argument List:
 
@@ -472,7 +472,7 @@ The most common operators:
 ### Manage Hidden Files
 
 - `set hidden`: we can switch between buffer without error messages.
-	+ Accept the `:argdo` or `bufdo` to execute
+    + Accept the `:argdo` or `bufdo` to execute
 
 | Command     | Effect                                                                 |
 | -           | -                                                                      |
@@ -581,8 +581,8 @@ The most common operators:
 #### Rearranging Tabs
 
 - `:tabmove [N]`
-	+ [N] = 0: move to the beginning
-	+ omit [N]: move to the end
+    + [N] = 0: move to the beginning
+    + omit [N]: move to the end
 
 ## Open Files and Save Them to Disk
 
@@ -626,9 +626,9 @@ map <leader>et :tabe %%
 
 - The `path` option allows us to specify a set of directories inside of
   which Vim will search when the `:find` command is invoked.
-	+ show current path: `:set path?`
-	+ `:set path+=app/**`
-	+ see `:h path` and `:h file-searching`
+    + show current path: `:set path?`
+    + `:set path+=app/**`
+    + see `:h path` and `:h file-searching`
 
 #### Use `:find` to looke up Files by name
 
@@ -811,9 +811,9 @@ extension is `.vim`.
 ## Plug-in manager
 
 - Discusses:
-	+ http://vi.stackexchange.com/questions/388/what-is-the-difference-between-the-vim-package-managers
-	+ https://www.reddit.com/r/vim/comments/36ak7j/do_you_use_a_vim_plugin_manager_if_so_which_one/
-	+ https://www.reddit.com/r/vim/comments/1w4udb/best_vim_plugin_manager/
+    + http://vi.stackexchange.com/questions/388/what-is-the-difference-between-the-vim-package-managers
+    + https://www.reddit.com/r/vim/comments/36ak7j/do_you_use_a_vim_plugin_manager_if_so_which_one/
+    + https://www.reddit.com/r/vim/comments/1w4udb/best_vim_plugin_manager/
 - [Vim-plug](https://github.com/junegunn/vim-plug)
 - [pathogen](https://github.com/tpope/vim-pathogen/)
 - [Vundle](https://github.com/VundleVim/Vundle.vim)
@@ -935,6 +935,65 @@ set wrap
 - https://vimawesome.com/plugin/vim-orgmode
 
 ### [Powerline](https://github.com/powerline/powerline)
+
+## Key mapping
+
+### Overview
+
+- Learn more about mapping: `:h map.txt`
+- Unmap a key: get the default behavior back
+    + `:unmap <key_binding>`
+- List all the mappings by plugins and users
+    + `:map`
+- All default mappings and commands: `:h index.txt`
+- Nested and recursive use of mapping: `:map {lhs} {rhs}`
+- Avoid nested and recursive mappings: `:noremap {lhs} {rhs}`
+- Remove the mapping of {lhs}: `:unmap {lhs}`
+- Remove ALL mappings (including the default mappings):
+    + `:mapclear`
+
+### Mapping and Modes
+
+There are six sets of mappings
+- For Normal mode: When typing commands.
+- For Visual mode: When typing commands while the Visual area is
+  highlighted.
+- For Select mode: like Visual mode but typing text replaces the
+  selection.
+- For Operator-pending mode: When an operator is pending (after "d",
+  "y", "c",
+  etc.).
+- For Insert mode.  These are also used in Replace mode.
+- For Command-line mode: When entering a ":" or "/" command.
+
+Special case: While typing a count for a command in Normal mode, mapping
+zero is disabled.  This makes it possible to map zero without making it
+impossible to type a count with a zero.
+
+```text
+Overview of which map command works in which mode.  More details below.
+
+     COMMANDS                    MODES ~
+:map   :noremap  :unmap     Normal, Visual, Select, Operator-pending
+:nmap  :nnoremap :nunmap    Normal
+:vmap  :vnoremap :vunmap    Visual and Select
+:smap  :snoremap :sunmap    Select
+:xmap  :xnoremap :xunmap    Visual
+:omap  :onoremap :ounmap    Operator-pending
+:map!  :noremap! :unmap!    Insert and Command-line
+:imap  :inoremap :iunmap    Insert
+:lmap  :lnoremap :lunmap    Insert, Command-line, Lang-Arg
+:cmap  :cnoremap :cunmap    Command-line
+:tmap  :tnoremap :tunmap    Terminal-Job
+
+
+        COMMANDS                                       MODES ~
+                                       Normal  Visual+Select  Operator-pending ~
+:map   :noremap   :unmap   :mapclear     yes        yes        yes
+:nmap  :nnoremap  :nunmap  :nmapclear    yes         -          -
+:vmap  :vnoremap  :vunmap  :vmapclear     -         yes         -
+:omap  :onoremap  :ounmap  :omapclear     -          -         yes
+```
 
 # Troubleshooting
 
