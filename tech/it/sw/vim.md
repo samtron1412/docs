@@ -676,6 +676,13 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Open help in another split pane
+
+- `:vert help`
+    + `:vert h`
+    + `:vert topleft h`
+    + `:vert botright h`
+
 ## Convert existing tabs to spaces
 
 - `:retab`
