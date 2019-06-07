@@ -676,6 +676,10 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Convert existing tabs to spaces
+
+- `:retab`
+
 ## Remove search highlights until the next search
 
 `:noh`
