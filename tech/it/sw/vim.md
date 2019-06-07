@@ -798,6 +798,9 @@ gq  - reformat paragraph
 
 `:set list`: to show linefeed
 
+- `:h listchars`
+    + `listchars=eol:¬,tab:▸-,trail:·,space:·`
+
 # Tuning Vim
 
 ## Vim script
