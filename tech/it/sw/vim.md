@@ -916,14 +916,6 @@ set wrap
 - https://vimawesome.com/plugin/commentary-vim
 - https://vimawesome.com/plugin/youcompleteme
 
-### Start screen with most recent used
-
-- https://github.com/mhinz/vim-startify
-
-### NERDTree
-
-- https://github.com/scrooloose/nerdtree
-
 ### Editing
 
 - https://github.com/tpope/vim-surround
