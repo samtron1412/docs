@@ -1003,6 +1003,8 @@ You can write your own credential helper.
 - GitHub
 - Bitbucket
 - Google code
+- Command line for different hosts
+    + https://i.got.nothing.to/code/on/git-repo:_the_utility_for_services/
 
 ## Private Git server
 
