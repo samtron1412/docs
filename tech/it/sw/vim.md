@@ -917,6 +917,7 @@ set wrap
 - https://vimawesome.com/plugin/fugitive-vim
 - https://github.com/airblade/vim-gitgutter
 - https://github.com/mhinz/vim-signify
+- https://github.com/christoomey/vim-conflicted
 
 ### Coding
 
