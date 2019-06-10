@@ -951,7 +951,10 @@ nmap <Leader>gc :Gcommit -v<CR>
 " Add the file then commit it
 " Take advantage of autocomplete in writing commit message
 " Hit Ctrl-n to autocomplete the word
-nmap <Leader>gC :Gcommit -v %<CR>
+nmap <Leader>gC :Gcommit % -v<CR>
+
+" Commit without invoking an editor
+nmap <Leader>gg :Gcommit % -m ""<Left>
 
 " Stage the current hunk and commit it
 nmap <Leader>gh ,hs,gc
