@@ -919,13 +919,6 @@ set wrap
 - https://github.com/itchyny/lightline.vim
 - https://github.com/vim-airline/vim-airline
 
-### Version control system
-
-- https://vimawesome.com/plugin/fugitive-vim
-- https://github.com/airblade/vim-gitgutter
-- https://github.com/mhinz/vim-signify
-- https://github.com/christoomey/vim-conflicted
-
 ### Coding
 
 - https://github.com/vim-syntastic/syntastic
