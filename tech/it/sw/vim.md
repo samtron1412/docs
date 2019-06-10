@@ -941,7 +941,12 @@ set wrap
 
 - https://vimawesome.com/plugin/vim-orgmode
 
-### [Powerline](https://github.com/powerline/powerline)
+### Misc
+
+- Range, pattern, and substitute preview
+    + https://github.com/markonm/traces.vim
+    + Preview the change before run it
+- 
 
 ## Key mapping
 
