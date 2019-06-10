@@ -427,6 +427,8 @@ The most common operators:
 - `:bfirst` or `:blast`: jump to the start or end of the list.
 - `<C-^>`: toggle between the current and alternate files.
 - `:bdelete N1 N2 N3`: delete buffer N1, N2, N3.
+    + `bd` or `bdelete` is used to close buffers. If the buffers are
+        changed, it will fail.
 - `:N,M bdelete`: delete buffer from N to M.
 
 ### Group Buffers into a Collection with the Argument List
