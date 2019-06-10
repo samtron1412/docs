@@ -28,7 +28,7 @@ Part of Vim's power is that it can be extensively customized.
 
 Plugins available that will extend or add new functionality to Vim.
 - Vim's internal scripting language - vimscript (viml)
-- Lua, Perl, Python, Raccket, Ruby, and Tcl
+- Lua, Perl, Python, Racket, Ruby, and Tcl
 
 ### Search and replace
 
@@ -45,8 +45,8 @@ Plugins available that will extend or add new functionality to Vim.
     + Using registers
         * X11's primary register: `"*y`, `"*p`
         * X11's clipboard register: `"+y`, `"+p`
-- Config at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay with
-  *pgvy*, *p* to paste and *gv* to re-select what was originally
+- Configuration at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay
+  with *pgvy*, *p* to paste and *gv* to re-select what was originally
   selected, *y* to copy it again.
 - Paste multiple copy: *<number>p* e.g: *30p* to paste 30 time of copy
   text.
@@ -412,7 +412,7 @@ The most common operators:
 - We can load multiple files during an editing session. Vim lets us
   manage them using the buffer list.
 - Workflow: disk -> read -> buffer - we make changes -> write, update,
-  saveas -> disk.
+  save as -> disk.
 
 #### Meet the Buffer List
 
@@ -632,21 +632,21 @@ map <leader>et :tabe %%
     + `:set path+=app/**`
     + see `:h path` and `:h file-searching`
 
-#### Use `:find` to looke up Files by name
+#### Use `:find` to look up Files by name
 
 - Now that we've configured our `path`, we can open files in the
   directories we specified by providing just their name.
 - `:find {some_chars}<Tab>`: tab-completion shows up.
-- Config `wildmod` and `wildmenu` to change the tab-completion behavior.
-  `:h wildmode`, `:h wildmenu`
+- Configure `wildmod` and `wildmenu` to change the tab-completion
+  behavior.  `:h wildmode`, `:h wildmenu`
 
 ### Explore the File System with netrw
 
 - The netrw plugin, included in the Vim distribution, allows us to
   explore the file system.
 - The netrw plugin comes as standard with the Vim distribution, so we
-  don't have to install anyting, but we do need to make sure that Vim is
-  configured to load plugins.
+  don't have to install anything, but we do need to make sure that Vim
+  is configured to load plugins.
 
 ```
 set nocompatible
@@ -759,12 +759,12 @@ set -as terminal-overrides ',xterm*:Tc:sitm=\E[3m'
 ```
 
 This again sets TERM inside tmux. The second line is even more important
-though: Tc allows vim to enable true colours, and and sitm allows the
-same with italics.
+though: Tc allows vim to enable true colors, and sitm allows the same
+with italics.
 
 
 
-## Config the Cursor
+## Configure the Cursor
 
 - http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
 - http://vim.wikia.com/wiki/Configuring_the_cursor
@@ -889,9 +889,14 @@ set wrap
 - `:Gstatus` or `:G`: bring up a summary window similar git-status
 - `:Gcommit`: open a split window to obtain a commit message
     + `:Gcommit -v`: open a new tab instead of a split window
-    + `:Gcommit -v %`: stage the change of this file and open a new tab
+    + `:Gcommit % -v`: stage the change of this file and open a new tab
         to obtain a commit message
-    + `:Gcommit -m <message>`: 
+    + `:Gcommit -m <message>`: commit the staged change with the
+        <message>
+    + `:Gcommit % -m <message>`: stage the change and commit with the
+        <message>
+- `:Gpull`, `:Gpush`: results are loaded into the quickfix list
+    + Using `:copen` to open the quickfix list
 
 
 #### Mappings ####
