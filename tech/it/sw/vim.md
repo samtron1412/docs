@@ -880,6 +880,11 @@ set wrap
 
 - https://vimawesome.com/
 
+### fugitive-vim
+
+- `:Git` Run an arbitrary git command. Similar to :!git [args]
+                        but chdir to the repository tree first.
+
 ### Colorscheme
 
 - https://github.com/morhetz/gruvbox
