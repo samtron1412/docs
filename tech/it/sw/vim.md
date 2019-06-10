@@ -882,8 +882,72 @@ set wrap
 
 ### fugitive-vim
 
-- `:Git` Run an arbitrary git command. Similar to :!git [args]
-                        but chdir to the repository tree first.
+#### Commands ####
+
+- `:Git` Run an arbitrary git command. Similar to :!git [args] but chdir
+    to the repository tree first.
+- `:Gstatus` or `:G`: bring up a summary window similar git-status
+- `:Gcommit`: open a split window to obtain a commit message
+    + `:Gcommit -v`: open a new tab instead of a split window
+    + `:Gcommit -v %`: stage the change of this file and open a new tab
+        to obtain a commit message
+    + `:Gcommit -m <message>`: 
+
+
+#### Mappings ####
+
+```
+"""" vim-fugitive mapping
+" Using cmdline for other tasks: move, delete, stash, push, pull
+
+" Add all files
+nmap <Leader>ga :Git add .<CR>
+
+nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gs :Gstatus<CR>
+
+" Commit after adding
+nmap <Leader>gc :Gcommit -v<CR>
+
+" Add the file then commit it
+" Take advantage of autocomplete in writing commit message
+" Hit Ctrl-n to autocomplete the word
+nmap <Leader>gC :Gcommit -v %<CR>
+
+" Stage the current hunk and commit it
+nmap <Leader>gh ,hs,gc
+
+" Mydiff is a wrapper around Gdiff
+nmap <Leader>gd :Mydiff<CR>
+
+" Edit a fugitive-object, e.g. :% is the current file in the git index
+" :h fugitive-object to learn more
+" This map is to edit the current file in the git index
+nmap <Leader>ge :Gedit<CR>
+
+" Similar to git-checkout on a work tree file
+nmap <Leader>gr :Gread<CR>
+
+" Similar to git-add on a work tree file
+nmap <Leader>gw :Gwrite<CR>
+
+" Load this file's commit history into the quickfix list
+" :copen to open the quickfix list
+nmap <Leader>gl :Glog -- %<CR><CR>:copen<CR>
+
+" List all commit history
+nmap <Leader>gL :exe ':!cd ' . expand('%:p:h') . '; git lap'<CR>
+
+" Rename the file, the new location is relative to the current file path
+nmap <Leader>gm :Gmove<Space>
+
+" Delete the file
+nmap <Leader>gM :Gremove<CR>
+
+nmap <Leader>gp :Gpush<CR>
+nmap <Leader>gl :Gpull<CR>
+```
+
 
 ### Colorscheme
 
