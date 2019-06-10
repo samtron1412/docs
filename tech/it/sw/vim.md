@@ -1007,6 +1007,19 @@ Overview of which map command works in which mode.  More details below.
 :omap  :onoremap  :ounmap  :omapclear     -          -         yes
 ```
 
+# vimdiff
+
+- `[c`: previous change
+- `]c`: next change
+- `do`: diff obtain = diffget, get the change from the other buffer
+    + This can work with the visual mode to select only a portion of a
+        hunk.
+- `dp`: diffput, put the change to the other buffer
+    + This can work with the visual mode to select only a portion of a
+        hunk.
+- `:diffupdate`: update the diff highlighting and folds
+
+
 # Troubleshooting
 
 ## Error: * not found *
