@@ -897,7 +897,41 @@ set wrap
         <message>
 - `:Gpull`, `:Gpush`: results are loaded into the quickfix list
     + Using `:copen` to open the quickfix list
-
+- `:Glog`: load all the revision of this file into the quickfix list.
+    + `:Glog -- %`: load the commit history of this file into the
+        quickfix list
+- `:Gedit [fugitive-object]`
+    + `:%`: this file in the git index
+- `:Gread [object]`: empty the buffer and read a fugitive-object
+    + `:Gread`: similar to git-checkout
+- `:Gwrite`: write to the current file's path and stage the results
+    + similar to git-add
+- `:Gdiff [object]`: perform a vimdiff against the given file, or if a
+    commit, the current file in that commit.
+    + `:Gdiff`: the version in the index is used
+    + `:h vimdiff` to learn more about vimdiff
+    + `:Gsdiff`: split horizontally
+    + `:Gvdiff`: split vertically
+- `:Gmove {destination}`: git-mv
+- `:Gremove`: git-rm
+- `:Gblame [flags]`: run git-blame on this file and open the results in
+    a scroll bound vertical split.
+    + g?  : show this help
+    + A   :  resize to end of author column
+    + C   : resize to end of commit column
+    + D   : resize to end of date/time column
+    + q   : close blame and return to blamed window
+    + gq  : q, then |:Gedit| to return to work tree version
+    + <CR>: q, then open commit
+    + o   : open commit in horizontal split
+    + O   : open commit in new tab
+    + p   : open commit in preview window
+    + -   : reblame at commit
+    + ~   : reblame at [count]th first grandparent
+    + P   : reblame at [count]th parent (like HEAD^[count])
+- `:Gbrowse`: open the current file, blob, tree, commit, or tag in your
+    browser at the upstream hosting provider.
+    + `https://github.com/tpope/vim-rhubarb>`: GitHub support
 
 #### Mappings ####
 
