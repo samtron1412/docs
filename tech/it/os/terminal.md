@@ -32,6 +32,10 @@ some other display architecture.
 - Most of them emulate Xterm, which in turn emulates VT102, which
   emulates typewriter.
 
+# Terminal Colors
+
+- https://gist.github.com/XVilka/8346728
+
 # References
 
 - [Terminal how to](http://www.tldp.org/HOWTO/Text-Terminal-HOWTO.html)
