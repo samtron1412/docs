@@ -2,6 +2,22 @@
 
 # Overview
 
+- Obtain a Decent Initial Configuration
+
+The default configuration sucks. Luckily there is Emacs Prelude - Emacs
+24 configuration that doesn’t suck. I highly recommend you to use
+Prelude as your initial Emacs config. Studying its source will give you
+a bit of an insight into Emacs Lisp programming
+
+- Read & Practice
+
+```
+first step - run the built-in Emacs tutorial - C-h t
+second step - watch the excellent screencast Meet Emacs
+third step - visit Mastering Emacs
+forth step - read the official Emacs Manual - C-h r
+fifth step - use Emacs day and night for all your work
+```
 
 # References
 1. [Wikipedia - Emacs][1]
