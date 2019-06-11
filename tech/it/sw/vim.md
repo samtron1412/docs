@@ -1130,6 +1130,12 @@ Overview of which map command works in which mode.  More details below.
     + Remove unnecessary auto commands: `autocmd`
 - Redrawing
     + Slow because of many things to redraw
+    + `set lazyredraw`
+- Debug for slow scrolling
+    + https://eduncan911.com/software/fix-slow-scrolling-in-vim-and-neovim.html
+    + `:syntime on` then scroll up and down a lot to record the info
+    + After 10 second or so, `:syntime report`
+    + It lists all the slow functions and regex patterns
 
 
 # vimdiff
