@@ -85,6 +85,59 @@ http://www.vim.org/docs.php
 
 # Getting started
 
+- 7 habits of effective text editing
+
+## Edit a file
+
+### Move around quickly
+
+- Search the current word `*`
+- `%` jump from open item to matching item
+- `[{` back to the starting `{`
+- `]}` to the closing `}`
+- `gd` from the use to its declaration of a variable
+
+### Don't type it twice
+
+- `:s`: substitute
+- `*`: find word and `cw`
+    + `n` go to next item in the search results
+- `.`: repeat the change
+    + `m`: mark the location to come back later
+- `<C-n>`: auto complete
+- `qa` start recording a macro into register `a` (total 26 registers)
+    + hit `q` again to stop recording
+    + apply the macro by typing `@a`
+    + should use commands to move over text objects (words, sentences,
+        etc.) instead of characters
+- Snippets
+
+### Fix it when it's wrong
+
+- Correct mistakes using spell check
+    + `:setlocal spell spelllang=en_us`
+    + `:h spell`
+
+```vim
+" A mapping to quickly correct the previous spelling error
+imap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
+```
+
+### Work with multiple files
+
+- Using a fuzzy finder to quickly find files and search the file content
+- `[I`: show a list of matched for the function name under the cursor in
+    included files.
+- Using preview-tag mechanism, an open special preview window.
+
+### Text is structured
+
+- edit-compile-fix cycle `:make` command
+    + which starts your compilation, catches the errors it produces and
+      lets you jump to the error locations to fix the problems
+
+# Basic Usage
+
 ## Undo - Redo in normal mode
 
 `u`: undo
