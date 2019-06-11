@@ -1117,6 +1117,7 @@ Overview of which map command works in which mode.  More details below.
 
 - Syntax highlighting
     + Slow because of using regular expressions
+    + Change regex engine: `:h regexpengine`
 
 ```vim
 :syntax off                      " radical
@@ -1136,6 +1137,19 @@ Overview of which map command works in which mode.  More details below.
     + `:syntime on` then scroll up and down a lot to record the info
     + After 10 second or so, `:syntime report`
     + It lists all the slow functions and regex patterns
+- Debug for starting time
+    + `vim --startuptime log`
+- Built-in profiling support
+
+```vim
+"The profile.log is in your Vim session's current directory
+:profile start profile.log
+:profile func *
+:profile file *
+" At this point do slow actions
+:profile pause
+:noautocmd qall!
+```
 
 
 # vimdiff
