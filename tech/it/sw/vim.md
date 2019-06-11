@@ -1113,6 +1113,25 @@ Overview of which map command works in which mode.  More details below.
 :omap  :onoremap  :ounmap  :omapclear     -          -         yes
 ```
 
+## Improve performance ##
+
+- Syntax highlighting
+    + Slow because of using regular expressions
+
+```vim
+:syntax off                      " radical
+:set synmaxcol=200               " arbitrary number < 3000 (default value)
+:set foldmethod=manual           " anything other than 'syntax'
+:set foldmethod=indent
+:set noshowmatch                 " it's off by default but well
+```
+
+- Misusing auto commands
+    + Remove unnecessary auto commands: `autocmd`
+- Redrawing
+    + Slow because of many things to redraw
+
+
 # vimdiff
 
 - `[c`: previous change
