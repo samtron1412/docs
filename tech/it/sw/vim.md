@@ -1424,6 +1424,26 @@ Overview of which map command works in which mode.  More details below.
     + `:tfirst` first tag
     + `:tlast` last tag
 
+# Spell checking
+
+- Enable global spell checking: `set spell`
+- `]s` find the next misspelled word
+- `[s` find the previous misspelled word
+- `]S` similar `]s` but only stop at bad words instead of rare words or
+    words for another region.
+- `[S`
+- `z=` suggestions for that particular words
+- `set spell spelllang=en_us` set spell language
+- `zg` add word into the dictionary
+- `zw` mark the word as a wrong (bad) word, if the word already appears
+    in spellfile it is turned into a comment line
+    + clean up the spellfile by running `:runtime spell/cleanadd.vim`
+    + Deletes all comment lines, except the ones that start with "##".
+        Use "##" to add comment that you want to keep.
+- `zug` and `zuw` undo `zg` and `zw`
+- Spell check by file type
+    + `autocmd FileType gitcommit,latex,tex,md setlocal spell`
+
 # Troubleshooting
 
 ## Error: * not found *
