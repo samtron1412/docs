@@ -787,6 +787,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Inspecting Vim's Variables
+
+- `:echo <variable_name>`
+- `:echo g:Something`
+
 ## Open help in another split pane
 
 - `:vert help`
