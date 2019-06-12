@@ -91,11 +91,25 @@ http://www.vim.org/docs.php
 
 ### Move around quickly
 
-- Search the current word `*`
+- Disable key repeat, arrow keys, backspace in insert mode
+- If you know the word that you want to find
+    + Search the current word `*` `/<word>` to search the word
+- If you don't know the word
+    + First, identify the location in the file: top, middle, bot
+        * Using page up, down
+    + Second, if the location in the screen area, jump to the place
+        using relative line number
+        * `H`, `M`, `L`: go to the top, middle, bottom of the screen
+    + In the line, use `f<char>` to mark the character's position
+      (including the character) and `t<char>` to mark the position right
+      before the character
 - `%` jump from open item to matching item
 - `[{` back to the starting `{`
 - `]}` to the closing `}`
-- `gd` from the use to its declaration of a variable
+- `gd` from the use to the declaration of a variable
+- `tpope/vim-rsi`: readline Emacs' mappings
+    + `<C-e>`: to the end of the line
+    + `<C-f>`: forward one character
 
 ### Don't type it twice
 
