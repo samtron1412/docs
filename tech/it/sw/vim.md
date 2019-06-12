@@ -947,6 +947,12 @@ set wrap
 
 - https://vimawesome.com/
 
+### vim-scriptease
+
+- The plugin helps making plugins
+- `:Verbose <command>`: open a preview window to capture command's
+    results
+
 ### fugitive-vim
 
 #### Commands ####
