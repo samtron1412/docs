@@ -1320,6 +1320,62 @@ Overview of which map command works in which mode.  More details below.
         hunk.
 - `:diffupdate`: update the diff highlighting and folds
 
+# All Vim's lists
+
+- Jump list: Vim records what it calls “jump” motions, motions that
+    generally can take you to a distant location in your buffer or to a
+    different buffer.
+    + `:jumps`: show jump list
+    + `<C-o>`: previous jump
+    + `<C-i>`: next jump
+- Change list: Each undoable edit you make in a buffer adds an entry to
+    the change list, which records the cursor location. You can
+    therefore jump through the locations of the changes you’ve made.
+    + `:changes`: show change list
+    + `g;`: older change
+    + `g,`: newer change
+- Quickfix list: The quickfix list, generally speaking, provides a way
+    of storing and traversing a list of locations across files. The
+    quickfix list can be populated from the output of compilers and
+    linters via :make, from searches with :grep, and so on.
+    + `:copen`: open quickfix list
+    + `:cclose`: close quickfix list
+    + `:cprevious`: previous location
+    + `:cnext`: next location
+    + `:cfirst`: first location
+    + `:clast`: last location
+- Buffer list: The buffer list maintains a listing of all the buffers in
+    the current editing session, including those that are hidden. 
+    + `:buffers` show buffer list
+    + `:bprevious` previous buffer
+    + `:bnext` next buffer
+    + `:bfirst` first buffer
+    + `:blast` last buffer
+- Argument list: The arglist is populated with the file paths specified
+    on the command line when starting Vim, and can also be manipulated
+    from within Vim with the :args family of commands. The arglist can
+    be useful for collecting a bunch of files to act on, such as
+    performing a search and replace.
+    + `:args` show argument list
+    + `:previous` previous file
+    + `:next` next file
+    + `:first` first file
+    + `:last` last file
+- Tag stack: Vim remembers each tag you jump to, for example by invoking
+    <C-]>, and the location from which you jumped by pushing an entry
+    onto the tag stack. By popping an entry from the stack, you are
+    returned to your previous location.
+    + `:tags` show tag stack
+    + `:pop` previous tag
+    + `:tag` next tag
+- Tag match list: Every time you jump to a tag, it gets pushed onto the
+    tag stack (see above). When there are multiple matches for a tag,
+    however, they can be navigated through the tag match list.
+    + `:tselect` show tag match list
+    + `:tprevious` previous tag
+    + `:tnext` next tag
+    + `:tfirst` first tag
+    + `:tlast` last tag
 
 # Troubleshooting
 
