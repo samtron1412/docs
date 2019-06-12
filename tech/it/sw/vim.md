@@ -12,9 +12,51 @@ Initial release in November 1991.
 
 ## [Help][2]
 
-`:help` help facility built-in
-`vimtutor` : basic commands tutorials
-`:h key-notation`: these names for keys are used in the documentation.
+- `:help` help facility built-in
+- `vimtutor` : basic commands tutorials
+- `:h key-notation`: these names for keys are used in the documentation.
+
+### Learn to use help
+
+- `:h <patt>` then press <C-D> to list all topics that contain <patt>
+- `:h <patt>` the Tab to scroll through topics that start with <patt>
+- `<C-]>` to follow the link
+- `<C-o>`: previous location, `<C-i>`: next location
+- `:helpgrep \csearch.\{,12}file`
+    + `\c` case insensitive
+    + the pattern finds `search` then up to 12 characters followed by
+        `file`
+    + the results are loaded into quickfix list.
+
+```text
+| Prefix | Example     | Context                                         |
+|--------|:------------|-------------------------------------------------|
+| v_     | :h v_r      | visual mode                                     |
+| i_     | :h i_CTRL-W | insert mode                                     |
+| c_     | :h c_CTRL-R | ex command line                                 |
+| /      | :h /\r      | search pattern (in this case, :h \r also works) |
+| '      | :h 'ro'     | option                                          |
+| -      | :h -r       | Vim argument (starting Vim)                     |
+```
+
+The following mappings simplify navigation when viewing help:
+
+- Press Enter to jump to the subject (topic) under the cursor.
+- Press Backspace to return from the last jump.
+- Press s to find the next subject, or S to find the previous subject.
+- Press o to find the next option, or O to find the previous option.
+
+```vim
+" Create file ~/.vim/ftplugin/help.vim 
+nnoremap <buffer> <CR> <C-]>
+nnoremap <buffer> <BS> <C-T>
+nnoremap <buffer> o /'\l\{2,\}'<CR>
+nnoremap <buffer> O ?'\l\{2,\}'<CR>
+nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
+nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
+```
+
+
 
 ## Features and improvements over vi
 
@@ -182,7 +224,7 @@ The dot command lets us repeat the last change.
   seen as a condensed version of two or more other commands.
 
 | Compound Command | Equivalent in Longhand |
-| -                | -                      |
+|------------------|------------------------|
 | C                | c$                     |
 | s                | cl                     |
 | S                | ^C                     |
