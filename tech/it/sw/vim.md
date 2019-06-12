@@ -1109,6 +1109,28 @@ nmap <Leader>gl :Gpull<CR>
             the whole changes in that version, stage the changes, close
             all the buffers except the working copy
     + commit the changes
+- Browsing git objects
+    + Reading a file any branch: `:Gedit branch:path/to/file`
+        * can use tab for auto complete branch name and file path
+        * `%` current file path
+    + Git objects:
+        * blobs: contents of files
+        * trees: a list of blobs and trees, directory
+        * commits: reference a tree and one or more parent commits
+        * tags: refer to a particular commit by name
+    + commit objects: `:Gedit <SHA code>`
+        * similar `git show <SHA>`
+        * `<Enter>` on a reference to a parent commit to show it
+        * `<Enter>` on a reference to a tree to show it
+        * `<Enter>` on a diff summary line to diff the specified file
+            before and after the commit.
+    + tree objects:
+        * `a` to show more information of the tree
+        * you can navigate the tree as in a file system, use `<Enter>`
+            and `<C-o>` to go back and forth
+    + `:Gbrowse` anywhere to open GitHub URL in a browser
+- Status line: show branch in the status line
+    + `set statusline+=%{FugitiveStatusline()}`
 
 ### Colorscheme
 
