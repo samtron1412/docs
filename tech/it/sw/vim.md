@@ -1000,6 +1000,16 @@ set wrap
 - `:Glog`: load all the revision of this file into the quickfix list.
     + `:Glog -- %`: load the commit history of this file into the
         quickfix list
+    + `:Glog --`: complete the commit history of all files
+    + `:Glog`: all revisions of this file
+    + `:Glog -10`: the last ten revisions
+    + `:Glog -10 --revese`: the first ten revisions
+    + `:Glog -1 --until=yesterday`: the last revision this file that was
+        checked in before midnight
+    + `:Glog --grep=findme --`: search <findme> in all commit messages
+    + `:Glog --grep=findme -- %`
+    + `:Glog -Sfindme --`: search <findme> in the diff
+    + `:Glog -Sfindme -- %`
 - `:Gedit [fugitive-object]`
     + `:%`: this file in the git index
 - `:Gread [object]`: empty the buffer and read a fugitive-object
@@ -1032,6 +1042,11 @@ set wrap
 - `:Gbrowse`: open the current file, blob, tree, commit, or tag in your
     browser at the upstream hosting provider.
     + `https://github.com/tpope/vim-rhubarb>`: GitHub support
+- `:Ggrep <findme>` search for <findme> in working copy files
+    + `:Ggrep --cached <findme>` search in index
+    + `:Ggrep <findme> <branchname>`
+    + `:Ggrep <findme> <tagname>`
+    + `:Ggrep <findme> <SHA>`
 
 #### Mappings ####
 
