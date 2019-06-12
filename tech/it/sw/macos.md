@@ -84,6 +84,14 @@ Mac OS
 
 - Hold a key and it will repeat the key in Sublime Text in vim mode
 - https://gist.github.com/conficker1805/18830beb333a990b22a3
+- Enable key repeat for an app:
+    + `defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false`
+- Enable key repeat for the whole system:
+    + `defaults write -g ApplePressAndHoldEnabled -bool false`
+- Disable key repeat for the whole system:
+    + `defaults write -g ApplePressAndHoldEnabled -bool true`
+- Restart app after changing the setting
+
 
 ```
 You can disable this feature for just Sublime Text by issuing the
