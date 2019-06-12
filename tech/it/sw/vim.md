@@ -954,6 +954,33 @@ set wrap
 - `:Git` Run an arbitrary git command. Similar to :!git [args] but chdir
     to the repository tree first.
 - `:Gstatus` or `:G`: bring up a summary window similar git-status
+    + `s`: stage (add) the file or hunk under the cursor
+    + `u`: unstage (reset) the file or hunk under the cursor
+    + `-`: stage or unstage
+    + `<C-N>` or `J`: skip to the next file or hunk
+    + `<C-P>` or `K`: skip to the previous file or hunk
+    + `X`: discard the change under the cursor
+        * Use `:messages` to see the message again
+    + `=`: toggle inline diff of the file under the cursor
+    + `<`: insert an inline diff of the file under the cursor
+    + `>`: remove the inline diff of the file under the cursor
+    + `i`: on untracked files, git-add, otherwise, move to the next
+        hunk, expanding inline diffs automatically.
+    + `dd`: perform a `:Gdiff` on the file under the cursor
+    + `ds`: split horizontally diff
+    + `dv`: split vertically
+    + `P`: invoke `:Git add --patch` or `reset --path` on the file
+    + `cc`: create a commit
+    + `ca`: amend the last commit and edit the message
+    + `ce`: Amend the last commit without editing the message
+    + `cw`: reword the last commit
+    + `cvc`: create a commit with -v (new tab)
+    + `cva`: amend the last commit with -v (new tab)
+    + `gq`: close the status buffer
+    + `R`: reload the status buffer
+    + `.`: start a `:` command line with the file path under the cursor
+        prepopulated.
+    + `g?`: open the help file
 - `:Gcommit`: open a split window to obtain a commit message
     + `:Gcommit -v`: open a new tab instead of a split window
     + `:Gcommit % -v`: stage the change of this file and open a new tab
