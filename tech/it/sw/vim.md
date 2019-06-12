@@ -1085,6 +1085,25 @@ nmap <Leader>gl :Gpull<CR>
 ```
 
 
+#### Work flows ####
+
+- Modify the file  
+    + Commit hunks or commit the whole file
+    + If you can, commit without invoke an editor is faster
+- Merging
+    + 3-way merge: target branch, working copy, merge branch
+    + from working copy version
+        * `:diffget <target/merge>` to get the change
+    + from target or merge branch version
+        * `:diffput` or `dp` to put the change to the working copy
+    + after done with fixing changes, use `:Gwrite` in the working copy
+        windows to close other buffers and keep the working copy buffer
+        and stage the changes
+        * We can use `:Gwrite!` in the target or merge window to keep
+            the whole changes in that version, stage the changes, close
+            all the buffers except the working copy
+    + commit the changes
+
 ### Colorscheme
 
 - https://github.com/morhetz/gruvbox
