@@ -994,6 +994,23 @@ set wrap
 
 - https://vimawesome.com/
 
+### vim-sneak
+
+- `s<char><char>`: jump forward to the matches 2 characters
+- `;`: next match, `3;`: skip to the third match
+- `<C-o>`: back to the starting point
+- `s<Enter>` repeat the last sneak-search
+- `S` search backwards
+- `3dzqt`: delete to the third instance of `qt`
+    + `.` to repeat the whole operation
+    + `2.` to repeat twice
+    + `d;` delete up to the next match
+    + `4d;` delete up to the fourth next match
+- `yszxy]` surround brackets up to xy
+    + `.` to repeat
+- `gUz\}` uppercase from the cursor to the next instant of `\}`
+    + `.` to repeat
+
 ### vim-scriptease
 
 - The plugin helps making plugins
