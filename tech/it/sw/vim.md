@@ -1462,6 +1462,16 @@ Overview of which map command works in which mode.  More details below.
 - Spell check by file type
     + `autocmd FileType gitcommit,latex,tex,md setlocal spell`
 
+# Cscope
+
+Cscope is a tool like ctags, but think of it as ctags on steroids since
+it does a lot more than what ctags provides.  In Vim, jumping to a
+result from a cscope query is just like jumping to any tag; it is saved
+on the tag stack so that with the right keyboard mappings, you can jump
+back and forth between functions as you normally would with |tags|.
+
+- `:h cscope`
+
 # Troubleshooting
 
 ## Error: * not found *
