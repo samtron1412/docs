@@ -2,6 +2,16 @@
 
 # Overview
 
+- Potential features
+    + Text editor: coding, note taking (org-mode), markdown, git, latex
+    + Email client: m4u
+    + File manager: dired (built-in), ranger, sunrise-commander
+    + Music player
+    + PDF reader
+    + Project management
+    + IRC, Chat, RSS
+    + DevOps
+
 - Obtain a Decent Initial Configuration
 
 The default configuration sucks. Luckily there is Emacs Prelude - Emacs

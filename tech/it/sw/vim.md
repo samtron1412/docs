@@ -1272,7 +1272,8 @@ nmap <Leader>gl :Gpull<CR>
 - Range, pattern, and substitute preview
     + https://github.com/markonm/traces.vim
     + Preview the change before run it
-- 
+- Automatically detect tab settings in a new codebase
+    + https://github.com/tpope/vim-sleuth
 
 ## Key mapping
 

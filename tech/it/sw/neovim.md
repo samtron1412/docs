@@ -9,5 +9,11 @@ Neovim is a refactor of Vim, that strives to be a superset of Vim.
 - Neovim can execute plugins asynchronously.
 - Neovim's plugins can also be written in any language.
 
+# GUI
+
+- [VimR](https://github.com/qvacua/vimr)
+- [Onivim](https://github.com/onivim/oni)
+
+
 # References
 
