@@ -1269,6 +1269,12 @@ nmap <Leader>gl :Gpull<CR>
 
 ### Misc
 
+- Search tools wrapper
+    + https://github.com/mileszs/ack.vim
+- Multiple cursors
+    + https://github.com/terryma/vim-multiple-cursors
+    + This can be achieve by vim using visual block mode and substitute
+        operator.
 - Range, pattern, and substitute preview
     + https://github.com/markonm/traces.vim
     + Preview the change before run it
