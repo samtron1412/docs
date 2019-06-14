@@ -29,6 +29,24 @@ forth step - read the official Emacs Manual - C-h r
 fifth step - use Emacs day and night for all your work
 ```
 
+## Resources
+
+- Emacs help system
+- Starter kits
+    + http://ergoemacs.org/misc/list_of_emacs_starter_kits.html
+
+# Org mode
+
+- https://www.youtube.com/watch?v=oJTwQvgfgMM
+
+# Spacemacs
+
+- Try this first, but should go with vanilla Emacs, so I can configure
+  it based on my configuration.
+- https://github.com/syl20bnr/spacemacs
+- https://github.com/emacs-evil/evil
+- https://www.emacswiki.org/emacs/Evil
+
 # References
 1. [Wikipedia - Emacs][1]
 2. [Arch Wiki - Emacs][2]
