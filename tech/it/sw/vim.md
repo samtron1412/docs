@@ -1484,6 +1484,51 @@ back and forth between functions as you normally would with |tags|.
 
 - Check runtime path: `:set runtimepath?`
 
+# Editor Wars
+
+```
+Take away of a programmer
+
+I’m done making excuses for why I use Emacs/Vim over PyCharms. I might
+be able to edit that line 5 times faster in Vim that I can in PyCharms,
+but if my experience with Emacs taught me anything, it’s that the editor
+doesn’t matter as much as we’d like to believe.
+
+As programmers, we’re told to use the right tool for the job. I have
+finally realised that Vim/Emacs aren’t the right tools for
+Python/Django. For me at least. For Golang, I haven’t found anything
+better than Vim. For general notes and to-dos, Emacs with Org Mode is
+the best. Magit is the best Git frontend I’ve seen. I prefer using it
+over the Git CLI. For editing files that are GBs in size, Vim blows
+everything else out of the water. For Clojure (which I got interested in
+because of Emacs LISP) Emacs is straight down the only thing I’ll
+consider using. And I’m sure that for other statically typed languages
+like Rust, C, C++, Emacs and Vim are crazy awesome, and I’ll probably
+use them over anything else. But for Python, PyCharms is the best I’ve
+seen. And I’m going to give it a try now.
+
+I guess this is just a rant, something I had to get off my chest for a
+long while. I’ve had arguments with many people over why Vim beats their
+editor of choice. This is my way of accepting that they were probably
+smarted than me in their choices.
+
+This is my way of accepting that I don’t need to use Vim/Emacs to be
+good at my job. That it’s OK to not follow the culture when you can’t
+seem to fit in. And this is my effort to help the next 15 year old who
+searches for “Vim vs Emacs”. Don’t worry about it. Use whatever feels
+natural, and works best for the environment you’re working in.
+
+I will keep using Vim on the remote machines I manage and for Golang. I
+will keep using Emacs for Org Mode. And from now on, I’ll use PyCharms
+for Python.
+
+One of the surprising discoveries during this journey for me was just
+how limited I believed my abilities to adapt were. I had convinced
+myself that I could never move to another editor. But after using Vim
+for more than 7 years, moving to Emacs successfully over a period of
+less than 2 months opened up my eyes.
+```
+
 # References
 
 [1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
