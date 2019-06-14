@@ -47,7 +47,7 @@ The following mappings simplify navigation when viewing help:
 - Press o to find the next option, or O to find the previous option.
 
 ```vim
-" Create file ~/.vim/ftplugin/help.vim 
+" Create file ~/.vim/ftplugin/help.vim
 nnoremap <buffer> <CR> <C-]>
 nnoremap <buffer> <BS> <C-T>
 nnoremap <buffer> o /'\l\{2,\}'<CR>
@@ -1172,7 +1172,7 @@ nmap <Leader>gl :Gpull<CR>
 
 #### Work flows ####
 
-- Modify the file  
+- Modify the file
     + Commit hunks or commit the whole file
     + If you can, commit without invoke an editor is faster
 - Merging
@@ -1410,7 +1410,7 @@ Overview of which map command works in which mode.  More details below.
     + `:cfirst`: first location
     + `:clast`: last location
 - Buffer list: The buffer list maintains a listing of all the buffers in
-    the current editing session, including those that are hidden. 
+    the current editing session, including those that are hidden.
     + `:buffers` show buffer list
     + `:bprevious` previous buffer
     + `:bnext` next buffer
@@ -1450,11 +1450,11 @@ Overview of which map command works in which mode.  More details below.
 - `]S` similar `]s` but only stop at bad words instead of rare words or
     words for another region.
 - `[S`
-- `z=` suggestions for that particular words
-- `set spell spelllang=en_us` set spell language
-- `zg` add word into the dictionary
+- `z=` suggestions for that particular words.
+- `set spell spelllang=en_us` set spell language.
+- `zg` add word into the dictionary.
 - `zw` mark the word as a wrong (bad) word, if the word already appears
-    in spellfile it is turned into a comment line
+    in spellfile it is turned into a comment line.
     + clean up the spellfile by running `:runtime spell/cleanadd.vim`
     + Deletes all comment lines, except the ones that start with "##".
         Use "##" to add comment that you want to keep.
