@@ -28,7 +28,7 @@ Initial release in November 1991.
         `file`
     + the results are loaded into quickfix list.
 
-```text
+```help
 | Prefix | Example     | Context                                         |
 |--------|:------------|-------------------------------------------------|
 | v_     | :h v_r      | visual mode                                     |
@@ -713,7 +713,7 @@ The most common operators:
   directory
 - Mapping:
 
-```
+```vim
 " Easy Expansion of the Active File Directory
 let mapleader=','
 " cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -757,7 +757,7 @@ map <leader>et :tabe %%
   don't have to install anything, but we do need to make sure that Vim
   is configured to load plugins.
 
-```
+```vim
 set nocompatible
 filetype plugin on
 ```
@@ -810,7 +810,7 @@ filetype plugin on
 
 ## Jump Back To Previous or Last Cursor Position
 
-```
+```help
 
 [a] '. : Jump to last modification line.
 
@@ -829,7 +829,7 @@ filetype plugin on
 
 - Create a file `xterm-256color-italic.terminfo`
 
-```
+```sh
 xterm-256color-italic|xterm with 256 colors and italic,
   sitm=\E[3m, ritm=\E[23m,
   use=xterm-256color,
@@ -837,7 +837,7 @@ xterm-256color-italic|xterm with 256 colors and italic,
 
 - Create a file `tmux-256color.terminfo`
 
-```
+```sh
 tmux-256color|tmux with 256 colors,
   ritm=\E[23m, rmso=\E[27m, sitm=\E[3m, smso=\E[7m, Ms@,
   khome=\E[1~, kend=\E[4~,
@@ -846,7 +846,7 @@ tmux-256color|tmux with 256 colors,
 
 - Install terminfos
 
-```
+```sh
 $ tic -x xterm-256color-italic.terminfo
 $ tic -x tmux-256color.terminfo
 ```
@@ -867,7 +867,7 @@ store your settings.
 
 Add this to your ~/.tmux.conf:
 
-```
+```vim
 set -g default-terminal 'tmux-256color'
 set -as terminal-overrides ',xterm*:Tc:sitm=\E[3m'
 ```
@@ -885,14 +885,14 @@ with italics.
 
 ## Reformatting and Indentation
 
-```reformatting
+```help
 V=  - select text, then reformat with =
 =   - will correct alignment of code
 ==  - one line;
 gq  - reformat paragraph
 ```
 
-```indentation
+```help
 >>   Indent line by shiftwidth spaces
 <<   De-indent line by shiftwidth spaces
 5>>  Indent 5 lines
@@ -993,6 +993,11 @@ set wrap
 ## Plugins
 
 - https://vimawesome.com/
+
+### vim-markdown
+
+- Disable folding
+    + `let g:vim_markdown_folding_disabled = 1`
 
 ### vim-sneak
 
@@ -1114,7 +1119,7 @@ set wrap
 
 #### Mappings ####
 
-```
+```vim
 """" vim-fugitive mapping
 " Using cmdline for other tasks: move, delete, stash, push, pull
 
@@ -1317,7 +1322,7 @@ Special case: While typing a count for a command in Normal mode, mapping
 zero is disabled.  This makes it possible to map zero without making it
 impossible to type a count with a zero.
 
-```text
+```help
 Overview of which map command works in which mode.  More details below.
 
      COMMANDS                    MODES ~
@@ -1488,7 +1493,7 @@ back and forth between functions as you normally would with |tags|.
 
 # Editor Wars
 
-```
+```txt
 Take away of a programmer
 
 I’m done making excuses for why I use Emacs/Vim over PyCharms. I might
