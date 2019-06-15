@@ -1411,6 +1411,7 @@ Overview of which map command works in which mode.  More details below.
 ## File type specific stuff
 
 - https://www.reddit.com/r/vim/wiki/where_to_put_filetype_specific_stuff
+- https://vi.stackexchange.com/questions/8056/for-an-autocmd-in-a-ftplugin-should-i-use-pattern-matching-or-buffer
 
 ### If Vim know the file type
 
@@ -1425,16 +1426,33 @@ order:
 1. `~/.vim/ftplugin/<filetype>.vim`
 
 This is the most obvious location but also the most susceptible to be
-overridden by system defaults. Not recommended.
+overridden by system defaults. If you want to disable other filetype
+plugins, put the following check in the beginning of your
+`<filetype>.vim`:
+
+```vim
+" Only do this when not done yet for this buffer
+if exists("b:did_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
+```
+
 
 2. `$VIMRUNTIME/ftplugin/<filetype>.vim`
 
-This one is in Vim's system-wide runtime so it is off limits.
+This one is in Vim's system-wide runtime so it will load other filetype
+plugins.
 
 3. `~/.vim/after/ftplugin/<filetype>.vim`
 
 This one is always sourced last so options and commands are guaranteed
-to take precedence over system defaults. Bingo!
+to take precedence over system defaults. Bingo! Don't put the check of
+`b:did_ftplugin` here to add your own configurations.
+
+> The important of undoing, when the file is set to other filetype, you
+>    need to undo your configurations. You can do that by set the
+>    `b:undo_ftplugin` string.
 
 From there, you only need to:
 
@@ -1445,10 +1463,35 @@ and put your options and stuff in that file.
 Example for the foo filetype:
 
 ```vim
-" ~/.vim/after/ftplugin/foo.vim
+" Uncomment following lines if you want to disable other filetype
+" plugins
+" Only do this when not done yet for this buffer
+" if exists("b:did_ftplugin")
+"   finish
+" endif
+" let b:did_ftplugin = 1
+
 setlocal expandtab
 setlocal shiftwidth=7
 nnoremap <buffer> <F5> :echo 'I pressed F5 in a foo file!'<CR>
+
+" If you use autocmd in this plugin, you need to put it in an augroup
+" and clear the previous autocmd's using au! * <buffer>
+augroup my_filetype
+    au! * <buffer>  "Clear all previous autocmd's for this buffer
+
+    " If you want to set options for each window (not buffer, many
+    " windows can show the same buffer) then you need to set it here
+    " using autocmd with BufWinEnter event.
+    au BufWinEnter <buffer> setlocal list
+augroup END
+
+" Append the undo string
+" Using ":setlocal" with "<" after the option name resets the option to
+" its global value.  That is mostly the best way to reset the option
+" value.
+let b:undo_ftplugin .= "setlocal expandtab< shiftwidth<"
+    \ . "| nunmap <buffer> <F5>"
 ```
 
 ### If Vim does not know the file type
@@ -1459,6 +1502,8 @@ This is done with a filetype detection script in `~/.vim/ftdetect/`:
 
 ```vim
 " ~/.vim/ftdetect/foo.vim
+" You don't need to wrap autocmd in an augroup since Vim does it by
+" itself :h ftdetect
 autocmd BufNewFile,BufRead *.foo setf foo
 ```
 
