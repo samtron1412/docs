@@ -93,7 +93,7 @@ all and clean are named .PHONY because they don't refer to real files,
 but are things we want make to do.
 
 
-```cpp
+```make
 CC      := gcc
 CCFLAGS :=
 LDFLAGS :=
