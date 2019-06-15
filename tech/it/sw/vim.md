@@ -787,6 +787,26 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Creating folders / directories on save
+
+```vim
+" Put this function in the .vim/autoload/vimrc.vim
+function s:MkNonExDir(file, buf)
+    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+        let dir=fnamemodify(a:file, ':h')
+        if !isdirectory(dir)
+            call mkdir(dir, 'p')
+        endif
+    endif
+endfunction
+
+" Add this autocmd to the augroup in .vimrc file
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
+```
+
 ## List all filetypes in Vim
 
 ```sh
