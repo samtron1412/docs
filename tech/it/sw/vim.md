@@ -1019,8 +1019,88 @@ set wrap
 
 ### vim-markdown
 
-- Disable folding
-    + `let g:vim_markdown_folding_disabled = 1`
+#### Configuration
+
+```vim
+"""" vim-markdown configuration
+
+" Follow named anchors
+let g:vim_markdown_follow_anchor = 1
+
+" Auto-write when following links
+let g:vim_markdown_autowrite = 1
+
+" Disable auto add bullet points
+let g:vim_markdown_auto_insert_bullets = 0
+let g:vim_markdown_new_list_item_indent = 0
+
+" Enable TOC window auto-fit
+let g:vim_markdown_toc_autofit = 1
+
+" code blocks
+let g:vim_markdown_conceal_code_blocks = 0
+
+" disable header folding
+let g:vim_markdown_folding_disabled = 1
+
+" do not use conceal feature
+let g:vim_markdown_conceal = 0
+
+" disable math tex conceal feature
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+
+" support front matter of various format
+let g:vim_markdown_frontmatter = 1  " for YAML format
+let g:vim_markdown_toml_frontmatter = 1  " for TOML format
+let g:vim_markdown_json_frontmatter = 1  " for JSON format
+```
+
+#### Mappings
+
+- `ge`: open the link under the cursor in Vim for editing. Useful for
+  relative Markdown links.
+    + `<Plug>Markdown_EditUrlUnderCursor` can be used to change the
+    mapping
+- `gx`: open the link under the cursor in the same browser as the
+  standard gx command.
+    + `<Plug>Markdown_OpenUrlUnderCursor`
+- `]]`: go to next header. <Plug>Markdown_MoveToNextHeader
+- `[[`: go to previous header. <Plug>Markdown_MoveToPreviousHeader
+- `][`: go to next sibling header if any. <Plug>Markdown_MoveToNextSiblingHeader
+- `[]`: go to previous sibling header if any. <Plug>Markdown_MoveToPreviousSiblingHeader
+- `]c`: go to Current header. <Plug>Markdown_MoveToCurHeader
+- `]u`: go to parent header (Up). <Plug>Markdown_MoveToParentHeader
+
+Custom mappings
+
+```vim
+"""" vim-markdown mapping
+nmap <Leader>mf :TableFormat<CR>
+xmap <Leader>mf :TableFormat<CR>
+nmap <Leader>mt :Toc<CR>
+xmap <Leader>mi :HeaderIncrease<CR>
+xmap <Leader>md :HeaderDecrease<CR>
+```
+
+
+#### Commands
+
+- `:HeaderDecrease`
+    + Decrease level of all headers in buffer: h2 to h1, h3 to h2, etc.
+    + If range is given, only operate in the range.
+    + If an h1 would be decreased, abort.
+- `:HeaderIncrease`
+- `:SetexToAtx`: convert all Setex style headers in buffer to Atx.
+     + Can operate on range
+- `:TableFormat`: Format the table under the cursor
+    + The input table must already have a separator line as the second
+    line of the table. That line only needs to contain the correct pipes
+    |.
+- `:Toc`: create a quickfix vertical window navigable table of contents
+  with the headers.
+    + `:Toch`, `:Toct`, `:Tocv`
+
 
 ### vim-sneak
 
@@ -1807,6 +1887,7 @@ less than 2 months opened up my eyes.
 
 # References
 
+[wiki]: https://en.wikipedia.org/wiki/Vim_(text_editor)
 [1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
 [2]: http://vim.wikia.com/wiki/Learn_to_use_help "Learn how to use help"
 [plugins]: https://vimawesome.com/
