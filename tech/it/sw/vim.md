@@ -941,25 +941,6 @@ gq  - reformat paragraph
 
 # Tuning Vim
 
-## Vim script
-
-Vim script (`viml`) is the scripting language built into Vim. Based on
-the ex editor language of the original vi editor.
-
-Vim script files are stored in plain text format and the file name
-extension is `.vim`.
-
-## Plug-in manager
-
-- Discusses:
-    + http://vi.stackexchange.com/questions/388/what-is-the-difference-between-the-vim-package-managers
-    + https://www.reddit.com/r/vim/comments/36ak7j/do_you_use_a_vim_plugin_manager_if_so_which_one/
-    + https://www.reddit.com/r/vim/comments/1w4udb/best_vim_plugin_manager/
-- [Vim-plug](https://github.com/junegunn/vim-plug)
-- [pathogen](https://github.com/tpope/vim-pathogen/)
-- [Vundle](https://github.com/VundleVim/Vundle.vim)
-- [NeoVundle](https://github.com/Shougo/neobundle.vim)
-
 ## [.vimrc template](http://www.vimbits.com/)
 
 - http://alvinalexander.com/linux-unix/vimrc-vim-example-commands-configuration-file
@@ -1000,6 +981,17 @@ set autoindent
 set smartindent
 set wrap
 ```
+
+## Plug-in manager
+
+- Discusses:
+    + http://vi.stackexchange.com/questions/388/what-is-the-difference-between-the-vim-package-managers
+    + https://www.reddit.com/r/vim/comments/36ak7j/do_you_use_a_vim_plugin_manager_if_so_which_one/
+    + https://www.reddit.com/r/vim/comments/1w4udb/best_vim_plugin_manager/
+- [Vim-plug](https://github.com/junegunn/vim-plug)
+- [pathogen](https://github.com/tpope/vim-pathogen/)
+- [Vundle](https://github.com/VundleVim/Vundle.vim)
+- [NeoVundle](https://github.com/Shougo/neobundle.vim)
 
 ## Plugins
 
