@@ -787,6 +787,17 @@ filetype plugin on
 
 # Tips and Tricks
 
+## List all filetypes in Vim
+
+```sh
+# cd to vim directory
+cd $(vim -Nesc '!echo $VIMRUNTIME' -c qa)
+
+# list all filetypes
+find syntax ftplugin -iname '*.vim' -exec basename -s .vim {} + | sort -u
+```
+
+
 ## Inspecting Vim's Variables
 
 - `:echo <variable_name>`
