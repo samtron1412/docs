@@ -1269,6 +1269,8 @@ nmap <Leader>gl :Gpull<CR>
 
 ### Misc
 
+- Tags manager
+    + https://github.com/ludovicchabant/vim-gutentags
 - Search tools wrapper
     + https://github.com/mileszs/ack.vim
 - Multiple cursors
