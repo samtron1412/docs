@@ -1252,48 +1252,147 @@ nmap <Leader>gl :Gpull<CR>
 - https://github.com/sheerun/vim-polyglot
     + List of useful plugins
 
-### ultisnip
-
-- https://github.com/SirVer/ultisnips
-    + Snippets
-
-### Motion
-
-- https://github.com/easymotion/vim-easymotion
-- https://github.com/justinmk/vim-sneak
-- https://github.com/kshenoy/vim-signature
-
-### Fuzzy Finder
-
-- https://github.com/kien/ctrlp.vim
-- https://github.com/junegunn/fzf.vim
-
-### Status line
-
-- https://github.com/itchyny/lightline.vim
-- https://github.com/vim-airline/vim-airline
-
-### Coding
-
-- https://github.com/vim-syntastic/syntastic
-- https://github.com/w0rp/ale
-- Class outline: https://vimawesome.com/plugin/tagbar
-- https://vimawesome.com/plugin/the-nerd-commenter
-- https://vimawesome.com/plugin/commentary-vim
-- https://vimawesome.com/plugin/youcompleteme
-
-### Editing
-
-- https://github.com/tpope/vim-surround
-- https://github.com/terryma/vim-multiple-cursors
-- https://github.com/Yggdroot/indentLine
-- https://github.com/mattn/emmet-vim
-- https://vimawesome.com/plugin/tabular
-
-
 ### Productivity
 
 - https://vimawesome.com/plugin/vim-orgmode
+
+### Auto Completion
+
+- https://github.com/ajh17/VimCompletesMe
+- https://github.com/lifepillar/vim-mucomplete
+- https://github.com/Shougo/deoplete.nvim
+- https://github.com/Valloric/YouCompleteMe
+
+Language specific
+
+- https://github.com/justmao945/vim-clang
+
+
+Example configuration
+
+Here comes with my configurations, if you want to give them a try:
+
+.vimrc
+
+```vim
+set completeopt-=preview
+set completeopt+=menu,menuone,noinsert,noselect
+set shortmess+=c
+
+augroup OmniCompletionSetup
+    autocmd!
+    autocmd FileType c          set omnifunc=ccomplete#Complete
+    autocmd FileType php        set omnifunc=phpcomplete#CompletePHP
+    autocmd FileType python     set omnifunc=jedi#completions
+    autocmd FileType ruby       set omnifunc=rubycomplete#Complete
+    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
+    autocmd FileType xml        set omnifunc=xmlcomplete#CompleteTags
+augroup END
+```
+
+YouCompleteMe.vim
+
+```vim
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+let g:ycm_key_list_select_completion = ['<TAB>', '<C-N>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<C-P>', '<Up>']
+let g:ycm_key_invoke_completion = '<C-F>'
+```
+
+neocomplete.vim
+
+```vim
+" Shortcut for toggle neocomplete
+noremap <Leader>no :NeoCompleteToggle<CR>
+
+" Use neocomplete
+let g:neocomplete#enable_at_startup = 1
+
+" Disable delay
+let g:neocomplete#auto_complete_delay = 0
+
+" Use smartcase
+let g:neocomplete#enable_smart_case = 1
+
+" Set minimum syntax keyword length
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" Define dictionary
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : ''
+    \ }
+
+call neocomplete#custom#source('_', 'sorters', [])
+
+" Define keyword
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+" SuperTab like snippets behavior
+imap <expr><TAB> pumvisible() ? "\<C-N>" : "\<TAB>"
+smap <expr><TAB> pumvisible() ? "\<C-N>" : "\<TAB>"
+imap <expr><S-TAB> pumvisible() ? "\<C-P>" : "\<S-TAB>"
+smap <expr><S-TAB> pumvisible() ? "\<C-P>" : "\<S-TAB>"
+
+" <CR>: close popup and save indent
+inoremap <silent> <CR> <C-R>=<SID>ClosePopup()<CR>
+function! <SID>ClosePopup()
+    return pumvisible() ? "\<C-Y>" : "\<CR>"
+endfunction
+
+" Undo and manual completion
+inoremap <expr><C-G> neocomplete#undo_completion()
+inoremap <expr><C-L> neocomplete#complete_common_string()
+
+" Enable heavy omni completion
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.php = '\h\w\{1,}\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+let g:neocomplete#sources#omni#input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
+let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.perl = '[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+
+if !exists('g:neocomplete#force_omni_input_patterns')
+    let g:neocomplete#force_omni_input_patterns = {}
+endif
+
+" Manual omni completion
+inoremap <expr><C-F> neocomplete#start_manual_complete()
+```
+
+
+completor.vim
+
+```vim
+let g:completor_php_omni_trigger = '([$\w]{2,}|use\s*|->[$\w]*|::[$\w]*|implements\s*|extends\s*|class\s+[$\w]+|new\s*)$'
+
+imap <expr><TAB> pumvisible() ? "\<C-N>" : "\<TAB>"
+smap <expr><TAB> pumvisible() ? "\<C-N>" : "\<TAB>"
+imap <expr><S-TAB> pumvisible() ? "\<C-P>" : "\<S-TAB>"
+smap <expr><S-TAB> pumvisible() ? "\<C-P>" : "\<S-TAB>"
+imap <expr><CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
+smap <expr><CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
+```
+
+vim-mucomplete.vim
+
+```vim
+let g:mucomplete#enable_auto_at_startup = 1
+
+let g:mucomplete#chains = {}
+let g:mucomplete#chains.default = ['file', 'omni', 'keyn', 'dict', 'ulti']
+let g:mucomplete#chains.unite = []
+```
+
+PS. You also need to install related omni completion plugins.
+
 
 ### Misc
 
