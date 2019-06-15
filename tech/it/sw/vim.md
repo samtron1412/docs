@@ -1396,6 +1396,108 @@ Overview of which map command works in which mode.  More details below.
 :noautocmd qall!
 ```
 
+## File type specific stuff
+
+- https://www.reddit.com/r/vim/wiki/where_to_put_filetype_specific_stuff
+
+### If Vim know the file type
+
+- Tell Vim to detect the file type and apply the configuration
+    + `filetype plugin indent on` in your `.vimrc`
+
+When Vim recognizes a known filetype it sets the filetype option and
+emits the FileType event, which itself triggers the sourcing of the
+corresponding filetype plugins. Filetype plugins are sourced in that
+order:
+
+1. `~/.vim/ftplugin/<filetype>.vim`
+
+This is the most obvious location but also the most susceptible to be
+overridden by system defaults. Not recommended.
+
+2. `$VIMRUNTIME/ftplugin/<filetype>.vim`
+
+This one is in Vim's system-wide runtime so it is off limits.
+
+3. `~/.vim/after/ftplugin/<filetype>.vim`
+
+This one is always sourced last so options and commands are guaranteed
+to take precedence over system defaults. Bingo!
+
+From there, you only need to:
+
+create `~/.vim/after/ftplugin/<filetype>.vim` if it doesn't already exist,
+
+and put your options and stuff in that file.
+
+Example for the foo filetype:
+
+```vim
+" ~/.vim/after/ftplugin/foo.vim
+setlocal expandtab
+setlocal shiftwidth=7
+nnoremap <buffer> <F5> :echo 'I pressed F5 in a foo file!'<CR>
+```
+
+### If Vim does not know the file type
+
+- Tell Vim how to detect the file
+
+This is done with a filetype detection script in `~/.vim/ftdetect/`:
+
+```vim
+" ~/.vim/ftdetect/foo.vim
+autocmd BufNewFile,BufRead *.foo setf foo
+```
+
+Once that file exists, it will be sourced on every startup and allow Vim
+to assign filetype foo to every file with extension .foo.
+
+Alternatively, you could put that autocommand in your vimrc.
+
+```vim
+"Standard" form:
+
+augroup my_fancy_filetypes
+    autocmd!
+    autocmd BufNewFile,BufRead *.foo setf foo
+augroup END
+```
+
+### Local and global settings
+
+Be careful about the options you set and the mappings you create.
+
+Some options are buffer-local, some others are buffer-or-window-local,
+some others are global, and most global options can have a local
+value. If you don't want your language-specific options to leak into
+other filetypes you must set them as locally as possible:
+
+```vim
+setlocal expandtab
+```
+
+Similarly, mappings are global by default but can be made buffer-local
+by adding the <buffer> argument:
+
+```vim
+nnoremap <buffer> <key> :echo "I pressed a key!"<CR>
+```
+
+This also applies to Ex commands:
+
+```vim
+command! -buffer Foo echo "Foo bar baz"
+```
+
+
+## Vim script
+
+Vim script (`viml`) is the scripting language built into Vim. Based on
+the ex editor language of the original vi editor.
+
+Vim script files are stored in plain text format and the file name
+extension is `.vim`.
 
 # vimdiff
 
