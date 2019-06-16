@@ -1963,6 +1963,28 @@ the ex editor language of the original vi editor.
 Vim script files are stored in plain text format and the file name
 extension is `.vim`.
 
+# Theme, interface
+
+## Status line
+
+```vim
+"""" Statusline
+set laststatus=2                "Always show the status line at the bottom
+set statusline=
+set statusline+=%#PmenuSel#     "Highlight the git branch
+set statusline+=%{FugitiveStatusline()} "Git branch of this file
+set statusline+=%{ObsessionStatus()}    "Indicator for sessions: 'S': stop, '$': running
+set statusline+=%#LineNr#       "Erase highlight for other parts
+set statusline+=\ %f            "A whitespace followed by file path
+set statusline+=%m              "Modified flag
+set statusline+=%=              "Separation point between left and right items
+set statusline+=\ %y            "A whitespace followed by file type
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding} "File encoding
+set statusline+=\ [%{&fileformat}]   "File format: unix, dos, mac
+set statusline+=\ %p%%          "Percentage through file in lines
+set statusline+=\ %l:%c         "Line and column numbers
+```
+
 # vimdiff
 
 - `[c`: previous change
