@@ -106,6 +106,7 @@
     * [.vimrc template](#vimrc-template)
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
+        * [vim-gutentags](#vim-gutentags)
         * [vim-surround](#vim-surround)
         * [vim-gitgutter](#vim-gitgutter)
         * [fzf.vim](#fzfvim)
@@ -1183,6 +1184,27 @@ set wrap
 
 - https://vimawesome.com/
 
+### vim-gutentags
+
+- Universal ctags for macOS
+    + https://github.com/universal-ctags/homebrew-universal-ctags
+    + https://github.com/universal-ctags/ctags
+- `:GutentagsUpdate`: update the current tag file for the current
+  buffer.
+- `:GutentagsUpdate!`: update the current tags file with the whole
+  projects instead of just the current buffer.
+- `:GutentagsToggleEnabled`: disables and re-enables Gutentags.
+- `:GutentagsToggleTrace`: to troubleshoot
+
+
+```vim
+set statusline+=%{gutentags#statusline('[',']')}
+" Activate Gutentags when opening a file that’s somewhere under a
+" directory that contains a Makefile file or folder.
+let g:gutentags_project_root = ['Makefile']
+```
+
+
 ### vim-surround
 
 vim-surround is all about "surroundings": parentheses, brackets, quotes,
@@ -1921,12 +1943,23 @@ augroup END
 YouCompleteMe.vim
 
 ```vim
+let g:ycm_auto_trigger = 0  "Use <C-Space> to triggle YCM
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-let g:ycm_key_list_select_completion = ['<TAB>', '<C-N>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<S-TAB>', '<C-P>', '<Up>']
-let g:ycm_key_invoke_completion = '<C-F>'
+" Maybe we don't need this setting
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar': 1,
+      \ 'notes': 1,
+      \ 'markdown': 1,
+      \ 'netrw': 1,
+      \ 'unite': 1,
+      \ 'text': 1,
+      \ 'vimwiki': 1,
+      \ 'pandoc': 1,
+      \ 'infolog': 1,
+      \ 'mail': 1
+      \}
 ```
 
 neocomplete.vim
