@@ -1017,6 +1017,90 @@ set wrap
 
 - https://vimawesome.com/
 
+### vim-gitgutter
+
+- `]h` (custom mapping, original `]c`): next hunk
+- `[h` : previous hunk
+- `<Leader>hp`: previous hunk
+- `<Leader>hs`: stage hunk (cannot unstage a staged hunk)
+- `<Leader>hu`: undo hunk (careful)
+- `<Leader>G`: update the gutter (:GitGutter)
+- `<Leader>gf`: toggle folding for all unchanged lines (:GitGutterFold)
+- Hunk Text objects
+    + `ic`: operates on the current hunk's lines
+    + `ac`: does the same but also includes trailing empty lines
+
+```vim
+"""" git-gutter mapping
+
+" This mapping also works with vimdiff
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
+" Update the gutter
+nmap <Leader>G :GitGutter<CR>
+
+" Toggle folding for all unchanged lines
+nmap <Leader>gf :GitGutterFold<CR>
+
+" Hunk text objects
+omap ih <Plug>GitGutterTextObjectInnerPending
+omap ah <Plug>GitGutterTextObjectOuterPending
+xmap ih <Plug>GitGutterTextObjectInnerVisual
+xmap ah <Plug>GitGutterTextObjectOuterVisual
+```
+
+- Cycle through hunks in all buffers
+
+```vim
+function! NextHunkAllBuffers()
+  let line = line('.')
+  GitGutterNextHunk
+  if line('.') != line
+    return
+  endif
+
+  let bufnr = bufnr('')
+  while 1
+    bnext
+    if bufnr('') == bufnr
+      return
+    endif
+    if !empty(GitGutterGetHunks())
+      normal! 1G
+      GitGutterNextHunk
+      return
+    endif
+  endwhile
+endfunction
+
+function! PrevHunkAllBuffers()
+  let line = line('.')
+  GitGutterPrevHunk
+  if line('.') != line
+    return
+  endif
+
+  let bufnr = bufnr('')
+  while 1
+    bprevious
+    if bufnr('') == bufnr
+      return
+    endif
+    if !empty(GitGutterGetHunks())
+      normal! G
+      GitGutterPrevHunk
+      return
+    endif
+  endwhile
+endfunction
+
+nmap ]H :call NextHunkAllBuffers()<CR>
+nmap [H :call PrevHunkAllBuffers()<CR>
+```
+
+
+
 ### fzf.vim
 
 - `:h fzf`
@@ -1246,7 +1330,7 @@ complete -F _fzf_dir_completion -o default -o bashdefault tree
 ```
 
 
-### ultisnip
+### ultisnips
 
 - https://github.com/SirVer/ultisnips
     + Snippets
