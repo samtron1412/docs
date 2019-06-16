@@ -1025,6 +1025,7 @@ Something
 
 - https://github.com/SirVer/ultisnips
     + Snippets
+- `:h UltiSnips` to learn how to create snippets
 
 ### vim-snippets
 
