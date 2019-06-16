@@ -106,6 +106,7 @@
     * [.vimrc template](#vimrc-template)
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
+        * [vim-surround](#vim-surround)
         * [vim-gitgutter](#vim-gitgutter)
         * [fzf.vim](#fzfvim)
         * [fzf](#fzf)
@@ -1181,6 +1182,26 @@ set wrap
 ## Plugins
 
 - https://vimawesome.com/
+
+### vim-surround
+
+vim-surround is all about "surroundings": parentheses, brackets, quotes,
+XML tags, and more. The plugin provides mappings to easily delete,
+change and add such surroundings in pairs.
+
+- `cs"<p>`: change surround " with <p> (anywhere in the surrounding)
+    + `cs"'`: change surround " with '
+    + `cst"`: change surround tag with " (<p> -> ")
+- `ds"`: delete surround "
+    + `dst`: delete surround tag
+- `ysiw]`: yield surround inner word with ] (no surrounding spaces) (iw
+  is text object)
+    + `Hello world!` -> `[Hello] world!`
+    + `ysiw[`: similar but with surrounding spaces
+- `yss)`: yield surround line with )
+    + `Hellow world` -> `(Hello world)`
+- Visual mode: select the text then `S<tag ...>`
+- If install `repeat.vim`, `.` will work with ds, cs, yss
 
 ### vim-gitgutter
 
