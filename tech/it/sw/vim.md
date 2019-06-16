@@ -2314,6 +2314,8 @@ set statusline+=\ %l:%c         "Line and column numbers
     + `:cnext`: next location
     + `:cfirst`: first location
     + `:clast`: last location
+- Location list: the local quickfix list for each window
+    + `:lopen`, `:lclose`, `:lprevious`, `:lnext`, `:lfirst`, `:llast`
 - Buffer list: The buffer list maintains a listing of all the buffers in
     the current editing session, including those that are hidden.
     + `:buffers` show buffer list
