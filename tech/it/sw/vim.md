@@ -1837,6 +1837,10 @@ nmap <Leader>gl :Gpull<CR>
         * you can navigate the tree as in a file system, use `<Enter>`
             and `<C-o>` to go back and forth
     + `:Gbrowse` anywhere to open GitHub URL in a browser
+- When browsing git objects and then open revisions of a file, we can
+  use `:Gwrite` to checkout that particular revision of the file into
+  the working copy.
+    + `:Gwrite!`: force write
 - Status line: show branch in the status line
     + `set statusline+=%{FugitiveStatusline()}`
 
