@@ -1,6 +1,6 @@
 [TOC]
 
-# [Overview](https://en.wikipedia.org/wiki/Vim_(text_editor))
+# [Overview][wiki]
 
 Vim (a contraction of Vi IMproved) is a clone of Bill Joy's vi text
 editor program for Unix. It was written by Bram Moolenaar based on
@@ -1016,6 +1016,45 @@ set wrap
 ## Plugins
 
 - https://vimawesome.com/
+
+### fzf + fzf.vim
+
+Something
+
+### ultisnip
+
+- https://github.com/SirVer/ultisnips
+    + Snippets
+
+### vim-snippets
+
+#### Markdown
+
+- Header:
+    + Level 1: sec
+    + Level 2: ssec
+    + Level 3: sssec
+    + Level 4: par
+    + Level 5: spar
+- Links:
+    + Inline link: link
+    + Reference link: refl
+    + Image link: img
+    + Footnote: fnt
+- Code:
+    + Code block: cbl
+    + Inlinde code: ilc
+- Text rendering:
+    + Italic text: `*`
+    + Bold text: `**`
+    + Italic and bold text: `***`
+- General:
+    + date: date
+    + time: time
+    + date and exact time: datetime
+    + date in ISO format: diso
+- Table:
+    + Table with 3 rows and 3 columns: tb3x3
 
 ### vim-markdown
 
