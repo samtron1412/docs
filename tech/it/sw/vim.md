@@ -127,6 +127,7 @@
         * [ultisnips](#ultisnips)
         * [vim-snippets](#vim-snippets)
             * [Markdown](#markdown)
+        * [vim-markdown-toc](#vim-markdown-toc)
         * [vim-markdown](#vim-markdown)
             * [Configuration](#configuration)
             * [Mappings](#mappings)
@@ -1529,6 +1530,13 @@ complete -F _fzf_dir_completion -o default -o bashdefault tree
     + date in ISO format: diso
 - Table:
     + Table with 3 rows and 3 columns: tb3x3
+
+### vim-markdown-toc
+
+- `:GenTocGFM`: generates GFM-style TOC
+    + `<Leader>mT`: markdown TOC
+- `:RemoveToc`: remove the TOC
+    + `<Leader>mut`: markdown undo TOC
 
 ### vim-markdown
 
