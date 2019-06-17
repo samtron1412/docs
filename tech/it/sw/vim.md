@@ -2150,6 +2150,8 @@ PS. You also need to install related omni completion plugins.
 
 ### Misc
 
+- Mappings for tags:
+    + https://github.com/tpope/vim-ragtag
 - Tags manager
     + https://github.com/ludovicchabant/vim-gutentags
 - Search tools wrapper
