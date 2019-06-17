@@ -106,6 +106,11 @@
     * [.vimrc template](#vimrc-template)
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
+        * [syntastic](#syntastic)
+        * [vim-easy-align](#vim-easy-align)
+        * [vim-unimpaired](#vim-unimpaired)
+        * [vim-abolish](#vim-abolish)
+        * [vim-dispatch](#vim-dispatch)
         * [vim-matchup](#vim-matchup)
         * [targets.vim](#targetsvim)
         * [vim-repeat](#vim-repeat)
@@ -1187,6 +1192,37 @@ set wrap
 - [NeoVundle](https://github.com/Shougo/neobundle.vim)
 
 ## Plugins
+
+### syntastic
+
+- https://github.com/vim-syntastic/syntastic
+- `:h syntastic`
+- Syntax checking.
+
+### vim-easy-align
+
+- https://github.com/junegunn/vim-easy-align
+- `:h easy-align`
+- A Vim alignment plugin.
+
+### vim-unimpaired
+
+- https://github.com/tpope/vim-unimpaired
+- `:h unimpaired`
+- Pairs of handy bracket mappings.
+
+### vim-abolish
+
+- https://github.com/tpope/vim-abolish
+- `:h abolish`
+- Easily search for, substitute, and abbreviate multiple variants of a
+  word.
+
+### vim-dispatch
+
+- https://github.com/tpope/vim-dispatch
+- `:h dispatch`
+- Asynchronous build and test dispatcher.
 
 ### vim-matchup
 
