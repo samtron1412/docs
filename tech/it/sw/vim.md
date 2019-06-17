@@ -107,6 +107,8 @@
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
         * [vim-gutentags](#vim-gutentags)
+            * [Intro](#intro)
+            * [ctags in Vim](#ctags-in-vim)
         * [vim-surround](#vim-surround)
         * [vim-gitgutter](#vim-gitgutter)
         * [fzf.vim](#fzfvim)
@@ -1186,15 +1188,20 @@ set wrap
 
 ### vim-gutentags
 
+#### Intro
+
 - Universal ctags for macOS
     + https://github.com/universal-ctags/homebrew-universal-ctags
     + https://github.com/universal-ctags/ctags
+- Exuberant ctags: `brew install ctags`
+    + `man ctags` to learn more.
 - `:GutentagsUpdate`: update the current tag file for the current
   buffer.
 - `:GutentagsUpdate!`: update the current tags file with the whole
   projects instead of just the current buffer.
 - `:GutentagsToggleEnabled`: disables and re-enables Gutentags.
 - `:GutentagsToggleTrace`: to troubleshoot
+- `:h gutentags` to learn more.
 
 
 ```vim
@@ -1203,6 +1210,48 @@ set statusline+=%{gutentags#statusline('[',']')}
 " directory that contains a Makefile file or folder.
 let g:gutentags_project_root = ['Makefile']
 ```
+
+#### ctags in Vim
+
+- ctags options
+
+```sh
+--recurse=yes
+--exclude=.git
+--exclude=vendor/*
+--exclude=node_modules/*
+--exclude=db/*
+--exclude=log/*
+```
+
+- generate ctags for a project: `ctags .`
+- ignore all ctags files
+
+```sh
+echo "tags" >> ~/.global_ignore
+git config --global core.excludesfile $HOME/.global_ignore
+```
+
+- Key mappings
+
+```help
+Ctrl+] - go to definition
+Ctrl+T \ C-o - Jump back from the definition.
+Ctrl+W Ctrl+] - Open the definition in a horizontal split
+g] - show matches of the tag `:tselect`
+
+" Add these lines in vimrc
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+Ctrl+\ - Open the definition in a new tab
+Alt+] - Open the definition in a vertical split
+```
+
+- Commands
+    + `:tnext`, `:tprevious`, `:tfirst`, `:tlast`, `:ltag`, etc.
+
+- To learn more: `:h ctags`, `:h tag`
 
 
 ### vim-surround
