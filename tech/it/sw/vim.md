@@ -1186,6 +1186,10 @@ set wrap
 
 - https://vimawesome.com/
 
+### vim-tmux-focus-events
+
+Support FocusGained, FocusLost in tmux and iterm2.
+
 ### vim-gutentags
 
 #### Intro
