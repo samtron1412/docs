@@ -106,6 +106,9 @@
     * [.vimrc template](#vimrc-template)
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
+        * [targets.vim](#targetsvim)
+        * [vim-repeat](#vim-repeat)
+        * [vim-tmux-focus-events](#vim-tmux-focus-events)
         * [vim-gutentags](#vim-gutentags)
             * [Intro](#intro)
             * [ctags in Vim](#ctags-in-vim)
@@ -1184,7 +1187,28 @@ set wrap
 
 ## Plugins
 
-- https://vimawesome.com/
+### targets.vim
+
+- https://github.com/wellle/targets.vim
+- `:h targets`
+- Add 5 different kinds of text objects
+    + Pair text objects
+    + Quote text objects
+    + Separator text objects
+    + Argument text objects
+    + Tag text objects
+- 5 types of matching
+    + In object
+    + An object
+    + Inside object
+    + Around object
+    + Next and last (previous) object
+- Normal text objects not next and last text objects, it triggers object
+  seeking.
+
+### vim-repeat
+
+Support repeat a whole mapping.
 
 ### vim-tmux-focus-events
 
