@@ -106,6 +106,7 @@
     * [.vimrc template](#vimrc-template)
     * [Plug-in manager](#plug-in-manager)
     * [Plugins](#plugins)
+        * [vim-matchup](#vim-matchup)
         * [targets.vim](#targetsvim)
         * [vim-repeat](#vim-repeat)
         * [vim-tmux-focus-events](#vim-tmux-focus-events)
@@ -1186,6 +1187,23 @@ set wrap
 - [NeoVundle](https://github.com/Shougo/neobundle.vim)
 
 ## Plugins
+
+### vim-matchup
+
+- https://github.com/andymass/vim-matchup
+- `:h matchup`
+- Enhance the `%`
+    + `%`: cycle back and forth on a recognized word.
+    + `{count}%`: If {count} is less than 6, go forwards {count}.
+    times. Otherwise, go to {count} percentage in the file (N%).
+    + `g%`: similar `%` but also seeking forwards for matching words.
+    + `[%`: go to [count]th previous outer open word.
+    + `]%`: go to [count]th next outer close word.
+    + `z%`: go to inside [count]th nearest block.
+    + `a%`: any block, small nested blocks inside the open-close block.
+    + `i%`: inside of an any block.
+    + `ds%`: delete surrounding matching words.
+    + `cs%`: change surrounding matching words.
 
 ### targets.vim
 
