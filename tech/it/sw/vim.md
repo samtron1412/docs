@@ -2570,6 +2570,170 @@ back and forth between functions as you normally would with |tags|.
 
 - `:h cscope`
 
+# Vim's pipes
+
+- `:write`, `:read`, `:filter`
+- `:h shellpipe`
+
+# Compile, build, lint
+
+- https://gist.github.com/ajh17/a8f5f194079818b99199
+- `:h make`
+
+# Macros
+
+- https://gist.github.com/romainl/9721c7dd13c30714f568063e03c106dd
+
+
+## How to store a macro?
+
+### In a register…
+
+#### … via recording
+
+    qa                 " start recording in register a
+    2wcefoobar<Esc>    " do your thing
+    q                  " stop recording
+
+#### … via assignation
+
+    " put 2wcefoobar<Esc> in register k
+    let @k = "2wcefoobar\<Esc>"
+
+Note the use of double quotes that allows us to use `\<Esc>` rather than
+the slightly harder to reason about `^[`.
+
+#### … via yanking
+
+    " yank visual selection to register z
+    "zy
+
+### In a variable
+
+    " put 2wcefoobar\<Esc> in variable myvar
+    let myvar = "2wcefoobar\<Esc>"
+
+### In a mapping
+
+    " map <key> to 2wcefoobar<Esc> in normal mode
+    nnoremap <key> 2wcefoobar<Esc>
+
+### In an Ex command
+
+    " create an Ex command :Foo that does 2wcefoobar<Esc>
+    command! Foo normal! 2wcefoobar<Esc>
+
+### In a function
+
+    " create a function Foo() that does 2wcefoobar<Esc>
+    function! Foo()
+        normal! 2w
+        normal! cefoobar
+    endfunction
+
+## How to play a macro back?
+
+Some macros may start from visual mode, others work on lines, others can
+have nothing to do with editing text, and each macro can be stored in
+various ways… so how to play a given macro back usually depends on what
+the macro does, where it is stored, what mode we are in, where the
+cursor is right now, and where the cursor lands at the end of the
+playback.
+
+If we forget functions, Ex commands, and mappings for a moment, we
+basically have two playback methods at our disposal:
+
+* executing the content of a register right *here*,
+* executing the content of a register from column 0 of every line in a
+  given range.
+
+Command                          | Description
+---------------------------------|-------------------------------------------------------------------------
+`[n]@<register>`                 | execute content of `<register>` `[n]` times
+`:[range]normal! [n]@<register>` | execute content of `<register>` `[n]` times on every line in `[range]`
+
+The mechanism is the same whether the macro we want to play back is
+stored in a register or in a variable. In one case we use the register
+itself, directly. In the other case we use the expression register that
+we fill with the content of our variable:
+
+With a register (say `q`), we would do:
+
+    @q
+    12@q
+    :7,23norm! @q
+
+With a variable (say `foo`), we would do:
+
+    @=foo<CR>
+    3@=foo<CR>
+    :'{,'}norm! @=foo<CR>
+
+## How to edit a macro?
+
+Macros being plain text, editing a macro is as simple as putting it into
+a buffer, editing it, and storing it again in the same box or another
+one.
+
+Say we recorded this simple macro in register `q`:
+
+    dw
+
+but we figure out that some of the words we want to cut are actually
+WORDS. The obvious solution is to change `dw` into `dW`.
+
+1. Put the content of register `q` right here in a new buffer:
+
+        <C-w>n
+        "qp
+
+2. Edit it:
+
+        ~
+
+3. Cut it back to register `q`:
+
+        v0"qd
+
+   or:
+
+        :let @q = getline('.')
+
+Done.
+
+If you are working with a variable (say `foo`):
+
+```
+:new
+:put=foo
+~
+:let foo = getline('.')
+```
+
+And that's about all you need to know for your day-to-day use of macros.
+
+## Mappings and functions.
+
+Most macros are short-lived because they tend to be contextual by nature
+but some others are generic enough to find their way in our
+workflow. Those generally useful macros could certainly be stored and
+used *as-is*, but there's certainly an opportunity, here, to make them a
+little bit smarter and future-proof.
+
+We are going to work with this simple macro that inserts a debugging
+statement containing the word under the cursor below the current line:
+
+    yiwoconsole.log("<C-r>"", <C-r>");<Esc>
+
+If we don't want to clobber registers and we think variables are not
+really useful we can still turn that macro into a mapping:
+
+    nnoremap <key> yiwoconsole.log("<C-r>"", <C-r>");<Esc>
+
+But we are still clobbering the unnamed register and we don't really
+want to clobber *any* register, do we? Let's try to turn this "dumb"
+macro into a "smart" function.
+
 # Troubleshooting
 
 ## Error: * not found *
