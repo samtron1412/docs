@@ -2035,16 +2035,23 @@ nmap <Leader>gl :Gpull<CR>
 
 - https://vimawesome.com/plugin/vim-orgmode
 
-### Auto Completion
+### Completion
 
-- https://github.com/ajh17/VimCompletesMe
-- https://github.com/lifepillar/vim-mucomplete
-- https://github.com/Shougo/deoplete.nvim
-- https://github.com/Valloric/YouCompleteMe
-
-Language specific
-
-- https://github.com/justmao945/vim-clang
+- Built-in manual completion: `:h ins-completion`
+- Plugins
+    + Convenience plugins: fallback completion sources, so you only need
+    to memorize one key mapping.
+        * https://github.com/ajh17/VimCompletesMe
+        * https://github.com/lifepillar/vim-mucomplete
+    + omnifunc plugins: add a source to omni completion
+        * https://github.com/OmniSharp/omnisharp-vim
+        * https://github.com/Quramy/tsuquyomi
+        * https://github.com/justmao945/vim-clang
+    + IDE-like plugins
+        * https://github.com/prabirshrestha/asyncomplete.vim
+        * https://github.com/maralla/completor.vim
+        * https://github.com/Shougo/deoplete.nvim
+        * https://github.com/Valloric/YouCompleteMe
 
 
 Example configuration
