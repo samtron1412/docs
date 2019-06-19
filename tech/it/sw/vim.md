@@ -10,6 +10,8 @@ Initial release in November 1991.
 
 ## [Help][2]
 
+- If you encounter the error: `E:149 no help for help.txt`, you need to
+  regenerate help tags file: `:helptags ALL`
 - `:help` help facility built-in
 - `:h help` how to use help
 - `:h` help system
