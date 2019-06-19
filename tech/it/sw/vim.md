@@ -1064,6 +1064,92 @@ set wrap
 - https://github.com/junegunn/vim-easy-align
 - `:h easy-align`
 - A Vim alignment plugin.
+- An *alignment rule* is a predefined set of options for common
+  alignment tasks, which is identified by a single character, such as
+  `<Space>`, `=`, `:`, `.`, `|`, `&`, `#`, and `,`.
+
+#### `<Plug>` mappings (interactive mode)
+
+The recommended method is to use `<Plug>(EasyAlign)` mapping in normal and
+visual mode. They are usually mapped to `ga`, but you can choose any key
+sequences.
+
+```vim
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
+```
+
+1. `ga` key in visual mode, or `ga` followed by a motion or a text
+   object to start interactive mode
+1. (Optional) Enter keys to cycle between alignment mode (left, right, or center)
+1. (Optional) N-th delimiter (default: 1)
+    - `1`         Around the 1st occurrences of delimiters
+    - `2`         Around the 2nd occurrences of delimiters
+    - ...
+    - `*`         Around all occurrences of delimiters
+    - `**`        Left-right alternating alignment around all delimiters
+    - `-`         Around the last occurrences of delimiters (`-1`)
+    - `-2`        Around the second to last occurrences of delimiters
+    - ...
+1. Delimiter key (a single keystroke; `<Space>`, `=`, `:`, `.`, `|`, `&`, `#`, `,`) or an arbitrary regular expression followed by `<CTRL-X>`
+
+#### Regular expression vs. predefined rules
+
+You can use regular expressions but it's usually much easier to use predefined
+alignment rules that you can trigger with a single keystroke.
+
+| Key       | Description/Use cases                                                |
+| --------- | -------------------------------------------------------------------- |
+| `<Space>` | General alignment around whitespaces                                 |
+| `=`       | Operators containing equals sign (`=`, `==,` `!=`, `+=`, `&&=`, ...) |
+| `:`       | Suitable for formatting JSON or YAML                                 |
+| `.`       | Multi-line method chaining                                           |
+| `,`       | Multi-line method arguments                                          |
+| `&`       | LaTeX tables (matches `&` and `\\`)                                  |
+| `#`       | Ruby/Python comments                                                 |
+| `"`       | Vim comments                                                         |
+| `<Bar>`   | Table markdown                                                       |
+
+#### Examples using predefined rules
+
+| Keystrokes   | Description                        | Equivalent command    |
+| ------------ | ---------------------------------- | --------------------- |
+| `<Space>`    | Around 1st whitespaces             | `:'<,'>EasyAlign\ `   |
+| `2<Space>`   | Around 2nd whitespaces             | `:'<,'>EasyAlign2\ `  |
+| `-<Space>`   | Around the last whitespaces        | `:'<,'>EasyAlign-\ `  |
+| `-2<Space>`  | Around the 2nd to last whitespaces | `:'<,'>EasyAlign-2\ ` |
+| `:`          | Around 1st colon (`key:  value`)   | `:'<,'>EasyAlign:`    |
+| `<Right>:`   | Around 1st colon (`key : value`)   | `:'<,'>EasyAlign:>l1` |
+| `=`          | Around 1st operators with =        | `:'<,'>EasyAlign=`    |
+| `3=`         | Around 3rd operators with =        | `:'<,'>EasyAlign3=`   |
+| `*=`         | Around all operators with =        | `:'<,'>EasyAlign*=`   |
+| `**=`        | Left-right alternating around =    | `:'<,'>EasyAlign**=`  |
+| `<Enter>=`   | Right alignment around 1st =       | `:'<,'>EasyAlign!=`   |
+| `<Enter>**=` | Right-left alternating around =    | `:'<,'>EasyAlign!**=` |
+
+Instead of finishing the alignment with a delimiter key, you can type in
+a regular expression if you press `<CTRL-/>` or `<CTRL-X>`.
+
+#### Alignment options in interactive mode
+
+While in interactive mode, you can set alignment options using special shortcut
+keys listed below. The meaning of each option will be described in
+[the following sections](#alignment-options).
+
+| Key       | Option             | Values                                                     |
+|-----------|--------------------|------------------------------------------------------------|
+| `CTRL-F`  | `filter`           | Input string (`[gv]/.*/?`)                                 |
+| `CTRL-I`  | `indentation`      | shallow, deep, none, keep                                  |
+| `CTRL-L`  | `left_margin`      | Input number or string                                     |
+| `CTRL-R`  | `right_margin`     | Input number or string                                     |
+| `CTRL-D`  | `delimiter_align`  | left, center, right                                        |
+| `CTRL-U`  | `ignore_unmatched` | 0, 1                                                       |
+| `CTRL-G`  | `ignore_groups`    | `[]`, `['String']`, `['Comment']`, `['String', 'Comment']` |
+| `CTRL-A`  | `align`            | Input string (`/[lrc]+\*{0,2}/`)                           |
+| `<Left>`  | `stick_to_left`    | `{ 'stick_to_left': 1, 'left_margin': 0 }`                 |
+| `<Right>` | `stick_to_left`    | `{ 'stick_to_left': 0, 'left_margin': 1 }`                 |
+| `<Down>`  | `*_margin`         | `{ 'left_margin': 0, 'right_margin': 0 }`                  |
+
 
 ### vim-unimpaired
 
