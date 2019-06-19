@@ -1021,6 +1021,16 @@ set wrap
 
 ## Plugins
 
+### markdown-preview.nvim
+
+```vim
+"""" markdown-preview.nvim mapping
+
+nmap <Leader>mp <Plug>MarkdownPreview
+nmap <Leader>ms <Plug>MarkdownPreviewStop
+```
+
+
 ### vim-obsession
 
 - `:Obsession {file}` invoke :mksession on {file} and continue to keep
