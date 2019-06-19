@@ -164,6 +164,13 @@ runs a TeX engine. This makes it possible to support a wide array of
 advanced features, such as integrated graphics and XML input, since the
 startup utility can control the flow of processing.
 
+- [stackoverflow](https://tex.stackexchange.com/questions/223177/what-is-the-mindset-to-take-when-using-context-vs-latex)
+    + LaTeX: separating the content making from formatting, so the
+    writer only uses LaTeX to create content, and use built-in support
+    or packages to finish the formatting.
+    + ConTeXt: it supports both content making and formatting so the
+    writer doesn't need to install plugins to format the document.
+
 ## [TeXinfo](http://www.gnu.org/software/texinfo/) (binary: *makeinfo*)
 
 Texinfo is the documentation format created by the GNU project. This
