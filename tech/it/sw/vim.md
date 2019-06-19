@@ -1665,6 +1665,13 @@ xmap <Leader>md :HeaderDecrease<CR>
 ### vim-scriptease
 
 - The plugin helps making plugins
+- Key mappings
+    + `zS`: show the names of all syntax highlighting groups for the
+    character under the cursor.
+    + `{count}zS`: show the :syn-list for the {count}th syntax group
+    under the cursor. 1zS shows the innermost group.
+- `:Messages` capture the output of :messages and load it into the
+  quickfix list.
 - `:Verbose <command>`: open a preview window to capture command's
     results
 
