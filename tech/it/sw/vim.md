@@ -1021,6 +1021,12 @@ set wrap
 
 ## Plugins
 
+### traces.vim
+
+- Range, pattern, and substitute preview
+    + https://github.com/markonm/traces.vim
+    + Preview the change before run it
+
 ### vim-commentary
 
 - `gc{motion}` Comment or uncomment lines that {motion} moves over.
