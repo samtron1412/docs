@@ -1077,6 +1077,29 @@ set wrap
 - `:h abolish`
 - Easily search for, substitute, and abbreviate multiple variants of a
   word.
+- Pattern:
+    + `box{,es} => box, boxes, Box, Boxes, BOX, BOXES`
+- Commands: 2 commands, :Abolish is more general, :Subvert is more
+  concise.
+
+```vim
+:Abolish [options] {abbreviation} {replacement}
+:Abolish -delete [options] {abbreviation}
+
+:Abolish -search [options] {pattern}
+:Subvert/{pattern}[/flags]
+:Abolish!-search [options] {pattern}
+:Subvert?{pattern}[?flags]
+
+:Abolish -search [options] {pattern} {grep-arguments}
+:Subvert /{pattern}/[flags] {grep-options}
+:Abolish!-search [options] {pattern} {grep-arguments}
+:Subvert!/{pattern}/[flags] {grep-options}
+
+:[range]Abolish -substitute [options] {pattern} {replacement}
+:[range]Subvert/{pattern}/{replacement}[/flags]
+```
+
 
 ### vim-dispatch
 
