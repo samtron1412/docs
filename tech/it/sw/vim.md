@@ -3019,6 +3019,10 @@ macro into a "smart" function.
 
 - Check runtime path: `:set runtimepath?`
 
+## Debugging Vim Scripts
+
+- https://codeinthehole.com/tips/debugging-vim-by-example/
+
 # Editor Wars
 
 ```txt
