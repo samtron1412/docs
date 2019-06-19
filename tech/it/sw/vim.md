@@ -1021,6 +1021,25 @@ set wrap
 
 ## Plugins
 
+### vim-rsi
+
+- Readline key bindings
+- `<C-a>`: go to beginning of line
+- `<C-x><C-a>`: access Vim's built-in i_CTRL_A or c_CTRL_A.
+- `<C-b>`: go backwards one character. On a blank line, delete it and go
+  back to the previous line.
+- `<C-d>`: delete character in front of cursor. Falls back to i_CTRL-D
+  or c_CTRL-D at the end of the line.
+- `<C-f>`: Move forward one character.
+- `<C-e>`: Go to the end of line. Falls back to i_CTRL-E.
+- `<C-t>`: Transpose two characters in command mode.
+- `<M-BS>`: delete backward one word
+- `<M-b>`: go backwards one word
+- `<M-d>`: delete forwards one word
+- `<M-f>`: go forwards one word
+- `<M-n>`: c_<Down> or i_<Down>
+- `<M-p>`: c_<Up> or i_<Up>
+
 ### syntastic
 
 - https://github.com/vim-syntastic/syntastic
