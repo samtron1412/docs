@@ -11,6 +11,8 @@ Initial release in November 1991.
 ## [Help][2]
 
 - `:help` help facility built-in
+- `:h help` how to use help
+- `:h` help system
 - `vimtutor` : basic commands tutorials
 - `:h key-notation`: these names for keys are used in the documentation.
 
@@ -106,14 +108,20 @@ Plugins available that will extend or add new functionality to Vim.
 
 ## Resources
 
-- [Documentation](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
-- [summary](http://vimdoc.sourceforge.net/)
-http://vim.wikia.com/wiki/Vim_Tips_Wiki
-http://vim.wikia.com/wiki/Vim_documentation
-http://vim.wikia.com/wiki/Vim_scripts
-http://www.vim.org/docs.php
+- [Vimways](https://vimways.org/2018/)
+- [Thoughtbot blog](https://thoughtbot.com/blog/tags/vim)
+- The Patient Vimmer: http://romainl.github.io/the-patient-vimmer/
+- [Reccommendations](https://www.vi-improved.org/recommendations/)
 - [Thoughtbot Tutorials](https://upcase.com/vim)
 - [vimcast](http://vimcasts.org/)
+- [vim-gists](https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce)
+    + [idoimatic-vimrc](https://github.com/romainl/idiomatic-vimrc)
+    + [built-in](https://gist.github.com/romainl/047aca21e338df7ccf771f96858edb86)
+    + [macros](https://gist.github.com/romainl/9721c7dd13c30714f568063e03c106dd)
+- Some examples for .vimrc to learn more tricks
+    + https://stackoverflow.com/questions/164847/what-is-in-your-vimrc
+- Some external programs to use with Vim
+    + https://www.reddit.com/r/vim/comments/7bj837/favorite_console_tools_to_use_with_vim/:
 
 ### Books
 
@@ -2013,6 +2021,7 @@ PS. You also need to install related omni completion plugins.
 
 ### Misc
 
+- Undotree: https://github.com/mbbill/undotree
 - Mappings for tags:
     + https://github.com/tpope/vim-ragtag
 - Tags manager
