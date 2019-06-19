@@ -1021,6 +1021,26 @@ set wrap
 
 ## Plugins
 
+### vim-rhubarb
+
+- Use :Gbrowse to browse GitHub URL.
+
+### ale
+
+- `:h ale`
+
+```vim
+"""" ale configuration
+
+let g:ale_enabled = 0   " Disable ALE at beginning
+
+"""" ale mapping
+
+nmap <Leader>at <Plug>(ale_toggle)
+nmap <Leader>aT <Plug>(ale_toggle_buffer)
+```
+
+
 ### markdown-preview.nvim
 
 ```vim
