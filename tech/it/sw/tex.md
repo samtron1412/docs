@@ -226,6 +226,37 @@ used to edit any sort of file. TeX documents are independent of any
 particular editor; the TeX typesetting program itself does not include
 any sort of editor whatsoever.
 
+## Tex directives
+
+- Editors use these directives to figure out what engine, encoding, root
+  file, and spellcheck options of the source file.
+
+```text
+% !TEX encoding = UTF-8 Unicode
+% !TEX program = xelatex
+% !TEX root = mythesis.tex
+% !TEX spellcheck = fr-FR
+```
+
+
+```text
+              E P R S
+TeXShop       x x x x
+TeXStudio     x x x x
+TextMate      ? x x ?
+TeXworks      x x x x
+SublimeText   o x x x
+Atom          o x x o
+Vim (vimtex)  o x x o
+Overleaf      ? x ? ?
+              | | | |
+x = yes       | | | Spellcheck
+o = no        | | Root
+? = ?         | Program
+              Encoding
+```
+
+
 # Packages
 
 These are add-ons to the basic TeX system, developed independently,
