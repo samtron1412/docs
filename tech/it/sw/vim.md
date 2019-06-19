@@ -1094,7 +1094,8 @@ Support repeat a whole mapping.
 
 ### vim-tmux-focus-events
 
-Support FocusGained, FocusLost in tmux and iterm2.
+- Support FocusGained, FocusLost in tmux and iterm2.
+- tmux configuration: `set -g focus-events on`
 
 ### vim-gutentags
 
