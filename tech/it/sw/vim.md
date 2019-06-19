@@ -1021,6 +1021,19 @@ set wrap
 
 ## Plugins
 
+### vim-obsession
+
+- `:Obsession {file}` invoke :mksession on {file} and continue to keep
+  it updated until Vim exits, triggering on the BufEnter and VimLeavePre
+  autocommands. If the file exists, it will be overwritten if and only
+  if it looks like a session files.
+- `:Obsession {dir}`: invoke :Obsession on {dir}/Session.vim.
+- `:Obsession` if session tracking is already in progress, pause
+  it. Otherwise, resume tracking or create a new session in the current
+  directory.
+- `:Obsession!`: stop obsession and delete the underlying session file.
+- Indicator: `S`: stop, `$`: running
+
 ### vim-rsi
 
 - Readline key bindings
