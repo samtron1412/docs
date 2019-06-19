@@ -1,6 +1,6 @@
 [TOC]
 
-# TeX
+# Overview
 
 TeX is a [typesetting
 system](http://en.wikipedia.org/wiki/Typesetting_system) designed and
@@ -80,46 +80,55 @@ structure of the code, with documentation embedded in the code; in
 literate programming code is embedded in documentation, with the code
 following the structure of the documentation.
 
-## TeX engines (binaries/executables)
+## Levels of TeX
 
-### TeX (binary: *inittex*)
+- http://www.tug.org/levels.html
+- Distributions: TeX Live, MiKTeX, ...
+- Front ends and editors: Emacs, vim, TeXworks, TeXnicCenter, ...
+- Engines: TeX, pdfTeX, pdfLaTeX, LuaTeX, XeTeX, ...
+- Formats: LaTeX, plain TeX, ConTeXt, ...
+- Packages: geometry, lm, ...
+
+# TeX engines (binaries/executables)
+
+## TeX (binary: *inittex*)
 
 Originally TeX, current version is TeX version 3 'TeX90'
 
-### e-TeX (binary: *etex*)
+## e-TeX (binary: *etex*)
 
 Released in the late 1990. Add number of additional primitives to TeX.
 Use by packages developer not end users.
 
-### pdfTeX (binary: *pdftex*)
+## pdfTeX (binary: *pdftex*)
 
 Write by Hàn Thế Thành in 1996. Include e-TeX and add number of PDF-
 related primitives. Can produce DVI and PDF.
 
-### XeTeX (binary: *xetex*)
+## XeTeX (binary: *xetex*)
 
 Include e-TeX, works with native UTF-8 input and can access system
 fonts.
 
-### LuaTeX (binary: *luatex*)
+## LuaTeX (binary: *luatex*)
 
 Include e-TeX, works with native UTF-8 input and includes the Lua
 scripting engine, access system font by Lua.
 
-## TeX macro packages (a.k.a TeX formats)
+# TeX macro packages (a.k.a TeX formats)
 
-### Plain TeX (binary: *tex*)
+## Plain TeX (binary: *tex*)
 
 Low-level than LaTeX
 
-### [LaTeX](http://www.latex-project.org/) (binary: *latex*)
+## [LaTeX](http://www.latex-project.org/) (binary: *latex*)
 
 This tool provides several predefined document classes (book, article,
 report) with extensive sectioning and cross-referencing capabilities,
 and auxiliary tools for such processes as bibliography and index
 creation.
 
-### [AMSTeX](http://www.ams.org/publications/authors/tex/tex)
+## [AMSTeX](http://www.ams.org/publications/authors/tex/tex)
 
 AMS-TeX and AMS-LaTeX are macro collections developed at the American
 Mathematical Society for preparing publications containing extensive
@@ -132,7 +141,7 @@ LaTeX packages and classes that offer authors most of the functionality
 of AMSTeX. The AMS no longer recommends the use of AMSTeX, and urges its
 authors to use AMSLaTeX instead.
 
-### [ConTeXt](http://wiki.contextgarden.net/Main_Page) (binary: *texmfstart*)
+## [ConTeXt](http://wiki.contextgarden.net/Main_Page) (binary: *texmfstart*)
 
 ConTeXt is an independent macro package which has a basic document
 structuring approach similar to LaTeX.  It also supports creating
@@ -155,7 +164,7 @@ runs a TeX engine. This makes it possible to support a wide array of
 advanced features, such as integrated graphics and XML input, since the
 startup utility can control the flow of processing.
 
-### [TeXinfo](http://www.gnu.org/software/texinfo/) (binary: *makeinfo*)
+## [TeXinfo](http://www.gnu.org/software/texinfo/) (binary: *makeinfo*)
 
 Texinfo is the documentation format created by the GNU project. This
 macro set is designed to generate both print and on-line output (an
@@ -168,7 +177,7 @@ slightly less expressive power. Its appearance is of course rather
 similar to any TeX-based macro language, except that its macros start
 with @ rather than the \ that’s more commonly used in TeX systems.
 
-### [Eplain](http://tug.org/eplain/) (Extended Plain TeX - binary: *eplain*)
+## [Eplain](http://tug.org/eplain/) (Extended Plain TeX - binary: *eplain*)
 
 Eplain is not intended to provide typesetting capabilities, as does
 LaTeX (originally written by Leslie Lamport) and Texinfo (Originally
@@ -185,7 +194,7 @@ you don’t like the results, or if you are trying to match a different
 format, you have to put in extra work to override the defaults.
 
 
-## TeX distribution
+# TeX distribution
 
 A TeX distribution provides a structured collection of TeX-related
 software. Generally, a TeX distribution includes a set of *“core”* TeX
@@ -202,7 +211,7 @@ teTeX. MiKTeX is also available as the basis of the ProTeXt bundle,
 distributed on the TeX Live DVD mailing, as well as being available
 online.
 
-## Front-ends (Editors)
+# Front-ends (Editors)
 
 These editors are what you use to create a document file. Some (e.g.,
 TeXShop) are devoted specifically to TeX, others (e.g., Emacs) can be
@@ -210,7 +219,7 @@ used to edit any sort of file. TeX documents are independent of any
 particular editor; the TeX typesetting program itself does not include
 any sort of editor whatsoever.
 
-## Packages
+# Packages
 
 These are add-ons to the basic TeX system, developed independently,
 providing additional typesetting features, fonts, documentation, etc. A
@@ -221,15 +230,6 @@ the vast majority of packages in the TeX world; CTAN is generally the
 source used by the distributions.
 
 # Starting out with TeX, LaTeX and friends
-
-## Levels of TeX
-
-- http://www.tug.org/levels.html
-- Distributions: TeX Live, MiKTeX, ...
-- Front ends and editors: Emacs, vim, TeXworks, TeXnicCenter, ...
-- Engines: TeX, pdfTeX, pdfLaTeX, LuaTeX, XeTeX, ...
-- Formats: LaTeX, plain TeX, ConTeXt, ...
-- Packages: geometry, lm, ...
 
 ## Get a TeX distribution (TeX implementation)
 
