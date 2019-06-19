@@ -1021,6 +1021,10 @@ set wrap
 
 ## Plugins
 
+### Goyo.vim and limelight.vim
+
+- Distraction-free mode in Vim.
+
 ### traces.vim
 
 - Range, pattern, and substitute preview
