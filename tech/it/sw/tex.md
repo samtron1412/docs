@@ -2,21 +2,31 @@
 
 # TeX
 
-TeX is a [typesetting system](http://en.wikipedia.org/wiki/Typesetting_system) designed and mostly written by [Donald Knuth](http://en.wikipedia.org/wiki/Donald_Knuth) and released in 1978.
+TeX is a [typesetting
+system](http://en.wikipedia.org/wiki/Typesetting_system) designed and
+mostly written by [Donald
+Knuth](http://en.wikipedia.org/wiki/Donald_Knuth) and released in 1978.
 
-Together with the [Metafont](http://en.wikipedia.org/wiki/Metafont) language for font description and the [Computer Modern](http://en.wikipedia.org/wiki/Computer_Modern) family of [typefaces](http://en.wikipedia.org/wiki/Typeface), TeX was designed with two main goals in mind:
+Together with the [Metafont](http://en.wikipedia.org/wiki/Metafont)
+language for font description and the [Computer
+Modern](http://en.wikipedia.org/wiki/Computer_Modern) family of
+[typefaces](http://en.wikipedia.org/wiki/Typeface), TeX was designed
+with two main goals in mind:
 
 - Allow anybody to produce high-quality books using a reasonably minimal
   amount of effort.
 - Provide a system that would give exactly the same results on all
   computers, now and in the future.
 
-Written in originally [WEB](http://en.wikipedia.org/wiki/WEB) an [literate programming](http://en.wikipedia.org/wiki/Literate_programming).
+Written in originally [WEB](http://en.wikipedia.org/wiki/WEB) an
+[literate
+programming](http://en.wikipedia.org/wiki/Literate_programming).
 
 
 ## Why TeX?
 
-Eight reason in four areas: output quality (1), superior engineering (2-5), freedom (6-7) and popularity (8).
+Eight reason in four areas: output quality (1), superior engineering
+(2-5), freedom (6-7) and popularity (8).
 
 1. Best output
 2. Fast
@@ -224,7 +234,7 @@ source used by the distributions.
 ## Get a TeX distribution (TeX implementation)
 
 | Distribution | Description              |
-| -            | -                        |
+|--------------|--------------------------|
 | TeX Live     | Unix and Windows         |
 | MacTeX       | Mac OS                   |
 | MikTeX       | Windows and Mac OS       |
@@ -246,24 +256,41 @@ choose your editor.
 
 **LaTeX**:
 
-- [LaTeX Documentation Pointers](http://www.ctan.org/pkg/latex-doc-ptr) has references to documentation for many common LaTeX tasks (by Jim Hefferon).
-- [A First LaTeX Document](http://www.ctan.org/pkg/first-latex-doc) takes you through writing a small document with text and math for the first time (by Jim Hefferon).
- - [Getting Started with LaTeX](http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/), a primer for text, math, and basic formatting.
-- [Online LaTeX tutorials](http://www.andy-roberts.net/misc/latex/), a graduated series (by Andy Roberts).
-- [Spoken (video) tutorial on LaTeX](http://spoken-tutorial.org/Study_Plans_LaTeX) (from spoken-tutorial.org).
-- [The Not So Short Introduction to LaTeX2e](http://www.ctan.org/pkg/lshort) is a more comprehensive manual on writing LaTeX (by Tobias Oetiker, translated into many languages).
-- [LaTeX Cheat Sheet](http://www.stdout.org/~winston/latex/), a two-page quick reference (Winston Chang).
+- [LaTeX Documentation Pointers](http://www.ctan.org/pkg/latex-doc-ptr)
+  has references to documentation for many common LaTeX tasks (by Jim
+  Hefferon).
+- [A First LaTeX Document](http://www.ctan.org/pkg/first-latex-doc)
+  takes you through writing a small document with text and math for the
+  first time (by Jim Hefferon).  - [Getting Started with
+  LaTeX](http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/), a primer for
+  text, math, and basic formatting.
+- [Online LaTeX tutorials](http://www.andy-roberts.net/misc/latex/), a
+  graduated series (by Andy Roberts).
+- [Spoken (video) tutorial on
+  LaTeX](http://spoken-tutorial.org/Study_Plans_LaTeX) (from
+  spoken-tutorial.org).
+- [The Not So Short Introduction to
+  LaTeX2e](http://www.ctan.org/pkg/lshort) is a more comprehensive
+  manual on writing LaTeX (by Tobias Oetiker, translated into many
+  languages).
+- [LaTeX Cheat Sheet](http://www.stdout.org/~winston/latex/), a two-page
+  quick reference (Winston Chang).
 
-**Plain TeX**: [TeX by Topic, A TeXnician's Reference](http://www.eijkhout.net/tbt/), by Victor Eijkhout.
+**Plain TeX**: [TeX by Topic, A TeXnician's
+Reference](http://www.eijkhout.net/tbt/), by Victor Eijkhout.
 
-**Fonts**: a discussion of the [fonts available](http://tug.org/fonts/) for use with TeX is available separately.
+**Fonts**: a discussion of the [fonts available](http://tug.org/fonts/)
+for use with TeX is available separately.
 
-**General help**: see [community](#community) below; first place to look is the [FAQ](http://www.tex.ac.uk/faq).
+**General help**: see [community](#community) below; first place to look
+is the [FAQ](http://www.tex.ac.uk/faq).
 
 ### Books
 
-- [The TeXbook](http://tug.org/books/index.html#texbook): of Donald E. Knuth covering plain TeX.
-- [A Guide to LaTeX2e](http://tug.org/books/index.html#guidelatex): covering LaTeX.
+- [The TeXbook](http://tug.org/books/index.html#texbook): of Donald
+  E. Knuth covering plain TeX.
+- [A Guide to LaTeX2e](http://tug.org/books/index.html#guidelatex):
+  covering LaTeX.
 
 ## Community
 
