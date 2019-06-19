@@ -1021,6 +1021,16 @@ set wrap
 
 ## Plugins
 
+### vim-commentary
+
+- `gc{motion}` Comment or uncomment lines that {motion} moves over.
+- `gcc` Comment or uncomment [count] lines.
+- `{Visual}gc` Comment or uncomment the highlighted lines.
+- `gc` Text object for a comment (operator pending mode
+              only.)
+- `gcgc` or `gcu` Uncomment the current and adjacent commented lines.
+- `:[range]Commentary` Comment or uncomment [range] lines
+
 ### gv.vim
 
 - Git browser
