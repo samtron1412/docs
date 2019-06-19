@@ -886,33 +886,52 @@ against different collaboration workflows.
     + `git add --patch`
 - [Git commit message structure](https://web.archive.org/web/20150330043110/http://chris.beams.io/posts/git-commit/)
 
-        Summarize changes in around 50 characters or less
+```git
+# 50-character subject line
+#
+# 72-character wrapped longer description. This should answer:
+#
+# * Why was this change necessary?
+# * How does it address the problem?
+# * Are there any side effects?
+#
+# Include a link to the ticket, if any.
+#
+# Add co-authors if you worked on this code with others:
+#
+# Co-authored-by: Full Name <email@example.com>
+# Co-authored-by: Full Name <email@example.com>
+```
 
-        More detailed explanatory text, if necessary. Wrap it to about 72
-        characters or so. In some contexts, the first line is treated as the
-        subject of the commit and the rest of the text as the body. The
-        blank line separating the summary from the body is critical (unless
-        you omit the body entirely); various tools like `log`, `shortlog`
-        and `rebase` can get confused if you run the two together.
+```git
+Summarize changes in around 50 characters or less
 
-        Explain the problem that this commit is solving. Focus on why you
-        are making this change as opposed to how (the code explains that).
-        Are there side effects or other unintuitive consequenses of this
-        change? Here's the place to explain them.
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
 
-        Further paragraphs come after blank lines.
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequenses of this
+change? Here's the place to explain them.
 
-         - Bullet points are okay, too
+Further paragraphs come after blank lines.
 
-         - Typically a hyphen or asterisk is used for the bullet, preceded
-           by a single space, with blank lines in between, but conventions
-           vary here
+ - Bullet points are okay, too
 
-        If you use an issue tracker, put references to them at the bottom,
-        like this:
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
 
-        Resolves: #123
-        See also: #456, #789
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+```
 
 ### Private small team
 
