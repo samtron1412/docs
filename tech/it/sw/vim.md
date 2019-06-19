@@ -2252,9 +2252,6 @@ PS. You also need to install related omni completion plugins.
     + https://github.com/terryma/vim-multiple-cursors
     + This can be achieve by vim using visual block mode and substitute
         operator.
-- Range, pattern, and substitute preview
-    + https://github.com/markonm/traces.vim
-    + Preview the change before run it
 - Automatically detect tab settings in a new codebase
     + https://github.com/tpope/vim-sleuth
 
