@@ -2467,6 +2467,10 @@ PS. You also need to install related omni completion plugins.
 
 ### Misc
 
+- Debugging
+    + https://github.com/idanarye/vim-vebugger
+    + https://github.com/vim-vdebug/vdebug
+    + https://github.com/gilligan/vim-lldb
 - Undotree: https://github.com/mbbill/undotree
 - Mappings for tags:
     + https://github.com/tpope/vim-ragtag
