@@ -1245,6 +1245,111 @@ set wrap
 
 ## Plugins
 
+### vimtex
+
+#### Intro
+
+- It needs a Vim server for call functionality and backward search from
+  PDF viewer to Vim.
+    + To run a Vim server, Vim have to be compiled with `+clientserver`.
+    + On macOS use MacVim instead of console vim to have this feature.
+- Default mappings
+
+#### Default mappings
+
+```help
+---------------------------------------------------------------------~
+LHS              RHS                                          MODE~
+---------------------------------------------------------------------~
+<localleader>li  |<plug>(vimtex-info)|                           `n`
+<localleader>lI  |<plug>(vimtex-info-full)|                      `n`
+<localleader>lt  |<plug>(vimtex-toc-open)|                       `n`
+<localleader>lT  |<plug>(vimtex-toc-toggle)|                     `n`
+<localleader>lq  |<plug>(vimtex-log)|                            `n`
+<localleader>lv  |<plug>(vimtex-view)|                           `n`
+<localleader>lr  |<plug>(vimtex-reverse-search)|                 `n`
+<localleader>ll  |<plug>(vimtex-compile)|                        `n`
+<localleader>lL  |<plug>(vimtex-compile-selected)|               `nx`
+<localleader>lk  |<plug>(vimtex-stop)|                           `n`
+<localleader>lK  |<plug>(vimtex-stop-all)|                       `n`
+<localleader>le  |<plug>(vimtex-errors)|                         `n`
+<localleader>lo  |<plug>(vimtex-compile-output)|                 `n`
+<localleader>lg  |<plug>(vimtex-status)|                         `n`
+<localleader>lG  |<plug>(vimtex-status-all)|                     `n`
+<localleader>lc  |<plug>(vimtex-clean)|                          `n`
+<localleader>lC  |<plug>(vimtex-clean-full)|                     `n`
+<localleader>lm  |<plug>(vimtex-imaps-list)|                     `n`
+<localleader>lx  |<plug>(vimtex-reload)|                         `n`
+<localleader>lX  |<plug>(vimtex-reload-state)|                   `n`
+<localleader>ls  |<plug>(vimtex-toggle-main)|                    `n`
+dse              |<plug>(vimtex-env-delete)|                     `n`
+dsc              |<plug>(vimtex-cmd-delete)|                     `n`
+ds$              |<plug>(vimtex-env-delete-math)|                `n`
+dsd              |<plug>(vimtex-delim-delete)|                   `n`
+cse              |<plug>(vimtex-env-change)|                     `n`
+csc              |<plug>(vimtex-cmd-change)|                     `n`
+cs$              |<plug>(vimtex-env-change-math)|                `n`
+csd              |<plug>(vimtex-delim-change-math)|              `n`
+tsc              |<plug>(vimtex-cmd-toggle-star)|                `n`
+tse              |<plug>(vimtex-env-toggle-star)|                `n`
+tsd              |<plug>(vimtex-delim-toggle-modifier)|          `nx`
+tsD              |<plug>(vimtex-delim-toggle-modifier-reverse)|  `nx`
+<F7>             |<plug>(vimtex-cmd-create)|                     `nxi`
+]]               |<plug>(vimtex-delim-close)|                    `i`
+ac               |<plug>(vimtex-ac)|                             `xo`
+ic               |<plug>(vimtex-ic)|                             `xo`
+ad               |<plug>(vimtex-ad)|                             `xo`
+id               |<plug>(vimtex-id)|                             `xo`
+ae               |<plug>(vimtex-ae)|                             `xo`
+ie               |<plug>(vimtex-ie)|                             `xo`
+a$               |<plug>(vimtex-a$)|                             `xo`
+i$               |<plug>(vimtex-i$)|                             `xo`
+aP               |<plug>(vimtex-aP)|                             `xo`
+iP               |<plug>(vimtex-iP)|                             `xo`
+%                |<plug>(vimtex-%)|                              `nxo`
+]]               |<plug>(vimtex-]])|                             `nxo`
+][               |<plug>(vimtex-][)|                             `nxo`
+[]               |<plug>(vimtex-[])|                             `nxo`
+[[               |<plug>(vimtex-[[)|                             `nxo`
+]m               |<plug>(vimtex-]m)|                             `nxo`
+]M               |<plug>(vimtex-]M)|                             `nxo`
+[m               |<plug>(vimtex-[m)|                             `nxo`
+[M               |<plug>(vimtex-[M)|                             `nxo`
+]/               |<plug>(vimtex-]/|                              `nxo`
+]*               |<plug>(vimtex-]star|                           `nxo`
+[/               |<plug>(vimtex-[/|                              `nxo`
+[*               |<plug>(vimtex-[star|                           `nxo`
+K                |<plug>(vimtex-doc-package)|                    `n`
+---------------------------------------------------------------------~
+```
+
+
+#### Setting up forward and backward search
+
+- Install `xdotool`
+    + Run this after installing `defaults write org.x.X11
+    enable_test_extensions -boolean true`
+    + https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
+- Using skim as PDF viewer to search forward and backward
+    + Forward search: after compiling the PDF viewer will show the
+    current page corresponding with the code on the editor screen.
+    + Backward search: when `Shift + CMD + mouse click` on the PDF file,
+    it will show the corresponding LaTeX code.
+    + Set up:
+        * Install skim on MacOS: `brew cask install skim`
+        * `.vimrc`: `let g:vimtex_view_method = 'skim'`
+        * In Skim's setting, tab Sync: choose MacVim as the preset of
+        sync.
+        * Troubleshooting: `:h skim`
+- Using zathura (Not recommended)
+    + `brew tap zegervdv/zathura`
+    + `brew install zathura --with-synctex`
+    + `brew install zathura-pdf-poppler`
+    + `mkdir -p $(brew --prefix zathura)/lib/zathura`
+    + `ln -s $(brew --prefix zathura-pdf-poppler)/libpdf-poppler.dylib $(brew --prefix zathura)/lib/zathura/libpdf-poppler.dylib`
+    + copying to clipboard: `~/.config/zathura/zathurarc`
+        * `set selection-clipboard clipboard`
+
 ### Goyo.vim and limelight.vim
 
 - Distraction-free mode in Vim.
@@ -1943,6 +2048,29 @@ complete -F _fzf_dir_completion -o default -o bashdefault tree
 - https://github.com/SirVer/ultisnips
     + Snippets
 - `:h UltiSnips` to learn how to create snippets
+
+#### Settings
+
+- `<Tab>`: trigger the snippet and trigger jump forward
+- `<BS>`: trigger jump backward
+
+#### How to create a snippet
+
+- Put snippet files in `~/.vim/UltiSnips/`
+- `filetype.snippets`
+    + `python.snippets`
+    + `snippets.snippets`
+    + `tex.snippets`
+- Overview
+    + Tab stops & placeholders: `$1` or `${1: some text}`
+    + Mirrors: `$1`
+    + Transformations: `${1/.*/Hello/g}`, `${Tabstop
+    No/regex/replacement text/options}`
+    + Interpolation:
+        * Shell: `echo hi` or `#!/usr/bin/perl; print "Hello"`
+        * VimL: `!v "1+2 = " . string(1+2)`
+        * Python: `!p snip.rv = "Hello"`
+
 
 ### vim-snippets
 
