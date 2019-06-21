@@ -20,42 +20,42 @@ at Princeton University
 When starting Zsh, it'll source the following files in this order by
 default:
 
-- `/etc/zsh/zshenv`: **NO**
+- `/etc/zsh/zshenv`:
     + This file should contain commands to set the global command search
       path and other system-wide environment variables; it should not
       contain commands that produce output or assume the shell is
       attached to a tty.
-- `~/.zshenv`: **NO**
+- `~/.zshenv`: always sourced
     + Similar to /etc/zsh/zshenv but for per-user configuration.
       Generally used for setting some useful environment variables.
-- `/etc/zsh/zprofile`: **USE BUT NO MODIFY**
+- `/etc/zsh/zprofile`:
     + This is a global configuration file, it'll be sourced at login.
       Usually used for executing some general commands at login. Please
       note that on Arch Linux, by default it contains one line which
       source the `/etc/profile`.
-- `/etc/profile`: **USE BUT NO MODIFY**
+- `/etc/profile`:
     + This file should be sourced by all Bourne-compatible shells upon
       login: it sets up an environment upon login and application-
       specific (`/etc/profile.d/*.sh`) settings. Note that on Arch
       Linux, Zsh will also source this by default.
-- `~/.zprofile`: **NO**
+- `~/.zprofile`: source at login before zshrc
     + This file is generally used for automatic execution of user's
       scripts at login.
-- `/etc/zsh/zshrc`: **NO**
+- `/etc/zsh/zshrc`:
     + Global configuration file, will be sourced when starting as a
       interactive shell.
-- `~/.zshrc`: **YES - MAIN CONFIGURATION**
+- `~/.zshrc`: interactive shell
     + Main user configuration file, will be sourced when starting as a
       interactive shell.
-- `/etc/zsh/zlogin`: **NO**
+- `/etc/zsh/zlogin`:
     + A global configuration file, will be sourced at the ending of
       initial progress when starting as a login shell.
-- `~/.zlogin`: **NO**
+- `~/.zlogin`: sourced at login after zshrc
     + Same as /etc/zsh/zlogin but for per-user configuration.
-- `/etc/zsh/zlogout`: **NO**
+- `/etc/zsh/zlogout`:
     + A global configuration file, will be sourced when a login shell
       exits.
-- `~/.zlogout`: **NO**
+- `~/.zlogout`:
     + Same as /etc/zsh/zlogout but for per-user configuration.
 
 >**Note**:
@@ -70,6 +70,85 @@ default:
 >**Warning**: It is not recommended to replace the default one line in
 >`/etc/zsh/zprofile` with something other, it'll break the integrality
 >of other packages which provide some scripts in `/etc/profile.d`
+
+## .zshenv
+
+_[Read every time]_
+
+It is always sourced, so it should set environment variables which need
+to be **updated frequently**. _PATH_ (or its associated counterpart
+_path_) is a good example because you probably don't want to restart
+your whole session to make it update. By setting it in that file,
+reopening a terminal emulator will start a new Zsh instance with the
+_PATH_ value updated.
+
+But be aware that this file is **read even when Zsh is launched to run a
+single command** (with the _-c_ option), even by another tool like
+`make`. You should **be very careful to not modify the default behavior
+of standard commands** as it may break some tools which use them (by
+setting aliases for example). For sure, it is not forbidden as you know
+what you are doing.
+
+## .zprofile
+
+_[Read at login]_
+
+I personally treat that file like `.zshenv` but for commands and
+variables which should be set once or which **don't need to be updated
+frequently**:
+
+ - environment variables to configure tools (flags for compilation, data
+ folder location, etc.) - configuration which execute commands (like
+ `SCONSFLAGS="--jobs=$(( $(nproc) - 1 ))"`) as it may take some time to
+ execute.
+
+If you modify that file, you can get the configuration updates by
+replacing the current shell with a new one as login shell:
+
+    exec zsh --login
+
+## .zshrc
+
+_[Read when interactive]_
+
+I put here everything needed only for **interactive usage**:
+
+ - prompt,
+ - command completion,
+ - command correction,
+ - command suggestion,
+ - command highlighting,
+ - output coloring,
+ - aliases,
+ - key bindings,
+ - commands history management,
+ - other miscellaneous interactive tools (auto_cd, manydots-magic)...
+
+## .zlogin
+
+_[Read at login]_
+
+This file is like `.zshprofile`, but is read after `.zshrc`. I consider
+the shell to be fully set up at this time.
+
+So, I use it to launch external commands which do not modify the shell
+behaviors (e.g. a login manager).
+
+## .zlogout
+
+_[Read at logout][Within login shell]_
+
+Here, you can clear your terminal or any other resource setup at login.
+
+## How I choose where to put a setting
+
+ - it is needed by a **command run non-interactively**: `.zshenv`
+ - it should be **updated on new shell**: `.zshenv`
+ - it runs a command which **may take some time to complete**: `.zprofile`
+ - it is related to **interactive usage**: `.zshrc`
+ - it is a **command to be run when the shell is fully setup**: `.zlogin`
+ - it **releases a resource** acquired at login: `.zlogout`
+
 
 # Configuring ZSH
 
