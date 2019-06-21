@@ -2597,6 +2597,8 @@ PS. You also need to install related omni completion plugins.
 
 ### Misc
 
+- Neomake (similar ale): https://github.com/neomake/neomake
+- Python-mode: https://github.com/python-mode/python-mode
 - Debugging
     + https://github.com/idanarye/vim-vebugger
     + https://github.com/vim-vdebug/vdebug
