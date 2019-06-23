@@ -800,6 +800,20 @@ Usage guide: http://texdoc.net/texmfdist/doc/latex/amsmath/amsldoc.pdf
 https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
 https://www.latextutorial.com/tutorials/circuitikz/
 
+# LaTeX and Vim
+
+- https://castel.dev/post/lecture-notes-1/
+- https://castel.dev/post/lecture-notes-2/
+- Tools
+    + Vim + vimtex + ultisnips + vim-snippets + Inkscape + TikZ
+    + vimtex
+        * compiling and preview
+        * forward and backward search
+    + ultisnips + vim-snippets
+        * increase typing speed
+    + Inkscape: drawing and export to pdf+LaTeX
+    + TikZ
+
 # Tips and Tricks
 
 ## Block/Multiline comments
