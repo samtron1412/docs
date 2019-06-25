@@ -22,6 +22,13 @@
 - Google Python course
     + https://developers.google.com/edu/python/
 
+## Help
+
+- Showing built-in methods for an built-in datatype
+    + `dir('abc')`: showing built-in methods for a string
+- Learn about the built-in function using `help()`
+    + `help('ab'.find)`: showing the help for the find method
+
 ## History
 
 first release: 1991
