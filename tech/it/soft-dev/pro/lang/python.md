@@ -326,6 +326,10 @@ else:
 
 # Tips and Tricks
 
+## Reload the class source file after importing
+
+- `>>> reload(shop)`
+
 ## Asterisk in Python
 
 - https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/
