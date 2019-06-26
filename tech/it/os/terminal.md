@@ -32,11 +32,6 @@ some other display architecture.
 - Most of them emulate Xterm, which in turn emulates VT102, which
   emulates typewriter.
 
-# Typing commands
-
-- `<C-a>`: beginning of the line
-- `<C-e>`: the end of the line
-- `<C-r>`: search previous commands
 
 # Terminal Colors
 
