@@ -170,4 +170,31 @@ libraries, shell and such, but by default none of these are running. You
 
 ## [Docker birthday 3](https://github.com/docker/docker-birthday-3)
 
+# Docker Machine
+
+- `$ docker-machine create --driver virtualbox default`: create a new virtual machine
+- `$ eval $(docker-machine env default)`: connect the shell to the virtual machine
+- `$ docker-machine start default`: start the virtual machine
+- `$ docker-machine stop default`: stop the virtual machine
+
+# Docker Compose
+
+## Create docker-compose.yml
+
+```yaml
+version: '3.4'
+services:
+  dev:
+    image: ethanlee/cs61c-env
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - .:/cs61c
+```
+
+## Usage
+
+- `docker-compose run dev bash`
+
+
 # References
