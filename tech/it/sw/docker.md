@@ -2,15 +2,17 @@
 
 # [Overview](https://www.docker.com/)
 
-[Docker misconceptions](https://devopsu.com/blog/docker-misconceptions/)
+- [Docker misconceptions](https://devopsu.com/blog/docker-misconceptions/)
 
-[Docker provider](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-docker-dev-environments.html)
+- [Docker provider](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-docker-dev-environments.html)
 
 Docker is an open-source project that automates **the deployment of
 applications inside software containers**, by providing an additional
 layer of abstraction and automation of [operating-system-level
 virtualization](https://en.wikipedia.org/wiki/Operating-system-
 level_virtualization) on Linux.
+- Deploys applications in a sandbox (containers) to run on the host
+  operating system e.g. Linux.
 
 Docker uses **resource isolation** features of the Linux kernel such as
 [cgroups](https://en.wikipedia.org/wiki/Cgroups) and **kernel
@@ -115,7 +117,7 @@ with Linux, different distributions are fine, but other operating
 systems such as Windows cannot be hosted.
 
 
-## Docker Engine
+## Docker Engine (docker command)
 
 The Docker Engine consists of two parts: a **daemon**, a **server
 process** that manages all the containers; a **client**, which acts as a
@@ -127,7 +129,7 @@ libraries, shell and such, but by default none of these are running. You
 `start` a container by running a process in it.
 
 
-# Basic
+# Docker Engine Basic (docker command)
 
 - [Docker cheatsheet and best practices](http://zeroturnaround.com/rebellabs/docker-commands-and-best-practices-cheat-sheet/)
 
@@ -156,28 +158,15 @@ libraries, shell and such, but by default none of these are running. You
 
 `# docker stop container <container>`
 
-# Tutorial
 
-## [Docker LAMP](https://www.linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/)
-
-- [Another LAMP](https://github.com/tutumcloud/lamp)
-
-## [Docker training](http://www.meetup.com/peoplespace/events/229722697/)
-
-- [Slide](http://cdn.michelleliu.io/training/dockerintro.pdf)
-- [Exercise](https://github.com/anonmily/docker-up-and-running)
-- [Blog](http://michelleliu.io/devops/a-crash-course-in-docker)
-
-## [Docker birthday 3](https://github.com/docker/docker-birthday-3)
-
-# Docker Machine
+# Docker Machine (docker-machine command)
 
 - `$ docker-machine create --driver virtualbox default`: create a new virtual machine
 - `$ eval $(docker-machine env default)`: connect the shell to the virtual machine
 - `$ docker-machine start default`: start the virtual machine
 - `$ docker-machine stop default`: stop the virtual machine
 
-# Docker Compose
+# Docker Compose (docker-compose command)
 
 ## Create docker-compose.yml
 
@@ -194,7 +183,31 @@ services:
 
 ## Usage
 
-- `docker-compose run dev bash`
+- `docker-compose run dev bash`: run this command at the directory
+  contains the docker-compose.yml to run a bash shell.
+
+
+# Tutorial
+
+## [Docker LAMP](https://www.linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/)
+
+- [Another LAMP](https://github.com/tutumcloud/lamp)
+
+## [Docker training](http://www.meetup.com/peoplespace/events/229722697/)
+
+- [Slide](http://cdn.michelleliu.io/training/dockerintro.pdf)
+- [Exercise](https://github.com/anonmily/docker-up-and-running)
+- [Blog](http://michelleliu.io/devops/a-crash-course-in-docker)
+
+## [Docker birthday 3](https://github.com/docker/docker-birthday-3)
+
+
+# Tips and Tricks
+
+## Pair programming with Docker, SSH and TMUX
+
+- https://binarapps.com/blog/pair-programming-with-docker-ssh-and-tmux/
+- Create an container supports ssh and tmux for pair programming.
 
 
 # References
