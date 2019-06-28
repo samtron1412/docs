@@ -124,6 +124,17 @@ int main() {
 | double      | 8 bytes      | 2.3E-308 to 1.7E+308 | 15 decimal places |
 | long double | 10 bytes     |                      |                   |
 
+## Strings
+
+- String literals vs. Arrays of characters
+    + https://stackoverflow.com/questions/1011455/is-it-possible-to-modify-a-string-of-char-in-c
+    + String literals are read only, and they are stored in static data
+    part of the memory.
+        * `char *ptr = "This is a string literal";`
+    + Arrays of characters are local variables, and they are stored in
+    the stack.
+        * `char arr[] = "This is an array of characters";`
+
 # Function
 
 [ref](http://users.aber.ac.uk/auj/voidmain.cgi)
