@@ -204,6 +204,21 @@ services:
 
 # Tips and Tricks
 
+## Add a new volume in existing containers
+
+- https://stackoverflow.com/questions/28302178/how-can-i-add-a-volume-to-an-existing-docker-container
+
+```bash
+$ docker ps  -a
+CONTAINER ID        IMAGE                 COMMAND                  CREATED              STATUS                          PORTS               NAMES
+    5a8f89adeead        ubuntu:14.04          "/bin/bash"              About a minute ago   Exited (0) About a minute ago                       agitated_newton
+
+$ docker commit 5a8f89adeead newimagename
+
+$ docker run -ti -v "$PWD/dir1":/dir1 -v "$PWD/dir2":/dir2 newimagename /bin/bash
+```
+
+
 ## Pair programming with Docker, SSH and TMUX
 
 - https://binarapps.com/blog/pair-programming-with-docker-ssh-and-tmux/
