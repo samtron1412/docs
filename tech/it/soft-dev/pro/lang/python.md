@@ -49,6 +49,82 @@ duck
 - Run the script and then open an interactive session
     + `python3 -i <script_file>`
 
+# Conda
+
+- https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+- conda
+    + anaconda: a full distribution with a lot of binaries and libraries
+    + miniconda: an empty conda environment, containing only Conda, its
+    dependencies and python.
+
+## Glossary
+
+- `~/.condarc`: configure conda
+    + run `conda config` to create one in the home directory
+- Channels: the location of repositories where conda looks for packages
+
+## General commands
+
+- `conda <command> --help`
+- `conda clean`: remove unused packages and cache
+- `conda config`: modified values in .condarc
+    + https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html
+- `conda create`: create an environment
+- `conda info`: show conda's information
+- `conda list`
+- `conda install`
+- `conda package`
+- `conda search`
+- `conda remove`
+- `conda update`
+
+## Tasks
+
+- https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/index.html
+
+### Managing environments
+
+- Create a new environment: `conda create --name myenv`
+- Specific python: `conda create -n myenv python=3.4`
+- Specific package: `conda create -n myenv scipy`
+- Specific version of a package: `conda create -n myenv scipy=0.15.0`
+- Specific python and multiple packages
+    + `conda create -n myenv python=3.4 scipy=0.15.0 astroid babel`
+- No default packages: `conda create --no-default-packages -n myenv python`
+- Building an identical environment using spec-file
+    + `conda list --explicit > spec-file.txt`
+    + `conda create --name myenv --file spec-file.txt`
+    + Export the active environment: `conda env export > environment.yml`
+- Create an environment from a .yml file
+    + `conda env create -f environment.yml`
+
+```yml
+name: stats2
+channels:
+  - javascript
+dependencies:
+  - python=3.4   # or 2.7
+  - bokeh=0.9.2
+  - numpy=1.9.*
+  - nodejs=0.10.*
+  - flask
+  - pip:
+    - Flask-Testing
+```
+
+- Specific location for the environment:
+    + `conda create --prefix /path/to/myenv jupyterlab=0.35 matplotlib=3.1 numpy=1.16`
+    + Activate by name: `conda activate /path/to/myenv`
+- Update an environment by modifying .yml file and run:
+    + `$ conda env update --prefix ./env --file environment.yml  --prune`
+- Cloning an environment: `conda create --name myclone --clone myenv`
+- List all environments: `conda list --envs`
+    + `conda env list`
+- `conda init`: add some code to shellrc (.zshrc, etc.) to modify PATH
+  when run conda activate
+- Remove an environment: `conda env remove --name myenv`
+
+
 # Virtual Environment
 
 ## Introduction
