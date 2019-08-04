@@ -125,6 +125,15 @@ dependencies:
 - Remove an environment: `conda env remove --name myenv`
 
 
+## Managing packages
+
+- Activate an environment before installing a package
+- Search a package: `conda search scipy`
+- Install a package: `conda install scipy`
+- Specific version: `conda install scipy=0.15.0`
+- Update a package: `conda update scipy`
+- View list of packages: `conda list`
+
 # Virtual Environment
 
 ## Introduction
