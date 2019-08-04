@@ -55,6 +55,7 @@ In a C program, the semicolon is a statement terminator.
 List of the reserved words in C. These words cannot be used as constants
 or variables or any other identifier names.
 
+```
 | auto     | else   | long     | switch   |
 | break    | enum   | register | typedef  |
 | case     | extern | return   | union    |
@@ -64,6 +65,7 @@ or variables or any other identifier names.
 | default  | if     | static   | while    |
 | do       | int    | struct   | _Packed  |
 | double   |        |          |          |
+```
 
 ## Whitespace in C
 
@@ -134,6 +136,31 @@ int main() {
     + Arrays of characters are local variables, and they are stored in
     the stack.
         * `char arr[] = "This is an array of characters";`
+
+## Pointer
+
+### Pointer Arithmetic
+
+- Pointer arithmetic is performing arithmetic operations on pointers
+    + The nummerical values are multiplied with the sizeof(datatype)
+    that is pointed to by the pointer.
+
+```c
+int arr[] = {1, 2, 3, 4, 5};
+int* b = &a[2];
+printf("%d\n", arr[0]); //1
+printf("%d\n", 1[arr]); //2
+printf("%d\n", arr[1]); //2
+printf("%d\n", b[0]);   //3
+printf("%d\n", b[-1]);  //2
+printf("%d\n", b[-2]);  //1
+printf("%d\n", b[-3]);  //garbage
+
+/*
+ * The square bracket is a syntactic sugar for pointer arithmetic.
+ * E1[e2] = *(E1 + e2)
+ */
+```
 
 # Function
 
