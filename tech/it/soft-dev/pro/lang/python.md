@@ -134,6 +134,12 @@ dependencies:
 - Update a package: `conda update scipy`
 - View list of packages: `conda list`
 
+## Managing python
+
+- List all python versions: `conda search python`
+    + `conda search --full-name python`
+- Update python: `conda update python`
+
 # Virtual Environment
 
 ## Introduction
