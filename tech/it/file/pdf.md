@@ -4,6 +4,40 @@
 
 # Tips and Tricks
 
+## PDF Utilities
+
+
+| Program               | Description                                     |
+| -                     | -                                               |
+| convert (ImageMagick) | Converting images to pdf(s) or pdf(s) to images |
+| gs (ghostscript)      | Multiple functions                              |
+| pdfunite (poppler)    | Merging pdfs                                    |
+| pdfjam (texlive-core) | Merging pdfs                                    |
+| pdfimages (poppler)   | Extracting images in pdfs                       |
+| pdftk                 | Multiple functions                              |
+
+## Reduce file size
+
+- `ps2pdf LARGE.pdf SMALL.pdf`
+- `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -q -o output.pdf file.pdf`
+- `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf`
+- Compress pdfs
+    + `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf`
+    + https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
+    + http://milan.kupcevic.net/ghostscript-ps-pdf/
+
+```
+-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)
+-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)
+-dPDFSETTINGS=/printer  (high quality, 300 dpi images)
+-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
+-dPDFSETTINGS=/default  (almost identical to /screen)
+```
+- PDF with full color scan images
+    + `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dDownsampleColorImages=true \
+    -dColorImageResolution=150 -dNOPAUSE  -dBATCH -sOutputFile=output.pdf input.pdf`
+- `convert -compress Zip -density 150x150 input.pdf output.pdf`
+
 ## Removing password
 
 **The easiest way GUI** (recommended for novice)
