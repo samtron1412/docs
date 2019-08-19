@@ -2048,6 +2048,7 @@ complete -F _fzf_dir_completion -o default -o bashdefault tree
 - https://github.com/SirVer/ultisnips
     + Snippets
 - `:h UltiSnips` to learn how to create snippets
+- `:h snippet-options`: control the behavior of the snippet.
 
 #### Settings
 
