@@ -802,6 +802,8 @@ https://www.latextutorial.com/tutorials/circuitikz/
 
 # LaTeX and Vim
 
+## Introduction
+
 - https://castel.dev/post/lecture-notes-1/
 - https://castel.dev/post/lecture-notes-2/
 - Tools
@@ -813,6 +815,65 @@ https://www.latextutorial.com/tutorials/circuitikz/
         * increase typing speed
     + Inkscape: drawing and export to pdf+LaTeX
     + TikZ
+
+## Ultisnips
+
+```basic-snippet
+snippet "b(egin)?" "begin{} / end{}" br
+snippet abs "abstract environment" b
+snippet tab "tabular / array environment" b
+snippet "gentbl(\d+)x(\d+)" "Generate table of *width* by *height*" r
+snippet "tr(\d+)" "Add table row of dimension ..." r
+snippet table "Table environment" b
+snippet fig "Figure environment" b
+snippet enum "Enumerate" b
+snippet item "Itemize" b
+snippet desc "Description" b
+snippet it "Individual item" b
+snippet part "Part" b
+snippet cha "Chapter" b
+snippet sec "Section"
+snippet sec* "Section*"
+snippet sub "Subsection"
+snippet sub* "Subsection*"
+snippet ssub "Subsubsection"
+snippet ssub* "Subsubsection*"
+snippet par "Paragraph"
+snippet subp "Subparagraph"
+snippet ac "Acroynm normal" b
+snippet acl "Acroynm expanded" b
+snippet ni "Non-indented paragraph" b
+snippet pac "Package" b
+snippet lp "Long parenthesis"
+snippet "mint(ed)?( (\S+))?" "Minted code typeset" br
+```
+
+```custom-snippets
+snippet mk "Inline Math" wA
+snippet dm "Display Math" wA
+
+# Expand when type a character followed by a digit
+snippet '([A-Za-z])(\d)' "Auto Subscript" wrA
+
+# Expand when type a character followed by `_` and two digits
+snippet '([A-Za-z])_(\d\d)' "Auto Subscript2" wrA
+
+snippet '([A-Za-z])\^(\d+)\s' "Auto Superscript" wrA
+
+# Expand a character followed by `_` and other characters by tab
+snippet '([A-Za-z])_([A-Za-z]+)' "Subscript" r
+
+# Expand vector by typing "vec_name., or vec_name,."
+snippet "(\\?\w+)(,\.|\.,)" "Vector postfix" riA
+
+# The bar on top by typing tab
+snippet "bar" "bar" ri
+snippet "([a-zA-Z])bar" "bar" ri
+
+snippet compl "Complement" i
+```
+
+
 
 # Tips and Tricks
 
