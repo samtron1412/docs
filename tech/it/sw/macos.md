@@ -64,6 +64,18 @@ Mac OS
 
 # Tips and Tricks
 
+## Places to check when cleaning storage
+
+- https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/MacOSXDirectories/MacOSXDirectories.html
+- `~/Documents`
+- `~/Downloads`
+- `~/Library/Application Support`
+- `~/Library/Containers`
+- `~/Library/Messages`
+- `~/Library/Mail`
+- `~/Music`
+- `~/repo`
+
 ## Reinstall Xcode developer tools
 
 `xcode-select --install`
