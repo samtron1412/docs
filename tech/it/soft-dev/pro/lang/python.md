@@ -279,6 +279,36 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 
 # Packages
 
+## jupyter
+
+### Introduction
+
+- `jupyter notebook`: a web-based interactive computational environment
+  for multiple programming languages such as Python, etc.
+- `jupyterlab`: next-generation of jupyter notebook
+
+### Installation
+
+- `conda install jupyter` or `pip install jupyter`
+- `conda install -c conda-forge jupyterlab` or `pip install jupyterlab`
+
+### Running
+
+- Activate the conda environment if necessary
+- `jupyter notebook`
+- `jupyter lab`
+
+### Securing a notebook server
+
+- https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
+    + Set a password
+    + etc.
+
+### Usage
+
+- Jupyter notebook: https://realpython.com/jupyter-notebook-introduction/
+- Jupyter lab: https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b
+
 ## pylint
 
 - looking for bugs and poor quality code
