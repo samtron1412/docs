@@ -815,6 +815,53 @@ https://www.latextutorial.com/tutorials/circuitikz/
         * increase typing speed
     + Inkscape: drawing and export to pdf+LaTeX
     + TikZ
+- vimtex Usage: through mappings
+    + https://github.com/lervag/vimtex/wiki/Usage
+    + https://github.com/lervag/vimtex#features
+    + forward search:
+        * Put the cursor at the place you want to see it in the pdf file
+        * Using mapping forward search: `<localleader>lv` (`\lv`)
+    + backward search:
+        * Skim:
+            - `Shift + Command + Click` on the pdf file to jump to the
+            corresponding text.
+- vimtex's workflow:
+    + Open a .tex file
+    + Checking that the vimtex is running or not: `\lg`
+    + Toggling the continuous compiling if it isn't running: `\ll`
+    + Edit the file using vimtex features
+        * Motions:
+            - Section boundaries: `[[`, `]]`, `[]`, `][`
+            - Environment boundaries: `[m`, `[M`, `]m`, `]M`
+            - Comment boundaries: `[*`, `]*`
+            - Matching delimiters: `%`
+        * Text objects
+            - Commands: `ic`, `ac`
+            - Delimiters: `id`, `ad`
+            - LaTeX environments: `ie`, `ae`
+            - Inline Math blocks: `i$`, `a$`
+            - Sections: `iP`, `aP`
+        * Delete the surrounding command, environment, delimiter
+            - `dsc`, `dse`, `dsd`, `ds$`
+        * Change the surrounding command, environment, delimiter
+            - `csc`, `cse`, `csd`, `cs$`
+        * Toggle starred command or environment: `tsc`, `tse`
+        * Close the current environment/delimiter in insert mode by ]]
+        * Insert a new command: `<F7>`
+        * Show all insert mode mapping in math mode: `\lm`
+            - In math type the leader "backtick" and the mapping
+            - `q` to quit the list
+        * Toggle table of contents: `\lT`
+    + After writing the file is compiled automatically
+        * If errors occur, it will show the list of errors
+        * Reading the errors to know what's wrong
+        * Usually the first error caused by the line right above the
+        error
+    + Typing `\lv` to do the forward search
+    + Typing `\lk` to stop the continuous compiling for the current file
+        * `\lK` stop for all files
+    + `\lc`: clean, `\lC` full clean
+
 
 ## Ultisnips
 
