@@ -224,6 +224,8 @@ all their funtionality), and in addition provides functions to compute
 the layout of labels, and to ‘clone’ the standard environments, to
 create new environments with counters of their own.
 
+- conflict with paralist package
+
 ## fancyhdr
 
 Extensive control of page headers and footers in LATEX2ε.
@@ -797,8 +799,9 @@ Usage guide: http://texdoc.net/texmfdist/doc/latex/amsmath/amsldoc.pdf
 
 # Drawing electrical circuits
 
-https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
-https://www.latextutorial.com/tutorials/circuitikz/
+- https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
+- https://www.latextutorial.com/tutorials/circuitikz/
+    + https://github.com/circuitikz/circuitikz/issues/101
 
 # LaTeX and Vim
 
