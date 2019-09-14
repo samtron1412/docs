@@ -189,8 +189,8 @@ TikZ is build on top of PGF and allows you to create sophisticated
 graphics in a rather intuitive and easy manner.
 
 PGF is a macro package for creating graphics. It is platform and
-formatindependent and works together with the most important TEX backend
-drivers, including pdfTEX and dvips. It comes with a userfriendly syntax
+format independent and works together with the most important TEX backend
+drivers, including pdfTEX and dvips. It comes with a user-friendly syntax
 layer called TikZ.
 
 Its usage is similar to pstricks and the standard picture
