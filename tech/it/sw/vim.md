@@ -795,6 +795,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Close all buffers
+
+- `:%bd` or `:%bd!`
+- Close all buffers but this one: `:%bd|e#`
+
 ## Logging every autocommands events in a log file
 
 - Create a `log-autocmds.vim` in `~/.vim/plugin/`
