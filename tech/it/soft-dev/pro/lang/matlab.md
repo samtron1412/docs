@@ -87,6 +87,8 @@ ans =
 - Valid function names begin with an alphabetic character, and can
   contain letters, numbers, or underscores.
 - Functions are often case sensitive.
+- Function scoping
+    + https://stackoverflow.com/questions/3569933/is-it-possible-to-define-more-than-one-function-per-file-in-matlab-and-access-t
 
 
 ## Class and OOP
