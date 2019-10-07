@@ -298,6 +298,12 @@ numerical value) alone.
 
 The term secant line refers to a line through two points on a curve.
 
+# Spectral radius
+
+The spectral radius of a square matrix or a bounded linear operator is
+the largest absolute value of its eigenvalues (i.e. supremum among the
+absolute values of the elements in its spectrum).
+
 # Standard Deviation
 
 - In statistics, the standard deviation (SD, also represented by the
