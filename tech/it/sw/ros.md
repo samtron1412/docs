@@ -94,6 +94,8 @@ ros_workspaces
     + `rosmsg show <message_type>`
 - Find all the topics that contain a particular message type:
     + `rostopic find <message_type>`
+- Inspect the topic
+    + `rostopic echo <topic>`
 - List all services: `rosservice list`
 - Determine what type of data is included in a request/response
     + `rosservice type <service>`
@@ -101,9 +103,17 @@ ros_workspaces
 - Play back all the messages published on a set of topics
     + `rosbag play baxter.bag`
     + You can pause the play back by the space bar
+- Bringing up and configuring multiple nodes:
+    + `roslaunch my_package foo.launch`
+- A XML file that specifies several nodes for ROS to launch, with
+  various parameters and topic renaming directions.
 
 
 # Tools
+
+## MoveIt
+
+- Motion planning library
 
 ## tf/tf2
 
