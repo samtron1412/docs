@@ -72,3 +72,6 @@
     + `mas version`
 - Different versions of a package
     + `brew tap homebrew/cask-versions`
+- Stop upgrading a certain package
+    + `brew pin package`
+    + `brew unpin package`
