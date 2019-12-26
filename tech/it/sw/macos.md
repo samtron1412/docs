@@ -66,6 +66,12 @@ Mac OS
 
 ## Places to check when cleaning storage
 
+- StackOverflow
+    + https://apple.stackexchange.com/questions/261252/system-storage-on-macos-sierra-is-470gb
+- Using OmniDiskSweeper
+    + https://www.omnigroup.com/more
+- Using Grandperspective
+    + http://grandperspectiv.sourceforge.net/
 - https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/MacOSXDirectories/MacOSXDirectories.html
 - `~/Documents`
 - `~/Downloads`
@@ -93,6 +99,8 @@ Mac OS
 - Quit Disk Utility and Reinstall the macOS on the new hard disk
     + During the installation, choose transferring data from the old
       disk to the new disk
+- Install Xcode command tools: (for brew)
+    + `xcode-select --install`
 
 ## Key repeat
 
