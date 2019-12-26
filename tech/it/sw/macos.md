@@ -68,8 +68,10 @@ Mac OS
 
 `xcode-select --install`
 
-## Replace the old hard disk with a new one
+## Replace the old hard disk with a new one with different sizes
 
+- Since it is different in size, we cannot use the same method of
+  cloning using Disk Utility
 - Boot to the Recovery Mode by Restart and holding down Command+R
     + Start Disk Utility and delete any volumes on the new disk and
       erase the disk, format the disk using appropriate file systems
