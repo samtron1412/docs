@@ -321,3 +321,8 @@ if __name__ == '__main__':
    relative to a fixed world coordinate frame or a frame attached to
    another point on the robot?
 
+# Tips and tricks
+
+## Install a new ROS package on Ubuntu
+
+- `sudo apt install <pkg>`
