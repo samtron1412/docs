@@ -309,6 +309,23 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 - Jupyter notebook: https://realpython.com/jupyter-notebook-introduction/
 - Jupyter lab: https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b
 
+### Tips and Tricks for jupyter notebook
+
+#### Install nbextensions
+
+#### Export to PDF with newpage break
+
+- Add the following code to a raw NBConvert cell type:
+
+```
+%%latex
+\newpage
+```
+
+#### Export to HTML without code blocks (hide all input blocks)
+
+`jupyter nbconvert <yourFile>.ipynb --no-input --no-prompt`
+
 ## pylint
 
 - looking for bugs and poor quality code
