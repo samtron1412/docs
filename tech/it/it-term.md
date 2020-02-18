@@ -45,6 +45,25 @@ hardware and software.
 - A little focus on hardware
 
 
+## Computer Graphics
+
+Using the computer and different technologies to turn the abstract
+representations inside the computer into images or videos that a human
+can see and understand.
+
+## Computer Vision
+
+Take pictures or videos of the real world and turn it into abstract
+representations that the computer can understand.
+
+
+## Image Processing
+
+Different Techniques to process an image:
+- Computational Photography: processing an image using digital
+  computation rather than optical processes.
+
+
 # Hardware
 
 ## Computer Hardware Engineering
