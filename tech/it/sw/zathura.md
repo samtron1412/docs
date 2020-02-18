@@ -1,122 +1,138 @@
 [TOC]
 
 # Overview
-Zathura is a free, plugin-based document viewer. It currently has plugins available for PDF, PostScript, and DjVu. It was written to be lightweight and controlled with vim-like keybindings.
+
+Zathura is a free, plugin-based document viewer. It currently has
+plugins available for PDF, PostScript, and DjVu. It was written to be
+lightweight and controlled with vim-like keybindings.
 
 # [Configuration](https://pwmt.org/projects/zathura/documentation/)
-The customization of zathura is be managed via a configuration file called zathurarc. By default zathura will evaluate the following files:
 
-	/etc/zathurarc
-	$XDG_CONFIG_HOME/zathura/zathurarc (default: ~/.config/zathura/zathurarc)
+The customization of zathura is be managed via a configuration file
+called zathurarc. By default zathura will evaluate the following files:
+
+        /etc/zathurarc
+        $XDG_CONFIG_HOME/zathura/zathurarc (default: ~/.config/zathura/zathurarc)
 
 # Keybindings
+
 ## Normal mode
-	J, K   Go to the next or previous page
 
-	h, k, j, l
-	      Scroll to the left, down, up or right direction
+```
+J, K   Go to the next or previous page
 
-	Left, Down, Up, Right
-	      Scroll to the left, down, up or right direction
+h, k, j, l
+      Scroll to the left, down, up or right direction
 
-	^t, ^d, ^u, ^y
-	      Scroll a half page left, down, up or right
+Left, Down, Up, Right
+      Scroll to the left, down, up or right direction
 
-	t, ^f, ^b, space, <S-space>, y
-	      Scroll a full page left, down, up or right
+^t, ^d, ^u, ^y
+      Scroll a half page left, down, up or right
 
-	gg, G, nG
-	      Goto to the first, the last or to the nth page
+t, ^f, ^b, space, <S-space>, y
+      Scroll a full page left, down, up or right
 
-	^o, ^i Move backward and forward through the jump list
+gg, G, nG
+      Goto to the first, the last or to the nth page
 
-	^j, ^k Bisect forward and backward between the last two jump points
+^o, ^i Move backward and forward through the jump list
 
-	^c, Escape
-	      Abort
+^j, ^k Bisect forward and backward between the last two jump points
 
-	a, s   Adjust window in best-fit or width mode
+^c, Escape
+      Abort
 
-	/, ?   Search for text
+a, s   Adjust window in best-fit or width mode
 
-	n, N   Search for the next or previous result
+/, ?   Search for text
 
-	o, O   Open document
+n, N   Search for the next or previous result
 
-	f      Follow links
+o, O   Open document
 
-	F      Display link target
+f      Follow links
 
-	:      Enter command
+F      Display link target
 
-	r      Rotate by 90 degrees
+:      Enter command
 
-	^r     Recolor
+r      Rotate by 90 degrees
 
-	R      Reload document
+^r     Recolor
 
-	Tab    Show index and switch to Index mode
+R      Reload document
 
-	d      Toggle dual page view
+Tab    Show index and switch to Index mode
 
-	F5     Switch to fullscreen mode
+d      Toggle dual page view
 
-	^m     Toggle inputbar
+F5     Switch to fullscreen mode
 
-	^n     Toggle statusbar
+^m     Toggle inputbar
 
-	=, -
-	      Zoom in, out
+^n     Toggle statusbar
 
-	zI, zO, z0
-	      Zoom in, out or to the original size
+=, -
+      Zoom in, out
 
-	n=     Zoom to size n
+zI, zO, z0
+      Zoom in, out or to the original size
 
-	mX     Set a quickmark to a letter or number X
+n=     Zoom to size n
 
-	'X     Goto quickmark saved at letter or number X
+mX     Set a quickmark to a letter or number X
 
-	q      Quit
+'X     Goto quickmark saved at letter or number X
+
+q      Quit
+```
 
 ## Index mode
-	k, j   Move to upper or lower entry
 
-	l      Expand entry
+```
+k, j   Move to upper or lower entry
 
-	L      Expand all entries
+l      Expand entry
 
-	h      Collapse entry
+L      Expand all entries
 
-	H      Collapse all entries
+h      Collapse entry
 
-	space, Return
-	      Select and open entry
+H      Collapse all entries
+
+space, Return
+      Select and open entry
+```
+
 
 # Commands
-	bmark  Save a bookmark
 
-	bdelete
-	      Delete a bookmark
+```
+bmark  Save a bookmark
 
-	blist  List bookmarks
+bdelete
+      Delete a bookmark
 
-	close  Close document
+blist  List bookmarks
 
-	exec   Execute an external command
+close  Close document
 
-	info   Show document information
+exec   Execute an external command
 
-	help   Show help page
+info   Show document information
 
-	open, o
-	      Open a document
+help   Show help page
 
-	offset Set page offset
+open, o
+      Open a document
 
-	print  Print document
+offset Set page offset
 
-	write, write!
-	      Save document (and force overwriting)
+print  Print document
 
-	export Export attachments
+write, write!
+      Save document (and force overwriting)
+
+export Export attachments
+```
