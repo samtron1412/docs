@@ -382,6 +382,25 @@ A HTTP library, written in Python, for human beings.
 
 # Tutorial
 
+## Working with images
+
+- Lowest level: PIL/Pillow (PIL is discontinued)
+- Wrappers on top:
+    + imageio:
+        * less dependencies (numpy, Pillow)
+        * for simple tasks
+    + scikit-image
+        * powerful
+        * easy to integrate with scikit ecosystem
+- Different system
+    + cv2
+        * the most powerful tool
+        * the most complex system
+        * faster than Pillow
+    + pillow-simd
+        * a fork of pillow
+        * fastest
+
 ## Threading
 
 - https://docs.python.org/2/library/threading.html
