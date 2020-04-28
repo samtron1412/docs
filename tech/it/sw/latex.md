@@ -6,7 +6,7 @@
 
 Multilingual support for Plain TeX or LaTeX.
 
-This package manages culturallydetermined typographical (and other)
+This package manages culturally determined typographical (and other)
 rules for a wide range of languages. A document may select a single
 language to be supported, or it may select several, in which case the
 document may switch from one language to another in a variety of ways.
@@ -259,6 +259,22 @@ default LATEX commands, PStricks or TikZ.
 BibTeX is reference management software for formatting lists of
 references. BibTeX was created by Oren Patashnik and Leslie Lamport in
 1985. It is written in WEB/Pascal.
+
+#### Usage
+
+- https://www.overleaf.com/blog/532-creating-and-managing-bibliographies-with-bibtex-on-overleaf
+
+```IEEE
+\documentclass[conference]{IEEEtran}
+...
+\usepackage{cite}    % \cite{ref-name}
+...
+
+%% Bibliography
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{main}
+```
 
 #### Basic structure
 
