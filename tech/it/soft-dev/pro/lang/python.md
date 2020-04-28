@@ -311,6 +311,19 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 
 ### Tips and Tricks for jupyter notebook
 
+#### Export to PDF without section numbers
+
+```nosecnum.tplx
+((* extends 'article.tplx' *))
+
+((* block commands *))
+\setcounter{secnumdepth}{0} % Turns off numbering for sections
+((( super() )))
+((* endblock commands *))
+```
+
+`jupyter notebook --to=pdf --template=nosecnum.tplx file.ipynb`
+
 #### Install nbextensions
 
 #### Export to PDF with newpage break
