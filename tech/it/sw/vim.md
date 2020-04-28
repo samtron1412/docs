@@ -795,6 +795,15 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Setting python version for Vim
+
+```
+" for python 3.X
+set pythonthreehome=/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7
+set pythonthreedll=/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/Python
+
+```
+
 ## Close all buffers
 
 - `:%bd` or `:%bd!`
@@ -1336,6 +1345,9 @@ K                |<plug>(vimtex-doc-package)|                    `n`
     enable_test_extensions -boolean true`
     + https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
 - Using skim as PDF viewer to search forward and backward
+    + Skim only works with the first window of VIM, so open latex files
+    by the first windows, and other files by other VIM windows if you
+    use more than one window of VIM.
     + Forward search: after compiling the PDF viewer will show the
     current page corresponding with the code on the editor screen.
     + Backward search: when `Shift + CMD + mouse click` on the PDF file,
