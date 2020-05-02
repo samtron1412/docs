@@ -71,7 +71,7 @@ duck
     + https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html
 - `conda create`: create an environment
 - `conda info`: show conda's information
-- `conda list`
+- `conda list`: show a list of all packages
 - `conda install`
 - `conda package`
 - `conda search`
@@ -84,21 +84,38 @@ duck
 
 ### Managing environments
 
+- Activate an environment: `conda activate env_name`
+- Deactivate: `conda deactivate`
+- List all environments: `conda list --envs`
+    + `conda env list`
+- `conda init`: add some code to shellrc (.zshrc, etc.) to modify PATH
+  when run conda activate
+- Remove an environment: `conda env remove --name myenv`
 - Create a new environment: `conda create --name myenv`
-- Specific python: `conda create -n myenv python=3.4`
-- Specific package: `conda create -n myenv scipy`
-- Specific version of a package: `conda create -n myenv scipy=0.15.0`
-- Specific python and multiple packages
+- Specify python version: `conda create -n myenv python=3.4`
+- Specify default packages: `conda create -n myenv scipy`
+- Specify version of a package: `conda create -n myenv scipy=0.15.0`
+- Specify python and multiple packages
     + `conda create -n myenv python=3.4 scipy=0.15.0 astroid babel`
 - No default packages: `conda create --no-default-packages -n myenv python`
-- Building an identical environment using spec-file
+- Building an identical environment using spec-file (usually is the same
+  computer not for sharing)
     + `conda list --explicit > spec-file.txt`
     + `conda create --name myenv --file spec-file.txt`
-    + Export the active environment: `conda env export > environment.yml`
-- Create an environment from a .yml file
-    + `conda env create -f environment.yml`
+- Sharing environments:
+    + Export the active environment with all packages
+        * `conda env export > environment.yml`
+        * This way may not work across platforms because some of
+        dependencies are different in different platforms.
+    + Export only packages that you specifically install not all of its
+    dependencies. The dependencies will be installed on the new platform
+    later by conda.
+        * `conda env export --from-history > environment.yml`
+        * https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#exporting-an-environment-file-across-platforms
+    + Creating an environment from an environment.yml file:
+        * `conda env create -f environment.yml`
 
-```yml
+```environment.yml
 name: stats2
 channels:
   - javascript
@@ -112,17 +129,16 @@ dependencies:
     - Flask-Testing
 ```
 
-- Specific location for the environment:
+- Restore an environment:
+    + List the history of changes: `conda list --revisions`
+    + Restore: `conda install --rev REVNUM`
+        * `conda install --rev 8`
+- Specify location for the environment:
     + `conda create --prefix /path/to/myenv jupyterlab=0.35 matplotlib=3.1 numpy=1.16`
     + Activate by name: `conda activate /path/to/myenv`
 - Update an environment by modifying .yml file and run:
     + `$ conda env update --prefix ./env --file environment.yml  --prune`
 - Cloning an environment: `conda create --name myclone --clone myenv`
-- List all environments: `conda list --envs`
-    + `conda env list`
-- `conda init`: add some code to shellrc (.zshrc, etc.) to modify PATH
-  when run conda activate
-- Remove an environment: `conda env remove --name myenv`
 
 
 ## Managing packages
