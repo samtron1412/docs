@@ -82,6 +82,22 @@ duck
 
 - https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/index.html
 
+### Managing Channels
+
+- Install a package from a non-default channel:
+    + `conda install --channel conda-forge opencv`
+- Add a new channel
+    + `conda config --append channels conda-forge`
+    + Or you can modify `~/.condarc`: the order of channels is matter,
+    conda looks at these channel in order
+
+```.condarc
+channels:
+  - defaults
+  - conda-forge
+channel_priority: strict
+```
+
 ### Managing environments
 
 - Activate an environment: `conda activate env_name`
