@@ -326,3 +326,7 @@ if __name__ == '__main__':
 ## Install a new ROS package on Ubuntu
 
 - `sudo apt install <pkg>`
+
+## Checking ROS version
+
+- `rosversion -d`
