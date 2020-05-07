@@ -153,7 +153,8 @@ dependencies:
     + `conda create --prefix /path/to/myenv jupyterlab=0.35 matplotlib=3.1 numpy=1.16`
     + Activate by name: `conda activate /path/to/myenv`
 - Update an environment by modifying .yml file and run:
-    + `$ conda env update --prefix ./env --file environment.yml  --prune`
+    + `conda env update -n conda-env -f /path/to/environment.yml`
+    + `conda env update --prefix ./env --file environment.yml  --prune`
 - Cloning an environment: `conda create --name myclone --clone myenv`
 
 
