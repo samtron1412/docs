@@ -27,6 +27,16 @@ Something
 
 We want to explain the decisions that the AI makes.
 - Why does it make that decision? (interpretability)
+- Inherently explainable models:
+    + Decision Trees
+    + Bayesian classifiers
+    + etc.
+- More complicated models: losing explainability
+    + Neural networks
+    + Ensemble methods: random forests
+- Combine the above two types of models to gain more accuracy and
+  interpretability at the same time.
+    + Each node of a decision tree is a neural network
 
 # Machine Learning
 
