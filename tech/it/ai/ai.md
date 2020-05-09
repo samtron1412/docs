@@ -23,9 +23,12 @@
 
 Something
 
-# Problems
+# Explainable AI (XAI)
 
-## Learning
+We want to explain the decisions that the AI makes.
+- Why does it make that decision? (interpretability)
+
+# Machine Learning
 
 - Machine learning is the study of computer algorithms that improve
   automatically through experience.
