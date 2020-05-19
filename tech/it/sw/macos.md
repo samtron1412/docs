@@ -32,11 +32,12 @@ Mac OS
     - nodejs: nodeJS
     - npm: nodejs package manager
     - yarn: nodejs package manager
-- fzf: command-line fuzzy finder
-- ripgrep: search text for patterns
-- fd: a simple alternative for find
-- exa: an alternative for ls
-- bat: an alternative for cat
+- Search tools
+    + fzf: command-line fuzzy finder
+    + ripgrep (rg): search text for patterns
+    + the_silver_searcher (ag): search tool similar ripgrep
+    + fd: a simple alternative for find
+- bat: an alternative for cat, less
 - diskutil: built-in macOS command line (similar lsblk)
 - pbcopy, pbpaste: built-in macOS command line (copy and paste to
   Clipboard)
