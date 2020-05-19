@@ -8,6 +8,7 @@
 - **Multi-paradigm:** object-oriented, imperative, functional,
   procedural, reflective
 - **Typing:** duck, dunamic, strong
+- First release: 1991
 
 ## Resources
 
@@ -24,18 +25,13 @@
 
 ## Help
 
+- `pydoc`
+    + `pydoc sys`: showing help page for `sys` module
 - Showing built-in methods for an built-in datatype
     + `dir('abc')`: showing built-in methods for a string
 - Learn about the built-in function using `help()`
     + `help('ab'.find)`: showing the help for the find method
 
-## History
-
-first release: 1991
-
-## Typing
-
-duck
 
 # Interpreter
 
@@ -48,6 +44,7 @@ duck
     + doctests are surrounded by `"""`
 - Run the script and then open an interactive session
     + `python3 -i <script_file>`
+
 
 # Conda
 
@@ -158,7 +155,7 @@ dependencies:
 - Cloning an environment: `conda create --name myclone --clone myenv`
 
 
-## Managing packages
+### Managing packages
 
 - Activate an environment before installing a package
 - Search a package: `conda search scipy`
@@ -167,13 +164,16 @@ dependencies:
 - Update a package: `conda update scipy`
 - View list of packages: `conda list`
 
-## Managing python
+### Managing python
 
 - List all python versions: `conda search python`
     + `conda search --full-name python`
 - Update python: `conda update python`
 
+
 # Virtual Environment
+
+**USING CONDA !!! DON'T USE THIS**
 
 ## Introduction
 
@@ -240,29 +240,27 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
     + Using the appropriate Python version: `virtualenv --python=/usr/bin/pythonX.Y /home/myusername/path/to/virtualenv`
     + Reinstall packages: `pip install -r requirements.txt`
 
-# Package Manager
 
-## Introduction
+# Pip
 
-- pip
-- setuptools (easy_install)
+**USING CONDA !!! DON'T USE THIS**
 
 ## DON'T USE PIP SYSTEM-WIDE, JUST USE IT FOR VIRTUALENV AND SIMILAR TOOLS - [pip](https://pypi.python.org/pypi/pip)
 
 - Install pip
-	+ Use package manager of Linux distribution
-		* Arch Linux
-			- python3: `sudo pacman -S python-pip`
-			- python2: `sudo pacman -S python2-pip`
-	+ Use [get-pip.py](https://bootstrap.pypa.io/get-pip.py) script
-		* `python get-pip.py`
+        + Use package manager of Linux distribution
+                * Arch Linux
+                        - python3: `sudo pacman -S python-pip`
+                        - python2: `sudo pacman -S python2-pip`
+        + Use [get-pip.py](https://bootstrap.pypa.io/get-pip.py) script
+                * `python get-pip.py`
 - Use pip with multiple python versions: `pip<version> <command> ...`
-	+ `pip install <sth>`
-	+ `pip2 install <sth>`
-	+ `pip2.5 install <sth>`
+        + `pip install <sth>`
+        + `pip2 install <sth>`
+        + `pip2.5 install <sth>`
 - Upgrade pip
-	+ Linux: `pip install -U pip`
-	+ Windows: `python -m pip install -U pip`
+        + Linux: `pip install -U pip`
+        + Windows: `python -m pip install -U pip`
 - Show list packages: `pip list`
 - Show list packages use for requirementstxt to install in other system: `pip freeze`
 - Show outdated packages: `pip list --outdated`
@@ -272,14 +270,11 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 - Update package: `pip install <package name> -U` or `pip install <package name> --upgrade`
 - Update all packages: `pip install --outdated | awk '{print $1}' | xargs -n1 sudo pip install -U`
 
-## Configuration
 
-
-## Scientific Packages
-
-- https://packaging.python.org/guides/installing-scientific-packages/
 
 # Version Manager
+
+**USING CONDA !!! DON'T USE THIS**
 
 ## Introduction
 
@@ -301,13 +296,12 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 
 **Uninstall**: pyenv is installed within `$PYENV_ROOT` (default: `~/.pyenv`). To uninstall, just remove it: `rm -fr ~/.pyenv` and remove these three lines from `.bashrc` or from `your shell rc file`:
 
-	export PATH="/root/.pyenv/bin:$PATH"
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
+        export PATH="/root/.pyenv/bin:$PATH"
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
 
 #### [Manually install - Basic GitHub Checkout](https://github.com/yyuu/pyenv#basic-github-checkout)
 
-### User guide
 
 
 # Packages
@@ -372,45 +366,18 @@ https://help.pythonanywhere.com/pages/RebuildingVirtualenvs/
 
 `jupyter nbconvert <yourFile>.ipynb --no-input --no-prompt`
 
+
 ## pylint
 
 - looking for bugs and poor quality code
-
-## [cryptography](https://github.com/pyca/cryptography)
-
-## [pycrypto](https://github.com/dlitz/pycrypto)
-
-## [virtualenv](https://pypi.python.org/pypi/virtualenv)
-
-## [Console User interface library](https://github.com/urwid/urwid)
-
-- [alot - Mail User Agent](https://github.com/pazz/alot)
-
-## Django
-
-## [SQLAlchemy](http://www.sqlalchemy.org/)
-
-SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that
-gives application developers the full power and flexibility of SQL.
-
-[SourCode](https://bitbucket.org/zzzeek/sqlalchemy)
-
-## [peewee](http://peewee.readthedocs.org/en/latest/index.html)
-
-Peewee is a simple and small ORM. It has few (but expressive) concepts,
-making it easy to learn and intuitive to use.
-- A small, expressive ORM
-- Written in python with support for versions 2.6+ and 3.2+.
-- built-in support for sqlite, mysql and postgresql
-- tons of extensions available in the [Playhouse, a collection of addons](http://peewee.readthedocs.org/en/latest/peewee/playhouse.html#playhouse) (postgres hstore/json/arrays, sqlite full-text-search, schema migrations, and much more).
-
-[SourCode](https://github.com/coleifer/peewee)
 
 ## requests
 
 A HTTP library, written in Python, for human beings.
 
-## [csv file](http://softwarerecs.stackexchange.com/questions/7463/fastest-python-library-to-read-a-csv-file)
+## csv file
+
+http://softwarerecs.stackexchange.com/questions/7463/fastest-python-library-to-read-a-csv-file
 
 
 # Tutorial
@@ -481,6 +448,7 @@ for. For example, if you ask for `a[:-2]` and `a` only contains one
 element, you get an empty list instead of an error. Sometimes you would
 prefer the error, so you have to be aware that this may happen.
 
+
 ## Structure of a script
 
 ```python
@@ -488,19 +456,17 @@ prefer the error, so you have to be aware that this may happen.
 import sth
 
 def myfunction():
-	sth...
+    sth...
 
 def main():
-	myfunction();
-	sth...
+    myfunction();
+    sth...
 
 if __name__ == '__main__':
-	main()
+    main()
 else:
-	sth...
+    sth...
 ```
-
-
 
 
 
@@ -526,6 +492,7 @@ else:
 - `[]`: Used to define mutable data types - lists, list comprehensions and for indexing/lookup/slicing.
 - `()`: Define tuples, order of operations, generator expressions, function calls and other syntax.
 - `{}`: The two hash table types - dictionaries and sets.
+
 
 # Tips and Tricks
 
@@ -564,55 +531,6 @@ template = ("This is the first line.\n"
 ```
 
 
-## pipenv - work flow for a big project
-
-### Introduction
-
-- pipenv
-    + separate development environment and production environment
-    + combine virtualenv, pip, and Pipfile
-
-### Usage
-
-```
-$ cd my_project
-
-// create two new files, Pipfile and Pipfile.lock
-// create a new virtual environment for the project
-// pipenv install --two : use Python 2
-// pipenv install --three : use Python 3
-$ pipenv install
-
-// install a new package
-$ pipenv install beautifulsoup4
-
-// uninstall a package
-$ pipenv uninstall beautifulsoup4
-
-// freeze the list of dependencies
-$ pipenv lock
-
-// Add Pipfiles to VCS
-
-
-===
-// Separate development environment
-$ pipenv install --dev nose2
-
-// Install packages in development environment
-$ pipenv install --dev
-
-
-===
-// Running your code
-// Activate the virtual environment
-$ pipenv shell
-
-// python run : invoke shell commands in your virtual environment
-// without explicitly activating it first
-$ pipenv run which python
-$ pipenv run python my_project.py
-```
 
 ## Get the class name as a string of an instance
 
@@ -623,7 +541,7 @@ $ pipenv run python my_project.py
 
 - IEEE 754 standards
 - Using `math.isnan(x)`: new in version >= 2.6
-- version < 2.6: using `numpy.isnan()`
+- version less than 2.6: using `numpy.isnan()`
 
 ## File extensions
 
@@ -661,15 +579,11 @@ print sys.version_info
 ```
 
 
-# IPython
-
-- An enhanced Python command line
-- Jupiter: notebook can be used for a web interface to IPython
-- bpython: a ncurses interface to the Python interpreter
-
 # Troubleshoots
 
 ## Broken references in Virtualenvs
+
+**USING CONDA !!! DON'T DO THIS!!!**
 
 ```
 dyld: Library not loaded: @executable_path/../.Python
@@ -678,19 +592,17 @@ dyld: Library not loaded: @executable_path/../.Python
 Trace/BPT trap: 5
 ```
 
-I found the solution to the problem
-[here](https://web.archive.org/web/20150206132233/https://wirtel.be/posts/en/2014/07/29/fix_virtualenv_python_brew/),
-so all credit goes to the author.
-
 The gist is that when you create a virtualenv, many symlinks are created
 to the Homebrew installed Python.
 
 Here is one example:
 
-    $ ls -la ~/.virtualenvs/my-virtual-env
-    ...
-    lrwxr-xr-x  1 ryan staff   78 Jun 25 13:21 .Python -> /usr/local/Cellar/python/2.7.7/Frameworks/Python.framework/Versions/2.7/Python
-    ...
+```
+$ ls -la ~/.virtualenvs/my-virtual-env
+...
+lrwxr-xr-x  1 ryan staff   78 Jun 25 13:21 .Python -> /usr/local/Cellar/python/2.7.7/Frameworks/Python.framework/Versions/2.7/Python
+...
+```
 
 When you upgrade Python using Homebrew and then run ``brew cleanup``,
 the symlinks in the virtualenv point to paths that no longer exist
@@ -723,8 +635,8 @@ You can install GNU `find` with Homebrew if you don't already have it:
 Notice that by default, GNU programs installed with Homebrew tend to be
 prefixed with the letter `g`. This is to avoid shadowing the `find`
 binary that ships with OS X.
+
 # References
 
-[doc]:https://docs.python.org/3.6/
 [threading]: https://docs.python.org/2/library/threading.html
 [tut-threading]: https://www.tutorialspoint.com/python/python_multithreading.htm
