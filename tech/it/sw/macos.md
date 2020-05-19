@@ -15,26 +15,20 @@ Mac OS
 
 ## Productivity
 
-- Alfred/Quicksilver: launcher
-- Karabiner: keyboard remapping
-- Keyboard Maestro: automation tool
-    + [Hammerspoon](http://www.hammerspoon.org/)
 - emacs org-mode: todo list and task management
-- Google Calendar: notes (Google Keep), todo list (Google Tasks)
-- docs, pri-doc, etc.: project management, Trello alternative
+- Google Calendar
+- Google Keep
+- docs, pri-doc, etc.
 - lastpass
 - Dictionary (built-in)
-- [Focus](https://heyfocus.com/): block distracting websites
-- [Timing](https://timingapp.com/?): time tracker
 - PDF Expert + PDF Foxit reader
-- sVim (github): vim-like safari extension
-- hugo: the fastest way to build a static website
 - speedtest-cli
 - fkill: an alternative for kill, can search, interactive UI
     + Install: `npm install --global fkill-cli`
-- yarn: nodejs package manager
-- nvm: node version manager
-- jenv: java version manager
+- JavaScript
+    - nodejs: nodeJS
+    - npm: nodejs package manager
+    - yarn: nodejs package manager
 
 ## Command-line tools
 
@@ -43,7 +37,6 @@ Mac OS
 - fd: a simple alternative for find
 - exa: an alternative for ls
 - bat: an alternative for cat
-- m-cli: manage macOS administrative tasks
 - diskutil: built-in macOS command line (similar lsblk)
 - pbcopy, pbpaste: built-in macOS command line (copy and paste to
   Clipboard)
@@ -51,10 +44,8 @@ Mac OS
 
 ## Game
 
-- Battle for Wesnoth
 - Chess (built in)
 - OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
-- A Slower Speed of Light
 
 # Java
 
@@ -135,8 +126,4 @@ take place.
 
 ## Create a Python development environment
 
-- https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos
-- https://hackercodex.com/guide/python-development-environment-on-mac-osx/
-- install homebrew
-- install python through brew install python
-- install virtualenv through pip install virtualenv
+USING CONDA
