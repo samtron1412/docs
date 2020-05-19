@@ -13,15 +13,18 @@ Mac OS
 
 # Application and Work flows
 
-## Productivity
+## Graphical Apps
 
 - emacs org-mode: todo list and task management
 - Google Calendar
 - Google Keep
-- docs, pri-doc, etc.
-- lastpass
 - Dictionary (built-in)
 - PDF Expert + PDF Foxit reader
+- Chess (built in)
+- OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
+
+## Command-line tools
+
 - speedtest-cli
 - fkill: an alternative for kill, can search, interactive UI
     + Install: `npm install --global fkill-cli`
@@ -29,9 +32,6 @@ Mac OS
     - nodejs: nodeJS
     - npm: nodejs package manager
     - yarn: nodejs package manager
-
-## Command-line tools
-
 - fzf: command-line fuzzy finder
 - ripgrep: search text for patterns
 - fd: a simple alternative for find
@@ -42,10 +42,6 @@ Mac OS
   Clipboard)
 
 
-## Game
-
-- Chess (built in)
-- OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
 
 # Java
 
