@@ -178,6 +178,10 @@ dependencies:
 
 Looking at `jupyter.md`
 
+## sphinx
+
+Generate Documentation for Python software
+
 ## pylint
 
 - looking for bugs and poor quality code
@@ -211,6 +215,7 @@ http://softwarerecs.stackexchange.com/questions/7463/fastest-python-library-to-r
     + pillow-simd
         * a fork of pillow
         * fastest
+
 
 ## Threading
 
