@@ -1,10 +1,8 @@
 [TOC]
 
-# [Overview](https://www.docker.com/)
+# Overview
 
 - [Docker misconceptions](https://devopsu.com/blog/docker-misconceptions/)
-
-- [Docker provider](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-docker-dev-environments.html)
 
 Docker is an open-source project that automates **the deployment of
 applications inside software containers**, by providing an additional
@@ -46,6 +44,96 @@ Docker was released as open source in March 2013. On March 13, 2014,
 with the release of version 0.9, Docker dropped LXC as the default
 execution environment and replaced it with its own libcontainer library
 written in **Go** language.
+
+# Versions
+
+- https://docs.docker.com/docker-for-mac/docker-toolbox/
+- Docker Desktop (newer version)
+    + docker and docker-compose
+    + only one virtual machine
+    + there are STABLE and EDGE versions
+- Docker Toolbox
+    + docker machine => can create multiple virtual machine, routing,
+    etc.
+    + older than Desktop version
+
+# Networking
+
+TODO
+
+# File System Sharing
+
+TODO
+
+# Develop with Docker
+
+## Best Practices
+
+### How to keep images small?
+
+- Start with an appropriate base image. For instance, if you need a JDK,
+  consider basing your image on the official `openjdk` image, rather
+  than starting with a generic `ubuntu` image and installing `openjdk`
+  as part of the Dockerfile.
+- Use multistage builds. For instance, you can use the `maven` image to
+  build your Java application, then reset to the `tomcat` image and copy
+  the Java artifacts into the correct location to deploy your app, all
+  in the same Dockerfile. This means that your final image doesn’t
+  include all of the libraries and dependencies pulled in by the build,
+  but only the artifacts and the environment needed to run them.
+    + If you need to use a version of Docker that does not include
+    multistage builds, try to reduce the number of layers in your image
+    by minimizing the number of separate `RUN` commands in your
+    Dockerfile. You can do this by consolidating multiple commands into
+    a single `RUN` line and using your shell’s mechanisms to combine them
+    together. Consider the following two fragments. The first creates
+    two layers in the image, while the second only creates one.
+
+```docker
+RUN apt-get -y update
+RUN apt-get install -y python
+===
+RUN apt-get -y update && apt-get install -y python
+```
+
+- If you have multiple images with a lot in common, consider creating
+  your own base image with the shared components, and basing your unique
+  images on that. Docker only needs to load the common layers once, and
+  they are cached. This means that your derivative images use memory on
+  the Docker host more efficiently and load more quickly.
+    + https://docs.docker.com/develop/develop-images/baseimages/
+- To keep your production image lean but allow for debugging, consider
+  using the production image as the base image for the debug
+  image. Additional testing or debugging tooling can be added on top of
+  the production image.
+- When building images, always tag them with useful tags which codify
+  version information, intended destination (`prod` or` test`, for
+  instance), stability, or other information that is useful when
+  deploying the application in different environments. Do not rely on
+  the automatically-created `latest` tag.
+
+### How to persist application data? How to store information?
+
+- Using volumes or bind mounts. **Avoid** storing in the container.
+    + volumes: https://docs.docker.com/storage/volumes/
+    + bind mounts: https://docs.docker.com/storage/bind-mounts/
+- Manage sensitive data with Docker secrets
+    + https://docs.docker.com/engine/swarm/secrets/
+- Store configuration data using Docker Configs
+    + https://docs.docker.com/engine/swarm/configs/
+
+### Use Continuous Integration/Continuous Deployment
+
+TODO
+
+### Differences in Development and Production Environments
+
+| Development                                                        | Production                                                                                                                                                                                                                                       |
+|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use bind mounts to give your container access to your source code. | Use volumes to store container data.                                                                                                                                                                                                             |
+| Use Docker Desktop for Mac or Docker Desktop for Windows.          | Use Docker Engine, if possible with userns mapping for greater isolation of Docker processes from host processes.                                                                                                                                |
+| Don’t worry about time drift.                                      | Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server. If you use swarm services, also ensure that each Docker node syncs its clocks to the same time source as the containers. |
+
 
 # Docker internal
 
@@ -187,20 +275,6 @@ services:
   contains the docker-compose.yml to run a bash shell.
 
 
-# Tutorial
-
-## [Docker LAMP](https://www.linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/)
-
-- [Another LAMP](https://github.com/tutumcloud/lamp)
-
-## [Docker training](http://www.meetup.com/peoplespace/events/229722697/)
-
-- [Slide](http://cdn.michelleliu.io/training/dockerintro.pdf)
-- [Exercise](https://github.com/anonmily/docker-up-and-running)
-- [Blog](http://michelleliu.io/devops/a-crash-course-in-docker)
-
-## [Docker birthday 3](https://github.com/docker/docker-birthday-3)
-
 
 # Tips and Tricks
 
@@ -225,4 +299,3 @@ $ docker run -ti -v "$PWD/dir1":/dir1 -v "$PWD/dir2":/dir2 newimagename /bin/bas
 - Create an container supports ssh and tmux for pair programming.
 
 
-# References
