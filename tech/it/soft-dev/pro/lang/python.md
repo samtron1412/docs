@@ -48,6 +48,8 @@
 
 # Conda
 
+- Conda vs. Pip
+    + https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/
 - https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 - conda
     + anaconda: a full distribution with a lot of binaries and libraries
