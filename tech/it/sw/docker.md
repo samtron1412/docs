@@ -6,11 +6,9 @@
 
 Docker is an open-source project that automates **the deployment of
 applications inside software containers**, by providing an additional
-layer of abstraction and automation of [operating-system-level
-virtualization](https://en.wikipedia.org/wiki/Operating-system-
-level_virtualization) on Linux.
-- Deploys applications in a sandbox (containers) to run on the host
-  operating system e.g. Linux.
+layer of abstraction
+    - Deploys applications in a sandbox (containers) to run on the host
+    operating system e.g. Linux.
 
 Docker uses **resource isolation** features of the Linux kernel such as
 [cgroups](https://en.wikipedia.org/wiki/Cgroups) and **kernel
@@ -35,7 +33,7 @@ kernel, in addition to using abstracted virtualization interfaces via
 >dependencies** in a **virtual container** that can run on any Linux
 >server.
 
-# History
+## History
 
 **Solomon Hykes** started Docker as an internal project within dotCloud.
 Docker represents an evolution of dotCloud's proprietary technology.
@@ -47,15 +45,140 @@ written in **Go** language.
 
 # Versions
 
+## Bundle
+
 - https://docs.docker.com/docker-for-mac/docker-toolbox/
 - Docker Desktop (newer version)
-    + docker and docker-compose
+    + `docker` and `docker-compose`
     + only one virtual machine
     + there are STABLE and EDGE versions
 - Docker Toolbox
-    + docker machine => can create multiple virtual machine, routing,
+    + `docker-machine` => can create multiple virtual machine, routing,
     etc.
     + older than Desktop version
+
+## Specific Tools an Their Functions
+
+- `docker`: Docker Engine
+    + builds images and creates containers
+- `docker-compose`
+    + manages multiple containers
+    + creates a network to allow containers communicate
+- `docker-machine`
+    + creates multiple virtual machines => swarms (multiple containers
+    can run on one virtual machine)
+- Docker Hub
+    + a registry stores all the Docker images
+    + similar like GitHub for Docker images
+- Kubernetes
+    + an operating system of machines (virtual/real)
+    + manages and schedules containers on machines
+
+# Tutorials
+
+## Use Cases of Docker
+
+- Trying out new technologies and don't want to mess up your environment
+- Working or sharing with other people
+    + It also includes the situation in which you move to a new machine,
+    and you don't want to reinstall all development tools again.
+
+## General Steps
+
+0. `mkdir apps`
+1. `cd apps`
+2. `mkdir <container1_name>`
+    + e.g., `mkdir website`
+3. `mkdir <container2_name>`
+    + e.g., `mkdir database`
+4. Creating a `Dockerfile` for each container
+    + Writing a blueprint for your environment
+    + If you don't want to modify the base image from Docker Hub, you
+    can use `docker-compose.yml` without `Dockerfile`, but if you want
+    to modify something in the base image, you should use `Dockerfile`
+    to do that.
+5. `vim docker-compose.yml`
+    + Specifying configurations for the container: build, command,
+    environment, ports, working_dir, depends_on, volumes, etc.
+    + Coordinating containers if you have more than one container
+6. Using `docker-compose` to manage the services/containers
+    + Start all services and detach from the terminal; services run in
+    background: `docker-compose start`
+    + Stop all services: `docker-compose stop`
+    + Launch a specific service: `docker-compose up <service_name>`
+    + Restart a single service: `docker-compose restart <name>`
+    + Log a service: `docker-compose logs -f <name>`
+    + SSH to a service container: `docker-compose exec <name> bash`
+7. (Optional) Write a shell script if the command to run
+   `docker-compose` is long to type
+
+
+- `Dockerfile` example
+
+```Dockerfile
+FROM ruby:2.3.3
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+RUN mkdir /app
+WORKDIR /app
+```
+
+- `docker-compose.yml` example
+
+```yaml
+version: '3'
+
+services:
+  njs1:
+    build: ./njs1
+    command: sh -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
+      - PORT=7000
+    ports:
+      - '7000:7000'
+    working_dir: /root/njs1
+    volumes:
+      - ./njs1:/root/njs1:cached # <--- This will map ./njs1 to /root/njs1 inside the container.
+
+  njs2:
+    image: node:12.3-alpine
+    command: sh -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
+      - PORT=8000
+    ports:
+      - '8000:8000'
+    working_dir: /root/njs2
+    volumes:
+      - ./njs2:/root/njs2:cached # <--- This will map ./njs2 to /root/njs2 inside the container.
+
+  py1:
+    image: python:3-stretch
+    command: sh -c "pip install -r requirements.txt && python -m server"
+    environment:
+      - PORT=9000
+      - FLASK_ENV=development
+    ports:
+      - '9000:9000'
+    working_dir: /root/py1
+    volumes:
+      - ./py1:/root/py1:cached # <--- This will map ./py1 to /root/py1 inside the container.
+
+  go1:
+    image: golang:1.12-alpine
+    command: sh -c "go run ."
+    environment:
+      - PORT=5000
+    ports:
+      - '5000:5000'
+    working_dir: /root/go1
+    volumes:
+      - ./go1:/root/go1:cached # <--- This will map ./py1 to /root/py1 inside the container.
+```
+
+Links
+- https://blog.atulr.com/docker-local-environment/
+- https://www.netguru.com/codestories/efficient-way-to-use-docker-in-development
 
 # Networking
 
@@ -134,6 +257,45 @@ TODO
 | Use Docker Desktop for Mac or Docker Desktop for Windows.          | Use Docker Engine, if possible with userns mapping for greater isolation of Docker processes from host processes.                                                                                                                                |
 | Don’t worry about time drift.                                      | Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server. If you use swarm services, also ensure that each Docker node syncs its clocks to the same time source as the containers. |
 
+## Build Images
+
+- Docker builds images automatically by reading instrutions from a
+  `Dockerfile`.
+- A Docker image consists of read-only layers each of which represents a
+  Dockerfile instruction.
+    + The layers are stacked and each one is a delta of the changes from
+    the previous layer.
+
+```docker
+FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+```
+
+- When you run an image and generate a container, you add a new WRITABLE
+  layer (the “container layer”) on top of the underlying layers. All
+  changes made to the running container, such as writing new files,
+  modifying existing files, and deleting files, are written to this thin
+  writable container layer.
+
+### Build Context
+
+- `docker build`: when enter this command
+    + the current directory = build context
+    + `Dockerfile` in the current directory is used
+
+### Multi-stage builds
+
+- https://docs.docker.com/develop/develop-images/multistage-build/
+
+## Manage Images
+
+- Docker Hub
+    + `docker login`
+    + `docker search`
+    + `docker pull`
+    + `docker push`
 
 # Docker internal
 
@@ -278,6 +440,21 @@ services:
 
 # Tips and Tricks
 
+## Running GUI apps in Docker containers
+
+- https://medium.com/@dimitris.kapanidis/running-gui-apps-in-docker-containers-3bd25efa862a
+- Install an X Server
+    + Mac OS: XQuartz (brew cask install XQuartz)
+- Allow remote connections to the X server
+- Disable access control of the X server
+    + `xhost + <local_ip>`
+- Export DISPLAY environment variable
+    + `export DISPLAY=<local_ip>:0`
+- Run the image
+    + `docker run --rm -i -e DISPLAY=<local_ip>:0 sontran/firefox`
+    + You can build the image by yourself. Install an application on an
+    OS such as ubuntu or alpine.
+
 ## Add a new volume in existing containers
 
 - https://stackoverflow.com/questions/28302178/how-can-i-add-a-volume-to-an-existing-docker-container
@@ -295,7 +472,6 @@ $ docker run -ti -v "$PWD/dir1":/dir1 -v "$PWD/dir2":/dir2 newimagename /bin/bas
 
 ## Pair programming with Docker, SSH and TMUX
 
-- https://binarapps.com/blog/pair-programming-with-docker-ssh-and-tmux/
 - Create an container supports ssh and tmux for pair programming.
 
 
