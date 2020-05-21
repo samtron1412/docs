@@ -102,8 +102,9 @@ written in **Go** language.
     environment, ports, working_dir, depends_on, volumes, etc.
     + Coordinating containers if you have more than one container
 6. Using `docker-compose` to manage the services/containers
+    + Creating containers from images and start it: `docker-compose up`
     + Start all services and detach from the terminal; services run in
-    background: `docker-compose start`
+    background: `docker-compose start` (no creating containers)
     + Stop all services: `docker-compose stop`
     + Launch a specific service: `docker-compose up <service_name>`
     + Restart a single service: `docker-compose restart <name>`
