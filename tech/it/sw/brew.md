@@ -75,3 +75,4 @@
 - Stop upgrading a certain package
     + `brew pin package`
     + `brew unpin package`
+    + `brew list --pinned`
