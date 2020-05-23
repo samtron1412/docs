@@ -81,3 +81,6 @@
     + Click `Find file` to find `<package>.rb`: e.g., `mendeley.rb`
     + Find the raw file of the older version
     + `brew cask install https://raw.githubusercontent.com/ran-dall/homebrew-cask/151f569163295a1b924fb737eb9788dcb9ac263f/Casks/mendeley.rb`
+- Install older versions of brew package
+    + Similar casks, only change the command
+    + `brew install ...` instead of `brew cask install ...`
