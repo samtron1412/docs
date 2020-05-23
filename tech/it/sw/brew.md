@@ -76,3 +76,8 @@
     + `brew pin package`
     + `brew unpin package`
     + `brew list --pinned`
+- Install Older Versions of Brew Casks
+    + Go to the Homebrew Cask's GitHub page: https://github.com/caskroom/homebrew-cask
+    + Click `Find file` to find `<package>.rb`: e.g., `mendeley.rb`
+    + Find the raw file of the older version
+    + `brew cask install https://raw.githubusercontent.com/ran-dall/homebrew-cask/151f569163295a1b924fb737eb9788dcb9ac263f/Casks/mendeley.rb`
