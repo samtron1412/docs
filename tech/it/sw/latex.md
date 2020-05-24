@@ -263,6 +263,11 @@ references. BibTeX was created by Oren Patashnik and Leslie Lamport in
 1985. It is written in WEB/Pascal.
 - bib2x tool: convert .bib file to .x file
     + http://www.xandi.eu/bib2x/download.html
+- parsing tools
+    + biblib: https://github.com/aclements/biblib
+    + bibtexparser: https://github.com/sciunto-org/python-bibtexparser
+- jabref: creating, managing bibtex and conversion
+- zotero: managing bibliographies
 
 #### Usage
 
