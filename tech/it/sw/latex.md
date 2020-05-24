@@ -254,11 +254,15 @@ default LATEX commands, PStricks or TikZ.
 
 ## Backend bibliography processor
 
-### [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
+### BibTeX
+
+- https://en.wikipedia.org/wiki/BibTeX
 
 BibTeX is reference management software for formatting lists of
 references. BibTeX was created by Oren Patashnik and Leslie Lamport in
 1985. It is written in WEB/Pascal.
+- bib2x tool: convert .bib file to .x file
+    + http://www.xandi.eu/bib2x/download.html
 
 #### Usage
 
@@ -295,15 +299,6 @@ file [..]. LaTeX will use the `.bbl` file, perhaps edited by the user,
 to produce the reference list.
 
 `bib + aux(\cite) > bbl + bib > ref list`
-
-#### [Style examples](http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html)
-
-#### [bib file](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
-
-Crossreferencing.
-Using more than one bib file.
-Nonreference section
-        + @COMMENT{...}
 
 
 ### [Biber](http://biblatexbiber.sourceforge.net/)
