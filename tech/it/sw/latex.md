@@ -294,7 +294,7 @@ entries together with the formatting commands specified by the `.bst`
 file [..]. LaTeX will use the `.bbl` file, perhaps edited by the user,
 to produce the reference list.
 
-`aux + bib > bbl + bib > ref list`
+`bib + aux(\cite) > bbl + bib > ref list`
 
 #### [Style examples](http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html)
 
