@@ -11,6 +11,15 @@
     + Evolved from the study of pattern recognition and computational
       learning theory in artificial intelligence
 
+# State of the Art
+
+- https://paperswithcode.com/
+
+# Courses
+
+- http://cs231n.stanford.edu/
+    + https://cs231n.github.io/
+
 # Tasks
 
 - **Supervised Learning**: the computer is presented with example inputs
