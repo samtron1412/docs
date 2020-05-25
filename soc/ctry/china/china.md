@@ -76,6 +76,14 @@
 - Journey to the West - Tây Du Ký - 西遊記
 - Dream of the Red Chamber - Hồng Lâu Mộng - 紅樓夢
 
+### Classic Chinese Movies / TV Shows
+
+- Dream of the Red Chamber (1987 TV series)  红楼梦
+- Journey to the West (1986 TV series) 西游记
+- The Bund (1980 TV series) 上海滩
+- Ji Gong (1985 TV series) 济公
+- Wo Ai Wo Jia (1993–1994 TV series) 我爱我家
+
 # References
 
 [chinese-classics]: https://en.wikipedia.org/wiki/Chinese_classics
