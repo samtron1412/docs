@@ -154,11 +154,38 @@ Something
 
 ## Artificial neural networks
 
-Something
+It is inspired by the biological neural networks in animal brains.
+- Multiple layers of units/nodes/artificial neurons: each neuron
+  contains a number/value
+- The connections between units are weights that will be multiplied with
+  the value in that neurons.
+
+### Calculus
+
+- Derivatives of common activation functions
+    + https://theclevermachine.wordpress.com/2014/09/08/derivation-derivatives-for-common-neural-network-activation-functions/
+
+### Convolutional Neural Networks (CNNs)
+
+CNN is a neural network with two characteristics:
+1. Shared-weights architecture
+2. Translation invariance: using convolution operation
+
+It is inspired by biological processes, the animal visual cortex.
+- It is usually used in computer vision.
+
+### Recurrent Neural Networks (RNNs)
+
+RNN is a neural network that can model the temporal dynamic behaviors.
+- Nodes in a layer can have connections back to the nodes in the same
+  layer (mixed forward connections and feedback connections)
+- It is usually used in speech/handwritten recognition.
 
 ### Deep learning
 
-Something
+Many layers of units (artificial neurons) in a neural network between
+input and output layers.
+- e.g., CNNs, RNNs
 
 ## Inductive logic programming
 
