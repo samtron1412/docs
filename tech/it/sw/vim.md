@@ -2229,18 +2229,22 @@ xmap <Leader>md :HeaderDecrease<CR>
 - `gUz\}` uppercase from the cursor to the next instant of `\}`
     + `.` to repeat
 
-### vim-scriptease
+### vim-scriptease (debugging vim)
 
 - The plugin helps making plugins
 - Key mappings
     + `zS`: show the names of all syntax highlighting groups for the
-    character under the cursor.
+      character under the cursor.
     + `{count}zS`: show the :syn-list for the {count}th syntax group
-    under the cursor. 1zS shows the innermost group.
-- `:Messages` capture the output of :messages and load it into the
+      under the cursor. 1zS shows the innermost group.
+- `:Messages` capture the output of `:messages` and load it into the
   quickfix list.
+    + All the messages that have shown in the bottom of vim at the
+      status bar.
 - `:Verbose <command>`: open a preview window to capture command's
-    results
+  results (built-in alternative `:verbose <command>`)
+- `:Scriptnames`: open a preview window to capture all the configuration
+  files that Vim has loaded in order.
 
 ### fugitive-vim
 
