@@ -13,19 +13,19 @@
 
 # Tasks
 
-- Supervised Learning: the computer is presented with example inputs and
-  their desired outputs
-    + Semi-supervised learning: the computer is given only an incomplete
-      training signal: a training set with some of the target outputs
-      missing
-    + Active learning: the computer can only obtain training labels for
-      a limited set of instances
-    + Reinforcement learning: training data (in form of rewards and
+- **Supervised Learning**: the computer is presented with example inputs
+  and their desired outputs
+    + **Semi-supervised learning**: the computer is given only an
+      incomplete training signal: a training set with some of the target
+      outputs missing
+    + **Active learning**: the computer can only obtain training labels
+      for a limited set of instances
+    + **Reinforcement learning**: training data (in form of rewards and
       punishments) is given only as feedback to the program's actions in
       a dynamic environment, such as driving a vehicle or playing a game
       against an opponent
-- Unsupervised learning: no labels are given to the learning algorithm,
-  leaving it on its own to find structure in its input.
+- **Unsupervised learning**: no labels are given to the learning
+  algorithm, leaving it on its own to find structure in its input.
     + can be a goal in itself (discovering hidden patterns in data)
     + means towards an end (feature learning)
     + use cases
@@ -33,29 +33,32 @@
 
 # Applications
 
-- Classification
+- **Classification**
     + inputs are divided into two or more classes (multiclass
       classification, and the learner must produce a model that assigns
-      unseen inputs to one or more (multi- label classification) of
+      unseen inputs to one or more (multi-label classification) of
       these classes.
     + typically in a supervised manner
     + e.g. spam filtering
-- Regression
+- **Regression**
     + produce a function that describes relationships between inputs and
       outputs (variable relationship)
         * prediction and forecasting
     + a supervised problem
     + the outputs are continuous rather than discrete
-- Clustering
+- **Clustering**
     + a set of inputs is to be divided into groups
     + unlike in classification, the groups are not known beforehand =>
       unsupervised task
         * different groups of customers
     + explores the datasets
-- Density estimation
+- **Density estimation**
     + finds the distribution of inputs in some space
-- Dimensionality reduction
+    + Gaussian Discriminant Analysis (GDA): Quadratic Discriminant
+      Analysis (QDA), Linear Discriminant Analysis (LDA)
+- **Dimensionality reduction**
     + simplifies inputs by mapping them into a lower-dimensional space
+    + Principal Component Analysis (PCA)
 
 # Feature
 
@@ -152,7 +155,7 @@ Something
 
 Something
 
-## Support vector machines (SVMs)
+## Support Vector Machines (SVMs)
 
 Something
 
@@ -182,15 +185,15 @@ Something
 
 Something
 
-## Genetic algorithms
+## Genetic Algorithms
 
 Something
 
-## Rule-based machine learning
+## Rule-based Machine Learning
 
 Something
 
-### Learning classifier systems
+### Learning Classifier Systems
 
 Something
 
