@@ -88,10 +88,6 @@ All documents about the mind.
 - Spiritual
 - Social
 
-#### reli - religion
-
-All documents about different religions.
-
 ## philo - philosophy
 ### ae - aesthetics
 ### epi - epistemology
@@ -137,24 +133,6 @@ All documents about different countries in the world.
 
 All documents about education.
 
-#### book
-
-All documents about book.
-
-#### doc
-
-All documents about documentaries.
-
-#### lang
-
-All documents about languages.
-
-#### research
-
-#### write
-
-All documents about writing.
-
 ### law
 
 ### poli - politics
@@ -167,114 +145,6 @@ All documents about different technology such as information technology.
 ### it - information technology
 
 All documents about information technology.
-
-#### ai - artificial intelligence
-
-All documents about artificial intelligence.
-
-#### cloud - cloud computing
-
-#### data - big data
-
-#### file - file types
-
-Documents about different file types
-
-#### hw - computer hardware
-
-All documents about different hardware such as computer hardware.
-
-#### net - computer network
-
-#### os - computer operating system
-
-All documents about computer operating systems such as Unix-like or
-Windows.
-
-##### unix
-
-All documents about Unix-like operating systems.
-
-###### linux
-
-All documents about the Linux operating system.
-
-- arch - archlinux: All the documents about the Arch Linux distribution.
-
-#### qc - quantum computation
-
-All documents about quantum computation
-
-#### rev - revision control
-
-#### rfc - request for comment
-
-All documents about the request for comments (RFC), a type of
-publication from the Internet Engineering Task Force (IETF) and the
-Internet Society (ISOC), the principal technical development and
-standards-setting bodies for the Internet.
-
-#### sec - computer security
-
-All documents about the computer security.
-
-##### ctf
-
-All documents about Capture The Flags (CTF) game.
-
-##### wargame
-
-All documents about computer wargame.
-
-#### soft-dev - software development
-
-All documents about the software development.
-
-##### pro - software programming
-
-All documents about the software programming.
-
-###### algo
-
-All documents about algorithms.
-
-###### data
-
-All documents about data, datatype, and database.
-
-###### frame
-
-All documents about different frameworks.
-
-###### lang
-
-All documents about programming languages.
-
-###### para
-
-All documents about programming paradigms.
-
-##### test - software testing
-
-All documents about the software testing.
-
-##### web-dev - web development
-
-All documents about the web development.
-
-#### sw - computer software
-
-All documents about different software such as text editors.
-
-#### sys - information and computer system
-
-All documents about information and computer systems.
-
-#### theo - computer science theories
-
-All documents about computer science theories
-
-#### virt - virtualization
 
 ### robot
 
