@@ -6,20 +6,41 @@ This repository use to store my public documents.
 
 ## art
 
-All documents about visual arts, which include painting, sculpture,
-printmaking, photography, and other, and performing arts, which include
-music, theater, film, dance, and other.
+All documents about art:
+- Visual arts, which include painting, sculpture, printmaking,
+  photography, etc.
+- Performing arts, which include music, theater, film, dancing, etc.
+- Other types of art
 
-### dance
+### anime
+
+Japanese cartoon.
+
+### dan - dancing
+
+All documents about dancing.
+
+### desi - designing
+
+All documents about designing.
 
 ### film
 
 All documents about movie, motion picture, cinematography.
 
+### game
+
+All documents about game.
+- Video game, etc.
+
 ### lit - literature
 
 All documents about written works, fiction or non-fiction, poetry or
 prose, and other genres.
+
+### manga
+
+Japanese comic.
 
 ### music
 
@@ -28,11 +49,28 @@ meter, and articulation.
 
 ### photo - photography
 
+All documents about photography.
+
 ### pt - painting
+
+All documents about painting.
 
 ### sculp - sculpture
 
+All documents about sculpture.
+
 ### theater
+
+All documents about theater.
+
+## fig - figures
+
+All figures that are used in other documents.
+- All images/figures are in the same directory.
+- DON'T CREATE SUB-DIRECTORIES !!!
+- Figures' name contain a number which is a unique identifier for that
+  figure.
+    + The number is the order of adding figures to this directory.
 
 ## health
 
@@ -45,20 +83,20 @@ All documents about physical body.
 
 ### mind - mental
 
-All documents about mental health.
+All documents about the mind.
+- Mental health
+- Spiritual
+- Social
+
+#### reli - religion
+
+All documents about different religions.
 
 ## philo - philosophy
-
-### ae - Aesthetics
-
+### ae - aesthetics
 ### epi - epistemology
-
 ### ethics
-
-### logic
-
 ### meta - metaphysics
-
 ### pher - philosopher
 
 ## sci - science
@@ -80,8 +118,6 @@ All documents about computer science.
 ### math - mathematics
 
 All documents about mathematics.
-
-### neu - neurology
 
 ### phys - physics
 
@@ -113,6 +149,8 @@ All documents about documentaries.
 
 All documents about languages.
 
+#### research
+
 #### write
 
 All documents about writing.
@@ -121,22 +159,6 @@ All documents about writing.
 
 ### poli - politics
 
-
-## spi - spirituality
-
-All documents about spirituality, personal growth, a supernatural realm,
-a quest for an ultimate/sacred meaning, religious experience, or an
-encounter with one's own "inner dimension."
-
-### reli - religion
-
-All documents about different religions.
-
-### self - self help
-
-All documents about self-help or self-improvement, which is a self-
-guided improvement - economically, intellectually, or emotionally -
-often with a substantial psychological basis.
 
 ## tech - technology
 
@@ -254,15 +276,11 @@ All documents about computer science theories
 
 #### virt - virtualization
 
+### robot
+
 ### vehicle
 
 All documents about different vehicles and its technology.
-
-## ent - entertainment
-
-### anime
-
-### manga
 
 # Similar Repositories
 

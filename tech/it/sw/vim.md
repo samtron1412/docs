@@ -4,11 +4,9 @@ Vim (a contraction of Vi IMproved) is a clone of Bill Joy's vi text
 editor program for Unix. It was written by Bram Moolenaar based on
 source for a port of the Stevie editor to the Amiga.
 
-## History
-
 Initial release in November 1991.
 
-## [Help][2]
+# Help
 
 - If you encounter the error: `E:149 no help for help.txt`, you need to
   regenerate help tags file: `:helptags ALL`
@@ -18,17 +16,17 @@ Initial release in November 1991.
 - `vimtutor` : basic commands tutorials
 - `:h key-notation`: these names for keys are used in the documentation.
 
-### Learn to use help
+## Learn to use help
 
-- `:h <patt>` then press <C-D> to list all topics that contain <patt>
 - `:h <patt>` the Tab to scroll through topics that start with <patt>
 - `<C-]>` to follow the link
 - `<C-o>`: previous location, `<C-i>`: next location
 - `:helpgrep \csearch.\{,12}file`
     + `\c` case insensitive
     + the pattern finds `search` then up to 12 characters followed by
-        `file`
+      `file`
     + the results are loaded into quickfix list.
+    + `:clist` to see all the quickfix list
 
 ```help
 | Prefix | Example     | Context                                         |
@@ -60,9 +58,9 @@ nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
 
 
 
-## Features and improvements over vi
+# Features and improvements over vi
 
-### Customization
+## Customization
 
 Part of Vim's power is that it can be extensively customized.
 - Change basic interface
@@ -74,7 +72,7 @@ Plugins available that will extend or add new functionality to Vim.
 - Vim's internal scripting language - vimscript (viml)
 - Lua, Perl, Python, Racket, Ruby, and Tcl
 
-### Search and replace
+## Search and replace
 
 - Change each "foo" to "bar" in the current line: `:s/foo/bar/g` and
   have confirm : `:s/foo/bar/gc`
@@ -83,19 +81,19 @@ Plugins available that will extend or add new functionality to Vim.
 - Change each "foo" to "bar" for all lines from line 5 to line 12:
   `:5,12s/foo/bar/gc`
 
-### Copy and paste
+## Copy and paste
 
 - Copy to clipboard
     + Using registers
         * X11's primary register: `"*y`, `"*p`
         * X11's clipboard register: `"+y`, `"+p`
 - Configuration at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay
-  with *pgvy*, *p* to paste and *gv* to re-select what was originally
+  with *pgvy*, *p* to paste and *go* to re-select what was originally
   selected, *y* to copy it again.
 - Paste multiple copy: *<number>p* e.g: *30p* to paste 30 time of copy
   text.
 
-### Others
+## Others
 
 - Completion
 - Comparison and merging of files - vimdiff
@@ -108,16 +106,19 @@ Plugins available that will extend or add new functionality to Vim.
 - Syntax highlight
 - etc.
 
-## Resources
 
-- [Vimways](https://vimways.org/2018/)
+# Resources
+
+## Links
+
+- [Vim ways](https://vimways.org/2018/)
 - [Thoughtbot blog](https://thoughtbot.com/blog/tags/vim)
-- The Patient Vimmer: http://romainl.github.io/the-patient-vimmer/
-- [Reccommendations](https://www.vi-improved.org/recommendations/)
+- The Patient Dimmer: http://romainl.github.io/the-patient-vimmer/
+- [Recommendations](https://www.vi-improved.org/recommendations/)
 - [Thoughtbot Tutorials](https://upcase.com/vim)
 - [vimcast](http://vimcasts.org/)
-- [vim-gists](https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce)
-    + [idoimatic-vimrc](https://github.com/romainl/idiomatic-vimrc)
+- [vim-gusts](https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce)
+    + [idiomatic-vimrc](https://github.com/romainl/idiomatic-vimrc)
     + [built-in](https://gist.github.com/romainl/047aca21e338df7ccf771f96858edb86)
     + [macros](https://gist.github.com/romainl/9721c7dd13c30714f568063e03c106dd)
 - Some examples for .vimrc to learn more tricks
@@ -125,7 +126,7 @@ Plugins available that will extend or add new functionality to Vim.
 - Some external programs to use with Vim
     + https://www.reddit.com/r/vim/comments/7bj837/favorite_console_tools_to_use_with_vim/:
 
-### Books
+## Books
 
 - [Books](http://iccf-holland.org/click5.html)
 - Practical Vim - 2nd edition
@@ -133,13 +134,10 @@ Plugins available that will extend or add new functionality to Vim.
 - Learn Vimscript the Hard Way
     + http://learnvimscriptthehardway.stevelosh.com/
 
-# Getting started
 
-- 7 habits of effective text editing
+# 7 habits of effective text editing (Bram Moolenaar)
 
-## Edit a file
-
-### Move around quickly
+## Move around quickly
 
 - Disable key repeat, arrow keys, backspace in insert mode
 - If you know the word that you want to find
@@ -157,18 +155,24 @@ Plugins available that will extend or add new functionality to Vim.
 - `[{` back to the starting `{`
 - `]}` to the closing `}`
 - `gd` from the use to the declaration of a variable
-- `tpope/vim-rsi`: readline Emacs' mappings
+- `tpope/vim-rsi`: deadline Emacs' mappings
     + `<C-e>`: to the end of the line
     + `<C-f>`: forward one character
 
-### Don't type it twice
+## Don't type it twice
 
 - `:s`: substitute
 - `*`: find word and `cw`
     + `n` go to next item in the search results
 - `.`: repeat the change
-    + `m`: mark the location to come back later
-- `<C-n>`: auto complete
+    + `m <mark>`: mark the location to come back later in normal mode
+        * e.g., `ma`, `mb`, ...
+        * go to the mark at the beginning of the line: `'<mark>`
+            - e.g., `'a`, `'b`, ...
+        * go to the exact location of the mark: <backtick><mark>
+            - where <backtick> is the symbol on the keyboard
+            - e.g., <backtick>a, ...
+- `<C-n>`: auto complete in insert mode
 - `qa` start recording a macro into register `a` (total 26 registers)
     + hit `q` again to stop recording
     + apply the macro by typing `@a`
@@ -176,7 +180,7 @@ Plugins available that will extend or add new functionality to Vim.
         etc.) instead of characters
 - Snippets
 
-### Fix it when it's wrong
+## Fix it when it's wrong
 
 - Correct mistakes using spell check
     + `:setlocal spell spelllang=en_us`
@@ -184,17 +188,23 @@ Plugins available that will extend or add new functionality to Vim.
 
 ```vim
 " A mapping to quickly correct the previous spelling error
-imap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
+" <C-g>u: insert an undo break
+" <Esc>[s: go to the previous spelling error
+" 1z=: replace the error by the first suggestion
+" `]: move to the last insert position
+" a: enter insert mode at append position
+" <C-g>u: insert another undo break
+inoremap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
 ```
 
-### Work with multiple files
+## Work with multiple files
 
 - Using a fuzzy finder to quickly find files and search the file content
 - `[I`: show a list of matched for the function name under the cursor in
     included files.
 - Using preview-tag mechanism, an open special preview window.
 
-### Text is structured
+## Text is structured
 
 - edit-compile-fix cycle `:make` command
     + which starts your compilation, catches the errors it produces and
@@ -811,7 +821,7 @@ set pythonthreedll=/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Ve
 
 ## Logging every autocommands events in a log file
 
-- Create a `log-autocmds.vim` in `~/.vim/plugin/`
+- Create a `log-autocmds.vim` in `~/.vim/autoload/`
 
 ```vim
 command! LogAutocmds call s:log_autocmds_toggle()
@@ -3230,5 +3240,4 @@ less than 2 months opened up my eyes.
 
 [wiki]: https://en.wikipedia.org/wiki/Vim_(text_editor)
 [1]: http://vimcasts.org/episodes/the-file-explorer/ "Vimcasts - 15. The file explorer"
-[2]: http://vim.wikia.com/wiki/Learn_to_use_help "Learn how to use help"
 [plugins]: https://vimawesome.com/
