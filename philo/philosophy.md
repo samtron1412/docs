@@ -4,6 +4,19 @@
 - [Wikipedia](https://en.wikipedia.org/wiki/Philosophy)
 - [Study resources](http://www.philosophypages.com/)
 
+- Natural philosophy
+    + Natural sciences: physics, biology, chemistry, etc.
+- Moral philosophy
+    + Social sciences: psychology, sociology, political science, etc.
+    + Value theory
+        * Ethics
+        * Aesthetics
+        * Political philosophy
+        * etc.
+- Metaphysical philosophy:
+    + Logic, Mathematics, Philosophy of science
+    + Epistemology
+
 # References
 - Philosophy and Science
 	+ http://rebirthofreason.com/Articles/Rowlands/Philosophy_vs_Science.shtml
