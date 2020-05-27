@@ -111,7 +111,7 @@ Plugins available that will extend or add new functionality to Vim.
 
 ## Links
 
-- [Vim ways](https://vimways.org/2018/)
+- [Vim ways](https://vimways.org)
 - [Thoughtbot blog](https://thoughtbot.com/blog/tags/vim)
 - The Patient Dimmer: http://romainl.github.io/the-patient-vimmer/
 - [Recommendations](https://www.vi-improved.org/recommendations/)
@@ -808,9 +808,9 @@ filetype plugin on
 ## Setting python version for Vim
 
 ```
-" for python 3.X
-set pythonthreehome=/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7
-set pythonthreedll=/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/Python
+" Set Python 3 as default Python for Vim
+set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.7
+set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.7/Python
 
 ```
 
