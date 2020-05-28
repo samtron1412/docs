@@ -104,8 +104,8 @@ generalized eigenvalue problems.
 
 ## Axes
 
-- `0`: (y) rows axis => # of rows, etc.
-- `1`: (x) columns axis => # of columns, etc.
+- `0`: (Oy axis) vertical axis
+- `1`: (Ox axis) horizontal axis
 
 ## Shape
 
