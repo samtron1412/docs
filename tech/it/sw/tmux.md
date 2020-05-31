@@ -2,22 +2,19 @@
 
 # Overview
 
-## Resources
-
-### Books
-
-- https://leanpub.com/the-tao-of-tmux/read
-
-## Others
-
+- Books
+    + https://leanpub.com/the-tao-of-tmux/read
 - https://github.com/gpakosz/.tmux
 - Pair programming: https://github.com/zolrath/wemux/
 
 # Configuration
 
-- A user-specific configuration file should be located at
-  `~/.tmux.conf`, while a global configuration file should be located at
-  `/etc/tmux.conf`.
+- User-specific configuration: `~/.tmux.conf`
+- Global configuration: `/etc/tmux.conf`
+
+- https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
+- color
+    + https://superuser.com/questions/285381/how-does-the-tmux-color-palette-work
 
 # Cheatsheet
 
@@ -146,27 +143,17 @@ is the basic syntax to resize panes:
 
 ## Copy mode:
 
-Pressing PREFIX [ places us in Copy mode. We can then use our movement
-keys to move our cursor around the screen. By default, the arrow keys
-work. we set our configuration file to use Vim keys for moving between
-windows and resizing panes so we wouldn’t have to take our hands off the
-home row. tmux has a vi mode for working with the buffer as well. To
-enable it, add this line to .tmux.conf:
+Pressing `PREFIX [` places us in Copy mode.
 
-    setw -g mode-keys vi
+- Default mode keys is `vi`
+    + `setw -g mode-keys vi`
 
-With this option set, we can use h, j, k, and l to move around our
-buffer.
-
-To get out of Copy mode, we just press the ENTER key. Moving around one
-character at a time isn’t very efficient. Since we enabled vi mode, we
-can also use some other visible shortcuts to move around the buffer.
-
-For example, we can use "w" to jump to the next word and "b" to jump
-back one word. And we can use "f", followed by any character, to jump to
-that character on the same line, and "F" to jump backwards on the line.
+To get out of Copy mode, we just press the `ENTER` key.
 
        Function                vi             emacs
+
+       Start selection         Space          C-Space
+       Select whole line       V
        Back to indentation     ^              M-m
        Clear selection         Escape         C-g
        Copy selection          Enter          M-w
@@ -195,7 +182,6 @@ that character on the same line, and "F" to jump backwards on the line.
        Search backward         ?              C-r
        Search forward          /              C-s
        Start of line           0              C-a
-       Start selection         Space          C-Space
        Transpose chars                        C-t
 
 ## Misc
@@ -274,8 +260,3 @@ done
 
 - https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 
-## Configuration
-
-- https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
-- color
-    + https://superuser.com/questions/285381/how-does-the-tmux-color-palette-work
