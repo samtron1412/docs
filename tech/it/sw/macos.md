@@ -50,6 +50,24 @@ Mac OS
 - brew install java: current java version
 - brew install java11
 
+# Mail.App
+
+## Shortcuts
+
+- Preferences: `cmd + ,`
+- New Message: `cmd + n`
+- Undo: `cmd + u`
+- Redo: `shift + cmd + u`
+- Select all: `cmd + a`
+- Paste as quotation: `shift + cmd + v`
+- Get all new mails: `shift + cmd + n`
+- Reply: `cmd + r`
+- Reply all: `shift + cmd + r`
+- Flag as read: `shift + cmd + l`
+- Archive: `ctrl + cmd + a`
+- Search mailbox: `alt + cmd + f`
+- Search inside a mail: `cmd + f`
+
 # Tips and Tricks
 
 ## Places to check when cleaning storage
