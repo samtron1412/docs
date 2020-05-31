@@ -1,7 +1,10 @@
 [TOC]
 
 # [Overview](https://en.wikipedia.org/wiki/OS_X)
-OS X originally Mac OS X is a series of UNIX-based operating system developed and marketed by Apple Inc.
+
+OS X originally Mac OS X is a series of UNIX-based operating system
+developed and marketed by Apple Inc.
+
 
 # Features
 
@@ -20,4 +23,3 @@ OS X originally Mac OS X is a series of UNIX-based operating system developed an
 - Reset password with Reset Password software
 
 # Troubleshoot
-##
