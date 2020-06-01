@@ -833,6 +833,14 @@ Your primary care provider may refer you to professionals in various specialties
 
 # Tips and Tricks
 
+## Freedom of Information Act (FOIA)
+
+Every citizen can request public documents from U.S. government.
+- Effective: 1967
+- FOIA Improvement Act: 2016
+- USCIS FOIA: https://first.uscis.gov/
+- Other Agencies: https://www.foia.gov/
+
 ## Order coffee at Starbucks
 
 - Size of the drink + name of the drink + any amendments you want to
@@ -876,6 +884,7 @@ Your primary care provider may refer you to professionals in various specialties
     + half-and-half
 - Espresso (caffeine): 1 shot = 1/2 oz
 - Decaf: no caffeine
+
 
 # References
 
