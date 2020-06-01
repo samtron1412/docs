@@ -213,23 +213,55 @@ Citizenship is the common thread that connects all Americans. We are a
 nation bound not by race or religion, but by the shared values of
 freedom, liberty, and equality.
 
-## [Apply for citizenship](http://www.uscis.gov/citizenship/learners/apply-citizenship)
+## Paths to U.S. Citizenship
 
-### Oath
+- Details: https://www.uscis.gov/us-citizenship/citizenship-through-naturalization/path-us-citizenship
+- Green card holders living in U.S. >= 5 years
+- Green card holders married to U.S. citizens >= 3 years
+- Green card holders in the military and their family
+- Citizenship through parents
 
-	"I hereby declare, on oath, that I absolutely and entirely renounce and abjure all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty, of whom or which I have heretofore been a subject or citizen; that I will support and defend the Constitution and laws of the United States of America against all enemies, foreign and domestic; that I will bear true faith and allegiance to the same; that I will bear arms on behalf of the United States when required by the law; that I will perform noncombatant service in the Armed Forces of the United States when required by the law; that I will perform work of national importance under civilian direction when required by the law; and that I take this obligation freely, without any mental reservation or purpose of evasion; so help me God."
+## Apply for citizenship
 
-All applicants shall take an oath that incorporates the substance of the following:
+- http://www.uscis.gov/citizenship/learners/apply-citizenship
+- Online portal: https://my.uscis.gov/
+
+## Oath
+
+>"I hereby declare, on oath, that I absolutely and entirely renounce and
+>abjure all allegiance and fidelity to any foreign prince, potentate,
+>state, or sovereignty, of whom or which I have heretofore been a subject
+>or citizen; that I will support and defend the Constitution and laws of
+>the United States of America against all enemies, foreign and domestic;
+>that I will bear true faith and allegiance to the same; that I will bear
+>arms on behalf of the United States when required by the law; that I
+>will perform noncombatant service in the Armed Forces of the United
+>States when required by the law; that I will perform work of national
+>importance under civilian direction when required by the law; and that I
+>take this obligation freely, without any mental reservation or purpose
+>of evasion; so help me God."
+
+All applicants shall take an oath that incorporates the substance of the
+following:
 
 1. Support the Constitution;
-2. Renounce and abjure absolutely and entirely all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty of whom or which the applicant was before a subject or citizen;
-3. Support and defend the Constitution and laws of the United States against all enemies, foreign and domestic;
+2. Renounce and abjure absolutely and entirely all allegiance and
+   fidelity to any foreign prince, potentate, state, or sovereignty of
+   whom or which the applicant was before a subject or citizen;
+3. Support and defend the Constitution and laws of the United States
+   against all enemies, foreign and domestic;
 4. Bear true faith and allegiance to the same; and
 5. Bear arms on behalf of the United States when required by the law; or
-6. Perform noncombatant service in the Armed Forces of the United States when required by the law; or
-7. Perform work of national importance under civilian direction when required by the law.
+6. Perform noncombatant service in the Armed Forces of the United States
+   when required by the law; or
+7. Perform work of national importance under civilian direction when
+   required by the law.
 
-### [Video naturalization interview](http://www.uscis.gov/citizenship/teachers/educational-products/uscis-naturalization-interview-and-test-video)
+Video naturalization interview
+- http://www.uscis.gov/citizenship/teachers/educational-products/uscis-naturalization-interview-and-test-video
+
+Civics Test
+- https://www.uscis.gov/citizenship/learners/study-test/study-materials-civics-test
 
 ## [Rights and Responsibilities](http://www.uscis.gov/citizenship/learners/citizenship-rights-and-responsibilities)
 
