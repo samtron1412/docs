@@ -4,7 +4,81 @@
 
 This file use to document all things relate with [US][wiki-us].
 
-# VISA
+# Terminology
+
+## Permanent resident
+
+An alien who has been lawfully admitted to the United States to live and
+work permanently. Also known as **green card holder**.
+
+### Rights
+
+1. Live permanently in the U.S. provided you do not commit any actions
+   that would make you removable under immigration law
+2. Work in the U.S. at any legal work of your qualification and
+   choosing. (Please note that some jobs will be limited to U.S.
+   citizens for security reasons)
+3. Be protected by all laws of the United States, your state of
+   residence and local jurisdictions
+4. Request visas for your husband or wife and unmarried children to live
+   in the U.S.
+5. Get Social Security, Supplemental Security Income, and Medicare
+   benefits, if you are eligible
+6. Own property in the U.S.
+7. Leave and return to the U.S. under certain conditions
+8. Attend public school and college
+9. Join certain branches of the U.S. Armed Forces
+10. Purchase or own a firearm, as long as there are no state or local
+    restrictions saying you can't
+
+### Responsibilities
+
+1. Obey all laws of the United States the states, and localities
+2. File your income tax returns and report your income to the U.S.
+   Internal Revenue Service and state taxing authorities
+3. Support the democratic form of government and do not change the
+   government through illegal means
+4. If you are a male age 18 through 25, register with the Selective
+   Service
+5. Maintain your immigration status
+6. Carry proof of your permanent resident status at all times
+7. Change your address online or provide it in writing to the Department
+   of Homeland Security within 10 days of each time you move
+
+## Green card
+
+A green card is a document showing evidence of your lawful permanent
+resident status in the United States.
+
+The green card is known as "Form I-551". Green card are also referred to
+as a "certificate of alien registration" or "alien registration card".
+
+## Alien registration number
+
+The alien registration number or "A-number" is an identifying number
+that USCIS assigns to certain aliens, such as those who apply for
+adjustment of status.
+
+A-numbers may consist of 8 or 9 digits. The A-number is yours for life,
+much like a social security number.
+
+## Department of State (DOS) Case ID
+
+Something
+
+## USCIS Receipt/Case ID
+
+Something
+
+## Certificate of Citizenship
+
+Something
+
+## Certificate of Naturalization
+
+Something
+
+# Immigrant VISA
 
 ## Interview's Documents
 
@@ -105,6 +179,91 @@ Các giấy tờ sau được yêu cầu trong buổi phỏng vấn:
   giáo… để chứng minh mối quan hệ với người bảo lãnh.
 16. **Kết quả khám sức khỏe**
 
+# Permanent Resident
+
+## Green Card
+
+On the back of the card:
+- First Line of Characters
+    + 1–2: C1 or C2 (C1 = Resident within the United States C2= Permanent Resident commuter living in Canada or Mexico)
+    + 3–5: issuing country (USA)
+    + 6–14: 9-digit number A-number
+    + 15: application receipt number
+    + 16–30: immigrant case number (first three letters represent service center code)
+    + The `<` symbol represents a blank space
+- Second Line of Characters
+    + 1-6: birth date (in YY/MM/DD format)
+    + 7: not documented, assumed to be a check digit
+    + 8: gender
+    + 9-14: expiration date (in YY/MM/DD format)
+    + 15: not documented, assumed to be a check digit
+    + 16-29: country of birth
+    + 30: not documented, assumed to be a check digit
+- Third Line of Characters
+    + Last name, first name, middle name, first initial of father, first
+      initial of mother (this line is spaced with `<<` between the last
+      name and first name)
+
+![The front of a green card](https://raw.githubusercontent.com/samtron1412/figures/master/usa/1-green-card-front.jpg "front")
+![The back of a green card](https://raw.githubusercontent.com/samtron1412/figures/master/usa/2-green-card-back.jpg "back")
+
+# Citizenship
+
+Citizenship is the common thread that connects all Americans. We are a
+nation bound not by race or religion, but by the shared values of
+freedom, liberty, and equality.
+
+## [Apply for citizenship](http://www.uscis.gov/citizenship/learners/apply-citizenship)
+
+### Oath
+
+	"I hereby declare, on oath, that I absolutely and entirely renounce and abjure all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty, of whom or which I have heretofore been a subject or citizen; that I will support and defend the Constitution and laws of the United States of America against all enemies, foreign and domestic; that I will bear true faith and allegiance to the same; that I will bear arms on behalf of the United States when required by the law; that I will perform noncombatant service in the Armed Forces of the United States when required by the law; that I will perform work of national importance under civilian direction when required by the law; and that I take this obligation freely, without any mental reservation or purpose of evasion; so help me God."
+
+All applicants shall take an oath that incorporates the substance of the following:
+
+1. Support the Constitution;
+2. Renounce and abjure absolutely and entirely all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty of whom or which the applicant was before a subject or citizen;
+3. Support and defend the Constitution and laws of the United States against all enemies, foreign and domestic;
+4. Bear true faith and allegiance to the same; and
+5. Bear arms on behalf of the United States when required by the law; or
+6. Perform noncombatant service in the Armed Forces of the United States when required by the law; or
+7. Perform work of national importance under civilian direction when required by the law.
+
+### [Video naturalization interview](http://www.uscis.gov/citizenship/teachers/educational-products/uscis-naturalization-interview-and-test-video)
+
+## [Rights and Responsibilities](http://www.uscis.gov/citizenship/learners/citizenship-rights-and-responsibilities)
+
+### Rights
+
+1. Freedom to express yourself.
+2. Freedom to worship as you wish.
+3. Right to a prompt, fair trial by jury.
+4. Right to vote in elections for public officials.
+5. Right to apply for federal employment requiring U.S. citizenship.
+6. Right to run for elected office.
+7. Freedom to pursue "life, liberty, and the pursuit of happiness."
+
+### Responsibilities
+
+1. Support and defend the Constitution.
+2. Stay informed of the issues affecting your community.
+3. Participate in the democratic process.
+4. Respect and obey federal, state, and local laws.
+5. Respect the rights, beliefs, and opinions of others.
+6. Participate in your local community.
+7. Pay income and other taxes honestly, and on time, to federal, state, and local authorities.
+8. Serve on a jury when called upon.
+9. Defend the country if the need should arise.
+
+## Proofs of U.S. Citizenship
+
+- Birth certificate: people who born in U.S.
+- U.S. passport: issued by U.S. Department of State
+- Certificate of Citizenship: people born outside U.S. who derived
+  U.S. citizenship from a U.S. citizen parent.
+- Certificate of Naturalization: issued to people who became
+  U.S. citizens after 18 years of age.
+
 # Education
 
 - [US university ranking](http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities)
@@ -201,27 +360,27 @@ The price from low to high:
 The price from low to high:
 - First-Class Mail International: most affordable option for postcards,
   envelopes, and flats.
-    + Send anything up to 4 lbs (cannot exceed $400 value)
-    + From $1.15 for a postcard
+    + Send anything up to 4 lbs (cannot exceed \$400 value)
+    + From \$1.15 for a postcard
     + Buy global stamps to send postcards and envelopes
 - Airmail M-Bags
     + Send large amounts of printed internationally
-    + From $46.20
+    + From \$46.20
 - First-Class Package International Service
     + Send small packages
-    + Up to 4 lbs (cannot exceed $400 in value)
-    + From $9.50
+    + Up to 4 lbs (cannot exceed \$400 in value)
+    + From \$9.50
 - Priority Mail International: 6-10 days
     + Flat Rate
-    + From $23.95
+    + From \$23.95
 - Priority Mail Express International: 3-5 days
     + Some countries have a money-back guarantee
     + Flat Rate international shipping prices
-    + From $40.95
+    + From \$40.95
 - Global Express Guaranteed: 1-3 days
     + Fastest international shipping services
     + Provided by FedEx Express
-    + From $62
+    + From \$62
 
 # Benefits
 
@@ -334,118 +493,12 @@ federal tax or information returns.
   W-7, Application for IRS Individual Taxpayer Identification Number.
 - By law, an alien individual cannot have both an ITIN and a SSN.
 
-# Citizen
-
-Citizenship is the common thread that connects all Americans. We are a
-nation bound not by race or religion, but by the shared values of
-freedom, liberty, and equality.
-
-## [Apply for citizenship](http://www.uscis.gov/citizenship/learners/apply-citizenship)
-
-### Oath
-
-	"I hereby declare, on oath, that I absolutely and entirely renounce and abjure all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty, of whom or which I have heretofore been a subject or citizen; that I will support and defend the Constitution and laws of the United States of America against all enemies, foreign and domestic; that I will bear true faith and allegiance to the same; that I will bear arms on behalf of the United States when required by the law; that I will perform noncombatant service in the Armed Forces of the United States when required by the law; that I will perform work of national importance under civilian direction when required by the law; and that I take this obligation freely, without any mental reservation or purpose of evasion; so help me God."
-
-All applicants shall take an oath that incorporates the substance of the following:
-
-1. Support the Constitution;
-2. Renounce and abjure absolutely and entirely all allegiance and fidelity to any foreign prince, potentate, state, or sovereignty of whom or which the applicant was before a subject or citizen;
-3. Support and defend the Constitution and laws of the United States against all enemies, foreign and domestic;
-4. Bear true faith and allegiance to the same; and
-5. Bear arms on behalf of the United States when required by the law; or
-6. Perform noncombatant service in the Armed Forces of the United States when required by the law; or
-7. Perform work of national importance under civilian direction when required by the law.
-
-### [Video naturalization interview](http://www.uscis.gov/citizenship/teachers/educational-products/uscis-naturalization-interview-and-test-video)
-
-## [Rights and Responsibilities](http://www.uscis.gov/citizenship/learners/citizenship-rights-and-responsibilities)
-
-### Rights
-
-1. Freedom to express yourself.
-2. Freedom to worship as you wish.
-3. Right to a prompt, fair trial by jury.
-4. Right to vote in elections for public officials.
-5. Right to apply for federal employment requiring U.S. citizenship.
-6. Right to run for elected office.
-7. Freedom to pursue "life, liberty, and the pursuit of happiness."
-
-### Responsibilities
-
-1. Support and defend the Constitution.
-2. Stay informed of the issues affecting your community.
-3. Participate in the democratic process.
-4. Respect and obey federal, state, and local laws.
-5. Respect the rights, beliefs, and opinions of others.
-6. Participate in your local community.
-7. Pay income and other taxes honestly, and on time, to federal, state, and local authorities.
-8. Serve on a jury when called upon.
-9. Defend the country if the need should arise.
-
 # Cultural
 
 - http://www.huffingtonpost.com/dr-peter-breggin/how-to-live-like-an-ameri_b_329897.html
 - http://www.wikihow.com/Live-the-American-Dream
 - http://www.fluentin3months.com/usa-clashes/
 - http://www.immihelp.com/newcomer/american-lifestyle.html
-
-# Terminology
-
-## Permanent resident
-
-An alien who has been lawfully admitted to the United States to live and
-work permanently. Also known as **green card holder**.
-
-### Rights
-
-1. Live permanently in the U.S. provided you do not commit any actions
-   that would make you removable under immigration law
-2. Work in the U.S. at any legal work of your qualification and
-   choosing. (Please note that some jobs will be limited to U.S.
-   citizens for security reasons)
-3. Be protected by all laws of the United States, your state of
-   residence and local jurisdictions
-4. Request visas for your husband or wife and unmarried children to live
-   in the U.S.
-5. Get Social Security, Supplemental Security Income, and Medicare
-   benefits, if you are eligible
-6. Own property in the U.S.
-7. Leave and return to the U.S. under certain conditions
-8. Attend public school and college
-9. Join certain branches of the U.S. Armed Forces
-10. Purchase or own a firearm, as long as there are no state or local
-    restrictions saying you can't
-
-### Responsibilities
-
-1. Obey all laws of the United States the states, and localities
-2. File your income tax returns and report your income to the U.S.
-   Internal Revenue Service and state taxing authorities
-3. Support the democratic form of government and do not change the
-   government through illegal means
-4. If you are a male age 18 through 25, register with the Selective
-   Service
-5. Maintain your immigration status
-6. Carry proof of your permanent resident status at all times
-7. Change your address online or provide it in writing to the Department
-   of Homeland Security within 10 days of each time you move
-
-## Green card
-
-A green card is a document showing evidence of your lawful permanent
-resident status in the United States.
-
-The green card is known as "Form I-551". Green card are also referred to
-as a "certificate of alien registration" or "alien registration card".
-
-## Alien registration number
-
-The alien registration number or "A-number" is an identifying number
-that USCIS assigns to certain aliens, such as those who apply for
-adjustment of status.
-
-A-numbers may consist of 8 or 9 digits. The A-number is yours for life,
-much like a social security number.
 
 # Government
 
