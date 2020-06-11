@@ -23,7 +23,6 @@ by the Debian GNU/Linux distribution.
 - `/etc/apt/sources.list` file
 - `/etc/apt/sources.list.d` directory
 
-
 ## Apt
 
 Ubuntu's Advanced Packaging Tools (APT)
@@ -67,4 +66,13 @@ Ubuntu's Advanced Packaging Tools (APT)
 - Uninstalling a package: `sudo dpkg -r zip`
     + Does not handle DEPENDENCIES !!!
 
+# Upgrading
 
+## do-release-upgrade
+
+- This utility is installed by default.
+- Typing in a terminal: `do-release-upgrade`
+- On an LTS system, to update to a new system before the first point
+  release, e.g., if you want to upgrade from 18.04 to 20.04 before
+  20.04.1 is released.
+    + Using `-d` switch
