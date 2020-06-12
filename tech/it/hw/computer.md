@@ -173,9 +173,6 @@ seminal 1936 paper, *On Computable Numbers*.
         * *CHOSE*: 16 GB DDR3 1333 MHz
 - CPU
     + i7 2620M - 2.7 GHz - 2 cores - 4 logical processors
-- Espress Card USB 3.0
-    + Slowing down the computer with error
-        *  xhci_hcd 0000:05:00.0: xHCI host controller not responding, assume dead
 
 ## Firmware
 
