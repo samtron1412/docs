@@ -230,16 +230,6 @@ inclusion.
     + journals: slower cycle, archived
 - https://www3.nd.edu/~kwb/Mentoring_Conferences_Journals.pdf
 
-# Letter of Recommendation (LoR)
-
-## A Packet of information
-
-1. Your resume
-2. Your statement of purpose, or some similar document
-3. A summary of key or memorable interactions that we have had. e.g.:
-    - "I was the student in office hours who had the idea about making an XOR gate ..."
-    - "You looked at my final project and said that I was the only one who ..."
-    - "I usually sat on the right side of class and asked lots of questions."
 
 # Principal Investigator (PI)
 
