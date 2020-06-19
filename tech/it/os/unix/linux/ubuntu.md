@@ -75,4 +75,7 @@ Ubuntu's Advanced Packaging Tools (APT)
 - On an LTS system, to update to a new system before the first point
   release, e.g., if you want to upgrade from 18.04 to 20.04 before
   20.04.1 is released.
-    + Using `-d` switch
+    + Using `-d` switch: `sudo do-release-upgrade -d`
+- bluetoothctl
+    + The devices need to have a status of `Not Set Up`: holding down
+      power button of devices
