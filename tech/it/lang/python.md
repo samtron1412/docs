@@ -314,6 +314,11 @@ else:
 
 # Tips and Tricks
 
+## List Comprehensions and If/Else
+
+- If and else: `[f(x) if condition else g(x) for x in sequence]`
+- If only: `[f(x) for x in sequence if condition]`
+
 ## Reload the class source file after importing
 
 - `>>> reload(shop)`
