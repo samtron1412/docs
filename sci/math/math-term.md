@@ -154,7 +154,7 @@ triangle, the side opposite of the right angle.
 
 # Integral calculus
 
-computing areas under curves
+Computing areas under curves.
 
 # Interval
 
@@ -377,9 +377,9 @@ In Euclidean geometry and some other geometries, the triangle inequality
 is a theorem about distances, and it is written using vectors and vector
 lengths (**norms**):
 
-||x+y|| <= ||x|| + ||y||
+`||x+y|| <= ||x|| + ||y||`
 
-Absolute value: |x+y| <= |x| + |y|
+Absolute value: `|x+y| <= |x| + |y|`
 
 # Trigonometric identities
 
@@ -402,6 +402,11 @@ the Cartesian coordinate system in the Euclidean plane.
 Vectors are quantities that are fully described by both a magnitude and
 a direction.
 
+# Integral transform
+
+- https://en.wikipedia.org/wiki/Integral_transform
+    + Laplace transform
+    + Fourier transform
 # References
 
 [infinitesimal]: https://en.wikipedia.org/wiki/Infinitesimal
