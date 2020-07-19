@@ -31,6 +31,12 @@ Jupyter Notebook, a Python package
 - Jupyter notebook: https://realpython.com/jupyter-notebook-introduction/
 - Jupyter lab: https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b
 
+## IPython
+
+- `!cd`: running the system command-line tools
+    + These commands are executed in a temporary subshell.
+- `%cd`: automagic functions, change the working directory in a more enduring way
+
 # Tips and Tricks for jupyter notebook
 
 ## Export to PDF without section numbers
