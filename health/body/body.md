@@ -445,6 +445,44 @@ Examples: psilocybin, `LSD`, Salvia divinorum and nitrous oxide.
 - https://en.wikipedia.org/wiki/Tampon
 - https://en.wikipedia.org/wiki/Sanitary_napkin
 
+## Birth Control (contraception)
+
+### Birth Control Pills
+
+```
+Overview
+- Combination birth control pills are a daily medication that contains 2 hormones (estrogen and progestin) to prevent pregnancy.
+- Common brands: Alesse, Levlen, Ortho Tri-Cyclen, Loestrin, Ortho-Novum, Estrostep, Lessina, Levlite, Aviane, Levora, Lo/ovral-28, Aranelle, Natazia, Enpresse, Mircette, Apri, Yasmin, Nordette, Yaz
+
+
+===
+How it works
+- The combination of estrogen and progestin prevents ovaries from releasing eggs. You take the pill daily for 3 weeks and then take a week of placebos that bring on your period.
+- Effectiveness: 91% with typical use
+- Availability: requires a prescription
+- Effort: take every day
+- Sexually transmitted infections: doesn't provide protection
+- Hormones: contains a combo of estrogen and progestin
+
+===
+Benefits & side effects
+- Acne: may be reduced
+- Weight: unlikely to be affected
+- Menstrual changes: may become regular, lighter, and shorter
+- Also possible: spotting, breast tenderness, nausea, or changes in mood
+- Additional info: may protect against ovarian cancer, anemia, pelvic inflammatory disease, and ovarian cysts
+
+
+===
+Links
+- https://www.mayoclinic.org/healthy-lifestyle/birth-control/in-depth/best-birth-control-pill/art-20044807
+- https://www.webmd.com/sex/birth-control/birth-control-pills
+- https://www.youtube.com/watch?v=hI2C7TsnSfk
+- https://www.youtube.com/watch?v=wbajNTXBdtc
+- https://www.youtube.com/watch?v=Gu11uty__OY
+- https://www.youtube.com/watch?v=lJH4CS8jtf0
+```
+
 
 # Motion sickness
 
