@@ -16,6 +16,7 @@ unknown point.
 In 2D, using 2 known angles and a known baseline to calculate the
 distance to an unknown point.
 - Looking at ee16a final summary in Notability
+- Looking at ee127 hw4 question 1
 
 # Epipolar geometry
 
