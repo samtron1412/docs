@@ -166,12 +166,148 @@ and 157.5".
 - Fluid
     + Washer fluid
 
+
+# Buying Cars
+
+## Car Title
+
+- Certificate of origin
+    + This is the first title document issued by the vehicle
+      manufacturer to the franchised dealer where the vehicle was
+      delivered to. This document is used to transfer the vehicle to the
+      first owner, and obtain title.
+- Manufacturer’s statement of origin
+    + This is similar to a certificate of origin used by some vehicle
+      manufacturers import or domestic.
+- Clear title
+    + When a title is issued to an owner with no lien specified the
+      title is clear.
+- Salvage title
+    + When a vehicle incurs some type of loss event such as major
+      damage, theft, or repair, the title may be designated as a salvage
+      title. The decision to place a title in salvage status is normally
+      made by the insurance company who pays a claim on the vehicle. In
+      some states there are statutory regulations which require an
+      insurer to brand a vehicle with a salvage title. An example may be
+      that a vehicle incurred damage more than 60% of its
+      value. However, an insurance company can decide to place a salvage
+      title brand on any vehicle it decides to, even if there is little
+      or no damage. A salvage title, junk title, rebuilt title, or
+      certificate of destruction are almost always permanent brands on
+      the title which cannot be removed. In rare cases a very complex
+      and expensive process of reconstructing the vehicle and inspection
+      may upgrade a branded title status, but it typically involves more
+      expense than the vehicle is worth.
+    + Salvage titles can normally be registered for road use. In some
+      states an inspection is required to make sure that the vehicle is
+      safe for the road, and that any parts used for repair are legal
+      and have a verified origin. For your own safety make sure that any
+      vehicle you purchase which as a salvage title has operational
+      airbags and valid documentation of the VIN# and all major
+      component parts.
+    + Any attempt to remove, obscure, conceal, or alter a title brand
+      using unauthorized means can be a violation of law often referred
+      to as “title washing” or “title laundering.” The salvage title
+      designation is shared with all 50 states. Evading a title brand is
+      a serious offense. Getting a new title for that purpose is illegal
+      and results is serious criminal penalties.
+- Junk title
+    + A title which has been sold to a junkyard may incur a junk title
+      designation if the vehicle is intended to be scrapped or parted
+      out. A salvage title, junk title, rebuilt title, or certificate of
+      destruction are almost always permanent brands on the title which
+      cannot be removed. In rare cases a very complex and expensive
+      process of reconstructing the vehicle and inspection may upgrade a
+      branded title status, but it typically involves more expense than
+      the vehicle is worth.
+- Bonded title
+    + Obtaining a vehicle title when there is serious deficiency in the
+      ownership documentation can sometimes be done using a bonded
+      title. In this process a security bond is purchased equalling the
+      amount of the value of the vehicle. This bond covers any future
+      claims in the event that a valid claim to the vehicle comes
+      forward in the future. The bond is used to pay to remove the claim
+      of ownership or lien. The bonded title will have “Bonded” stamp in
+      it for a period of 3 to 5 years. In many cases the bonded title is
+      more expensive than other title recovery options, but may be a
+      last resort when other methods are not possible. Contact us to
+      determine if a bonded title or other option is most beneficial.
+- Reconstructed title
+    + A vehicle which has been substantially rebuilt may have a
+      reconstructed title brand issued by an insurance company, body
+      shop, collision center, or licensed rebuilder. A vehicle with a
+      reconstructed title can normally be registered for road use, but
+      may have an inspection requirement to verify it is road worthy.
+- Affidavit title
+    + A title may be issued under an affidavit in lieu of other missing
+      documentation.
+- Rebuilt title
+    + A vehicle which has been substantially rebuilt may have a rebuilt
+      title brand issued by an insurance company, body shop, collision
+      center, or licensed rebuilder. A vehicle with a rebuilt title can
+      normally be registered for road use, but may have an inspection
+      requirement to verify it is road worthy.The vehicle insurance may
+      have limits if the title is rebuilt.
+- Certificate of destruction
+    + When an insurance company has paid a claim for a vehicle and taken
+      ownership from the insured, they have the option of processing the
+      title as a certificate of destruction. In this case the vehicle is
+      intended to be destroyed and never to be used on the road or
+      registered. It is unlikely that a vehicle with a certificate of
+      destruction can ever be issued a valid title for transfer.
+    + A vehicle with a certificate of destruction can sometimes appear
+      to be in acceptable condition. The insurance company decides to
+      prevent the car from road use to limit their liability in the
+      event that the car is driven and is involved in an accident at a
+      later date. If it is proven that an injury in an accident is
+      because the car had some existing defect, the injured person could
+      claim that the insurance company should not have let the car go
+      back on the road.
+    + A vehicle in otherwise good condition can be issued a certificate
+      of destruction if the insurance company thinks that the airbags
+      could be damages, the frame could be weakened, or simply does not
+      want to spend the money to do a detailed inspection, and just
+      wants to sell it cheap to a junkyard.
+- Parts only title
+    + A parts only designation is typically found on a bill of sale or
+      transfer form, not on a title. However, if a parts only bill of
+      sale is submitted for vehicle title processing, the title may be
+      issued with a salvage brand or other cloud on title.
+- Electronic title
+    + Many state DMV title systems are issuing electronic or paperless
+      titles. If you need an actual title document those can often be
+      obtained for transfer or loan processing.
+- Lienholder title
+    + A vehicle with a lien or title loan may have a title issued
+      directly to the lienholder. The purchaser will be listed as the
+      owner, but the title will list the lender as lien holder, and the
+      lender will retain possession of the title.
+- Export title
+    + A vehicle being exported will likely need title documentation for
+      customs clearance. If the vehicle is not declared at the exit
+      point, clear title may not be possible in the destination
+      country. Start the title process early so that port storage fees
+      do not accumulate while waiting for title.
+- Import title
+    + A vehicle being imported to the US must have legal title to clear
+      customs. If the vehicle was previously titled in the US this is a
+      vehicle title recovery process only. If the vehicle was not
+      originally manufactured for the US market, there are requirements
+      for certifying that the vehicle is legal for use in the United
+      States. The Department of Transportation (DOT), Environmental
+      Protection Agency (EPA), National Highway Transportation Safety
+      Administration (NHTSA) and other agencies will need to verify that
+      the vehicle is meets standards for emissions, safety, bumper
+      height, and other guidelines prior to entering the country.
+
 # Body and main parts
+
 ## Doors
 
 ## Windows
 
 # Electrical and electronics
+
 ## Audio/video devices
 
 ## Car Video Accessories
@@ -179,6 +315,7 @@ and 157.5".
 ## Charging system
 
 ## Battery
+
 - Battery Corrosion
 
 ## Gauges and meters
@@ -194,6 +331,7 @@ and 157.5".
 ## Switches
 
 # Interior
+
 ## Floor components and parts
 
 ## Other components
@@ -201,9 +339,10 @@ and 157.5".
 ## Car seat
 
 # Powertrain and chassis
+
 ## Braking system
 
-##Engine components and parts
+## Engine components and parts
 
 ## Engine cooling system
 
@@ -240,7 +379,7 @@ and 157.5".
 - The fourth number: the load index, its capable of carrying a load
     + 85: 1133 lb (515 kg)
 - The fourth letter: the maximum speed that can be sustained
-    + S: <= 111mph for 10 mins
+    + S: less than or equal 111mph for 10 mins
 
 ## Air conditioning system (A/C)
 ### Freon
@@ -252,7 +391,7 @@ Commercially available Freons include:
 - **R22** Chlorodiofluoromethane (for air conditioning)
 - **R410A** - Is and alternate/replacement for R22 due to R22's world wide phaseout since it is shown to deplete the Ozone Layer
 
-# Cars, Maker - Model -Year - Liter
+# Cars, Maker - Model - Year - Liter
 
 ## Toyota - Corolla LE - 2001 - 1.8
 
@@ -262,7 +401,9 @@ Commercially available Freons include:
 - Tires: P185/65R14 85S
 
 # Tips and Tricks
+
 ## How to recharge freon for A/C system
+
 - Start engine + Turn on A/C system (make sure clutch engage) + Put A/C system at coldest setting + Put fan at strongest setting
 - Connect hose with freon can (not open can yet)
 - Connect another hose with low pressure port. Check the pressure of A/C system.
@@ -270,6 +411,7 @@ Commercially available Freons include:
 - Shake freon can slowly and check the gauge for the desire pressure.
 
 ## How to jump start a car by another car
+
 How to jump start a car:
 1. Red on dead +
 2. Red on donor +
@@ -280,10 +422,13 @@ How to jump start a car:
 7. Remove 4-3-2-1. Remove clamp (jumper cable) as soon as possible because it can damage alternator.﻿
 
 ## How to clean car battery corrosion
+
 1. Remove and clean + terminal with paper and baking soda if needed. Spray protect chemical and hook it up.
 2. Similarly with - terminal
 
 # [Connected car][1]
+
+Something
 
 # References
 1. [Wikipedia - Connected car][1]
