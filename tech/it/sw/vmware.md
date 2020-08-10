@@ -1,7 +1,14 @@
+[TOC]
+
+# Troubleshooting
+
+
+## After each update **linux header** then reinstall **vmware tools**
+
 **error ubuntu**, maybe access Terminal before login shell: `CTRL + ALT + F1`
 
-After each update **linux header** then reinstall **vmware tools**
-# 1. Install VMwareTools
+### 1. Install VMwareTools
+
 - `sudo apt-get update`
 - `sudo apt-get upgrade`
 - `sudo apt-get install linux-headers-$(uname -r)`
@@ -10,7 +17,8 @@ After each update **linux header** then reinstall **vmware tools**
 - `tar -xf VMwaretool.tar.gz`
 - `cd WMwareTool_folder -> sudo ./wmware_install.pl`
 
-# 2. Share folder: should create a seperate share folder to share file with guest to safe
+### 2. Share folder: should create a seperate share folder to share file with guest to safe
+
 - See in `/mnt/hgfs` to find share folder
 - If not see any folder ==> rerun `vmware-config-tools.pl` (terminal -> `$ sudo vmware-config-tools.pl`)
 - Để chung mọi share thư mục trong cùng một chỗ
@@ -22,4 +30,4 @@ After each update **linux header** then reinstall **vmware tools**
 - edit `/etc/fstab` file, add at the end of file:
 	`host:/ <path_to_mount_folder_at_guest_machine> vmhgfs defaults 0 0`
 
-# 3. If above method cannot install vmware tools, you should use **vmware tools patches master** to install.
+### 3. If above method cannot install vmware tools, you should use **vmware tools patches master** to install.
