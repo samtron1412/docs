@@ -41,6 +41,8 @@ https://www.math.ksu.edu/~gerald/leontief.pdf
     + https://en.wikipedia.org/wiki/Nilpotent_matrix
 - Rotation matrix: performs a rotation in Euclidean space.
     + https://en.wikipedia.org/wiki/Rotation_matrix
+- Eigenfunction: Df = \lambda * f (generalization of eigenvector)
+    + https://en.wikipedia.org/wiki/Eigenfunction
 
 # References
 
