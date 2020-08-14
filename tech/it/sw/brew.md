@@ -16,6 +16,7 @@
     + Showing old version of packages: `brew cleanup -n`
     + Cleaning up all old versions: `brew cleanup`
     + Cleaning up old versions of a package: `brew cleanup <pkg>`
+    + Removing the whole caches: `rm -rf "$(brew --cache)"`
 - Dependencies
     + Showing dependencies of a package: `brew deps <pkg>`
     + Showing dependencies as tree for a package: `brew deps --tree pkg`
@@ -62,7 +63,7 @@
 - Cask language references: https://github.com/Homebrew/homebrew-cask/tree/master/doc
     + Stanzas (variables in a formula): https://github.com/Homebrew/homebrew-cask/tree/master/doc/cask_language_reference/stanzas
 
-# Bundle #
+# Bundle
 
 + Install
     * `brew bundle`: looking for `Brewfile` in the current directory
