@@ -49,3 +49,82 @@ its projections onto two, or more, images.
 
 - Disparity/relative depth to absolute depth
     + abs_depth (mm) = [focal_length (pixels) * baseline (mm)] / disparity (pixels)
+- Depth
+    + lighter is further away, and white (0) is the closest;
+    + darker is closer, and black (255) is furthest
+- Disparity: inverse of depth, so lighter is closer and darker is
+  further
+
+## Introduction
+
+- Depth perception is the visual ability to perceive the world in 3D and
+  the distance of an object.
+- Depth perception arises from a variety of depth cues.
+    + Binocular cues that are based on the receipt of sensory
+      information in 3D from both eyes
+        * *Retinal disparity*, which exploits parallax and vergence
+        * Parallax: a displacement or difference in the apparent
+          position (position as seen by an observer) of an object viewed
+          along two different lines of sight, and is measured by the
+          *angle* or *semi-angle* between those two lines.
+        * Vergence: the simultaneous movement of both eyes in opposite
+          direction to obtain or maintain single binocular vision.
+            - Looking at closer objects: the eyes rotate towards each
+              other (convergence)
+            - Looking at farther away objects, they rotate away from
+              each other (divergence)
+    + Monocular cues that can be represented in just 2D and observed
+      with just one eye.
+        * Relative size (distant objects subtend smaller visual angles
+          than near objects), texture gradient, occlusion, linear
+          perspective, contrast differences, and motion parallax.
+
+## Monocular Cues
+
+### Motion parallax
+
+- When an observer moves, the apparent relative motion of several
+  stationary objects against a background gives hints about their
+  relative distance.
+- If information about the direction and velocity of movement is known,
+  motion parallax can provide absolute depth information.
+- This effect can be seen clearly when driving in a car: nearby things
+  pass quickly, while far off objects appear stationary.
+
+### Depth from Motion
+
+- When an object moves towards an observer, the projection of the object
+  is larger, so the changing in size serves as a distance cue.
+    + The visual system's capacity to calculate time-to-contact (TTC) of
+      an approaching object from the rate of optical expansion (driving
+      a car or playing a ball game)
+
+### Perspective
+
+Something
+
+### Relative size
+
+Something
+
+### Absolute size
+
+Something
+
+### Lighting and shading
+
+Something
+
+## Binocular Cues
+
+### Stereopsis, or retinal (binocular) disparity, or binocular parallax
+
+Disparity
+
+### Convergence
+
+Vergence
+
+### Shadow Stereopsis
+
+Something
