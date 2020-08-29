@@ -232,3 +232,10 @@ which will output the combined C and assembly listing to the file
 `gcc -O2 -S -masm=intel -fno-asynchronous-unwind-tables hello.c`
 
 which will output assembly language with no macros.
+
+
+# GCC Flags
+
+- `-g`: generates additional information for gdb to debug
+- `-Wall`: enable all compiler's warning messages
+
