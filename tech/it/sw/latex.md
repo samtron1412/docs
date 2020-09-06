@@ -943,6 +943,13 @@ snippet compl "Complement" i
 
 # Tips and Tricks
 
+## Convert LaTeX to other file types and vice versa
+
+- pandoc
+    + `pandoc -s file1.tex -o file2.txt`
+- detex: tex to txt
+    + `detex file1.tex > file2.txt`
+
 ## Block/Multiline comments
 
 Using verbartim package
