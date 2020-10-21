@@ -42,6 +42,14 @@
 - Doctest
     + `python3 -m doctest <python_file>`
     + doctests are surrounded by `"""`
+    + Or add the following code in python file and run: `python file.py
+      -v`
+
+```python
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+```
 - Run the script and then open an interactive session
     + `python3 -i <script_file>`
 
@@ -171,6 +179,7 @@ dependencies:
 - List all python versions: `conda search python`
     + `conda search --full-name python`
 - Update python: `conda update python`
+
 
 
 
