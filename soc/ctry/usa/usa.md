@@ -572,6 +572,11 @@ federal tax or information returns.
 
 - Created: September 17, 1787
 - Ratified: June 21, 1788
+- Preamble and Articles: 7
+- Amendments
+    + Bill of Rights: 10
+    + Others: 17
+
 
 ## Federal government
 
