@@ -26,7 +26,7 @@ Help file: opening vifm and typing `:h`
 
 ### Panes
 
-	Ctrl-W |  - maximize current view
+	Ctrl-W |  - maximize current view (zoom)
 	Ctrl-W =  - make size of two views equal
 	Ctrl-W x  - exchange panes
 	Ctrl-W s  - shortcut for :split (horizontal) or :sp
