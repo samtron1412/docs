@@ -422,6 +422,9 @@ The price from low to high:
 
 **Medi-Cal** is free or low-cost health coverage for children and adults
 with **limited income and resources**.
+- Benefits
+    + https://www.dhcs.ca.gov/services/medi-cal/eligibility/Documents/Express_Lane/CalFreshWlcmPckg.pdf
+    + Search "caloptima benefits"
 
 #### Who can qualify for Medi-Cal?
 
@@ -554,6 +557,21 @@ federal tax or information returns.
 # Politics
 
 [Politics of the United States](https://en.wikipedia.org/wiki/Politics_of_the_United_States)
+
+## United States Declaration of Independence
+
+- Created: June-July 1776
+- Ratified: July 4, 1776
+
+## Articles of Confederation
+
+- Created: November 15, 1777
+- Ratified: March 1, 1781
+
+## Constitution of the United States
+
+- Created: September 17, 1787
+- Ratified: June 21, 1788
 
 ## Federal government
 
