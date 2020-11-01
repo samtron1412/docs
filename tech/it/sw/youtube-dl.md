@@ -14,3 +14,5 @@
 ## Download mp3
 
 - `youtube-dl --extract-audio --audio-format mp3 <video URL>`
+- `youtube-dl --extract-audio --audio-format mp3 --playlist-items 5-10 youtube-playlist-url`
+
