@@ -155,6 +155,7 @@ from chance is less then 5 percent.
     + Log-odds: `ln(odds) = ln[p/(1-p)]`
     + https://www.quora.com/Why-should-we-use-log-of-odds-in-logistics-regression-and-not-the-same-in-linear-regression
     + https://towardsdatascience.com/https-towardsdatascience-com-what-and-why-of-log-odds-64ba988bf704#:~:text=You%20can%20see%20from%20the,non%2Dfraud%2C%20type%20scenarios.
+    + https://www.youtube.com/watch?v=ARfXDSkQf1Y
 
 # Glossary
 
