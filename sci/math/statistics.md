@@ -149,6 +149,11 @@ from chance is less then 5 percent.
   than 5 percent, they would say that the finding is statistically
   significant
 
+# Common Functions
+
+- Logit function: https://en.wikipedia.org/wiki/Logit
+    + Log-odds: `ln(odds) = ln[p/(1-p)]`
+
 # Glossary
 
 ## Contingency table
