@@ -2991,6 +2991,11 @@ macro into a "smart" function.
 
 # Troubleshooting
 
+## Showing messages to debug
+
+- `:mess`, `:messages`, or enhanced `:Messages` from the plugin
+  `vim-scriptease`
+
 ## Error: * not found *
 
 - Check runtime path: `:set runtimepath?`
