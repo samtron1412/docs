@@ -186,6 +186,20 @@ In no particular order
 
 ## Robotics
 
+- The top regarded conferences in robotics are Robotics: Science and
+  Systems (RSS), The International Conference on Robotics and Automation
+  (ICRA), and The International Conference on Intelligent Robots and
+  Systems (IROS). A bunch of next-tier ones might include ICARCV, FSR,
+  CASE, Humanoids, and more specific ones targeting particular problem
+  domains. The IEEE Robotics and Automation Society's Conferences &
+  Workshops page has a big list.
+- For journals, The International Journal of Robotics Research (IJRR) is
+  to my knowledge still the top-ranked journal, followed by IEEE
+  Transactions on Robotics (TOR), and Autonomous Robots (AR). The
+  Journal of Field Robotics (JFR) is highly regarded too.
+
+- [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_robotics)
+
 1.  IEEE International Conference on Robotics and Automation    75  104
 2.  IEEE/ASME Transactions on Mechatronics  62  89
 3.  The International Journal of Robotics Research  61  109
