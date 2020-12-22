@@ -318,8 +318,10 @@ else:
 - `inf`: is infinity - a value that is greater than any other value.
   `-inf` is therefore smaller than any other value.
 - `nan`: stands for Not A Number
-- `[]`: Used to define mutable data types - lists, list comprehensions and for indexing/lookup/slicing.
-- `()`: Define tuples, order of operations, generator expressions, function calls and other syntax.
+- `[]`: Used to define mutable data types - lists, list comprehensions
+  and for indexing/lookup/slicing.
+- `()`: Define tuples, order of operations, generator expressions,
+  function calls and other syntax.
 - `{}`: The two hash table types - dictionaries and sets.
 
 
