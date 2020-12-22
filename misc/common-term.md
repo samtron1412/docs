@@ -124,3 +124,22 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
     + The condition: "Is the prisoner guilty?" is true (yes, the
       prisoner is guilty). But the test (a court of law) failed to
       realize this, and wrongly decided the prisoner was not guilty.
+
+# Sweatshop
+
+- A sweatshop (or sweat factory) is a workplace with very poor, socially
+  unacceptable conditions.
+    + The work may be difficult, dangerous, climatically challenging or
+      underpaid.
+    + Workers in sweatshops may work long hours with low pay, regardless
+      of laws mandating overtime pay or a minimum wage; child labor laws
+      may also be violated.
+
+# Body shopping
+
+- Body shopping is the practice of consultancy firms recruiting workers
+  (generally in information technology sector) in order to contact their
+  services out to tactical short to mid-term basis.
+- Body shopping in IT originated during the mid-1990s when there was a
+  huge demand for people with mainframe, COBOL and related technology
+  skills to prevent systems being affected by the Y2K bug
