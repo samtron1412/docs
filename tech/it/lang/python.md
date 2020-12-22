@@ -25,11 +25,13 @@
 
 ## Help
 
-- `pydoc`
+- `pydoc`: a Linux/UNIX command
     + `pydoc sys`: showing help page for `sys` module
-- Showing built-in methods for an built-in datatype
+- Showing built-in methods for an built-in datatype in the Python
+  interpreter:
     + `dir('abc')`: showing built-in methods for a string
-- Learn about the built-in function using `help()`
+- Learn about the built-in function using `help()` in the Python
+  interpreter:
     + `help('ab'.find)`: showing the help for the find method
 
 
