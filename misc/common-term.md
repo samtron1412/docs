@@ -143,3 +143,13 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
 - Body shopping in IT originated during the mid-1990s when there was a
   huge demand for people with mainframe, COBOL and related technology
   skills to prevent systems being affected by the Y2K bug
+
+# Consulting Firm and Outsourcing
+
+- A consulting firm or simply consultancy is a business of one or more
+  experts (consultants) that provides professional feedback to an
+  individual or an organization for a fee.
+    + Consultancy
+- Outsourcing is an agreement in which one company hires another company
+  to be responsible for a planned or existing activity that is or could
+  be done internally.
