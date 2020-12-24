@@ -1845,6 +1845,11 @@ nmap [H :call PrevHunkAllBuffers()<CR>
 
 - `:h fzf`
 - https://github.com/junegunn/fzf.vim
+- Modify content in the command input
+    + `alt+backspace`: delete word
+    + `ctrl-u`: delete line
+    + `ctrl-a`: beginning of the line
+    + `ctrl-e`: end of the line
 
 ```vim
 """" fzf.vim configuration
