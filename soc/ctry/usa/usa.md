@@ -771,6 +771,10 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 
 - [24 Constitutional Question](http://www.thenewamerican.com/usnews/constitution/item/19137-24-constitutional-questions-every-american-should-be-able-to-answer)
 
+## Misc
+
+- Filibuster: https://en.wikipedia.org/wiki/Filibuster
+
 # Health Care
 
 ## Types of health care providers
