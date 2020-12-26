@@ -150,6 +150,8 @@ Debugging:
 
 # Programming Paradigm
 
+## Introduction
+
 - Programming paradigms are a way to classify programming languages
   based on their features.
 - Languages can be classified into multiple paradigms.
@@ -175,6 +177,8 @@ Debugging:
 - Symbolic: which has a particular style of syntax and grammar.
 
 # Programming Languages
+
+## Introduction
 
 - A programming language is a formal language that specifies a set of
   instructions that can be used to produce various kinds of output.
@@ -592,11 +596,11 @@ makes sense. http://www.amazon.com/gp/product/0321278658
 # Program life-cycle phase
 
 - Program life cycle phases are the stages a computer program undergoes,
-from initial creation to deployment and execution.
+  from initial creation to deployment and execution.
 - The phases are: edit time, compile time, distribution time,
-installation time, link time, load time, and run time.
+  installation time, link time, load time, and run time.
 - Life-cycle phases do not necessarily happen in a linear order, and
-they can be intertwined in various ways.
+  they can be intertwined in various ways.
 
 ## Edit time (or Design time)
 
