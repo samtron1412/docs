@@ -7,6 +7,23 @@ performed.
 
 # Common examples
 
+## Binary search
+
+- Worst-case time complexity: O(logn)
+- Average-case time complexity: O(logn)
+- Worst-case space complexity: O(1)
+
+```python
+def bin_search(list, target) -> bool:
+    lo, hi = 0, len(list) - 1
+    while lo <= hi:
+        mid = (lo + hi) // 2 # floor((lo+hi)/2)
+        if list[mid] < target: lo = mid + 1
+        elif list[mid] > target: hi = mid - 1
+        else: return True
+    return False
+```
+
 ## Tic-tac-toe
 
 Players choose the first available move from the following list:
