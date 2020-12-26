@@ -769,6 +769,8 @@ executes the program's machine code instructions.
 
 # Programming Challenges
 
+## Some interesting problems to try
+
 - Gaussian/Gauss-Jordan Elimination
 - Finding the inverse of a matrix
 - Finding the determinant of a matrix
@@ -780,7 +782,11 @@ executes the program's machine code instructions.
 
 ## Interview
 
-- naive solution, brute force solution, optimization, optimal, big o: complexity in time, complexity in memory
+- Read `coding-interview.md`
+
+# Algorithms and Common Techniques
+
+- Read `algorithm.md`
 
 # References
 
