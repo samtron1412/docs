@@ -127,6 +127,16 @@ seminal 1936 paper, *On Computable Numbers*.
 
 - Portable computers grew in popularity in the 2000s.
 
+# Potential Laptops
+
+- Thinkpad T490(s)
+- Macbook Air/Pro
+- System 76
+
+- Some requirements
+    + Add requirements here
+
+
 # Lenovo Thinkpad X220 - 2011
 
 ## Resources
