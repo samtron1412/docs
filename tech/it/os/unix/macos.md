@@ -22,6 +22,7 @@ Mac OS
 - PDF Expert + PDF Foxit reader
 - Chess (built in)
 - OpenEmu: NES, SNES, etc. (Mario, Bloody Roar, etc.)
+- keka: file archiver
 
 ## Command-line tools
 
@@ -41,6 +42,7 @@ Mac OS
 - diskutil: built-in macOS command line (similar lsblk)
 - pbcopy, pbpaste: built-in macOS command line (copy and paste to
   Clipboard)
+- p7zip: file archiver
 
 
 
