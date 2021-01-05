@@ -129,13 +129,14 @@ seminal 1936 paper, *On Computable Numbers*.
 
 # Potential Laptops
 
-- Thinkpad T490(s)
-- Macbook Air/Pro
-- System 76
-
-- Some requirements
-    + Add requirements here
-
+- Macbook Air M1 chip
+    + 16 GB RAM, 512 GB SSD: 1259 dollars
+    + M1 chip is superior than i7, or even i9 since CPU, GPU, RAM are
+      all in the same chip tightly integrated.
+- Thinkpad T490
+    + 16 GB RAM, 512 GB SSD: 1299 dollars (Costco)
+- System 76:
+    + Galapo Pro: 16 GB RAM, 512 GB SSD, i7: 1210 dollars
 
 # Lenovo Thinkpad X220 - 2011
 
