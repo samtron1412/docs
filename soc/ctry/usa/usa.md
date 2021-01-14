@@ -858,6 +858,28 @@ Your primary care provider may refer you to professionals in various specialties
 - Urology -- disorders of the male reproductive system and urinary tract
   and the female urinary tract
 
+# Telecommunication Services
+
+## Phone
+
+- T-Mobile:
+    + Prepaid plans: https://s3-us-west-2.amazonaws.com/images.rebellion.prod/General/Prepaid/marketing/2020/594057-prepaid-tmo-connect.pdf
+        * T-Mobile Connect, Simply Prepaid, Simply Prepaid Unlimited,
+          Simply Prepaid Unlimited Plus
+    + Transfer to T-mobile: https://www.t-mobile.com/support/account/transfer-your-phone-number-to-t-mobile
+- AT&T:
+    + Prepaid plans: https://www.att.com/prepaid/
+    + Prepaid family: https://www.att.com/att/prepaid-family/
+
+## Internet
+
+- Internet Service Provider (ISP): Spectrum, Frontier, Verizon, Cox,
+- Types:
+    + Satellite: slowest, everywhere, so rural areas
+    + DSL: faster than satellite, cheapest
+    + Cable: max 450 Mbps
+    + Fiber: max 1000 Mbps
+
 # Tips and Tricks
 
 ## Freedom of Information Act (FOIA)
