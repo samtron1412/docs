@@ -35,7 +35,7 @@
     + `help('ab'.find)`: showing the help for the find method
 
 
-# Interpreter
+# Usage of the Interpreter
 
 - Access the history commands
     + `Ctrl+p` (previous), `Ctrl+n` (next)
@@ -55,6 +55,56 @@ if __name__ == "__main__":
 - Run the script and then open an interactive session
     + `python3 -i <script_file>`
 
+
+# The Python Standard Library
+
+## Build-in Data Types
+
+### List
+
+
+### Dict
+
+
+### Set
+
+- https://realpython.com/python-sets/
+
+## Counter
+
+- https://pymotw.com/2/collections/counter.html
+
+# Extra Data Structures
+
+## heapq (min heap)
+
+- if want max heap, negate all items
+- `heapq.heappush(heap, item)`
+- `heapq.heappop(heap)`
+- `heapq.heapify(list)`
+
+```python
+import heapq
+heap = []
+heapq.heappush(heap, (1, 'abc'))
+heapq.heappush(heap, (5, 'cde'))
+```
+
+## queue
+
+- `queue.Queue()`
+- `queue.PriorityQueue()`
+
+```python
+q = queue.PriorityQueue()
+q.put((1, 'abc'))
+q.put((2, 'cde'))
+x = q.get()
+```
+
+## Monotone Stack
+
+- https://helloacm.com/the-monotone-stack-implementation-in-python/#:~:text=The%20Monotone%20Stack%20in%20Python&text=At%20anytime%2C%20the%20monotone%20stack,or%2Dequal%20number%20is%203.
 
 # Conda
 
@@ -416,6 +466,11 @@ print sys.version_info
 
 
 # Troubleshoots
+
+
+# The Python Language Specification
+
+- https://docs.python.org/3/reference/index.html
 
 
 # References
