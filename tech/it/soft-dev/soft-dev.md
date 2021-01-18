@@ -56,6 +56,18 @@ http://continuousdelivery.com/
 - [Open Source Scrum project management](https://github.com/taigaio)
 - [Example of company guide](https://github.com/thoughtbot/guides)
 
+# Career
+
+- https://blog.tryexponent.com/learn-software-engineering-levels-to-advance-your-career/
+- https://medium.com/better-programming/the-road-from-junior-to-senior-developer-20b4c850d7dd
+- https://codingsans.com/blog/from-junior-to-senior-developer
+- Levels
+    + Junior Software Engineer
+    + Senior Software Engineer
+    + Staff Engineer (Senior Staff Engineer)
+    + Principal Engineer
+    + Distinguished Engineer / Fellow
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Software_development
