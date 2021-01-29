@@ -377,6 +377,56 @@ else:
 
 # Tips and Tricks
 
+## Caching in Python
+
+- https://realpython.com/lru-cache-python/
+- `lru_cache` decorator
+    + `@lru_cache(maxsize=None)`: the size is unlimited, no need to
+      evict anything, but it can grow indefinitely (will crash)
+    + `@lru_cache(maxsize=128)`: maxsize is set to 128 as default
+
+```python
+from functools import lru_cache
+
+@lru_cache
+def steps_to(stair):
+    ...
+```
+
+## `*args` and `**kwargs`, unpacking and packing values
+
+- https://realpython.com/python-kwargs-and-args/
+- `*args` and `**kwargs` are used to pass multiple arguments to a
+  function
+    + `*args` is used for iterable arguments
+    + `**kwargs` is used for keyword arguments
+- `*` is a operator that can use to unpack iterables
+    + it can unpack a list into numbers
+- `**` can unpack or pack keyword values
+- order is important: `*args` should be before `**kwargs` in function
+  signature: `def func(*args, **kwargs)`
+
+```python
+# sum_integers_args_2.py
+def my_sum(*integers):
+    result = 0
+    for x in integers:
+        result += x
+    return result
+
+print(my_sum(1, 2, 3))
+
+# concatenate.py
+def concatenate(**kwargs):
+    result = ""
+    # Iterating over the Python kwargs dictionary
+    for arg in kwargs.values():
+        result += arg
+    return result
+
+print(concatenate(a="Real", b="Python", c="Is", d="Great", e="!"))
+```
+
 ## List Comprehensions and If/Else
 
 - If and else: `[f(x) if condition else g(x) for x in sequence]`
