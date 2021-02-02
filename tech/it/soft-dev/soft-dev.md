@@ -74,6 +74,14 @@ http://continuousdelivery.com/
 
 ## Maintenance
 
+# Architecture Patterns
+
+- https://en.wikipedia.org/wiki/Architectural_pattern
+
+# Software Design Patterns
+
+- Read `design-pattern.md`
+
 # Tools
 - [Open Source Scrum project management](https://github.com/taigaio)
 - [Example of company guide](https://github.com/thoughtbot/guides)
