@@ -12,6 +12,13 @@
 
 ## Resources
 
+- Books:
+    + https://realpython.com/best-python-books/#best-books-for-learning-python
+    + https://hackr.io/blog/best-python-books-for-beginners-and-advanced-programmers
+- Best resources for Python OOP
+    + https://aspp.school/python-summerschool-2013/_media/wiki/oop/oo_design_2013.pdf
+    + https://www.programiz.com/python-programming/object-oriented-programming
+    + https://dbader.org/img/oop-in-python-best-resources.pdf
 - The Hitchhiker's Guide to Python:
     + http://docs.python-guide.org/en/latest/
 - Python project workflows
@@ -22,6 +29,8 @@
     + https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
 - Google Python course
     + https://developers.google.com/edu/python/
+- Design pattern
+    + https://github.com/faif/python-patterns
 
 ## Help
 
@@ -58,7 +67,11 @@ if __name__ == "__main__":
 
 # The Python Standard Library
 
-## Build-in Data Types
+## Built-in Functions
+
+## Built-in Constants
+
+## Built-in Data Types
 
 ### List
 
@@ -70,18 +83,183 @@ if __name__ == "__main__":
 
 - https://realpython.com/python-sets/
 
-## Counter
+## Built-in Exceptions
 
+## Extra Data Structures
+
+### collections
+
+#### namedtuple() - factory function for creating tuple subclasses with named fields
+
+- Creating a tuple subclass with named fields
+
+```python
+from collections import namedtuple
+
+Student = namedtuple('Student', 'fname, lname, age')
+first  = Student('Son', 'Tran', '29')
+print(first.fname)
+print(first.lname)
+print(first.age)
+```
+
+#### Counter
+
+- A dictionary subclass for counting hashable objects.
 - https://pymotw.com/2/collections/counter.html
 
-# Extra Data Structures
+#### OrderedDict
 
-## heapq (min heap)
+- A dictionary subclass that remembers the order entries were added
+- Linkedlist and hash map
+
+#### defaultdict
+
+- A dictionary subclass that calls a factory function to supply missing
+  values.
+
+```python
+from collections import defaultdict
+d = defaultdict(int)
+print(d[1])
+```
+
+#### deque
+
+- A list-like container with fast appends and pops on either ends
+
+```python
+>>> from collections import deque
+>>> d = deque('ghi')                 # make a new deque with three items
+>>> for elem in d:                   # iterate over the deque's elements
+...     print(elem.upper())
+G
+H
+I
+
+>>> d.append('j')                    # add a new entry to the right side
+>>> d.appendleft('f')                # add a new entry to the left side
+>>> d                                # show the representation of the deque
+deque(['f', 'g', 'h', 'i', 'j'])
+
+>>> d.pop()                          # return and remove the rightmost item
+'j'
+>>> d.popleft()                      # return and remove the leftmost item
+'f'
+>>> list(d)                          # list the contents of the deque
+['g', 'h', 'i']
+>>> d[0]                             # peek at leftmost item
+'g'
+>>> d[-1]                            # peek at rightmost item
+'i'
+
+>>> list(reversed(d))                # list the contents of a deque in reverse
+['i', 'h', 'g']
+>>> 'h' in d                         # search the deque
+True
+>>> d.extend('jkl')                  # add multiple elements at once
+>>> d
+deque(['g', 'h', 'i', 'j', 'k', 'l'])
+>>> d.rotate(1)                      # right rotation
+>>> d
+deque(['l', 'g', 'h', 'i', 'j', 'k'])
+>>> d.rotate(-1)                     # left rotation
+>>> d
+deque(['g', 'h', 'i', 'j', 'k', 'l'])
+
+>>> deque(reversed(d))               # make a new deque in reverse order
+deque(['l', 'k', 'j', 'i', 'h', 'g'])
+>>> d.clear()                        # empty the deque
+>>> d.pop()                          # cannot pop from an empty deque
+Traceback (most recent call last):
+    File "<pyshell#6>", line 1, in -toplevel-
+        d.pop()
+IndexError: pop from an empty deque
+
+>>> d.extendleft('abc')              # extendleft() reverses the input order
+>>> d
+deque(['c', 'b', 'a'])
+```
+
+#### ChainMap
+
+- A dict-like class for creating a single view of multiple mappings.
+- https://florimond.dev/blog/articles/2018/07/a-practical-usage-of-chainmap-in-python/
+- https://stackoverflow.com/questions/23392976/what-is-the-purpose-of-collections-chainmap
+
+```python
+# cli.py
+import argparse
+import os
+from collections import ChainMap
+
+defaults = {"debug": False}
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--debug")
+args = parser.parse_args()
+cli_args = {key: value for key, value in vars(args).items() if value}
+
+config = ChainMap(cli_args, os.environ, defaults)
+
+print(config.get("debug"))
+```
+
+#### UserDict
+
+- A wrapper around dictionary objects for easier dict subclassing
+
+```python
+from collections import UserDict
+
+
+# Creating a Dictionary where
+# deletion is not allowed
+class MyDict(UserDict):
+
+    # Function to stop deleltion
+    # from dictionary
+    def __del__(self):
+        raise RuntimeError("Deletion not allowed")
+
+    # Function to stop pop from
+    # dictionary
+    def pop(self, s = None):
+        raise RuntimeError("Deletion not allowed")
+
+    # Function to stop popitem
+    # from Dictionary
+    def popitem(self, s = None):
+        raise RuntimeError("Deletion not allowed")
+
+# Driver's code
+d = MyDict({'a':1,
+    'b': 2,
+    'c': 3})
+
+d.pop(1)
+```
+
+### heapq (min heap)
 
 - if want max heap, negate all items
 - `heapq.heappush(heap, item)`
 - `heapq.heappop(heap)`
+    + pop the top of the heap
+    + peeking the top of the heap by using `heap[0]`
 - `heapq.heapify(list)`
+- `heapq.pushpop(heap, item)`
+    + push the new item then pop the top
+    + more efficient than doing push then pop
+    + keep a fixed size heap
+    + returns the smaller value between the new and old items
+- `heapq.heapreplace(heap, item)`
+    + pop then push the new item
+    + more efficient than pop then push
+    + keep a fixed size heap
+    + it may return larger value between the new and old items
+- `heapq.nlargest(n, iterable, key=None)`
+- `heapq.nsmallest(n, iterable, key=None)`
 
 ```python
 import heapq
@@ -90,8 +268,9 @@ heapq.heappush(heap, (1, 'abc'))
 heapq.heappush(heap, (5, 'cde'))
 ```
 
-## queue
+### queue
 
+- Thread safe, using in concurrent programming
 - `queue.Queue()`
 - `queue.PriorityQueue()`
 
@@ -102,9 +281,27 @@ q.put((2, 'cde'))
 x = q.get()
 ```
 
-## Monotone Stack
+### bisect
+
+- Array bisection algorithm: binary search
+
+### array
+
+- Similar list but the type of elements is constrained.
+
+### enum
+
+
+
+### Monotone Stack
 
 - https://helloacm.com/the-monotone-stack-implementation-in-python/#:~:text=The%20Monotone%20Stack%20in%20Python&text=At%20anytime%2C%20the%20monotone%20stack,or%2Dequal%20number%20is%203.
+
+# Object Oriented Programming (OOP)
+
+- https://coreyms.com/development/python/python-oop-tutorials-complete-series
+- https://www.udemy.com/course/object-oriented-python-programming/
+- https://www.datacamp.com/community/tutorials/inner-classes-python
 
 # Conda
 
@@ -376,6 +573,13 @@ else:
 
 
 # Tips and Tricks
+
+## del statement
+
+- https://www.programiz.com/python-programming/del
+- https://stackoverflow.com/questions/6146963/when-is-del-useful-in-python
+- `del obj_name` statement can be to delete variables, user-defined
+  objects, lists, items within lists, dictionaries, etc.
 
 ## Caching in Python
 
