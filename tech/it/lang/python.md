@@ -574,13 +574,6 @@ else:
 
 # Tips and Tricks
 
-## del statement
-
-- https://www.programiz.com/python-programming/del
-- https://stackoverflow.com/questions/6146963/when-is-del-useful-in-python
-- `del obj_name` statement can be to delete variables, user-defined
-  objects, lists, items within lists, dictionaries, etc.
-
 ## Caching in Python
 
 - https://realpython.com/lru-cache-python/
@@ -722,10 +715,49 @@ print sys.version_info
 # Troubleshoots
 
 
-# The Python Language Specification
+# The Python Language Reference / Specification
 
 - https://docs.python.org/3/reference/index.html
 
+## Introduction
+
+## Lexical Analysis
+
+## Data model
+
+## Execution model
+
+## The import system
+
+## Expressions
+
+## Simple statements
+
+### Assignment Statement
+
+- `left = right`
+    + Evaluate all expressions in the right of = from left to right
+    + Bind all names in the left of = to those resulting values in the
+      current frame.
+- Parallel assignment: `a, b = 1, 2`
+- The assignment returns the values of the right side
+- Double assignment: `a, b = c, d = 1, 2`
+    + assign the right most values to other names
+
+### del statement
+
+- https://www.programiz.com/python-programming/del
+- https://stackoverflow.com/questions/6146963/when-is-del-useful-in-python
+- `del obj_name` statement can be to delete variables, user-defined
+  objects, lists, items within lists, dictionaries, etc.
+
+## Compound statements
+
+## Top-level components
+
+## Full grammar specification
+
+- https://docs.python.org/3/reference/grammar.html
 
 # References
 
