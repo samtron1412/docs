@@ -50,6 +50,78 @@ performed.
 - Disjoint-set data structures (multiway trees - unbounded number of
   branches per node)
 
+
+### Trie: insert(word), search(word) -> bool, start_with(prefix) -> bool
+
++ https://leetcode.com/problems/implement-trie-prefix-tree/
+    * https://leetcode.com/problems/design-add-and-search-words-data-structure/
+    * https://leetcode.com/problems/word-search-ii/
++ https://medium.com/@info.gildacademy/a-simpler-way-to-implement-trie-data-structure-in-python-efa6a958a4f2
++ https://towardsdatascience.com/implementing-a-trie-data-structure-in-python-in-less-than-100-lines-of-code-a877ea23c1a1
++ We can realize this by a dictionary of key: character, value: a tuple
+  / namedtuple(children, end), children is another dictionary
+
+```python
+class Trie:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        - [children, end] = [dict(), False/True]
+        """
+        self.trie = [dict(), False]
+
+
+    def insert(self, word: str) -> None:
+        """
+        Inserts a word into the trie.
+        """
+        cur = self.trie
+        for c in word:
+            # resulting value = get child 'c' in children, if not exist return [dict(), False]
+            # bind cur[0][c] to the resulting value
+            # then bind cur to the resulting value
+            cur[0][c] = cur = cur[0].get(c, [dict(), False])
+
+            ## simpler to understand version
+            # if c not in cur[0]:
+            #     cur[0][c] = [dict(), False]
+            # cur = cur[0][c]
+        cur[1] = True   # set the end of the word
+
+    def _dfs(self, word):
+        cur = self.trie
+        for c in word:
+            if c not in cur[0]: return None
+            else: cur = cur[0][c]
+        return cur
+
+
+    def search(self, word: str) -> bool:
+        """
+        Returns if the word is in the trie.
+        """
+        node = self._dfs(word)
+        if node is None: return False
+        else: return node[1]
+
+
+
+    def startsWith(self, prefix: str) -> bool:
+        """
+        Returns if there is any word in the trie that starts with the given prefix.
+        """
+        node = self._dfs(prefix)
+        return node is not None
+
+
+# Your Trie object will be instantiated and called as such:
+# obj = Trie()
+# obj.insert(word)
+# param_2 = obj.search(word)
+# param_3 = obj.startsWith(prefix)
+```
+
 ## Cycles
 
 ## Shortest Paths
@@ -59,6 +131,20 @@ performed.
 ## Connectivity
 
 ## Topological Sort
+
+- https://en.wikipedia.org/wiki/Topological_sorting
+    + A directed acyclic graph (DAG) has a topological order.
+- Kahn's algorithm:
+    + Find a node without any incoming edges (break tie
+      lexicographically or arbitrarily)
+    + Add the node to the end of the sorted list
+    + Remove the node and all of its outgoing edges
+    + Repeat
+- Depth-first search
+    + Depth-first search until find a node that has no outgoing edges
+    + Add the node to the start of the sorted list
+    + Mark the node is visited
+
 
 ## Back Tracking
 
