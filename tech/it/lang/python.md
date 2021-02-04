@@ -302,6 +302,7 @@ x = q.get()
 - https://coreyms.com/development/python/python-oop-tutorials-complete-series
 - https://www.udemy.com/course/object-oriented-python-programming/
 - https://www.datacamp.com/community/tutorials/inner-classes-python
+- super(): https://realpython.com/python-super/
 
 # Conda
 
