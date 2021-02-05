@@ -40,6 +40,58 @@ performed.
 
 ## Depth-first Search (DFS)
 
+- https://en.wikipedia.org/wiki/Depth-first_search
+
+### Backtracking
+
+- A form of DFS where the search tree is generated step by step, and a
+  branch of it can be pruned. Therefore, it is more efficient than
+  normal DFS.
+- Use cases:
+    + Construct the actual output, not just some optimized values (max,
+      count, true/false, etc.)
+        * subsets
+        * permutations
+    + Satisfy constraint problems
+        * N Queens
+        * Sudoku
+- https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26
+    + https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+- https://stackoverflow.com/questions/1294720/whats-the-difference-between-backtracking-and-depth-first-search
+- https://geeksforgeeks.org/backtracking-introduction/
+
+```python
+def backtrack(n, other params): -> bool
+    if found a solution:
+        displaySolution();
+        return true;
+    if not satisfy the constraint:
+        return # backtrack
+    for (val = first to last) :
+        if (isValid(val, n)) :
+            # maybe doing something here
+            applyValue(val, n);
+            if (findSolutions(n+1, other params))
+                return true;
+            removeValue(val, n);
+        return false;
+
+def findSolutions(n, other params) :
+    if (found a solution) :
+        solutionsFound = solutionsFound + 1;
+        displaySolution();
+        if (solutionsFound >= solutionTarget) :
+            System.exit(0);
+        return
+    if not satisfy the constraint:
+        return # backtrack
+    for (val = first to last) :
+        if (isValid(val, n)) :
+            applyValue(val, n);
+            findSolutions(n+1, other params);
+            removeValue(val, n);
+```
+
 ## Breath-first Search (BFS)
 
 ## Trees
@@ -146,8 +198,6 @@ class Trie:
     + Add the node to the start of the sorted list
     + Mark the node is visited
 
-
-## Back Tracking
 
 
 # String
