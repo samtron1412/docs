@@ -56,6 +56,7 @@ performed.
 + https://leetcode.com/problems/implement-trie-prefix-tree/
     * https://leetcode.com/problems/design-add-and-search-words-data-structure/
     * https://leetcode.com/problems/word-search-ii/
+    * https://leetcode.com/problems/word-search/
 + https://medium.com/@info.gildacademy/a-simpler-way-to-implement-trie-data-structure-in-python-efa6a958a4f2
 + https://towardsdatascience.com/implementing-a-trie-data-structure-in-python-in-less-than-100-lines-of-code-a877ea23c1a1
 + We can realize this by a dictionary of key: character, value: a tuple
