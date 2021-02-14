@@ -38,6 +38,20 @@ for consumption with the use of heat.
     + low heat: 6-7 minutes
     + lemon juice on top at the end
 
+# Marinating
+
+## Dua gia
+
+- Ingredients
+    + sprout, carrot, green onion, chives, white onion
+    + water with salt, sugar, vinegar or lime or lemon
+- Steps
+    + Put carrot, green onion, chives, white onion, and sprout layer by
+      layer from bottom to top of a container
+    + Put water with salt, sugar, and vinegar or lime or lemon
+    + Put a disk on top of them to keep them deep in water
+    + After a day then we can eat it
+
 # References
 1. [Wikipedia - Cooking][1]
 
