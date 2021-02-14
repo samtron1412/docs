@@ -423,6 +423,11 @@ to process its work (lack of needed resources).
 
 # Computer Science
 
+- Macro
+    + https://en.wikipedia.org/wiki/Macro_(computer_science)
+    + A macro is a rule or pattern that specifies how a certain input
+      should be mapped to a replacement output.
+
 ## Automata Theory
 
 Automata theory is the study of abstract machines and automata, as well
