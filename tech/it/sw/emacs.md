@@ -12,15 +12,6 @@
     + IRC, Chat, RSS
     + DevOps
 
-- Obtain a Decent Initial Configuration
-
-The default configuration sucks. Luckily there is Emacs Prelude - Emacs
-24 configuration that doesn’t suck. I highly recommend you to use
-Prelude as your initial Emacs config. Studying its source will give you
-a bit of an insight into Emacs Lisp programming
-
-- Read & Practice
-
 ```
 first step - run the built-in Emacs tutorial - C-h t
 second step - watch the excellent screencast Meet Emacs
@@ -32,8 +23,6 @@ fifth step - use Emacs day and night for all your work
 ## Resources
 
 - Emacs help system
-- Starter kits
-    + http://ergoemacs.org/misc/list_of_emacs_starter_kits.html
 
 # Org mode
 
@@ -46,6 +35,18 @@ fifth step - use Emacs day and night for all your work
 - https://github.com/syl20bnr/spacemacs
 - https://github.com/emacs-evil/evil
 - https://www.emacswiki.org/emacs/Evil
+
+# Tips and Tricks
+
+## GUI vs. TUI
+
+- https://www.reddit.com/r/emacs/comments/4nwvex/gui_vs_terminal_version_of_emacs_recommendations/
+- GUI:
+    + Provide more options for binding keys (some keys can't bind in
+      TUI)
+    + Colors, fonts, images, etc.
+- TUI
+    + Good for SSH remotely through tmux/screen
 
 # References
 1. [Wikipedia - Emacs][1]
