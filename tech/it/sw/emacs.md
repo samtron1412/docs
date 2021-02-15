@@ -24,6 +24,12 @@ fifth step - use Emacs day and night for all your work
 
 - Emacs help system
 
+## Installation
+
+- MacOS
+    + `brew install --cask emacs`: will install the  GUI version
+    + To execute the TUI version: `emacs -nw`
+
 # Org mode
 
 - https://www.youtube.com/watch?v=oJTwQvgfgMM
