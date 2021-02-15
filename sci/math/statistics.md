@@ -149,6 +149,19 @@ from chance is less then 5 percent.
   than 5 percent, they would say that the finding is statistically
   significant
 
+# Techniques
+
+## Gaussian Discriminant Analysis
+
+### Linear Discriminant Analysis (LDA)
+
+- To classify data into categories
+- Compute the boundary such that projected data on the boundary is
+  separated into groups
+    + maximize the distance between means: (m1 - m2)^2
+    + miminmize the scatter of data (std dev 1, 2)
+
+
 # Common Functions
 
 - Logit function: https://en.wikipedia.org/wiki/Logit
