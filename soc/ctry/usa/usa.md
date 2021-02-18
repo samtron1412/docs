@@ -775,6 +775,10 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 
 - Filibuster: https://en.wikipedia.org/wiki/Filibuster
 
+# Laws
+
+- Federal laws: https://www.law.cornell.edu/
+
 # Health Care
 
 ## Types of health care providers
