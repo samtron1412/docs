@@ -70,7 +70,7 @@ values in the extreme categories.
 - we can determine the percentages of cases that fall within each
   segment of the distribution.
 - the properties of the normal distribution can also be used to describe
-  the distance between a value and the mean -> applying in inferential
+  the distance between a value and the mean, applying in inferential
   statistics
 
 ## To Relate
@@ -94,8 +94,8 @@ individual's value on two variables.
 ### The Correlation Coefficient: Calculating the Relationship Between Two Variables
 
 The correlation coefficient (r)
-- positive correlation: 0 <= r <= +1
-- negative correlation: -1 <= r <= 0
+- positive correlation: `0 <= r <= +1`
+- negative correlation: `-1 <= r <= 0`
 
 | Size of Correlation | Interpretation                  |
 | -                   | -                               |
@@ -112,7 +112,7 @@ An important use of correlational statistics is prediction
   based up on values of the other variable.
 - The process of prediction
     + Developing a mathematical equation that incorporates the paired
-      sets of scores on the two variables obtained in the study ->
+      sets of scores on the two variables obtained in the study -
       regression lines
     + The higher correlation,, the better the prediction
 
