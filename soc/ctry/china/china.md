@@ -2,6 +2,10 @@
 
 # Overview
 
+- Intellectual Properties
+- Corporate Espionage
+- Academia
+
 # Chinese Classics (pre-Qin texts, before unification)
 
 ## Before 221 BC
