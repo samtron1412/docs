@@ -108,6 +108,9 @@ This demonstrate that you can use the Animal variable  without actually
 knowing that it contains an object of the subclass. This is very useful
 when you have multiple subclasses of the superclass.
 
+- Overloading: methods have the same name but different signatures
+- Overriding: methods have the same signature
+
 ### Method overriding
 
 A subclass can define a behavior that's specific to the subclass type,
