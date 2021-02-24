@@ -7,8 +7,8 @@
 Java is a general-purpose computer programming language that is
 **concurrent**, **class- based**, **object-oriented**, and specifically
 designed to have *as few implementation dependencies as possible*.
-- It is intended to let application developers "**write once, run
-  anywhere**" (WORA), meaning that code that runs on one platform does
+- It is intended to let application developers "write once, run
+  anywhere" (WORA), meaning that code that runs on one platform does
   not need to be recompiled to run on another.
 - Java applications are typically compiled to bytecode (class file) that
   can run on any Java Virtual Machine (JVM) regardless of computer
@@ -62,11 +62,11 @@ libraries were developed by Sun.
 
 There were five primary goals in the creation of the Java language:
 
-1. It should be "**simple, object-oriented and familiar**"
-2. It should be "**robust and secure**"
-3. It should be "**architecture-neutral and portable**"
-4. It should execute with "**high performance**"
-5. It should be "**interpreted, threaded, and dynamic**"
+1. It should be **simple, object-oriented and familiar**
+2. It should be **robust and secure**
+3. It should be **architecture-neutral and portable**
+4. It should execute with **high performance**
+5. It should be **interpreted, threaded, and dynamic**
 
 ## Community
 
@@ -90,7 +90,7 @@ Something
 
 # The Java Technology
 
-Java code ==compiler==> Java bytecode ==JVM==> machine code
+`Java code ==compiler==> Java bytecode ==JVM==> machine code`
 
 ## [Platform](http://docs.oracle.com/javase/8/docs/index.html)
 
@@ -328,7 +328,7 @@ no longer in use.
 - All packages should be in the form: `com.domain.department.project`
 - All is lowercase
 - In one level, if it is multiple words, these words should run together
-  with no separating space or other character (-, _).
+  with no separating space or other character `(-, _).`
     + GOOD: `com.nasa.jpl.userinterface` or `com.nasa.jpl.ui`
     + BAD: `com.nasa.jpl.user_interface`
 
@@ -503,7 +503,7 @@ mutators (getters and setters)
 #### Place Constants on Left Side of Expressions
 
 - Avoid compiling the wrong code since assigning to constant is compiled
-  error => easy to detect the error
+  error, so easy to detect the error
 
 #### Optimization vs Abstraction
 
@@ -1286,14 +1286,14 @@ choose them.
 Mathematical methods
 
 | Method            | Returns                      | Method            | Returns                      |
-| -                 | -                            | -                 | -                            |
+|-------------------|------------------------------|-------------------|------------------------------|
 | Math.sqrt(x)      | Square root of x             | Math .abs(x)      | Absolute value               |
 | Math.pow(x, y)    | x to the y                   | Math.max(x, y)    | The larger                   |
 | Math.sin(x)       | Sine of x (radian)           | Math.min(x, y)    | The smaller                  |
 | Math.cos(x)       | Cosine                       | Math.exp(x)       | e to the x                   |
 | Math.tan(x)       | Tangent                      | Math.log(x)       | Natural log                  |
 | Math.round(x)     | Closest integer              | Math.log10(x)     | Decimal log                  |
-| Math.ceil(x)      | Smallest integer >= x        | Math.floor(x)     | Largest integer <= x         |
+| Math.ceil(x)      | Smallest integer &geq; x     | Math.floor(x)     | Largest integer &leq; x      |
 | Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
 
 ## String
