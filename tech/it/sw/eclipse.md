@@ -3,9 +3,7 @@
 # Overview
 
 
-# Tutorial
-
-## Plugins
+# Plugins
 
 - StartExplorer
 - Eclipse Color theme
@@ -14,9 +12,9 @@
 - Vrapper
 - Eclipse Quicksearch
 
-## Keyboard Shortcuts
+# Keyboard Shortcuts
 
-### Eclipse Shortcut for Quick Navigation
+## Eclipse Shortcut for Quick Navigation
 
 In this section we will see some eclipse keyboard shortcut which helps
 to quickly navigate within file and between file while reading and
@@ -46,7 +44,7 @@ workspace and doesn’t dig at jar level.
 24) Go to a type declaration: **F3**, This Eclipse shortcut is very useful to see function definition very quickly.
 - **CTRL + SHIFT + >** : GO TO MATCHING TAG
 
-### Eclipse Shortcut for Editing Code
+## Eclipse Shortcut for Editing Code
 
 These Eclipse shortcuts are very helpful for editing code in Eclipse.
 
@@ -74,7 +72,7 @@ import all dependencies.
 18) **Ctrl + D** to delete a line
 19) **Ctrl + Q** for going to last edited place
 
-### Miscellaneous Eclipse Shortcuts
+## Miscellaneous Eclipse Shortcuts
 
 These are different Eclipse keyboard shortcuts which doesn’t fit on any category but quite helpful and make life very easy while working in Eclipse.
 
@@ -88,16 +86,12 @@ These are different Eclipse keyboard shortcuts which doesn’t fit on any catego
 28) CTRL+SHIFT+P to find closing brace. Place the cursor at opening brace and use this.
 29) Alt+Shift+X, Q to run Ant build file using keyboard shortcuts in Eclipse.
 30) Ctrl + Shift +F for Autoformating.
-31) Maximize active view or editor: `Ctrl + M`
+31) Maximize active view or editor: Ctrl + M
 
-# Jar
 
-## Export runnable jars with resources such as images
+# Project structure
 
-### The resouces in src
-
-#### File structure
-
+```
 repo
 - src
     + pkg1
@@ -105,37 +99,25 @@ repo
         * Something.java
     + pkg2
         * Hey.java
-    + resources
-        * icon.png
+- resources
+    + icon.png
+```
 
-#### Code
-
+- Get resources
 ```java
 URL url = Main.class.getResource("/resources/icon.png");
 ```
 
-#### Export to a runnable jar file
+# Tips and Tricks
 
-### The resources in root project folder
+## Generate source code
 
-#### File structure
+- Source - Generate ...
+- Generate Getters, Setters: alt + shift + s, r
+    + Rename: alt + shift + r
+    + Delete: alt + shift + q, o
 
-repo
-- src
-    + pkg1
-        * Main.java
-- resources
-    + icon.png
-
-#### Code
-
-```java
-URL url = Main.class.getResource("/icon.png");
-```
-
-#### Export to a runnable jar file
-
-## Different options of runnable jar library handling
+## Different options of exporting runnable jar library handling
 
 1. **Extract required libraries into JAR** - Extracts the actual .class
    files from the libraries your app uses and puts those .class files
