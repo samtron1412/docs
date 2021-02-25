@@ -4,12 +4,7 @@
 
 ## Introduction
 
-Java is a general-purpose computer programming language that is
-**concurrent**, **class- based**, **object-oriented**, and specifically
-designed to have *as few implementation dependencies as possible*.
-- It is intended to let application developers "write once, run
-  anywhere" (WORA), meaning that code that runs on one platform does
-  not need to be recompiled to run on another.
+- Goal: write once, run everywhere (WORA)
 - Java applications are typically compiled to bytecode (class file) that
   can run on any Java Virtual Machine (JVM) regardless of computer
   architecture.
@@ -45,18 +40,16 @@ libraries were developed by Sun.
 - On April 2, 2010, James Gosling resigned from Oracle.
 - In January 2016, Oracle announced that Java runtime environments based
   on JDK 9 will discontinue the browser plugin.
-
-### Versions
-
-- JDK 1.0 (January 21, 1996)
-- JDK 1.1 (February 19, 1997)
-- J2SE 1.2 (December 8, 1998)
-- J2SE 1.3 (May 8, 2000)
-- J2SE 1.4 (February 6, 2002)
-- J2SE 5.0 (September 30, 2004)
-- Java SE 6 (December 11, 2006)
-- Java SE 7 (July 28, 2011)
-- Java SE 8 (March 18, 2014)
+- Versions
+    + JDK 1.0 (January 21, 1996)
+    + JDK 1.1 (February 19, 1997)
+    + J2SE 1.2 (December 8, 1998)
+    + J2SE 1.3 (May 8, 2000)
+    + J2SE 1.4 (February 6, 2002)
+    + J2SE 5.0 (September 30, 2004)
+    + Java SE 6 (December 11, 2006)
+    + Java SE 7 (July 28, 2011)
+    + Java SE 8 (March 18, 2014)
 
 ## Principles
 
@@ -70,60 +63,34 @@ There were five primary goals in the creation of the Java language:
 
 ## Community
 
-### [Java Community](https://www.java.net/)
-
-Java.net is a large community of Java developers and their projects. We
-welcome anyone interested in Java, related **JVM** technologies, and
-education to our discussions and projects.
-
-### Java Community Process ([JCP](https://www.jcp.org))
-
-The JCP is the mechanism for developing standard technical
-specifications for Java technology.
-
+- https://www.java.net/
+    + Java.net is a large community of Java developers and their
+      projects. We welcome anyone interested in Java, related **JVM**
+      technologies, and education to our discussions and projects.
+- https://www.jcp.org
+    + The JCP is the mechanism for developing standard technical
+      specifications for Java technology.
 
 ## Resources
 
-### Books
+- Books
+  + Something
 
-Something
+# Platform
 
-# The Java Technology
+## Introduction
 
-`Java code ==compiler==> Java bytecode ==JVM==> machine code`
+- **Standardized libraries** provide a generic way to access
+  host-specific features such as *graphics*, *threading*, and
+  *networking*.
 
-## [Platform](http://docs.oracle.com/javase/8/docs/index.html)
-
-### Introduction
-
-One characteristic of Java is **portability**, which means that computer
-programs written in the Java language must run similarly on any hardware
-/operating-system platform. This is achieved by compiling the Java
-language code to an intermediate representation called *Java bytecode*,
-instead of directly to platform-specific machine code. Java bytecode
-instructions are analogous to machine code, but they are intended to be
-interpreted by a virtual machine (VM) written specifically for the host
-hardware. End-users commonly use a *Java Runtime Environment* (JRE)
-installed on their own machine for standalone Java applications, or in a
-web browser for Java *applets*.
-
-**Standardized libraries** provide a generic way to access host-specific
-features such as *graphics*, *threading*, and *networking*.
-
-The **Java platform** is the name for *a bundle of related programs*
-from Sun that *allow for developing and running programs written in the
-Java programming language*. The platform is not specific to any one
-processor or operating system, but rather *an execution engine* (called
-a virtual machine) and *a compiler* with *a set of libraries* that are
-implemented for various hardware and operating systems so that Java
-programs can run identically on all of them. Each platform have:
-
-- Java compiler: Java source code -> Java bytecode
-- Java Runtime Environment (JRE - Java Virtual Machine): Java bytecode -> machine code
+Each platform includes:
+- Java compiler: Java source code to Java bytecode
+- Java Virtual Machine (JVM): Java bytecode to machine code
+  (interpreter)
 - The libraries (API)
 
 Main platforms:
-
 - [Java Card](http://en.wikipedia.org/wiki/Java_Card): A technology that
   allows small Java-based applications (*applets*) to be run securely on
   smart cards and similar small-memory devices.
@@ -139,7 +106,7 @@ Main platforms:
   (Enterprise Edition): Java SE plus various APIs useful for *multi-tier
   client–server enterprise applications*.
 
-### Implementations
+## Implementations
 
 [Oracle Corporation](http://en.wikipedia.org/wiki/Oracle_Corporation) is
 the current owner of the official implementation of the Java SE
@@ -169,7 +136,7 @@ SE implementation that is licensed under the GPL. The implementation
 started when Sun began releasing the Java source code under the GPL. As
 of Java SE 7, OpenJDK is the official Java reference implementation.
 
-### Performance
+## Performance
 
 Programs written in Java have a reputation for being slower and
 requiring more memory than those written in C++. However, Java programs'
@@ -182,7 +149,7 @@ Java virtual machine, and ARM based processors can have hardware support
 for executing Java bytecode through their
 [Jazelle](http://en.wikipedia.org/wiki/Jazelle) option.
 
-### Java Bytecode
+## Java Bytecode
 
 Java bytecode is the [instruction
 set](http://en.wikipedia.org/wiki/Instruction_set) of the [Java virtual
@@ -199,11 +166,7 @@ aside as permanently unimplemented.
 Java compiler helps the Java programmer in the same way that knowledge
 of assembly helps the C or C++ programmer."
 
-#### Instructions
-
-#### Model of computation
-
-### Java Virtual Machine ([JVM](http://en.wikipedia.org/wiki/Java_virtual_machine))
+## Java Virtual Machine ([JVM](http://en.wikipedia.org/wiki/Java_virtual_machine))
 
 A **Java virtual machine** (JVM) is a [process virtual machine](http://e
 n.wikipedia.org/wiki/Virtual_machine#Process_virtual_machines) that can
@@ -220,13 +183,13 @@ compiling, not interpreting, to achieve greater speed.
   <img src="javaFigures/Java_virtual_machine_architecture.svg" alt="jvm" title="jvm">
 </figure>
 
-### Java Runtime Environment ([JRE](http://www.java.com/))
+## Java Runtime Environment ([JRE](http://www.java.com/))
 
 JRE = JIT compiler + JVM
 
 Java Bytecode -> JRE -> Machine code
 
-### Java Standard Edition ([Java SE](http://www.oracle.com/technetwork/java/javase/index.html))
+## Java Standard Edition ([Java SE](http://www.oracle.com/technetwork/java/javase/index.html))
 
 Java Platform, Standard Edition or Java SE is a widely used platform for
 development and deployment of portable applications for desktop and
@@ -242,7 +205,7 @@ is Oracle Corporation's Java Development Kit (JDK).
 - [Open source implementation of Java SE](http://openjdk.java.net/)
 - [Documentation](http://docs.oracle.com/javase/8/)
 
-### Java Enterprise Edition ([Java EE](http://www.oracle.com/technetwork/java/javaee/index.html))
+## Java Enterprise Edition ([Java EE](http://www.oracle.com/technetwork/java/javaee/index.html))
 
 Java Platform, Enterprise Edition or Java EE is Oracle's enterprise Java
 computing platform. The platform provides an API and runtime environment
@@ -260,9 +223,9 @@ the platform defaults.
 
 - [Documentation](http://docs.oracle.com/javaee/)
 
-### Java Embedded
+## Java Embedded
 
-#### Java Micro Edition ([Java ME](http://www.oracle.com/technetwork/java/javame/index.html))
+### Java Micro Edition ([Java ME](http://www.oracle.com/technetwork/java/javame/index.html))
 
 Java Platform, Micro Edition, or Java ME, is a Java platform designed
 for embedded systems (mobile devices are one kind of such systems).
@@ -272,7 +235,7 @@ known as Java 2 Platform, Micro Edition (J2ME).
 
 - [Documentation](http://docs.oracle.com/javame/)
 
-#### [Java Card](http://en.wikipedia.org/wiki/Java_Card)
+### [Java Card](http://en.wikipedia.org/wiki/Java_Card)
 
 Java Card refers to a software technology that allows Java-based
 applications (applets) to be run securely on smart cards and similar
@@ -1371,40 +1334,24 @@ for (int i = 0; i < a.lenght; i++)
 }
 ```
 
-### Array List
-
-- Array lists can grow and shrink as needed.
-- The ArrayList class supplies methods for common tasks, such as
-  inserting and removing elements.
-
-```java
-import java.util.ArrayList
-
-ArrayList<String> friends = new ArrayList<String>();
-friends.add("Cindy");
-String name = friends.get(i);
-friends.set(i, "Harry");
-
-// yields two references to the same array list
-ArrayList<String> friends = names;
-
-// copy array lists
-ArrayList<String> newNames = new ArrayList<String>(names);
-
-// Wrappers and auto-boxing
-ArrayList<double>   // WRONG
-ArrayList<Double> values = new ArrayList<Double>();
-```
-
-
-## Collection Framework
+## Collections Framework
 
 - https://en.wikipedia.org/wiki/Java_collections_framework
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/doc-files/coll-overview.html
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/doc-files/coll-reference.html
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html
 
-## ArrayList
+- Iterable (interface)
+    + Collection (interface)
+        + List (interface)
+        + Queue (interface)
+        + Set (interface)
+
+### Array List
+
+- Array lists can grow and shrink as needed.
+- The ArrayList class supplies methods for common tasks, such as
+  inserting and removing elements.
 
 ArrayList are created with an initial size, but when this size is
 exceeded, the collection is automatically enlarged.
@@ -1443,10 +1390,29 @@ public class MyClass {
 // Output: [Red, Blue, Orange]
 ```
 
+```java
+import java.util.ArrayList
+
+ArrayList<String> friends = new ArrayList<String>();
+friends.add("Cindy");
+String name = friends.get(i);
+friends.set(i, "Harry");
+
+// yields two references to the same array list
+ArrayList<String> friends = names;
+
+// copy array lists
+ArrayList<String> newNames = new ArrayList<String>(names);
+
+// Wrappers and auto-boxing
+ArrayList<double>   // WRONG
+ArrayList<Double> values = new ArrayList<Double>();
+```
+
 Useful methods:
 
 | Name           | Description                                               |
-| -              | -                                                         |
+|----------------|-----------------------------------------------------------|
 | add(obj)       | Add a new object to the ArrayList                         |
 | remove(obj)    | Remove an object from the ArrayList                       |
 | contains()     | Returns true if the list contains the specified element   |
@@ -1454,7 +1420,7 @@ Useful methods:
 | size()         | Returns the number of elements in the list                |
 | clear()        | Removes all the elements from the list                    |
 
-## LinkedList
+### LinkedList
 
 ```java
 import java.util.LinkedList;
@@ -1479,7 +1445,7 @@ Summary:
 - Use a LinkedList when you need to make a large number of inserts
   and/or deletes.
 
-## HashMap
+### HashMap
 
 Arrays and Lists store elements as ordered collections, with each
 elements given an integer index.
@@ -1510,7 +1476,7 @@ that already exists overwrites the old element.
 - It you try to get a value that is not present in you map, it returns
   the value of null.
 
-## Sets
+### Sets
 
 A Set is a collection that cannot contain duplicate elements. It models
 the mathematical set abstraction.
@@ -1536,7 +1502,7 @@ elements as they are added. To order the elements, use a LinkedHashSet,
 which maintains a linked list of the set's elements in the order in
 which they were inserted.
 
-## Collection class
+### Collections class
 
 ```java
 import java.util.Collections;
@@ -1556,7 +1522,7 @@ public class MyClass {
 
 - sort, max, min, reverse, shuffle
 
-## Iterators
+# Iterators
 
 An Iterator is an object that enables to cycle through a collection,
 obtain or remove elements.
@@ -1707,7 +1673,7 @@ You can access the superclass from the subclass using the `super`
 keyword. For example, `super.var` accesses the var member of the
 superclass.
 
-#### Anonymous classes
+## Anonymous classes
 
 Anonymous classes are a way to extend the existing classes on the fly.
 - The modification is applicable only to the current object, and not the
@@ -1808,7 +1774,7 @@ as method overloading.
 
 In Java, abstraction is achieved using abstract classes and interfaces.
 
-#### Abstract classes
+### Abstract classes
 
 An abstract class is defined using the `abstract` keyword.
 - If a class is declared abstract it cannot be instantiated (you cannot
@@ -1839,7 +1805,7 @@ sounds to the subclasses.
 - This is used when there is no meaningful for the method in the
   superclass.
 
-#### Interfaces
+### Interfaces
 
 An interface is a completely abstract class that contains only abstract
 methods.
@@ -1881,10 +1847,11 @@ interfaces!
 >When you implement an interface, you need to override all of its
 methods.
 
-## Nesting classes - Inner classes
+## Nesting classes
 
-Java supports nesting classes; a class can be a member of another class.
-- Inner classes can be private.
+- Nesting classes
+    + Static nesting classes
+    + Non-static nesting classes (inner classes)
 
 ## The equals() method
 
@@ -1925,6 +1892,7 @@ class Animal {
   }
 }
 ```
+
 
 The automatically generated hashCode() method is used to determine where
 to store the object internally.
