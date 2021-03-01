@@ -286,6 +286,13 @@ no longer in use.
 
 ### Naming Conventions
 
+- Naming Rules for identifiers
+    + Can be any unlimited-length sequence of Unicode letters and digits
+      (only letters and digits not special characters such as `&`),
+      beginning with a letter, or the dollar sign `$`, or the underscore
+      character `_`.
+    + It does not have the same spelling as preserved/key words
+
 #### Package Names
 
 - All packages should be in the form: `com.domain.department.project`
@@ -1261,6 +1268,19 @@ Mathematical methods
 
 ## String
 
+### Types
+
+- String: immutable character sequences
+- StringBuffer: mutable character sequences, thread-safe
+- StringBuilder: mutable character sequences, single thread
+
+### Declaration and initialization
+
+```java
+String str1 = "Hello World!";
+String str2 = new String("Hello World");
+```
+
 ### String operations
 
 | Statement                                                | Result               | Comment                                                                                                                                |
@@ -2053,8 +2073,9 @@ System.out.printf("%10.2f", price);
 System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
 ```
 
+```
 | Format String  | Sample Output  | Comments                                                                              |
-| -              | -              | -                                                                                     |
+|----------------|----------------|---------------------------------------------------------------------------------------|
 | "%d"           | 24             | Use d with an integer                                                                 |
 | "%5d"          | ___24          | Spaces are added so that the field width is 5                                         |
 | "Quantity:%5d" | Quantity:   24 | Characters inside a format string but outside a format specifier appear in the output |
@@ -2063,6 +2084,7 @@ System.out.printf("Quantity: %d Total: %10.2f", quantity, total);
 | "%7.2f"        | ___1.22        | Spaces are added so that the field width is 7                                         |
 | "%s"           | Hello          | Use s with a string                                                                   |
 | "%d %.2f"      | 24 1.22        | You can format multiple values at once                                                |
+```
 
 ### Using Dialog Boxes
 
