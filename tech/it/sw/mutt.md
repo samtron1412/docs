@@ -12,6 +12,19 @@ wish to use external applications to extend Mutt's capabilities.
 
 - [Manual](http://www.mutt.org/doc/manual/)
 - `man mutt` and `man muttrc`
+- https://github.com/neomutt/neomutt
+
+- macOS
+    + https://medium.com/@stessyco/gmail-from-the-command-line-with-mutt-mac-os-x-92d047bcd74f
+    + https://annvix.com/using_mutt_on_os_x
+    + https://webgefrickel.de/blog/tagged-with/mutt
+    + https://medium.com/@zilOg/mutt-on-macos-6bb24df37b08
+    + https://gist.github.com/facundofarias/4cd548ea81e4edbeabf045f01bbad39c
+    + Schedule send:
+        * https://github.com/marlam/msmtp-mirror/tree/master/scripts/msmtpqueue
+        * https://unix.stackexchange.com/questions/310451/how-do-i-send-mutt-postponed-mail-at-a-later-time
+        * https://hroy.eu/tips/mutt/delaySending/
+        * https://brianbuccola.com/scheduling-emails-with-at-and-mutt/
 
 
 ## Core concepts
