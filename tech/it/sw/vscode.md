@@ -2,6 +2,19 @@
 
 # Overview
 
+- live server
+- html, css, JavaScript
+
+# Shortcuts
+
+- macOS
+    + `shift + cmd + p`: search commands
+    + `cmd + p`: search files, `:` go to line, `@` go to symbols
+    + `shift + cmd + .`: dropdown for the last breadcrumb
+    + `shift + cmd + ;`: select the last breadcrumb without dropdrown
+    + `shift + cmd + o`: navigate between symbols inside a file
+    + `cmd + t`: open symbols by names across files
+    + `cmd + f12`: jumping to the implementation of the symbol
 
 # References
 
