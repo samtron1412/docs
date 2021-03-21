@@ -9,48 +9,6 @@
   can run on any Java Virtual Machine (JVM) regardless of computer
   architecture.
 
-## History
-
-James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java
-language project in June 1991.
-- Java was originally designed for interactive television, but it was
-  too advanced for the digital cable television industry at the time.
-- The language was initially called Oak after an oak tree that stood
-  outside Gosling's office.
-- Later the project went by the name Green and was finally renamed Java,
-  from Java coffee.
-- Gosling designed Java with a C/C++ style syntax that system and
-  application programmers would find familiar
-
-Released in 1995, implement by C and C++. The original and reference
-implementation Java **compilers**, **virtual machines**, and class
-libraries were developed by Sun.
-- Major web browsers soon incorporated the ability to run Java applets
-  within web pages, and Java quickly became popular.
-- Java 2 had multiple configurations built for different types of
-  platforms
-    + J2EE included technologies and APIs for enterprise applications
-      typically run in server environments.
-    + J2ME featured APIs optimized for mobile applications.
-    + J2SE is the desktop version.
-    + In 2006, J2 versions renamed as Java EE, Java ME, and Java SE.
-- As of May 2007, in compliance with the specifications of the [Java
-  Community Process](https://www.jcp.org), Sun relicensed most of its
-  Java technologies under the GNU General Public License.
-- On April 2, 2010, James Gosling resigned from Oracle.
-- In January 2016, Oracle announced that Java runtime environments based
-  on JDK 9 will discontinue the browser plugin.
-- Versions
-    + JDK 1.0 (January 21, 1996)
-    + JDK 1.1 (February 19, 1997)
-    + J2SE 1.2 (December 8, 1998)
-    + J2SE 1.3 (May 8, 2000)
-    + J2SE 1.4 (February 6, 2002)
-    + J2SE 5.0 (September 30, 2004)
-    + Java SE 6 (December 11, 2006)
-    + Java SE 7 (July 28, 2011)
-    + Java SE 8 (March 18, 2014)
-
 ## Principles
 
 There were five primary goals in the creation of the Java language:
@@ -61,20 +19,17 @@ There were five primary goals in the creation of the Java language:
 4. It should execute with **high performance**
 5. It should be **interpreted, threaded, and dynamic**
 
-## Community
-
-- https://www.java.net/
-    + Java.net is a large community of Java developers and their
-      projects. We welcome anyone interested in Java, related **JVM**
-      technologies, and education to our discussions and projects.
-- https://www.jcp.org
-    + The JCP is the mechanism for developing standard technical
-      specifications for Java technology.
-
 ## Resources
 
 - Books
-  + Something
+    + Something
+- Specifications
+    + Java/Jakarta EE:
+        * Java EE 8: https://www.oracle.com/java/technologies/java-ee-8.html
+        * Jakarta EE: https://jakarta.ee/specifications/
+    + Java SE: https://docs.oracle.com/javase/specs/
+- Java/Jakarta EE Web technologies
+    + https://en.wikipedia.org/wiki/Jakarta_EE#Web_profile
 
 # Platform
 
@@ -108,17 +63,6 @@ Main platforms:
 
 ## Implementations
 
-[Oracle Corporation](http://en.wikipedia.org/wiki/Oracle_Corporation) is
-the current owner of the official implementation of the Java SE
-platform, following their acquisition of [Sun
-Microsystems](http://en.wikipedia.org/wiki/Sun_Microsystems) on January
-27, 2010.
-
-Because Java lacks any formal standardization recognized by *Ecma
-International, ISO/IEC, ANSI, or other third-party standards
-organization*, the Oracle implementation is the [de facto
-standard](http://en.wikipedia.org/wiki/De_facto_standard).
-
 The Oracle implementation is packaged into two different distributions:
 
 - **The Java Runtime Environment** (JRE) which contains the parts of the
@@ -135,19 +79,6 @@ The Oracle implementation is packaged into two different distributions:
 SE implementation that is licensed under the GPL. The implementation
 started when Sun began releasing the Java source code under the GPL. As
 of Java SE 7, OpenJDK is the official Java reference implementation.
-
-## Performance
-
-Programs written in Java have a reputation for being slower and
-requiring more memory than those written in C++. However, Java programs'
-execution speed improved significantly with the introduction of Just-in-
-time compilation in 1997/1998 for Java 1.1
-
-Some platforms offer direct hardware support for Java; there are
-microcontrollers that can run Java in hardware instead of a software
-Java virtual machine, and ARM based processors can have hardware support
-for executing Java bytecode through their
-[Jazelle](http://en.wikipedia.org/wiki/Jazelle) option.
 
 ## Java Bytecode
 
@@ -177,11 +108,7 @@ platform](http://en.wikipedia.org/wiki/Java_platform).
 JVMs use [JIT](http://en.wikipedia.org/wiki/Just-in-time_compilation)
 compiling, not interpreting, to achieve greater speed.
 
-<figure>
-  <figcaption style="text-align:center;">Overview of a Java virtual machine (JVM) architecture. Source code is compiled to Java bytecode, which is verified, interpreted or JIT-compiled for the native architecture. The Java APIs and JVM together make up the Java Runtime Environment (JRE).</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img src="javaFigures/Java_virtual_machine_architecture.svg" alt="jvm" title="jvm">
-</figure>
+![JVM architecture](https://upload.wikimedia.org/wikipedia/commons/d/dd/JvmSpec7.png)
 
 ## Java Runtime Environment ([JRE](http://www.java.com/))
 
@@ -191,37 +118,28 @@ Java Bytecode -> JRE -> Machine code
 
 ## Java Standard Edition ([Java SE](http://www.oracle.com/technetwork/java/javase/index.html))
 
-Java Platform, Standard Edition or Java SE is a widely used platform for
-development and deployment of portable applications for desktop and
-server environments.[1] Java SE uses the object-oriented Java
-programming language. Strictly speaking, Java SE is a platform
-specification. It defines a wide range of general purpose APIs—such as
-Java APIs for the Java Class Library[citation needed]—and also includes
-the Java Language Specification and the Java Virtual Machine
-Specification.[2] One of the most well-known implementations of Java SE
-is Oracle Corporation's Java Development Kit (JDK).
-
-- [JDK Oracle implementation of Java SE](http://www.oracle.com/technetwork/java/javase/overview/index.html)
-- [Open source implementation of Java SE](http://openjdk.java.net/)
-- [Documentation](http://docs.oracle.com/javase/8/)
+- Java Platform, Standard Edition or Java SE is a widely used platform
+  for development and deployment of portable applications for desktop
+  and server environments.
+- Strictly speaking, Java SE is a platform specification. It defines a
+  wide range of general purpose APIs—such as Java APIs for the Java
+  Class Library[citation needed]—and also includes the Java Language
+  Specification and the Java Virtual Machine Specification.
 
 ## Java Enterprise Edition ([Java EE](http://www.oracle.com/technetwork/java/javaee/index.html))
 
-Java Platform, Enterprise Edition or Java EE is Oracle's enterprise Java
-computing platform. The platform provides an API and runtime environment
-for developing and running enterprise software, including network and
-web services, and other large-scale, multi-tiered, scalable, reliable,
-and secure network applications. Java EE extends the Java Platform,
-Standard Edition (Java SE),[1] providing an API for object-relational
-mapping, distributed and multi-tier architectures, and web services. The
-platform incorporates a design based largely on modular components
-running on an application server. Software for Java EE is primarily
-developed in the Java programming language. The platform emphasizes
-Convention over configuration[2] and annotations for configuration.
-Optionally XML can be used to override annotations or to deviate from
-the platform defaults.
-
-- [Documentation](http://docs.oracle.com/javaee/)
+- The platform provides an API and runtime environment for developing
+  and running enterprise software, including network and web services,
+  and other large-scale, multi-tiered, scalable, reliable, and secure
+  network applications.
+- Java EE extends the Java Platform, Standard Edition (Java SE),
+  providing an API for object-relational mapping, distributed and
+  multi-tier architectures, and web services.
+- The platform incorporates a design based largely on modular components
+  running on an application server. The platform emphasizes Convention
+  over configuration and annotations for configuration.
+- Optionally XML can be used to override annotations or to deviate from
+  the platform defaults.
 
 ## Java Embedded
 
@@ -233,8 +151,6 @@ Target devices range from industrial controls to mobile phones
 (especially feature phones) and set-top boxes. Java ME was formerly
 known as Java 2 Platform, Micro Edition (J2ME).
 
-- [Documentation](http://docs.oracle.com/javame/)
-
 ### [Java Card](http://en.wikipedia.org/wiki/Java_Card)
 
 Java Card refers to a software technology that allows Java-based
@@ -243,42 +159,6 @@ small memory footprint devices. Java Card is the tiniest of Java
 platforms targeted for embedded devices. Java Card gives the user the
 ability to program the devices and make them application specific. It is
 widely used in SIM cards (used in GSM mobile phones) and ATM cards.
-
-
-## Automatic memory management
-
-Java uses an automatic garbage collector to manage memory in the object
-lifecycle. The programmer determines when objects are created, and the
-Java runtime is responsible for recovering the memory once objects are
-no longer in use.
-
-## What can Java technology can do?
-
-- **Development Tools**: The development tools provide everything you'll
-  need for compiling, running, monitoring, debugging, and documenting
-  your applications. As a new developer, the main tools you'll be using
-  are the *javac* compiler, the *java* launcher, and the *javadoc*
-  documentation tool.
-
-- **Application Programming Interface (API)**: The API provides the core
-  functionality of the Java programming language. It offers a wide array
-  of useful classes ready for use in your own applications. It spans
-  everything from basic objects, to networking and security, to XML
-  generation and database access, and more.
-
-- **Deployment Technologies**: The JDK software provides standard
-  mechanisms such as the Java Web Start software and Java Plug-In
-  software for deploying your applications to end users.
-
-- **User Interface Toolkits**: The *JavaFX*, *Swing*, and *Java 2D*
-  toolkits make it possible to create sophisticated Graphical User
-  Interfaces (GUIs).
-
-- **Integration Libraries**: Integration libraries such as the Java IDL
-  API, JDBC API, Java Naming and Directory Interface (JNDI) API, Java
-  RMI, and Java Remote Method Invocation over Internet Inter-ORB
-  Protocol Technology (Java RMI-IIOP Technology) enable database access
-  and manipulation of remote objects.
 
 # Practices
 
@@ -447,6 +327,9 @@ mutators (getters and setters)
 - To make for more readable code, types used in code should be imported
   rather than fully qualifying the class name.
 - Import only those classes necessary, not using `*`
+- Import a package will import all classes and interfaces in that
+  packages excluding sub-packages
+    + You need to import sub-packages separately
 
 #### Methods
 
@@ -1800,6 +1683,7 @@ An abstract class is defined using the `abstract` keyword.
 - If a class is declared abstract it cannot be instantiated (you cannot
   create objects of that type).
 - To use a abstract class, you have to inherit it from another class.
+    + You cannot instantiate an object from an abstract class
 - Any class that contains an abstract method should be defined as
   abstract.
     + An abstract method is a method that is declared without an
@@ -1943,18 +1827,31 @@ down by framework extensions.
 
 ## [Servlet](https://en.wikipedia.org/wiki/Java_servlet)
 
-Java programming language program running on server, receive requests
-and can respond them.
+- Java program running on server, receive requests and can respond them.
 
-## [JSP](https://en.wikipedia.org/wiki/JavaServer_Pages)
+## [Java Server Pages - JSP](https://en.wikipedia.org/wiki/JavaServer_Pages)
 
-Create dynamically generated web pages based on HTML, XML.
+### Introduction to JSP
 
-To deploy and run JSP, a compatible web server with a servlet container,
-such as [Apache Tomcat](http://tomcat.apache.org/) or
-[Jetty](http://www.eclipse.org/jetty/).
+- Create dynamically generated web pages based on HTML, XML.
+    + Server-side programming technology
+    + JSP has access to all Java APIs (JDBC, JNDI, EJB, JAXP, etc)
+    + A part of Java EE
+- To deploy and run JSP, a compatible web server with a servlet
+  container, such as [Apache Tomcat](http://tomcat.apache.org/) or
+  [Jetty](http://www.eclipse.org/jetty/).
 
 ![Life of a JSP file](http://upload.wikimedia.org/wikipedia/commons/0/03/JSPLife.svg "Life of a JSP file")
+
+## Expression Language (EL)
+
+- Introduction to EL
+    + Access to Java Beans/Entities/Object components
+    + Arithmetic and  logical expressions
+    + Can use integers, floating point numbers, strings, built-in
+      constant true/false, and null
+- Simple Syntax
+    +
 
 ## Build Java project
 
@@ -1984,28 +1881,6 @@ the best practice is to fully automate all the steps with tools like
 
 ## Frameworks
 
-### [Playframework](https://www.playframework.com/)
-
-Make your changes and simply hit refresh!
-
-Inspired by Rails. A drawback is that it is not idiomatic when using
-Java, since it was written in Scala and that is its native language. It
-is not compatible with
-[Servlets](https://en.wikipedia.org/wiki/Java_servlet) Framework, so it
-can't be used with **Tomcat** or for "enterprise" deployments where an
-**application server** is needed.
-
-### [Dropwizard](http://www.dropwizard.io/)
-
-Developing ops-friendly, high-performance, RESTful web services.
-
-> Looks good for a pure REST API backend solution.
-
-### [Spark](http://sparkjava.com/)
-
-A tiny Sinatra inspired framework for creating web applications in Java
-8 with minimal effort.
-
 ### Spring
 
 MVC is popular and is compatible with the **Servlets Framework**.
@@ -2016,16 +1891,9 @@ is becoming less popular and doesn't work well with emedded web
 servers), or with Springs's new recommendation
 [Thymeleaf](http://www.thymeleaf.org/).
 
-### Struts
-
-
-### MyBatis
-
-SQL Mapping Framework for Java
-
 ### Hibernate
 
-
+- Something
 
 ## Testing
 
@@ -2044,7 +1912,7 @@ SQL Mapping Framework for Java
 
 ### Gradle
 
-# Tutorial
+# Tutorials
 
 ## Input and Output
 
@@ -2239,8 +2107,7 @@ exists, this will overwrite it.
 
 ## Working with time, timezone
 
-- https://github.com/JodaOrg/joda-time
-- http://www.joda.org/joda-time/
+- Using `java.time` APIs after Java SE 8
 
 ## Redirection of Input and Output
 
