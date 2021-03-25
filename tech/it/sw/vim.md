@@ -825,6 +825,14 @@ set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.7/Python
 - `:%bd` or `:%bd!`
 - Close all buffers but this one: `:%bd|e#`
 
+```vim
+" Close all buffers except the current buffer
+nnoremap <Leader>w :%bd <bar> e#<CR>
+
+" Close all buffers
+nnoremap <Leader>W :%bd<CR>
+```
+
 ## Logging every autocommands events in a log file
 
 - Create a `log-autocmds.vim` in `~/.vim/autoload/`
