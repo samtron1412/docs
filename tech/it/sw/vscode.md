@@ -16,6 +16,12 @@
     + `cmd + t`: open symbols by names across files
     + `cmd + f12`: jumping to the implementation of the symbol
 
+# Tips and tricks
+
+- Only add folders of the same project to a workspace
+    - Multiple projects in a workspace can interfere with linters and
+      other error checking tools
+
 # References
 
 [homepage]: https://code.visualstudio.com/?wt.mc_id=DX_841432
