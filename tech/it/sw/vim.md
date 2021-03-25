@@ -805,6 +805,12 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Camel case motion
+
+- Using `f/F/t/T<char>` to move to the next upper `<char>`
+- Using `;` to repeat the motion in forward direction
+- Using `,` to repeat the motion in backward direction
+
 ## Setting python version for Vim
 
 ```
