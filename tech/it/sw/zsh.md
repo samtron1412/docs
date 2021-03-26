@@ -163,12 +163,9 @@ Here, you can clear your terminal or any other resource setup at login.
 - `$GPG_TTY`
 - `$GPG_AGENT_INFO`
 
-# Plugins manager
+# Configuration frameworks
 
-## Manually manage plugins
-
-- Research more this option.
-- Potentially fastest.
+- It adds a layer of abstraction to ZSH configuration
 
 ## [oh-my-zsh](http://ohmyz.sh/)
 
@@ -177,9 +174,29 @@ details.
 - Add environment variables
 - Completion, git branches, correction, etc.
 
-## [antigen](https://github.com/zsh-users/antigen)
+## prezto
 
-## [zgen](https://github.com/tarjoilija/zgen)
+- https://github.com/sorin-ionescu/prezto
+
+# Plugin managers
+
+- It manages all plugins, including plugins in configuration frameworks
+  such as oh-my-zsh.
+
+## Manually manage plugins
+
+- Research more this option.
+- Potentially fastest.
+
+## zinit
+
+- https://github.com/zdharma/zinit
+
+## antigen
+
+- https://github.com/zsh-users/antigen
+
+## zplug
 
 # Plugins
 
@@ -375,9 +392,6 @@ print -l ${(@On)lines}
 
 - Run the following command:
     + `./sort_timings.zsh zsh_profile.abcd1234 | less`
-
-
-# Uninstallation
 
 # Tips and Tricks
 
