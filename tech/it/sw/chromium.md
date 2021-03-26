@@ -16,6 +16,25 @@
 
 - https://wiki.archlinux.org/index.php/Chromium/Tips_and_tricks
 
+## Delete all saved links in OneTab extension
+
+```javascript
+// execute the following code in JavaScript console
+function delete_single() {
+  for (clickable of clickables) {
+    if (!clickable || clickable.innerHTML !== "Delete all")
+      continue;
+    clickable.click();
+    return true;
+  }
+  return false;
+}
+window.confirm = function() { return true; }
+var clickables = document.getElementsByClassName("clickable");
+document.addEventListener('DOMNodeRemoved', delete_single, false);
+delete_single();
+```
+
 # References
 
 1. [Wikipedia - Chromium][1]
