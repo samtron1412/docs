@@ -421,6 +421,48 @@ export class CustomdirectiveDirective {
     + It is denoted by the symbol `|`
     + It takes numbers, strings, arrays and date as input and converts
       them in the required format to display it on browser.
+- To use pipes for `ngModel`, two-way data binding, we can use `ngModel`
+  and `ngModelChange` together
+
+```html
+
+```
+- Built-in pipes:
+    + String: LowerCasePipe (lowercase), UpperCasePipe (uppercase),
+      TitleCasePipe (titlecase), SlicePipe (slice: idx1:idx2)
+    + Number:
+        * DecimalPipe: `{{value_expr | number [:'digits']}}`
+            - `digits`: minDigits.minFractionDigits-maxFractionDigits
+            - `{{data | number: 2.2-4}}`
+        * PercentPipe: `{{value_expr | percent}}`
+        * CurrencyPipe: `{{value_expr | currency [:symbol:digits]}}`
+            - `{{data | currency:'symbol-narrow':2.2-2}}`
+        * DatePipe: `{{value_expr | date: 'shortDate'}}`
+    + Pipes can be chain together
+- Custom pipes
+    + `ng generate pipe <path/name>`
+    + Add custom pipe to AppModule: `import {CustompipePipe} from ...;`
+        * `declarations: [..., CustompipePipe, ...]`
+
+```typescript
+import { Pipe, PipeTransform } from '@angular/core';
+@Pipe({
+    name: 'custompipe'
+})
+export class CustompipePipe implements PipeTransform {
+    transform(value: any, ...args: any[]): any {
+        // implement pipe logic here
+        return null;
+    }
+}
+```
+
+- Pure vs. Impure Pipes
+    + Pure pipes get executed when it detects changes in the value
+      expression, if the value is an object, the changes of object's
+      properties do not trigger the pure pipes. We need impure pipes if
+      you want the pipes to get executed when the properties get
+      changing.
 
 # Routers
 
