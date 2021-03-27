@@ -328,9 +328,16 @@ export class serverComponent implements OnInit {}
     + Attribute directives:
         * `ngModel`: adds two-way data binding to an HTML form element
         * `ngStyle`: adds and removes a set of HTML styles
+            - used if want to change one style
+            - if want to change multiple styles, `ngClass` is best
         * `ngClass`: adds and removes a set of CSS classes
+            - value of `[ngClass]` can be a string, an object, or an
+              array
+        * Can have more than one attribute directive
     + Custom structural/attribute directives
         * You can create your own custom directives
+        * Can be use to integrate third-party libraries
+        * `ng generate directive <path/name>`
 - `*ngIf`
 
 ```html
@@ -347,7 +354,65 @@ export class serverComponent implements OnInit {}
 - `*ngFor`
 
 ```html
+<ul>
+    <ng-container *ngFor="let course of courses">
+        <li *ngIf="course.price < 20000">
+        {{course.name}}:{{course.price}}
+        </li>
+    </ng-container>
+</ul>
+```
 
+- `*ngSwitch`
+
+```html
+<div [ngSwitch]="courses">
+    <p *ngSwitchCase="'aws'">Aws Architect</p>
+    <p *ngSwitchCase="'angular'">Angular Certification Training</p>
+    <p *ngSwitchDefault="'RPA'">RPA Using UIpath</p>
+</div>
+```
+
+- `[ngClass]`
+
+```html
+<button [ngClass]="['btn', 'btn-primary']">
+<button [ngClass]="'btn btn-primary'">
+<button [ngClass]="{'btn': course.category === 'RPA', 'btn-primary': true}">
+```
+
+- `[ngStyle]`
+
+```html
+<input [(ngModel)]="color" />
+<button (click)="size = size + 1">+</button>
+<button (click)="size = size - 1">+</button>
+<div [ngStyle]="{'color': color, 'font-size': size + 'px'}"></div>
+```
+
+- A custom directive
+
+```typescript
+import { Directive, ElementRef, HostListener } from '@angular/core';
+@Directive({
+    selector: '[appCustomdirective]
+});
+export class CustomdirectiveDirective {
+    constructor(private elementRef: ElementRef) {}
+    @HostListener('mouseenter') onMouseEnter() {
+        this.elementRef.nativeElement.style.backgroundColor='grey';
+    }
+    @HostListener('mouseleave') onMouseLeave() {
+        this.elementRef.nativeElement.style.backgroundColor='';
+    }
+}
+```
+```html
+<ul>
+    <li *ngFor="let course of courses" appCustomdirective>
+    {{course.name}}
+    </li>
+</ul>
 ```
 
 # Pipes
