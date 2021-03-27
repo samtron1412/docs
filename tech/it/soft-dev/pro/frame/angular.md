@@ -2,6 +2,9 @@
 
 # Overview
 
+- React vs. Angular
+    + https://technostacks.com/blog/react-vs-angular
+
 - A client-side web development framework
 - Angular is a newer version of AngularJS
     + Angular uses TypeScript instead of JavaScript
@@ -113,7 +116,7 @@
     + `tslint.json`: application-specific TSLint configuration. TSLint
       is an tool that checks TypeScript code for readability,
       maintainability, and functionality errors.
-- Angular App BOotstrapping
+- Angular App Bootstrapping
     + `main.ts => AppModule => AppComponent`
     + `main.ts`: initializes the platform browser where the app will run
       and bootstrap AppModule
@@ -214,6 +217,8 @@ export class serverComponent implements OnInit {}
         * `<div app-element></div>`
     + `selector: '.app-element'`: can be used as a class
         * `<div class="app-element"></div>`
+    + `selector: '#app-element'`: can be used as an id
+        * `<div id="app-element"></div>`
 - Template
     + template: `<div> ... </div>`: HTML inside the back ticks
     + templateUrls: './app.component.html',
@@ -301,3 +306,136 @@ export class serverComponent implements OnInit {}
     + Services: when there is no parent child relation, we can use
       Angular service
     + Routes: switch from one view to the next as users perform tasks
+
+# Directives
+
+- Directives give instructions to change the DOM
+    + Extend HTML with new attributes
+    + Transform DOM according to instructions
+    + Appear within HTML tag
+    + Modify JavaScript classes
+- Other Use cases
+    + Adapt third party codes to Angular
+- Types of directives:
+    + Components: directives with templates
+    + Structural directives:
+        * `*ngIf`: conditionally creates or disposes of subviews from
+          the template
+        * `*ngFor`: repeat a node (DOM tree) for each item in a list
+        * `*ngSwitch`: switch among alternative views
+        * Cannot have more than one structural directive on one single
+          element, so we need to wrap the element by `<ng-container>`
+    + Attribute directives:
+        * `ngModel`: adds two-way data binding to an HTML form element
+        * `ngStyle`: adds and removes a set of HTML styles
+        * `ngClass`: adds and removes a set of CSS classes
+    + Custom structural/attribute directives
+        * You can create your own custom directives
+- `*ngIf`
+
+```html
+<div *ngIf="booleanCondition; else elseTemplate">content</div>
+<ng-template #elseTemplate>
+    <div>Else Content</div>
+    <div *ngIf="innerCondition; else innerTemplate">content</div>
+</ng-template>
+<ng-template #innerTemplate>
+    <div>Inner else</div>
+</ng-template>
+```
+
+- `*ngFor`
+
+```html
+
+```
+
+# Pipes
+
+- Pipes transform output in the template.
+    + It is denoted by the symbol `|`
+    + It takes numbers, strings, arrays and date as input and converts
+      them in the required format to display it on browser.
+
+# Routers
+
+- Switch between pages / views
+    + Based on URL, routes to different components
+- Terms
+    + Routes: an array of routes, each mapping a URL to a component
+    + Router: the primary infrastructure piece that actually provides
+      component navigation
+    + RouterLink: the directive for binding a clickable HTML element to
+      a route. Clicking an element with a RouterLink trigger a
+      navigation.
+    + RouterOutlet: a directive marks where the router displays a view
+- Route Properties
+    + path: a string, or wildcard matcher
+    + component: reference to a component
+    + redirectTo: a string of another valid route
+    + pathMatch: 'full', 'prefix', matching strategy
+    + children: an array of child routes
+    + outlet: string of named outlet, tells the route to load in a
+      specific router outlet
+    + canActivate:
+    + canDeactivate:
+
+
+# Best Practices
+
+- Initialize class members in declarations
+    + Only initialize class members in constructors if the members
+      require data that is passed through constructors' parameters
+- Keep constructor minimal
+    + Use it for dependency injection (inject services) and initialize
+      class members which require external values
+- `ngOnInit()`: all work that you want to do after the class (components,
+  directives, etc.) has been created
+    + fetch data, major work, etc.
+
+# Libraries
+
+## RxJS (Reactive Programming)
+
+- Provides observable and observer
+
+# Tutorials
+
+## Animation
+
+- Angular animation (CSS animation)
+    + Importing animation module in `app.module.ts`, and animation
+      functions in `app.component.ts`
+```typescript
+// app.module.ts
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+@NgModule({
+    imports: [
+        ...
+        BrowserAminationsModule,
+        ...
+    ],
+    ...
+})
+```
+```typescript
+//app.component.ts
+import {trigger, state, style, animate, transition} from '@angular/animation';
+@Component({
+    animations: [
+        // animation triggers go here
+    ]
+});
+export const HighlightTrigger = trigger("rowHighlight", [
+    state("selected", style({
+        backgroundColor: "lightgreen",
+        fontSize: "20px"
+    })),
+    state("notselected", style({
+        backgroundColor: "lightsalmon",
+        fontSize: "12px"
+    })),
+    transition("selected => notselected", animate("200ms")),
+    transition("notselected => selected", animate("400ms"))
+]);
+```
