@@ -221,6 +221,37 @@ export class serverComponent implements OnInit {}
     + styles: [`div{color: red;}`, `..`]: an array, each string (between
       back ticks) in the array defines some CSS
     + styleUrls: ['...', '...']: an array of files
+- Lifecycle hooks
+    + Key life moments of the component and directives
+    + `ngOnChanges()`: invoked when there is a change in one or more
+      input properties of the component
+        * called before `ngOnInit()`
+    + `ngOnInit()`: initialize component after Angular first displays
+      the data-bound properties and sets the component's input
+      properties
+        * called once, after the first `ngOnChanges()`
+    + `ngDoCheck()`: detect and act upon the changes that Angular can't
+      or won't detect on its own
+        * called during every change detection run, immeidately after
+          `ngOnChange()` and `ngOnInit()`
+    + `ngOnDestroy()`: called just before Angular destroys the component
+        * cleanup process, unsubscribe Observables and detach event
+          handlers to avoid memory leaks.
+    + `ngAfterContentInit()`: invoked after Angular projects external
+      content into the component's view
+        * called once after the first `ngDoCheck()`
+    + `ngAfterContentChecked()`: invoked after Angular checks the
+      content projected into the component
+        * called after the `ngAfterContentInit()` and every subsequent
+          `ngDoCheck()`
+    + `ngAfterViewInit()`: respond after Angular initializes the
+      component's views and child views
+        * called once, after the first `ngAfterContentChecked()`
+    + `ngAfterViewChecked()`: respond after Angular checks the
+      component's views and child views
+        * called after the `ngAfterViewInit()` and every subsequent
+          `ngAfterContentChecked()`
+
 
 # Data Binding
 
