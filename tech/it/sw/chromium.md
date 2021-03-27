@@ -35,6 +35,11 @@ document.addEventListener('DOMNodeRemoved', delete_single, false);
 delete_single();
 ```
 
+## Listen to YouTube playlist non-stop
+
+- https://medium.com/@katopz/how-to-prevent-youtube-from-randomly-pausing-video-da93f1af8cbe
+- Copy the JavaScript code and run it in the JS console
+
 # References
 
 1. [Wikipedia - Chromium][1]
