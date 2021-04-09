@@ -1283,6 +1283,16 @@ set wrap
 
 ## Plugins
 
+### Experimental Plugins
+
+- vim-easymotion: https://github.com/easymotion/vim-easymotion
+- Showing marks
+    + vim-signature: https://github.com/kshenoy/vim-signature
+    + vim-markbar: https://github.com/Yilin-Yang/vim-markbar
+    + Clear all marks: https://stackoverflow.com/questions/11450817/vim-how-do-i-clear-all-marks
+        * `:delmarks!`: all marks excepts A-Z and 0-9
+        * `:delmarks A-Z0-9`: delete marks A-Z and 0-9
+
 ### vimtex
 
 #### Intro
@@ -1394,6 +1404,7 @@ K                |<plug>(vimtex-doc-package)|                    `n`
 ### Goyo.vim and limelight.vim
 
 - Distraction-free mode in Vim.
+- `<Leader>d`
 
 ### traces.vim
 
