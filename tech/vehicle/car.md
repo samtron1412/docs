@@ -402,6 +402,43 @@ Commercially available Freons include:
 
 # Tips and Tricks
 
+## State Safety and Emission Inspections
+
+Many inspection failures can be avoided. Please see the following list
+of items that typically cause a vehicle to fail when not in place or in
+the proper condition.
+
+1 Windshield Wipers
+2 Brakes
+3 Bulbs, including turn signals, stop lights and headlights
+4 Parking brake
+5 Tires
+
+
+Partial List of Inspected Items
+Here is a partial list of the items covered in your auto inspection:
+
+1 Horn
+2 Windshield wipers
+3 Mirror
+4 Steering
+5 Seat belts
+6 Brake system (parking – beginning with 1960 models)
+7 Tires
+8 Wheel assembly
+9 Exhaust system
+10 Exhaust emission system (beginning with 1968 models)
+11 Beam indicator (beginning with 1948 models)
+12 Tail lamps (2); (1) if 1959 model or earlier
+13 Stop lamps (2); (1) if 1959 model or earlier
+14 License plate lamp (1)
+15 Rear red reflectors (2)
+16 Turn signal lamps (beginning with 1960 models)
+17 Head lamps (2)
+18 Motor, serial, or vehicle identification number
+19 All models – inspect for window tinting or coating
+20 Gas caps on vehicles 2-24 model years old.
+
 ## How to recharge freon for A/C system
 
 - Start engine + Turn on A/C system (make sure clutch engage) + Put A/C system at coldest setting + Put fan at strongest setting
