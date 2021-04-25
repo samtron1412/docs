@@ -185,19 +185,23 @@ and 157.5".
 - Salvage title
     + When a vehicle incurs some type of loss event such as major
       damage, theft, or repair, the title may be designated as a salvage
-      title. The decision to place a title in salvage status is normally
-      made by the insurance company who pays a claim on the vehicle. In
-      some states there are statutory regulations which require an
-      insurer to brand a vehicle with a salvage title. An example may be
-      that a vehicle incurred damage more than 60% of its
-      value. However, an insurance company can decide to place a salvage
-      title brand on any vehicle it decides to, even if there is little
-      or no damage. A salvage title, junk title, rebuilt title, or
-      certificate of destruction are almost always permanent brands on
-      the title which cannot be removed. In rare cases a very complex
-      and expensive process of reconstructing the vehicle and inspection
-      may upgrade a branded title status, but it typically involves more
-      expense than the vehicle is worth.
+      title.
+        * The decision to place a title in salvage status is normally
+          made by the insurance company who pays a claim on the vehicle.
+        * In some states there are statutory regulations which require
+          an insurer to brand a vehicle with a salvage title.
+        * An example may be that a vehicle incurred damage more than 60%
+          of its value.
+        * However, an insurance company can decide to place a salvage
+          title brand on any vehicle it decides to, even if there is
+          little or no damage.
+        * A salvage title, junk title, rebuilt title, or certificate of
+          destruction are almost always permanent brands on the title
+          which cannot be removed.
+        * In rare cases a very complex and expensive process of
+          reconstructing the vehicle and inspection may upgrade a
+          branded title status, but it typically involves more expense
+          than the vehicle is worth.
     + Salvage titles can normally be registered for road use. In some
       states an inspection is required to make sure that the vehicle is
       safe for the road, and that any parts used for repair are legal
