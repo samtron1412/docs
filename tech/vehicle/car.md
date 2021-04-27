@@ -304,6 +304,33 @@ and 157.5".
       the vehicle is meets standards for emissions, safety, bumper
       height, and other guidelines prior to entering the country.
 
+## How to check a used car before buying?
+
+- Car prices
+    + https://www.nadaguides.com/
+        * Go with rough trade-in or average (if you are not so
+          confident in negotiation)
+    + https://www.kbb.com/
+- Vehicle Identification Number (VIN): https://vehiclehistory.bja.ojp.gov/
+    + Free
+        * Theft or salvage: https://www.nicb.org/vincheck
+        * Recalls: https://vinrcl.safercar.gov/vin/vinLookup
+        * https://www.vehiclehistory.com/
+        * https://vincheck.info/
+    + Paid
+        * https://www.bumper.com/
+- Contact the owner by messages or calls
+    + Questions to ask:
+        * General information: Year, Make, Model, Mileage, Price
+- Areas to inspect
+    + Body / Frame: clean title / rebuilt title (major or minor damages)
+        * Scratches, Dents, Windshield (chips or cracks), headlights
+          (foggy), inspection sticker current? Rusty brake rotors?
+    + Engine
+    + Wheels / Tires
+    + Interior
+    + Underneath the car
+
 # Body and main parts
 
 ## Doors
