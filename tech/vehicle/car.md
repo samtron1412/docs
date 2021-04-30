@@ -396,7 +396,7 @@ and 157.5".
 
 # Miscellaneous auto parts
 
-## Wheels and Tyres
+## Wheels and Tires
 
 `P185/65R14 85S`
 
@@ -420,8 +420,12 @@ and 157.5".
     + S: less than or equal 111mph for 10 mins
 
 ## Air conditioning system (A/C)
+
 ### Freon
-Freon is a trade name for a class of chemicals (known as Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning systems.
+
+Freon is a trade name for a class of chemicals (known as
+Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning
+systems.
 
 Commercially available Freons include:
 
@@ -510,6 +514,7 @@ How to jump start a car:
 Something
 
 # References
+
 1. [Wikipedia - Connected car][1]
 
 [1]: https://en.wikipedia.org/wiki/Connected_car "Wikipedia - Connected car"
