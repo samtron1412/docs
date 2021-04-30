@@ -33,6 +33,13 @@ molding on top of the engine.
 
 ### Body Style
 
+- https://en.wikipedia.org/wiki/Car_body_style
+    + Sedan: fixed-roof car with three-box design (engine, passengers,
+      and cargo)
+    + Minivan
+    + Panel van: delivery van
+    + Pickup truck: open-bed trunk
+
 Body Style is described by a Body Type — such as sedan, coupe, or wagon
 — and the number of doors on the vehicle.
 
