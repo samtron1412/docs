@@ -407,6 +407,9 @@ and 157.5".
                 * Go lower than 5 for low temp, and go higher than 20 at
                   high temp is ok, but follow your manual
         * Resource conserving and Energy conserving
+- Oil filters
+    + Choose the silicone anti-drainback valve and silicone gasket: over
+      5000 miles
 
 ## Exhaust system
 
