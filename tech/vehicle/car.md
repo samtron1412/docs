@@ -422,23 +422,24 @@ and 157.5".
 
 `P185/65R14 85S`
 
-- The first letter: the intended use of the tire
+- The first letter (tire use): the intended use of the tire
     + P: passenger vehicle
     + LT: light truck
     + C: commercial vehicle
-- The first number: The width of the tire in milimeter
-- The second number: the tire's sidewall height (from the edge of the
-  rim to the tire's tread) is 65% of the width
-- The second letter: how the tire was constructed
+- The first number (section width): The width of the tire in milimeter
+- The second number (aspect ratio, tire height over section width): the
+  tire's sidewall height (from the edge of the rim to the tire's tread)
+  is 65% of the width
+- The second letter (tire construction code): how the tire was constructed
     + R: radial - 99% of all tires sold today
     + B: bias belt
     + D: diagonal
-- The third number: the tire size was designed to fit rims or wheels
-  that are 14 inches in diameter
+- The third number (wheel diameter): the tire size was designed to fit
+  rims or wheels that are 14 inches in diameter
     + 14
-- The fourth number: the load index, its capable of carrying a load
+- The fourth number (load index): its capable of carrying a load
     + 85: 1133 lb (515 kg)
-- The fourth letter: the maximum speed that can be sustained
+- The fourth letter (speed symbol): the maximum speed that can be sustained
     + S: less than or equal 111mph for 10 mins
 
 ## Air conditioning system (A/C)
