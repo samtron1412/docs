@@ -386,6 +386,28 @@ and 157.5".
 
 ## Engine oil system
 
+- Types
+    + Conventional: the cheapest
+    + Synthetic blend: in between
+    + Full synthetic: the most expensive, but the best for protecting
+      the engine
+- Change engine oil around 3000 - 5000 miles
+- American Petroleum Institute (API) certification:
+    + Motor oil guide: https://www.api.org/products-and-services/engine-oil/documents/motor-oil-guide
+    + Engine protection standard
+    + Fuel economy requirements by ILSAC
+    + API Service Symbol
+        * Performance level: S for service car (SM for 2010 and older) ,
+          C for commercial (trucks)
+        * Viscosity grade: SAE (Society of Automotive Engineers) standard
+            - ability to flow at certain temperatures
+            - lower number: lower viscosity (thickness)
+            - W: winter (cold, low temperature)
+            - 5W-20: low temp: 5W, high temp: 20
+                * Go lower than 5 for low temp, and go higher than 20 at
+                  high temp is ok, but follow your manual
+        * Resource conserving and Energy conserving
+
 ## Exhaust system
 
 ## Fuel supply system
