@@ -382,6 +382,13 @@ and 157.5".
 
 ## Engine components and parts
 
+- Engine components: from top to bottom
+    + Valve cover
+    + Valve cover gasket: between valve cover and cylinder head
+    + Cylinder head: on top of cylinders (contains valves and spark plugs)
+    + Head gasket: between the cylinder block and cylinder head
+    + Cylinders in the cylinder block
+
 ## Engine cooling system
 
 ## Engine oil system
