@@ -391,6 +391,23 @@ and 157.5".
 
 ## Engine cooling system
 
+- Coolant fluid
+    + Mix of ethylene glycol and water: 1:1
+    + Inorganic Acid Technology: usually Green
+        * conventional low-silicate coolant
+        * uses silicate as corrosion inhibitors
+        * Every 25k: Old vehicles
+    + Organic Acid Technology: usually Orange
+        * Using organic acids as corrosion inhibitors
+        * Non-nitrites
+        * Every 150k: GM, Saab, VW
+    + Hybrid OAT: usually Yellow, non-phosphate
+        * Low-silicate and nitrite
+        * Both silicates and organic acids as inhibitors
+        * Every 150k: European, Ford, Chrysler
+    + phosphate HOAT
+        * Every 150k: Toyota, Scion, Lexus
+
 ## Engine oil system
 
 - Types
