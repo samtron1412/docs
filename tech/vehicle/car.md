@@ -487,7 +487,7 @@ Commercially available Freons include:
 
 ## Toyota - Camry LE - 2008 - 2.4
 
-Information
+- Front wheel drive
 
 ## Toyota - Corolla LE - 2001 - 1.8
 
@@ -495,6 +495,42 @@ Information
 - [Engine oil - PAG46 - 7 oz](http://www.techchoiceparts.com/refrigerant-and-oil-capacities/toyota)
 - Wiper blades: 20" x 18"
 - Tires: P185/65R14 85S
+
+# Popular Car Manufacturers
+
+## Toyota
+
+- Toyota Corolla
+    + Sub models
+        * L: standard
+        * LE
+        * SE
+        * XLE
+        * XSE
+- Toyota Camry
+    + Sub models: trim
+        * LE: standard/base model
+        * SE: sport, based on LE
+        * XLE: upgraded LE
+        * XSE: upgraded SE
+        * TRD: racing
+
+## Honda
+
+- Honda Accord (Similar as Toyota Camry)
+    + Sub models
+        * LX: standard edition
+        * Sport
+        * EX: more features than the standard version
+        * EX-L: EX features with some luxury touch
+        * Touring
+- Honda Civic (Similar as Toyota Corolla)
+    + Sub models
+        * LX
+        * EX
+        * EX-T
+        * EX-L
+        * Touring
 
 # Tips and Tricks
 
