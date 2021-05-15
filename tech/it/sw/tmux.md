@@ -248,6 +248,14 @@ To get out of Copy mode, we just press the `ENTER` key.
 
 # Tips and Tricks
 
+## Nested local and remote tmux sessions
+
+- Built-in way
+    + `Ctrl + b` once to execute the `prefix` for the local tmux session
+    + `Ctrl + b` twice to send the `prefix` to the remote tmux session
+- Others
+    + https://www.freecodecamp.org/news/tmux-in-practice-local-and-nested-remote-tmux-sessions-4f7ba5db8795/
+
 ## List of colors
 
 ```bash

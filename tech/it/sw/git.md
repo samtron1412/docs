@@ -885,6 +885,43 @@ against different collaboration workflows.
     + Use staging area to split your work.
     + `git add --patch`
 - [Git commit message structure](https://web.archive.org/web/20150330043110/http://chris.beams.io/posts/git-commit/)
+- Automate commit message
+    + Setting `commit.template` in `~/.gitconfig`
+    + Create `~/.gitmessage` with folowing content
+
+```
+# ~/.gitconfig
+[commit]
+  template = ~/.gitmessage
+
+# ~/.gitmessage
+
+Capitalized imperative summary (<= 50 characters, no period at the end)
+
+More detailed explanatory text, if necessary (What?)
+ - Wrap it to about 72 characters
+
+Why do you make this change?
+ - The problem of current code
+ - The solution
+
+Are there any side effects or unintuitive consequences?
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+
+```
+
 
 ```git
 # 50-character subject line
@@ -904,7 +941,10 @@ against different collaboration workflows.
 ```
 
 ```git
-Summarize changes in around 50 characters or less
+Summarize changes in around 50 characters or less (no period at the end)
+ - e.g.: Fix dropdown menu of the main webpage
+ - e.g.: Revert the changes on the submit form
+ - e.g.: Update the changes on the submit form
 
 More detailed explanatory text, if necessary. Wrap it to about 72
 characters or so. In some contexts, the first line is treated as the
