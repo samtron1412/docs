@@ -174,6 +174,10 @@ Tổng hợp thắc mắc và giải đáp
 - Sinus problems
 - Cold and flu symptoms
 
+## Inherited disorders
+
+- Cystic fibrosis
+
 ## Disability
 
 Disabilities include, but are not limited to:
