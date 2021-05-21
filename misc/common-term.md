@@ -153,3 +153,32 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
 - Outsourcing is an agreement in which one company hires another company
   to be responsible for a planned or existing activity that is or could
   be done internally.
+
+# Diversity
+
+- Diversity is the combination of unique skills, experiences,
+  perspectives, and cultural backgrounds.
+- It’s a full range of visible and invisible identities, including but
+  not limited to gender, race, ethnicity, nationality, physical and
+  cognitive ability, sexual orientation, military status, education,
+  religion, age/generation, social class, and language.
+
+# Equity
+
+- Equity is the fairness of access, opportunity, and advancement for
+  all.
+- Equity looks to identify and eliminate barriers that have prevented
+  the full participation of some groups.
+- It’s also about ensuring that policies, practices, and systems provide
+  all individuals access to the opportunities, resources, and
+  recognition to be successful.
+
+# Inclusion
+
+- Inclusion is providing an environment where people feel valued,
+  trusted, connected, and informed.
+- It’s about recognizing and valuing the different lived experiences of
+  our teams and leveraging their unique competencies and perspectives,
+  so that everyone may experience ownership and empowerment.
+- NOT QUITE AGREE WITH THIS, because it is hard to control how other
+  people feels, and it is easy to create a fake welcomed environment.
