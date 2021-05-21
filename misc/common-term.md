@@ -182,3 +182,9 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
   so that everyone may experience ownership and empowerment.
 - NOT QUITE AGREE WITH THIS, because it is hard to control how other
   people feels, and it is easy to create a fake welcomed environment.
+
+# YOLO - Carpe Diem
+
+- You only live once (modern)
+- Carpe diem (Latin aphorism, seize the day)
+- Live in present, and don't worry about the future
