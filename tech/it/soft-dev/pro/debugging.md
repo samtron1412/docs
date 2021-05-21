@@ -143,6 +143,11 @@ Make sure you understand each bug before you fix it.
 
 # Techniques
 
+## Rubber duck debugging
+
+- Explain the solutions / details to a rubber duck until you can figure
+  out the problems with your solutions
+
 # Anti-debugging
 
 # Common bugs
