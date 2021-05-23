@@ -188,3 +188,10 @@ bookworm, smart, math, physical, biology, library, glass, academic, book
 - You only live once (modern)
 - Carpe diem (Latin aphorism, seize the day)
 - Live in present, and don't worry about the future
+
+# Payslip, Pay stub, paycheck, Earning statement, Pay statement
+
+- Details of your weekly/bi-weekly, or monthly payments from your
+  employers.
+
+
