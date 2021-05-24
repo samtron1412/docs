@@ -923,7 +923,7 @@ See also: #456, #789
 ```
 
 
-```git
+```
 # 50-character subject line
 #
 # 72-character wrapped longer description. This should answer:
@@ -940,7 +940,7 @@ See also: #456, #789
 # Co-authored-by: Full Name <email@example.com>
 ```
 
-```git
+```
 Summarize changes in around 50 characters or less (no period at the end)
  - e.g.: Fix dropdown menu of the main webpage
  - e.g.: Revert the changes on the submit form
