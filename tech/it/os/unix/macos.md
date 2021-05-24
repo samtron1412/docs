@@ -144,3 +144,9 @@ take place.
 ## Create a Python development environment
 
 USING CONDA
+
+# Tips and Tricks
+
+## Can not turn off Do not disturb
+
+- `killall NotificationCenter`
