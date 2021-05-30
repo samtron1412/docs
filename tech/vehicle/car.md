@@ -33,13 +33,6 @@ molding on top of the engine.
 
 ### Body Style
 
-- https://en.wikipedia.org/wiki/Car_body_style
-    + Sedan: fixed-roof car with three-box design (engine, passengers,
-      and cargo)
-    + Minivan
-    + Panel van: delivery van
-    + Pickup truck: open-bed trunk
-
 Body Style is described by a Body Type — such as sedan, coupe, or wagon
 — and the number of doors on the vehicle.
 
@@ -314,19 +307,6 @@ and 157.5".
 
 ## How to check a used car before buying?
 
-- Car prices
-    + https://www.nadaguides.com/
-        * Go with rough trade-in or average (if you are not so
-          confident in negotiation)
-    + https://www.kbb.com/
-- Vehicle Identification Number (VIN): https://vehiclehistory.bja.ojp.gov/
-    + Free
-        * Theft or salvage: https://www.nicb.org/vincheck
-        * Recalls: https://vinrcl.safercar.gov/vin/vinLookup
-        * https://www.vehiclehistory.com/
-        * https://vincheck.info/
-    + Paid
-        * https://www.bumper.com/
 - Contact the owner by messages or calls
     + Questions to ask:
         * General information: Year, Make, Model, Mileage, Price
@@ -383,58 +363,9 @@ and 157.5".
 
 ## Engine components and parts
 
-- Engine components: from top to bottom
-    + Valve cover
-    + Valve cover gasket: between valve cover and cylinder head
-    + Cylinder head: on top of cylinders (contains valves and spark plugs)
-    + Head gasket: between the cylinder block and cylinder head
-    + Cylinders in the cylinder block
-
 ## Engine cooling system
 
-- Coolant fluid
-    + Mix of ethylene glycol and water: 1:1
-    + Inorganic Acid Technology: usually Green
-        * conventional low-silicate coolant
-        * uses silicate as corrosion inhibitors
-        * Every 25k: Old vehicles
-    + Organic Acid Technology: usually Orange
-        * Using organic acids as corrosion inhibitors
-        * Non-nitrites
-        * Every 150k: GM, Saab, VW
-    + Hybrid OAT: usually Yellow, non-phosphate
-        * Low-silicate and nitrite
-        * Both silicates and organic acids as inhibitors
-        * Every 150k: European, Ford, Chrysler
-    + phosphate HOAT
-        * Every 150k: Toyota, Scion, Lexus
-
 ## Engine oil system
-
-- Types
-    + Conventional: the cheapest
-    + Synthetic blend: in between
-    + Full synthetic: the most expensive, but the best for protecting
-      the engine
-- Change engine oil around 3000 - 5000 miles
-- American Petroleum Institute (API) certification:
-    + Motor oil guide: https://www.api.org/products-and-services/engine-oil/documents/motor-oil-guide
-    + Engine protection standard
-    + Fuel economy requirements by ILSAC
-    + API Service Symbol
-        * Performance level: S for service car (SM for 2010 and older) ,
-          C for commercial (trucks)
-        * Viscosity grade: SAE (Society of Automotive Engineers) standard
-            - ability to flow at certain temperatures
-            - lower number: lower viscosity (thickness)
-            - W: winter (cold, low temperature)
-            - 5W-20: low temp: 5W, high temp: 20
-                * Go lower than 5 for low temp, and go higher than 20 at
-                  high temp is ok, but follow your manual
-        * Resource conserving and Energy conserving
-- Oil filters
-    + Choose the silicone anti-drainback valve and silicone gasket: over
-      5000 miles
 
 ## Exhaust system
 
@@ -455,37 +386,32 @@ and 157.5".
 
 # Miscellaneous auto parts
 
-## Wheels and Tires
+## Wheels and Tyres
 
 `P185/65R14 85S`
 
-- The first letter (tire use): the intended use of the tire
+- The first letter: the intended use of the tire
     + P: passenger vehicle
     + LT: light truck
     + C: commercial vehicle
-- The first number (section width): The width of the tire in milimeter
-- The second number (aspect ratio, tire height over section width): the
-  tire's sidewall height (from the edge of the rim to the tire's tread)
-  is 65% of the width
-- The second letter (tire construction code): how the tire was constructed
+- The first number: The width of the tire in milimeter
+- The second number: the tire's sidewall height (from the edge of the
+  rim to the tire's tread) is 65% of the width
+- The second letter: how the tire was constructed
     + R: radial - 99% of all tires sold today
     + B: bias belt
     + D: diagonal
-- The third number (wheel diameter): the tire size was designed to fit
-  rims or wheels that are 14 inches in diameter
+- The third number: the tire size was designed to fit rims or wheels
+  that are 14 inches in diameter
     + 14
-- The fourth number (load index): its capable of carrying a load
+- The fourth number: the load index, its capable of carrying a load
     + 85: 1133 lb (515 kg)
-- The fourth letter (speed symbol): the maximum speed that can be sustained
+- The fourth letter: the maximum speed that can be sustained
     + S: less than or equal 111mph for 10 mins
 
 ## Air conditioning system (A/C)
-
 ### Freon
-
-Freon is a trade name for a class of chemicals (known as
-Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning
-systems.
+Freon is a trade name for a class of chemicals (known as Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning systems.
 
 Commercially available Freons include:
 
@@ -510,42 +436,6 @@ Commercially available Freons include:
 - [Engine oil - PAG46 - 7 oz](http://www.techchoiceparts.com/refrigerant-and-oil-capacities/toyota)
 - Wiper blades: 20" x 18"
 - Tires: P185/65R14 85S
-
-# Popular Car Manufacturers
-
-## Toyota
-
-- Toyota Corolla
-    + Sub models
-        * L: standard
-        * LE
-        * SE
-        * XLE
-        * XSE
-- Toyota Camry
-    + Sub models: trim
-        * LE: standard/base model
-        * SE: sport, based on LE
-        * XLE: upgraded LE
-        * XSE: upgraded SE
-        * TRD: racing
-
-## Honda
-
-- Honda Accord (Similar as Toyota Camry)
-    + Sub models
-        * LX: standard edition
-        * Sport
-        * EX: more features than the standard version
-        * EX-L: EX features with some luxury touch
-        * Touring
-- Honda Civic (Similar as Toyota Corolla)
-    + Sub models
-        * LX
-        * EX
-        * EX-T
-        * EX-L
-        * Touring
 
 # Tips and Tricks
 
@@ -615,7 +505,6 @@ How to jump start a car:
 Something
 
 # References
-
 1. [Wikipedia - Connected car][1]
 
 [1]: https://en.wikipedia.org/wiki/Connected_car "Wikipedia - Connected car"
