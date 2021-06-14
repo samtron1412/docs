@@ -652,13 +652,20 @@ The most common operators:
 
 #### Resizing and Rearranging Windows
 
+- CHECK `.vimrc` first to check for personal shortcuts before using
+  built-in shortcuts
+
 `:h window-resize`
 
 | Keystrokes  | Buffer Contents                          |
-| -           | -                                        |
+|-------------|------------------------------------------|
 | `<C-w>=`    | Equalize width and height of all windows |
 | `<C-w>_`    | Maximize height of the active window     |
 | `[N]<C-w>_` | Set active window height to [N] rows     |
+| `<C-w>-`    | Decrease active window's height 2 points |
+| `<C-w>+`    | Increase active window's height 2 points |
+| `<C-w> >`   | Increase active window's width 2 points  |
+| `<C-w> <`   | Decrease active window's width 2 points  |
 
 - `<C-w>|`: Maximize width of the active window
 - `[N]<C-w>|`: Set active window width to [N] columns
