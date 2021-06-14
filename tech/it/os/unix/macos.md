@@ -147,6 +147,7 @@ USING CONDA
 
 # Tips and Tricks
 
-## Can not turn off Do not disturb
+## Cannot turn off Do not disturb
 
 - `killall NotificationCenter`
+
