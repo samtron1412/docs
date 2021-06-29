@@ -386,7 +386,7 @@ and 157.5".
 
 # Miscellaneous auto parts
 
-## Wheels and Tyres
+## Wheels and Tires
 
 `P185/65R14 85S`
 
@@ -408,6 +408,40 @@ and 157.5".
     + 85: 1133 lb (515 kg)
 - The fourth letter: the maximum speed that can be sustained
     + S: less than or equal 111mph for 10 mins
+
+```
+Tire Speed Rating
+
+| Symbol Speed | Speed (km/h) | Speed (mph) |
+|--------------|--------------|-------------|
+| A2           | 10           | 6           |
+| A3           | 15           | 9           |
+| A4           | 20           | 12          |
+| A5           | 25           | 16          |
+| A6           | 30           | 19          |
+| A8           | 40           | 25          |
+| B            | 50           | 31          |
+| C            | 60           | 37          |
+| D            | 65           | 40          |
+| E            | 70           | 43          |
+| F            | 80           | 50          |
+| G            | 90           | 56          |
+| J            | 100          | 62          |
+| K            | 110          | 68          |
+| L            | 120          | 75          |
+| M            | 130          | 81          |
+| N            | 140          | 87          |
+| P            | 150          | 94          |
+| Q            | 160          | 100         |
+| R            | 170          | 106         |
+| S            | 180          | 112         |
+| T            | 190          | 118         |
+| U            | 200          | 124         |
+| H            | 210          | 130         |
+| V            | 240          | 149         |
+| W            | 270          | 168         |
+| Y            | 300          | 186         |
+```
 
 ## Air conditioning system (A/C)
 ### Freon
