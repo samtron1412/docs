@@ -2,6 +2,29 @@
 
 # Overview
 
+## US Vehicle Identification Number (VIN) (post-1981)
+
+- 17 characters long: (from left to right)
+    + The first three characters: world manufacturer identifier (WMI)
+        + https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/World_Manufacturer_Identifier_(WMI)
+        + 1st character: where the vehicle was built
+            * U.S. start with 1, 4 or 5. Canada is 2, and Mexico is 3. Japan
+              is J, South Korea is K, England is S, Germany is W, and Sweden
+              or Finland is Y.
+    + 4th to 8th: vehicle description (model, body type, restraint
+      system, transmission type, and engine code)
+    + 9th: check digit to verify a valid VIN
+    + In the 10th position, you'll see a letter indicating the model
+      year. The letters from B to Y correspond to the model years 1981
+      to 2000. The VIN does not use I, O, Q, U or Z. From 2001 to 2009,
+      the numbers 1 through 9 were used in place of letters. The
+      alphabet started over from A in 2010 and will continue until 2030.
+    + The letter or number in position 11 indicates the manufacturing
+      plant where the vehicle was assembled. Each automaker has its own
+      set of plant codes.
+    + The last six digits (positions 12 through 17) are the production
+      sequence numbers, which each car receives on the assembly line.
+
 ## Car Attributes
 
 ### Trim
