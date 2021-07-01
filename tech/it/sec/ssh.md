@@ -115,6 +115,25 @@ List key agent managing
         ssh-add -l
 
 
+# SSH tunneling (SSH port forwarding)
+
+## What, Why, and How
+
+- https://www.ssh.com/academy/ssh/tunneling
+
+## SSH tunneling example
+
+### Local Forwarding
+
+- `ssh -L localhost:8080:intra.example.com:8080 remotehost`
+- `ssh -L localhost:8080:localhost:8080 clouddesk`
+    + Forward connections to `localhost:8080` on your local computer to
+      `localhost:8080` on the remote computer.
+
+### Remote Forwarding
+
+- `ssh -R 8080:localhost:80 public.example.com`
+
 # Tips and Tricks
 
 ## Forward local ssh-agent to the remote machine
