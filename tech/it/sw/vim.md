@@ -1284,6 +1284,10 @@ set wrap
     + https://www.reddit.com/r/vim/comments/36ak7j/do_you_use_a_vim_plugin_manager_if_so_which_one/
     + https://www.reddit.com/r/vim/comments/1w4udb/best_vim_plugin_manager/
 - [Vim-plug](https://github.com/junegunn/vim-plug)
+    + Install a plugin: add a plug line in vimrc, then source the vimrc,
+      then run `PlugInstall`
+    + Remove a plugin: remove the plug line in vimrc, then source the
+      vimrc, then run `PlugClean`
 - [pathogen](https://github.com/tpope/vim-pathogen/)
 - [Vundle](https://github.com/VundleVim/Vundle.vim)
 - [NeoVundle](https://github.com/Shougo/neobundle.vim)
