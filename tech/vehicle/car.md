@@ -140,8 +140,9 @@ For example, the 2007 Chevrolet Silverado 1500 LT Crew Cab is available
 in a number of different wheelbase configurations: 119", 133", 143.5",
 and 157.5".
 
-# Learn more
+# Resources and Learn more
 
+- http://www.autoshop101.com/
 - Learning about car
     + https://auto.howstuffworks.com/car-parts-roundup.htm
     + https://www.howacarworks.com/
@@ -438,6 +439,15 @@ and 157.5".
 ## Exhaust system
 
 ## Fuel supply system
+
+- Exhaust Gas Recirculation
+    + It recirculates finely metered quantities of exhaust gas to the
+      engine intake system for increased engine efficiency, reduced fuel
+      consumption and lower NOx emissions
+- Fuel injector types
+    + Carburetor: old
+    + Port injector
+    + Direct injector
 
 ## Suspension and steering systems
 
