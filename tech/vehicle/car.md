@@ -485,8 +485,13 @@ Commercially available Freons include:
 
 # Cars, Maker - Model - Year - Liter
 
+## Acura - TL - 2003 - 3.2 Base
+
+- VIN: 19UUA56643A051539
+
 ## Toyota - Camry LE - 2008 - 2.4
 
+- VIN: 4T4BE46KX8R013399
 - Front wheel drive
 
 ## Toyota - Corolla LE - 2001 - 1.8
