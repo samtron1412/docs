@@ -251,10 +251,17 @@ details.
 
 # Improve performance
 
+- https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load.html
+- https://blog.jonlu.ca/posts/speeding-up-zsh
+- https://stevenvanbael.com/profiling-zsh-startup
+- https://esham.io/2018/02/zsh-profiling
+
 ## Total runtime
 
-- Total runtime for bare ZSH: `time zsh -df -c echo`
-- Total runtime for interactive ZSH: `time zsh -i -c echo`
+- Total runtime for bare ZSH: `time zsh -df -c exit`
+- Total runtime for interactive ZSH: `time zsh -i -c exit`
+- For loop to run it multiple times
+    + `for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done`
 
 ## Profiling ZSH
 
