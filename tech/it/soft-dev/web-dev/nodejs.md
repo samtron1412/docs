@@ -217,3 +217,7 @@ npm substack
 - Server frameworks: Express.js, Socket.io, Koa.js, Hapi.js
 - MVC frameworks: Meteor, Derby, Sails, Mean, Tower.js
 
+# Tips and Tricks
+
+- `nodemon`: keep track of the changes to all files, and automatically
+  restart the server
