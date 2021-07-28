@@ -20,7 +20,10 @@ In this section we will see some eclipse keyboard shortcut which helps
 to quickly navigate within file and between file while reading and
 writing code in Eclipse.
 
-- Go to other open editors: **Ctrl + E**.
+- Ctrl + 3: quick access / search (very useful)
+    + Can search commands and more
+- **Ctrl + E** search and go to open editors
+- Ctrl + F6: switch between open editors
 - **Ctrl + T** for navigating between super type and subtype
 - **Ctrl + Shift + T** for finding class even from jar
 
@@ -40,9 +43,9 @@ workspace and doesn’t dig at jar level.
 
 - **Ctrl + o** for quick outline going quickly to method
 - **Alt + right** and **Alt + left** for going back and forth while editing.
-- Go to a type declaration: **F3**, This Eclipse shortcut is very useful to see function definition very quickly.
+- **F3**: Go to a type declaration , This Eclipse shortcut is very useful to see function definition very quickly.
 - **Ctrl + Shift + Up and down** for navigating from member to member (variables and methods)
-- Move to one problem (i.e.: error, warning) to the next (or previous) in a file: **Ctrl +.** For next, and **Ctrl +,** for previous problem
+- **Ctrl +.** For next, and **Ctrl +,** for previous problem Move to one problem (i.e.: error, warning) to the next (or previous) in a file:
 - **CTRL+Shift+G**, which searches in the workspace for references to the selected method or variable
 - CTRL+SHIFT+P to find closing brace. Place the cursor at opening brace and use this.
 - **Ctrl + k** and **Ctrl + Shift +K** for find next/previous
@@ -52,11 +55,16 @@ workspace and doesn’t dig at jar level.
 
 These Eclipse shortcuts are very helpful for editing code in Eclipse.
 
+- Toggle soft wrap: Alt + Shift + Y
+- Showing refactor options: Alt + Shirt + T
+    + Rename: Alt + Shift + R
+    + Change method signature: Alt + Shift + C
+    + Move: Alt + Shift + V
+    + Inline: Alt + Shift + I
 - **Ctrl + F4** or **Ctrl + w** for closing current file
 - **Ctrl+Shirt+W** for closing all files.
 - **Ctrl + /** for commenting, un commenting lines and blocks
 - **Ctrl + Shift + /** for commenting, un commenting lines with block comment
-- Alt + Shift + j to add javadoc at any place in java source file.
 - **Ctrl + 1** for quick fix
     + This is another beautiful Eclipse shortcut which can fix up any
       error for you in Eclipse. Whether it’s missing declaration,
@@ -68,6 +76,7 @@ These Eclipse shortcuts are very helpful for editing code in Eclipse.
 - **Ctrl + F** for find, find/replace
 - **Ctrl + D** to delete a line
 - **Ctrl + Q** for going to last edited place
+- Alt + Shift + j to add javadoc at any place in java source file.
 - **Ctrl + Shift + o** for organize imports
     + Another Eclipse keyboard shortcut for fixing missing imports.
       Particularly helpful if you copy some code from other file and
