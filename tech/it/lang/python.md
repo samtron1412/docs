@@ -303,6 +303,10 @@ x = q.get()
 - https://www.udemy.com/course/object-oriented-python-programming/
 - https://www.datacamp.com/community/tutorials/inner-classes-python
 - super(): https://realpython.com/python-super/
+- hashable objects: https://hynek.me/articles/hashes-and-equality/
+    + using `id` of an object
+- is __init__ always needed: https://stackoverflow.com/questions/6854080/is-it-necessary-to-include-init-as-the-first-function-every-time-in-a-class
+    + No
 
 # Conda
 
