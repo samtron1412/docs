@@ -81,12 +81,6 @@
           parts
         * Tree-shaking is used to remove dependencies defined by
           dependency injection
-- Installation Angular CLI
-    + `npm install -g @angular/cli`: install angular CLI globally
-- Usage:
-    + `ng new <project_name> --prefix <prefix>`: create a new project
-      with a prefix to prevent name collision
-    + `ng serve -o`: start the server and open the localhost
 - Files Structure in an Angular project: root: project_directory
     + `src`: source codes
         + `app`: contains project's logic and data (components,
@@ -237,7 +231,7 @@ export class serverComponent implements OnInit {}
         * called once, after the first `ngOnChanges()`
     + `ngDoCheck()`: detect and act upon the changes that Angular can't
       or won't detect on its own
-        * called during every change detection run, immeidately after
+        * called during every change detection run, immediately after
           `ngOnChange()` and `ngOnInit()`
     + `ngOnDestroy()`: called just before Angular destroys the component
         * cleanup process, unsubscribe Observables and detach event
@@ -464,6 +458,10 @@ export class CustompipePipe implements PipeTransform {
       you want the pipes to get executed when the properties get
       changing.
 
+# Services
+
+-
+
 # Routers
 
 - Switch between pages / views
@@ -490,6 +488,79 @@ export class CustompipePipe implements PipeTransform {
 
 # Best Practices
 
+- Angular application folder structure
+    + https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
+    + https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e
+
+```text
+- project
+    + data
+        * db.json
+    + src
+        * app
+            - core
+                + models
+                    * index.ts (use to simplify imports)
+                    * model-1.ts
+                    * model-2.ts
+                + services
+                    * index.ts (use to simplify imports)
+                    * service-1.ts
+                    * service-2.ts
+                + core.module.ts
+                + index.ts (use to simplify imports)
+            - shared
+                + components
+                    * index.ts (use to simplify imports)
+                    * footer (component)
+                    * header (component)
+                + shared.module.ts
+                + index.ts
+            - module1 (admin)
+                + components
+                    * component1
+                    * component2
+                + directives
+                    * custom1.directive.ts
+                + pipes
+                    * custom1.pipe.ts
+                + validators
+                    * custom1.validator.ts
+                + module1.module.ts
+                + module1-routing.module.ts
+                + index.ts
+            - page-not-found (component)
+            - app.module.ts
+            - app-routing.module.ts
+        * asset
+            - i18n
+                + lang-a.json
+                + lang-b.json
+            - images
+                + image-a.svg
+                + image-b.svg
+            - static
+                + structure-a.json
+                + structure-b.json
+            - icons
+                + custom-icon-a.svg
+                + custom-icon-b.svg
+        * environments
+            - environment.prod.ts
+            - environment.ts
+        * styles
+            - app-loading.scss
+            - company-colors.scss
+            - variables.scss
+        * styles.scss
+        * main.ts
+        * test.ts
+        * polyfills.ts
+        * index.html
+        * favicon.ico
+```
+
+- Style guide: https://angular.io/guide/styleguide
 - Initialize class members in declarations
     + Only initialize class members in constructors if the members
       require data that is passed through constructors' parameters
@@ -506,7 +577,29 @@ export class CustompipePipe implements PipeTransform {
 
 - Provides observable and observer
 
+## Bootstrap CSS
+
+- Directly use Bootstrap CSS
+    + `npm install bootstrap`
+    + import bootstrap in `styles.scss`
+- `ng-bootstrap`: https://ng-bootstrap.github.io/#/home
+
 # Tutorials
+
+## Basic Angular CLI
+
+- Installation Angular CLI
+    + `npm install -g @angular/cli`: install angular CLI globally
+- Usage:
+    + `ng new <project_name> --prefix <prefix>`: create a new project
+      with a prefix to prevent name collision
+    + `ng serve -o`: start the server and open the localhost
+
+## Other libraries
+
+- json-server: `npm install json-server`
+    + json-server-auth: `npm install -D json-server json-server-auth`
+-
 
 ## Animation
 
