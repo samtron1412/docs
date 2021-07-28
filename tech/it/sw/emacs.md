@@ -30,15 +30,22 @@ fifth step - use Emacs day and night for all your work
     + `brew install --cask emacs`: will install the  GUI version
     + To execute the TUI version: `emacs -nw`
 
+# Running Emacs as a Daemon
+
+- `emacs --daemon`
+- `emacsclient -nw`: create a new TUI buffer
+- `emacsclient -c`: create a new GUI buffer
+
 # Org mode
 
 - https://www.youtube.com/watch?v=oJTwQvgfgMM
 
-# Spacemacs
+# Emacs for Vim Users
 
-- Try this first, but should go with vanilla Emacs, so I can configure
-  it based on my configuration.
+- Spacemacs vs. Doom vs. Vanilla Emacs
+    + https://yiming.dev/blog/2018/01/22/compare-doom-emacs-spacemacs-vanilla-emacs/
 - https://github.com/syl20bnr/spacemacs
+- https://github.com/hlissner/doom-emacs
 - https://github.com/emacs-evil/evil
 - https://www.emacswiki.org/emacs/Evil
 
@@ -47,12 +54,16 @@ fifth step - use Emacs day and night for all your work
 ## GUI vs. TUI
 
 - https://www.reddit.com/r/emacs/comments/4nwvex/gui_vs_terminal_version_of_emacs_recommendations/
+- https://superuser.com/questions/193308/emacs-what-features-or-benefits-are-unique-to-either-gui-or-terminal-interface
+- https://www.reddit.com/r/emacs/comments/5lh1fg/any_glaringly_large_disadvantages_to_emacs_in_nw/
 - GUI:
     + Provide more options for binding keys (some keys can't bind in
       TUI)
     + Colors, fonts, images, etc.
 - TUI
     + Good for SSH remotely through tmux/screen
+    + Faster
+- Can achieve both by running Emacs as a daemon
 
 # References
 1. [Wikipedia - Emacs][1]
