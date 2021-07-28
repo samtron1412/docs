@@ -1,5 +1,8 @@
 # Overview
 
+- Best practices
+    + Install all packages locally: `npm install pkg`
+    + Run the local binaries: `npx <cmd> [args]`
 
 # package.json
 
@@ -48,8 +51,6 @@
 
 ## Commands
 
-### Installation
-
 - Update npm: `npm install -g npm@latest`
     + `npm i -g npm@latest`
 - `npm init`: step-by-step to scaffold a project
@@ -65,6 +66,12 @@
 - `npm install`: install all modules in `dependencies` and
   `devDependencies` in `package.json` to the current directory
 - `npm install <module> --global`: install a module globally
+- View an installed package's info:
+    + All info: `npm view <pkg>`
+    + Version: `npm view <pkg> version`
+- List all installed packages
+    + Local packages: `npm list`
+    + Global packages: `npm list -g`
 
 # Tips and Tricks
 
