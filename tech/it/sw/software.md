@@ -550,6 +550,7 @@ Something
 ## Password managers
 
 - lastpass-cli
+- bitwarden: https://bitwarden.com/
 - pass: (zx2c4)
 - gopass: new fork of pass written in go
     + https://news.ycombinator.com/item?id=13551692
