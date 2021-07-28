@@ -114,6 +114,7 @@ end as prefix
 ### Number 2
 
 - http://www.sql-join.com/sql-join-types
+- https://stackoverflow.com/questions/3228871/sql-server-what-is-the-difference-between-cross-join-and-full-outer-join
 - First use of JOIN, INNER JOIN, LEFT/RIGHT JOIN, FULL OUTER JOIN
 - **INNER JOIN/JOIN**: The **INNER JOIN** keyword selects all rows from
   both tables as long as there is a match between the columns in both
