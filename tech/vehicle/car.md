@@ -476,15 +476,120 @@ Commercially available Freons include:
 - **R22** Chlorodiofluoromethane (for air conditioning)
 - **R410A** - Is and alternate/replacement for R22 due to R22's world wide phaseout since it is shown to deplete the Ozone Layer
 
+# Mechanic Tasks
+
+## Cleaning
+
+### Interior
+
+- Windshield and windows
+- Dashboard
+- Glove box, cup holder, container
+- Doors
+- Seats
+- Carpet
+- Headliner
+
+### Exterior
+
+- Body paint
+- Wheel
+- Windshield and windows
+- Headlight restoration
+
+### Engine bay
+
+- Preparation
+    + Put glove and safety glass on
+    + Disconnect battery connector and remove the battery
+    + Remove cover
+    + Make sure all caps are tight (oil, brake, power steering, etc.)
+    + Avoid water in alternator and spark plugs
+- Dry clean
+    + Dust it off using brushes and vacuum
+    + Using rotary tool for aluminum / steel parts
+- Wet clean
+    + Wrap the engine using plastic bag (trash bag)
+    + Water spray the hood
+    + Using soapy water to wash the hood
+    + Water spray around the engine
+    + Using tub-o-towels to wipe dust then rinse with water
+    + Using soapy water and agitate with brush then rinse with water
+    + Remove the plastic bag that covers the engine
+    + Remove the intake air filter and hose then we can clean it outside
+    + Using tub-o-towels to clean grease on the engine
+    + Using soapy water and pipe cleaner brushes / tooth brushes to
+      loosen up the grease / dirt
+    + Clean the soapy water and dirt using a dry towel (wrap towel
+      around pipe cleaner to get to hard to reach spaces)
+- Dry the engine
+    + Dry with towel
+    + Vacuum water out
+    + Clean any place that we missed
+- Detail
+    + Spray wax painted areas (buff it off after spray with towel)
+    + Using plastic restorer or at-205 to protect rubber hose and any
+      plastic part (avoid engine bell)
+    + Re-paint the hood liner with black paint
+
+## Re-sealing, stop leaks
+
+- Using AT-205 to re-seal any hydrolic systems leaks
+- Rejuvenate rubber hose
+
+
+## Squeaking noise from suspension
+
+- Remove wheels then
+- Using AT-205 to rejuvenate suspension rubber
+
+## Change windshield wipers
+
+- Using silicone wipers for longer lasting
+    + Check and clean wipers every 6 months by denatured alcohol
+
+## Maintain suspension
+
+- Using AT-205 to rejuvenate rubber around the suspension and the mounts
+- Rinse dust and salt underneath the car
+- Replace the old parts by quality parts
+
+# Useful products
+
+- AT-205 re-seal
+    + Seal leaks
+    + Rejuvenate rubbers (anywhere)
+- Mass Air Flow cleaner
+- Throttle cleaner
+- Grease
+    + White Lithium Grease
+- Brake cleaner
+- Carburetor cleaner (similar throttle cleaner)
+    + Chain saw or lawn mower still have carburetors
+- Denatured alcohol
+    + Cleaning windshield wipers
+- Plastic and vinyl coating
+- Dressing for non-painted interior and exterior rubber, plastic and
+  vinyl surfaces
+- Mothers instant detailer
+- WD-40 silicone spray
+    + Lubricate and repel water
+    + Only use when engine off since it can destroy other parts if it
+      got suck in when the engine is on
+
 # Cars, Maker - Model - Year - Liter
 
 ## Acura - TL - 2003 - 3.2 Base
 
 - VIN: 19UUA56643A051539
+- License Number: CBF5041
+- Windshield wipers
+    + 24" driver, 19" passenger
 
 ## Toyota - Camry LE - 2008 - 2.4
 
 - VIN: 4T4BE46KX8R013399
+- License Number: NMX7652
 - Front wheel drive
 
 ## Toyota - Corolla LE - 2001 - 1.8
