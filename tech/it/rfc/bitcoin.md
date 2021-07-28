@@ -14,3 +14,7 @@
 - [Bitcoin resources](https://bitcoin.org/en/resources)
 - [Bitcoin developer documentation](https://bitcoin.org/en/developer-documentation)
 - [Bitcoin Wallet comparison](https://bitpay.com/docs/wallets)
+- Is quantum computing a threat to bitcoin?
+    + https://www.forbes.com/sites/rogerhuang/2020/12/21/heres-why-quantum-computing-will-not-break-cryptocurrencies/?sh=711bf8c6167b
+    + https://crypto.stackexchange.com/questions/59375/are-hash-functions-strong-against-quantum-cryptanalysis-and-or-independent-enoug?newreg=7186ac9d86a1415ca31f08744928ebf2
+    + https://crypto.stackexchange.com/questions/44386/are-cryptographic-hash-functions-quantum-secure
