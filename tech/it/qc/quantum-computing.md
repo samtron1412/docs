@@ -2,6 +2,7 @@
 
 # Overview
 
+- https://csferrie.medium.com/introduction-to-quantum-computing-49b31b96e70f
 
 # References
 
