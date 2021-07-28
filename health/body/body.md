@@ -502,6 +502,22 @@ Links
     + Dramamine (Dimenhydrinate)
     + Scopolamine (adhesive patch)
 
+# Fever
+
+- Using thermometer to measure body temperature (37C, 98.6F)
+    + Rectal, Oral, Ear, Armpit, Forehead
+- https://www.peacehealth.org/medical-topics/id/tw9223
+    + The average normal oral temperature is 98.6°F (37°C).
+    + A rectal temperature is 0.5°F (0.3°C) to 1°F (0.6°C) higher than
+      an oral temperature.
+    + An ear (tympanic) temperature is 0.5°F (0.3°C) to 1°F (0.6°C)
+      higher than an oral temperature.
+    + An armpit (axillary) temperature is usually 0.5°F (0.3°C) to 1°F
+      (0.6°C) lower than an oral temperature.
+    + A forehead (temporal) scanner is usually 0.5°F (0.3°C) to 1°F
+      (0.6°C) lower than an oral temperature.
+
+
 # Tips and tricks
 
 ## Tips for better sleep
