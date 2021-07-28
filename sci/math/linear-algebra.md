@@ -44,6 +44,17 @@ https://www.math.ksu.edu/~gerald/leontief.pdf
 - Eigenfunction: Df = \lambda * f (generalization of eigenvector)
     + https://en.wikipedia.org/wiki/Eigenfunction
 
+# Applications
+
+## Principle Component Analysis (PCA)
+
+- note: ta-16b-fa20-pca
+- Sum of squared of distances of data points = eigenvalues of the
+  covariance matrix
+- The eigenvectors of the covariance matrix are principal axes of the
+  centralized data, and it is also singular vectors (using SVD, the same
+  V matrix)
+
 # References
 
 [outer-product]: https://en.wikipedia.org/wiki/Outer_product
