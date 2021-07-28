@@ -11,9 +11,21 @@
 
 # Software development life cycle/process/methodology/model
 
+- In recent years, industry adopted a holistic view of a software
+  development team where development teams communicate more with
+  stakeholders / users including operation teams.
+- A modern software engineer is an IT generalist who should have a
+  wide-ranging knowledge of both development and operations, including
+  coding, infrastructure management, system administration, and DevOps
+  toolchains.
+    + DevOps engineers should also possess interpersonal skills since
+      they work across company silos to create a more collaborative
+      environment.
+
+## Agile
+
 - Agile software development
     + https://en.wikipedia.org/wiki/Agile_software_development
-
 - Agile software development values
     + Individuals and interactions over processes and tools
     + Working software over comprehensive documentation
@@ -32,6 +44,39 @@
     + Simplicity—the art of maximizing the amount of work not done—is essential
     + Best architectures, requirements, and designs emerge from self-organizing teams
     + Regularly, the team reflects on how to become more effective, and adjusts accordingly
+
+## DevOps
+
+- https://www.atlassian.com/devops
+- DevOps is a set of practices that works to automate and integrate the
+  processes between software development and system operation teams, so
+  they can build, test, and release software faster and more reliably.
+    + Integrate the development and operation teams
+- History
+    + The DevOps movement started to coalesce some time between 2007 and
+      2008
+- Going beyond Agile
+    + Agile methodologies help teams plan and produce by breaking work
+      down into manageable tasks and milestones.
+        * https://www.atlassian.com/agile
+    + Continuous integration and delivery: automating the merging and
+      deployment of code.
+        * https://www.atlassian.com/continuous-delivery
+    + Git repositories and workflows
+        * https://www.atlassian.com/git
+    + Incident management: responding to issues and trouble tickets
+        * https://www.atlassian.com/incident-management
+- Benefits of DevOps
+    + Collaborating and trust
+    + Release faster and work smarter
+    + Accelerate time-to-resolution
+    + Better manage unplanned work: better Mean Time to Recovery (MTTR)
+      when incidents and outages occur
+- DevOps culture
+    + Transparency, communication, and collaboration
+    + Shared responsibilities
+    + Fast feedback
+    + Automation
 
 # Core Activities
 
