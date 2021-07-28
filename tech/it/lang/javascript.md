@@ -2,6 +2,14 @@
 
 # Overview
 
+- Learning JavaScript
+    + https://javascript.info/js
+    + https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- Microtasks vs. tasks
+    + https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
+    + https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
+
+
 # Code pattern
 
 ## Prototype
@@ -198,11 +206,15 @@ $('#employeeTable').DataTable({
 
 Please visit here for full options: https://datatables.net/reference/option/
 
-# [JavaScript engine][engine]
+# JavaScript engine
 
-A JavaScript engine is a virtual machine which interprets and executes
-JavaScript (it's JavaScript interpreter). Although there are several
-uses for a JavaScript engine, it is most commonly used in web browsers
+- A JavaScript engine is a computer program which interprets and executes
+  JavaScript code.
+    + Using just-in-time compilation to improve performance
+- Although there are several uses for a JavaScript engine, it is most
+  commonly used in web browsers
+- Popular engines
+    +
 
 ## Active projects
 
@@ -225,6 +237,26 @@ Node.js has an **event-driven architecture** capable of **asynchronous
 I/O**. These design choices are meant to optimize **throughput** and
 **scalability** in Web applications with many input/output operations,
 as well as for real-time Web applications.
+
+- 3 components
+    + Callback stack
+    + Asynch API
+    + EventLoop
+- Asynchronous APIs
+    + `setTimeout(callback, interval);`
+- Problem: callback hell
+    + Fix: PROMISES
+
+```javascript
+const response = getAPIGet(); // response is a promise
+response.then((response) => {
+    console.log(response);
+})
+```
+- Promises vs. Observables
+    + Promises only give you data once, and it is JavaScript native
+    + Observables can return data multiple times, and it is provided
+      through `RxJS` library (reactive programming)
 
 ## Tutorials
 
@@ -260,9 +292,35 @@ Usage: `$ node /bin/http-server`
 
 # [List of languages that compile to JavaScript][list]
 
+# Tips and Tricks
+
+## Double exclamation mark operator
+
+- https://brianflove.com/2014-09-02/whats-the-double-exclamation-mark-for-in-javascript/
+- Shortcut for cast a value to boolean
+    + falseys: 0, empty string, null, undefined, NaN
+    + truthys: object, array, non-empty string, number other than 0,
+      Date
+
+## Three dots operator
+
+- Similar pack and unpacking operators in Python (`*` for list and `**`
+  for dictionary)
+- `...`: rest and spread operator
+    + https://dev.to/sagar/three-dots---in-javascript-26ci
+    + rest operator `...params` is used in function definitions
+    + spread operator `...args` is used in function calls
+
+# Troubleshooting
+
+## Callback hell
+
+- Nested callbacks
+- Hard to maintain and errors handling
+- Use Promise or Observable instead
+
 # References
 
-[engine]: https://en.wikipedia.org/wiki/JavaScript_engine
 [typescript-js]: http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-JavaScript/35048303#35048303
 [list]: https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS
 [coffee-type-dart]: https://www.quora.com/Should-I-learn-CoffeeScript-TypeScript-or-Dart
