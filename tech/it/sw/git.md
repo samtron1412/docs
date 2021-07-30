@@ -4,11 +4,11 @@
 
 ## Basic Git Data Stores
 
-![Git Data Stores](../graphic/git/git-transport.png)
+![Git Data Stores](https://github.com/samtron1412/figures/raw/master/git/git-transport.png)
 
 ## Basic Git Workflow
 
-![Basic Git Workflow](../graphic/git/basic-git-workflow.png)
+![Basic Git Workflow](https://github.com/samtron1412/figures/raw/master/git/basic-git-workflow.png)
 
 ## Goals of Git
 
@@ -20,15 +20,27 @@
 
 ## Pros (Advantages)
 
-- Distributed version control system. Decentralized. Your local copy is a repository, and you can commit to it and get all benefits of source control. **Offline working**. => **free to commit** not worry about breaking thing. after all you tuning thing and publish final code to everyone. => eliminate comment code, get clean code
+- Distributed version control system. Decentralized. Your local copy is
+  a repository, and you can commit to it and get all benefits of source
+  control. **Offline working**. => **free to commit** not worry about
+  breaking thing. after all you tuning thing and publish final code to
+  everyone. => eliminate comment code, get clean code
 - Git is much *faster* than Subversion: diff, view history, commit, merge, switch...
 - Making *branches* and *merging* really easy.
 - *Scales* to thousands of contributors.
-- Use *less space*: One of the reasons for the smaller repo size is that an SVN working directory always *contains two copies of each file*: one for the user to actually work with and another hidden in .svn/ to aid operations such as status, diff and commit. In contrast a Git working directory requires only *one small index file that stores about 100 bytes of data per tracked file*. On projects with a large number of files this can be a substantial difference in the disk space required per working copy.
+- Use *less space*: One of the reasons for the smaller repo size is that
+  an SVN working directory always *contains two copies of each file*:
+  one for the user to actually work with and another hidden in .svn/ to
+  aid operations such as status, diff and commit. In contrast a Git
+  working directory requires only *one small index file that stores
+  about 100 bytes of data per tracked file*. On projects with a large
+  number of files this can be a substantial difference in the disk space
+  required per working copy.
 - Very *flexible*, many workflow.
 - *Ignore* easier. ignore a pattern across all subdirectories (e.g *.txt)
 - Access control
-- Staging area, index (snapshot state of your files): make big modify and commit part of modify, commit part of file.
+- Staging area, index (snapshot state of your files): make big modify
+  and commit part of modify, commit part of file.
 
 ## Cons (Disadvantages)
 
@@ -56,9 +68,6 @@
 - http://think-like-a-git.net/
 - [My Git Workflow](http://blog.osteele.com/posts/2008/05/my-git-workflow/)
 
-# Installation
-
-- [Download](https://git-scm.com/downloads)
 
 # Customizing Git
 
@@ -714,7 +723,7 @@ Exact same as Subversion. Appropriate with few developers.
   local master branch to the central repository. `git push origin
   master`
 
-![Centralized workflow](../graphic/git/centralized.png "Centralized workflow")
+![Centralized workflow](https://github.com/samtron1412/figures/raw/master/git/centralized.png "Centralized workflow")
 
 ## Integration-Manager Workflow
 
@@ -726,7 +735,7 @@ Exact same as Subversion. Appropriate with few developers.
    locallly.
 6. The maintainer pushes merged changes to the main repository.
 
-![Integration-manager workflow](../graphic/git/integration-manager.png "Integration-manager workflow")
+![Integration-manager workflow](https://github.com/samtron1412/figures/master/git/integration-manager.png "Integration-manager workflow")
 
 This is very common workflow with hub-based tools like GitHub or GitLab.
 
@@ -744,7 +753,7 @@ famous example is the Linux kernel.
 4. The dictator pushes their `master` to the references repository so
    the other developers can rebase on it.
 
-![Benevolent dictator workflow](../graphic/git/benevolent-dictator.png "Benevolent dictator workflow")
+![Benevolent dictator workflow](https://github.com/samtron1412/figures/raw/master/git/benevolent-dictator.png "Benevolent dictator workflow")
 
 
 ## Feature branch Workflow
@@ -780,7 +789,7 @@ A strict branching model designed around the project release. More
 complicated than the Feature Branch Workflow, this provides a robust
 framework for managing larger projects.
 
-![Gitflow](../graphic/git/git-model@2x.png)
+![Gitflow](https://github.com/samtron1412/figures/raw/master/git/git-model@2x.png)
 
 - This work flow assigns very specific roles to different branches and
   defines how and when they should interact. In addition to feature
@@ -790,13 +799,13 @@ framework for managing larger projects.
   project. The `master` branch stores the official release history, and
   the `develop` branch serves as an integration branch for features.
   It's also convenient to tag all commits in the `master` branch with a
-  version number. ![History project](../graphic/git/02.svg)
+  version number. ![History project](https://github.com/samtron1412/figures/raw/master/git/02.svg)
 - **Feature Branches**, new feature will have its own branch. But,
   instead of branching off of `master`, feature branches use `develop`
   as their parent branch. When feature is complete, it gets merged back
   into `develop` branch. Features should never interact directly with
   `master`. Delete feature branches after merged to `develop` branch.
-  ![Feature branches](../graphic/git/03.svg)
+  ![Feature branches](https://github.com/samtron1412/figures/raw/master/git/03.svg)
 - **Release branches**, once `develop` has acquired enough features for
   a release ( or a predetermined release date is approaching), you fork
   a release branch off of `develop`. Creating this branch starts the
@@ -814,7 +823,7 @@ framework for managing larger projects.
       `develop` branch: `git push --tags`
     + Delete release branch after release.
 
-![Release branch](../graphic/git/04.svg)
+![Release branch](https://github.com/samtron1412/figures/raw/master/git/04.svg)
 
 - **Maintenance branches** (hotfix branches), used to quickly patch
   production releases. This is the only branch that should fork directly
@@ -823,7 +832,7 @@ framework for managing larger projects.
   `master` should be tagged with an updated version number. Naming:
   `issue-#001`
 
-![Hotfix branch](../graphic/git/05.svg)
+![Hotfix branch](https://github.com/samtron1412/figures/raw/master/git/05.svg)
 
 ## Forking Workflow
 
@@ -975,11 +984,11 @@ See also: #456, #789
 
 ### Private small team
 
-![Small Team Workflow Simple](../graphic/git/small-team-flow.png "Small Team Workflow Simple")
+![Small Team Workflow Simple](https://github.com/samtron1412/figures/raw/master/git/small-team-flow.png "Small Team Workflow Simple")
 
 ### Private managed team
 
-![Small Team Workflow Complex](../graphic/git/managed-team-flow.png "Small Team Workflow Complex")
+![Small Team Workflow Complex](https://github.com/samtron1412/figures/raw/master/git/managed-team-flow.png "Small Team Workflow Complex")
 
 ## Maintaining a Project
 
@@ -989,7 +998,7 @@ See also: #456, #789
   as remotes to your project.
 
 Patch Workflow
-![Patch Workflow](../graphic/git/patch-workflow.png)
+![Patch Workflow](https://github.com/samtron1412/figures/raw/master/git/patch-workflow.png)
 
 ### Working in Topic Branches
 
