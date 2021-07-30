@@ -191,6 +191,15 @@ and 157.5".
     + Washer fluid
 
 
+# On-Board Diagostics (OBD)
+
+- Most 1996 and newer vehicles have standardized computer systems
+  (OBDII) that continually monitor the electronic sensors of engines and
+  systems.
+- Types of OBD scanner
+    + https://www.youcanic.com/article/obd-ii-scanners#:~:text=Level%201%20%2D%20Basic%20Code%20Readers,%2C%20Transmission%2C%20ABS%2C%20Airbag.&text=They%20can%20read%2C%20clear%2C%20program,all%20systems%20in%20your%20car.
+    + Basic: (level 1) only Engine system (ECU)
+
 # Buying Cars
 
 ## Car Title
