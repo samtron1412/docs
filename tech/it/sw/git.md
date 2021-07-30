@@ -1581,6 +1581,12 @@ http://stevelorek.com/how-to-shrink-a-git-repository.html
 
 # Troubleshooting
 
+## No newline at end of file
+
+- https://thoughtbot.com/blog/no-newline-at-end-of-file
+- https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline
+- https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
 ## SSL cert self signed
 
 Configuring projects do not verify certs: `git config http.sslVerify false`
