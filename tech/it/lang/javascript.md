@@ -257,6 +257,8 @@ response.then((response) => {
     + Promises only give you data once, and it is JavaScript native
     + Observables can return data multiple times, and it is provided
       through `RxJS` library (reactive programming)
+    + https://auth0.com/blog/javascript-promises-vs-rxjs-observables/
+    + https://stackoverflow.com/q/50269671/1683888
 
 ## Tutorials
 
