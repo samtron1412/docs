@@ -4,7 +4,62 @@
     + Install all packages locally: `npm install pkg`
     + Run the local binaries: `npx <cmd> [args]`
 
-# package.json
+# npm CLI
+
+## Commands
+
+- Update npm: `npm install -g npm@latest`
+    + `npm i -g npm@latest`
+- `npm init`: step-by-step to scaffold a project
+    + name, version, description, main file, test command, git
+    repository link, keywords, license
+    + `npm init --yes` for all default values
+- `npm install <module>`: install a module to the current directory
+  without saving to `package.json`
+- `npm install <module> --save`: install a module to the current
+  directory and save it to `dependencies` in `package.json`
+- `npm install <module> --save-dev`: install a module to the current
+  directory and save it to `devDependencies` in `package.json`
+- `npm install`: install all modules in `dependencies` and
+  `devDependencies` in `package.json` to the current directory
+- `npm install <module> --global`: install a module globally
+- View an installed package's info:
+    + All info: `npm view <pkg>`
+    + Version: `npm view <pkg> version`
+- List all installed packages
+    + Local packages: `npm list`
+    + Global packages: `npm list -g`
+- Open a package's homepage: `npm home <pkg>`
+- Open a package's git repo: `npm repo <pkg>`
+- Check outdated dependencies: `npm outdated`
+- Prune packages that are not in `package.json`: `npm prune`
+- Lock down dependencies version for publication: `npm shrinkwrap`
+- Change default save prefix to `~`: `npm config set save-prefix="~"`
+    + `~`: only allow update patches => more safe
+    + `^`: allow updating minor
+- Set some defaults:
+    + `npm config set init.author.name $name`
+    + `npm config set init.author.email $email`
+
+## Configuring npm
+
+### Summary
+
+- Since `package-lock.json` is committed with this package, you should
+  use `npm ci` to install packages from `package-lock.json` instead of
+  using `npm install` which will install packages from `package.json`
+  and update the `package-lock.json` if there is mismatch between
+  `package-lock.json` and `package.json`
+- If you want to add dependencies, then you should modify `package.json`
+  and run `npm install` to update `package-lock.json`, then commit the
+  changes for both `package.json` and `package-lock.json`.
+- If there is conflict when you add dependencies because somebody also
+  does the same thing, then you should resolve the conflict in
+  `package.json`, then rerun `npm install` to update
+  `package-lock.json`, and then continue with the merge of your changes
+  to the code base.
+
+### package.json
 
 - `package.json`: list of all packages that the project depends on
     + metadata of the project: name, version, description, license,
@@ -33,7 +88,10 @@
 }
 ```
 
-# Package Versions
+### package-lock.json
+
+
+# Package Versions (Semantic Version, semver)
 
 - Major.Minor.Patch
     + Major: making incompatible API changes
@@ -45,46 +103,10 @@
     + "~1.2.3": greater than or equal to 1.2.3 and less than 1.3.0
     + "^1.2.3": greater than or equal to 1.2.3 and less than 2.0.0
 
-# npm: Node Package Manager
+# Packages and Modules
 
-## Packages and Modules
 
-## Commands
+# Integration
 
-- Update npm: `npm install -g npm@latest`
-    + `npm i -g npm@latest`
-- `npm init`: step-by-step to scaffold a project
-    + name, version, description, main file, test command, git
-    repository link, keywords, license
-    + `npm init --yes` for all default values
-- `npm install <module>`: install a module to the current directory
-  without saving to `package.json`
-- `npm install <module> --save`: install a module to the current
-  directory and save it to `dependencies` in `package.json`
-- `npm install <module> --save-dev`: install a module to the current
-  directory and save it to `devDependencies` in `package.json`
-- `npm install`: install all modules in `dependencies` and
-  `devDependencies` in `package.json` to the current directory
-- `npm install <module> --global`: install a module globally
-- View an installed package's info:
-    + All info: `npm view <pkg>`
-    + Version: `npm view <pkg> version`
-- List all installed packages
-    + Local packages: `npm list`
-    + Global packages: `npm list -g`
 
-# Tips and Tricks
 
-## Commands
-
-- Open a package's homepage: `npm home <pkg>`
-- Open a package's git repo: `npm repo <pkg>`
-- Check outdated dependencies: `npm outdated`
-- Prune packages that are not in `package.json`: `npm prune`
-- Lock down dependencies version for publication: `npm shrinkwrap`
-- Change default save prefix to `~`: `npm config set save-prefix="~"`
-    + `~`: only allow update patches => more safe
-    + `^`: allow updating minor
-- Set some defaults:
-    + `npm config set init.author.name $name`
-    + `npm config set init.author.email $email`
