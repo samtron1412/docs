@@ -127,6 +127,10 @@ Change link from `http://something.com/...` to `//something.com/...` it will aut
 
 # Tips & Tricks
 
+## Best Practices
+
+- https://treblle.com/blog/loaded-in-600-milliseconds
+
 ## [Source code comment styling tips](http://www.hongkiat.com/blog/source-code-comment-styling-tips/)
 
 # References
