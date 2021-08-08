@@ -40,6 +40,12 @@
 
 # Tips and tricks
 
+## Using JS library for TypeScript
+
+- https://medium.com/@steveruiz/using-a-javascript-library-without-type-declarations-in-a-typescript-project-3643490015f3
+    - Definitely Typed repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+    - Create the declaration file by yourself
+
 ## interface vs. class
 
 - https://ultimatecourses.com/blog/classes-vs-interfaces-in-typescript
