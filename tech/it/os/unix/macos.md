@@ -72,6 +72,14 @@ Mac OS
 
 # Tips and Tricks
 
+## Kill all WindowServer to restart the Window Manager
+
+Sometimes, if you have problems with window manager / displays, and you
+don't want to restart your computer, then you can kill all the window
+servers to restart them.
+
+- `sudo killall -1 WindowServer` or `sudo killall -HUP WindowServer`
+
 ## Places to check when cleaning storage
 
 - StackOverflow
@@ -144,8 +152,6 @@ take place.
 ## Create a Python development environment
 
 USING CONDA
-
-# Tips and Tricks
 
 ## Cannot turn off Do not disturb
 
