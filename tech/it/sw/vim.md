@@ -214,8 +214,30 @@ inoremap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
 
 ## Undo - Redo in normal mode
 
-`u`: undo
-`Ctrl + r`: redo
+- `u`: undo
+- `Ctrl + r`: redo
+
+## Folding
+
+- https://vim.fandom.com/wiki/Folding
+- `zf{motion}`: manually create a fold in the range of motion
+    + `zf'a`: fold from the current line to there the mark `a` has been
+      set
+    + `zf3j`: fold the current line along with the following 3 lines
+    + You can enter `Visual` mode then select the lines, and hit `zf` to
+      fold
+- `zd`: delete the fold at the cursor
+- `zc`: close a fold
+- `zo`: open a fold
+- `za`: toggle open and close a fold
+- `zC`, `zO`, `zA`: operate on all folding levels (i.e., close all folds
+  at the cursor)
+- `zr`: reduces folding by opening one more level of folds throughout
+  the whole buffer (the cursor position is not relevant)
+- `zR`: open all folds
+- `zm`: gives more folding by closing one more level of folds throughout
+  the whole buffer
+- `zM`: close all folds
 
 # The VIM way
 
