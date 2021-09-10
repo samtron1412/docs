@@ -296,6 +296,12 @@ Usage: `$ node /bin/http-server`
 
 # Tips and Tricks
 
+## _ variable with arrow function in ES6
+
+- https://stackoverflow.com/questions/41085189/using-underscore-variable-with-arrow-functions-in-es6-typescript
+- Should avoid `_` variable (ignored variables)
+- Should use `_unusedVar` instead for unused variable
+
 ## Double exclamation mark operator
 
 - https://brianflove.com/2014-09-02/whats-the-double-exclamation-mark-for-in-javascript/
