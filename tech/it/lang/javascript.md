@@ -296,6 +296,16 @@ Usage: `$ node /bin/http-server`
 
 # Tips and Tricks
 
+## `isFinite()` vs `Number.isFinite()` vs `_.isFinite()`
+
+- Global function `isFinite()` convert the argument to Number before
+  checking:
+    + Return `true` if the coerced argument is a Number
+    + Return `false` if it is `+Infinity`, `-Infinity`, or `NaN`
+- Lodash `_.isFinite()` is the same as `Number.isFinite()`
+    + They do not convert the argument to Number
+    + So the only `true` value is Number and finite
+
 ## _ variable with arrow function in ES6
 
 - https://stackoverflow.com/questions/41085189/using-underscore-variable-with-arrow-functions-in-es6-typescript
