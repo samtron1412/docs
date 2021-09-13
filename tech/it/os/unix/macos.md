@@ -72,6 +72,27 @@ Mac OS
 
 # Tips and Tricks
 
+## Record System/Internal Audio with Mic Audio
+
+- Install Blackhole using brew
+    + https://github.com/ExistentialAudio/BlackHole
+- Add a multi-ouput device
+    + https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device
+    + Open MIDI
+    + Output: blackhole + external headphones
+    + Master: headphones
+    + Drift correction: blackhole
+    + Right-click and select: `Use this device for sound OUTPUT`
+- Add an aggregate device
+    + Open MIDI
+    + Input: blackhole + mic
+    + Output: blackhole
+    + Clock source: mic
+    + Drift correction: blackhole
+    + Right-click and select: `Use this device for sound INPUT`
+- Open QuickTime Player to record audio
+    + Select the input is the created aggregate device
+
 ## Kill all WindowServer to restart the Window Manager
 
 Sometimes, if you have problems with window manager / displays, and you
