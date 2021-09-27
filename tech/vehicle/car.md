@@ -590,16 +590,44 @@ Commercially available Freons include:
 
 ## Acura - TL - 2003 - 3.2 Base
 
+### Information
+
 - VIN: 19UUA56643A051539
 - License Number: CBF5041
 - Windshield wipers
     + 24" driver, 19" passenger
 
+### Maintenance
+
+- Engine oil: 2021-07 ()
+- Coolant / Antifreeze: 2021-09-20
+- Transmission fluid
+- Brake fluid
+- Power steering fluid: 2021-09-25
+- Tires
+
 ## Toyota - Camry LE - 2008 - 2.4
+
+### Information
 
 - VIN: 4T4BE46KX8R013399
 - License Number: NMX7652
 - Front wheel drive
+
+### Maintenance
+
+- Engine oil: 2021-07 (159000)
+- Coolant / Antifreeze: 2020-12 (maybe)
+- Transmission fluid: 2020-11-25: 90 (5 years)
+- Brake fluid: 2021-08 (3 years)
+    + Front Left Wheel valve broken
+    + Rear break pad: 2021-08
+- Power steering fluid: Not yet
+- Wheel Bearing and Hub and Axle Nut, Front Right: 300
+    + 2020-11-25
+- Tires
+    + 2020-09-06: Front tires: 145
+
 
 ## Toyota - Corolla LE - 2001 - 1.8
 
