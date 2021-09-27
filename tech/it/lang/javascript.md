@@ -5,10 +5,28 @@
 - Learning JavaScript
     + https://javascript.info/js
     + https://developer.mozilla.org/en-US/docs/Web/JavaScript
-- Microtasks vs. tasks
+    + https://felix-kling.de/jsbasics/
+- Execution and Interpretation: Microtasks vs. tasks
     + https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
     + https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
-
+- Language Specification/Feature
+    + Object and Prototype
+        * https://levelup.gitconnected.com/the-javascript-object-paradigm-and-prototypes-explained-simply-e9cb9eaa49aa
+        * https://stackoverflow.com/questions/53199341/object-vs-prototype-in-javascript
+        * https://github.com/getify/You-Dont-Know-JS/tree/0cc17c53ff772e20dfd6a7072c965df2486116e8/this%20%26%20object%20prototypes
+    + Function
+    + Promise
+        * https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md
+        * https://promisesaplus.com/
+        * https://github.com/kriskowal/q
+    + Write a JavaScript framework or library
+    + `window`
+    + HTML DOM
+        * HTML DOM Events: https://www.w3schools.com/jsref/dom_obj_event.asp
+- Books
+    + Javascript : The Definitive Guide (David Flanagan)
+    + Javascript: The Good Parts by Douglas Crockford
+    + Javascript Patterns by Stoyan Stefenov
 
 # Code pattern
 
@@ -35,12 +53,12 @@ static variables and things need for global.
 
 ```js
 $(document).ready(function(){
-	var setting = {
-		loginForm: $('#loginForm'),
-		userId: $('input[name=userId]'),
-		password: $('input[name=password'),
-		errorMessage: $('span.errorMessage')
-	};
+        var setting = {
+                loginForm: $('#loginForm'),
+                userId: $('input[name=userId]'),
+                password: $('input[name=password'),
+                errorMessage: $('span.errorMessage')
+        };
 });
 ```
 
@@ -55,9 +73,9 @@ nodes:
 
 ```js
 var s, loginApp = {
-	init: function(param){
-		s = param;
-	};
+        init: function(param){
+                s = param;
+        };
 };
 ```
 
@@ -71,14 +89,14 @@ BindingUIAction will be called in initial function for "kick things off"
 
 ```js
 var s, loginApp = {
-	init: function(){
-		s = this.setting;
-		this.bindUIActions();
-	},
+        init: function(){
+                s = this.setting;
+                this.bindUIActions();
+        },
 
-	bindUIActions: function(){
-		s.loginForm.validate();
-	}
+        bindUIActions: function(){
+                s.loginForm.validate();
+        }
 };
 ```
 
@@ -112,7 +130,7 @@ var s, loginApp = {
 
 ```js
 s.loginForm.validate({
-	onfocusout: function(element){ $(element).valid(); }
+        onfocusout: function(element){ $(element).valid(); }
 });
 ```
 
@@ -126,8 +144,8 @@ Example:
 
 ```js
 s.userId.rules("add", {
-	required: true,
-	maxlength: 20
+        required: true,
+        maxlength: 20
 });
 ```
 
@@ -179,15 +197,15 @@ Example
 
 ```js
 var validator = s.loginForm.validate({
-	onfocusout: function(element) { $(element).valid(); },
-	wrapper: "span",
-	errorClass: "text-danger",
-	highlight: function(element, errorClass, validClass) {
-		$(element).closest('div').addClass('has-error');
-	},
-	unhighlight: function(element, errorClass, validClass){
-		$(element).closest('div').removeClass('has-error');
-	}
+        onfocusout: function(element) { $(element).valid(); },
+        wrapper: "span",
+        errorClass: "text-danger",
+        highlight: function(element, errorClass, validClass) {
+                $(element).closest('div').addClass('has-error');
+        },
+        unhighlight: function(element, errorClass, validClass){
+                $(element).closest('div').removeClass('has-error');
+        }
 });
 ```
 
@@ -199,8 +217,8 @@ Setting
 
 ```js
 $('#employeeTable').DataTable({
-	scrollY: 300,
-	paging: false
+        scrollY: 300,
+        paging: false
 });
 ```
 
