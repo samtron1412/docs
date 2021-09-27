@@ -10,3 +10,5 @@
     + https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html
 - HTML SVG images and link
     + https://css-tricks.com/the-many-ways-to-link-up-shapes-and-images-with-html-and-css/
+- HTML Events
+    + https://www.w3schools.com/tags/ref_eventattributes.asp
