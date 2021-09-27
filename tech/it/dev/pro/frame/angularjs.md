@@ -1,7 +1,8 @@
 # Overview
 
 AngularJS framework (note: this is not Angular framework, this is the
-older version)
+older version). End of life December 31, 2021.
+
 
 - Testing
     + `scope.$digest`: flushes/evaluates all the promises
