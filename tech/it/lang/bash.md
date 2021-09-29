@@ -6,6 +6,38 @@
 
 - [Bash Guide for Beginners][beginner]
 - [Advanced Bash-Scripting Guide][advanced]
+- Naming conventions
+    + https://google.github.io/styleguide/shellguide.html#s7-naming-conventions
+    + https://stackoverflow.com/questions/673055/correct-bash-and-shell-script-variable-capitalization
+    + https://unix.stackexchange.com/questions/42847/are-there-naming-conventions-for-variables-in-shell-scripts
+- Bash reference manual: https://www.gnu.org/software/bash/manual/html_node/index.html
+- List all built-in commands: `compgen`
+- Check type of a command (is it internal command (built-in) or
+  external)
+    + `type [-a] cmd`: `type -a top`
+    + `command -V cmd`: `command -V top`
+    + Output: `top is a shell builtin`
+- Find the command executable location:
+    + `where cmd`:
+    + `which cmd`
+
+# Built-in Commands
+
+## sh built-in commands
+
+
+## bash built-in commands
+
+
+# stdin, stdout, stderr
+
+- File descriptors:
+    + stdin: 0
+    + stdout: 1
+    + stderr: 2
+- Redirect both command output and errors to a file
+    + `cmd > file.txt 2>&1`
+
 
 # Parameter
 
