@@ -16,19 +16,40 @@ We can use shell to **programming**.
 
 # Text shells (Command line interface - CLI)
 
-## [List of CLI](https://en.wikipedia.org/wiki/List_of_command-line_interpreters)
+- [List of CLI](https://en.wikipedia.org/wiki/List_of_command-line_interpreters)
 
-### [Unix-like systems](https://en.wikipedia.org/wiki/Unix_shell)
+## [Unix-like systems](https://en.wikipedia.org/wiki/Unix_shell)
 
+- `sh` vs `bash`:
+    + https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash
+    + `sh` is a programming language described by the POSIX standard. It
+      has many implementations (`ksh88`, `dash`, ...)
+        * Because `sh` is a specification, not an implementation,
+          `/bin/sh` is a symlink (or a hard link) to an actual
+          implementation on most POSIX systems.
+    + `bash` started as an `sh`-compatible implementation, however, over
+      time it has acquired many extensions, and it is no longer
+      POSIX-compliant.
+        * `bash` supports a `--posix` switch, which makes it more
+          POSIX-compliant.
 - [Bourne shell (sh)](https://en.wikipedia.org/wiki/Bourne_shell): first UNIX shell written by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson_(computer_programmer))
   + [Bourne-Again shell (bash)](https://en.wikipedia.org/wiki/Bash_(Unix_shell)): GNU project
   + [Z shell (zsh)](https://en.wikipedia.org/wiki/Z_shell): a relatively modern shell that is backward compatible with bash.
 - [C shell](https://en.wikipedia.org/wiki/C_shell): added command history, arithmetic, and other features compare with sh
+- Shell script portability with shebang
+    + https://serverfault.com/questions/865874/bin-sh-vs-bin-bash-for-maximum-portability
+    + Most portable: `#!/bin/sh` + POSIX standard syntax
+    + Second most portable: `#!/bin/bash` + bash v3 syntax
+    + Third most portable: `#!/bin/bash` + bash v4 features
+    + Least portable: `#!/bin/zsh` + specific syntax
+    + WRONG: `#!/bin/sh` + non POSIX syntax
 
 
-### BSD
+## BSD
 
-### Windows
+
+## Windows
+
 
 
 # Graphical shells
