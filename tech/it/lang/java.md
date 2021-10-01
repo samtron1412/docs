@@ -1903,6 +1903,8 @@ servers), or with Springs's new recommendation
   by tests. It can be used to identify which parts of your Java program
   are lacking test coverage.)
 - Continuous integration: Jenkins, Hudson
+- Mock libraries: Mockito
+
 
 ## Build Tools
 
@@ -2093,6 +2095,8 @@ exists, this will overwrite it.
 ## Useful libraries
 
 - [Apache Commons][apache-common] project
+- Google Guava
+- Lombok
 
 ### Apache Commons Lang: org.apache.commons.lang3
 
