@@ -466,16 +466,16 @@ There are several ways to simulate default parameters in Java:
 
 1. Method overloading.
 
-		void foo(String a, Integer b) {
-		    //...
-		}
+                void foo(String a, Integer b) {
+                    //...
+                }
 
-		void foo(String a) {
-		    foo(a, 0); // here, 0 is a default value for b
-		}
+                void foo(String a) {
+                    foo(a, 0); // here, 0 is a default value for b
+                }
 
-		foo("a", 2);
-		foo("a");
+                foo("a", 2);
+                foo("a");
 
 One of the limitations of this approach is that it doesn't work if you
 have two optional parameters of the same type and any of them can be
@@ -485,39 +485,39 @@ omitted.
 
 a) All optional parameters are of the same type:
 
-		void foo(String a, Integer... b) {
-		    Integer b1 = b.length > 0 ? b[0] : 0;
-		    Integer b2 = b.length > 1 ? b[1] : 0;
-		    //...
-		}
+                void foo(String a, Integer... b) {
+                    Integer b1 = b.length > 0 ? b[0] : 0;
+                    Integer b2 = b.length > 1 ? b[1] : 0;
+                    //...
+                }
 
-		foo("a");
-		foo("a", 1, 2);
+                foo("a");
+                foo("a", 1, 2);
 
 b) Types of optional parameters may be different:
 
-		void foo(String a, Object... b) {
-		    Integer b1 = 0;
-		    String b2 = "";
-		    if (b.length > 0) {
-		      if (!(b[0] instanceof Integer)) {
-		          throw new IllegalArgumentException("...");
-		      }
-		      b1 = (Integer)b[0];
-		    }
-		    if (b.length > 1) {
-		        if (!(b[1] instanceof String)) {
-		            throw new IllegalArgumentException("...");
-		        }
-		        b2 = (String)b[1];
-		        //...
-		    }
-		    //...
-		}
+                void foo(String a, Object... b) {
+                    Integer b1 = 0;
+                    String b2 = "";
+                    if (b.length > 0) {
+                      if (!(b[0] instanceof Integer)) {
+                          throw new IllegalArgumentException("...");
+                      }
+                      b1 = (Integer)b[0];
+                    }
+                    if (b.length > 1) {
+                        if (!(b[1] instanceof String)) {
+                            throw new IllegalArgumentException("...");
+                        }
+                        b2 = (String)b[1];
+                        //...
+                    }
+                    //...
+                }
 
-		foo("a");
-		foo("a", 1);
-		foo("a", 1, "b2");
+                foo("a");
+                foo("a", 1);
+                foo("a", 1, "b2");
 
 The main drawback of this approach is that if optional parameters are of
 different types you lose static type checking. Furthermore, if each
@@ -527,13 +527,13 @@ parameter has different meaning you need some way to distinguish them.
 3. Nulls. To address the limitations of the previous approaches you can
    allow null values and then analyse each parameter in a method body:
 
-		void foo(String a, Integer b, Integer c) {
-		    b = b != null ? b : 0;
-		    c = c != null ? c : 0;
-		    //...
-		}
+                void foo(String a, Integer b, Integer c) {
+                    b = b != null ? b : 0;
+                    c = c != null ? c : 0;
+                    //...
+                }
 
-		foo("a", null, 2);
+                foo("a", null, 2);
 
 Now all arguments values must be provided, but the default ones may be
 null.
@@ -541,13 +541,13 @@ null.
 4. Optional class. This approach is similar to nulls, but uses guava
    Optional class for parameters that have a default value:
 
-		void foo(String a, Optional<Integer> bOpt) {
-		    Integer b = bOpt.isPresent() ? bOpt.get() : 0;
-		    //...
-		}
+                void foo(String a, Optional<Integer> bOpt) {
+                    Integer b = bOpt.isPresent() ? bOpt.get() : 0;
+                    //...
+                }
 
-		foo("a", Optional.of(2));
-		foo("a", Optional.<Integer>absent());
+                foo("a", Optional.of(2));
+                foo("a", Optional.<Integer>absent());
 
 Optional makes a method contract explicit for a caller, however, one may
 find such signature too verbose.
@@ -555,62 +555,62 @@ find such signature too verbose.
 5. Builder pattern. The builder pattern is used for constructors and is
    implemented by introducing a separate Builder class:
 
-		 class Foo {
-		     private final String a;
-		     private final Integer b;
+                 class Foo {
+                     private final String a;
+                     private final Integer b;
 
-		     Foo(String a, Integer b) {
-		       this.a = a;
-		       this.b = b;
-		     }
+                     Foo(String a, Integer b) {
+                       this.a = a;
+                       this.b = b;
+                     }
 
-		     //...
-		 }
+                     //...
+                 }
 
-		 class FooBuilder {
-		   private String a = "";
-		   private Integer b = 0;
+                 class FooBuilder {
+                   private String a = "";
+                   private Integer b = 0;
 
-		   FooBuilder setA(String a) {
-		     this.a = a;
-		     return this;
-		   }
+                   FooBuilder setA(String a) {
+                     this.a = a;
+                     return this;
+                   }
 
-		   FooBuilder setB(Integer b) {
-		     this.b = b;
-		     return this;
-		   }
+                   FooBuilder setB(Integer b) {
+                     this.b = b;
+                     return this;
+                   }
 
-		   Foo build() {
-		     return new Foo(a, b);
-		   }
-		 }
+                   Foo build() {
+                     return new Foo(a, b);
+                   }
+                 }
 
-		 Foo foo = new FooBuilder().setA("a").build();
+                 Foo foo = new FooBuilder().setA("a").build();
 
 6. Maps. When the number of parameters is too large and for most of them
    default values are usually used, you can pass method arguments as a
    map of their names/values:
 
-		void foo(Map<String, Object> parameters) {
-		    String a = "";
-		    Integer b = 0;
-		    if (parameters.containsKey("a")) {
-		        if (!(parameters.get("a") instanceof Integer)) {
-		            throw new IllegalArgumentException("...");
-		        }
-		        a = (String)parameters.get("a");
-		    }
-		    if (parameters.containsKey("b")) {
-		        //...
-		    }
-		    //...
-		}
+                void foo(Map<String, Object> parameters) {
+                    String a = "";
+                    Integer b = 0;
+                    if (parameters.containsKey("a")) {
+                        if (!(parameters.get("a") instanceof Integer)) {
+                            throw new IllegalArgumentException("...");
+                        }
+                        a = (String)parameters.get("a");
+                    }
+                    if (parameters.containsKey("b")) {
+                        //...
+                    }
+                    //...
+                }
 
-		foo(ImmutableMap.<String, Object>of(
-		    "a", "a",
-		    "b", 2,
-		    "d", "value"));
+                foo(ImmutableMap.<String, Object>of(
+                    "a", "a",
+                    "b", 2,
+                    "d", "value"));
 
 Please note that you can combine any of these approaches to achieve a
 desirable result.
