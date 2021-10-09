@@ -27,6 +27,7 @@
     + Javascript : The Definitive Guide (David Flanagan)
     + Javascript: The Good Parts by Douglas Crockford
     + Javascript Patterns by Stoyan Stefenov
+    + https://felix-kling.de/jsbasics/
 
 # Code pattern
 
@@ -313,6 +314,58 @@ Usage: `$ node /bin/http-server`
 # [List of languages that compile to JavaScript][list]
 
 # Tips and Tricks
+
+## lodash vs. built-ins
+
+- https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
+- https://youmightnotneed.com/lodash/
+- https://www.sitepoint.com/lodash-features-replace-es6/
+- https://blog.bitsrc.io/you-dont-need-lodash-or-how-i-started-loving-javascript-functions-3f45791fa6cd
+- https://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore-js
+
+## Object to Array
+
+- https://www.samanthaming.com/tidbits/76-converting-object-to-array/
+
+## Currying
+
+- Currying is a technique of converting a function that takes multiple
+  arguments into a sequence of functions that each takes a single
+  argument.
+- It can be useful to avoid repeating yourself when you would have been
+  calling the same JavaScript built-ins over and over with all the same
+  values but one.
+    + So we can use currying to fix known parameters.
+- https://stackoverflow.com/questions/113780/javascript-curry-what-are-the-practical-applications
+- https://javascript.info/currying-partials
+- https://medium.com/coding-in-depth/curry-recipe-in-javascript-af236028c8f7
+-
+
+```javascript
+function converter(toUnit, factor, offset, input) {
+    offset = offset || 0;
+    return [((offset + input) * factor).toFixed(2), toUnit].join(" ");
+}
+
+var milesToKm = converter.curry('km', 1.60936, undefined);
+var poundsToKg = converter.curry('kg', 0.45460, undefined);
+var farenheitToCelsius = converter.curry('degrees C', 0.5556, -32);
+
+milesToKm(10);            // returns "16.09 km"
+poundsToKg(2.5);          // returns "1.14 kg"
+farenheitToCelsius(98);   // returns "36.67 degrees C"
+
+Function.prototype.curry = function() {
+    if (arguments.length < 1) {
+        return this; //nothing to curry with - return function
+    }
+    var __method = this;
+    var args = toArray(arguments);
+    return function() {
+        return __method.apply(this, args.concat([].slice.apply(null, arguments)));
+    }
+}
+```
 
 ## `isFinite()` vs `Number.isFinite()` vs `_.isFinite()`
 
