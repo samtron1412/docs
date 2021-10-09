@@ -315,6 +315,14 @@ Usage: `$ node /bin/http-server`
 
 # Tips and Tricks
 
+## Memory Management
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
+- Mark and sweep algorithm
+    + Traverse from roots (global objects), mark all reachable objects
+      from roots.
+    + Sweep all non-reachable objects
+
 ## lodash vs. built-ins
 
 - https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
