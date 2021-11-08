@@ -1590,6 +1590,10 @@ http://stevelorek.com/how-to-shrink-a-git-repository.html
 
 # Troubleshooting
 
+## Common situations and solutions
+
+- https://ohshitgit.com/
+
 ## No newline at end of file
 
 - https://thoughtbot.com/blog/no-newline-at-end-of-file
