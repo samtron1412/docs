@@ -599,12 +599,12 @@ Commercially available Freons include:
 
 ### Maintenance
 
-- Engine oil: 2021-07 ()
+- Engine oil: 2021-07 (192,000)
 - Coolant / Antifreeze: 2021-09-20
-- Transmission fluid
-- Brake fluid
+- Transmission fluid:
+- Brake fluid:
 - Power steering fluid: 2021-09-25
-- Tires
+- Tires:
 
 ## Toyota - Camry LE - 2008 - 2.4
 
@@ -616,7 +616,7 @@ Commercially available Freons include:
 
 ### Maintenance
 
-- Engine oil: 2021-07 (159000)
+- Engine oil: 2021-12-04 (161,600)
 - Coolant / Antifreeze: 2020-12 (maybe)
 - Transmission fluid: 2020-11-25: 90 (5 years)
 - Brake fluid: 2021-08 (3 years)
@@ -625,7 +625,7 @@ Commercially available Freons include:
 - Power steering fluid: Not yet
 - Wheel Bearing and Hub and Axle Nut, Front Right: 300
     + 2020-11-25
-- Tires
+- Tires:
     + 2020-09-06: Front tires: 145
 
 
