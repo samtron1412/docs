@@ -56,3 +56,41 @@ Root user credentials
 IAM credentials
 - You can create multiple users with different policies that are
   associated with that IAM users.
+
+### AWS credentials
+
+Types of security credentials
+- A user name and password to sign in to the AWS Management Console
+- Access keys to make programmatic calls to AWS or to use the AWS CLI or
+  AWS Tools for PowerShell.
+
+Be sure to save the following credentials (you CANNOT recover these):
+- The email address associated with your AWS account
+- The AWS account ID
+- Your password
+- Your secret access keys
+
+(AWS Management) Console access
+- Root user: user name and password
+- IAM users: account id or account alias, and password
+- You can enable MFA for users
+
+Programmatic access
+- Access key ID: e.g., `AKIAIOSFODNN7EXAMPLE`
+- Secret access key: e.g., `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`
+    + Only available for download when you create it
+    + You must create new access keys if you lose your secret access key
+      since there is no way to recover it
+- You can assign up to 2 access keys per user
+    + 2 access keys are useful for key rotation
+    + When you disable an access key, you can't use it, but it counts
+      toward your limit of two access keys.
+
+Temporary access keys
+- An access key, a secret access key, and a security token that you must
+  send to AWS
+- https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/assume-role.html
+
+```
+aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO-NOT-DELETE --role-session-name sandop-dataingestion-prod-admin
+```
