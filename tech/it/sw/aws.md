@@ -7,6 +7,8 @@
 
 # AWS General
 
+- https://docs.aws.amazon.com/general/latest/gr/Welcome.html
+
 ## AWS security credentials
 
 When you interact with AWS, you specify your AWS security credentials to
