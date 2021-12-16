@@ -618,6 +618,16 @@ desirable result.
 
 ## Exception Handling
 
+- Resources
+    + Checked exceptions
+        * https://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
+        * A tool for API design
+        * A different return mechanism for APIs
+        * Using it sparingly, and only when you have some actions to
+          recover the exception state.
+
+### Introduction
+
 A `try` and `catch` block is placed around the code that might generate
 an exception.
 
@@ -630,6 +640,22 @@ try {
 ```
 
 `Exception` type is used to catch all possible exceptions.
+
+### Reading Exception Reports
+
+1. The name of the exception, such as `StringIndexOutOfBoundsException`
+2. The line number of the code that contained the statement that caused
+   the exception, such as `Homework1.java:16`
+
+The name of the exception is always in the first line of the report, and
+it ends with `Exception`
+- The first line of the stack trace is the method that actually
+  generated the exception.
+- THe last line of the stack trace is a line in `main`
+- Often, the exception was thrown by a method that is in the standard
+  library. Look for the first line in **your code** that appears in the
+  exception report.
+
 
 ### `throw` keyword
 
@@ -681,6 +707,29 @@ runtime).
   checked exception. Your code will not compile until you've handled the
   exception.
 - Unchecked exceptions: dividing by 0.
+
+Throwable
+- Errors (irrecoverable)
+- Exception (recoverable)
+    + RuntimeException (unchecked)
+    + Others... (checked)
+
+### Best Practices
+
+- Catch `RuntimeException` or more specific Exceptions
+- You can catch internal exception and then rethrow a new external
+  exception for users / clients, but do not just catch the exception,
+  log it and then rethrow the same exception.
+    + Remember to set the Internal exception as the cause for the
+      External exception
+    + `throw new ExternalException("Message", InternalException);`
+- Catch and handle the exceptions at higher layers where you know how to
+  deal with the exceptions
+
+### [Java Built-in Exceptions](http://www.tutorialspoint.com/java/java_builtin_exceptions.htm)
+
+- Difference between `e.printStackTrace()` and `e.toString()`:
+  printStackTrace will print the whole stack trace of an exception.
 
 ## Threads
 
@@ -1172,21 +1221,6 @@ String str2 = new String("Hello World");
 | String greeting = "H & S"; int n = greeting.length();    | n is set to 5        | Each space counts as one character                                                                                                     |
 | str.charAt(1)                                            |                      |                                                                                                                                        |
 | String str = "Sally"; String str2 = str.substring(1, 4); | str2 is set to "all" | Extracts the substring starting at position 1 and ending before position 4 (starting with first good data and end with first bad data) |
-
-### Reading Exception Reports
-
-1. The name of the exception, such as `StringIndexOutOfBoundsException`
-2. The line number of the code that contained the statement that caused
-   the exception, such as `Homework1.java:16`
-
-The name of the exception is always in the first line of the report, and
-it ends with `Exception`
-- The first line of the stack trace is the method that actually
-  generated the exception.
-- THe last line of the stack trace is a line in `main`
-- Often, the exception was thrown by a method that is in the standard
-  library. Look for the first line in **your code** that appears in the
-  exception report.
 
 ## Array
 
@@ -2092,6 +2126,13 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
+## Private static methods
+
+- https://softwareengineering.stackexchange.com/questions/234412/why-have-private-static-methods
+- If the method doesn't interact with instance variables, then you can
+  make it static.
+    + A utility method
+
 ## Useful libraries
 
 - [Apache Commons][apache-common] project
@@ -2180,11 +2221,6 @@ order.
 - String.valueOf(number)
 - Integer.toString(number) : check null before
 - Concat string: "" + number
-
-## [Java Built-in Exceptions](http://www.tutorialspoint.com/java/java_builtin_exceptions.htm)
-
-- Difference between `e.printStackTrace()` and `e.toString()`:
-  printStackTrace will print the whole stack trace of an exception.
 
 ## Decompile Java class files, jar files
 
