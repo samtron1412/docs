@@ -4,8 +4,12 @@
 
 ## Resources
 
+- Wiki: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+- Manual: https://www.gnu.org/software/bash/manual/bash.html
 - [Bash Guide for Beginners][beginner]
 - [Advanced Bash-Scripting Guide][advanced]
+- Style guide
+    + https://google.github.io/styleguide/shellguide.html
 - Naming conventions
     + https://google.github.io/styleguide/shellguide.html#s7-naming-conventions
     + https://stackoverflow.com/questions/673055/correct-bash-and-shell-script-variable-capitalization
@@ -39,7 +43,9 @@
     + `cmd > file.txt 2>&1`
 
 
-# Parameter
+# Shell Parameter
+
+## Introduction
 
 A parameter is an entity that stores values.
 
@@ -56,6 +62,9 @@ The value of a parameter is accessed by preceding its name, number, or
 character with a dollar sign (`$`), as in `$3`, `$#`, `$HOME`. The name
 may be surrounded by braces, as in `${10}`, `${PWD}`, or `${USER}`,
 braces is much use with array `${array[@]}`
+
+- Nameref
+    + https://stackoverflow.com/questions/40593740/can-namerefs-declare-n-be-used-with-arrays-in-bash-what-does-the-documentati
 
 ## Positional Parameters
 
@@ -122,41 +131,54 @@ The GNU commands found in Linux distributions often accept **long
 options** as well. These are words preceded by a double hyphen.
 
 
+# Array
 
+- https://linuxize.com/post/bash-arrays/
+
+# Error Handling
+
+- https://stackoverflow.com/questions/64786/error-handling-in-bash
+- http://mywiki.wooledge.org/BashFAQ/105
+- https://github.com/Privex/shell-core
+- https://stackoverflow.com/questions/22009364/is-there-a-try-catch-command-in-bash
+- https://www.redhat.com/sysadmin/bash-error-handling
+- https://linuxcommand.org/lc3_wss0140.php
+- https://linuxhint.com/bash_error_handling/
+- https://www.xmodulo.com/catch-handle-errors-bash.html
+- https://dev.to/banks/stop-ignoring-errors-in-bash-3co5
+- https://medium.com/@dirk.avery/the-bash-trap-trap-ce6083f36700
 
 # Temporary
 
 - [Here document](https://en.wikipedia.org/wiki/Here_document#Unix-Shells): EOF, STOP
 - [How to call shell script from another shell script?](https://stackoverflow.com/questions/8352851/how-to-call-shell-script-from-another-shell-script)
-
-		There are a couple of ways you can do this:
-
-		1. The first is to **make the other script executable**, add the `#!/bin/bash` line at the top, and the path where the file is to the `$PATH` environment variable. Then you can call it as a normal command.
-
-		2. Call it with the `source` command (alias is `.`) like this: `source /path/to/script`.
-
-		3. Use the `bash` command to execute it: `/bin/bash /path/to/script`.
-
-		The first and third methods execute the script as another process, so variables and functions in the other script will not be accessible. The second method executes the script in the first scripts process, and pulls in variables and functions from the other script so they are usable from the calling script.
-
+    + There are a couple of ways you can do this:
+        * The first is to **make the other script executable**, add the
+          `#!/bin/bash` line at the top, and the path where the file is
+          to the `$PATH` environment variable. Then you can call it as a
+          normal command.
+        * Call it with the `source` command (alias is `.`) like this:
+          `source /path/to/script`.
+        * Use the `bash` command to execute it: `/bin/bash
+          /path/to/script`.
+    + The first and third methods execute the script as another process,
+      so variables and functions in the other script will not be
+      accessible. The second method executes the script in the first
+      scripts process, and pulls in variables and functions from the
+      other script so they are usable from the calling script.
 - [How to include bash script file](https://stackoverflow.com/questions/192292/bash-how-best-to-include-other-scripts)
 
-	**man.sh**
+```man.sh
+#!/bin/bash
+my_dir="$(dirname "$0")"
+source "$my_dir/incl.sh"
+echo "The main script"
+```
 
-		#!/bin/bash
-
-		my_dir="$(dirname "$0")"
-
-		source "$my_dir/incl.sh"
-
-		echo "The main script"
-
-
-	**incl.sh**
-
-		#!/bin/bash
-
-		echo "The included script"
+```incl.sh
+#!/bin/bash
+echo "The included script"
+```
 
 - [Try catch](https://stackoverflow.com/questions/22009364/is-there-a-try-catch-command-in-bash)
 - [Template](https://stackoverflow.com/questions/14008125/shell-script-common-template)
@@ -166,6 +188,16 @@ options** as well. These are words preceded by a double hyphen.
 
 
 # Tips and Tricks
+
+## References in bash
+
+- https://newbedev.com/does-bash-provide-support-for-using-pointers
+- Array or associative array
+- Indirect expansion: `${!var}`
+    + `!var` is expanded into the value of `var`, then `${var_value}` is
+      expanded
+- Namerefs: `declare -n ref=var` makes `ref` a reference to the variable
+  `var`
 
 ## Search the command history
 
