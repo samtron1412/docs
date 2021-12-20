@@ -62,3 +62,7 @@ older version). End of life December 31, 2021.
     + `$onChanges(changesObj)`:
     + `$doCheck()`
     + `$onDestroy()`
+
+# Logging
+
+- https://docs.angularjs.org/api/ng/service/$log
