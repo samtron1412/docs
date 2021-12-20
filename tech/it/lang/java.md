@@ -2124,6 +2124,11 @@ exists, this will overwrite it.
     + *optional return keyword*: the compiler automatically returns the
       value if the body has a single expression to return the value
 
+## Optional: Null Pointer Exception
+
+- https://www.oracle.com/technical-resources/articles/java/java8-optional.html
+- https://www.baeldung.com/java-optional
+
 # Tips & Tricks
 
 ## Private static methods
