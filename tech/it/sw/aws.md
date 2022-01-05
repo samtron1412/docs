@@ -94,3 +94,11 @@ Temporary access keys
 ```
 aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO-NOT-DELETE --role-session-name sandop-dataingestion-prod-admin
 ```
+
+# AWS CLI
+
+- User Guide
+    + https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+- Installation
+    + https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
