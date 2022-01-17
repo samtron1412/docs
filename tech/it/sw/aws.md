@@ -102,3 +102,18 @@ aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO
 - Installation
     + https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
+# AWS SDK
+
+- Python
+    + https://aws.amazon.com/sdk-for-python/
+    + https://github.com/boto/boto3
+    +
+
+# Tips and Tricks
+
+## Auto shutdown and start AWS instance
+
+- http://www.4synergy.nl/auto-start-stop-ec2-instances/
+- Use python [boto](http://boto.readthedocs.org/en/latest/) package to
+  manipulate with AWS instance.
+- http://stackoverflow.com/questions/2413029/auto-shutdown-and-start-amazon-ec2-instance
