@@ -16,6 +16,16 @@
 - color
     + https://superuser.com/questions/285381/how-does-the-tmux-color-palette-work
 
+# Plugins
+
+## Tmux Plugin Manager (tpm)
+
+- https://github.com/tmux-plugins/tpm
+
+## Tmux Resurrect
+
+- https://github.com/tmux-plugins/tmux-resurrect
+
 # Cheatsheet
 
 ## Common
