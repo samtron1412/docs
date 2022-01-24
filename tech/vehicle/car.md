@@ -605,6 +605,10 @@ Commercially available Freons include:
 - Brake fluid:
 - Power steering fluid: 2021-09-25
 - Tires:
+- Light bulbs
+    + Low beam: D2R
+    + High beam: 9005/HB3
+    + Fog light: 9006/HB4
 
 ## Toyota - Camry LE - 2008 - 2.4
 
