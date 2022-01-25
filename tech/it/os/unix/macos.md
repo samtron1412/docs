@@ -72,6 +72,15 @@ Mac OS
 
 # Tips and Tricks
 
+## Xprotect is not recent
+
+- https://community.jamf.com/t5/jamf-pro/force-xprotect-to-update/m-p/225543
+- Go to Software Update and check
+    + `Check for updates`
+    + `Download new updates when available`
+    + `Install system data files and security updates`
+- Run `softwareupdate --background --include-config`
+
 ## Record System/Internal Audio with Mic Audio
 
 - Install Blackhole using brew
