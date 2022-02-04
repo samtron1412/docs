@@ -731,6 +731,21 @@ Throwable
 - Difference between `e.printStackTrace()` and `e.toString()`:
   printStackTrace will print the whole stack trace of an exception.
 
+### The try-with-resources statement
+
+- https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
+- A resource is an object that must be closed after the program is
+  finished with it.
+- The try-with-resources statement ensures that each resource is closed
+  at the end of the statement.
+- Any object that implements `java.lagn.AutoCloseable` can be used as a
+  resource.
+- If both try-with-resource statement and try block throw exceptions,
+  then the exception from the try-with-resource statement is suppressed
+    + This is opposite with the try and finally blocks together, the
+      exception from the try block is suppressed instead. And the
+      exception in the finally block is thrown.
+
 ## Threads
 
 Java is a multi-threaded programming language.
