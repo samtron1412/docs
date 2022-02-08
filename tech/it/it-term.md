@@ -421,6 +421,21 @@ to process its work (lack of needed resources).
 - Unmasked: a change unmasks (exposes) an already existing bug that had
   no effect before the change.
 
+### Serialization and Deserialization
+
+- https://stackoverflow.com/a/68148834/1683888
+- These are the process of converting data from one representation to
+  another representation
+    + For example, in memory, data is kept in object, structs, lists,
+      arrays, etc. These data structures are optimized for efficient
+      access and manipulation by the CPU (typically using
+      pointers). When you want to write data to a file or send it over
+      the network, you have to encode it as some kind of self-contained
+      sequence of bytes (for example, a JSON document).
+- From in-memory representation to a byte sequence is called encoding
+  (aka serialization or marshaling), and the reverse is called decoding
+  (parsing, deserialization, unmarshaling).
+
 # Computer Science
 
 - Macro
