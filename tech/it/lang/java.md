@@ -2093,9 +2093,14 @@ exists, this will overwrite it.
 
 ## `java.time`
 
+- https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html
+
 ### ISO 8601
 
 - https://en.wikipedia.org/wiki/ISO_8601
+
+### Instant
+
 
 ### LocalDateTime API
 
@@ -2145,6 +2150,19 @@ exists, this will overwrite it.
 - https://www.baeldung.com/java-optional
 
 # Tips & Tricks
+
+## Routing data from OutputStream to InputStream
+
+- https://blog.ostermiller.org/convert-a-java-outputstream-to-an-inputstream/
+- https://stackoverflow.com/questions/1225909/most-efficient-way-to-create-inputstream-from-outputstream
+- https://stackoverflow.com/questions/5778658/how-to-convert-outputstream-to-inputstream
+- https://www.geeksforgeeks.org/java-io-input-output-in-java-with-examples/
+
+
+## Void vs void
+
+- https://stackoverflow.com/questions/10839042/what-is-the-difference-between-java-lang-void-and-void/
+- `Void` is used in Generics
 
 ## Private static methods
 
