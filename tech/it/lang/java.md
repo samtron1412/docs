@@ -2151,6 +2151,11 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
+## String format
+
+- https://dzone.com/articles/java-string-formatting
+- Concatenation with `+`, `String.format`, `MessageFormat`
+
 ## Routing data from OutputStream to InputStream
 
 - https://blog.ostermiller.org/convert-a-java-outputstream-to-an-inputstream/
