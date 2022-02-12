@@ -1,7 +1,15 @@
 [TOC]
 
 # Overview
-Information security is the practice of defending information from unauthorized access, use, disclosure, disruption, modification, inspection, recording or destruction.
+
+Information security is the practice of defending information from
+unauthorized access, use, disclosure, disruption, modification,
+inspection, recording or destruction.
+
+# Culture
+
+- Alice and Bob
+    + https://web.mit.edu/jemorris/humor/alice-and-bob
 
 # References
 1. [SANS Security Resources][1]
