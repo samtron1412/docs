@@ -2235,6 +2235,17 @@ By default, the message is printed. But if you call `Logger.getGlobal
 program, all log message printing is suppressed. Set the level to
 Level.INFO to turn logging of info messages on again.
 
+- Log levels
+    + `ALL < TRACE < DEBUG < INFO < WARN < ERROR < FATAL < OFF`
+    + You can call `setLevel(Level.xxxx)` to control how much log you
+      want to see. `ALL` will turn all logs on, and a ton of logs for
+      you to inspect. `OFF` will disable all logs.
+    + In your code, you want a variety of different log levels, so when
+      you change the configuration later, you can see different detail
+      levels.
+    + https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+
+
 ## Comparing Floating-Point Numbers, Strings, Objects
 
 ```java
