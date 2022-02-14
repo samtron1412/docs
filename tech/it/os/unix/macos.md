@@ -72,6 +72,10 @@ Mac OS
 
 # Tips and Tricks
 
+## If the Software Update hanging (keep checking)
+
+- Run this command: `sudo /bin/launchctl kickstart -k system/com.apple.softwareupdated`
+
 ## Xprotect is not recent
 
 - https://community.jamf.com/t5/jamf-pro/force-xprotect-to-update/m-p/225543
