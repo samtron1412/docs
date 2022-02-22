@@ -373,15 +373,9 @@ Using javadoc utility:
 
 ## Unit Testing
 
-A unit test verifies that a class works correctly in isolation, outside
-a complete program.
-
-A tester class is a class with a main method that contains statements to
-run methods of another class.
-- Construct one or more objects of the class that is being tested.
-- Invoke one or more methods.
-- Print out one or more results.
-- Print the expected results.
+- Follow the convention for naming tests:
+  `{methodBeingTested}_{scenario}_{result}`
+    + For happy case tests, you can omit `{scenario}`.
 
 # Language Basics and Packages
 
