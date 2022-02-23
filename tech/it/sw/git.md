@@ -458,6 +458,32 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
 
 `git reset --soft <commit>` : will move your HEAD pointer, keep your change and index
 
+#### Reverting multiple commits
+
+- Commit history: `a -> b -> c -> d (HEAD)`
+    + Want to revert to `a`
+
+```
+git reset --hard a
+git reset --soft d
+git commit
+```
+
+- This trick relies on Git to find the differences between a hard reset
+  and a soft reset, and we can treats those changes as revert changes.
+- In the essence, the hard reset discards changes in index and working
+  tree and reverts commits in the local repository. While the soft reset
+  only moves the HEAD reference and does not touch the commit
+  history. Therefore, when we do a soft reset after a hard reset, then
+  the changes in the index is the revert changes the hard reset
+  performed to revert commit history, so from there we can reuse it as a
+  new commit to revert our changes.
+- This trick always works.
+- `git revert <commit>` only works with non-merge commits, if there are
+  merge commits, you cannot revert multiple commits using `git revert`.
+    + Read `man git-revert` to know more how to revert a merge commit
+      using `git revert`
+
 #### Reverting working copy to most recent commit
 
 `git reset --hard HEAD`
