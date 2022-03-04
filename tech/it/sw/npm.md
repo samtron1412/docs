@@ -29,6 +29,7 @@
 - List all installed packages
     + Local packages: `npm list`
     + Global packages: `npm list -g`
+        * If you use old npm version: `npm list -g --depth=0`
 - Open a package's homepage: `npm home <pkg>`
 - Open a package's git repo: `npm repo <pkg>`
 - Check outdated dependencies: `npm outdated`
