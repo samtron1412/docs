@@ -227,4 +227,12 @@ npm substack
 # Integration
 
 
+# Best Practices
+
+- Pin your dependencies if your package is not a library
+- Library packages can use ranges for dependencies but pin development
+  dependencies.
+- Use a lock file
+
+
 
