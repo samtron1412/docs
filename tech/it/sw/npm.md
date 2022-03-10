@@ -22,6 +22,15 @@
   directory and save it to `devDependencies` in `package.json`
 - `npm install`: install all modules in `dependencies` and
   `devDependencies` in `package.json` to the current directory
+    + If `package.json` is not manually modified and there are
+      `package-lock` or `shrinkwrap` files, the installation will be
+      driven by `package-lock` or `shrinkwrap` files.
+    + If `package.json` is manually modified and incompatible with
+      `package-lock`, then the `package-lock` will be updated with the
+      new data in `package.json`, and the installation is driven by
+      `package.json`.
+    + https://github.com/npm/npm/issues/17979
+    + https://docs.npmjs.com/cli/v8/commands/npm-ci
 - `npm install <module> --global`: install a module globally
 - View an installed package's info:
     + All info: `npm view <pkg>`
