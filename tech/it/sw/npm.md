@@ -157,4 +157,33 @@
 - Use a lock file
 
 
+# Tips and Tricks
 
+## Update dependencies
+
+- https://www.npmjs.com/package/npm-check-updates
+- Check dependencies' new versions
+    + `npx npm-check-updates`
+    + Red = major upgrade (and all major version zero)
+    + Cyan = minor upgrade
+    + Green = patch upgrade
+- Check upgrade a package
+    + `npx npm-check-updates <package-name>`
+- Check upgrade multiple packages: chalk, mocha, and react
+    + `npx npm-check-updates chalk mocha react`
+- Check upgrade packages that start with "react-"
+    + `npx npm-check-updates react-*`
+    + `npx npm-check-updates "/^react-.*$/"`
+- Check upgrade everything except nodemon
+    + `npx npm-check-updates \!nodemon`
+- Check upgrade everything except packages that do not start with "react-"
+    + `npx npm-check-updates \!react-*`
+- Only check upgrade patch and minor:
+    + `npx npm-check-updates --target minor`
+- Only check upgrade patch
+    + `npx npm-check-updates --target patch`
+
+TO REALLY UPGRADE PACKAGES, ADD `-u` TO THE COMMAND TO UPGRADE
+
+Peru
+    + https://sage.amazon.com/posts/1233317
