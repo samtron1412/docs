@@ -155,7 +155,15 @@
 # Packages and Modules
 
 
-# Integration
+# Dependencies
+
+- Peer Dependencies
+    + https://nodejs.org/es/blog/npm/peer-dependencies/
+    + https://flaviocopes.com/npm-peer-dependencies/
+    + It's not automatically install
+    + It's usually used in library package
+    + These dependencies are needed in the dependencies of the
+      application package that uses the library package.
 
 
 # Best Practices
