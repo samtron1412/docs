@@ -51,32 +51,32 @@ laptop (Gateway)
 - [Ducky Shine 3](http://www.duckychannel.com.tw/en/Shine_3_DK9008.html): Taiwan
 - [G80-3000](http://cherrycorp.com/product/g80-3000-mx-technology-keyboard/)
 
-Cherry MX switch
+### Cherry MX switch and its clones
 
-### Cherry MX Blue switch
+- Cherry MX Blue switch: Clicky, tactile
+- Cherry MX Green switch: Heavy Blue switch
+- Cherry MX Brown switch: Non-clicky, tactile
+- Cherry MX Clear switch: Heavy Brown switch
+- Cherry MX Red switch: Non-clicky, non-tactile -> Gamer
+- Cherry MX Black switch: Like Red switch but increase force
 
-Clicky, tactile
+- Gateron Black and Gateron Browns
 
-### Cherry MX Green switch
+- Kailh BOX
 
-Heavy Blue switch
+### Topre and its clones
 
-### Cherry MX Brown switch
+- 45g HHKB
+    + Classic: wired only (211)
+    + Hybrid: wired and wireless (281)
+    + Hybrid Type-S: silent (337)
+    + Realforce R2 (Tenkeyless, 84 keys, 258)
+- Leopold FC660C White 65% Dye Sub PBT Mechanical Keyboard
 
-Non-clicky, tactile
+### Alps and its clones
 
-### Cherry MX Clear switch
-
-Heavy Brown switch
-
-### Cherry MX Red switch
-
-Non-clicky, non-tactile -> Gamer
-
-### Cherry MX Black switch
-
-Like Red switch but increase force
-
+- 60% board with PBT keycaps and Alps Creamsicles (a mixture of Alps
+  Orange and Alps Damped Creams, with 40-50g springs)
 
 ## [Buckling spring](https://en.wikipedia.org/wiki/Buckling_spring)
 
