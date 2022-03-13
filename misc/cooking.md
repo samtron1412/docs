@@ -52,6 +52,22 @@ for consumption with the use of heat.
     + Put a disk on top of them to keep them deep in water
     + After a day then we can eat it
 
+# Chicken
+
+## Ga xao xa ot
+
+- Cat ga mieng nho
+- Uop nuoc mam, muoi, tieu, hanh tim / hanh Tay, gung, ot, xa
+- Add a little bit of water
+- Medium heat: 25-30 minutes
+
+## Pan sear chicken with lemon
+
+- Nuoc mam and soy sauce
+- Muoi, ot bot, tieu, toi
+- Lemon juice (just a little bit)
+- Pan sear
+
 # References
 1. [Wikipedia - Cooking][1]
 
