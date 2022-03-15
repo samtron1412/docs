@@ -50,6 +50,10 @@
 - Set some defaults:
     + `npm config set init.author.name $name`
     + `npm config set init.author.email $email`
+- `npm run-script`
+    + https://docs.npmjs.com/cli/v8/commands/npm-run-script
+    + Run arbitrary package script
+    + Aliases: `run, rum, urn`
 
 ### npm cheat sheet
 
