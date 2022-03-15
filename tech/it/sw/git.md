@@ -1202,6 +1202,10 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 # Cheatsheet
 
+## git-stash - stash changes in working directory away
+
+- `git stash push -m "message" filename.ext`: stash a file
+
 ## git-diff - show changes between commits, commit and working tree, etc.
 
 ### Check your working tree
