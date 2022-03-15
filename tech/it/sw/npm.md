@@ -144,6 +144,12 @@
 ### package-lock.json
 
 
+## Using npm
+
+### Scripts
+
+- https://docs.npmjs.com/cli/v8/using-npm/scripts
+
 # Package Versions (Semantic Version, semver)
 
 - Major.Minor.Patch
