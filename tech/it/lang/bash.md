@@ -192,6 +192,18 @@ echo "The included script"
 
 # Tips and Tricks
 
+## Check if a program exists
+
+- https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
+
+```bash
+if ! command -v <the_command> &> /dev/null
+then
+    echo "<the_command> could not be found"
+    exit
+fi
+```
+
 ## References in bash
 
 - https://newbedev.com/does-bash-provide-support-for-using-pointers
