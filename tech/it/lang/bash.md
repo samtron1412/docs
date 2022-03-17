@@ -192,6 +192,26 @@ echo "The included script"
 
 # Tips and Tricks
 
+## Check if an environment variable exists
+
+- https://stackoverflow.com/questions/39296472/how-to-check-if-an-environment-variable-exists-and-get-its-value
+
+```sh
+if [[ -z "${DEPLOY_ENV}" ]]; then
+  MY_SCRIPT_VARIABLE="Some default value because DEPLOY_ENV is undefined"
+else
+  MY_SCRIPT_VARIABLE="${DEPLOY_ENV}"
+fi
+
+# or using a short-hand version
+
+[[ -z "${DEPLOY_ENV}" ]] && MyVar='default' || MyVar="${DEPLOY_ENV}"
+
+# or even shorter use
+
+MyVar="${DEPLOY_ENV:-default_value}"
+```
+
 ## Check if a program exists
 
 - https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
