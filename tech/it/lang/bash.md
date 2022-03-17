@@ -195,6 +195,7 @@ echo "The included script"
 ## Check if an environment variable exists
 
 - https://stackoverflow.com/questions/39296472/how-to-check-if-an-environment-variable-exists-and-get-its-value
+- https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion
 
 ```sh
 if [[ -z "${DEPLOY_ENV}" ]]; then
