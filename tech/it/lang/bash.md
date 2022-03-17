@@ -130,6 +130,9 @@ sometimes followed by an argument.
 The GNU commands found in Linux distributions often accept **long
 options** as well. These are words preceded by a double hyphen.
 
+## Parsing shell parameter (long form allowable) with getopt
+
+- https://www.shellscript.sh/tips/getopt/index.html
 
 # Array
 
