@@ -43,6 +43,10 @@
     + `cmd > file.txt 2>&1`
 
 
+# Conditions in bash scripting (if statements)
+
+- https://acloudguru.com/blog/engineering/conditions-in-bash-scripting-if-statements
+
 # Shell Parameter
 
 ## Introduction
