@@ -620,18 +620,6 @@ Throwable
     + At lower layers, use `throws` to throw exceptions to higher
       levels, DO NOT `try-catch` and then `throw`.
 
-### Miscellaneous
-
-- `serialVersionUID`
-    + https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
-    + A number to specify the version of a serializable class.
-    + You should explicitly set a number for this, e.g., `1L`
-
-### [Java Built-in Exceptions](http://www.tutorialspoint.com/java/java_builtin_exceptions.htm)
-
-- Difference between `e.printStackTrace()` and `e.toString()`:
-  printStackTrace will print the whole stack trace of an exception.
-
 ### The try-with-resources statement
 
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
@@ -652,11 +640,13 @@ Throwable
 Java is a multi-threaded programming language.
 - The following diagram shows the life-cycle of a thread.
 
+```text
 New Thread() -> New --Start()--> Runnable --run()--> Running
                  |                                       |
                  |----> Dead <--End of execution---------|
                           ^                              |
                           |- Waiting <--Sleep(), wait()--|
+```
 
 There are two ways to create a thread.
 
@@ -682,10 +672,10 @@ class MyClass {
 }
 ```
 
->Every Java thread is prioritized to help the operating system determine
-the order in which to schedule threads. The priorities range from 1 to
-10, with each thread defaulting to priority 5. You can set the thread
-priority with the `setPriority()` method.
+- Every Java thread is prioritized to help the operating system
+  determine the order in which to schedule threads. The priorities range
+  from 1 to 10, with each thread defaulting to priority 5. You can set
+  the thread priority with the `setPriority()` method.
 
 ### 2. Implementing the Runnable interface
 
@@ -713,10 +703,12 @@ class MyClass {
 }
 ```
 
->It may seem that implementing the Runnable interface is a bit more
-complex than extending from the Thread class. However, implementing the
-Runnable interface is the preferred way to start a Thread because it
-enables you to extend from another class, as well.
+- It may seem that implementing the Runnable interface is a bit more
+  complex than extending from the Thread class. However, implementing
+  the Runnable interface is the preferred way to start a Thread because
+  it enables you to extend from another class, as well.
+    + Java does not allow extending multiple classes (multiple
+      inheritance)
 
 ## Annotations
 
@@ -2003,6 +1995,11 @@ exists, this will overwrite it.
 - https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features#_java_features_8_17
 
 # Tips & Tricks
+
+## `serialVersionUID`
+    + https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
+    + A number to specify the version of a serializable class.
+    + You should explicitly set a number for this, e.g., `1L`
 
 ## Default parameter values
 
