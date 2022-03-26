@@ -752,21 +752,36 @@ runtime).
 
 Throwable
 - Errors (irrecoverable)
+    + IOError, VirtualMachineError, etc.
 - Exception (recoverable)
-    + RuntimeException (unchecked)
-    + Others... (checked)
+    + RuntimeException (unchecked - do not need to handle)
+        * NullPointerException, NoSuchElementException,
+          UncheckedIOException, etc.
+    + Others... (checked - have to handle before compiling)
+        * IOException, etc.
 
 ### Best Practices
 
 - Catch `RuntimeException` or more specific Exceptions
 - You can catch internal exception and then rethrow a new external
-  exception for users / clients, but do not just catch the exception,
-  log it and then rethrow the same exception.
+  exception for users / clients, but DO NOT just catch the exception,
+  DO NOT log it and then rethrow the same exception.
     + Remember to set the Internal exception as the cause for the
       External exception
     + `throw new ExternalException("Message", InternalException);`
+    + `ExternalException` is a class that you need to write, and it
+      extends built-in Java exceptions (e.g., RetryableException, etc.)
 - Catch and handle the exceptions at higher layers where you know how to
   deal with the exceptions
+    + At lower layers, use `throws` to throw exceptions to higher
+      levels, DO NOT `try-catch` and then `throw`.
+
+### Miscellaneous
+
+- `serialVersionUID`
+    + https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
+    + A number to specify the version of a serializable class.
+    + You should explicitly set a number for this, e.g., `1L`
 
 ### [Java Built-in Exceptions](http://www.tutorialspoint.com/java/java_builtin_exceptions.htm)
 
