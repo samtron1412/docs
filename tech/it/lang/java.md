@@ -1657,14 +1657,20 @@ public class BankAccount
 }
 ```
 
-## Access Modifiers - Encapsulation
+## Access Modifiers - Encapsulation - Access Control
 
-| Modifiers | Description                                                                                                                                              |
-| -         | -                                                                                                                                                        |
-| public    | Accessible from any other class                                                                                                                          |
-| default   | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
-| protected | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
-| private   | Accessible only within the declared class itself                                                                                                         |
+| Modifiers             | Description                                                                                                                                              |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public                | Accessible from any other class                                                                                                                          |
+| default (no modifier) | A variable or method declared with no access control modifier is available to any other class in the same package.                                       |
+| protected             | Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass. |
+| private               | Accessible only within the declared class itself                                                                                                         |
+
+- The `package-private` (default or no modifier) is useful where you
+  want to share things between your classes, but you also want to vend
+  out these classes to the public (for example client code)
+    + With `package-private`, people cannot extends your classes and
+      access your stuff similar as `protected`
 
 ## Inheritance
 
