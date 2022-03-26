@@ -2154,6 +2154,10 @@ exists, this will overwrite it.
 
 - [List of debug tools](http://blog.takipi.com/java-debugger-the-definitive-list-of-tools/)
 
+# Java Versions
+
+- https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features#_java_features_8_17
+
 # Java 8
 
 ## `java.time`
