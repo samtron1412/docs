@@ -2215,6 +2215,8 @@ exists, this will overwrite it.
 
 ## Optional: Null Pointer Exception
 
+- https://stackoverflow.com/questions/23454952/uses-for-optional
+- https://blogs.oracle.com/javamagazine/post/12-recipes-for-using-the-optional-class-as-its-meant-to-be-used
 - https://www.oracle.com/technical-resources/articles/java/java8-optional.html
 - https://www.baeldung.com/java-optional
 
