@@ -373,6 +373,19 @@ Using javadoc utility:
 
 ## Unit Testing
 
+- Throw exceptions in tests rather than handle them
+    + https://stackoverflow.com/questions/31423643/try-catch-in-a-junit-test
+- Use dependency injection more to make testing easier
+    + Refactor source code if it's needed
+- Use `@VisibleForTesting` and package scope to test methods if it's
+  needed
+    + Convert private methods to package scope (no access modifier), and
+      then add `@VisibleForTesting`
+    + Put the test class in the same package as the source class (use
+      `package ...` on top of the class)
+
+### Naming Conventions for Tests
+
 - Follow the convention for naming tests:
   `{methodBeingTested}_{scenario}_{result}`
     + For happy case tests, you can omit `{scenario}`.
