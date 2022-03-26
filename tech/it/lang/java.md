@@ -1674,6 +1674,8 @@ public class BankAccount
 
 ## Inheritance
 
+- https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+
 Use the `extends` keyword.
 
 ```java
