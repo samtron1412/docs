@@ -712,6 +712,8 @@ class MyClass {
 
 ## Annotations
 
+- https://docs.oracle.com/javase/tutorial/java/annotations/basics.html
+
 ### Introduction
 
 Annotations are a form of metadata and provide information for the
@@ -838,6 +840,8 @@ Java SE API
 
 - `@Override`: it informs the compiler that the element is meant to
   override an element declared in a superclass.
+    + A compiler error if there is no method signature in the
+      superclass.
 - `@SuppressWarnings`: it tells the compiler to suppress specific
   warnings that it would otherwise generate.
     + two categories: `deprecation` and `unchecked`
