@@ -2173,6 +2173,8 @@ desirable result.
 
 ## String format
 
+- https://www.baeldung.com/java-string-performance
+    + String performance
 - https://dzone.com/articles/java-string-formatting
 - Concatenation with `+`, `String.format`, `MessageFormat`
 
