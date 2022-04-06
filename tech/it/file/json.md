@@ -17,6 +17,14 @@
 - Regular expressions
     + http://json-schema.org/understanding-json-schema/reference/regular_expressions.html
 
+# JSONPath
+
+- JSONPath is a query language for JSON, similar to XPath for XML
+    + A JSONPath expression specifies a path to an element (or a set of
+      elements) in a JSON structure.
+    + e.g., `$.store.book[0].title`
+- https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html
+
 # Libraries
 
 ## Java
