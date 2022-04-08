@@ -279,6 +279,10 @@ Template
 
 ## Ignoring files
 
+- Check why a file is ignored:
+    + `git check-ignore -v path/to/ignored/file`
+    + It will display the rule and line number that ignore this file
+
 - [Joe command line tool](https://karan.github.io/joe/)
 - [Creating ignore files online](https://www.gitignore.io/)
 - [.gitignore templates](https://github.com/github/gitignore)
