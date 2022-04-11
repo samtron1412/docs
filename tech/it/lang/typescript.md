@@ -38,6 +38,14 @@
         * `const accounts: number[] = [1,2,3];`
         * `const accounts: [number, string] = [1, "2"];`
 
+# Modules
+
+- https://www.typescriptlang.org/docs/handbook/modules.html
+- https://www.typescriptlang.org/tsconfig#module
+- https://nodejs.org/api/esm.html
+- https://nodejs.org/api/modules.html
+- https://nodejs.org/api/packages.html
+
 # Tips and tricks
 
 ## Using JS library for TypeScript
