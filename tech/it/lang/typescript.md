@@ -38,6 +38,12 @@
         * `const accounts: number[] = [1,2,3];`
         * `const accounts: [number, string] = [1, "2"];`
 
+# ESLint Rules
+
+- `readonly`
+    + https://typescript-eslint.io/rules/prefer-readonly/
+    + https://typescript-eslint.io/rules/prefer-readonly-parameter-types
+
 # Modules
 
 - https://www.typescriptlang.org/docs/handbook/modules.html
