@@ -425,6 +425,20 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
 - https://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java/496849#496849
 - https://stackoverflow.com/questions/8168884/how-to-test-code-dependent-on-environment-variables-using-junit
 
+## Serialization and Deserialization
+
+- https://www.baeldung.com/java-serialization
+- https://www.baeldung.com/java-serialization-approaches
+- https://stackoverflow.com/questions/14011467/java-serialization-alternative-with-better-performance
+- Some benchmarks for serialization schemes
+    + https://w.amazon.com/bin/view/Siddartha_Naidu/Reports/SerializationPerf/
+    + ION and Gzip is both compact and fast
+- Some considerations to choose types of serialization
+    + https://sage.amazon.com/questions/166777#166840
+    + JSON or Ion: human-readable
+    + Binary, Java-only format if no humans or long-time storing
+- Fast serialization
+
 # Language Basics and Packages
 
 ## Loop
