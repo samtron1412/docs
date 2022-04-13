@@ -28,6 +28,7 @@
 ## Composition / Composite
 
 - https://en.wikipedia.org/wiki/Composite_pattern
+- https://en.wikipedia.org/wiki/Composition_over_inheritance
 - https://softwareengineering.stackexchange.com/questions/371707/why-the-industry-prefer-use-composition-over-inheritance
     + The argument is between inheritance and composition: Should you say
       that the "Rectangle has a Shape"? Refer to the Liskov substitution
@@ -35,6 +36,8 @@
       inheritance.
 - https://softwareengineering.stackexchange.com/questions/134097/why-should-i-prefer-composition-over-inheritance
 - https://softwareengineering.stackexchange.com/questions/65179/where-does-this-concept-of-favor-composition-over-inheritance-come-from
+- https://www.thoughtworks.com/en-us/insights/blog/composition-vs-inheritance-how-choose
+- https://neethack.com/2017/04/Why-inheritance-is-bad/
 - https://www.artima.com/articles/design-principles-from-design-patterns
 
 ```
