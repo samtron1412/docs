@@ -150,6 +150,8 @@ Debugging:
 
 # Programming Paradigm
 
+- https://stackoverflow.com/questions/3467724/alternatives-to-object-oriented-programming
+
 ## Introduction
 
 - Programming paradigms are a way to classify programming languages
