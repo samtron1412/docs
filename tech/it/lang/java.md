@@ -2198,7 +2198,12 @@ desirable result.
 - https://www.baeldung.com/java-string-performance
     + String performance
 - https://dzone.com/articles/java-string-formatting
-- Concatenation with `+`, `String.format`, `MessageFormat`
+- Use `MessageFormat` for simple formatting (most of the cases) because
+  it's easiest to use
+- Use `String.format` for VERY complex formatting
+    + This has a lot of configuration to achieve your formatting
+- `+` and `StringBuilder` are the fastest (`+` compiled to
+  `StringBuilder`)
 
 ## Routing data from OutputStream to InputStream
 
