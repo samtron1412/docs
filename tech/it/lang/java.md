@@ -1124,6 +1124,10 @@ Mathematical methods
 | Math.ceil(x)      | Smallest integer &geq; x     | Math.floor(x)     | Largest integer &leq; x      |
 | Math.toRadians(x) | Convert x degrees to radians | Math.toDegrees(x) | Convert x radians to degrees |
 
+## Enum
+
+- https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+
 ## String
 
 ### Types
