@@ -8,6 +8,10 @@
 # AWS General
 
 - https://docs.aws.amazon.com/general/latest/gr/Welcome.html
+- Shared responsibility model between AWS and customers
+    + https://aws.amazon.com/compliance/shared-responsibility-model/
+    + AWS: security of the cloud
+    + Customers: security in the cloud
 
 ## AWS security credentials
 
