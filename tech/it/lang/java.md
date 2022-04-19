@@ -2021,6 +2021,10 @@ exists, this will overwrite it.
 ## Stream
 
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/package-summary.html
+- map vs flatMap
+    + https://stackoverflow.com/questions/26684562/whats-the-difference-between-map-and-flatmap-methods-in-java-8
+    + map can produce `Stream<Stream<Item>>`
+    + flatMap can produce `Stream<Item>`
 
 ## Immutability (Immutable)
 
