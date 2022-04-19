@@ -2245,6 +2245,10 @@ desirable result.
 ## Working with time, timezone
 
 - Using `java.time` APIs after Java SE 8
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/package-summary.html
+- Java Zone Id list
+    + https://stackoverflow.com/questions/42512290/where-is-the-official-list-of-zone-names-for-java-time
+    + https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 ## Redirection of Input and Output
 
