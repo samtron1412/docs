@@ -2018,6 +2018,20 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
+## Stream
+
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/package-summary.html
+
+## Immutability (Immutable)
+
+- Google Guava library
+    + `ImmutableX`
+    + Create a copy of object, so safer but more expensive
+- Java's built-in `ImmutableX`
+    + A wrapper to the object, so if there is another reference to the
+      object, you still can change the object.
+    + https://docs.oracle.com/en/java/javase/11/core/creating-immutable-lists-sets-and-maps.html
+
 ## `serialVersionUID`
     + https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
     + A number to specify the version of a serializable class.
