@@ -6,6 +6,8 @@
     + https://javascript.info/js
     + https://developer.mozilla.org/en-US/docs/Web/JavaScript
     + https://felix-kling.de/jsbasics/
+    + https://github.com/getify/You-Dont-Know-JS
+        * 1st edition: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 - Execution and Interpretation: Microtasks vs. tasks
     + https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
     + https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
@@ -28,6 +30,16 @@
     + Javascript: The Good Parts by Douglas Crockford
     + Javascript Patterns by Stoyan Stefenov
     + https://felix-kling.de/jsbasics/
+
+# Testing
+
+- https://medium.com/welldone-software/an-overview-of-javascript-testing-7ce7298b9870
+- https://medium.com/swlh/a-road-to-the-ultimate-testing-setup-with-jest-and-headless-chrome-browser-83f14e3799e3
+- https://github.com/facebook/jest
+- https://github.com/mochajs/mocha
+- https://github.com/jasmine/jasmine
+- https://github.com/puppeteer/puppeteer
+- https://github.com/jsdom/jsdom
 
 # Code pattern
 
