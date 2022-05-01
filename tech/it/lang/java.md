@@ -1343,6 +1343,11 @@ that already exists overwrites the old element.
 - It you try to get a value that is not present in you map, it returns
   the value of null.
 
+#### Map.Entry (Tuple / Pair)
+
+- https://www.baeldung.com/java-map-entry
+- https://stackoverflow.com/questions/521171/a-java-collection-of-value-pairs-tuples
+
 ### Sets
 
 A Set is a collection that cannot contain duplicate elements. It models
