@@ -2030,6 +2030,16 @@ exists, this will overwrite it.
     + https://stackoverflow.com/questions/26684562/whats-the-difference-between-map-and-flatmap-methods-in-java-8
     + map can produce `Stream<Stream<Item>>`
     + flatMap can produce `Stream<Item>`
+- Exception handling in streams
+    + https://dzone.com/articles/exception-handling-in-java-streams
+    + Wrap exceptions in RuntimeException or Unchecked Exception
+        * Stop processing the stream right away
+    + `Either` or `Try` types
+        * Continue processing the stream but store the Exception and the
+          original value that causes the exception
+    + Throw Checked Exceptions
+        * https://javadevcentral.com/throw-checked-exceptions-in-java-streams
+        * https://stackoverflow.com/questions/27644361
 
 ## Immutability (Immutable)
 
