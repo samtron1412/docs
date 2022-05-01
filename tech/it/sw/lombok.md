@@ -4,6 +4,16 @@
 - Using annotations to simplify code by generating boiler-plate code
   automatically
 
+# Configuration
+
+- https://projectlombok.org/features/configuration
+- Add `lombok.config` files
+    + At the root directory of the project
+        * `config.stopBubbling = true`
+        * `lombok.addLombokGeneratedAnnotation = true`: add a custom
+          annotation to exclude this from test coverage tools
+    + At other sub-directories
+
 # val
 
 - local final variables (not on fields)
