@@ -2043,6 +2043,13 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
+## Deep copy objects
+
+- Using a JSON library to convert the object to String, then convert the
+  String to a new copied object.
+    + JSON library: Jackson, Gson, etc.
+- https://www.baeldung.com/java-deep-copy
+
 ## Loading resources (files)
 
 - https://www.baeldung.com/java-classpath-resource-cannot-be-opened
