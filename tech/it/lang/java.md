@@ -371,8 +371,14 @@ mutators (getters and setters)
 
 Using javadoc utility:
 
-## Unit Testing
+## Testing and Unit Tests
 
+### Testing Philosophy
+
+- https://dagger.dev/hilt/testing-philosophy
+    + Using fakes as much as possible for
+      functional/integration/end-to-end testing (also for unit testing
+      if it's possible or easy to do so)
 - Throw exceptions in tests rather than handle them
     + https://stackoverflow.com/questions/31423643/try-catch-in-a-junit-test
 - Use dependency injection more to make testing easier
@@ -384,7 +390,7 @@ Using javadoc utility:
     + Put the test class in the same package as the source class (use
       `package ...` on top of the class)
 
-### Naming Conventions for Tests
+### Naming Conventions for Unit Tests
 
 - Follow the convention for naming tests:
   `{methodBeingTested}_{scenario}_{expected-result}`
@@ -424,6 +430,20 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
 
 - https://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java/496849#496849
 - https://stackoverflow.com/questions/8168884/how-to-test-code-dependent-on-environment-variables-using-junit
+
+### Test Doubles
+
+- https://testing.googleblog.com/2013/07/testing-on-toilet-know-your-test-doubles.html
+- A test double is an object that can stand in for a real object in a test.
+- Stubs, Mocks, and Fakes
+    + A stub has no logic, and only returns what you tell it to return
+    + A mock has expectations about the way it should be called, and a
+      test should fail if it’s not called that way.
+    + A fake doesn’t use a mocking framework: it’s a lightweight
+      implementation of an API that behaves like the real
+      implementation, but isn't suitable for production (e.g. an
+      in-memory database).
+- Should use fake as much as possible, then mocks, and finally stubs
 
 ## Serialization and Deserialization
 
