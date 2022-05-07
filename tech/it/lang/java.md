@@ -2043,23 +2043,15 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
-## Stream
+## Loading resources (files)
 
-- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/package-summary.html
-- map vs flatMap
-    + https://stackoverflow.com/questions/26684562/whats-the-difference-between-map-and-flatmap-methods-in-java-8
-    + map can produce `Stream<Stream<Item>>`
-    + flatMap can produce `Stream<Item>`
-- Exception handling in streams
-    + https://dzone.com/articles/exception-handling-in-java-streams
-    + Wrap exceptions in RuntimeException or Unchecked Exception
-        * Stop processing the stream right away
-    + `Either` or `Try` types
-        * Continue processing the stream but store the Exception and the
-          original value that causes the exception
-    + Throw Checked Exceptions
-        * https://javadevcentral.com/throw-checked-exceptions-in-java-streams
-        * https://stackoverflow.com/questions/27644361
+- https://www.baeldung.com/java-classpath-resource-cannot-be-opened
+- Using `getClass().getResource()` or `getClass().getResourceAsStream()`
+    + This way it uses the same class loader as the class itself, so it
+      can access the JAR's resources.
+- `ClassLoader.getSystemResource()` will use the system class loader,
+  and sometimes it cannot access the JAR's resources.
+    + For example, in AWS Lambda deployment package.
 
 ## Immutability (Immutable)
 
