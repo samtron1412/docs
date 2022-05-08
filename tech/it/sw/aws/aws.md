@@ -4,6 +4,8 @@
 
 - Documentation: https://docs.aws.amazon.com/index.html
     + All AWS tools and services
+- AWS Whitepapers and Guides
+    + https://aws.amazon.com/whitepapers
 
 # AWS General
 
@@ -110,6 +112,72 @@ aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO
       cross-account access to buckets and objects using Amazon S3.
     + https://docs.aws.amazon.com/AmazonS3/latest/userguide/finding-canonical-user-id.html
     + `aws s3api list-buckets --query Owner.ID --output text`
+
+## AWS resources
+
+### Managing AWS Regions
+
+- https://docs.aws.amazon.com/general/latest/gr/rande-manage.html
+- Enable/disable a region
+
+### AWS Services endpoints
+
+- https://docs.aws.amazon.com/general/latest/gr/rande.html
+
+### AWS Services quotas
+
+- https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
+
+### Tagging AWS Resources
+
+- https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html
+- You can assign metadata to your AWS resources in the form of tags.
+    + Each tag is a label consisting of a user-defined key and value.
+    + Tags can help you manage, identify, organize, search for, and
+      filter resources.
+    + You can create tags to categorize resources by purpose, owner,
+      environment, or other criteria.
+
+### Amazon Resource Names  (ARNs)
+
+- https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
+- Amazon Resource Names (ARNs) uniquely identify AWS resources.
+    + We require an ARN when you need to specify a resource
+      unambiguously across all of AWS, such as in IAM policies, Amazon
+      Relational Database Service (Amazon RDS) tags, and API calls.
+
+```
+arn:partition:service:region:account-id:resource-id
+arn:partition:service:region:account-id:resource-type/resource-id
+arn:partition:service:region:account-id:resource-type:resource-id
+```
+
+- `partition`: `aws`, `aws-cn`, `aws-us-gov`
+- `service`: `s3`, etc.
+- `region`: `us-west-2`, etc.
+- `account-id`
+- `resource-id`
+
+## AWS IP address ranges
+
+- https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
+
+## AWS APIs
+
+### API retries
+
+- Error retry and exponential backoff strategy
+- https://docs.aws.amazon.com/general/latest/gr/api-retries.html
+
+### Signing AWS API Requests
+
+- https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html
+- This is useful if you want to write your own AWS SDK to send AWS API
+  requests.
+
+### AWS SDK support for Amazon S3 client-side encryption
+
+- https://docs.aws.amazon.com/general/latest/gr/aws_sdk_cryptography.html
 
 # AWS SDK
 
