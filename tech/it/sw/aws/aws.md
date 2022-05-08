@@ -99,12 +99,17 @@ Temporary access keys
 aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO-NOT-DELETE --role-session-name sandop-dataingestion-prod-admin
 ```
 
-# AWS CLI
+### AWS account identifiers
 
-- User Guide
-    + https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
-- Installation
-    + https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+- AWS account ID: a 12-digit number that uniquely identifies an AWS
+  account.
+    + `aws sts get-caller-identity --query Account --output text`
+- Canonical user ID: an alpha-numeric identifier, such as `79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be`.
+  That is an obfuscated form of the AWS account ID.
+    + You can use this ID to identify an AWS account when granting
+      cross-account access to buckets and objects using Amazon S3.
+    + https://docs.aws.amazon.com/AmazonS3/latest/userguide/finding-canonical-user-id.html
+    + `aws s3api list-buckets --query Owner.ID --output text`
 
 # AWS SDK
 
