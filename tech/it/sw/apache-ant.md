@@ -100,6 +100,9 @@ variables such as project name, project source directory, etc.
 - Ant uses the `property` element which allows you to specify
   properties. This allows the properties to be changed from one build to
   another or from one environment to another.
+- Properties are immutable in a build, when the property is set, it
+  cannot modify after that in the same build. So the order of defining
+  properties is important.
 - By default, Ant provides the following pre-defined properties that can
   be used in the build file:
 
