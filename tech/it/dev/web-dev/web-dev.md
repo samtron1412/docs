@@ -5,6 +5,8 @@
 - Web Development
     + https://javascript.info/ui
     + Web APIs: https://developer.mozilla.org/en-US/docs/Web/API
+    + Web Components: https://developer.mozilla.org/en-US/docs/Web/Web_Components
+        * Custom elements: https://custom-elements-everywhere.com/
 
 # Web Application Architecture
 
@@ -21,65 +23,140 @@
     + A SPA is made up of a single web page that is loaded once on the
       browser when you visit the website, making it faster and much more
       responsive
+- Server rendering
 
 # [Layers of the full stack developer](http://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/)
 
 ## 1. Server, Network, and Hosting Environment.
 
-A) This involves understanding what can break and why, taking no resource for granted.
-B) Appropriate use of the file system, cloud storage, network resources, and an understanding of data redundancy and availability is necessary.
-C) How does the application scale given the hardware constraints?
-D) What about multi-threading and race conditions? Guess what, you won’t see those on your development machine, but they can and do happen in the real world.
-E) Full stack developers can work side by side with DevOps. The system should provide useful error messages and logging capabilities. DevOps will see the messages before you will, so make them count.
+- This involves understanding what can break and why, taking no resource
+  for granted.
+- Appropriate use of the file system, cloud storage, network resources,
+  and an understanding of data redundancy and availability is necessary.
+- How does the application scale given the hardware constraints?
+- What about multi-threading and race conditions? Guess what, you won’t
+  see those on your development machine, but they can and do happen in
+  the real world.
+- Full stack developers can work side by side with DevOps. The system
+  should provide useful error messages and logging capabilities. DevOps
+  will see the messages before you will, so make them count.
 
 ## 2. Data Modeling
 
-A) If the data model is flawed, the business logic and higher layers start to need strange (ugly) code to compensate for corner cases the data model doesn’t cover.
-B) Full stack developers know how to create a reasonably normalized relational model, complete with foreign keys, indexes, views, lookup tables, etc.
-C) Full stack developers are familiar with the concept of non-relational data stores and understand where they shine over relational data stores.
+- If the data model is flawed, the business logic and higher layers
+  start to need strange (ugly) code to compensate for corner cases the
+  data model doesn’t cover.
+- Full stack developers know how to create a reasonably normalized
+  relational model, complete with foreign keys, indexes, views, lookup
+  tables, etc.
+- Full stack developers are familiar with the concept of non-relational
+  data stores and understand where they shine over relational data
+  stores.
+    + https://www.mongodb.com/compare/relational-vs-non-relational-databases
+    + Relational:
+        * Pros: transactional integrity, accuracy, reduce anomalies and
+          duplicate data
+        * Cons: scalability, flexibility, performance
+    + Non-relational/NoSQL:
+        * Pros: schema-less, flexible (change of business
+      requirements), scalability, performance
+        * Cons: low accuracy
 
 ## 3. Business Logic
 
-A) The heart of the value the application provides.
-B) Solid object oriented skills are needed here.
-C) Frameworks might be needed here as well.
+- The heart of the value the application provides.
+- Solid object oriented skills are needed here.
+- Frameworks might be needed here as well.
 
 ## 4. API layer / Action Layer / MVC
 
-A) How the outside world operates against the business logic and data model.
-B) Frameworks at this level should be used heavily.
-C) Full stack developers have the ability to write clear, consistent, simple to use interfaces. The heights to which some APIs are convoluted repel me.
+- How the outside world operates against the business logic and data model.
+- Frameworks at this level should be used heavily.
+- Full stack developers have the ability to write clear, consistent,
+  simple to use interfaces. The heights to which some APIs are
+  convoluted repel me.
 
 ## 5. User Interface
 
-A) Full stack developers: a) understand how to create a readable layout, or b) acknowledge they need help from artists and graphic designers. Either way, implementing a good visual design is key.
-B) Can include mastery of HTML5 / CSS.
-C) JavaScript is the up and coming language of the future and lots of exciting work is being done in the JavaScript world (node, backbone, knockout…)
+- Full stack developers: a) understand how to create a readable layout,
+  or b) acknowledge they need help from artists and graphic
+  designers. Either way, implementing a good visual design is key.
+- Can include mastery of HTML5 / CSS.
+- JavaScript is the up and coming language of the future and lots of
+  exciting work is being done in the JavaScript world (node, backbone,
+  knockout…)
 
 ## 6. User Experience
 
-A) Full stack developers appreciate that users just want things to work.
-B) A good system doesn’t give its users carpal tunnel syndrome or sore eyes. A full stack developer can step back and look at a process that needs 8 clicks and 3 steps, and get it down to one click.
-C) Full stack developers write useful error messages. If something breaks, be apologetic about it. Sometimes programmers inadvertently write error messages that can make people feel stupid.
+- Full stack developers appreciate that users just want things to work.
+- A good system doesn’t give its users carpal tunnel syndrome or sore
+  eyes. A full stack developer can step back and look at a process that
+  needs 8 clicks and 3 steps, and get it down to one click.
+- Full stack developers write useful error messages. If something
+  breaks, be apologetic about it. Sometimes programmers inadvertently
+  write error messages that can make people feel stupid.
 
 ## 7. Understanding what the customer and the business need.
 
-A) Now we are blurring into the line of architect, but that is too much of a hands off role.
-B) Full stack developers have a grasp of what is going on in the field when the customer uses the software. They also have a grasp of the business.
+- Now we are blurring into the line of architect, but that is too much
+  of a hands off role.
+- Full stack developers have a grasp of what is going on in the field
+  when the customer uses the software. They also have a grasp of the
+  business.
 
 ## Other Pieces of the Puzzle:
 
-1. Ability to write quality unit tests. By the way, even JavaScript can have unit tests these days.
-2. Understanding of repeatable automated processes for building the application, testing it, documenting it, and deploying it at scale.
-3. An awareness of security concerns is important, as each layer presents its own possible vulnerabilities.
+1. Ability to write quality unit tests. By the way, even JavaScript can
+   have unit tests these days.
+2. Understanding of repeatable automated processes for building the
+   application, testing it, documenting it, and deploying it at scale.
+3. An awareness of security concerns is important, as each layer
+   presents its own possible vulnerabilities.
 
-# Tools
+# Development Frameworks
 
-[Firebug vs Firefox Deveoper Tools](http://stackoverflow.com/questions/19180494/what-unique-features-does-firebug-have-that-are-not-built-in-to-firefox):
-- Has `DOM` panel, native tool has no
-- Has `Cookies` panel
-- Firebug submenus for Net, CSS, and HTML panels have filters unavailable in the native tool
-- Native tool has built-in Profiler, Firebug needs YSlow
+- ASP.NET
+- Ruby
+    + Rails
+- Python
+    + Django (pronoun like `jango`)
+    + Flask
+- PHP
+    + Laravel (lờ ra vồ)
+    + Symfony
+- Java
+    + Spring
+- JavaScript
+    + Vue: https://github.com/vuejs/vue
+    + Angular: https://github.com/angular/angular
+    + React: https://reactjs.org/
+    + Svelte: https://github.com/sveltejs/svelte
+    + Backbone: https://github.com/jashkenas/backbone
+    + Ember: https://github.com/emberjs/ember.js
+    + Express.js
+
+# User Interface Development
+
+## JavaScript frameworks' concepts
+
++ Lifecycle
++ State management
++ Data binding: bind data between JavaScript and HTML
++ Events: event listeners
++ Template language or programming language extension (JSX)
+
+## Browser Development Tools: Inspection, etc.
+
+### Chrome
+
+- How to inspect any element (popover, etc.)
+    + https://stackoverflow.com/a/28454481/1683888
+    + Open development tool
+    + Run this command in the JS console: `setTimeout(function(){debugger;}, 5000)`
+    + Enable/trigger/show your element (e.g., popover, etc.)
+    + Wait for the browser to breaks into the Debugger
+    + Now click on the `Elements` tab in the Chrome inspector, and you
+      can inspect the element there.
 
 # Tutorial
 

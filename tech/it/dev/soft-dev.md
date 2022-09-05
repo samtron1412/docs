@@ -88,7 +88,23 @@
 
 ## Design and Documenting
 
+- Design documents
+    + Architecture, Infrastructure, Data structures, Logic
+
 ## Implementation
+
+- Pseudo-code for each component in the design document
+- Keep the code reviews to be small and testable pieces of code
+    + Easier to be reviewed and get approvals
+- Effectiveness
+    + Focus on the goal and be realistic
+    + Try to clear roadblocks to ship code
+    + APM (actions per minutes): submit as least one CR per day
+    + Asking for help when you need it, to save time: asking experienced
+      engineer
+- Be nice with the tech lead
+    + Send out diff to the tech lead email, and ask him to patch it
+    + Put teach lead name on the design document
 
 ## Testing
 

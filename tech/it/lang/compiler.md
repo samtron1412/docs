@@ -9,6 +9,10 @@
   source code from a high-level programming language to a lower level
   language (e.g., assembly language or machine code).
 
+# Learn how to build a compiler
+
+- https://github.com/jamiebuilds/the-super-tiny-compiler (JavaScript)
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Compiler

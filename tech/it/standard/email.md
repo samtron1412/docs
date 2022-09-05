@@ -2,6 +2,11 @@
 
 # Overview
 
+- The Ultimate Email Setup
+    + http://danielwebb.us/software/email/
+    + Set up your own email server to store your emails
+    + Set up your own web server to access your emails
+    + Buy your own domain name
 
 # Setting up an email server
 

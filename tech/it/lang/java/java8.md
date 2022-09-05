@@ -123,6 +123,14 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
 - https://mkyong.com/java8/java-8-consumer-examples/
 - https://dkbalachandar.wordpress.com/2017/08/31/java-8-builder-pattern-with-consumer-interface/
 
+## Method references
+
+- https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+- https://www.devmedium.com/java-lambda-method-reference-and-local-variable/
+- https://www.baeldung.com/java-method-references
+- Negate a method reference
+    + https://stackoverflow.com/questions/21488056/how-to-negate-a-method-reference-predicate
+
 # Lambda Expressions
 
 - Syntax

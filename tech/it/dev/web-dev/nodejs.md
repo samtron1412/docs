@@ -83,7 +83,13 @@ Node.js contains libuv to handle asynchronous events.
 
 ## Node Version Manager - nvm
 
-
+- https://github.com/nvm-sh/nvm
+- Install a specific version of NodeJS: `nvm install 14.7.0`
+    + Install long-term support: `nvm install --lts`, `nvm install --lts=argon`
+      `nvm install lst/argon`
+- Use the installed version: `nvm use node`
+    + Use lts: `nvm use --lts`, `nvm use --lts=argon`, `nvm use
+      lts/argon`
 
 # Package management
 
@@ -97,7 +103,47 @@ Node.js contains libuv to handle asynchronous events.
 - Server frameworks: Express.js, Socket.io, Koa.js, Hapi.js
 - MVC frameworks: Meteor, Derby, Sails, Mean, Tower.js
 
+# API
+
+- https://nodejs.org/api/
+
+# ES6 Support Status
+
+- https://nodejs.org/en/docs/es6/
+
+# Guides
+
+- https://nodejs.org/en/docs/guides/
+
 # Tips and Tricks
 
 - `nodemon`: keep track of the changes to all files, and automatically
   restart the server
+
+- lib
+    - common
+        - constants.ts
+        - lambda.ts
+        - appconfig.ts
+    - datadelay
+        - dataDelay.ts
+        - dataDelayStepFunction.ts
+        - config
+            - dataDelayConfigContent.ts
+            - dataDelayconfigSchema.ts
+        - ...
+    - dataIngestion
+        - dataIngestionStepFunction.ts
+        - config
+            - content and schema
+        - ...
+    - infra
+        - aaaInfraStack.ts
+        - infraStack.ts
+        - cleStack.ts
+    - pipeline
+        - pipeline.ts
+        - stages.ts
+- app.ts
+- bin
+

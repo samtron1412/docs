@@ -13,6 +13,9 @@
         * `lombok.addLombokGeneratedAnnotation = true`: add a custom
           annotation to exclude this from test coverage tools
     + At other sub-directories
+- Also we can ignore Guice code by adding the following property to
+  `build.xml`
+    + `<property name="coverage.exclude.instrument.pattern" value="**/predictions/**/guice/*.class"/>`
 
 # val
 

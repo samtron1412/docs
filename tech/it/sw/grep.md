@@ -4,7 +4,9 @@
 - Recursively grep through directory for string in file: `grep -r -i "phrase" directory/`
 
 # Tips and Tricks
+
 ## Finding all files containing a text string on Linux
+
 `grep -Ril "text-to-find-here" /`
 	i stands for ignore case (optional in your case).
 	R stands for recursive.
@@ -25,3 +27,12 @@ This will only search through the files which have .c or .h extensions. Similarl
 Above will exclude searching all the files ending with .o extension. Just like exclude file it's possible to exclude/include directories through --exclude-dir and --include-dir parameter; for example, the following shows how to integrate --exclude-dir:
 
 `grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e "pattern"`
+
+# ripgrep (rg command)
+
+- Much faster than `grep`
+- Search a string in a file: `rg "string" a.file`
+- Search each string in each line in a file in another larger file:
+    + `rg -F -f pattern-file large-file`
+- Only show matched patterns (not the whole line) `-o`
+    + `rg -Fo -f pattern-file large-file`

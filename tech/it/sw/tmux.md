@@ -258,6 +258,10 @@ To get out of Copy mode, we just press the `ENTER` key.
 
 # Tips and Tricks
 
+## Unset an environment variable for the session
+
+- `tmux set-environment -r <ENV_VAR>`
+
 ## Nested local and remote tmux sessions
 
 - Built-in way

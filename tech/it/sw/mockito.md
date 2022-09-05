@@ -35,6 +35,30 @@ void givenStaticMethodWithArgs_whenMocked_thenReturnsMockSuccessfully() {
 
 # Tips and Tricks
 
+## Bypassing strict stubbing
+
+- https://www.baeldung.com/mockito-unnecessary-stubbing-exception
+- https://stackoverflow.com/questions/42947613/how-to-resolve-unneccessary-stubbing-exception
+
+- Case by case
+
+```
+Mockito.lenient().when(mockedService.getUserById(any())).thenReturn(new User());
+```
+
+- Bypass for every cases
+
+```java
+// junit5
+@ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
+class JUnit5MockitoTest {
+}
+
+// junit4
+@RunWith(MockitoJUnitRunner.Silent.class)
+```
+
 ## Spy vs. Mock
 
 - https://stackoverflow.com/questions/28295625/mockito-spy-vs-mock

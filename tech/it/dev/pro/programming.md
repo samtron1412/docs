@@ -473,10 +473,38 @@ Debugging:
 
 ## Code tells you HOW, comments tell you WHY
 
-- https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
-- literature programming
-- programmers first, compiler second
+- Literature programming
+    + http://www.literateprogramming.com/knuthweb.pdf
+- Programmers first, compiler second
+    + Readability and maintainability
 - Code tells you HOW, comments tell you WHY
+    + https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
+
+### Comment styles and rules
+
+- You should write code in a manner such that it is self-documented
+  without the need of HOW comments, only WHY comments are used.
+    + You can achieve this by naming variables with descriptive names
+      and break a long line of code into shorter lines with intermediate
+      variables.
+    + https://softwareengineering.stackexchange.com/a/423364/98936
+- For certain tricky parts of code, you should add HOW comments to help
+  clarify the meaning of the piece of code.
+- Use correct spelling and proper grammar.
+    + It helps with the readability and shows your craft
+    + https://embeddedgurus.com/stack-overflow/2009/04/on-the-use-of-correct-grammer-in-code-comments/
+    + http://codereview.blogspot.com/2009/01/why-you-should-spell-check-your.html
+- Use descriptive mood (3rd person) when describe a function definition,
+  classes, etc.
+    + `Creates foo` rather than `Create foo`
+- Use imperative mood (2nd person, commands) to describe a function call
+  or a pieces of code
+    + `Create foo`
+    + https://stackoverflow.com/a/66759966/1683888
+- Use line breaks to help with debugging
+    + https://softwareengineering.stackexchange.com/a/366370/98936
+- Some examples of code comments
+    + https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/
 
 ## Others
 

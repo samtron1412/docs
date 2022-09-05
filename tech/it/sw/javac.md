@@ -7,3 +7,10 @@
 # Linting
 
 - `Xlint`
+- `@SuppressWarning`
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/SuppressWarnings.html
+    + `@SuppreWarning("unchecked")`
+    + `@SuppreWarning({"unchecked", "deprecated"})`
+    + Only use this in the deepest level / element. If you want to
+      suppress the warning for a method, then use it on that method, not
+      the class.

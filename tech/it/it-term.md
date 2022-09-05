@@ -436,6 +436,10 @@ to process its work (lack of needed resources).
   (aka serialization or marshaling), and the reverse is called decoding
   (parsing, deserialization, unmarshaling).
 
+## Escape Hatches
+
+- https://wiki.c2.com/?EscapeHatch
+
 # Computer Science
 
 - Macro

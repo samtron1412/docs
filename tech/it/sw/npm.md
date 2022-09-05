@@ -16,6 +16,7 @@
     + `npm init --yes` for all default values
 - `npm install <module>`: install a module to the current directory
   without saving to `package.json`
+    + Install a specific version: `npm install <module>@<x.y.z> --save-exact`
 - `npm install <module> --save`: install a module to the current
   directory and save it to `dependencies` in `package.json`
 - `npm install <module> --save-dev`: install a module to the current
@@ -50,10 +51,14 @@
 - Set some defaults:
     + `npm config set init.author.name $name`
     + `npm config set init.author.email $email`
-- `npm run-script`
-    + https://docs.npmjs.com/cli/v8/commands/npm-run-script
-    + Run arbitrary package script
-    + Aliases: `run, rum, urn`
+
+### `npm run-script`
+
+- https://docs.npmjs.com/cli/v8/commands/npm-run-script
+- Run arbitrary package script
+- Aliases: `run, rum, urn`
+- Run a particular script without running its `pre` and `post` scripts:
+    + `npm run <script> --ignore-scripts`
 
 ### npm cheat sheet
 
@@ -167,6 +172,11 @@
 
 # Dependencies
 
+- Dependencies for a web application
+    + https://silvenon.com/blog/dependencies-or-devdependencies
+    + use `dependencies` for all modules included in the bundle and
+      required for building, deploying, and serving your application.
+    + use `devDependencies` for everything else.
 - Peer Dependencies
     + https://nodejs.org/es/blog/npm/peer-dependencies/
     + https://flaviocopes.com/npm-peer-dependencies/
@@ -185,6 +195,10 @@
 
 
 # Tips and Tricks
+
+## Sort package.json
+
+- `npx sort-package-json`
 
 ## Update dependencies
 

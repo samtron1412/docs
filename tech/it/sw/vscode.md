@@ -18,6 +18,13 @@
 
 # Tips and tricks
 
+## Change File Type / Language Mode
+
+- Set a file type or language to a file
+    + `shift + cmd + p` to search `Change Language Mode` command
+
+## Linters
+
 - Only add folders of the same project to a workspace
     - Multiple projects in a workspace can interfere with linters and
       other error checking tools

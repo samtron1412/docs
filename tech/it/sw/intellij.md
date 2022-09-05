@@ -4,6 +4,12 @@
 
 # Tips and Tricks
 
+## Useful Actions
+
+- Search Actions `Cmd + Shift + A` or Search everything
+- Override file type
+-
+
 ## Add a new jar or directories to classpath
 
 ### Method 1 - Using Project Structure

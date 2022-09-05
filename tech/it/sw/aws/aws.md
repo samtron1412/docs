@@ -2,10 +2,23 @@
 
 # Overview
 
+- About AWS
+    + https://aws.amazon.com/about-aws/
 - Documentation: https://docs.aws.amazon.com/index.html
     + All AWS tools and services
 - AWS Whitepapers and Guides
     + https://aws.amazon.com/whitepapers
+
+# Global Infrastructure
+
+- https://aws.amazon.com/about-aws/global-infrastructure/
+- Global AWS services
+    + Amazon CloudFront
+    + Amazon Route 53
+    + Amazon IAM: permission changes in one region are automatically
+      copied to all regions
+- Partially Global
+    + S3: names are global, but physical space is regional
 
 # AWS General
 
@@ -185,6 +198,12 @@ arn:partition:service:region:account-id:resource-type:resource-id
     + https://aws.amazon.com/sdk-for-python/
     + https://github.com/boto/boto3
     +
+
+# AWS Products
+
+- Fargate vs. ECS vs. EKS
+    + https://spot.io/blog/fargate-vs-ecs-comparing-amazons-container-management-services/
+
 
 # Tips and Tricks
 

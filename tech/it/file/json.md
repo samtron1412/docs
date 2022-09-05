@@ -24,6 +24,7 @@
       elements) in a JSON structure.
     + e.g., `$.store.book[0].title`
 - https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html
+- https://github.com/json-path/JsonPath
 
 # Libraries
 

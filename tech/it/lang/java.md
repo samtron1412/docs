@@ -164,6 +164,14 @@ widely used in SIM cards (used in GSM mobile phones) and ATM cards.
 
 ## Java Coding Style Guidelines
 
+### Tools to automatically format code
+
+- https://github.com/diffplug/spotless
+    + Using Gradle instead of Ant
+- https://github.com/google/google-java-format
+- https://docs.openrewrite.org/tutorials/automatically-fix-checkstyle-violations
+- https://github.com/notzippy/JALOPY2-MAIN
+
 ### Naming Conventions
 
 - Naming Rules for identifiers
@@ -430,6 +438,10 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
 
 - https://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java/496849#496849
 - https://stackoverflow.com/questions/8168884/how-to-test-code-dependent-on-environment-variables-using-junit
+- System stubs
+    + https://www.baeldung.com/java-system-stubs
+- Setting environment variables with libraries
+    + https://stackoverflow.com/a/35393623/1683888
 
 ### Test Doubles
 
@@ -661,13 +673,14 @@ Throwable
   finished with it.
 - The try-with-resources statement ensures that each resource is closed
   at the end of the statement.
-- Any object that implements `java.lagn.AutoCloseable` can be used as a
+- Any object that implements `java.lang.AutoCloseable` can be used as a
   resource.
 - If both try-with-resource statement and try block throw exceptions,
   then the exception from the try-with-resource statement is suppressed
     + This is opposite with the try and finally blocks together, the
       exception from the try block is suppressed instead. And the
       exception in the finally block is thrown.
+- Only IO resources are required to be closed.
 
 ## Threads
 
@@ -2282,17 +2295,6 @@ desirable result.
 - [Apache Commons][apache-common] project
 - Google Guava
 - Lombok
-
-### Apache Commons Lang: org.apache.commons.lang3
-
-- https://commons.apache.org/proper/commons-lang/
-- Lang provides a host of helper utilities for the java.lang API,
-  notably String manipulation methods, basic numerical methods, object
-  reflection, concurrency, creation and serialization and System
-  properties. Additionally it contains basic enhancements to
-  java.util.Date and a series of utilities dedicated to help with
-  building methods, such as hashCode, toString and equals.
-
 
 ## Working with time, timezone
 

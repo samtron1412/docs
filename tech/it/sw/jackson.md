@@ -30,3 +30,29 @@ Car car = objMapper.readValue(json, Car.class);
 
 Car car = objMapper.readValue(new URL("..."), Car.class);
 ```
+
+# Java8 Modules
+
+- You need to register some Jackson modules to support Java8
+- https://github.com/FasterXML/jackson-modules-java8
+- https://stackoverflow.com/questions/27952472/serialize-deserialize-java-8-java-time-with-jackson-json-mapper
+
+```java
+// Up to Jackson 2.9: (but not with 3.0)
+ObjectMapper mapper = new ObjectMapper()
+   .registerModule(new ParameterNamesModule())
+   .registerModule(new Jdk8Module())
+   .registerModule(new JavaTimeModule()); // new module, NOT JSR310Module
+
+// with 3.0 (or with 2.10 as alternative)
+ObjectMapper mapper = JsonMapper.builder() // or different mapper for other format
+   .addModule(new ParameterNamesModule())
+   .addModule(new Jdk8Module())
+   .addModule(new JavaTimeModule())
+   // and possibly other configuration, modules, then:
+   .build();
+
+// Alternatively, you can also auto-discover these modules
+ObjectMapper mapper = new ObjectMapper();
+mapper.findAndRegisterModules();
+```

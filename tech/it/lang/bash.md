@@ -25,6 +25,11 @@
     + `where cmd`:
     + `which cmd`
 
+# Variables
+
+- With or without `export`:
+    + https://www.baeldung.com/linux/bash-variables-export
+
 # Built-in Commands
 
 ## sh built-in commands

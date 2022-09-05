@@ -11,6 +11,15 @@
 - Design patterns are formalized best practices that the programmer can
   use to solve common problems when designing an application or system.
 
+# Design Principles
+
+- SOLID
+    + Single responsibility
+    + Open to extension closed to modification
+    + Liskov substitution
+    + Interface segregation
+    + Dependency Inversion
+
 # Creational patterns
 
 ## Builder
@@ -110,6 +119,11 @@ Erich Gamma: You can't do this mix and match of strategy objects. In
 particular you cannot do it dynamically at run-time.
 ```
 
+
+## Facade Pattern
+
+- https://en.wikipedia.org/wiki/Facade_pattern
+- https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
 
 # Behavioral patterns
 

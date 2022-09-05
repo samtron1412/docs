@@ -59,6 +59,12 @@ The term representational state transfer was introduced and defined in
               information regarding the structure or dynamics of the
               application.
 
+# Tutorials and Learn more
+
+- https://www.restapitutorial.com/
+- https://medium.com/@andrea.chiarelli/please-dont-call-them-restful-d2465527b5c
+- https://restfulapi.net/
+
 # References
 
 [wiki]: https://en.wikipedia.org/wiki/Representational_state_transfer

@@ -48,3 +48,8 @@
                 - primus: https://github.com/primus/primus
                     + another abstract layer for real-time frameworks
                     + you can swap in and out different real-time frameworks
+
+# fetch API
+
+- Alternative: axios, etc.
+- https://blog.logrocket.com/axios-vs-fetch-best-http-requests/

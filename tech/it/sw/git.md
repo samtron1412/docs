@@ -98,6 +98,8 @@ system config.**
 
 ### Formatting and Whitespace - [Dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 
+- https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
 When you see `git status` shows you some files as modified but you sure
 that you had not modified that files, maybe you is victim of Line Ending
 Normalization. You should run `git diff -w` command to verify what is
@@ -270,6 +272,11 @@ Template
 ## Git Attributes
 
 ## Git Hooks
+
+- https://git-scm.com/docs/githooks
+- Centralized hooks in your local
+    + https://stackoverflow.com/a/37293198/1683888
+    + Set `core.hooksPath`
 
 # Git Book
 
@@ -924,6 +931,14 @@ against different collaboration workflows.
     + Use staging area to split your work.
     + `git add --patch`
 - [Git commit message structure](https://web.archive.org/web/20150330043110/http://chris.beams.io/posts/git-commit/)
+- Tools
+    + commitlint:
+        * https://commitlint.js.org
+        * https://www.conventionalcommits.org
+        * https://www.freecodecamp.org/news/how-to-use-commitlint-to-write-good-commit-messages/
+    + commitizen
+        * https://github.com/commitizen/cz-cli
+        * https://dev.to/sohandutta/make-everyone-in-your-project-write-beautiful-commit-messages-using-commitlint-and-commitizen-1amn
 - Automate commit message
     + Setting `commit.template` in `~/.gitconfig`
     + Create `~/.gitmessage` with folowing content
@@ -1010,6 +1025,48 @@ like this:
 
 Resolves: #123
 See also: #456, #789
+```
+
+#### Conventional commits message types
+
+```
+feat: {
+        description: 'A new feature',
+},
+fix: {
+        description: 'A bug fix',
+},
+docs: {
+        description: 'Documentation only changes',
+},
+style: {
+        description:
+                'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+},
+refactor: {
+        description:
+                'A code change that neither fixes a bug nor adds a feature',
+},
+perf: {
+        description: 'A code change that improves performance',
+},
+test: {
+        description: 'Adding missing tests or correcting existing tests',
+},
+build: {
+        description:
+                'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+},
+ci: {
+        description:
+                'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+},
+chore: {
+        description: "Other changes that don't modify src or test files",
+},
+revert: {
+        description: 'Reverts a previous commit',
+},
 ```
 
 ### Private small team
@@ -1208,7 +1265,7 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 ## git-stash - stash changes in working directory away
 
-- `git stash push -m "message" filename.ext`: stash a file
+- `git stash push -m "message" -- filename.ext`: stash a file
 
 ## git-diff - show changes between commits, commit and working tree, etc.
 
@@ -1345,6 +1402,15 @@ setup an app-specific password.
   outgoing directory.
 
 # Tips and Tricks
+
+## Ignore bulk change commits with git-blame
+
+- https://www.moxio.com/blog/43/ignoring-bulk-change-commits-with-git-blame
+
+## Remove untracked files
+
+- Preview untracked files will be removed: `git clean -nd`
+- Remove untracked files: `git clean -fd`
 
 ## Remove a specific commit in git history
 

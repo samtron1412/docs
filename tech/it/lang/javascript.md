@@ -33,15 +33,58 @@
 
 # Testing
 
+## Automation
+
+- Task runner: Grunt, Gulp, npm scripts, etc.
+    + linting, minifying, adding CSS prefixes, transpilling, running
+      tests, etc.
+- Browser automation system: Selnium, Cypress, PlayWright, Nightwatch,
+  etc.
+    + run specific tests on installed browsers and return results
+
+## Unit tests
+
 - https://medium.com/welldone-software/an-overview-of-javascript-testing-7ce7298b9870
 - https://medium.com/swlh/a-road-to-the-ultimate-testing-setup-with-jest-and-headless-chrome-browser-83f14e3799e3
 - https://github.com/facebook/jest
 - https://github.com/mochajs/mocha
 - https://github.com/jasmine/jasmine
-- https://github.com/puppeteer/puppeteer
 - https://github.com/jsdom/jsdom
 
+## Integration/end-to-end tests
+
+- https://www.selenium.dev/
+- https://github.com/puppeteer/puppeteer
+- https://webdriver.io/
+- https://www.cypress.io/
+- https://playwright.dev/
+- Articles
+    + https://www.reddit.com/r/QualityAssurance/comments/srhafv/cypress_vs_playwright/
+    + Performance/Speed comparison: https://blog.checklyhq.com/cypress-vs-selenium-vs-playwright-vs-puppeteer-speed-comparison/
+
+# Debugging
+
+- Source map (sourcemap)
+    + https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
+    + https://www.bugsnag.com/blog/source-maps
+    + A file that contains a mapping to help the debugger reconstructs
+      the original source code from transformed (compressed/combined)
+      source.
+
+# Expressions and operators
+
+## Nullish coalescing
+
+- `??`: double question marks
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
+
 # Code pattern
+
+## Global objects / variables
+
+- https://developer.mozilla.org/en-US/docs/Glossary/Global_object
+- https://stackoverflow.com/questions/11938380/global-variables-in-angularjs
+- https://2ality.com/2019/07/global-scope.html
 
 ## Prototype
 
@@ -422,6 +465,12 @@ Function.prototype.curry = function() {
 
 # Troubleshooting
 
+## await vs. return vs. return await
+
+- https://jakearchibald.com/2017/await-vs-return-vs-return-await/
+- `return await` is redundant outside of `try/catch` block
+    + Use `return await` only inside `try` block
+
 ## Callback hell
 
 - Nested callbacks
@@ -429,6 +478,109 @@ Function.prototype.curry = function() {
 - Use Promise or Observable instead
 
 # References
+
+## Glossary
+
+- Template literals
+    + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+    + Tagged templates and raw strings
+- Polyfill
+    + https://developer.mozilla.org/en-US/docs/Glossary/Polyfill
+    + A polyfill is a piece of code (usually JavaScript on the Web) used
+      to provide modern functionality on older browsers that do not
+      natively support it.
+
+## Built-in objects
+
+### Promise
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- https://javascript.info/async
+- Promise reject vs. throw
+    + https://stackoverflow.com/questions/33445415/javascript-promises-reject-vs-throw
+- `await vs. return vs. return await`
+    + https://jakearchibald.com/2017/await-vs-return-vs-return-await/
+- Reject handler vs. catch
+    + https://stackoverflow.com/questions/52656159/javascript-promise-reject-handler-vs-catch
+    + Better to have if condition in catch to handle checked exception,
+      rather than having a Reject handler since it simplifies the logic.
+- Cancel promises or async functions
+    + https://stackoverflow.com/questions/30233302/promise-is-it-possible-to-force-cancel-a-promise/30235261#30235261
+    + https://stackoverflow.com/questions/25345701/how-to-cancel-timeout-inside-of-javascript-promise
+    + https://stackoverflow.com/questions/29478751/cancel-a-vanilla-ecmascript-6-promise-chain
+    + https://stackoverflow.com/questions/21781434/status-of-cancellable-promises
+    + Using `AbortController`
+
+## Expressions and Operators
+
+### await
+
+- https://javascript.info/async-await
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+- The await operator is used to wait for a Promise.
+- It can only be used inside an async function within regular JavaScript
+  code; however it can be used on its own with JavaScript modules.
+- If no `await` for an `async` function, then the async function will be
+  executed normally, but the JavaScript interpreter will not wait for it
+  to be finished before executing the next line in the current function.
+    + https://stackoverflow.com/questions/55019537/is-possible-to-call-async-function-without-await-keyword-and-what-happens-if-we
+
+
+## Declarations vs Statements
+
+- You can see declarations as "binding identifiers to values", and
+  statements as "carrying out actions".
+- The fact that var is a statement instead of a declaration is a special
+  case, because it doesn't follow normal lexical scoping rules and may
+  create side effects — in the form of creating global variables,
+  mutating existing var-defined variables, and defining variables that
+  are visible outside of its block (because var-defined variables aren't
+  block-scoped).
+
+### Declarations
+
+- `let, const, function, function*, async function, async function*,
+  class, export, import`
+
+#### `export` declaration (statement)
+
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
++ export object: https://stackoverflow.com/questions/34619640/what-is-the-best-way-to-export-an-object-literal-with-es6-2015
+    * Destructuring a default export object: https://stackoverflow.com/questions/43814830/destructuring-a-default-export-object
++ Why using default exports? https://stackoverflow.com/questions/46913851/why-and-when-to-use-default-export-over-named-exports-in-es6-modules
++ PREFER NAMED EXPORTS INSTEAD OF DEFAULT EXPORTS
+    * Can export many things
+    * Import the same name (only change names with `as` if it's
+      necessary)
+    * Early errors if trying to import something does not exist
+
+#### `import` declaration:
+
++ Declarative import (`import` statement): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
++ Dynamically import (`import()` call): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import
+    * Lazily import modules
+
+#### `async function`
+
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
++ An async function is a function declared with the async keyword,
+  and the await keyword is permitted within it.
+    * Async functions can contain zero or more await expressions.
++ The async and await keywords enable asynchronous, promise-based
+  behavior to be written in a cleaner style, avoiding the need to
+  explicitly configure promise chains.
++ RETURN VALUE: a `Promise` which  will be resolved with the value
+  returned by the async function, or rejected with an exception
+  thrown from, or uncaught within, the async function.
+
+### Statements
+
+## Functions
+
+### The arguments object
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
+
 
 [typescript-js]: http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-JavaScript/35048303#35048303
 [list]: https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS

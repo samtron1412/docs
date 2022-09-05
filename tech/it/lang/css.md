@@ -24,3 +24,24 @@
         - https://lesscss.org/usage/
         - Written in JavaScript
         - Goal: as similar to CSS as possible
+
+# CSS
+
+- CSS specification
+    + How to read W3C specifications: https://alistapart.com/article/readspec/
+    + CSS Standardization process: https://www.w3.org/Style/2011/CSS-process
+    + Must read: https://www.w3.org/Style/CSS/read
+    + Homepage: https://www.w3.org/Style/CSS/
+    + List of specifications: https://www.w3.org/Style/CSS/current-work
+- Developer MDN
+    + https://developer.mozilla.org/en-US/docs/Web/CSS
+
+# LESS
+
+- A Quick tutorial and introduction
+    + https://www.syncfusion.com/blogs/post/less-versus-css.aspx
+- Tutorials
+    + https://www.w3schools.io/css/less-tutorials/
+    + https://www.tutorialspoint.com/less/index.htm
+- Homepage: https://lesscss.org
+

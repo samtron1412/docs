@@ -34,11 +34,46 @@ State testing is about **validating the result**, while behavior testing is abou
 
 If you are testing algorithms or system functionality, you want to test in most cases state and not interactions. A typical test setup uses mocks or stubs of related classes to abstract the interactions with these other classes away and tests state in the object which is tested.
 
-## Mocking
-Simulate a real object and behavior of objects and verifies expectations.
+## A/B Testing
 
-## Stub
-Is a simply dummy set of data that can be passed around to meet criteria.
+- https://www.optimizely.com/optimization-glossary/ab-testing
+- A/B testing (also known as split testing or bucket testing) is a
+  method of comparing two versions of a webpage or app against each
+  other to determine which one performs better.
+
+## Smoke Testing
+
+- https://www.techslang.com/definition/what-is-smoke-testing/
+- Smoke testing refers to trying out software to determine its usability
+  and stability.
+- Smoke testing thus verifies if all of a software’s important features
+  work and are not flawed.
+
+## Canary Testing
+
+- https://www.techslang.com/definition/what-is-canary-testing/
+- Canary testing refers to the incremental deployment of new software
+  code to a few users only.
+- The new code could be a new feature or an additional functionality to
+  an already existing application. This type of software testing helps
+  ensure that any problem can easily be patched since only a limited
+  number of users are affected.
+
+## Load Test
+
+## Test Doubles: Stub, Mock, Fake
+
+- https://testing.googleblog.com/2013/07/testing-on-toilet-know-your-test-doubles.html
+- A test double is an object that can stand in for a real object in a test.
+- Stubs, Mocks, and Fakes
+    + A stub has no logic, and only returns what you tell it to return
+    + A mock has expectations about the way it should be called, and a
+      test should fail if it’s not called that way.
+    + A fake doesn’t use a mocking framework: it’s a lightweight
+      implementation of an API that behaves like the real
+      implementation, but isn't suitable for production (e.g. an
+      in-memory database).
+- Should use fake as much as possible, then mocks, and finally stubs
 
 # 2. Test organization
 

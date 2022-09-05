@@ -4,6 +4,12 @@
 
 # Usage
 
+```
+# Homebrew gathers anonymous aggregated user behavior analytics and reports these to Google Analytics. It is recommended that you choose to opt out
+# See https://github.com/Homebrew/brew/blob/master/docs/Analytics.md for the detail.
+brew analytics off
+```
+
 - Description of a package: `brew desc <pkg>`
 - Install: `brew install <pkg>`
 - Uninstall: `brew uninstall <pkg>`
