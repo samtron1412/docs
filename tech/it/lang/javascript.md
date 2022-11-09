@@ -65,11 +65,15 @@
 # Debugging
 
 - Source map (sourcemap)
-    + https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
+    + https://web.archive.org/web/20220125022251/html5rocks.com/en/tutorials/developertools/sourcemaps/
+        * https://developer.chrome.com/blog/sourcemaps/
+        * https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/use_a_source_map/index.html
     + https://www.bugsnag.com/blog/source-maps
     + A file that contains a mapping to help the debugger reconstructs
       the original source code from transformed (compressed/combined)
-      source.
+      source. (local development)
+- Source Map Revision 3
+    + https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit
 
 # Expressions and operators
 
@@ -510,6 +514,14 @@ Function.prototype.curry = function() {
     + https://stackoverflow.com/questions/29478751/cancel-a-vanilla-ecmascript-6-promise-chain
     + https://stackoverflow.com/questions/21781434/status-of-cancellable-promises
     + Using `AbortController`
+
+### Reflect
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect
+
+### Proxy
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
 
 ## Expressions and Operators
 

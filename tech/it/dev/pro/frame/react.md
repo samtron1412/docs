@@ -278,12 +278,27 @@ function Todos() {
   // ...
 ```
 
+### useCallback and useMemo and React.memo()
+
+- Avoid using `useCallback` for every function
+- Do use `useCallback` for function that is passed as a prop to highly
+  optimized child components. (React.memo(), React.useEffect(..,
+  [callback]), etc.)
+- https://kentcdodds.com/blog/usememo-and-usecallback
+
+### useRef
+
+- Optimize components with useCallback, useMemo and then useRef
+    + https://stackoverflow.com/questions/64134566/should-we-use-usecallback-in-every-function-handler-in-react-functional-componen
 
 # Advanced Guides
 
 ## Context
 
 - https://reactjs.org/docs/context.html
+- Best practices
+    + https://kentcdodds.com/blog/how-to-use-react-context-effectively
+    + https://kentcdodds.com/blog/how-to-optimize-your-context-value
 - Context provides a way to pass data through the component tree without
   having to pass props down manually at every level.
 - Context is designed to share data that can be considered “global” for
@@ -333,6 +348,16 @@ function Todos() {
 - React Hooks Testing Library: can be used to test React Hooks
     + https://react-hooks-testing-library.com/
     + React-use library of useful hooks: https://github.com/streamich/react-use
+
+## Snapshot testing
+
+- https://kentcdodds.com/blog/effective-snapshot-testing
+- https://kentcdodds.com/blog/why-i-never-use-shallow-rendering
+- Order of priority
+    + Using explicit assertions if as much as possible
+    + Using only small, focused snapshots (less than 50 lines)
+    + Using custom serializers to have cleaners snapshots
+    + Using snapshot-diff to compare two states of the same component
 
 ## Testing environments
 
@@ -620,3 +645,13 @@ function Todos() {
 - It is used to develop applications for Android, Android TV, iOS,
   macOS, tvOS, Web, Windows and UWP by enabling developers to use the
   React framework along with native platform capabilities.
+
+# TypeScript
+
+- React `children` with TypeScript
+    + https://www.carlrippon.com/react-children-with-typescript/
+    + `ReactNode`, `ReactChild`, `JSX.Element`
+- React Context
+    + https://kentcdodds.com/blog/how-to-use-react-context-effectively
+    + https://felixgerschau.com/react-typescript-context/
+    + https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context/

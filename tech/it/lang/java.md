@@ -164,13 +164,16 @@ widely used in SIM cards (used in GSM mobile phones) and ATM cards.
 
 ## Java Coding Style Guidelines
 
-### Tools to automatically format code
+### Tools to automatically format code (linter, etc.)
 
+- Checkstyle
+    + https://checkstyle.sourceforge.io/
 - https://github.com/diffplug/spotless
     + Using Gradle instead of Ant
 - https://github.com/google/google-java-format
 - https://docs.openrewrite.org/tutorials/automatically-fix-checkstyle-violations
 - https://github.com/notzippy/JALOPY2-MAIN
+
 
 ### Naming Conventions
 
@@ -1689,6 +1692,9 @@ In Java, abstraction is achieved using abstract classes and interfaces.
 
 ### Abstract classes
 
+- When to use them?
+    + When you want to share states or functionalities.
+
 An abstract class is defined using the `abstract` keyword.
 - If a class is declared abstract it cannot be instantiated (you cannot
   create objects of that type).
@@ -1720,6 +1726,15 @@ sounds to the subclasses.
   superclass.
 
 ### Interfaces
+
+
+- When to use?
+    + When you want to avoid Inheritance and coupling. (this aligns
+      more with composition than abstract classes)
+    + If you plan to vend out an interface for external teams to
+      use. Interfaces allow you to change implementations without
+      breaking customers' systems and it allows your customers freedom
+      to implment the interfaces.
 
 An interface is a completely abstract class that contains only abstract
 methods.
@@ -1760,6 +1775,7 @@ interfaces!
 
 >When you implement an interface, you need to override all of its
 methods.
+
 
 ## Nesting classes
 
@@ -1820,6 +1836,9 @@ down by framework extensions.
 - Simplify code
 - To better testing, flexibility, and ability to make new decisions in
   the future
+
+- POJOs vs JavaBean
+    + https://www.baeldung.com/java-pojo-class
 
 ## Object class
 
@@ -2052,9 +2071,27 @@ exists, this will overwrite it.
 
 # Java Versions
 
+- https://en.wikipedia.org/wiki/Java_version_history
 - https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features#_java_features_8_17
 
+## Java 8 vs. Java 11
+
+- https://learn.microsoft.com/en-us/java/openjdk/reasons-to-move-to-java-11
+- https://www.baeldung.com/java-11-new-features
+
+## Java 11 vs. Java 17
+
+- https://mydeveloperplanet.com/2021/09/28/whats-new-between-java-11-and-java-17/
+- https://blog.idrsolutions.com/java-17-vs-java-11/
+
 # Tips & Tricks
+
+## Divide a list to lists of n size
+
+- https://e.printstacktrace.blog/divide-a-list-to-lists-of-n-size-in-Java-8/
+- Library:
+    + Google Guava: `Lists.partition(List list, int size)`
+    + Apache Commons: `ListUtils.partition(List list, int size)`
 
 ## Deep copy objects
 
@@ -2065,6 +2102,9 @@ exists, this will overwrite it.
 
 ## Loading resources (files)
 
+- https://docs.oracle.com/javase/8/docs/technotes/guides/lang/resources.html
+- https://mkyong.com/java/java-read-a-file-from-resources-folder/
+- https://stackoverflow.com/questions/3861989/preferred-way-of-loading-resources-in-java
 - https://www.baeldung.com/java-classpath-resource-cannot-be-opened
 - Using `getClass().getResource()` or `getClass().getResourceAsStream()`
     + This way it uses the same class loader as the class itself, so it
@@ -2267,6 +2307,7 @@ desirable result.
   it's easiest to use
 - Use `String.format` for VERY complex formatting
     + This has a lot of configuration to achieve your formatting
+    + https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax
 - `+` and `StringBuilder` are the fastest (`+` compiled to
   `StringBuilder`)
 
@@ -2328,6 +2369,11 @@ else
 
 ## Logging
 
+- Sanitize / encode the input before logging
+    + https://www.mend.io/resources/blog/best-practices-for-dealing-with-log4j/
+    + https://www.baeldung.com/jvm-log-forging
+    + https://github.com/OWASP/owasp-java-encoder
+    + Or upgrade to a newer version without the bugs
 - Log4J2: the most popular logging framework for Java
 
 Instead of using `System.out.println` to print out trace messages, use

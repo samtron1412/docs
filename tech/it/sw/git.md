@@ -475,8 +475,13 @@ Tag a commit in history: `git tag -a v1.2 9fceb01`
     + Want to revert to `a`
 
 ```
+# This will work  for every types of commit
 git reset --hard a
 git reset --soft d
+git commit
+
+# Using git revert, will not work for merge commits
+git revert --no-commit HEAD~4..
 git commit
 ```
 
@@ -1273,6 +1278,8 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 - `git diff`: Show differences between your working directory and the
   index.
+- `git diff <old commit> <new commit>`: show changes / differences that
+  the new commit makes on top of the old commit.
 - `git diff --cached`: Show differences between the index and the most
   recent commit.
 - `git diff HEAD`: Show the differences between your working directory
@@ -1402,6 +1409,12 @@ setup an app-specific password.
   outgoing directory.
 
 # Tips and Tricks
+
+## Recover commits / changes after `git reset --hard`
+
+- https://stackoverflow.com/questions/5788037/recover-from-losing-uncommitted-changes-by-git-reset-hard
+- Using `git reflog show`
+- Then `git reset HEAD@{x}`
 
 ## Ignore bulk change commits with git-blame
 

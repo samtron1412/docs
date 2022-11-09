@@ -31,8 +31,19 @@
 ## Java
 
 - gson: faster with small json
+    + https://github.com/google/gson
 - fasterxml-jackson: faster with big json
+    + https://github.com/FasterXML/jackson
 - json-simple: simple json serdes
+    + https://github.com/fangyidong/json-simple
+- json-java
+    + https://github.com/stleary/JSON-java
+    + https://www.baeldung.com/java-org-json
+- Resources
+    + https://www.baeldung.com/java-json
+    + https://www.baeldung.com/jackson-vs-gson
+    + https://www.overops.com/blog/the-ultimate-json-library-json-simple-vs-gson-vs-jackson-vs-json/
+
 
 # References
 

@@ -462,6 +462,11 @@ http://softwarerecs.stackexchange.com/questions/7463/fastest-python-library-to-r
 
 # Tutorial
 
+## Working with shell scripts
+
+- https://www.geeksforgeeks.org/how-to-run-bash-script-in-python/
+- https://www.google.com/search?q=python+tutorial+to+run+shell+script&rlz=1C5GCEM_enUS953US953&oq=python+tutorial+to+run+shell+script&aqs=chrome..69i57.6427j0j4&sourceid=chrome&ie=UTF-8
+
 ## Working with images
 
 - Lowest level: PIL/Pillow (PIL is discontinued)

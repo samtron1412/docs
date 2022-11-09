@@ -196,6 +196,13 @@
 
 # Tips and Tricks
 
+## Run any executable installed by npm locally
+
+You can find any executable installed by npm in `node_modules/.bin`. So
+you can run gulp locally using:
+
+`./node_modules/.bin/gulp`
+
 ## Sort package.json
 
 - `npx sort-package-json`

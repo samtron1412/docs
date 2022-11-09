@@ -33,6 +33,12 @@ void givenStaticMethodWithArgs_whenMocked_thenReturnsMockSuccessfully() {
 }
 ```
 
+# Spy
+
+- https://stackoverflow.com/questions/11620103/mockito-trying-to-spy-on-method-is-calling-the-original-method
+    + Using `doReturn(obj).when(spy).method(params)` rather than
+      `when(spy.method(params)).thenReturn(obj)`
+
 # Tips and Tricks
 
 ## Bypassing strict stubbing

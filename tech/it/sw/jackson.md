@@ -1,7 +1,9 @@
 # Overview
 
 - https://github.com/FasterXML/jackson
+    + https://stackoverflow.com/questions/6846244/jackson-and-generic-type-reference
 - https://www.baeldung.com/jackson
+    + https://www.baeldung.com/jackson-map
 - Jackson is a suite of data-processing tools for Java (and the JVM
   platform)
     + Jackson has been known as "the Java JSON library"

@@ -45,6 +45,11 @@
 - https://jestjs.io/docs/26.x/jest-object#mock-modules
 
 
+### Tips and Tricks
+
+- Change mock implementation per test
+    + https://stackoverflow.com/questions/48790927/how-to-change-mock-implementation-on-a-per-single-test-basis
+
 ## Configuring Jest
 
 - https://jestjs.io/docs/26.x/configuration

@@ -11,6 +11,7 @@
 
 # Global Infrastructure
 
+- https://www.youtube.com/watch?v=uj7Ting6Ckk
 - https://aws.amazon.com/about-aws/global-infrastructure/
 - Global AWS services
     + Amazon CloudFront

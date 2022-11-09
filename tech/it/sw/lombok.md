@@ -12,10 +12,18 @@
         * `config.stopBubbling = true`
         * `lombok.addLombokGeneratedAnnotation = true`: add a custom
           annotation to exclude this from test coverage tools
+        * `lombok.anyConstructor.addConstructorProperties = true`:
+          working with Jackson serialization and desearialization
+            - https://medium.com/consulner/lombok-tricks-and-common-mistakes-fbf0ed044c3c
+            - https://www.baeldung.com/lombok-configuration-system
     + At other sub-directories
 - Also we can ignore Guice code by adding the following property to
   `build.xml`
     + `<property name="coverage.exclude.instrument.pattern" value="**/predictions/**/guice/*.class"/>`
+
+## Amazon examples
+
+- https://w.amazon.com/bin/view/Lombok/
 
 # val
 

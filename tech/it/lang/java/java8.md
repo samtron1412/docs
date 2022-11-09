@@ -1,5 +1,19 @@
 # Overview
 
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/
+
+# Input and Output (IO)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html
+    + https://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html
+
+# Math
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/math/package-summary.html
+
 # Stream
 
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/package-summary.html
@@ -154,3 +168,47 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
 - https://blogs.oracle.com/javamagazine/post/12-recipes-for-using-the-optional-class-as-its-meant-to-be-used
 - https://www.oracle.com/technical-resources/articles/java/java8-optional.html
 - https://www.baeldung.com/java-optional
+
+# Concurrent
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/package-summary.html
+    + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html
+    + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/package-summary.html
+
+# Java Language (java.lang)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html
+    + Annotation: https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/package-summary.html
+    + Reflection: https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/package-summary.html
+    + Garbage collector: https://docs.oracle.com/javase/8/docs/api/java/lang/ref/package-summary.html
+    + JVM/JRE management: https://docs.oracle.com/javase/8/docs/api/java/lang/management/package-summary.html
+    + Dynamic language support: https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/package-summary.html
+    + Instrument programs running on the JVM: https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/package-summary.html
+
+# Networking Application (java.net)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/net/package-summary.html
+
+# Remote Method Invocation (RMI)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/net/package-summary.html
+
+# Security and Crypto (Certificates, etc.)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/security/package-summary.html
+    + https://docs.oracle.com/javase/8/docs/api/javax/crypto/package-summary.html
+
+# SQL
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html
+
+# Text
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/text/package-summary.html

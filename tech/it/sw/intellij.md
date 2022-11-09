@@ -4,6 +4,10 @@
 
 # Tips and Tricks
 
+## Assign file types to file name patterns
+
+- `Preferences - Editor - File Types`
+
 ## Useful Actions
 
 - Search Actions `Cmd + Shift + A` or Search everything

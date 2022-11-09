@@ -834,6 +834,10 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Set filetype for a file
+
+- `:set ft=markdown`
+
 ## Camel case motion
 
 - Using `f/F/t/T<char>` to move to the next upper `<char>`
@@ -2964,6 +2968,7 @@ basically have two playback methods at our disposal:
 * executing the content of a register right *here*,
 * executing the content of a register from column 0 of every line in a
   given range.
+    - https://stackoverflow.com/questions/390174/in-vim-how-do-i-apply-a-macro-to-a-set-of-lines
 
 Command                          | Description
 ---------------------------------|-------------------------------------------------------------------------

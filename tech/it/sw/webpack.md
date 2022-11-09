@@ -11,3 +11,29 @@
     + Loaders: https://webpack.js.org/loaders/
     + Plugins: https://webpack.js.org/plugins/
     + Migration: https://webpack.js.org/migrate/
+
+# Webpack Development Server
+
+- v3 (webpack v4)
+    + https://v4.webpack.js.org/configuration/dev-server/#devserverhttps
+- v4 (webpack v5)
+    + https://webpack.js.org/configuration/dev-server/
+- HTTPS and TLS certificates
+    + https://web.dev/how-to-use-local-https/#running-your-site-locally-with-https-other-options
+    + https://stackoverflow.com/questions/26663404/webpack-dev-server-running-on-https-web-sockets-secure
+
+# DevTool
+
+- https://webpack.js.org/configuration/devtool/
+- https://webpack.js.org/plugins/source-map-dev-tool-plugin
+- Change timeout setting for browsers
+    + https://stackoverflow.com/questions/39751124/increase-timeout-limit-in-google-chrome
+
+
+# Configuration
+
+## TypeScript Configuration
+
+- https://webpack.js.org/configuration/configuration-languages/#typescript
+- https://stackoverflow.com/questions/40075269/is-it-possible-to-write-webpack-config-in-typescript
+

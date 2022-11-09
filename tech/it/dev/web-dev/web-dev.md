@@ -135,6 +135,15 @@
     + Ember: https://github.com/emberjs/ember.js
     + Express.js
 
+# Local Development Server
+
+- Configure HTTPS and TLS certificates for local development server:
+    + https://web.dev/how-to-use-local-https/#running-your-site-locally-with-https-other-options
+    + Using `mkcert` to create local CA and TLS certificate for local
+      development
+    + Alternatives (not recommended)
+        *
+
 # User Interface Development
 
 ## JavaScript frameworks' concepts

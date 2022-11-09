@@ -4,17 +4,20 @@
 
 ## Resources
 
+- Bash reference manual / Bash Features:
+    + https://www.gnu.org/software/bash/manual/bash.html
+    + https://www.gnu.org/software/bash/manual/html_node/index.html
 - Wiki: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-- Manual: https://www.gnu.org/software/bash/manual/bash.html
-- [Bash Guide for Beginners][beginner]
-- [Advanced Bash-Scripting Guide][advanced]
+- Bash Guide for Beginners
+    + http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+- Advanced Bash-Scripting Guide
+    + http://tldp.org/LDP/abs/html/index.html
 - Style guide
     + https://google.github.io/styleguide/shellguide.html
 - Naming conventions
     + https://google.github.io/styleguide/shellguide.html#s7-naming-conventions
     + https://stackoverflow.com/questions/673055/correct-bash-and-shell-script-variable-capitalization
     + https://unix.stackexchange.com/questions/42847/are-there-naming-conventions-for-variables-in-shell-scripts
-- Bash reference manual: https://www.gnu.org/software/bash/manual/html_node/index.html
 - List all built-in commands: `compgen`
 - Check type of a command (is it internal command (built-in) or
   external)
@@ -53,6 +56,8 @@
 - https://acloudguru.com/blog/engineering/conditions-in-bash-scripting-if-statements
 
 # Shell Parameter
+
+- https://www.gnu.org/software/bash/manual/html_node/Shell-Parameters.html
 
 ## Introduction
 
@@ -143,6 +148,10 @@ options** as well. These are words preceded by a double hyphen.
 
 - https://www.shellscript.sh/tips/getopt/index.html
 
+# Shell Expansion
+
+- https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html
+
 # Array
 
 - https://linuxize.com/post/bash-arrays/
@@ -199,7 +208,13 @@ echo "The included script"
 - [Parameter substitution](http://www.tldp.org/LDP/abs/html/parameter-substitution.html)
 
 
-# Tips and Tricks
+# Arrays and Associative Arrays (bash v4+)
+
+- https://www.baeldung.com/linux/bash-array
+
+# If Statements
+
+- https://linuxize.com/post/bash-if-else-statement/
 
 ## Check if an environment variable exists
 
@@ -234,6 +249,79 @@ then
 fi
 ```
 
+## Check if string equal condition
+
+- https://linuxize.com/post/how-to-compare-strings-in-bash/
+- https://stackoverflow.com/questions/4277665/how-do-i-compare-two-string-variables-in-an-if-statement-in-bash
+- https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
+
+```bash
+if [ "${x1}" = "${x2}" ]; then
+    echo abc
+fi
+```
+
+# Loops
+
+## For loops
+
+- `continue` and `break`
+    + https://linuxize.com/post/bash-break-continue/
+
+
+# Functions
+
+- https://linuxize.com/post/bash-functions/
+
+
+# Best Practices and Guides
+
+- https://google.github.io/styleguide/shellguide.html
+- https://github.com/icy/bash-coding-style
+- Quote string variables if you don't want word splitting and wildcard
+  expansion
+    + `"${some_var}"`
+- When to use curly braces around variables?
+    + https://stackoverflow.com/questions/8748831/when-do-we-need-curly-braces-around-shell-variables
+    + Should develop the habit of using `{}` for every variable.
+- Command substitution
+    + `$(command)`
+- Quotes inside quotes
+    + https://stackoverflow.com/questions/3834839/how-can-i-escape-a-double-quote-inside-double-quotes
+
+# Tips and Tricks
+
+## To lowercase
+
+- https://stackoverflow.com/questions/2264428/how-to-convert-a-string-to-lower-case-in-bash
+
+## Working with JSON
+
+- https://stackoverflow.com/questions/43373176/store-json-directly-in-bash-script-with-variables
+
+## Set text color in the terminal
+
+- https://unix.stackexchange.com/a/269085/68026
+- `tput`
+
+```
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+OFF=$(tput sgr0)
+
+echo "${GREEN}Created diff.txt!"
+echo
+echo "On a Cloud Desktop, create a paste by running:"
+echo
+echo "/apollo/env/envImprovement/bin/paste.amazon.com diff.txt"
+echo
+echo "On macOS, create a paste at https://paste.amazon.com."
+echo "You can copy the file to the clipboard by running:"
+echo
+echo "pbcopy < diff.txt${OFF}"
+```
+
+
 ## References in bash
 
 - https://newbedev.com/does-bash-provide-support-for-using-pointers
@@ -259,8 +347,3 @@ fi
       wrong command
       => this will places the resulting line to the command prompt then
       you can review or edit the command
-
-# References
-
-[beginner]: http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
-[advanced]: http://tldp.org/LDP/abs/html/index.html

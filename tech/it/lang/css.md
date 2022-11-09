@@ -45,3 +45,14 @@
     + https://www.tutorialspoint.com/less/index.htm
 - Homepage: https://lesscss.org
 
+# Tips and Tricks
+
+## Relative length vs Absolute length
+
+- https://gist.github.com/basham/2175a16ab7c60ce8e001
+- Using relative length units
+    + `rem, em, %`
+
+## State of CSS 2022
+
+- https://web.dev/state-of-css-2022/

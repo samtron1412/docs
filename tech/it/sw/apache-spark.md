@@ -64,6 +64,10 @@
     + Conviva manages video stream quality and prevents customer churn
       by responding to issues more rapidly
 
+# SQL API Reference
+
+- https://spark.apache.org/docs/2.3.0/api/sql/index.html
+
 # Hardware Provisioning
 
 - https://spark.apache.org/docs/latest/hardware-provisioning.html

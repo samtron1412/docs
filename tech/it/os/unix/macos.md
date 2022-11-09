@@ -52,6 +52,21 @@ Mac OS
 - brew install java: current java version
 - brew install java11
 
+- Install any Java version that you want, and then using the following
+  aliases to set Java version on the fly.
+
+```
+# JAVA LANGUAGE RUNTIMES
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home
+export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias nojava='unset JAVA_HOME'
+
+# default to Java 11
+java11
+```
+
 # Mail.App
 
 ## Shortcuts

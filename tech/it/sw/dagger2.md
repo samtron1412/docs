@@ -2,6 +2,9 @@
 
 - Dependency injection library for Java
 - https://dagger.dev
+    + Dev guide: https://dagger.dev/dev-guide/
+    + Tutorial: https://dagger.dev/tutorial
+    + API: https://dagger.dev/api/latest
 - Videos
     + Intro to Dagger 2: https://www.youtube.com/watch?v=oK_XtfXPkqw
     + Basic tutorial (good to have a basic overview how to use Dagger 2)
@@ -369,3 +372,7 @@ class RequestRouter {
 ## Declaring multibindings
 
 ## Inherited subcomponent multibindings
+
+# Best Practices
+
+
