@@ -601,7 +601,7 @@ Commercially available Freons include:
 
 - Engine oil: 2021-07 (192,000)
 - Coolant / Antifreeze: 2021-09-20
-- Transmission fluid:
+- Transmission fluid: 2021
 - Brake fluid:
 - Power steering fluid: 2021-09-25
 - Tires:
