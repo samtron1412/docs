@@ -5,6 +5,8 @@
 Log4j is a Reliable, Fast and flexible Logging Framework written in Java
 which is distributed under the Apache Software License.
 
+LoggerContext -> LogManager -> Logger -> LoggerConfig -> Appender -> Layout
+
 Log4j has three main components:
 - **loggers**: responsible for capturing logging information.
 - **appenders**: responsible for publishing logging information to
@@ -101,6 +103,12 @@ setAllLevels(String, Level)).
 Finally, `Configurator.setRootLevel(Level)` sets the level of the root
 logger to the given level without affecting child loggers. The root
 logger is the topmost logger with a name of "" (the empty string).
+
+# Layouts
+
+## JSON Template
+
+- https://logging.apache.org/log4j/2.x/manual/json-template-layout.html
 
 # References
 

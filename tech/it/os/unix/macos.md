@@ -71,6 +71,7 @@ java11
 
 ## Shortcuts
 
+- Show hidden files: `cmd + shift + .`
 - Preferences: `cmd + ,`
 - New Message: `cmd + n`
 - Undo: `cmd + u`

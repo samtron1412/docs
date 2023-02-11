@@ -50,6 +50,10 @@ List files order by size
 # scp – secure copy , remote file copy
 
 # mv - move or rename a file
+
+- Rename multiple files
+    + `for i in *; do mv $i $i.gz ; done`
+
 # rm - remove a file
 # mkdir - create a directory
 # chmod - change the permissions on a file

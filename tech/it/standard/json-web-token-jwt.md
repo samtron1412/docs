@@ -18,6 +18,9 @@
 - https://github.com/auth0/java-jwt
 - https://github.com/jwtk/jjwt
     + https://www.viralpatel.net/java-create-validate-jwt-token/
+- Nimbus-JOSE-JWT
+    + https://bitbucket.org/connect2id/nimbus-jose-jwt/src/master/
+    + https://connect2id.com/products/nimbus-jose-jwt
 
 ### Manually validation by yourself - the detailed steps
 

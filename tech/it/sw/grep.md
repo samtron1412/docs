@@ -30,6 +30,10 @@ Above will exclude searching all the files ending with .o extension. Just like e
 
 # ripgrep (rg command)
 
+Author's blog post: https://blog.burntsushi.net/ripgrep
+
+Some use cases: https://mariusschulz.com/blog/fast-searching-with-ripgrep
+
 - Much faster than `grep`
 - Search a string in a file: `rg "string" a.file`
 - Search each string in each line in a file in another larger file:

@@ -62,3 +62,31 @@ Check style
   instead
 - Use a CASE expression to perform complex aggregations
 - Add predicates to your Join tables
+
+# Tips and tricks
+
+## Select the max date
+
+- https://stackoverflow.com/questions/16550703/sql-get-the-last-date-time-record
+
+```
+select filename ,
+       status   ,
+       max_date = max( dates )
+from some_table t
+group by filename , status
+having status = '<your-desired-status-here>'
+```
+
+```
+SELECT * FROM table
+WHERE Dates IN (SELECT max(Dates) FROM table);
+```
+
+```
+SELECT TOP 1 * FROM foo ORDER BY Dates DESC
+Will return one result with the latest date.
+
+SELECT * FROM foo WHERE foo.Dates = (SELECT MAX(Dates) FROM foo)
+Will return all results that have the same maximum date, to the milissecond.
+```
