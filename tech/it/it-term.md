@@ -185,6 +185,21 @@ implementation of computer systems.
 
 # Software
 
+## Canonical form
+
+- A canonical, normal, or standard form of a mathematical object is a
+  standard way of presenting that objects as a mathematical expression.
+    + Often, it is one which provides the simplest representation of an
+      object and which allows it to be identified in a unique way.
+
+## Data Normalization
+
+- The reduction of data to any kind of canonical form.
+- Database normalization is the process of organizing the fields and
+  tables of a relational database to minimize redundancy and dependency.
+- The normalization process simplifies the data representation and
+  creates the uniqueness.
+
 ## Clobbering
 
 - To overwrite, usually unintentionally, often this happens

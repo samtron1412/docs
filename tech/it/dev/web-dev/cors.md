@@ -2,6 +2,7 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     + https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+    + https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS
 - https://www.moesif.com/blog/technical/cors/Authoritative-Guide-to-CORS-Cross-Origin-Resource-Sharing-for-REST-APIs/
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html
 
@@ -13,3 +14,7 @@
 
 - Local testing
     + https://medium.com/swlh/avoiding-cors-errors-on-localhost-in-2020-5a656ed8cefa
+
+# Tips and Tricks
+
+## Preflight requests (OPTIONS) do not include credentials or require authentication

@@ -75,3 +75,10 @@
       warning will be emitted.
 
 # @Builder
+
+# Troubleshooting
+
+## Java 10+ - Getter lazy error: incompatible types
+
+- https://stackoverflow.com/questions/52101387/incompatible-types-error-using-lombok-getterlazy-true-with-java-10
+    + move the initialization code to a separate method

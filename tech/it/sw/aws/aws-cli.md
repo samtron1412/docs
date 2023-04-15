@@ -40,3 +40,55 @@ aws secretsmanager create-secret --name MyRedshiftSecret  --tags Key="RedshiftDa
     "VersionId": "a1603925-e8ea-4739-9ae9-e509eEXAMPLE"
 }
 ```
+
+# API Gateway
+
+## Data Actuals
+
+```
+# Get API
+aws apigateway test-invoke-method --region us-west-2 --profile trnso-dev --rest-api-id u60mdlkbd7 --resource-id fb9w99 --http-method POST --path-with-query-string '/US/metric/Inventory/PRODUCTLINE-SORTTYPE-WAREHOUSE/DAILY' --body file://us-fullcase-get.json
+
+# PayloadBasedGet API
+aws apigateway test-invoke-method --region us-west-2 --profile trnso-dev --rest-api-id u60mdlkbd7 --resource-id q3sy9c --http-method POST --body file://jp-payloadGet.json
+
+# Put API
+aws apigateway test-invoke-method --region us-west-2 --profile trnso-dev --rest-api-id u60mdlkbd7 --resource-id ruwd7k --http-method PUT --path-with-query-string '/JP/metric/TransferInReceipts/PRODUCTLINE-SORTTYPE-WAREHOUSE/WEEKLY/2023-03-12?replace=false&namespace=Default&clientInfo=trnso' --body file://jp-put.json
+
+aws apigateway test-invoke-method --region us-east-1 --profile sandop-data-actuals-prod --rest-api-id pki018cv5j --resource-id 0llo8m --http-method POST --body file://us-fullcase-payloadBasedGet.json
+
+```
+
+- Get API
+
+```json
+{
+    "periodStartDate": "2023-03-19",
+    "periodEndDate": "2023-04-04",
+    "groupBy": ["periodStartDate"],
+    "filters": {
+        "productLine": ["Amazon Digital Products 21 Accessory"],
+        "sortType": ["fullcase"]
+    }
+}
+```
+
+- PayloadBasedGet API
+
+```json
+{
+  "metricId": "Inventory",
+  "timeGranularity": "DAILY",
+  "queryOptions": {
+    "periodStartDate": "2023-03-19",
+    "periodEndDate": "2023-04-04",
+    "groupBy": ["periodStartDate"],
+    "filters": {
+        "productLine": ["Amazon Digital Products 21 Accessory"],
+        "sortType": ["fullcase"]
+    }
+  },
+  "scope": "US",
+  "planGranularity": "PRODUCTLINE-SORTTYPE-WAREHOUSE"
+}
+```

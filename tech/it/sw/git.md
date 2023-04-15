@@ -1410,6 +1410,11 @@ setup an app-specific password.
 
 # Tips and Tricks
 
+## Copy commit content from another branch to your staging area
+
+- `git cherry-pick -n <commit-hash>`
+- `git reset` to clear the index
+
 ## Recover commits / changes after `git reset --hard`
 
 - https://stackoverflow.com/questions/5788037/recover-from-losing-uncommitted-changes-by-git-reset-hard

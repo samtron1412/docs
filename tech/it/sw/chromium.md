@@ -16,6 +16,12 @@
 
 - https://wiki.archlinux.org/index.php/Chromium/Tips_and_tricks
 
+## Copy curl commands for files under `Network` tab in Developer Tools
+
+- Open developer tools.
+- Go to Network tab.
+- Right click on the file and select `Copy`, then `Copy as cURL`
+
 ## Delete all saved links in OneTab extension
 
 ```javascript

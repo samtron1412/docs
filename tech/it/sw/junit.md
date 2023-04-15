@@ -10,3 +10,8 @@
     + https://www.baeldung.com/junit-assertions
 - Parameterized tests
     + https://www.baeldung.com/parameterized-tests-junit-5
+
+## Migrate from JUnit4
+
+- https://www.parasoft.com/blog/reaping-the-benefits-of-junit-5/
+- https://www.baeldung.com/junit-5-migration

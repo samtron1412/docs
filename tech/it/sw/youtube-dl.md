@@ -9,6 +9,18 @@
     + `<format>`: mp4, webm, mkv
     + `youtube-dl -f mp4 https://www.youtube.com/playlist?list=PLSJl4Xusm04tbstMd4rSqsFQsP4vIdY7k`
 
+# Alternatives
+
+## you-get
+
+- https://you-get.org/
+- https://github.com/soimort/you-get
+
+## yt-dlp
+
+- https://github.com/yt-dlp/yt-dlp
+- A fork from `youtube-dl` with additional features
+
 # Tips and Tricks
 
 ## Download mp3

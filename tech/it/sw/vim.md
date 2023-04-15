@@ -45,6 +45,10 @@ The following mappings simplify navigation when viewing help:
 - Press Backspace to return from the last jump.
 - Press s to find the next subject, or S to find the previous subject.
 - Press o to find the next option, or O to find the previous option.
+    + Vim has a number of internal variables and switches which can be
+      set to achieve special effects.  These options come in three
+      forms: boolean, number, string
+    + `:h options`
 
 ```vim
 " Create file ~/.vim/ftplugin/help.vim
@@ -74,6 +78,11 @@ Plugins available that will extend or add new functionality to Vim.
 
 ## Search and replace
 
+- Search
+    + `/`: forward (can use arrow to select previous search patterns)
+    + `?`: backward (can use arrow to select previous search patterns)
+    + `q/`: view the search buffer that contains all previous search
+      patterns.
 - Change each "foo" to "bar" in the current line: `:s/foo/bar/g` and
   have confirm : `:s/foo/bar/gc`
 - Change each "foo" to "bar" in all the lines: `:%s/foo/bar/g` and have
@@ -425,6 +434,10 @@ The most common operators:
   motions, which in turn allows us to expand Vim's vocabulary.
 
 ## Insert Mode
+
+- Cheat sheets
+    + https://dev.to/iggredible/the-only-vim-insert-mode-cheatsheet-you-ever-needed-nk9
+    + https://learnbyexample.github.io/vim_reference/Insert-mode.html
 
 ### Make Corrections Instantly from Insert Mode
 
@@ -833,6 +846,22 @@ filetype plugin on
 - Read and write files across a network: `:h netrw-ref`
 
 # Tips and Tricks
+
+## Spawn a new shell in a Vim window
+
+- `:term[inal]`
+- `:terminal` vs `:shell`
+    + https://vi.stackexchange.com/questions/27736/in-vim8-2-is-there-any-difference-between-using-term-vs-shell
+
+## Spawn a new shell in your terminal (not in a Vim window)
+
+- The only way to back in Vim is to terminate the shell.
+
+## Vim as Java IDE
+
+- SpaceVim
+    + https://spacevim.org/use-vim-as-a-java-ide/
+- https://jqno.nl/post/2020/09/09/my-vim-setup/
 
 ## Set filetype for a file
 
@@ -1262,6 +1291,11 @@ gq  - reformat paragraph
 
 # Tuning Vim
 
+## SpaceVim
+
+- https://spacevim.org/
+- https://spacevim.org/use-vim-as-ide/
+
 ## [.vimrc template](http://www.vimbits.com/)
 
 - http://alvinalexander.com/linux-unix/vimrc-vim-example-commands-configuration-file
@@ -1320,15 +1354,46 @@ set wrap
 
 ## Plugins
 
-### Experimental Plugins
+### Misc
 
-- vim-easymotion: https://github.com/easymotion/vim-easymotion
+- coc.nvim
+    + https://github.com/neoclide/coc.nvim
+    + Language Server Protocol client
+    + Features
+        * Code completion (main)
 - Showing marks
     + vim-signature: https://github.com/kshenoy/vim-signature
     + vim-markbar: https://github.com/Yilin-Yang/vim-markbar
     + Clear all marks: https://stackoverflow.com/questions/11450817/vim-how-do-i-clear-all-marks
         * `:delmarks!`: all marks excepts A-Z and 0-9
         * `:delmarks A-Z0-9`: delete marks A-Z and 0-9
+
+
+- Neomake (similar ale): https://github.com/neomake/neomake
+- Python-mode: https://github.com/python-mode/python-mode
+- Debugging
+    + https://github.com/idanarye/vim-vebugger
+    + https://github.com/vim-vdebug/vdebug
+    + https://github.com/gilligan/vim-lldb
+- Undotree: https://github.com/mbbill/undotree
+- Mappings for tags:
+    + https://github.com/tpope/vim-ragtag
+- Tags manager
+    + https://github.com/ludovicchabant/vim-gutentags
+- Search tools wrapper
+    + https://github.com/mileszs/ack.vim
+- Multiple cursors
+    + https://github.com/terryma/vim-multiple-cursors
+    + This can be achieve by vim using visual block mode and substitute
+        operator.
+- Automatically detect tab settings in a new codebase
+    + https://github.com/tpope/vim-sleuth
+
+
+### vim-easymotion
+
+- vim-easymotion: https://github.com/easymotion/vim-easymotion
+    + `:h easymotion` for manual
 
 ### vimtex
 
@@ -1438,7 +1503,7 @@ K                |<plug>(vimtex-doc-package)|                    `n`
     + copying to clipboard: `~/.config/zathura/zathurarc`
         * `set selection-clipboard clipboard`
 
-### Goyo.vim and limelight.vim
+### goyo.vim and limelight.vim
 
 - Distraction-free mode in Vim.
 - `<Leader>d`
@@ -1489,6 +1554,9 @@ selected lines.
 - Use :Gbrowse to browse GitHub URL.
 
 ### ale
+
+- Configure ALE with CoC
+    + https://github.com/dense-analysis/ale#faq-coc-nvim
 
 - `:h ale`
 
@@ -1545,12 +1613,6 @@ nmap <Leader>ms <Plug>MarkdownPreviewStop
 - `<M-f>`: go forwards one word
 - `<M-n>`: c_<Down> or i_<Down>
 - `<M-p>`: c_<Up> or i_<Up>
-
-### syntastic
-
-- https://github.com/vim-syntastic/syntastic
-- `:h syntastic`
-- Syntax checking.
 
 ### vim-easy-align
 
@@ -2133,6 +2195,8 @@ xmap <Leader>md :HeaderDecrease<CR>
 
 ### fugitive-vim
 
+- https://dev.to/iggredible/working-with-vim-and-git-4nkh
+
 #### Commands ####
 
 - `:Git` Run an arbitrary git command. Similar to :!git [args] but chdir
@@ -2335,7 +2399,7 @@ nmap <Leader>gl :Gpull<CR>
     + Terminal specific: https://github.com/morhetz/gruvbox/wiki/Terminal-specific
     + iterm2, tmux
     + https://web.archive.org/web/20190121063455/https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be
-- http://vimcolors.com/
+- https://vimcolorschemes.com/top
 
 ### Language pack
 
@@ -2501,28 +2565,6 @@ let g:mucomplete#chains.unite = []
 
 PS. You also need to install related omni completion plugins.
 
-
-### Misc
-
-- Neomake (similar ale): https://github.com/neomake/neomake
-- Python-mode: https://github.com/python-mode/python-mode
-- Debugging
-    + https://github.com/idanarye/vim-vebugger
-    + https://github.com/vim-vdebug/vdebug
-    + https://github.com/gilligan/vim-lldb
-- Undotree: https://github.com/mbbill/undotree
-- Mappings for tags:
-    + https://github.com/tpope/vim-ragtag
-- Tags manager
-    + https://github.com/ludovicchabant/vim-gutentags
-- Search tools wrapper
-    + https://github.com/mileszs/ack.vim
-- Multiple cursors
-    + https://github.com/terryma/vim-multiple-cursors
-    + This can be achieve by vim using visual block mode and substitute
-        operator.
-- Automatically detect tab settings in a new codebase
-    + https://github.com/tpope/vim-sleuth
 
 ## Key mapping
 

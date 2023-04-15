@@ -308,6 +308,13 @@ x = q.get()
 - is __init__ always needed: https://stackoverflow.com/questions/6854080/is-it-necessary-to-include-init-as-the-first-function-every-time-in-a-class
     + No
 
+# pyenv
+
+- Manage multiple Python versions.
+- https://github.com/pyenv/pyenv#understanding-path
+- https://amaral.northwestern.edu/resources/guides/pyenv-tutorial
+- https://realpython.com/intro-to-pyenv/
+
 # Conda
 
 - Conda vs. Pip

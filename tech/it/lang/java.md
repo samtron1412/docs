@@ -2084,6 +2084,12 @@ exists, this will overwrite it.
 - https://mydeveloperplanet.com/2021/09/28/whats-new-between-java-11-and-java-17/
 - https://blog.idrsolutions.com/java-17-vs-java-11/
 
+# AspectJ
+
+- https://www.baeldung.com/aspectj
+- https://en.wikipedia.org/wiki/AspectJ
+- https://stackoverflow.com/questions/4313789/what-is-aspectj-good-for
+
 # Tips & Tricks
 
 ## Divide a list to lists of n size

@@ -46,6 +46,23 @@ Check style
     + If you’ll need all records from both tables, no matter if they
       have pair.
 
+## Inner Join
+
+```
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1
+INNER JOIN table2
+ON table1.matching_column = table2.matching_column;
+```
+
+- Select all columns from the first tables
+
+```
+SELECT nutrients.*, measures.colX
+FROM nutrients
+LEFT JOIN measures ON nutrients.name=measures.name
+```
+
 # RANK vs. DENSE_RANK vs. ROW_NUMBER
 
 - https://stackoverflow.com/questions/7747327/sql-rank-versus-row-number

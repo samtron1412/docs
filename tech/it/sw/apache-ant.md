@@ -3,6 +3,7 @@
 # Overview
 
 - http://ant.apache.org/
+- https://jenkov.com/tutorials/ant/ant-tutorial.html
 
 Apache Ant is a Java based build tool from Apache Software Foundation.
 - Apache Ant's build files are written in XML and they take advantage of
@@ -158,3 +159,8 @@ buildversion=3.3.2
 
 ## Data Types
 
+## Tasks
+
+### copy
+
+- https://ant.apache.org/manual/Tasks/copy.html

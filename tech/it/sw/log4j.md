@@ -2,6 +2,9 @@
 
 # Overview
 
+- https://www.digitalocean.com/community/tutorials/log4j2-example-tutorial-configuration-levels-appenders
+- https://logging.apache.org/log4j/2.x/manual/configuration.html
+
 Log4j is a Reliable, Fast and flexible Logging Framework written in Java
 which is distributed under the Apache Software License.
 
@@ -69,6 +72,8 @@ configuration file or a configuration class.
 
 # Configuration
 
+- https://logging.apache.org/log4j/log4j-2.0/manual/configuration.html
+
 ## Introduction
 
 Configuring log4j involves assigning the Level, defining Appender, and
@@ -103,6 +108,13 @@ setAllLevels(String, Level)).
 Finally, `Configurator.setRootLevel(Level)` sets the level of the root
 logger to the given level without affecting child loggers. The root
 logger is the topmost logger with a name of "" (the empty string).
+
+## `packages` attribute is deprecated
+
+- https://logging.apache.org/log4j/2.x/manual/configuration.html#ConfigurationSyntax
+    + Instead of using this attribute to discover the plugins.
+    + The plugins should be processed with the Log4j annotation
+      processor.
 
 # Layouts
 

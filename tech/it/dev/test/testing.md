@@ -18,9 +18,17 @@ Often use setUp() and tearDown() functions or beforeTest() and afterTest() funct
 
 ## 1.3. Functional and integration tests
 
-An integration test has the target to **test the behavior of a component or the integration between a set of components**. The term functional test is sometimes used as synonym for integration test.
+An integration test has the target to **test the behavior of a component
+or the integration between a set of components**. The term functional
+test is sometimes used as synonym for integration test.
 
-This kind of tests allow you to translate your user stories into a test suite, i.e., the test would resemble an expected **user interaction with the application**.
+This kind of tests allow you to translate your user stories into a test
+suite, i.e., the test would resemble an expected **user interaction with
+the application**.
+
+### How to write good integration tests?
+
+- https://www.google.com/search?q=how+to+write+good+integration+tests+for+a+service&rlz=1C5GCEM_enUS953US953&sxsrf=AJOqlzV4-sXBqN-muNigzUgh3VAycXQBFg%3A1676953715986&ei=c0j0Y6PvO7mq5NoPvZu3yAs&ved=0ahUKEwjj9K6046X9AhU5FVkFHb3NDbkQ4dUDCBA&uact=5&oq=how+to+write+good+integration+tests+for+a+service&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABMggIIRAWEB4QHToKCAAQRxDWBBCwAzoFCAAQkQI6FwguEIAEELEDEIMBEMcBENEDENIDEKgDOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQqAMQmQM6FAguEIAEELEDEMcBENEDENIDEKgDOhEILhCABBDHARDRAxCoAxDSAzoICAAQgAQQsQM6BAgjECc6IAguEIAEELEDEIMBEMcBENEDENIDEKgDEIsDEKgDENIDOgUIABCABDoaCC4QgAQQsQMQgwEQqAMQmQMQiwMQqAMQmQM6HQguEIAEELEDEMcBENEDEKgDENIDEIsDEKgDENIDOgsILhCABBCYAxCoAzoaCC4QgAQQsQMQgwEQoQMQqAMQiwMQqAMQoQM6BQgAELEDOg0IABCABBCxAxCDARAKOgcIABCABBAKOgQIABADOgoIABCABBAUEIcCOgsIIRAWEB4Q8QQQHToFCCEQqwI6CgghEBYQHhAPEB1KBAhBGABQ3AdYvk1ggk9oAXABeACAAZIBiAH1HJIBBTE2LjIwmAEAoAEByAEIuAECwAEB&sclient=gws-wiz-serp
 
 ## 1.4. Performance tests
 

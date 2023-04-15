@@ -1,5 +1,61 @@
 [TOC]
 
+# Common Tools
+
+- https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/
+- https://www.temok.com/blog/400-linux-basic-commands-you-should-know/
+
+1. `ls` - The most frequently used command in Linux to list directories
+1. `pwd` - Print working directory command in Linux
+1. `cd` - Linux command to navigate through directories
+1. `mkdir` - Command used to create directories in Linux
+1. `mv` - Move or rename files in Linux
+1. `cp` - Similar usage as mv but for copying files in Linux
+1. `rm` - Delete files or directories
+1. `touch` - Create blank/empty files
+1. `ln` - Create symbolic links (shortcuts) to other files
+1. `cat` - Display file contents on the terminal
+1. `clear` - Clear the terminal display
+1. `echo` - Print any text that follows the command
+1. `less` - Linux command to display paged outputs in the terminal
+1. `man` - Access manual pages for all Linux commands
+1. `uname` - Linux command to get basic information about the OS
+1. `whoami` - Get the active username
+1. `tar` - Command to extract and compress files in Linux
+1. `grep` - Search for a string within an output
+1. `head` - Return the specified number of lines from the top
+1. `tail` - Return the specified number of lines from the bottom
+1. `diff` - Find the difference between two files
+1. `cmp` - Allows you to check if two files are identical
+1. `comm` - Combines the functionality of diff and cmp
+1. `sort` - Linux command to sort the content of a file while outputting
+1. `export` - Export environment variables in Linux
+1. `zip` - Zip files in Linux
+1. `unzip` - Unzip files in Linux
+1. `ssh` - Secure Shell command in Linux
+1. `service` - Linux command to start and stop services
+1. `ps` - Display active processes
+1. `kill` and `killall` - Kill active processes by process ID or name
+1. `df` - Display disk filesystem information
+1. `mount` - Mount file systems in Linux
+1. `chmod` - Command to change file permissions
+1. `chown` - Command for granting ownership of files or folders
+1. `ifconfig` - Display network interfaces and IP addresses
+1. `traceroute` - Trace all the network hops to reach the destination
+1. `wget` - Direct download files from the internet
+1. `ufw` - Firewall command
+1. `iptables` - Base firewall for all other firewall utilities to interface with
+1. `apt, pacman, yum, rpm` - Package managers depending on the distro
+1. `sudo` - Command to escalate privileges in Linux
+1. `cal` - View a command-line calendar
+1. `alias` - Create custom shortcuts for your regularly used commands
+1. `dd` - Majorly used for creating bootable USB sticks
+1. `whereis` - Locate the binary, source, and manual pages for a command
+1. `whatis` - Find what a command is used for
+1. `top` - View active processes live with their system usage
+1. `useradd` and `usermod` - Add new user or change existing users data
+1. `passwd` - Create or update passwords for existing users
+
 # bash
 GNU Bourne-Again SHell
 
@@ -65,21 +121,67 @@ List files order by size
 
 # date - display the current date and time
 # passwd - Change your login password
+
 # du - display the space size used for a directory
-- Show size of current directory: `du -sh` - s: summary, h: human readable
+
+- Show size of current directory:
+    + `du -sh` - s: summary, h: human readable
+- Show size of `dir1` directory
+    + `du -sh dir1`
+- Shows the size of the files and directories ordered by size.
+    + `du -sk * | sort -rn`
 
 # df - finding the disk free space / disk usage
-`df -h`
+
+- Displays a list of mounted partitions.
+    + `df -h`
 
 # links - text based web browser - hay
 # w - See who else is logged in
     - tty – native terminal of host
     - pty/pts – remote terminal, ie# Ssh, xterm…
 
-# [sed](http://www.thegeekstuff.com/2009/11/unix-sed-tutorial-append-insert-replace-and-count-file-lines/)
-**sed** is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline). While in some ways similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is consequently more efficient. But it is sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
+# Text Processing Tools
+
+- Thinking in term of grep, sed, and awk
+    + https://arstechnica.com/gadgets/2021/08/linux-bsd-command-line-101-using-awk-sed-and-grep-in-the-terminal/
+    + The case of Donald Knuth and Doug Mcilroy
+        * https://sci-hub.se/https://dl.acm.org/doi/10.1145/5948.315654
+- https://www.baeldung.com/linux/grep-sed-awk-differences
+- Introduction
+    + https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf
+- When it comes to text processing in Linux, the three tools that come
+  in pretty handy are grep, sed, and awk. Although being totally
+  different tools, their functionality seems to overlap in simple
+  scenarios.
+    + For example, to find a pattern in a file and print the matches to
+      the standard output, we’ll find that all of them can do that.
+- However, if we stretch beyond this simple exercise, we’ll find that
+  `grep is only good for simple text matching and printing`.
+- On the other hand, in addition to match and print text, `sed offers
+  additional text transformation commands like substitution`.
+- Finally, awk, being the most powerful of these tools, is `a scripting
+  language that offers a multitude of features that do not exists in the
+  former two`.
+
+## grep
+
+## sed
+
+- http://www.thegeekstuff.com/2009/11/unix-sed-tutorial-append-insert-replace-and-count-file-lines/
+- **sed** is a stream editor.
+    + A stream editor is used to perform basic text transformations on
+      an input stream (a file or input from a pipeline).
+    + While in some ways similar to an editor which permits scripted
+      edits (such as ed), sed works by making only one pass over the
+      input(s), and is consequently more efficient. But it is sed's
+      ability to filter text in a pipeline which particularly
+      distinguishes it from other types of editors.
 
 Append a line at the end of the file: `sed '$ a\sentence' filepath`
+
+## awk
+
 
 
 # find

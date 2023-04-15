@@ -172,6 +172,16 @@ from chance is less then 5 percent.
 
 # Glossary
 
+## Percentile - p10, p50, p90, etc.
+
+- https://www.dnv.com/article/terminology-explained-p10-p50-and-p90-202611
+- Exceedance
+    + p10: 10% of data points exceed the p10 value.
+    + p50: 50% of data points exceed the p50 value.
+- Non-exeedance
+    + p10: 10% of data points not exceed the p10 value.
+    + p50: 50% of data points not exceed the p50 value.
+
 ## Contingency table
 
 - In statistics, a contingency table (also known as a cross tabulation

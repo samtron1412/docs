@@ -88,6 +88,12 @@ java11
 
 # Tips and Tricks
 
+## Install pygraphviz
+
+- https://stackoverflow.com/questions/32933480/error-while-installing-pygraphviz-mac-os-x-anaconda
+- `brew install graphviz`
+- `pip install --global-option=build_ext --global-option="-IC:/usr/local/include/" --global-option="-LC:/usr/local/lib/" pygraphviz`
+
 ## If the Software Update hanging (keep checking)
 
 - Run this command: `sudo /bin/launchctl kickstart -k system/com.apple.softwareupdated`
