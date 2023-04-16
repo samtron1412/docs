@@ -792,7 +792,7 @@ Users and groups are a mechanism for **access control**.
 
 - Create two users: `glider` with password and `guest` with no password
 - List users logged on system: `$ who`
-- Add a new user:
+- Add a new user: (`-m` create home directory if it does not exist
     + `$ useradd -m -g [initial_group] -G [additional_group] -s [login_shell] [username]`
     + `# useradd -m -G wheel -s /bin/bash glider`
     + `# useradd -m -s /bin/bash guest`

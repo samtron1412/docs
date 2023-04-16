@@ -23,6 +23,10 @@
 
 Something
 
+## Resources to learn more
+
+- https://karpathy.ai/
+
 # Explainable AI (XAI)
 
 We want to explain the decisions that the AI makes.
