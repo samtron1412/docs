@@ -588,6 +588,20 @@ Commercially available Freons include:
 
 # Cars, Maker - Model - Year - Liter
 
+## Hyundai Tucson 2022
+
+### Information
+
+- VIN: 5NMJE3AE9NH110134
+- License Number:
+- Mileage: 7500
+- Windshield wipers:
+- Dashcam:
+    + Viofo A129 with front and rear cams
+    + Viofo A119 V3 (front cam)
+
+### Maintenance
+
 ## Acura - TL - 2003 - 3.2 Base
 
 ### Information
@@ -599,7 +613,10 @@ Commercially available Freons include:
 
 ### Maintenance
 
-- Engine oil: 2021-07 (192,000)
+- Engine oil:
+    * Oil filter: FRAM PH7317
+    * 2021-07 (at 192,000)
+    * 2023-08 (at 204,000)
 - Coolant / Antifreeze: 2021-09-20
 - Transmission fluid: 2021
 - Brake fluid:
@@ -611,6 +628,8 @@ Commercially available Freons include:
     + Fog light: 9006/HB4
 
 ## Toyota - Camry LE - 2008 - 2.4
+
+- Sold: 2023-08-05 (Saturday) to CarMax McKinney for `$700`
 
 ### Information
 
