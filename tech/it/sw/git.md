@@ -338,9 +338,10 @@ Patterns which are specific to a particular repository but which do not
 auxiliary files that live inside the repository but are specific to one
 user's workflow). **Personal ignoring of repository**.
 
-### User level: ~/.gitconfig - core.excludesFile = <path-to-the-ignore-file>
+### User level (Global .gitignore / .gitignore_global)
 
-**User ignoring**
+- In `~/.gitconfig` file
+    + `core.excludesFile = <path-to-the-ignore-file>`
 
 **core.excludesFile** default value is `$XDG_CONFIG_HOME/git/ignore`. If
 `$XDG_CONFIG_HOME` is either not set or empty,
