@@ -6,6 +6,11 @@ source for a port of the Stevie editor to the Amiga.
 
 Initial release in November 1991.
 
+Cheatsheet
+- https://quickref.me/vim
+- https://dev.to/iggredible/the-only-vim-insert-mode-cheatsheet-you-ever-needed-nk9
+- https://learnbyexample.github.io/vim_reference/Insert-mode.html
+
 # Help
 
 - If you encounter the error: `E:149 no help for help.txt`, you need to
@@ -89,6 +94,17 @@ Plugins available that will extend or add new functionality to Vim.
   confirm: `:%s/foo/bar/gc`
 - Change each "foo" to "bar" for all lines from line 5 to line 12:
   `:5,12s/foo/bar/gc`
+- **USEFUL**
+    + `:%s/EG[ ,A-Z]*\ze\s/\0, ZA/g`
+        * Find all string start with `EG`, end with space (`\ze\s`)
+        * `\0`: all the match, appends with `, ZA`
+    + Vim lookahead and lookbehind regex
+        * https://vim.fandom.com/wiki/Regex_lookahead_and_lookbehind
+        * https://stackoverflow.com/questions/18391665/vim-positive-lookahead-regex
+        * `:h \@=`, `:h \zs`, `:h \ze`
+    + Back references to matched patterns
+        * `:h \0`
+        * https://vim.fandom.com/wiki/Search_and_replace#Details
 
 ## Copy and paste
 
@@ -229,6 +245,10 @@ inoremap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
 ## Folding
 
 - https://vim.fandom.com/wiki/Folding
+
+### Creating and deleting folds
+
+- Only works for `foldmethod` is `manual` or `marker`
 - `zf{motion}`: manually create a fold in the range of motion
     + `zf'a`: fold from the current line to there the mark `a` has been
       set
@@ -236,17 +256,37 @@ inoremap <C-l> <C-g>u<Esc>[s1z=`]a<C-g>u
     + You can enter `Visual` mode then select the lines, and hit `zf` to
       fold
 - `zd`: delete the fold at the cursor
+
+### Opening and closing folds
+
 - `zc`: close a fold
+    + When count is given, that many folds deep will be closed.
+    + In visual mode one level of folds is closed for all lines in the
+      selected area.
 - `zo`: open a fold
 - `za`: toggle open and close a fold
 - `zC`, `zO`, `zA`: operate on all folding levels (i.e., close all folds
   at the cursor)
+
+- `zx`: undo manually opened and closed folds, re-apply `foldlevel`,
+  then do `zv`
+- `zX`: undo manually opened and closed folds, re-apply `foldlevel`
 - `zr`: reduces folding by opening one more level of folds throughout
   the whole buffer (the cursor position is not relevant)
 - `zR`: open all folds
 - `zm`: gives more folding by closing one more level of folds throughout
   the whole buffer
 - `zM`: close all folds
+- `zn`: fold none: reset `foldenable`. All folds will be open.
+- `zN`: fold normal: set `foldenable`. All folds will be as they were
+  before
+
+### Moving over folds
+
+- `[z`: move to the start of the current open fold.
+- `]z`: move to the end of the current open fold.
+- `zj`: move downwards to the start of the next fold.
+- `zk`: move upwards to the end of the previous fold.
 
 # The VIM way
 
@@ -435,10 +475,6 @@ The most common operators:
 
 ## Insert Mode
 
-- Cheat sheets
-    + https://dev.to/iggredible/the-only-vim-insert-mode-cheatsheet-you-ever-needed-nk9
-    + https://learnbyexample.github.io/vim_reference/Insert-mode.html
-
 ### Make Corrections Instantly from Insert Mode
 
 | Keystrokes | Effect                                |
@@ -588,6 +624,8 @@ The most common operators:
   list.
 - `:bfirst` or `:blast`: jump to the start or end of the list.
 - `<C-^>`: toggle between the current and alternate files.
+    + Alternate file: the last edited file in the current window.
+        * https://stackoverflow.com/q/5182852/1683888
 - `:bdelete N1 N2 N3`: delete buffer N1, N2, N3.
     + `bd` or `bdelete` is used to close buffers. If the buffers are
         changed, it will fail.
@@ -847,6 +885,28 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Redir - redirect the output of a Vim or external command into a scratch buffer
+
+- https://gist.github.com/romainl/eae0a260ab9c135390c30cd370c20cd7
+- `autoload/redir.vim`
+
+## Paste yanked text into the Vim command line
+
+- https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-the-vim-command-line/3997110#3997110
+- https://stackoverflow.com/questions/4268532/how-to-execute-selected-text-as-vim-commands
+
+## Text Objects
+
+- https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/
+
+## Working with JSON
+
+- `:%`: the entire range of the file
+- Reformat
+    + `:%!jq` or `:%!jq .`: this does not give us a compacted JSON
+    + `:%!underscore print`
+- Underscore CLI: https://github.com/ddopson/underscore-cli
+
 ## Spawn a new shell in a Vim window
 
 - `:term[inal]`
@@ -856,6 +916,23 @@ filetype plugin on
 ## Spawn a new shell in your terminal (not in a Vim window)
 
 - The only way to back in Vim is to terminate the shell.
+
+## Autoload changes to a file to your current buffer
+
+- https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+
+```
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+            \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+```
 
 ## Vim as Java IDE
 
@@ -1351,6 +1428,19 @@ set wrap
 - [pathogen](https://github.com/tpope/vim-pathogen/)
 - [Vundle](https://github.com/VundleVim/Vundle.vim)
 - [NeoVundle](https://github.com/Shougo/neobundle.vim)
+
+## Autoloading
+
+- https://learnvimscriptthehardway.stevelosh.com/chapters/53.html
+- Making custom plugins more efficient.
+- Autoload lets you delay loading code until it's actually
+  needed. You'll take a slight performance hit overall, but if your
+  users don't always use every single bit of code in your plugin
+  autoloading can be a huge speedup.
+- To reload a Vim script:
+    + `:runtime autload/foobar.vim`
+    + `:source <absolute-path-to-foobar.vim>`
+    + Close Vim and re-open!!!
 
 ## Plugins
 
@@ -2190,6 +2280,8 @@ xmap <Leader>md :HeaderDecrease<CR>
       status bar.
 - `:Verbose <command>`: open a preview window to capture command's
   results (built-in alternative `:verbose <command>`)
+    + `:verbose :com <command>`: show the last place that define the
+      command.
 - `:Scriptnames`: open a preview window to capture all the configuration
   files that Vim has loaded in order.
 
@@ -2663,7 +2755,7 @@ Overview of which map command works in which mode.  More details below.
 :noautocmd qall!
 ```
 
-## File type specific stuff
+## File type specific configurations
 
 - https://www.reddit.com/r/vim/wiki/where_to_put_filetype_specific_stuff
 - https://vi.stackexchange.com/questions/8056/for-an-autocmd-in-a-ftplugin-should-i-use-pattern-matching-or-buffer
@@ -2944,6 +3036,10 @@ back and forth between functions as you normally would with |tags|.
 - https://gist.github.com/ajh17/a8f5f194079818b99199
 - `:h make`
 
+# Registers
+
+- https://stackoverflow.com/a/3997110/1683888
+
 # Macros
 
 - https://gist.github.com/romainl/9721c7dd13c30714f568063e03c106dd
@@ -2951,15 +3047,15 @@ back and forth between functions as you normally would with |tags|.
 
 ## How to store a macro?
 
-### In a register…
+### In a register
 
-#### … via recording
+#### via recording
 
     qa                 " start recording in register a
     2wcefoobar<Esc>    " do your thing
     q                  " stop recording
 
-#### … via assignation
+#### via assignation
 
     " put 2wcefoobar<Esc> in register k
     let @k = "2wcefoobar\<Esc>"
@@ -2967,7 +3063,7 @@ back and forth between functions as you normally would with |tags|.
 Note the use of double quotes that allows us to use `\<Esc>` rather than
 the slightly harder to reason about `^[`.
 
-#### … via yanking
+#### via yanking
 
     " yank visual selection to register z
     "zy

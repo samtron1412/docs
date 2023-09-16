@@ -7,6 +7,23 @@
 - Set up auto completion for AWS CLI:
     + https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html
 
+# Global options
+
+- `--no-cli-pager`: turn off the pager for AWS CLI return value
+  (response).
+- `--cli-binary-format <string>`
+    + The formatting style to be used for binary blobs. The default
+      format is base64. The base64 format expects binary blobs to be
+      provided as a base64 encoded string. The raw-in-base64-out format
+      preserves compatibility with AWS CLI V1 behavior and binary values
+      must be passed literally. When providing contents from a file that
+      map to a binary blob fileb:// will always be treated as binary and
+      use the file contents directly regardless of the cli-binary-format
+      setting. When using file:// the file contents will need to
+      properly formatted for the configured cli-binary-format.
+- `--profile <string>`: Use a specific profile from your credential file.
+- `--region <string>`: The region to use. Overrides config/env settings.
+
 # Lambda
 
 - List all Lambda function that has runtime is Python 3.6

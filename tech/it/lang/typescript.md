@@ -172,6 +172,16 @@
 
 # Tips and tricks
 
+## How to overload functions?
+
+- https://bobbyhadz.com/blog/typescript-duplicate-function-implementation
+
+## How to create a map in TypeScript
+
+- https://timmousk.com/blog/typescript-map/
+    + A JS indexed object with a mapped TypeSript type.
+    + The built-in Map structure introduced in ES6.
+
 ## Cannot reassign to read only property such as `window.location.assign`
 
 - Mainly, in testing we want to mock some readonly property

@@ -6,6 +6,70 @@
 - Corporate Espionage
 - Academia
 
+# Accessing Google Products, Facebook, etc. in China
+
+- Blocking due to Great Fire Wall (GFW)
+- Install all software before coming to China!
+- Experiences
+    + https://www.reddit.com/r/onions/comments/14ve6d0/just_got_back_from_china/
+- How safe are employee laptops in China
+    + https://security.stackexchange.com/questions/106039/how-safe-are-employee-laptops-in-china-against-international-corporate-espionage
+- Checking proxies, DNS, and IP address
+    + https://www.whatismyip.com/
+    + https://dnsleaktest.com/
+- VPNs
+    + https://www.reddit.com/r/vpnreviews/comments/11gwu9t/best_vpn_for_china_those_which_actually_works/
+    + LetsVPN: Chinese company, use shadowsocks, can run away with our
+      money.
+    + Astrill
+    + How to judge whether a VPN is a legitimate VPN or a fake VPN?
+        * https://www.reddit.com/r/vpnreviews/comments/11gwu9t/comment/jrqwca7/?utm_source=share&utm_medium=web2x&context=3
+- SIM card: China Unicom
+    + Without a phone number (data only)
+    + With a phone number (GFW affected)
+        * Need passport
+        * Can use Alipay, Uber-like taxis, etc.
+- VPS (Virtual Private Server)
+    + Note: try to obfuscate your Internet traffic to look like
+      regular HTTPS traffic.
+    + Web proxy
+        * Detecting proxies
+            - https://security.stackexchange.com/questions/36420/how-can-a-website-find-my-real-ip-address-while-im-behind-a-proxy
+        * Highly anonymous proxies
+            - https://security.stackexchange.com/questions/182710/highly-anonymous-proxies-vs-anonymous-proxies
+            - https://security.stackexchange.com/questions/184517/how-to-create-a-proxy-so-that-no-website-or-web-service-can-know-that-i-am-conne
+        * V2Ray
+            - https://github.com/v2fly/v2ray-core
+            - https://www.v2fly.org/en_US/config/overview.html
+            - https://guide.v2fly.org/en_US/
+        * Tinyproxy
+            - https://github.com/tinyproxy/tinyproxy
+    + Shadowsocks
+    + Custom self-hosted VPN servers
+        * Wireguard
+        * OpenConnect
+        * OpenVPN
+        * SoftEtherVPN
+            - https://www.linuxbabe.com/ubuntu/set-up-softether-vpn-server
+    + SSH tunneling
+- Tor
+    + https://www.reddit.com/r/onions/comments/14ve6d0/just_got_back_from_china/?utm_source=share&utm_medium=web2x&context=3
+    + meek+azure or snowflake
+        * https://tb-manual.torproject.org/circumvention/
+- Domain fronting
+    + DOES NOT WORK ANYMORE!!!
+        * Google, Amazon and other cloud providers block it.
+        * https://www.sentinelone.com/blog/privacy-2019-tor-meek-rise-fall-domain-fronting/
+        * https://signal.org/blog/looking-back-on-the-front/
+        * https://blog.torproject.org/domain-fronting-critical-open-web/
+        * https://aws.amazon.com/blogs/security/enhanced-domain-protections-for-amazon-cloudfront-requests/
+    + https://security.stackexchange.com/a/180721/47016
+    + https://www.bamsoftware.com/papers/fronting/
+    + https://blog.torproject.org/how-use-meek-pluggable-transport/
+- Blog
+    + http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/
+
+
 # Chinese Classics (pre-Qin texts, before unification)
 
 ## Before 221 BC

@@ -4,6 +4,12 @@
 
 Mac OS
 
+# Shortcuts - Key Binding
+
+- Enter a directory: `Cmd + Down arrow`
+- To the parent directory: `Cmd + Up arrow`
+- To expand / collapse a directory: `Cmd + Right/Left arrow`
+
 # Tuning Mac
 
 - https://github.com/nikitavoloboev/my-mac-os
@@ -87,6 +93,41 @@ java11
 - Search inside a mail: `cmd + f`
 
 # Tips and Tricks
+
+## Find all ports that are listening
+
+- `sudo lsof -iTCP -sTCP:LISTEN -P | grep ssh`
+
+## Listing all DNS server that are configured
+
+- `scutil --dns | grep nameserver | sort -u`
+
+## Write to (and read from) NTFS file system
+
+- https://techsviewer.com/how-to-write-ntfs-drives-on-macos-monterey/
+- It looks like it only work for Monterey
+- Create a new directory to mount the disk with write options.
+
+```
+# List all disks to identify the identifier of the disk
+Diskutil list
+
+# Replace `disk2s1` with the identifier of the NTFS disk
+Sudo mkdir /Volumes/disk2s1
+
+# Mount the disk with read write options
+Sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk2s1 /Volumes/disk2s1
+```
+
+## Ensure all traffic is going through the proxy
+
+- tun2socks
+    + https://github.com/xjasonlyu/tun2socks
+- sshuttle
+    + https://github.com/apenwarr/sshuttle
+    + http://teohm.com/blog/using-sshuttle-in-daily-work/
+- https://superuser.com/a/803010/280467
+    + Using `ipfw` for macOS instead of `iptables`
 
 ## Install pygraphviz
 

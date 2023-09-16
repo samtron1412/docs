@@ -293,6 +293,7 @@ Template
 - [Joe command line tool](https://karan.github.io/joe/)
 - [Creating ignore files online](https://www.gitignore.io/)
 - [.gitignore templates](https://github.com/github/gitignore)
+- Global ignore: https://gist.github.com/subfuzion/db7f57fff2fb6998a16c
 
 A gitignore file specifies untracked files that Git should ignore. The
 purpose of gitignore files is to ensure that certain files not tracked
@@ -313,9 +314,16 @@ outcome):
   patterns match relative to the location of the `.gitignore` file. A
   project normally includes such `.gitignore` files in its repository,
   containing patterns for files generated as part of the project build.
+    + This file should only exclude files and directories that are a
+      part of the package that should not be versioned (such as the
+      `node_modules` directory) as well as files that are generated (and
+      regenerated) as artifacts of a build process.
 - Patterns read from `$GIT_DIR/info/exclude`.
 - Patterns read from the file specified by the configuration variable
   `core.excludesFile`.
+    + With this we can set up the global gitignore for our machines. Any
+      files created by editors, IDEs, operating systems, etc. are put in
+      this file.
 
 ### Repository level: .gitignore files
 
@@ -714,27 +722,38 @@ network transfer protocol.
       type your passphrase each time you push commit to remote.
     + Contents of .bashrc
 
-                SSH_ENV=$HOME/.ssh/environment
-                # start the ssh-agent
-                function start_agent {
-                    echo "Initializing new SSH agent..."
-                    # spawn ssh-agent
-                    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-                    echo succeeded
-                    chmod 600 "${SSH_ENV}"
-                    . "${SSH_ENV}" > /dev/null
-                    /usr/bin/ssh-add
-                }
-                if [ -f "${SSH_ENV}" ]; then
-                     . "${SSH_ENV}" > /dev/null
-                     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-                        start_agent;
-                    }
-                else
-                    start_agent;
-                fi
+```bash
+# The location to store the output of `ssh-agent`
+SSH_ENV=$HOME/.ssh/environment
 
-    - Step 4: Install public key to your remote
+# start the ssh-agent
+function start_agent {
+    echo "Initializing new SSH agent..."
+    # spawn ssh-agent
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add
+}
+
+# if there is a running ssh-agent, then execute the output of
+# `ssh-agent` to export the SSH environment variables (SSH_AUTH_SOCK,
+# SSH_AGENT_PID)
+# else start a new ssh-agent
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    # confirm that the ssh-agent is still running, if not, then start a
+    # new agent.
+    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
+```
+
+- Step 4: Install public key to your remote
 
 ### GitWeb
 
@@ -1271,6 +1290,11 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 ## git-stash - stash changes in working directory away
 
 - `git stash push -m "message" -- filename.ext`: stash a file
+- `git stash`: stash all changes
+- `git stash show`: show the files in the most recent stash
+- `git stash show -p`: show the changes of the most recent stash
+- `git stash show -p stash@{1}`: show the changes of the named stash
+    + `git stash show -p 1`
 
 ## git-diff - show changes between commits, commit and working tree, etc.
 

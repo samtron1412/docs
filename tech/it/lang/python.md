@@ -591,6 +591,12 @@ else:
 
 # Tips and Tricks
 
+## f-strings, Format Strings
+
+- https://realpython.com/python-f-strings/
+    + New way to format string since 3.6
+    + Easier to read and faster
+
 ## Caching in Python
 
 - https://realpython.com/lru-cache-python/

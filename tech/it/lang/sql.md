@@ -23,6 +23,26 @@ Check style
 # CTE vs Temporary Table vs Table Variables
 
 - https://www.mssqltips.com/sqlservertip/5118/sql-server-cte-vs-temp-table-vs-table-variable-performance-test/
+- https://stackoverflow.com/questions/690465/which-are-more-performant-cte-or-temporary-tables
+    + It depends on each query: for some CTE is more performant, but for
+      others temporary tables are more performant.
+
+## Common Table Expression (CTE) - WITH clause - Organize complex queries
+
+- https://modern-sql.com/feature/with
+- https://learnsql.com/blog/what-is-with-clause-sql/
+
+```
+WITH query_name1 AS (
+     SELECT ...
+     )
+   , query_name2 AS (
+     SELECT ...
+       FROM query_name1
+        ...
+     )
+SELECT ...
+```
 
 # Unit tests
 
@@ -81,6 +101,31 @@ LEFT JOIN measures ON nutrients.name=measures.name
 - Add predicates to your Join tables
 
 # Tips and tricks
+
+## Double Quotes vs. Single Quotes
+
+- https://stackoverflow.com/questions/1992314/what-is-the-difference-between-single-and-double-quotes-in-sql
+
+```
+[S]ingle quotes are for [S]trings Literals (date literals are also strings);
+[D]ouble quotes are for [D]atabase Identifiers (table names, column names);
+```
+
+## 1=1 condition
+
+- https://pushmetrics.io/blog/why-use-where-1-1-in-sql-queries-exploring-the-surprising-benefits-of-a-seemingly-redundant-clause
+- Serve as stating point in dynamic SQL query generation
+- Allow us to commenting out conditions as needed
+- Template queries.
+- Readability: focus on other conditions
+
+```
+SELECT *
+FROM employees
+WHERE 1=1
+-- AND department_id = 3
+-- AND salary > 50000;
+```
 
 ## Select the max date
 

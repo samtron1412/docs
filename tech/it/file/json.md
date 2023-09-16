@@ -26,7 +26,13 @@
 - https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html
 - https://github.com/json-path/JsonPath
 
-# Libraries
+# Libraries and Tools
+
+## CLIs
+
+- `jq` in `jq.md`
+- jsondiff Python
+    + https://github.com/xlwings/jsondiff
 
 ## Java
 

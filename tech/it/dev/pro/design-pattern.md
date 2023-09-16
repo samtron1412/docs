@@ -19,6 +19,9 @@
     + Liskov substitution
     + Interface segregation
     + Dependency Inversion
+- YAGNI (You Aren't Gonna Need It)
+    + https://softwareengineering.stackexchange.com/questions/401797/is-there-a-conflict-between-yagni-and-srp
+    + https://martinfowler.com/bliki/Yagni.html
 
 # Creational patterns
 

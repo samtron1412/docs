@@ -21,6 +21,13 @@ There were five primary goals in the creation of the Java language:
 
 ## Resources
 
+- Oracle Java Tutorials
+    + https://docs.oracle.com/javase/tutorial/index.html (all tutorials)
+    + https://docs.oracle.com/javase/tutorial/java/TOC.html
+    + https://docs.oracle.com/javase/tutorial/essential/index.html
+    + https://docs.oracle.com/javase/tutorial/extra/generics/index.html
+- Jenkov's tutorials
+    + https://jenkov.com/tutorials/java/index.html
 - Books
     + Something
 - Specifications
@@ -474,7 +481,7 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
     + Binary, Java-only format if no humans or long-time storing
 - Fast serialization
 
-# Language Basics and Packages
+# Language Basics
 
 ## Loop
 
@@ -574,7 +581,11 @@ try {
 }
 ```
 
-`Exception` type is used to catch all possible exceptions.
+- Keywords
+    + `throw`
+    + `throws`
+    + `try-catch`
+    + `finally`
 
 ### Reading Exception Reports
 
@@ -655,19 +666,37 @@ Throwable
 
 ### Best Practices
 
+- https://stackify.com/best-practices-exceptions-java/
+- https://jenkov.com/tutorials/java-exception-handling/basic-try-catch-finally.html
+- https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions
 - Catch `RuntimeException` or more specific Exceptions
 - You can catch internal exception and then rethrow a new external
   exception for users / clients, but DO NOT just catch the exception,
   DO NOT log it and then rethrow the same exception.
+    + Log and then rethrow the same exception will log the exception's
+      messages twice.
+        * Code duplication, and litters the log files with duplicates
+          entries which makes it much more difficult to troubleshoot
+          code.
     + Remember to set the Internal exception as the cause for the
       External exception
     + `throw new ExternalException("Message", InternalException);`
     + `ExternalException` is a class that you need to write, and it
       extends built-in Java exceptions (e.g., RetryableException, etc.)
+    + The `Message` should contain some additional information that the
+      upper layers do not have access to these data.
 - Catch and handle the exceptions at higher layers where you know how to
   deal with the exceptions
+    + Throw early (fail-fast) and catch late
     + At lower layers, use `throws` to throw exceptions to higher
       levels, DO NOT `try-catch` and then `throw`.
+- Remember to close resources with `finally` or `try-with-resources`.
+- Use returned values such as boolean values for optional operations
+  that do not need to throw exceptions.
+    + EXCEPTION IS EXPENSIVE!!!
+    + These operations are optional and the program can continue even
+      with failed operations.
+- Document the exceptions thrown with javadoc `@throws`
 
 ### The try-with-resources statement
 
@@ -1095,6 +1124,57 @@ used on methods and fields. It is important to design your annotation
 type carefully to ensure that the programmer using the annotation finds
 it to be as flexible and powerful as possible.
 
+## Generics
+
+- https://docs.oracle.com/javase/tutorial/java/generics/index.html
+- https://docs.oracle.com/javase/tutorial/extra/generics/index.html
+- Producer vs. Consumer
+    + https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+
+### Wildcards
+
+- `?`: unbound
+- `? extends Foo`: upper bounded
+- `? super Foo`: lower bounded
+
+## The Platform Environment
+
+An application runs in a platform environment, defined by the underlying
+operating system, the Java virtual machine, the class libraries, and
+various configuration data supplied when the application is launched.
+
+### Configuration Utilities
+
+### System Utilities
+
+#### System Properties
+
+- https://stackoverflow.com/questions/7054972/java-system-properties-and-environment-variables
+- The Java platform itself uses a Properties object to maintain its own
+  configuration.
+- The `System` class maintains a `Properties` object that describes the
+  configuration of the current working environment.
+- System properties include information about the current user, the
+  current version of the Java runtime, and the character used to
+  separate components of a file path name.
+
+### PATH and CLASSPATH environment variables
+
+- Set the PATH environment variable if you want to be able to
+  conveniently run the executables (javac.exe, java.exe, javadoc.exe,
+  and so on) from any directory without having to type the full path of
+  the command.
+    + If you do not set the PATH variable, you need to specify the full
+      path to the executable every time you run it.
+- The class path tells the JDK tools and applications where to find
+  third-party and user-defined classes that are not extensions or part
+  of the Java platform.
+    + Classes that are part of the JRE, JDK platform, and extensions
+      should be defined through other means, such as the bootstrap class
+      path or the extensions directory.
+    + Setting class path: CLASSPATH environment variable, or
+      `-classpath/-cp` option in `java` CLI.
+
 # Data Structures
 
 ## Primitive types
@@ -1457,7 +1537,22 @@ public class MyClass {
 //Outputs: fox
 ```
 
-# Object-Oriented Programming
+
+# Object-Oriented Programming (OOP) - Classes and Objects
+
+## More on Classes
+
+### Initializing Fields
+
+- https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+- Initialize class variables
+    + Static initialization blocks
+    + `private static varType initializeClassVariable()`
+- Initialize instance variables
+    + Initialization blocks: no `static` keyword
+    + `protected final varType initializeInstanceVariable()`
+        * Has to be `final`
+        * `protected` allow subclasses to reuse the method
 
 ## Instance Variables and Encapsulation
 
@@ -2083,6 +2178,8 @@ exists, this will overwrite it.
 
 - https://mydeveloperplanet.com/2021/09/28/whats-new-between-java-11-and-java-17/
 - https://blog.idrsolutions.com/java-17-vs-java-11/
+- Upgrade to Java 17: Why and How?
+    + https://blogs.oracle.com/javamagazine/post/its-time-to-move-your-applications-to-java-17-heres-why-and-heres-how
 
 # AspectJ
 
@@ -2091,6 +2188,23 @@ exists, this will overwrite it.
 - https://stackoverflow.com/questions/4313789/what-is-aspectj-good-for
 
 # Tips & Tricks
+
+## Sort a list
+
+- https://www.techiedelight.com/sort-list-of-objects-using-comparator-java/
+    + `Comparator.comparing...`
+
+## getType() vs. getClass()
+
+- https://stackoverflow.com/q/26948953/1683888
+- `someObject.getClass()`: returns a class object of the `runtime` type
+  of `someObject`.
+    * This is available on every object.
+    * Class object of generics are kinda complicated to get.
+- `someField.getType()`: returns a class object of the `declared` type of the
+  field that `someField` referes to.
+    * This does not have on every objects.
+    * It's defined by some classes for some purposes.
 
 ## Divide a list to lists of n size
 

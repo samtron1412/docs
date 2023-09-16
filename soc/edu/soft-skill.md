@@ -42,6 +42,8 @@ Technical skills (hard skills) and job-related skills are a must, but people who
 
 # 8. Responsibility
 
-# 9. Teamwork
+# 9. Teamwork, Management
+
+- https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html
 
 # 10. Work Ethic

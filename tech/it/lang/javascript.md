@@ -77,10 +77,18 @@
 
 # Expressions and operators
 
+## Optional Chaining
+
+- `?.`
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
 ## Nullish coalescing
 
 - `??`: double question marks
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
+    + where `||` returns the right side for all falsy left side values,
+      `??` only return the right side if the left side is `null` or
+      `undefined`.
 
 # Code pattern
 

@@ -639,7 +639,7 @@ Commercially available Freons include:
 
 ### Maintenance
 
-- Engine oil: 2021-12-04 (161,600)
+- Engine oil: replace when it reaches 170,000 (current 165,000)
 - Coolant / Antifreeze: 2020-12 (maybe)
 - Transmission fluid: 2020-11-25: 90 (5 years)
 - Brake fluid: 2021-08 (3 years)

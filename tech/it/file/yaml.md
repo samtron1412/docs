@@ -18,6 +18,18 @@
 
 # Tips and Tricks
 
+## Working with YAML
+
+- Python
+    + ruamel.yaml: keep most formatting as the original, but can't
+      control spaces between brackets.
+- CLI: `yq`
+    + does not keep the original formatting.
+- NOTE:
+    + If you want to keep the original formatting, it's better to use
+      replacement with regex in your editor or VIM macros + VIM search
+      and replace with Regex (this is RECOMMENDED)
+
 ## Single vs Double Quotes
 
 - Rules of thumb

@@ -11,7 +11,7 @@ designed as a replacement for
 shell protocols such as the Berkeley
 [rsh](https://en.wikipedia.org/wiki/Remote_Shell) and
 [rexec](https://en.wikipedia.org/wiki/Remote_Process_Execution)
-protocols. The encryption  used by SSH is intended to provide
+protocols. The encryption used by SSH is intended to provide
 **confidentiality** and **integrity** of data over an unsecured network,
 such as the Internet.
 
@@ -28,28 +28,44 @@ transfer](https://en.wikipedia.org/wiki/SSH_file_transfer_protocol)
 (SFTP) or [secure copy](https://en.wikipedia.org/wiki/Secure_copy) (SCP)
 protocols. SSH uses the client-server model
 
-<figure>
-  <figcaption style="text-align:center;">SSH packet</figcaption>
-  <hr style="width:70%;margin-left:auto;margin-right:auto;" />
-  <img align="middle" src="Ssh_binary_packet.png" alt="ssh binary packet" title="ssh binary packet">
-</figure>
-
 SSH is organized as three protocols that typically run on top of TCP.
-- Transport Layer Protocol: provides server authentication, data
+- TCP (Transport Layer Protocol): provides server authentication, data
   confidentiality, and data integrity with forward secrecy.
-        + Establish TCP connection + Key exchange (math)
+    + Establish TCP connection and Key exchange (math)
 - User Authentication Protocol: authenticates the user to the server.
 - Connection Protocol: multiplexes multiple logical communications
   channels over a single, underlying SSH connection.
 
 # User guide
 
-## Configuration
+## OpenSSH Client
 
-System wide: `/etc/ssh/sshd_config`
-Each user: `~/.ssh/config`
+### `ssh` command to start the client
 
+- https://www.ssh.com/academy/ssh/command
+- `man ssh`
+
+### OpenSSH Client Configuration
+
+- https://www.ssh.com/academy/ssh/config
+- `man ssh_config`
+
+## OpenSSH Server
+
+### `sshd` server process
+
+- https://www.ssh.com/academy/ssh/sshd
+- `man sshd`
+
+### OpenSSH Server Configuration
+
+- `man sshd_config`
 - [config on RHEL](http://computernetworkingnotes.com/network-administration/how-to-configure-ssh-server-in-rhel-6.html)
+
+
+## SSH Keys
+
+- https://www.ssh.com/academy/ssh-keys
 
 ## Opening a Terminal on a remote machine through SSH
 
@@ -98,7 +114,8 @@ There are a number of basic commands that are used inside of stfp:
 
 ## SSH with git
 
-Check directory .ssh at your account directory. If don't have a default identity of SSH then create new one:
+Check directory .ssh at your account directory. If don't have a default
+identity of SSH then create new one:
 
         ssh-keygen
 
@@ -115,16 +132,40 @@ List key agent managing
         ssh-add -l
 
 
+
+## Other Commands
+
+### ssh-keygen
+
+### ssh-agent
+
+### ssh-add
+
+
 # SSH tunneling (SSH port forwarding)
+
+- https://serverfault.com/a/1053450/220364
+- https://goteleport.com/blog/ssh-tunneling-explained/
 
 ## What, Why, and How
 
 - https://www.ssh.com/academy/ssh/tunneling
+- What
+    + SSH tunneling is a method to transport additional data streams
+    + SSH port forwarding is a mechanism in SSH for forwarding
+      (tunneling) application ports from the client machine to the
+      server machine, or vice versa.
+- Why
+    + Adding encryption to legacy applications.
+    + Going through firewalls.
+    + Opening backdoor into the internal network from home machines.
 
-## SSH tunneling example
+## How: SSH tunneling example
 
 ### Local Forwarding
 
+- Forward a port from the client machine to the server machine.
+    + The SSH client
 - `ssh -L localhost:8080:intra.example.com:8080 remotehost`
 - `ssh -L localhost:8080:localhost:8080 clouddesk`
     + Forward connections to `localhost:8080` on your local computer to
@@ -133,6 +174,32 @@ List key agent managing
 ### Remote Forwarding
 
 - `ssh -R 8080:localhost:80 public.example.com`
+
+### Dynamic Port Forwarding
+
+- server side configuration
+    + `AllowTcpForwarding`: required
+    + Other related configurations: `AllowStreamLocalForwarding`,
+      `GatewayPorts`
+- `ssh -D port-number user@<ssh-server>`
+    + `port-number`: localhost port-number that will be used for the
+      local SOCKS proxy server.
+    + `user`: a user on the SSH server
+    + `<ssh-server>`: IP address or SSH server name configured in
+      `ssh_config`
+
+### SSH TUN/TAP tunneling
+
+- https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts#Passing_Through_a_Gateway_with_an_Ad_Hoc_VPN
+- https://www.marcfargas.com/2008/07/ip-tunnel-over-ssh-with-tun/
+
+### SSH tunnel over TOR
+
+-
+
+# SSH protocol
+
+- https://www.ssh.com/academy/ssh/protocol
 
 # Tips and Tricks
 

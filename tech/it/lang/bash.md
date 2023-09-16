@@ -291,6 +291,21 @@ fi
 
 # Tips and Tricks
 
+## Loop through range of dates
+
+- https://stackoverflow.com/questions/28226229/how-to-loop-through-dates-using-bash
+
+```sh
+d=2015-01-01
+while [ "$d" != 2015-02-20 ]; do
+  echo $d
+  d=$(date -I -d "$d + 1 day")
+
+  # mac option for d decl (the +1d is equivalent to + 1 day)
+  # d=$(date -j -v +1d -f "%Y-%m-%d" $d +%Y-%m-%d)
+done
+```
+
 ## To lowercase
 
 - https://stackoverflow.com/questions/2264428/how-to-convert-a-string-to-lower-case-in-bash

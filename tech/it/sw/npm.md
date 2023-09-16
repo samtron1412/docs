@@ -188,7 +188,10 @@
 
 # Best Practices
 
-- Pin your dependencies if your package is not a library
+- https://docs.renovatebot.com/dependency-pinning/
+- Pin your dependencies if your package is not a library to provide
+  reliability and visibility into dependencies.
+    + Only upgrade dependencies when it has to.
 - Library packages can use ranges for dependencies but pin development
   dependencies.
 - Use a lock file
