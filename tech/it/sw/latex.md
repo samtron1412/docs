@@ -825,15 +825,18 @@ Usage guide: http://texdoc.net/texmfdist/doc/latex/amsmath/amsldoc.pdf
 
 - https://castel.dev/post/lecture-notes-1/
 - https://castel.dev/post/lecture-notes-2/
-- Tools
-    + Vim + vimtex + ultisnips + vim-snippets + Inkscape + TikZ
-    + vimtex
+- Tools:
+    + mactex or other TeX compilers.
+    + Vim editor
+    + vimtex plugin
+        * More details in `vim.md` vimtex plugin section
         * compiling and preview
         * forward and backward search
-    + ultisnips + vim-snippets
-        * increase typing speed
+    + Ultisnips and vim-snippets plugins
+        * increase typing speed with snippets
     + Inkscape: drawing and export to pdf+LaTeX
-    + TikZ
+    + TikZ: to create vector graphics
+    + Skim or zathura PDF viewers to view the PDFs
 - vimtex Usage: through mappings
     + https://github.com/lervag/vimtex/wiki/Usage
     + https://github.com/lervag/vimtex#features
@@ -865,7 +868,7 @@ Usage guide: http://texdoc.net/texmfdist/doc/latex/amsmath/amsldoc.pdf
         * Change the surrounding command, environment, delimiter
             - `csc`, `cse`, `csd`, `cs$`
         * Toggle starred command or environment: `tsc`, `tse`
-        * Close the current environment/delimiter in insert mode by ]]
+        * Close the current environment/delimiter in insert mode by `]]`
         * Insert a new command: `<F7>`
         * Show all insert mode mapping in math mode: `\lm`
             - In math type the leader "backtick" and the mapping
@@ -875,11 +878,49 @@ Usage guide: http://texdoc.net/texmfdist/doc/latex/amsmath/amsldoc.pdf
         * If errors occur, it will show the list of errors
         * Reading the errors to know what's wrong
         * Usually the first error caused by the line right above the
-        error
+          error
     + Typing `\lv` to do the forward search
     + Typing `\lk` to stop the continuous compiling for the current file
         * `\lK` stop for all files
     + `\lc`: clean, `\lC` full clean
+
+## Setting up forward and backward search
+
+- Using skim as PDF viewer to search forward and backward
+    + Skim only works with the first window of VIM, so open latex files
+      by the first windows, and other files by other VIM windows if you
+      use more than one window of VIM.
+    + Forward search: after compiling the PDF viewer will show the
+      current page corresponding with the code on the editor screen.
+    + Backward search: when `Shift + CMD + mouse click` on the PDF file,
+      it will show the corresponding LaTeX code.
+    + Set up:
+        * Install skim on MacOS: `brew cask install skim`
+        * `.vimrc`: `let g:vimtex_view_method = 'skim'`
+        * In Skim's setting, tab Sync: choose MacVim as the preset of
+          sync.
+        * Troubleshooting: `:h skim`
+- Using zathura (NOT RECOMMENDED)
+    + `brew tap zegervdv/zathura`
+    + `brew install zathura --with-synctex`
+    + `brew install zathura-pdf-poppler`
+    + `mkdir -p $(brew --prefix zathura)/lib/zathura`
+    + `ln -s $(brew --prefix zathura-pdf-poppler)/libpdf-poppler.dylib $(brew --prefix zathura)/lib/zathura/libpdf-poppler.dylib`
+    + To copy content to clipboard add the following line to
+      `~/.config/zathura/zathurarc`
+        * `set selection-clipboard clipboard`
+    + `.vimrc`: `let g:vimtex_view_general_viewer = 'zathura'`
+
+
+- DO NOT NEED!!! KEEP FOR HISTORICAL RECORDS
+- Install `xquartz` and `xdotool`
+    + Run this after installing XQuartz to enable X11's XTEST
+      extension, so `xdotool` works as expected:
+        * `defaults write org.xquartz.X11 enable_test_extensions -bool yes`
+        * Check whether XTEST is enable or not:
+            - `xdpyinfo | grep XTEST`
+            - `xdotool search --class Zathura`: run without errors
+    + https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
 
 
 ## Ultisnips
