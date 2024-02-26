@@ -15,6 +15,12 @@
       right choices?”
     + Prettier has a few options because of history. But we won’t add
       more of them.
+- ESLint vs Prettier
+    + https://prettier.io/docs/en/comparison
+    + Prettier: formating rules: max-len, no-mixed-spaces-and-tabs,
+      comma-style, etc.
+    + ESLint: code-quality rules: no-unused-vars, no-extra-bind,
+      no-implicit-globals, etc.
 
 # Rationale
 

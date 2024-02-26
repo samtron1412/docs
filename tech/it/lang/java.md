@@ -8,6 +8,7 @@
 - Java applications are typically compiled to bytecode (class file) that
   can run on any Java Virtual Machine (JVM) regardless of computer
   architecture.
+- https://www.win.tue.nl/~evink/education/avp/pdf/feel-of-java.pdf
 
 ## Principles
 
@@ -26,11 +27,14 @@ There were five primary goals in the creation of the Java language:
     + https://docs.oracle.com/javase/tutorial/java/TOC.html
     + https://docs.oracle.com/javase/tutorial/essential/index.html
     + https://docs.oracle.com/javase/tutorial/extra/generics/index.html
-- Jenkov's tutorials
-    + https://jenkov.com/tutorials/java/index.html
+- Other tutorials
+    + https://howtodoinjava.com/series/java-tutorial/
+    + Jenkov's tutorials
+        * https://jenkov.com/tutorials/java/index.html
 - Books
     + Something
-- Specifications
+- Specifications (Java Specs)
+    + https://docs.oracle.com/javase/specs/index.html
     + Java/Jakarta EE:
         * Java EE 8: https://www.oracle.com/java/technologies/java-ee-8.html
         * Jakarta EE: https://jakarta.ee/specifications/
@@ -71,16 +75,19 @@ Main platforms:
 ## Implementations
 
 The Oracle implementation is packaged into two different distributions:
+- https://howtodoinjava.com/java/basics/jdk-jre-jvm/
 
 - **The Java Runtime Environment** (JRE) which contains the parts of the
   Java SE platform required to run Java programs and is intended for
   end-users.
+    + Including Java Virtual Machine (JVM) and Libraries
 - **The Java Development Kit** (JDK), which is intended for software
   developers and includes development tools such as the [Java
   compiler](http://en.wikipedia.org/wiki/Java_compiler),
   [Javadoc](http://en.wikipedia.org/wiki/Javadoc),
   [Jar](http://en.wikipedia.org/wiki/JAR_(file_format)), and a
   **debugger**.
+    + Including JRE and Development Tools
 
 [OpenJDK](http://en.wikipedia.org/wiki/OpenJDK) is another notable Java
 SE implementation that is licensed under the GPL. The implementation
@@ -481,6 +488,33 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
     + Binary, Java-only format if no humans or long-time storing
 - Fast serialization
 
+### Java Serialization API
+
+- https://www.oracle.com/technical-resources/articles/java/serializationapi.html
+- https://howtodoinjava.com/java/serialization/
+- Best practices
+    + https://stackoverflow.com/a/14946099
+    + https://stackoverflow.com/a/3288280
+
+### Define `serialVersionUID` when implementing Serializable interface
+
++ https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
++ https://stackoverflow.com/questions/605828/does-it-matter-what-i-choose-for-serialversionuid-when-extending-serializable-cla
++ A number to specify the version of a serializable class.
++ You should explicitly set a number for this, e.g., `1L`
+    * This will help to gain some performance since JVM does not need to
+      perform runtime computation to find this value for the class.
+    * This also help with prevent `InvalidClassException` due to
+      different implementation of the compiler.
+    * DO NOT CHANGE THIS VALUE!!!
+    * DO NOT MAKE INCOMPATIBLE CHANGES: like changing types
+        - https://docs.oracle.com/en/java/javase/21/docs/specs/serialization/version.html#type-changes-affecting-serialization
+        - https://docs.oracle.com/javase/6/docs/platform/serialization/spec/version.html#5172
+
+## Getter, Setter and Accessor
+
+- https://dzone.com/articles/getter-setter-use-or-not-use-0
+
 # Language Basics
 
 ## Loop
@@ -561,6 +595,12 @@ classes.
 ## Exception Handling
 
 - Resources
+    + Unchecked Exceptions - The Controversy
+        * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+        * As a provider/server: If a client can reasonably be expected
+          to recover from an exception, make it a checked exception. If
+          a client cannot do anything to recover from the exception,
+          make it an unchecked exception.
     + Checked exceptions
         * https://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
         * A tool for API design
@@ -655,10 +695,14 @@ runtime).
 - Unchecked exceptions: dividing by 0.
 
 Throwable
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html
 - Errors (irrecoverable)
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html
     + IOError, VirtualMachineError, etc.
 - Exception (recoverable)
+    + https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/Exception.html
     + RuntimeException (unchecked - do not need to handle)
+        * https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html
         * NullPointerException, NoSuchElementException,
           UncheckedIOException, etc.
     + Others... (checked - have to handle before compiling)
@@ -905,12 +949,13 @@ Java SE API
       class, or field with the `@Deprecated` annotation.
     + The deprecated elements should also be documented using the
       Javadoc `@deprecated` tag
+    + https://www.baeldung.com/java-deprecated
 
 ```java
    // Javadoc comment follows
     /**
      * @deprecated
-     * explanation of why it was deprecated
+     * explanation of why it was deprecated and what to use instead
      */
     @Deprecated
     static void deprecatedMethod() { }
@@ -1174,6 +1219,7 @@ various configuration data supplied when the application is launched.
       path or the extensions directory.
     + Setting class path: CLASSPATH environment variable, or
       `-classpath/-cp` option in `java` CLI.
+    + https://howtodoinjava.com/java/basics/java-classpath/
 
 # Data Structures
 
@@ -1545,6 +1591,7 @@ public class MyClass {
 ### Initializing Fields
 
 - https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+- https://www.baeldung.com/java-static-variables-initialization
 - Initialize class variables
     + Static initialization blocks
     + `private static varType initializeClassVariable()`
@@ -1871,6 +1918,10 @@ interfaces!
 >When you implement an interface, you need to override all of its
 methods.
 
+#### Static and Default methods in Interfaces
+
+- https://www.baeldung.com/java-static-default-methods
+
 
 ## Nesting classes
 
@@ -1926,14 +1977,22 @@ to store the object internally.
 ## Plain Old Java Object (POJO)
 
 POJO refers to a Java object (instance of definition) that isn't bogged
-down by framework extensions.
+down by framework extensions (also no conventions)
 
+Pros
 - Simplify code
 - To better testing, flexibility, and ability to make new decisions in
   the future
+Cons
+- Higher learning curves how to use it since no conventions
 
 - POJOs vs JavaBean
     + https://www.baeldung.com/java-pojo-class
+    + JavaBean adds some conventions
+        * Access levels – our properties are private and we expose getters and setters
+        * Method names – our getters and setters follow the getX and setX convention (in the case of a boolean, isX can be used for a getter)
+        * Default Constructor – a no-argument constructor must be present so an instance can be created without providing arguments, for example during deserialization
+        * Serializable – implementing the Serializable interface allows us to store the state
 
 ## Object class
 
@@ -2028,6 +2087,9 @@ servers), or with Springs's new recommendation
   are lacking test coverage.)
 - Continuous integration: Jenkins, Hudson
 - Mock libraries: Mockito
+- Matchers
+    + Hamcrest
+        * https://hamcrest.org/JavaHamcrest/
 
 
 ## Build Tools
@@ -2167,6 +2229,7 @@ exists, this will overwrite it.
 # Java Versions
 
 - https://en.wikipedia.org/wiki/Java_version_history
+- https://howtodoinjava.com/series/java-versions-features/
 - https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features#_java_features_8_17
 
 ## Java 8 vs. Java 11
@@ -2187,7 +2250,28 @@ exists, this will overwrite it.
 - https://en.wikipedia.org/wiki/AspectJ
 - https://stackoverflow.com/questions/4313789/what-is-aspectj-good-for
 
+# HTTP Clients
+
+- https://www.wiremock.io/post/java-http-client-comparison
+    + HttpURLConnection
+    + Java 11+ HttpClient
+    + Apache HttpClient
+    + OkHttpClient
+    + AsyncHttpClient
+    + Jetty HttpClient
+
 # Tips & Tricks
+
+## Analyze memory utilization
+
+- Garbage collector logs: analyze heap space
+    + https://sematext.com/blog/java-garbage-collection-logs/
+
+## Instance/Class Variables vs local variables
+
+- Having an instance / class variable vs passing parameters with local
+  variables.
+    + https://stackoverflow.com/questions/346169/when-to-use-an-object-instance-variable-versus-passing-an-argument-to-the-method
 
 ## Sort a list
 
@@ -2243,10 +2327,6 @@ exists, this will overwrite it.
       object, you still can change the object.
     + https://docs.oracle.com/en/java/javase/11/core/creating-immutable-lists-sets-and-maps.html
 
-## `serialVersionUID`
-    + https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
-    + A number to specify the version of a serializable class.
-    + You should explicitly set a number for this, e.g., `1L`
 
 ## Default parameter values
 
@@ -2447,15 +2527,22 @@ desirable result.
 ## Private static methods
 
 - https://softwareengineering.stackexchange.com/questions/234412/why-have-private-static-methods
-- If the method doesn't interact with instance variables, then you can
-  make it static.
-    + A utility method
+- A fairly common reason (in Java) would be for initializing immutable
+  field variables in a constructor by using a simple private static
+  method to reduce constructor clutter.
+- A common use-case for a private static method is a utility method
+  which is
+    + only used by that one class
+    + is independent of the internal state of that class
+
 
 ## Useful libraries
 
 - [Apache Commons][apache-common] project
 - Google Guava
 - Lombok
+- Fastutil
+    + https://www.baeldung.com/fastutil
 
 ## Working with time, timezone
 

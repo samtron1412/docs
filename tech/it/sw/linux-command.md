@@ -55,6 +55,10 @@
 1. `top` - View active processes live with their system usage
 1. `useradd` and `usermod` - Add new user or change existing users data
 1. `passwd` - Create or update passwords for existing users
+1. `nohup` - no hang up, a command that keep processes running even
+   after exiting the shell or terminal. It prevents the processes from
+   receiving the SIGHUP (Signal Hang UP) signal.
+    + https://www.digitalocean.com/community/tutorials/nohup-command-in-linux
 
 # bash
 GNU Bourne-Again SHell

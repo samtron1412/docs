@@ -2,6 +2,7 @@
 
 # Overview
 
+- https://en.wikipedia.org/wiki/Artificial_intelligence
 - Artificial Intelligence (AI) is intelligence demonstrated by machines,
   in contrast to the natural intelligence displayed by humans and other
   animals.
@@ -26,6 +27,50 @@ Something
 ## Resources to learn more
 
 - https://karpathy.ai/
+
+# Goals
+
+## Natural language processing
+
+## Perception
+
+- Computer vision, speech recognition, image classification, facial
+  recognition, object recognition, robotic perception.
+
+## Knowledge representation
+
+- Provide accurate knowledge for modern AI applications (e.g., LLMs) is
+  an unsolved problem.
+
+## Reasoning, problem-solving
+
+- Accurate and efficient reasoning is an unsolved problem.
+- Step-by-step reasoning and logical deductions do not work.
+- Humans use fast, intuitive judments.
+
+## Planning and decision making
+
+## Social intelligence
+
+## General intelligence
+
+- A machine with artificial general intelligence should be able to solve
+  a wide variety of problems with breadth and versatility similar to
+  human intelligence.
+
+# Tools
+
+## Search and optimization
+
+## Logic
+
+## Probabilistic methods for uncertain reasoning
+
+## Classifiers and statistical learning methods
+
+## Artificial neural networks and deep learning
+
+## Specialized hardware and software
 
 # Explainable AI (XAI)
 

@@ -5,8 +5,6 @@
 Proxy server is a server that acts as an intermediary for request from
 clients seeking resources from other servers.
 
-
-
 # Types
 
 ## Open proxy

@@ -3,6 +3,7 @@
 - OAuth 1.0 standard
     + https://www.rfc-editor.org/rfc/rfc5849
 - OAuth 2.0 standard
+    + https://datatracker.ietf.org/doc/html/rfc6749
     + https://oauth.net/2/
         * Designed specifically to work with HTTP.
         * https://youtu.be/996OiexHze0

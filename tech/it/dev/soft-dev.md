@@ -4,6 +4,11 @@
 
 ## Resources
 
+- No silver bullets for Software Development
+    + https://web.archive.org/web/20160910002130/http://worrydream.com/refs/Brooks-NoSilverBullet.pdf
+- Google Software Engineering
+    + https://abseil.io/resources/swe-book/html/toc.html
+
 ### Books
 
 - [Amazon][amazon]
@@ -47,6 +52,11 @@
 
 ## DevOps
 
+- Google Cloud: The Accelerate State of DevOps Report
+    + https://dora.dev/
+    + https://dora.dev/devops-capabilities/technical/continuous-delivery/
+    + https://services.google.com/fh/files/misc/2023_final_report_sodr.pdf
+    + https://services.google.com/fh/files/misc/2022_state_of_devops_report.pdf
 - https://www.atlassian.com/devops
 - DevOps is a set of practices that works to automate and integrate the
   processes between software development and system operation teams, so

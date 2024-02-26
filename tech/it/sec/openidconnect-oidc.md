@@ -1,8 +1,12 @@
 # Overview
 
+- OpenID Connect (OIDC) is a simple identity layer on top of the
+  OAuth 2.0 protocol.
+    + https://openid.net/connect/
+    + https://openid.net/developers/how-connect-works/
+    + https://www.oauth.com/oauth2-servers/openid-connect/
 - https://en.wikipedia.org/wiki/OpenID
 - https://auth0.com/docs/authenticate/protocols/openid-connect-protocol
-- https://openid.net/connect/
 - https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
 - https://developers.google.com/identity/protocols/oauth2/openid-connect
 

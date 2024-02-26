@@ -122,6 +122,18 @@ logger is the topmost logger with a name of "" (the empty string).
 
 - https://logging.apache.org/log4j/2.x/manual/json-template-layout.html
 
+# Tips and Tricks
+
+## Log performance
+
+- https://slf4j.org/faq.html#logging_performance
+
+## Multi-thread loggings
+
+- `log4j2.isThreadContextMapInheritable` system property
+    + https://logging.apache.org/log4j/2.x/manual/configuration.html#SystemProperties
+    + Somehow this does not work for AWS Lambda??
+
 # References
 
 [home]: https://logging.apache.org/log4j/2.x/

@@ -18,6 +18,10 @@
     * https://stackoverflow.com/questions/35154684/how-to-parse-a-json-string-with-jq-or-other-alternatives
     * `pbpaste | jq 'fromjson'`
     * Alternative: `-r` option: `pbpaste | jq -r`
+    * In VIM
+        - The escaped JSON has to be a string. WRAP IT INSIDE a double
+          quotes: `"<escaped JSON>"`
+        - `:%!jq 'fromjson'`
 
 ```
 echo "{\"bar\": \"bam\"}" | jq 'fromjson'

@@ -2,8 +2,6 @@
 
 # 1. Angular Overview
 
-- AngularJS is a client-side JavaScript framework. It can be added to an
-  HTML page with a `<script>` tag.
 - AngularJS extends HTML attributes with **Directives**, and binds data
   to HTML with **Expressions**.
 - AngularJS is distributed as a JavaScript file, and can be added to a

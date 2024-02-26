@@ -2,6 +2,15 @@
 
 # 1. Testing terminology
 
+- Why do we write tests?
+    + Verify that code behaves as intended
+    + Detect when future changes break code
+        * Using mocks and stubs in tests prevent us to achieve this
+          fully.
+- Best practices
+    + Arrange-Act-Assert or Given-When-Then in BDD
+        * https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/
+
 ## 1.1. Unit tests and unit testing
 
 A unit test is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called **test coverage**.
@@ -71,6 +80,7 @@ If you are testing algorithms or system functionality, you want to test in most 
 
 ## Test Doubles: Stub, Mock, Fake
 
+- https://martinfowler.com/bliki/TestDouble.html
 - https://testing.googleblog.com/2013/07/testing-on-toilet-know-your-test-doubles.html
 - A test double is an object that can stand in for a real object in a test.
 - Stubs, Mocks, and Fakes
@@ -81,7 +91,14 @@ If you are testing algorithms or system functionality, you want to test in most 
       implementation of an API that behaves like the real
       implementation, but isn't suitable for production (e.g. an
       in-memory database).
-- Should use fake as much as possible, then mocks, and finally stubs
+- Should use real dependencies as much as possible, then fake, then
+  mocks, and finally stubs
+    + Mocks and Stubs are useful for testing any network calls
+      (non-local requests and responses)
+    + Use real dependencies or fake as much as possible for non-network
+      calls.
+    + Mocks and Stubs might not catch all behavior changes of
+      dependency class/systems in the future.
 
 # 2. Test organization
 

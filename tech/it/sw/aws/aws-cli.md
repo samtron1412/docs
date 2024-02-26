@@ -7,6 +7,21 @@
 - Set up auto completion for AWS CLI:
     + https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html
 
+# Authentication and access credentials
+
+- https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-authentication.html
+- Configuration and credential precedence (provider chain)
+    + Command line options
+    + Environment variables
+    + Assume role
+    + Assume role with web identity
+    + AWS IAM Identity Center (successor to AWS SSO)
+    + Credentials file: `~/.aws/credentials`
+    + Custom process
+    + Configuration file: `~/.aws/config`
+    + Amazon EC2 instance profile credentials
+    + Container credentials
+
 # Global options
 
 - `--no-cli-pager`: turn off the pager for AWS CLI return value

@@ -112,6 +112,12 @@ throws UnknownOperation
 }
 ```
 
+# Tips and Tricks
+
+## @see vs @link
+
+- https://www.baeldung.com/javadoc-see-vs-link
+
 # References
 
 [javadoc]: https://www.oracle.com/technetwork/java/javase/tech/index-137868.html

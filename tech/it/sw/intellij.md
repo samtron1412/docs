@@ -2,7 +2,26 @@
 
 # Overview
 
+# Troubleshooting
+
+## Taking up so much memory and heap size
+
+- https://intellij-support.jetbrains.com/hc/en-us/community/posts/6746377604498-The-IDE-is-really-taking-up-too-much-memory
+- Solutions:
+    + Change the boot Java runtime of the IDE
+        * https://www.jetbrains.com/help/webstorm/switching-boot-jdk.html
+        * Use vanilla/nomod version or custom version such as OpenJDK.
+        * Remove `idea.jdk` file in `~/.config/JetBrains/.../idea.jdk`
+          to use the default again.
+
 # Tips and Tricks
+
+## Remote development
+
+- CodeWithMe is more stable than SSH development as of 2023-10.
+- For CodeWithMe
+    + IdeaVim plugin should only be installed in Client side, disable on
+      the host side.
 
 ## Assign file types to file name patterns
 
@@ -12,7 +31,6 @@
 
 - Search Actions `Cmd + Shift + A` or Search everything
 - Override file type
--
 
 ## Add a new jar or directories to classpath
 

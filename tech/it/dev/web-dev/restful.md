@@ -13,6 +13,31 @@ for the World Wide Web.
 - The goal of REST is to increase performance, scalability, simplicity,
   modifiability, visibility, portability, and reliability.
 
+## Resources
+
+- Wiki
+    + https://en.wikipedia.org/wiki/REST
+- Roy Fielding doctoral dissertation
+    + https://ics.uci.edu/~fielding/pubs/dissertation/top.htm
+- Roy Fielding more clarification
+    + https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven
+- An implementation of RESTful APIs using URI, HTTP, and Hypermedia
+  (HTML, etc.)
+    + https://www.crummy.com/writing/speaking/2008-QCon/act3.html
+- Tutorials
+    + https://www.restapitutorial.com/
+    + https://medium.com/@andrea.chiarelli/please-dont-call-them-restful-d2465527b5c
+    + https://restfulapi.net/
+- Cheat Sheet
+    + https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet
+- Maturity Model for Web APIs
+    + Richardson Maturity Model
+        * https://en.wikipedia.org/wiki/Richardson_Maturity_Model
+    + Classification of HTTP-based APIs, and cost of each:
+        * https://algermissen.io/classification_of_http_apis.html
+    + WS3 (3 dimensions)
+        * https://www.researchgate.net/publication/281287283_A_Maturity_Model_for_Semantic_RESTful_Web_APIs
+
 # What does Representational State Transfer (REST) mean? Etymology
 
 The term representational state transfer was introduced and defined in
@@ -58,12 +83,16 @@ The term representational state transfer was introduced and defined in
             - There is no need for the client to be hard-coded with
               information regarding the structure or dynamics of the
               application.
-
-# Tutorials and Learn more
-
-- https://www.restapitutorial.com/
-- https://medium.com/@andrea.chiarelli/please-dont-call-them-restful-d2465527b5c
-- https://restfulapi.net/
+            - All service description comes in the form of media type
+              (and link relation etc.) specifications, client only knows
+              entry bookmark (URI) and media types and no specifics
+              about the particular service. Client proceeds through
+              application by looking at one response at a time, each
+              time evaluating how best to proceed given its overall goal
+              and the available transitions. Methods to use are known
+              from media type (and link relation etc.) specifications or
+              selected at runtime based on forms (form semantics known
+              from media type specifications).
 
 # References
 

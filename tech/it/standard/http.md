@@ -2,9 +2,19 @@
 
 # Overview
 
-- https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+- https://en.wikipedia.org/wiki/HTTP
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
-- HTTP is a protocol for fetching resources such as HTML documents.
+- The Hypertext Transfer Protocol (HTTP) is a stateless
+  application-level protocol for distributed, collaborative, hypertext
+  information systems.
+
+# Specifications
+
+- https://httpwg.org/specs/
+- https://datatracker.ietf.org/doc/rfc9110/
+    + https://www.rfc-editor.org/rfc/rfc9110.html
+- HTTP Method Registry
+    + https://www.iana.org/assignments/http-methods/http-methods.xhtml
 - HTTP/1.1 (1997)
     + HTTP verbs for requests
     + Reuse a single TCP connection
@@ -18,6 +28,26 @@
 - How does browser know which version of HTTP to use?
     + https://superuser.com/questions/1659248/how-does-browser-know-which-version-of-http-it-should-use-when-sending-a-request
 
+# HTTP Request
+
+- https://www.realisable.co.uk/support/documentation/iman-user-guide/DataConcepts/WebRequestAnatomy.htm
+- HTTP Method
+    + GET, POST, PUT, PATCH, DELETE, etc.
+- URI
+    + More details in `it-term.md`
+    + Protocol, domain, port, path, query strings, fragments, etc.
+- Headers
+    + https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+    + HTTP version
+    + Content type, authentication values, etc.
+    + Cookies
+- Body
+
+# HTTP Response
+
+- HTTP Status code
+- Headers
+- Response
 
 # [Status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 

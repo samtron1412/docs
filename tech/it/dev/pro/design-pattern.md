@@ -2,6 +2,7 @@
 
 # Overview
 
+- https://refactoring.guru/design-patterns
 - A software design pattern is a general, reusable solution to a
   commonly occurring problem within a given context in software design.
 - It is not a finished design that can be transformed directly into
@@ -17,6 +18,7 @@
     + Single responsibility
     + Open to extension closed to modification
     + Liskov substitution
+        * https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle
     + Interface segregation
     + Dependency Inversion
 - YAGNI (You Aren't Gonna Need It)
@@ -25,17 +27,36 @@
 
 # Creational patterns
 
+## Factory Method
+
+## Abstract Factory
+
 ## Builder
 
-## Dependency Injection
-
-## Factory method
-
-## Lazy initialization
+## Prototype
 
 ## Singleton
 
+- Serializable, reflection and cloneable may break singleton(except enum
+  singleton).
+- Multi-threaded programming consideration
+    + Eager initialization
+        * Private static field
+        * Static block
+    + Lazy initialization
+        * Enum with single value (Enum singleton) (similar as Public
+          static field but safer)
+        * Static holder singleton (Bill Pugh singleton)
+            - https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom
+        * Double checked locking
+            - https://en.wikipedia.org/wiki/Double-checked_locking
+
+
 # Structural patterns
+
+## Adapter
+
+## Bridge
 
 ## Composition / Composite
 
@@ -123,15 +144,65 @@ particular you cannot do it dynamically at run-time.
 ```
 
 
+## Decorator
+
 ## Facade Pattern
 
 - https://en.wikipedia.org/wiki/Facade_pattern
 - https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
 
+## Flyweight
+
+## Proxy
+
+
 # Behavioral patterns
+
+## Chain of Responsibility
+
+## Command
+
+## Iterator
+
+## Mediator
+
+## Memonto
+
+## Observer
+
+## State
+
+## Strategy
+
+## Template Method
+
+## Visitor
 
 
 # Concurrency patterns
+
+# Other patterns
+
+## Lazy initialization
+
+
+## Inversion of Control
+
+- https://martinfowler.com/bliki/InversionOfControl.html
+- https://en.wikipedia.org/wiki/Inversion_of_control
+- Inversion of Control is a defining characteristic of a framework.
+    + In procedural programming, the main custom code will be in control of the
+      flow, and it'll call framework/subroutines to accomplish tasks.
+    + With inversion of control, the framework is in control, and the
+      framework will call your custom code when it's needed.
+- IoC is used in GUI environments, web server application frameworks,
+  event-driven programming.
+
+### Dependency Injection
+
+- More details in `dependency-injection.md`
+- Instead of inverting the control flow, it inverts the control over
+  implementations of dependencies.
 
 # References
 

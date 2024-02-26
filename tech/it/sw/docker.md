@@ -401,7 +401,6 @@ libraries, shell and such, but by default none of these are running. You
 
 `# docker commit [-author=""] [-m="message commit"] <container id> <new repository name>`: save change of container to new repository (container id get from command `# docker ps -l`)
 
-`# `
 `# docker ps`: list container running
 
 `# docker exec -it <id process> bash` : spawn new bash shell for container with ID
@@ -409,6 +408,10 @@ libraries, shell and such, but by default none of these are running. You
 `# docker exec -it <name container> bash`: spawn new bash shell for container with name
 
 `# docker stop container <container>`
+
+`# docker stats`: shows statistics of containers (memory, cpu, etc.)
+
+`# docker top`: shows processes for containers.
 
 
 # Docker Machine (docker-machine command)

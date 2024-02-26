@@ -885,6 +885,21 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Open a clean/fresh vim session that does not take any custom configurations
+
+- `vim --clean [file]`
+- https://vi.stackexchange.com/questions/6112/how-can-i-get-vim-to-ignore-all-user-configuration-as-if-it-were-freshly-instal
+
+## Math: simple calculations
+
+- Use expression register
+    + `<C-r>=7*7<CR>`
+- Increment and decrement shortcuts
+    + `<C-a>` and `C-x`
+- External tools
+    + `bc`, `calc`
+
+
 ## Redir - redirect the output of a Vim or external command into a scratch buffer
 
 - https://gist.github.com/romainl/eae0a260ab9c135390c30cd370c20cd7
@@ -1597,6 +1612,7 @@ K                |<plug>(vimtex-doc-package)|                    `n`
 
 - Distraction-free mode in Vim.
 - `<Leader>d`
+- https://github.com/junegunn/goyo.vim
 
 ### traces.vim
 

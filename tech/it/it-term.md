@@ -185,41 +185,6 @@ implementation of computer systems.
 
 # Software
 
-## Canonical form
-
-- A canonical, normal, or standard form of a mathematical object is a
-  standard way of presenting that objects as a mathematical expression.
-    + Often, it is one which provides the simplest representation of an
-      object and which allows it to be identified in a unique way.
-
-## Data Normalization
-
-- The reduction of data to any kind of canonical form.
-- Database normalization is the process of organizing the fields and
-  tables of a relational database to minimize redundancy and dependency.
-- The normalization process simplifies the data representation and
-  creates the uniqueness.
-
-## Clobbering
-
-- To overwrite, usually unintentionally, often this happens
-  unintentionally, such as using the > redirection operator.
-- https://en.wikipedia.org/wiki/Clobbering
-
-## Computer Software Engineering
-
-Software engineering is the application of engineering to the
-development of software in a systematic method.
-- Computer software engineers develop, design, and test software.
-- They construct, and maintain computer programs, as well as set up
-  networks.
-
-## Computer Software
-
-Computer software, or simply software, is a part of a computer system
-that consists of data and/or computer instructions, in contract to the
-physical hardware from which the system is built.
-
 ## Binary number
 
 In mathematics and digital electronics, a binary number is a number
@@ -242,6 +207,25 @@ represents numeric values using two different symbols: typically 0 and
   implemented Boolean algebra and binary arithmetic using electronic
   relays and switches for the first time in history.
 
+## Bit
+
+The bit used to denote either
+1. the basic and physical unit of information in computing and digital
+   communications or
+2. a binary digit.
+
+- A binary digit can have only one or two values, and may therefore be
+  physically implemented with a two-state device. These values are most
+  commonly represented as either a 0 or 1.
+- The two values of a binary digit can also be interpreted as logical
+  values (true/false, yes/no), algebraic signs (+/-), activation states
+  (on/off), or any other two-valued attribute.
+
+A bit can be defined as some kind of a physical object that has a size
+and location in space, and it has some quality about itself, that at any
+given time can be in one of two possible states, and maybe made to
+change back and forth between those two states.
+
 ## Boolean Algebra
 
 In mathematics and mathematical logic, Boolean algebra is the branch of
@@ -257,19 +241,75 @@ and "false", usually denoted "1" and "0" respectively.
   Mathematical Analysis of Logic* (1987), and set forth more fully in
   his *An Investigation of the Laws of Thought* (1854).
 
-## Bit
 
-The bit used to denote either
-1. the basic and physical unit of information in computing and digital
-   communications or
-2. a binary digit.
+## Canonical form
 
-- A binary digit can have only one or two values, and may therefore be
-  physically implemented with a two-state device. These values are most
-  commonly represented as either a 0 or 1.
-- The two values of a binary digit can also be interpreted as logical
-  values (true/false, yes/no), algebraic signs (+/-), activation states
-  (on/off), or any other two-valued attribute.
+- A canonical, normal, or standard form of a mathematical object is a
+  standard way of presenting that objects as a mathematical expression.
+    + Often, it is one which provides the simplest representation of an
+      object and which allows it to be identified in a unique way.
+
+## Clobbering
+
+- To overwrite, usually unintentionally, often this happens
+  unintentionally, such as using the > redirection operator.
+- https://en.wikipedia.org/wiki/Clobbering
+
+## Computer Software
+
+Computer software, or simply software, is a part of a computer system
+that consists of data and/or computer instructions, in contract to the
+physical hardware from which the system is built.
+
+## Computer Software Engineering
+
+Software engineering is the application of engineering to the
+development of software in a systematic method.
+- Computer software engineers develop, design, and test software.
+- They construct, and maintain computer programs, as well as set up
+  networks.
+
+## Control flow
+
+- In computer science, control flow (or flow of control) is the order in
+  which individual statements, instructions or function calls of an
+  imperative program are executed or evaluated.
+- The emphasis on explicit control flow distinguishes an imperative
+  programming language from a declarative programming language.
+- https://en.wikipedia.org/wiki/Control_flow
+
+## Data Normalization
+
+- The reduction of data to any kind of canonical form.
+- Database normalization is the process of organizing the fields and
+  tables of a relational database to minimize redundancy and dependency.
+- The normalization process simplifies the data representation and
+  creates the uniqueness.
+
+## Deadlock
+
+- https://en.wikipedia.org/wiki/Deadlock
+
+A deadlock is a state in which each member of a group is waiting for
+some other member to take action, such as sending a message or more
+commonly releasing a lock.
+
+In an operating system, a deadlock occurs when a process or thread
+enters a waiting state because a requested system resource is held by
+another waiting process, which in turn is waiting for another resource
+held by another waiting process. If a process is unable to change its
+state indefinitely because the resources requested by it are being used
+by another waiting process, then the system is said to be in a deadlock
+
+## Dynamic Programming Language
+
+`Dynamic programming language` is a term used in computer science to
+describe a class of *high-level programming languages* which, at
+*runtime*, execute many common programming behaviors that static
+programming languages perform during compilation. Dynamic languages are
+frequently (but not always) referred to as “scripting languages”. List
+of popular dynamic programming language: Javascript, Objective-C, Perl,
+PHP, Powershell, Python, Ruby.
 
 ## RTFM
 
@@ -329,16 +369,6 @@ programming language designed to test the boundaries of computer
 programming language design, as a proof of concept, as software art, or
 as a joke.
 
-## Dynamic Programming Language
-
-`Dynamic programming language` is a term used in computer science to
-describe a class of *high-level programming languages* which, at
-*runtime*, execute many common programming behaviors that static
-programming languages perform during compilation. Dynamic languages are
-frequently (but not always) referred to as “scripting languages”. List
-of popular dynamic programming language: Javascript, Objective-C, Perl,
-PHP, Powershell, Python, Ruby.
-
 ## Hooking
 
 Kind of event handler, use call back function or some code to handles
@@ -392,21 +422,6 @@ the order the programmer intended.
 
 => Fixing by mutual exclusion (locking), synchronization, etc.
 
-## Deadlock
-
-- https://en.wikipedia.org/wiki/Deadlock
-
-A deadlock is a state in which each member of a group is waiting for
-some other member to take action, such as sending a message or more
-commonly releasing a lock.
-
-In an operating system, a deadlock occurs when a process or thread
-enters a waiting state because a requested system resource is held by
-another waiting process, which in turn is waiting for another resource
-held by another waiting process. If a process is unable to change its
-state indefinitely because the resources requested by it are being used
-by another waiting process, then the system is said to be in a deadlock
-
 ## Resource Starvation
 
 - https://en.wikipedia.org/wiki/Starvation_(computer_science)
@@ -454,6 +469,68 @@ to process its work (lack of needed resources).
 ## Escape Hatches
 
 - https://wiki.c2.com/?EscapeHatch
+- A design pattern that creates an escape hatch allow us to do something
+  that the current tools do not fit.
+
+```
+Context: You are in a paradigm (e.g. language, runtime environment,
+scribble on back of envelope) and you need to express or do some thing
+which does not fit.
+
+Problem: You are being restricted by your current tool set.
+
+Forces:
+- You may not be able to ditch your current tool for various reasons:
+  technical, legal, political or legacy code.
+- There may not be a tool which does everything you need, or it may be
+  too complex.
+- It may be wise to keep some things separate, e.g. the financial
+  accounts and the Internet. (Here, a KVM switch plus spare computer
+  would do the trick .. but only the ThreeLetterAgencies are that
+  paranoid.) Maybe this is a digression or unnecessary generalization?
+
+Solution: Pop the EscapeHatch and go somewhere else. You can generally
+return from wherever it is you go.
+
+Resulting Context: You now have two tools stuck together, with a route
+between.
+```
+
+## URI (Uniform Resource Identifier) and URL (Uniform Resource Locator) and URN (Uniform Resource Name)
+
+- https://datatracker.ietf.org/doc/html/rfc3986
+- URI
+    + A sequence of characters used to identify a resource on the Internet
+      either by name or by location, or both.
+- URL
+    + A sequence of characters used to locate the resource.
+    + A sub-set of URI.
+- URN
+    + A sequence of characters used to name the resource.
+    + A sub-set of URI.
+
+### URI generic syntax
+
+```
+URI         = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
+
+hier-part   = "//" authority path-abempty
+          / path-absolute
+          / path-rootless
+          / path-empty
+```
+
+- Full ABNF for URI
+    + https://datatracker.ietf.org/doc/html/rfc3986#autoid-69
+- Required components
+    + Scheme: `https://`
+    + Authority: `www.example.com`
+        * Path: `/prod/product.html`
+- Optional components
+    + Query strings: `?key=value&key2=value2`
+    + Fragments: `#fragment`
+        * to request a portion of a page
+        * scroll the website to the anchor of the page
 
 # Computer Science
 

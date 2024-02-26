@@ -97,14 +97,23 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
 ## Instant
 
 
-## LocalDateTime API
+## LocalDate and LocalDateTime API
 
-- LocalDate/LocalTime
+- LocalDate
+- LocalTime
 - LocalDateTime
+    + `2007-12-03T10:15:30`
+
+## OffsetDateTime
+
+- OffsetTime
+- OffsetDateTime
+    + `2007-12-03T10:15:30+01:00`
 
 ## Zoned Date-Time API
 
 - ZonedDateTime
+    + `2007-12-03T10:15:30+01:00 Europe/Paris`
 
 ## Chrono Units Enum
 
@@ -159,6 +168,11 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
       body if the body contains a single statement
     + *optional return keyword*: the compiler automatically returns the
       value if the body has a single expression to return the value
+- Local variables used in Lambdas have to be final or `effectively final`
+    + https://www.baeldung.com/java-lambda-effectively-final-local-variables
+    + Effectively final
+        * Static or Instance variables (on heap)
+        * Non-final variables that are not changing.
 
 # Optional: Null Pointer Exception
 
@@ -166,16 +180,138 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
   return an object type T or nothing or null.
 - https://nipafx.dev/design-java-optional/
 - https://stackoverflow.com/questions/23454952/uses-for-optional
-- https://blogs.oracle.com/javamagazine/post/12-recipes-for-using-the-optional-class-as-its-meant-to-be-used
 - https://www.oracle.com/technical-resources/articles/java/java8-optional.html
 - https://www.baeldung.com/java-optional
+- `map` method is broken for Optional
+    + https://blog.developer.atlassian.com/optional-broken/
+- Use optional to reveal intention
+    + https://nipafx.dev/intention-revealing-code-java-8-optional/
 
-# Concurrent
+# Monad - Monadic Java
 
+- https://www.slideshare.net/mariofusco/monadic-java
+- https://dzone.com/articles/what-is-a-monad-basic-theory-for-a-java-developer
+- https://www.baeldung.com/java-monads
+- https://medium.com/@afcastano/monads-for-java-developers-part-1-the-optional-monad-aa6e797b8a6e
+
+# Concurrency (Concurrent)
+
+- Concurrency vs.  Parallelism
+    + https://jenkov.com/tutorials/java-concurrency/concurrency-vs-parallelism.html
+- Concurrency Models
+    + https://jenkov.com/tutorials/java-concurrency/concurrency-models.html
 - APIs
     + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/package-summary.html
     + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html
     + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/package-summary.html
+- Main ideas
+    + There is a thread pool
+        * Default thread pool = number of processors - 1.
+        * Can create custom thread pools as well.
+    + There are tasks that we want to execute and get back the results.
+    + There is an executor that executes tasks.
+- Fork-join framework
+    + https://en.wikipedia.org/wiki/Work_stealing
+    + https://www.baeldung.com/java-fork-join
+    + https://stackoverflow.com/questions/7926864/how-is-the-fork-join-framework-better-than-a-thread-pool
+    + https://www.youtube.com/watch?v=5wgZYyvIVJk
+    + Common queue for external submission (main thread)
+        + Each thread has its own queue to contain its original work as
+          well as generated work (recursive tasks) from its tasks.
+    + Use work-stealing algorithm
+        + Idle threads steal work from busy threads: busy threads pick
+          tasks from the top of the queue, idle threads pick tasks from
+          the bottom of the queue.
+- Parallel stream
+    + https://www.baeldung.com/java-when-to-use-parallel-stream
+    + Not always parallel processing is faster than sequential
+      processing due to cost of splitting and merging the results.
+    + NQ model: N (number of elements to process) * Q (the amount of
+      computation performed per element), the larger N x Q, the more
+      likely that we gain performance from parallel procesing.
+    + Customer thread pool
+        * https://stackoverflow.com/questions/21163108/custom-thread-pool-in-java-8-parallel-stream
+- CompletableFuture
+    + https://www.youtube.com/watch?v=-MBPQ7NIL_Y
+- Structured Concurrency
+    + https://openjdk.org/jeps/428
+
+## Thread Safe and Multi-threaded Programming
+
+- https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html
+- https://www.baeldung.com/java-thread-safety
+- Synchronization: a mechanism for communicating between threads
+    + Implementation
+        * Each object has an associated monitor which a thread can lock
+          or unlock.
+        * Only one thread at a time can hold a lock on a monitor.
+        * A thread t may lock a particular monitor multiple times; each
+          unlock reverses the effect of one lock operation.
+    + A `synchronized` statement
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.19
+    + A `synchronized` method
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.3.6
+    + The Java programming language neither prevents nor requires
+      detection of deadlock conditions.
+        * You have to build your own high-level entities to prevent
+          deadlocks.
+- Other mechanism for communicating between threads
+    + `volatile` variables
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1.4
+        * https://jenkov.com/tutorials/java-concurrency/volatile.html
+        * https://www.baeldung.com/java-volatile
+        * https://ioflood.com/blog/java-volatile
+        * field modifier, the Java Memory Model ensures that all threads
+          see a consistent value for the variable by reading the value
+          from main memory (heap) instead of Thread's local cache.
+        * `volatile` and `synchronized` keywords
+            - https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
+    + `java.util.concurrent` pacakges: ThreadLocal, etc.
+- Wait Sets and Notification
+    + https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.2
+    + Every object, in addition to having an associated monitor, has an
+      associated wait set. A wait set is a set of threads.
+- Java programming language memory model (for shared variables)
+    + https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4
+    + https://en.wikipedia.org/wiki/Java_memory_model
+    + Implementation
+        * https://jenkov.com/tutorials/java-concurrency/java-memory-model.html
+        * https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java
+    + A memory model describes, given a program and an execution trace
+      of that program, whether the execution trace is a legal execution
+      of the program.
+        * The Java programming language memory model works by examining
+          each read in an execution trace and checking that the write
+          observed by that read is valid according to certain rules.
+    + The memory model describes possible behaviors of a program.
+    + Shared variables
+        * https://jenkov.com/tutorials/java-concurrency/thread-safety.html
+        * Memory that can be shared between threads is called shared
+          memory or heap memory.
+        * All instance fields, static fields, and array elements are
+          stored in heap memory.
+        * Local variables (§14.4), formal method parameters (§8.4.1),
+          and exception handler parameters (§14.20) are never shared
+          between threads and are unaffected by the memory model.
+            - However, local variables can point to objects on heap
+              which are can be shared between threads.
+        * Two accesses to (reads of or writes to) the same variable are
+          said to be conflicting if at least one of the accesses is a
+          write.
+    + Happenned-before guarantee
+        * https://en.wikipedia.org/wiki/Happened-before
+        * https://jenkov.com/tutorials/java-concurrency/java-happens-before-guarantee.html
+
+### java.util.concurrent
+
+- ThreadLocal
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html
+    + https://www.baeldung.com/java-threadlocal
+    + https://jenkov.com/tutorials/java-concurrency/threadlocal.html
+    + Each thread has a local variable that only that thread can get and
+      set.
+    + https://stackoverflow.com/questions/817856/when-and-how-should-i-use-a-threadlocal-variable
+    + Can potentially create memory leaks if forget to close/remove it.
 
 # Java Language (java.lang)
 

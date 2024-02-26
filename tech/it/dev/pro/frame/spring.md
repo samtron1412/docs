@@ -1,8 +1,12 @@
 [TOC]
 
 # Overview
-- Java framework to developing any Java application, there are extensions for building web application on top of the Java EE platform. Enabling a POJO based programming model.
--
+
+- https://www.baeldung.com/spring-dependency-injection
+    + https://www.baeldung.com/spring-xml-injection
+- Java framework to developing any Java application, there are
+  extensions for building web application on top of the Java EE
+  platform. Enabling a POJO based programming model.
 
 # Basic Ideas
 Sử dụng một module quản lý các module khác. Dev chỉ cần liên hệ với module quản lý này để gọi các service.

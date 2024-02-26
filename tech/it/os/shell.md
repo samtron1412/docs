@@ -132,6 +132,7 @@ We can have 4 different types of shells:
 
 # Basic shell script
 
+- More details in `shell-scripts.md`
 - The shell script need locate in the directories listed in the PATH
   variables if you want run the script by name.
 - If the script do not have execute permission we need user command like

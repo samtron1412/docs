@@ -94,6 +94,9 @@ must be enclosed in braces: `${15}`.
 
 - The first two special parameters, `$*` and `$@`, expand to the value
   of all the positional parameters combined.
+    + Differences
+        * https://unix.stackexchange.com/q/41571
+        * Use `"$@"` to avoid any surprises
 - `$#`: expands to the number of positional parameters.
 - `$0`: contains the path to the currently running script or to the
   shell itself if no script is being executed.
@@ -278,18 +281,34 @@ fi
 
 - https://google.github.io/styleguide/shellguide.html
 - https://github.com/icy/bash-coding-style
-- Quote string variables if you don't want word splitting and wildcard
-  expansion
-    + `"${some_var}"`
-- When to use curly braces around variables?
-    + https://stackoverflow.com/questions/8748831/when-do-we-need-curly-braces-around-shell-variables
-    + Should develop the habit of using `{}` for every variable.
+- Always use double quotes to reference variables
+    + Preventing word splitting and wildcard expansion
+    + https://askubuntu.com/a/683434
+    + Always use `{}` for variables
+        * https://stackoverflow.com/questions/8748831/when-do-we-need-curly-braces-around-shell-variables
+    + This is the way: `"${some_var}"`
 - Command substitution
     + `$(command)`
 - Quotes inside quotes
     + https://stackoverflow.com/questions/3834839/how-can-i-escape-a-double-quote-inside-double-quotes
 
 # Tips and Tricks
+
+## Removing colors from output
+
+- https://stackoverflow.com/questions/17998978/removing-colors-from-output
+
+## Glob patterns
+
+- https://en.wikipedia.org/wiki/Glob_(programming)
+- https://code.visualstudio.com/docs/editor/glob-patterns
+- Specify sets of filenames with wildcard characters.
+- The glob command, short for global, originates in the earliest
+  versions of Bell Labs' Unix.[1] The command interpreters of the early
+  versions of Unix (1st through 6th Editions, 1969–1975) relied on a
+  separate program to expand wildcard characters in unquoted arguments
+  to a command: /etc/glob. That program performed the expansion and
+  supplied the expanded list of file paths to the command for execution.
 
 ## Loop through range of dates
 

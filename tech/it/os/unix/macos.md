@@ -92,7 +92,32 @@ java11
 - Search mailbox: `alt + cmd + f`
 - Search inside a mail: `cmd + f`
 
+# Chrome / Chromium
+
+- Bookmark manager: `Option + Cmd + b`
+- Bookmark bar: `Shift + Cmd + b`
+- Bookmark: `Cmd + d`
+- Undo bookmark: `Cmd + d, Option + r`
+
 # Tips and Tricks
+
+## Cron jobs
+
+- https://apple.stackexchange.com/questions/402132/cronjobs-do-not-run
+- Grant `cron` full disk access
+    + Go to Security settings
+    + Add `cron` to the list if it does not exist
+    + `Cmd + Shift + G` to open the go to pop up with path
+    + Type `/usr/sbin/cron`
+- Debug the cron job
+    + Touch a file every minute to see whether the cronjob works
+    + Redirect error and output to a file
+
+```
+* * * * * /usr/bin/touch /Users/trnso/tmp/cronjob-success-"$(date)".txt
+* * * * * /Users/trnso/Documents/repo/pri-scripts/amazon/refresh-aea-cookie-cron.sh >> /Users/trnso/tmp/cronjoblogs 2>&1
+```
+
 
 ## Find all ports that are listening
 

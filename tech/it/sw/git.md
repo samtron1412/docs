@@ -1054,6 +1054,16 @@ See also: #456, #789
 
 #### Conventional commits message types
 
+- https://www.conventionalcommits.org
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
 ```
 feat: {
         description: 'A new feature',
@@ -1433,7 +1443,54 @@ setup an app-specific password.
 - `git send-email --to <email-address> outgoing/*`: Send all patches in
   outgoing directory.
 
+# git-filter-repo: History rewriting tools and libraries
+
+- https://github.com/newren/git-filter-repo
+
+## Applications
+
+- https://github.com/newren/git-filter-repo/tree/main/contrib/filter-repo-demos
+- Split files/directories to a new repository.
+    * git-subtree: https://stackoverflow.com/a/17864475
+- Remove files/directories from history.
+- Modify / Update history
+
+## Move files/directories to another existing repository.
+
+- https://stackoverflow.com/a/61917589
+- https://stackoverflow.com/a/59832729
+
+In order to move `source_project/sub/dir` to `destination_project/sub/dir`:
+
+1. Create a new repo containing only the subdirectory:
+
+```
+git clone URL source_project
+cd source_project
+git filter-repo --path sub/dir
+```
+
+2. Merge the new repo:
+
+```
+git clone URL destination_project
+cd ../destination_project
+
+// create a new branch to work on it
+git checkout -b filtered-destination
+
+git remote add source-remote ../source_project
+git fetch source-remote mainline
+git merge remotes/source-remote/mainline --allow-unrelated-histories
+git remote remove tmp
+```
+
 # Tips and Tricks
+
+## See the list of commit differences between branches
+
+- https://stackoverflow.com/questions/13965391/how-do-i-see-the-commit-differences-between-branches-in-git
+- `git log --online master..brranchX`
 
 ## Copy commit content from another branch to your staging area
 
@@ -1463,6 +1520,7 @@ git rebase --onto "<commit-id>^" <commit-id> HEAD
 
 ## Splitting a subfolder out into a new repository
 
+- Use `filter-repo` tool instead.
 - [filter-branch manual](https://git-scm.com/docs/git-filter-branch)
 - [GitHub tutorial](https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/)
 - [Moving files from one Git repository to another](http://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/)
@@ -1682,6 +1740,8 @@ How do you do it? Just use the `--depth` option, for example:
 
 #### Partial solution is filter-branch
 
+- Use `filter-repo` tool instead
+
 For the huge repositories that have big binary cruft committed by
 mistake or old assets not needed anymore a great solution is to use
 filter-branch. The command allows to walk through the entire history of
@@ -1732,6 +1792,12 @@ points to check (thanks to Stefan Saasen for the remarks):
 http://stevelorek.com/how-to-shrink-a-git-repository.html
 
 # Troubleshooting
+
+## Checking which files are ignored as well as where the configuration is defined
+
+- Show ignored files: `git status --ignored`
+- Check where the configuration is defined:
+    + `git check-ignore <file-path> -v`
 
 ## Common situations and solutions
 

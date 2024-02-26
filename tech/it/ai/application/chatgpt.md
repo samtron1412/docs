@@ -7,3 +7,8 @@
       models, and is fine-tuned with both supervised and reinforcement
       learning techniques.
 - https://chat.openai.com/
+
+# GPT models
+
+- Benchmark discussion for GPT-4 Turbo
+    + https://news.ycombinator.com/item?id=38204430

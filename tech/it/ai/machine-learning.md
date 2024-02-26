@@ -2,6 +2,7 @@
 
 # Overview
 
+- https://en.wikipedia.org/wiki/Machine_learning
 - A subset of artificial intelligence
 - often uses statistical techniques to give computers the ability to
   *learn* (i.e., progressively improve performance on a specific task)
@@ -11,14 +12,19 @@
     + Evolved from the study of pattern recognition and computational
       learning theory in artificial intelligence
 
-# State of the Art
+# State of the Art (SOTA)
 
 - https://paperswithcode.com/
 
 # Courses
 
-- http://cs231n.stanford.edu/
-    + https://cs231n.github.io/
+- https://www.coursera.org/learn/machine-learning
+- https://eecs189.org/
+    + https://www.bilibili.com/video/BV1Gr4y1s7nF
+    + https://www.youtube.com/playlist?list=PLCuQm2FL98HTlRmlwMk2AuFEM9n1c06HE
+    + https://www.youtube.com/watch?v=slGymxkELYE&list=PLOOm2AoWIPEyZazQVnIcaK2KnezpGZV-X
+- https://cs229.stanford.edu/
+    + https://www.bilibili.com/video/BV1JE411w7Ub/
 
 # Tasks
 
@@ -280,6 +286,7 @@ Something
     - accuracy
     - precision (positive predictive value)
     - and sensitivity (recall)
+* K-fold-cross-validation
 
 # Regularization
 
@@ -307,7 +314,7 @@ Something
       error was obtained before that and return the approximation on the
       last step as the result of the computation.
 
-# Datasets
+# Datasets for research and training models
 
 ## Classification
 

@@ -12,6 +12,12 @@
     + Code quality rules: we still need linter to take care of these
       rules.
 
+# Configure Rules
+
+## Disabling Rules
+
+- https://eslint.org/docs/latest/use/configure/rules#disabling-rules
+
 # plugin:import/recommended
 
 - List of recommended rules for plugin import
@@ -28,3 +34,15 @@
 
 - https://github.com/jsx-eslint/eslint-plugin-react
 
+# Troubleshooting
+
+## Symlinks issue: Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser
+
+- https://github.com/typescript-eslint/typescript-eslint/issues/2987
+- Need to open the project without the symlinks.
+
+## SyntaxError: Unexpected token
+
+- This is because of incorrect NodeJS version (old version).
+- Make sure the NodeJS version in your build system (IntelliJ, etc.) is
+  set correctly to the latest version.

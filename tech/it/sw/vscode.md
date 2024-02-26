@@ -5,6 +5,17 @@
 - live server
 - html, css, JavaScript
 
+# User Guide
+
+## Debugging
+
+- https://code.visualstudio.com/docs/editor/debugging
+
+## Tasks
+
+- https://code.visualstudio.com/docs/editor/tasks
+- Integrate with external tools via Tasks.
+
 # Shortcuts
 
 - macOS

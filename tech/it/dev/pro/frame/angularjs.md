@@ -2,6 +2,22 @@
 
 AngularJS framework (note: this is not Angular framework, this is the
 older version). End of life December 31, 2021.
+- A client-side JavaScript framework.
+- AngularJS extends HTML attributes with **Directives**, and binds data
+  to HTML with **Expressions**.
+- AngularJS is distributed as a JavaScript file, and can be added to a
+  web page with a script tag:
+
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+```
+
+- It is used in Single Page Application (SPA) projects.
+- Philosophy
+    + Is built around the belief that **declarative programming** should
+      be used for building **user interfaces and connecting software
+      components**, while **imperative programming** is better suited to
+      defining an **application's business logic**.
 
 - Developer Guide
     + https://docs.angularjs.org/guide
@@ -66,6 +82,11 @@ older version). End of life December 31, 2021.
     + `$onChanges(changesObj)`:
     + `$doCheck()`
     + `$onDestroy()`
+
+# Modules
+
+- https://docs.angularjs.org/guide/module
+- https://docs.angularjs.org/api/ng/type/angular.Module
 
 # Logging
 

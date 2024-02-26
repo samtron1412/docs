@@ -2,7 +2,7 @@
 
 - The Web offers a wide variety of APIs to perform various useful tasks.
 - Links
-    + https://developer.mozilla.org/en-US/docs/Web/Reference/API
+    + https://developer.mozilla.org/en-US/docs/Web/API
 - Popular APIs
     + DOM (Document Object Model)
         * Why?
@@ -53,3 +53,30 @@
 
 - Alternative: axios, etc.
 - https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
+
+# Client-side / Browser Storage
+
+## Cookie
+
+- More details in `web-browser.md` and `http.md`.
+
+## Web Storage API
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+
+## IndexedDB
+
+- https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+
+## Cache
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Cache
+
+# Service Worker API
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+- Act as proxy servers.
+- They are intended, among other things, to enable the creation of
+  effective offline experiences, intercept network requests and take
+  appropriate action based on whether the network is available, and
+  update assets residing on the server.
