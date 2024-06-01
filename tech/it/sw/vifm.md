@@ -119,6 +119,14 @@ Help file: opening vifm and typing `:h`
 
 # Tips and Tricks
 
+## Open files in Vim for editing
+
+- Key binding `o` to open in existing gVim instance
+
+- Open view pane with `w` or `:view` command from Normal mode.
+- Access View mode with `Shift-Tab` after enabling view pane.
+- Open file in Vim with `v` in View mode.
+
 ## start at different locations
 
 	vifm .                       - start on current folder

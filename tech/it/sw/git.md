@@ -338,7 +338,7 @@ Patterns which are specific to a particular repository but which do not
 auxiliary files that live inside the repository but are specific to one
 user's workflow). **Personal ignoring of repository**.
 
-### User level (Global .gitignore / .gitignore_global)
+### User level (Global gitignore / gitignore_global)
 
 - In `~/.gitconfig` file
     + `core.excludesFile = <path-to-the-ignore-file>`
@@ -1517,6 +1517,11 @@ git remote remove tmp
 
 - https://stackoverflow.com/questions/13965391/how-do-i-see-the-commit-differences-between-branches-in-git
 - `git log --online master..brranchX`
+
+## Listing all files for a specific branch
+
+- `git ls-tree -r <branch-name> --name-only`
+- `git ls-tree -r HEAD --name-only`
 
 ## Copy commit content from another branch to your staging area
 

@@ -1588,35 +1588,6 @@ K                |<plug>(vimtex-doc-package)|                    `n`
 ```
 
 
-#### Setting up forward and backward search
-
-- Install `xdotool`
-    + Run this after installing `defaults write org.x.X11
-    enable_test_extensions -boolean true`
-    + https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
-- Using skim as PDF viewer to search forward and backward
-    + Skim only works with the first window of VIM, so open latex files
-    by the first windows, and other files by other VIM windows if you
-    use more than one window of VIM.
-    + Forward search: after compiling the PDF viewer will show the
-    current page corresponding with the code on the editor screen.
-    + Backward search: when `Shift + CMD + mouse click` on the PDF file,
-    it will show the corresponding LaTeX code.
-    + Set up:
-        * Install skim on MacOS: `brew cask install skim`
-        * `.vimrc`: `let g:vimtex_view_method = 'skim'`
-        * In Skim's setting, tab Sync: choose MacVim as the preset of
-        sync.
-        * Troubleshooting: `:h skim`
-- Using zathura (Not recommended)
-    + `brew tap zegervdv/zathura`
-    + `brew install zathura --with-synctex`
-    + `brew install zathura-pdf-poppler`
-    + `mkdir -p $(brew --prefix zathura)/lib/zathura`
-    + `ln -s $(brew --prefix zathura-pdf-poppler)/libpdf-poppler.dylib $(brew --prefix zathura)/lib/zathura/libpdf-poppler.dylib`
-    + copying to clipboard: `~/.config/zathura/zathurarc`
-        * `set selection-clipboard clipboard`
-
 ### goyo.vim and limelight.vim
 
 - Distraction-free mode in Vim.

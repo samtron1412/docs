@@ -205,16 +205,21 @@ Append a line at the end of the file: `sed '$ a\sentence' filepath`
 
 
 # find
+
 Lệnh trên tìm tất cả các file có tên là “music” trong toàn bộ hệ thống
+
 `find / –name music`
 
 Tìm các file trong thư mục /home có owned là joe
+
 `find /home -user joe`
 
 Tìm các file trong thư mục /usr kết có tên kết thúc là “stat”
+
 `find /usr -name *stat`
 
 Tìm các file trong thư mục /var/spool đã được hiệu chỉnh trong vòng >60 ngày trước
+
 `find /var/spool –mtime +60`
 
 Tìm các file đã được hiệu chỉnh trong vòng 24h trở lại đây trong thư mục home
