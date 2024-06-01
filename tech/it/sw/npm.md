@@ -170,8 +170,21 @@
 # Packages and Modules
 
 
-# Dependencies
+# Dependency Model
 
+- https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/
+    + Normal dependencies
+        * Isolation dependencies.
+        * Each dependency has its own dependency tree.
+        * Same package with different versions in different locations
+          under `node_modules`
+    + Peer dependencies
+        * Traditional dependencies
+        * A canonical dependency that satisfies everyone's constraint.
+    + They key is to carefully consider what contract your modules have
+      with their dependents. If those contracts involve other packages
+      in any way, they should be peer dependencies. If they don’t, they
+      should be ordinary dependencies.
 - Dependencies for a web application
     + https://silvenon.com/blog/dependencies-or-devdependencies
     + use `dependencies` for all modules included in the bundle and

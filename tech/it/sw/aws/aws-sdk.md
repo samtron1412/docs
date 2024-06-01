@@ -34,6 +34,8 @@
 
 # Configuration
 
+- https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html
+
 ## Introduction
 
 - To interact with AWS service APIs, we need to configure the AWS SDK

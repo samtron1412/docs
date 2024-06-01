@@ -886,6 +886,11 @@ Your primary care provider may refer you to professionals in various specialties
 
 # Tips and Tricks
 
+## Check USCIS cases and verifications
+
+- https://www.uscis.gov/save/save-casecheck
+- https://www.e-verify.gov/
+
 ## Freedom of Information Act (FOIA)
 
 Every citizen can request public documents from U.S. government.

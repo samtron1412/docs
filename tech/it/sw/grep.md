@@ -6,6 +6,14 @@
 - Cheatsheet
     + https://quickref.me/grep
 
+# zgrep
+
+- Search text in `*.gz` compressed files.
+- Search a pattern in many files
+    + `zgrep "DependencyFailureException" $(find . -name "*.gz")`
+    + `zgrep "DependencyFailureException" $(find . -wholename "*/2*.gz")`
+    + `zgrep -A 30 "DependencyFailureException" $(find . -name "*.gz")`
+
 # Tips and Tricks
 
 ## Finding all files containing a text string on Linux

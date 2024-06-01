@@ -38,3 +38,12 @@
 ## When to use @RunWith and when @ExtendWith
 
 - https://stackoverflow.com/questions/55276555/when-to-use-runwith-and-when-extendwith
+
+# Troubleshooting
+
+## Test class should have exactly one public zero-argument constructor
+
+- If you write a non-zero argument constructor for your class then Java
+  will not automatically generate a zero argument constructor for the
+  class anymore, and you have to write a zero-argument constructor for
+  it to work with JUnit.

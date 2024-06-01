@@ -184,7 +184,13 @@ Links
 
 # Networking
 
-TODO
+- Expose vs Publish Ports
+    + Expose in docker file is a form of documentation from the image
+      owner to the image user.
+        * https://docs.docker.com/reference/dockerfile/#expose
+    + Publish in `docker run` CLI is a runtime port binding, this is how
+      we bind a port in a container to a port of the host.
+        * https://docs.docker.com/reference/cli/docker/container/run/#publish
 
 # File System Sharing
 

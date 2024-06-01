@@ -85,6 +85,10 @@ List<String> result = language.filter(x -> x!=null).collect(Collectors.toList())
 List<String> result = language.filter(Objects::nonNull).collect(Collectors.toList());
 ```
 
+## Split stream into multiple streams
+
+- https://www.baeldung.com/java-split-stream
+
 # java.time
 
 - https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html
@@ -186,6 +190,10 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
     + https://blog.developer.atlassian.com/optional-broken/
 - Use optional to reveal intention
     + https://nipafx.dev/intention-revealing-code-java-8-optional/
+- Guava's Optional vs. JDK Optional
+    + https://medium.com/@edouard.kaiser/optional-guava-and-java-8-9d6e7d6147b0
+- Good practices
+    + https://forums.oracle.com/ords/apexds/post/optionals-patterns-and-good-practices-2540
 
 # Monad - Monadic Java
 

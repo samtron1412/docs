@@ -119,8 +119,15 @@ java11
 ```
 
 
+## Find processes that listen to a port and kill them
+
+- https://pimylifeup.com/macos-kill-process-port
+- Find processes that listen to a port
+    + `sudo lsof -i tcp:<port>`
+
 ## Find all ports that are listening
 
+- `sudo lsof -iTCP -sTCP:LISTEN -P`
 - `sudo lsof -iTCP -sTCP:LISTEN -P | grep ssh`
 
 ## Listing all DNS server that are configured

@@ -885,6 +885,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Search for visually selected text
+
+- https://vim.fandom.com/wiki/Search_for_visually_selected_text
+- A Vim script in `.vim/plugin/vsearch.vim`
+
 ## Open a clean/fresh vim session that does not take any custom configurations
 
 - `vim --clean [file]`
@@ -1458,6 +1463,10 @@ set wrap
     + Close Vim and re-open!!!
 
 ## Plugins
+
+- `:h plugin`
+    + Global plugin: `.vim/plugin`
+    + File type plugin: `.vim/ftplugin`
 
 ### Misc
 

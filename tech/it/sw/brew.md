@@ -62,10 +62,14 @@ brew analytics off
       the package has a mechanism to update itself, so brew cask does
       not upgrade the package
 - Install Older Versions of Brew Casks
-    + Go to the Homebrew Cask's GitHub page: https://github.com/caskroom/homebrew-cask
-    + Click `Find file` to find `<package>.rb`: e.g., `mendeley.rb`
+    + Go to the Homebrew Cask's GitHub page: https://github.com/Homebrew/homebrew-cask
+    + Click `Go to file` to find `<package>.rb`: e.g., `mendeley.rb`
     + Find the raw file of the older version
-    + `brew cask install https://raw.githubusercontent.com/ran-dall/homebrew-cask/151f569163295a1b924fb737eb9788dcb9ac263f/Casks/mendeley.rb`
+        * https://raw.githubusercontent.com/Homebrew/homebrew-cask/e400ff0384c874650c6b7f755c1117b207142112/Casks/v/visual-studio-code.rb
+        * Click `Raw` to view the raw file and replace `master` with the
+          commit hash to find the older raw file.
+    + `brew install https://raw.githubusercontent.com/ran-dall/homebrew-cask/151f569163295a1b924fb737eb9788dcb9ac263f/Casks/mendeley.rb --cask`
+
 
 ## Writing a formula ##
 

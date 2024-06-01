@@ -25,8 +25,19 @@
 
 # Famous CVEs
 
-1. [heartbleed][2]
-2. [shellshock][3]
+- Log4Shell
+- [heartbleed][2]
+- [shellshock][3]
+
+## Log4Shell
+
+- https://en.wikipedia.org/wiki/Log4Shell
+- https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+- https://www.cve.org/CVERecord?id=CVE-2021-44228
+- A zero-day vulnerability in Log4j that takes advantage of Log4j's
+  allowing requests to arbitrary LDAP and JNDI servers, allowing
+  attackers to execute arbitrary Java code on a server or other
+  computer, or leak sensitive information.
 
 ## Efail
 

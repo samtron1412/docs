@@ -42,20 +42,55 @@ SSH is organized as three protocols that typically run on top of TCP.
 
 ### `ssh` command to start the client
 
-- https://www.ssh.com/academy/ssh/command
 - `man ssh`
+- https://www.ssh.com/academy/ssh/command
 
 ### OpenSSH Client Configuration
 
-- https://www.ssh.com/academy/ssh/config
 - `man ssh_config`
+- https://sthbrx.github.io/blog/2023/08/04/quirks-of-parsing-ssh-configs/
+    + Very good article to understand SSH config parsing rules.
+- SSH Configuration parsing rules
+    1. For starters, the config is parsed line by line. Leading
+       whitespace (i.e., indentation) is ignored. So, while indentation
+       makes it look like you are configuring properties for a
+       particular host, this isn't quite correct. Instead, the Host and
+       Match lines are special statements that enable or disable all
+       subsequent lines until the next Host or Match.
+        - There is no backtracking; previous conditions and lines are
+          not re-evaluated after learning more about the config later
+          on.
+    2. When a config line is seen, and is active thanks to the most
+       recent Host or Match succeeding, its value is selected if it is
+       the first of that config to be selected. So the earliest place a
+       value is set takes priority.
+        -  Since the first obtained value for each parameter is used,
+           more host-specific declarations should be given near the
+           beginning of the file, and general defaults at the end.
+    3. When `HostName` is set, it replaces the `host` value in `Match`
+       matches. It is also used as the `Host` value during a final pass
+       (if requested).
+        - Host name that is used in `Host` is normally the hostname
+          parameter in command line, but it can be the `HostName` value
+          in the second parsing.
+    4. The last behavior of interest is the `Match final` rule. There
+       are several conditions a Match statement can have, and the final
+       rule says make this active on the final pass over the config.
+        - This will make the configuration to re-parse the second time.
+- Best practices
+    + Having `Match final` at the beginning to always keep the same
+      parsing behavior. Parsing twice.
+    + Putting more host-specific on top, and general defaults at the
+      bottom.
+    + Use `Host` for host-specific, and `Match host` for more general
+      defaults.
 
 ## OpenSSH Server
 
 ### `sshd` server process
 
-- https://www.ssh.com/academy/ssh/sshd
 - `man sshd`
+- https://www.ssh.com/academy/ssh/sshd
 
 ### OpenSSH Server Configuration
 
@@ -66,6 +101,7 @@ SSH is organized as three protocols that typically run on top of TCP.
 ## SSH Keys
 
 - https://www.ssh.com/academy/ssh-keys
+- https://security.stackexchange.com/questions/50878/ecdsa-vs-ecdh-vs-ed25519-vs-curve25519
 
 ## Opening a Terminal on a remote machine through SSH
 
@@ -200,6 +236,11 @@ List key agent managing
 # SSH protocol
 
 - https://www.ssh.com/academy/ssh/protocol
+- SSH algorithms
+    + https://security.stackexchange.com/questions/50878/ecdsa-vs-ecdh-vs-ed25519-vs-curve25519
+    + Key exchange algorithms: DH (Diffie-Hellman) or ECDH
+      (Elliptic Curve Diffie-Hellman)
+    + Signature algorithms: DSA, RSA, ECDSA, Ed25519
 
 # Tips and Tricks
 

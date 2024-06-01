@@ -59,6 +59,16 @@ ObjectMapper mapper = new ObjectMapper();
 mapper.findAndRegisterModules();
 ```
 
+# Tips and Tricks
+
+## Ignore missing properties during Jackson JSON deserialization
+
+- https://stackoverflow.com/questions/20578846/ignore-missing-properties-during-jackson-json-deserialization-in-java
+- `@JsonIgnoreProperties(ignoreUnknown = true)`
+    + https://fasterxml.github.io/jackson-annotations/javadoc/2.9/com/fasterxml/jackson/annotation/JsonIgnoreProperties.html#ignoreUnknown()
+- `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES`
+- `DeserializationFeature.FAIL_ON_MISSING_CREATOR_PROPERTIES`
+
 # Troubleshooting
 
 ## No Creators, like default constructor, exist

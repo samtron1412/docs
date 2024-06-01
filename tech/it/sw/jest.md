@@ -84,6 +84,15 @@
 ## Snapshot Testing (React components, etc.)
 
 - https://jestjs.io/docs/snapshot-testing
+- To update a snapshot
+    + `jest --updateSnapshot`
+    + If you'd like to limit which snapshot test cases get re-generated,
+      you can pass an additional `--testNamePattern` flag to re-record
+      snapshots only for those tests that match the pattern.
+        * `jest --updateSnapshot --testNamePattern abc.test.js`
+- "Obsolete" refers to snapshots or snapshot files, for which no
+  .toMatchSnapshot() exists any more.
+    + https://stackoverflow.com/a/58868037/1683888
 - Image snapshot testing
     + https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54
     + https://stackoverflow.com/questions/54989595/how-do-i-image-snapshot-test-a-react-component-using-html5-canvas

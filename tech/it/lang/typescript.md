@@ -161,6 +161,23 @@
 
 # Reference (Deeper explanation than Handbook)
 
+## Utility Types
+
+- Record type
+    + https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type
+    + Use `Object` as a map
+    + https://howtodoinjava.com/typescript/difference-between-record-and-map/
+    + Differences between `Object` and `Map` in JavaScript
+        * https://stackoverflow.com/questions/18541940/map-vs-object-in-javascript
+    + Good for configurations / static data
+    + Use `Map` for dynamic data (update, modify the data) instead of
+      `Record`
+
+## Enums
+
+- https://www.typescriptlang.org/docs/handbook/enums.html
+- Numeric or string-based enums.
+
 # Tutorials
 
 # Declaration Files

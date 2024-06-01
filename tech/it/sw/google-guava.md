@@ -24,3 +24,16 @@
 # com.google.common.util.concurrent
 
 - https://guava.dev/releases/snapshot-jre/api/docs/com/google/common/util/concurrent/package-summary.html
+
+## RateLimiter
+
+- https://github.com/google/guava/blob/master/guava/src/com/google/common/util/concurrent/RateLimiter.java
+- https://www.baeldung.com/guava-rate-limiter
+
+# Tips and Tricks
+
+## Check a string is not null, not empty, and not blank
+
+```java
+!Strings.nullToEmpty(stringVar).trim().isEmpty()
+```

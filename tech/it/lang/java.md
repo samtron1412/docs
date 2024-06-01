@@ -332,6 +332,13 @@ public ArrayList getKeys() {
       not create a local variable called `firstName` or anything close
       to it, such as `firstNames` or `fName`
 
+#### Numeric literals
+
+- Underscores in numeric literals
+    + https://docs.oracle.com/javase/8/docs/technotes/guides/language/underscores-literals.html
+- In Java SE 7 and later, any number of underscore characters (_) can
+  appear anywhere between digits in a numerical literal.
+
 ### Usage Conventions
 
 #### Class Attributes
@@ -476,6 +483,13 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
 
 ## Serialization and Deserialization
 
+- In memory (RAM), objects are represented as pointers to other places,
+  and some special characteristics for speeding up computation. When we
+  want to store or transfer objects, we need another representation of
+  the objects that can be understood by other machines in the
+  network. Serialization and deserialization are processes to convert
+  the objects between these two representations.
+    + Can be: JSON, XML, binary encoded.
 - https://www.baeldung.com/java-serialization
 - https://www.baeldung.com/java-serialization-approaches
 - https://stackoverflow.com/questions/14011467/java-serialization-alternative-with-better-performance
@@ -487,6 +501,11 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
     + JSON or Ion: human-readable
     + Binary, Java-only format if no humans or long-time storing
 - Fast serialization
+- Custom serializer / deserializer
+    + https://www.baeldung.com/jackson-deserialization
+    + https://stackoverflow.com/questions/19158345/custom-json-deserialization-with-jackson
+- Serialization and deserialization can be used for deep copy objects
+    + https://www.baeldung.com/java-deep-copy
 
 ### Java Serialization API
 
@@ -538,6 +557,10 @@ written for you to use.
 into your code.
 
 ## Variables
+
+- Initial Values of Variables
+    + https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.12.5
+    + https://docs.oracle.com/javase/specs/jls/se22/html/jls-4.html#jls-4.12.5
 
 ### Local variables
 
@@ -1556,6 +1579,23 @@ public class MyClass {
 
 - sort, max, min, reverse, shuffle
 
+## Record classes and Sealed Types
+
+- Algebraic Data Types
+    + In computer programming, especially functional programming and
+      type theory, an algebraic data type (ADT) is a kind of composite
+      type, i.e., a type formed by combining other types.
+    + https://en.wikipedia.org/wiki/Algebraic_data_type
+- Pattern matching
+    + https://openjdk.org/projects/amber/design-notes/patterns/pattern-matching-for-java
+- https://openjdk.org/projects/amber/design-notes/records-and-sealed-classes
+- Record classes
+    + https://openjdk.org/jeps/359
+- Sealed Classes
+    + https://openjdk.org/jeps/360
+- https://nipafx.dev/java-record-semantics/
+- https://stackoverflow.com/questions/61306802/lombok-getter-setter-vs-java-14-record
+
 # Iterators
 
 An Iterator is an object that enables to cycle through a collection,
@@ -2220,7 +2260,22 @@ exists, this will overwrite it.
 
 ## Reflection
 
+- https://www.baeldung.com/java-reflection
+- Java 17: Strongly encapsulate JDK internals
+    + https://openjdk.org/jeps/403
+    + Reflection is restricted, and only explicitly allowed code can be
+      accessed with reflection.
+- Some ways to go with reflection for JDK17+
+    + https://www.reddit.com/r/java/comments/p9ymhb/what_exactly_is_the_reason_for_denying_reflection/
+    + Serialization libraries can have several options:
+        * Use records
+        * Get permission from the relfected class to us it by obtainning
+          a Lookup: https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html
+        * Ask the application for permission to access the reflected
+          classes by declaring its packages as open or specifying
+          `--add-opens` on the command line.
 - [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
+
 
 ## Debug
 
@@ -2260,7 +2315,38 @@ exists, this will overwrite it.
     + AsyncHttpClient
     + Jetty HttpClient
 
+# Monitoring
+
+- `@Timed` annotations
+    + https://www.baeldung.com/timed-metrics-aspectj
+
 # Tips & Tricks
+
+## Different ways to deal with null values
+
+- https://www.baeldung.com/java-avoid-null-check
+- null check
+    + `Objects.requireNonNull()`
+    + Using Guava's Preconditions
+    + Lombok's `@NonNull` annotations or other `@NonNull` annotations
+- Using `Optional` to design better APIs
+
+## Fields vs Parameters to methods
+
+```
+In layman's words:
+
+- methods should have as few arguments as possible ( Martin's Clean Code )
+- one of the features of objects is than they can (and should) have a
+  state
+- non-static methods that don't operate on the object's state,
+  i.e. receive everything as parameters, are not cohesive
+- non-cohesive methods might as well be made static and grouped in an
+  utility class
+
+Again, in my humble opinion non-cohesive methods belong to an utility
+class and not to a class with a domain name.
+```
 
 ## Analyze memory utilization
 
@@ -2272,6 +2358,7 @@ exists, this will overwrite it.
 - Having an instance / class variable vs passing parameters with local
   variables.
     + https://stackoverflow.com/questions/346169/when-to-use-an-object-instance-variable-versus-passing-an-argument-to-the-method
+    + Life time of the data in the variables.
 
 ## Sort a list
 
@@ -2680,6 +2767,15 @@ into valid Java code, as opposed to reconstructing the original code.”
 1. You export source code into jar file. (e.g: use Eclipse to export)
 2. Use decompiler jar file tool to decompile two jar file into source code. (e.g: luyten, jadx, etc.)
 3. Use compare tool to compare content of two source code folder is generated by step 2. (e.g: Beyond Compare tool)
+
+# Troubleshooting
+
+## java.lang.NoSuchMethodError: org.apache.commons.collections.CollectionUtils.size(Ljava/lang/Object;)
+
+- Usually these types of problems occur when there are two versions of
+  org.apache.commons.collections.CollectionUtils on the classpath, a
+  newer one with the method and an older one without, and the
+  classloader non-deterministically loads the old one.
 
 # References
 

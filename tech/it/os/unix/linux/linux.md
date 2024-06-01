@@ -169,6 +169,22 @@ etc. for every process in Linux.
 
 # Knowledge
 
+## Popular environment variables
+
+- `PATH`: executables (e.g. /home/username/bin:/usr/local/bin:/usr/bin:/bin).
+- `MANPATH`: manual pages (e.g. /usr/local/man:/usr/man).
+- `LD_LIBRARY_PATH`: native code libraries (on Linux, in addition to the
+  value of this variable, the lookup path typically contains
+  /usr/local/lib, /usr/lib, /lib and a few others). The name LD comes
+  from dynamic loader, the system component that loads libraries into
+  dynamically linked executables.
+- `PERL5LIB`: Perl libraries
+  (e.g. /usr/local/lib/site-perl:/usr/lib/site-perl:/usr/lib/perl:/usr/share/perl).
+- `PYTHONPATH`: Python libraries
+  (e.g. /usr/local/lib/python:/usr/lib/python:/usr/lib/python2.6).
+- `TCLLIBPATH`: TCL libraries
+  (e.g. /usr/local/lib/tcltk:/usr/lib/tcltk).
+
 ## init process
 
 Dịch vụ đơn lẻ quan trọng nhất trong hệ thống Unix/Linux là init. Nó

@@ -14,6 +14,33 @@
 - [Amazon][amazon]
 - [Goodreads][read]
 
+# Project Management
+
+- https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html
+- https://www.teamgantt.com/blog/raci-chart-definition-tips-and-example
+- The RACI matrix
+    + lists out every task, milestone, or key decision involved in
+      completing a project and
+    + assigns which roles are `Responsible` for each action item, which
+      personnel are `Accountable`, and, where appropriate, who needs to
+      be `Consulted` or `Informed`.
+- `Responsible`: People or stakeholders who do the work. They must
+  complete the task or objective or make the decision. Several people
+  can be jointly Responsible.
+- `Accountable`: Person or stakeholder who is the “owner” of the
+  work. He or she must sign off or approve when the task, objective or
+  decision is complete. This person must make sure that responsibilities
+  are assigned in the matrix for all related activities. Success
+  requires that there is only one person Accountable, which means that
+  “the buck stops there.”
+- `Consulted`: People or stakeholders who need to give input before the
+  work can be done and signed-off on. These people are “in the loop” and
+  active participants.
+- `Informed`: People or stakeholders who need to be kept “in the
+  picture.” They need updates on progress or decisions, but they do not
+  need to be formally consulted, nor do they contribute directly to the
+  task or decision.
+
 # Software development life cycle/process/methodology/model
 
 - In recent years, industry adopted a holistic view of a software

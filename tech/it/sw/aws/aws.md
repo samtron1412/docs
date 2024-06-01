@@ -13,6 +13,7 @@
 
 - https://www.youtube.com/watch?v=uj7Ting6Ckk
 - https://aws.amazon.com/about-aws/global-infrastructure/
+- https://www.rackspace.com/blog/aws-101-regions-availability-zones
 - Global AWS services
     + Amazon CloudFront
     + Amazon Route 53
@@ -151,6 +152,9 @@ aws sts assume-role --role-arn arn:aws:iam::634008152794:role/IibsAdminAccess-DO
       filter resources.
     + You can create tags to categorize resources by purpose, owner,
       environment, or other criteria.
+- Best practices
+    + https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html
+    + Hierarchical, from `highest-level:to-lower-level:lowest-level`
 
 ### Amazon Resource Names  (ARNs)
 
@@ -204,6 +208,10 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 - Fargate vs. ECS vs. EKS
     + https://spot.io/blog/fargate-vs-ecs-comparing-amazons-container-management-services/
+- Load balancer
+    + ALB (Application LB), NLB (Network LB), GLB (Gateway Load
+      Balancer), Global Accelerator
+        * https://youtu.be/p0YZBF03r5A?si=xWEc4pkraUq81BNr
 
 
 # Tips and Tricks

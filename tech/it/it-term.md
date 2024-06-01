@@ -64,6 +64,13 @@ Different Techniques to process an image:
   computation rather than optical processes.
 
 
+## Stateful vs. Stateless
+
+- Stateless means there is no memory of the past. Every transaction is
+  performed as if it were being done for the very first time.
+- Stateful means that there is memory of the past. Previous transactions
+  are remembered and may affect the current transaction.
+
 # Hardware
 
 ## Computer Hardware Engineering
@@ -531,6 +538,30 @@ hier-part   = "//" authority path-abempty
     + Fragments: `#fragment`
         * to request a portion of a page
         * scroll the website to the anchor of the page
+
+## Nominal Type System vs. Structural Type System vs. Duck Typing
+
+- In computer science, a type system is nominal (also called nominative
+  or name-based) if compatibility and equivalence of data types is
+  determined by explicit declarations and/or the name of the types.
+- A structural type system (or property-based type system) is a major
+  class of type systems in which type compatibility and equivalence are
+  determined by the type's actual structure or definition and not by
+  other characteristics such as its name or place of declaration.
+- In computer programming, duck typing is an application of the duck
+  test—"If it walks like a duck and it quacks like a duck, then it must
+  be a duck"—to determine whether an object can be used for a particular
+  purpose.
+    + Structural typing is a static typing system that determines type
+      compatibility and equivalence by a type's structure, whereas duck
+      typing is dynamic and determines type compatibility by only that
+      part of a type's structure that is accessed during runtime.
+
+## Tuple
+
+- In mathematics, a tuple is a finite sequence or ordered list of
+  numbers or, more generally, mathematical objects, which are called the
+  elements of the tuple.
 
 # Computer Science
 

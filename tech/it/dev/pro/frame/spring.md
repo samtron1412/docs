@@ -9,22 +9,34 @@
   platform. Enabling a POJO based programming model.
 
 # Basic Ideas
-Sử dụng một module quản lý các module khác. Dev chỉ cần liên hệ với module quản lý này để gọi các service.
+
+Sử dụng một module quản lý các module khác. Dev chỉ cần liên hệ với
+module quản lý này để gọi các service.
 
 ## Dependency Injection flavor of IoC(Inversion of Control)
-Một thiết kế quản lý các **module** theo chiều dọc, độc lập tương đối với nhau. Các module tách biệt với nhau, không liên quan đến nhau. Mỗi module có một file **interface** cung cấp các api để truy cập đến module đó và một file class hiện thực module đó.
 
-Tăng tính **modularity** và **extensible** của chương trình. Được ứng dụng trong OOP(Object-oriented programming).
+Một thiết kế quản lý các **module** theo chiều dọc, độc lập tương đối
+với nhau. Các module tách biệt với nhau, không liên quan đến nhau. Mỗi
+module có một file **interface** cung cấp các api để truy cập đến module
+đó và một file class hiện thực module đó.
+
+Tăng tính **modularity** và **extensible** của chương trình. Được ứng
+dụng trong OOP(Object-oriented programming).
 
 ----
-When writing a complex Java application, application classes should be as independent as possible of other Java classes to increase the possibility to reuse these classes and to test them independently of other classes while doing unit testing. DI helps in gluing these classes together and same time keeping them independent.
-
+When writing a complex Java application, application classes should be
+as independent as possible of other Java classes to increase the
+possibility to reuse these classes and to test them independently of
+other classes while doing unit testing. DI helps in gluing these classes
+together and same time keeping them independent.
 - **Dependency**: an association between two classes. E.g. class A is dependent on class B
 - **Injection**: all this means is that class B will get injected into class A by the IoC.
 
-DI can happen in the way of passing parameters to the constructor or by post-construction using setter methods.
+DI can happen in the way of passing parameters to the constructor or by
+post-construction using setter methods.
 
 ### The Spring container is at the core of the Spring Framework
+
 The container will create the objects, wire them together (boc chung lai), configure them, and manage their complete lifecycle from creation till destruction.
 
 The Spring container uses dependency injection to manage the components that make up an application. These objects are called **Spring Beans**.
@@ -50,9 +62,14 @@ The Spring container uses dependency injection to manage the components that mak
 #### ...
 
 ## AOP (Aspect-oriented Programming)
-A programming paradigm that aims to increase **modularity** by breaking down program logic into distinct parts (so-called **concerns**, cohesive areas of functionality).
 
-Quản lý các module theo chiều ngang, quản lý việc gọi các module dọc theo qua trình thực thi process, lúc nào cần gọi và sử dụng part nào của logic.
+A programming paradigm that aims to increase **modularity** by breaking
+down program logic into distinct parts (so-called **concerns**, cohesive
+areas of functionality).
+
+Quản lý các module theo chiều ngang, quản lý việc gọi các module dọc
+theo qua trình thực thi process, lúc nào cần gọi và sử dụng part nào của
+logic.
 
 There are various common good examples of aspects including **logging**, **declarative transactions**, **security**, and **caching** etc.
 
@@ -61,6 +78,7 @@ Whereas DI helps you decouple your application objects from each other, AOP help
 The AOP module of Spring Framework allowing you to define **method-interceptors** and pointcuts to cleanly decouple code that implements functionality that should be separated.
 
 # Module
+
 Spring could potentially be a one-stop shop for all your enterprise applications, however, Spring is modular, *allowing you to pick and choose which modules are applicable to you*, without have bring in the rest.
 
 The Spring Framework provides *about 20 modules*.
@@ -98,6 +116,14 @@ Consists of the Web, Web-Servlet, Web-Struts, and Web-Portlet modules:
 - **Test module**: support the testing of Spring components with JUnit or TestNG frameworks.
 
 
+
+# Integration
+
+## JMS (Java Message Service)
+
+- https://docs.spring.io/spring-framework/reference/integration/jms.html
+- https://www.baeldung.com/spring-jms
+- https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-java-message-service-jms-client.html
 
 # Tutorial
 ## Spring Configuartion Metadata:

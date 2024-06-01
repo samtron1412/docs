@@ -39,6 +39,20 @@
 - `--profile <string>`: Use a specific profile from your credential file.
 - `--region <string>`: The region to use. Overrides config/env settings.
 
+# How to use?
+
+## Specify Parameter Values
+
+- JSON
+    + `--option file://value.json`
+- Shorthand
+
+```
+aws ecs update-cluster \
+--cluster IPCSimInventoryTransferServiceTI-EcsCluster-gamma-ClusterEB0386A7-MRWTVrdXp7j5 \
+--configuration 'executeCommandConfiguration={logging=DEFAULT}'
+```
+
 # Lambda
 
 - List all Lambda function that has runtime is Python 3.6

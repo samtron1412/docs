@@ -100,6 +100,10 @@ LEFT JOIN measures ON nutrients.name=measures.name
 - Use a CASE expression to perform complex aggregations
 - Add predicates to your Join tables
 
+# NoSQL
+
+- https://www.youtube.com/watch?v=ruz-vK8IesE
+
 # Tips and tricks
 
 ## Double Quotes vs. Single Quotes

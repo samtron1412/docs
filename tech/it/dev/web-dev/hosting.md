@@ -16,70 +16,11 @@
 
 ## Domain Names
 
-### Introduction
+- Basic concepts and details are in `dns.md`
 
-+ Domain Name Registration: buy domain names from registrar
-+ Domain Name System
-    * Nameservers: which servers are responsible for domain names
-      record requests.
-    * DNS Records
-        - SOA (Start of Authority) records: are configured by the
-          DNS service provider automatically, so we don't need to
-          configure these.
-        - DNS zone records:
-            + Domain
-            + Time to live
-            + Class
-            + Type
-                * A: tie the domain or subdomain to an IPv4 address
-                * AAAA: tie the domain or subdomain to an IPv6 address.
-                * CNAME: tie the domain or subdomain to another domain or subdomain
-                * MX: define how mail is handled for your domain,
-                  including: priority (lower number is higher
-                  priority) and answering mail server domain name.
-                * TXT: associate text data with your domain. Is used
-                  for SPF or DKIM.
-            + Content
+## Certificates
 
-### Domain Name Providers
-
-- https://freedns.afraid.org/
-    + Free with some restrictions, should be used for testing
-- `<less than 10 digits>.xyz`
-    + Less than 1 dollar/year
-- https://tld-list.com/
-- https://sav.com
-    + Cheapest
-- https://porkbun.com/products/domains
-
-### Automatically issue and renew certificates
-
-- https://github.com/acmesh-official/acme.sh
-
-## Reverse Proxy
-
-+ Forward Proxy (or Proxy) vs. Reverse Proxy
-    * Forward Proxy: Acting on behalf of a requestor (or service consumer)
-        - `(X <--> Y) <--> Z`
-            + X: client, Y: forward proxy, Z: server
-        - Sit in front of clients to hide clients from servers.
-        - Why?
-            + Protect clients' only identities
-            + Bypass firewall/restrictions
-            + Block access to certain content
-    * Reverse Proxy: Acting on behalf of service/content producer.
-        - `X <--> (Y <--> Z)`
-            + X: client, Y: reverse proxy, Z: server
-        - Sit in front of servers to hide servers from clients.
-        - In real-file, a system can have multiple layers of reverse
-          proxies: edge servers (CDN), API Gateway/load balancers
-        - Why?
-            + Protect servers
-            + Load balancing
-            + Caching to improve performance
-            + Handles SSL encryption/termination
-    * https://stackoverflow.com/questions/224664/whats-the-difference-between-a-proxy-server-and-a-reverse-proxy-server
-    * https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy
+- More details in `public-key-certificate.md`
 
 ## Host Types
 

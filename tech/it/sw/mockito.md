@@ -12,6 +12,11 @@
 - Documentation
     + https://javadoc.io/doc/org.mockito/mockito-core/3.12.4/org/mockito/Mockito.html
 
+## ArgumentCaptor (Capture Arguments)
+
+- https://www.baeldung.com/mockito-argumentcaptor
+- https://www.javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/ArgumentCaptor.html
+
 ## Mocking UUID or Clock
 
 - https://rieckpil.de/mocking-static-methods-with-mockito-java-kotlin/
@@ -68,6 +73,11 @@ void testGetConsumableQuantity_UnknownLocation_Exception() {
 - https://stackoverflow.com/questions/11620103/mockito-trying-to-spy-on-method-is-calling-the-original-method
     + Using `doReturn(obj).when(spy).method(params)` rather than
       `when(spy.method(params)).thenReturn(obj)`
+
+# verify
+
+- https://www.baeldung.com/mockito-verify
+- https://www.digitalocean.com/community/tutorials/mockito-verify
 
 # Tips and Tricks
 

@@ -1324,10 +1324,36 @@ https://answers.atlassian.com/questions/248517/cloning-svn-to-bitbucket-branches
 
 ### Comparing with arbitrary commits
 
-- `git diff HEAD^ HEAD`: Compare the version before the last commit and
-  the last commit (Show the last commit changes).
-- `git diff HEAD^^ HEAD`: Show the last two commits changes.
+- https://git-scm.com/docs/git-rev-parse#_specifying_revisions
+    + Specifying a revision.
+- `~` is used to go number of generation back
+    + `~` or `~1`: go back 1 generation
+    + `~2`: go back 2 generations
+- `^` is used on merge commits where a commit can have more than 1
+  parent. Hence, looks like forks in a road.
+    + `^` or `^1`: first parent
+    + `^2`: second parent
+    + `^3`: third parent
+- https://git-scm.com/docs/git-rev-parse#_revision_range_summary
+    + Range of revisions.
+
+- `git diff HEAD^ HEAD`: Compare the `HEAD` commit and `HEAD's` first
+  parent.
+- `git diff HEAD^2 HEAD`: Compare the `HEAD` commit and `HEAD's` second
+  parent.
+- `git diff HEAD^^ HEAD`: Compare the `HEAD` commit and `HEAD's` first
+  grandparent.
+    + `HEAD^` is a short hand for `HEAD^1`
+- `git diff HEAD^^^ HEAD`: Compare the `HEAD` commit and `HEAD's` first
+  great grandparent.
+- `git diff HEAD^^^2 HEAD`: Compare the `HEAD` commit and `HEAD's`
+  second great grandparent.
+- `git diff HEAD^^^3 HEAD`: Compare the `HEAD` commit and `HEAD's`
+  second third grandparent.
+
+
 - `git diff HEAD~3 HEAD`: Show the last three commits changes.
+
 - `git diff HEAD -- test.md`: Show the differences between your working
   directory and the most recent commit, but limit the comparison to the
   file `test.md`.
