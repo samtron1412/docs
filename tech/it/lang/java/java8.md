@@ -204,7 +204,7 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
 
 # Concurrency (Concurrent)
 
-- Concurrency vs.  Parallelism
+- Concurrency vs. Parallelism
     + https://jenkov.com/tutorials/java-concurrency/concurrency-vs-parallelism.html
 - Concurrency Models
     + https://jenkov.com/tutorials/java-concurrency/concurrency-models.html

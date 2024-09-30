@@ -53,10 +53,12 @@
 - RE: Reverse Engineering
 - BCD: Binary Coded Decimal
 - GDB: GNU Debugger
-- 
+-
 
 # Glossary
-- Tail call: It is when compiler (or interpreter) transforms recursion (with which it is possible: tail recursion) into iteration for efficiency: [link](http://en.wikipedia.org/wiki/Tail_call. 13)
+- Tail call: It is when compiler (or interpreter) transforms recursion
+  (with which it is possible: tail recursion) into iteration for
+  efficiency: [link](http://en.wikipedia.org/wiki/Tail_call. 13)
 - callee: a function being called by another.
 - caller: a function calling another.
 - compiler intrinsic:  A function specific to a compiler which is not usual library function. Compiler generate a specific machine code instead of call to it. It is often a pseudofunction for specific CPU instruction.

@@ -17,11 +17,14 @@
         * Modems
     + Open Systems Interconnection (OSI) model: conceptual model
         * https://en.wikipedia.org/wiki/OSI_model
-- Books
-    + https://gaia.cs.umass.edu/kurose_ross/index.php
-        * https://cs168.io/
-        * https://www.youtube.com/watch?v=74sEFYBBRAY&list=PL1ya5dD_M8uX-BLUF1FEvUNsYWQL5_l0O
-        * https://www.youtube.com/watch?v=BBzqX08GPo8&list=PLo80JwUm6hSSwGLJmS_quaeJgx9SILLiI
+- Books and courses
+    + UC Berkeley:
+        + https://gaia.cs.umass.edu/kurose_ross/index.php
+            * https://cs168.io/
+            * https://www.youtube.com/watch?v=74sEFYBBRAY&list=PL1ya5dD_M8uX-BLUF1FEvUNsYWQL5_l0O
+            * https://www.youtube.com/watch?v=BBzqX08GPo8&list=PLo80JwUm6hSSwGLJmS_quaeJgx9SILLiI
+        + https://cs268.io/
+    + Stanford: https://cs144.github.io/
     + https://www.amazon.com/TCP-Illustrated-Protocols-Addison-Wesley-Professional-dp-0321336313/dp/0321336313/ref=dp_ob_title_bk
     + Physical layer (lowest level in OSI model)
         * https://artofelectronics.net/

@@ -1,8 +1,17 @@
 [TOC]
 
+# Resources
+
+- UC Berkeley: Introduction to Database Systems
+    + https://cs186berkeley.net/
+    + https://www.youtube.com/playlist?list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge
+
 # Part 1 Introduction to Databases
+
 ## Chapter 1 Databases and Databases Users
+
 ### 1.1 Introduction
+
 A database is **a collection of related data**. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, telephone numbers, and addresses of the people you know.
 - A database represents some aspect of the real world, sometimes called the mini world or the **universe of discourse** (UoD). Changes to the mini world are reflected in the database.
 - A database is a **logically coherent collection** of data with some **inherent meaning**. A **random assortment of data** cannot correctly be referred to as a database.

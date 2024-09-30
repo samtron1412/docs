@@ -90,6 +90,13 @@ installable packages from source using the **makepkg** application. It
 is also possible for users to easily build and maintain their own custom
 repositories..
 
+# Best Practices
+
+- https://wiki.archlinux.org/title/General_recommendations
+- https://wiki.archlinux.org/title/Arch_Linux_Archive
+- Have an offline version of Arch Wiki
+    + https://archlinux.org/packages/?name=arch-wiki-docs
+
 # Community
 
 - [wiki][awiki]

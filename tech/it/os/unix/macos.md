@@ -99,6 +99,17 @@ java11
 - Bookmark: `Cmd + d`
 - Undo bookmark: `Cmd + d, Option + r`
 
+# MacBook Air 13-inch 2017
+
+- Latest macOS that support the machine is Monterey.
+- macOS version history
+    + 10.15: Catalina (2019)
+    + 11: Big Sur (2020)
+    + 12: Monterey (2021)
+    + 13: Ventura (2022)
+    + 14: Sonoma (2023)
+    + 15: Sequoia (2024)
+
 # Tips and Tricks
 
 ## Backup photos and images from phone to computer and external hard drives

@@ -2355,9 +2355,16 @@ exists, this will overwrite it.
 
 # Java Versions
 
+- https://openjdk.org/projects/jdk/
+    + Official list of JEPs
 - https://en.wikipedia.org/wiki/Java_version_history
-- https://howtodoinjava.com/series/java-versions-features/
-- https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features#_java_features_8_17
+    + List of JEPs and support timeline
+- Language changes portion of the new JDK (JDK can contains other
+  changes that are not language changes)
+    + https://docs.oracle.com/en/java/javase/21/language/java-language-changes.html
+- API diff between JDK versions
+    + https://javaalmanac.io/
+
 
 ## Java 8 vs. Java 11
 
