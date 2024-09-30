@@ -595,13 +595,15 @@ Commercially available Freons include:
 - VIN: 5NMJE3AE9NH110134
     + Front wheel drive (4x2 drive type)
 - License Number: TLH-3349
-- Mileage: 7500
-- Windshield wipers:
+- Original Mileage: 7500
+- Windshield wipers: 26" driver side, 16" passenger side
 - Dashcam:
     + Viofo A129 with front and rear cams
     + Viofo A119 V3 (front cam)
 
 ### Maintenance
+
+- Nov 2023
 
 ## Acura - TL - 2003 - 3.2 Base
 
