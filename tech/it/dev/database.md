@@ -411,3 +411,11 @@ MyISAM offers:
 MyISAM has table-level locking, but no row-level locking. No transactions. No automatic crash recovery, but it does offer repair table functionality. No foreign key constraints. MyISAM tables are generally more compact in size on disk when compared to InnoDB tables. MyISAM tables could be further highly reduced in size by compressing with myisampack if needed, but become read-only. MyISAM stores indexes in one file and data in another. MyISAM uses key buffers for caching indexes and leaves the data caching management to the operating system.
 
 Overall I would recommend InnoDB for most purposes and MyISAM for specialized uses only. InnoDB is now the default engine in new MySQL versions.
+
+# Tips and Tricks
+
+## Best Practices for Data Time and Timestamps in Database
+
+- https://www.tinybird.co/blog-posts/database-timestamps-timezones
+- https://stackoverflow.com/questions/11537106/is-it-always-a-good-idea-to-store-time-in-utc-or-is-this-the-case-where-storing
+

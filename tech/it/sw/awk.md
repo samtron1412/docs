@@ -26,4 +26,7 @@ awk -F'\t' '{units_sum[$5]+=$NF}END{for(fc in units_sum)print fc, units_sum[fc]}
 awk -F, 'NR!=1{fc=$3;units=$NF;units_sum[fc]+=units;for(fc in units_sum){print fc, units_sum[fc]}}' AU-2023-03-29.csv | sort > au.txt
 
 awk -F'\t' '{units_sum[$9]+=$11}END{for(fc in units_sum)print fc, units_sum[fc]}' 1 | sort > us-nti.txt
+
+zgrep "Skipping creation of ITSInboundFCAllocationComputer" * | grep "TransferArcs" | awk '{for (i=1; i<=NF; i++) if ($i ~ /ASIN:/) print $(i+1)}'
+zgrep "Skipping creation of ITSInboundFCAllocationComputer" * | grep "TransferArcs" | awk '{for (i=1; i<=NF; i++) if ($i ~ /ASIN:/) { asin=$(i+1); if (!(asin in seen)) { print asin; seen[asin]; fflush(); }}}' >> /tmp/asin_list.txt
 ```

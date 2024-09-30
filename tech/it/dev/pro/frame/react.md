@@ -305,6 +305,8 @@ function Todos() {
   a tree of React components, such as the current authenticated user,
   theme, or preferred language.
     + Can use Context to implement dependency injection for services
+    + https://blog.testdouble.com/posts/2021-03-19-react-context-for-dependency-injection-not-state/
+    + https://dev.to/dansolhan/simple-dependency-injection-functionality-for-react-518j
 - Notes
     + All child components inside of a Provider are re-rendered if the
       value provided to it as a prop changes.
@@ -619,6 +621,8 @@ function Todos() {
     + Can use Higher-Order Components (but cumbersome and hard to
       manage)
 - Context to implement dependency injection
+    + https://blog.testdouble.com/posts/2021-03-19-react-context-for-dependency-injection-not-state/
+    + https://dev.to/dansolhan/simple-dependency-injection-functionality-for-react-518j
 
 ## Error Handling
 

@@ -129,12 +129,21 @@ seminal 1936 paper, *On Computable Numbers*.
 
 # Potential Laptops
 
-- Macbook Air M1 chip
-    + 16 GB RAM, 512 GB SSD: 1259 dollars
-    + M1 chip is superior than i7, or even i9 since CPU, GPU, RAM are
-      all in the same chip tightly integrated.
-- Thinkpad T490
-    + 16 GB RAM, 512 GB SSD: 1299 dollars (Costco)
+- Macbook (using Linux with AsahiLinux - rising sun Linux distro)
+    + Air M1 chip
+        * 16 GB RAM, 512 GB SSD: 1259 dollars
+        * M1 chip is superior than i7, or even i9 since CPU, GPU, RAM are
+          all in the same chip tightly integrated.
+    + Pro
+- Thinkpad
+    + X1 Carbon
+    + Z16
+    + T490
+        * 16 GB RAM, 512 GB SSD: 1299 dollars (Costco)
+- Dell
+    + XPS 13/15
+- Starlabs
+    + https://us.starlabs.systems/
 - System 76:
     + Galapo Pro: 16 GB RAM, 512 GB SSD, i7: 1210 dollars
 

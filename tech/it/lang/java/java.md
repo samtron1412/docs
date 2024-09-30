@@ -624,12 +624,17 @@ classes.
           to recover from an exception, make it a checked exception. If
           a client cannot do anything to recover from the exception,
           make it an unchecked exception.
-    + Checked exceptions
+    + Checked exceptions (Have to handle these exceptions explicitly)
         * https://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
         * A tool for API design
         * A different return mechanism for APIs
         * Using it sparingly, and only when you have some actions to
           recover the exception state.
+        * Users have to handle these exception explicitly which can be
+          annoyed, and many people are trying to remove this restriction
+          by throwing only Unchecked exceptions or by using Lombok's
+          SneakyThrows:
+            - https://projectlombok.org/features/SneakyThrows
 
 ### Introduction
 
@@ -767,6 +772,8 @@ Throwable
 
 ### The try-with-resources statement
 
+- How it is implemented?
+    + https://stackoverflow.com/questions/7860137/what-is-the-java-7-try-with-resources-bytecode-equivalent-using-try-catch-finall
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
 - A resource is an object that must be closed after the program is
   finished with it.
@@ -780,6 +787,10 @@ Throwable
       exception from the try block is suppressed instead. And the
       exception in the finally block is thrown.
 - Only IO resources are required to be closed.
+
+### Throwable `addSuppressed()` method
+
+- https://stackoverflow.com/questions/8946661/jdk-1-7-throwable-addsuppressed-method
 
 ## Threads
 
@@ -1244,6 +1255,17 @@ various configuration data supplied when the application is launched.
       `-classpath/-cp` option in `java` CLI.
     + https://howtodoinjava.com/java/basics/java-classpath/
 
+### JAVA_TOOL_OPTIONS environment variable
+
+- In many environments the command line is not readily accessible to
+  start the application with necessary command-line options.
+    + This often arises with applications that use embedded VMs (meaning
+      they use the Java Native Interface (JNI) Invocation API to start
+      the VM), or where the startup is deeply nested in scripts.
+    + In these environments the JAVA_TOOL_OPTIONS environment variable
+      can be useful to augment a command line.
+- More details in `jvm.md`
+
 # Data Structures
 
 ## Primitive types
@@ -1311,7 +1333,38 @@ Mathematical methods
 
 ## Enum
 
+- https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9
 - https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+- An `enum` declaration specifies a new `enum class`, a restricted kind
+  of class that defines `a small set of named class instances`.
+- `EnumDeclaration`:
+    + `{ClassModifier} enum TypeIdentifier [ClassImplements] EnumBody`
+    + `public enum Mode implements Switchable {...}`
+- `EnumBody`
+    + List of zero or more Enum constants.
+    + Enum body declarations.
+- Implicitly `final` or `sealed`
+    + Therefore, it cannot be subclassed or extended (its methods
+      cannot be overriden)
+- Extends `java.lang.Enum` class
+    + Therefore, it cannot extend other classes due to Java is a single
+      inheritance language.
+- The enum body declarations can contain `abstract` methods
+    + All enum constants must have class bodies that provide concrete
+      implementations of the abstract methods.
+- It can implement one or more interfaces.
+    + Implicitly implement `Comparable` and `Serializable` interfaces
+        * `Serializable`: can use to achieve Singleton pattern
+
+### Practical Usage
+
+- Use cases
+    + https://www.baeldung.com/a-guide-to-java-enums
+    + https://webtechie.be/post/2023-03-22-hidden-beauties-of-java-enums/
+- Simplify Enum code with Lambdas
+    + https://www.reddit.com/r/java/comments/12soujh/comment/jgzw8ww/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+    + https://stackoverflow.com/questions/23361418/lambdas-in-the-classical-operation-enum-example
+
 
 ## String
 
@@ -1961,6 +2014,14 @@ methods.
 #### Static and Default methods in Interfaces
 
 - https://www.baeldung.com/java-static-default-methods
+- Default methods are to provide additional functionality without
+  breaking the existing implementations.
+    + Provide backward compatibility to the existing interface.
+- Default methods in interfaces vs abstract classes
+    + https://www.baeldung.com/java-interface-default-method-vs-abstract-class
+    + Abstract classes: instantiation and constructors, private members,
+      override `Object`'s methods, shared members across subclasses.
+
 
 
 ## Nesting classes
@@ -2275,6 +2336,17 @@ exists, this will overwrite it.
           classes by declaring its packages as open or specifying
           `--add-opens` on the command line.
 - [Using reflection to set attribute](http://stackoverflow.com/questions/14374878/using-reflection-to-set-an-object-property)
+
+
+### Proxy
+
+- Proxies are wrappers that pass function invocation through their own
+  facilities (usually onto real methods underneath the wrapper,
+  potentially, adding some functionality)
+    + Invoke a query to database, and then transform or pre-process the
+      responses before returning the results.
+- https://www.baeldung.com/java-dynamic-proxies
+- https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html
 
 
 ## Debug
@@ -2630,6 +2702,9 @@ desirable result.
 - Lombok
 - Fastutil
     + https://www.baeldung.com/fastutil
+- MapStruct
+    + https://www.baeldung.com/mapstruct
+    + https://mapstruct.org/
 
 ## Working with time, timezone
 

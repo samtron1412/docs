@@ -1,7 +1,7 @@
 # Overview
 
-- https://aravindvasu.dev/2019/introduction-to-aop/
 - https://en.wikipedia.org/wiki/Aspect-oriented_programming
+- https://aravindvasu.dev/2019/introduction-to-aop/
 - AspectJ (Java implementation)
     + https://en.wikipedia.org/wiki/AspectJ
     + https://eclipse.dev/aspectj/doc/released/devguide/index.html

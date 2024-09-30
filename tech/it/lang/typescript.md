@@ -175,6 +175,11 @@
 
 ## Enums
 
+- Enum vs `as const`
+    + Prefer `const x = {} as const` instead
+        * https://www.typescriptlang.org/docs/handbook/enums.html#objects-vs-enums
+    + https://www.youtube.com/watch?v=vBJF0cJ_3G0&t=1012s
+    + https://www.youtube.com/watch?v=jjMbPt_H3RQ
 - https://www.typescriptlang.org/docs/handbook/enums.html
 - Numeric or string-based enums.
 

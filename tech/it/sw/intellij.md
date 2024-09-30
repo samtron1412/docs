@@ -18,7 +18,7 @@
 
 ## Remote development
 
-- CodeWithMe is more stable than SSH development as of 2023-10.
+- CodeWithMe is more stable than SSH development as of 2024-09.
 - For CodeWithMe
     + IdeaVim plugin should only be installed in Client side, disable on
       the host side.

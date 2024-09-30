@@ -382,6 +382,21 @@ Usage: `$ node /bin/http-server`
 
 # Tips and Tricks
 
+## Dollar Sign
+
+- `$` is usually assigned to the jQuery object itself
+    + `window.jQuery = window.$ = jQuery;`
+    + `$(params)`: passing `params` to the jQuery object.
+- Template literal in ES6: `${..}`
+- Usually it's related to jQuery or built-in feature that support by
+  browsers
+    + `$(function() {...});` is equivalent to
+      `$(document).ready(function() {...});`
+        * ensure that the function is called once after all the DOM
+          elements of the page are ready to be used.
+        * https://stackoverflow.com/questions/7642442/what-does-function-do
+        * https://stackoverflow.com/questions/22244823/what-is-the-dollar-sign-in-javascript-if-not-jquery
+
 ## Memory Management
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
@@ -530,6 +545,8 @@ Function.prototype.curry = function() {
 ### Proxy
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
+- Create a proxy for another object, which can intercept and redefine
+  fundamental operations for that object.
 
 ## Expressions and Operators
 

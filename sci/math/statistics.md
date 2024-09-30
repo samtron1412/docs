@@ -175,6 +175,7 @@ from chance is less then 5 percent.
 ## Percentile - p10, p50, p90, etc.
 
 - https://www.dnv.com/article/terminology-explained-p10-p50-and-p90-202611
+- p50 (median) (not average/mean)
 - Exceedance
     + p10: 10% of data points exceed the p10 value.
     + p50: 50% of data points exceed the p50 value.

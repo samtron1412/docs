@@ -14,9 +14,20 @@
 
 # Design Principles
 
+```
+There is a tradeoff between design patterns/principles and code
+complexity, and that was what I was inviting the team to discuss on my
+CR. I think Java developers tend to get carried away with these kinds of
+things, which ends up making code more complicated than necessary and
+results in bugs (for example, when I made the Holder a top-level class
+instead of an inner class).
+```
+
 - SOLID
     + Single responsibility
+        * https://en.wikipedia.org/wiki/Single_responsibility_principle
     + Open to extension closed to modification
+        * https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
     + Liskov substitution
         * https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle
     + Interface segregation
@@ -24,6 +35,10 @@
 - YAGNI (You Aren't Gonna Need It)
     + https://softwareengineering.stackexchange.com/questions/401797/is-there-a-conflict-between-yagni-and-srp
     + https://martinfowler.com/bliki/Yagni.html
+
+## Working effectively with legacy code
+
+## Clean Code
 
 # Creational patterns
 
@@ -178,8 +193,74 @@ particular you cannot do it dynamically at run-time.
 
 ## Visitor
 
+- What
+    + https://en.wikipedia.org/wiki/Visitor_pattern
+    + SOLID: Also good to follow open/closed principle and single
+      responsibility principle when implementing this pattern.
+- When
+    + https://stackoverflow.com/a/478672
+    + Having a relatively fix set of class hierarchy, but the set of
+      methods for the class hierarchy can grow over time or not
+      determined at this moment.
+    + The team develops the class hierarchy (and initial set of
+      supported methods) are different from the team that develops other
+      supported methods.
+        * Third-party libraries!
+    + Works really well for "recursive" structures like directory tress,
+      XML structures, or document outlines.
+        * Hierarchical visitor pattern: more flexible than the classic
+          visitor pattern.
+            - Track the depth of traversal and decide which branch to
+              traverse or stop traversing all together. The classic
+              visitor pattern will visit all nodes.
+        * https://stackoverflow.com/a/255437
+    + Other use cases:
+        * https://stackoverflow.com/a/47968789
+- Examples
+    + https://en.wikipedia.org/wiki/Visitor_pattern#Java_example
+    + https://docs.oracle.com/javase%2Ftutorial%2F/essential/io/walk.html
+    + http://www.artima.com/cppsource/top_cpp_aha_moments.html
+
+```
+In my opinion, the open/closed principle is most important for
+frameworks that are vended to external customers. For example, the JDK
+uses the visitor pattern for traversing a file system tree
+(https://docs.oracle.com/javase%2Ftutorial%2F/essential/io/walk.html).
+
+This is so people can implement whatever operations they want as they
+traverse the tree rather than requiring the JDK to provide all
+implementations (recursively print, delete, etc.) If it is your own
+codebase, it is much easier to simply modify the library to add the
+functionality you need.
+```
 
 # Concurrency patterns
+
+# Enterprise Integration Pattern
+
+- https://martinfowler.com/books/eip.html
+- https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns
+- http://www.enterpriseintegrationpatterns.com/
+    + Up-to-date patterns with current technologies and tools
+- https://www.youtube.com/watch?v=QmaNucXFYd8
+- https://www.amazon.com/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683
+
+# Domain Driven Design
+
+- https://en.wikipedia.org/wiki/Domain-driven_design
+- https://martinfowler.com/bliki/DomainDrivenDesign.html
+- https://www.amazon.com/gp/product/0321125215/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321125215&linkCode=as2&tag=martinfowlerc-20
+- https://www.amazon.com/dp/0321834577
+- https://www.amazon.com/dp/1118714709
+- Command Query Responsibility Segregation (CQRS) and Event Sourcing
+    + https://learn.microsoft.com/en-us/previous-versions/msp-n-p/jj554200(v=pandp.10)?redirectedfrom=MSDN
+
+# Cloud-based Design
+
+- https://learn.microsoft.com/en-us/azure/architecture/
+- https://wa.aws.amazon.com/index.en.html
+    + https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
+    + https://aws.amazon.com/architecture/well-architected
 
 # Other patterns
 
@@ -203,6 +284,12 @@ particular you cannot do it dynamically at run-time.
 - More details in `dependency-injection.md`
 - Instead of inverting the control flow, it inverts the control over
   implementations of dependencies.
+
+# Other related topics
+
+## Polyglot Programming and Polyglot Persistence
+
+- https://martinfowler.com/bliki/PolyglotPersistence.html
 
 # References
 

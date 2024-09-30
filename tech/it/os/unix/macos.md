@@ -101,6 +101,20 @@ java11
 
 # Tips and Tricks
 
+## Backup photos and images from phone to computer and external hard drives
+
+- Connect phone to the computer.
+- Using Finder app or Photos app or Image Capture app
+    + Image Capture app can export / download photos directly from phone
+      to external hard drives.
+    + Finder app and Photos app we need to import to computer before
+      copying to the external hard drives.
+
+## Unzip multiple zip files to the same folder recursively
+
+- Google Takeout zip files:
+    + `ditto -x -k -V takeout-*.zip result 1>unzipped-log.txt 2>&1`
+
 ## Cron jobs
 
 - https://apple.stackexchange.com/questions/402132/cronjobs-do-not-run

@@ -3,7 +3,8 @@
 # Overview
 
 - https://www.digitalocean.com/community/tutorials/log4j2-example-tutorial-configuration-levels-appenders
-- https://logging.apache.org/log4j/2.x/manual/configuration.html
+- https://logging.apache.org/log4j/2.x/manual/config-intro.html
+    + https://logging.apache.org/log4j/2.x/manual/configuration.html
 
 Log4j is a Reliable, Fast and flexible Logging Framework written in Java
 which is distributed under the Apache Software License.
@@ -72,6 +73,7 @@ configuration file or a configuration class.
 
 # Configuration
 
+- https://logging.apache.org/log4j/2.x/manual/config-intro.html
 - https://logging.apache.org/log4j/log4j-2.0/manual/configuration.html
 
 ## Introduction
@@ -122,7 +124,34 @@ logger is the topmost logger with a name of "" (the empty string).
 
 - https://logging.apache.org/log4j/2.x/manual/json-template-layout.html
 
+# API
+
+## Messages
+
+- https://logging.apache.org/log4j/2.x/manual/messages.html
+- Simple message (the following calls are equivalent)
+    + `LOGGER.error("Houston, we have a problem.", exception);`
+    + `LOGGER.error(new SimpleMessage("Houston, we have a problem."), exception);`
+- Parameterized message (the following calls are equivalent)
+    + `LOGGER.error("Unable process user with ID `{}`", userId, exception);`
+    + `LOGGER.error(new ParameterizedMessage("Unable process user with ID `{}`", userId), exception);`
+- Benefits of Parameterized message
+
+| Benefit              | String Concatenation                            | Parameterized Message                         |
+|----------------------|-------------------------------------------------|-----------------------------------------------|
+| Memory Efficiency    | Creates new String objects during concatenation | No object creation unless logged              |
+| Readability          | Can be cluttered with multiple + operations     | Clean, readable syntax with placeholders ({}) |
+| Maintainability      | Complex to maintain and error-prone             | Easy to maintain, fewer code changes needed   |
+| Null Safety          | Needs explicit null handling logic              | Handles null values gracefully                |
+| Internationalization | Difficult with concatenation                    | Simplified with placeholders                  |
+| Error Handling       | Complex, error-prone logic                      | Built-in support for handling errors          |
+
 # Tips and Tricks
+
+## Lazy logging with parameter substitution
+
+- https://logging.apache.org/log4j/2.x/manual/api.html#java-8-lambda-support-for-lazy-logging
+- https://www.baeldung.com/log4j-2-lazy-logging
 
 ## Log performance
 

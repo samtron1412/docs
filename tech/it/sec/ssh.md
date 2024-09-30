@@ -54,16 +54,16 @@ SSH is organized as three protocols that typically run on top of TCP.
     1. For starters, the config is parsed line by line. Leading
        whitespace (i.e., indentation) is ignored. So, while indentation
        makes it look like you are configuring properties for a
-       particular host, this isn't quite correct. Instead, the Host and
-       Match lines are special statements that enable or disable all
-       subsequent lines until the next Host or Match.
+       particular host, this isn't quite correct. Instead, the `Host`
+       and `Match` lines are special statements that enable or disable
+       all subsequent lines until the next Host or Match.
         - There is no backtracking; previous conditions and lines are
           not re-evaluated after learning more about the config later
           on.
     2. When a config line is seen, and is active thanks to the most
-       recent Host or Match succeeding, its value is selected if it is
-       the first of that config to be selected. So the earliest place a
-       value is set takes priority.
+       recent `Host` or `Match` succeeding, its value is selected if it
+       is the first of that config to be selected. So the earliest place
+       a value is set takes priority.
         -  Since the first obtained value for each parameter is used,
            more host-specific declarations should be given near the
            beginning of the file, and general defaults at the end.
@@ -237,10 +237,26 @@ List key agent managing
 
 - https://www.ssh.com/academy/ssh/protocol
 - SSH algorithms
+    + https://security.stackexchange.com/a/211484
     + https://security.stackexchange.com/questions/50878/ecdsa-vs-ecdh-vs-ed25519-vs-curve25519
-    + Key exchange algorithms: DH (Diffie-Hellman) or ECDH
-      (Elliptic Curve Diffie-Hellman)
-    + Signature algorithms: DSA, RSA, ECDSA, Ed25519
+    + Two main components:
+        * The key exchange yields the session key which will be used to
+          encrypt data for that session.
+        * The signature is so that the client can make sure tht it talks
+          to the right server.
+    + Key exchange algorithms:
+        * DH (Diffie-Hellman) or
+        * ECDH (Elliptic Curve Diffie-Hellman)
+            - This uses a *curve*; most software use the standard NIST
+              curve P-256.
+                + Curve25519 is another curve, whose "sales pitch" is
+                  that it is faster, not stronger, than P-256.
+            - Use Curve25519 instead of P-256 because it's not from NSA.
+    + Signature algorithms:
+        * DSA, RSA,
+        * ECDSA, Ed25519
+    + We can use different combination of key exchange algorithms and
+      signature algorithms.
 
 # Tips and Tricks
 
