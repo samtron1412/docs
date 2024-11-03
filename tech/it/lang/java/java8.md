@@ -239,6 +239,11 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
       likely that we gain performance from parallel procesing.
     + Customer thread pool
         * https://stackoverflow.com/questions/21163108/custom-thread-pool-in-java-8-parallel-stream
+    + Thread safety
+        * https://stackoverflow.com/questions/22350288/parallel-streams-collectors-and-thread-safety
+            - It is safe to use a non-concurrent collector in a collect
+              operation of a parallel stream.
+        * https://stackoverflow.com/questions/40238099/is-it-safe-to-use-parallelstream-to-populate-a-map-in-java-8
 - CompletableFuture
     + https://www.youtube.com/watch?v=-MBPQ7NIL_Y
 - Structured Concurrency

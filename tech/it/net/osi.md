@@ -1,5 +1,6 @@
 # Overview
 
+- https://en.wikipedia.org/wiki/OSI_model
 - The Open Systems Interconnection model (OSI model) is a conceptual
   model that 'provide[s] a common basis for the coordination of [ISO]
   standard development from the purpose of system interconnection'.

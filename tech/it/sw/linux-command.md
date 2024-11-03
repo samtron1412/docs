@@ -353,3 +353,7 @@ Remove a variable environment: `unset PATH`
 - Create tbz2 files: `tar pjcf myarchive.tbz2`
 - Extract tbz2 files: `tar jxf myarchive.tbz2`
 - List the contents of tbz2: `tar jtvf myarchive.tbz2`
+
+# tree
+
+- Show tree up to X levels: `tree -L <X>`

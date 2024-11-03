@@ -460,12 +460,13 @@ example: Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMone
 
 ### Environment Variables
 
-- https://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java/496849#496849
-- https://stackoverflow.com/questions/8168884/how-to-test-code-dependent-on-environment-variables-using-junit
+- https://www.baeldung.com/java-unit-testing-environment-variables
 - System stubs
     + https://www.baeldung.com/java-system-stubs
 - Setting environment variables with libraries
     + https://stackoverflow.com/a/35393623/1683888
+- https://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java/496849#496849
+- https://stackoverflow.com/questions/8168884/how-to-test-code-dependent-on-environment-variables-using-junit
 
 ### Test Doubles
 
@@ -1333,6 +1334,9 @@ Mathematical methods
 
 ## Enum
 
+- An enum value is a named constant in a set of values that is defined
+  by an enumeration type, or enum type.
+    + Enum value (named constant) can contain data fields and methods.
 - https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9
 - https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
 - An `enum` declaration specifies a new `enum class`, a restricted kind

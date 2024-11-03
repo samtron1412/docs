@@ -145,6 +145,15 @@
 
 ## Testing
 
+- Listing out all the things that we explicitly or implicitly test in
+  manual testing:
+    + Serialization/deserialization
+    + Functional
+    + etc.
+- Try to automate all of that manual testing as much as possible
+    + Unit tests: serialization/deserialization
+    + Integration tests: end-to-end testing
+
 ## Debugging
 
 ## Deployment

@@ -167,6 +167,15 @@
       wrong with Jest configuration itself. Check mocking configuration
       if the failed tests are caused by mocks.
 
+## Tests are very slow to complete
+
+- https://stackoverflow.com/questions/45087018/jest-simple-tests-are-slow
+
+## Tests consume so much memory: memory leaks
+
+- https://stackoverflow.com/questions/72714054/jest-memory-leak-issue
+- Some times, it only leaks on Linux machines???
+
 ## toThrow does not work on custom Error or throw object
 
 - https://stackoverflow.com/questions/48707111/asserting-against-thrown-error-objects-in-jest

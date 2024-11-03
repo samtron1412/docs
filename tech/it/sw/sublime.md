@@ -4,6 +4,7 @@
 
 Sublime Text is a proprietary text editor with a Python application
 programming interface.
+- https://en.wikipedia.org/wiki/Sublime_Text
 
 # Basic Concepts
 

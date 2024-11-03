@@ -112,6 +112,11 @@ java11
 
 # Tips and Tricks
 
+## Group files on Desktop
+
+- Right click on the desktop
+- Select `Use Stacks`
+
 ## Backup photos and images from phone to computer and external hard drives
 
 - Connect phone to the computer.

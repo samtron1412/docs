@@ -6,9 +6,28 @@
 - https://www.baeldung.com/guice
 - https://www.tutorialspoint.com/guice/guice_linked_binding.htm
 
+# APIs
+
+- https://google.github.io/guice/api-docs/4.2/javadoc/overview-summary.html
+
+## Bindings
+
+- Binder
+    + https://google.github.io/guice/api-docs/4.2/javadoc/com/google/inject/Binder.html
+    + https://google.github.io/guice/api-docs/4.2/javadoc/com/google/inject/binder/package-summary.html
+    + Scoped bindings
+        * Linked bindings
+        * Annotated bindings
+- Multibindings
+    + https://google.github.io/guice/api-docs/4.2/javadoc/com/google/inject/multibindings/package-summary.html
+    + https://github.com/google/guice/wiki/Multibindings
+    + Including Optional bindings
+
 # Override bindings and modules
 
-Overriding bindings and modules in Google Guice can be useful for testing, configuration, and modularity. Here are the various ways to achieve this:
+Overriding bindings and modules in Google Guice can be useful for
+testing, configuration, and modularity. Here are the various ways to
+achieve this:
 
 ## 1. Using Child Injector
 

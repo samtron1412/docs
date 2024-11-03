@@ -22,15 +22,6 @@ Headings from `h1` through `h6` are constructed with a `#` for each level:
 ###### h6 Heading
 ```
 
-Renders to:
-
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
 HTML:
 
 ```html
@@ -627,3 +618,57 @@ With a reference later in the document defining the URL location:
 
 Create a iframe
 <iframe width="420" height="315" src="http://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen></iframe>
+
+# Taking Notes: Note System
+
+Concepts
+- Personal wiki, encyclopedia, notes, etc.
+- https://en.wikipedia.org/wiki/Zettelkasten
+    + https://blog.viktomas.com/posts/slip-box/
+- Classification (Categories) vs. Tags
+    + https://karl-voit.at/2017/04/18/classification/
+        * https://en.wikipedia.org/wiki/Controlled_vocabulary
+        * https://karl-voit.at/2022/01/29/How-to-Use-Tags
+        * https://karl-voit.at/2019/09/25/categories-versus-tags
+    + Tagging: Any chunk of information is associated with one or more
+      tags.
+
+Useful features
+- Syntax highlighting
+- Table support
+- Snippets
+- Links between notes
+    + Backlinks (notes that link to this one)
+- Knowledge graph from notes
+- Local storage
+
+## Vim
+
+- https://github.com/CharlesSchimmel/md-graph
+
+## NeoVim
+
+- https://www.reddit.com/r/neovim/comments/12kek6u/note_taking_with_bidirectional_links_in_neovim/
+- https://github.com/CharlesSchimmel/md-graph
+
+## Sublime Text
+
+## Visual Studio Code
+
+## Emacs
+
+- Org-mode
+    + https://orgmode.org/
+    + https://karl-voit.at/2020/05/03/current-org-files/
+- https://github.com/nobiot/md-roam
+- https://karl-voit.at/2020/06/14/Zettelkasten-concerns/
+
+## Obsidian
+
+- Focus on note taking with Markdown
+- https://obsidian.md/
+    + Links
+    + Graphs
+    + Canvas
+    + Plugins
+

@@ -1214,8 +1214,6 @@ You can write your own credential helper.
 
 # Git and Other Systems
 
-## Git as a Client
-
 ## Migration to Git
 
 ### SVN to Git
@@ -1511,6 +1509,12 @@ git merge remotes/source-remote/mainline --allow-unrelated-histories
 git remote remove tmp
 ```
 
+# Git Clients
+
+- `git` CLI
+- Sublime Merge
+    + https://www.sublimemerge.com/
+
 # Tips and Tricks
 
 ## See the list of commit differences between branches
@@ -1562,6 +1566,14 @@ git rebase --onto "<commit-id>^" <commit-id> HEAD
     git filter-branch --subdirectory-filter <folder> -- --all
     git remote add origin <url>
     git push origin master
+
+## Change author of commit
+
+- Change author of the last commit
+    + `git commit --amend --author "Author Name <email@email.com>"`
+- Other scenarios: not the last commit
+    + https://stackoverflow.com/questions/3042437/how-can-i-change-the-commit-author-for-a-single-commit
+    + Have to rewrite history for this to work.
 
 ## Change timestamp of commit
 

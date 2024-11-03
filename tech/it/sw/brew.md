@@ -76,13 +76,13 @@ brew analytics off
 - Cask language references: https://github.com/Homebrew/homebrew-cask/tree/master/doc
     + Stanzas (variables in a formula): https://github.com/Homebrew/homebrew-cask/tree/master/doc/cask_language_reference/stanzas
 
-# Bundle
+# Bundle (backup and restore)
 
-+ Install
++ Install/Restore
     * `brew bundle`: looking for `Brewfile` in the current directory
       and install all the formulae in the file
     * `brew bundle --file <path/to/a/different/Brewfile>`
-+ Dump
++ Dump/Backup
     * `brew bundle dump`: create a `Brewfile` from all existing
       Homebrew packages at the current directory
     * `brew bundle dump --force`: overwrite an existing Brewfile

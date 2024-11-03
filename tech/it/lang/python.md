@@ -299,14 +299,25 @@ x = q.get()
 
 # Object Oriented Programming (OOP)
 
+- https://realpython.com/python3-object-oriented-programming/
 - https://coreyms.com/development/python/python-oop-tutorials-complete-series
 - https://www.udemy.com/course/object-oriented-python-programming/
 - https://www.datacamp.com/community/tutorials/inner-classes-python
 - super(): https://realpython.com/python-super/
 - hashable objects: https://hynek.me/articles/hashes-and-equality/
     + using `id` of an object
-- is __init__ always needed: https://stackoverflow.com/questions/6854080/is-it-necessary-to-include-init-as-the-first-function-every-time-in-a-class
+- is __init__ always needed:
+    + https://stackoverflow.com/questions/6854080/is-it-necessary-to-include-init-as-the-first-function-every-time-in-a-class
     + No
+
+
+## Type Checking
+
+- https://realpython.com/python-type-checking/
+
+## Inheritance
+
+- https://www.w3schools.com/python/python_inheritance.asp
 
 # pyenv
 

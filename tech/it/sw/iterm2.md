@@ -4,6 +4,18 @@
 
 # Tips and Tricks
 
+## Add and edit Snippets
+
+- Preferences > Shortcut > Snippets
+    + Add/remove/export/import snippets
+- Use `Toolbelt` to display Snippets
+    + Select `Snippets` under Toolbelt
+    + Use shortcut to open the toolbelt
+- Edits > Snippets
+    + Use snippets
+- Configure the status bar of the profiles to send snippets
+    + Preferences > Profiles > Session > Status bar enabled > Configure status bar > Send Snippet
+
 ## Starting tmux automatically
 
 - iterm2 > Preferences > Profiles > Default > General > Command

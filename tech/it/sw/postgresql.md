@@ -15,7 +15,7 @@
 	+ `sudo -u postgres psql <db name>`
 	+ `\password <role name>`
 - Search role to know  commands work with database role
-- 
+-
 
 ## Chapter 1 - Getting started
 ### 1.1 - [Installation](http://www.postgresql.org/download/)
@@ -252,11 +252,74 @@ A role's attributes can be modified after creation with **ALTER ROLE**.
 ### 20.3 - Role Membership
 It is frequently convenient to group users together to ease management of privileges: that way, privileges can be granted to, or revoked from, a group as a whole. In PostgreSQL this is done by creating a role that represents the group, and then granting membership in the group role to individual user roles.
 
-# IV - Client interfaces
-libpq
+# CLI - psql
 
-# V - Server programming
-Trigger, Procedural, etc/
+## Set up connection to your databases
 
-# VI - Internals
+- Check the PostgreSQL engine version that running on our Aurora RDS
+  instance:
+    + Run a select query on the cluster:
+        * PostgreSQL version: `select version();`
+        * Aurora version: `select aurora_version();`
+    + Go to RDS AWS Console to check this.
+        * RDS -> Databases -> `ips-na-prod1` -> Configuration -> Engine version
+    + As of 2024-10, it's 14.6 version
+- Install PostgreSQL client on Cloud Desktop
+    + `brew install postgresql@14`
+- Create a `~/.pgpass` file with the password and connection configuration
+- Create a `~/.psqlrc` file with the PostgreSQL client configuration
+    + Sample rc files:
+        * https://gist.github.com/jaytaylor/e5aa89c8f3aaab3f576f
+- Add aliases to your `.shellrc` file for psql commands.
 
+```
+i just have the pgpass set up, so my pgpass file:
+
+  ips-na-prod1.cluster-ro-cxhgq4wcopdu.us-east-1.rds.amazonaws.com:8200:ips1na:booker_ro:booker_ro
+  ips-na-prod1.cluster-cxhgq4wcopdu.us-east-1.rds.amazonaws.com:8200:ips1na:booker:amazon#789
+  ips-eu-prod1.cluster-ro-cuqbnimdgye6.eu-west-1.rds.amazonaws.com:8200:ips1eu:booker_ro:booker_ro
+  ips-eu-prod1.cluster-cuqbnimdgye6.eu-west-1.rds.amazonaws.com:8200:ips1eu:booker:amazon#789
+  ips-fe-prod1.cluster-ro-cgqddkcdf1ai.us-west-2.rds.amazonaws.com:8200:ips1eu:booker_ro:booker_ro
+  ips-fe-prod1.cluster-cgqddkcdf1ai.us-west-2.rds.amazonaws.com:8200:ips1eu:booker:amazon#789
+  simulation-analytics.cf7yo7k5vzpz.us-east-1.redshift.amazonaws.com:8192:ipc_sim_analytics:ipc_sim_system_user:1pcS1mu5Er
+
+and then my cmd is aliased:
+
+  alias psqlna='psql -h ips-na-prod1.cluster-ro-cxhgq4wcopdu.us-east-1.rds.amazonaws.com -d ips1na -p 8200 --user booker_ro'
+  alias psqlnaw='psql -h ips-na-prod1.cluster-cxhgq4wcopdu.us-east-1.rds.amazonaws.com -d ips1na -p 8200 --user booker'
+  alias psqleu='psql -h ips-eu-prod1.cluster-ro-cuqbnimdgye6.eu-west-1.rds.amazonaws.com -d ips1eu -p 8200 --user booker_ro'
+  alias psqleuw='psql -h ips-eu-prod1.cluster-cuqbnimdgye6.eu-west-1.rds.amazonaws.com -d ips1eu -p 8200 --user booker'
+  alias psqlfe='psql -h ips-fe-prod1.cluster-ro-cgqddkcdf1ai.us-west-2.rds.amazonaws.com -d ips1fe -p 8200 --user booker_ro'
+  alias psqlfew='psql -h ips-fe-prod1.cluster-cgqddkcdf1ai.us-west-2.rds.amazonaws.com -d ips1fe -p 8200 --user booker'
+
+
+
+the w ones are writer instances, i think i broke my reader for na by renaming one of the pgpass lines but the rest should be fine (edited)
+
+also set up a psqlrc file which gives me some nice stuff on queries like time taken per query, some coloring, larger history, and separate histories per db -
+
+  \set HISTSIZE 100000
+  \set HISTFILE ~/.psql_history- :USER - :HOST - :PORT - :DBNAME
+  \setenv PAGER 'less -SFi'
+  \pset null '(null)'
+  \set PROMPT1 '%[%033[1;31m%]%M:%>%[%033[1;32m%] %n@%/%R%[%033[0m%]%# '
+  \set PROMPT2 :PROMPT1
+  \set PROMPT3 '>> '
+  \set HISTCONTROL ignoredups
+  \timing
+```
+
+## CLI User Guide
+
+- Official User guide:
+    + https://www.postgresql.org/docs/current/app-psql.html
+- Tutorial and cheatsheet
+    + https://tomcam.github.io/postgres/
+- Common operations in psql shell
+        * Meta commands
+    + `\e`: invoke the editor to write the query
+    + `\l`: list all the databases
+    + `\d`: list all tables in the current database
+    + `\d <table_name>`: list out the table structure/definition
+    + `\x`: ???
+    + `Ctrl + r`: search history for query

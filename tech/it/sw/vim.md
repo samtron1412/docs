@@ -885,6 +885,16 @@ filetype plugin on
 
 # Tips and Tricks
 
+## `myvim` - A script to a portable bundle of my Vim environment
+
+- https://github.com/junegunn/myvim
+    + https://github.com/junegunn/myvim/blob/master/myvim
+- This can be used to create a executable file to run on any servers to
+  have the exact same Vim environment as your personal Vim environment.
+- `myvim` creates a tar archive of your .vimrc and .vim directory and
+  append it to a small bash script that starts Vim with your usual
+  settings and plugins.
+
 ## Search for visually selected text
 
 - https://vim.fandom.com/wiki/Search_for_visually_selected_text
@@ -1657,8 +1667,7 @@ nmap <Leader>at <Plug>(ale_toggle)
 nmap <Leader>aT <Plug>(ale_toggle_buffer)
 ```
 
-
-### markdown-preview.nvim
+#### markdown-preview.nvim
 
 ```vim
 """" markdown-preview.nvim mapping
@@ -2715,6 +2724,8 @@ Overview of which map command works in which mode.  More details below.
 
 ## Improve performance ##
 
+- Resources
+    + https://vi.stackexchange.com/questions/10249/what-is-the-difference-between-mapped-key-sequences-and-key-codes-timeoutl#answer-10284
 - Syntax highlighting
     + Slow because of using regular expressions
     + Change regex engine: `:h regexpengine`

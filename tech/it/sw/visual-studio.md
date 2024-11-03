@@ -4,6 +4,10 @@
 
 # Tips and Tricks
 
+## Render Whitespaces
+
+- `Cmd + Shift + P` then type `Render Whitespace`
+
 ## Display a dynamically allocated array in the debugger
 
 Yes, simple. say you have: `char *a = new char[10];`

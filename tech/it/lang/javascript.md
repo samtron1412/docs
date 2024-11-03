@@ -89,6 +89,19 @@
     + where `||` returns the right side for all falsy left side values,
       `??` only return the right side if the left side is `null` or
       `undefined`.
+- Examples:
+
+```JavaScript
+const foo = null ?? 'default string';
+console.log(foo);
+// Expected output: "default string"
+
+const baz = 0 ?? 42;
+console.log(baz);
+// Expected output: 0
+
+const val = obj.x.y ?? 0;
+```
 
 # Code pattern
 
@@ -404,6 +417,13 @@ Usage: `$ node /bin/http-server`
     + Traverse from roots (global objects), mark all reachable objects
       from roots.
     + Sweep all non-reachable objects
+
+## clone
+
+- https://medium.com/@tiagobertolo/which-is-the-best-method-for-deep-cloning-in-javascript-are-they-all-bad-101f32d620c5
+- Avoid JSON cloning: `JSON.parse(JSON.stringify(obj))` due to data loss
+- Lodash deepClone or other libraries
+- Write your own clone method.
 
 ## lodash vs. built-ins
 

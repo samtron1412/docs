@@ -2,6 +2,8 @@
 
 # Overview
 
+- https://en.wikipedia.org/wiki/Computer_terminal
+- https://en.wikipedia.org/wiki/Terminal_emulator
 A computer terminal is an electronic or electromechanical hardware
 device that is used for **entering data into, and displaying data
 from,** a computer or a computing system.

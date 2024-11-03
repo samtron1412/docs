@@ -3,7 +3,6 @@
 # Overview
 
 - http://ant.apache.org/
-- https://jenkov.com/tutorials/ant/ant-tutorial.html
 
 Apache Ant is a Java based build tool from Apache Software Foundation.
 - Apache Ant's build files are written in XML and they take advantage of
@@ -25,6 +24,13 @@ Features
 - It was originally used to build Tomcat, and was bundled as a part of
   Tomcat distribution.
 - Ant was promoted as an independent project in Apache in the year 2000.
+
+# User Manual and Tutorials
+
+- https://ant.apache.org/manual/index.html
+- Tutorials
+    + https://jenkov.com/tutorials/ant/ant-tutorial.html
+    + https://www.vogella.com/tutorials/ApacheAnt/article.html
 
 # Build Files
 
@@ -162,6 +168,14 @@ buildversion=3.3.2
 ## Tasks
 
 - https://ant.apache.org/manual/Tasks/
+
+### taskdef and typedef
+
+- https://ant.apache.org/manual/Tasks/taskdef.html
+    + Refer to `typedef` for details
+    + https://ant.apache.org/manual/Tasks/typedef.html
+- Adds a task definition to the current project, such that this new task
+  can be used in the current project.
 
 ### copy
 

@@ -52,7 +52,8 @@ SELECT ...
 # Joins
 
 - https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-join-left-join-right-join-and-full-join
-- Left Join vs Inner Join
+- LEFT [OUTER] JOIN vs INNER JOIN
+    + LEFT JOIN == LEFT OUTER JOIN
     + INNER JOIN results contain rows that have pair on both sides
     + The result of LEFT JOIN shall be the same as the result of INNER
       JOIN + we’ll have rows, from the “left” table, without a pair in
@@ -62,7 +63,7 @@ SELECT ...
       pair on both sides, and you’ll use LEFT JOIN when you need all
       records from the “left” table, no matter if they have pair in the
       “right” table or not.
-- Cross Join
+- CROSS JOIN
     + If you’ll need all records from both tables, no matter if they
       have pair.
 

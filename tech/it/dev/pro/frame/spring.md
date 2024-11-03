@@ -126,13 +126,16 @@ Consists of the Web, Web-Servlet, Web-Struts, and Web-Portlet modules:
 - https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-java-message-service-jms-client.html
 
 # Tutorial
-## Spring Configuartion Metadata:
+
+## Spring Configuration Metadata
+
 There are following three important methods to provide configuration metadata to the Spring Container:
 1. XML based configuration file.
 2. Annotation-based configuration
 3. Java-based configuration.
 
 ###  XML based configuration file.
+
 (search string `http://www.springframework.org/schema/beans` in project to show all file config), usually at `WebContent/WEB-INF` directory.
 
 + **Bean config file**
@@ -213,6 +216,7 @@ it will specify annotation base configuration. First, Spring will scan context f
 
 
 ## Spring Bean
+
 The objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is **instantiated**, **assembled**, and otherwise **managed by a Spring IoC container**. These beans are created with the configuration metadata that you supply to the container, for example, in the form of XML <bean/> definitions which you have already seen in previous chapters.
 
 The bean definition contains the information called configuration metadata which is needed for the container to know the followings:
@@ -235,9 +239,18 @@ All the above configuration metadata translates into a set of the following prop
 | destruction method       | A callback to be used when the container containing the bean is destroyed.                                                                           |
 
 ### Spring Bean Scope
-When defining a bean in Spring, you have the option of declaring a scope for that bean. For example, to force Spring to produce a new bean instance each time one is needed, you should declare the bean's scope attribute to be prototype. Similar way if you want Spring to return the same bean instance each time one is needed, you should declare the bean's scope attribute to be singleton.
 
-The Spring Framework supports following five scope, three of which are available only if you use a web-aware ApplicationContext.
+When defining a bean in Spring, you have the option of declaring a scope
+for that bean.
+- For example, to force Spring to produce a new bean instance each time
+  one is needed, you should declare the bean's scope attribute to be
+  prototype.
+- Similar way if you want Spring to return the same bean instance each
+  time one is needed, you should declare the bean's scope attribute to
+  be singleton.
+
+The Spring Framework supports following five scope, three of which are
+available only if you use a web-aware ApplicationContext.
 
 | Scope          | Description                                                                                        |
 | -              | -                                                                                                  |
@@ -248,9 +261,16 @@ The Spring Framework supports following five scope, three of which are available
 | global-session | Definition to a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext. |
 
 #### The singleton scope
-If scope is set to singleton, the Spring IoC container creates exactly one instance of the object defined by that bean definition. This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object.
 
-The default scope is always singleton however, when you need one and only one instance of a bean, you can set the scope property to singleton in the bean configuration file, as shown below:
+If scope is set to singleton, the Spring IoC container creates exactly
+one instance of the object defined by that bean definition.
+- This single instance is stored in a cache of such singleton beans, and
+  all subsequent requests and references for that named bean return the
+  cached object.
+
+The default scope is always singleton however, when you need one and
+only one instance of a bean, you can set the scope property to singleton
+in the bean configuration file, as shown below:
 
 	<!-- A bean definition with singleton scope -->
 	<bean id="..." class="..." scope="singleton">
@@ -272,6 +292,11 @@ The life cycle of a Spring bean is easy to understand. When a bean is **instanti
 
 Though, there is lists of the activities that take place behind the scenes between the time of bean Instantiation and its **destruction**
 
+
+### Declare Spring Bean in Spring Configuration
+
+- `MethodInvokingFactoryBean`
+- `factory-bean` combined with `factory-method`
 
 ## Spring Dependency Injection
 When writing a complex Java application, application classes should be as independent as possible of other Java classes to increase the possibility to reuse these classes and to test them independently of other classes while doing unit testing. **Dependency Injection** (or sometime called **wiring**) helps in gluing these classes together and same time keeping them independent.

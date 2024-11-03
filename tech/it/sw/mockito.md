@@ -7,6 +7,13 @@
     + https://www.baeldung.com/mockito-exceptions
 - https://www.arhohuttunen.com/junit-5-mockito/
 
+# Mockito and Java 17+ (Strong Encapsulation)
+
+- https://github.com/mockito/mockito/releases/tag/v5.0.0
+- How Mockito works?
+    + https://medium.com/@gorali/how-mockito-works-7d3a2c77da71
+    + Using ByteBuddy and Objenesis libraries
+
 # Mockito 3.x
 
 - Documentation
@@ -27,6 +34,20 @@
 - https://wttech.blog/blog/2020/mocking-static-methods-made-possible-in-mockito-3.4.0/
 
 ```java
+// Without arguments
+@Test
+void givenStaticMethodWithNoArgs_whenMocked_thenReturnsMockSuccessfully() {
+    assertThat(StaticUtils.name()).isEqualTo("Baeldung");
+
+    try (MockedStatic<StaticUtils> utilities = Mockito.mockStatic(StaticUtils.class)) {
+        utilities.when(StaticUtils::name).thenReturn("Eugen");
+        assertThat(StaticUtils.name()).isEqualTo("Eugen");
+    }
+
+    assertThat(StaticUtils.name()).isEqualTo("Baeldung");
+}
+
+// With arguments
 @Test
 void givenStaticMethodWithArgs_whenMocked_thenReturnsMockSuccessfully() {
     assertThat(StaticUtils.range(2, 6)).containsExactly(2, 3, 4, 5);
