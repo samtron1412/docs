@@ -345,6 +345,85 @@ prevention tips are:
 - Keep windows closed during high pollen and mold seasons. Use the air
   conditioner in your car and home (HEPA filter).
 
+## Skin Diseases or Conditions
+
+### Eczema
+
+- Eczema, also called atopic dermatitis, is an inflammatory skin
+  condition that causes a dry, itchy rash.
+    + It can occur on the face, elbows, knees, hands, and feet.
+    + Eczema is not contagious.
+    + It is a chronic skin condition that comes and goes, i.e., it can
+      get better or worse at times.
+- Numular eczema
+    + a red rash and coin-shaped or oval patches on the skin.
+    + Nummular eczema and ringworm can appear very similar and be
+    confused with each other because both cause a circular red rash and
+    itchy skin.
+- The exact cause of eczema is unknown but it is believed to be a
+  combination of genetic and environmental factors. Substances that
+  irritate the skin can trigger eczema flares.
+- Risk factors for eczema include a personal or family history of
+  eczema, hay fever, or asthma.
+
+#### Prevention
+
+- Eczema flares can be prevented by moisturizing often, using mild
+  skincare products, and having a humidifier in your room.
+
+#### Treatments
+
+- Treating eczema involves avoiding triggers, using mild soap, and
+  keeping the skin well moisturized. Repeated scratching can lead to
+  secondary skin infections, so you should avoid scratching.
+- Strong Moisturizers
+    + Eucerin
+- Steroid cream: 1% hydrocortisone cream
+
+### Fungal infection
+
+- Fungal infections are skin infections caused by fungi.
+- Common fungal infections include ringworm (athlete’s foot, jock itch)
+  and candidiasis.
+    + Ringworm, also called tinea, is a highly contagious fungal
+      infection that can occur on the scalp (tinea capitis); the body
+      including the upper chest, arms, and legs (tinea corporis); the
+      hands and feet (tinea manus and tinea pedis); the fingernails and
+      toenails (tinea unguium); and the groin (tinea cruris). It is
+      called ringworm because this fungus causes a circular, red, itchy,
+      scaly rash.
+    + Cutaneous candidiasis is a fairly common skin infection caused by
+      candida fungi. It can occur on any part of the body but is common
+      in warm, moist areas with skin creases such as the groin and
+      armpits. Candida yeast infections are not contagious, although
+      people with weakened immune systems can sometimes catch the
+      infection through skin to skin contact.
+- You can prevent fungal infections by keeping your skin clean, washing
+  your hands after contact with other people, not sharing towels or
+  razors with others, and wearing shoes or slippers in public showers,
+  locker rooms, and swimming pools.
+
+#### Treatments
+
+- It is possible to treat ringworm and candida with over-the-counter
+  antifungal creams like terbinafine (Lamisil AT), clotrimazole
+  (Lotrimin AF), miconazole (Cruex), and ketoconazole (Xolegel). You
+  typically need to use these antifungal medications for 2-4 weeks. If
+  the infection does not go away or gets worse, you should seek
+  professional medical care from a healthcare provider who can make an
+  accurate diagnosis and prescribe the right treatment, including
+  stronger antifungal medications, such as griseofulvin (Grifulvin),
+  itraconazole (Sporanox), and fluconazole (Diflucan), if needed.
+
+### Scabies (benh ghe)
+
+- Scabies is a contagious skin condition caused by a parasitic mite that
+  burrows into the skin.
+- No over the counter treatment
+    + Meet your doctor to get prescription treatments.
+        * Medicated cream (5% permethrin)
+        * Lotion and pill to kill the mites and eggs
+
 ## ADHD
 
 ## OCD

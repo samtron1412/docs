@@ -108,10 +108,13 @@ Plugins available that will extend or add new functionality to Vim.
 
 ## Copy and paste
 
-- Copy to clipboard
+- Copy to clipboard and paste from clipboard (this is much faster than
+  using C+v to paste from outside clipboard to vim)
     + Using registers
         * X11's primary register: `"*y`, `"*p`
         * X11's clipboard register: `"+y`, `"+p`
+    + Disable `CMD/CTRL + v` on terminal or operating system or at Vim
+      configuration to prevent accidentally using normal pasting.
 - Configuration at `.vimrc` : `xnoremap p pgvy` it mean *p* will replay
   with *pgvy*, *p* to paste and *go* to re-select what was originally
   selected, *y* to copy it again.

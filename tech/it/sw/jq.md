@@ -11,6 +11,11 @@
 
 + Use `cat file.json | jq '. | tostring'` to convert a JSON to a string.
 
+## Format or sort JSON files
+
+- Format: `jq . file.json > formatted.json`
+- Sort: `jq -S . largeFile1.json > sorted1.json`
+
 ## Escaped JSON string to JSON
 
 - Use `fromjson` builtin to transform escaped JSON string to JSON:

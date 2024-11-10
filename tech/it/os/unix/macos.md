@@ -9,6 +9,15 @@ Mac OS
 - Enter a directory: `Cmd + Down arrow`
 - To the parent directory: `Cmd + Up arrow`
 - To expand / collapse a directory: `Cmd + Right/Left arrow`
+- Toggle showing hidden files in Finder: `Cmd + Shift + .`
+
+## Swap / Remap keys using software
+
+- Karabiner-Elements software can help with this.
+- Typical remaps:
+    + escape : grave_accent_and_tilde
+    + caps_lock : escape
+    + left_option : left_command (and vice versa)
 
 # Tuning Mac
 
@@ -111,6 +120,11 @@ java11
     + 15: Sequoia (2024)
 
 # Tips and Tricks
+
+## Application Preferences are stored in
+
+- `~/Library/Preferences`
+    + `~/Library/Preferences/com.googlecode.iterm2.plist`
 
 ## Group files on Desktop
 

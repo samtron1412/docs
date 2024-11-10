@@ -25,6 +25,8 @@
 ## Tmux Resurrect
 
 - https://github.com/tmux-plugins/tmux-resurrect
+- `ctrl+b, ctrl+s`: save
+- `ctrl+b, ctrl+r`: restore
 
 # Cheatsheet
 

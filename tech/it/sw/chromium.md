@@ -16,6 +16,10 @@
 
 - https://wiki.archlinux.org/index.php/Chromium/Tips_and_tricks
 
+## Install on macOS
+
+- `brew install chromium --no-quarantine`
+
 ## Copy curl commands for files under `Network` tab in Developer Tools
 
 - Open developer tools.

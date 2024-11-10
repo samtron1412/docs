@@ -16,16 +16,39 @@
 - https://code.visualstudio.com/docs/editor/tasks
 - Integrate with external tools via Tasks.
 
-# Shortcuts
+## Keyboard shortcuts (key bindings/mappings)
 
-- macOS
-    + `shift + cmd + p`: search commands
-    + `cmd + p`: search files, `:` go to line, `@` go to symbols
-    + `shift + cmd + .`: dropdown for the last breadcrumb
-    + `shift + cmd + ;`: select the last breadcrumb without dropdrown
-    + `shift + cmd + o`: navigate between symbols inside a file
-    + `cmd + t`: open symbols by names across files
-    + `cmd + f12`: jumping to the implementation of the symbol
+### macOS
+
+- Open the keyboard shortcuts view
+    + `Cmd+Shift+P` and search for keyboard shortcuts
+    + `Cmd+K,Cmd+S`
+- `Option+Cmd+K` to record keys or type the search phrase: `"cmd+b"`
+
+### Useful shortcuts or feature to know
+
+- Toggle side bar/panel view: `Cmd+b`
+- Toggle bottom bar/panel view: `Cmd+j`
+- Toggle minimap
+- `shift + cmd + p`: search commands
+- `cmd + p`: search files, `:` go to line, `@` go to symbols
+- `shift + cmd + .`: dropdown for the last breadcrumb
+- `shift + cmd + ;`: select the last breadcrumb without dropdrown
+- `shift + cmd + o`: navigate between symbols inside a file
+- `cmd + t`: open symbols by names across files
+- `cmd + f12`: jumping to the implementation of the symbol
+
+## Zen mode with less distraction
+
+- To toggle Zen mode: `Cmd + K, Z`
+- Zen mode can be configured in Preferences
+    + `Cmd + ,`, search for `zen mode`
+    + Good setting: center layout, full screen, hide activity bar (side
+      bar), show line numbers, show status bar, restore, show tabs: none
+
+## Render Whitespaces
+
+- `Cmd + Shift + P` then type `Render Whitespace`
 
 # Tips and tricks
 

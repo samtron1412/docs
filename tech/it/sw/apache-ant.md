@@ -184,3 +184,12 @@ buildversion=3.3.2
 ### junit
 
 - https://ant.apache.org/manual/Tasks/junit.html
+
+# APIs
+
+## Task
+
+- Base class for all tasks:
+    + https://ant.apache.org/manual/api/org/apache/tools/ant/Task.html
+        * `void execute()`: called by the project to let the task do its
+          work.

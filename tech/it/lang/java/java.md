@@ -744,7 +744,7 @@ Throwable
 - https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions
 - Catch `RuntimeException` or more specific Exceptions
 - You can catch internal exception and then rethrow a new external
-  exception for users / clients, but DO NOT just catch the exception,
+  exception for upper layers, but DO NOT just catch the exception,
   DO NOT log it and then rethrow the same exception.
     + Log and then rethrow the same exception will log the exception's
       messages twice.
@@ -758,6 +758,15 @@ Throwable
       extends built-in Java exceptions (e.g., RetryableException, etc.)
     + The `Message` should contain some additional information that the
       upper layers do not have access to these data.
+- Logging and throwing the exception are useful in implementing APIs
+  (application boundary, communicating through APIs).
+    + By throwing the exception, we allow the caller to handle it, and
+      by logging, we can identify the root cause of it ourselves.
+    + No duplicated logs since the logs are different between server and
+      client
+        * Server: contains as much information as possible.
+        * Client: only less descriptive exception message that let them
+          know what failed and how to fix it.
 - Catch and handle the exceptions at higher layers where you know how to
   deal with the exceptions
     + Throw early (fail-fast) and catch late
