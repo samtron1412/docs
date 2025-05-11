@@ -5,7 +5,9 @@
 
 
 # Installation
+
 ## From source
+
 - Install required dependencies
 		yum install make gcc automake zlib-devel bison cmake libtool wget gcc-c++ unzip ncurses-devel openssl-devel pcre-devel libxml2-devel curl-devel gd-devel libxslt-devel apr-util-devel
 - Get source: `https://archive.apache.org/dist/httpd/`
@@ -198,27 +200,59 @@ Create a script `/etc/init.d/httpd`
 
 
 # Request life cycle
+
 Think of it like this:
 
-**DNS** is the *phone directory/yellow pages*. When someone wants to call your phone, they can look up your name and get your phone number and call that phone. DNS does the same but for computers - when someone wants to go to `www.example.com` they ask DNS for the IP address and then they can contact the computer that has that IP address. That is what **resolve** means. Resolving an IP address has nothing at all to do with Apache; it is strictly a DNS question.
+**DNS** is the *phone directory/yellow pages*. When someone wants to
+call your phone, they can look up your name and get your phone number
+and call that phone. DNS does the same but for computers - when someone
+wants to go to `www.example.com` they ask DNS for the IP address and
+then they can contact the computer that has that IP address. That is
+what **resolve** means. Resolving an IP address has nothing at all to do
+with Apache; it is strictly a DNS question.
 
-The `ServerName` and `ServerAlias` is more like **a company's internal phone list**. Your webserver is the switchboard; it will accept all incoming connections to the server. Then the client/caller will tell them what name they're looking for, and it will look in the Apache configuration for how to handle that name.
+The `ServerName` and `ServerAlias` is more like **a company's internal
+phone list**. Your webserver is the switchboard; it will accept all
+incoming connections to the server. Then the client/caller will tell
+them what name they're looking for, and it will look in the Apache
+configuration for how to handle that name.
 
-If the name isn't listed as a ServerName/ServerAlias in the apache configuration, apache will always give them the **first VirtualHost listed**. Or, if there's **no VirtualHost at all, it will give the same content no matter what hostname is given in the request**.
+If the name isn't listed as a ServerName/ServerAlias in the apache
+configuration, apache will always give them the **first VirtualHost
+listed**. Or, if there's **no VirtualHost at all, it will give the same
+content no matter what hostname is given in the request**.
 
 ETA: So, step by step for a normal connection:
 
 1. You type "http://www.example.com" into your browser.
-2. Your computer asks its DNS resolver which IP address it should use when it wants to talk to www.example.com.
-3. Your computer connects to that IP address, and says that it wants to talk to www.example.com (that's the Host:header in HTTP).
-4. The webserver looks at its configuration to figure out what to do with a request for content from www.example.com. Any one of the following may happen:
-- www.example.com is listed as a ServerName or ServerAlias for a VirtualHost - if so, then it will use the configuration for that VirtualHostto deliver the content.
-- The server doesn't have any VirtualHosts at all - if so, then it will use the configuration in its httpd.conf to deliver the content.
-- The server has VirtualHosts but www.example.com isn't listed in any of them - if so, the first Virtualhost in the list will be used to deliver the content.
+2. Your computer asks its DNS resolver which IP address it should use
+   when it wants to talk to www.example.com.
+3. Your computer connects to that IP address, and says that it wants to
+   talk to www.example.com (that's the Host:header in HTTP).
+4. The webserver looks at its configuration to figure out what to do
+   with a request for content from www.example.com. Any one of the
+   following may happen:
+
+- www.example.com is listed as a ServerName or ServerAlias for a
+  VirtualHost - if so, then it will use the configuration for that
+  VirtualHostto deliver the content.
+- The server doesn't have any VirtualHosts at all - if so, then it will
+  use the configuration in its httpd.conf to deliver the content.
+- The server has VirtualHosts but www.example.com isn't listed in any of
+  them - if so, the first Virtualhost in the list will be used to
+  deliver the content.
 
 # Configuration
+
 ## VirtualHost
-The term Virtual Host refers to the practice of running more than one web site (such as **company1.example.com** and **company2.example.com**) on a single machine. Virtual hosts can be "IP-based", meaning that you have a different IP address for every web site, or "name-based", meaning that you have multiple names running on each IP address. The fact that they are running on the same physical server is not apparent to the end user.
+
+The term Virtual Host refers to the practice of running more than one
+web site (such as **company1.example.com** and **company2.example.com**)
+on a single machine. Virtual hosts can be "IP-based", meaning that you
+have a different IP address for every web site, or "name-based", meaning
+that you have multiple names running on each IP address. The fact that
+they are running on the same physical server is not apparent to the end
+user.
 
 [Examples](https://httpd.apache.org/docs/2.2/vhosts/examples.html)
 

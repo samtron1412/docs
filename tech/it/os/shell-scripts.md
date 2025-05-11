@@ -17,6 +17,14 @@ section for detailed steps.
 - Using `z*` commands
     + https://www.cyberciti.biz/tips/decompress-and-expand-text-files.html
 
+# Find unique strings
+
+```sh
+#!/bin/bash
+# Read the input file, remove duplicates, and write to an output file
+sort input.txt | uniq > output.txt
+```
+
 # Rename multiple files
 
 - https://linuxconfig.org/how-to-rename-multiple-files-on-linux

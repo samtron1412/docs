@@ -252,9 +252,11 @@ A role's attributes can be modified after creation with **ALTER ROLE**.
 ### 20.3 - Role Membership
 It is frequently convenient to group users together to ease management of privileges: that way, privileges can be granted to, or revoked from, a group as a whole. In PostgreSQL this is done by creating a role that represents the group, and then granting membership in the group role to individual user roles.
 
-# CLI - psql
+# CLI
 
-## Set up connection to your databases
+## psql
+
+### Set up connection to your databases and configure psql CLI
 
 - Check the PostgreSQL engine version that running on our Aurora RDS
   instance:
@@ -309,17 +311,36 @@ also set up a psqlrc file which gives me some nice stuff on queries like time ta
   \timing
 ```
 
-## CLI User Guide
+### CLI User Guide
 
 - Official User guide:
     + https://www.postgresql.org/docs/current/app-psql.html
 - Tutorial and cheatsheet
     + https://tomcam.github.io/postgres/
 - Common operations in psql shell
-        * Meta commands
-    + `\e`: invoke the editor to write the query
-    + `\l`: list all the databases
-    + `\d`: list all tables in the current database
-    + `\d <table_name>`: list out the table structure/definition
-    + `\x`: ???
-    + `Ctrl + r`: search history for query
+    * Meta commands
+        + `\e`: invoke the editor to write the query
+        + `\l`: list all the databases
+        + `\d`: list all tables in the current database
+        + `\d <table_name>`: list out the table structure/definition
+        + `\x`: ???
+        + `Ctrl + r`: search history for query
+
+### vim key bindings for sql
+
+- https://unencumberedbyfacts.com/2016/01/04/psql-vim-happy-face/
+- Create `~/.inputrc` file with the content
+
+```
+set editing-mode vi
+set keymap vi-command
+```
+
+## vim-dadbod-ui
+
+- https://github.com/kristijanhusak/vim-dadbod-ui
+    + Auto complete: https://github.com/kristijanhusak/vim-dadbod-completion
+- A Vim plugin to connect to databases
+- URL for PostGresQSQL
+    + `postgresql://[user[:password]@][netloc][:port][/dbname][?extra=value[&other=other-value]]`
+    + `postgresql://booker:testpw@ips-na-prod1.cluster-link.us-east-1.rds.amazonaws.com:8200/ips1na`

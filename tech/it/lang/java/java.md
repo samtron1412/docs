@@ -2101,8 +2101,15 @@ Cons
 - Higher learning curves how to use it since no conventions
 
 - POJOs vs JavaBean
-    + https://www.baeldung.com/java-pojo-class
+    + `https://www.baeldung.com/java-pojo-class`
+    + POJO
+        * When we talk about a POJO, what we’re describing is a
+          straightforward type with no references to any particular
+          frameworks. A POJO has no naming convention for our properties
+          and methods.
     + JavaBean adds some conventions
+        * Specifications for JavaBean
+            - https://download.oracle.com/otn-pub/jcp/7224-javabeans-1.01-fr-spec-oth-JSpec/beans.101.pdf
         * Access levels – our properties are private and we expose getters and setters
         * Method names – our getters and setters follow the getX and setX convention (in the case of a boolean, isX can be used for a getter)
         * Default Constructor – a no-argument constructor must be present so an instance can be created without providing arguments, for example during deserialization
@@ -2414,13 +2421,16 @@ exists, this will overwrite it.
 
 # Tips & Tricks
 
-## Different ways to deal with null values
+## Different ways to deal with null values (null check)
 
 - https://www.baeldung.com/java-avoid-null-check
 - null check
     + `Objects.requireNonNull()`
+        * https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#requireNonNull(T)
     + Using Guava's Preconditions
     + Lombok's `@NonNull` annotations or other `@NonNull` annotations
+        * https://projectlombok.org/features/NonNull
+        * https://codemia.io/knowledge-hub/path/which_notnull_java_annotation_should_i_use
 - Using `Optional` to design better APIs
 
 ## Fields vs Parameters to methods

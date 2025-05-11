@@ -5,6 +5,7 @@
     + Dev guide: https://dagger.dev/dev-guide/
     + Tutorial: https://dagger.dev/tutorial
     + API: https://dagger.dev/api/latest
+    + Missing guide: https://zhuinden.medium.com/that-missing-guide-how-to-use-dagger2-ef116fbea97
 - Videos
     + Intro to Dagger 2: https://www.youtube.com/watch?v=oK_XtfXPkqw
     + Basic tutorial (good to have a basic overview how to use Dagger 2)

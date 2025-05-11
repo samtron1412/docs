@@ -124,15 +124,11 @@
 
 # Handbook
 
-## Modules
+## The Basics
 
-- https://www.typescriptlang.org/docs/handbook/modules.html
-- https://www.typescriptlang.org/tsconfig#module
-- https://nodejs.org/api/esm.html
-- https://nodejs.org/api/modules.html
-- https://nodejs.org/api/packages.html
+- https://www.typescriptlang.org/docs/handbook/2/basic-types.html
 
-## Types
+## Everyday Types
 
 ### Type Assertions
 
@@ -144,7 +140,17 @@
 - https://2ality.com/2020/04/typing-functions-typescript.html
 - https://stackoverflow.com/questions/29689966/how-to-define-type-for-a-function-callback-as-any-function-type-not-universal
 
+## Narrowing
+
+- https://www.typescriptlang.org/docs/handbook/2/narrowing.html
+
+## More on Functions
+
+- https://www.typescriptlang.org/docs/handbook/2/functions.html
+
 ## Object Types
+
+- https://www.typescriptlang.org/docs/handbook/2/objects.html
 
 ### Index Signatures
 
@@ -158,6 +164,24 @@
 - It is possible to support both types of indexers, but the type
   returned from a numeric indexer must be a subtype of the type returned
   from the string indexer.
+
+## Type Manipulation
+
+### Conditional Types
+
+- https://www.typescriptlang.org/docs/handbook/2/conditional-types.html
+
+## Classes
+
+- https://www.typescriptlang.org/docs/handbook/2/classes.html
+
+## Modules
+
+- https://www.typescriptlang.org/docs/handbook/modules.html
+- https://www.typescriptlang.org/tsconfig#module
+- https://nodejs.org/api/esm.html
+- https://nodejs.org/api/modules.html
+- https://nodejs.org/api/packages.html
 
 # Reference (Deeper explanation than Handbook)
 
@@ -193,6 +217,76 @@
 
 
 # Tips and tricks
+
+## Get all possible key path of an object type
+
+- https://dev.to/pffigueiredo/typescript-utility-keyof-nested-object-2pa3/comments
+
+```typescript
+type NestedKeyOf<T, K = keyof T> = K extends keyof T & (string | number)
+  ? `${K}` | (T[K] extends object ? `${K}.${NestedKeyOf<T[K]>}` : never)
+  : never;
+```
+
+OR
+
+```typescript
+type NestedKeyOf<ObjectType extends object> ={
+    [Key in keyof ObjectType & (string | number)]: ObjectType[Key] extends object
+        ? `${Key}` | `${Key}.${NestedKeyOf<ObjectType[Key]>}`
+        : `${Key}`
+}[keyof ObjectType & (string | number)];
+```
+
+- Infer the value type and update the field dynamically
+
+```typescript
+// Recursively building the key paths of a type T.
+type KeyPath<T, K = keyof T> = K extends keyof T & (string | number)
+  ? `${K}` | (T[K] extends object ? `${K}.${KeyPath<T[K]>}` : never)
+  : never;
+
+// Infer the value type from the key paths of a type T.
+type ValueType<T, P extends string> = P extends `${infer Key}.${infer Rest}` // Split the key path
+  ? Key extends keyof T // Check if the first segment is a valid key
+    ? T[Key] extends Array<infer ElementType> // If it's an array
+      ? Rest extends `${number}.${infer NestedRest}` // Handle array indexing and nested access
+        ? ValueType<ElementType, NestedRest>
+        : Rest extends `${number}` // Handle array indexing
+          ? ElementType
+          : ValueType<T[Key], Rest> // Handle non-array nested access
+      : ValueType<T[Key], Rest> // Handle non-array objects
+    : never // If the key doesn't exist, the path is invalid
+  : P extends keyof T // If there are no dots, resolve directly
+    ? T[P]
+    : never;
+
+type Action<T, R> = {
+  type: R;
+  keyPath: KeyPath<T>;
+  value: ValueType<T, KeyPath<T>>;
+}
+
+function updateNestedProperty<T>(
+  obj: T,
+  path: KeyPath<T>,
+  value: ValueType<T, typeof path>
+): T {
+  const keys = path.split('.');
+  const [key, ...rest] = keys;
+
+  if (!key) {
+    return value as T; // Type assertion for the final value
+  }
+
+  return {
+    ...obj,
+    [key]: rest.length > 0
+      ? updateNestedProperty(obj[key], rest.join('.') as KeyPath<T[keyof T]>, value as ValueType<T[keyof T], KeyPath<T[keyof T]>>)
+      : value,
+  };
+}
+```
 
 ## How to overload functions?
 

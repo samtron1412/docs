@@ -256,6 +256,11 @@ Today, maybe one device can handle multiple functionalities
 - Mesh wifi
     + https://www.reddit.com/r/HomeNetworking/comments/ikwtef/wds_mesh_or_what_else/
 
+## Satellite Network
+
+- SpaceX Starlink (2021)
+- Amazon Kuiper
+
 # WAN & LAN
 
 1. Phân biệt việc kêt nối mạng cho wifi router vào port WAN hay port LAN

@@ -1517,6 +1517,21 @@ set wrap
     + https://github.com/tpope/vim-sleuth
 
 
+### vim-dadbod-ui
+
+- https://github.com/kristijanhusak/vim-dadbod-ui
+    + Auto complete: https://github.com/kristijanhusak/vim-dadbod-completion
+        * Key mapping: `<C-Space>` or Omnifunc `<C-x><C-o>`
+- A Vim plugin to connect to databases (PostgresSQL, RDS, etc.)
+- `:DBUI`: open the UI drawer on the left side
+    + `?` to open help
+- Also need to install database CLI for each database that we want to
+  connect to, for example `psql` for PostGreSQL.
+- URL for PostGresQSQL
+    + `postgresql://[user[:password]@][netloc][:port][/dbname][?extra=value[&other=other-value]]`
+    + `postgresql://booker:testpw@ips-na-prod1.cluster-link.us-east-1.rds.amazonaws.com:8200/ips1na`
+    + `postgresql://booker:amazon#789@ips-eu-prod1.cluster-cuqbnimdgye6.eu-west-1.rds.amazonaws.com:8200/ips1eu`
+
 ### vim-easymotion
 
 - vim-easymotion: https://github.com/easymotion/vim-easymotion

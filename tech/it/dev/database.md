@@ -421,6 +421,19 @@ MyISAM has table-level locking, but no row-level locking. No transactions. No au
 
 Overall I would recommend InnoDB for most purposes and MyISAM for specialized uses only. InnoDB is now the default engine in new MySQL versions.
 
+# Tools
+
+## ERD (Entity Relational Diagram) tools
+
+- DataGrip
+    + https://www.jetbrains.com/help/datagrip/creating-diagrams.html
+    + We can view and export to file or live servers, but it feels laggy
+      and unresponsive for a large schema database
+- https://dbdiagram.io/home
+- https://sqldbm.com/Home/
+- https://schemaspy.org/ (should test this out)
+    + https://github.com/schemaspy/schemaspy
+
 # Tips and Tricks
 
 ## Best Practices for Data Time and Timestamps in Database

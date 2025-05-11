@@ -305,6 +305,31 @@ $('#employeeTable').DataTable({
 
 Please visit here for full options: https://datatables.net/reference/option/
 
+# JavaScript Modules
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+- https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+- JS programs started off pretty small
+    + Isolated scripting tasks, providing a bit of interactivity to your
+      web pages.
+- Complex projects necessitate a mechanism for splitting JS programs
+  into separate modules that can be imported when needed.
+    + Libraries and frameworks that enable module usage:
+        * CommonJS and AMD-based module systems: RequireJS
+        * webpack
+        * Babel
+    + Node.js
+- All modern browsers support module features natively without needing
+  transpilation.
+    + Browsers can optimize loading of modules, making it more efficient
+      than having to use a library and do all of that extra client-side
+      processing and extra round trips.
+    + It does not obsolete bundlers like webpack
+        * Bundlers still do a good job at partitioning code into
+          reasonably sized chunks, and are able to do other
+          optimizations like minification, dead code elimination, and
+          tree-shaking.
+
 # JavaScript engine
 
 - A JavaScript engine is a computer program which interprets and executes
@@ -313,7 +338,6 @@ Please visit here for full options: https://datatables.net/reference/option/
 - Although there are several uses for a JavaScript engine, it is most
   commonly used in web browsers
 - Popular engines
-    +
 
 ## Active projects
 
@@ -393,7 +417,27 @@ Usage: `$ node /bin/http-server`
 
 # [List of languages that compile to JavaScript][list]
 
+# Linting and Formatting
+
+- Requirements
+    + Should be built into the build process to make sure it always run
+      for everyone regardless of their IDEs and settings.
+- ESLint vs Prettier
+    + https://prettier.io/docs/en/comparison
+    + Prettier: formating rules: max-len, no-mixed-spaces-and-tabs,
+      comma-style, etc.
+    + ESLint: code-quality rules: no-unused-vars, no-extra-bind,
+      no-implicit-globals, etc.
+
 # Tips and Tricks
+
+## Fuzzy Search
+
+- https://github.com/leeoniya/uFuzzy/tree/main
+- https://github.com/farzher/fuzzysort/tree/master
+- https://github.com/krisk/fuse
+- https://github.com/bevacqua/fuzzysearch/tree/master
+- https://github.com/bevacqua/horsey
 
 ## Dollar Sign
 
@@ -539,6 +583,11 @@ Function.prototype.curry = function() {
 
 ## Built-in objects
 
+### null vs undefined
+
+- Use null when you want to explicitly represent "no value."
+- Let JavaScript use undefined for uninitialized variables or missing properties.
+
 ### Promise
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
@@ -604,7 +653,8 @@ Function.prototype.curry = function() {
 + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
 + export object: https://stackoverflow.com/questions/34619640/what-is-the-best-way-to-export-an-object-literal-with-es6-2015
     * Destructuring a default export object: https://stackoverflow.com/questions/43814830/destructuring-a-default-export-object
-+ Why using default exports? https://stackoverflow.com/questions/46913851/why-and-when-to-use-default-export-over-named-exports-in-es6-modules
++ Why using default exports?
+    * https://stackoverflow.com/questions/46913851/why-and-when-to-use-default-export-over-named-exports-in-es6-modules
 + PREFER NAMED EXPORTS INSTEAD OF DEFAULT EXPORTS
     * Can export many things
     * Import the same name (only change names with `as` if it's

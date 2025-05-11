@@ -112,6 +112,12 @@ brew analytics off
 - `mas version`
 
 
+# Mise vs Homebrew
+
+- https://atske.com/2024/07/mise-vs-homebrew/
+- Mise is useful to install multiple programming language versions.
+- https://mise.jdx.dev/getting-started.html
+
 # Tips and Tricks #
 
 - Remove a package with its dependencies:

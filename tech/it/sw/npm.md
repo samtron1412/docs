@@ -221,7 +221,7 @@ you can run gulp locally using:
 
 ## Sort package.json
 
-- `npx sort-package-json`
+- `bbe ./bin/npx sort-package-json`
 
 ## Update dependencies
 

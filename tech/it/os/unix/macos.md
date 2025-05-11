@@ -121,6 +121,10 @@ java11
 
 # Tips and Tricks
 
+## Configure memu bar (top of screen)
+
+- Go to Settings, then Control Center
+
 ## Application Preferences are stored in
 
 - `~/Library/Preferences`

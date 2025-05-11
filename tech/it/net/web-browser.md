@@ -33,6 +33,7 @@
     + https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
     + Stores data only for a session, meaning that the data is stored
       until the browser (or tab) is closed.
+        * Refresh/reload tabs does not clear this data.
     + Data is never transferred to the server.
     + Storage limit is larger than a cookie (at most 5MB as of 2023).
     + Only support string data structure.

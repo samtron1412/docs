@@ -48,6 +48,12 @@ Some use cases: https://mariusschulz.com/blog/fast-searching-with-ripgrep
 - Much faster than `grep`
 - Search a string in a file: `rg "string" a.file`
 - Search each string in each line in a file in another larger file:
-    + `rg -F -f pattern-file large-file`
+    + Treat each line as fixed strings rather than regular expression
+        * `rg -F -f pattern-file large-file`
+        * `rg --fixed-strings --file pattern-file large-file`
+    + Regular expression
+        * `rg -f pattern-file large-file`
 - Only show matched patterns (not the whole line) `-o`
     + `rg -Fo -f pattern-file large-file`
+- Only show unique results
+    + `rg -Fo -f pattern-file large-file | sort | uniq`

@@ -141,7 +141,11 @@
 - https://stackoverflow.com/questions/66492412/how-to-run-jest-tests-with-coverage-for-one-file
 
 - `npm run test -- <test-file> --collectCoverageFrom=<source-file>`
+    + `npm test <test-file> -- --collectCoverageFrom=<source-file>`
 - `npm run test -- src/api/ApiHelper/__tests__/ApiHelper.test.ts --collectCoverageFrom=src/api/ApiHelper/ApiHelper.ts`
+    + `npm test src/api/ApiHelper/__tests__/ApiHelper.test.ts -- --collectCoverageFrom=src/api/ApiHelper/ApiHelper.ts`
+- The `coverage/index.html` is now only showing the coverage of the that
+  only test file.
 
 ## Run a single test file
 
@@ -166,6 +170,34 @@
     + If multiple tests across test files are failing, then something is
       wrong with Jest configuration itself. Check mocking configuration
       if the failed tests are caused by mocks.
+
+## ReferenceError: Request is not defined (RouterProvider, etc.)
+
+- Need to mock fetch or Request object
+
+### Mock fetch (more general)
+
+- https://stackoverflow.com/a/74791368
+- Install `jest-fetch-mock` and add the following to your
+  `setupTests.ts`
+
+```typescript
+import { enableFetchMocks } from 'jest-fetch-mock';
+enableFetchMocks();
+```
+
+### Mock Request object
+
+```typescript
+// react-router-dom uses Remix router and since
+// Remix router is failing for some reason around the Request obj
+global['Request'] = jest.fn().mockImplementation(() => ({
+  signal: {
+    removeEventListener: jest.fn(),
+    addEventListener: jest.fn(),
+  },
+}));
+```
 
 ## Tests are very slow to complete
 

@@ -5,6 +5,11 @@ List of words.
 
 # Words
 
+## Diatomaceous Earth
+
+Diatomaceous earth is made from the fossilized remains of tiny, aquatic
+organisms called diatoms.
+
 ## competent - adjective - /ˈkɒm pɪ tənt/
 - having enough skill or knowledge to do something to a satisfactory standard.
 	+ I don't feel competent to give an opinion at the moment.

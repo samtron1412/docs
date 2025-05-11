@@ -1470,6 +1470,9 @@ setup an app-specific password.
 # git-filter-repo: History rewriting tools and libraries
 
 - https://github.com/newren/git-filter-repo
+- Install
+    + macOS or Linux (using Home brew)
+        * `brew install git-filter-repo`
 
 ## Applications
 
@@ -1479,24 +1482,60 @@ setup an app-specific password.
 - Remove files/directories from history.
 - Modify / Update history
 
+## Filter Git histories for certain files and directories
+
+- https://stackoverflow.com/a/59832729
+    + There is a `git-filter.sh` script in `pri-scripts` repository to
+      use.
+- This can be done first, and then combine with the next section, we can
+  move these files and histories to a new repository.
+    + So first, filter Git history for files and directories.
+    + Then move these files and directories to new repository.
+
 ## Move files/directories to another existing repository.
 
 - https://stackoverflow.com/a/61917589
-- https://stackoverflow.com/a/59832729
+- After the previous step of `Filter Git histories` above, we can merge
+  or rebase that filtered history to the new repository.
+- There are 3 or 2 time records associated with each commit:
+    + Author time: when the change was originally authored/created.
+        * Remains unchanged even if the commit is amended or rebased.
+    + Commit time: when the commit was last modified
+        * Changes when you amend a commit or rebase
+        * Represents when the commit was actually added to the
+          repository.
+    + Push time (non-native to Git, supported in some Git platforms such
+      as GitHub/GitLab): time when the commit is pushed to the remote.
+- Merge will not change both author time and commit time, but rebase
+  will change commit time.
+    + So prefer Merge over Rebase whenever it's possible (sometimes, you
+      can use merge because you don't want to change history)
 
-In order to move `source_project/sub/dir` to `destination_project/sub/dir`:
+### Merge
+
+- In order to move `source_project/sub/dir` to `destination_project/sub/dir`:
+- Steps:
+    + Filter the old_repo git history using `git-filter-repo` for
+      selected files and directories.
+    + add the old repository/branch as a remote
+    + fetch old_repo/branch
+    + merge remotes/old_repo/mainline and mainline
+    + push normally or send out code review and merge later
 
 1. Create a new repo containing only the subdirectory:
 
-```
+```sh
 git clone URL source_project
 cd source_project
 git filter-repo --path sub/dir
+
+# OR using git-filter in pri-scripts/bin
+git-filter -n source_project -k keep-file.txt
 ```
 
 2. Merge the new repo:
 
-```
+```sh
 git clone URL destination_project
 cd ../destination_project
 
@@ -1509,6 +1548,24 @@ git merge remotes/source-remote/mainline --allow-unrelated-histories
 git remote remove tmp
 ```
 
+### Rebase
+
+- Can introduce multiple commits with same commit messages in the
+  history if many files shared one commit in the history (such as the
+  first commit to create the repository)
+- Steps:
+    + Filter the old_repo git history using `git-filter-repo` for
+      selected files and directories.
+    + add the old repository/branch as a remote
+    + fetch old_repo/branch
+    + create a new branch track old_repo/branch
+    + rebase the new branch and mainline
+    + checkout mainline and merge the new branch with it
+    + push normally or send out code review and merge later
+
+```sh
+```
+
 # Git Clients
 
 - `git` CLI
@@ -1516,6 +1573,20 @@ git remote remove tmp
     + https://www.sublimemerge.com/
 
 # Tips and Tricks
+
+## Ignoring mass reformatting commits with git blame
+
+- https://akrabat.com/ignoring-revisions-with-git-blame/
+- `git config blame.ignoreRevsFile .git-blame-ignore-revs`
+- https://git-scm.com/docs/git-config#Documentation/git-config.txt-blameignoreRevsFile
+
+```
+# Run code through black
+825ba00bb95c0a9bb801ccb4c6dd74ec7b59b59e
+
+# Resolve various style issues
+a6aff6bf8da21a4e6377238ae95b3c9bb941d655
+```
 
 ## See the list of commit differences between branches
 

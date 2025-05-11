@@ -2,22 +2,42 @@
 
 - An agnostic user interface library
     + `agnostic`: is used in many different environment such as browser
-      (react-dom), server, ...
+      (react-dom), computer OS, mobile OS, etc.
     + `user interface`: is used to create user interface components
     + `library`: lightweight compared to frameworks such as Angular
         * is used with other libraries to do the work
+
 - Component architecture
     + The application is broken down to components.
     + Compose the application from components.
+    + Each component is a JavaScript function that returns markup
+      (HTML or other markup).
+    + React component names must always start with a capital letter,
+      while HTML tags must be lowercase.
+- JSX (allows JavaScript and HTML to be mixed)
+    + JSX is stricter than HTML. You have to close tags like `<br
+      />`. Your component also can’t return multiple JSX tags. You have
+      to wrap them into a shared parent, like a `<div>...</div>` or an
+      empty `<>...</>` wrapper.
 - Data flows down `one way` through a React app (component tree)
     + From the top to bottom (leaf) of the component tree
     + Component lifecycle
         * Mount - update - unmount
-    + Avoid mutation, use react tools to do the update
+    + Avoid mutation, use react tools (hooks and APIs) to do the update
 - State exists at a `component level` and is passed down.
     + Component state is immutable. Once set, the state of a component
       can’t be changed. State changes don’t change existing view
       state. Instead, they trigger a new view render with a new state.
+- Conditional rendering
+    + https://react.dev/learn#conditional-rendering
+    + `<condition> ? <componentIf> : <componentElse>` for if else, and `
+      <condition> && <component>` if else branch is not needed.
+- Using hooks
+
+# Best Practices
+
+- Colocation code and assets
+    + https://kentcdodds.com/blog/colocation
 
 # Main Concepts
 
@@ -35,28 +55,84 @@
         * This abstracts out the attribute manipulation, event handling,
           and manual DOM updating
 
-## JSX
-
-## Rendering Elements
-
-## Components and Props
-
-## Class Components: State and Lifecycle (Replaced by Hooks)
-
-## Handling Events
-
-## Conditional Rendering
-
-## Lists and Keys
-
-## Forms
-
-## Lifting State Up
-
-## Composition vs Inheritance
-
 ## Thinking In React
 
+- Step 1: Start from the mockup and break the UI into a component
+  hierarchy.
+- Step 2: Build a static version in React
+- Step 3: Find the minimal but complete representation of UI state.
+- Step 4: Identify where (which component) your state should live
+- Step 5: Add inverse data flow (passing set state functions down)
+
+## Rules of React
+
+- https://react.dev/reference/rules
+- Components and Hooks must be pure.
+- React calls Components and Hooks
+- Rules of Hooks
+
+## JSX (JavaScript Syntax Extension)
+
+- An extension to JavaScript which allows you to write HTML markup
+  inside JS code.
+- Allow binding events to HTML elements
+
+# Installation and Set up
+
+## Frameworks
+
+- Next.js
+    + Including new full-stack architecture: Server Component and
+      Suspense component.
+    + https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md
+        * Other frameworks (Angular and Vue.js) have partial hydration
+          which might be similar to this feature? (NEED TO CONFIRM)
+    + Server Component does not override the client-side
+      state/components unlike Server-side rendering (SSR).
+        * SSR render the pages on the server into HTML and send it back
+          to client.
+        * Server Component does not render into HTML but a special
+          format to allow for preserving client-side states and
+          components.
+    + Server Components has zero effect on the bundle size, so your web
+      app will be loaded faster.
+    + Server Components let you access the backend resources directly
+        * You can read the file system directly.
+        * You can read from the database that is running on the server.
+        * You can hit the API layer locally through: `localhost:<port>`
+    + React IO Libraries:  react-fs,  react-db, react-fetch,  etc..
+    + Server Components let you only load the code that is necessary.
+        * Never need to download Server Components.
+        * Conditional downloading Client Components.
+    + Server Components let you decide the tradeoff for every concrete
+      use case.
+        * Client/Server/Shared Components
+    + Server Components provide modern UX with a server-driven mental
+      model.
+        * The React web app as a single tree with both Server and Client
+          Component Nodes.
+        * For the Server Components, we can think of as server passes
+          data to the Client Components as props.
+- Remix
+- Gatsby
+- Expo (for native apps)
+
+## React Compiler
+
+- https://react.dev/learn/react-compiler
+- A new compiler to optimize React apps.
+    + Still in beta as of 2024-12-15
+    + Should consider using this when it's stable to improve
+      performance!
+
+# Migration
+
+## React 18 to 19
+
+- https://react.dev/blog/2024/04/25/react-19-upgrade-guide
+- Upgarde to `18.3.0` first to see warnings for incompatible issues for
+  current code with React 19.
+    + Fix the warnings before upgrading to React 19.
 
 # Hooks
 
@@ -245,17 +321,6 @@ function useFriendStatus(friendID) {
 ```
 
 
-### Testing custom hooks
-
-- Two approaches
-    + Create a test component and tests for the test component
-    + Using a library
-- https://kentcdodds.com/blog/how-to-test-custom-react-hooks
-- https://www.toptal.com/react/testing-react-hooks-tutorial
-- https://react-hooks-testing-library.com/reference/api
-- More resources
-    + https://github.com/testing-library/react-testing-library/pull/991
-
 ## Hooks APIs
 
 - https://reactjs.org/docs/hooks-reference.html
@@ -290,6 +355,15 @@ function Todos() {
 
 - Optimize components with useCallback, useMemo and then useRef
     + https://stackoverflow.com/questions/64134566/should-we-use-usecallback-in-every-function-handler-in-react-functional-componen
+- Manipulating the DOM with a ref
+    + https://react.dev/reference/react/useRef#manipulating-the-dom-with-a-ref
+    + https://react.dev/learn/manipulating-the-dom-with-refs#best-practices-for-dom-manipulation-with-refs
+    + Focusing a text input
+    + Scrolling an image into view
+    + Playing and pausing a video
+    + Exposing a ref to your own component
+- Create event listeners using ref
+    + https://www.preciousorigho.com/articles/a-better-way-to-create-event-listeners-in-react
 
 # Advanced Guides
 
@@ -337,19 +411,56 @@ function Todos() {
 
 # Testing
 
-- Jest: general testing framework, can be used to test utilities,
+## Principles
+
+- https://testing-library.com/docs/guiding-principles/
+    + Tests should resemble the way your software is used.
+    + Use DOM (role, text, etc.) rather than test IDs.
+    + List of roles for HTMLELement
+        * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides/Techniques#roles
+    + How to determine a role of an element on browser
+        * Go to dev tool of that browser
+        * Inspect the element and find the Accessibility tab/section
+          (this will be different between Chrome and Firefox)
+            - Chrome: Element tab, inside when select an element, it
+              should display a nested Accessibility tab in the right
+              side.
+            - Firefox: Accessibility tab is separated
+- Queries and priority of using them
+    + https://testing-library.com/docs/queries/about/
+    + https://testing-library.com/docs/queries/about/#priority
+    + https://kentcdodds.com/blog/common-mistakes-with-react-testing-library#using-the-wrong-query
+- Problems with using test-ids
+    + https://stackoverflow.com/a/79218497
+
+## Libraries
+
+- `Jest`: general testing framework, can be used to test utilities,
   asynchronous functions, etc.
     + https://jestjs.io/docs/26.x/getting-started
-- React Testing Library: build on top of DOM testing library, can be
+- `React Testing Library`: build on top of DOM testing library, can be
   used to test components
     + https://testing-library.com/docs/react-testing-library/intro
+    + It also has the capability to test Hooks as well.
 - `jest-dom` matchers: add more custom matchers to jest
     + https://github.com/testing-library/jest-dom
-- More matchers for jest
+- `jest-extended`: More matchers for jest
     + https://github.com/jest-community/jest-extended
-- React Hooks Testing Library: can be used to test React Hooks
+- (LEGACY) React Hooks Testing Library: can be used to test React Hooks
+    + SHOULD USE React Testing Library above instead.
     + https://react-hooks-testing-library.com/
     + React-use library of useful hooks: https://github.com/streamich/react-use
+
+## Testing custom hooks
+
+- Two approaches
+    + Create a test component and tests for the test component
+    + Using a library
+- https://kentcdodds.com/blog/how-to-test-custom-react-hooks
+- https://www.toptal.com/react/testing-react-hooks-tutorial
+- https://react-hooks-testing-library.com/reference/api
+- More resources
+    + https://github.com/testing-library/react-testing-library/pull/991
 
 ## Snapshot testing
 
@@ -385,6 +496,39 @@ function Todos() {
 ### Set up a server for fetch and axios
 
 - https://testing-library.com/docs/react-testing-library/example-intro#full-example
+
+## Troubleshooting / Debugging tests
+
+### Log / Show the whole DOM when tests failed
+
+- https://testing-library.com/docs/dom-testing-library/api-debugging
+- Increase the `DEBUG_PRINT_LIMIT` environment variable (default is
+  7000)
+    + `DEBUG_PRINT_LIMIT=100000 npm test ...`
+
+### test was not wrapped in act(...)
+
+- Resources
+    + https://www.reddit.com/r/reactjs/comments/tswa0p/test_was_not_wrapped_in_act_error_clear/
+    + https://react.dev/reference/react/act
+    + https://testing-library.com/docs/dom-testing-library/api-async/#waitfor
+- Any thing that causes the state to update should go inside the `act`.
+    + Using asynchronous act with await instead of synchronous version.
+    + Don't wrap React testing library utilities such as `render` etc in
+      `act` since they already wrapped in act.
+- Also it's better to not use `act` but using `waitFor` or
+  `waitForElementToBeRemoved` in react testing library to wait for React
+  to complete all state updates before asserting. (`act` is built in for
+  these utilities in React testing library)
+    + https://testing-library.com/docs/dom-testing-library/api-async/#waitfor
+    + https://egghead.io/lessons/jest-fix-the-not-wrapped-in-act-warning
+
+```javascript
+it('should ...', async () => {
+    const var = await act(sync () => ...);
+    ...
+});
+```
 
 # State Management
 
@@ -424,7 +568,9 @@ function Todos() {
         * Libraries: jotai, recoil, zustand, redux, mobx, etc.
             - https://github.com/pmndrs/jotai
 
-## Server State
+## Server State (fetching data from server)
+
+- https://www.robinwieruch.de/react-hooks-fetch-data/
 
 ### react-query
 
@@ -449,74 +595,18 @@ function Todos() {
 
 - https://github.com/mobxjs/mobx
 
-# Router
+# React DOM
 
-- List of router libraries
-    + React Router
-        * https://reactrouter.com/
-        * https://github.com/remix-run/react-router
-    + TanStack Router
-        * https://tanstack.com/router/v4
-    + Wouter
-        * https://github.com/molefrog/wouter
-    + Hooks
-        * https://blog.logrocket.com/how-react-hooks-can-replace-react-router/
-        * https://github.com/Paratron/hookrouter
+- https://react.dev/reference/react-dom
+- The `react-dom` package contains methods that are only supported for
+  the web applications (which run in the browser DOM
+  environment). They are not supported for React Natives.
 
-- Connect redux and router
-    + https://github.com/supasate/connected-react-router
-    + https://github.com/acdlite/redux-router
-    + https://github.com/reactjs/react-router-redux
+## Hooks
 
-## React Router
+## Components
 
-- Libraries
-    + `react-router`: the core library
-    + `react-router-dom`: a variant of the core library meant to be used
-      for web applications
-        * If you only need a library for a website, this is the library
-          that you need.
-    + `react-router-native`: a variant of the core library used with
-      react native in the development of Android and iOS applications.
-
-### Tutorial
-
-- List of Routers
-    + BrowserRouter: is used for applications which have a dynamic
-      server that knows how to handle any type of URL.
-    + HashRouter: is used for static websites with a server that only
-      responds to requests for files that it knows about.
-    + MemoryRouter: (not needed for now)
-- Any router expects to receive only one child.
-- History
-    + Each router creates a history object that it uses to keep track of
-      the current location and re-renders the application whenever this
-      location changes.
-        * For this reason, the other React components rely on this
-          history object being present; which is why they need to be
-          rendered inside a router.
-        * https://github.com/remix-run/history
-    + The BrowserRouter uses the HTML5 history API to keep the user
-      interface in sync with the URL in the browser address bar.
-        *  https://developer.mozilla.org/en-US/docs/Web/API/History_API
-    + The history object contains `location` property whose value is
-      also an object.
-        * location object = `{pathname, search, hash, state}`
-- Routes
-    + The `<Route/>` component renders the appropriate UI when the
-      current location matches the route's `path` prop.
-    + `<Route path=”/items”/>`: matches all paths start with `/items`
-    + `<Route exact path=”/items” />` matches only for `/items`
-- Restricting Routes and Links with Hooks
-    + https://medium.com/craft-academy/how-to-restrict-your-routes-and-links-in-react-js-now-with-hooks-12b395c1a2fe
-
-### Concepts
-
-- https://reactrouter.com/en/main/getting-started/concepts
-
-### Code splitting routers with React Lazy and Suspense
-
-- https://linguinecode.com/post/code-splitting-react-router-with-react-lazy-and-react-suspense
+## APIs
 
 # React Internal
 
@@ -569,6 +659,8 @@ function Todos() {
 
 # Toolchain
 
+## Build
+
 - A JavaScript build toolchain typically consists of:
     + A `package manager`, such as `yarn` or `npm`. Install and update
       third party packages.
@@ -578,12 +670,61 @@ function Todos() {
     + A `compiler` such as `Babel`. It lets you write modern JavaScript
       code that still works in older browsers.
 
-# JSX (JavaScript Syntax Extension)
+## Development
 
-- An extension to JavaScript which allows you to declaratively create
-  custom UI components.
-- Use JS in HTML
-- Allow binding events to HTML elements
+### React Dev Tools
+
+#### Settings
+
+- General
+    + Highlight updates when components render.
+- Debugging
+    + Hide logs during additional invocations in Strict Mode.
+- Profiler
+    + Record why each component rendered while profiling.
+    + Hide commits below x ms
+
+#### Components
+
+- Can select components from the hierarchical list or vice versa (select
+  the DOM element to show the component in the list)
+- Can search the component by name
+- Can view and edit components' props and hooks (states, etc.)
+- Can view the rendered hierarchical (parent components)
+- Can test React Suspense effect when components are loading.
+- Can show associated DOM element of a component.
+- Can log to console all the component details.
+- Can show associated source code for the component.
+
+#### Profiling
+
+- In the settings for the tools, select the `Profiler` tab and select
+  option: `Record why each component rendered while profiling.` to know
+  the reason of a rerendering.
+
+##### Basic
+
+- Start profiling and then performing the actions on the web app.
+- Stop the profiling.
+- To profile on page load, click circular arrow `reload and start
+  profiling` button.
+- Look at the ranked view to find the slowest rendering to debug the
+  issue.
+    + There are component names and other information.
+- Look at the flamegraph view to see the hierarchical structure of
+  components.
+    + After profiling is stopped, we can check all the renders at `xx /
+      yy` at the top.
+    + Components with colors are being rendered and taking time. Grey
+      out components are not rendered.
+    + Two numbers `x ms of y ms`: `x` is the time for that component to
+      render and `y` is the total time to render that component and all
+      of its child components.
+
+##### Advanced
+
+- Throttle network speed and performance (CPU, concurrency, etc.) to
+  find slow down components.
 
 # React UI Component Libraries
 
@@ -603,7 +744,7 @@ function Todos() {
 - Reactstrap
     + https://reactstrap.github.io/
 
-# Grid/Table component
+## Grid/Table component
 
 - ag-grid
     + https://www.ag-grid.com/
@@ -642,19 +783,31 @@ function Todos() {
 - https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/
 - https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components/
 
-
-# React Native
-
-- https://reactnative.dev/
-- It is used to develop applications for Android, Android TV, iOS,
-  macOS, tvOS, Web, Windows and UWP by enabling developers to use the
-  React framework along with native platform capabilities.
-
 # TypeScript
 
-- React `children` with TypeScript
-    + https://www.carlrippon.com/react-children-with-typescript/
-    + `ReactNode`, `ReactChild`, `JSX.Element`
+- https://react.dev/learn/typescript
+- `tsconfig.json`
+    + `"lib"` should contains `dom`
+    + `"jsx": "preserve"`
+- Provide types for components' props.
+    + Either through inline types or `interface` or `type` keywords.
+- Example Hooks
+    + https://react.dev/learn/typescript#example-hooks
+    + `useState`: the type can be inferred from the initial state value
+      or through explicit type  passing `useState<T>(value)`
+    + `useReducer`: takes in a reducer function and an initial state
+- Useful Types
+    + DOM Events:
+        * https://react.dev/learn/typescript#typing-dom-events
+        * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/b580df54c0819ec9df62b0835a315dd48b8594a9/types/react/index.d.ts#L1247C1-L1373
+        * https://developer.mozilla.org/en-US/docs/Web/Events
+    + React `children` with TypeScript
+        * https://react.dev/learn/typescript#typing-children
+        * `ReactNode`, `ReactChild`, `JSX.Element`
+        * https://www.carlrippon.com/react-children-with-typescript/
+    + Style Props
+        * https://react.dev/learn/typescript#typing-style-props
+        * `React.CSSProperties`
 - React Context
     + https://kentcdodds.com/blog/how-to-use-react-context-effectively
     + https://felixgerschau.com/react-typescript-context/

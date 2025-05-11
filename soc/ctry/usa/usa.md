@@ -689,6 +689,11 @@ The heads of the 15 departments, chosen by the President and approved
 with the "advice and consent" of the U.S. Senate, form a council of
 advisers generally known as the President's "Cabinet"
 
+the Secretaries of Agriculture, Commerce, Defense, Education, Energy,
+Health and Human Services, Homeland Security, Housing and Urban
+Development, Interior, Labor, State, Transportation, Treasury, and
+Veterans Affairs, and the Attorney General.
+
 #### Executive Office of the President
 
 - White House staff

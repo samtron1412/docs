@@ -63,6 +63,26 @@
     - Multiple projects in a workspace can interfere with linters and
       other error checking tools
 
+# Troubleshooting
+
+## Configure Java Runtime (JDK version)
+
+- https://code.visualstudio.com/docs/java/java-project#_configure-runtime-for-projects
+- Command Palette (`Cmd+Shift+P`), then type `Java configure runtime`
+
+## bin folder is generated for Gradle packages
+
+- Edit `.classpath` in that project and change `bin`  to `build`
+- Or using command palette (`Cmd+Shift+P`) and then type: `Java
+  configure classpath` and then change the classpath.
+
+## Stuck / Slow at Java Initialize Workspace
+
+- Disable `java.gradle.buildServer.enabled` setting
+    + https://github.com/redhat-developer/vscode-java/issues/3357#issuecomment-1778443064
+    + Note that this setting can be configured in multiple places: User,
+      Remote, Workspace, etc. so try to disable all of them.
+
 # References
 
 [homepage]: https://code.visualstudio.com/?wt.mc_id=DX_841432

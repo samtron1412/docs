@@ -126,14 +126,37 @@
     + Symfony
 - Java
     + Spring
-- JavaScript
-    + Vue: https://github.com/vuejs/vue
-    + Angular: https://github.com/angular/angular
-    + React: https://reactjs.org/
-    + Svelte: https://github.com/sveltejs/svelte
-    + Backbone: https://github.com/jashkenas/backbone
-    + Ember: https://github.com/emberjs/ember.js
-    + Express.js
+
+## JavaScript
+
+- Vue: https://github.com/vuejs/vue
+- Angular: https://github.com/angular/angular
+- React: https://reactjs.org/
+- Svelte: https://github.com/sveltejs/svelte
+- Backbone: https://github.com/jashkenas/backbone
+- Ember: https://github.com/emberjs/ember.js
+- Express.js
+
+### Core ideas behind modern frameworks
+
+- They are all based on the `declarative paradigm`.
+- They all provide `encapsulation via components`.
+- They all have a rendering engine that relies on a mechanism where the
+  `model/state drives the template output` (`the view is a function of
+  state`).
+- They all implement a similar application lifecycle where `events lead
+  to state updates that, in turn, result in new rendered outputs`.
+- They all implement some sort of `partial DOM re-rendering`, either via a
+  virtual DOM or some form of DOM patching.
+
+Even if you look at older libraries, like Backbone, you'll notice that
+the core mechanism was quite similar to what modern frameworks
+implement. The major difference was that modern frameworks put a
+stronger emphasis on declarativeness and simplify re-rendering via
+reactivity mechanisms (is this a form of Inversion of Control???),
+whereas in older frameworks, re-renders were triggered
+imperatively. Modern frameworks also provide better encapsulation
+through the concept of components.
 
 # Local Development Server
 
@@ -142,7 +165,6 @@
     + Using `mkcert` to create local CA and TLS certificate for local
       development
     + Alternatives (not recommended)
-        *
 
 # User Interface Development
 

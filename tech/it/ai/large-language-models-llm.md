@@ -19,3 +19,21 @@
         * https://research.ibm.com/blog/retrieval-augmented-generation-RAG
 - Tools
     + https://python.langchain.com/docs/get_started/introduction
+
+# Chat bot review
+
+- https://www.reddit.com/r/Bard/comments/1ih0eia/gemini_vs_claude_vs_chatgpt_vs_deepseek_who_is/
+    + Gemini
+    + Claude
+    + ChatGPT
+    + Deepseek
+
+# Protocols
+
+## Model Context Protocol (MCP)
+
+- https://modelcontextprotocol.io/introduction
+
+## A2A (Agents to Agents)
+
+- https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/

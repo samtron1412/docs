@@ -2,6 +2,19 @@
 
 # Overview
 
+# VNeID
+
+- Vietnamese Electronic Identifiation (VNeID)
+- Level 1 and 2
+    + Level 1 allows some basic activities online.
+    + Level 2: need to go to a government location to enable. It allows
+      more activities online.
+- It collects personal information and biometrics.
+    + Facial recognition.
+    + National ID.
+- Paperwork at Hue province level:
+    + 01 Le Lai
+
 # Comments about Vietnam
 
 ```

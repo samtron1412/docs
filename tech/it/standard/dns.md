@@ -30,26 +30,57 @@ Standards
         - Name servers are servers in the Domain Name System (DNS) that
           help to translate domain names into the IP addresses that
           computers use to communicate with one another.
-    * DNS Records
+        - Root nameservers `.`: is represented as a dot, and they store
+          the information of the Top Level Domains (TLD's).
+        - TLD nameservers: store the information for all the domain
+          names that share a common domain extension such as .com, .net.
+        - Authoritative nameserver: store information of specific
+          domains.
+    * Recursive DNS resolving algorithm.
+        - The algorithm to resolve the domain names to IP addresses
+          recursively.
+    * DNS Zone
+        - A distinct part of the domain namespace which is delegated to
+          a legal entity (a person, organization or company) who are
+          responsible for maintaining that DNS zone.
+        - E.g., amazon.com, corp.amazon.com, etc.
+    * DNS (Resource) Records  (RR)
         - DNS record is an object in a hosted zone that you use to define
           how you want to route traffic for the domain or a subdomain.
-        - SOA (Start of Authority) records: are configured by the
-          DNS service provider automatically, so we don't need to
-          configure these.
         - DNS zone records:
             + Domain
             + Time to live
+                * how long a nameserver is supposed to cache the DNS
+                  answer before it expires and a new query needs to be
+                  done.
+                * negative TTL: records do not exist
             + Class
             + Type
                 * https://en.wikipedia.org/wiki/List_of_DNS_record_types
                 * A: tie the domain or subdomain to an IPv4 address
-                * AAAA: tie the domain or subdomain to an IPv6 address.
+                * AAAA (quad A): tie the domain or subdomain to an IPv6 address.
                 * CNAME: tie the domain or subdomain to another domain or subdomain
+                * PTR: (pointer) is used in the reverse DNS mapping from
+                  IP address to a domain. (reverse of A records)
+                    - IP: 1.2.3.4
+                    - PTR: 4.3.2.1.in-addr.arpa (`<IP-in-reverse-order>.in-addr.arpa`)
+                * NS: the nameserver record indicates which DNS server
+                  is authoritative for the domain.
+                    - A domain will often have multiple NS records which
+                      can indicate primary and backup name servers for
+                      the domain.
                 * MX: define how mail is handled for your domain,
                   including: priority (lower number is higher
                   priority) and answering mail server domain name.
                 * TXT: associate text data with your domain. Is used
                   for SPF or DKIM.
+                * SOA (Start of Authority) records: are configured by the
+                  DNS service provider automatically, so we don't need to
+                  configure these.
+                    - Mandatory record in all zones
+                    - The fields includes the primary name server, the
+                      email of the administrator, the domain number and
+                      timers for refreshing the zone.
             + Content
 - DNS delegation
     + DNS delegation is when a hosted zone delegates authority over a

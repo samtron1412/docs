@@ -8,6 +8,7 @@
 - AspectJ (Java implementation)
     + https://en.wikipedia.org/wiki/AspectJ
     + https://eclipse.dev/aspectj/doc/released/devguide/index.html
+    + https://docs.spring.io/spring-framework/reference/core/aop/ataspectj/advice.html
     + Jars: https://mvnrepository.com/artifact/org.aspectj
         * `aspectjtools`: compiler (ajc), compile-time weaving
         * `aspectjweaver`: load time weaving

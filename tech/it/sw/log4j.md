@@ -18,6 +18,10 @@ Log4j has three main components:
 - **layouts**: responsible to format logging information in different
   styles.
 
+# Best Practices
+
+- https://logging.apache.org/log4j/2.x/manual/api.html#best-practice
+
 # Architecture
 
 There are two type of objects available with Log4j framework.
@@ -89,6 +93,29 @@ You can specify a different location for the properties file using a JVM
 option:
 
 `-Dlog4j.configurationFile=file:///Users/sont/repo/postage-stamp-kstream/src/test/resources/log4j2-test.xml`
+
+## Additivity
+
+- By default,
+    + additivity is set to "true"
+    + When true, log events will be appended to the current logger's
+      appenders AND all parent logger's appenders
+- If additivity="false": Logs appear only in the child logger's appenders
+    + Useful to prevent duplicate log entries
+    + Common practice is to set additivity="false" when you want
+      specific logging behavior for a package/class
+
+```java
+// Logger configuration
+Logger parentLogger = LogManager.getLogger("com");
+Logger childLogger = LogManager.getLogger("com.example");
+
+// With additivity=true (default)
+childLogger.info("Test"); // Logs will appear in both child and parent appenders
+
+// With additivity=false
+// Logs will only appear in child's appenders
+```
 
 ## Dynamically change logging level
 
