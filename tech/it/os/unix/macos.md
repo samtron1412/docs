@@ -59,7 +59,15 @@ Mac OS
   Clipboard)
 - p7zip: file archiver
 
+## NAS (Network Attached Storage)
 
+- How to connect the Finder to a NAS
+    + `Go -> Connect to Server` or `Cmd+K`
+    + In the server address bar, type your server address such as
+        * `smb://192.168.50.213/data`
+        * `smb://<server-domain-or-ip>/<folder-path>`
+        * Click `+` sign to add the server to favorite list
+    + Connect and enter credentials: user name and password
 
 # Java
 

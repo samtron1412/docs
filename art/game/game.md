@@ -294,6 +294,16 @@ realistically within the application.
 - https://www.ign.com/lists/top-100-nes-games/100
 - https://www.ign.com/lists/top-100-snes-games/3
 
+# Console Game
+
+- List of popular console maker and its consoles
+    + Nintendo: Switch, Switch 2
+        * Games:
+            - https://www.reddit.com/r/gaming/comments/1ay1mc6/best_selling_games_on_each_nintendo_console/
+    + Sony: PS3, PS4, PS5
+        * https://en.wikipedia.org/wiki/List_of_best-selling_PlayStation_video_games
+    + Microsoft: Xbox
+
 # References
 
 [1]: https://www.twitchinstalls.com/ "Twitch installs Arch Linux"

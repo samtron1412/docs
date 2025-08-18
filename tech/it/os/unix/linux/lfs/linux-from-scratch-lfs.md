@@ -1,0 +1,6 @@
+# Overview
+
+- https://www.linuxfromscratch.org/lfs/
+- Linux From Scratch (LFS) is a project that provides you with
+  step-by-step instructions for building your own customized Linux
+  system entirely from source.

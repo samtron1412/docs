@@ -2,22 +2,13 @@
 
 # Overview
 
-Arch Linux, a lightweight and flexible Linux distribution that tries to
-Keep It Simple.
-
-Arch Linux is an independently developed, **i686/x86-64** general
-purpose GNU/Linux distribution versatile enough to suit any role.
-Development focuses on **simplicity**, **minimalism**, and **code
-elegance**. Arch is installed as a minimal base system, configured by
-the user upon which their own ideal environment is assembled by
-installing only **what is required or desired for their unique
-purposes**. GUI configuration utilities are not officially provided, and
-most system **configuration is performed from the shell by editing
-simple text files**.
+Arch Linux is an independently developed, x86-64 general-purpose
+GNU/Linux distribution that strives to provide the *latest stable
+versions* of most software by following a *rolling release model*.
 
 ## The Arch Way
 
-The acronym KISS for **Keep It Simple, Stupid**.
+- https://wiki.archlinux.org/title/Arch_Linux
 
 ### Simplicity
 
@@ -26,16 +17,18 @@ modifications, or complications**, and provides a **lightweight UNIX-
 like base structure** that allows an individual user to shape the system
 according to their own needs.
 
-### Code-correctness over convenience
+### Modernity
 
-The Arch Linux system places precedence upon elegance of design as well
-as **clean, correct, simple code**, rather than unnecessary patching,
-automation, eye candy or "newbie-friendliness." Software patches are
-therefore kept to an absolute minimum; ideally, never. Simple design and
-implementation shall always trump simple user interface.
+Arch Linux strives to maintain the latest stable release versions of its
+software as long as systemic package breakage can be reasonably avoided.
 
-Simplicity of implementation, code-elegance, and minimalism shall always
-remain the reigning priorities of Arch development.
+### Pragmatism
+
+Arch is a pragmatic distribution rather than an ideological one—the
+principles here are only useful guidelines. Ultimately, design decisions
+are made on a case-by-case basis through developer
+consensus. Evidence-based technical analysis and debate are what matter,
+not politics or popular opinion.
 
 ### User-centric vs User-friendly
 
@@ -44,13 +37,9 @@ them **complete control and responsibility over the system**.
 
 "do-it-yourself" approach. "do first, then ask" philosophy
 
-### Openness
+### Versatility
 
-live, active communities
-
-### Freedom
-
-Provides the freedom to make any choice about the system.
+Arch Linux is a general-purpose distribution.
 
 ## History
 
@@ -59,18 +48,6 @@ formal release, Arch Linux 0.1, was on March 11, 2002. In 2007, Judd
 Vinet stepped down as Project Lead to pursue other interests and was
 replaced by American programmer Aaron Griffin who continues to lead the
 project today.
-
-## Modernity
-
-Arch Linux uses a rolling release system which allows one-time
-installation and perpetual software upgrades. It is not generally
-necessary to reinstall or upgrade your Arch Linux system from one
-"version" to the next. By issuing one command, an Arch system is kept
-up-to-date and on the bleeding edge.
-
-Use systemd init system, modern **filesystems (Ext2/3/4, Reiser, XFS,
-JFS, BTRFS)**, **LVM2**, **software RAID**, **udev** support and
-**initcpio** (with mkinitcpio), as well as the latest available kernels.
 
 ## Software packaging
 
@@ -82,7 +59,7 @@ sources. The repository system also allows users to easily build and
 maintain their own custom build scripts, packages, and repositories,
 encouraging community growth and contribution.
 
-Currently we have *official packages* optimized for the i686 and x86-64
+Currently we have *official packages* optimized for the x86-64
 architectures. We complement our official package sets with a
 *community- operated package repository* (AUR), which contains many
 thousands of user-maintained **PKGBUILD** scripts for compiling
@@ -90,28 +67,18 @@ installable packages from source using the **makepkg** application. It
 is also possible for users to easily build and maintain their own custom
 repositories..
 
-# Best Practices
-
-- https://wiki.archlinux.org/title/General_recommendations
-- https://wiki.archlinux.org/title/Arch_Linux_Archive
-- Have an offline version of Arch Wiki
-    + https://archlinux.org/packages/?name=arch-wiki-docs
-
 # Community
 
-- [wiki][awiki]
-- [forums][forums]
-- [bugs][bugs]
-- [mailing lists][mailing-lists]
-- [irc][irc]
-- [international communities][international]
-- [Getting involved][involve]
+- Developers
+    + https://archlinux.org/people/developers/
 
-## Help
+# Common Knowledge
 
-### Reading
+## Arch vs other operating systems
 
-#### Regular user or root
+- https://wiki.archlinux.org/title/Arch_compared_to_other_distributions
+
+## Regular user or root
 
 The numeral or hash sign `#` indicates that the line is to be entered as
 **root**. Whereas the dollar sign `$` show that the line is to be
@@ -120,29 +87,30 @@ entered as **a regular user**.
     # mkinitcpio -p linux
     $ makepkg -s
 
-#### Installation of packages
+## Installation of packages
 
-Official packages: `# pacman -S <package>`
+Official packages: `# pacman -Syu <package>`
 
-Arch User Repository
-1. Download tarball
-2. Extract the tarball: `tar xzf foobar.tar.gz`
-3. Run `makepkg` (`makepkg -s` will automatically resolve dependencies
-   with pacman). This will download the code, compile it and pack it.
+Arch User Repository (AUR)
+1. Download tarball: curl (or using git to clone source code)
+2. Extract the tarball: `tar xzf foobar.tar.gz`. (no need this if using
+   git)
+3. Run `makepkg -si` (`-s` will automatically resolve dependencies with
+   pacman, and `-i` to install the package). This will download the
+   code, compile it and pack it.
 4. Look for a README file in `src/`, contain some useful information.
-5. Install with pacman: `# pacman -U /path/to/pkg.tar.xz`
+5. If running `makepkg` without `-i`, then install with pacman: `#
+   pacman -U /path/to/pkg.tar.xz`
 
 These manually installed packages are called foreign packages — packages
 which have not originated from any repository known to pacman. To list
 all foreign packages: `$ pacman -Qm`
 
-#### Control of systemd units
+## Control of systemd units
 
 Start service: `systemctl start example.service`
 
 Enable service: `systemctl enable example.service`
-
-### Style
 
 
 # Pre-Installation
@@ -584,7 +552,7 @@ Use **lsblk** to list the hard disks
 - Choose line, cut line, go to top, paste it.
 - HTTP faster than FTP
 - After change mirror in the future, refresh all packages list with
-  **pacman -Syy**.
+  **pacman -Syyu**.
 
 ### Select the fastest mirror
 
@@ -592,7 +560,7 @@ Back up mirror:
 - `# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup`
 - Generate mirrors list follow [status of mirrors][mirrors].
 - Save it to `/etc/pacman.d/mirrorlist.new`.
--  Check [online mirrors status][mirror- status].
+- Check [online mirrors status][mirror- status].
 
 Edit `mirrorlist.new` and uncomment mirrors for testing:
 - `# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.new`
@@ -694,13 +662,13 @@ Enable a profile: `# netctl enable <profile>`
 
 #### Wireless
 
-    # pacman -S dialog
+    # pacman -Syu dialog
 
     # wifi-menu <interface>
 
 Connect automatically to known networks
 
-    # pacman -S wpa_actiond
+    # pacman -Syu wpa_actiond
 
     # systemctl enable netctl-auto@interface_name.service
 
@@ -727,7 +695,7 @@ install_update** script to automatically install the bootloader
 (**-i**), mark the partition active by setting the boot flag (**-a**),
 and install the MBR boot code (**-m**):
 
-    # pacman -S syslinux
+    # pacman -Syu syslinux
     # syslinux-install_update -iam
 
 After installing Syslinux, configure `syslinux.cfg` to point to the
@@ -747,10 +715,10 @@ If adding UUID rather than partition number the syntax is
 
 #### GRUB
 
-Install grub packet: `# pacman -S grub`
+Install grub packet: `# pacman -Syu grub`
 - `# grub-install --target=i386-pc --recheck /dev/sda`
 
-Install os-prober: `# pacman -S os-prober`
+Install os-prober: `# pacman -Syu os-prober`
 - `# grub-mkconfig -o /boot/grub/grub.cfg`
 
 
@@ -801,6 +769,7 @@ Users and groups are a mechanism for **access control**.
 - List users logged on system: `$ who`
 - Add a new user: (`-m` create home directory if it does not exist
     + `$ useradd -m -g [initial_group] -G [additional_group] -s [login_shell] [username]`
+    + `# useradd -m -s /usr/bin/zsh glider`
     + `# useradd -m -G wheel -s /bin/bash glider`
     + `# useradd -m -s /bin/bash guest`
 - Del a user: `$ userdel -r [username]`
@@ -857,30 +826,30 @@ Reload systemd, scanning for new or changed units:
         $ systemctl hybrid-sleep
 
 - Sound:
-    + Install alsa-utils: $ pacman -S alsa-utils
+    + Install alsa-utils: $ pacman -Syu alsa-utils
     + unmute: $ amixer sset Master unmute
     + Next, test to see if sound works:
         $ speaker-test -c 2
 
 - Fonts:
-    + `# pacman -S ttf-dejavu`
+    + `# pacman -Syu ttf-dejavu`
 
 - Display:
     + To install the base Xorg packages:
-        `# pacman -S xorg-server xorg-server-utils xorg-xinit`
+        `# pacman -Syu xorg-server xorg-server-utils xorg-xinit`
     + Install mesa for 3D support:
-        `# pacman -S mesa`
+        `# pacman -Syu mesa`
     + If you do not know which video chipset is available on your machine, run:
         `$ lspci | grep VGA`
     + For a complete list of open-source video drivers, search the package database:
         `$ pacman -Ss xf86-video | less`
     + The vesa driver is a generic mode-setting driver that will work with almost every GPU, but will not provide any 2D or 3D acceleration. If a better driver cannot be found or fails to load, Xorg will fall back to vesa. To install it:
-        `# pacman -S xf86-video-vesa`
+        `# pacman -Syu xf86-video-vesa`
     + Laptop users (or users with a tactile screen) will need the xf86-input-synaptics package for the touchpad/touchscreen to work:
-        `# pacman -S xf86-input-synaptics`
+        `# pacman -Syu xf86-input-synaptics`
     + Test X (optional):
         = Install the default environment:
-            # pacman -S xorg-twm xorg-xclock xterm
+            # pacman -Syu xorg-twm xorg-xclock xterm
         = To start the (test) Xorg session, run:
             $ startx
         = A few movable windows should show up, and your mouse should work. Once you are satisfied that X installation was a success, you may exit out of X by issuing the exit command into the prompts until you return to the console.
@@ -893,7 +862,7 @@ Reload systemd, scanning for new or changed units:
 
 - Windows Management: dwm
     + Basic programming tools present in base-devel are needed in order to compile dwm and build a package for it, and the abs package is also a requisite for fetching the necessary build scripts. Installing dmenu, a fast and lightweight dynamic menu for X is a good idea.
-        # pacman -S base-devel abs dmenu
+        # pacman -Syu base-devel abs dmenu
     + Once the required packages are installed, use ABS to update and then copy the dwm build scripts from the ABS tree to a temporary directory. For example:
         # abs community/dwm
         $ cp -r /var/abs/community/dwm ~/dwm
@@ -1189,7 +1158,7 @@ ACTION=="add", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="2013", RUN+="/home/gl
 - Install `at` package and start and enable `atd` service:
 
 ```bash
-pacman -S at
+pacman -Syu at
 systemctl start atd
 systemctl enable atd
 ```
@@ -1202,7 +1171,7 @@ systemctl enable atd
 ```bash
 #!/bin/bash
 echo /home/glider/bin/kbd | at now
-```
+
 
 - `/home/glider/bin/kbd` script:
 

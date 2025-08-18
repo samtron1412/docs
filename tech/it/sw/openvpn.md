@@ -100,6 +100,8 @@ With OpenVPN, we can:
 - OpenVPN can run over **User Datagram Protocol (UDP)** or
   **Transmission Control Protocol (TCP)** transports, multiplexing
   created SSL tunnels on a single TCP/UDP port.
+    + UDP: faster speed, less reliable
+    + TCP: slower, but reliable
 - From 2.3.x version, OpenVPN fully supports IPv6 as protocol of the
   virtual network inside a tunnel and the OpenVPN applications can also
   establish connections via IPv6.

@@ -28,9 +28,41 @@
 - Water bottles, flip/spi belts, armbands
 - For long run: energy gels, energy chews
 
-# Bodybuilding
+# Resistance Training
 
-## Maximize Muscle Building
+## Concepts and Terminologies
+
+- Hypertrophy (increase muscle size)
+- Strength: enhance amount of force a muscle can produce
+- RM: repetition maximum
+    + The amount of weight that you can lift for one repetition with
+      proper form.
+- General Muscle Actions:
+    + Flexion: Bending a joint (e.g., biceps curl).
+    + Extension: Straightening a joint (e.g., triceps extension).
+    + Abduction: Moving a limb away from the midline of the body (e.g., lateral raises).
+    + Adduction: Moving a limb towards the midline of the body.
+- Skeletal / Voluntary Muscle groups
+    + chest, back, legs, shoulders, arms, hip/glutes and core (also
+      known as the trunk)
+- Common skeletal/voluntary muscles
+    + Shoulders:
+        * The deltoids, which are located on the top and sides of the shoulders.
+            - It is responsible for arm abduction
+    + Arms: The biceps (front of the upper arm) and triceps (back of the upper arm) are frequently targeted.
+        * biceps: Front of the upper arm, responsible for forearm flexion.
+        * triceps: Back of the upper arm, responsible for forearm extension.
+    + Chest: The pectoralis major muscles, located in the chest area.
+        * pectoralis: Located in the chest, used for arm movement.
+    + Back: The latissimus dorsi, trapezius, and erector spinae muscles are key back muscles.
+        * latissimus dorsi: Large back muscles, used for arm adduction and extension.
+        * trapezius: Upper back and neck muscles, involved in shoulder and neck movement.
+        * erector spinae: A group of muscles in the back that help with posture and spinal movement.
+    + Abdominals: The rectus abdominis (six-pack muscles), transversus abdominis (deep core muscle), and obliques (side abdominal muscles).
+    + Hips/Glutes: The gluteus maximus, medius, and minimus, which are the muscles of the buttocks.
+    + Legs: This includes the quadriceps (front of the thigh), hamstrings (back of the thigh), and calves (lower back of the leg).
+
+## Dietary
 
 Build and store new proteins faster than your body breaks down old
 proteins (making hormones, ...)
@@ -38,7 +70,6 @@ proteins (making hormones, ...)
 ### Eat meat
 
 1 gram of protein per pound of body weight => 150 g
-
 
 ### Eat more (more calories)
 
@@ -57,23 +88,6 @@ proteins (making hormones, ...)
     + H. Add 500 to G. This is your estimated daily calorie needs to
       gain 1 pound a week. (3600)
 
-### Work your biggest muscles
-
-- chest, back, legs
-    + squats
-    + dead-lifts
-    + pull-ups
-    + bent-over row
-    + bench presses
-    + push-ups
-    + dips
-    + military presses
-    + 2-3 three sets of 8-12 repetitions, 60 seconds' rest between sets
-
-### Have a stiff drink
-
-Drink one protein powder 30 to 60 minutes before your workout
-
 ### Workout/Lift your muscles every other day
 
 Your muscles grow when you're resting, not when you're working out
@@ -88,10 +102,41 @@ breakdown
 
 Five meal a day, every 3 hours, consume around 25-30 g
 
-### One Snack Ice Cream 2 hours after workout
+## Exercises
 
-### Combination of carbohydrates and protein 30 minutes before bed
+### Weight exercises:
 
+#### squats
+
+- 2-3 times / week
+- Hypertrophy
+    + 70%-80% RM
+    + 8-12 reps / set
+    + 3 sets with 60-90 seconds rest time
+- Strength
+    + 80%-90% RM
+    + 3-6 reps / set
+    + 3 sets with 90-180 seconds rest time
+
+#### bench presses
+
+#### dead-lifts
+
+- 1-2 times / week
+- Hypertrophy
+    + 70%-80% RM
+    + 5-10 reps / set
+    + 3 sets with 60-90 seconds rest time
+- Strength
+    + 80%-90% RM
+    + 1-5 reps / set
+    + 3 sets with 90-180 seconds rest time
+
+### Body weight exercises:
+
++ pull-ups
++ push-ups
++ dips
 
 # Improving strength
 

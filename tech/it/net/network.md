@@ -242,6 +242,33 @@ Today, maybe one device can handle multiple functionalities
 - https://en.wikipedia.org/wiki/Ethernet
 - https://en.wikipedia.org/wiki/Terabit_Ethernet
 
+### Ethernet cables
+
+- Standard:
+    + Cat5e, Cat6, Cat6a.
+    + Standardize by ANSI or TIA.
+    + Using Cat6 or Cat6a (10 Gbps with longer distance)
+        * Cat6 is ok for home use case.
+    + Cat7 and Cat8 are non-standardized cable type, so DO NOT USE THEM!
+
+#### RJ45 connector
+
+- Unshielded (UTP) RJ45 Connectors:
+    + Used for unshielded cables like Cat 5e and Cat 6.
+    + Less protection against electromagnetic interference.
+- Shielded (STP/FTP) RJ45 Connectors:
+    + Designed for shielded cables like Cat 6a, Cat 7, and Cat 8.
+    + Includes a metal shield to reduce crosstalk and EMI.
+- Pass-Through RJ45 Connectors:
+    + Wires pass through the connector before crimping.
+    + Easier to verify wire order before crimping.
+- Load Bar RJ45 Connectors:
+    + Includes a plastic guide (load bar) to align wires.
+    + Provides a more secure connection and reduces crosstalk.
+- Cat 6 RJ45 Connectors:
+    + Designed for Cat 6 cables with thicker gauge wires.
+    + Typically supports 1 Gbps to 10 Gbps connections.
+
 ## Fiber-optic communication
 
 - https://en.wikipedia.org/wiki/Fiber-optic_communication
@@ -289,6 +316,18 @@ Today, maybe one device can handle multiple functionalities
       liệu)
     - Quy hoạch sóng để tránh nhiễu ( 3 chanel không chồng lấn nhau là
       1,6,11)
+
+## LAN
+
+- Backchaul
+    + The connection from the access point back to the main network /
+      router.
+- Mesh:
+    + Access points are wirelessly connected with each other and the
+      main router / network instead of connected via wire (Ethernet,
+      fiber optic, etc.)
+- Wired Access Backhaul
+    + Access points are connected back to the main network using wires.
 
 # CIDR (Classless Inter-Domain Routing)
 

@@ -184,6 +184,10 @@ Links
 
 # Networking
 
+- https://docs.docker.com/engine/network/
+    - A docker container can connect to multiple networks:
+        + `docker network connect <net-name> <container-name>`
+- https://tomd.xyz/why-containers-wont-talk/
 - Expose vs Publish Ports
     + Expose in docker file is a form of documentation from the image
       owner to the image user.

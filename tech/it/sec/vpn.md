@@ -77,6 +77,22 @@ Tunnel endpoints must be authenticated before secure VPN tunnels can be
 established.
 
 
+# VPN protocols
+
+- https://www.ivpn.net/en/pptp-vs-ipsec-ikev2-vs-openvpn-vs-wireguard/
+- PPTP (old, legacy)
+- IPSec with IKEv2
+- OpenVPN
+- Wireguard
+
+## IPsec
+
+- https://en.wikipedia.org/wiki/IPsec
+- Old: L2TP (layer 2 tunneling protocol)
+    + https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol
+- Newer: IKE (internet key exchange)
+    + https://en.wikipedia.org/wiki/Internet_Key_Exchange
+
 # VPN on routers
 
 ## [DD-WRT][3]

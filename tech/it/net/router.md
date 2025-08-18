@@ -16,6 +16,13 @@
     + Data packets are forwarded from one router to another through an
       internetwork until it reaches its destination node.
 
+# Secure Router
+
+## Peplink
+
+- B One router
+    + https://routersecurity.org/Peplink.B.One.router.php
+
 # Open firmware
 
 ## [DD-WRT][2]

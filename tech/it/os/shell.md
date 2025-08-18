@@ -98,37 +98,42 @@ We can have 4 different types of shells:
 
 - Common library for line editing.
 
-| Keyboard Shortcut | Description                                       |
-|-------------------|---------------------------------------------------|
-| Ctrl+l            | Clear the screen                                  |
-| Cursor Movement   |
-| Ctrl+b            | Move cursor one character to the left             |
-| Ctrl+f            | Move cursor one character to the right            |
-| Alt+b             | Move cursor one word to the left                  |
-| Alt+f             | Move cursor one word to the right                 |
-| Ctrl+a            | Move cursor to start of the line                  |
-| Ctrl+e            | Move cursor to end of the line                    |
-| Copy & Paste      |
-| Ctrl+u            | Cut everything from line start to cursor          |
-| Ctrl+k            | Cut everything from the cursor to end of the line |
-| Alt+d             | Cut the current word after the cursor             |
-| Ctrl+w            | Cut the current word before the cursor            |
-| Ctrl+y            | Paste the previous cut text                       |
-| Alt+y             | Paste the second latest cut text                  |
-| Alt+Ctrl+y        | Paste the first argument of the previous command  |
-| Alt+./_           | Paste the last argument of the previous command   |
-| History           |
-| Ctrl+p            | Move to the previous line                         |
-| Ctrl+n            | Move to the next line                             |
-| Ctrl+s            | Search                                            |
-| Ctrl+r            | Reverse search                                    |
-| Ctrl+j            | End search                                        |
-| Ctrl+g            | Abort search (restores original line)             |
-| Alt+r             | Restores all changes made to line                 |
-| Completion        |
-| Tab               | Auto-complete a name                              |
-| Alt+?             | List all possible completions                     |
-| Alt+*             | Insert all possible completions                   |
+| Keyboard Shortcut         | Description                                                     |
+|---------------------------|-----------------------------------------------------------------|
+| Ctrl+c                    | Send a SIGINT signal (typically terminates the current process) |
+| Ctrl+z                    | Send a SIGTSTP signal (typically suspends the current process)  |
+| Ctrl+l                    | Clear the screen                                                |
+| Cursor Movement           |
+| Ctrl+b                    | Move cursor one character to the left                           |
+| Ctrl+f                    | Move cursor one character to the right                          |
+| Alt+b                     | Move cursor one word to the left                                |
+| Alt+f                     | Move cursor one word to the right                               |
+| Ctrl+a                    | Move cursor to start of the line                                |
+| Ctrl+e                    | Move cursor to end of the line                                  |
+| Editing and Deletion      |
+| Ctrl+d                    | Delete the character under the cursor                           |
+| Ctrl+h/Backspace/Delete   | Delete the character before the cursor                          |
+| Ctrl+u                    | Cut everything from line start to cursor                        |
+| Ctrl+k                    | Cut everything from the cursor to end of the line               |
+| Alt+d                     | Cut the current word after the cursor                           |
+| Ctrl+w                    | Cut the current word before the cursor                          |
+| Ctrl+y                    | Paste the previous cut text                                     |
+| Alt+y                     | Paste the second latest cut text                                |
+| Alt+Ctrl+y                | Paste the first argument of the previous command                |
+| Alt+./_                   | Paste the last argument of the previous command                 |
+| History                   |
+| Ctrl+p                    | Move to the previous line                                       |
+| Ctrl+n                    | Move to the next line                                           |
+| Ctrl+s                    | Search                                                          |
+| Ctrl+r                    | Reverse search                                                  |
+| Ctrl+j                    | End search                                                      |
+| Ctrl+g                    | Abort search (restores original line)                           |
+| Alt+r                     | Restores / undo all changes made to line                        |
+| Ctrl+_ (or Ctrl+x Ctrl+u) | Undo the last editing command                                   |
+| Completion                |
+| Tab                       | Auto-complete a name                                            |
+| Alt+?                     | List all possible completions                                   |
+| Alt+*                     | Insert all possible completions                                 |
 
 # Basic shell script
 
