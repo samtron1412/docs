@@ -27,7 +27,54 @@ Check style
     + It depends on each query: for some CTE is more performant, but for
       others temporary tables are more performant.
 
+```sql
+-- CTE
+WITH t (customerid, lastorderdate) AS
+ (SELECT customerid, max(orderdate)
+  FROM sales.SalesOrderHeader
+  GROUP BY customerid)
+SELECT *
+FROM sales.salesorderheader soh
+INNER JOIN t ON soh.customerid=t.customerid AND soh.orderdate=t.lastorderdate
+GO
+
+-- Temporary table
+CREATE TABLE #temptable (customerid [int] NOT NULL PRIMARY KEY, lastorderdate [datetime] NULL);
+
+INSERT INTO #temptable
+SELECT customerid, max(orderdate) as lastorderdate
+FROM sales.SalesOrderHeader
+GROUP BY customerid;
+
+SELECT *
+FROM sales.salesorderheader soh
+INNER JOIN #temptable t ON soh.customerid=t.customerid AND soh.orderdate=t.lastorderdate
+
+DROP TABLE #temptable
+GO
+
+-- Table variable
+DECLARE @tablevariable TABLE (customerid [int] NOT NULL PRIMARY KEY, lastorderdate [datetime] NULL);
+
+INSERT INTO @tablevariable
+SELECT customerid, max(orderdate) as lastorderdate
+FROM sales.SalesOrderHeader
+GROUP BY customerid;
+
+SELECT *
+FROM sales.salesorderheader soh
+INNER JOIN @tablevariable t ON soh.customerid=t.customerid AND soh.orderdate=t.lastorderdate
+GO
+```
+
 ## Common Table Expression (CTE) - WITH clause - Organize complex queries
+
+- A (non recursive) CTE is treated very similarly to other constructs
+  that can also be used as inline table expressions in SQL
+  Server. Derived tables, Views, and inline table valued functions. Note
+  that whilst BOL says that a CTE "can be thought of as temporary result
+  set" this is a purely logical description. More often than not it is
+  not materlialized in its own right.
 
 - https://modern-sql.com/feature/with
 - https://learnsql.com/blog/what-is-with-clause-sql/
@@ -44,10 +91,51 @@ WITH query_name1 AS (
 SELECT ...
 ```
 
+## Temporary Tables
+
+- This is a collection of rows stored on data pages in tempdb. The data
+  pages may reside partially or entirely in memory. Additionally the
+  temporary table may be indexed and have column statistics.
+
+## Table Variable
+
+## Other constructs
+
+- https://stackoverflow.com/questions/41616332/difference-between-cte-temp-table-and-table-variable-in-mssql?rq=3
+
 # Unit tests
 
 - https://dataform.co/blog/unit-tests
 - https://www.sqlshack.com/sql-unit-testing-best-practices/
+
+# Filtering
+
+## Where (clause)
+
+- Purpose: Filters individual rows before any grouping or aggregation takes place.
+- Usage: Used to filter data based on conditions applied to columns from the original table, without involving aggregate functions.
+- Placement: Appears before the GROUP BY clause in a SELECT statement.
+- Example:
+
+```sql
+SELECT product_name, price
+FROM products
+WHERE price > 50;
+```
+
+## Having (clause)
+
+- Purpose: Filters groups of rows after aggregation has occurred.
+- Usage: Used to filter data based on conditions applied to aggregate functions (e.g., COUNT(), SUM(), AVG(), MAX(), MIN()).
+- Placement: Appears after the GROUP BY clause in a SELECT statement.
+- Example:
+
+```sql
+SELECT category, COUNT(product_id) AS total_products
+FROM products
+GROUP BY category
+HAVING COUNT(product_id) > 10;
+```
 
 # Joins
 

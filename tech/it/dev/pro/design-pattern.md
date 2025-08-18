@@ -41,6 +41,53 @@ instead of an inner class).
 
 ## Clean Code
 
+## Common packages
+
+Having a common package will definitely have some benefits:
+
+1. DRY and simplify the onboarding process for new prod service later,
+   so it'll speed up our development process.
+2. Changes that we want to apply to all prod services will be done much
+   faster with less changes in multiple places (but at the same time,
+   it'll be much more riskier due to a larger blast radius).
+
+However, it will also pose some risks:
+
+1. In developing phase, common packages are helpful to get things done
+   quickly, but in the operational phase (when services are deployed to
+   production and is used by multiple customers), changes to common
+   packages are risky and difficult to achieve, since now each change
+   will affect ALL services that depend on these packages.
+2. It's harder for new joiners to understand the code base since the
+   code now is spreading across multiple packages, and this will
+   increase the risk of broken changes as well.
+
+I think to avoid the above risks and utilize the benefits, we can keep
+some things in mind when dealing with common packages:
+
+1. Keep the common packages as small as possible! This is the golden
+   rule! Not everything goes into the common packages. Only the
+   absolutely necessary stuff. What is the necessary stuff, you ask? In
+   my opinion, the stuff in the common packages have to be used widely
+   in almost other services that depends on it to be justified that it's
+   needed in the common package. If it's only needed for 1, 2, or 3 use
+   cases, then it's better to be located near where it is needed
+   instead.
+2. In the production phase (when these common packages already deployed
+   to prod and used everywhere), when making changes to common packages,
+   always asking whether this changes is backward compatible or not. If
+   it's not backward compatible (or you are NOT sure about that), then
+   bumping the major version and release as a new major version instead
+   of making changes at the same major version. Even when you are sure
+   that the change is backward compatible, it's good to test the change
+   at least in two places where the common package are used. And we
+   might want to have a separate pipeline to build and push the common
+   package changes to other version sets rather than build the common
+   package in multiple places/pipelines. This will help with catching
+   the build failure at the publishing phase and in the common package
+   pipeline only rather than breaking multiple pipelines if a bad change
+   is introduced. (All of these can be relaxed in development phase.)
+
 # Creational patterns
 
 ## Factory Method

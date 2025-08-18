@@ -15,6 +15,8 @@
 - Books:
     + https://realpython.com/best-python-books/#best-books-for-learning-python
     + https://hackr.io/blog/best-python-books-for-beginners-and-advanced-programmers
+    + https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1492056359/ref=pd_lpo_d_sccl_1/144-2146829-3357530
+        * Fluent Python: Clear, Concise, and Effective Programming
 - Best resources for Python OOP
     + https://aspp.school/python-summerschool-2013/_media/wiki/oop/oo_design_2013.pdf
     + https://www.programiz.com/python-programming/object-oriented-programming
@@ -31,6 +33,8 @@
     + https://developers.google.com/edu/python/
 - Design pattern
     + https://github.com/faif/python-patterns
+- Courses
+    + https://try.codecademy.com/learn-python-3?g_network=g&g_productchannel=&g_adid=699378988048&g_locinterest=&g_keyword=python%20lessons&g_acctid=243-039-7011&g_adtype=search&g_keywordid=kwd-297326765641&g_ifcreative=&g_campaign=account&g_locphysical=9033253&g_adgroupid=165097891369&g_productid=&g_source=%7Bsourceid%7D&g_merchantid=&g_placement=&g_partition=&g_campaignid=21287608736&g_ifproduct=&utm_id=t_kwd-297326765641:ag_165097891369:cp_21287608736:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=python%20lessons&utm_campaign=US_-_Exact&utm_content=699378988048&gad_campaignid=21287608736
 
 ## Help
 

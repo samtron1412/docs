@@ -88,6 +88,9 @@ Plugins available that will extend or add new functionality to Vim.
     + `?`: backward (can use arrow to select previous search patterns)
     + `q/`: view the search buffer that contains all previous search
       patterns.
+- Put `\c` at the end of search pattern for searching with case
+  insensitive.
+    + `/<pattern>\c`
 - Change each "foo" to "bar" in the current line: `:s/foo/bar/g` and
   have confirm : `:s/foo/bar/gc`
 - Change each "foo" to "bar" in all the lines: `:%s/foo/bar/g` and have

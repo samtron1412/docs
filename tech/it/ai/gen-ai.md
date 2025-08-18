@@ -18,3 +18,46 @@
     + Software development
     + Digital labor
     + Science, engineering, and research
+
+# Mental models for LLM and GenAI
+
+- https://www.youtube.com/watch?v=LCEmiRjPEtQ
+- Making Internet friendly toward LLMs / AI agents
+    + https://gitingest.com/
+    + https://deepwiki.org/
+        * https://www.reddit.com/r/GoogleGeminiAI/comments/1kbl94l/i_rebuilt_devinais_300k_deepwiki_in_60_minutes/
+        * https://github.com/AsyncFuncAI/deepwiki-open
+
+# Diffusion LLMs
+
+- https://www.linkedin.com/pulse/diffusion-llms-rewriting-rules-language-generation-neil-sahota-t82le
+    + Predicting all token at once
+
+# Collaboration
+
+- Hey! You are an AI expert. I would love your help and a consultation
+  with you to help me figure out where can I best leverage AI in my
+  life. As an AI expert, would you please ask me questions? One question
+  at a time, until you have enough context about my workflows and
+  responsibilities and KPIs and objectives that you could make two
+  obvious recommendations and two non-obvious recommendations for how I
+  could leverage AI in my work.
+- What are ten questions that I should ask about this?
+- What do you need to know from me in order to get the best response?
+- Drills: LLM can be role play interview or conversations.
+- What do you bring to the model?
+    + Technique
+    + Experience
+    + Perspective
+    + Inspiration
+- Creativity is pushing pass "good enough" solution that you first think
+  of.
+
+## Asking and prompting
+
+- Solve this step-by-step
+- Please think about this math problem thoroughly and in great
+  detail. Consider multiple approaches and show your complete
+  reasoning. Try different methods if your first approach doesn't work.
+- https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+

@@ -109,7 +109,7 @@
 - Const-assertion for arrays and object literals
     + `let a = [1, 2, 3] as const;`
 
-# Linting, Linter, ESLint Rules
+# Linting, Linter, ESLint Rules (husky, lint-staged)
 
 - `readonly`
     + https://typescript-eslint.io/rules/prefer-readonly/
@@ -121,6 +121,23 @@
 - https://makecode.com/extensions/naming-conventions
 - https://ts.dev/style/
 - https://google.github.io/styleguide/tsguide.html
+
+## Git Hooks for enforcing linting, formatting (husky, lint-staged)
+
+- `npm install --save-dev husky`
+- Create
+    + `.husky/pre-commit` file with content `npx lint-staged`
+    + `.lintstagedrc` file with following content
+
+```
+{
+  "*.{js,jsx,ts,tsx,html,css,scss,md,json,yaml,yml}": "prettier --write --cache",
+  "{lib,test}/**/*.{js,jsx,ts,tsx}": "eslint --fix --cache"
+}
+```
+
+- Rebuild the package to install husky, and then from now on, before git
+  commit it will lint and format your committing code.
 
 # Handbook
 

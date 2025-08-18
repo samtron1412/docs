@@ -25,12 +25,15 @@
     + `Cmd+K,Cmd+S`
 - `Option+Cmd+K` to record keys or type the search phrase: `"cmd+b"`
 
-### Useful shortcuts or feature to know
+#### Useful shortcuts or feature to know
 
 - Toggle side bar/panel view: `Cmd+b`
 - Toggle bottom bar/panel view: `Cmd+j`
-- Toggle minimap
 - `shift + cmd + p`: search commands
+    + Toggle minimap
+- Open file structure view: `Cmd+Shift+E`
+- Open Cline AI-agent view: `Cmd+Shift+'`
+    + Toggle between Plan and Act mode: `Cmd+Shift+A`
 - `cmd + p`: search files, `:` go to line, `@` go to symbols
 - `shift + cmd + .`: dropdown for the last breadcrumb
 - `shift + cmd + ;`: select the last breadcrumb without dropdrown

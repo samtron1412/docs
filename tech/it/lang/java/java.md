@@ -1662,6 +1662,211 @@ public class MyClass {
 - https://nipafx.dev/java-record-semantics/
 - https://stackoverflow.com/questions/61306802/lombok-getter-setter-vs-java-14-record
 
+
+# Concurrency (Concurrent)
+
+- Course
+    + https://online.rice.edu/courses/parallel-concurrent-and-distributed-programming-in-java-specialization
+- Concurrency vs. Parallelism
+    + https://jenkov.com/tutorials/java-concurrency/concurrency-vs-parallelism.html
+- Concurrency Models
+    + https://jenkov.com/tutorials/java-concurrency/concurrency-models.html
+- Java Concurrency in Practice (Fundamental) - Brian Goetz
+    + https://mrce.in/ebooks/Java%20Concurrency%20in%20Practice.pdf
+    + All Java concurrent frameworks are built on top of these
+      fundamentals.
+        * Java 1.0 - 1.4 (1995 - 2002): Basic Threading and
+          Synchronization
+            - Thread API: First version of Java included the `Thread`
+              class and `Runnable` interface.
+            - Synchronized Blocks and Methods: Basic locking mechanism
+              using the `synchronized` keyword.
+            - `wait`/`notify`: Used for inter-thread communication.
+            - `ThreadLocal`: thread-local variables that can be
+              independently initialized and maintained per thread.
+                + Provides a mechanism to store data that is accessible
+                  only to a specific thread, ensuring that each thread
+                  has its own independent copy of a variable.
+                + Each thread requires its own state that should not be
+                  shared with other threads (e.g., user session data in
+                  web servers).
+                + Avoiding synchronization overhead for per-thread data.
+                + Maintaining context information without passing it
+                  explicitly (e.g., transaction IDs, user authentication
+                  tokens).
+            - Issues: Lacked modern concurrency utilities, prone to
+              deadlocks, race conditions, and poor thread management.
+        * Java 1.5 (2004): `java.util.concurrent` The Big Leap
+            - `ExecutorService`: Managed thread pool with lifecycle control.
+            - `Future` and `Callable`: Retrieve task results and handle exceptions.
+            - Locks (`ReentrantLock`, `ReadWriteLock`): Advanced locking with try-lock and fairness policies.
+            - Atomic Classes (`AtomicInteger`, `AtomicReference`): Non-blocking, lock-free synchronization.
+            - Synchronizers (`CountDownLatch`, `Semaphore`, `CyclicBarrier`): Coordinating task execution.
+                + `Semaphore`: Limits the number of threads that can access a resource.
+                + `CountDownLatch`: Blocks until a set of threads complete.
+                + `CyclicBarrier`: Synchronizes threads at a common point.
+            - `Fork/Join Framework`: Introduced to manage recursive parallelism.
+        * Java 1.7 (2011): Fork/Join Framework - mainstream adoption
+            - `ForkJoinPool`: Work-stealing algorithm for efficient task scheduling.
+            - RecursiveTask and RecursiveAction: Supporting recursive task decomposition.
+            - Phaser: Advanced synchronizer for phased computation.
+        * Java 1.8 (2014): CompletableFuture and Streams
+            - `CompletableFuture`: Fluent API for async tasks, with callbacks, chaining, and exception handling.
+            - `Parallel Streams`: Declarative, data-parallel processing using streams.
+        * Java 9 (2017): Flow API - Reactive Streams
+            - `java.util.concurrent.Flow`: Publisher-Subscriber model for handling backpressure in streams.
+        * Java 19 (2022): Project Loom (Preview)
+            - Virtual Threads (Lightweight, user-mode, non-blocking threads).
+                * `Thread.ofVirtual()`: Thousands of threads without blocking OS threads.
+            - Structured Concurrency API: Manage task lifecycles with resource management.
+        * Java 21 (2023): Project Loom (Standardized)
+            - Virtual Threads as standard feature.
+            - Scoped Values (alternative for `ThreadLocal`)
+        * Java 25 (2025): Structured Concurrency and Optimizations
+            - Enhanced structured concurrency and performance optimizations.
+            - StructuredTaskScope: Manage concurrent tasks with well-defined lifecycles.
+            - Optimized Virtual Threads: Further tuning for high-throughput and scalability.
+    + Future Consideration
+        * Higher level APIs built on top of `StructuredTaskScope`
+        * Channels for Inter-Thread Communication (similar to Go or
+          Kotlin)
+        * Improve Cancellation and Interruption Mechanisms
+        * Scoped values, introduced to offer a more efficient
+          alternative to thread-local variables.
+        * Better visualization of task hierarchies, thread states, and
+          context propagation to aid developers in understanding and
+          diagnosing concurrent applications.
+- ChatGPT questions and answers
+    + https://chatgpt.com/share/682616db-0820-800c-97cc-d08873538ccf
+- APIs
+    + https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/package-summary.html
+- Main ideas
+    + There is a thread pool
+        * Default thread pool = number of processors - 1.
+        * Can create custom thread pools as well.
+    + There are tasks that we want to execute and get back the results.
+    + There is an executor that executes tasks.
+- Fork-join framework
+    + https://en.wikipedia.org/wiki/Work_stealing
+    + https://www.baeldung.com/java-fork-join
+    + https://stackoverflow.com/questions/7926864/how-is-the-fork-join-framework-better-than-a-thread-pool
+    + https://www.youtube.com/watch?v=5wgZYyvIVJk
+    + Common queue for external submission (main thread)
+        + Each thread has its own queue to contain its original work as
+          well as generated work (recursive tasks) from its tasks.
+    + Use work-stealing algorithm
+        + Idle threads steal work from busy threads: busy threads pick
+          tasks from the top of the queue, idle threads pick tasks from
+          the bottom of the queue.
+- Parallel stream
+    + https://www.baeldung.com/java-when-to-use-parallel-stream
+    + Not always parallel processing is faster than sequential
+      processing due to cost of splitting and merging the results.
+    + NQ model: N (number of elements to process) * Q (the amount of
+      computation performed per element), the larger N x Q, the more
+      likely that we gain performance from parallel procesing.
+    + Customer thread pool
+        * https://stackoverflow.com/questions/21163108/custom-thread-pool-in-java-8-parallel-stream
+    + Thread safety
+        * https://stackoverflow.com/questions/22350288/parallel-streams-collectors-and-thread-safety
+            - It is safe to use a non-concurrent collector in a collect
+              operation of a parallel stream.
+        * https://stackoverflow.com/questions/40238099/is-it-safe-to-use-parallelstream-to-populate-a-map-in-java-8
+- CompletableFuture
+    + https://www.youtube.com/watch?v=-MBPQ7NIL_Y
+- Structured Concurrency
+    + https://openjdk.org/jeps/505
+    + https://docs.oracle.com/en/java/javase/21/core/structured-concurrency.html
+
+## Thread Safe and Multi-threaded Programming
+
+- https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html
+- https://www.baeldung.com/java-thread-safety
+- Synchronization: a mechanism for communicating between threads
+    + Implementation
+        * Each object has an associated monitor which a thread can lock
+          or unlock.
+        * Only one thread at a time can hold a lock on a monitor.
+        * A thread t may lock a particular monitor multiple times; each
+          unlock reverses the effect of one lock operation.
+    + A `synchronized` statement
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.19
+    + A `synchronized` method
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.3.6
+    + The Java programming language neither prevents nor requires
+      detection of deadlock conditions.
+        * You have to build your own high-level entities to prevent
+          deadlocks.
+- Other mechanism for communicating between threads
+    + `volatile` variables
+        * https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1.4
+        * https://jenkov.com/tutorials/java-concurrency/volatile.html
+        * https://www.baeldung.com/java-volatile
+        * https://ioflood.com/blog/java-volatile
+        * field modifier, the Java Memory Model ensures that all threads
+          see a consistent value for the variable by reading the value
+          from main memory (heap) instead of Thread's local cache.
+        * `volatile` and `synchronized` keywords
+            - https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
+    + `java.util.concurrent` pacakges: ThreadLocal, etc.
+- Wait Sets and Notification
+    + https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.2
+    + Every object, in addition to having an associated monitor, has an
+      associated wait set. A wait set is a set of threads.
+- Java programming language memory model (for shared variables)
+    + https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4
+    + https://en.wikipedia.org/wiki/Java_memory_model
+    + Implementation
+        * https://jenkov.com/tutorials/java-concurrency/java-memory-model.html
+        * https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java
+    + A memory model describes, given a program and an execution trace
+      of that program, whether the execution trace is a legal execution
+      of the program.
+        * The Java programming language memory model works by examining
+          each read in an execution trace and checking that the write
+          observed by that read is valid according to certain rules.
+    + The memory model describes possible behaviors of a program.
+    + Shared variables
+        * https://jenkov.com/tutorials/java-concurrency/thread-safety.html
+        * Memory that can be shared between threads is called shared
+          memory or heap memory.
+        * All instance fields, static fields, and array elements are
+          stored in heap memory.
+        * Local variables (§14.4), formal method parameters (§8.4.1),
+          and exception handler parameters (§14.20) are never shared
+          between threads and are unaffected by the memory model.
+            - However, local variables can point to objects on heap
+              which are can be shared between threads.
+        * Two accesses to (reads of or writes to) the same variable are
+          said to be conflicting if at least one of the accesses is a
+          write.
+    + Happenned-before guarantee
+        * https://en.wikipedia.org/wiki/Happened-before
+        * https://jenkov.com/tutorials/java-concurrency/java-happens-before-guarantee.html
+
+## java.util.concurrent
+
+- ThreadLocal
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html
+    + https://www.baeldung.com/java-threadlocal
+    + https://jenkov.com/tutorials/java-concurrency/threadlocal.html
+    + Each thread has a local variable that only that thread can get and
+      set.
+    + https://stackoverflow.com/questions/817856/when-and-how-should-i-use-a-threadlocal-variable
+    + Can potentially create memory leaks if forget to close/remove it.
+
+# Java Language (java.lang)
+
+- APIs
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html
+    + Annotation: https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/package-summary.html
+    + Reflection: https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/package-summary.html
+    + Garbage collector: https://docs.oracle.com/javase/8/docs/api/java/lang/ref/package-summary.html
+    + JVM/JRE management: https://docs.oracle.com/javase/8/docs/api/java/lang/management/package-summary.html
+    + Dynamic language support: https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/package-summary.html
+    + Instrument programs running on the JVM: https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/package-summary.html
+
+
 # Iterators
 
 An Iterator is an object that enables to cycle through a collection,
