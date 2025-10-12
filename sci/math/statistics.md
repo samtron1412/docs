@@ -172,6 +172,28 @@ from chance is less then 5 percent.
 
 # Glossary
 
+## Statistical Significance and p-value
+
+Statistically significant means the observed results from a study are unlikely to have occurred by random chance alone, suggesting a real effect or difference is present. It is determined by a statistical test that generates a p-value, which represents the probability of observing such results if the null hypothesis (that there is no real effect) were true. A commonly used threshold for statistical significance is a p-value of 0.05 or less, meaning there is a less than 5% chance the results are due to randomness.
+How statistical significance is determined
+1. Null Hypothesis:
+Scientists start with a null hypothesis, which proposes that any observed differences are merely due to random variation or error.
+2. Hypothesis Testing:
+A statistical test is performed on the data to assess how likely the observed results are under the null hypothesis.
+3. P-value:
+The result of this test is a p-value, representing the probability of obtaining the observed data, or more extreme data, if the null hypothesis were true.
+4. Significance Level (Alpha):
+A predetermined threshold, typically 0.05 (or 5%), is used to decide if a result is statistically significant.
+5. Decision:
+If the p-value is less than the significance level (`p < 0.05`), the null hypothesis is rejected, indicating the result is statistically significant.
+What statistical significance does not mean
+Not necessarily practical significance:
+A statistically significant result doesn't automatically mean the finding is important or meaningful in a practical sense.
+Not a guarantee of truth:
+It doesn't prove the alternative hypothesis is true or that the result will be replicated every time.
+Not about the magnitude of the effect:
+It indicates a result is unlikely to be due to chance, but it doesn't tell you the size or importance of the observed difference.
+
 ## Percentile - p10, p50, p90, etc.
 
 - https://www.dnv.com/article/terminology-explained-p10-p50-and-p90-202611

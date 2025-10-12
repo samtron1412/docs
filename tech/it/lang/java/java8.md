@@ -178,12 +178,16 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
         * Static or Instance variables (on heap)
         * Non-final variables that are not changing.
 
-# Optional: Null Pointer Exception
+# Optional vs null (Null Pointer Exception - NPE)
 
 - Origin: it allows a method to return `Optional<T>`, i.e., it can
   return an object type T or nothing or null.
 - https://nipafx.dev/design-java-optional/
 - https://stackoverflow.com/questions/23454952/uses-for-optional
+    + The main design goal of Optional is to provide a means for a
+      function returning a value to indicate the absence of a return
+      value. This allows the caller to continue a chain of fluent method
+      calls.
 - https://www.oracle.com/technical-resources/articles/java/java8-optional.html
 - https://www.baeldung.com/java-optional
 - `map` method is broken for Optional
@@ -194,6 +198,54 @@ List<String> result = language.filter(Objects::nonNull).collect(Collectors.toLis
     + https://medium.com/@edouard.kaiser/optional-guava-and-java-8-9d6e7d6147b0
 - Good practices
     + https://forums.oracle.com/ords/apexds/post/optionals-patterns-and-good-practices-2540
+
+## Best Practices
+
+Java Optional is a container object used to represent the possible
+absence of a value, helping to prevent NullPointerExceptions. Adhering
+to best practices ensures its effective and clean usage:
+
+1. Use as a Method Return Type:
+    - Optional should primarily be used as a return type for methods
+      where the absence of a value is a legitimate and expected
+      scenario. This clearly signals to the caller that the result might
+      be empty.
+2. Avoid as a Method Parameter:
+    - Do not use Optional as a method parameter. This can lead to
+      unnecessary complexity in method signatures and force the method
+      to handle three states (present, empty, and potentially null if
+      the Optional itself is null). Instead, consider method overloading
+      or a builder pattern for optional parameters.
+3. Avoid in Fields or Collections:
+    - Optional is not designed for use as a field in a class or as an
+      element within collections. It can complicate serialization and
+      deserialization, and its overhead is generally not justified in
+      these contexts. Use empty collections instead of
+      Optional<Collection> when a collection might be empty.
+4. Embrace Functional Methods:
+    - Leverage Optional's functional methods like map(), flatMap(),
+      filter(), ifPresent(), ifPresentOrElse(), orElse(), orElseGet(),
+      and orElseThrow() to write concise and expressive code. These
+      methods facilitate chaining operations and handling the presence
+      or absence of a value in a declarative way.
+5. Avoid get() Without isPresent():
+    - Never call Optional.get() without first checking
+      Optional.isPresent(). Blindly calling get() can lead to
+      NoSuchElementException if the Optional is empty, defeating its
+      purpose.
+6. Provide Alternative Values or Actions:
+    - Use orElse() or orElseGet() to provide a default value when the
+      Optional is empty. Use ifPresent() or ifPresentOrElse() to execute
+      an action only if a value is present, or to provide an alternative
+      action if it's absent.
+7. Create Optional Instances Correctly:
+    - Use Optional.of(value) when you are certain the value is non-null.
+    - Use Optional.ofNullable(value) when the value might be null.
+    - Use Optional.empty() to explicitly create an empty Optional.
+8. Don't Overuse:
+    - Not every potentially null value needs to be wrapped in an
+      Optional. Use it judiciously in situations where the absence of a
+      value is a meaningful and expected part of the domain logic.
 
 # Monad - Monadic Java
 

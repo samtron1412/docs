@@ -11,6 +11,11 @@
 
 + Use `cat file.json | jq '. | tostring'` to convert a JSON to a string.
 
+## Filter objects that are true for some conditions
+
+- Matching using prefix
+    + `jq '.jobRuns |= map(select(.simulationName | startswith("trnso-neural-naf")))' ptm-run-list.json > filtered-ptm-run-list.json`
+
 ## Format or sort JSON files
 
 - Format: `jq . file.json > formatted.json`

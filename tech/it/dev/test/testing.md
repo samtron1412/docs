@@ -1,6 +1,6 @@
-[TOC]
+# Overview
 
-# 1. Testing terminology
+# Testing terminology
 
 - Why do we write tests?
     + Verify that code behaves as intended
@@ -99,6 +99,17 @@ If you are testing algorithms or system functionality, you want to test in most 
       calls.
     + Mocks and Stubs might not catch all behavior changes of
       dependency class/systems in the future.
+
+## Test Driven Development (TDD)
+
+## Behavior Driven Development (BDD)
+
+A .feature file is a plain-text file using the Gherkin language that
+describes a software feature's behavior in a human-readable format,
+specifying preconditions, actions, and expected outcomes for automated
+testing. Used in Behavior-Driven Development (BDD) frameworks like
+Cucumber, it outlines test scenarios that serve as executable
+specifications and documentation for the application's functionality.
 
 # 2. Test organization
 

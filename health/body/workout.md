@@ -117,6 +117,13 @@ Five meal a day, every 3 hours, consume around 25-30 g
 
 ### Weight exercises:
 
+- Biceps
+    + Curl with barbell or dumpbell
+- Triceps
+    + Overhead triceps extension with cable
+    + Skull crusher
+    + Dip
+
 #### squats
 
 - 2-3 times / week

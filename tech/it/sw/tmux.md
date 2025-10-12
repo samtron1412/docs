@@ -16,6 +16,94 @@
 - color
     + https://superuser.com/questions/285381/how-does-the-tmux-color-palette-work
 
+## Binding keys (shortcuts)
+
+- `tmux` allows a command to be bound to most keys, with or without a
+  prefix key.
+    + When specifying keys, most represent themselves (for
+  example ‘A’ to ‘Z’).
+    + Ctrl keys may be prefixed with ‘C-’ or ‘^’, Shift keys with ‘S-’ and Alt (meta) with ‘M-’.
+    + In addition, the following special key names are accepted: `Up,
+      Down, Left, Right, BSpace, BTab, DC (Delete), End, Enter, Escape,
+      F1 to F12, Home, IC (Insert), NPage/PageDown/PgDn,
+      PPage/PageUp/PgUp, Space, and Tab`.
+    + Note that to bind the ‘"’ or ‘'’ keys, quotation marks are
+      necessary, for example:
+        * `bind-key '"' split-window`
+        * `bind-key "'" new-window`
+- A command bound to the `Any` key will execute for all keys which do
+  not have a more specific binding.
+- Show current binding keys: `prefix-?`
+- `bind -r`
+    + With -r, you can press the prefix key once, then repeat the bound
+      key multiple times without pressing the prefix again (until the
+      repeat period expires).
+- Arrow keys binding
+    + `bind Up select-pane -U`: `Down`, `Left`, `Right`
+
+# Servers
+
+- `tmux` follows client-server model in which the clients can use a
+  socket to connect to a server.
+    + For each server, multiple clients can connect to that server.
+    + Each server can have multiple sessions.
+    + Each session can have multiple windows.
+    + Each window can have multiple panes and can be linked to multiple
+      sessions.
+    + Each pane is linked to a pseudo terminal (man 4 pty).
+- To create a new `tmux` server, we can use `-L <socket-name>` or `-S
+  <socket-path>`
+    + `tmux -L new-server`
+        * `tmux -L new-server <command> ...`
+    + `tmux -S /tmp/new-server`
+
+# Clients and Sessions
+
+# Windows and Panes
+
+# Buffers
+
+# Hooks
+
+- `tmux` allows commands to run on various triggers, called hooks.
+    + Most tmux commands have an after hook and there are a number of
+      hooks not associated with commands.
+- Hooks are stored as array options, members of the array are executed
+  in order when the hook is triggered.
+    + Like options different hooks may be global or belong to a session,
+      window or pane.
+    + Hooks may be configured with the set-hook or set-option commands
+      and displayed with show-hooks or show-options -H.
+    + The following two commands are equivalent:
+
+        set-hook -g pane-mode-changed[42] 'set -g status-left-style bg=red'
+        set-option -g pane-mode-changed[42] 'set -g status-left-style bg=red'
+
+- Setting a hook without specifying an array index clears the hook and sets the first member of the array.
+- A command's after hook is run after it completes, except when the command is run as part of a hook itself.
+    + They are named with an ‘after-’ prefix.
+    + For example, the following command adds a hook to select the
+      even-vertical layout after every split-window:
+
+        set-hook -g after-split-window "selectl even-vertical"
+
+- If a command fails, the ‘command-error’ hook will be fired.  For example, this could be used to write to a log file:
+
+        set-hook -g command-error "run-shell \"echo 'a tmux command failed' >>/tmp/log\""
+
+- All the notifications listed in the CONTROL MODE section are hooks (without any arguments), except %exit.
+
+# Status Line
+
+    Symbol    Meaning
+    *         Denotes the current window.
+    -         Marks the last window (previously selected).
+    #         Window activity is monitored and activity has been detected.
+    !         Window bells are monitored and a bell has occurred in the window.
+    ~         The window has been silent for the monitor-silence interval.
+    M         The window contains the marked pane. (can mark and unmark with prefix-m)
+    Z         The window's active pane is zoomed.
+
 # Plugins
 
 ## Tmux Plugin Manager (tpm)
@@ -71,6 +159,7 @@ In tmux, hit the prefix `ctrl+b` and then:
     :new<CR>  new session
     s  list sessions and switch between sessions
     $  name session
+    L  go to the last session
 
 ## Windows (tabs)
 
@@ -79,6 +168,7 @@ In tmux, hit the prefix `ctrl+b` and then:
     f  find window
     ,  name window
     &  kill window with confirmation
+    l  go to the last window
 
 ## Panes (splits)
 

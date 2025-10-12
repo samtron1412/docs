@@ -75,6 +75,8 @@
    after exiting the shell or terminal. It prevents the processes from
    receiving the SIGHUP (Signal Hang UP) signal.
     + https://www.digitalocean.com/community/tutorials/nohup-command-in-linux
+1. `realpath` - Print the resolved path
+    + `realpath <file/folder name>`
 
 # bash
 GNU Bourne-Again SHell

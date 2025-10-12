@@ -891,6 +891,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Insert current file path in INSERT mode
+
+- `Ctrl+R %`
+    + `%` register holds the current file path
+
 ## `myvim` - A script to a portable bundle of my Vim environment
 
 - https://github.com/junegunn/myvim

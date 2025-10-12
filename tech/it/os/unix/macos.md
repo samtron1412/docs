@@ -129,6 +129,11 @@ java11
 
 # Tips and Tricks
 
+## Prevent sleeping when closing the lid
+
+- https://apple.stackexchange.com/questions/219885/use-caffeinate-to-prevent-sleep-on-lid-close-on-battery
+    + Run `noz` command
+
 ## Configure memu bar (top of screen)
 
 - Go to Settings, then Control Center

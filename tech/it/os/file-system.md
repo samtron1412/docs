@@ -2,6 +2,11 @@
 
 # Overview
 
+- Lustre
+    + A type of parallel distributed file system.
+    + https://www.lustre.org/
+    + https://en.wikipedia.org/wiki/Lustre_(file_system)
+
 
 # References
 

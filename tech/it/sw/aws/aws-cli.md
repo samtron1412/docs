@@ -1,5 +1,7 @@
 # Overview
 
+- AWS CLI is built on top of `botocore` low-level Python SDK
+    + https://botocore.amazonaws.com/v1/documentation/api/latest/index.html
 - https://docs.aws.amazon.com/cli/
 - https://aws.amazon.com/cli/
 - https://github.com/aws/aws-cli

@@ -177,6 +177,19 @@ LEFT JOIN measures ON nutrients.name=measures.name
 - https://stackoverflow.com/questions/7747327/sql-rank-versus-row-number
 - https://stackoverflow.com/questions/64420584/when-to-choose-rank-over-dense-rank-or-row-number
 
+# LIKE / NOT LIKE
+
+## NULL NOT LIKE (or LIKE)
+
+- `NULL NOT LIKE ''` is not evaluated to TRUE in SQL.
+- In SQL, any comparison involving NULL (except for IS NULL or IS NOT
+  NULL) results in UNKNOWN, not TRUE or FALSE. This is because NULL
+  represents an unknown value, and you cannot definitively say whether
+  an unknown value is or is not like an empty string.
+- Therefore, the expression NULL NOT LIKE '' would evaluate to
+  UNKNOWN. In a WHERE clause, conditions that evaluate to UNKNOWN are
+  treated the same as FALSE, meaning the row will not be returned.
+
 # Best practices
 
 - Don't `SELECT *` and aggregate or join or order by

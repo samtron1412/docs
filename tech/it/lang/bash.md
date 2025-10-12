@@ -172,6 +172,52 @@ options** as well. These are words preceded by a double hyphen.
 - https://dev.to/banks/stop-ignoring-errors-in-bash-3co5
 - https://medium.com/@dirk.avery/the-bash-trap-trap-ce6083f36700
 
+The use of set -euo pipefail at the beginning of a Bash shell script is
+a common practice aimed at improving script robustness and error
+handling, though its universal application is debated. It is often
+referred to as "strict mode."
+
+Here's the meaning of each part:
+set -e (errexit):
+This option causes the shell to exit immediately if a command exits with
+a non-zero status. This prevents the script from continuing to execute
+with potentially invalid data or in an unexpected state after an error
+has occurred in a preceding command.
+
+set -u (nounset):
+This option causes the shell to exit immediately if an attempt is made
+to expand a variable that is unset or null. This helps catch typos in
+variable names and ensures that variables are properly initialized
+before use, preventing unexpected behavior.
+
+set -o pipefail (pipefail):
+This option addresses a common issue with pipelines in Bash. By default,
+the exit status of a pipeline is the exit status of the last command in
+the pipeline. If an earlier command in the pipeline fails but the last
+command succeeds, the pipeline's exit status will be zero (success),
+potentially masking the earlier failure. set -o pipefail ensures that
+the pipeline's exit status is the exit status of the rightmost command
+to exit with a non-zero status, or zero if all commands in the pipeline
+exit successfully. This makes errors in pipelines more transparent.
+
+`Best Practice Considerations`:
+While set -euo pipefail can significantly improve script reliability,
+its suitability depends on the specific script's purpose and
+complexity. For simple, self-contained scripts where immediate failure
+on error is desired, it is generally a good practice. However, for more
+complex scripts or those designed to handle errors gracefully, it might
+require careful consideration and potentially more nuanced error
+handling mechanisms. Some argue that blindly applying it can make
+debugging harder or interfere with intended error handling logic in
+certain scenarios.
+
+## `set -e` and `((VARIABLE++))` issue
+
+ 1. ((VARIABLE++)) is an arithmetic command that returns exit status based on the original value
+ 2. When TOTAL_EXECUTIONS=0, ((TOTAL_EXECUTIONS++)) returns exit status 1 (failure) because original value was 0
+ 3. With set -e, this causes script termination or complex error handling
+ 4. VARIABLE=$((VARIABLE + 1)) is an arithmetic expansion with no exit status issues
+
 # Temporary
 
 - [Here document](https://en.wikipedia.org/wiki/Here_document#Unix-Shells): EOF, STOP

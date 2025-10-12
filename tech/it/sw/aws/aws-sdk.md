@@ -163,4 +163,10 @@ s3 =
 
 # AWS Java SDK v1
 
+# AWS Python SDK
 
+- https://docs.aws.amazon.com/pythonsdk/
+- boto3: high-level interface
+    + https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html
+- botocore: low-level interface
+    + https://botocore.amazonaws.com/v1/documentation/api/latest/index.html
