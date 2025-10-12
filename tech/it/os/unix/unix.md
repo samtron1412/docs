@@ -1,6 +1,15 @@
 [TOC]
 
 # Overview
+
+- https://en.wikipedia.org/wiki/Unix_philosophy
+    + https://en.wikipedia.org/wiki/Unix_architecture
+    + https://en.wikipedia.org/wiki/Everything_is_a_file
+- Anti-UNIX
+    + https://en.wikipedia.org/wiki/The_UNIX-HATERS_Handbook
+    + https://en.wikipedia.org/wiki/Worse_is_better
+        * http://esr.ibiblio.org/?p=538
+
 **Unix** (all-caps **UNIX** for the trademark) is a family of **multitasking**, **multiuser** computer operating systems that derive from the original AT&T Unix, developed in the 1970s at the Bell Labs research center by *Ken Thompson*, *Dennis Ritchie*, and others
 
 Written in **C** and assembly language. Historically **closed source**. Development started in 1969, First manual published internally in 1971, announced outside Bell Labs in 1973. Kernel type **monolithic**.

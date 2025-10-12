@@ -67,6 +67,17 @@
 Build and store new proteins faster than your body breaks down old
 proteins (making hormones, ...)
 
+### Supplements
+
+- Protein powder
+    + Ascent Whey Vanilla
+        * https://www.garagegymreviews.com/ascent-whey-protein-review
+    + Optimum Nutrition: Vanilla or unflavor
+        * https://www.garagegymreviews.com/optimum-nutrition-100-whey-gold-standard-review
+- Creatine
+    + Help providing more energy for muscle
+    + 5g per day
+
 ### Eat meat
 
 1 gram of protein per pound of body weight => 150 g

@@ -87,11 +87,16 @@ entered as **a regular user**.
     # mkinitcpio -p linux
     $ makepkg -s
 
+## Installation and Configuration
+
+- Installation Guide
+    + https://wiki.archlinux.org/title/Installation_guide
+
 ## Installation of packages
 
 Official packages: `# pacman -Syu <package>`
 
-Arch User Repository (AUR)
+`Arch User Repository (AUR)`
 1. Download tarball: curl (or using git to clone source code)
 2. Extract the tarball: `tar xzf foobar.tar.gz`. (no need this if using
    git)
@@ -99,7 +104,8 @@ Arch User Repository (AUR)
    pacman, and `-i` to install the package). This will download the
    code, compile it and pack it.
 4. Look for a README file in `src/`, contain some useful information.
-5. If running `makepkg` without `-i`, then install with pacman: `#
+5. If you chose to run `makepkg` without `-i` to generate the package
+   only, then the last step is to install the package with pacman: `#
    pacman -U /path/to/pkg.tar.xz`
 
 These manually installed packages are called foreign packages — packages
@@ -114,6 +120,8 @@ Enable service: `systemctl enable example.service`
 
 
 # Pre-Installation
+
+- https://wiki.archlinux.org/title/Installation_guide#Pre-installation
 
 ## Securely wipe disk
 
@@ -393,6 +401,8 @@ cipher to the individual blocks
 
 # [Installation][installation]
 
+- https://wiki.archlinux.org/title/Installation_guide#Installation
+
 ## Preparation
 
 A working Internet connection is required.
@@ -631,7 +641,7 @@ vconsole.conf if does not exist:
 KEYMAP=us
 FONT=ter-116n
 
-### time zone:
+### time zone
 
     # ln -s /usr/share/zoneinfo/<Zone>/<SubZone> /etc/localtime
 
@@ -645,7 +655,7 @@ Force Windows use UTC, search Google:
 - disable windows time service: **sc config w32time start= disabled**
 - enable window time service: **sc config w32time start= demand**
 
-### hostname:
+### hostname
 
     # echo myhostname > /etc/hostname
 
@@ -729,18 +739,20 @@ Install os-prober: `# pacman -Syu os-prober`
     # reboot
 
 
-# [Post Installation][post-installation]
+# [Post Installation][post-installation] / General Recommendations
 
-## 1. System administration
+- https://wiki.archlinux.org/title/General_recommendations
+
+## System administration
 
 This section deals with administration task and system management.
 
-### 1.1. Users and Groups management
+### Access Management - Users and Groups
 
 #### Why?
 
 Logging in as root for prolonged periods of time, possibly even exposing
-it via SSH on a server, is in secure.
+it via SSH on a server, is insecure.
 
 #### What?
 
@@ -760,11 +772,13 @@ Users and groups are a mechanism for **access control**.
 
 ##### Permissions and ownership
 
+- https://wiki.archlinux.org/title/Users_and_groups#Permissions_and_ownership
 
 #### How?
 
 ##### User management
 
+- https://wiki.archlinux.org/title/Users_and_groups#User_management
 - Create two users: `glider` with password and `guest` with no password
 - List users logged on system: `$ who`
 - Add a new user: (`-m` create home directory if it does not exist
@@ -780,100 +794,54 @@ Users and groups are a mechanism for **access control**.
 
 ##### Group management
 
+- https://wiki.archlinux.org/title/Users_and_groups#Group_management
 - List of groups and users belong group: `$ cat /etc/group`
 - Create a new group: `$ groupadd [group]`
 - Add users to a group: `$ gpasswd -a [user] [group]`
 - Remove users from a group: `$ gpasswd -d [user] [group]`
 - Del a existing group: `$ groupdel [group]`
 
-### 1.2. Privilege escalation
+### Security
 
-### 1.3. Service management
+- https://wiki.archlinux.org/title/Security
 
-+ list all units of system: $ systemctl
-+ list all failed units: $ systemctl --failed
+#### Privilege escalation
+
+- https://wiki.archlinux.org/title/List_of_applications/Security#Privilege_elevation
+- A list of application to allow running commands or starting an
+  interactive shell as another user (e.g. root).
+    + `su`
+    + `sudo`
+    + `sudo-rs`
+
+### Service management
+
+- https://wiki.archlinux.org/title/Systemd
+- https://wiki.archlinux.org/title/Init
++ list all units of system: `$ systemctl`
++ list all failed units: `$ systemctl --failed`
 Activate a unit immediately:
-    # systemctl start unit
+    `# systemctl start unit`
 Deactivate a unit immediately:
-    # systemctl stop unit
+    `# systemctl stop unit`
 Restart a unit:
-    # systemctl restart unit
+    `# systemctl restart unit`
 Ask a unit to reload its configuration:
-    # systemctl reload unit
+    `# systemctl reload unit`
 Show the status of a unit, including whether it is running or not:
-    $ systemctl status unit
+    `$ systemctl status unit`
 Check whether a unit is already enabled or not:
-    $ systemctl is-enabled unit
+    `$ systemctl is-enabled unit`
 Enable a unit to be started on bootup:
-    # systemctl enable unit
+    `# systemctl enable unit`
 Disable a unit to not start during bootup:
-    # systemctl disable unit
+    `# systemctl disable unit`
 Show the manual page associated with a unit (this has to be supported by the unit file):
-    $ systemctl help unit
+    `$ systemctl help unit`
 Reload systemd, scanning for new or changed units:
-    # systemctl daemon-reload
+    `# systemctl daemon-reload`
 
-- Power management:
-    Shut down and reboot the system:
-        $ systemctl reboot
-    Shut down and power-off the system:
-        $ systemctl poweroff
-    Suspend the system:
-        $ systemctl suspend
-    Put the system into hibernation:
-        $ systemctl hibernate
-    Put the system into hybrid-sleep state (or suspend-to-both):
-        $ systemctl hybrid-sleep
-
-- Sound:
-    + Install alsa-utils: $ pacman -Syu alsa-utils
-    + unmute: $ amixer sset Master unmute
-    + Next, test to see if sound works:
-        $ speaker-test -c 2
-
-- Fonts:
-    + `# pacman -Syu ttf-dejavu`
-
-- Display:
-    + To install the base Xorg packages:
-        `# pacman -Syu xorg-server xorg-server-utils xorg-xinit`
-    + Install mesa for 3D support:
-        `# pacman -Syu mesa`
-    + If you do not know which video chipset is available on your machine, run:
-        `$ lspci | grep VGA`
-    + For a complete list of open-source video drivers, search the package database:
-        `$ pacman -Ss xf86-video | less`
-    + The vesa driver is a generic mode-setting driver that will work with almost every GPU, but will not provide any 2D or 3D acceleration. If a better driver cannot be found or fails to load, Xorg will fall back to vesa. To install it:
-        `# pacman -Syu xf86-video-vesa`
-    + Laptop users (or users with a tactile screen) will need the xf86-input-synaptics package for the touchpad/touchscreen to work:
-        `# pacman -Syu xf86-input-synaptics`
-    + Test X (optional):
-        = Install the default environment:
-            # pacman -Syu xorg-twm xorg-xclock xterm
-        = To start the (test) Xorg session, run:
-            $ startx
-        = A few movable windows should show up, and your mouse should work. Once you are satisfied that X installation was a success, you may exit out of X by issuing the exit command into the prompts until you return to the console.
-            $ exit
-        = If the screen goes black, you may still attempt to switch to a different virtual console (e.g. Ctrl+Alt+F2), and blindly log in as root. You can do this by typing "root" (press Enter after typing it) and entering the root password (again, press Enter after typing it).
-        = You may also attempt to kill the X server with:
-            # pkill X
-        = If this does not work, reboot blindly with:
-            # reboot
-
-- Windows Management: dwm
-    + Basic programming tools present in base-devel are needed in order to compile dwm and build a package for it, and the abs package is also a requisite for fetching the necessary build scripts. Installing dmenu, a fast and lightweight dynamic menu for X is a good idea.
-        # pacman -Syu base-devel abs dmenu
-    + Once the required packages are installed, use ABS to update and then copy the dwm build scripts from the ABS tree to a temporary directory. For example:
-        # abs community/dwm
-        $ cp -r /var/abs/community/dwm ~/dwm
-    + Use cd to switch to the directory containing the build scripts (the example above used ~/dwm). Then run:
-        $ makepkg -i
-    This will compile dwm, build an Arch Linux package containing the resulting files, and install the package file all in one step. If problems are encountered, review the output for specific information.
-
-    + To start dwm with startx or the SLIM login manager, simply append the following to ~/.xinitrc:
-        exec dwm
-
-### 1.4. System maintenance
+### System maintenance
 
 - https://wiki.archlinux.org/index.php/System_maintenance
 
@@ -888,6 +856,15 @@ Reload systemd, scanning for new or changed units:
     + https://wiki.archlinux.org/index.php/Xorg#Troubleshooting
 
 #### Backup
+
+Back up your system before big upgrade. Use to recover your system when
+it had trouble.
+
+[Incremental back up][incremental-backup]: your data, important data.
+
+[Non-incremental back up][non-incremental]
+- [clonezilla](http://clonezilla.org/clonezilla-live-doc.php)
+
 
 Backups may be automated with [systemd/Timers](https://wiki.archlinux.org/index.php/Systemd/Timers)
 
@@ -906,7 +883,7 @@ Backups may be automated with [systemd/Timers](https://wiki.archlinux.org/index.
 #### Clean the filesystem
 
 
-## 2. Package management:
+## Package management (pacman) :
 
 How to know your architecture: open terminal and type these command
 - use command `# uname`
@@ -919,21 +896,50 @@ How to know your architecture: open terminal and type these command
 
 Remember that pacman's output is logged in `/var/log/pacman.log`.
 
-## 3. Booting
+## Booting
 
 Something
 
-## 4. Back up system
+## Graphical User Interface
 
-Back up your system before big upgrade. Use to recover your system when
-it had trouble.
+- Display:
+    + To install the base Xorg packages:
+        `# pacman -Syu xorg-server xorg-server-utils xorg-xinit`
+    + Install mesa for 3D support:
+        `# pacman -Syu mesa`
+    + If you do not know which video chipset is available on your machine, run:
+        `$ lspci | grep VGA`
+    + For a complete list of open-source video drivers, search the package database:
+        `$ pacman -Ss xf86-video | less`
+    + The vesa driver is a generic mode-setting driver that will work with almost every GPU, but will not provide any 2D or 3D acceleration. If a better driver cannot be found or fails to load, Xorg will fall back to vesa. To install it:
+        `# pacman -Syu xf86-video-vesa`
+    + Laptop users (or users with a tactile screen) will need the xf86-input-synaptics package for the touchpad/touchscreen to work:
+        `# pacman -Syu xf86-input-synaptics`
+    + Test X (optional):
+        = Install the default environment:
+            `# pacman -Syu xorg-twm xorg-xclock xterm`
+        = To start the (test) Xorg session, run:
+            `$ startx`
+        = A few movable windows should show up, and your mouse should work. Once you are satisfied that X installation was a success, you may exit out of X by issuing the exit command into the prompts until you return to the console.
+            `$ exit`
+        = If the screen goes black, you may still attempt to switch to a different virtual console (e.g. Ctrl+Alt+F2), and blindly log in as root. You can do this by typing "root" (press Enter after typing it) and entering the root password (again, press Enter after typing it).
+        = You may also attempt to kill the X server with:
+            `# pkill X`
+        = If this does not work, reboot blindly with:
+            `# reboot`
 
-[Incremental back up][incremental-backup]: your data, important data.
+- Windows Management: dwm
+    + Basic programming tools present in base-devel are needed in order to compile dwm and build a package for it, and the abs package is also a requisite for fetching the necessary build scripts. Installing dmenu, a fast and lightweight dynamic menu for X is a good idea.
+        `# pacman -Syu base-devel abs dmenu`
+    + Once the required packages are installed, use ABS to update and then copy the dwm build scripts from the ABS tree to a temporary directory. For example:
+        `# abs community/dwm`
+        `$ cp -r /var/abs/community/dwm ~/dwm`
+    + Use cd to switch to the directory containing the build scripts (the example above used ~/dwm). Then run:
+        `$ makepkg -i`
+    This will compile dwm, build an Arch Linux package containing the resulting files, and install the package file all in one step. If problems are encountered, review the output for specific information.
 
-[Non-incremental back up][non-incremental]
-- [clonezilla](http://clonezilla.org/clonezilla-live-doc.php)
-
-## 5. Graphical User Interface
+    + To start dwm with startx or the SLIM login manager, simply append the following to ~/.xinitrc:
+        `exec dwm`
 
 ### Display drivers
 
@@ -943,15 +949,29 @@ it had trouble.
 
 ### Display manager
 
-## 6. Power management
+## Power management
 
-Something
+- Power management:
+    Shut down and reboot the system:
+        `$ systemctl reboot`
+    Shut down and power-off the system:
+        `$ systemctl poweroff`
+    Suspend the system:
+        `$ systemctl suspend`
+    Put the system into hibernation:
+        `$ systemctl hibernate`
+    Put the system into hybrid-sleep state (or suspend-to-both):
+        `$ systemctl hybrid-sleep`
 
-## 7. Multimedia
+## Multimedia
 
-Something
+- Sound:
+    + Install alsa-utils: `$ pacman -Syu alsa-utils`
+    + unmute: `$ amixer sset Master unmute`
+    + Next, test to see if sound works:
+        `$ speaker-test -c 2`
 
-## 8. Networking
+## Networking
 
 - Network configuration:
     + https://wiki.archlinux.org/index.php/Network_configuration
@@ -1022,29 +1042,31 @@ Something
 
 Something
 
-## 9. Input devices
+## Input devices
 
 Something
 
-## 10. Optimization
+## Optimization
 
 - https://wiki.archlinux.org/index.php/Improving_performance
 
-## 11. System service
+## System service
 
 Something
 
-## 12. Appearance
+## Appearance
 
 Something
 
 ### Fonts
 
+- Fonts:
+    + `# pacman -Syu ttf-dejavu`
 - ttf-inconsolata
 - ttf-dejavu: DejavuSansMono
 - Source Code Pro
 
-## 13. Console improvements
+## Console improvements
 
 Something
 
@@ -1171,6 +1193,7 @@ systemctl enable atd
 ```bash
 #!/bin/bash
 echo /home/glider/bin/kbd | at now
+```
 
 
 - `/home/glider/bin/kbd` script:
@@ -1211,6 +1234,21 @@ How to print
   [comparison](http://chrony.tuxfamily.org/comparison.html)
 
 ## [Default applications](https://wiki.archlinux.org/index.php/Default_applications)
+
+## NFS
+
+- https://wiki.archlinux.org/title/NFS
+- Mount a share from unraid using NFS
+
+```
+sudo pacman -Syu nfs-utils
+sudo mkdir -p /mnt/unraid_share
+showmount -e 192.168.50.213
+sudo mount -t nfs 192.168.50.213:/mnt/user/data /mnt/unraid_share
+
+# Add this to /etc/fstab for auto mount at boot time
+192.168.50.213:/mnt/user/data /mnt/unraid_share nfs defaults 0 0
+```
 
 # References
 
