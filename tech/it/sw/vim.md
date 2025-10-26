@@ -65,6 +65,11 @@ nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
 nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
 ```
 
+## Debugging Configurations
+
+- Where the configuration was last set?
+    + `:verbose set <config-name>? <config-name>?`
+    + `:verbose set conceallevel? concealcursor?`
 
 
 # Features and improvements over vi

@@ -188,15 +188,9 @@ details.
 - Research more this option.
 - Potentially fastest.
 
-## zinit
+## antidote
 
-- https://github.com/zdharma/zinit
-
-## antigen
-
-- https://github.com/zsh-users/antigen
-
-## zplug
+- https://antidote.sh/
 
 # Plugins
 
@@ -251,6 +245,8 @@ details.
 
 # Improve performance
 
+- Simplify ZSH setup:
+    + https://batsov.com/articles/2025/03/01/back-to-the-basics-zsh-without-oh-my-zsh/
 - https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load.html
 - https://blog.jonlu.ca/posts/speeding-up-zsh
 - https://stevenvanbael.com/profiling-zsh-startup

@@ -134,6 +134,51 @@ java11
 - https://apple.stackexchange.com/questions/219885/use-caffeinate-to-prevent-sleep-on-lid-close-on-battery
     + Run `noz` command
 
+```sh
+#!/bin/bash
+#***************************************************************************
+#*** noz - prevent laptop from sleeping when lid is closed
+#***************************************************************************
+
+#***** set some defaults *****
+DEF_WAKE_LEN=900 # in seconds
+
+#***** determine timeout value *****
+timeout_len=${1:-$DEF_WAKE_LEN}
+
+function prevent_sleep() {
+    echo
+    echo -n "Preventing sleep for $timeout_len seconds; press <enter> to continue..."
+    sudo pmset -b disablesleep 1
+}
+
+function enable_sleep() {
+    # $1: <enter> = 0, timeout = 1, Ctrl-C = undef
+
+    #----- insert a newline for timeout or Ctrl-C -----
+    if [[ ${1:-1} -eq 1 ]]; then    echo; fi
+
+    sudo pmset -b disablesleep 0
+
+    #----- sleep on timeout only -----
+    if [[ ${1:--1} -eq 1 ]]; then   sudo pmset sleepnow; fi
+    exit
+}
+
+#***** prevent it from sleeping *****
+prevent_sleep
+
+#***** trap Ctrl-C *****
+trap enable_sleep INT
+
+#***** wait for an enter *****
+read -t $timeout_len
+rc=$?
+
+#***** re-enable normal sleep *****
+enable_sleep $rc
+```
+
 ## Configure memu bar (top of screen)
 
 - Go to Settings, then Control Center
@@ -347,3 +392,12 @@ USING CONDA
 
 - `killall NotificationCenter`
 
+
+# Troubleshooting
+
+## zsh (qterm)(16532) MallocStackLogging: can't turn off malloc stack logging because it was not enabled
+
+- The error message above is displayed in the terminal repeatedly when
+  executing commands or in Vim editor.
+- As of 20251015, this is caused by Amazon Q application (the UI app),
+  turned it off fix the issue.

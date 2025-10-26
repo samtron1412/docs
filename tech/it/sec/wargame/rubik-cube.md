@@ -15,7 +15,7 @@
         * https://www.youtube.com/watch?v=Jhsu7XtmXkY
     + Solution guide: You can do The Rubik's Cube
         * https://www.rubiks.com/solution-guides
-- Makes the first two layers(F2L) faster. This is the most time
+- Makes the first two layers (F2L) faster. This is the most time
   consuming part of a solve so getting this early is very helpful.
     + https://youtu.be/Ar_Zit1VLG0?si=qNVbG9ULeymz7wAI
 - CFOP is the common method for completing the last layer, but requires
