@@ -217,7 +217,10 @@
 ## Enums
 
 - Enum vs `as const`
-    + Prefer `const x = {} as const` instead
+    + Prefer `const x = {} as const` instead due to some surprises from
+      how enums are implemented in TypeScript.
+        * Enum is not a native feature of JavaScript. `as const` object
+          is a native feature of JavaScript.
         * https://www.typescriptlang.org/docs/handbook/enums.html#objects-vs-enums
     + https://www.youtube.com/watch?v=vBJF0cJ_3G0&t=1012s
     + https://www.youtube.com/watch?v=jjMbPt_H3RQ

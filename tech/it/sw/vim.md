@@ -896,6 +896,11 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Reduce Markdown Heading Levels By One
+
+- Using substitution with
+    + `:%s/^\(##\+\) /\=submatch(1)[1:] . ' '/gc`
+
 ## Insert current file path in INSERT mode
 
 - `Ctrl+R %`

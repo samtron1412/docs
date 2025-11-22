@@ -245,7 +245,18 @@ public class MySingleton {
 
 # Structural patterns
 
-## Adapter
+## Adapter / Gateway
+
+- https://martinfowler.com/eaaCatalog/gateway.html
+- https://martinfowler.com/articles/gateway-pattern.html
+- Example for refactoring
+    + https://martinfowler.com/articles/refactoring-external-service.html
+        * coordinator: service / activity
+        * connection / data accessor: object to directly expose external
+          services' context.
+        * gateway: object that expose interfaces in term of my context
+          to interact with external services using connections.
+        * domain object: objects with domain logic in its methods
 
 ## Bridge
 

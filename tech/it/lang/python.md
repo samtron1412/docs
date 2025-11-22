@@ -333,6 +333,9 @@ x = q.get()
         * If your system has `mise`, then make sure to not use it for
           Python
             - https://mise.jdx.dev/mise-cookbook/python.html
+        * Using Jupyter from VS Code with uv
+            - https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-from-vs-code
+            - `uv add --dev ipykernel`
 - You also need non-Python packages:
     + pixi
         * https://pixi.sh/latest/
@@ -352,6 +355,33 @@ x = q.get()
 - ty (same creator as uv and ruff; written in Rust)
     + https://github.com/astral-sh/ty
     + https://docs.astral.sh/ty
+
+# Use Cases
+
+## Data Analysis
+
+- Single machine
+    + Polars (Rust-based)
+    + DuckDB
+    + Dask
+- Multiple machines / clusters
+    + PySpark
+    + Dask
+
+## Read and Write Parquet files
+
+- Polars
+- DuckDB
+
+## Read and Write Avro Files
+
+- Avro to Polar DataFrame
+    + https://pypi.org/project/polars-avro/
+- Avro to Pandas DataFrame
+    + https://github.com/ynqa/pandavro
+- Official Python package: https://avro.apache.org/docs/1.11.1/getting-started-python/
+- 2019 summary
+    + https://www.perfectlyrandom.org/2019/11/29/handling-avro-files-in-python/
 
 # Packages
 

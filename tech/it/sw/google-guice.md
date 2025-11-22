@@ -525,6 +525,7 @@ Cons: Using string names can lead to typos and is less type-safe.
 Use Case: Similar to @Named, but with type safety and better readability.
 Pros: Type-safe and more readable.
 Cons: Requires more boilerplate code to define custom annotations.
+
 Each method provides different ways to handle complex dependency injection scenarios, making Guice a versatile tool for various applications.
 
 # Tips and Tricks

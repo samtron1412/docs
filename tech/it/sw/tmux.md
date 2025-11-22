@@ -6,6 +6,8 @@
     + https://leanpub.com/the-tao-of-tmux/read
 - https://github.com/gpakosz/.tmux
 - Pair programming: https://github.com/zolrath/wemux/
+- Advanced Use
+    + https://github.com/tmux/tmux/wiki/Advanced-Use
 
 # Configuration
 
@@ -45,16 +47,22 @@
 
 - `tmux` follows client-server model in which the clients can use a
   socket to connect to a server.
-    + For each server, multiple clients can connect to that server.
+    + For each server, multiple clients can connect to that server using
+      a socket. Each server is associated to a socket.
+        * The default location of socket is in: `/tmp/tmux-{uid}/`
+          folder. The `uid` is the user ID of the current login user of
+          the operating system.
+        * To get the user ID: `id -u` on Linux.
     + Each server can have multiple sessions.
     + Each session can have multiple windows.
     + Each window can have multiple panes and can be linked to multiple
       sessions.
-    + Each pane is linked to a pseudo terminal (man 4 pty).
+    + Each pane is linked to a pseudo terminal (`man 4 pty`).
 - To create a new `tmux` server, we can use `-L <socket-name>` or `-S
   <socket-path>`
-    + `tmux -L new-server`
-        * `tmux -L new-server <command> ...`
+    + https://github.com/tmux/tmux/wiki/Advanced-Use#socket-and-multiple-servers
+    + `tmux -L new-server-name`
+        * `tmux -L new-server-name <command> ...`
     + `tmux -S /tmp/new-server`
 
 # Clients and Sessions
@@ -109,6 +117,11 @@
 ## Tmux Plugin Manager (tpm)
 
 - https://github.com/tmux-plugins/tpm
+- Installation
+    + `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+    + Add the config to `.tmux.conf`
+    + Reload the `.tmux.conf`: `prefix + r` / `prefix + :source-file ~/.tmux.conf`
+- Install plugins: `prefix + I`
 
 ## Tmux Resurrect
 
@@ -156,29 +169,29 @@ In tmux, hit the prefix `ctrl+b` and then:
 
 ## Sessions
 
-    :new<CR>  new session
-    s  list sessions and switch between sessions
-    $  name session
-    L  go to the last session
+    <prefix> :new<CR>  new session
+    <prefix> s  list sessions and switch between sessions
+    <prefix> $  name session
+    <prefix> L  go to the last session
 
 ## Windows (tabs)
 
-    c  new window
-    w  list windows
-    f  find window
-    ,  name window
-    &  kill window with confirmation
-    l  go to the last window
+    <prefix> c  new window
+    <prefix> w  list windows
+    <prefix> f  find window
+    <prefix> ,  name window
+    <prefix> &  kill window with confirmation
+    <prefix> l  go to the last window
 
 ## Panes (splits)
 
-    %  vertical split
-    "  horizontal split
+    <prefix> %  vertical split
+    <prefix> "  horizontal split
 
-    x  kill pane with confirmation
-    +  break pane into window (e.g. to select text by mouse to copy)
-    -  restore pane from window
-    ⍽  space - toggle between layouts
+    <prefix> x  kill pane with confirmation
+    <prefix> +  break pane into window (e.g. to select text by mouse to copy)
+    <prefix> -  restore pane from window
+    <prefix> ⍽  space - toggle between layouts
     <prefix> z toggle pane zoom
 
 ### Switching between panes
@@ -352,7 +365,10 @@ To get out of Copy mode, we just press the `ENTER` key.
 
 ## Unset an environment variable for the session
 
-- `tmux set-environment -r <ENV_VAR>`
+- Inside a tmux session:
+    + `prefix :set-environment -ug <ENV_VAR>`
+- When creating a new session
+    + `tmux set-environment -r <ENV_VAR>`
 
 ## Nested local and remote tmux sessions
 
@@ -374,3 +390,18 @@ done
 
 - https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 
+
+# Troubleshooting
+
+## server protocol version mismatch (client x, server y)
+
+- Root cause: Different version between tmux client and server.
+- Reason:
+    + Usually different version of tmux are on the system, so the server
+      is run with one version and the client is another version.
+    + Check your `PATH` and find all different versions of tmux using
+      `which -a tmux` or `where tmux`.
+    + Make sure there is only one version of tmux in your system.
+- For example:
+    + `ssh dev "tmux attach"`: this will only spawn a non-interactive
+      shell, so some of the `PATH` are not configured.

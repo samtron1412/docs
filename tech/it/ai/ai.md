@@ -70,7 +70,15 @@ Something
 
 ## Artificial neural networks and deep learning
 
-## Specialized hardware and software
+# Hardware and Software
+
+- The foundation and engine of AI
+- https://www.reddit.com/r/MachineLearning/comments/1b1wy6l/d_cuda_alternative/
+- NVIDIA GPU vs AWS Trainium 2
+- Programming platforms:
+    + CUDA
+    + OpenAI Triton
+    + AWS Neuron SDK
 
 # Explainable AI (XAI)
 

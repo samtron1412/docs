@@ -64,10 +64,6 @@
     + Conviva manages video stream quality and prevents customer churn
       by responding to issues more rapidly
 
-# SQL API Reference
-
-- https://spark.apache.org/docs/2.3.0/api/sql/index.html
-
 # Hardware Provisioning
 
 - https://spark.apache.org/docs/latest/hardware-provisioning.html
@@ -299,6 +295,24 @@ build/mvn -DskipTests -Pnetlib-lgpl clean package
 - https://community.hortonworks.com/articles/42027/rdd-vs-dataframe-vs-sparksql.html
 - https://stackoverflow.com/questions/37301226/difference-between-dataset-api-and-dataframe-api
 - https://stackoverflow.com/questions/31508083/difference-between-dataframe-in-spark-2-0-i-e-datasetrow-and-rdd-in-spark
+
+## SQL Syntax
+
+- https://spark.apache.org/docs/latest/sql-ref-syntax.html
+
+## APIs
+
+### Python (PySpark)
+
+#### Spark SQL, Datasets, DataFrames
+
+- https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html#
+- https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html#
+
+#### Pandas API on Spark
+
+- https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html
+- https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/index.html
 
 # Spark Streaming
 

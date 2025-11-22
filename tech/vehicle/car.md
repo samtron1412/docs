@@ -588,6 +588,16 @@ Commercially available Freons include:
 
 # Cars, Maker - Model - Year - Liter
 
+## Toyota Sienna 2025 XLE
+
+- Average price:
+    + MSRP: 45,000
+    + Delivery and handling: 1,500
+    + Tax (6.25% for TX): 3,000
+    + Government fees: 500
+    + Total: 50,000
+- Do not pay for reservation fee and dealer add-on stuff.
+
 ## Hyundai Tucson 2022
 
 ### Information
