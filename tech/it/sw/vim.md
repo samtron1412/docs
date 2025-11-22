@@ -2326,15 +2326,16 @@ xmap <Leader>md :HeaderDecrease<CR>
 - `:Scriptnames`: open a preview window to capture all the configuration
   files that Vim has loaded in order.
 
-### fugitive-vim
+### vim-fugitive
 
 - https://dev.to/iggredible/working-with-vim-and-git-4nkh
+- https://github.com/tpope/vim-fugitive
 
 #### Commands ####
 
-- `:Git` Run an arbitrary git command. Similar to :!git [args] but chdir
-    to the repository tree first.
-- `:Gstatus` or `:G`: bring up a summary window similar git-status
+- `:Git <command>` Run an arbitrary git command. Similar to `:!git [args]`
+  but chdir to the repository tree first.
+- `:G` or `:Git`: bring up a summary window similar git-status
     + `s`: stage (add) the file or hunk under the cursor
     + `u`: unstage (reset) the file or hunk under the cursor
     + `-`: stage or unstage

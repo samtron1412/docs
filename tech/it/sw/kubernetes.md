@@ -4,6 +4,9 @@ Kubernetes (K8s) is an open-source system for automating deployment,
 scaling, and management of containerized applications.
 - It's similar an operating system of containers (instead of processes)
 
+- https://kubernetes.io/docs/concepts/overview/components/
+- https://kubernetes.io/docs/concepts/architecture/
+
 # Glossary
 
 - https://kubernetes.io/docs/reference/glossary/?fundamental=true
@@ -50,3 +53,7 @@ Other important terms
     kubectl: A command-line tool for managing Kubernetes clusters. It communicates with the cluster's API server to create, update, and delete resources.
     Controller: Control loops within the Kubernetes control plane that watch the state of your cluster and request changes to move the current state closer to the desired state
 ```
+
+# Alternatives
+
+- https://www.reddit.com/r/devops/comments/1c5ab4w/no_serious_alternative_to_kubernetes/

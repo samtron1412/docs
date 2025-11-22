@@ -1,5 +1,3 @@
-[Tbrazil-path run.configfarm.coral-configOC]
-
 # Overview
 
 ## US Vehicle Identification Number (VIN) (post-1981)
@@ -588,7 +586,14 @@ Commercially available Freons include:
 
 # Cars, Maker - Model - Year - Liter
 
-## Toyota Sienna 2025 XLE
+## Minivans
+
+- Buy new or pre-owned / used one at dealership.
+- Potential options
+    + Toyota Sienna
+    + Honda Odyssey
+
+### Toyota Sienna 2025 XLE
 
 - Average price:
     + MSRP: 45,000
@@ -597,6 +602,15 @@ Commercially available Freons include:
     + Government fees: 500
     + Total: 50,000
 - Do not pay for reservation fee and dealer add-on stuff.
+
+## SUV
+
+
+## Sedan
+
+- Lexus
+    + 3 models: IS (Sport), ES (Midsize), LS (Full size)
+>>>>>>> 6f30745 (Update)
 
 ## Hyundai Tucson 2022
 
@@ -616,6 +630,12 @@ Commercially available Freons include:
 - Nov 2023
 
 ## Acura - TL - 2003 - 3.2 Base
+
+### Selling
+
+- 1500 - 2000 dollars
+    + Start with 2000 on facebook marketplace and other places.
+    + Then reduce the price when there are no serious buyers.
 
 ### Information
 
