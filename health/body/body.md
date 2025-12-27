@@ -98,6 +98,16 @@ Tổng hợp thắc mắc và giải đáp
 - [Wikipedia - Red meat][2]
 - [Good protein sources][3]
 
+# Terminologies
+
+- Symptom: Subjective experiences reported by the patient (e.g., dizziness, nausea, pain).
+- Sign: Objective, observable evidence found by a doctor (e.g., fever, swelling, rash).
+- Syndrome: A group of signs and symptoms that consistently occur together, but the underlying cause may be unknown (e.g., Irritable Bowel Syndrome).
+- Disorder: An abnormality in function, often without a clear, single cause, but with associated features.
+- Disease: A specific pathological process with known causes (like bacteria, viruses, genetics) and effects.
+- Illness / Sickness: subjective feeling of your body, you don't feel well.
+- Condition: The most general term, referring to any state of health, good or bad, often used for long-term issues or general health status.
+
 # Vaccine
 
 ## Recommendation
@@ -448,7 +458,47 @@ https://en.wikipedia.org/wiki/Alzheimer%27s_disease
 
 https://en.wikipedia.org/wiki/Parkinson%27s_disease
 
-# Medication
+# Drugs and Medication
+
+## Classification and Categories
+
+- Addictive controlled substance from DEA (Drug Enforcement
+  Administration)
+    + Substances are classified into 5 schedules with lower numbers
+      represent higher potential for abuse, dependence, and any accepted
+      medical use.
+    + https://www.dea.gov/drug-information/drug-scheduling
+    + Heroin and fentanyl are Schedule I
+    + Cocaine and methamphetamine are in Schedule II
+- Pharmaceutical drugs are classified by their chemical structure,
+  mechanism of action (how they work), therapeutic use (what they
+  treat), and legal/regulatory status, often using systems like the ATC
+  (Anatomical Therapeutic Chemical) or FDA's classifications, grouping
+  drugs that are similar in chemistry or effect for easier research,
+  prescription, and understanding.
+
+## Common addictive controlled substance / drugs
+
+Common street drugs include opioids (heroin, fentanyl), stimulants
+(cocaine, methamphetamine), and hallucinogens (LSD, MDMA). Most
+addictive substances disrupt the brain's reward system by flooding it
+with dopamine, leading to intense cravings and compulsive use despite
+negative consequences.
+
+Common Street Drugs and Addictive Characteristics
+
+| Drug Category                | Common Street Names                                                                         | Addictive Characteristics                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------|---------------------------------------------------------------------------------------------|
+| Stimulants                   | Cocaine (Coke, Crack, Snow), Methamphetamine (Meth, Crystal, Ice, Speed, Crank)             | Stimulants cause a rapid and significant increase in dopamine levels, producing intense feelings of energy, alertness, and euphoria. The effects of cocaine fade quickly (within 15-30 minutes), leading users to repeat doses frequently to maintain the high, which promotes a strong psychological dependence. Methamphetamine also causes strong psychological dependence and can lead to paranoia, aggression, and psychotic behavior with long-term use.
+| Hallucinogens/ Dissociatives | LSD (Acid), Psilocybin (Magic Mushrooms), MDMA (Ecstasy, Molly), PCP (Angel Dust), Ketamine | Addiction to classic hallucinogens like LSD and psilocybin is less common than with other drugs, but psychological dependence can still occur. MDMA has both stimulant and mild hallucinogenic effects and can lead to a mood-altering dependence. Dissociative anesthetics like PCP and ketamine can also be addictive; PCP use is associated with aggression and violence.
+| Depressants                  | Benzodiazepines (Xanax, Valium), GHB, Barbiturates                                          | Benzodiazepines and barbiturates are highly addictive, as the body can become dependent on them to function normally. Withdrawal from these drugs can be medically serious and life-threatening. GHB is also addictive, causing sedation and memory loss.
+| Cannabis                     | Marijuana, Weed, Pot                                                                        | Cannabis can lead to a substance use disorder, but it tends to have a lower addictive potential compared to substances like heroin or cocaine. Chronic use can lead to withdrawal symptoms like irritability, anxiety, insomnia, and strong cravings.
+
+The potential for addiction is strongly linked to how quickly a drug
+increases dopamine in the brain's reward pathways and the severity of
+its withdrawal symptoms. Many street drugs are often cut with other
+unknown and potentially harmful substances, like caffeine or even
+fentanyl, which increases their danger and risk of overdos
 
 ## Diseases
 
@@ -487,7 +537,6 @@ overdose of acetaminophen.
 - Tea
 - Wine
 - Beer
--
 
 ## Lysergic Acid Diethylamide ([LSD](https://en.wikipedia.org/wiki/Lysergic_acid_diethylamide))
 

@@ -30,7 +30,7 @@
 
 # Resistance Training
 
-## Concepts and Terminologies
+## Concepts and Terminologies (Muscle Groups)
 
 - Hypertrophy (increase muscle size)
 - Strength: enhance amount of force a muscle can produce
@@ -41,26 +41,37 @@
     + Flexion: Bending a joint (e.g., biceps curl).
     + Extension: Straightening a joint (e.g., triceps extension).
     + Abduction: Moving a limb away from the midline of the body (e.g., lateral raises).
-    + Adduction: Moving a limb towards the midline of the body.
+    + Adduction: Moving a limb towards the midline of the body (after lateral raises).
+    + Rotation
 - Skeletal / Voluntary Muscle groups
-    + chest, back, legs, shoulders, arms, hip/glutes and core (also
-      known as the trunk)
+    + e.g.: chest, back, legs, shoulders, arms, hip/glutes and core
+      (also known as the trunk)
 - Common skeletal/voluntary muscles
-    + Shoulders:
+    1. Neck: sternocleidomastoid, etc.
+    2. Shoulders:
         * The deltoids, which are located on the top and sides of the shoulders.
             - It is responsible for arm abduction
-    + Arms: The biceps (front of the upper arm) and triceps (back of the upper arm) are frequently targeted.
+        * Trapezius: upper back, neck and shoulder connection
+    3. Arms:
         * biceps: Front of the upper arm, responsible for forearm flexion.
         * triceps: Back of the upper arm, responsible for forearm extension.
-    + Chest: The pectoralis major muscles, located in the chest area.
+        * forearm muscles
+    4. Chest: The pectoralis major muscles, located in the chest area.
         * pectoralis: Located in the chest, used for arm movement.
-    + Back: The latissimus dorsi, trapezius, and erector spinae muscles are key back muscles.
+        * Upper and lower chest muscles
+    5. Back: The latissimus dorsi, trapezius, and erector spinae muscles are key back muscles.
         * latissimus dorsi: Large back muscles, used for arm adduction and extension.
         * trapezius: Upper back and neck muscles, involved in shoulder and neck movement.
         * erector spinae: A group of muscles in the back that help with posture and spinal movement.
-    + Abdominals: The rectus abdominis (six-pack muscles), transversus abdominis (deep core muscle), and obliques (side abdominal muscles).
-    + Hips/Glutes: The gluteus maximus, medius, and minimus, which are the muscles of the buttocks.
-    + Legs: This includes the quadriceps (front of the thigh), hamstrings (back of the thigh), and calves (lower back of the leg).
+    6. Abdominals (core):
+        * The rectus abdominis (six-pack muscles),
+        * transversus abdominis (deep core muscle),
+        * and obliques (side abdominal muscles).
+    7. Hips/Glutes: The gluteus maximus, medius, and minimus, which are the muscles of the buttocks.
+    8. Legs
+        * This includes the quadriceps (front of the thigh),
+        * hamstrings (back of the thigh),
+        * and calves (lower back of the leg).
 
 ## Dietary
 
@@ -113,18 +124,184 @@ breakdown
 
 Five meal a day, every 3 hours, consume around 25-30 g
 
-## Exercises
+## Basic Training Principles
 
-### Weight exercises:
+- Training hard to almost the point of failure.
+- Full range of motion.
+- For biarticular muscles (cross two joints), hard in stretch position
+  is better:
+    + Triceps: overhead extension
+    + Quads: lean back leg extension
+    + Hamstrings: seated leg curls
+    + Calves: standing calf raises
 
+## Targeted Exercises
+
+### Neck
+
+- Muscles: Sternocleidomastoid, etc.
+    + All muscles: https://www.youtube.com/watch?v=tHMvTWq4MPU
+- Exercises:
+    + https://www.youtube.com/watch?v=gimeRpdqWQw
+    + Warm up
+        * Neck rotation: 8 - 10 rotations alternating directions
+        * Lie down on bench and do 10 - 12 slow tempo bodyweight neck
+          curls for the chin to touch the upper chest.
+        * Flip to the side and do 10-12 lateral curls with head weights.
+        * And then do the same for the rear.
+        * Do the neck curls again but touching your chin to the
+          left/right shoulder instead of upper chest. (rotation with
+          flexion)
+        * Side to side rotation while at on the bench with your head
+          stay at the same height.
+    + Neck flexion
+        * Neck curl: hold the weight on top of your forehead and doing
+          the neck curl, focus on using only the neck by locking your
+          feet to the bench.
+    + Neck extension
+        * Lie upside down on a bench and weight at the back and doing
+          the moving your head back and forth.
+        * Can use head gear to do this with heavier weight
+    + Neck side / lateral flexion
+        * Use neck gear
+- Tools
+    + Neck gears
+        * Neck harness, Resistance band, hooks, hain, weight holder,
+          etc.
+
+### Shoulders
+
+Muscles
+* The deltoids, which are located on the top and sides of the shoulders.
+    - It is responsible for arm abduction
+    - Rear, front, side del
+* Trapezius: upper back, neck and shoulder connection
+
+Exercises
+- Side delt
+    + Cable lateral raise behind back to target side delt.
+    + Cable lateral raise in front with 45 degree with the cable to
+      target the rear delt and the rear of side delt. Like pulling out a
+      sword from bottom to the top and to the back.
+- Front delt
+    + Dumbbell front raise
+    + Cable / EZ bar front raise
+    + Shoulder press with machine / dumb bells
+- Rear delt
+    + Full range of motion reverse cable crossover
+        * https://youtu.be/21lYP86dHW4?si=ZCMhI3dLcXowDKc5&t=402
+    + Reverse dumbbell fly
+
+### Arms
+
+Muscles
+* biceps: Front of the upper arm, responsible for forearm flexion.
+* triceps: Back of the upper arm, responsible for forearm extension.
+* forearm muscles
+
+Arnold's Exercises
+- https://www.youtube.com/watch?v=72y4VPvc88E
+- Barbell Cheat Curl (biceps)
+    + Start with normal curl then increase the weight and cheat the curl
+      until failure
+- Skullcrusher (triceps)
+    + Head is outside of the bench (bench only up to neck)
+- Alternating dumbbell curl
+- Tricep pushdown with rope
+- Single-arm concentration curl (sit down on a bench)
+- Tricep bench dip with weight
+
+Modern Exercises
 - Biceps
-    + Curl with barbell or dumpbell
+    + Face away cable curl (arms at the back)
+    + Face away hammer cable curl (arms at the back)
+    + Preacher curl (EZ bar or dumbbell)
+    + Hammer preacher curl with dumbbell
+    + Chin up (with or without weight): also work for back muscles
+    + Standard curl (EZ bar, bar bell, dumb bell)
 - Triceps
-    + Overhead triceps extension with cable
-    + Skull crusher
-    + Dip
+    + Long head
+        * Cable overhead extension
+        * Incline dumbbell overhead extension
+        * Incline tricep kickback
+    + lateral head
+        * Weighted dips
+        * Bar pushdown
+    + medial head
+        * Weighted dips
+        * Rope pushdown
+- Forearm
+    + Reverse EZ bar curl
+    + Dumbbell Wrist curl
+    + Reverse Dumbbell wrist curl
+    + Wrist rotation with dumb bell (weight-in-one-side dumb bell)
+    + Barbell towel hold
+    + Towel pull up
 
-#### squats
+### Chest
+
+The pectoralis major muscles, located in the chest area.
+* pectoralis: Located in the chest, used for arm movement.
+* Upper and lower chest muscles
+
+Arnold's Exercises
+- https://www.youtube.com/watch?v=WWGlkYlpAB4&pp=ygUUYXJub2xkIGNoZXN0IHdvcmtvdXQ%3D
+- Flat wide bend press
+- Incline wide bench press (upper chest)
+- Dumbbell flies (after presses): lighter weight, focus on the stretch
+  and squeeze
+- Dips
+- Cable crossover
+- Dumbbell overhead pull over (lying on a flat bench)
+
+### Back
+
+The latissimus dorsi, trapezius, and erector spinae muscles are key back muscles.
+* latissimus dorsi: Large back muscles, used for arm adduction and extension.
+* trapezius: Upper back and neck muscles, involved in shoulder and neck movement.
+* erector spinae: A group of muscles in the back that help with posture and spinal movement.
+
+Arnold's Exercises
+- Bend over Rowing (using barbell with weight in one end)
+- Wide grip pull down with machine (similar to wide pull up)
+- Other rowing exercises
+    + Cable row
+        * https://youtu.be/jLvqKgW-_G8?si=vqaBN-oul-MYco9s&t=563
+
+
+### Abdominals (core)
+
+Muscles
+* The rectus abdominis (six-pack muscles),
+* transversus abdominis (deep core muscle),
+* and obliques (side abdominal muscles).
+
+Arnold's Exercises
+- Leg raises: with straight leg or bent knees
+- Crunches
+    + Cable crunches
+    + Weighted crunches
+- Sit up
+
+### Legs and Glutes
+
+Muscles
+* This includes the quadriceps (front of the thigh),
+* hamstrings (back of the thigh),
+* and calves (lower back of the leg).
+* The gluteus maximus, medius, and minimus, which are the muscles of the buttocks.
+
+Arnold's Exercises
+- Squats
+- Lunges
+- Leg curls
+- Leg press
+- Stiff leg deadlift
+- Good morning with stiff legs
+
+## Compound Exercises
+
+### Squat
 
 - 2-3 times / week
 - Hypertrophy
@@ -136,9 +313,9 @@ Five meal a day, every 3 hours, consume around 25-30 g
     + 3-6 reps / set
     + 3 sets with 90-180 seconds rest time
 
-#### bench presses
+### Bench Press
 
-#### dead-lifts
+### Dead lift
 
 - 1-2 times / week
 - Hypertrophy
@@ -150,11 +327,15 @@ Five meal a day, every 3 hours, consume around 25-30 g
     + 1-5 reps / set
     + 3 sets with 90-180 seconds rest time
 
-### Body weight exercises:
+### Overhead Press
 
-+ pull-ups
-+ push-ups
-+ dips
+### Pull up / Chin up
+
+### Push up
+
+### Dip
+
+### Row
 
 # Improving strength
 

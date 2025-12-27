@@ -69,6 +69,33 @@ Mac OS
         * Click `+` sign to add the server to favorite list
     + Connect and enter credentials: user name and password
 
+## VPN
+
+### OpenVPN
+
+- Install OpenVPN Connect (openvpn-connect) using brew.
+
+### Wireguard
+
+#### From App store
+
+- Install WireGuard in app store.
+- Download wireguard conf file from VPN provider
+- Import tunnel from file, then activate
+
+#### From brew
+
+- `brew install wireguard-tools`
+    + Two main tools: `wg` and `wg-quick`
+    + https://git.zx2c4.com/wireguard-tools/about/src/man/wg.8
+    + https://git.zx2c4.com/wireguard-tools/about/src/man/wg-quick.8
+- Download wireguard conf file from VPN provider and rename to something
+  simple such as `wg0.conf`
+- `sudo wg-quick up /Users/myuser/Downloads/wg0.conf`
+    + To connect to the VPN with the configuration
+- `sudo wg-quick down /Users/myuser/Downloads/wg0.conf`
+    + To disconnect from the VPN
+
 # Java
 
 - https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions
@@ -116,7 +143,11 @@ java11
 - Bookmark: `Cmd + d`
 - Undo bookmark: `Cmd + d, Option + r`
 
-# MacBook Air 13-inch 2017
+# Hardware
+
+## MacBook
+
+### MacBook Air 13-inch 2017
 
 - Latest macOS that support the machine is Monterey.
 - macOS version history
@@ -126,6 +157,18 @@ java11
     + 13: Ventura (2022)
     + 14: Sonoma (2023)
     + 15: Sequoia (2024)
+
+## AirPods
+
+- Identify AirPods
+    + https://support.apple.com/en-us/109525
+
+## Accessories
+
+### Keyboard
+
+- h ttps://support.apple.com/guide/ipad/ipad-magic-keyboard-and-smart-keyboard-ipad4b92bd12/ipados
+- https://support.apple.com/en-us/108762
 
 # Tips and Tricks
 

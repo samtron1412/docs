@@ -66,7 +66,9 @@ laptop (Gateway)
 
 ### Topre and its clones
 
+- https://www.reddit.com/r/MechanicalKeyboards/comments/3h0me1/super_topre_review_compares_leopold_fc660c_hhkb/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 - 45g HHKB
+    + https://hhkb.io/
     + Classic: wired only (211)
     + Hybrid: wired and wireless (281)
     + Hybrid Type-S: silent (337)

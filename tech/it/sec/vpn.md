@@ -83,7 +83,32 @@ established.
 - PPTP (old, legacy)
 - IPSec with IKEv2
 - OpenVPN
+    + Can support both TCP and UDP transport protocols.
 - Wireguard
+    + Only support UDP
+
+## UDP vs TCP
+
+- https://airvpn.org/faq/udp_vs_tcp/
+- UDP is a connectionless protocol, so during the handshake it is not
+  always possible to do an effective error correction. As a result, when
+  there's high ping or low quality line during the OpenVPN login, the
+  handshake may fail, although you could see no significant problem
+  after (if) the connection is established. TCP is capable of handling
+  these problems.
+- On the other hand, UDP is more efficient once the connection is
+  established.
+- If you experience problems with VoIP video/audio conversations when
+  connected to the VPN through a TCP port, a typical case for which a
+  difference may be visible (VoIP over TCP - for example UDP over TCP -
+  is clearly inferior to VoIP over UDP because TCP implements ARQ, UDP
+  does not), then go for an UDP connection.
+- In general, you should always try an UDP connection if your ISP allows
+  it and you don't experience any problem during the handshake.
+- A particular case is a connection over TOR or over an http-proxy. In
+  this case, TCP is mandatory.
+- Variety of ports (53, 80, 443) is an additional option to try to
+  bypass country or ISPs blocks, or bandwidth management.
 
 ## IPsec
 

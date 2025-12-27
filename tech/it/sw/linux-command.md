@@ -160,6 +160,7 @@ List files order by size
 
 # links - text based web browser - hay
 # w - See who else is logged in
+
     - tty – native terminal of host
     - pty/pts – remote terminal, ie# Ssh, xterm…
 

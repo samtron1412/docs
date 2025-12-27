@@ -35,6 +35,10 @@ some other display architecture.
   emulates typewriter.
 
 
+# tty / terminal, pty (pty slave - pts, pty master - ptmx), shell
+
+- https://dev.to/napicella/linux-terminals-tty-pty-and-shell-192e
+
 # Terminal Colors
 
 - https://gist.github.com/XVilka/8346728

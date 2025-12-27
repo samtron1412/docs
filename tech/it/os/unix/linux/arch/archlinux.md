@@ -94,9 +94,10 @@ entered as **a regular user**.
 
 ## Installation of packages
 
-Official packages: `# pacman -Syu <package>`
+- Official packages: `# pacman -Syu <package>`
 
-`Arch User Repository (AUR)`
+### Arch User Repository (AUR)
+
 1. Download tarball: curl (or using git to clone source code)
 2. Extract the tarball: `tar xzf foobar.tar.gz`. (no need this if using
    git)
@@ -490,6 +491,12 @@ system can not boot from logical partition. (like Windows OS)
 
 ### Create new partition table
 
+- Separate disk into partitions to achieve:
+    + Data safety and backup for `/home` partition
+    + different filesystem and mount options
+    + System stability: `/var` and `/tmp` partitions are separated to
+      not crash the system if it's full
+
 Partition scheme:
 
 | Partition | Description                                                                                                                                                                               |
@@ -578,9 +585,13 @@ Edit `mirrorlist.new` and uncomment mirrors for testing:
 Run this command
 - `# rankmirrors -n 6 /etc/pacman.d/mirrorlist.new > /etc/pacman.d/mirrorlist`
 
-## Install the base system
+## Install the base system and additional packages
 
-    # pacstrap -i /mnt base base-devel
+    # pacstrap -K /mnt base base-devel linux linux-firmware intel-ucode
+    sof-firmware alsa-firmware alsa-utils alsa-tools bluez bluez-utils
+    bluez-deprecated-tools bluetui networkmanager vim man-db man-pages
+    texinfo openssh vifm sway firefox git code wireguard-tools
+    networkmanager-openvpn grub efibootmgr
 
 ## Generate an fstab
 
@@ -643,7 +654,7 @@ FONT=ter-116n
 
 ### time zone
 
-    # ln -s /usr/share/zoneinfo/<Zone>/<SubZone> /etc/localtime
+    # ln -sf /usr/share/zoneinfo/<Zone>/<SubZone> /etc/localtime
 
 ### hardware clock
 
@@ -661,26 +672,9 @@ Force Windows use UTC, search Google:
 
 ### configure the network
 
-Use `netctl` to create a profile and start it.
-
-Copy and edit example profiles in `/etc/netctl/examples/` to
-`/etc/netctl/` after that list profile with command: `# netctl list`
-
-Start a profile: `# netctl start <profile>`
-
-Enable a profile: `# netctl enable <profile>`
-
-#### Wireless
-
-    # pacman -Syu dialog
-
-    # wifi-menu <interface>
-
-Connect automatically to known networks
-
-    # pacman -Syu wpa_actiond
-
-    # systemctl enable netctl-auto@interface_name.service
+- Install the network manager of your choice, use `networkmanager` for
+  simplicity.
+- Use systemd to start and enable the service.
 
 ### set passwd
 
@@ -694,7 +688,7 @@ run on installation of the linux package with **pacstrap**.
 For special configurations, modify the mkinitcpio.conf(5) file and
 recreate the initramfs image:
 
-    # mkinitcpio -p linux
+    # mkinitcpio -P
 
 ### Install and configure a boot loader
 
@@ -898,7 +892,7 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 
 ## Booting
 
-Something
+- More details in `booting.md`
 
 ## Graphical User Interface
 
@@ -947,7 +941,36 @@ Something
 
 ### Window managers
 
-### Display manager
+- Window Managers: can be alternatives to XFCE
+    + Xorg / X11
+        * i3
+            - pros: popular, easy to start, stable and mature
+            - cons: not turing-complete configurable, a little heavier
+              than dwm
+        * dwm
+            - pros: tiny and lightweight, turing-complete configurable,
+              stable and mature
+            - cons: harder to start, need patch and customize (ricing)
+              to look nicer
+        * qtile
+            - pros: both X11 and wayland, python turing-complete
+              configurable
+            - cons: not popular, not mature
+    + Wayland
+        * sway (i3 compatible)
+        * dwl (dwm compatible): not mature enough as of 2025
+        * qtile
+
+#### dwm
+
+- Resources
+    + https://ratfactor.com/dwm
+
+### Terminal Emulators
+
+- Wayland
+    + foot, alacritty, wezterm, kitty, ghostty
+    + https://github.com/moktavizen/terminal-benchmark
 
 ## Power management
 

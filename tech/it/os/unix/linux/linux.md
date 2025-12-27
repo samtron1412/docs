@@ -235,6 +235,15 @@ be brought to the foreground with the command fg n where n is the job
 
 - [Ubuntu question](http://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it)
 
+# Hardware
+
+- Laptop
+    + Thinkpad X220, T480, etc.
+    + Dell XPS, Precision, etc.
+- Building a Linux compatible desktop computer
+    + https://www.reddit.com/r/linuxhardware/comments/rxqmvb/did_anyone_ever_make_a_how_to_build_a_linux_pc/
+    + https://www.paolomainardi.com/posts/linux-workstation-build/
+
 # Tips and Tricks
 
 ## Mouse movement wakes computer from suspend, how to disable this?
