@@ -113,6 +113,13 @@ These manually installed packages are called foreign packages — packages
 which have not originated from any repository known to pacman. To list
 all foreign packages: `$ pacman -Qm`
 
+### Build from local source files so you can change source code
+
+- https://wiki.archlinux.org/title/Makepkg#Build_from_local_source_files
+- `makepkg -o`: to download and extract source files only
+- Make changes to the source code, then run the following command
+- `makepkg -ef`: build without extract and then force installation
+
 ## Control of systemd units
 
 Start service: `systemctl start example.service`
