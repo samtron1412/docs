@@ -419,6 +419,18 @@ less than 800 MB of disk space.
 The latest release of the installation media can be obtained from the
 [Download][download] page. Burn the ISO image on a CD/DVD/USB.
 
+- To burn the ISO image to USB:
+    + Plug the USB to a Linux/macOS machine
+    + Use `lsblk` to determine the USB device. Assume it's `/dev/sdb`
+    + Unmount the device: `sudo umount /dev/sdb`
+    + Write the ISO to USB using one of the following commands:
+        * `cat /path/to/arch.iso > /dev/sdb`
+        * `cp /path/to/arch.iso /dev/sdb`
+        * `tee < /path/to/arch.iso > /dev/sdb`
+        * `dd if=/path/to/arch.iso of=/dev/sdb bs=4M status=progress`
+    + Run `sync` as root to flush all the buffers.
+    + Remove the USB.
+
 ## Boot the installation medium
 
 You are now presented with a shell prompt, automatically logged in as
