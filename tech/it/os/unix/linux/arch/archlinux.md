@@ -1142,6 +1142,24 @@ See more:
 - arch-creating-pkg.md
 - aur.md
 
+# Specific Computer Model
+
+## Thinkpad X220 Laptop
+
+- Set battery charging start and stop threshold:
+    + https://wiki.archlinux.org/title/Tp_smapi#3rd_option,_in_kernel
+    + By doing this, we can keep the computer plugged in constantly, but
+      the batter is not charged until it is below 40%, and the computer
+      stops charging at 80%, so the battery charge will always stay
+      between 40-80%.
+- You need to log in as root to make changes to these values, so using
+  `su` to log in (sudo will not work)
+
+```
+# echo 40 > /sys/class/power_supply/BAT0/charge_start_threshold
+# echo 80 > /sys/class/power_supply/BAT0/charge_stop_threshold
+```
+
 # Tips & Tricks
 
 ## Custom kernels
