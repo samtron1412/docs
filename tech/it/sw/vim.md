@@ -165,8 +165,13 @@ Plugins available that will extend or add new functionality to Vim.
 ## Books
 
 - [Books](http://iccf-holland.org/click5.html)
-- Practical Vim - 2nd edition
+- Vi Improved (Vim) - Steve Oualline
+    + http://www.truth.sk/vim/vimbook-OPL.pdf
+    + Errata: https://www.moolenaar.net/vim_errata.html
+- Practical Vim - 2nd edition - Drew Neil
+    + Tips to use Vim, and the philosophy behind them.
 - [Modern Vim](https://pragprog.com/book/modvim/modern-vim)
+    + Plugins to make it as IDE
 - Learn Vimscript the Hard Way
     + http://learnvimscriptthehardway.stevelosh.com/
 

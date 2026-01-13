@@ -54,6 +54,25 @@ at a University with a cryptography group.
 
 ### Acquiring the basics
 
+# Classification
+
+## Symmetric-key cryptography
+
+- Initialization vector (IV)
+    + An input to a cryptographic primitive being used to provide the
+      initial state as a random seed.
+    + Goals
+        * To add randomness: even if we encrypt the same message
+          multiple times with the same key, the encrypted output will be
+          different.
+    + Characteristics
+        * Not secret: but must be unpredictable and/or unique
+        * Transmitted with ciphertext: usually sent alongside the
+          encrypted data so the receiver can decrypt it.
+
+## Public-key cryptography
+
+## Symmetric Key
 # Tools
 
 - [Basic cipher website tools](http://rumkin.com/tools/cipher/)

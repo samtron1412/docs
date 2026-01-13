@@ -73,6 +73,8 @@ if __name__ == "__main__":
 
 ## Built-in Functions
 
+- https://docs.python.org/3/library/functions.html
+
 ## Built-in Constants
 
 ## Built-in Data Types
@@ -315,8 +317,13 @@ x = q.get()
     + No
 
 
-## Type Checking
+## Type Hinting / Checking
 
+- Specification
+    + https://typing.python.org/en/latest/spec/index.html
+- Implementation
+    + https://docs.python.org/3/library/typing.html
+    + Casting: `cast(type, value)`
 - https://realpython.com/python-type-checking/
 
 ## Inheritance
@@ -384,6 +391,10 @@ x = q.get()
     + https://www.perfectlyrandom.org/2019/11/29/handling-avro-files-in-python/
 
 # Packages
+
+## Cryptography
+
+- https://cryptography.io/en/latest/
 
 ## jupyter
 
@@ -518,6 +529,7 @@ else:
 
 # Glossary
 
+- https://docs.python.org/3/glossary.html
 - `inf`: is infinity - a value that is greater than any other value.
   `-inf` is therefore smaller than any other value.
 - `nan`: stands for Not A Number

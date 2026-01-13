@@ -65,6 +65,14 @@ of universe and the natural basic science.
       exponent, logarithm, trigonometric functions, and inverse
       hyperbolic functions), but usually no limit
 
+## Mathematical Handwriting
+
+- https://www.johnkerl.org/doc/ortho/ortho.html
+- Using a underline beneath the lowercase letter to denote a vector
+    + Simple and easy to write.
+    + Clear distinction between vectors and scalars.
+- Capitalized / uppercase letters for matrices.
+
 # Fields of Mathematics
 
 - Mathematics can be subdivided into the study of quantity, structure,

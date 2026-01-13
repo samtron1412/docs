@@ -183,37 +183,19 @@ http://continuousdelivery.com/
 
 # Enterprise Application Development
 
-- Other books
-    + https://itnext.io/recommended-reading-list-for-enterprise-software-developers-and-architects-b77c905b2dbd
-
 ## Architecture And Design Patterns
 
-- Books:
-    + "Patterns of Enterprise Application Architecture" by Martin Fowler: Offers a tutorial and over 40 patterns for common enterprise problems, with code examples in Java or C#.
-    + "Design Patterns: Elements of Reusable Object-Oriented Software" (The Gang of Four): A foundational text that introduces essential design patterns.
-    + "Domain-Driven Design: Tackling Complexity in the Heart of Software" by Eric Evans: A crucial book for building complex software systems by focusing on the core business domain.
 - https://en.wikipedia.org/wiki/Architectural_pattern
 - Read `design-pattern.md`
 
 ## Software Craftsmanship and Principles
 
-- Books:
-    + "Refactoring: Improving the Design of Existing Code" by Martin Fowler: Provides patterns and examples for making code more maintainable.
-    + "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin: Focuses on writing clean, readable, and maintainable code.
-    + "The Pragmatic Programmer" by Andrew Hunt and David Thomas: Offers practical advice and wisdom for software developers at all levels.
 
 ## Large-scale Systems and Integration
 
-- Books
-    + "Designing Data-Intensive Applications" by Martin Kleppmann: Provides a comprehensive overview of distributed systems needed to build large-scale applications.
-    + "Enterprise Integration Patterns" by Gregor Hohpe and Bobby Woolf: Covers messaging solutions for integrating enterprise applications.
 
 ## Methodologies and Management
 
-- Books
-    + "Code Complete" by Steve McConnell: A classic tome on software construction, quality assurance, and craftsmanship.
-    + "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford: A novel that uses storytelling to explain DevOps principles in a realistic setting.
-    + "Accelerate: The Science of Lean Software and DevOps" by Nicole Forsgren, Jez Humble, and Gene Kim: Explains the principles behind high-performing technology organizations.
 
 # Tools
 - [Open Source Scrum project management](https://github.com/taigaio)

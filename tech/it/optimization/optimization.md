@@ -1,5 +1,19 @@
 # Overview
 
+# Common concepts
+
+- Simplex algorithm
+    + https://en.wikipedia.org/wiki/Simplex_algorithm
+    + Simplex
+        * https://en.wikipedia.org/wiki/Simplex
+        * Simplest possible polytope (geometric object with flat sides -
+          faces) in any given dimension.
+- Big M method
+    + https://en.wikipedia.org/wiki/Big_M_method
+    + In some software, they introduce `indicator constraints` to mimic
+      the behavior of Big M method.
+        * https://or.stackexchange.com/questions/231/when-to-use-indicator-constraints-versus-big-m-approaches-in-solving-mixed-int
+
 # Algorithms
 
 ## Alternating Direction Method of Multipliers (ADMM)

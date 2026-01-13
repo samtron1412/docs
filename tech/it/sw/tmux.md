@@ -20,6 +20,7 @@
 
 ## Binding keys (shortcuts)
 
+- `<prefix>: list-keys` to show all existing key bindings
 - `tmux` allows a command to be bound to most keys, with or without a
   prefix key.
     + When specifying keys, most represent themselves (for

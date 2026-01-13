@@ -61,6 +61,10 @@
   reasoning. Try different methods if your first approach doesn't work.
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 
+# Data Structures for AI Training and Inference
+
+- https://github.com/lance-format/lance
+
 # Security Issues
 
 - https://embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/
