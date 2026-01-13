@@ -349,6 +349,16 @@ and 157.5".
     + Interior
     + Underneath the car
 
+## Dealerships
+
+- DO NOT BUY ANY THIRD-PARTY extended warranties (not from the
+  manufacturer of the car) from the dealership.
+    + It's very difficult to cancel them. Call and email they don't
+      accept it. You have to go to the dealership again.
+    + It's very difficult to get the claim approved.
+    + Very high price compared to buy the FIRST-PARTY extended
+      warranties from other places with much lower price (50% at least).
+
 # Body and main parts
 
 ## Doors
