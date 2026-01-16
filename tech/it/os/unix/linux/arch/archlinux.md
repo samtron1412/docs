@@ -1319,13 +1319,34 @@ setxkbmap -option caps:escape
 - [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
 - [Data storage devices](https://wiki.archlinux.org/index.php/Benchmarking/Data_storage_devices)
 
-## Print
+## Print / Printing / CUPS
 
 - CUPS
+    + https://wiki.archlinux.org/title/CUPS
+    + https://openprinting.github.io/cups/
+    + The standards-based, open source printing system developed by
+      OpenPrinting for Linux® and other Unix®-like operating systems
 
 How to print
-- Start cups service: `systemctl start org.cups.cupsd.service`
+- Enable and start cups service:
+    + `systemctl enable cups.service`
+    + `systemctl start cups.service`
+- Try to print the document from applications (firefox, etc.) and select
+  the printer.
+    + If the printer does not show up on the list, then try to add the
+      printer using the following web interface.
 - Printer management: `http://localhost:631`
+    + Use your log in username and password.
+    + Add printer or wait for printer to be added automatically using
+      IPP Everywhere.
+- If the printer does not show up on the above step, then you might need
+  to configure avahi with hostname resolution
+    + https://wiki.archlinux.org/title/Avahi
+    + `pacman -S avahi nss-mdns`
+    + Enable and start service: `systemctl enable/start
+      avahi-daemon.service`.
+    + Edit `/etc/nsswith.conf` to change the `hosts` line to include
+      `mdns_minimal [NOTFOUND=return]` before `resolve` and `dns`.
 
 ## Time
 
