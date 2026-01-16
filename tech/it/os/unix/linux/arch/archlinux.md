@@ -407,9 +407,9 @@ cipher to the individual blocks
                   on disk                         in RAM
 ```
 
-# [Installation][installation]
+# Installation
 
-- https://wiki.archlinux.org/title/Installation_guide#Installation
+- https://wiki.archlinux.org/title/Installation_guide
 
 ## Preparation
 
@@ -581,36 +581,14 @@ Use **lsblk** to list the hard disks
 
 
 
-## Select a mirror
+## Select mirrors
 
-    # vi /etc/pacman.d/mirrorlist
+- More details in `Mirrors` section of this document to select the best
+  mirrors to use.
 
-- Choose line, cut line, go to top, paste it.
-- HTTP faster than FTP
-- After change mirror in the future, refresh all packages list with
-  **pacman -Syyu**.
+## Install the base system and linux kernel
 
-### Select the fastest mirror
-
-Back up mirror:
-- `# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup`
-- Generate mirrors list follow [status of mirrors][mirrors].
-- Save it to `/etc/pacman.d/mirrorlist.new`.
-- Check [online mirrors status][mirror- status].
-
-Edit `mirrorlist.new` and uncomment mirrors for testing:
-- `# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.new`
-
-Run this command
-- `# rankmirrors -n 6 /etc/pacman.d/mirrorlist.new > /etc/pacman.d/mirrorlist`
-
-## Install the base system and additional packages
-
-    # pacstrap -K /mnt base base-devel linux linux-firmware intel-ucode
-    sof-firmware alsa-firmware alsa-utils alsa-tools bluez bluez-utils
-    bluez-deprecated-tools bluetui networkmanager vim man-db man-pages
-    texinfo openssh vifm sway firefox git code wireguard-tools
-    networkmanager-openvpn grub efibootmgr
+    # pacstrap -K /mnt base linux
 
 ## Generate an fstab
 
@@ -738,10 +716,11 @@ If adding UUID rather than partition number the syntax is
 
 #### GRUB
 
-Install grub packet: `# pacman -Syu grub`
+-
+Install grub packet: `# pacman -S grub`
 - `# grub-install --target=i386-pc --recheck /dev/sda`
 
-Install os-prober: `# pacman -Syu os-prober`
+Install os-prober: `# pacman -S os-prober`
 - `# grub-mkconfig -o /boot/grub/grub.cfg`
 
 
@@ -752,7 +731,7 @@ Install os-prober: `# pacman -Syu os-prober`
     # reboot
 
 
-# [Post Installation][post-installation] / General Recommendations
+# Post Installation / General Recommendations
 
 - https://wiki.archlinux.org/title/General_recommendations
 
@@ -854,7 +833,7 @@ Show the manual page associated with a unit (this has to be supported by the uni
 Reload systemd, scanning for new or changed units:
     `# systemctl daemon-reload`
 
-### System maintenance
+### System maintenance (systemd)
 
 - https://wiki.archlinux.org/index.php/System_maintenance
 
@@ -863,29 +842,93 @@ Reload systemd, scanning for new or changed units:
 - Failed systemd services
     + `$ systemctl --failed`
     + https://wiki.archlinux.org/index.php/Systemd#Analyzing_the_system_state
-- Log files
+- Log files for systemd journal
     + `# journalctl -p 3 -xb`
+        * Show only error logs (-p, priority 3) since the last boot (-b)
+          with explanation from catalog (-x).
+    + `# journalctl -b`: all logs since the last boot.
     + https://wiki.archlinux.org/index.php/Systemd#Journal
     + https://wiki.archlinux.org/index.php/Xorg#Troubleshooting
 
 #### Backup
 
-Back up your system before big upgrade. Use to recover your system when
-it had trouble.
+Back up your system regularly and before big upgrade.
+- Use to recover your system when it is in trouble.
+- Trouble types:
+    + Bootable but broken applications and/or system.
+    + Non-bootable, so you can't access the system at all.
 
-[Incremental back up][incremental-backup]: your data, important data.
+##### Configuration files
 
-[Non-incremental back up][non-incremental]
-- [clonezilla](http://clonezilla.org/clonezilla-live-doc.php)
+- User configurations
+    + Dotfiles: managed wit Git
+- `/etc` (host specific system configurations)
+    + https://wiki.archlinux.org/title/Etckeeper
+    + https://etckeeper.branchable.com/
+    + etckeeper is a collection of tools keep track of `/etc/` in a
+      repository.
+        * A pacman hook is used to auto-commits changes and
+        * file permissions are tracked, which version control usually
+          does not support, but is important for files like
+          `/etc/shadow`.
+    + install: `pacman -S etckeeper`
+    + configurations
+        * Default version control is git, but it can be configured in
+          `/etc/etckeeper/etckeeper.conf`.
+    + usage
+        * Initialize: `# etckeeper init`
+            - When checking out the repo again, this command must be run
+              again to restore file permissions.
+        * First commit: `# etckeeper commit "first commit"`
+        * Using VCS commands to view status, diff, and commit changes:
+            - `# etckeeper vcs status/diff/add/commit/...`
+        * Do not start / enable `etckeeper.timer`. It's better to
+          manually manage the configurations, so you can have a more
+          meaningful commit message.
+        * Pushing to remote repo: add a remote and then push similar to
+          git
+            - `# etckeeper vcs remote add origin <uri>`
+            - `# etckeeper vcs push/pull`
 
+##### List of installed packages
 
-Backups may be automated with [systemd/Timers](https://wiki.archlinux.org/index.php/Systemd/Timers)
+- Create a pacman hook to create a list of installed packages and push
+  to a remote repository.
+- List of native explicit installed packages
+    + `pacman -Qqen > pkglist-explicit-native.txt`
+        * `Q`: query local database
+        * `q`: quiet, only show package name
+        * `e`: explicit installed packages
+        * `n`: native (non-aur) packages
+    + `pacman -Qqem > pkglist-explicit-foreign.txt`
+        * `m`: non-native (aur) packages
+- Create a post transaction hook to automatically update the package
+  lists:
+    + `update-pkglist.hook`
 
-- Configuration files
-- List of installed packages
-- Pacman database
-- LUKS headers
-- System and user data
+```
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating the pacman's package lists...
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /etc/pkglist-explicit-native.txt && /usr/bin/pacman -Qqem > /etc/pkglist-explicit-foreign.txt'
+```
+
+- Install packages from a list
+    + `#pacman -S --needed - < pkglist.txt`
+- To remove all packages that are not in the package list:
+    + `# pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))`
+
+##### Pacman database
+
+##### Encryption metadata
+
+##### System and user data
 
 #### Upgrading the system
 
@@ -896,7 +939,7 @@ Backups may be automated with [systemd/Timers](https://wiki.archlinux.org/index.
 #### Clean the filesystem
 
 
-## Package management (pacman) :
+## Package management (pacman)
 
 How to know your architecture: open terminal and type these command
 - use command `# uname`
@@ -970,11 +1013,17 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
     + To start dwm with startx or the SLIM login manager, simply append the following to ~/.xinitrc:
         `exec dwm`
 
-### Display drivers
+### Outputs (Display/Monitor, etc.)
 
-### Display server
+- More details in your own window manager / compositor such as sway or
+  i3.
+- We can have static / dynamic configurations:
+    + Static: based on the port connection only.
+        * E.g., sway config
+    + Dynamic: based on the display/monitor identifier.
+        * E.g., kanshi config
 
-### Window managers
+### Xorg/X11 Window Managers or Wayland Compositors
 
 - Window Managers: can be alternatives to XFCE
     + Xorg / X11
@@ -1007,6 +1056,17 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
     + foot, alacritty, wezterm, kitty, ghostty
     + https://github.com/moktavizen/terminal-benchmark
 
+### Desktop notifications
+
+- https://wiki.archlinux.org/title/Desktop_notifications
+
+#### Screen display / overlay bar for keyboard shortcuts such as volume, brightness, caps-lock, etc.
+
+- swayosd
+    + https://github.com/ErikReider/SwayOSD
+- wob
+    + https://github.com/francma/wob
+
 ## Power management
 
 - Power management:
@@ -1021,7 +1081,7 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
     Put the system into hybrid-sleep state (or suspend-to-both):
         `$ systemctl hybrid-sleep`
 
-## Multimedia
+## Sound
 
 + Install alsa-utils: `$ pacman -Syu alsa-utils`
 + unmute: `$ amixer sset Master unmute`
@@ -1400,7 +1460,6 @@ sudo mount -t nfs 192.168.50.213:/mnt/user/data /mnt/unraid_share
 [irc]: https://wiki.archlinux.org/index.php/IRC_channels
 [international]: https://wiki.archlinux.org/index.php/International_communities
 [involve]: https://wiki.archlinux.org/index.php/Getting_involved
-[installation]: https://wiki.archlinux.org/index.php/Installation_guide
 [base]: https://www.archlinux.org/groups/x86_64/base/
 [download]: https://archlinux.org/download/
 [dual-boot]: https://wiki.archlinux.org/index.php/Windows_and_Arch_Dual_Boot
@@ -1410,7 +1469,6 @@ sudo mount -t nfs 192.168.50.213:/mnt/user/data /mnt/unraid_share
 [gparted]: http://gparted.sourceforge.net/livecd.php
 [mirrors]: https://www.archlinux.org/mirrorlist/
 [mirror-status]: https://www.archlinux.org/mirrors/status/
-[post-installation]: https://wiki.archlinux.org/index.php/General_recommendations
 [incremental-backup]: https://wiki.archlinux.org/index.php/backup_programs#Incremental_backups
 [non-incremental]: https://wiki.archlinux.org/index.php/backup_programs#Non-incremental_backups
 [netctl]: https://wiki.archlinux.org/index.php/Netctl
