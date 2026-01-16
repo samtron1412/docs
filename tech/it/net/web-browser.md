@@ -7,7 +7,16 @@
   application for retrieving, presenting, and traversing information
   resources on the World Wide Web.
 
-## Browser / Web storage
+# Browser Engines
+
+- https://en.wikipedia.org/wiki/Comparison_of_browser_engines
+- Popular engines
+    + Blink: Chromium-based browsers
+    + Gecko: Firefox
+    + WebKit: Apple ecosystem
+    + Trident: Windows
+
+# Browser / Web storage
 
 - https://en.wikipedia.org/wiki/Web_storage
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage
