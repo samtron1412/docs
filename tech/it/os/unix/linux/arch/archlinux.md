@@ -1193,6 +1193,11 @@ MODULES="...i915..."
 
 ## ArchWiki
 
+- View and browse wiki offline:
+    + `pacman -S arch-wiki-lite arch-wiki-docs`
+    + Search wiki with either `wiki-search <term>` or `wiki-search-html
+      <term>`
+    + Open the selected result with: `wiki-search-html <number>`
 
 ## Software packaging
 
