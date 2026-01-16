@@ -1112,6 +1112,21 @@ Something
 
 Something
 
+## SSH / OpenSSH / ssh-agent
+
+- OpenSSH
+    + https://wiki.archlinux.org/title/OpenSSH
+### SSH keys and ssh-agent
+
+- https://wiki.archlinux.org/title/SSH_keys
+- Set up ssh-agent:
+    + Start ssh-agent with systemd
+        * `systemctl --user enable ssh-agent.service`
+        * `systemctl --user start ssh-agent.service`
+    + Add environment variable `SSH_AUTH_SOCK` to your shell RC file
+        * `export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"`
+    + Then you can use `ssh-add` to add identities to the ssh-agent.
+
 # Advanced
 
 ## Access control
