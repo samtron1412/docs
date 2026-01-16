@@ -603,7 +603,21 @@ Commercially available Freons include:
     + Toyota Sienna
     + Honda Odyssey
 
-### Toyota Sienna 2025 XLE
+### Toyota Sienna 2026 XLE
+
+- VIN: 5TDYRKEC0TS297943
+- License Plate: XRJ4783
+- Toyota vehicle protection plan
+    + https://www.toyotanation.com/threads/extended-warranty-from-jerryj-midwestsuperstore.1760880/page-3?nested_view=1
+    + jerryj@midwestsuperstore.com
+    + phone: 620-664-8844 Jerry's cell
+    + I reached him by calling the Midwest Toyota number directly, option Warranty (on the phone tree)
+        * 800-530-5789 Jerry's work phone
+    + Official policy documents
+        * https://www.toyotafinancial.com/us/en/vehicle_protection_plan/vehicle_service_agreements.html
+        * https://www.toyotafinancial.com/us/en/vehicle_protection_plan/prepaid_maintenance_plan.html
+
+#### Buying Research
 
 - Average price:
     + MSRP: 45,000
