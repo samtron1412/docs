@@ -2,6 +2,11 @@
 
 # Overview
 
+- https://wiki.archlinux.org/title/GnuPG
+    + Latest RFC: https://www.rfc-editor.org/rfc/rfc9580.html
+- Open
+- LibrePGP
+    + https://blog.pgpkeys.eu/security-issues-librepgp-2024-08.html
 - GNU Privacy Guard (GnuPG or GPG) is a free software replacement for
   Symantec's PGP cryptographic software suite.
 - GnuPG is compliant with OpenPGP standard (RFC 4880).
