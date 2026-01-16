@@ -10,8 +10,12 @@ under GPL version 2.
 - [Linux Standard Base](http://www.linuxfoundation.org/collaborate/workgroups/lsb/group)
   + [Wikipedia](https://en.wikipedia.org/wiki/Linux_Standard_Base)
 
-## [Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/fhs.shtml)
+## Filesystem Hierarchy Standard (FHS)
 
+- http://refspecs.linuxfoundation.org/fhs.shtml
+    + https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s02.html
+    + https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s03.html
+    + https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch06.html
 The FHS defines the **directory structure** and **directory contents**
 in Unix and Unix-like operating systems, maintained by the Linux
 Foundation.
@@ -32,9 +36,6 @@ Foundation.
 - `/lib` : The Lib directory contains kernel modules and shared library
   images required to boot the system and run commands in root file
   system.
-- `/lost`+found : This Directory is installed during installation of
-  Linux, useful for recovering files which may be broken due to
-  unexpected shut-down.
 - `/media` : Temporary mount directory is created for removable devices
   viz., media/cdrom.
 - `/mnt` : Temporary mount directory for mounting file system.
@@ -54,6 +55,8 @@ Foundation.
 - `/sys` : Modern Linux distributions include a /sys directory as a
   virtual filesystem, which stores and allows modification of the
   devices connected to the system.
+    + This one is specific to Linux, not in FHS (Filesystem Hierarchy
+      Standard)
 - `/tmp` :System’s Temporary Directory, Accessible by users and root.
   Stores temporary files for user and system, till next boot.
 - `/usr` : Contains executable binaries, documentation, source code,
