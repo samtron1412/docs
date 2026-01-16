@@ -88,6 +88,7 @@ When successful, the workflow of a transaction follows five high-level steps plu
 - More directories can be specified with the `HookDir` option in `pacman.conf`, which defaults to `/etc/pacman.d/hooks`.
 - Hook file names must be suffixed with `.hook`
 - More information: `man alpm-hooks`
+    + https://man.archlinux.org/man/alpm-hooks.5
 
 ## Repositories and mirrors
 
