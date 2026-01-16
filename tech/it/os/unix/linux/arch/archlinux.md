@@ -1084,6 +1084,31 @@ Something
 
 Something
 
+### Ethernet
+
+### Wireless
+
+#### Bluetooth
+
+- https://wiki.archlinux.org/title/Bluetooth
+- Bluetooth is a standard for short-range wireless interconnection.
+- In Linux, the canonical implementation of the Bluetooth protocol stack
+  is BlueZ.
+    + https://www.bluez.org/
+- Installation
+    + `pacman -S bluez` for the protocol stack
+    + `pacman -S bluez-utils` to manage, debug and get more info
+- Make sure the bluetooth device is not blocked by `rfkill`, just run
+  `rfkill` to check.
+    + Use `rfkill` to unblock the device if it's soft blocked.
+    + Use a hardware (button, switch, etc.) to unblock the device if
+      it's hard blocked.
+- Using `bluetoothctl` to start the interactive shell:
+    + `scan on/off` to turn on/off scanning for devices
+    + `pair/cancel-pairing/remove <dev>` to pair/cancel-pairing/remove a new device
+    + `connect/disconnect <dev>` to connect/disconnect with a paired device
+    + `help` to learn more
+
 ## Input devices
 
 Something
