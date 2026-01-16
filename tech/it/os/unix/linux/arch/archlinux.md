@@ -1007,11 +1007,10 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 
 ## Multimedia
 
-- Sound:
-    + Install alsa-utils: `$ pacman -Syu alsa-utils`
-    + unmute: `$ amixer sset Master unmute`
-    + Next, test to see if sound works:
-        `$ speaker-test -c 2`
++ Install alsa-utils: `$ pacman -Syu alsa-utils`
++ unmute: `$ amixer sset Master unmute`
++ Next, test to see if sound works:
+    `$ speaker-test -c 2`
 
 ## Networking
 
