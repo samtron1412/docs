@@ -909,6 +909,22 @@ How to know your architecture: open terminal and type these command
 
 Remember that pacman's output is logged in `/var/log/pacman.log`.
 
+### Mirrors
+
+- https://wiki.archlinux.org/title/Mirrors
+- Check mirror status here
+    + https://archlinux.org/mirrors/status/
+- Generate mirror list here
+    + https://archlinux.org/mirrorlist/
+- Install `reflector` package and use it to select best mirrors
+    + `reflector --latest 100 --protocol https --sort rate --age 12 --delay 0.25`
+    + Add `--save /etc/pacman.d/mirrorlist` to the above command to save
+      the mirror list to pacman's mirror list file.
+- Update configuration in `/etc/xdg/reflector/reflector.conf` and then
+  enable and start `reflector.timer` to update the mirror list weekly.
+    + To update the mirror list before schedule, we can start the
+      `reflector.service` manually.
+
 ## Booting
 
 - More details in `booting.md`
