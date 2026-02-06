@@ -901,6 +901,12 @@ filetype plugin on
 
 # Tips and Tricks
 
+## Reverse selected lines
+
+- Select lines with `Shift|+v` and navigation
+- Then type `:!tac` for Linux and `:!tail -r` for MacOS to reverse the
+  lines.
+
 ## Reduce Markdown Heading Levels By One
 
 - Using substitution with
