@@ -68,6 +68,21 @@ for consumption with the use of heat.
 - Lemon juice (just a little bit)
 - Pan sear
 
+# Fruits
+
+## Jackfruit
+
+- How to remove jackfruit sap effectively?
+    + Coat the knife with cooking oil generously.
+    + After cut the jackfruit, rub the plastic bag to clean the sap
+      since the sap stick to the plastic bag easily.
+- If the sap sticks to your hand
+    + Rub your hand to the plastic bag to remove it since it sticks to
+      the plastic bag easier than your skin.
+    + Use cooking oil to break down the sap and clean it from your skin.
+    + Wash with soap after, and keep using plastic bag and cooking oil
+      to clean it again if the sap is not completely cleaned yet.
+
 # References
 1. [Wikipedia - Cooking][1]
 
