@@ -145,6 +145,13 @@ java11
 
 # Hardware
 
+## Battery
+
+- Limit charging at 80% for battery
+    + https://apple.stackexchange.com/questions/406957/can-i-tell-my-mac-to-charge-to-80-only
+    + https://github.com/zackelia/bclm
+    + https://github.com/AppHouseKitchen/AlDente-Battery_Care_and_Monitoring
+
 ## MacBook
 
 ### MacBook Air 13-inch 2017
