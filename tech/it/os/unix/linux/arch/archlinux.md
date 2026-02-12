@@ -716,11 +716,27 @@ If adding UUID rather than partition number the syntax is
 
 #### GRUB
 
--
-Install grub packet: `# pacman -S grub`
-- `# grub-install --target=i386-pc --recheck /dev/sda`
+- https://wiki.archlinux.org/title/GRUB
 
-Install os-prober: `# pacman -S os-prober`
+Install grub packet: `# pacman -S grub`
+
+```
+sudo grub-install --target=x86_64-efi \
+  --efi-directory=/boot \
+  --bootloader-id=ArchLinux
+```
+
+(Optional - Only needed for dual boot) Install os-prober:
+- `# pacman -S os-prober`
+- Edit `/etc/default/grub` to enable os-prober
+    + `GRUB_DISABLE_OS_PROBER=false`
+
+(Optional) Enable memtest
+- `# pacman -S memtest86+-efi`
+- Edit `/etc/default/grub` to enable memtest
+    + `GRUB_DISABLE_MEMTEST=false`
+
+Generate new GRUB config file:
 - `# grub-mkconfig -o /boot/grub/grub.cfg`
 
 
@@ -858,6 +874,13 @@ Back up your system regularly and before big upgrade.
     + Bootable but broken applications and/or system.
     + Non-bootable, so you can't access the system at all.
 
+Data to backup:
+- Configuration files
+- List of installed packages
+- Pacman database
+- Encryption metadata
+- System and user data
+
 ##### Configuration files
 
 - User configurations
@@ -924,11 +947,24 @@ Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /etc/pkglist-explicit-native.txt && /
 - To remove all packages that are not in the package list:
     + `# pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))`
 
-##### Pacman database
+##### Other Data
 
-##### Encryption metadata
+###### Btrfs Snapshots
 
-##### System and user data
+- A snapshot is simply a subvolume that shares its data (and metadata)
+  with some other subvolume, using Btrfs's COW capabilities.
+- **A snapshot is not a (strong) backup** (weak form of incremental
+  backup only): snapshots work by use of BTRFS’ copy-on-write behaviour.
+    + A snapshot and the original it was taken from initially share all
+      of the same data blocks.
+    + If that data is damaged in some way (cosmic rays, bad disk sector,
+      accident with dd to the disk), then the snapshot and the original
+      will both be damaged.
+    + Snapshots are useful to have local online “copies” of the
+      filesystem that can be referred back to, or to implement a form of
+      deduplication, or to fix the state of a filesystem for making a
+      full backup without anything changing underneath it.
+    + They do not in themselves make your data any safer.
 
 #### Upgrading the system
 
@@ -1236,6 +1272,12 @@ Something
 ### LDAP
 
 # Troubleshooting
+
+## Issue related to GPG key (marginal trust, etc.) when upgrade NOT regularly
+
+- Update the key ring first
+    + `sudo pacman -S archlinux-keyring`
+    + Then doing the upgrade again.
 
 ## Black screen after waking up from suspend/hibernate
 
