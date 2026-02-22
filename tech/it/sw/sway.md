@@ -24,3 +24,9 @@
         * alternatives: wob
 - keymap
     + https://wiki.archlinux.org/title/Sway#Keymap
+
+# Output / Monitor / Display
+
+- Show all output devices: `swaymsg -t get_outputs`
+- Learn about supported configurations and how to configure:
+    + `man sway-output`

@@ -68,6 +68,10 @@ Mac OS
         * `smb://<server-domain-or-ip>/<folder-path>`
         * Click `+` sign to add the server to favorite list
     + Connect and enter credentials: user name and password
+- Configure SMB and macOS to improve performance for NAS
+    + https://www.reddit.com/r/unRAID/comments/17kmtal/nfs_vs_smb_share_speed_and_security/
+    + Disable signing required for network shares.
+    + Disable .DS_Store files on network shares.
 
 ## VPN
 

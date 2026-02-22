@@ -966,6 +966,22 @@ Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /etc/pkglist-explicit-native.txt && /
       full backup without anything changing underneath it.
     + They do not in themselves make your data any safer.
 
+###### Synchronization to mirror the data
+
+- rsync (uni-directional)
+    + https://wiki.archlinux.org/title/Rsync
+- unison (bi-directional)
+    + https://wiki.archlinux.org/title/Unison
+
+###### Incremental Backup
+
+- borg backup
+    + https://wiki.archlinux.org/title/Borg_backup
+- kopia (modern with UI)
+    + https://kopia.io/
+- restic
+    + https://wiki.archlinux.org/title/Restic
+
 #### Upgrading the system
 
 
@@ -1081,10 +1097,11 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
         * dwl (dwm compatible): not mature enough as of 2025
         * qtile
 
-#### dwm
+#### Wayland
 
-- Resources
-    + https://ratfactor.com/dwm
+- Install Xwayland to provide compatibility for native X11 applications
+    + `pacman -S xorg-xwayland`
+    + Then enable Xwayland in your compositor (sway, etc.)
 
 ### Terminal Emulators
 
@@ -1102,6 +1119,26 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
     + https://github.com/ErikReider/SwayOSD
 - wob
     + https://github.com/francma/wob
+
+### NAS (Network Attached Storage)
+
+#### NFS (Network File System)
+
+- https://wiki.archlinux.org/title/NFS
+- Install `nfs-utils` package in client and server.
+- Client
+    + Show the server's exported file systems:
+        * `showmount -e <servername>`
+        * `showmount -e unraid.local`
+        * `showmount -e 192.168.50.213`
+    + Manual mounting
+        * Mount the root NFS directory and look around for available
+          mounts:
+            - `sudo mount servername:/ /mountpoint/on/client`
+        * Mount the directory directly:
+            - `sudo mount -t nfs -o vers=4 servername:/path/to/directory /mountpoint/on/client`
+    + Mount using `/etc/fstab`
+        *
 
 ## Power management
 
@@ -1218,6 +1255,8 @@ Something
     + `scan on/off` to turn on/off scanning for devices
     + `pair/cancel-pairing/remove <dev>` to pair/cancel-pairing/remove a new device
     + `connect/disconnect <dev>` to connect/disconnect with a paired device
+    + `devices [Paired/Connected/Bonded/Trusted]` to show list of
+      devices
     + `help` to learn more
 
 ## Input devices
@@ -1226,7 +1265,10 @@ Something
 
 ## Optimization
 
-- https://wiki.archlinux.org/index.php/Improving_performance
+- [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
+    + Improving Performance
+        * https://wiki.archlinux.org/title/Improving_performance
+- [Data storage devices](https://wiki.archlinux.org/index.php/Benchmarking/Data_storage_devices)
 
 ## System service
 
@@ -1437,11 +1479,6 @@ setxkbmap -option caps:escape
     + `# udevadm test $(udevadm info -q path -n device_name) 2>&1`
     + `# udevadm test /sys/class/backlight/acpi_video0/`
 
-## Benchmarking
-
-- [Benmarking](https://wiki.archlinux.org/index.php/Benchmarking)
-- [Data storage devices](https://wiki.archlinux.org/index.php/Benchmarking/Data_storage_devices)
-
 ## Print / Printing / CUPS
 
 - CUPS
@@ -1470,6 +1507,18 @@ How to print
       avahi-daemon.service`.
     + Edit `/etc/nsswith.conf` to change the `hosts` line to include
       `mdns_minimal [NOTFOUND=return]` before `resolve` and `dns`.
+
+## Scan / Scanning / SANE
+
+- https://wiki.archlinux.org/title/SANE
+- GUI:
+    + GNOME document scanner: `simple-scan`
+    + Skanlite: `skanlite`
+- CLI
+    + Listing the scanners: `scanimage -L`
+    + Scan:
+        * `scanimage --device "<device-name>" --format=png --output-file test.png --progress`
+        * `scanimage --device "escl:http://192.168.50.22:80" --format=tiff --output-file test.tiff --progress --mode Color --resolution 600dpi --source ADF`
 
 ## Time
 
