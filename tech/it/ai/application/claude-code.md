@@ -48,9 +48,84 @@
 }
 ```
 
-- Notifications
-    + https://docs.anthropic.com/en/docs/claude-code/settings#global-configuration
-    + `claude config set --global preferredNotifChannel iterm2_with_bell`
+## Notifications
+
+### Local Computer
+
++ Trigger notifications when a process is finished:
+    * https://superuser.com/questions/345447/how-can-i-trigger-a-notification-when-a-job-process-ends
+    * MacOS
+        - `say` command
+            + List of voices: https://gist.github.com/mculp/4b95752e25c456d425c6
+        - `afplay <sound-file>`
+        - `terminal-notifier`
+            + https://github.com/julienXX/terminal-notifier
++ Using hooks with "Stop" event or other events to trigger a command for
+  notifications.
++ https://www.reddit.com/r/ClaudeAI/comments/1lfvz30/simple_way_to_get_notified_when_claude_code/
+
+```
+❯ cat .claude/settings.json
+  {
+    "hooks": {
+      "Stop": [
+        {
+          "hooks": [
+            {
+              "type": "command",
+              "command": "say I'm done"
+              //"command": "afplay /System/Library/Sounds/Glass.aiff"
+              //"command": "terminal-notifier -message 'hello' -title '..'"
+            }
+          ]
+        }
+      ]
+    }
+  }
+```
+
+### Remote Computers (SSH)
+
+- If you SSH to a remote computer from your local machine, to trigger
+  a notification in the local machine, we need a hook to output a
+  certain text on the terminal screen, and then configure the terminal
+  emulator to trigger a command when it sees the text.
+- Examples steps for macOS SSH to linux machine:
+    + On the linux machine with claude code, set up hook to output a
+      text `iTermNotify <...>` when it finishes a job.
+    + On the local machine macOS with iterm2, configure it to trigger a
+      command when it sees the above text.
+
+```
+1. Configure iTerm2 Trigger
+
+    Open iTerm2 Preferences.
+    Go to Profiles > Advanced.
+    In the Triggers section, click Edit and then the + button to add a new trigger.
+    Configure the trigger with the following settings:
+        Regular Expression: iTermNotify (.*)
+        Action: Run Command...
+        Parameter: osascript -e 'display notification "\\1" with title "iTerm2"'
+        Ensure it is checked as Instant.
+    Click OK to save the trigger.
+
+2. Add a Helper Function on the Remote Machine
+
+    SSH into your remote machine and open your shell configuration file (e.g., ~/.bashrc, ~/.zshrc).
+    Add the following function:
+    bash
+
+    function iterm_notify() {
+      echo && echo -en "iTermNotify $@\r" && sleep 1 && echo " "
+    }
+
+    Save the file and reload your shell (e.g., source ~/.bashrc) or start a new tmux session.
+
+3. Configure Claude Code to use the function
+
+    Inside your Claude Code session, use the /hooks command to set up a notification for user input requests.
+    When prompted for the command, use iterm_notify "Please provide user input" (or a similar message). This will output the trigger text, which your local iTerm2 will catch and display as a notification.
+```
 
 # Use Claude
 
