@@ -198,20 +198,53 @@ details.
 
 - https://github.com/unixorn/awesome-zsh-plugins
 
+
+## Theme
+
+- robbyrussell (oh-my-zsh)
+- https://github.com/romkatv/powerlevel10k
+
+## zsh-syntax-highlighting
+
+- https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
+## zsh-autosuggestions
+
+- https://github.com/zsh-users/zsh-autosuggestions
+
 ## git
 
+- https://github.com/aeons/omz-git
 - add many aliases and functions
 
-## [z](https://github.com/rupa/z)
+## zoxide
 
-- Jump to places based on frequency
-- `z foo`
+- https://github.com/ajeetdsouza/zoxide
+- zoxide is a smarter cd command, inspired by z and autojump.
+- It remembers which directories you use most frequently, so you can
+  "jump" to them in just a few keystrokes.  zoxide works on all major
+  shells.
+
+```
+z foo              # cd into highest ranked directory matching foo
+z foo bar          # cd into highest ranked directory matching foo and bar
+z foo /            # cd into a subdirectory starting with foo
+
+z ~/foo            # z also works like a regular cd command
+z foo/             # cd into relative path
+z ..               # cd one level up
+z -                # cd into previous directory
+
+zi foo             # cd with interactive selection (using fzf)
+
+z foo<SPACE><TAB>  # show interactive completions (bash 4.4+/fish/zsh only)
+```
 
 ## vi-mode
 
+- https://github.com/jeffreytse/zsh-vi-mode
 - vi-like functionality
 - manual:
-   + https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode
    + `ctrl-p` or `k`: previous command
    + `ctrl-n` or `j`: next command
    + `/`: search backward
@@ -219,32 +252,17 @@ details.
 
 ## history-substring-search
 
+- https://github.com/zsh-users/zsh-history-substring-search
 - typing part of a command and using UP, DOWN or `k`, `j` to match
   commands in the history
 - VERY USEFUL
 
-## jump
-
-- jumps around the file system by manually adding marks
-
-```
-# jump FOO: jump to a mark named FOO
-# mark FOO: create a mark named FOO
-# unmark FOO: delete a mark
-# marks: lists all marks
-```
-
-
-## Theme
-
-- robbyrussell
-
-## zsh-syntax-highlighting
-
-- https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
 # Improve performance
 
+- ZSH benchmark and how to use `diy++` (manually manage plugins)
+  approach to reduce load time and improve performance:
+    + https://github.com/romkatv/zsh-bench
 - Simplify ZSH setup:
     + https://batsov.com/articles/2025/03/01/back-to-the-basics-zsh-without-oh-my-zsh/
 - https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load.html
@@ -395,6 +413,13 @@ print -l ${(@On)lines}
 
 - Run the following command:
     + `./sort_timings.zsh zsh_profile.abcd1234 | less`
+
+# Advanced / Internal ZSH
+
+## ZSH Line Editor (ZLE))
+
+- https://share.google/aimode/hbDHGz1FXXRThp1LT
+- https://thevaluable.dev/zsh-line-editor-configuration-mouseless/
 
 # Tips and Tricks
 
