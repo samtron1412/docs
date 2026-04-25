@@ -58,12 +58,17 @@ List of useful computer software.
 
 ### IRC clients
 
-- [weechat](https://en.wikipedia.org/wiki/WeeChat): Modular, lightweight
-  ncurces-based IRC client.
-- [irssi](https://wiki.archlinux.org/index.php/Irssi): Highly-
-  configurable ncurses-based IRC client. [Homepage](http://irssi.org/)
-- [hexchat](http://hexchat.github.io/): Fork of Xchat for Linux and
-  Windows.
+- Console
+    + [weechat](https://en.wikipedia.org/wiki/WeeChat): Modular, lightweight
+      ncurces-based IRC client.
+        * Use  this since it supports other protocols: facebook, slack,
+          discord, etc.
+        * Can integrate with Bitlbee
+    + [irssi](https://wiki.archlinux.org/index.php/Irssi): Highly-
+      configurable ncurses-based IRC client
+- GUI
+    + [hexchat](http://hexchat.github.io/): Fork of Xchat for Linux and
+      Windows.
 
 ## News, RSS and blogs
 

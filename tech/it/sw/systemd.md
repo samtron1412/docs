@@ -39,6 +39,24 @@ rest of the system.
 
 ## Unit files
 
+- All types of units:
+    + https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html
+- Systemd units are configuration files defining how to manage system resources like services, sockets, and devices, identified by their file suffix
+    + The 11 main unit types are Service, Socket, Target, Device, Mount, Automount, Swap, Path, Timer, Slice, and Scope. They are located in /usr/lib/systemd/system/ or /etc/systemd/system/.
+- Key Systemd Unit Types:
+    + .service: Manages daemons or scripts (e.g., httpd.service).
+    + .socket: Encapsulates local IPC or network sockets for socket-based activation.
+    + .target: Groups units to synchronize boot-up or manage system states (e.g., graphical.target).
+    + .device: Manages kernel devices, often created from udev.
+    + .mount: Controls mount points in the filesystem.
+    + .automount: Handles on-demand, parallelized mounting of filesystems.
+    + .swap: Manages swap memory devices or files.
+    + .path: Monitors paths and activates other services when file system objects change.
+    + .timer: Triggers activation of other units, similar to cron jobs.
+    + .slice: Groups units into a hierarchical tree for resource management.
+    + .scope: Manages foreign processes, distinct from system-started services.
+- You can list all unit types by running `systemctl -t help` on your system.
+
 ## Core components and libraries
 
 ## Ancillary components

@@ -122,3 +122,7 @@ If you have 100 KB/sec upload speed max and allow 100 connections per torrent AN
 
 Peers upload almost entirely to the OTHER peers that give them the most back, up to the limit of the number of upload slots they allow. They try to automatically reward the "givers" and ignore the "takers". Most BitTorrent clients limit upload slots per torrent to only 4. For really fast internet connections, you want to be one of their 4 upload slots! But that means you have to upload slightly more to them than almost all other peers. This can be as little as 10 KB/sec to them on public torrents with lots of ADSL-using peers. If you have only 100 KB/sec upload speed max, then 10 KB/sec is 1/10th of that ...so upload slots should be 10 at most spread between all your torrents. So probably BOTH the global upload slot limit as well as the per torrent upload slots should be no greater than 10.
 ```
+
+# Movie and TV Series
+
+- Read more about audio and video concepts in `audio.md` and `video.md`

@@ -1,5 +1,22 @@
 # Overview
 
+# Voting in Elections
+
+- Williamson Country Election Office
+    + https://www.wilcotx.gov/elections
+    + Election calendars, sample ballot, early voting locations, polling
+      locations, etc.
+
+## Typical Election Calendar
+
+- March
+    + Primary election
+- May
+    + Local elections
+    + Primary runoff
+- November
+    + General election
+
 # Toll roads
 
 - https://www.reddit.com/r/Austin/comments/nh4wfm/txtag_vs_eztag_vs_ntta/

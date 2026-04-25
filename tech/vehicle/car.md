@@ -428,6 +428,8 @@ and 157.5".
 
 ## Wheels and Tires
 
+### Tire Specification
+
 `P185/65R14 85S`
 
 - The first letter: the intended use of the tire
@@ -483,6 +485,37 @@ Tire Speed Rating
 | Y            | 300          | 186         |
 ```
 
+### Directional vs Non-directional Tire Tread Patterns
+
+- Directional
+    + Only suppose to rotate in one direction.
+    + There is a arrow mark on the outside of the tire to show the
+      rotation direction.
+    + Having symmetrical pattern with V shape.
+    + More performance in wet / snow condition.
+- Non-directional
+    + Usually asymmetric pattern that can rotate in any direction.
+    + Cheaper than directional pattern.
+    + Two common types:
+        * Symmetrical: you can flip the tire in any way (180 or 360
+          degree) and the pattern looks the same.
+        * Asymmetrical: pattern will not looks the same, the pattern
+          usually flips left to right and vice versa when flipping the
+          tire.
+
+### Tire Wear
+
+- Tire Wear is the removal of material from the tire under operating
+  condition.
+- Wear Impact Factors:
+    + Driving Style
+    + Road Curviness
+    + Road Surface
+    + Vehicle: small and light, weight distributed evenly, AWD
+    + Tire Design
+    + Temperature
+    + Wet/Dry
+
 ## Air conditioning system (A/C)
 ### Freon
 Freon is a trade name for a class of chemicals (known as Chlorofluorocarbons or CFC's) used as a refrigerant in air conditioning systems.
@@ -496,6 +529,30 @@ Commercially available Freons include:
 # Mechanic Tasks
 
 - Chris fix on youtube
+
+## Engine Oil Change and Tire Rotation
+
+- Usually, these two maintenance tasks need to do every 5000 miles
+  together.
+- Price: 80 dollars (great), 100 dollars (fair), 120 dollars (expensive)
+- Jack the car up on 4 jack stands.
+- Change the oil
+- Rotate the tire:
+    + Why?
+        * Ensure even tread wear across 4 tires since they are rotate to
+          all 4 different tire positions at some points. They also
+          switch rotation direction if the tire is not a directional
+          tire.
+        + Increase the  life of your tires.
+        + Provide reliable traction in wet or dry conditions.
+        + Maintain consistent handling and braking performance.
+    + How
+        + FWD: front straight to back and back tires cross to front
+        + RWD and AWD: back straight to front and front tires cross to back
+        + Directional tires: front-to-back and vice versa
+- Inspect the tire condition:
+    + Tread wear using indicators on the tire
+    + Cut and crack and objects on tire
 
 ## Cleaning
 
@@ -572,6 +629,18 @@ Commercially available Freons include:
 - Using AT-205 to rejuvenate rubber around the suspension and the mounts
 - Rinse dust and salt underneath the car
 - Replace the old parts by quality parts
+
+# Tools
+
+- Floor jack: home use should be around 3-ton capacity
+    + Buy a rubber pad to avoid damage to vehicle.
+    + Avoid expensive jack system (QuickJack or lifts) since it does not
+      make financial sense for home usage. You would need 10 or 15 plus
+      years to break even. Just bring your cars to your trusted mechanic
+      for difficult jobs.
+- Jack stands: 4 of them with top pads to avoid damage to vehicle
+    + Use rubber pads or wooden pads at the bottom of the jack stand to
+      provide stability and avoid damage to the drive way.
 
 # Tips and Tricks
 

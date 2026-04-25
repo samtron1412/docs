@@ -99,6 +99,8 @@ Mac OS
     + To connect to the VPN with the configuration
 - `sudo wg-quick down /Users/myuser/Downloads/wg0.conf`
     + To disconnect from the VPN
+- `sudo wg`: Showing active wireguard interfaces
+- `sudo wg show <interface>`: show conf of the interface
 
 # Java
 

@@ -113,6 +113,25 @@ These manually installed packages are called foreign packages — packages
 which have not originated from any repository known to pacman. To list
 all foreign packages: `$ pacman -Qm`
 
+#### `auracle-git`: AUR Client
+
+- `auracle [OPTIONS...] COMMAND [ARGS...]`
+- auracle is a tool for querying information stored by the Arch User
+  Repository (AUR).
+- Common commands:
+    + Check outdated packages: `auracle outdated`
+    + Update packages: `auracle udpate`
+    + Show PKGBUILD: `auracle show <pkg1> <pkg2> ... | less`
+    + Search terms: `auracle search <term1> <term2> ...`
+    + Info: `auracle info <pkg1> <pkg2> ...`
+    + Clone git repositories: `auracle clone <pkg1> <pkg2> ...`
+        * Add `--recurse` option to also download dependencies.
+    + Build order: `auracle buildorder <pkg1> <pkg2> ...`
+- Common usage:
+    + `auracle clone <pkg>`
+    + Read PKGBUILD and other files to verify the package.
+    + `makepkg -si`: build and install package.
+
 ### Build from local source files so you can change source code
 
 - https://wiki.archlinux.org/title/Makepkg#Build_from_local_source_files
@@ -1120,26 +1139,6 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 - wob
     + https://github.com/francma/wob
 
-### NAS (Network Attached Storage)
-
-#### NFS (Network File System)
-
-- https://wiki.archlinux.org/title/NFS
-- Install `nfs-utils` package in client and server.
-- Client
-    + Show the server's exported file systems:
-        * `showmount -e <servername>`
-        * `showmount -e unraid.local`
-        * `showmount -e 192.168.50.213`
-    + Manual mounting
-        * Mount the root NFS directory and look around for available
-          mounts:
-            - `sudo mount servername:/ /mountpoint/on/client`
-        * Mount the directory directly:
-            - `sudo mount -t nfs -o vers=4 servername:/path/to/directory /mountpoint/on/client`
-    + Mount using `/etc/fstab`
-        *
-
 ## Power management
 
 - Power management:
@@ -1236,6 +1235,13 @@ Something
 
 ### Wireless
 
+#### WiFi
+
+- NetworkManager
+    + https://wiki.archlinux.org/title/NetworkManager
+    + nmcli (CLI)
+    + nmtui (TUI)
+
 #### Bluetooth
 
 - https://wiki.archlinux.org/title/Bluetooth
@@ -1259,9 +1265,69 @@ Something
       devices
     + `help` to learn more
 
-## Input devices
+### NAS (Network Attached Storage)
+
+#### NFS (Network File System)
+
+- https://wiki.archlinux.org/title/NFS
+- Install `nfs-utils` package in client and server.
+- Client
+    + Show the server's exported file systems:
+        * `showmount -e <servername>`
+        * `showmount -e unraid.local`
+        * `showmount -e 192.168.50.213`
+    + Manual mounting
+        * MUCH QUICKER IF WE USE IP ADDRESS DIRECTLY!
+        * Mount the root NFS directory and look around for available
+          mounts:
+            - `sudo mount servername:/ /mountpoint/on/client`
+        * Mount the directory directly:
+            - `sudo mount -t nfs -o vers=4 servername:/path/to/directory /mountpoint/on/client`
+    + Mount using `/etc/fstab`
+        * MUCH QUICKER IF WE USE IP ADDRESS DIRECTLY!
+        * Add the mount point:
+            - `192.168.50.213:/mnt/user/data  /home/glider/mnt/unraid/data  nfs  _netdev,noauto,noatime,x-systemd.automount,x-systemd.mount-timeout=10,x-systemd.idle-timeout=1min,timeo=14,nconnect=4  0  0`
+        * Reload systemd units: `sudo systemctl daemon-reload`
+        * Restart remote file systems: `sudo systemctl restart remote-fs.target`
+        * Using `man nfs` and `man mount` to learn more about the
+          options for the mounting.
+
+## Input Devices
 
 Something
+
+## Storage Devices
+
+### Mount, format, check, unmount, eject USB
+
+- https://wiki.archlinux.org/title/USB_storage_devices
+- Connect the USB, then use `lsblk` or `lsblk -f` to identify the
+  device.
+- Mounting:
+    + Automatic mounting: `udiskie`.
+        * https://wiki.archlinux.org/title/Udisks
+        * TODO: config udiskie and sway and waybar
+    + Manual mounting
+        * Create a mount point:
+            - `sudo mkdir -p ~/mnt/usb`
+        * Mount:
+            - `sudo mount /dev/sdX1  ~/mnt/usb`
+- Scan and repair file system
+    + Use `fsck.<file_system_type>`
+    + FAT32: `sudo fsck.vfat -a /dev/sdX1`
+    + exFAT: `sudo fsck.exfat /dev/sdX1`
+    + NTFS: `sudo ntfsfix /dev/sdX1`
+    + ext4: `sudo fsck.ext4 -p /dev/sdX1`
+- Check for Physical Bad Blocks (Data Loss Warning)
+    + Non-destructive read-only test:
+        * `sudo badblocks -v /dev/sdX`
+    + Write test:
+        * `sudo badblocks -w /dev/sdX`
+- Eject USB safely
+    + `udisksctl` from `udisks2` package
+        * `udisksctl power-off -b /dev/sdb`
+    + `eject /dev/sdb`
+    + `umount /mnt/usb && sync`
 
 ## Optimization
 
@@ -1304,6 +1370,22 @@ Something
     + Add environment variable `SSH_AUTH_SOCK` to your shell RC file
         * `export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"`
     + Then you can use `ssh-add` to add identities to the ssh-agent.
+
+### SSHFS (FUSE-based file system client for mounting remote directories over a SSH connection)
+
+- Install `sshfs` package: `sudo pacman -S sshfs`
+- Update `/etc/fstab` to add the mount point
+    + Since the mounting is handle by `root` user on the local
+      machine. You MUST make sure the remote hosts are in the
+      `known_hosts` list of the `root` user.
+        * Run the following command to add the remote host to root's
+          `known_hosts`:
+        * `sudo ssh -i /home/glider/.ssh/rl-private-key.pem ec2-user@ec2-100-54-83-22.compute-1.amazonaws.com -o StrictHostKeyChecking=accept-new exit`
+    + `ec2-user@ec2-100-54-83-22.compute-1.amazonaws.com:/home/ec2-user  /home/glider/mnt/amazon-ec2-gpu  fuse.sshfs  noauto,x-systemd.automount,x-systemd.idle-timeout=600,_netdev,allow_other,IdentityFile=/home/glider/.ssh/rl-private-key.pem,reconnect,users,idmap=user,ServerAliveInterval=15,ServerAliveCountMax=3  0  0`
+        * Might need to specify the user to connect to since some hosts
+          might deny `root` connection.
+    + Reload systemd units: `sudo systemctl daemon-reload`
+    + Restart remote file systems: `sudo systemctl restart remote-fs.target`
 
 # Advanced
 

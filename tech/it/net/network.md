@@ -288,7 +288,31 @@ Today, maybe one device can handle multiple functionalities
 - SpaceX Starlink (2021)
 - Amazon Kuiper
 
-# WAN & LAN
+# CIDR (Classless Inter-Domain Routing)
+
+- https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+- https://aws.amazon.com/what-is/cidr/
+- Classless Inter-Domain Routing (CIDR - pronounced "cider") is a method
+  for allocating IP addresses for IP routing.
+    + The Internet Engineering Task Force introduced CIDR in 1993 to replace
+      the previous classful network addressing architecture on the Internet.
+    + Its goal was to slow the growth of routing tables on routers across
+      the Internet, and to help slow the rapid exhaustion of IPv4 addresses.
+- CIDR notation
+    + 198.51.100.14/24 represents the IPv4 address 198.51.100.14 and its associated network prefix 198.51.100.0, or equivalently, its subnet mask 255.255.255.0, which has 24 leading 1 bits.
+    + the IPv4 block 198.51.100.0/22 represents the 1024 IPv4 addresses from 198.51.100.0 to 198.51.103.255.
+    + the IPv6 block 2001:db8::/48 represents the block of IPv6 addresses from 2001:db8:0:0:0:0:0:0 to 2001:db8:0:ffff:ffff:ffff:ffff:ffff.
+    + ::1/128 represents the IPv6 loopback address. Its prefix length is 128, which is the number of bits in the address.
+- Subnet masks
+    + A subnet mask is a bitmask that encodes the prefix length
+      associated with an IPv4 address or network in quad-dotted
+      notation: 32 bits, starting with a number of ones equal to the
+      prefix length, ending with zeros, and encoded in four-part
+      dotted-decimal format: 255.255.255.0. A subnet mask encodes the
+      same information as a prefix length but predates the advent of
+      CIDR.
+
+# WAN & LAN (Wide Area Network & Local Area Network)
 
 1. Phân biệt việc kêt nối mạng cho wifi router vào port WAN hay port LAN
     - Gắn vào Port LAN thì sẽ phát cùng lớp mạng với nguồn cung cấp (vd:
@@ -317,7 +341,7 @@ Today, maybe one device can handle multiple functionalities
     - Quy hoạch sóng để tránh nhiễu ( 3 chanel không chồng lấn nhau là
       1,6,11)
 
-## LAN
+## LAN (Local Area Network)
 
 - Backchaul
     + The connection from the access point back to the main network /
@@ -329,10 +353,46 @@ Today, maybe one device can handle multiple functionalities
 - Wired Access Backhaul
     + Access points are connected back to the main network using wires.
 
-# CIDR (Classless Inter-Domain Routing)
+### VLAN (Virtual LAN)
 
-- https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
-- https://aws.amazon.com/what-is/cidr/
+- https://youtu.be/JszGeQPTo4w?si=OymWMH5oLkdePmHK
+- https://en.wikipedia.org/wiki/VLAN
+    + A virtual local area network (VLAN) is a local area network
+      broadcast domain that is partitioned and isolcated in a virtual
+      network at the data link layer (OSI layer 2).
+    + A VLAN behaves like a virtual network switch or network link that
+      can share the same physical structure with other VLANs while
+      staying logically separated from them.
+    + VLANs work by applying tags to network frames that are forwarded
+      within the broadcast domain, creating the appearance and
+      functionality of network traffic that behaves as if it were split
+      between separate networks.
+    + VLANs allow network administrators to group hosts together even if
+      the hosts are not directly connected to the same network switch.
+
+#### Why VLAN?
+
+- Goal:
+    + Security and Performance.
+- Advantage of having VLANs if you enable inter-VLAN routing
+    + https://networkengineering.stackexchange.com/questions/62435/whats-the-advantage-of-having-vlans-if-you-enable-inter-vlan-routing
+    + Easier to control and apply security policies through firewall,
+      routers, and switches.
+    + Limit broadcast traffic so more performance.
+
+#### Terminology
+
+- VLAN ID / Tag = an ID added to data packets indicating the virtual
+  network that packet belongs to.
+- Untagged LAN = the 'default'  VLAN a device (without a specific VLAN
+  ID) will use be assigned when joined a network.
+- Tagged VLAN = additional VLANs on a network for devices that are
+  'aware' of which VLAN they are supposed to be assigned to.
+- Trunk Port = a network port on a switch or router that is configured
+  to carry traffic for multiple VLANs, so you can connect multiple
+  switches / networks.
+
+#### Firewall rules
 
 # Socket
 

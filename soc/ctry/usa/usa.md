@@ -776,6 +776,48 @@ http://www.diffen.com/difference/Democracy_vs_Republic
 
 - [24 Constitutional Question](http://www.thenewamerican.com/usnews/constitution/item/19137-24-constitutional-questions-every-american-should-be-able-to-answer)
 
+## Voting in Elections
+
+- Three levels of elections:
+    + Federal (national government)
+        * President and Vice President
+        * U.S. Senate (Senators)
+        * U.S. House of Representatives
+    + State
+        * Governor, Lieutenant Governor, Attorney General, State
+          Senators, State Representatives, State Supreme Court Judges
+        * These positions control state laws, schools, roads, utilities,
+          etc.
+    + Local (county / city / school district)
+        * Mayor, city council, county commissioners, sheriff, school
+          board.
+        * These affect property taxes, schools, policing, zoning, parks,
+          etc.
+- Major Election Cycles
+    + Presidential Election: every 4 years on first Tuesday of November
+    + Congressional Elections: every 2 years
+        * House of Representatives: all seats elected every 2 years
+        * Senators serve 6-year terms, but 1/3 elected every 2 years
+    + State Elections: usually 4 years, during the midterm cycle
+      (Congress and Governor).
+    + Local elections: every 2 years between presidential and midterm
+    + Election Year pattern:
+        * 2024: presidential + congress
+        * 2025: local
+        * 2026: midterm (congress + governer)
+        * 2027: local
+        * 2028: presidential + congress
+- Types of elections:
+    + Primary elections: used to choose party candidates
+    + Runoff elections: if no party candidate gets enough votes (50%) in
+      a primary, the top 2 candidates need to be voted again in the
+      runoff election.
+    + General election: this is the main election where winners are
+      chosen.
+- Early voting: people can vote 2+ weeks earlier than the voting day.
+- Check your county election office for election calendar, sample
+  ballots, early voting locations, polling locations, etc.
+
 ## Misc
 
 - Filibuster: https://en.wikipedia.org/wiki/Filibuster
@@ -876,6 +918,10 @@ Your primary care provider may refer you to professionals in various specialties
         * T-Mobile Connect, Simply Prepaid, Simply Prepaid Unlimited,
           Simply Prepaid Unlimited Plus
     + Transfer to T-mobile: https://www.t-mobile.com/support/account/transfer-your-phone-number-to-t-mobile
+- Spectrum phone number
+    + Account number: 1042616075
+    + Transfer PIN:
+    + Cancel service: call 833-224-6603.
 - AT&T:
     + Prepaid plans: https://www.att.com/prepaid/
     + Prepaid family: https://www.att.com/att/prepaid-family/
