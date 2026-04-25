@@ -276,6 +276,17 @@ Something
       the parameter from training data, then we call those
       simply parameters
 
+### Training Technique
+
+- Speed up training:
+    + Data loading:
+        * Using memory-mapped files: a technique that maps a file on
+          disk directly into a program's virtual address space. This
+          allows the operating system (OS) to treat the file as if it
+          were an array in RAM, enabling the application to read or
+          write data using standard memory operations instead of
+          traditional file I/O system calls like read() or write().
+
 ## Validation
 
 ### Introduction

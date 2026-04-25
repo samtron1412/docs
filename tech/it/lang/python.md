@@ -303,6 +303,12 @@ x = q.get()
 
 - https://helloacm.com/the-monotone-stack-implementation-in-python/#:~:text=The%20Monotone%20Stack%20in%20Python&text=At%20anytime%2C%20the%20monotone%20stack,or%2Dequal%20number%20is%203.
 
+## Python Runtime Services
+
+### abc - Abstract Base Classes
+
+- https://docs.python.org/3/library/abc.html
+
 # Object Oriented Programming (OOP)
 
 - https://realpython.com/python3-object-oriented-programming/
@@ -390,7 +396,7 @@ x = q.get()
 - 2019 summary
     + https://www.perfectlyrandom.org/2019/11/29/handling-avro-files-in-python/
 
-# Packages
+# Packages and Third-party Libraries
 
 ## Cryptography
 
