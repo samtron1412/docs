@@ -1,5 +1,490 @@
 # Overview
 
+Claude Code is an agentic CLI tool from Anthropic that operates through
+a continuous loop: gather context, take action, verify results. It runs
+autonomously but you can interrupt at any point. Below is a complete
+reference of all major concepts and features.
+
+## Concepts at a Glance
+
+| Concept | Trigger | Isolation | Persistence | Best for |
+|---------|---------|-----------|-------------|----------|
+| CLAUDE.md | Every session (auto) | Same context | Git / local file | Persistent instructions |
+| Memory | Every session (auto) | Same context | Local only | Cross-session learning |
+| Skills | On-demand (user or model) | Same or forked | File on disk | Repeatable workflows |
+| Agents | On-demand (model) | Separate context | File on disk | Specialized workers |
+| Hooks | System events (auto) | External process | Settings file | Automation/policies |
+| MCP | On-demand (model) | External server | Config file | External integrations |
+| Plugins | Enable/disable | Bundles above | Versioned package | Team distribution |
+| Permissions | Every tool call | N/A | Settings file | Safety controls |
+
+## MCP (Model Context Protocol) Servers
+
+MCP servers are external tool connections that give Claude access to
+APIs, databases, and services. They follow an open standard from
+modelcontextprotocol.io.
+
+How it differs from other concepts:
+
+- vs. Skills: MCP provides interactive tools Claude can call. Skills are
+  static instructions Claude reads.
+- vs. Plugins: MCP is one component a plugin can bundle. Plugins package
+  multiple things together.
+- vs. Hooks: MCP tools are called on-demand by Claude. Hooks fire
+  automatically at system events.
+
+Configuration files:
+
+- `.mcp.json` (project-level)
+- `~/.claude/.mcp.json` (user-level)
+
+Key behaviors:
+
+- Tool schemas are deferred by default (names visible, full schemas load
+  on-demand) to save context window space.
+- Use `/mcp` to see connected servers and per-server context cost.
+- Set `ENABLE_TOOL_SEARCH=auto` to load schemas upfront when they fit
+  within 10% of context window.
+- Use `claude --mcp-debug` to identify configuration issues.
+- Only include necessary tools to reduce context size.
+
+Use cases: Query databases, search internal docs, create tickets, send
+messages, call AWS APIs, read emails.
+
+## Agents and Subagents
+
+Agents are specialized AI workers with their own context window, system
+prompt, and tool access. They work in isolation and return results to
+your main conversation.
+
+How it differs:
+
+- vs. Skills: Agents are separate Claude instances with isolated
+  context. Skills are instructions loaded into the current context.
+- vs. Your main session: Agents protect your main context from
+  pollution (exploration output, build logs, research results).
+- vs. Plugins: Agents are workers. Plugins are distribution packages.
+
+Built-in agent types:
+
+| Type | Purpose | Tools |
+|------|---------|-------|
+| Explore | Fast read-only codebase search | Read, Grep, Find (no edits) |
+| Plan | Design implementation strategies | Read-only + planning |
+| general-purpose | Default fallback, full capabilities | All tools |
+| claude-code-guide | Answer questions about Claude Code | Read, Bash, WebFetch |
+
+Custom agents live at `.claude/agents/<name>/AGENT.md` or
+`~/.claude/agents/<name>/AGENT.md`.
+
+Example custom agent:
+
+```yaml
+# .claude/agents/security-reviewer/AGENT.md
+---
+description: Review code for security vulnerabilities
+model: claude-haiku-4-5
+allowed-tools: Read Grep
+---
+Review the provided code for OWASP Top 10 vulnerabilities.
+$ARGUMENTS
+```
+
+Effective usage:
+
+- Use Explore agents for research (keeps main context clean).
+- Use worktree isolation (`isolation: worktree`) for parallel edits.
+- Run agents in background when you do not need results immediately.
+- Use cheaper models for simple tasks.
+- Subagents contain lengthy build output, distill it down, and forward
+  only the main takeaway back to the main chat.
+
+## Skills (Slash Commands)
+
+Skills are reusable instruction files that load on-demand. You invoke
+them with `/skill-name` or Claude invokes them automatically when
+relevant.
+
+How it differs:
+
+- vs. CLAUDE.md: CLAUDE.md loads every session. Skills load only when
+  invoked.
+- vs. Agents: Skills are instructions within your current context.
+  Agents are separate workers.
+- vs. Hooks: Skills are triggered by intent. Hooks fire at system
+  events.
+- vs. Legacy commands (`.claude/commands/`): Skills replace the old
+  commands system with extra features like forking and tool pre-approval.
+
+Where skills live:
+
+- Personal: `~/.claude/skills/<name>/SKILL.md`
+- Project: `.claude/skills/<name>/SKILL.md`
+- Plugin: `<plugin>/skills/<name>/SKILL.md` (namespaced as
+  `/plugin:skill`)
+
+Frontmatter options:
+
+```yaml
+---
+description: When Claude should use this skill (for model-invocation)
+disable-model-invocation: true   # Only user can invoke
+user-invocable: false            # Only Claude can invoke
+allowed-tools: Bash(npm *) Read  # Pre-approve tools within this skill
+context: fork                    # Run in isolated subagent
+agent: Explore                   # Which agent type for forked context
+---
+```
+
+Dynamic context injection (runs shell commands before loading):
+
+```markdown
+---
+description: Show current branch status
+---
+## Branch Info
+!`git log --oneline -5`
+
+## Instructions
+Summarize what has been done on this branch.
+```
+
+Argument substitution:
+
+- `$ARGUMENTS` - all arguments as a string
+- `$ARGUMENTS[0]`, `$ARGUMENTS[1]` or `$0`, `$1` - positional args
+- `$name` - named arguments (if declared in frontmatter)
+
+## Plugins
+
+Plugins are versioned packages that bundle skills, agents, hooks, MCP
+servers, and settings into a distributable unit.
+
+How it differs:
+
+- vs. Individual skills/agents/hooks: Plugins package all of these
+  together as one installable unit.
+- vs. MCP servers alone: A plugin can include MCP servers plus other
+  components.
+- vs. Project config: Plugins are versioned, shareable, and namespaced.
+
+Plugin structure:
+
+```
+my-plugin/
+├── .claude-plugin/plugin.json   # Manifest (required)
+├── skills/                      # Skills
+├── agents/                      # Custom agents
+├── hooks/hooks.json             # Event handlers
+├── .mcp.json                    # MCP server configs
+├── settings.json                # Default settings
+└── bin/                         # Executables
+```
+
+Usage:
+
+- Local development: `claude --plugin-dir ./my-plugin`
+- All plugin skills are namespaced: `/plugin-name:skill-name`
+- Submit to marketplace at claude.ai/settings/plugins/submit
+
+## Hooks (Event Automation)
+
+Hooks are scripts, HTTP calls, or prompts that execute automatically at
+specific lifecycle events. They automate workflows and extend permission
+evaluation.
+
+How it differs:
+
+- vs. Skills: Hooks fire automatically at system events. Skills are
+  triggered by intent.
+- vs. Permissions: Hooks can make permission decisions dynamically.
+  Permissions are static rules.
+- vs. CLAUDE.md: CLAUDE.md gives instructions. Hooks enforce behavior
+  programmatically.
+
+Lifecycle events:
+
+| Event | When it fires |
+|-------|---------------|
+| SessionStart | Session begins or resumes |
+| UserPromptSubmit | Before processing your message |
+| PreToolUse | Before any tool executes (can allow/deny/modify) |
+| PostToolUse | After tool succeeds |
+| Stop | Claude finishes responding |
+| SessionEnd | Session terminates |
+
+Hook types:
+
+- `command` - Run shell script (receives JSON on stdin)
+- `http` - POST to endpoint
+- `mcp_tool` - Call an MCP server tool
+- `prompt` - Ask Claude to evaluate something
+- `agent` - Spawn subagent for complex validation
+
+Configuration example in settings.json:
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [{
+      "matcher": "Edit|Write",
+      "hooks": [{
+        "type": "command",
+        "command": "npm run lint:fix"
+      }]
+    }]
+  }
+}
+```
+
+Use cases:
+
+- Auto-lint after every file edit.
+- Block dangerous commands before execution.
+- Trigger notifications when Claude finishes a task.
+- Log activity for compliance.
+- Add context to every prompt automatically.
+
+## Plan Mode
+
+Plan mode is a permission mode where Claude operates read-only, creates
+a structured plan, then executes only after your approval.
+
+How to enter: `Shift+Tab` (cycle modes) or set `defaultMode: "plan"`.
+
+The workflow:
+
+1. Claude reads files and explores (read-only).
+2. Creates plan file at `~/.claude/plans/<name>.md`.
+3. You review and approve (or redirect).
+4. Claude executes the approved plan.
+
+When to use:
+
+- Complex multi-file changes.
+- When you want to understand the approach before execution.
+- For changes you want to review for correctness first.
+- Learning a new codebase (explore without risk).
+
+## CLAUDE.md Files (Persistent Instructions)
+
+CLAUDE.md files are markdown files that Claude reads at the start of
+every session. They provide persistent context about your project,
+preferences, and workflows.
+
+Hierarchy (loaded broadest to narrowest):
+
+| Scope | Location | Shared? |
+|-------|----------|---------|
+| Managed | `/etc/claude-code/CLAUDE.md` | Organization-wide |
+| User | `~/.claude/CLAUDE.md` | All your projects |
+| Project | `./CLAUDE.md` or `./.claude/CLAUDE.md` | Team (in git) |
+| Local | `./CLAUDE.local.md` | Personal (gitignored) |
+
+Path-scoped rules at `.claude/rules/`:
+
+```yaml
+# .claude/rules/testing.md
+---
+paths:
+  - "src/**/*.test.ts"
+---
+Use React Testing Library. Never use enzyme.
+```
+
+These load only when Claude works with matching files. This saves
+context.
+
+Import syntax: `@README.md` or `@docs/architecture.md` pulls content
+from other files into CLAUDE.md.
+
+What belongs in CLAUDE.md: Build commands, coding standards, architecture
+overview, naming conventions.
+
+What does NOT belong: One-off procedures (use skills), large reference
+material (use path-scoped rules), personal preferences (use
+CLAUDE.local.md).
+
+## Memory System
+
+Memory is an auto-generated note system that Claude writes about your
+project. Stored at `~/.claude/projects/<project>/memory/`. First 200
+lines of `MEMORY.md` load at session start.
+
+How it differs from CLAUDE.md:
+
+- CLAUDE.md: You write instructions for Claude.
+- Memory: Claude writes notes for itself (with your approval).
+
+Memory types:
+
+- `user` - Your role, preferences, expertise.
+- `feedback` - Corrections and confirmations about approach.
+- `project` - Ongoing work, goals, decisions.
+- `reference` - External system pointers.
+
+Commands: `/memory` to toggle. Say "remember that..." to explicitly save
+something. Say "forget..." to remove stale info.
+
+## Permission Modes
+
+Permission modes control how much autonomy Claude has. Cycle with
+`Shift+Tab`.
+
+| Mode | What is allowed | Best for |
+|------|-----------------|----------|
+| Default | Prompts for each new tool | Learning, unfamiliar codebases |
+| Plan | Read-only, creates plan | Complex changes, review first |
+| Auto-accept edits | File edits auto-approved | Trusted projects |
+| Auto | AI-evaluated safety checks | Experienced users |
+| Bypass | No prompts (dangerous) | CI/CD, containers only |
+
+Permission rules in settings.json:
+
+```json
+{
+  "permissions": {
+    "allow": ["Bash(npm run *)", "Bash(git commit *)"],
+    "deny": ["Bash(rm -rf *)"],
+    "ask": ["Bash(curl *)"]
+  }
+}
+```
+
+Evaluation order: Deny > Ask > Allow > Default mode behavior. Deny
+always takes precedence.
+
+## Worktrees (Git Isolation)
+
+Worktrees are separate git working directories sharing the same
+repository. Each gets its own branch and file state.
+
+Usage:
+
+```bash
+claude --worktree feature-auth    # Start session in isolated worktree
+claude --worktree                 # Auto-generated name
+claude --worktree "#1234"         # From PR
+```
+
+Why use them:
+
+- Run multiple Claude sessions in parallel (no file conflicts).
+- Each session works on its own branch.
+- Auto-cleanup when session ends with no changes.
+- Subagents can use worktrees for parallel edits.
+
+Configuration: `.worktreeinclude` file lists gitignored files to copy
+(e.g., `.env`).
+
+## Context Management
+
+Your context window is finite. Everything (conversation, files, tools,
+instructions) competes for space.
+
+What consumes context (roughly in order):
+
+1. System prompt (hidden, always present)
+2. CLAUDE.md + rules files
+3. Memory (MEMORY.md first 200 lines)
+4. MCP tool names
+5. Conversation history
+6. Tool outputs (file reads, command results)
+7. Skill content (when invoked)
+
+Key commands:
+
+- `/context` - See what is consuming space.
+- `/compact` - Summarize and free space.
+- `/compact focus on: X` - Compact with focus area preserved.
+- `/clear` - Clear context between tasks.
+
+How to manage effectively:
+
+- Use Explore agents for research (keeps main context clean).
+- Use path-scoped rules instead of one huge CLAUDE.md.
+- Use `/compact` before long sessions.
+- Skills load on-demand (better than putting everything in CLAUDE.md).
+- Remove unused MCP servers to free space.
+
+## Sessions
+
+Sessions are saved conversations tied to a directory. They persist
+locally for resume, branching, and switching.
+
+Key operations:
+
+- `claude --continue` or `claude -c` - Resume most recent session.
+- `claude --resume` - Open session picker.
+- `claude --resume <id>` - Resume by name or ID.
+- `/resume` - Switch during active session.
+- `/branch` - Fork conversation to try a different approach.
+- `/rename` - Name current session.
+- `/export` - Export conversation.
+
+Session picker shortcuts:
+
+- `Ctrl+R` - Rename
+- `Ctrl+W` - Widen to all worktrees
+- `Ctrl+A` - Widen to all projects
+- `Ctrl+B` - Filter by branch
+- `/` or type - Search
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| Enter | Submit message |
+| Shift+Tab | Cycle permission modes |
+| Ctrl+C | Interrupt Claude |
+| Ctrl+D | Exit |
+| Ctrl+R | History search |
+| Ctrl+T | Toggle task list |
+| Ctrl+S | Stash prompt (save for later) |
+| Ctrl+G | Open external editor |
+| Escape | Cancel current input |
+| Double Escape | Jump back in history, edit a previous prompt |
+
+Customization: `~/.claude/keybindings.json` or `/keybindings` command.
+
+Keystroke syntax for custom bindings:
+
+- Modifiers: `ctrl`, `shift`, `alt`/`opt`/`meta`
+- Chords: `ctrl+k ctrl+s` (sequences)
+- Uppercase implies shift: `K` = `shift+k`
+
+## Settings Hierarchy
+
+Settings files load in this order (later overrides earlier):
+
+1. Managed settings (organization, cannot override)
+2. `~/.claude/settings.json` (user defaults)
+3. `.claude/settings.json` (project, in git)
+4. `.claude/settings.local.json` (local overrides, gitignored)
+5. Command-line flags (highest priority)
+
+Common settings:
+
+```json
+{
+  "model": "claude-opus-4-6",
+  "defaultMode": "acceptEdits",
+  "autoMemoryEnabled": true,
+  "permissions": { "allow": [], "deny": [] },
+  "env": { "AWS_PROFILE": "dev" }
+}
+```
+
+## IDE Integrations
+
+Claude Code runs as a CLI, desktop app (Mac/Windows), web app
+(claude.ai/code), and IDE extensions.
+
+- VS Code extension: Inline suggestions, sidebar sessions, file context
+  awareness.
+- JetBrains extension: Similar capabilities within IntelliJ-based IDEs.
+- All run the same agentic loop as CLI.
+
 # Troubleshooting
 
 ## Context window always full and compaction keeps triggering
