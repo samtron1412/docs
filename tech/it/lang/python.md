@@ -350,6 +350,8 @@ x = q.get()
             - https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-from-vs-code
             - `uv add --dev ipykernel`
 - You also need non-Python packages:
+    + mise:
+        * https://mise.jdx.dev
     + pixi
         * https://pixi.sh/latest/
     + miniforge (open-source minimal installer for conda and mamba)

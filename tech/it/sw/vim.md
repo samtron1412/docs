@@ -912,10 +912,12 @@ filetype plugin on
 - Using substitution with
     + `:%s/^\(##\+\) /\=submatch(1)[1:] . ' '/gc`
 
-## Insert current file path in INSERT mode
+## Get the current file path
 
-- `Ctrl+R %`
-    + `%` register holds the current file path
+- `%` register holds the current file path
+- Get absolute path with command: `:!realpath %`
+- Insert current file path in INSERT mode
+    + `Ctrl+R %`
 
 ## `myvim` - A script to a portable bundle of my Vim environment
 
