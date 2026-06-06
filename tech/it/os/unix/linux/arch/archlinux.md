@@ -1328,6 +1328,25 @@ Something
         * `udisksctl power-off -b /dev/sdb`
     + `eject /dev/sdb`
     + `umount /mnt/usb && sync`
+- Format disks
+
+```
+Run the format block as one paste:
+
+sudo wipefs -a /dev/sda
+sudo parted -s /dev/sda mklabel gpt
+sudo parted -s -a optimal /dev/sda mkpart Raw1 0% 100%
+sudo partprobe /dev/sda
+sleep 1
+sudo mkfs.exfat -L Raw1 /dev/sda1
+
+Then verify:
+
+sudo parted /dev/sda print
+lsblk -o NAME,SIZE,FSTYPE,LABEL,PARTLABEL /dev/sda
+sudo blkid /dev/sda1
+sudo fsck.exfat -n /dev/sda1
+```
 
 ## Optimization
 
