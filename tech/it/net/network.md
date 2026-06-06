@@ -208,12 +208,23 @@ Today, maybe one device can handle multiple functionalities
       packet switching to receive and forward data to the destination
       device.
     + A network switch is a multiport network bridge that uses MAC
-      addresses to forward data at the data link layer (layer 2) of the
-      OSI model.
-    + Some switches can also forward data at the network layer (layer 3)
-      by additionally incorporating routing functionality.
+      addresses to forward data at the data link layer (layer 2,
+      Ethernet frame in TCP/IP model) of the OSI model.
+    + Some switches can also forward data at the network layer (layer 3,
+      IP packet) by additionally incorporating routing functionality.
         * Such switches are commonly known as layer-3 switches or
           multilayer switches
+
+### Switches
+
+- Some popular brands for home lab:
+    + Juniper EX2300-C-12P (fanless, 12 ports)
+        * buy used on ebay for around 100-200 dollars as of 2026-05, was
+          released around 2017
+        * EX2300-24P (more ports so larger, with fan so noisier)
+    + Mikrotik CSR328-24P (~500 dollars for a new device on Amazon as
+      2026-05)
+    + Peplink SD Switches (24 or 8 ports) (~700 dollars for a new device)
 
 ## Wireless Access Point
 
