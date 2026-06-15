@@ -533,6 +533,19 @@ Claude Code runs as a CLI, desktop app (Mac/Windows), web app
 }
 ```
 
+## Sandbox Environments
+
+- https://code.claude.com/docs/en/sandbox-environments
+
+### Bash sandbox
+
+- https://code.claude.com/docs/en/sandboxing
+- https://code.claude.com/docs/en/settings#sandbox-settings
+
+### Sandbox runtime
+
+- https://github.com/anthropic-experimental/sandbox-runtime
+
 ## Notifications
 
 ### Local Computer
@@ -922,6 +935,11 @@ Rather than waiting for Claude to complete each step, something many engineers a
 - Claude will only access a skill when it's relevant to the task at
   hand. When used, skills make Claude better at specialized tasks like
   working with Excel or following your organization's brand guidelines.
+
+### Common and Popular Skills
+
+- https://www.skills.sh/mattpocock/skills/grill-me
+- https://github.com/multica-ai/andrej-karpathy-skills
 
 ## Sub-agents
 
