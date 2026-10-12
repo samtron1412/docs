@@ -329,6 +329,11 @@
 
 # Tips and Tricks
 
+## Using AI agents as Socratic partners to test your knowledge
+
+- Ask the AI agents to help testing your learned knowledge and patch any
+  holes in your learning.
+
 ## Interleaving
 
 - Building flexibility and creativity

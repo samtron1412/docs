@@ -19,6 +19,20 @@
     + Digital labor
     + Science, engineering, and research
 
+# Theories behind AI
+
+```
+Interesting to see how Anthropic is slowly changing from "superhuman coder" to "novel problem solving", since that's the direction that ChatGPT took, after all the "cyber" worries regarding the LLM coding capabilities, and this is exactly why google couldn't care a less about coding performance, they are not aiming to dethrone OAI and Anthropic, but become an AI for the masses and compete against Office 365, at best.
+
+
+---
+Its logical because the theory: Kolmogorov complexity equates intelligence with compression: the smartest system is the one that finds the shortest computer program to generate, explain, or predict a dataset
+
+In other word you need to generalize by making it good at making program.
+
+And the generalization will help that novel problem solving.
+```
+
 # Mental models for LLM and GenAI
 
 - https://www.youtube.com/watch?v=LCEmiRjPEtQ

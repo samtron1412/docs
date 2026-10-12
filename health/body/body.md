@@ -616,6 +616,20 @@ Links
 ```
 
 
+# Dental
+
+- Exam, cleanings and X-rays: 2 times a year
+- Orthodontia: focusing on diagnosing, preventing, and correcting
+  misaligned teeth and jaw irregularities.
+    + Common problems: overbites and underbites, crowded teeth, gaps,
+      crooked teeth, etc.
+    + Common treatments: traditional braces, clear aligners, retainers,
+      palate expanders
+- Fillings, root canals (removing damaged or infected tissues from
+  inside a tooth to save it from extraction
+- Crowns, night guards, implants
+- Extractions (removing teeth from socket)
+
 # Motion sickness
 
 - Don't eat too much or too little before the trip

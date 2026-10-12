@@ -364,6 +364,10 @@ To get out of Copy mode, we just press the `ENTER` key.
 
 # Tips and Tricks
 
+## Terminal automatic open tmux default session
+
+- `tmux ls && read tmux_session && tmux attach -t ${tmux_session:-default} || tmux new -s ${tmux_session:-default}`
+
 ## Unset an environment variable for the session
 
 - Inside a tmux session:

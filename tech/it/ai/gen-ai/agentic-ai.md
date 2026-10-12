@@ -225,3 +225,16 @@ This approach reduces the probability space the agent must navigate by providing
 - LangChain
 - LangGraph
 - etc.
+
+# Skills
+
+- CLAUDE.md
+    + durable memory
+    + hand picked
+    + not overload with rule so keep it below 200 words.
+- lessons.md
+    + can go stale quickly
+    + if lessons do not change, then promote to CLAUDE.md
+- Skills
+    + create skills in your domain for repeatable recurring processes
+    + /catchup
