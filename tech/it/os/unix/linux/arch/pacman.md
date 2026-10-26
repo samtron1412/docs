@@ -171,7 +171,7 @@ pacman.conf defines a package repository to be used.
 - list all packages explicitly installed and not required as
   dependencies:
     +`$pacman -Qet`
-- List all foreign packages (manually downloaded and installed): `$ pacman -Qm`
+- List all foreign packages (manually downloaded and installed such as AUR packages): `$ pacman -Qm`
 - List all native packages (installed from the sync database): `$ pacman -Qn`
 - list all native (in sync databases) packages and explicitly installed:
     + `$ pacman -Qen`

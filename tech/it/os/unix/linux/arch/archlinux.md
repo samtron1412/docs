@@ -128,9 +128,14 @@ all foreign packages: `$ pacman -Qm`
         * Add `--recurse` option to also download dependencies.
     + Build order: `auracle buildorder <pkg1> <pkg2> ...`
 - Common usage:
-    + `auracle clone <pkg>`
+    + `cd ~/src`
+    + `auracle clone <pkg>`: clone package to src folder
     + Read PKGBUILD and other files to verify the package.
     + `makepkg -si`: build and install package.
+- Troubleshooting
+    + `error while loading shared libraries:...`: rebuild and reinstall
+      `auracle` after system upgrade
+        * `cd ~/aur/auracle-git && git pull && makepkg -si`
 
 ### Build from local source files so you can change source code
 
@@ -145,6 +150,23 @@ Start service: `systemctl start example.service`
 
 Enable service: `systemctl enable example.service`
 
+## Creating Packages
+
+- https://wiki.archlinux.org/title/Creating_packages
+- Creating ports-like Arch build system packages from source that can be
+  used to submit to Arch User Repository (AUR).
+    + It covers the process of creating a PKGBUILD file (package build
+      description file) which will be sourced by `makepkg` software to
+      create a binary package from source.
+
+### Arch package guidelines and best practices
+
+- https://wiki.archlinux.org/title/Arch_package_guidelines
+
+### PKGBUILD
+
+- https://wiki.archlinux.org/title/PKGBUILD
+- https://man.archlinux.org/man/PKGBUILD.5
 
 # Pre-Installation
 
@@ -1165,6 +1187,20 @@ Remember that pacman's output is logged in `/var/log/pacman.log`.
 - Network configuration:
     + https://wiki.archlinux.org/index.php/Network_configuration
 
+### IP: Routing, Network Devices, Interfaces and Tunnel
+
+#### Network Devices
+
+- `ip link`
+
+#### IP Address Management
+
+- `ip addr`
+- Set IP address for an interface:
+    + `sudo ip link set <interface> up`
+    + `sudo ip addr flush dev <interface>`
+    + `sudo ip addr add 192.168.222.2/24 dev <interface>`
+
 ### Check the connection
 
 To troubleshoot a network connection, go through the following
@@ -1298,55 +1334,70 @@ Something
 
 ## Storage Devices
 
-### Mount, format, check, unmount, eject USB
+### Check, Format, Mount, Unmount / Eject USB
 
 - https://wiki.archlinux.org/title/USB_storage_devices
 - Connect the USB, then use `lsblk` or `lsblk -f` to identify the
   device.
-- Mounting:
-    + Automatic mounting: `udiskie`.
-        * https://wiki.archlinux.org/title/Udisks
-        * TODO: config udiskie and sway and waybar
-    + Manual mounting
-        * Create a mount point:
-            - `sudo mkdir -p ~/mnt/usb`
-        * Mount:
-            - `sudo mount /dev/sdX1  ~/mnt/usb`
+
+#### Check for Physical Bad Blocks (Data Loss Warning)
+
++ Non-destructive read-only test:
+    * `sudo badblocks -v /dev/sdX`
++ Write test:
+    * `sudo badblocks -w /dev/sdX`
+
 - Scan and repair file system
     + Use `fsck.<file_system_type>`
     + FAT32: `sudo fsck.vfat -a /dev/sdX1`
     + exFAT: `sudo fsck.exfat /dev/sdX1`
     + NTFS: `sudo ntfsfix /dev/sdX1`
     + ext4: `sudo fsck.ext4 -p /dev/sdX1`
-- Check for Physical Bad Blocks (Data Loss Warning)
-    + Non-destructive read-only test:
-        * `sudo badblocks -v /dev/sdX`
-    + Write test:
-        * `sudo badblocks -w /dev/sdX`
-- Eject USB safely
-    + `udisksctl` from `udisks2` package
-        * `udisksctl power-off -b /dev/sdb`
-    + `eject /dev/sdb`
-    + `umount /mnt/usb && sync`
-- Format disks
 
-```
-Run the format block as one paste:
+#### Format
 
-sudo wipefs -a /dev/sda
-sudo parted -s /dev/sda mklabel gpt
-sudo parted -s -a optimal /dev/sda mkpart Raw1 0% 100%
-sudo partprobe /dev/sda
-sleep 1
-sudo mkfs.exfat -L Raw1 /dev/sda1
+- Use `/format` AI skill or the skill's script to format:
+    + `/format /dev/sdc exfat`
 
-Then verify:
+#### Mount
 
-sudo parted /dev/sda print
-lsblk -o NAME,SIZE,FSTYPE,LABEL,PARTLABEL /dev/sda
-sudo blkid /dev/sda1
-sudo fsck.exfat -n /dev/sda1
-```
++ Automatic mounting: `udiskie`.
+    * https://wiki.archlinux.org/title/Udisks
+    * TODO: config udiskie and sway and waybar
++ Manual mounting
+    * Create a mount point:
+        - `sudo mkdir -p ~/mnt/usb`
+    * Mount:
+        - `sudo mount /dev/sdX1  ~/mnt/usb`
+
+#### Unmount / Eject USB safely
+
+Short answer: do not just yank the cable. Linux caches writes, so an
+unmount (flush + detach) is required first — same as macOS "Eject" or the
+Windows "Safely Remove Hardware" tray icon. Two clean options:
+
+- Unmount the filesystem (most common):
+    + `udisksctl unmount -b /dev/sda1`
+    + After this returns success, the partition is flushed and the path
+      under /run/media/glider/ is gone — safe to unplug.
+- Unmount and spin down / power off the whole drive (best for
+spinning HDDs and external SSDs; the macOS-style full eject):
+    + `udisksctl power-off -b /dev/sda`
+    + Note the whole-disk node sda, not the partition sda1. This
+      unmounts every partition and cuts power so the drive LED goes off
+      — then unplug.
+
+Either command runs as glider with no sudo (udisks2 handles it).
+You can also unmount by mount path:
+    + `udisksctl unmount -p $(findmnt -no SOURCE /run/media/glider/Raw1)`
+
+ If an unmount fails with "target is busy", something still has a file open
+ there; find it with `lsof +f -- /run/media/glider/Raw1` (or `fuser -m`),
+ close it, and retry. Never force-yank to work around a busy mount — that
+ risks filesystem corruption on exFAT/NTFS.
+
++ OR `eject /dev/sdb`
++ OR `umount /mnt/usb && sync`
 
 ## Optimization
 
@@ -1413,6 +1464,122 @@ Something
 ### ACL
 
 ### LDAP
+
+## Working with the serial console
+
+- https://wiki.archlinux.org/title/Working_with_the_serial_console
+
+```
+[ Target Device ] ──(Serial Console Interface)──> [ Physical Cable / Port ] ──(Raw Bytes)──> [ Terminal Emulator (PuTTY/Minicom) ] ──> Your Screen
+```
+
+- The Target Device Sends Data: A headless device (like a Cisco router,
+  Raspberry Pi, or server blade) generates text data via its operating
+  system or bootloader.
+- The Data Travels over Serial: The raw text bytes travel down a
+  physical connection (such as an RS-232 cable or a USB-to-TTL serial
+  adapter).
+- The Emulator Interprets the Bytes: Your computer receives these raw
+  bytes at a hardware level. Software tools like PuTTY, minicom, or
+  picocom open this port, configure the speed (baud rate), translate the
+  formatting control characters, and print legible text onto your
+  screen.
+
+### Baud Rate
+
+- Baud rate is the speed at which data is transmitted in a communication
+  channel. Specifically, it measures the number of distinct signal
+  changes or symbols (such as voltage shifts or waveform pulses) made to
+  a transmission medium per second.
+- The Key Difference: Baud Rate vs. Bit Rate
+    + Baud Rate: The number of symbols transmitted per second.
+    + Bit Rate: The number of actual data bits (0s and 1s) transmitted per second. [2, 5, 6]
+- How They Connect
+    + In simple binary systems with two states, one symbol equals one
+      bit, meaning baud rate and bit rate are identical. However, modern
+      encoding and modulation techniques (like those used in broadband
+      modems or advanced serial devices) allow a single signal change to
+      carry multiple bits. [2, 5, 7]
+    + In advanced systems, the relationship looks like this:$\text{Bit
+      Rate} = \text{Baud Rate} \times \text{Number of bits per symbol}$
+
+### Why Emulators Must Be Manually Configured?
+
+Unlike modern USB devices or network protocols, raw serial connections
+have no "handshake" to auto-negotiate settings. If your device's serial
+console is transmitting at 115200 baud, but your terminal emulator is
+listening at 9600 baud, the software will decode the electrical pulses
+incorrectly. This results in your emulator displaying unreadable
+gibberish characters on your screen
+
+### Serial Console
+
+- Definition
+    + A serial console is a physical communication interface used to
+      directly interact with a computer or networking device (like a
+      router or switch) one bit at a time.
+    + It provides text-based, "bare-metal" access, allowing you to
+      configure or troubleshoot a device even when its network is down
+      or its graphical interface is broken.
+- How it Works
+    + The Interface: It uses dedicated hardware ports (historically DB9
+      or RS-232, but often USB or RJ-45 today) instead of standard
+      Ethernet or Wi-Fi.
+    + Out-of-Band (OOB) Management: Because it functions independently
+      of the device's main operating system and production network, it
+      provides an "escape hatch" to fix broken configurations, recover
+      lost passwords, or monitor boot sequences.
+    + The Connection: To use it, you connect your laptop directly to the
+      device using a specialized console cable (like a Cisco rollover
+      cable or USB-to-serial adapter) and open a terminal program (such
+      as PuTTY, Minicom, or ZOC).
+- Key Use Cases
+    + Initial Setup: Unboxing a new switch or router requires a serial
+      console to apply the first IP address before you can access it
+      over the network.
+    + Disaster Recovery: If an update fails, the device crashes, or you
+      misconfigure the firewall and lock yourself out, a serial console
+      provides direct local access to fix the issue.
+    + Server Maintenance: System administrators use serial consoles to
+      view low-level kernel messages, configure BIOS/UEFI settings, or
+      force reboots during operating system crashes.
+    + Serial Console vs. Serial Console Server:
+        * In large data centers, connecting a laptop to dozens of
+          different switches individually is tedious.
+        * IT teams use Serial Console Servers (or Terminal
+          Servers). These are centralized hardware appliances connected
+          to the console ports of all devices in a rack, allowing
+          administrators to access any piece of equipment remotely over
+          a secure network.
+
+### Console Terminal Emulator (Serial Device I/O Tool)
+
+- To avoid root permission to make a connection, add your user to the
+  `uucp` user group:
+    + `sudo usermod -aG uucp <yourusername>` or `sudo gpasswd -a <yourusername> uucp`
+    + Apply the change in the current session without logout:
+        * `newgrp uucp`
+    + Verify the membership
+        * `groups` or `id`
+- https://wiki.archlinux.org/title/Working_with_the_serial_console#Connect_using_a_terminal_emulator_program
+- `uucp` package
+    + `cu` (Call Up) tool: `cu --line /dev/ttyS0`
+- `minicom` package
+- `picocom` package: lightweight then minicom
+- `screen`
+- `tio` (AUR) package
+
+## Docker
+
+- Install docker and enable and start `docker.socket` to start
+  `docker.service` when needed:
+    + `sudo pacman -S docker`
+    + `systemctl enable docker.socket`
+    + `systemctl start docker.socket`
+    + Test: `sudo docker info`
+- Add user to `docker` group to run CLI without sudo
+    + `sudo usermod -aG docker $USER`: log out and log in again
+    + Test: `docker info`
 
 # Troubleshooting
 
