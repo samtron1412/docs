@@ -13,6 +13,7 @@
 
 - User-specific configuration: `~/.tmux.conf`
 - Global configuration: `/etc/tmux.conf`
+- After updating configuration, reload it with: `<prefix> + r`
 
 - https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 - color

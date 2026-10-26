@@ -256,9 +256,17 @@ RUN apt-get -y update && apt-get install -y python
 
 ### How to persist application data? How to store information?
 
-- Using volumes or bind mounts. **Avoid** storing in the container.
+- Using volumes or bind mounts:
     + volumes: https://docs.docker.com/storage/volumes/
+        * This mount point and storage are managed completely by docker,
+          and the host doesn't have access to this.
+        * Use this mount type for data that you only want to keep in the
+          container such as cache, database, build artifact, etc. to
+          separate them from the host system, and you don't want the
+          container to make changes to data on the host system (sandbox)
     + bind mounts: https://docs.docker.com/storage/bind-mounts/
+        * bi-directinal access between host and container
+        * use this for global config, source code, etc.
 - Manage sensitive data with Docker secrets
     + https://docs.docker.com/engine/swarm/secrets/
 - Store configuration data using Docker Configs

@@ -58,7 +58,6 @@
 + swayosd: a GTK based on screen display for keyboard shortcuts
     * alternatives: wob
 
-
 # Configuration
 
 ## Configure Keyboard Shortcuts
@@ -77,6 +76,9 @@
 - Scratchpad: a place to hold hidden containers
     + `Mod + Shift + -`: move container to scratchpad
     + `Mod + -`: show scratchpad and cycle through windows
+        * To remove a window / container from scratchpad, just show the
+          window using `Mod + -` and then change the layout from
+          floating to tiling with `Mode + Shift + Space`
 - Moving around:
     + `Mod + h/j/k/l` or `Mod + <arrow_keys>`: move focus around
     + `Mod + Shift + h/j/k/l` or `Mod + Shift + <arrow_keys>`: move the
