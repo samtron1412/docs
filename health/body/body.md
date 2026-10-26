@@ -660,6 +660,32 @@ Links
       (0.6°C) lower than an oral temperature.
 
 
+# Air Quality
+
+## Carbon Dioxide Concentration
+
+- How CO2 and O2 concentration affect our body?
+    + Human body monitors CO2 concentration in blood closely and it
+      signals the suffocating danger when CO2 concentration raise too
+      high, not the lower concentration of Oxygen.
+    + The reason is that in the air the concentration of Oxygen is ~20%
+      which is very high compare to the Oxygen concentration in our
+      body, so the Oxygen exchange will happen very easy. And the CO2
+      concentration in the air is super low (~0.04%) compare to our
+      exhales, so the CO2 exchange also happens easily. However, if the
+      CO2 concentration in the air is too high, then the body can't get
+      rid of the waste and it'll cause problem.
+    + Basically, the imbalance between the O2 and CO2 in the air is the
+      reason for why our human body evolves that way (monitoring CO2
+      concentration in blood, that can increase the acidity).
+- CO2 Poisoning (greater than 5% or 50,000 ppm concentration)
+    + https://pmc.ncbi.nlm.nih.gov/articles/PMC5380556/
+- Elevated indoor CO2 Impairs Decision-making performance
+    + https://newscenter.lbl.gov/2012/10/17/elevated-indoor-carbon-dioxide-impairs-decision-making-performance/
+- NASA's challenges in keeping low concentration of COS in ISS
+    + https://share.google/aimode/VoSre7fxDYDGoyhpP
+    + https://en.wikipedia.org/wiki/ISS_ECLSS
+
 # Tips and tricks
 
 ## Tips for better sleep
