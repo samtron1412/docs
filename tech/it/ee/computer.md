@@ -127,25 +127,69 @@ seminal 1936 paper, *On Computable Numbers*.
 
 - Portable computers grew in popularity in the 2000s.
 
+# Building Desktop / Work Station
+
+- Having a desktop with strong hardware and a large monitor at a fixed
+  place as a day to day work station.
+- https://pcpartpicker.com/
+- More details in `unraid.md` to build a server / desktop / work station
+- CPU:
+    + Intel
+        * Latest as of 202610: Core ultra 7 270K / 9 285K
+        * Chip names: (Family Name)(Performance Tier)(Generation)(SKU
+          Number)(Product Line Suffix)
+            + Family name: Intel Core, Intel Core Ultra, Intel Xeon,
+              etc.
+            + Performance Tier: Core 7 / Core 9
+            + Generation: i7-14700K (14th generation), Core Ultra 7 155H
+              (generation or series 1)
+            + SKU number: i7-14700K (700 is the specific model number
+              within that generation. higher numbers generally mean more
+              feature, higher clock speeds, or more cores.
+            + Product Line Suffix (letters at the end): K: unlocked for
+              overclocking; F: lacks integrated graphics; T:
+              power-optimized for desktop PCs, H/HK/HX: high-performance
+              mobile/laptop processors; U: power-efficient; V: mobile
+              architecture; P: power-optimized for think-and-light
+              laptops.
+
 # Potential Laptops
 
-- Macbook (using Linux with AsahiLinux - rising sun Linux distro)
-    + Air M1 chip
-        * 16 GB RAM, 512 GB SSD: 1259 dollars
-        * M1 chip is superior than i7, or even i9 since CPU, GPU, RAM are
-          all in the same chip tightly integrated.
-    + Pro
-- Thinkpad
-    + X1 Carbon
-    + Z16
-    + T490
-        * 16 GB RAM, 512 GB SSD: 1299 dollars (Costco)
+- Laptops are for traveling.
+- Apple
+    + Macbook (using Linux with Asahi Linux - rising sun Linux distro)
+        + https://asahilinux.org/
+        + Air M chip (ARM architecture not x86_64)
+            * M chip is superior than i7, or even i9 since CPU, GPU, RAM are
+              all in the same chip tightly integrated.
+        + Pro
+- Linux laptop / desktop manufacturers
+    + https://nimdok.io/article/linux-laptop-secrets
+    + Big names: Dell and Lenovo
+    + Small names that focus on Linux laptops: Framework and Starlabs
+- Lenovo
+    + Thinkpad
+        + P series: most powerful Thinkpad laptop series (mobile
+          workstation)
+        + X1 Carbon
+        + Z16
+        + T490
+            * 16 GB RAM, 512 GB SSD: 1299 dollars (Costco)
 - Dell
-    + XPS 13/15
+    + Precision 3000/5000/7000 series: most powerful laptop series
+    + XPS 13/15 (mobile workstation)
 - Starlabs
     + https://us.starlabs.systems/
-- System 76:
-    + Galapo Pro: 16 GB RAM, 512 GB SSD, i7: 1210 dollars
+    + UK base, founded in 2016
+    + StarFighter is the mobile workstation laptop.
+- Framework
+    + https://frame.work/
+    + San Francisco base, founded 2020
+    + More expensive than other big brand manufacturers, but it's
+      customizable and upgradable.
+    + Customizable computers where you can buy more parts to upgrade: it
+      focuses on modularity and repairability.
+
 
 # Lenovo Thinkpad X220 - 2011
 
@@ -197,10 +241,6 @@ seminal 1936 paper, *On Computable Numbers*.
 ## Firmware
 
 - Something
-
-# Lenovo Thinkpad X1 Carbon
-
-- https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon
 
 # References
 
