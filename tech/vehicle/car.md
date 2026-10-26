@@ -547,9 +547,19 @@ Commercially available Freons include:
         + Provide reliable traction in wet or dry conditions.
         + Maintain consistent handling and braking performance.
     + How
-        + FWD: front straight to back and back tires cross to front
-        + RWD and AWD: back straight to front and front tires cross to back
+        + FWD: front straight to rear and rear tires cross to front
+        + RWD: rear straight to front and front tires cross to rear
+        + AWD: X-pattern where opposite corners are swapped
         + Directional tires: front-to-back and vice versa
+    + Why doing the cross tire rotation for non-directional FWD and RWD?
+        * The reason for this is because through the fire of the tire,
+          it will be on every corner of the vehicle at least once thus
+          providing the most even wear pattern.
+    + Differences between forward cross (FWD) and rearward cross (RWD)
+      patterns?
+        + The tires in the main drive axle are brought to the rolling
+          axle, and the evenly worn tires in the rolling axle are
+          crossed to the drive axle to reverse the spin.
 - Inspect the tire condition:
     + Tread wear using indicators on the tire
     + Cut and crack and objects on tire
