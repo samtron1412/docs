@@ -610,4 +610,9 @@ the same (see Software section above).
   with the same importance as your raw files and back it up accordingly.
     + Using Google Drive / Drop Box to sync catalog and working files
       across devices and also back up.
-
+- Steps:
+    + Connect the SD cards to computer
+    + Copy files from SD cards to hot storage (SSD)
+    + Copy files from hot storage to 2 cold storages (HDD)
+    + Upload files to the cloud storage
+    + Upload files to the immich server
