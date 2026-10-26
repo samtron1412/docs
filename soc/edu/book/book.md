@@ -12,6 +12,22 @@
 - An audiobook is a recording of a book being read aloud, allowing you
   to listen to its content instead of reading it.
 
+# Shadow Libraries
+
+- https://shadowlibraries.github.io/
+    + Shadow libraries, sometimes called pirate libraries, consist of
+      texts aggregated outside the legal framework of copyright.
+- Guerilla Open Access Manifesto (Aaron Swartz)
+    + https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt
+- Libraries in the post-scarcity era (Balazs Bodo)
+    + https://pure.uva.nl/ws/files/2341818/162448_Libraries_in_the_post_scarcity_era.pdf
+- Shadow Library Uptime Monitor
+    + https://open-slum.org/
+- Anna's Archive:
+    + https://annas-archive.gl/
+- Libgen
+    + https://libgen.bz/
+
 # Books to read
 
 ## Software Development
