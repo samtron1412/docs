@@ -135,6 +135,16 @@ ISP -> phone / coaxial / optic line -> Modem -> Router [-> Repeater / Hub] -> Br
 Today, maybe one device can handle multiple functionalities
 - Modem + Router + Switch + Wireless Access Point
 
+## Terminologies
+
+- Chassis
+    + A physical, modular hardware enclosure that holds multiple line
+      cards, power supplies, and control engines.
+- Virtual chassis
+    + A software architecture that connects multiple independent
+      physical devices together, enabling them to operate, be managed,
+      and function as a single, unified logical device.
+
 ## Modem
 
 - https://en.wikipedia.org/wiki/Modem
@@ -225,6 +235,15 @@ Today, maybe one device can handle multiple functionalities
     + Mikrotik CSR328-24P (~500 dollars for a new device on Amazon as
       2026-05)
     + Peplink SD Switches (24 or 8 ports) (~700 dollars for a new device)
+- Concepts
+    + Uplink port: a specialized port used to connect your local network
+      to a higher-level network or larger device, such as a router, a
+      core switch, or the Internet.
+        * Key characteristics:
+            - Higher Speeds: 10+ Gbps
+            - Connection Type: while standard ports on an Ethernet
+              switch are generally RJ45 (copper), uplink ports often
+              utilize SFP or SFP+ slots.
 
 ## Wireless Access Point
 
@@ -395,8 +414,10 @@ Today, maybe one device can handle multiple functionalities
 
 - VLAN ID / Tag = an ID added to data packets indicating the virtual
   network that packet belongs to.
-- Untagged LAN = the 'default'  VLAN a device (without a specific VLAN
+    + A number between 0 - 4095
+- Untagged LAN = the 'default' VLAN a device (without a specific VLAN
   ID) will use be assigned when joined a network.
+    + Also referred to as the "Native VLAN"
 - Tagged VLAN = additional VLANs on a network for devices that are
   'aware' of which VLAN they are supposed to be assigned to.
 - Trunk Port = a network port on a switch or router that is configured
@@ -457,3 +478,49 @@ Today, maybe one device can handle multiple functionalities
     + It is used by many cable television operators to provide cable
       Internet access over their existing hybrid fiber-coaxial (HFC)
       infrastructure.
+
+# Popular Networking Companies
+
+- https://www.reddit.com/r/networking/comments/15mvynk/cisco_vs_juniper_vs_arista_and_maybe_arubahpe/
+- https://www.reddit.com/r/networking/comments/1ibjxey/is_cisco_still_the_leading_innovative_brand_now/
+- Enterprise
+    + Juniper
+    + Arista (cloud and data center networking)
+    + Cisco (overall enterprise networking)
+    + Security Space: Firewall
+        * Palo Altos
+        * Fortinet
+    + Huawei, Nokia, and Ericsson
+        * Global telecommunications hardware
+- Home lab and SOHO (Small  Office and Home Office)
+    + MikroTik
+        * some devices can be very powerful at enterprise level with
+          lower cost
+    + Ubiquity
+
+## CLI
+
+- Juniper Networks (JUNOS)
+- Arista Networks (EOS)
+    + Streamlined and modern Cisco clone.
+- Cisco (IOS)
+- Fortinet (FortiOS)
+- Mikrotik (RouterOS)
+
+## Network Architecture as Code
+
+- Arista Validated Designs (AVD)
+- Juniper Apstra: vendor-agnostic, it can manage fabrics running both
+  Juniper and non-Juniper hardware
+- Cisco Nexus
+    + https://www.reddit.com/r/networking/comments/1nlhzc0/looking_at_replacing_cisco_nexus_arista_or_cisco/
+
+# Large Enterprises and Their Data Centers
+
+- https://engineering.fb.com/production-engineering/introducing-data-center-fabric-the-next-generation-facebook-data-center-network/
+- https://azure.microsoft.com/en-us/global-infrastructure/hardware-innovation/
+- https://cloud.google.com/blog/products/gcp/google-joins-open-compute-project-to-drive-standards-in-it-infrastructure
+- https://www.opencompute.org/
+- Retired gear from hyper-scalers:
+    + https://www.itrenew.com/ or ebay
+- https://docs.microsoft.com/en-us/events/ignite-mar-2021/azure/sessions/od343/

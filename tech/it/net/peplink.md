@@ -6,6 +6,7 @@
     + https://routersecurity.org/bugs.php
 - B One Router manual
     + https://download.peplink.com/manual/peplink-b-one-series-user-manual.pdf
+        * Two WAN ports, 4 LAN ports (all max at 1Gbps)
     + https://download.peplink.com/resources/CLI_SSH_Guide_v1.1.pdf
 - Enable DDNS peplink: Find My Peplink
     + https://forum.peplink.com/t/peplink-ddns-service-find-my-peplink/7770
