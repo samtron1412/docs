@@ -2,6 +2,40 @@
 
 Agentic AI
 
+# Software Development Life Cycle With AI Agents
+
+## Multi Model Set Up
+
+```
+I have Claude Max $200 subscription, a business GPT subscription, and a Gemini Ultra subscription.
+
+I have Claude Desktop running with a project set up as the keeper of my roadmap and sprint history for the work I'm currently focused on. I start a new chat within that project for each sprint. The new chat reads the roadmap document, the applicable sprint files, and a decision log that memorializes architectural rules and reviewer-calibration lessons from prior sprints. That's how learnings carry forward across chats even though the model can't update its own memory between sessions. From there it drafts a proposed design.
+
+The chat in Claude Desktop is the orchestrator and synthesizer for the sprint, not the implementer or the sole reviewer. Its job is to plan, to write the prompts that the CLI tools execute, and to synthesize whatever those tools come back with against the actual source of truth — the code, live system state, real configuration. It has filesystem access via MCP, so it reads project docs and source files directly rather than relying on me to paste them in.
+
+Once it has a draft design, it generates a tool-agnostic design review prompt - one prompt, written so any of CC, Codex, or Gemini can run it without modification. I route that same prompt in parallel to two or three reviewer CLIs (default is CC + Codex; I add Gemini for the highest-stakes architectural decisions, and I'll go single-reviewer Codex for small-scope amendments where a full parallel round is overkill). Every review is two passes: a standard pass, then a "more thorough and critical" pass. Each reviewer saves its report to a standardized path with a filename that encodes the artifact, the reviewer environment, and the model slug — e.g. `<artifact>-review-codex-gpt-5.5.md`. The model slug is in the filename because calibration is per-model-version, not per-tool: when a model updates, prior calibration may not transfer, and I want the historical record so I can tell which version caught which class of defect.
+
+I paste those report paths back into the chat. Synthesis runs against a fixed set of rules: convergent findings (multiple reviewers flag the same defect) get treated as high-confidence but still source-verified before final verdict; divergent findings (one flags, others silent) require reading the silent reviewer's report to confirm they actually addressed that area and missed it, vs. simply not covering it; conflicting findings (reviewers disagree on facts) always go to source — the code is the tiebreaker, not either reviewer. Severity gets recalibrated against a P0/P1/P2 framework based on actual user impact, not the label the reviewer assigned.
+
+Once the design is locked, the same chat generates a CC implementation prompt from a template that includes context-budget warnings, fresh-environment E2E requirements, a structured validation framework, and a mandatory partial-success retry-path probe for any sprint touching side-effecting operations like webhooks, RPCs, or external services. CC implements, deploys and tests via its own MCP integrations, runs E2E against a fresh test environment, and produces a commit-ready report. Before that report goes back out for code review, I have the orchestrator spot-check two or three load-bearing claims against actual source — git status, file:line citations, claimed test outputs — because CC self-review has known blind spots, and three to five minutes at this gate routinely saves a full reviewer cycle downstream.
+
+Code review runs the same shape as design review: one tool-agnostic prompt, parallel reviewers, standardized filenames, synthesis with source verification, severity recalibration. Findings get fixed; remediation gets re-reviewed. Three rounds on the same code area is the cap — after that, anything still open is P2 by default and gets filed as an issue rather than blocking the ship.
+
+Sprint close is a fixed ritual: update the sprint file's status header to SHIPPED, move the YOU-ARE-HERE marker on the roadmap, append any new architectural rule or reviewer-calibration lesson to the decision log, file remaining items into the backlog with a target sprint, and write a kickoff handoff for the next sprint. Then a new chat starts and the loop runs again, with the previous sprint's lessons now baked into the decision log it reads on startup. The compounding is the point — each sprint's hard-won calibration is durable instead of dying with the chat that learned it.
+
+Rather than type all of this out i spun up a new chat in my current live feature project and had it explain our process in its own words. :)
+
+I have iterated on and refined this loop over the past 6 months and now have successfully closed more than 60 sprints using this exact formula. Note there IS manual action required on my part at key breakpoints. This is intentional human in the loop activity because I am ultimately the decision maker on what constitutes acceptable outcomes and each manual step gives me an opportunity to guard against drift. DO NOT skip that!
+```
+
+```
+One thing I'd add to this is separating model choice from workflow role.
+
+If Claude Code is your implementer, don't judge Gemini by asking it to be the same implementer. Give it bounded review jobs: "find missing tests for this diff", "look for non-idempotent retries", "summarize the relevant files before I edit." Then verify against the source.
+
+The trap with multi-reviewer setups is treating consensus as truth. Consensus is a prioritization signal. Source evidence is the truth. Boring distinction, but it saves you from three models confidently agreeing on the same wrong control flow.
+```
+
 # Agents
 
 - Agent Introduction and how to use them effectively
